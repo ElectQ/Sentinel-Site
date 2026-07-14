@@ -4,14 +4,14 @@
   "collect_date": "2026-07-14",
   "collect_window": {
     "start": "2026-07-14T00:00:00+00:00",
-    "end": "2026-07-14T06:56:05.027413+00:00",
-    "hours": 6
+    "end": "2026-07-14T07:29:35.760048+00:00",
+    "hours": 7
   },
   "producer": {
     "name": "sentinel-site",
     "version": "0.1.0",
-    "run_id": "",
-    "commit": ""
+    "run_id": "29314721266",
+    "commit": "1b2bba4"
   },
   "stats": {
     "total": 0,
@@ -21,21 +21,21 @@
     "failed_lists": [],
     "sources_ok": 44,
     "sources_failed": [],
-    "baselines": 44,
+    "baselines": 0,
     "via_sources": {
       "llm": 10,
-      "browser_llm": 7,
-      "rss": 27
+      "browser_llm": 8,
+      "rss": 26
     },
     "llm_usage": {
       "model": "deepseek-v4-flash",
-      "requests": 0,
-      "calls": 0,
-      "prompt_tokens": 0,
-      "completion_tokens": 0,
-      "total_tokens": 0,
-      "prompt_cache_hit_tokens": 0,
-      "prompt_cache_miss_tokens": 0
+      "requests": 13,
+      "calls": 13,
+      "prompt_tokens": 12803,
+      "completion_tokens": 2313,
+      "total_tokens": 15116,
+      "prompt_cache_hit_tokens": 2816,
+      "prompt_cache_miss_tokens": 9987
     },
     "by_content_status": {}
   },
