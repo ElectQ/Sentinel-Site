@@ -1,0 +1,51 @@
+name: daily-pulse
+
+on:
+  schedule:
+    # 每日 21:00 UTC = 次日北京时间 05:00（Asia/Shanghai, UTC+8）
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: daily-pulse
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - run: uv sync --frozen --no-dev
+
+      - name: Verify preinstalled Google Chrome
+        run: /usr/bin/google-chrome --version
+
+      - name: Collect and build bundles
+        run: uv run python -m sentinel.run
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: https://api.deepseek.com
+          LLM_MODEL: deepseek-v4-flash
+          PROBE_NEW_URLS: "1"
+          BROWSER_ENABLED: "1"
+          BROWSER_AUTO: "1"
+          BROWSER_HEADLESS: "1"
+          BROWSER_EXECUTABLE_PATH: /usr/bin/google-chrome
+          ALLOW_HEURISTIC_FALLBACK: "0"
+
+      - name: Commit data
+        run: |
+          git config user.name "sentinel-bot"
+          git config user.email "sentinel-bot@users.noreply.github.com"
+          git add bundles data state config
+          git diff --cached --quiet || git commit -m "pulse: $(date -u +%F) [skip ci]"
+          git push

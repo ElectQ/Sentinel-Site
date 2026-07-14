@@ -1,0 +1,387 @@
+# Sentinel-Site monitored sources.
+# Toggle with enabled; prefer rss_url when known. id is stable (Megatron tags src:<id>).
+
+sources:
+  - id: zdi-advisories
+    name: Zero Day Initiative Advisories
+    home_url: https://www.zerodayinitiative.com/advisories/published/
+    collect_mode: html_llm
+    tags: [advisory]
+    enabled: true
+    notes: "/rss/ returns HTML; use discover/heuristic on published list"
+
+  - id: mixbytes-blog
+    name: MixBytes Blog
+    home_url: https://mixbytes.io/blog
+    collect_mode: html_llm
+    tags: [blog]
+    enabled: true
+
+  - id: ibm-xforce
+    name: IBM Security Intelligence X-Force
+    home_url: https://www.ibm.com/think/x-force
+    allowed_hosts: [ibm.com, www.ibm.com]
+    collect_mode: browser_llm
+    tags: [blog, vendor]
+    enabled: true
+    ssl_verify: false
+    browser_fallback: true
+    access_status: intermittent
+    access_issue: historical_proxy_tls; direct HTTP 200 and TLS verification passed in the latest check
+    access_tested_at: "2026-07-14"
+    access_tested_via: local_proxy_127.0.0.1:7890
+    notes: "Legacy securityintelligence.com URL redirects here; browser fallback retained for intermittent TLS/proxy issues"
+
+  - id: unknowncheats-ac
+    name: UnknownCheats Anti-Cheat
+    home_url: https://www.unknowncheats.me/forum/general-programming-and-reversing/
+    strip_query_keys: [s]
+    collect_mode: browser_llm
+    tags: [forum]
+    enabled: true
+    browser_fallback: true
+    access_status: browser_required
+    access_issue: direct_http_403; Playwright list and thread content validated
+    access_tested_at: "2026-07-14"
+    access_tested_via: local_proxy_127.0.0.1:7890
+    notes: "General Programming and Reversing board; strip volatile vBulletin session query; Playwright + LLM"
+
+  - id: idov31-posts
+    name: Ido Veltzman Posts
+    home_url: https://idov31.github.io/posts
+    collect_mode: html_llm
+    tags: [blog]
+    enabled: true
+
+  - id: redheadsec
+    name: RedHeadSec
+    home_url: https://redheadsec.tech/
+    rss_url: https://redheadsec.tech/rss/
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: cocomelonc
+    name: cocomelonc
+    home_url: https://cocomelonc.github.io/
+    rss_url: https://cocomelonc.github.io/feed.xml
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: yage-ai
+    name: yage.ai
+    home_url: https://yage.ai/
+    rss_url: https://yage.ai/feeds/atom.xml
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: yage-share
+    name: yage.ai share (Deep News)
+    home_url: https://yage.ai/share/
+    rss_url: https://yage.ai/share/feed.xml
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+    notes: "Also feed-en.xml for English"
+
+  - id: rastamouse
+    name: Rasta Mouse
+    home_url: https://rastamouse.me/
+    rss_url: https://rastamouse.me/rss/
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: naksyn-posts
+    name: Naksyn posts
+    home_url: https://naksyn.com/posts/
+    rss_url: https://naksyn.com/atom.xml
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: lorenzomeacci
+    name: Lorenzo Meacci
+    home_url: https://lorenzomeacci.com/
+    collect_mode: html_llm
+    tags: [blog]
+    enabled: true
+
+  - id: voltatech-blog
+    name: VoltaTech Blog
+    home_url: https://voltatech.in/blog/
+    rss_url: https://voltatech.in/feed_rss_created.xml
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: xreous
+    name: Xreous
+    home_url: https://xreous.io/posts/
+    collect_mode: browser_llm
+    tags: [blog]
+    enabled: true
+    browser_fallback: true
+    access_status: browser_required
+    access_issue: direct_http_403; Playwright list validated
+    access_tested_at: "2026-07-14"
+    access_tested_via: local_proxy_127.0.0.1:7890
+    notes: "Posts index; plain HTTP returns 403 in the tested environment, then Playwright + LLM"
+
+  - id: aff-wg
+    name: Adversary Fan Fiction Writers Guild
+    home_url: https://aff-wg.org/
+    rss_url: https://aff-wg.org/feed/
+    collect_mode: rss
+    tags: [blog, lab]
+    enabled: true
+
+  - id: tradecraftgarden
+    name: Tradecraft Garden
+    home_url: https://tradecraftgarden.org/index.html
+    collect_mode: html_llm
+    tags: [project]
+    enabled: true
+
+  - id: deadeclipse-blog
+    name: Nightmare Eclipse (Blogspot)
+    home_url: https://deadeclipse666.blogspot.com/
+    rss_url: https://deadeclipse666.blogspot.com/feeds/posts/default?alt=rss
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: zusda
+    name: zusda
+    home_url: https://zusda.github.io/
+    collect_mode: html_llm
+    tags: [blog]
+    enabled: true
+
+  - id: sud0ru
+    name: Sud0Ru
+    home_url: https://sud0ru.ghost.io/
+    rss_url: https://sud0ru.ghost.io/rss/
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: fushuling
+    name: fushuling
+    home_url: https://fushuling.com/
+    collect_mode: html_llm
+    tags: [blog]
+    enabled: true
+
+  - id: otterpwn
+    name: OtterPwn Blog
+    home_url: https://blog.otterpwn.com/
+    rss_url: https://blog.otterpwn.com/index.xml
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: fluxsec
+    name: FluxSec
+    home_url: https://fluxsec.red/
+    rss_url: https://fluxsec.red/rss.xml
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: r136a1
+    name: R136a1
+    home_url: https://r136a1.dev/
+    rss_url: https://r136a1.dev/feed.xml
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: denizhalil-blogs
+    name: DenizHalil Blogs
+    home_url: https://denizhalil.com/blogs/
+    rss_url: https://denizhalil.com/feed/
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: lolbas
+    name: LOLBAS Project
+    home_url: https://lolbas-project.github.io/
+    collect_mode: html_llm
+    tags: [project]
+    enabled: true
+
+  - id: cobaltstrike-blog
+    name: Cobalt Strike Blog
+    home_url: https://www.cobaltstrike.com/blog
+    collect_mode: browser_llm
+    tags: [blog, vendor]
+    enabled: true
+    browser_fallback: true
+    access_status: browser_required
+    access_issue: direct_http_403; Playwright list validated with the local proxy
+    access_tested_at: "2026-07-14"
+    access_tested_via: local_proxy_127.0.0.1:7890
+    notes: "No working RSS found; use Playwright + LLM"
+
+  - id: bruteratel-blog
+    name: Brute Ratel Blog
+    home_url: https://bruteratel.com/blog/
+    rss_url: https://bruteratel.com/feed.xml
+    collect_mode: rss
+    tags: [blog, tool]
+    enabled: true
+
+  - id: safebreach-blog
+    name: SafeBreach Blog
+    home_url: https://www.safebreach.com/blog/
+    collect_mode: browser_llm
+    tags: [blog, vendor]
+    enabled: true
+    browser_fallback: true
+    access_status: intermittent
+    access_issue: historical_direct_http_403; direct HTTP 200 and Playwright list validated in the latest check
+    access_tested_at: "2026-07-14"
+    access_tested_via: local_proxy_127.0.0.1:7890
+    notes: "Browser mode retained because direct HTTP has intermittently returned 403"
+
+  - id: sandflysecurity-blog
+    name: Sandfly Security Blog
+    home_url: https://sandflysecurity.com/blog
+    rss_url: https://sandflysecurity.com/blog/rss.xml
+    collect_mode: rss
+    tags: [blog, vendor]
+    enabled: true
+
+  - id: hacktron-blog
+    name: Hacktron AI Blog
+    home_url: https://www.hacktron.ai/blog
+    rss_url: https://www.hacktron.ai/rss.xml
+    collect_mode: rss
+    tags: [blog, vendor]
+    enabled: true
+
+  - id: whiteknightlabs-blog
+    name: White Knight Labs Blog
+    home_url: https://whiteknightlabs.com/blog/
+    rss_url: https://whiteknightlabs.com/feed/
+    collect_mode: rss
+    tags: [blog, lab]
+    enabled: true
+
+  - id: systeminformer-blog
+    name: System Informer Blog
+    home_url: https://www.systeminformer.com/blog
+    collect_mode: html_llm
+    tags: [blog, project]
+    enabled: true
+    notes: "No working RSS found; direct HTML + LLM"
+
+  - id: xlab-qianxin
+    name: QiAnXin XLab Blog
+    home_url: https://blog.xlab.qianxin.com/
+    rss_url: https://blog.xlab.qianxin.com/rss/
+    collect_mode: rss
+    tags: [blog, lab]
+    enabled: true
+
+  - id: adsecurity
+    name: ADSecurity.org
+    home_url: https://adsecurity.org/
+    rss_url: https://adsecurity.org/?feed=rss2
+    collect_mode: rss
+    tags: [blog, ad]
+    enabled: true
+
+  - id: outflank-blog
+    name: Outflank Publications
+    home_url: https://www.outflank.nl/bloG
+    collect_mode: browser_llm
+    tags: [blog, lab]
+    enabled: true
+    browser_fallback: true
+    access_status: browser_required
+    access_issue: direct_http_403; Playwright publications list validated
+    access_tested_at: "2026-07-14"
+    access_tested_via: local_proxy_127.0.0.1:7890
+    notes: "Plain HTTP returns 403 in the tested environment; Playwright loads the publications page"
+
+  - id: g3tsyst3m
+    name: G3tSyst3m Infosec Blog
+    home_url: https://g3tsyst3m.com/
+    rss_url: https://g3tsyst3m.com/feed.xml
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: z3bra
+    name: Z3bra
+    home_url: https://z3bra.cat/
+    rss_url: https://z3bra.cat/index.xml
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: cymulate-blog
+    name: Cymulate Blog
+    home_url: https://cymulate.com/blog/
+    collect_mode: html_llm
+    tags: [blog, vendor]
+    enabled: true
+    notes: "No working RSS found; direct HTML + LLM"
+
+  - id: xpnsec-blog
+    name: XPN InfoSec Blog
+    home_url: https://blog.xpnsec.com/
+    rss_url: https://blog.xpnsec.com/rss.xml
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: zgao
+    name: Zgao Blog
+    home_url: https://zgao.top/
+    rss_url: https://zgao.top/feed/
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: redsiege-blog
+    name: Red Siege Blog
+    home_url: https://redsiege.com/red-siege-blog/
+    collect_mode: html_llm
+    tags: [blog, lab]
+    enabled: true
+    browser_fallback: true
+    access_status: intermittent
+    access_issue: historical_feed_http_403; home page direct HTTP 200 and browser fallback validated
+    access_tested_at: "2026-07-14"
+    access_tested_via: local_proxy_127.0.0.1:7890
+    notes: "Site feed is intermittently 403; use HTML + LLM with Playwright fallback"
+
+  - id: itm4n
+    name: itm4n Blog
+    home_url: https://itm4n.github.io/
+    rss_url: https://itm4n.github.io/feed.xml
+    collect_mode: rss
+    tags: [blog]
+    enabled: true
+
+  - id: cognisys-labs
+    name: Cognisys Group Labs
+    home_url: https://labs.cognisys.group/
+    rss_url: https://labs.cognisys.group/feed.xml
+    collect_mode: rss
+    tags: [blog, lab]
+    enabled: true
+
+  - id: bhis-blog
+    name: Black Hills Information Security Blog
+    home_url: https://www.blackhillsinfosec.com/blog/
+    rss_url: https://www.blackhillsinfosec.com/blog/feed/
+    collect_mode: rss
+    tags: [blog, lab]
+    enabled: true

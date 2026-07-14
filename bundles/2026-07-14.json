@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "source_id": "blog_watch",
+  "collect_date": "2026-07-14",
+  "collect_window": {
+    "start": "2026-07-14T00:00:00+00:00",
+    "end": "2026-07-14T06:56:05.027413+00:00",
+    "hours": 6
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "",
+    "commit": ""
+  },
+  "stats": {
+    "total": 0,
+    "by_kind": {},
+    "by_via": {},
+    "by_source": {},
+    "failed_lists": [],
+    "sources_ok": 44,
+    "sources_failed": [],
+    "baselines": 44,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 7,
+      "rss": 27
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 0,
+      "calls": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 0
+    },
+    "by_content_status": {}
+  },
+  "items": []
+}
