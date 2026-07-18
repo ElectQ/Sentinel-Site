@@ -1,139 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-07-19",
-  "generated_at": "2026-07-18T21:59:25.299618+00:00",
-  "item_count": 5,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:6c0babc34d23df5f",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: IDA Pro 9.4 classinformer & SigMaker",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-07-18T21:56:54.836701+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762908-ida-pro-9-4-classinformer-sigmaker.html",
-      "title": "IDA Pro 9.4 classinformer & SigMaker",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762908-ida-pro-9-4-classinformer-sigmaker.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-07-18T21:57:42.734192+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:65cf6e7d085b5f6c",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads-post4744493.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-07-18T21:56:54.836701+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads-post4744493.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-07-18T21:57:53.611344+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:c9207c9fb7ab3ef2",
-      "kind": "publish",
-      "text": "yage-share published: Agent 的基础能力正在收敛，产品化平台却分成了三条路",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-18T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/agent-platform-state-ownership-20260718.html",
-      "title": "Agent 的基础能力正在收敛，产品化平台却分成了三条路",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\nAI 产品与平台\n开发工具\n基础能力越像，产品化平台越让人困惑\nClaude Code、Codex、Cursor 和 OpenCode\n已经越来越像一类可以替换的工作环境。它们当然各有差异，但从用户的工作边界看，核心能力正在接近：让模型读写文件、运行命令、调用工具、查看报错，再根据结果继续修改。我们在\n《AI\n脚手架正在商品化，人的工作变成判断边界》\n中讨论过，这些通用执行能力正在成为标准配置。\n写代码的 Agent 工具越来越像，开发者自然会觉得，让 Agent\n在线上为客户工作的云平台应该也差不多。似乎只要列一张表，比一比谁有\nSandbox、memory、streaming、定时任务和 tool loop，就能选出答案。\n真正准备把 Demo 交给用户时，事情却变得更乱了。同样叫\nmemory，有的平台指业务数据库里的记录，有的平台指某位客户助手的局部状态，还有的平台记录一项任务已经完成的步骤。同样叫\nSandbox，它可能跟着后台程序使用，也可能只是一次任务的临时工作目录。Feature\n名称越来越像，真正写代码时却完全不是一回事：数据存在哪里，下一条消息发给谁，任务中断后从哪里继续，各个平台给出的答案不同。\n这不是一张更详细的功能表就能解决的问题。差别从创建 Agent\n的第一步就开始了：有的平台先让你部署一个程序，有的平台先让你确定这个\nAgent\n是谁，还有的平台先让你写下任务要经过哪些步骤。三种起点会继续决定状态放在哪里、中断后恢复什么，以及应用最终在哪个位置形成依赖。\n三种平台，第一步就不一样\n假设你要做一个客服 Agent。客户发来问题，Agent\n查资料、运行工具，遇到敏感操作时等待人工批准，几小时后再继续。无论看哪家产品页，你都能找到状态保存、实时输出、定时任务和\nSandbox。差别要到开始实现时才出现。\n第一种平台让你先部署一个 Service 或\nWorker。程序怎样运行，平台替你负责；这位客户是谁、任务做到哪里，由你的应用和数据库记录。\n第二种平台让你先给这位客户的 Agent 一个固定\nID。以后客户再发消息，平台负责把消息送回管理同一个 Agent\n的地方。局部状态和连接也跟着这个 ID 走。\n第三种平台让你先把工作写成一连串步骤：查资料、调用工具、等待批准、生成回复。平台记录这一次任务走到了哪一步，条件满足后再继续。\n所以市场上出现了三种有代表性的路线：先运行程序，先确定 Agent\n是谁，或者先定义任务怎样往下走。Koyeb、Cloudflare 和 Vercel\n分别清楚地展示了这三种起点。\n第一步不同，后面找回状态的方法也不同。当前进程结束以后，有的平台只能重新启动计算，业务状态要由应用去外部数据库查询；有的平台可以根据\nAgent ID\n找回这个对象的局部状态；还有的平台根据一次任务的运行编号找回执行进度，再根据另一个编号恢复\nSandbox 文件。这才是三条路线更深的分界。\n实现同一个客服 Agent\n时，三种平台分别要求开发者先部署程序、确定 Agent\n身份或写下任务步骤\nKoyeb：先有运行环境，再把\nAgent 放进去\n把客服程序放在 Koyeb\n上，平台首先保证的是这段程序继续运行。代码更新或者实例故障以后，旧实例可能被替换。新实例会启动，但不会带回原来的进程、内存和网络连接。它也不知道某张工单处理到了哪一步。\n所以应用需要拿自己的工单 ID 或客户 ID，去 Postgres\n等外部数据库读回业务状态，再继续处理。这就是 Koyeb\n路线的分工：平台恢复计算，应用恢复具体 Agent 的工作进度。\n在 Koyeb 里，这段客服程序以 Service\n的形式运行。接收网页请求的程序和专门处理后台任务的\nWorker，都由平台负责网络、健康检查、实例替换和扩缩容。\nKoyeb Services\n文档\n描述的就是这套运行方式。Koyeb\n无需理解“工单”或“客户助手”是什么，它只需要把程序运行起来。\n这种方式保留了传统 SaaS\n的开发习惯。全局查询、跨客户统计和数据修复仍围绕中心数据库进行；特定\nPython\n依赖或原生程序也可以一起放进容器。容器化业务代码通常可以在其他环境复用，但迁移时仍要重新处理部署配置、网络和配套托管服务。\nCloudflare：先有长期身份，再让事件找到它\n把同一个客服 Agent 放在 Cloudflare\n上，平台首先记住的是：这条消息属于哪位客户。A\n客户再次发来消息时，系统根据他的 Agent\nID，找到之前保存的局部状态，再把新消息送到管理这个 Agent 的地方。即使\nAgent 已经休眠，ID 仍然不变。\nCloudflare\nAgents 状态文档\n描述了这套方式。每个 Agent 都可以有自己的 SQLite\n状态。程序不需要永远在线，下一条消息到来时，平台仍能通过同一个 ID\n找回它。底层负责这件事的能力叫 Cloudflare Durable Objects。\n这个 ID 解决了“消息该送给谁”，但不会自动解决所有消息顺序。Agent\n等待模型 API\n返回时，其他事件仍可能交错执行；网络重试也可能把同一条消息送来两次。\nCloudflare\nDurable Objects\n实践指南\n解释了这个边界。应用仍要过滤重复请求、识别顺序，并确保同一个动作重试两次不会重复扣款或发信。\n麻烦会在全局查询时出现。每位客户的状态分别放在自己的对象里，开发者不能用一条普通\nSQL\n查询直接关联全部数据。产品要统计所有工单、统一对账或批量修改，通常还需要\nPostgres 或对象存储，把各个 Agent 产生的关键信息汇总起来。\nVercel：先有一次任务，再决定下一步执行什么\n把客服任务放在 Vercel 上，平台首先记住的是这张工单走到了哪一步。Agent\n查完资料，准备退款时需要等待人工批准。程序可以先停下来，不必让服务器一直空转。批准结果回来以后，任务从后面的步骤继续。\n负责记录这段进度的是 Vercel Workflow。\nVercel Workflow\n概念文档\n说明，平台会保存已经完成步骤的输入和输出。普通 Function\n调用本身不保存这些进度，真正可以恢复的是一次 Workflow run。\n如果 Agent 还要隔离运行代码或命令，可以使用\nVercel\nSandbox\n。Sandbox\n能保存文件系统快照，之后恢复代码目录和中间文件，但不会恢复此前的内存、活动进程、网络连接或函数调用栈。它保存的是工作目录，不是那段仍在运行的程序。\n因此，一张客服工单会同时出现几套编号：业务数据库里的工单 ID、Workflow\nrun ID，以及需要时使用的 Sandbox\nID。平台不会自动知道它们属于同一件事。\nvercel/workflow#2376\n中的临时建议，是由应用在外部数据库保存业务编号与\nWorkflow 编号的关系，避免同一业务意外启动多个任务。\n文件可以恢复，也不代表应用永远能找到它。Vercel 自己的 eve 项目曾把\nSandbox\n名称与部署版本绑定，结果新版本部署后失去了旧工作目录的正确引用。\nvercel/eve#508\n反映的是应用怎样关联不同组件，不是底层快照丢失。我们此前分别讨论过\nVercel\nAI Cloud 的产品整合\n和\neve\n把 Agent 定义成目录的思路\n；把这些能力放在一起看，Vercel\n的中心仍是一项用户发起、可以暂停和恢复的任务。\n进程结束以后，平台靠什么找回状态\n这里说的状态不只是数据库里的一段文字。下一条消息该送给谁，定时任务该唤醒谁，工作目录恢复到哪个版本，一项任务已经完成哪些步骤，都属于产品继续运行所需的状态。\nKoyeb 恢复的是计算服务。实例退出后，平台根据 Service\n配置启动替代实例；具体 Agent\n的身份、任务进度和业务记录，则由应用使用自己的业务 ID\n去外部数据库和队列中找回。计算由平台恢复，业务状态由应用恢复，这种不对称正是这条路线的特点。\nCloudflare 原生认识 Agent ID。这个 ID 同时用于消息路由和局部 SQLite\n状态。对象休眠或当前实例结束后，新事件仍可以通过同一个 ID\n找回对应状态。应用仍要另外处理全局查询、重复消息和业务顺序。\nVercel 原生认识的是一次执行中的不同编号。Workflow run ID\n找回已经完成的步骤，Sandbox 或 snapshot ID\n找回文件系统，真实工单则保留自己的业务\nID。应用需要保存这些编号之间的关系，平台不会自动把它们合成同一个长期\nAgent。\n进程结束以后，Koyeb、Cloudflare 和 Vercel\n分别通过 Service 配置、Agent ID 以及 Workflow 与 Sandbox\n编号恢复不同部分\n所以，“平台面向什么”并不只是一种产品理念。它直接决定平台原生保存哪部分状态，又用什么编号把它找回来。依赖也会在同一个位置形成：Koyeb\n的部署配置与外部服务，Cloudflare 的对象 ID 与局部状态，Vercel\n的步骤边界与多套运行编号。\n三种路线不是三选一\n计算服务、长期身份和任务执行，并不是三个互斥的完整产品。它们描述的是三类不同责任：服务需要继续运行，对象需要保持同一个身份，任务需要记住已经做到哪里。一套真实系统可能同时需要三者。\n因此，混合部署是自然选项。网页和审批流程可以使用面向 Workflow\n的平台，需要长期连接和特殊运行环境的 Worker\n可以放在容器服务上，少数真正需要固定身份和局部协调的对象也可以单独管理。与此同时，订单、权限、账目和最终业务记录仍应进入标准数据库或对象存储，不能让运行时状态代替产品的数据总账。\n组合越多，运维边界也越多。团队需要维护多套发布流程、权限、账单和监控。专用能力省下的开发工作超过这些新增成本时，混合部署才有意义。否则，较少的平台和清楚的数据边界通常更容易验证。\n选平台以前，先判断\nAgent 在你的产品里是什么\n平台选型的第一步，可以从三个问题开始：产品首先需要运行一类长期程序吗？它的中心是大量反复接收消息、各有局部状态的长期对象吗？还是用户启动一项工作，程序需要等待数小时或数天，再从后面的步骤继续？\n这三个问题分别指向计算服务、长期身份和任务执行。更具体的检查方法是：当前进程消失以后，你准备用哪个\nID 找回工作所需的状态？如果答案是自己的业务 ID、Agent ID 或 Workflow run\nID，系统的主要责任边界也就清楚了。\n最后的判断不应只来自顺利跑通的\nDemo。可以在运行时替换实例，向同一对象重复发送事件，在 Workflow\n等待期间发布新版本，或者在 Sandbox\n工作到一半时中断会话。随后检查服务是否继续，消息是否重复处理，任务是否从正确步骤恢复，业务记录是否仍然完整。\nAgent 的通用执行能力确实正在收敛，但从 Demo\n到产品之间仍有一层选择，统一 feature list\n无法替你回答：你准备让平台长期管理什么？看清这个问题，Koyeb、Cloudflare\n和 Vercel 才重新变得可以比较。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/agent-platform-state-ownership-20260718.html",
-      "content_chars": 4635,
-      "content_sha256": "3a1af3e93ad5c44c1648bdda7e2430b0917b15b354984062251c300dadaeece7",
-      "content_fetched_at": "2026-07-18T21:58:04.599515+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:bbebfb7790463ed4",
-      "kind": "publish",
-      "text": "yage-share published: LLM 需要一个更小的可执行世界：DSL、FastAPI 与 Context Infrastructure",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-18T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/llm-smaller-executable-world-20260718.html",
-      "title": "LLM 需要一个更小的可执行世界：DSL、FastAPI 与 Context Infrastructure",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\nAI 编程\n开发工具\nDSL\n最大的缺点，正在变得没那么重要\n我以前做 AI\n控制天文望远镜时，认真考虑过一条路线：设计一门只允许拍照、对焦、指向星体等有限操作的小型语言。这就是\nDSL，针对特定领域设计的编程语言。它能把 AI\n的活动范围限制在安全边界里，问题是成本太高。设计语言、编写解释器，再补上循环和分支，做着做着就会重新发明一门编程语言。所以我在\n当时的文章\n里放弃了这条路，最后选择\nPython、受限类库、AST 分析和沙箱。\n后来，AI 改变了这笔账。我在\n《一次性软件与被压缩的现实》\n里写过：制造专用工具的成本大幅下降后，为一个很小、甚至只出现一次的需求现场写工具，也可能比凭经验凑合更经济。这个判断同样适用于\nDSL。AI 不仅能使用一门现成语言，也能帮人试验抽象、写解析器、补 validator\n和准备示例。\n2026 年 7 月 14 日，分布式系统工程师 Unmesh Joshi 发表了\nDSLs Enable\nReliable Use of LLMs\n。他提出两阶段做法：先让人和 LLM\n通过真实实现寻找领域概念，把稳定部分做成 DSL；语言稳定后，再让 LLM\n把自然语言需求翻译成 DSL\n程序，交给编译器、模拟器和测试执行。生成后的程序进入代码库，成为后续修改时的\nsource of truth\n。\n这篇文章让我重新理解了 DSL 的价值。它不只是一种新语法，更是在给 LLM\n建一个更小的可执行世界。过去最难承受的是建造这个世界的成本；现在，这项成本也在下降。\nLLM\n需要的不是更多道路，而是一个更小的世界\n自然语言给 LLM\n的表达空间几乎没有边界。同一个要求可以有很多说法，省略的前提也很难穷尽。模型如果直接用自然语言向系统发指令，系统连结果怎么解析都不一定知道。\nPython 和 JavaScript\n消除了语法上的含糊。代码能运行、能复现，也能测试。但通用编程语言仍给模型留下大量选择：它可以调用文件系统、创建线程、打开网络连接，也可以用几十种方法实现同一个\ndelay。语法变精确了，模型能触发的外部效果依然很多。\n领域 API 和 DSL\n又缩小了一层。系统只开放拍照、对焦、启动任务、查询状态这些有限动作，并规定哪些组合合法。模型不再面对整个操作系统，只需要在团队已经理解的动作里选择。这里所说的“可执行语义世界”，指的就是模型能表达哪些动作、这些动作怎样组合，以及系统会检查哪些规则。\n自然语言、通用编程语言与领域边界逐层缩小\nLLM 的可执行世界\n世界缩小以后，系统会在执行前排除一部分无效路径。检查十个领域动作及其组合，也比审计任意生成的\nPython\n程序容易。不过，缩小世界只能排除规则已经覆盖的错误，正确答案不会因此自动出现。\nFastAPI 其实已经很像 DSL\nFastAPI 是一个用 HTTP 接口暴露 Python\n操作的服务端框架。一个更常见的例子是\nGitHub\nREST API\n：agent 可以通过固定 endpoint 创建 issue、读取 pull request\n或触发 workflow，无须理解 GitHub 后端怎样保存对象和调度任务。用 FastAPI\n写出的领域服务也在做同一件事，把内部实现藏在一组稳定操作后面。\n这已经在缩小 agent 的世界。API\n告诉模型有哪些原子动作，也可以通过认证、权限和参数校验限制每个动作。不过，控制面变小，不代表模型最终能造成的影响一定小。GitHub\nAPI 可以触发一份\nGitHub\nActions workflow\n，而 workflow 里的\nrun\n仍能执行 shell\ncommand，读写文件或访问网络。判断边界是否足够窄，最终还是要看动作会触发哪些外部效果。\nAPI 还有另一个特点：组合逻辑通常留在 agent 里。模型创建 pull\nrequest，查看 CI\n状态，再决定是否合并。完整计划存在于运行轨迹中，不一定有一份独立文件。前三步已经改变系统后，第四步失败，回滚也会变得麻烦。\nGitHub Actions workflow 又向 DSL 迈了一步。YAML\n文件不只列出单个动作，还保存触发条件、jobs、依赖关系和完整步骤。系统可以在产生副作用之前解析它、检查一部分跨步骤规则、交给人\nreview，也可以把它存进 Git，日后 diff 或\nreplay。可以用一个不严格但实用的公式理解两者关系：\nDSL ≈ 领域 API + 组合规则 + 可保存的程序表示\n如果 FastAPI 的某个 endpoint 接收一整份包含步骤、依赖和错误处理的\nJSON plan，这个 request body 就在承担 DSL\n程序的角色，服务端负责解释和执行它。反过来，一门 DSL\n最终也常常编译成一连串 API calls。两者没有清晰的敌我边界。\nDSL 与 API 最适合叠在一起\n交互式任务适合直接调用 API。模型提交一次修改，读到 CI\n错误，再决定下一步，观察和行动不断交替。提前写完整计划，反而可能拿走它根据现场情况调整的能力。\n另一类任务需要先看全貌。部署计划、权限变更、分布式故障场景往往包含多个步骤和跨步骤约束。系统最好在第一步执行前，就知道后面会修改什么、失败后如何处理。DSL\n或结构化 JSON plan 在这一层保存完整意图，parser 和 validator\n先做检查，通过后再交给 FastAPI、MCP 或 CLI 执行。\nContext Infrastructure、DSL 计划层与\nFastAPI 执行层组成持续进化的闭环\n因此，FastAPI 可以负责原子操作，DSL\n负责描述完整计划。前者处理“具体怎样执行”，后者处理“这些操作怎样组成一个领域任务”。系统不需要在两者之间二选一。\n创建之后，不必立刻决定它能活多久\n传统团队引入 DSL\n以前，通常要先回答一个问题：这门语言以后会不会反复使用？解析器、validator、示例、迁移工具都需要人来维护，如果没有足够使用量，前期投入很难收回。\nAI\n降低了这些工件的生产成本，也改变了决策顺序。团队可以先为眼前几个相似任务建立领域边界，实际运行后再决定它的寿命。这里不要求\nDSL 用完即弃，也不要求它从第一天起就是永久基础设施。\n如果它反复解决同类问题，可以继续留在代码库，逐步提升为稳定组件；如果只有几个\nprimitive\n有用，就把它们拆出来；如果对应任务消失了，归档或删除也没有问题。生命周期从创建前的预测，变成了使用后的观察结果。\n保留代码本身成本不高，真正的代价是维护和上下文污染。实验 DSL 可以留在\narchive\n中，却不必默认加载给每一次任务。稳定、反复出现的部分再进入活跃文档、examples\n和工具描述。这样既保留未来复用的可能，也不会让模型每次面对一堆过期接口。\nDSL 也可以成为\nContext Infrastructure 的一部分\n项目使用 DSL 以后，会积累三类材料：成功运行的程序、失败时的 validator\nerrors，以及人类对错误结果的纠正。下一次任务到来时，这些材料比一份抽象语法说明更有用。模型可以看到这个项目过去怎样表达同类任务、哪些组合会失败、团队后来修改了什么。\n如果系统持续捕获这些记录，从中提炼稳定模式，再按任务需要加载相关部分，它们就进入了我此前讨论的\nContext\nInfrastructure\n。这套基础设施不只是保存聊天记录，而是把项目自己的判断、示例和纠正组织成模型能继续使用的\ncontext。\nContext Infrastructure 与 DSL\n的约束力度不同。前者告诉模型什么重要、过去怎样判断；后者直接规定能调用什么动作，以及这些动作怎样组合。一个影响模型如何理解任务，另一个限制模型最终能提交什么程序。\n每次执行又会产生新的候选材料。成功程序可以成为后续示例；失败可能来自模型写错程序，也可能暴露语言、validator\n或任务本身的问题。人和系统先分类、提炼这些记录，确认稳定模式后再更新\nContext。模型消费代码库中的 context\n完成任务，经过筛选的结果再回到代码库，推动这套本地语言继续变化。\n缩小世界的代价，是可能把正确答案一起删掉\n领域边界太宽，模型仍然有大量无用路径；边界太窄，新需求可能根本无法表达。这里的判断重点不在\nDSL\n是否图灵完备，而在两个更具体的问题：模型最终能触发哪些外部效果，也就是\neffect surface\n；系统又允许这些动作怎样组合。\n即便 DSL 程序通过 parser 和\ncompiler，也只能证明它符合已经写下来的规则。业务结果仍需要独立测试。否则，同一个模型可能同时误解任务、生成程序，又写出与误解一致的\nexpectation，最后得到一份顺利通过但方向错误的结果。\nTickloom\n展示了这几层怎样组合。它用 Java internal DSL\n描述服务器、客户端、读写和网络故障，再用确定性模拟器、断言和一致性\nchecker 检查场景行为。DSL\n限制表达，模拟器负责执行，测试判断已有断言覆盖到的结果。\n不过，Tickloom 是一个工程案例，不是 DSL\n可靠性的系统实验。项目没有比较同一批任务在自然语言、JSON、普通 Java 和\nDSL 下的生成成功率，也没有跨模型\nbenchmark。它能说明机制如何工作，不能证明 DSL 已经普遍提高 LLM\n的任务正确率。\n从“给模型写\nprompt”到“给模型建世界”\nLLM 项目早期常把主要精力放在 prompt\n上：补一条规则，增加一个例子，再提醒模型不要犯上次的错误。随着项目积累，真正稳定的资产可能转移到别处：领域中的对象和动作、受限\nAPI、DSL、validator、成功程序，以及每次失败后留下的纠正。\nFastAPI 定义模型可以调用的原子能力，DSL\n把这些能力组合成一份完整计划，Context Infrastructure\n保存项目为什么这样设计，以及过去使用中学到了什么。它们共同把通用模型带进一个项目自己的可执行世界。\nJoshi 的文章讨论的是 LLM 如何与 DSL\n配合。沿着成本变化继续推一步，它还提示了另一种可能：AI\n既能在受限世界里工作，也能降低建造和修改这个世界的成本。团队可以更早建立专用边界，把它放进代码库，再让真实使用决定哪些部分继续存在。\n这条路线仍有清楚的前提。领域动作需要相对稳定，系统要能检查关键结果，边界也不能窄到排除正常需求。条件满足时，给模型写更长的说明未必是最有效的投入。给它建立一个更小、能执行、会积累经验的世界，可能更接近可靠的工程系统。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/llm-smaller-executable-world-20260718.html",
-      "content_chars": 4416,
-      "content_sha256": "b5f845334664f05f6b21c0f4057bf6128e19ac1ed0a77b6425b03c5966f69bd1",
-      "content_fetched_at": "2026-07-18T21:58:04.785671+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:10f0f7e705484e00",
-      "kind": "publish",
-      "text": "yage-share published: BackendForge：AI 已经能写完整 App，评测也得学会追问",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-17T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/backendforge-adaptive-benchmark-20260717.html",
-      "title": "BackendForge：AI 已经能写完整 App，评测也得学会追问",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI 编程\nAI Agent\n以前测试 AI 写代码，常见做法是给它一个函数，再跑几条单元测试。现在\nAgent\n已经开始从空目录写整套后端。问题也随之变了：我们怎么知道这套东西真的能用？\n拿一个推送服务来说。Alice 创建了一个应用，Bob 不该看到它。Alice\n删除应用后，里面的消息也该一起消失。系统拒绝一次错误请求后，数据库不能悄悄多出一条脏数据。每条规则单看都不复杂。可同一组接口换个人、换个操作顺序，正确答案就会变。第一版测试很难把所有情况都想到。\nBackendForge\n想解决的就是这个问题。研究者先写了 7,250 项测试，再让 Agent\n专门寻找这套测试漏掉了什么，最后补进 640 项。测试数量只多了\n+8.8%，同一批 GPT-5.5 代码却从 31/56 个任务全通过，降到 16/56。\n这批代码没有改变，变的是评分用的题库。BackendForge\n带来的启发也在这里：当 AI 开始写整套应用，benchmark\n不能只把题目变大。出题方式也要从一次写完的笔试，变成一场会继续追问的面试。\nBenchmark 是怎么一步步变大的\nHumanEval\n测的是一个函数。模型读一段需求，写出几十行代码，然后跑单元测试。\nSWE-bench\n把模型放进真实代码仓库。它要读\nissue、找到相关文件，再提交一个修复补丁。\nFEA-Bench\n测得更大：Agent 不只修 bug，还要实现一个跨越多个文件的新功能。\n现在，评测对象又变成了整套\nApp。模型要自己处理数据库、接口、登录和权限，最后交出一个能启动、能接收请求的系统。BackendForge\n就属于这一代 benchmark。\nAI 编程 benchmark 的任务单位从函数、仓库\nbug、跨文件 feature，扩大到完整 app/service；每一代对应\nHumanEval、SWE-bench、FEA-Bench 和 BackendForge 等代表。\n任务每变大一级，测试也会多一层难度。一个函数通常调用一次就能判断对错。整套服务要连续做完一串动作，才能知道哪里出了问题。\nBackendForge 不是第一个\n完整应用的 benchmark 已经有不少。\nBaxBench\n让模型生成后端，同时检查功能和安全问题。\nAppForge\n测安卓应用，会把成品装进模拟器，真的点开界面操作。\nVibe Code Bench\n测网页应用，再让浏览器 Agent 按照用户流程一步步验收。\n这些 benchmark 已经在测整套产品。BackendForge\n多做的一步，是让题库在发布前继续找漏。\n它收录了 56 个后端任务，一共有 2,345 个 API\n操作。模型生成代码后，研究者把服务装进 Docker，再用真实 HTTP\n请求测试。整套评测一共发出了 24,798 次请求。\n这些请求会串在一起。第一次请求创建数据，第二次换成另一个用户读取，第三次再删除，最后检查数据库里还剩下什么。前面\nAlice 和 Bob 那类规则，只有这样才能测出来。\n原来的 7,250\n项测试已经会检查这些跨越多次请求的规则。类似思路也不是新发明，微软的\nRESTler\n很早就在自动尝试不同的 API 调用顺序。BackendForge 的变化，是让测试在构建\nbenchmark 时主动寻找自己的遗漏。\n让题库继续追问\nBackendForge 先准备一套参考服务。你可以把它理解成标准答案。然后，三个\nAgent 围着它反复出题、检查和修正。\n第一个 Agent 负责出题，论文里叫 Test Agent。它根据需求文档和 OpenAPI\n设计新测试。如果参考服务能通过，这道题没有发现新问题，直接丢掉。如果参考服务失败，它可能抓到了第一版题库漏掉的规则。\n第二个 Agent 负责检查新题有没有需求依据，论文里叫 Review\nAgent。它一共否决了 113 个站不住脚的候选。最后，Code Agent\n修好参考服务，再把新旧测试全部跑一遍。全部通过后，新题才会进入正式题库。\n论文把这个循环叫作\nco-evolution，也就是测试和参考服务一起改进。最终新增的 640\n项测试都从具体问题出发：\nBob 会不会看到 Alice 的数据？这类权限问题有 191 项。\n系统有没有拒绝错误参数，拒绝后有没有留下脏数据？这类输入问题有 144\n项。\n创建、修改或删除之后，系统里的数据对不对？这类状态问题有 126\n项。\n删除应用后，它下面的消息还在不在？这类连带影响有 120 项。\n连续做完多步操作，结果还能不能保持一致？这类完整流程有 59 项。\n可以把以前的评测想成笔试。每个 task\n的题目提前写好，代码交上来以后，照着固定答案打分。BackendForge\n在出题阶段多加了一位面试官：它先看这个 task\n的参考服务错在哪里，再沿着那个错误继续问。\n只多 8.8%，结果差了一半\n共同演化把测试从 7,250 项增加到 7,890 项。新增 640 项，只占\n+8.8%。它们数量不多，却都是先发现真实失败、再核对需求、最后通过回归测试留下来的。\nBackendForge\n的计分方式很严格：一个任务里的测试必须全部通过。哪怕只错一项，整个任务也算失败。\n一共 56 个任务。用最初的题库评分时，GPT-5.5 生成的服务有 31\n个任务全部通过。换成加固后的题库，只剩 16\n个。换句话说，原来通过的任务里，只有 51.6% 还能通过。\nClaude Opus 4.7 的变化更大：原来通过 33 个任务，加固题库后只剩 10\n个。\n模型没有重新生成代码，也没有突然变弱。同一份代码换了一套更会找问题的测试，结果就变了。第一版题库漏掉的一些问题，足以让整个任务从通过变成失败。\n论文说作者计划公开完整评测材料，但截至本文核对时，公开渠道还找不到这套资源。外界暂时无法逐项检查新增的\n640 项测试，所以不应把这里的改判幅度直接套到所有整套应用评测上。\n这场面试按 task\n定制，不按模型定制\nBackendForge 按每个 repo 或 task 定制追问。Gotify\n的参考服务在哪里出错，测试 Agent 就沿着 Gotify 的问题追问；换成另一个\ntask，它会从那个服务暴露的问题继续问。因此，不同 task\n最后补进题库的问题可以不同。它不会针对每个参评模型临时换题。\n但题库定稿以后，面试就结束了。同一个 task\n的最终测试会被冻结。GPT-5.5、Claude Opus 4.7 或其他模型来做这个\ntask，面对的都是同一套题。这样既能针对每个项目的具体问题继续追问，又不会为了某个\ncandidate 临时换题。\n固定笔试与面试式追问的对比：左侧固定题库保证统一评分，右侧根据参考服务暴露的错误追加问题；BackendForge\n最终再冻结加固后的题库。\n所以 BackendForge 仍然保留了笔试。区别只在于：试卷定稿之前，先按每个\ntask\n的实际回答做一轮面试式追问。定稿之后，所有模型再用同一张试卷比较成绩。\n以后评测整套应用，可以把这轮追问变成发布前的必做步骤。先让 Agent\n对着参考服务找漏，再由人检查新题有没有需求依据。检查完，冻结一个统一版本。公开题库负责长期比较，定期更新的隐藏题目继续寻找新漏洞。\n从一个函数到一套完整应用，AI 接到的任务一直在变大。BackendForge\n让评测也学会了追问。标准试卷仍然要有，只是在定稿之前，应该先让它经历一场面试。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/backendforge-adaptive-benchmark-20260717.html",
-      "content_chars": 3117,
-      "content_sha256": "c86f3e378a029af27065a63217bd1b15cf18efa9460dc5399bde4c4dda4e925e",
-      "content_fetched_at": "2026-07-18T21:58:04.968606+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-07-19",
+  "collect_window": {
+    "start": "2026-07-17T00:00:00+00:00",
+    "end": "2026-07-18T21:56:54.836701+00:00",
+    "hours": 45
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "29662532917",
+    "commit": "1fd69b4"
+  },
+  "stats": {
+    "total": 5,
     "by_kind": {
       "publish": 5
     },
@@ -145,9 +26,427 @@
       "unknowncheats-ac": 2,
       "yage-share": 3
     },
+    "failed_lists": [
+      "denizhalil-blogs",
+      "redsiege-blog"
+    ],
+    "sources_ok": 42,
+    "sources_failed": [
+      {
+        "id": "denizhalil-blogs",
+        "error": "no_candidates"
+      },
+      {
+        "id": "redsiege-blog",
+        "error": "no_candidates"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 7,
+      "rss": 25
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 12,
+      "calls": 12,
+      "prompt_tokens": 12050,
+      "completion_tokens": 2899,
+      "total_tokens": 14949,
+      "prompt_cache_hit_tokens": 9472,
+      "prompt_cache_miss_tokens": 2578
+    },
     "by_content_status": {
       "failed": 2,
       "ok": 3
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:6c0babc34d23df5f",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "IDA Pro 9.4 classinformer & SigMaker",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762908-ida-pro-9-4-classinformer-sigmaker.html",
+      "text": "unknowncheats-ac published: IDA Pro 9.4 classinformer & SigMaker",
+      "at": "2026-07-18T21:56:54.836701+00:00",
+      "external_id": "a:6c0babc34d23df5f",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762908-ida-pro-9-4-classinformer-sigmaker.html",
+      "title": "IDA Pro 9.4 classinformer & SigMaker",
+      "content": "unknowncheats-ac published: IDA Pro 9.4 classinformer & SigMaker",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762908-ida-pro-9-4-classinformer-sigmaker.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-07-18T21:57:42.734192+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-07-18T21:56:54.836701+00:00",
+      "collected_at": "2026-07-18T21:56:54.836701+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/762908-ida-pro-9-4-classinformer-sigmaker.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "IDA Pro 9.4 classinformer & SigMaker",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762908-ida-pro-9-4-classinformer-sigmaker.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:65cf6e7d085b5f6c",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads-post4744493.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads-post4744493.html",
+      "at": "2026-07-18T21:56:54.836701+00:00",
+      "external_id": "a:65cf6e7d085b5f6c",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads-post4744493.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads-post4744493.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-07-18T21:57:53.611344+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-07-18T21:56:54.836701+00:00",
+      "collected_at": "2026-07-18T21:56:54.836701+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads-post4744493.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/762523-talk-injection-payloads.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:c9207c9fb7ab3ef2",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Agent 的基础能力正在收敛，产品化平台却分成了三条路",
+      "target_url": "https://yage.ai/share/agent-platform-state-ownership-20260718.html",
+      "text": "yage-share published: Agent 的基础能力正在收敛，产品化平台却分成了三条路",
+      "at": "2026-07-18T00:00:00+00:00",
+      "external_id": "a:c9207c9fb7ab3ef2",
+      "url": "https://yage.ai/share/agent-platform-state-ownership-20260718.html",
+      "title": "Agent 的基础能力正在收敛，产品化平台却分成了三条路",
+      "content": "AI Agent\nAI 产品与平台\n开发工具\n基础能力越像，产品化平台越让人困惑\nClaude Code、Codex、Cursor 和 OpenCode\n已经越来越像一类可以替换的工作环境。它们当然各有差异，但从用户的工作边界看，核心能力正在接近：让模型读写文件、运行命令、调用工具、查看报错，再根据结果继续修改。我们在\n《AI\n脚手架正在商品化，人的工作变成判断边界》\n中讨论过，这些通用执行能力正在成为标准配置。\n写代码的 Agent 工具越来越像，开发者自然会觉得，让 Agent\n在线上为客户工作的云平台应该也差不多。似乎只要列一张表，比一比谁有\nSandbox、memory、streaming、定时任务和 tool loop，就能选出答案。\n真正准备把 Demo 交给用户时，事情却变得更乱了。同样叫\nmemory，有的平台指业务数据库里的记录，有的平台指某位客户助手的局部状态，还有的平台记录一项任务已经完成的步骤。同样叫\nSandbox，它可能跟着后台程序使用，也可能只是一次任务的临时工作目录。Feature\n名称越来越像，真正写代码时却完全不是一回事：数据存在哪里，下一条消息发给谁，任务中断后从哪里继续，各个平台给出的答案不同。\n这不是一张更详细的功能表就能解决的问题。差别从创建 Agent\n的第一步就开始了：有的平台先让你部署一个程序，有的平台先让你确定这个\nAgent\n是谁，还有的平台先让你写下任务要经过哪些步骤。三种起点会继续决定状态放在哪里、中断后恢复什么，以及应用最终在哪个位置形成依赖。\n三种平台，第一步就不一样\n假设你要做一个客服 Agent。客户发来问题，Agent\n查资料、运行工具，遇到敏感操作时等待人工批准，几小时后再继续。无论看哪家产品页，你都能找到状态保存、实时输出、定时任务和\nSandbox。差别要到开始实现时才出现。\n第一种平台让你先部署一个 Service 或\nWorker。程序怎样运行，平台替你负责；这位客户是谁、任务做到哪里，由你的应用和数据库记录。\n第二种平台让你先给这位客户的 Agent 一个固定\nID。以后客户再发消息，平台负责把消息送回管理同一个 Agent\n的地方。局部状态和连接也跟着这个 ID 走。\n第三种平台让你先把工作写成一连串步骤：查资料、调用工具、等待批准、生成回复。平台记录这一次任务走到了哪一步，条件满足后再继续。\n所以市场上出现了三种有代表性的路线：先运行程序，先确定 Agent\n是谁，或者先定义任务怎样往下走。Koyeb、Cloudflare 和 Vercel\n分别清楚地展示了这三种起点。\n第一步不同，后面找回状态的方法也不同。当前进程结束以后，有的平台只能重新启动计算，业务状态要由应用去外部数据库查询；有的平台可以根据\nAgent ID\n找回这个对象的局部状态；还有的平台根据一次任务的运行编号找回执行进度，再根据另一个编号恢复\nSandbox 文件。这才是三条路线更深的分界。\n实现同一个客服 Agent\n时，三种平台分别要求开发者先部署程序、确定 Agent\n身份或写下任务步骤\nKoyeb：先有运行环境，再把\nAgent 放进去\n把客服程序放在 Koyeb\n上，平台首先保证的是这段程序继续运行。代码更新或者实例故障以后，旧实例可能被替换。新实例会启动，但不会带回原来的进程、内存和网络连接。它也不知道某张工单处理到了哪一步。\n所以应用需要拿自己的工单 ID 或客户 ID，去 Postgres\n等外部数据库读回业务状态，再继续处理。这就是 Koyeb\n路线的分工：平台恢复计算，应用恢复具体 Agent 的工作进度。\n在 Koyeb 里，这段客服程序以 Service\n的形式运行。接收网页请求的程序和专门处理后台任务的\nWorker，都由平台负责网络、健康检查、实例替换和扩缩容。\nKoyeb Services\n文档\n描述的就是这套运行方式。Koyeb\n无需理解“工单”或“客户助手”是什么，它只需要把程序运行起来。\n这种方式保留了传统 SaaS\n的开发习惯。全局查询、跨客户统计和数据修复仍围绕中心数据库进行；特定\nPython\n依赖或原生程序也可以一起放进容器。容器化业务代码通常可以在其他环境复用，但迁移时仍要重新处理部署配置、网络和配套托管服务。\nCloudflare：先有长期身份，再让事件找到它\n把同一个客服 Agent 放在 Cloudflare\n上，平台首先记住的是：这条消息属于哪位客户。A\n客户再次发来消息时，系统根据他的 Agent\nID，找到之前保存的局部状态，再把新消息送到管理这个 Agent 的地方。即使\nAgent 已经休眠，ID 仍然不变。\nCloudflare\nAgents 状态文档\n描述了这套方式。每个 Agent 都可以有自己的 SQLite\n状态。程序不需要永远在线，下一条消息到来时，平台仍能通过同一个 ID\n找回它。底层负责这件事的能力叫 Cloudflare Durable Objects。\n这个 ID 解决了“消息该送给谁”，但不会自动解决所有消息顺序。Agent\n等待模型 API\n返回时，其他事件仍可能交错执行；网络重试也可能把同一条消息送来两次。\nCloudflare\nDurable Objects\n实践指南\n解释了这个边界。应用仍要过滤重复请求、识别顺序，并确保同一个动作重试两次不会重复扣款或发信。\n麻烦会在全局查询时出现。每位客户的状态分别放在自己的对象里，开发者不能用一条普通\nSQL\n查询直接关联全部数据。产品要统计所有工单、统一对账或批量修改，通常还需要\nPostgres 或对象存储，把各个 Agent 产生的关键信息汇总起来。\nVercel：先有一次任务，再决定下一步执行什么\n把客服任务放在 Vercel 上，平台首先记住的是这张工单走到了哪一步。Agent\n查完资料，准备退款时需要等待人工批准。程序可以先停下来，不必让服务器一直空转。批准结果回来以后，任务从后面的步骤继续。\n负责记录这段进度的是 Vercel Workflow。\nVercel Workflow\n概念文档\n说明，平台会保存已经完成步骤的输入和输出。普通 Function\n调用本身不保存这些进度，真正可以恢复的是一次 Workflow run。\n如果 Agent 还要隔离运行代码或命令，可以使用\nVercel\nSandbox\n。Sandbox\n能保存文件系统快照，之后恢复代码目录和中间文件，但不会恢复此前的内存、活动进程、网络连接或函数调用栈。它保存的是工作目录，不是那段仍在运行的程序。\n因此，一张客服工单会同时出现几套编号：业务数据库里的工单 ID、Workflow\nrun ID，以及需要时使用的 Sandbox\nID。平台不会自动知道它们属于同一件事。\nvercel/workflow#2376\n中的临时建议，是由应用在外部数据库保存业务编号与\nWorkflow 编号的关系，避免同一业务意外启动多个任务。\n文件可以恢复，也不代表应用永远能找到它。Vercel 自己的 eve 项目曾把\nSandbox\n名称与部署版本绑定，结果新版本部署后失去了旧工作目录的正确引用。\nvercel/eve#508\n反映的是应用怎样关联不同组件，不是底层快照丢失。我们此前分别讨论过\nVercel\nAI Cloud 的产品整合\n和\neve\n把 Agent 定义成目录的思路\n；把这些能力放在一起看，Vercel\n的中心仍是一项用户发起、可以暂停和恢复的任务。\n进程结束以后，平台靠什么找回状态\n这里说的状态不只是数据库里的一段文字。下一条消息该送给谁，定时任务该唤醒谁，工作目录恢复到哪个版本，一项任务已经完成哪些步骤，都属于产品继续运行所需的状态。\nKoyeb 恢复的是计算服务。实例退出后，平台根据 Service\n配置启动替代实例；具体 Agent\n的身份、任务进度和业务记录，则由应用使用自己的业务 ID\n去外部数据库和队列中找回。计算由平台恢复，业务状态由应用恢复，这种不对称正是这条路线的特点。\nCloudflare 原生认识 Agent ID。这个 ID 同时用于消息路由和局部 SQLite\n状态。对象休眠或当前实例结束后，新事件仍可以通过同一个 ID\n找回对应状态。应用仍要另外处理全局查询、重复消息和业务顺序。\nVercel 原生认识的是一次执行中的不同编号。Workflow run ID\n找回已经完成的步骤，Sandbox 或 snapshot ID\n找回文件系统，真实工单则保留自己的业务\nID。应用需要保存这些编号之间的关系，平台不会自动把它们合成同一个长期\nAgent。\n进程结束以后，Koyeb、Cloudflare 和 Vercel\n分别通过 Service 配置、Agent ID 以及 Workflow 与 Sandbox\n编号恢复不同部分\n所以，“平台面向什么”并不只是一种产品理念。它直接决定平台原生保存哪部分状态，又用什么编号把它找回来。依赖也会在同一个位置形成：Koyeb\n的部署配置与外部服务，Cloudflare 的对象 ID 与局部状态，Vercel\n的步骤边界与多套运行编号。\n三种路线不是三选一\n计算服务、长期身份和任务执行，并不是三个互斥的完整产品。它们描述的是三类不同责任：服务需要继续运行，对象需要保持同一个身份，任务需要记住已经做到哪里。一套真实系统可能同时需要三者。\n因此，混合部署是自然选项。网页和审批流程可以使用面向 Workflow\n的平台，需要长期连接和特殊运行环境的 Worker\n可以放在容器服务上，少数真正需要固定身份和局部协调的对象也可以单独管理。与此同时，订单、权限、账目和最终业务记录仍应进入标准数据库或对象存储，不能让运行时状态代替产品的数据总账。\n组合越多，运维边界也越多。团队需要维护多套发布流程、权限、账单和监控。专用能力省下的开发工作超过这些新增成本时，混合部署才有意义。否则，较少的平台和清楚的数据边界通常更容易验证。\n选平台以前，先判断\nAgent 在你的产品里是什么\n平台选型的第一步，可以从三个问题开始：产品首先需要运行一类长期程序吗？它的中心是大量反复接收消息、各有局部状态的长期对象吗？还是用户启动一项工作，程序需要等待数小时或数天，再从后面的步骤继续？\n这三个问题分别指向计算服务、长期身份和任务执行。更具体的检查方法是：当前进程消失以后，你准备用哪个\nID 找回工作所需的状态？如果答案是自己的业务 ID、Agent ID 或 Workflow run\nID，系统的主要责任边界也就清楚了。\n最后的判断不应只来自顺利跑通的\nDemo。可以在运行时替换实例，向同一对象重复发送事件，在 Workflow\n等待期间发布新版本，或者在 Sandbox\n工作到一半时中断会话。随后检查服务是否继续，消息是否重复处理，任务是否从正确步骤恢复，业务记录是否仍然完整。\nAgent 的通用执行能力确实正在收敛，但从 Demo\n到产品之间仍有一层选择，统一 feature list\n无法替你回答：你准备让平台长期管理什么？看清这个问题，Koyeb、Cloudflare\n和 Vercel 才重新变得可以比较。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/agent-platform-state-ownership-20260718.html",
+      "content_chars": 4635,
+      "content_sha256": "3a1af3e93ad5c44c1648bdda7e2430b0917b15b354984062251c300dadaeece7",
+      "content_fetched_at": "2026-07-18T21:58:04.599515+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-18T00:00:00+00:00",
+      "collected_at": "2026-07-18T21:56:54.836701+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/agent-platform-state-ownership-20260718.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Agent 的基础能力正在收敛，产品化平台却分成了三条路",
+          "url": "https://yage.ai/share/agent-platform-state-ownership-20260718.html",
+          "content_sha256": "3a1af3e93ad5c44c1648bdda7e2430b0917b15b354984062251c300dadaeece7"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:bbebfb7790463ed4",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "LLM 需要一个更小的可执行世界：DSL、FastAPI 与 Context Infrastructure",
+      "target_url": "https://yage.ai/share/llm-smaller-executable-world-20260718.html",
+      "text": "yage-share published: LLM 需要一个更小的可执行世界：DSL、FastAPI 与 Context Infrastructure",
+      "at": "2026-07-18T00:00:00+00:00",
+      "external_id": "a:bbebfb7790463ed4",
+      "url": "https://yage.ai/share/llm-smaller-executable-world-20260718.html",
+      "title": "LLM 需要一个更小的可执行世界：DSL、FastAPI 与 Context Infrastructure",
+      "content": "AI Agent\nAI 编程\n开发工具\nDSL\n最大的缺点，正在变得没那么重要\n我以前做 AI\n控制天文望远镜时，认真考虑过一条路线：设计一门只允许拍照、对焦、指向星体等有限操作的小型语言。这就是\nDSL，针对特定领域设计的编程语言。它能把 AI\n的活动范围限制在安全边界里，问题是成本太高。设计语言、编写解释器，再补上循环和分支，做着做着就会重新发明一门编程语言。所以我在\n当时的文章\n里放弃了这条路，最后选择\nPython、受限类库、AST 分析和沙箱。\n后来，AI 改变了这笔账。我在\n《一次性软件与被压缩的现实》\n里写过：制造专用工具的成本大幅下降后，为一个很小、甚至只出现一次的需求现场写工具，也可能比凭经验凑合更经济。这个判断同样适用于\nDSL。AI 不仅能使用一门现成语言，也能帮人试验抽象、写解析器、补 validator\n和准备示例。\n2026 年 7 月 14 日，分布式系统工程师 Unmesh Joshi 发表了\nDSLs Enable\nReliable Use of LLMs\n。他提出两阶段做法：先让人和 LLM\n通过真实实现寻找领域概念，把稳定部分做成 DSL；语言稳定后，再让 LLM\n把自然语言需求翻译成 DSL\n程序，交给编译器、模拟器和测试执行。生成后的程序进入代码库，成为后续修改时的\nsource of truth\n。\n这篇文章让我重新理解了 DSL 的价值。它不只是一种新语法，更是在给 LLM\n建一个更小的可执行世界。过去最难承受的是建造这个世界的成本；现在，这项成本也在下降。\nLLM\n需要的不是更多道路，而是一个更小的世界\n自然语言给 LLM\n的表达空间几乎没有边界。同一个要求可以有很多说法，省略的前提也很难穷尽。模型如果直接用自然语言向系统发指令，系统连结果怎么解析都不一定知道。\nPython 和 JavaScript\n消除了语法上的含糊。代码能运行、能复现，也能测试。但通用编程语言仍给模型留下大量选择：它可以调用文件系统、创建线程、打开网络连接，也可以用几十种方法实现同一个\ndelay。语法变精确了，模型能触发的外部效果依然很多。\n领域 API 和 DSL\n又缩小了一层。系统只开放拍照、对焦、启动任务、查询状态这些有限动作，并规定哪些组合合法。模型不再面对整个操作系统，只需要在团队已经理解的动作里选择。这里所说的“可执行语义世界”，指的就是模型能表达哪些动作、这些动作怎样组合，以及系统会检查哪些规则。\n自然语言、通用编程语言与领域边界逐层缩小\nLLM 的可执行世界\n世界缩小以后，系统会在执行前排除一部分无效路径。检查十个领域动作及其组合，也比审计任意生成的\nPython\n程序容易。不过，缩小世界只能排除规则已经覆盖的错误，正确答案不会因此自动出现。\nFastAPI 其实已经很像 DSL\nFastAPI 是一个用 HTTP 接口暴露 Python\n操作的服务端框架。一个更常见的例子是\nGitHub\nREST API\n：agent 可以通过固定 endpoint 创建 issue、读取 pull request\n或触发 workflow，无须理解 GitHub 后端怎样保存对象和调度任务。用 FastAPI\n写出的领域服务也在做同一件事，把内部实现藏在一组稳定操作后面。\n这已经在缩小 agent 的世界。API\n告诉模型有哪些原子动作，也可以通过认证、权限和参数校验限制每个动作。不过，控制面变小，不代表模型最终能造成的影响一定小。GitHub\nAPI 可以触发一份\nGitHub\nActions workflow\n，而 workflow 里的\nrun\n仍能执行 shell\ncommand，读写文件或访问网络。判断边界是否足够窄，最终还是要看动作会触发哪些外部效果。\nAPI 还有另一个特点：组合逻辑通常留在 agent 里。模型创建 pull\nrequest，查看 CI\n状态，再决定是否合并。完整计划存在于运行轨迹中，不一定有一份独立文件。前三步已经改变系统后，第四步失败，回滚也会变得麻烦。\nGitHub Actions workflow 又向 DSL 迈了一步。YAML\n文件不只列出单个动作，还保存触发条件、jobs、依赖关系和完整步骤。系统可以在产生副作用之前解析它、检查一部分跨步骤规则、交给人\nreview，也可以把它存进 Git，日后 diff 或\nreplay。可以用一个不严格但实用的公式理解两者关系：\nDSL ≈ 领域 API + 组合规则 + 可保存的程序表示\n如果 FastAPI 的某个 endpoint 接收一整份包含步骤、依赖和错误处理的\nJSON plan，这个 request body 就在承担 DSL\n程序的角色，服务端负责解释和执行它。反过来，一门 DSL\n最终也常常编译成一连串 API calls。两者没有清晰的敌我边界。\nDSL 与 API 最适合叠在一起\n交互式任务适合直接调用 API。模型提交一次修改，读到 CI\n错误，再决定下一步，观察和行动不断交替。提前写完整计划，反而可能拿走它根据现场情况调整的能力。\n另一类任务需要先看全貌。部署计划、权限变更、分布式故障场景往往包含多个步骤和跨步骤约束。系统最好在第一步执行前，就知道后面会修改什么、失败后如何处理。DSL\n或结构化 JSON plan 在这一层保存完整意图，parser 和 validator\n先做检查，通过后再交给 FastAPI、MCP 或 CLI 执行。\nContext Infrastructure、DSL 计划层与\nFastAPI 执行层组成持续进化的闭环\n因此，FastAPI 可以负责原子操作，DSL\n负责描述完整计划。前者处理“具体怎样执行”，后者处理“这些操作怎样组成一个领域任务”。系统不需要在两者之间二选一。\n创建之后，不必立刻决定它能活多久\n传统团队引入 DSL\n以前，通常要先回答一个问题：这门语言以后会不会反复使用？解析器、validator、示例、迁移工具都需要人来维护，如果没有足够使用量，前期投入很难收回。\nAI\n降低了这些工件的生产成本，也改变了决策顺序。团队可以先为眼前几个相似任务建立领域边界，实际运行后再决定它的寿命。这里不要求\nDSL 用完即弃，也不要求它从第一天起就是永久基础设施。\n如果它反复解决同类问题，可以继续留在代码库，逐步提升为稳定组件；如果只有几个\nprimitive\n有用，就把它们拆出来；如果对应任务消失了，归档或删除也没有问题。生命周期从创建前的预测，变成了使用后的观察结果。\n保留代码本身成本不高，真正的代价是维护和上下文污染。实验 DSL 可以留在\narchive\n中，却不必默认加载给每一次任务。稳定、反复出现的部分再进入活跃文档、examples\n和工具描述。这样既保留未来复用的可能，也不会让模型每次面对一堆过期接口。\nDSL 也可以成为\nContext Infrastructure 的一部分\n项目使用 DSL 以后，会积累三类材料：成功运行的程序、失败时的 validator\nerrors，以及人类对错误结果的纠正。下一次任务到来时，这些材料比一份抽象语法说明更有用。模型可以看到这个项目过去怎样表达同类任务、哪些组合会失败、团队后来修改了什么。\n如果系统持续捕获这些记录，从中提炼稳定模式，再按任务需要加载相关部分，它们就进入了我此前讨论的\nContext\nInfrastructure\n。这套基础设施不只是保存聊天记录，而是把项目自己的判断、示例和纠正组织成模型能继续使用的\ncontext。\nContext Infrastructure 与 DSL\n的约束力度不同。前者告诉模型什么重要、过去怎样判断；后者直接规定能调用什么动作，以及这些动作怎样组合。一个影响模型如何理解任务，另一个限制模型最终能提交什么程序。\n每次执行又会产生新的候选材料。成功程序可以成为后续示例；失败可能来自模型写错程序，也可能暴露语言、validator\n或任务本身的问题。人和系统先分类、提炼这些记录，确认稳定模式后再更新\nContext。模型消费代码库中的 context\n完成任务，经过筛选的结果再回到代码库，推动这套本地语言继续变化。\n缩小世界的代价，是可能把正确答案一起删掉\n领域边界太宽，模型仍然有大量无用路径；边界太窄，新需求可能根本无法表达。这里的判断重点不在\nDSL\n是否图灵完备，而在两个更具体的问题：模型最终能触发哪些外部效果，也就是\neffect surface\n；系统又允许这些动作怎样组合。\n即便 DSL 程序通过 parser 和\ncompiler，也只能证明它符合已经写下来的规则。业务结果仍需要独立测试。否则，同一个模型可能同时误解任务、生成程序，又写出与误解一致的\nexpectation，最后得到一份顺利通过但方向错误的结果。\nTickloom\n展示了这几层怎样组合。它用 Java internal DSL\n描述服务器、客户端、读写和网络故障，再用确定性模拟器、断言和一致性\nchecker 检查场景行为。DSL\n限制表达，模拟器负责执行，测试判断已有断言覆盖到的结果。\n不过，Tickloom 是一个工程案例，不是 DSL\n可靠性的系统实验。项目没有比较同一批任务在自然语言、JSON、普通 Java 和\nDSL 下的生成成功率，也没有跨模型\nbenchmark。它能说明机制如何工作，不能证明 DSL 已经普遍提高 LLM\n的任务正确率。\n从“给模型写\nprompt”到“给模型建世界”\nLLM 项目早期常把主要精力放在 prompt\n上：补一条规则，增加一个例子，再提醒模型不要犯上次的错误。随着项目积累，真正稳定的资产可能转移到别处：领域中的对象和动作、受限\nAPI、DSL、validator、成功程序，以及每次失败后留下的纠正。\nFastAPI 定义模型可以调用的原子能力，DSL\n把这些能力组合成一份完整计划，Context Infrastructure\n保存项目为什么这样设计，以及过去使用中学到了什么。它们共同把通用模型带进一个项目自己的可执行世界。\nJoshi 的文章讨论的是 LLM 如何与 DSL\n配合。沿着成本变化继续推一步，它还提示了另一种可能：AI\n既能在受限世界里工作，也能降低建造和修改这个世界的成本。团队可以更早建立专用边界，把它放进代码库，再让真实使用决定哪些部分继续存在。\n这条路线仍有清楚的前提。领域动作需要相对稳定，系统要能检查关键结果，边界也不能窄到排除正常需求。条件满足时，给模型写更长的说明未必是最有效的投入。给它建立一个更小、能执行、会积累经验的世界，可能更接近可靠的工程系统。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/llm-smaller-executable-world-20260718.html",
+      "content_chars": 4416,
+      "content_sha256": "b5f845334664f05f6b21c0f4057bf6128e19ac1ed0a77b6425b03c5966f69bd1",
+      "content_fetched_at": "2026-07-18T21:58:04.785671+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-18T00:00:00+00:00",
+      "collected_at": "2026-07-18T21:56:54.836701+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/llm-smaller-executable-world-20260718.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "LLM 需要一个更小的可执行世界：DSL、FastAPI 与 Context Infrastructure",
+          "url": "https://yage.ai/share/llm-smaller-executable-world-20260718.html",
+          "content_sha256": "b5f845334664f05f6b21c0f4057bf6128e19ac1ed0a77b6425b03c5966f69bd1"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:10f0f7e705484e00",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "BackendForge：AI 已经能写完整 App，评测也得学会追问",
+      "target_url": "https://yage.ai/share/backendforge-adaptive-benchmark-20260717.html",
+      "text": "yage-share published: BackendForge：AI 已经能写完整 App，评测也得学会追问",
+      "at": "2026-07-17T00:00:00+00:00",
+      "external_id": "a:10f0f7e705484e00",
+      "url": "https://yage.ai/share/backendforge-adaptive-benchmark-20260717.html",
+      "title": "BackendForge：AI 已经能写完整 App，评测也得学会追问",
+      "content": "AI 编程\nAI Agent\n以前测试 AI 写代码，常见做法是给它一个函数，再跑几条单元测试。现在\nAgent\n已经开始从空目录写整套后端。问题也随之变了：我们怎么知道这套东西真的能用？\n拿一个推送服务来说。Alice 创建了一个应用，Bob 不该看到它。Alice\n删除应用后，里面的消息也该一起消失。系统拒绝一次错误请求后，数据库不能悄悄多出一条脏数据。每条规则单看都不复杂。可同一组接口换个人、换个操作顺序，正确答案就会变。第一版测试很难把所有情况都想到。\nBackendForge\n想解决的就是这个问题。研究者先写了 7,250 项测试，再让 Agent\n专门寻找这套测试漏掉了什么，最后补进 640 项。测试数量只多了\n+8.8%，同一批 GPT-5.5 代码却从 31/56 个任务全通过，降到 16/56。\n这批代码没有改变，变的是评分用的题库。BackendForge\n带来的启发也在这里：当 AI 开始写整套应用，benchmark\n不能只把题目变大。出题方式也要从一次写完的笔试，变成一场会继续追问的面试。\nBenchmark 是怎么一步步变大的\nHumanEval\n测的是一个函数。模型读一段需求，写出几十行代码，然后跑单元测试。\nSWE-bench\n把模型放进真实代码仓库。它要读\nissue、找到相关文件，再提交一个修复补丁。\nFEA-Bench\n测得更大：Agent 不只修 bug，还要实现一个跨越多个文件的新功能。\n现在，评测对象又变成了整套\nApp。模型要自己处理数据库、接口、登录和权限，最后交出一个能启动、能接收请求的系统。BackendForge\n就属于这一代 benchmark。\nAI 编程 benchmark 的任务单位从函数、仓库\nbug、跨文件 feature，扩大到完整 app/service；每一代对应\nHumanEval、SWE-bench、FEA-Bench 和 BackendForge 等代表。\n任务每变大一级，测试也会多一层难度。一个函数通常调用一次就能判断对错。整套服务要连续做完一串动作，才能知道哪里出了问题。\nBackendForge 不是第一个\n完整应用的 benchmark 已经有不少。\nBaxBench\n让模型生成后端，同时检查功能和安全问题。\nAppForge\n测安卓应用，会把成品装进模拟器，真的点开界面操作。\nVibe Code Bench\n测网页应用，再让浏览器 Agent 按照用户流程一步步验收。\n这些 benchmark 已经在测整套产品。BackendForge\n多做的一步，是让题库在发布前继续找漏。\n它收录了 56 个后端任务，一共有 2,345 个 API\n操作。模型生成代码后，研究者把服务装进 Docker，再用真实 HTTP\n请求测试。整套评测一共发出了 24,798 次请求。\n这些请求会串在一起。第一次请求创建数据，第二次换成另一个用户读取，第三次再删除，最后检查数据库里还剩下什么。前面\nAlice 和 Bob 那类规则，只有这样才能测出来。\n原来的 7,250\n项测试已经会检查这些跨越多次请求的规则。类似思路也不是新发明，微软的\nRESTler\n很早就在自动尝试不同的 API 调用顺序。BackendForge 的变化，是让测试在构建\nbenchmark 时主动寻找自己的遗漏。\n让题库继续追问\nBackendForge 先准备一套参考服务。你可以把它理解成标准答案。然后，三个\nAgent 围着它反复出题、检查和修正。\n第一个 Agent 负责出题，论文里叫 Test Agent。它根据需求文档和 OpenAPI\n设计新测试。如果参考服务能通过，这道题没有发现新问题，直接丢掉。如果参考服务失败，它可能抓到了第一版题库漏掉的规则。\n第二个 Agent 负责检查新题有没有需求依据，论文里叫 Review\nAgent。它一共否决了 113 个站不住脚的候选。最后，Code Agent\n修好参考服务，再把新旧测试全部跑一遍。全部通过后，新题才会进入正式题库。\n论文把这个循环叫作\nco-evolution，也就是测试和参考服务一起改进。最终新增的 640\n项测试都从具体问题出发：\nBob 会不会看到 Alice 的数据？这类权限问题有 191 项。\n系统有没有拒绝错误参数，拒绝后有没有留下脏数据？这类输入问题有 144\n项。\n创建、修改或删除之后，系统里的数据对不对？这类状态问题有 126\n项。\n删除应用后，它下面的消息还在不在？这类连带影响有 120 项。\n连续做完多步操作，结果还能不能保持一致？这类完整流程有 59 项。\n可以把以前的评测想成笔试。每个 task\n的题目提前写好，代码交上来以后，照着固定答案打分。BackendForge\n在出题阶段多加了一位面试官：它先看这个 task\n的参考服务错在哪里，再沿着那个错误继续问。\n只多 8.8%，结果差了一半\n共同演化把测试从 7,250 项增加到 7,890 项。新增 640 项，只占\n+8.8%。它们数量不多，却都是先发现真实失败、再核对需求、最后通过回归测试留下来的。\nBackendForge\n的计分方式很严格：一个任务里的测试必须全部通过。哪怕只错一项，整个任务也算失败。\n一共 56 个任务。用最初的题库评分时，GPT-5.5 生成的服务有 31\n个任务全部通过。换成加固后的题库，只剩 16\n个。换句话说，原来通过的任务里，只有 51.6% 还能通过。\nClaude Opus 4.7 的变化更大：原来通过 33 个任务，加固题库后只剩 10\n个。\n模型没有重新生成代码，也没有突然变弱。同一份代码换了一套更会找问题的测试，结果就变了。第一版题库漏掉的一些问题，足以让整个任务从通过变成失败。\n论文说作者计划公开完整评测材料，但截至本文核对时，公开渠道还找不到这套资源。外界暂时无法逐项检查新增的\n640 项测试，所以不应把这里的改判幅度直接套到所有整套应用评测上。\n这场面试按 task\n定制，不按模型定制\nBackendForge 按每个 repo 或 task 定制追问。Gotify\n的参考服务在哪里出错，测试 Agent 就沿着 Gotify 的问题追问；换成另一个\ntask，它会从那个服务暴露的问题继续问。因此，不同 task\n最后补进题库的问题可以不同。它不会针对每个参评模型临时换题。\n但题库定稿以后，面试就结束了。同一个 task\n的最终测试会被冻结。GPT-5.5、Claude Opus 4.7 或其他模型来做这个\ntask，面对的都是同一套题。这样既能针对每个项目的具体问题继续追问，又不会为了某个\ncandidate 临时换题。\n固定笔试与面试式追问的对比：左侧固定题库保证统一评分，右侧根据参考服务暴露的错误追加问题；BackendForge\n最终再冻结加固后的题库。\n所以 BackendForge 仍然保留了笔试。区别只在于：试卷定稿之前，先按每个\ntask\n的实际回答做一轮面试式追问。定稿之后，所有模型再用同一张试卷比较成绩。\n以后评测整套应用，可以把这轮追问变成发布前的必做步骤。先让 Agent\n对着参考服务找漏，再由人检查新题有没有需求依据。检查完，冻结一个统一版本。公开题库负责长期比较，定期更新的隐藏题目继续寻找新漏洞。\n从一个函数到一套完整应用，AI 接到的任务一直在变大。BackendForge\n让评测也学会了追问。标准试卷仍然要有，只是在定稿之前，应该先让它经历一场面试。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/backendforge-adaptive-benchmark-20260717.html",
+      "content_chars": 3117,
+      "content_sha256": "c86f3e378a029af27065a63217bd1b15cf18efa9460dc5399bde4c4dda4e925e",
+      "content_fetched_at": "2026-07-18T21:58:04.968606+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-17T00:00:00+00:00",
+      "collected_at": "2026-07-18T21:56:54.836701+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/backendforge-adaptive-benchmark-20260717.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "BackendForge：AI 已经能写完整 App，评测也得学会追问",
+          "url": "https://yage.ai/share/backendforge-adaptive-benchmark-20260717.html",
+          "content_sha256": "c86f3e378a029af27065a63217bd1b15cf18efa9460dc5399bde4c4dda4e925e"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
