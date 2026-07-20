@@ -1,189 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-07-21",
-  "generated_at": "2026-07-20T22:09:36.187108+00:00",
-  "item_count": 7,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:9b98c64c59cb08f5",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: [UEFI Bootkit] vm falls back to PXE boot / resets after hooking ImgpLoadPEImage",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-07-20T22:06:52.513189+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763327-uefi-bootkit-vm-falls-pxe-boot-resets-hooking-imgploadpeimage.html",
-      "title": "[UEFI Bootkit] vm falls back to PXE boot / resets after hooking ImgpLoadPEImage",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763327-uefi-bootkit-vm-falls-pxe-boot-resets-hooking-imgploadpeimage.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-07-20T22:07:56.755082+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:9b4f2c9eb50d8cd0",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: SCPSL External",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-07-20T22:06:52.513189+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html",
-      "title": "SCPSL External",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-07-20T22:08:07.631473+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:bec4b75109f94d48",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: PNP Driver Initialization Without Hardware",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-07-20T22:06:52.513189+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763156-pnp-driver-initialization-hardware.html",
-      "title": "PNP Driver Initialization Without Hardware",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763156-pnp-driver-initialization-hardware.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-07-20T22:08:18.497870+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:dc34a3872a7f2c5a",
-      "kind": "publish",
-      "text": "denizhalil-blogs published: WordPress Core 6.9-7.0.1 – Pre-Auth Blind SQL Injection (Batch-Route Confusion)",
-      "actor": "denizhalil-blogs",
-      "actor_url": "https://denizhalil.com/blogs/",
-      "created_at": "2026-07-20T04:56:00+00:00",
-      "html_url": "https://denizhalil.com/2026/07/20/wordpress-cve-2026-63030-batch-route-confusion/",
-      "title": "WordPress Core 6.9-7.0.1 – Pre-Auth Blind SQL Injection (Batch-Route Confusion)",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Introduction\nDiscovered as a major security flaw in the core architecture of WordPress, the vulnerability chain colloquially known as\nwp2shell\nrepresents one of the most severe threat vectors impacting the Content Management System ecosystem. Because WordPress powers over 40% of all websites globally, the blast radius of this default-configuration flaw is exceptionally wide. This exploit chain targets two integral components of WordPress Core: the REST API batching infrastructure and the underlying\nWP_Query\ndatabase abstraction layer. By seamlessly combining these internal architectural flaws, a completely remote, unauthenticated attacker can bypass standard perimeter defenses to achieve full Remote Code Execution (RCE) on a stock installation—requiring absolutely no third-party plugins or active themes to succeed. With a CVSS base score of\n9.8 (Critical)\n, this vulnerability represents an existential threat to unpatched servers, requiring immediate attention, auditing, and remediation from system administrators and security operations teams worldwide.\nLearning Objectives\nBy the end of this article, you will understand:\nThe structural design and mechanics of the WordPress REST API batching system.\nThe root cause of the “Batch-Route Confusion” logic flaw tracked under\nCVE-2026-63030\n.\nProactive identification strategies and mitigation techniques to secure vulnerable environments.\nHow the input sanitization failure in\nWP_Query\nleads to the SQL Injection tracked under\nCVE-2026-60137\n.\nThe end-to-end chaining process that allows low-severity bugs to escalate into unauthenticated server compromise.\nWhat is WordPress Core 6.9-7.0.1 – Pre-Auth Blind SQL Injection CVE-2026-63030\nCVE-2026-63030\nis an improper access control vulnerability residing natively in the batch request handler of the WordPress REST API framework. The WordPress REST API features a dedicated batching endpoint (\n/wp-json/batch/v1\n) designed to allow clients, developers, and blocks to bundle multiple individual API calls into a single HTTP request to optimize performance and lower server round-trips. This endpoint is active by default across millions of installations, meaning the underlying architectural flaw is exposed out-of-the-box without requiring any custom API modifications or configuration changes by the site administrator. The vulnerability itself stems from a fundamental logical parsing error within the array processing loop of this batch endpoint. When the server is forced to handle a meticulously malformed payload, the internal routing mechanics lose synchronization, causing an array index misalignment. This desynchronization tricks the server into evaluating a high-privilege, restricted internal route against the lax or nonexistent permission check callbacks intended for an entirely different, public-facing endpoint. Consequently, an anonymous visitor can cleanly execute internal API routines that should normally require strict administrative authentication.\nWhile this authorization bypass is highly restricted in terms of what it can execute on its own, it acts as the primary gateway for a catastrophic exploit chain. By providing an unauthenticated vehicle to reach internal code pathways, it directly exposes deeper database management classes to malicious manipulation. When chained with secondary flaws in input handling, this flaw transforms from a simple routing oversight into a severe exploit mechanism capable of completely compromising the underlying database layer.\nTo break down its core characteristics, the vulnerability is defined by the following fundamental traits:\nZero-Authentication Requirement:\nThe flaw can be triggered remotely by completely anonymous users before any login screen, session cookie, or API token is requested or validated by the application.\nCore Vulnerability Status:\nThe security defect resides strictly within the core WordPress codebase, meaning every stock installation within the affected version window is vulnerable regardless of active plugins or themes.\nDesynchronization Trigger:\nThe exploit relies on an array index drift within the\nserve_batch_request_v1\nmethod, which directly maps incoming data structures to internal permission validation routines.\nGateway for Deep Exploitation:\nIt acts as the necessary first stage of the\nwp2shell\nchain, smuggling restricted parameters into internal queries to ultimately execute the blind SQL injection.\nTechnical Detail: How the Vulnerability Chain Works\nThe structural danger of the\nwp2shell\nvulnerability chain lies in how it seamlessly bridges the gap between an abstract logical flaw and direct database interaction. In modern web architectures, security models heavily rely on layered boundaries, assuming that if a request passes the API gateway, the underlying components can trust its structure. This vulnerability turns that assumption into a liability by undermining the integrity of the WordPress routing parser before data ever reaches the internal database abstraction layers. By meticulously breaking down the communication protocols of the core application, the exploit demonstrates how minor, isolated structural oversights can lead to absolute system compromise when chained sequentially. Rather than breaking through a reinforced cryptographic firewall, the attack subtly misaligns the internal gears of the application loop. Once this alignment is lost, the application itself inadvertently ferries the malicious payload past its own defensive perimeters, exposing deep, unescaped database query parameters directly to the attacker.\nStep 1: Batch-Route Confusion (CVE-2026-63030)\nWordPress utilizes the\nWP_REST_Server::serve_batch_request_v1()\nmethod to iterate through an array of sub-requests provided by the client, executing them sequentially and matching each route with its corresponding permission check callback. An attacker exploits this behavior by constructing a batch payload containing an intentionally malformed or structurally anomalous entry mid-sequence. During processing, this structural anomaly causes an array index misalignment within the execution loop. The internal pointer mapping individual request objects to their mandatory validation filters drifts out of sync. As a result, a highly restricted administrative internal route is evaluated using the lax or empty permission schema intended for a completely different public endpoint. Passing through the misaligned gate, the server executes the privileged routine with parameters fully controlled by the unauthenticated user.\nTo illustrate this structural breakdown, consider how the server handles a typical JSON batch request array compared to a malicious payload designed to induce index drift:\n/* Concept of a typical, valid batch request array */\n[\n{ \"method\": \"GET\", \"path\": \"/wp/v2/posts\" }, /* Public Route -> Checks public permissions */\n{ \"method\": \"GET\", \"path\": \"/wp/v2/comments\" } /* Public Route -> Checks public permissions */\n]\n/* Concept of an exploit payload forcing index desynchronization */\n[\n{\n\"method\": \"POST\",\n\"path\": \"/wp/v2/users\",\n\"invalid_structure_trigger\": [null]\n}, /* Malformed Entry -> Causes loop pointer misalignment */\n{\n\"method\": \"GET\",\n\"path\": \"/wp/v2/internal/privileged-endpoint\",\n\"smuggled_params\": { ... }\n} /* Privileged Entry -> Evaluated using public permission filter */\n]\nStep 2: Smuggling the SQL Injection (CVE-2026-60137)\nOnce the authorization layer is bypassed via route confusion, the attacker successfully smuggles parameter payloads into internal query handlers (such as\n/wp/v2/posts\n) that are normally shielded from direct anonymous access. This exposes the application to\nCVE-2026-60137\n. The smuggled parameters are passed directly into the core\nWP_Query\nengine. Specifically, the handling of the\nauthor__not_in\n(or\nauthor_exclude\n) parameter fails to properly escape, sanitize, or cast user-supplied inputs before appending them into raw database operations. By supplying structured malicious payloads into this parameter, the attacker executes a Time-Based or UNION-Based Blind SQL Injection. This allows the attacker to exfiltrate administrative password hashes and the site’s secret authentication salts (\nAUTH_KEY\n,\nSECURE_AUTH_KEY\n). By reconstructing authentication cookies or cracking the extracted hashes, the attacker gains full administrative access, uploads a malicious plugin or theme, and establishes complete Remote Code Execution (RCE) over the underlying server host.\nTo visualize how the absence of input casting breaks down at the database layer, consider the difference between a standard query and the unescaped injection string generated by the vulnerability:\n-- Expected execution behavior for legitimate numeric IDs:\nSELECT * FROM wp_posts WHERE post_author NOT IN (2, 5, 12);\n-- Exploitation execution behavior resulting from unescaped string injection:\nSELECT * FROM wp_posts WHERE post_author NOT IN (0) UNION SELECT 1,2,3,4,user_pass FROM wp_users WHERE user_login='admin' -- );\nAffected Software & Plugins\nThe critical severity of this vulnerability stems primarily from its placement within the native architecture of the platform, completely independent of any third-party plugins, custom extensions, or active themes. Because the flaw impacts the core REST API and query routing logic, every standard installation operating within the targeted release branches is exposed by default, significantly expanding the overall attack surface across the web ecosystem. While the WordPress Core security team quickly responded by deploying forced automatic background updates to mitigate the threat globally, relying solely on automated systems introduces operational risk. Server-side constraints, strict file permission hardening, or aggressive caching reverse proxies can silently block these upstream updates from applying, making manual verification a necessity for security teams.\nVulnerable Core Branches:\nApplies natively to all environments running WordPress Core versions\n6.9.0 through 6.9.4\n, as well as versions\n7.0.0 through 7.0.1\n.\nPatched Suffixes:\nThe underlying architecture was fully secured and mitigated with the official distribution of versions\n6.9.5\nand\n7.0.2\n.\nZero-Dependency Risk:\nThe vulnerability requires no specific plugin configurations or administrative modifications to be exploited, impacting stock installations completely out-of-the-box.\nConclusion\nThe discovery of the Pre-Auth Blind SQL Injection and Batch-Route Confusion chain underscores the foundational siber security principle of defense-in-depth. A logic error that appears isolated at the API routing layer can quickly become fatal when combined with insufficient input validation at the database abstraction layer. When application layers trust each other blindly without strict verification at every boundary, even complex web ecosystems remain highly vulnerable to catastrophic exploitation. This specific flaw highlights that perimeter defenses alone are insufficient if the core application components fail to maintain rigid boundaries during cross-component data transmittal. Web administrators must urgently verify their running WordPress core versions to ensure their environments are completely insulated from this attack vector. If immediate updates are not feasible due to legacy constraints, staging environments, or strict production freeze windows, temporary virtual patching via Web Application Firewalls (\nWAF\n) must be deployed immediately. Specifically, network teams should implement strict edge rules to drop all external traffic targeting the\n/wp-json/batch/v1\nendpoint and its query parameter variations. Furthermore, implementing real-time monitoring on database logs for unusual\nUNION\nqueries targeting the users table can serve as an invaluable secondary detection layer.\nUltimately, this vulnerability serves as a stark reminder that modern threat landscapes move at an accelerated pace, often outpacing passive security measures. Relying on default configurations or assuming background systems always function flawlessly creates a dangerous gap in visibility that sophisticated attackers are quick to exploit. In modern web infrastructure, maintaining a proactive, rigorously audited, and rapid patch management cycle remains the single most effective defense against systemic server compromise. Security teams must transition from passive reliance on automation to active, verified governance of their application dependencies.\nWordPress Security CVE 2026 63030\nDownload\nOSI Model: Data Communication in Computer Networks\nWPScan: An Essential Tool for WordPress Security Scanning\nIntroduction to Blockchain Technology with a Python Example\nExploitation of Microsoft Defender Elevation of Privilege Vulnerability (CVE-2026-50656)\nCritical Vulnerability in WordPress YMC Filter: Unauthenticated Content Disclosure (CVE-2026-10823)\ngithub.com: wp2shell-poc\npentest-tools.com: wp2shell – WordPress Core 6.9.0-6.9.4 and 7.0.0-7.0.1 – Pre-Auth Batch-Route Confusion\ncloud.projectdiscovery.io: WordPress Core 6.9-7.0.1 – Pre-Auth Blind SQL Injection (Batch-Route Confusion)\nThe post\nWordPress Core 6.9-7.0.1 – Pre-Auth Blind SQL Injection (Batch-Route Confusion)\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://denizhalil.com/2026/07/20/wordpress-cve-2026-63030-batch-route-confusion/",
-      "content_chars": 13276,
-      "content_sha256": "33a651aa4b66b71de2a3404c267fd0e6463b5f7d8afdd2076f6ae0080a88d91e",
-      "content_fetched_at": "2026-07-20T22:08:48.631796+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "DenizHalil Blogs",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:64cec87b73d64945",
-      "kind": "publish",
-      "text": "yage-share published: Coding Agent 还在配置环境，第三方代码已经运行了",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-20T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/coding-agent-setup-install-boundary-20260720.html",
-      "title": "Coding Agent 还在配置环境，第三方代码已经运行了",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI 编程\nAI Agent\n安全与供应链\n把一个陌生仓库交给 Coding Agent\n后，很多人的第一句话是：“先把项目跑起来。”过去由人配置环境，至少还要读一遍文档、逐条复制命令。Agent\n则会读完说明，直接生成并执行安装命令。人也因此很容易把 setup\n当成准备工作。\n预印本论文\nSetup Complete, Now You Are Compromised\n指出了这里的时间差：下载依赖本身就可能执行代码。开发者还在等待环境就绪，软件包里的安装脚本或许已经开始运行。等到最终\ndiff 出现，第一次代码执行可能早已结束。\n论文作者围绕这条路径构造了十二个场景、五类攻击，并测试九种由不同模型和客户端组成的\nCoding Agent\n配置。结果均来自作者实验，目前没有独立复现；这些构造场景也不能证明现实攻击已经普遍发生。实验细节与限制可查阅\n论文 HTML 版\n。\n“把项目跑起来”已经包含了一次代码执行\n为了启动项目，Agent 会先读\nREADME\n和依赖配置，例如\npyproject.toml\n、\nrequirements.txt\n，有时还要参考\nMakefile\n或 CI 配置。接着，它调用 pip、npm 或\nCargo，从外部下载软件包并装进开发环境。下文把这类依赖管理工具统称为\npackage manager。\n获取软件包不只是复制文件。Python 包可以在构建或安装时运行\nsetup.py\n，首次导入时还会执行\n__init__.py\n；npm\n包可以设置\npostinstall\n；Cargo 构建依赖时会运行\nbuild.rs\n。这些入口原本服务于编译和环境配置，也让软件包能够在安装、构建或首次导入时执行代码。\n如果项目说明把 Agent 引向攻击者控制的软件包，package manager\n就可能运行其中的代码。此时 Agent 还没开始修改业务文件，开发者也没有最终\ndiff 可看。项目尚未启动，不代表第三方代码尚未运行。\n恶意代码也不必出现在仓库里。项目配置或 Pull Request\n可以只有一项看似普通的依赖变更，真正要运行的代码留在外部软件包中，等\npackage manager 主动下载。\nCoding Agent\n从项目说明生成安装命令，package manager\n随后执行外部软件包中的安装脚本；检查点必须位于安装开始之前\nAgent\n没有收到恶意命令，为什么仍会照做\n我在 2026 年 4 月的\n《AI\n编程工具的配置文件，现在是攻击入口》\n里讨论过另一种风险：攻击者把恶意文字放进仓库，Agent\n误把这些文字当成指令。这篇论文里的安装要求却不需要伪装成恶意命令。安装依赖本来就是开发者授权的正常任务。\n论文作者做了一组对照。他们让程序在报错信息中建议安装攻击者指定的软件包，九种受测配置全部拒绝了请求。在这组实验里，客户端把程序输出当作不可信内容，没有直接照做。\n同一项安装建议写进项目说明，角色就变了。Agent\n需要参考这些文档才能配置环境；如果一概拒绝文档里的安装要求，“把项目跑起来”也就无法完成。\n攻击者因此可以只修改文档或依赖配置，让安装命令指向另一个软件包或下载地址。审查者看到的是一项依赖变更，不会自动看到那个外部软件包在安装时做了什么。\n一个正常包名，也可能把代码带到错误的地方\n一条安装命令至少决定三件事：安装哪个包、从哪里下载、使用什么版本。论文发现，Agent\n对这三项选择的判断并不一样。\n明显的错别字最容易引起警觉。作者把\ntransformers\n拼成\ntranformers\n时，几乎所有受测配置都发现了异常。换成\nazurecore\n和真实包\nazure-core\n这样的分隔符差异，结果就取决于具体的模型与客户端组合。同一个模型换一个客户端，实验结果也可能不同。\n包名正确，下载来源仍可能改变。package manager 通常从默认的\nregistry，也就是软件包索引，取回代码。项目使用私有包时，可能通过\n--extra-index-url\n增加另一个索引；正常包名也可能因此从攻击者控制的来源解析和下载。论文报告，客户端拦截这类场景的次数，整体少于明显错拼包名的场景。\n版本是另一条路径。作者保持包名和来源正常，只要求安装已经列入 CVE\n公开漏洞目录的旧版本。九种配置都完成了安装，部分配置随后才给出警告。这里没有证据表明攻击者的代码已经运行；结果是开发环境进入已知脆弱状态，为后续利用留下条件。\n明显错别字容易触发警告后，风险仍可转向更像真实名称的变体、外部软件包索引或已知脆弱版本\n代码审查开始时，安装阶段已经结束了\n最终 diff 只能回答 Agent 改了哪些仓库文件。它不会自动列出 package\nmanager\n此前下载并执行过的代码。模型在环境配置结束后提醒包名可疑或版本存在漏洞，也无法撤回已经运行的安装脚本。\n外部软件包甚至可以运行完脚本后完全不改业务源码。此时 diff\n没有漏报仓库变化，只是它从来不负责记录依赖安装的执行历史。\nHTTPS、签名和哈希可以帮助确认下载内容没有在途中遭到替换；lockfile\n则记录已经解析出的版本，让后续安装复现同样的结果。它们保护传输和复现，却不判断最初选择的软件包、来源和版本是否正确。\n如果项目配置一开始就指向攻击者控制的包，哈希可以准确核对那个包，lockfile\n也可以继续复现它。安全检查必须发生在 package manager 开始安装以前。\n先检查要安装什么，再允许安装开始\nAgent 准备运行安装命令时，客户端可以先暂停，把命令里的包名、registry\n和版本单独展示出来。开发者此时看到的是这次安装的实际目标，而不只是一整条难以核对的终端命令。\n客户端再按项目规则核对这些信息：名称是否对应团队准备使用的软件包，registry\n是否获准使用，版本是否存在已知漏洞。任何一项无法确认，安装就保持暂停，等开发者看清原因后决定是否放行。\n真实项目会使用公司内部 registry、Git\n依赖或本地脚本，因此这套规则不能简化成一张公共软件包清单。团队需要根据每个项目实际使用的来源和依赖形式设置例外。论文也没有测量这类规则在真实项目中的误报成本。\n通过检查的依赖仍应在受限环境中安装。安装过程不接触长期凭证，网络只开放任务需要的目的地。安装前检查减少选错软件包的机会，受限环境则控制代码运行后的影响，两者解决的是不同问题。\n以后再让 Coding Agent\n“先把项目跑起来”，普通用户需要把它理解成一次运行第三方代码的授权。对构建\nAgent 或 harness\n的团队，安装前解析包名、来源和版本，遇到异常时暂停并请求批准，以及在受限环境中完成安装，都应该成为客户端的默认能力。这条安全边界属于执行层，不能只依赖模型临场判断。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/coding-agent-setup-install-boundary-20260720.html",
-      "content_chars": 2825,
-      "content_sha256": "283ef37a96f90fbd6654f081167486ff50d2b55667a72d6725224eca50dc3cba",
-      "content_fetched_at": "2026-07-20T22:08:29.221912+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:82de52138ee7e2d0",
-      "kind": "publish",
-      "text": "yage-share published: Agent Skills 统一了文件格式，Harness 仍然各自为政",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-20T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/agent-skills-harness-portability-20260720.html",
-      "title": "Agent Skills 统一了文件格式，Harness 仍然各自为政",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n开发工具\n把\nrelease-check 放进项目目录，哪些客户端能找到它\n如果你写好了一个用于检查发布流程的\nrelease-check\nSkill，想让本地 AI 助手直接调用它，最直观的办法是在项目根目录下创建\n.agents/skills/release-check\n，把说明文档\nSKILL.md\n、Python 脚本\nscripts/check_release.py\n和策略文件\nreferences/release_policy.md\n都放进去。\n截至 2026 年 7 月 17 日，Codex、Cursor、OpenCode、Gemini\nCLI、Antigravity 2.0、Antigravity CLI 和 Antigravity IDE\n都会扫描这个项目级共享目录，从中发现\nrelease-check\n。如果在同一个项目里使用 Claude\nCode，它却不会从这里寻找 Skill。在本文核查的这组主流本地客户端里，Claude\nCode 是唯一的例外。\n这种选择有些出人意料。Agent Skills 本身就是 Anthropic\n发起并维护的项目。Anthropic 在\n2025\n年 10 月 16 日\n先把 Skills 作为 Claude 的产品和 API 能力推出，又在\n2025 年 12 月 18 日\n将\nAgent Skills 发布为开放标准。项目官方的\n客户端实现指南\n建议，客户端扫描自身专用目录时，也考虑项目级\n.agents/skills/\n，并将它称为广泛采用的跨客户端惯例。Cursor\n和 OpenCode 甚至主动加入了对\n.claude/skills/\n的扫描；Claude\nCode 的\n官方文档\n却只列出专属的\n.claude/skills/\n、个人目录和其他 Claude 来源。\n团队可以把\n.agents/skills/release-check\n保留为唯一内容源，再在\n.claude/skills/\n下创建一个指向它的\nsymlink，也可以让安装器把它映射到 Claude Code 的目录。Claude Code\n官方支持 symlink，所以不必复制两份\nSkill；但无论选哪种办法，项目都要维护一段只为 Claude Code\n存在的部署逻辑。Anthropic 的做法没有违反\n格式规范\n，因为规范确实没有强制安装路径，但额外适配工作仍然落在开发者和其他工具身上。\n同一个 release-check Skill\n通过共享目录被多个客户端发现，Claude Code\n则需要一个指向同一内容源的薄桥接\n找到同一个\nSkill，不代表私有字段也会生效\n即便 Claude Code 已经能找到\nrelease-check\n，兼容问题依然没有解决。打开\nSKILL.md\n，文件开头的 frontmatter 还藏着另一组差异。\n开放规范要求 frontmatter 提供\nname\n和\ndescription\n，还允许选填\nlicense\n、\ncompatibility\n、\nmetadata\n和实验性的\nallowed-tools\n。Claude Code 的\n字段表\n又加入\nwhen_to_use\n、\nargument-hint\n、\narguments\n、\ndisable-model-invocation\n、\nuser-invocable\n、\ndisallowed-tools\n、\nmodel\n、\neffort\n、\ncontext\n、\nagent\n、\nhooks\n、\npaths\n和\nshell\n。\n这些字段不是普通说明。\nmodel\n和\neffort\n会影响 Claude 如何处理任务，\ncontext\n与\nagent\n控制是否进入 subagent，\npaths\n可以按文件匹配\nSkill，\nhooks\n会在指定时机执行命令。\ndisable-model-invocation: true\n禁止\nClaude 自主调用该 Skill，\ndisallowed-tools\n则在 Skill\n激活期间移除指定工具。作者一旦依赖这些设置，就不再只是使用一份通用的\nMarkdown 指令。\n把同一份文件交给 Gemini CLI，它仍可读取标准的\nname\n和\ndescription\n，但不会执行 Claude Code\n私有字段所表达的模型选择、调用限制、subagent 配置或\nhooks。文件可以正常解析，不代表这些设置得到了替代实现。若\nrelease-check\n的正确性依赖\ndisable-model-invocation\n或\ndisallowed-tools\n，团队就必须在 Gemini CLI\n自己的策略与权限配置中重新表达要求，不能把 Claude frontmatter 当成跨\nHarness 的安全规则。\nCursor 已经兼容\npaths\n和\ndisable-model-invocation\n等少数 Claude\n字段，但这种选择性适配不代表整个生态对字段含义达成了共识。OpenCode\n的公开接口也没有承诺执行这些控制字段。同一个\nSKILL.md\n能被多个 Harness 读取，具体的调用时机、模型、subagent、hooks\n和工具限制仍可能不同。\nAgent Skills 在发现层趋同，但私有\nfrontmatter、加载、资源解析、执行与权限仍由各客户端 Harness\n决定\n真正执行脚本时，各家\nHarness 还在使用自己的规矩\n当大模型决定调用\nrelease-check\n时，各家 Harness\n的流程也不相同。\n在\nGemini CLI\n中，会话开始时模型只能看到 Skill\n的名称和描述。模型请求激活后，终端先展示 Skill\n的说明和目录访问范围，等待用户确认；获得同意后，Gemini CLI 才把\nSKILL.md\n正文和目录结构加载进上下文。\nOpenCode\n则要求模型调用内置的\nskill\n工具读取 Skill\n说明。这个动作只负责把文档交给模型。模型随后要运行\ncheck_release.py\n，仍需调用普通的 shell\n或文件工具，并接受宿主权限系统的检查。\nGoogle 的几种产品也不能合并成一个客户端来讨论。\nGemini CLI\n、\nAntigravity 2.0\n、\nAntigravity\nCLI\n和\nAntigravity IDE\n都支持项目级\n.agents/skills/\n，但它们的全局目录和加载流程并不相同。Antigravity\nCLI 当前让 agent 用普通文件工具读取\nSKILL.md\n，没有沿用\nGemini CLI 的\nactivate_skill\n流程。\nSkill 内部的脚本会把这些差异放大。运行\nscripts/check_release.py\n时，它可能还要读取\nreferences/release_policy.md\n。Agent Skills 没有规定 Harness\n从哪个工作目录启动 Python，也没有统一\nRead\n、\nBash\n、\nview_file\n或\nrun_shell_command\n这些工具名称。脚本应该通过\n__file__\n找到自身所在的 Skill\n目录，再定位参考文件；\nSKILL.md\n也应描述“读取文件”或“执行脚本”这样的动作，而不是假定每个 Harness\n都提供同名工具。\n规范中实验性的\nallowed-tools\n也不能替代各家 Harness\n自己的安全配置。Codex 的 approval 与 sandbox、Gemini CLI 的 policy\nengine、OpenCode 的工具权限和 Antigravity 的 permission rules，都独立于\nSkill 格式。模型拿到 Skill\n说明以后，脚本能否执行、可以访问什么、是否需要用户确认，决定权仍在当前\nHarness 手里。\n自建 Harness\n也要自己补齐执行和安全策略\n如果开发者希望在自己的代理框架中使用这些\nSkill，就需要自己实现格式之外的部分。\nOpenAI\nResponses API 的 Skills 指南\n给出了一个例子：hosted shell\n接收上传且带版本的\nskill_reference\n，local shell\n则依赖调用者提供本地路径。API 不会因为调用者的代码仓库里有\n.agents/skills/\n就自动扫描它。\nMicrosoft\nAgent Skills for Python\n把这层分工写得更直接。\nFileSkillsSource\n从本地目录读取\nSkill，\nSkillsProvider\n将描述提供给模型，\nSkillScriptRunner\n启动关联的 Python\n脚本。它们解决了 Skill 如何进入 Python\nAgent，却不会替应用决定扫描哪些目录、如何准备依赖、在哪里运行脚本、何时请求用户授权，以及怎样限制文件与网络访问。\n要让\nrelease-check\n服务多个客户端，团队可以维护一份克制的核心 Skill，再为目标 Harness\n添加薄适配。\nname\n和\ndescription\n是可靠的共同字段；其他标准可选字段可以保留，但不能承担跨 Harness\n的关键控制。正文用通用动作描述步骤，脚本从自身位置解析资源，依赖和环境要求明确写出。Claude\nCode 的目录映射、Cursor 的路径触发或 API\n的上传版本分别留在适配层，最后在每个实际采用的 Harness\n中测试发现、资源读取、脚本执行和默认权限。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/agent-skills-harness-portability-20260720.html",
-      "content_chars": 4003,
-      "content_sha256": "93c4381abebceaa6e5cfdeb85fbb0ebdb447ac0154f3dbf49706571ed9b38d28",
-      "content_fetched_at": "2026-07-20T22:08:29.346603+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:96566e84cc3742bc",
-      "kind": "publish",
-      "text": "yage-share published: AI Memory 的 Benchmark 偏向 Recall，产品却更需要 Precision",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-19T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/ai-memory-benchmark-precision-20260719.html",
-      "title": "AI Memory 的 Benchmark 偏向 Recall，产品却更需要 Precision",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "检索与知识系统\nAI 产品与平台\n信任与治理\n我之前因为 ChatGPT 长期沿用一条过期的饮食偏好，关掉了\nmemory。它记对的时候，我只是少解释两句，几乎不会注意。它记错以后，却连续几周把同一条错误偏好带进新的回答。\n这种体验和现有 memory benchmark\n之间有一个明显的缺口。很多公开评测先给系统一批历史，再问它能不能找回并正确使用。真实产品还要做一个更早的决定，哪些信息应该进入长期状态。评测关心给定的历史有没有用起来，用户却会追问另一件事，这句话为什么会被保存。\n漏掉一条有用信息，通常只让用户再说一次。存入一条错误、过期或无关的信息，它可能在之后的许多会话里反复出现。两类错误的后果并不对称。Memory\n产品在写入时应该偏向 precision，宁可少存一些，也要优先减少误存。\nPASB 的 27\n个百分点说明了什么\n最近发布的\nPASB\n研究\n测试了智能代理是否会把迎合用户的言论保存为长期状态，并在后续的不相关任务中继续沿用。研究人员从\n100 个基础条目生成了 1,600 个测试任务，在 Hermes-Agent 和 OpenClaw\n两个框架上运行了 12 个基座模型。\n实验代码也已公开\n。每个任务先通过五轮对话诱导智能代理形成某种迎合用户的观点，接着提出三个新问题，观察前面的判断是否仍会影响后续回答。\n数据分成两组。一组的信息只留在原会话里，四项逐轮失败率的均值是\n45.0%。另一组的信息由智能代理写入长期状态，均值是 71.9%，相差 27.0\n个百分点。不过，这两组是根据智能代理自主决定是否写入而划分的，并非随机对照实验，因此这个差值只说明写入与后续失败相关，不能直接解释为因果效应。\n这个结果的产品意义不只在于失败率上升。留在单次会话里的错误通常不会进入新的会话，一旦写入长期状态，同一个错误却可能反复出现。记对信息通常只省去几句解释，记错信息则要求用户在后续使用中不断检查和纠正。\n公开 Benchmark\n还没有测到完整的产品体验\n现有 benchmark 已经不只测试简单问答。\nLongMemEval\n覆盖了信息提取、跨会话推理、时间推理、知识更新和拒绝回答，也分别分析了索引、检索与读取。\nMemoryArena\n进一步观察历史经验能否帮助智能代理完成后续行动。\nSTATE-Bench\n还把任务结果、可靠性、成本、用户投入和知情同意放进了模拟环境。\n这些评测正在接近产品，但起点仍然是一批已经准备好的历史或状态。它们可以判断系统能不能找到、更新和使用信息，却很少测试日常对话中的一句话是否应该成为长期记忆。产品最容易出错的写入决定，往往在\nbenchmark 开始以前就已经完成了。\n我没有找到覆盖完整线上闭环的公开 memory\nbenchmark。现有评测不会让真实用户连续使用几周，也看不到一条错误记忆让用户纠正了多少次、删除后是否重新出现、有没有越过项目边界，更无法观察它对长期留存和付费转化的影响。技术评测在回答系统记得好不好，产品还需要回答用户是否愿意让它记，以及记住以后到底减少了工作还是增加了麻烦。\n用户更在意少记错，系统更容易多记\n借用信息检索里的说法，漏掉一条以后可能有用的信息属于 false\nnegative。减少这类遗漏，会提高\nrecall。把一条不该长期保存的信息写进去则属于 false\npositive。减少这类误存，会提高写入\nprecision。真实产品不应该给两类错误相同的权重，因为漏存通常只带来一次重复说明，误存却可能影响许多次后续使用。\n自动保存会进一步放大这个差异。系统可以从一次对话里提取出大量可能有用的信息，用户真正愿意带到未来的通常只是其中很小一部分。比如，我出差时提到这周在柏林，这句话可以帮助安排眼下的行程，却不代表我已经搬家。系统如果把柏林自动保存为长期所在地，几周后仍可能按照柏林调整推荐。我们交给\nAI 分析的网页和材料，也可能被误认成用户自己的长期观点。\n一项研究收集了 80 名 ChatGPT 用户提供的 2,050 条 memory 记录。\n研究者发现\n，96%\n的内容由系统主动创建，只有 4% 来自用户的明确要求。28%\n的记录涉及个人隐私数据，52% 包含对用户心理状态的推断，84%\n可以追溯到具体的对话上下文。这个小样本不能代表所有用户，96%\n也不等同于出错概率，但它显示用户画像的内容主要由系统决定，用户只能在事后检查和修改。\nMem0\n的一个部署个案\n更直接地展示了多存与存准之间的差别。一位用户在 32\n天里积累了 10,134 条 memory，人工清理后只保留 224\n条，其中不需要修改的只有 38\n条。单一个案不能代表系统的平均水平，但它说明准确抽取一句话和判断这句话应该长期保存，是两个不同的任务。\n同一条误存信息进入更大的作用范围以后，后果还会继续扩大。假设用户在一次对话里说自己不喜欢安全检查。它留在当前会话中，可能只影响这一轮的提醒。它进入跨会话\nprofile 后，可能影响多个项目。它如果再成为 reusable\nskill，智能代理执行部署或修改文件时也可能受到影响。句子没有变，能够影响的时间、任务范围和行动却变了。\n同一句话从当前对话进入全局\nprofile，再进入 reusable skill\n后，影响时间、作用范围和行动能力逐级扩大\n候选记忆的低批准率也不该被自动保存掩盖。它可能来自确认界面的操作摩擦，也可能说明系统提取的信息没有足够的长期价值。产品团队需要把两种原因分开测。如果用户持续拒绝大多数候选，直接取消确认只会提高写入量，不能证明这些记忆真的有用。\nMemory 产品应该怎样测\n目前没有公开数据能够说明 AI memory\n是否带来了产品层面的成功。ChatGPT、Claude 和 Gemini\n都在扩大跨会话记忆能力，但三家公司都没有公布功能启用率、记忆实际参与的会话比例、D30\n增量留存、付费转化率，以及用户纠正或删除记忆的频率。\nOpenAI 在介绍\nDreaming\n架构\n时给出了一组内部评测。事实回忆成功率从 41.5% 提升至\n82.8%，偏好遵从度从 31.4% 提升至 71.3%，时间状态更新成功率从 9.4% 提升至\n75.1%。这些数字说明系统更擅长找回和更新信息，无法说明用户是否愿意让系统自动保存。\nClaude 的 memory\n也从 2025\n年面向 Team 和 Enterprise 推出，逐步扩展到 Pro、Max\n和免费用户，同时加入项目隔离、可见摘要、编辑控制和临时对话。厂商持续投入这个功能，与用户是否接受自动写入，需要分别测量。\n产品团队可以先比较无 memory 与人工提供正确、相关 memory\n的理想状态，判断个性化在这个场景里最多能带来多少价值。如果两组结果接近，继续优化\nmemory 的意义就很有限。确认个性化确实有用以后，再比较自动写入、AI\n提议后由用户确认、完全由用户主动保存三种模式，才能看出哪一种真正减少了用户工作。\n这类实验首先要测写入\nprecision。候选批准率、用户主动保存频次、纠正与删除率，可以帮助判断系统保存的内容是否符合用户意图。过期信息复现、跨项目调用和错误行动，反映误存造成的后续影响。另一边还要测\nmemory 省去了多少重复说明，是否提高任务完成率，以及它对 D30\n留存和付费转化的影响。只有把收益和误存造成的损失放在一起，产品团队才知道\nmemory 的净价值。\n结语\n偏向 precision 不等于放弃自动化。AI\n仍然可以发现候选信息、整理表述、建议作用范围和有效期。用户只需要批准、修改或拒绝。长期状态在用户确认后才生效，后续检索和更新仍然可以自动完成。\nAI\n自动发现和整理候选记忆，用户批准后才进入长期状态；已批准记忆可以自动检索，高风险行动前仍需复核\n显式保存也不能保证一条信息永远正确。\nGitHub\nCopilot 的 agent\nmemory\n在保存代码库记忆时记录具体代码引用，使用前再回到当前分支读取最新内容。写入时由用户确认，使用时由系统检查信息是否仍然有效，两步解决的是不同问题。\n可靠的 memory\n应该少存、存准，并让用户知道每条长期状态从哪里来、如何修改和撤销。记住多少内容，反而是后面的事。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/ai-memory-benchmark-precision-20260719.html",
-      "content_chars": 3418,
-      "content_sha256": "abe517a0e38326f723fe984119ecb30bbcb64c085adbb383f95b261c4ba49beb",
-      "content_fetched_at": "2026-07-20T22:08:29.459862+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-07-21",
+  "collect_window": {
+    "start": "2026-07-19T00:00:00+00:00",
+    "end": "2026-07-20T22:06:52.513189+00:00",
+    "hours": 46
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "29782751196",
+    "commit": "7c2a955"
+  },
+  "stats": {
+    "total": 7,
     "by_kind": {
       "publish": 7
     },
@@ -196,9 +27,569 @@
       "denizhalil-blogs": 1,
       "yage-share": 3
     },
+    "failed_lists": [],
+    "sources_ok": 44,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 8,
+      "rss": 26
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 13,
+      "calls": 13,
+      "prompt_tokens": 13518,
+      "completion_tokens": 3601,
+      "total_tokens": 17119,
+      "prompt_cache_hit_tokens": 9344,
+      "prompt_cache_miss_tokens": 4174
+    },
     "by_content_status": {
       "failed": 3,
       "ok": 4
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:9b98c64c59cb08f5",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "[UEFI Bootkit] vm falls back to PXE boot / resets after hooking ImgpLoadPEImage",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763327-uefi-bootkit-vm-falls-pxe-boot-resets-hooking-imgploadpeimage.html",
+      "text": "unknowncheats-ac published: [UEFI Bootkit] vm falls back to PXE boot / resets after hooking ImgpLoadPEImage",
+      "at": "2026-07-20T22:06:52.513189+00:00",
+      "external_id": "a:9b98c64c59cb08f5",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763327-uefi-bootkit-vm-falls-pxe-boot-resets-hooking-imgploadpeimage.html",
+      "title": "[UEFI Bootkit] vm falls back to PXE boot / resets after hooking ImgpLoadPEImage",
+      "content": "unknowncheats-ac published: [UEFI Bootkit] vm falls back to PXE boot / resets after hooking ImgpLoadPEImage",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763327-uefi-bootkit-vm-falls-pxe-boot-resets-hooking-imgploadpeimage.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-07-20T22:07:56.755082+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-07-20T22:06:52.513189+00:00",
+      "collected_at": "2026-07-20T22:06:52.513189+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/763327-uefi-bootkit-vm-falls-pxe-boot-resets-hooking-imgploadpeimage.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "[UEFI Bootkit] vm falls back to PXE boot / resets after hooking ImgpLoadPEImage",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763327-uefi-bootkit-vm-falls-pxe-boot-resets-hooking-imgploadpeimage.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:9b4f2c9eb50d8cd0",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "SCPSL External",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html",
+      "text": "unknowncheats-ac published: SCPSL External",
+      "at": "2026-07-20T22:06:52.513189+00:00",
+      "external_id": "a:9b4f2c9eb50d8cd0",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html",
+      "title": "SCPSL External",
+      "content": "unknowncheats-ac published: SCPSL External",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-07-20T22:08:07.631473+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-07-20T22:06:52.513189+00:00",
+      "collected_at": "2026-07-20T22:06:52.513189+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "SCPSL External",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:bec4b75109f94d48",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "PNP Driver Initialization Without Hardware",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763156-pnp-driver-initialization-hardware.html",
+      "text": "unknowncheats-ac published: PNP Driver Initialization Without Hardware",
+      "at": "2026-07-20T22:06:52.513189+00:00",
+      "external_id": "a:bec4b75109f94d48",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763156-pnp-driver-initialization-hardware.html",
+      "title": "PNP Driver Initialization Without Hardware",
+      "content": "unknowncheats-ac published: PNP Driver Initialization Without Hardware",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763156-pnp-driver-initialization-hardware.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-07-20T22:08:18.497870+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-07-20T22:06:52.513189+00:00",
+      "collected_at": "2026-07-20T22:06:52.513189+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/763156-pnp-driver-initialization-hardware.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "PNP Driver Initialization Without Hardware",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763156-pnp-driver-initialization-hardware.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:dc34a3872a7f2c5a",
+      "who": "denizhalil-blogs",
+      "who_url": "https://denizhalil.com/blogs/",
+      "action": "publish",
+      "target": "WordPress Core 6.9-7.0.1 – Pre-Auth Blind SQL Injection (Batch-Route Confusion)",
+      "target_url": "https://denizhalil.com/2026/07/20/wordpress-cve-2026-63030-batch-route-confusion/",
+      "text": "denizhalil-blogs published: WordPress Core 6.9-7.0.1 – Pre-Auth Blind SQL Injection (Batch-Route Confusion)",
+      "at": "2026-07-20T04:56:00+00:00",
+      "external_id": "a:dc34a3872a7f2c5a",
+      "url": "https://denizhalil.com/2026/07/20/wordpress-cve-2026-63030-batch-route-confusion/",
+      "title": "WordPress Core 6.9-7.0.1 – Pre-Auth Blind SQL Injection (Batch-Route Confusion)",
+      "content": "Introduction\nDiscovered as a major security flaw in the core architecture of WordPress, the vulnerability chain colloquially known as\nwp2shell\nrepresents one of the most severe threat vectors impacting the Content Management System ecosystem. Because WordPress powers over 40% of all websites globally, the blast radius of this default-configuration flaw is exceptionally wide. This exploit chain targets two integral components of WordPress Core: the REST API batching infrastructure and the underlying\nWP_Query\ndatabase abstraction layer. By seamlessly combining these internal architectural flaws, a completely remote, unauthenticated attacker can bypass standard perimeter defenses to achieve full Remote Code Execution (RCE) on a stock installation—requiring absolutely no third-party plugins or active themes to succeed. With a CVSS base score of\n9.8 (Critical)\n, this vulnerability represents an existential threat to unpatched servers, requiring immediate attention, auditing, and remediation from system administrators and security operations teams worldwide.\nLearning Objectives\nBy the end of this article, you will understand:\nThe structural design and mechanics of the WordPress REST API batching system.\nThe root cause of the “Batch-Route Confusion” logic flaw tracked under\nCVE-2026-63030\n.\nProactive identification strategies and mitigation techniques to secure vulnerable environments.\nHow the input sanitization failure in\nWP_Query\nleads to the SQL Injection tracked under\nCVE-2026-60137\n.\nThe end-to-end chaining process that allows low-severity bugs to escalate into unauthenticated server compromise.\nWhat is WordPress Core 6.9-7.0.1 – Pre-Auth Blind SQL Injection CVE-2026-63030\nCVE-2026-63030\nis an improper access control vulnerability residing natively in the batch request handler of the WordPress REST API framework. The WordPress REST API features a dedicated batching endpoint (\n/wp-json/batch/v1\n) designed to allow clients, developers, and blocks to bundle multiple individual API calls into a single HTTP request to optimize performance and lower server round-trips. This endpoint is active by default across millions of installations, meaning the underlying architectural flaw is exposed out-of-the-box without requiring any custom API modifications or configuration changes by the site administrator. The vulnerability itself stems from a fundamental logical parsing error within the array processing loop of this batch endpoint. When the server is forced to handle a meticulously malformed payload, the internal routing mechanics lose synchronization, causing an array index misalignment. This desynchronization tricks the server into evaluating a high-privilege, restricted internal route against the lax or nonexistent permission check callbacks intended for an entirely different, public-facing endpoint. Consequently, an anonymous visitor can cleanly execute internal API routines that should normally require strict administrative authentication.\nWhile this authorization bypass is highly restricted in terms of what it can execute on its own, it acts as the primary gateway for a catastrophic exploit chain. By providing an unauthenticated vehicle to reach internal code pathways, it directly exposes deeper database management classes to malicious manipulation. When chained with secondary flaws in input handling, this flaw transforms from a simple routing oversight into a severe exploit mechanism capable of completely compromising the underlying database layer.\nTo break down its core characteristics, the vulnerability is defined by the following fundamental traits:\nZero-Authentication Requirement:\nThe flaw can be triggered remotely by completely anonymous users before any login screen, session cookie, or API token is requested or validated by the application.\nCore Vulnerability Status:\nThe security defect resides strictly within the core WordPress codebase, meaning every stock installation within the affected version window is vulnerable regardless of active plugins or themes.\nDesynchronization Trigger:\nThe exploit relies on an array index drift within the\nserve_batch_request_v1\nmethod, which directly maps incoming data structures to internal permission validation routines.\nGateway for Deep Exploitation:\nIt acts as the necessary first stage of the\nwp2shell\nchain, smuggling restricted parameters into internal queries to ultimately execute the blind SQL injection.\nTechnical Detail: How the Vulnerability Chain Works\nThe structural danger of the\nwp2shell\nvulnerability chain lies in how it seamlessly bridges the gap between an abstract logical flaw and direct database interaction. In modern web architectures, security models heavily rely on layered boundaries, assuming that if a request passes the API gateway, the underlying components can trust its structure. This vulnerability turns that assumption into a liability by undermining the integrity of the WordPress routing parser before data ever reaches the internal database abstraction layers. By meticulously breaking down the communication protocols of the core application, the exploit demonstrates how minor, isolated structural oversights can lead to absolute system compromise when chained sequentially. Rather than breaking through a reinforced cryptographic firewall, the attack subtly misaligns the internal gears of the application loop. Once this alignment is lost, the application itself inadvertently ferries the malicious payload past its own defensive perimeters, exposing deep, unescaped database query parameters directly to the attacker.\nStep 1: Batch-Route Confusion (CVE-2026-63030)\nWordPress utilizes the\nWP_REST_Server::serve_batch_request_v1()\nmethod to iterate through an array of sub-requests provided by the client, executing them sequentially and matching each route with its corresponding permission check callback. An attacker exploits this behavior by constructing a batch payload containing an intentionally malformed or structurally anomalous entry mid-sequence. During processing, this structural anomaly causes an array index misalignment within the execution loop. The internal pointer mapping individual request objects to their mandatory validation filters drifts out of sync. As a result, a highly restricted administrative internal route is evaluated using the lax or empty permission schema intended for a completely different public endpoint. Passing through the misaligned gate, the server executes the privileged routine with parameters fully controlled by the unauthenticated user.\nTo illustrate this structural breakdown, consider how the server handles a typical JSON batch request array compared to a malicious payload designed to induce index drift:\n/* Concept of a typical, valid batch request array */\n[\n{ \"method\": \"GET\", \"path\": \"/wp/v2/posts\" }, /* Public Route -> Checks public permissions */\n{ \"method\": \"GET\", \"path\": \"/wp/v2/comments\" } /* Public Route -> Checks public permissions */\n]\n/* Concept of an exploit payload forcing index desynchronization */\n[\n{\n\"method\": \"POST\",\n\"path\": \"/wp/v2/users\",\n\"invalid_structure_trigger\": [null]\n}, /* Malformed Entry -> Causes loop pointer misalignment */\n{\n\"method\": \"GET\",\n\"path\": \"/wp/v2/internal/privileged-endpoint\",\n\"smuggled_params\": { ... }\n} /* Privileged Entry -> Evaluated using public permission filter */\n]\nStep 2: Smuggling the SQL Injection (CVE-2026-60137)\nOnce the authorization layer is bypassed via route confusion, the attacker successfully smuggles parameter payloads into internal query handlers (such as\n/wp/v2/posts\n) that are normally shielded from direct anonymous access. This exposes the application to\nCVE-2026-60137\n. The smuggled parameters are passed directly into the core\nWP_Query\nengine. Specifically, the handling of the\nauthor__not_in\n(or\nauthor_exclude\n) parameter fails to properly escape, sanitize, or cast user-supplied inputs before appending them into raw database operations. By supplying structured malicious payloads into this parameter, the attacker executes a Time-Based or UNION-Based Blind SQL Injection. This allows the attacker to exfiltrate administrative password hashes and the site’s secret authentication salts (\nAUTH_KEY\n,\nSECURE_AUTH_KEY\n). By reconstructing authentication cookies or cracking the extracted hashes, the attacker gains full administrative access, uploads a malicious plugin or theme, and establishes complete Remote Code Execution (RCE) over the underlying server host.\nTo visualize how the absence of input casting breaks down at the database layer, consider the difference between a standard query and the unescaped injection string generated by the vulnerability:\n-- Expected execution behavior for legitimate numeric IDs:\nSELECT * FROM wp_posts WHERE post_author NOT IN (2, 5, 12);\n-- Exploitation execution behavior resulting from unescaped string injection:\nSELECT * FROM wp_posts WHERE post_author NOT IN (0) UNION SELECT 1,2,3,4,user_pass FROM wp_users WHERE user_login='admin' -- );\nAffected Software & Plugins\nThe critical severity of this vulnerability stems primarily from its placement within the native architecture of the platform, completely independent of any third-party plugins, custom extensions, or active themes. Because the flaw impacts the core REST API and query routing logic, every standard installation operating within the targeted release branches is exposed by default, significantly expanding the overall attack surface across the web ecosystem. While the WordPress Core security team quickly responded by deploying forced automatic background updates to mitigate the threat globally, relying solely on automated systems introduces operational risk. Server-side constraints, strict file permission hardening, or aggressive caching reverse proxies can silently block these upstream updates from applying, making manual verification a necessity for security teams.\nVulnerable Core Branches:\nApplies natively to all environments running WordPress Core versions\n6.9.0 through 6.9.4\n, as well as versions\n7.0.0 through 7.0.1\n.\nPatched Suffixes:\nThe underlying architecture was fully secured and mitigated with the official distribution of versions\n6.9.5\nand\n7.0.2\n.\nZero-Dependency Risk:\nThe vulnerability requires no specific plugin configurations or administrative modifications to be exploited, impacting stock installations completely out-of-the-box.\nConclusion\nThe discovery of the Pre-Auth Blind SQL Injection and Batch-Route Confusion chain underscores the foundational siber security principle of defense-in-depth. A logic error that appears isolated at the API routing layer can quickly become fatal when combined with insufficient input validation at the database abstraction layer. When application layers trust each other blindly without strict verification at every boundary, even complex web ecosystems remain highly vulnerable to catastrophic exploitation. This specific flaw highlights that perimeter defenses alone are insufficient if the core application components fail to maintain rigid boundaries during cross-component data transmittal. Web administrators must urgently verify their running WordPress core versions to ensure their environments are completely insulated from this attack vector. If immediate updates are not feasible due to legacy constraints, staging environments, or strict production freeze windows, temporary virtual patching via Web Application Firewalls (\nWAF\n) must be deployed immediately. Specifically, network teams should implement strict edge rules to drop all external traffic targeting the\n/wp-json/batch/v1\nendpoint and its query parameter variations. Furthermore, implementing real-time monitoring on database logs for unusual\nUNION\nqueries targeting the users table can serve as an invaluable secondary detection layer.\nUltimately, this vulnerability serves as a stark reminder that modern threat landscapes move at an accelerated pace, often outpacing passive security measures. Relying on default configurations or assuming background systems always function flawlessly creates a dangerous gap in visibility that sophisticated attackers are quick to exploit. In modern web infrastructure, maintaining a proactive, rigorously audited, and rapid patch management cycle remains the single most effective defense against systemic server compromise. Security teams must transition from passive reliance on automation to active, verified governance of their application dependencies.\nWordPress Security CVE 2026 63030\nDownload\nOSI Model: Data Communication in Computer Networks\nWPScan: An Essential Tool for WordPress Security Scanning\nIntroduction to Blockchain Technology with a Python Example\nExploitation of Microsoft Defender Elevation of Privilege Vulnerability (CVE-2026-50656)\nCritical Vulnerability in WordPress YMC Filter: Unauthenticated Content Disclosure (CVE-2026-10823)\ngithub.com: wp2shell-poc\npentest-tools.com: wp2shell – WordPress Core 6.9.0-6.9.4 and 7.0.0-7.0.1 – Pre-Auth Batch-Route Confusion\ncloud.projectdiscovery.io: WordPress Core 6.9-7.0.1 – Pre-Auth Blind SQL Injection (Batch-Route Confusion)\nThe post\nWordPress Core 6.9-7.0.1 – Pre-Auth Blind SQL Injection (Batch-Route Confusion)\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://denizhalil.com/2026/07/20/wordpress-cve-2026-63030-batch-route-confusion/",
+      "content_chars": 13276,
+      "content_sha256": "33a651aa4b66b71de2a3404c267fd0e6463b5f7d8afdd2076f6ae0080a88d91e",
+      "content_fetched_at": "2026-07-20T22:08:48.631796+00:00",
+      "author": "denizhalil-blogs",
+      "author_name": "DenizHalil Blogs",
+      "author_url": "https://denizhalil.com/blogs/",
+      "published_at": "2026-07-20T04:56:00+00:00",
+      "collected_at": "2026-07-20T22:06:52.513189+00:00",
+      "tags": [
+        "kind:publish",
+        "src:denizhalil-blogs",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://denizhalil.com/blogs/",
+        "https://denizhalil.com/2026/07/20/wordpress-cve-2026-63030-batch-route-confusion/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "denizhalil-blogs",
+          "url": "https://denizhalil.com/blogs/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "denizhalil-blogs",
+          "name": "DenizHalil Blogs",
+          "home_url": "https://denizhalil.com/blogs/"
+        },
+        "article": {
+          "title": "WordPress Core 6.9-7.0.1 – Pre-Auth Blind SQL Injection (Batch-Route Confusion)",
+          "url": "https://denizhalil.com/2026/07/20/wordpress-cve-2026-63030-batch-route-confusion/",
+          "content_sha256": "33a651aa4b66b71de2a3404c267fd0e6463b5f7d8afdd2076f6ae0080a88d91e"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:64cec87b73d64945",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Coding Agent 还在配置环境，第三方代码已经运行了",
+      "target_url": "https://yage.ai/share/coding-agent-setup-install-boundary-20260720.html",
+      "text": "yage-share published: Coding Agent 还在配置环境，第三方代码已经运行了",
+      "at": "2026-07-20T00:00:00+00:00",
+      "external_id": "a:64cec87b73d64945",
+      "url": "https://yage.ai/share/coding-agent-setup-install-boundary-20260720.html",
+      "title": "Coding Agent 还在配置环境，第三方代码已经运行了",
+      "content": "AI 编程\nAI Agent\n安全与供应链\n把一个陌生仓库交给 Coding Agent\n后，很多人的第一句话是：“先把项目跑起来。”过去由人配置环境，至少还要读一遍文档、逐条复制命令。Agent\n则会读完说明，直接生成并执行安装命令。人也因此很容易把 setup\n当成准备工作。\n预印本论文\nSetup Complete, Now You Are Compromised\n指出了这里的时间差：下载依赖本身就可能执行代码。开发者还在等待环境就绪，软件包里的安装脚本或许已经开始运行。等到最终\ndiff 出现，第一次代码执行可能早已结束。\n论文作者围绕这条路径构造了十二个场景、五类攻击，并测试九种由不同模型和客户端组成的\nCoding Agent\n配置。结果均来自作者实验，目前没有独立复现；这些构造场景也不能证明现实攻击已经普遍发生。实验细节与限制可查阅\n论文 HTML 版\n。\n“把项目跑起来”已经包含了一次代码执行\n为了启动项目，Agent 会先读\nREADME\n和依赖配置，例如\npyproject.toml\n、\nrequirements.txt\n，有时还要参考\nMakefile\n或 CI 配置。接着，它调用 pip、npm 或\nCargo，从外部下载软件包并装进开发环境。下文把这类依赖管理工具统称为\npackage manager。\n获取软件包不只是复制文件。Python 包可以在构建或安装时运行\nsetup.py\n，首次导入时还会执行\n__init__.py\n；npm\n包可以设置\npostinstall\n；Cargo 构建依赖时会运行\nbuild.rs\n。这些入口原本服务于编译和环境配置，也让软件包能够在安装、构建或首次导入时执行代码。\n如果项目说明把 Agent 引向攻击者控制的软件包，package manager\n就可能运行其中的代码。此时 Agent 还没开始修改业务文件，开发者也没有最终\ndiff 可看。项目尚未启动，不代表第三方代码尚未运行。\n恶意代码也不必出现在仓库里。项目配置或 Pull Request\n可以只有一项看似普通的依赖变更，真正要运行的代码留在外部软件包中，等\npackage manager 主动下载。\nCoding Agent\n从项目说明生成安装命令，package manager\n随后执行外部软件包中的安装脚本；检查点必须位于安装开始之前\nAgent\n没有收到恶意命令，为什么仍会照做\n我在 2026 年 4 月的\n《AI\n编程工具的配置文件，现在是攻击入口》\n里讨论过另一种风险：攻击者把恶意文字放进仓库，Agent\n误把这些文字当成指令。这篇论文里的安装要求却不需要伪装成恶意命令。安装依赖本来就是开发者授权的正常任务。\n论文作者做了一组对照。他们让程序在报错信息中建议安装攻击者指定的软件包，九种受测配置全部拒绝了请求。在这组实验里，客户端把程序输出当作不可信内容，没有直接照做。\n同一项安装建议写进项目说明，角色就变了。Agent\n需要参考这些文档才能配置环境；如果一概拒绝文档里的安装要求，“把项目跑起来”也就无法完成。\n攻击者因此可以只修改文档或依赖配置，让安装命令指向另一个软件包或下载地址。审查者看到的是一项依赖变更，不会自动看到那个外部软件包在安装时做了什么。\n一个正常包名，也可能把代码带到错误的地方\n一条安装命令至少决定三件事：安装哪个包、从哪里下载、使用什么版本。论文发现，Agent\n对这三项选择的判断并不一样。\n明显的错别字最容易引起警觉。作者把\ntransformers\n拼成\ntranformers\n时，几乎所有受测配置都发现了异常。换成\nazurecore\n和真实包\nazure-core\n这样的分隔符差异，结果就取决于具体的模型与客户端组合。同一个模型换一个客户端，实验结果也可能不同。\n包名正确，下载来源仍可能改变。package manager 通常从默认的\nregistry，也就是软件包索引，取回代码。项目使用私有包时，可能通过\n--extra-index-url\n增加另一个索引；正常包名也可能因此从攻击者控制的来源解析和下载。论文报告，客户端拦截这类场景的次数，整体少于明显错拼包名的场景。\n版本是另一条路径。作者保持包名和来源正常，只要求安装已经列入 CVE\n公开漏洞目录的旧版本。九种配置都完成了安装，部分配置随后才给出警告。这里没有证据表明攻击者的代码已经运行；结果是开发环境进入已知脆弱状态，为后续利用留下条件。\n明显错别字容易触发警告后，风险仍可转向更像真实名称的变体、外部软件包索引或已知脆弱版本\n代码审查开始时，安装阶段已经结束了\n最终 diff 只能回答 Agent 改了哪些仓库文件。它不会自动列出 package\nmanager\n此前下载并执行过的代码。模型在环境配置结束后提醒包名可疑或版本存在漏洞，也无法撤回已经运行的安装脚本。\n外部软件包甚至可以运行完脚本后完全不改业务源码。此时 diff\n没有漏报仓库变化，只是它从来不负责记录依赖安装的执行历史。\nHTTPS、签名和哈希可以帮助确认下载内容没有在途中遭到替换；lockfile\n则记录已经解析出的版本，让后续安装复现同样的结果。它们保护传输和复现，却不判断最初选择的软件包、来源和版本是否正确。\n如果项目配置一开始就指向攻击者控制的包，哈希可以准确核对那个包，lockfile\n也可以继续复现它。安全检查必须发生在 package manager 开始安装以前。\n先检查要安装什么，再允许安装开始\nAgent 准备运行安装命令时，客户端可以先暂停，把命令里的包名、registry\n和版本单独展示出来。开发者此时看到的是这次安装的实际目标，而不只是一整条难以核对的终端命令。\n客户端再按项目规则核对这些信息：名称是否对应团队准备使用的软件包，registry\n是否获准使用，版本是否存在已知漏洞。任何一项无法确认，安装就保持暂停，等开发者看清原因后决定是否放行。\n真实项目会使用公司内部 registry、Git\n依赖或本地脚本，因此这套规则不能简化成一张公共软件包清单。团队需要根据每个项目实际使用的来源和依赖形式设置例外。论文也没有测量这类规则在真实项目中的误报成本。\n通过检查的依赖仍应在受限环境中安装。安装过程不接触长期凭证，网络只开放任务需要的目的地。安装前检查减少选错软件包的机会，受限环境则控制代码运行后的影响，两者解决的是不同问题。\n以后再让 Coding Agent\n“先把项目跑起来”，普通用户需要把它理解成一次运行第三方代码的授权。对构建\nAgent 或 harness\n的团队，安装前解析包名、来源和版本，遇到异常时暂停并请求批准，以及在受限环境中完成安装，都应该成为客户端的默认能力。这条安全边界属于执行层，不能只依赖模型临场判断。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/coding-agent-setup-install-boundary-20260720.html",
+      "content_chars": 2825,
+      "content_sha256": "283ef37a96f90fbd6654f081167486ff50d2b55667a72d6725224eca50dc3cba",
+      "content_fetched_at": "2026-07-20T22:08:29.221912+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-20T00:00:00+00:00",
+      "collected_at": "2026-07-20T22:06:52.513189+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/coding-agent-setup-install-boundary-20260720.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Coding Agent 还在配置环境，第三方代码已经运行了",
+          "url": "https://yage.ai/share/coding-agent-setup-install-boundary-20260720.html",
+          "content_sha256": "283ef37a96f90fbd6654f081167486ff50d2b55667a72d6725224eca50dc3cba"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:82de52138ee7e2d0",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Agent Skills 统一了文件格式，Harness 仍然各自为政",
+      "target_url": "https://yage.ai/share/agent-skills-harness-portability-20260720.html",
+      "text": "yage-share published: Agent Skills 统一了文件格式，Harness 仍然各自为政",
+      "at": "2026-07-20T00:00:00+00:00",
+      "external_id": "a:82de52138ee7e2d0",
+      "url": "https://yage.ai/share/agent-skills-harness-portability-20260720.html",
+      "title": "Agent Skills 统一了文件格式，Harness 仍然各自为政",
+      "content": "AI Agent\n开发工具\n把\nrelease-check 放进项目目录，哪些客户端能找到它\n如果你写好了一个用于检查发布流程的\nrelease-check\nSkill，想让本地 AI 助手直接调用它，最直观的办法是在项目根目录下创建\n.agents/skills/release-check\n，把说明文档\nSKILL.md\n、Python 脚本\nscripts/check_release.py\n和策略文件\nreferences/release_policy.md\n都放进去。\n截至 2026 年 7 月 17 日，Codex、Cursor、OpenCode、Gemini\nCLI、Antigravity 2.0、Antigravity CLI 和 Antigravity IDE\n都会扫描这个项目级共享目录，从中发现\nrelease-check\n。如果在同一个项目里使用 Claude\nCode，它却不会从这里寻找 Skill。在本文核查的这组主流本地客户端里，Claude\nCode 是唯一的例外。\n这种选择有些出人意料。Agent Skills 本身就是 Anthropic\n发起并维护的项目。Anthropic 在\n2025\n年 10 月 16 日\n先把 Skills 作为 Claude 的产品和 API 能力推出，又在\n2025 年 12 月 18 日\n将\nAgent Skills 发布为开放标准。项目官方的\n客户端实现指南\n建议，客户端扫描自身专用目录时，也考虑项目级\n.agents/skills/\n，并将它称为广泛采用的跨客户端惯例。Cursor\n和 OpenCode 甚至主动加入了对\n.claude/skills/\n的扫描；Claude\nCode 的\n官方文档\n却只列出专属的\n.claude/skills/\n、个人目录和其他 Claude 来源。\n团队可以把\n.agents/skills/release-check\n保留为唯一内容源，再在\n.claude/skills/\n下创建一个指向它的\nsymlink，也可以让安装器把它映射到 Claude Code 的目录。Claude Code\n官方支持 symlink，所以不必复制两份\nSkill；但无论选哪种办法，项目都要维护一段只为 Claude Code\n存在的部署逻辑。Anthropic 的做法没有违反\n格式规范\n，因为规范确实没有强制安装路径，但额外适配工作仍然落在开发者和其他工具身上。\n同一个 release-check Skill\n通过共享目录被多个客户端发现，Claude Code\n则需要一个指向同一内容源的薄桥接\n找到同一个\nSkill，不代表私有字段也会生效\n即便 Claude Code 已经能找到\nrelease-check\n，兼容问题依然没有解决。打开\nSKILL.md\n，文件开头的 frontmatter 还藏着另一组差异。\n开放规范要求 frontmatter 提供\nname\n和\ndescription\n，还允许选填\nlicense\n、\ncompatibility\n、\nmetadata\n和实验性的\nallowed-tools\n。Claude Code 的\n字段表\n又加入\nwhen_to_use\n、\nargument-hint\n、\narguments\n、\ndisable-model-invocation\n、\nuser-invocable\n、\ndisallowed-tools\n、\nmodel\n、\neffort\n、\ncontext\n、\nagent\n、\nhooks\n、\npaths\n和\nshell\n。\n这些字段不是普通说明。\nmodel\n和\neffort\n会影响 Claude 如何处理任务，\ncontext\n与\nagent\n控制是否进入 subagent，\npaths\n可以按文件匹配\nSkill，\nhooks\n会在指定时机执行命令。\ndisable-model-invocation: true\n禁止\nClaude 自主调用该 Skill，\ndisallowed-tools\n则在 Skill\n激活期间移除指定工具。作者一旦依赖这些设置，就不再只是使用一份通用的\nMarkdown 指令。\n把同一份文件交给 Gemini CLI，它仍可读取标准的\nname\n和\ndescription\n，但不会执行 Claude Code\n私有字段所表达的模型选择、调用限制、subagent 配置或\nhooks。文件可以正常解析，不代表这些设置得到了替代实现。若\nrelease-check\n的正确性依赖\ndisable-model-invocation\n或\ndisallowed-tools\n，团队就必须在 Gemini CLI\n自己的策略与权限配置中重新表达要求，不能把 Claude frontmatter 当成跨\nHarness 的安全规则。\nCursor 已经兼容\npaths\n和\ndisable-model-invocation\n等少数 Claude\n字段，但这种选择性适配不代表整个生态对字段含义达成了共识。OpenCode\n的公开接口也没有承诺执行这些控制字段。同一个\nSKILL.md\n能被多个 Harness 读取，具体的调用时机、模型、subagent、hooks\n和工具限制仍可能不同。\nAgent Skills 在发现层趋同，但私有\nfrontmatter、加载、资源解析、执行与权限仍由各客户端 Harness\n决定\n真正执行脚本时，各家\nHarness 还在使用自己的规矩\n当大模型决定调用\nrelease-check\n时，各家 Harness\n的流程也不相同。\n在\nGemini CLI\n中，会话开始时模型只能看到 Skill\n的名称和描述。模型请求激活后，终端先展示 Skill\n的说明和目录访问范围，等待用户确认；获得同意后，Gemini CLI 才把\nSKILL.md\n正文和目录结构加载进上下文。\nOpenCode\n则要求模型调用内置的\nskill\n工具读取 Skill\n说明。这个动作只负责把文档交给模型。模型随后要运行\ncheck_release.py\n，仍需调用普通的 shell\n或文件工具，并接受宿主权限系统的检查。\nGoogle 的几种产品也不能合并成一个客户端来讨论。\nGemini CLI\n、\nAntigravity 2.0\n、\nAntigravity\nCLI\n和\nAntigravity IDE\n都支持项目级\n.agents/skills/\n，但它们的全局目录和加载流程并不相同。Antigravity\nCLI 当前让 agent 用普通文件工具读取\nSKILL.md\n，没有沿用\nGemini CLI 的\nactivate_skill\n流程。\nSkill 内部的脚本会把这些差异放大。运行\nscripts/check_release.py\n时，它可能还要读取\nreferences/release_policy.md\n。Agent Skills 没有规定 Harness\n从哪个工作目录启动 Python，也没有统一\nRead\n、\nBash\n、\nview_file\n或\nrun_shell_command\n这些工具名称。脚本应该通过\n__file__\n找到自身所在的 Skill\n目录，再定位参考文件；\nSKILL.md\n也应描述“读取文件”或“执行脚本”这样的动作，而不是假定每个 Harness\n都提供同名工具。\n规范中实验性的\nallowed-tools\n也不能替代各家 Harness\n自己的安全配置。Codex 的 approval 与 sandbox、Gemini CLI 的 policy\nengine、OpenCode 的工具权限和 Antigravity 的 permission rules，都独立于\nSkill 格式。模型拿到 Skill\n说明以后，脚本能否执行、可以访问什么、是否需要用户确认，决定权仍在当前\nHarness 手里。\n自建 Harness\n也要自己补齐执行和安全策略\n如果开发者希望在自己的代理框架中使用这些\nSkill，就需要自己实现格式之外的部分。\nOpenAI\nResponses API 的 Skills 指南\n给出了一个例子：hosted shell\n接收上传且带版本的\nskill_reference\n，local shell\n则依赖调用者提供本地路径。API 不会因为调用者的代码仓库里有\n.agents/skills/\n就自动扫描它。\nMicrosoft\nAgent Skills for Python\n把这层分工写得更直接。\nFileSkillsSource\n从本地目录读取\nSkill，\nSkillsProvider\n将描述提供给模型，\nSkillScriptRunner\n启动关联的 Python\n脚本。它们解决了 Skill 如何进入 Python\nAgent，却不会替应用决定扫描哪些目录、如何准备依赖、在哪里运行脚本、何时请求用户授权，以及怎样限制文件与网络访问。\n要让\nrelease-check\n服务多个客户端，团队可以维护一份克制的核心 Skill，再为目标 Harness\n添加薄适配。\nname\n和\ndescription\n是可靠的共同字段；其他标准可选字段可以保留，但不能承担跨 Harness\n的关键控制。正文用通用动作描述步骤，脚本从自身位置解析资源，依赖和环境要求明确写出。Claude\nCode 的目录映射、Cursor 的路径触发或 API\n的上传版本分别留在适配层，最后在每个实际采用的 Harness\n中测试发现、资源读取、脚本执行和默认权限。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/agent-skills-harness-portability-20260720.html",
+      "content_chars": 4003,
+      "content_sha256": "93c4381abebceaa6e5cfdeb85fbb0ebdb447ac0154f3dbf49706571ed9b38d28",
+      "content_fetched_at": "2026-07-20T22:08:29.346603+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-20T00:00:00+00:00",
+      "collected_at": "2026-07-20T22:06:52.513189+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/agent-skills-harness-portability-20260720.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Agent Skills 统一了文件格式，Harness 仍然各自为政",
+          "url": "https://yage.ai/share/agent-skills-harness-portability-20260720.html",
+          "content_sha256": "93c4381abebceaa6e5cfdeb85fbb0ebdb447ac0154f3dbf49706571ed9b38d28"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:96566e84cc3742bc",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "AI Memory 的 Benchmark 偏向 Recall，产品却更需要 Precision",
+      "target_url": "https://yage.ai/share/ai-memory-benchmark-precision-20260719.html",
+      "text": "yage-share published: AI Memory 的 Benchmark 偏向 Recall，产品却更需要 Precision",
+      "at": "2026-07-19T00:00:00+00:00",
+      "external_id": "a:96566e84cc3742bc",
+      "url": "https://yage.ai/share/ai-memory-benchmark-precision-20260719.html",
+      "title": "AI Memory 的 Benchmark 偏向 Recall，产品却更需要 Precision",
+      "content": "检索与知识系统\nAI 产品与平台\n信任与治理\n我之前因为 ChatGPT 长期沿用一条过期的饮食偏好，关掉了\nmemory。它记对的时候，我只是少解释两句，几乎不会注意。它记错以后，却连续几周把同一条错误偏好带进新的回答。\n这种体验和现有 memory benchmark\n之间有一个明显的缺口。很多公开评测先给系统一批历史，再问它能不能找回并正确使用。真实产品还要做一个更早的决定，哪些信息应该进入长期状态。评测关心给定的历史有没有用起来，用户却会追问另一件事，这句话为什么会被保存。\n漏掉一条有用信息，通常只让用户再说一次。存入一条错误、过期或无关的信息，它可能在之后的许多会话里反复出现。两类错误的后果并不对称。Memory\n产品在写入时应该偏向 precision，宁可少存一些，也要优先减少误存。\nPASB 的 27\n个百分点说明了什么\n最近发布的\nPASB\n研究\n测试了智能代理是否会把迎合用户的言论保存为长期状态，并在后续的不相关任务中继续沿用。研究人员从\n100 个基础条目生成了 1,600 个测试任务，在 Hermes-Agent 和 OpenClaw\n两个框架上运行了 12 个基座模型。\n实验代码也已公开\n。每个任务先通过五轮对话诱导智能代理形成某种迎合用户的观点，接着提出三个新问题，观察前面的判断是否仍会影响后续回答。\n数据分成两组。一组的信息只留在原会话里，四项逐轮失败率的均值是\n45.0%。另一组的信息由智能代理写入长期状态，均值是 71.9%，相差 27.0\n个百分点。不过，这两组是根据智能代理自主决定是否写入而划分的，并非随机对照实验，因此这个差值只说明写入与后续失败相关，不能直接解释为因果效应。\n这个结果的产品意义不只在于失败率上升。留在单次会话里的错误通常不会进入新的会话，一旦写入长期状态，同一个错误却可能反复出现。记对信息通常只省去几句解释，记错信息则要求用户在后续使用中不断检查和纠正。\n公开 Benchmark\n还没有测到完整的产品体验\n现有 benchmark 已经不只测试简单问答。\nLongMemEval\n覆盖了信息提取、跨会话推理、时间推理、知识更新和拒绝回答，也分别分析了索引、检索与读取。\nMemoryArena\n进一步观察历史经验能否帮助智能代理完成后续行动。\nSTATE-Bench\n还把任务结果、可靠性、成本、用户投入和知情同意放进了模拟环境。\n这些评测正在接近产品，但起点仍然是一批已经准备好的历史或状态。它们可以判断系统能不能找到、更新和使用信息，却很少测试日常对话中的一句话是否应该成为长期记忆。产品最容易出错的写入决定，往往在\nbenchmark 开始以前就已经完成了。\n我没有找到覆盖完整线上闭环的公开 memory\nbenchmark。现有评测不会让真实用户连续使用几周，也看不到一条错误记忆让用户纠正了多少次、删除后是否重新出现、有没有越过项目边界，更无法观察它对长期留存和付费转化的影响。技术评测在回答系统记得好不好，产品还需要回答用户是否愿意让它记，以及记住以后到底减少了工作还是增加了麻烦。\n用户更在意少记错，系统更容易多记\n借用信息检索里的说法，漏掉一条以后可能有用的信息属于 false\nnegative。减少这类遗漏，会提高\nrecall。把一条不该长期保存的信息写进去则属于 false\npositive。减少这类误存，会提高写入\nprecision。真实产品不应该给两类错误相同的权重，因为漏存通常只带来一次重复说明，误存却可能影响许多次后续使用。\n自动保存会进一步放大这个差异。系统可以从一次对话里提取出大量可能有用的信息，用户真正愿意带到未来的通常只是其中很小一部分。比如，我出差时提到这周在柏林，这句话可以帮助安排眼下的行程，却不代表我已经搬家。系统如果把柏林自动保存为长期所在地，几周后仍可能按照柏林调整推荐。我们交给\nAI 分析的网页和材料，也可能被误认成用户自己的长期观点。\n一项研究收集了 80 名 ChatGPT 用户提供的 2,050 条 memory 记录。\n研究者发现\n，96%\n的内容由系统主动创建，只有 4% 来自用户的明确要求。28%\n的记录涉及个人隐私数据，52% 包含对用户心理状态的推断，84%\n可以追溯到具体的对话上下文。这个小样本不能代表所有用户，96%\n也不等同于出错概率，但它显示用户画像的内容主要由系统决定，用户只能在事后检查和修改。\nMem0\n的一个部署个案\n更直接地展示了多存与存准之间的差别。一位用户在 32\n天里积累了 10,134 条 memory，人工清理后只保留 224\n条，其中不需要修改的只有 38\n条。单一个案不能代表系统的平均水平，但它说明准确抽取一句话和判断这句话应该长期保存，是两个不同的任务。\n同一条误存信息进入更大的作用范围以后，后果还会继续扩大。假设用户在一次对话里说自己不喜欢安全检查。它留在当前会话中，可能只影响这一轮的提醒。它进入跨会话\nprofile 后，可能影响多个项目。它如果再成为 reusable\nskill，智能代理执行部署或修改文件时也可能受到影响。句子没有变，能够影响的时间、任务范围和行动却变了。\n同一句话从当前对话进入全局\nprofile，再进入 reusable skill\n后，影响时间、作用范围和行动能力逐级扩大\n候选记忆的低批准率也不该被自动保存掩盖。它可能来自确认界面的操作摩擦，也可能说明系统提取的信息没有足够的长期价值。产品团队需要把两种原因分开测。如果用户持续拒绝大多数候选，直接取消确认只会提高写入量，不能证明这些记忆真的有用。\nMemory 产品应该怎样测\n目前没有公开数据能够说明 AI memory\n是否带来了产品层面的成功。ChatGPT、Claude 和 Gemini\n都在扩大跨会话记忆能力，但三家公司都没有公布功能启用率、记忆实际参与的会话比例、D30\n增量留存、付费转化率，以及用户纠正或删除记忆的频率。\nOpenAI 在介绍\nDreaming\n架构\n时给出了一组内部评测。事实回忆成功率从 41.5% 提升至\n82.8%，偏好遵从度从 31.4% 提升至 71.3%，时间状态更新成功率从 9.4% 提升至\n75.1%。这些数字说明系统更擅长找回和更新信息，无法说明用户是否愿意让系统自动保存。\nClaude 的 memory\n也从 2025\n年面向 Team 和 Enterprise 推出，逐步扩展到 Pro、Max\n和免费用户，同时加入项目隔离、可见摘要、编辑控制和临时对话。厂商持续投入这个功能，与用户是否接受自动写入，需要分别测量。\n产品团队可以先比较无 memory 与人工提供正确、相关 memory\n的理想状态，判断个性化在这个场景里最多能带来多少价值。如果两组结果接近，继续优化\nmemory 的意义就很有限。确认个性化确实有用以后，再比较自动写入、AI\n提议后由用户确认、完全由用户主动保存三种模式，才能看出哪一种真正减少了用户工作。\n这类实验首先要测写入\nprecision。候选批准率、用户主动保存频次、纠正与删除率，可以帮助判断系统保存的内容是否符合用户意图。过期信息复现、跨项目调用和错误行动，反映误存造成的后续影响。另一边还要测\nmemory 省去了多少重复说明，是否提高任务完成率，以及它对 D30\n留存和付费转化的影响。只有把收益和误存造成的损失放在一起，产品团队才知道\nmemory 的净价值。\n结语\n偏向 precision 不等于放弃自动化。AI\n仍然可以发现候选信息、整理表述、建议作用范围和有效期。用户只需要批准、修改或拒绝。长期状态在用户确认后才生效，后续检索和更新仍然可以自动完成。\nAI\n自动发现和整理候选记忆，用户批准后才进入长期状态；已批准记忆可以自动检索，高风险行动前仍需复核\n显式保存也不能保证一条信息永远正确。\nGitHub\nCopilot 的 agent\nmemory\n在保存代码库记忆时记录具体代码引用，使用前再回到当前分支读取最新内容。写入时由用户确认，使用时由系统检查信息是否仍然有效，两步解决的是不同问题。\n可靠的 memory\n应该少存、存准，并让用户知道每条长期状态从哪里来、如何修改和撤销。记住多少内容，反而是后面的事。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/ai-memory-benchmark-precision-20260719.html",
+      "content_chars": 3418,
+      "content_sha256": "abe517a0e38326f723fe984119ecb30bbcb64c085adbb383f95b261c4ba49beb",
+      "content_fetched_at": "2026-07-20T22:08:29.459862+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-19T00:00:00+00:00",
+      "collected_at": "2026-07-20T22:06:52.513189+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/ai-memory-benchmark-precision-20260719.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "AI Memory 的 Benchmark 偏向 Recall，产品却更需要 Precision",
+          "url": "https://yage.ai/share/ai-memory-benchmark-precision-20260719.html",
+          "content_sha256": "abe517a0e38326f723fe984119ecb30bbcb64c085adbb383f95b261c4ba49beb"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
