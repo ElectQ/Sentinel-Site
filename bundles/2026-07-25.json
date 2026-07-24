@@ -1,339 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-07-25",
-  "generated_at": "2026-07-24T22:14:01.594224+00:00",
-  "item_count": 13,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:1a2825b365a180b6",
-      "kind": "publish",
-      "text": "zdi-advisories published: ZDI-26-452",
-      "actor": "zdi-advisories",
-      "actor_url": "https://www.zerodayinitiative.com/advisories/published/",
-      "created_at": "2026-07-24T22:11:21.612313+00:00",
-      "html_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-452/",
-      "title": "ZDI-26-452",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Dify AI Workflow oauth_redirect_url Open Redirect Vulnerability\nJuly 23rd, 2026\nZDI-26-452\nZDI-CAN-29196\nCVE ID\nCVSS Score\n5.4\nAV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N\nAffected Vendors\nDify\nAffected Products\nDify\nVulnerability Details\nThis vulnerability allows remote attackers to disclose sensitive information on affected installations of Dify. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\nThe specific flaw exists within the OAuth flow handling in the AppInitializer component. An attacker can force a redirection to a site that serves malicious content. An attacker can leverage this vulnerability to disclose information in the context of the application.\nAdditional Details\nThe vendor has issued an update that appears to address this vulnerability\nhttps://github.com/langgenius/dify/pull/38864\nDisclosure Timeline\n2026-03-25\n- Vulnerability reported to vendor\n2026-07-23\n- Coordinated public release of advisory\n2026-07-23\n- Advisory Updated\nCredit\nDavid Fiser & Alfredo Oliveira of TrendAI Research\nBack to Advisories",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-452/",
-      "content_chars": 1107,
-      "content_sha256": "18d8acd5fbbb30b71b62e19b86e33df6adb4e083072bb63f12cf6bbf3ad61b41",
-      "content_fetched_at": "2026-07-24T22:11:37.374557+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Zero Day Initiative Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:8affb6b057cda253",
-      "kind": "publish",
-      "text": "zdi-advisories published: ZDI-26-451",
-      "actor": "zdi-advisories",
-      "actor_url": "https://www.zerodayinitiative.com/advisories/published/",
-      "created_at": "2026-07-24T22:11:21.612313+00:00",
-      "html_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-451/",
-      "title": "ZDI-26-451",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Docker Desktop for macOS Inference Server Permissive Allow List Sandbox Escape Vulnerability\nJuly 23rd, 2026\nZDI-26-451\nZDI-CAN-29308\nCVE ID\nCVSS Score\n8.8\nAV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H\nAffected Vendors\nDocker\nAffected Products\nDesktop\nVulnerability Details\nThis vulnerability allows local attackers to escape the model runner sandbox on affected installations of Docker Desktop for macOS. An attacker must first obtain the ability to execute low-privileged code within the sandbox in order to exploit this vulnerability.\nThe specific flaw exists within the sandbox profile of the inference server process. The issue results from a permissive list of allowed inputs. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the current user on the host system.\nAdditional Details\nDocker has issued an update to correct this vulnerability. More details can be found at:\nhttps://github.com/docker/model-runner/commit/980388697b46b799ebc831f26fa83e4e6130f80a\nDisclosure Timeline\n2026-02-25\n- Vulnerability reported to vendor\n2026-07-23\n- Coordinated public release of advisory\n2026-07-23\n- Advisory Updated\nCredit\nNitesh Surana (niteshsurana.com) of TrendAI Research\nBack to Advisories",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-451/",
-      "content_chars": 1243,
-      "content_sha256": "694d682769bbaaf4d6092c6ec6060ff16d390fa5c09001a1b7efa0e218e99854",
-      "content_fetched_at": "2026-07-24T22:11:38.513291+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Zero Day Initiative Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:6d590430414468eb",
-      "kind": "publish",
-      "text": "zdi-advisories published: ZDI-26-450",
-      "actor": "zdi-advisories",
-      "actor_url": "https://www.zerodayinitiative.com/advisories/published/",
-      "created_at": "2026-07-24T22:11:21.612313+00:00",
-      "html_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-450/",
-      "title": "ZDI-26-450",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "AzeoTech DAQFactory CTL File Parsing Use-After-Free Remote Code Execution Vulnerability\nJuly 23rd, 2026\nZDI-26-450\nZDI-CAN-28831\nCVE ID\nCVE-2026-12921\nCVSS Score\n7.8\nAV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H\nAffected Vendors\nAzeoTech\nAffected Products\nDAQFactory\nVulnerability Details\nThis vulnerability allows remote attackers to execute arbitrary code on affected installations of AzeoTech DAQFactory. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\nThe specific flaw exists within the parsing of CTL files. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process.\nAdditional Details\nAzeoTech has issued an update to correct this vulnerability. More details can be found at:\nhttps://www.cisa.gov/news-events/ics-advisories/icsa-26-169-02\nDisclosure Timeline\n2026-03-02\n- Vulnerability reported to vendor\n2026-07-23\n- Coordinated public release of advisory\n2026-07-23\n- Advisory Updated\nCredit\nRocco Calvi (@TecR0c) with TecSecurity\nBack to Advisories",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-450/",
-      "content_chars": 1191,
-      "content_sha256": "c13a35029392b932d1bb0cfac9975bce3fd85658fbf2c0b78b7b6a69212bdc91",
-      "content_fetched_at": "2026-07-24T22:11:39.645023+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Zero Day Initiative Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:0ac9ce3a10128020",
-      "kind": "publish",
-      "text": "zdi-advisories published: ZDI-26-449",
-      "actor": "zdi-advisories",
-      "actor_url": "https://www.zerodayinitiative.com/advisories/published/",
-      "created_at": "2026-07-24T22:11:21.612313+00:00",
-      "html_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-449/",
-      "title": "ZDI-26-449",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "AzeoTech DAQFactory CTL File Parsing Type Confusion Remote Code Execution Vulnerability\nJuly 23rd, 2026\nZDI-26-449\nZDI-CAN-28876\nCVE ID\nCVE-2026-12390\nCVSS Score\n7.8\nAV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H\nAffected Vendors\nAzeoTech\nAffected Products\nDAQFactory\nVulnerability Details\nThis vulnerability allows remote attackers to execute arbitrary code on affected installations of AzeoTech DAQFactory. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\nThe specific flaw exists within the parsing of CTL files. The issue results from the lack of proper validation of user-supplied data, which can result in a type confusion condition. An attacker can leverage this vulnerability to execute code in the context of the current process.\nAdditional Details\nAzeoTech has issued an update to correct this vulnerability. More details can be found at:\nhttps://www.cisa.gov/news-events/ics-advisories/icsa-26-169-02\nDisclosure Timeline\n2026-03-02\n- Vulnerability reported to vendor\n2026-07-23\n- Coordinated public release of advisory\n2026-07-23\n- Advisory Updated\nCredit\nrgod\nBack to Advisories",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-449/",
-      "content_chars": 1162,
-      "content_sha256": "573c73e9cffaa9e0b13d5ba985111eb5e6843e03cedf4de7e8769e8f1f8b66c1",
-      "content_fetched_at": "2026-07-24T22:11:40.808180+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Zero Day Initiative Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:6f15dd0061bf2ddc",
-      "kind": "publish",
-      "text": "zdi-advisories published: ZDI-26-448",
-      "actor": "zdi-advisories",
-      "actor_url": "https://www.zerodayinitiative.com/advisories/published/",
-      "created_at": "2026-07-24T22:11:21.612313+00:00",
-      "html_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-448/",
-      "title": "ZDI-26-448",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Bitdefender Total Security Shredder Link Following Local Privilege Escalation Vulnerability\nJuly 23rd, 2026\nZDI-26-448\nZDI-CAN-28703\nCVE ID\nCVE-2026-6851\nCVSS Score\n7.3\nAV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H\nAffected Vendors\nBitdefender\nAffected Products\nTotal Security\nVulnerability Details\nThis vulnerability allows local attackers to escalate privileges on affected installations of Bitdefender Total Security. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\nThe specific flaw exists within the File Shredder Wizard service. By creating a symbolic link, an attacker can abuse the service to delete a folder. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of SYSTEM.\nAdditional Details\nBitdefender has issued an update to correct this vulnerability. More details can be found at:\nhttps://www.bitdefender.com/support/security-advisories/improper-link-resolution-before-file-access-in-bitdefender-total-security-via-link-following-va-13681/\nDisclosure Timeline\n2026-03-13\n- Vulnerability reported to vendor\n2026-07-23\n- Coordinated public release of advisory\n2026-07-23\n- Advisory Updated\nCredit\nAnonymous\nBack to Advisories",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-448/",
-      "content_chars": 1269,
-      "content_sha256": "f0790f3ce59d4d7add19c96c3fa4a23c23dbce493865eaf1f9276c5888a735d7",
-      "content_fetched_at": "2026-07-24T22:11:41.959183+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Zero Day Initiative Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:0e4a1e3adb9f01d0",
-      "kind": "publish",
-      "text": "zdi-advisories published: ZDI-26-447",
-      "actor": "zdi-advisories",
-      "actor_url": "https://www.zerodayinitiative.com/advisories/published/",
-      "created_at": "2026-07-24T22:11:21.612313+00:00",
-      "html_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-447/",
-      "title": "ZDI-26-447",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Heimdall Data Database Proxy generateFileContent CRLF Injection Remote Code Execution Vulnerability\nJuly 23rd, 2026\nZDI-26-447\nZDI-CAN-29251\nCVE ID\nCVE-2026-12357\nCVSS Score\n7.2\nAV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H\nAffected Vendors\nHeimdall Data\nAffected Products\nDatabase Proxy\nVulnerability Details\nThis vulnerability allows remote attackers to execute arbitrary code on affected installations of Heimdall Data Database Proxy. Authentication is required to exploit this vulnerability.\nThe specific flaw exists within the generateFileContent function. The issue results from the lack of proper neutralization of CRLF sequences. An attacker can leverage this vulnerability to execute code in the context of root.\nAdditional Details\nFixed in release build 25.03.01.24\nhttps://www.heimdalldata.com/release-notes/\nDisclosure Timeline\n2026-02-12\n- Vulnerability reported to vendor\n2026-07-23\n- Coordinated public release of advisory\n2026-07-23\n- Advisory Updated\nCredit\nBobby Gould (@bobbygould5) of TrendAI Zero Day Initiative\nBack to Advisories",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-447/",
-      "content_chars": 1041,
-      "content_sha256": "a72b7844eed0bad8aa60f6842bbc0fde01b3b023cebd9eca31527ab297bc3593",
-      "content_fetched_at": "2026-07-24T22:11:43.118365+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Zero Day Initiative Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:101fdf1da7e41252",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb-post4750444.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-07-24T22:11:21.612313+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb-post4750444.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-07-24T22:12:19.707964+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:9b4f2c9eb50d8cd0",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external-post4750436.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-07-24T22:11:21.612313+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external-post4750436.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-07-24T22:12:30.578266+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:a5681dc9d6f9df26",
-      "kind": "publish",
-      "text": "safebreach-blog published: Threat Coverage | ResearchJul 23 , 2026Russian State-Supported Zimbra Phishing: SafeBreach Coverage for CISA Advisory AA26-204ASince July 2025, the Russian state-supported group LAUNDRY BEAR has bee..",
-      "actor": "safebreach-blog",
-      "actor_url": "https://www.safebreach.com/blog/",
-      "created_at": "2026-07-24T22:11:21.612313+00:00",
-      "html_url": "https://www.safebreach.com/blog/cisa-aa26-204a-russian-zimbra-phishing-safebreach-coverage/",
-      "title": "Threat Coverage | ResearchJul 23 , 2026Russian State-Supported Zimbra Phishing: SafeBreach Coverage for CISA Advisory AA26-204ASince July 2025, the Russian state-supported group LAUNDRY BEAR has bee..",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "Jul 23, 2026\nRussian State-Supported Zimbra Phishing: SafeBreach Coverage for CISA Advisory AA26-204A\nLearn how SafeBreach maps CISA Advisory AA26-204A to simulations that test your exposure to Russian-affiliated LAUNDRY BEAR’s Zimbra Collaboration Suite phishing campaign.\nSummary\nCISA Advisory\nAA26-204A\ndetails a Russian state-supported phishing campaign, active since July 2025, in which the advanced persistent threat (APT) group LAUNDRY BEAR (also tracked as Void Blizzard, CL-STA-1114, and TA488) targets the Zimbra Collaboration Suite (ZCS) across US and allied government and commercial networks. Using a custom-developed capability named “Ulej,” the actors leverage a view-based exploit that triggers automatically when a user simply opens a malicious email in an unpatched ZCS webmail instance—originally a zero-day, now tracked as CVE-2025-66376. The exploit exfiltrates the organization’s email directory, the last 90 days of the victim’s communications, and other sensitive data to actor-controlled servers. This post outlines the campaign’s TTPs—mapped to MITRE ATT&CK—summarizes the advisory’s IOCs, and covers the IOC-based content SafeBreach is adding to validate that an organization’s controls detect and block communication with the campaign’s exfiltration infrastructure, along with mitigation guidance for securing ZCS environments.\nAuthor:\nStacey Nosan, Senior Director of Content & Communications\nOn July 23, 2026, the National Security Agency (NSA), together with the Federal Bureau of Investigation (FBI), the Netherlands Defence Intelligence and Security Service (MIVD), the Netherlands General Intelligence and Security Service (AIVD), the Cybersecurity and Infrastructure Security Agency (CISA), and more than 20 additional US and allied partner agencies, issued joint Cybersecurity Advisory (CSA) AA26-204A:\nRussian State-Supported Cyber Actors Conduct Phishing Campaign Targeting Users of Zimbra Collaboration Suite\n. This advisory provides critical intelligence on an ongoing Russian state-supported phishing campaign, including the tactics, techniques, and procedures (TTPs) and indicators of compromise (IOCs) observed as the actors steal email and sensitive data from targeted organizations.\nSince July 2025, the threat group tracked as LAUNDRY BEAR has used phishing emails to target the Zimbra Collaboration Suite (ZCS) across US and allied government and commercial networks—leveraging a view-based exploit that triggers automatically when a recipient simply opens a malicious message in an unpatched webmail instance.\nUnderstanding the Threat\nLAUNDRY BEAR is a Russian state-supported advanced persistent threat (APT) group first publicly detailed in May 2025, when the Netherlands’ AIVD and MIVD and Microsoft independently highlighted the actor—Microsoft tracking it as Void Blizzard. Across the security industry the group is also tracked as CL-STA-1114 and TA488 (formerly UNK_PitStop).\nUnlike financially motivated ransomware crews, LAUNDRY BEAR’s objective is espionage: bulk collection of email and organizational data from government and commercial targets aligned with Russian state intelligence interests. The campaign has been active since July 2025 and continues today against organizations that have not patched their Zimbra webmail.\nWhat makes this campaign notable is its low interaction requirement. Using a custom capability the actors call “Ulej,” LAUNDRY BEAR sends phishing emails carrying a view-based exploit for\nCVE-2025-66376\n—a vulnerability in the ZCS webmail interface that executes automatically the moment a victim opens the email. No link needs to be clicked and no attachment needs to be opened. Once triggered, the exploit exfiltrates the organization’s email directory, the previous 90 days of the victim’s communications, and other sensitive information to servers controlled by the actors. The flaw was a zero-day when the campaign began and remains effective against any ZCS instance that has not applied the vendor’s fix.\nKey Tactics, Techniques, and Procedures (TTPs)\nThe advisory maps LAUNDRY BEAR’s activity across the full ATT&CK chain (MITRE ATT&CK for Enterprise v19). The techniques below are grouped by tactic; Appendix A of the advisory provides the complete correlation, and Appendix B maps the corresponding MITRE D3FEND countermeasures.\nReconnaissance\nActive Scanning (T1595)\n. Port-scans the internet to find and fingerprint exposed, exploitable ZCS infrastructure.\nSearch Open Technical Databases: Scan Databases (T1596.005).\nUses commercially available scan datasets to identify targetable ZCS servers.\nSearch Open Websites/Domains (T1593).\nLeverages public information to support target development.\nSearch Closed Sources (T1597) and Purchase Technical Data (T1597.002)\n. Draws on previously exfiltrated data and purchased commercial datasets to refine targeting.\nGather Victim Identity Information — Email Addresses (T1589.002) and Credentials (T1589.001)\n. Compiles target user email addresses; the payload also attempts to lift the victim’s password from their password manager.\nResource Development\nAcquire Infrastructure (T1583) — Virtual Private Server (T1583.003).\nProcures VPSs from a range of providers (often with fabricated identities) and routes traffic through Mullvad VPN for OPSEC.\nDevelop Capabilities (T1587) — Malware (T1587.001) and Exploits (T1587.004).\nBuilt the custom “Ulej” payload and, at the time, a novel XSS exploit enabling arbitrary JavaScript execution.\nObtain Capabilities — Tool (T1588.002) and Artificial Intelligence (T1588.007).\nUses open-source tooling such as Evilginx2 and appears to have leveraged AI to assist development of its “Flowerbed” collection framework.\nStage Capabilities (T1608).\nDeploys Flowerbed (Docker containers) to a procured cloud server to receive exfiltrated data.\nInitial Access\nPhishing (\nT1566\n).\nSends spear-phishing email carrying a malicious JavaScript payload—no link-click or attachment needed; simply viewing the message triggers it.\nTrusted Relationship (T1199).\nSince at least November 2025, sends payloads from previously compromised accounts that already have an established relationship with the target, frustrating anti-phishing controls.\nValid Accounts (T1078).\nUses credentials acquired from commercial datasets and prior compromises to access accounts.\nExecution\nExploitation for Client Execution (\nT1203\n).\nExploits CVE-2025-66376 (CWE-79 cross-site scripting) so the JavaScript payload executes the moment the email is viewed in a vulnerable ZCS webmail client.\nPersistence\nAccount Manipulation (T1098)\n. Enables IMAP and creates Application Passcodes to maintain access to the compromised mailbox.\nModify Authentication Process: Multi-Factor Authentication (T1556.006)\n. Generates Application Passcodes and steals 2FA “scratch codes” to bypass multi-factor authentication.\nPrivilege Escalation\nValid Accounts (T1078)\n. Reuses acquired account credentials to obtain privileged access.\nDefense Evasion\nObfuscated Files or Information (T1027.010, T1027.013, T1027.017)\n. Command obfuscation plus a Base64-encoded, XOR-encrypted inner payload smuggled inside the “onload” attribute of an SVG element, letting the actors regenerate signatures easily.\nUse Alternate Authentication Material: Web Session Cookie (T1550.004)\n. In prior AiTM campaigns, stole and replayed victim session cookies to authenticate.\nCredential Access\nAdversary-in-the-Middle (T1557)\n. Earlier campaigns used Evilginx2 to intercept credentials and session cookies.\nModify Authentication Process: MFA (T1556.006)\n. Application Passcodes and stolen scratch keys stand in for a valid 2FA token.\nCollection\nEmail Collection (T1114) — Remote Email Collection (T1114.002)\n. Harvests the victim’s last 90 days of non-junk email via API calls to the ZCS mail server.\nAutomated Collection (T1119)\n. The payload gathers information automatically in twelve asynchronous stages.\nBrowser Session Hijacking (T1185)\n. Rides the user’s authenticated browser session to issue SOAP/API requests as the victim.\nArchive Collected Data (T1560) and Data Staged: Remote Data Staging (T1074.002)\n. GZIP-compresses harvested email and stages it on an actor-controlled VPS before onward transfer.\nDiscovery\nAccount Discovery (T1087)\n. Brute-forces the organization’s Global Address List (GAL) to enumerate additional users to target.\nExfiltration\nExfiltration Over Alternative Protocol (T1048).\nSends data out over both DNS and HTTPS to the Flowerbed infrastructure.\nOver Asymmetric Encrypted Non-C2 Protocol (T1048.002) and Over Unencrypted Non-C2 Protocol (T1048.003)\n. Larger payloads (including email content) go over HTTPS; smaller ones are Base32-encoded and exfiltrated via DNS A-record queries.\nIndicators of Compromise (IOCs)\nThe advisory publishes an extensive, historically attributed IOC set. The authoring agencies caution that LAUNDRY BEAR rotates infrastructure frequently—individual IPs, domains, and compromised sender addresses may already be stale—so verify current activity before acting on any single indicator. The indicators fall into several categories:\nFlowerbed VPS infrastructure: Nine actor-controlled domains and IPs active between July 2025 and March 2026 (for example, zmailanalytics[.]com, zimbra-metadata[.]com, and zimbrastat[.]com) used to receive exfiltrated data.\nTLS certificate hashes: SHA-1 hashes of the Let’s Encrypt X.509 certificates bound to the “*.i.*” wildcard subdomains the exfiltration traffic uses.\nSender addresses: ProtonMail accounts used to procure infrastructure and distribute payloads, plus compromised accounts at Ukrainian domains (isofts.kiev[.]ua, navs.edu[.]ua).\nMalicious email samples: SHA-256 hashes of four email samples carrying the CVE-2025-66376 payload.\nHost-based artifacts:  In ZCS mailbox.log: bursts of SearchGalRequest SOAP commands, creation of an Application Passcode named “ZimbraWeb,” and GetScratchCodesRequest calls; on endpoints, browser localStorage entries named zd_comp_YYYY-MM-DD.\nUseful hunting aids: exfiltration is triggered through image requests to d-{id}…i.{domain}/pixel.gif (DNS) and js-{id}.i.{domain}/v/p or /v/d (HTTPS), and the actors’ Nginx reverse proxy only forwards traffic whose TLS SNI matches “*.i.*.”\nFor the full, machine-readable set, download the AA26-204A STIX XML and STIX JSON bundles from the\nCISA advisory page\n.\nSafeBreach Coverage & Playbook Attack Updates\nIn total, four simulations are mapped to AA26-204A: 110 and 903 (existing exfiltration-behavior coverage) and 11752 and 11753 (new IOC-based reachability coverage). Every method below runs from this same set.\nExisting Behavioral Coverage\nSafeBreach already simulates the exfiltration-over-alternative-protocol behavior (T1048) at the core of this campaign- data theft over both HTTPS and DNS, the two channels LAUNDRY BEAR uses to move stolen mailboxes and directories to its Flowerbed infrastructure:\n110 – Covert data-asset exfiltration over HTTPS (POST)\n903 – Covert data-asset exfiltration over DNS (TXT queries)\nThese simulations are mapped to MITRE ATT&CK and can be run immediately to validate that your DLP and egress controls detect and block the exfiltration techniques this campaign relies on.\nNew IOC-Based Coverage\nTo address the IOC guidance in AA26-204A, we are adding network-reachability simulations that validate whether your egress controls detect and block communication with the advisory’s exfiltration infrastructure.\n11752 – Communication with APT (AA26-204A) using HTTP.\nSends an outbound HTTP request to a SafeBreach-controlled server with an advisory-listed C2 domain set in the Host header, validating whether your controls detect and block egress to the campaign’s infrastructure.\n11753 – ICMP Ping Request to APT (AA26-204A) C2 Servers.\nSends an ICMP echo request to advisory-listed C2 IP addresses to validate whether your egress controls detect and block reachability to that infrastructure. This is an Advanced Action- it contacts real external infrastructure, so schedule it accordingly.\nThese simulations validate detection and blocking of communication with the campaign’s actor-controlled C2 indicators.\nTogether, these four simulations are the complete SafeBreach content mapped to AA26-204A: 110 and 903 validate the exfiltration behavior (HTTPS/DNS), and 11752 and 11753 validate reachability to the campaign’s C2 indicators. Run them from any of the methods below.\nWhat You Should Do Now\nSafeBreach customers can now validate their security controls against the campaign’s C2 and exfiltration indicators in multiple ways.\nMethod 1 — SafeBreach Scenarios:\nNavigate to the SafeBreach Scenarios page and choose CISA Alert  AA26-204A.\nMethod 2 — Attack Playbook:\nOpen the Attack Playbook and filter by AA26-204A to view all associated attacks. You can also refer to the list above to confirm which AA26-204A attacks are available.\nMethod 3 — Known Attack Series Report:\nSelect the AA26-204A report from the Known Attack Series report and click Run Simulations.\nAdditional Advisory Steps\nRun the SafeBreach Simulations\nLog into the SafeBreach platform and navigate to the updated playbooks mapped to AA26-204A.\nExecute the AA26-204A simulations to test whether your controls detect and block outbound communication with the campaign’s actor-controlled C2 indicators.\nRun all four mapped simulations: 11752 and 11753 for C2/IOC reachability, and 110 and 903 for the exfiltration-behavior coverage (all listed in the SafeBreach Coverage section above).\nReview results to validate detection, surface gaps, and guide remediation.\nImplement Mitigation Strategies\nPatch the Zimbra Collaboration Suite to the latest version to remediate CVE-2025-66376; unpatched webmail remains exploitable.\nEnforce multifactor authentication (MFA) for webmail and remote access to reduce the value of any stolen credentials.\nRestrict and monitor outbound connections from mail infrastructure, and block traffic to the advisory’s listed exfiltration servers after vetting.\nReview ZCS webmail configuration and limit automatic content rendering where feasible.\nInvestigate for the presence of the advisory’s IOCs and follow the CSA’s remediation steps if any are found.\nMaintain and test offline backups of mail and directory data.\nEmploy Proactive Threat Monitoring\nHunt for anomalous outbound transfers from ZCS servers, especially bulk mailbox or directory exports to unfamiliar external hosts.\nAlert on connections from mail infrastructure to the actor-controlled servers listed in the advisory.\nReview ZCS webmail logs for exploitation of CVE-2025-66376 and for activity associated with the “Ulej” capability.\nFlag mass access to the organizational email directory or to 90-day mailbox histories that is inconsistent with normal use.\nStay Ahead with SafeBreach\nFor a complete view of your security gaps against the LAUNDRY BEAR campaign, sign into SafeBreach and run the latest simulations mapped to AA26-204A. Because this campaign is built on stolen mailboxes, directories, and credentials—the raw material attackers use to move deeper into an environment—you can go a step further with\nSafeBreach Propagate\n.\nPropagate enables you to assess how attackers could pivot across your environment post-compromise—mapping high-risk attack paths, visualizing lateral movement across network zones, and prioritizing remediation based on exposure to your most critical assets. Find out more in the\nSafeBreach Propagate solution brief\n.\nFrequently Asked Questions\nWhat is CISA Advisory AA26-204A?\nAA26-204A is a joint cybersecurity advisory led by the National Security Agency (NSA), with co-sealing partners including the FBI, the Netherlands’ MIVD and AIVD, CISA, and more than 20 additional cyber and intelligence agencies across allied nations. Published in July 2026, it details a Russian state-supported phishing campaign—ongoing since July 2025—that targets the Zimbra Collaboration Suite (ZCS) to steal email and sensitive data from U.S. and allied government and commercial networks.\nWhat is the vulnerability and which systems are affected?\nThe campaign targets the Zimbra Collaboration Suite (ZCS) webmail service. The actors exploit CVE-2025-66376, a view-based vulnerability that executes automatically when a victim opens a specially crafted email in a vulnerable version of ZCS—no clicks or attachments required. It was used as a zero-day when the campaign began and continues to succeed against ZCS instances that remain unpatched. Organizations still running unpatched Zimbra webmail are at greatest risk.\nWho is behind the attacks outlined in CISA Advisory AA26-204A, and what are they doing?\nThe activity is attributed to LAUNDRY BEAR, a Russian state-supported APT group also tracked across the security industry as Void Blizzard, CL-STA-1114, and TA488 (formerly UNK_PitStop). Using a custom capability named “Ulej,” the actors deliver phishing emails that trigger the ZCS view-based exploit on open, then exfiltrate the victim organization’s email directory, the last 90 days of communications, and other sensitive information to servers they control.\nHow can organizations test their exposure to the threats outlined in CISA Advisory AA26-204A?\nSafeBreach customers can validate their defenses through the SafeBreach Scenarios page (filtered by AA26-204A), the Attack Playbook, or the Known Attack Series report, all of which provide IOC-based content to validate that their controls detect and block communication with the campaign’s C2 and exfiltration indicators.\nYou Might Also Be Interested In\nPodcast\nVideos\nPodcast: The Russian Cyber Triad: GRU, SVR, FSB Explained\nListen Now\nPodcast\nVideos\nPodcast: Russia State-Aligned Cyber Threat Actors Series\nListen Now\nRussia State-Aligned Cyber Threat Actors: The Complete Guide\nRead More\nGet the latest\nresearch and news",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "browser",
-      "content_source_url": "https://www.safebreach.com/blog/cisa-aa26-204a-russian-zimbra-phishing-safebreach-coverage/",
-      "content_chars": 17791,
-      "content_sha256": "54f34f1a3c0701467941263daf3288d866b82bf4c30965635dc78063966d943c",
-      "content_fetched_at": "2026-07-24T22:13:16.546070+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "SafeBreach Blog",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:7f67095b988ddd2c",
-      "kind": "publish",
-      "text": "sandflysecurity-blog published: Agentless Linux EDR: Stopping Volt and Salt Typhoon in OT Environments",
-      "actor": "sandflysecurity-blog",
-      "actor_url": "https://sandflysecurity.com/blog",
-      "created_at": "2026-07-24T05:45:55+00:00",
-      "html_url": "https://sandflysecurity.com/blog/agentless-linux-edr-stopping-volt-and-salt-typhoon-in-ot-environments",
-      "title": "Agentless Linux EDR: Stopping Volt and Salt Typhoon in OT Environments",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Sandfly Blog\nAgentless Linux EDR: Stopping Volt and Salt Typhoon in OT Environments\n24 July 2026\nEmbedded Linux\nKey Takeaways\nThe Threat:\nNation-state groups like Volt Typhoon and Salt Typhoon are targeting critical Operational Technology (OT) infrastructure using \"Living off the Land\" techniques to evade detection.\nThe Warning:\nRecent advisories from the Cybersecurity and Infrastructure Security Agency (CISA), including the\n2025 Threat Assessment and advisory AA25-239\n, confirm these groups are actively pre-positioning for disruptive attacks.\nThe Problem:\nTraditional Endpoint Detection and Response (EDR) agents have compatibility issues, may trigger kernel panics, and impact performance in complex OT networks.\nThe Solution:\nSandfly Security utilizes agentless security. This method operates via standard SSH to detect intruders without compatibility risks, avoids risky kernel hooks, and maintains system performance even in hardware constrained environments.\nThe Shift in Critical Infrastructure Threats\nAt Sandfly, we work with many customers in the critical infrastructure space and frequently deal with unusual Operational Technology (OT) applications and hardware. OT infrastructure security is an interesting area because it almost always involves Linux, and it often involves systems that cannot go down for any reason. This is exactly the type of environment where agentless security like Sandfly excels.\nIn particular, OT security presents several significant challenges where traditional agent-based Linux EDR solutions have a tough time operating:\nThey often run on custom Linux versions and hardware.\nThey may be running older versions of Linux and are not updated regularly.\nThey run on a mix of CPUs, ranging from standard x86 (Intel/AMD) to ARM, MIPS, PowerPC, and more.\nThey are often left unmonitored, making them juicy targets for nation-state attackers.\nTwo of the most formidable threats currently active are Chinese state-sponsored groups dubbed Volt Typhoon and Salt Typhoon. They specialize in targeting and compromising OT infrastructure.\nAccording to recent joint advisories from CISA, the NSA, and the FBI (advisory\nAA25-239\n), these advanced persistent threat actors exhibit tactics that extend beyond traditional espionage. While Salt Typhoon focuses heavily on massive-scale data theft by exploiting telecommunications infrastructure, Volt Typhoon actively pre-positions itself within power grids, water treatment facilities, and communication networks. The CISA threat assessment indicates that this positioning is designed to enable disruptive or destructive cyberattacks during potential future geopolitical conflicts.\nBoth groups evade detection by targeting edge networks and exploiting the soft underbelly of OT environments: Linux-based embedded devices, legacy servers, and routing equipment. For security teams, protecting these environments creates a paradox. You need deep visibility to catch stealthy intruders, but traditional endpoint security tools are often too dangerous to install on varied, mission-critical OT systems.\n\"Linux\" is an Umbrella Term\nAt Sandfly, we have a tremendous amount of experience working in mission-critical and OT environments that run Linux. Here are three examples where we are trusted in extremely critical OT environments:\nVay\n:\nA teledriving vehicle company where Sandfly is used to monitor remotely driven vehicles operating on public roads where safety is paramount.\nEricsson\n:\nTrusted to protect their telecommunications customers and equipment globally.\nCar Manufacturer\n:\nUsed on systems serving assembly lines for a major automobile manufacturer.\nSo when we talk about protecting OT systems, we are not just spewing marketing. Rather, we have practical, real-world experience watching some of the most important networking gear on the planet.\nThe primary challenge with protecting OT systems is that they rely heavily on Linux, and \"Linux\" is simply an umbrella term. Because the operating system is incredibly adaptable, a Linux deployment can be anything from a massive GPU cluster training an artificial intelligence model to a highly constrained embedded device in an IP camera or robot.\nThis extreme variety is where agent-based Endpoint Detection and Response (EDR) solutions reveal massive coverage gaps. While a traditional EDR vendor might claim they \"support Linux,\" OT security teams must immediately ask the following critical questions:\nWhich distributions?\nThe ecosystem is deeply fragmented across dozens of commercial and open-source distributions.\nWhich kernel versions?\nThousands of unique Linux kernels exist, and OT vendors frequently compile custom kernels to suit highly specialized hardware.\nWhich CPU architectures?\nWhile standard x86 processors dominate corporate servers, the smaller networking devices making up the OT edge rely heavily on ARM or MIPS architectures.\nWhat are the resource costs?\nThis is the ultimate dealbreaker. Technologies like eBPF have solved some of the past kernel monitoring problems, but performance impacts still exist. We have repeatedly heard from customers that agents routinely consume 10% to 30% or more of system resources, which can immediately cripple or crash an OT system.\nSandfly can handle all of these scenarios, from cloud-based deployments down to a tiny Linux controller buried in a broom closet. Because agent-based systems cannot deploy across this wide range of hardware, many security teams are left with massive visibility gaps where attackers like Salt Typhoon and Volt Typhoon can infiltrate and remain undetected for extended periods. Sandfly aims to stop that because we are designed to watch everything reliably and leave no blind spots.\nWhat is \"Living off the Land\" and Why Do the Typhoons Use It?\nVolt Typhoon and Salt Typhoon do not operate like typical hackers. When infiltrating a facility, they rarely drop noisy, recognizable malware files that trigger alarms. Instead, they utilize\nLiving off the Land\n(LOTL). LOTL is a cyberattack technique where adversaries use legitimate, pre-installed administrative tools (like SSH, netcat, bash scripts, and more) to execute attacks, allowing them to evade traditional signature based malware detection. This is because these tools are not malware, but just being used maliciously.\nOnce these attackers compromise public facing edge devices with outdated firmware or weak credentials, they proxy their traffic to look like normal network activity. By hijacking legitimate system utilities, they blend in seamlessly with the daily activities of system administrators. Further, because they avoid introducing third party malware, traditional detection solutions may remain completely blind to their presence.\nFinding these stealthy intruders requires analyzing system state and behavior, which typically demands EDR capabilities. However, bringing traditional EDR agents into an operational technology space introduces a severe set of risks that an agentless approach like Sandfly completely avoids.\nWhy Does Traditional EDR Fail in OT Environments?\nOperational Technology runs the physical world. A crashed workstation in a corporate IT environment means a single annoyed employee. A crashed server in an OT environment can mean a regional power blackout or telephones stop working.\nTraditional agent based EDR platforms are fundamentally ill-suited for high availability Linux environments for three major reasons:\nThe Risk of Kernel Panics:\nTraditional EDR agents require hooks into the Linux kernel to intercept system calls and monitor activity. If an agent encounters a software bug or a conflict, it can trigger a kernel panic, immediately crashing the server. In OT environments where total uptime is non-negotiable, this risk is unacceptable. Even eBPF solutions have caused kernel panics due to bugs. Interfacing with the kernel always carries this risk.\nCompatibility and Russian Roulette Patching:\nThe Linux ecosystem is incredibly fragmented across varying distributions and CPU architectures like ARM and MIPS. Agent based tools are highly dependent on specific kernel versions. If an EDR vendor does not support the exact kernel version running on your custom hardware for instance, you are left unprotected. Furthermore, applying a critical operating system patch can break the EDR agent or the EDR agent upgrade can break the kernel. This can leave the system unprotected, or worse, bricked.\nVoids Service Contracts:\nMany vendors have service contracts that prohibit loading or modifying the hardware. Installing an agent that causes an outage or damages the equipment may void service agreements resulting in a costly mistake.\nResource Drain:\nPersistent EDR agents are always on and continuously consume processor and memory resources. In resource constrained embedded systems and legacy servers, an EDR agent demanding up to 30% of system resources can degrade performance to the point of operational failure.\nBecause of these massive hurdles, many OT administrators choose to run their Linux fleets completely unmonitored. This leaves the door wide open for groups like Salt and Volt Typhoon to enter and linger in the most critical of critical infrastructure.\nHow Does Agentless Security Protect OT Environments?\nSandfly Security solves the visibility paradox by completely rethinking how Linux security works. Instead of forcing a persistent software agent onto the endpoint, Sandfly utilizes\nAgentless Security\n. Agentless Security is a cybersecurity approach that monitors and protects systems without requiring the installation of any persistent software or background services on the target device. Basically, if endpoint agents cause all of these compatibility and performance headaches on Linux, what if we just got rid of it?\nHere are some of the benefits of not using an endpoint agent in OT environments:\nZero Kernel Interaction\nSandfly connects to endpoints using standard SSH and runs its investigative modules entirely in user space. It never loads kernel modules, it does not hook system calls, and it does not rely on eBPF technologies. Not tying into kernel space drastically lowers crash risks on production systems. If a Sandfly scan fails for any reason, it simply logs an error and stops, leaving zero impact on the host system.\nUniversal Compatibility\nBecause it relies on standard SSH and pre-compiled static binaries, Sandfly works on virtually any Linux system. It effortlessly monitors modern cloud instances alongside decade old legacy servers, Internet of Things devices, and embedded hardware. It fully supports many CPU architectures like ARM, MIPS, and PowerPC, which are heavily prevalent in OT networking gear.\nInvisible Performance Footprint\nWhen Sandfly is not actively scanning a host, its resource consumption is exactly zero. When an automated scan triggers, it runs as a brief, low priority burst that typically consumes less than 2% of aggregate CPU for roughly 60 to 120 seconds at low priority before disappearing completely. This lightweight approach ensures that mission critical processes are never starved of compute resources. We've had this claim tested multiple times by mission critical users and are happy to show you how we can do this.\nHow Can You Hunt the Typhoons Without Agents?\nHow do you use an agentless tool to catch an elite adversary that hides in plain sight? Sandfly is specifically designed to hunt the exact Living off the Land tactics that actors like Salt and Volt Typhoon rely upon.\nCredential and SSH Key Auditing:\nThreat actors steal passwords and SSH keys to quietly persist on networks. Sandfly proactively monitors endpoints for weak passwords and audits SSH keys with our SSH Hunter to detect unauthorized credential usage. It can even perform agentless response actions, like deleting rogue SSH keys, cutting off the attacker's primary method of lateral movement.\nDrift Detection:\nEven the most sophisticated attackers must alter something to maintain access. Sandfly continuously monitors systems for unauthorized modifications. It detects tampering across processes (including fileless malware), users, critical system binaries, persistence mechanisms, and more. It is extremely difficult to modify a host without being seen with this feature active and can completely lock down OT devices against tampering.\nTactics and Behavioral Analysis:\nInstead of looking for known malware files, Sandfly looks for the results of malicious behavior. It roots out hidden processes, suspicious network connections, and unauthorized activity that indicate a system is compromised. This style of tactics hunting does not go stale like traditional malware signatures often do.\nIncident Response:\nBecause there is no need to deploy an agent, Sandfly can be instantly used in incident response investigations to see if sophisticated attackers like Salt Typhoon or Volt Typhoon are present in the infrastructure. The deployment is fast and safe so security teams can get answers without impacting critical operations.\nSecuring the Future of Critical Infrastructure\nThe convergence of IT and OT networks has given nation-state actors an unprecedented avenue into the systems that sustain our daily lives. Defending against pre-positioning campaigns like Volt Typhoon or the massive intelligence sweeps of Salt Typhoon requires total visibility into your Linux and embedded infrastructure.\nBy abandoning the risky, resource heavy model of traditional endpoint agents, Sandfly Security provides a frictionless, universally compatible solution tailored for the strictest operational environments. It proves that you no longer have to choose between keeping your critical infrastructure stable and keeping it secure.\nStop Choosing Between Uptime and Security\nDo not wait for a nation-state actor to test the resilience of your critical infrastructure. See how Sandfly's agentless technology can give you complete, continuous visibility into your Linux and embedded systems without risking downtime.\nRequest a demo today\nto see how you can start hunting threats like Volt Typhoon before they strike.\nProtect Your OT Infrastructure Today\nGet a Demo\nPost Tags:\nEmbedded Linux\nPublic Sector\nTelecommunications\nLinux Security\nManufacturing\nShare this post:\n← Return to Blog",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://sandflysecurity.com/blog/agentless-linux-edr-stopping-volt-and-salt-typhoon-in-ot-environments",
-      "content_chars": 14262,
-      "content_sha256": "20209d1859dc3133f2d5149ef92b449c039a421d48b15504a5e4222bbe673c50",
-      "content_fetched_at": "2026-07-24T22:13:19.743343+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "Sandfly Security Blog",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:90ebb408a83d7196",
-      "kind": "publish",
-      "text": "yage-share published: GPT-5.6 的新提示指南：prompt 该少写什么，多写什么",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-24T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/gpt56-prompt-guidance-result-certainty-20260724.html",
-      "title": "GPT-5.6 的新提示指南：prompt 该少写什么，多写什么",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\nAI 编程\nOpenAI 在 2026 年 7 月 22 日更新了\nModel\nguidance\n。在这份针对 GPT-5.6\n的最新提示指南里，出现了一个和许多人习惯相反的工程动作：当 Agent\n拿到充足的上下文时，开发者不需要在提示词里逐行手写具体的中间执行步骤。\n一直以来，大家习惯把步骤写得越细越好，希望用一串操作指令把 Agent\n扣在预设好的轨迹上。最新指南没有让人放弃控制，而是挪动了约束的位置：把从前花在规定路线上的精力，转去明确最终的交付成果、必须留下的验证证据，以及哪些关键操作必须有人类审批。\n只看这页更新，容易以为这只是个随手改掉的 prompt 技巧。但如果把 OpenAI\n此前公开过的 GPT-4.1、GPT-5 与 GPT-5.6\n提示文档拉到一起，会看到一条连续的工程线索。\nGPT-5.6：少写步骤，写清交付\n在具体的项目里清理提示词冗余，并不是靠直觉把指令缩短。GPT-5.6\n建议的做法很干脆：在代表性的测试集上，一组一组删除提示词里的路线描述，重新运行任务，观察质量读数和凭证有没有下滑。\n只有删除后测试指标依然稳定，这段指令才算可以被安全精简；一旦读数下跌，再把丢掉的约束加回来。OpenAI\n在内部编码 Agent\n上试过这种消融测试，删掉非必要步骤带来了方向上的优化，效果取决于具体的业务负载。这种拿测试指标决定指令去留的思路，正是\nEvaluation-First：Cursor\n这篇 Agent Harness 文章真正值得读的地方\n讨论的关键：不能凭感觉猜哪段提示词有用，每次精简都要靠 eval\n数据来验证是否维持了输出质量。这里被用来做消融验证的方法，在指南里被称为\nlean-prompt。\n省略中间步骤之后，提示词里留下的部分反而变得更加明确。指南整理了一份围绕交付结果构建的清单：任务目标、领域上下文、硬性约束、审批边界、成功标准、遇到歧义时的提问规则、所需的验证证据以及输出格式。这些要素组合在一起，构成了约束\nAgent 交付质量的具体要求。\n既然在测试集上删掉步骤指令依然能保持指标稳定，这就引出了一个令人疑惑的问题：为什么在早期的官方提示指南里，开发者需要花大量篇幅，把每一个中间步骤手把手写进系统提示词？\nGPT-4.1：把路线写进 prompt\n时间退回 2025 年 4 月 14 日发布的\nGPT-4.1\nPrompting Guide\n，里面的 SWE-bench\n样例提示词展现了当时的处理方式：开发者把一个包含八个步骤的完整工作流，直接硬编码进了系统提示词。\n提示词里明确要求模型在每次调用工具前先写规划、用完工具后做反思、改完代码后必须运行测试，还写了多段提醒来防止\nAgent\n在长任务中途放弃或跑偏。当时这么做很自然。代码提交后有没有通过自动化测试，能检查最终产物对不对；但在执行过程中，模型自带的不确定性会让\nAgent\n随时漏掉上下文、偏离主线或提前结束。八个步骤的详细路线，本质上是在用确定性的工作流程去约束执行过程中的行为偏离，帮\nAgent 稳稳走完全程。\n当模型开始能看懂更长的上下文、自己做出合理的工具选择时，把所有路径死死写进提示词就显得太笨重了。开发者需要知道，在什么场景下可以给\nAgent 更多自主空间，在什么地方又必须设卡。\nGPT-5：路线开始松开\n2025 年 8 月 7 日发布的\nGPT-5\nprompting guide\n给出的答案不是把路线指令一删了之，而是展现了一条连续的授权光谱。\n开发者不再假设所有任务都要死板规定路线，而是顺着场景来决定授权范围：从完全由上下文引导模型自主决策，到由程序代码严格控制分支。指南开始关注如何调控模型的主动性（agentic\neagerness），引导开发者定义探索边界、早停条件与终止标准，并把常规的安全操作与需要确认的高风险动作划分开来。提示词的核心诉求发生了变化：不再是机械指挥每一步怎么走，而是决定任务何时能继续、何时必须停下、何时需要找人类确认。\n模型理解上下文和规划路线的能力在提升，开发者也逐渐摸清了如何用完成条件、验证证据与权限边界来做约束。GPT-5.6\n把这套做法收拢为围绕交付成果来写\nprompt。但在真实的项目里，文档上的这种控制转向究竟对应着什么样具体的代码变化？\n翻译系统里的同一件事\n把这套控制思路放进 Superlinear Academy\n处理长篇中文文章的英文翻译系统里，我也踩过同样的坑。\n早期处理长文章翻译时，模型生成的不确定性经常破坏流程：中途缩写文本、译文夹杂中文字符、Markdown\n格式丢失，或者长文本生成超时。为了让系统稳定运行，我在外层代码里搭了一套很重的防御机制，试图预判每一条可能的恢复路径。我写了分段拆分、异常重试、术语上下文拼接和断点续传逻辑，正如我在\nWide Research\n中做过的尝试。这套设计虽然能跑通，但也把大量精力耗在了维护繁琐的格式校验代码上。\n后来 Claude Code 与 Codex\n展示了更轻便的组织方式：把状态保存在本地文件系统里，建立标准的 agentic\nloop 闭环。磁盘文件记录着持久状态，Agent\n可以分章写入并自行读取上下文，中断后再启动也能读文件继续。面对一篇长文章翻译，Agent\n可以自主决定是先通读全文、自己写 Python\n正则检查脚本、重新翻译某个段落，还是先核对领域术语。我不再干预具体的翻译路线，而是改为提供一份由三部分构成的交付要求：\n完成条件\n：定义任务何时达到合格的终止状态。对于长文翻译，重点在于全篇是否有中文字符残留、Markdown\n格式是否完整保留、特定英文术语全篇是否保持一致。在代码修复场景中，则是所有单元测试通过且无新增\nlint 报错。\n验证证据\n：证明完成条件已被满足的客观凭证。例如\nAgent 自行编写并运行的 Python 正则检查脚本输出、自动化测试日志或 eval\n评分。在受监管或事故复盘场景中，过程记录本身也是必不可少的验证证据，不能被视作可有可无的辅助材料。\n权限边界\n：明确 Agent\n自主选择路径时的活动空间与禁区。例如通过\n--allowedTools\n参数严格限定工具调用范围，对涉及文件系统覆盖写入、外部 API\n发布或采购等高风险动作，强制设立\nGuardrails\nand human review\n机制。只有当翻译产物满足格式完整、无中文残留、术语一致，且经过人工审批后，才允许向外部发布。\n从过程确定性到结果确定性：Agent\n自主选择执行路线，系统用完成条件、验证证据与权限边界定义可靠交付\n结尾：把成功标准留在手里\n用完成条件与权限边界守住出口，并不意味着系统会自动拿到百分之百的可靠。\n在实际开发中，依然需要建立基于 evaluation-first\n的测试体系，配合受控的消融测试，逐步精简提示词中非必要的步骤干预，同时把权限边界与副作用拦截固化在工具层配置中。\n随着推理成本持续降低，正如\n《一次性软件与被压缩的现实》\n中讨论的，用 token\n消耗与闭环自检来换取最终交付的可靠性，变得越来越划算。但如果引入 Agent\n框架时缺乏清晰的边界与约束，盲目让模型自由发挥，反而会\n带来更大的技术债\n。开发者如果希望在具体的应用场景中建立起这种新的工程平衡与控制边界，可以参考我们整理的这份\n操作指南\n。\n可靠的 Agent\n系统不是靠微观管束每一步建造出来的，也不是靠完全放手获得的。开发者需要做的是把路线放给具备足够上下文的模型，同时把完成标准、验证证据与权限边界牢牢握在自己手里。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/gpt56-prompt-guidance-result-certainty-20260724.html",
-      "content_chars": 3132,
-      "content_sha256": "dfb8f9d2b73c0d56dd5dfe30e022ed09c4d1e22f8cdf62c5fbb73aed7ed9d5a7",
-      "content_fetched_at": "2026-07-24T22:12:40.439917+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:5d9c9f2b072263f3",
-      "kind": "publish",
-      "text": "yage-share published: 每天问大模型 100 个无聊问题，能当作 API 的“温度计”吗？",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-24T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/codex-api-behavior-thermometer-20260724.html",
-      "title": "每天问大模型 100 个无聊问题，能当作 API 的“温度计”吗？",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "推理与性能\n安全与供应链\n先猜一个数字\n让大语言模型“在 1 到 10 之间随机选一个数字”，连续问它 20\n次，你觉得会发生什么？\n很多技术读者的第一反应是：既然模型在生成文本时带有概率采样，即使把采样温度设得很低，20\n次回答也应该分散落在好几个不同的数字上，就像连续掷 20 次骰子一样。\n不妨先在心里选一个你预测的结果，再看我们实际测到的答案。\n日常调用 API\n时，开发者早已习惯把大模型当成某种概率系统。当接口偶尔报错或者生成质量下滑时，大家也能猜到基础设施可能出了某种短暂故障。问题在于，除了等待官方状态页面的更新，或者在社区里交流“今天模型是不是变笨了”，开发者手中缺少一种低代价、能长期运行的观测手段，来确认\nAPI 底层的推理栈（inference stack）到底有没有发生改变。\n如果有一种观察方法，每天只需要消耗很少的 token，就能像温度计一样感应\nAPI\n终点的状态，它会是什么样？答案或许就藏在那些看起来极其无聊的随机数问题里。\n答案是 20 个 7\n在第一天的测试中，我们针对\ngpt-5.6-sol\n模型的 API\n运行了这组实验。结果非常干脆：连续 20 次让它选 1 到 10\n之间的随机数，回答清一色全是\n7\n。\n为了确认这是否只是某一个特定提问的偶发现象，我们把这种测试扩充为“每天问\n100 个小问题”，包含 5 组不同类型的极简提问，每组重复 20 次：\n1 到 10 选随机数\n：20 次回答全部为\n7\n。\n选一个随机字母\n：20 次回答全部为\nQ\n。\n1 到 100 选随机数\n：20 次回答中，有 15 次是\n47\n，4 次是\n57\n，1 次是\n73\n。\n最喜欢的数字\n：20 次回答中，有 19 次是\n7\n，1 次是\n42\n。\n抛硬币\n：20 次回答中，出现 5 次正面（heads）与 15\n次反面（tails）。\n这 100\n个小问题展示了低熵短回答的具体形态。它表明模型在面对看似自由的选择时，其实带着极其强烈的内在偏好，而不是均匀散开。\n这里还有一个细节：像 1 到 100 选随机数（出现 47、57、73\n三种结果）以及抛硬币（出现正面与反面两种结果），说明完全相同的提示词在多次调用中输出了不同的文本。这一现象削弱了“网关只是简单做\nResponse Cache\n静态缓存”的假说，不过它还没有完全确定服务栈内部的缓存机制到底如何工作。\n这不是 Codex 的怪癖\n这种集中偏好的分布，并不是某一个模型或偶然的特例。\n2026 年发表的论文\nOne\nToken Is Enough\n测试了 165\n个大语言模型。结果显示，在极简短回答下，不同模型回答分布的中位熵（median\nentropy）只有约 1.0\nbit。也就是说，模型在面对自由选择时，天生就会把大部分概率压在极少数选项上。\n当我们每天收集这 100\n个问题的回答频率时，要怎么比较前后两天、或者两个时间段的分布变化？论文使用了\nJensen-Shannon\ndivergence（JSD）这个指标。它其实就是一个衡量两张概率分布表“有多不像”的数字：数值接近\n0，说明分布几乎没变；数值变大，说明回答的偏好发生了偏移。\n论文进一步验证了这种分布对变化的敏感度：在包含 40\n组问题的测试集中，仅凭回答分布来区分不同模型的等错误率（Equal Error\nRate, EER）能低至 7.3%；即使压缩到 8 组问题，错误率也只有 10.6%\n左右。不过需要明确的是，论文研究的是用分布指纹来识别不同模型，而我们关注的是另一个方向：在同一个\nAPI 终点上，用这种敏感的分布变化来感应推理栈的行为漂移。\n为什么每天都要问一次\n为什么要每天重复问这 100 个无聊的小问题？\n回顾过去的技术事故，例如 Anthropic 曾确认基础设施隐患导致 Claude\n模型的错误率上升，当时许多开发者都凭直觉感到“输出质量变差了”。但用户和厂商之间缺少一个公开、低成本且量化的共同观测数据。服务调整发生后，大家只能凭感觉猜，没人能准确说出变化究竟是从哪一天开始的。\n大模型 API\n的服务栈包含众多环节，从底层的采样参数、路由规则，到上层的安全过滤或推理协议调整，任何微小的改动都有可能改变模型在低熵提问上的输出分布。\n每天问 100 个小问题，就像在 API\n终点旁挂了一支轻量的温度计。虽然单个小问题的偏好改变无法直接指出底层具体出了什么故障（它提示变化，但不归因），但这种低成本的时间序列能够率先捕获推理栈发生的意外漂移，提示开发者何时需要发起更深度的诊断。\n把温度计公开出来\n为了把论文中揭示的分布特性变成长期持续的观测实践，我们建立了\nCodex Behavior\nToday\n项目，并上线了公开监控看板\nDashboard\n。\n项目的运行方式保持了清晰的隐私与数据分离： -\n本地采样器每天自动针对目标终点发起 100\n次极简提问，并将包含详细延迟与原始回答的数据保留在本地 SQLite\n数据库中，不需要共享凭据或公开私有对话。 -\n每次运行只把汇总后的回答计数、延迟摘要与分布差异指标提交到 Git，并通过\nGitHub Pages 自动渲染成公开看板。\n无论是想复现看板还是扩展观测，整个流程都比较轻量：开发者只需 clone\n仓库，使用\nuv venv .venv\n创建虚拟环境并安装依赖，配置好本地授权 CLI\n后即可运行采样与站点构建。即便没有 API\n凭据，也可以直接利用仓库中开源的每日 aggregate\n数据重新生成站点与校验测试。我也欢迎社区提交\nPR，把这套观测机制扩展到更多 API 终点上。\n它能告诉我们什么\n最后，我们需要平和客观地看待这支温度计的边界。\n低熵短回答的分布改变，只代表该 API\n终点的服务栈行为相比历史基线发生了偏移。它并不等同于“供应商偷偷替换了模型权重”，也不代表模型的能力发生了下降。\nCodex Behavior Today\n概念图：浅蓝色的研究仪表盘展示部分低熵问题集中在单一答案，旁边保留跨日趋势线\n第一天（2026-07-22）的 100\n次采样为我们记录下了第一个初始观察点。在接下来的 7 到 14\n天里，持续的公开采样实验将逐步建立起稳定的历史基线。只有经过这段时间的观察，我们才能验证这组低成本的无聊问题，能否真正成为大模型\nAPI 领域中敏锐而可靠的探矿金丝雀。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/codex-api-behavior-thermometer-20260724.html",
-      "content_chars": 2636,
-      "content_sha256": "5f67c721f3e21e8050b128c65b6490d59934a90818d5474194e68b7466f6124a",
-      "content_fetched_at": "2026-07-24T22:12:40.854826+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:7b837a147b2462e3",
-      "kind": "publish",
-      "text": "yage-share published: Cursor 重写 SQLite：一次把 Harness Engineering 三个维度同时往前推的理想实验",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-23T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/cursor-sqlite-harness-swarm-20260723.html",
-      "title": "Cursor 重写 SQLite：一次把 Harness Engineering 三个维度同时往前推的理想实验",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\nAI 编程\nCursor 这次到底做了什么\n2026 年 7 月 20 日，Anysphere 团队在 Cursor 官方博客发布了一篇由\nWilson Lin 署名的文章《Agent swarms and the new model economics》（\nCursor\n博文\n）。在这篇文章中，团队公布了一项新的工程实验：他们使用名为\nCursor Swarm 的 Agent 编排系统，完全基于 835 页 SQLite 官方手册，用 Rust\n语言从零实现了一个兼容 SQLite 语义与存储格式的数据库引擎。\n消息传出后，社区讨论很快分化成两种声音。不少人认为 AI 已经能成功重写\nSQLite，随时可以替换生产环境里的数据库。这种解读把实验的焦点看偏了。SQLite\n实验并不是在展示可以上线的生产软件，而是团队针对上一轮 Agent Swarm\n暴露出的痛点，做出的一轮受控工程回应。\n在上一次浏览器实验里，Cursor 曾部署几百个 Agent\n并行运行一周，试图从零构建一个 Web 浏览器引擎，最终生成了超过一百万行\nRust 代码。在当时的\nHarness\nEngineering 调研\n中，我们记录过那个实验暴露的矛盾：代码行数和提交数量被当作 Agent\n生产力的证明，系统却没有收敛成可用的软件。在这次博文中，Cursor\n主动把浏览器项目定性为“完成了概念验证，但距离精致软件还差得很远”。单纯投入计算资源去膨胀代码量，如果缺少有效的行为验证和质量约束，海量代码很难转化成成熟的产品。\n因此在 2026 年 7 月的新实验中，Cursor 团队选择回到旧版 Swarm\n曾经陷入挣扎的同一项任务：根据 SQLite 规范重新编写 Rust 实现。他们把旧版\nSwarm 与新版 Harness\n放在完全相同的任务、相同的模型以及相同的时间预算下，进行受控对照。团队给\nAgent 的输入是 835 页 SQLite 官方手册，同时扣留了 SQLite 的 C\n源码、原版测试套件、编译后的 SQLite\n二进制文件以及互联网访问权限。衡量标准也变了：团队使用包含数百万条带有已知标准答案\nSQL 查询的隐蔽测试集\nsqllogictest\n，替代了过去对代码行数或提交数量的统计。\n这场受控对照拉开了明显的差距。搭载 Grok 4.5 的新 Harness 在 4\n小时内达到了\nsqllogictest\n80% 的通过率；相比之下，旧版\nSwarm 在第 2 个小时前就因为失控的代码冲突与接口漂移而被强制暂停。Cursor\n报告称，在新 Harness 的支持下，所有的全新配置最终都达到了\nsqllogictest\n100% 的通过率。\n为什么重写 SQLite 这样一个底层的复杂系统，不仅没有让新 Harness\n陷入瘫痪，反而能比之前的浏览器项目揭示出更多关于 Agent 编排与 Harness\nEngineering 的本质规律？\nSQLite\n为什么难，又为什么特别适合当考题\n要写出一个 SQLite，在底层实现上要越过很多硬门槛。SQLite\n远不是一层简单的 SQL\n接口封装，而是一个完整的嵌入式关系型数据库。开发者需要从零构建手写的词法与语法解析器、查询绑定与优化器、基于\nPull 架构的算子树执行器、系统目录、B-Tree 索引、数据页管理器、回滚日志与\nWAL 编解码，以及磁盘上的 SQLite format 3\n文件格式。这些子系统交织在一起，要求系统在 SQL 语义、事务 ACID\n特性、数据类型隐式转换和磁盘持久化格式上维持严格一致。\n然而，正是这样一个实现难度极高的底层系统，在作为 Agent Evaluation\n的考题时，展现出了三种罕见的优越属性：\n完整且稳定的规范说明：835\n页官方手册定义了完备且确定的目标行为，完全排除了需求模糊或目标动态漂移的干扰。\n高密度的确定性反馈：以 Rust 为实现语言，强类型系统、所有权检查和\nCargo\n工具链提供了高密度的编译时反馈，每一次修改都能立刻得到编译器的明确报错或通过信号。\n隐蔽且客观的行结果裁判：SQL\n语言自带可自动化比对的“行结果正确性”。通过未见的\nsqllogictest\n，外部评测系统可以在不依赖 Agent\n自评的前提下，对最终输出的 SQL 查询结果进行逐行校验。\n下图展示了 Cursor Swarm 针对 SQLite 手册建立的编排与评估机制：\nCursor Swarm 把 SQLite\n手册分配给规划与执行角色，再由独立 SQL\n测试集检查行为结果；测试分数不等于生产成熟度\n需要明确的是，Cursor 报告的所有配置最终达到 100% 通过\nsqllogictest\n，只代表系统在 SQL\n查询行结果正确性这一特定测试集上表现完备。测试集得分不等于生产环境里的成熟度，因为该测试集并没有覆盖\nC API 导出、操作系统级文件锁、复杂并发与崩溃恢复压力。\n既然 SQLite 提供了一套规范确定、反馈密集的测试土壤，那么当 Agent\n规模扩大到成百上千个并发单位时，系统的主要矛盾会发生怎样的转移，又为什么会让\nHarness Engineering 的三条扩展线在 Swarm 中同时变难？\nHarness\nEngineering 的三条扩展线，在 Swarm 里一起变难\n我们在\n三个\nScaling 维度的统一框架\n中建立过 Harness Engineering\n的三条扩展线：\n时间扩展性：系统能否在长生命周期的任务中保持上下文不失真、目标不漂移、错误不累积。\n空间扩展性：系统能否通过部署成百上千个 Agent\n并行工作，把投入的计算资源转化为有意义的工程吞吐量，而不被代码分支合并与冲突挤压所淹没。\n人机交互扩展性：人类开发者能否从逐行审阅代码、手动纠正错误的微观操作中解放出来，转向在更高维度的规范、约束与\nEvaluation 层面操纵 Agent 系统。\n对于单个 Agent，或是像 Codex、Claude Code 在常规开发中所调用的少量\nSub-agent 来说，瓶颈主要在于单线程的时间序列与上下文窗口限制。然而，当\nAgent\n的规模扩大到数十甚至上百个并发运行单位时，工程的核心矛盾发生了转移。\n在多 Agent 并行场景下，简单增加 Agent\n数量并不等于提升工程进度。如果不控制协同开销，大规模 Swarm\n会同时在三个维度上遭遇退化。多个 Worker\n在没有统一设计基准时并行编码，会定义出互相冲突的接口格式与类型声明，导致系统在时间推移中迅速失控；几十上百个\nAgent 同时提交改动，代码合并冲突会呈爆发式增长，在旧版 Swarm\n的浏览器实验中，累积的合并冲突超过了 70,000\n次，大量算力和时间被浪费在解决代码冲突上；而如果每一个 Worker\n的产出都需要人类开发者进行 Code\nReview，人类的注意力带宽会瞬间被填满，人机交互的扩展性也会彻底失效。\n正如我们在\nEvaluation-First\n文章\n中所强调的，评测的对象从来不是孤立的大语言模型本身，而是由模型与 Harness\n组合而成的整体系统。在 Swarm\n场景下，实际的任务难度是“实现难度”与“协同难度”的乘积。\n面对多 Agent 并行时接口碰撞、代码冲突与合并瘫痪的巨大协同成本，Cursor\n的新 Harness 必须拿出具体的控制手段，才能把这三条扩展线重新理顺。\nCursor\n怎样把三条扩展线放进同一套 harness\nCursor 并没有把实验总结为“大家都去用\nSwarm”的抽象倡议，而是把空间、时间、人机交互与模型经济学融合成一套紧密的工程\nHarness 机制：\n空间扩展：建立了递归的任务树架构，严格划分 planner 与 worker\n的角色边界。在 Cursor 的定义中，planner\n仅负责分解目标、设计架构与分发任务，绝不编写具体实现代码；worker\n仅负责执行被分发的叶子节点任务，绝不进行全局规划。为了防止架构分裂，系统通过共享设计文档和带有编译检查的引用维护全局约束。在合并协同上，Cursor\n引入了专门的 Reconciler 和第三方 Merge Agent 机制，结合自动注入的\nField Guide/index.md\n，把合并冲突从旧实验的 70,000\n多次大幅降低到新实验 4 小时内不到 1,000 次。\n时间扩展：把庞大的数据库构建任务切碎为作用域受限的叶子节点，并为\nworker 提供持久化的书面上下文。worker\n只需要在局部的上下文内完成窄范围的代码编写与编译验证，大大降低了单 Agent\n随时间推移而产生的目标漂移。这并没有从根本上消除长时运行中的上下文漂移，但系统通过架构约束缩短了单次执行的暴露时间。\n人机交互扩展：人类工程师无需审阅每一个 worker\n的微观代码，而是把控制力上移到最上游：将既有的 835 页 SQLite\n手册与编译、架构约束转成任务边界，并保留外部独立的裁判\nsqllogictest\n。人类通过定义 spec 与 Evaluation\n来操纵系统。\n经济学与模型分工：实验揭示了模型分工在经济学上的影响。Cursor\n发现，把昂贵的前沿模型部署在任务树的 planner\n节点进行架构分解，而让更便宜、更快速的模型充当 worker\n舰队执行具体叶子节点，可以在保持 100% 测试通过率的同时大幅降低总成本。在\nCursor 报告的受控对照中，GPT-5.5 独挑大梁的单次运行成本高达 $10,565，而\nOpus 4.8（作为 planner）加上 Composer 2.5（作为\nworker）的混合方案总成本仅为 $1,339（其中 worker 舰队仅花费\n$411）。在另一项测试中，单独使用 Grok 4.5 作为 planner 与 worker 也在 4\n小时内达到了 80%\n的通过率。需要明确的是，这是针对该特定任务实验的报告数据，不能简单外推为通用场景下固定\n15 倍的成本节省。\n在底层机制上，Swarm 是一套由多个 Agent\n组成的分布式协调控制平面，无需赋予其魔力模型标签。只有在必须依靠共享控制平面来解决庞大冲突与分工时，普通\nSub-agent 才有升级为 Swarm 的必要。\n这套控制平面能够高效运转，前提在于任务拥有确定的规范、密集的机制反馈以及可自动化检验的规则。一旦脱离了这个前提条件，看似强悍的\nHarness 就会面临截然不同的工程现实。\n这是一次秀肌肉，不是大多数产品团队的日常\n尽管 Cursor 的 SQLite 实验在 Harness Engineering\n上取得了突破，但我们必须客观评价其工程边界：它是在理想条件下展示能力上限的一场工程演示，无法直接当作大多数产品团队日常工程的通用解法。\n为什么说它不是产品团队的日常？因为真实世界的产品开发与 SQLite\n重写有着本质的不同：\nSQLite 重写的核心特征在于“目标高度确定”：它有 835\n页长达多年的成熟规范，有确定的磁盘格式和 SQL\n语义。工程的主要矛盾是“如何高效实现已知规范”。\n大多数真实产品工程的核心困境在于“确定要构建什么”：需求在不断变化，用户反馈在动态调整，系统需要与复杂的遗留系统集成，处理边界模糊的副作用、权限控制与跨进程并发。在这种场景下，意图本身是不完整的。\n如果在需求尚不明确、约束尚未固化的产品早期强行引入大规模 Swarm，Swarm\n强大的代码生成吞吐量只会以极高的效率成倍放大错误的意图，产生大量不可维护的代码。\n这一点在 Cursor 公开的代码仓库\ncursor/minisqlite\n中得到了印证。审阅该仓库可以发现：\n该代码库来自 solo Opus 4.8 的运行产物，没有采用成本对比实验中的 Opus\n4.8 + Composer 2.5 混合架构。\n尽管代码库包含了约 200,000 行 Rust 代码、14 个 crate 和 5,650\n个测试，但在接口与生产功能上存在明确的边界：它没有任何 CLI\n命令行工具、没有 C API 导出、没有 prepared statement\n预编译接口，且只支持进程内并发协调，完全没有操作系统级跨进程文件锁与\n-shm\n共享内存协议（参见\nminisqlite\nGitHub Issue #1\n讨论）。\n关于市场上对“Rust 重写 SQLite”的误解也需要澄清：Cursor 的\nminisqlite\n是一个研究性的生成产物，与 Turso 团队主导的\nLimbo/Turso Database\n项目属于完全不同的组织与工程路线，不能混为一谈。\n下图清晰地划分了从 SQL 行正确性到生产级数据库之间的多维工程边界：\n从 SQL 行结果正确到可替代生产 SQLite\n之间，还要分别检查接口兼容、跨进程并发、性能和长期维护\n最终，我们可以为工程团队得出一个清晰的选择法则：\n当产品意图尚在探索、需求与约束随用户反馈不断变化时，应当使用单个\nAgent 或少量 Sub-agent（如 Codex、Claude\nCode）配合人类开发者的紧密反馈；\n只有当产品的意图与规范已经高度固化、任务可以被拆分为独立的机械可验证单元，且系统协调成本明显低于并行带来的速度提升时，投入资源去构建和运行一个复杂的\nSwarm Harness 才真正具备工程合理性。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/cursor-sqlite-harness-swarm-20260723.html",
-      "content_chars": 5557,
-      "content_sha256": "438376d25f41e6b25dfbfedaf43326441e84c163f164e1f62a4fc616fe4749c6",
-      "content_fetched_at": "2026-07-24T22:12:41.028899+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-07-25",
+  "collect_window": {
+    "start": "2026-07-23T00:00:00+00:00",
+    "end": "2026-07-24T22:11:21.612313+00:00",
+    "hours": 46
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "30130172469",
+    "commit": "7c3083a"
+  },
+  "stats": {
+    "total": 13,
     "by_kind": {
       "publish": 13
     },
@@ -349,9 +30,1031 @@
       "sandflysecurity-blog": 1,
       "yage-share": 3
     },
+    "failed_lists": [],
+    "sources_ok": 44,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 8,
+      "rss": 26
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 13,
+      "calls": 13,
+      "prompt_tokens": 13395,
+      "completion_tokens": 2238,
+      "total_tokens": 15633,
+      "prompt_cache_hit_tokens": 8448,
+      "prompt_cache_miss_tokens": 4947
+    },
     "by_content_status": {
       "ok": 11,
       "failed": 2
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:1a2825b365a180b6",
+      "who": "zdi-advisories",
+      "who_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "action": "publish",
+      "target": "ZDI-26-452",
+      "target_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-452/",
+      "text": "zdi-advisories published: ZDI-26-452",
+      "at": "2026-07-24T22:11:21.612313+00:00",
+      "external_id": "a:1a2825b365a180b6",
+      "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-452/",
+      "title": "ZDI-26-452",
+      "content": "Dify AI Workflow oauth_redirect_url Open Redirect Vulnerability\nJuly 23rd, 2026\nZDI-26-452\nZDI-CAN-29196\nCVE ID\nCVSS Score\n5.4\nAV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N\nAffected Vendors\nDify\nAffected Products\nDify\nVulnerability Details\nThis vulnerability allows remote attackers to disclose sensitive information on affected installations of Dify. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\nThe specific flaw exists within the OAuth flow handling in the AppInitializer component. An attacker can force a redirection to a site that serves malicious content. An attacker can leverage this vulnerability to disclose information in the context of the application.\nAdditional Details\nThe vendor has issued an update that appears to address this vulnerability\nhttps://github.com/langgenius/dify/pull/38864\nDisclosure Timeline\n2026-03-25\n- Vulnerability reported to vendor\n2026-07-23\n- Coordinated public release of advisory\n2026-07-23\n- Advisory Updated\nCredit\nDavid Fiser & Alfredo Oliveira of TrendAI Research\nBack to Advisories",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-452/",
+      "content_chars": 1107,
+      "content_sha256": "18d8acd5fbbb30b71b62e19b86e33df6adb4e083072bb63f12cf6bbf3ad61b41",
+      "content_fetched_at": "2026-07-24T22:11:37.374557+00:00",
+      "author": "zdi-advisories",
+      "author_name": "Zero Day Initiative Advisories",
+      "author_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "published_at": "2026-07-24T22:11:21.612313+00:00",
+      "collected_at": "2026-07-24T22:11:21.612313+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zdi-advisories",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.zerodayinitiative.com/advisories/published/",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-452/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zdi-advisories",
+          "url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zdi-advisories",
+          "name": "Zero Day Initiative Advisories",
+          "home_url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "article": {
+          "title": "ZDI-26-452",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-452/",
+          "content_sha256": "18d8acd5fbbb30b71b62e19b86e33df6adb4e083072bb63f12cf6bbf3ad61b41"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:8affb6b057cda253",
+      "who": "zdi-advisories",
+      "who_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "action": "publish",
+      "target": "ZDI-26-451",
+      "target_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-451/",
+      "text": "zdi-advisories published: ZDI-26-451",
+      "at": "2026-07-24T22:11:21.612313+00:00",
+      "external_id": "a:8affb6b057cda253",
+      "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-451/",
+      "title": "ZDI-26-451",
+      "content": "Docker Desktop for macOS Inference Server Permissive Allow List Sandbox Escape Vulnerability\nJuly 23rd, 2026\nZDI-26-451\nZDI-CAN-29308\nCVE ID\nCVSS Score\n8.8\nAV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H\nAffected Vendors\nDocker\nAffected Products\nDesktop\nVulnerability Details\nThis vulnerability allows local attackers to escape the model runner sandbox on affected installations of Docker Desktop for macOS. An attacker must first obtain the ability to execute low-privileged code within the sandbox in order to exploit this vulnerability.\nThe specific flaw exists within the sandbox profile of the inference server process. The issue results from a permissive list of allowed inputs. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the current user on the host system.\nAdditional Details\nDocker has issued an update to correct this vulnerability. More details can be found at:\nhttps://github.com/docker/model-runner/commit/980388697b46b799ebc831f26fa83e4e6130f80a\nDisclosure Timeline\n2026-02-25\n- Vulnerability reported to vendor\n2026-07-23\n- Coordinated public release of advisory\n2026-07-23\n- Advisory Updated\nCredit\nNitesh Surana (niteshsurana.com) of TrendAI Research\nBack to Advisories",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-451/",
+      "content_chars": 1243,
+      "content_sha256": "694d682769bbaaf4d6092c6ec6060ff16d390fa5c09001a1b7efa0e218e99854",
+      "content_fetched_at": "2026-07-24T22:11:38.513291+00:00",
+      "author": "zdi-advisories",
+      "author_name": "Zero Day Initiative Advisories",
+      "author_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "published_at": "2026-07-24T22:11:21.612313+00:00",
+      "collected_at": "2026-07-24T22:11:21.612313+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zdi-advisories",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.zerodayinitiative.com/advisories/published/",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-451/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zdi-advisories",
+          "url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zdi-advisories",
+          "name": "Zero Day Initiative Advisories",
+          "home_url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "article": {
+          "title": "ZDI-26-451",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-451/",
+          "content_sha256": "694d682769bbaaf4d6092c6ec6060ff16d390fa5c09001a1b7efa0e218e99854"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:6d590430414468eb",
+      "who": "zdi-advisories",
+      "who_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "action": "publish",
+      "target": "ZDI-26-450",
+      "target_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-450/",
+      "text": "zdi-advisories published: ZDI-26-450",
+      "at": "2026-07-24T22:11:21.612313+00:00",
+      "external_id": "a:6d590430414468eb",
+      "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-450/",
+      "title": "ZDI-26-450",
+      "content": "AzeoTech DAQFactory CTL File Parsing Use-After-Free Remote Code Execution Vulnerability\nJuly 23rd, 2026\nZDI-26-450\nZDI-CAN-28831\nCVE ID\nCVE-2026-12921\nCVSS Score\n7.8\nAV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H\nAffected Vendors\nAzeoTech\nAffected Products\nDAQFactory\nVulnerability Details\nThis vulnerability allows remote attackers to execute arbitrary code on affected installations of AzeoTech DAQFactory. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\nThe specific flaw exists within the parsing of CTL files. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process.\nAdditional Details\nAzeoTech has issued an update to correct this vulnerability. More details can be found at:\nhttps://www.cisa.gov/news-events/ics-advisories/icsa-26-169-02\nDisclosure Timeline\n2026-03-02\n- Vulnerability reported to vendor\n2026-07-23\n- Coordinated public release of advisory\n2026-07-23\n- Advisory Updated\nCredit\nRocco Calvi (@TecR0c) with TecSecurity\nBack to Advisories",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-450/",
+      "content_chars": 1191,
+      "content_sha256": "c13a35029392b932d1bb0cfac9975bce3fd85658fbf2c0b78b7b6a69212bdc91",
+      "content_fetched_at": "2026-07-24T22:11:39.645023+00:00",
+      "author": "zdi-advisories",
+      "author_name": "Zero Day Initiative Advisories",
+      "author_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "published_at": "2026-07-24T22:11:21.612313+00:00",
+      "collected_at": "2026-07-24T22:11:21.612313+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zdi-advisories",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.zerodayinitiative.com/advisories/published/",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-450/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zdi-advisories",
+          "url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zdi-advisories",
+          "name": "Zero Day Initiative Advisories",
+          "home_url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "article": {
+          "title": "ZDI-26-450",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-450/",
+          "content_sha256": "c13a35029392b932d1bb0cfac9975bce3fd85658fbf2c0b78b7b6a69212bdc91"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:0ac9ce3a10128020",
+      "who": "zdi-advisories",
+      "who_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "action": "publish",
+      "target": "ZDI-26-449",
+      "target_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-449/",
+      "text": "zdi-advisories published: ZDI-26-449",
+      "at": "2026-07-24T22:11:21.612313+00:00",
+      "external_id": "a:0ac9ce3a10128020",
+      "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-449/",
+      "title": "ZDI-26-449",
+      "content": "AzeoTech DAQFactory CTL File Parsing Type Confusion Remote Code Execution Vulnerability\nJuly 23rd, 2026\nZDI-26-449\nZDI-CAN-28876\nCVE ID\nCVE-2026-12390\nCVSS Score\n7.8\nAV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H\nAffected Vendors\nAzeoTech\nAffected Products\nDAQFactory\nVulnerability Details\nThis vulnerability allows remote attackers to execute arbitrary code on affected installations of AzeoTech DAQFactory. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\nThe specific flaw exists within the parsing of CTL files. The issue results from the lack of proper validation of user-supplied data, which can result in a type confusion condition. An attacker can leverage this vulnerability to execute code in the context of the current process.\nAdditional Details\nAzeoTech has issued an update to correct this vulnerability. More details can be found at:\nhttps://www.cisa.gov/news-events/ics-advisories/icsa-26-169-02\nDisclosure Timeline\n2026-03-02\n- Vulnerability reported to vendor\n2026-07-23\n- Coordinated public release of advisory\n2026-07-23\n- Advisory Updated\nCredit\nrgod\nBack to Advisories",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-449/",
+      "content_chars": 1162,
+      "content_sha256": "573c73e9cffaa9e0b13d5ba985111eb5e6843e03cedf4de7e8769e8f1f8b66c1",
+      "content_fetched_at": "2026-07-24T22:11:40.808180+00:00",
+      "author": "zdi-advisories",
+      "author_name": "Zero Day Initiative Advisories",
+      "author_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "published_at": "2026-07-24T22:11:21.612313+00:00",
+      "collected_at": "2026-07-24T22:11:21.612313+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zdi-advisories",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.zerodayinitiative.com/advisories/published/",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-449/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zdi-advisories",
+          "url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zdi-advisories",
+          "name": "Zero Day Initiative Advisories",
+          "home_url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "article": {
+          "title": "ZDI-26-449",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-449/",
+          "content_sha256": "573c73e9cffaa9e0b13d5ba985111eb5e6843e03cedf4de7e8769e8f1f8b66c1"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:6f15dd0061bf2ddc",
+      "who": "zdi-advisories",
+      "who_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "action": "publish",
+      "target": "ZDI-26-448",
+      "target_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-448/",
+      "text": "zdi-advisories published: ZDI-26-448",
+      "at": "2026-07-24T22:11:21.612313+00:00",
+      "external_id": "a:6f15dd0061bf2ddc",
+      "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-448/",
+      "title": "ZDI-26-448",
+      "content": "Bitdefender Total Security Shredder Link Following Local Privilege Escalation Vulnerability\nJuly 23rd, 2026\nZDI-26-448\nZDI-CAN-28703\nCVE ID\nCVE-2026-6851\nCVSS Score\n7.3\nAV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H\nAffected Vendors\nBitdefender\nAffected Products\nTotal Security\nVulnerability Details\nThis vulnerability allows local attackers to escalate privileges on affected installations of Bitdefender Total Security. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\nThe specific flaw exists within the File Shredder Wizard service. By creating a symbolic link, an attacker can abuse the service to delete a folder. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of SYSTEM.\nAdditional Details\nBitdefender has issued an update to correct this vulnerability. More details can be found at:\nhttps://www.bitdefender.com/support/security-advisories/improper-link-resolution-before-file-access-in-bitdefender-total-security-via-link-following-va-13681/\nDisclosure Timeline\n2026-03-13\n- Vulnerability reported to vendor\n2026-07-23\n- Coordinated public release of advisory\n2026-07-23\n- Advisory Updated\nCredit\nAnonymous\nBack to Advisories",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-448/",
+      "content_chars": 1269,
+      "content_sha256": "f0790f3ce59d4d7add19c96c3fa4a23c23dbce493865eaf1f9276c5888a735d7",
+      "content_fetched_at": "2026-07-24T22:11:41.959183+00:00",
+      "author": "zdi-advisories",
+      "author_name": "Zero Day Initiative Advisories",
+      "author_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "published_at": "2026-07-24T22:11:21.612313+00:00",
+      "collected_at": "2026-07-24T22:11:21.612313+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zdi-advisories",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.zerodayinitiative.com/advisories/published/",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-448/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zdi-advisories",
+          "url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zdi-advisories",
+          "name": "Zero Day Initiative Advisories",
+          "home_url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "article": {
+          "title": "ZDI-26-448",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-448/",
+          "content_sha256": "f0790f3ce59d4d7add19c96c3fa4a23c23dbce493865eaf1f9276c5888a735d7"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:0e4a1e3adb9f01d0",
+      "who": "zdi-advisories",
+      "who_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "action": "publish",
+      "target": "ZDI-26-447",
+      "target_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-447/",
+      "text": "zdi-advisories published: ZDI-26-447",
+      "at": "2026-07-24T22:11:21.612313+00:00",
+      "external_id": "a:0e4a1e3adb9f01d0",
+      "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-447/",
+      "title": "ZDI-26-447",
+      "content": "Heimdall Data Database Proxy generateFileContent CRLF Injection Remote Code Execution Vulnerability\nJuly 23rd, 2026\nZDI-26-447\nZDI-CAN-29251\nCVE ID\nCVE-2026-12357\nCVSS Score\n7.2\nAV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H\nAffected Vendors\nHeimdall Data\nAffected Products\nDatabase Proxy\nVulnerability Details\nThis vulnerability allows remote attackers to execute arbitrary code on affected installations of Heimdall Data Database Proxy. Authentication is required to exploit this vulnerability.\nThe specific flaw exists within the generateFileContent function. The issue results from the lack of proper neutralization of CRLF sequences. An attacker can leverage this vulnerability to execute code in the context of root.\nAdditional Details\nFixed in release build 25.03.01.24\nhttps://www.heimdalldata.com/release-notes/\nDisclosure Timeline\n2026-02-12\n- Vulnerability reported to vendor\n2026-07-23\n- Coordinated public release of advisory\n2026-07-23\n- Advisory Updated\nCredit\nBobby Gould (@bobbygould5) of TrendAI Zero Day Initiative\nBack to Advisories",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-447/",
+      "content_chars": 1041,
+      "content_sha256": "a72b7844eed0bad8aa60f6842bbc0fde01b3b023cebd9eca31527ab297bc3593",
+      "content_fetched_at": "2026-07-24T22:11:43.118365+00:00",
+      "author": "zdi-advisories",
+      "author_name": "Zero Day Initiative Advisories",
+      "author_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "published_at": "2026-07-24T22:11:21.612313+00:00",
+      "collected_at": "2026-07-24T22:11:21.612313+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zdi-advisories",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.zerodayinitiative.com/advisories/published/",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-447/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zdi-advisories",
+          "url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zdi-advisories",
+          "name": "Zero Day Initiative Advisories",
+          "home_url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "article": {
+          "title": "ZDI-26-447",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-447/",
+          "content_sha256": "a72b7844eed0bad8aa60f6842bbc0fde01b3b023cebd9eca31527ab297bc3593"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:101fdf1da7e41252",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb-post4750444.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb-post4750444.html",
+      "at": "2026-07-24T22:11:21.612313+00:00",
+      "external_id": "a:101fdf1da7e41252",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb-post4750444.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb-post4750444.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-07-24T22:12:19.707964+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-07-24T22:11:21.612313+00:00",
+      "collected_at": "2026-07-24T22:11:21.612313+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb-post4750444.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/759406-strong-bypass-mlbb.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:9b4f2c9eb50d8cd0",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external-post4750436.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external-post4750436.html",
+      "at": "2026-07-24T22:11:21.612313+00:00",
+      "external_id": "a:9b4f2c9eb50d8cd0",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external-post4750436.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external-post4750436.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-07-24T22:12:30.578266+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-07-24T22:11:21.612313+00:00",
+      "collected_at": "2026-07-24T22:11:21.612313+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external-post4750436.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763230-scpsl-external.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:a5681dc9d6f9df26",
+      "who": "safebreach-blog",
+      "who_url": "https://www.safebreach.com/blog/",
+      "action": "publish",
+      "target": "Threat Coverage | ResearchJul 23 , 2026Russian State-Supported Zimbra Phishing: SafeBreach Coverage for CISA Advisory AA26-204ASince July 2025, the Russian state-supported group LAUNDRY BEAR has bee..",
+      "target_url": "https://www.safebreach.com/blog/cisa-aa26-204a-russian-zimbra-phishing-safebreach-coverage/",
+      "text": "safebreach-blog published: Threat Coverage | ResearchJul 23 , 2026Russian State-Supported Zimbra Phishing: SafeBreach Coverage for CISA Advisory AA26-204ASince July 2025, the Russian state-supported group LAUNDRY BEAR has bee..",
+      "at": "2026-07-24T22:11:21.612313+00:00",
+      "external_id": "a:a5681dc9d6f9df26",
+      "url": "https://www.safebreach.com/blog/cisa-aa26-204a-russian-zimbra-phishing-safebreach-coverage/",
+      "title": "Threat Coverage | ResearchJul 23 , 2026Russian State-Supported Zimbra Phishing: SafeBreach Coverage for CISA Advisory AA26-204ASince July 2025, the Russian state-supported group LAUNDRY BEAR has bee..",
+      "content": "Jul 23, 2026\nRussian State-Supported Zimbra Phishing: SafeBreach Coverage for CISA Advisory AA26-204A\nLearn how SafeBreach maps CISA Advisory AA26-204A to simulations that test your exposure to Russian-affiliated LAUNDRY BEAR’s Zimbra Collaboration Suite phishing campaign.\nSummary\nCISA Advisory\nAA26-204A\ndetails a Russian state-supported phishing campaign, active since July 2025, in which the advanced persistent threat (APT) group LAUNDRY BEAR (also tracked as Void Blizzard, CL-STA-1114, and TA488) targets the Zimbra Collaboration Suite (ZCS) across US and allied government and commercial networks. Using a custom-developed capability named “Ulej,” the actors leverage a view-based exploit that triggers automatically when a user simply opens a malicious email in an unpatched ZCS webmail instance—originally a zero-day, now tracked as CVE-2025-66376. The exploit exfiltrates the organization’s email directory, the last 90 days of the victim’s communications, and other sensitive data to actor-controlled servers. This post outlines the campaign’s TTPs—mapped to MITRE ATT&CK—summarizes the advisory’s IOCs, and covers the IOC-based content SafeBreach is adding to validate that an organization’s controls detect and block communication with the campaign’s exfiltration infrastructure, along with mitigation guidance for securing ZCS environments.\nAuthor:\nStacey Nosan, Senior Director of Content & Communications\nOn July 23, 2026, the National Security Agency (NSA), together with the Federal Bureau of Investigation (FBI), the Netherlands Defence Intelligence and Security Service (MIVD), the Netherlands General Intelligence and Security Service (AIVD), the Cybersecurity and Infrastructure Security Agency (CISA), and more than 20 additional US and allied partner agencies, issued joint Cybersecurity Advisory (CSA) AA26-204A:\nRussian State-Supported Cyber Actors Conduct Phishing Campaign Targeting Users of Zimbra Collaboration Suite\n. This advisory provides critical intelligence on an ongoing Russian state-supported phishing campaign, including the tactics, techniques, and procedures (TTPs) and indicators of compromise (IOCs) observed as the actors steal email and sensitive data from targeted organizations.\nSince July 2025, the threat group tracked as LAUNDRY BEAR has used phishing emails to target the Zimbra Collaboration Suite (ZCS) across US and allied government and commercial networks—leveraging a view-based exploit that triggers automatically when a recipient simply opens a malicious message in an unpatched webmail instance.\nUnderstanding the Threat\nLAUNDRY BEAR is a Russian state-supported advanced persistent threat (APT) group first publicly detailed in May 2025, when the Netherlands’ AIVD and MIVD and Microsoft independently highlighted the actor—Microsoft tracking it as Void Blizzard. Across the security industry the group is also tracked as CL-STA-1114 and TA488 (formerly UNK_PitStop).\nUnlike financially motivated ransomware crews, LAUNDRY BEAR’s objective is espionage: bulk collection of email and organizational data from government and commercial targets aligned with Russian state intelligence interests. The campaign has been active since July 2025 and continues today against organizations that have not patched their Zimbra webmail.\nWhat makes this campaign notable is its low interaction requirement. Using a custom capability the actors call “Ulej,” LAUNDRY BEAR sends phishing emails carrying a view-based exploit for\nCVE-2025-66376\n—a vulnerability in the ZCS webmail interface that executes automatically the moment a victim opens the email. No link needs to be clicked and no attachment needs to be opened. Once triggered, the exploit exfiltrates the organization’s email directory, the previous 90 days of the victim’s communications, and other sensitive information to servers controlled by the actors. The flaw was a zero-day when the campaign began and remains effective against any ZCS instance that has not applied the vendor’s fix.\nKey Tactics, Techniques, and Procedures (TTPs)\nThe advisory maps LAUNDRY BEAR’s activity across the full ATT&CK chain (MITRE ATT&CK for Enterprise v19). The techniques below are grouped by tactic; Appendix A of the advisory provides the complete correlation, and Appendix B maps the corresponding MITRE D3FEND countermeasures.\nReconnaissance\nActive Scanning (T1595)\n. Port-scans the internet to find and fingerprint exposed, exploitable ZCS infrastructure.\nSearch Open Technical Databases: Scan Databases (T1596.005).\nUses commercially available scan datasets to identify targetable ZCS servers.\nSearch Open Websites/Domains (T1593).\nLeverages public information to support target development.\nSearch Closed Sources (T1597) and Purchase Technical Data (T1597.002)\n. Draws on previously exfiltrated data and purchased commercial datasets to refine targeting.\nGather Victim Identity Information — Email Addresses (T1589.002) and Credentials (T1589.001)\n. Compiles target user email addresses; the payload also attempts to lift the victim’s password from their password manager.\nResource Development\nAcquire Infrastructure (T1583) — Virtual Private Server (T1583.003).\nProcures VPSs from a range of providers (often with fabricated identities) and routes traffic through Mullvad VPN for OPSEC.\nDevelop Capabilities (T1587) — Malware (T1587.001) and Exploits (T1587.004).\nBuilt the custom “Ulej” payload and, at the time, a novel XSS exploit enabling arbitrary JavaScript execution.\nObtain Capabilities — Tool (T1588.002) and Artificial Intelligence (T1588.007).\nUses open-source tooling such as Evilginx2 and appears to have leveraged AI to assist development of its “Flowerbed” collection framework.\nStage Capabilities (T1608).\nDeploys Flowerbed (Docker containers) to a procured cloud server to receive exfiltrated data.\nInitial Access\nPhishing (\nT1566\n).\nSends spear-phishing email carrying a malicious JavaScript payload—no link-click or attachment needed; simply viewing the message triggers it.\nTrusted Relationship (T1199).\nSince at least November 2025, sends payloads from previously compromised accounts that already have an established relationship with the target, frustrating anti-phishing controls.\nValid Accounts (T1078).\nUses credentials acquired from commercial datasets and prior compromises to access accounts.\nExecution\nExploitation for Client Execution (\nT1203\n).\nExploits CVE-2025-66376 (CWE-79 cross-site scripting) so the JavaScript payload executes the moment the email is viewed in a vulnerable ZCS webmail client.\nPersistence\nAccount Manipulation (T1098)\n. Enables IMAP and creates Application Passcodes to maintain access to the compromised mailbox.\nModify Authentication Process: Multi-Factor Authentication (T1556.006)\n. Generates Application Passcodes and steals 2FA “scratch codes” to bypass multi-factor authentication.\nPrivilege Escalation\nValid Accounts (T1078)\n. Reuses acquired account credentials to obtain privileged access.\nDefense Evasion\nObfuscated Files or Information (T1027.010, T1027.013, T1027.017)\n. Command obfuscation plus a Base64-encoded, XOR-encrypted inner payload smuggled inside the “onload” attribute of an SVG element, letting the actors regenerate signatures easily.\nUse Alternate Authentication Material: Web Session Cookie (T1550.004)\n. In prior AiTM campaigns, stole and replayed victim session cookies to authenticate.\nCredential Access\nAdversary-in-the-Middle (T1557)\n. Earlier campaigns used Evilginx2 to intercept credentials and session cookies.\nModify Authentication Process: MFA (T1556.006)\n. Application Passcodes and stolen scratch keys stand in for a valid 2FA token.\nCollection\nEmail Collection (T1114) — Remote Email Collection (T1114.002)\n. Harvests the victim’s last 90 days of non-junk email via API calls to the ZCS mail server.\nAutomated Collection (T1119)\n. The payload gathers information automatically in twelve asynchronous stages.\nBrowser Session Hijacking (T1185)\n. Rides the user’s authenticated browser session to issue SOAP/API requests as the victim.\nArchive Collected Data (T1560) and Data Staged: Remote Data Staging (T1074.002)\n. GZIP-compresses harvested email and stages it on an actor-controlled VPS before onward transfer.\nDiscovery\nAccount Discovery (T1087)\n. Brute-forces the organization’s Global Address List (GAL) to enumerate additional users to target.\nExfiltration\nExfiltration Over Alternative Protocol (T1048).\nSends data out over both DNS and HTTPS to the Flowerbed infrastructure.\nOver Asymmetric Encrypted Non-C2 Protocol (T1048.002) and Over Unencrypted Non-C2 Protocol (T1048.003)\n. Larger payloads (including email content) go over HTTPS; smaller ones are Base32-encoded and exfiltrated via DNS A-record queries.\nIndicators of Compromise (IOCs)\nThe advisory publishes an extensive, historically attributed IOC set. The authoring agencies caution that LAUNDRY BEAR rotates infrastructure frequently—individual IPs, domains, and compromised sender addresses may already be stale—so verify current activity before acting on any single indicator. The indicators fall into several categories:\nFlowerbed VPS infrastructure: Nine actor-controlled domains and IPs active between July 2025 and March 2026 (for example, zmailanalytics[.]com, zimbra-metadata[.]com, and zimbrastat[.]com) used to receive exfiltrated data.\nTLS certificate hashes: SHA-1 hashes of the Let’s Encrypt X.509 certificates bound to the “*.i.*” wildcard subdomains the exfiltration traffic uses.\nSender addresses: ProtonMail accounts used to procure infrastructure and distribute payloads, plus compromised accounts at Ukrainian domains (isofts.kiev[.]ua, navs.edu[.]ua).\nMalicious email samples: SHA-256 hashes of four email samples carrying the CVE-2025-66376 payload.\nHost-based artifacts:  In ZCS mailbox.log: bursts of SearchGalRequest SOAP commands, creation of an Application Passcode named “ZimbraWeb,” and GetScratchCodesRequest calls; on endpoints, browser localStorage entries named zd_comp_YYYY-MM-DD.\nUseful hunting aids: exfiltration is triggered through image requests to d-{id}…i.{domain}/pixel.gif (DNS) and js-{id}.i.{domain}/v/p or /v/d (HTTPS), and the actors’ Nginx reverse proxy only forwards traffic whose TLS SNI matches “*.i.*.”\nFor the full, machine-readable set, download the AA26-204A STIX XML and STIX JSON bundles from the\nCISA advisory page\n.\nSafeBreach Coverage & Playbook Attack Updates\nIn total, four simulations are mapped to AA26-204A: 110 and 903 (existing exfiltration-behavior coverage) and 11752 and 11753 (new IOC-based reachability coverage). Every method below runs from this same set.\nExisting Behavioral Coverage\nSafeBreach already simulates the exfiltration-over-alternative-protocol behavior (T1048) at the core of this campaign- data theft over both HTTPS and DNS, the two channels LAUNDRY BEAR uses to move stolen mailboxes and directories to its Flowerbed infrastructure:\n110 – Covert data-asset exfiltration over HTTPS (POST)\n903 – Covert data-asset exfiltration over DNS (TXT queries)\nThese simulations are mapped to MITRE ATT&CK and can be run immediately to validate that your DLP and egress controls detect and block the exfiltration techniques this campaign relies on.\nNew IOC-Based Coverage\nTo address the IOC guidance in AA26-204A, we are adding network-reachability simulations that validate whether your egress controls detect and block communication with the advisory’s exfiltration infrastructure.\n11752 – Communication with APT (AA26-204A) using HTTP.\nSends an outbound HTTP request to a SafeBreach-controlled server with an advisory-listed C2 domain set in the Host header, validating whether your controls detect and block egress to the campaign’s infrastructure.\n11753 – ICMP Ping Request to APT (AA26-204A) C2 Servers.\nSends an ICMP echo request to advisory-listed C2 IP addresses to validate whether your egress controls detect and block reachability to that infrastructure. This is an Advanced Action- it contacts real external infrastructure, so schedule it accordingly.\nThese simulations validate detection and blocking of communication with the campaign’s actor-controlled C2 indicators.\nTogether, these four simulations are the complete SafeBreach content mapped to AA26-204A: 110 and 903 validate the exfiltration behavior (HTTPS/DNS), and 11752 and 11753 validate reachability to the campaign’s C2 indicators. Run them from any of the methods below.\nWhat You Should Do Now\nSafeBreach customers can now validate their security controls against the campaign’s C2 and exfiltration indicators in multiple ways.\nMethod 1 — SafeBreach Scenarios:\nNavigate to the SafeBreach Scenarios page and choose CISA Alert  AA26-204A.\nMethod 2 — Attack Playbook:\nOpen the Attack Playbook and filter by AA26-204A to view all associated attacks. You can also refer to the list above to confirm which AA26-204A attacks are available.\nMethod 3 — Known Attack Series Report:\nSelect the AA26-204A report from the Known Attack Series report and click Run Simulations.\nAdditional Advisory Steps\nRun the SafeBreach Simulations\nLog into the SafeBreach platform and navigate to the updated playbooks mapped to AA26-204A.\nExecute the AA26-204A simulations to test whether your controls detect and block outbound communication with the campaign’s actor-controlled C2 indicators.\nRun all four mapped simulations: 11752 and 11753 for C2/IOC reachability, and 110 and 903 for the exfiltration-behavior coverage (all listed in the SafeBreach Coverage section above).\nReview results to validate detection, surface gaps, and guide remediation.\nImplement Mitigation Strategies\nPatch the Zimbra Collaboration Suite to the latest version to remediate CVE-2025-66376; unpatched webmail remains exploitable.\nEnforce multifactor authentication (MFA) for webmail and remote access to reduce the value of any stolen credentials.\nRestrict and monitor outbound connections from mail infrastructure, and block traffic to the advisory’s listed exfiltration servers after vetting.\nReview ZCS webmail configuration and limit automatic content rendering where feasible.\nInvestigate for the presence of the advisory’s IOCs and follow the CSA’s remediation steps if any are found.\nMaintain and test offline backups of mail and directory data.\nEmploy Proactive Threat Monitoring\nHunt for anomalous outbound transfers from ZCS servers, especially bulk mailbox or directory exports to unfamiliar external hosts.\nAlert on connections from mail infrastructure to the actor-controlled servers listed in the advisory.\nReview ZCS webmail logs for exploitation of CVE-2025-66376 and for activity associated with the “Ulej” capability.\nFlag mass access to the organizational email directory or to 90-day mailbox histories that is inconsistent with normal use.\nStay Ahead with SafeBreach\nFor a complete view of your security gaps against the LAUNDRY BEAR campaign, sign into SafeBreach and run the latest simulations mapped to AA26-204A. Because this campaign is built on stolen mailboxes, directories, and credentials—the raw material attackers use to move deeper into an environment—you can go a step further with\nSafeBreach Propagate\n.\nPropagate enables you to assess how attackers could pivot across your environment post-compromise—mapping high-risk attack paths, visualizing lateral movement across network zones, and prioritizing remediation based on exposure to your most critical assets. Find out more in the\nSafeBreach Propagate solution brief\n.\nFrequently Asked Questions\nWhat is CISA Advisory AA26-204A?\nAA26-204A is a joint cybersecurity advisory led by the National Security Agency (NSA), with co-sealing partners including the FBI, the Netherlands’ MIVD and AIVD, CISA, and more than 20 additional cyber and intelligence agencies across allied nations. Published in July 2026, it details a Russian state-supported phishing campaign—ongoing since July 2025—that targets the Zimbra Collaboration Suite (ZCS) to steal email and sensitive data from U.S. and allied government and commercial networks.\nWhat is the vulnerability and which systems are affected?\nThe campaign targets the Zimbra Collaboration Suite (ZCS) webmail service. The actors exploit CVE-2025-66376, a view-based vulnerability that executes automatically when a victim opens a specially crafted email in a vulnerable version of ZCS—no clicks or attachments required. It was used as a zero-day when the campaign began and continues to succeed against ZCS instances that remain unpatched. Organizations still running unpatched Zimbra webmail are at greatest risk.\nWho is behind the attacks outlined in CISA Advisory AA26-204A, and what are they doing?\nThe activity is attributed to LAUNDRY BEAR, a Russian state-supported APT group also tracked across the security industry as Void Blizzard, CL-STA-1114, and TA488 (formerly UNK_PitStop). Using a custom capability named “Ulej,” the actors deliver phishing emails that trigger the ZCS view-based exploit on open, then exfiltrate the victim organization’s email directory, the last 90 days of communications, and other sensitive information to servers they control.\nHow can organizations test their exposure to the threats outlined in CISA Advisory AA26-204A?\nSafeBreach customers can validate their defenses through the SafeBreach Scenarios page (filtered by AA26-204A), the Attack Playbook, or the Known Attack Series report, all of which provide IOC-based content to validate that their controls detect and block communication with the campaign’s C2 and exfiltration indicators.\nYou Might Also Be Interested In\nPodcast\nVideos\nPodcast: The Russian Cyber Triad: GRU, SVR, FSB Explained\nListen Now\nPodcast\nVideos\nPodcast: Russia State-Aligned Cyber Threat Actors Series\nListen Now\nRussia State-Aligned Cyber Threat Actors: The Complete Guide\nRead More\nGet the latest\nresearch and news",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.safebreach.com/blog/cisa-aa26-204a-russian-zimbra-phishing-safebreach-coverage/",
+      "content_chars": 17791,
+      "content_sha256": "54f34f1a3c0701467941263daf3288d866b82bf4c30965635dc78063966d943c",
+      "content_fetched_at": "2026-07-24T22:13:16.546070+00:00",
+      "author": "safebreach-blog",
+      "author_name": "SafeBreach Blog",
+      "author_url": "https://www.safebreach.com/blog/",
+      "published_at": "2026-07-24T22:11:21.612313+00:00",
+      "collected_at": "2026-07-24T22:11:21.612313+00:00",
+      "tags": [
+        "kind:publish",
+        "src:safebreach-blog",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.safebreach.com/blog/",
+        "https://www.safebreach.com/blog/cisa-aa26-204a-russian-zimbra-phishing-safebreach-coverage/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "safebreach-blog",
+          "url": "https://www.safebreach.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "safebreach-blog",
+          "name": "SafeBreach Blog",
+          "home_url": "https://www.safebreach.com/blog/"
+        },
+        "article": {
+          "title": "Threat Coverage | ResearchJul 23 , 2026Russian State-Supported Zimbra Phishing: SafeBreach Coverage for CISA Advisory AA26-204ASince July 2025, the Russian state-supported group LAUNDRY BEAR has bee..",
+          "url": "https://www.safebreach.com/blog/cisa-aa26-204a-russian-zimbra-phishing-safebreach-coverage/",
+          "content_sha256": "54f34f1a3c0701467941263daf3288d866b82bf4c30965635dc78063966d943c"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:7f67095b988ddd2c",
+      "who": "sandflysecurity-blog",
+      "who_url": "https://sandflysecurity.com/blog",
+      "action": "publish",
+      "target": "Agentless Linux EDR: Stopping Volt and Salt Typhoon in OT Environments",
+      "target_url": "https://sandflysecurity.com/blog/agentless-linux-edr-stopping-volt-and-salt-typhoon-in-ot-environments",
+      "text": "sandflysecurity-blog published: Agentless Linux EDR: Stopping Volt and Salt Typhoon in OT Environments",
+      "at": "2026-07-24T05:45:55+00:00",
+      "external_id": "a:7f67095b988ddd2c",
+      "url": "https://sandflysecurity.com/blog/agentless-linux-edr-stopping-volt-and-salt-typhoon-in-ot-environments",
+      "title": "Agentless Linux EDR: Stopping Volt and Salt Typhoon in OT Environments",
+      "content": "Sandfly Blog\nAgentless Linux EDR: Stopping Volt and Salt Typhoon in OT Environments\n24 July 2026\nEmbedded Linux\nKey Takeaways\nThe Threat:\nNation-state groups like Volt Typhoon and Salt Typhoon are targeting critical Operational Technology (OT) infrastructure using \"Living off the Land\" techniques to evade detection.\nThe Warning:\nRecent advisories from the Cybersecurity and Infrastructure Security Agency (CISA), including the\n2025 Threat Assessment and advisory AA25-239\n, confirm these groups are actively pre-positioning for disruptive attacks.\nThe Problem:\nTraditional Endpoint Detection and Response (EDR) agents have compatibility issues, may trigger kernel panics, and impact performance in complex OT networks.\nThe Solution:\nSandfly Security utilizes agentless security. This method operates via standard SSH to detect intruders without compatibility risks, avoids risky kernel hooks, and maintains system performance even in hardware constrained environments.\nThe Shift in Critical Infrastructure Threats\nAt Sandfly, we work with many customers in the critical infrastructure space and frequently deal with unusual Operational Technology (OT) applications and hardware. OT infrastructure security is an interesting area because it almost always involves Linux, and it often involves systems that cannot go down for any reason. This is exactly the type of environment where agentless security like Sandfly excels.\nIn particular, OT security presents several significant challenges where traditional agent-based Linux EDR solutions have a tough time operating:\nThey often run on custom Linux versions and hardware.\nThey may be running older versions of Linux and are not updated regularly.\nThey run on a mix of CPUs, ranging from standard x86 (Intel/AMD) to ARM, MIPS, PowerPC, and more.\nThey are often left unmonitored, making them juicy targets for nation-state attackers.\nTwo of the most formidable threats currently active are Chinese state-sponsored groups dubbed Volt Typhoon and Salt Typhoon. They specialize in targeting and compromising OT infrastructure.\nAccording to recent joint advisories from CISA, the NSA, and the FBI (advisory\nAA25-239\n), these advanced persistent threat actors exhibit tactics that extend beyond traditional espionage. While Salt Typhoon focuses heavily on massive-scale data theft by exploiting telecommunications infrastructure, Volt Typhoon actively pre-positions itself within power grids, water treatment facilities, and communication networks. The CISA threat assessment indicates that this positioning is designed to enable disruptive or destructive cyberattacks during potential future geopolitical conflicts.\nBoth groups evade detection by targeting edge networks and exploiting the soft underbelly of OT environments: Linux-based embedded devices, legacy servers, and routing equipment. For security teams, protecting these environments creates a paradox. You need deep visibility to catch stealthy intruders, but traditional endpoint security tools are often too dangerous to install on varied, mission-critical OT systems.\n\"Linux\" is an Umbrella Term\nAt Sandfly, we have a tremendous amount of experience working in mission-critical and OT environments that run Linux. Here are three examples where we are trusted in extremely critical OT environments:\nVay\n:\nA teledriving vehicle company where Sandfly is used to monitor remotely driven vehicles operating on public roads where safety is paramount.\nEricsson\n:\nTrusted to protect their telecommunications customers and equipment globally.\nCar Manufacturer\n:\nUsed on systems serving assembly lines for a major automobile manufacturer.\nSo when we talk about protecting OT systems, we are not just spewing marketing. Rather, we have practical, real-world experience watching some of the most important networking gear on the planet.\nThe primary challenge with protecting OT systems is that they rely heavily on Linux, and \"Linux\" is simply an umbrella term. Because the operating system is incredibly adaptable, a Linux deployment can be anything from a massive GPU cluster training an artificial intelligence model to a highly constrained embedded device in an IP camera or robot.\nThis extreme variety is where agent-based Endpoint Detection and Response (EDR) solutions reveal massive coverage gaps. While a traditional EDR vendor might claim they \"support Linux,\" OT security teams must immediately ask the following critical questions:\nWhich distributions?\nThe ecosystem is deeply fragmented across dozens of commercial and open-source distributions.\nWhich kernel versions?\nThousands of unique Linux kernels exist, and OT vendors frequently compile custom kernels to suit highly specialized hardware.\nWhich CPU architectures?\nWhile standard x86 processors dominate corporate servers, the smaller networking devices making up the OT edge rely heavily on ARM or MIPS architectures.\nWhat are the resource costs?\nThis is the ultimate dealbreaker. Technologies like eBPF have solved some of the past kernel monitoring problems, but performance impacts still exist. We have repeatedly heard from customers that agents routinely consume 10% to 30% or more of system resources, which can immediately cripple or crash an OT system.\nSandfly can handle all of these scenarios, from cloud-based deployments down to a tiny Linux controller buried in a broom closet. Because agent-based systems cannot deploy across this wide range of hardware, many security teams are left with massive visibility gaps where attackers like Salt Typhoon and Volt Typhoon can infiltrate and remain undetected for extended periods. Sandfly aims to stop that because we are designed to watch everything reliably and leave no blind spots.\nWhat is \"Living off the Land\" and Why Do the Typhoons Use It?\nVolt Typhoon and Salt Typhoon do not operate like typical hackers. When infiltrating a facility, they rarely drop noisy, recognizable malware files that trigger alarms. Instead, they utilize\nLiving off the Land\n(LOTL). LOTL is a cyberattack technique where adversaries use legitimate, pre-installed administrative tools (like SSH, netcat, bash scripts, and more) to execute attacks, allowing them to evade traditional signature based malware detection. This is because these tools are not malware, but just being used maliciously.\nOnce these attackers compromise public facing edge devices with outdated firmware or weak credentials, they proxy their traffic to look like normal network activity. By hijacking legitimate system utilities, they blend in seamlessly with the daily activities of system administrators. Further, because they avoid introducing third party malware, traditional detection solutions may remain completely blind to their presence.\nFinding these stealthy intruders requires analyzing system state and behavior, which typically demands EDR capabilities. However, bringing traditional EDR agents into an operational technology space introduces a severe set of risks that an agentless approach like Sandfly completely avoids.\nWhy Does Traditional EDR Fail in OT Environments?\nOperational Technology runs the physical world. A crashed workstation in a corporate IT environment means a single annoyed employee. A crashed server in an OT environment can mean a regional power blackout or telephones stop working.\nTraditional agent based EDR platforms are fundamentally ill-suited for high availability Linux environments for three major reasons:\nThe Risk of Kernel Panics:\nTraditional EDR agents require hooks into the Linux kernel to intercept system calls and monitor activity. If an agent encounters a software bug or a conflict, it can trigger a kernel panic, immediately crashing the server. In OT environments where total uptime is non-negotiable, this risk is unacceptable. Even eBPF solutions have caused kernel panics due to bugs. Interfacing with the kernel always carries this risk.\nCompatibility and Russian Roulette Patching:\nThe Linux ecosystem is incredibly fragmented across varying distributions and CPU architectures like ARM and MIPS. Agent based tools are highly dependent on specific kernel versions. If an EDR vendor does not support the exact kernel version running on your custom hardware for instance, you are left unprotected. Furthermore, applying a critical operating system patch can break the EDR agent or the EDR agent upgrade can break the kernel. This can leave the system unprotected, or worse, bricked.\nVoids Service Contracts:\nMany vendors have service contracts that prohibit loading or modifying the hardware. Installing an agent that causes an outage or damages the equipment may void service agreements resulting in a costly mistake.\nResource Drain:\nPersistent EDR agents are always on and continuously consume processor and memory resources. In resource constrained embedded systems and legacy servers, an EDR agent demanding up to 30% of system resources can degrade performance to the point of operational failure.\nBecause of these massive hurdles, many OT administrators choose to run their Linux fleets completely unmonitored. This leaves the door wide open for groups like Salt and Volt Typhoon to enter and linger in the most critical of critical infrastructure.\nHow Does Agentless Security Protect OT Environments?\nSandfly Security solves the visibility paradox by completely rethinking how Linux security works. Instead of forcing a persistent software agent onto the endpoint, Sandfly utilizes\nAgentless Security\n. Agentless Security is a cybersecurity approach that monitors and protects systems without requiring the installation of any persistent software or background services on the target device. Basically, if endpoint agents cause all of these compatibility and performance headaches on Linux, what if we just got rid of it?\nHere are some of the benefits of not using an endpoint agent in OT environments:\nZero Kernel Interaction\nSandfly connects to endpoints using standard SSH and runs its investigative modules entirely in user space. It never loads kernel modules, it does not hook system calls, and it does not rely on eBPF technologies. Not tying into kernel space drastically lowers crash risks on production systems. If a Sandfly scan fails for any reason, it simply logs an error and stops, leaving zero impact on the host system.\nUniversal Compatibility\nBecause it relies on standard SSH and pre-compiled static binaries, Sandfly works on virtually any Linux system. It effortlessly monitors modern cloud instances alongside decade old legacy servers, Internet of Things devices, and embedded hardware. It fully supports many CPU architectures like ARM, MIPS, and PowerPC, which are heavily prevalent in OT networking gear.\nInvisible Performance Footprint\nWhen Sandfly is not actively scanning a host, its resource consumption is exactly zero. When an automated scan triggers, it runs as a brief, low priority burst that typically consumes less than 2% of aggregate CPU for roughly 60 to 120 seconds at low priority before disappearing completely. This lightweight approach ensures that mission critical processes are never starved of compute resources. We've had this claim tested multiple times by mission critical users and are happy to show you how we can do this.\nHow Can You Hunt the Typhoons Without Agents?\nHow do you use an agentless tool to catch an elite adversary that hides in plain sight? Sandfly is specifically designed to hunt the exact Living off the Land tactics that actors like Salt and Volt Typhoon rely upon.\nCredential and SSH Key Auditing:\nThreat actors steal passwords and SSH keys to quietly persist on networks. Sandfly proactively monitors endpoints for weak passwords and audits SSH keys with our SSH Hunter to detect unauthorized credential usage. It can even perform agentless response actions, like deleting rogue SSH keys, cutting off the attacker's primary method of lateral movement.\nDrift Detection:\nEven the most sophisticated attackers must alter something to maintain access. Sandfly continuously monitors systems for unauthorized modifications. It detects tampering across processes (including fileless malware), users, critical system binaries, persistence mechanisms, and more. It is extremely difficult to modify a host without being seen with this feature active and can completely lock down OT devices against tampering.\nTactics and Behavioral Analysis:\nInstead of looking for known malware files, Sandfly looks for the results of malicious behavior. It roots out hidden processes, suspicious network connections, and unauthorized activity that indicate a system is compromised. This style of tactics hunting does not go stale like traditional malware signatures often do.\nIncident Response:\nBecause there is no need to deploy an agent, Sandfly can be instantly used in incident response investigations to see if sophisticated attackers like Salt Typhoon or Volt Typhoon are present in the infrastructure. The deployment is fast and safe so security teams can get answers without impacting critical operations.\nSecuring the Future of Critical Infrastructure\nThe convergence of IT and OT networks has given nation-state actors an unprecedented avenue into the systems that sustain our daily lives. Defending against pre-positioning campaigns like Volt Typhoon or the massive intelligence sweeps of Salt Typhoon requires total visibility into your Linux and embedded infrastructure.\nBy abandoning the risky, resource heavy model of traditional endpoint agents, Sandfly Security provides a frictionless, universally compatible solution tailored for the strictest operational environments. It proves that you no longer have to choose between keeping your critical infrastructure stable and keeping it secure.\nStop Choosing Between Uptime and Security\nDo not wait for a nation-state actor to test the resilience of your critical infrastructure. See how Sandfly's agentless technology can give you complete, continuous visibility into your Linux and embedded systems without risking downtime.\nRequest a demo today\nto see how you can start hunting threats like Volt Typhoon before they strike.\nProtect Your OT Infrastructure Today\nGet a Demo\nPost Tags:\nEmbedded Linux\nPublic Sector\nTelecommunications\nLinux Security\nManufacturing\nShare this post:\n← Return to Blog",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://sandflysecurity.com/blog/agentless-linux-edr-stopping-volt-and-salt-typhoon-in-ot-environments",
+      "content_chars": 14262,
+      "content_sha256": "20209d1859dc3133f2d5149ef92b449c039a421d48b15504a5e4222bbe673c50",
+      "content_fetched_at": "2026-07-24T22:13:19.743343+00:00",
+      "author": "sandflysecurity-blog",
+      "author_name": "Sandfly Security Blog",
+      "author_url": "https://sandflysecurity.com/blog",
+      "published_at": "2026-07-24T05:45:55+00:00",
+      "collected_at": "2026-07-24T22:11:21.612313+00:00",
+      "tags": [
+        "kind:publish",
+        "src:sandflysecurity-blog",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://sandflysecurity.com/blog",
+        "https://sandflysecurity.com/blog/agentless-linux-edr-stopping-volt-and-salt-typhoon-in-ot-environments"
+      ],
+      "refs": {
+        "actor": {
+          "login": "sandflysecurity-blog",
+          "url": "https://sandflysecurity.com/blog"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "sandflysecurity-blog",
+          "name": "Sandfly Security Blog",
+          "home_url": "https://sandflysecurity.com/blog"
+        },
+        "article": {
+          "title": "Agentless Linux EDR: Stopping Volt and Salt Typhoon in OT Environments",
+          "url": "https://sandflysecurity.com/blog/agentless-linux-edr-stopping-volt-and-salt-typhoon-in-ot-environments",
+          "content_sha256": "20209d1859dc3133f2d5149ef92b449c039a421d48b15504a5e4222bbe673c50"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:90ebb408a83d7196",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "GPT-5.6 的新提示指南：prompt 该少写什么，多写什么",
+      "target_url": "https://yage.ai/share/gpt56-prompt-guidance-result-certainty-20260724.html",
+      "text": "yage-share published: GPT-5.6 的新提示指南：prompt 该少写什么，多写什么",
+      "at": "2026-07-24T00:00:00+00:00",
+      "external_id": "a:90ebb408a83d7196",
+      "url": "https://yage.ai/share/gpt56-prompt-guidance-result-certainty-20260724.html",
+      "title": "GPT-5.6 的新提示指南：prompt 该少写什么，多写什么",
+      "content": "AI Agent\nAI 编程\nOpenAI 在 2026 年 7 月 22 日更新了\nModel\nguidance\n。在这份针对 GPT-5.6\n的最新提示指南里，出现了一个和许多人习惯相反的工程动作：当 Agent\n拿到充足的上下文时，开发者不需要在提示词里逐行手写具体的中间执行步骤。\n一直以来，大家习惯把步骤写得越细越好，希望用一串操作指令把 Agent\n扣在预设好的轨迹上。最新指南没有让人放弃控制，而是挪动了约束的位置：把从前花在规定路线上的精力，转去明确最终的交付成果、必须留下的验证证据，以及哪些关键操作必须有人类审批。\n只看这页更新，容易以为这只是个随手改掉的 prompt 技巧。但如果把 OpenAI\n此前公开过的 GPT-4.1、GPT-5 与 GPT-5.6\n提示文档拉到一起，会看到一条连续的工程线索。\nGPT-5.6：少写步骤，写清交付\n在具体的项目里清理提示词冗余，并不是靠直觉把指令缩短。GPT-5.6\n建议的做法很干脆：在代表性的测试集上，一组一组删除提示词里的路线描述，重新运行任务，观察质量读数和凭证有没有下滑。\n只有删除后测试指标依然稳定，这段指令才算可以被安全精简；一旦读数下跌，再把丢掉的约束加回来。OpenAI\n在内部编码 Agent\n上试过这种消融测试，删掉非必要步骤带来了方向上的优化，效果取决于具体的业务负载。这种拿测试指标决定指令去留的思路，正是\nEvaluation-First：Cursor\n这篇 Agent Harness 文章真正值得读的地方\n讨论的关键：不能凭感觉猜哪段提示词有用，每次精简都要靠 eval\n数据来验证是否维持了输出质量。这里被用来做消融验证的方法，在指南里被称为\nlean-prompt。\n省略中间步骤之后，提示词里留下的部分反而变得更加明确。指南整理了一份围绕交付结果构建的清单：任务目标、领域上下文、硬性约束、审批边界、成功标准、遇到歧义时的提问规则、所需的验证证据以及输出格式。这些要素组合在一起，构成了约束\nAgent 交付质量的具体要求。\n既然在测试集上删掉步骤指令依然能保持指标稳定，这就引出了一个令人疑惑的问题：为什么在早期的官方提示指南里，开发者需要花大量篇幅，把每一个中间步骤手把手写进系统提示词？\nGPT-4.1：把路线写进 prompt\n时间退回 2025 年 4 月 14 日发布的\nGPT-4.1\nPrompting Guide\n，里面的 SWE-bench\n样例提示词展现了当时的处理方式：开发者把一个包含八个步骤的完整工作流，直接硬编码进了系统提示词。\n提示词里明确要求模型在每次调用工具前先写规划、用完工具后做反思、改完代码后必须运行测试，还写了多段提醒来防止\nAgent\n在长任务中途放弃或跑偏。当时这么做很自然。代码提交后有没有通过自动化测试，能检查最终产物对不对；但在执行过程中，模型自带的不确定性会让\nAgent\n随时漏掉上下文、偏离主线或提前结束。八个步骤的详细路线，本质上是在用确定性的工作流程去约束执行过程中的行为偏离，帮\nAgent 稳稳走完全程。\n当模型开始能看懂更长的上下文、自己做出合理的工具选择时，把所有路径死死写进提示词就显得太笨重了。开发者需要知道，在什么场景下可以给\nAgent 更多自主空间，在什么地方又必须设卡。\nGPT-5：路线开始松开\n2025 年 8 月 7 日发布的\nGPT-5\nprompting guide\n给出的答案不是把路线指令一删了之，而是展现了一条连续的授权光谱。\n开发者不再假设所有任务都要死板规定路线，而是顺着场景来决定授权范围：从完全由上下文引导模型自主决策，到由程序代码严格控制分支。指南开始关注如何调控模型的主动性（agentic\neagerness），引导开发者定义探索边界、早停条件与终止标准，并把常规的安全操作与需要确认的高风险动作划分开来。提示词的核心诉求发生了变化：不再是机械指挥每一步怎么走，而是决定任务何时能继续、何时必须停下、何时需要找人类确认。\n模型理解上下文和规划路线的能力在提升，开发者也逐渐摸清了如何用完成条件、验证证据与权限边界来做约束。GPT-5.6\n把这套做法收拢为围绕交付成果来写\nprompt。但在真实的项目里，文档上的这种控制转向究竟对应着什么样具体的代码变化？\n翻译系统里的同一件事\n把这套控制思路放进 Superlinear Academy\n处理长篇中文文章的英文翻译系统里，我也踩过同样的坑。\n早期处理长文章翻译时，模型生成的不确定性经常破坏流程：中途缩写文本、译文夹杂中文字符、Markdown\n格式丢失，或者长文本生成超时。为了让系统稳定运行，我在外层代码里搭了一套很重的防御机制，试图预判每一条可能的恢复路径。我写了分段拆分、异常重试、术语上下文拼接和断点续传逻辑，正如我在\nWide Research\n中做过的尝试。这套设计虽然能跑通，但也把大量精力耗在了维护繁琐的格式校验代码上。\n后来 Claude Code 与 Codex\n展示了更轻便的组织方式：把状态保存在本地文件系统里，建立标准的 agentic\nloop 闭环。磁盘文件记录着持久状态，Agent\n可以分章写入并自行读取上下文，中断后再启动也能读文件继续。面对一篇长文章翻译，Agent\n可以自主决定是先通读全文、自己写 Python\n正则检查脚本、重新翻译某个段落，还是先核对领域术语。我不再干预具体的翻译路线，而是改为提供一份由三部分构成的交付要求：\n完成条件\n：定义任务何时达到合格的终止状态。对于长文翻译，重点在于全篇是否有中文字符残留、Markdown\n格式是否完整保留、特定英文术语全篇是否保持一致。在代码修复场景中，则是所有单元测试通过且无新增\nlint 报错。\n验证证据\n：证明完成条件已被满足的客观凭证。例如\nAgent 自行编写并运行的 Python 正则检查脚本输出、自动化测试日志或 eval\n评分。在受监管或事故复盘场景中，过程记录本身也是必不可少的验证证据，不能被视作可有可无的辅助材料。\n权限边界\n：明确 Agent\n自主选择路径时的活动空间与禁区。例如通过\n--allowedTools\n参数严格限定工具调用范围，对涉及文件系统覆盖写入、外部 API\n发布或采购等高风险动作，强制设立\nGuardrails\nand human review\n机制。只有当翻译产物满足格式完整、无中文残留、术语一致，且经过人工审批后，才允许向外部发布。\n从过程确定性到结果确定性：Agent\n自主选择执行路线，系统用完成条件、验证证据与权限边界定义可靠交付\n结尾：把成功标准留在手里\n用完成条件与权限边界守住出口，并不意味着系统会自动拿到百分之百的可靠。\n在实际开发中，依然需要建立基于 evaluation-first\n的测试体系，配合受控的消融测试，逐步精简提示词中非必要的步骤干预，同时把权限边界与副作用拦截固化在工具层配置中。\n随着推理成本持续降低，正如\n《一次性软件与被压缩的现实》\n中讨论的，用 token\n消耗与闭环自检来换取最终交付的可靠性，变得越来越划算。但如果引入 Agent\n框架时缺乏清晰的边界与约束，盲目让模型自由发挥，反而会\n带来更大的技术债\n。开发者如果希望在具体的应用场景中建立起这种新的工程平衡与控制边界，可以参考我们整理的这份\n操作指南\n。\n可靠的 Agent\n系统不是靠微观管束每一步建造出来的，也不是靠完全放手获得的。开发者需要做的是把路线放给具备足够上下文的模型，同时把完成标准、验证证据与权限边界牢牢握在自己手里。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/gpt56-prompt-guidance-result-certainty-20260724.html",
+      "content_chars": 3132,
+      "content_sha256": "dfb8f9d2b73c0d56dd5dfe30e022ed09c4d1e22f8cdf62c5fbb73aed7ed9d5a7",
+      "content_fetched_at": "2026-07-24T22:12:40.439917+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-24T00:00:00+00:00",
+      "collected_at": "2026-07-24T22:11:21.612313+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/gpt56-prompt-guidance-result-certainty-20260724.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "GPT-5.6 的新提示指南：prompt 该少写什么，多写什么",
+          "url": "https://yage.ai/share/gpt56-prompt-guidance-result-certainty-20260724.html",
+          "content_sha256": "dfb8f9d2b73c0d56dd5dfe30e022ed09c4d1e22f8cdf62c5fbb73aed7ed9d5a7"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:5d9c9f2b072263f3",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "每天问大模型 100 个无聊问题，能当作 API 的“温度计”吗？",
+      "target_url": "https://yage.ai/share/codex-api-behavior-thermometer-20260724.html",
+      "text": "yage-share published: 每天问大模型 100 个无聊问题，能当作 API 的“温度计”吗？",
+      "at": "2026-07-24T00:00:00+00:00",
+      "external_id": "a:5d9c9f2b072263f3",
+      "url": "https://yage.ai/share/codex-api-behavior-thermometer-20260724.html",
+      "title": "每天问大模型 100 个无聊问题，能当作 API 的“温度计”吗？",
+      "content": "推理与性能\n安全与供应链\n先猜一个数字\n让大语言模型“在 1 到 10 之间随机选一个数字”，连续问它 20\n次，你觉得会发生什么？\n很多技术读者的第一反应是：既然模型在生成文本时带有概率采样，即使把采样温度设得很低，20\n次回答也应该分散落在好几个不同的数字上，就像连续掷 20 次骰子一样。\n不妨先在心里选一个你预测的结果，再看我们实际测到的答案。\n日常调用 API\n时，开发者早已习惯把大模型当成某种概率系统。当接口偶尔报错或者生成质量下滑时，大家也能猜到基础设施可能出了某种短暂故障。问题在于，除了等待官方状态页面的更新，或者在社区里交流“今天模型是不是变笨了”，开发者手中缺少一种低代价、能长期运行的观测手段，来确认\nAPI 底层的推理栈（inference stack）到底有没有发生改变。\n如果有一种观察方法，每天只需要消耗很少的 token，就能像温度计一样感应\nAPI\n终点的状态，它会是什么样？答案或许就藏在那些看起来极其无聊的随机数问题里。\n答案是 20 个 7\n在第一天的测试中，我们针对\ngpt-5.6-sol\n模型的 API\n运行了这组实验。结果非常干脆：连续 20 次让它选 1 到 10\n之间的随机数，回答清一色全是\n7\n。\n为了确认这是否只是某一个特定提问的偶发现象，我们把这种测试扩充为“每天问\n100 个小问题”，包含 5 组不同类型的极简提问，每组重复 20 次：\n1 到 10 选随机数\n：20 次回答全部为\n7\n。\n选一个随机字母\n：20 次回答全部为\nQ\n。\n1 到 100 选随机数\n：20 次回答中，有 15 次是\n47\n，4 次是\n57\n，1 次是\n73\n。\n最喜欢的数字\n：20 次回答中，有 19 次是\n7\n，1 次是\n42\n。\n抛硬币\n：20 次回答中，出现 5 次正面（heads）与 15\n次反面（tails）。\n这 100\n个小问题展示了低熵短回答的具体形态。它表明模型在面对看似自由的选择时，其实带着极其强烈的内在偏好，而不是均匀散开。\n这里还有一个细节：像 1 到 100 选随机数（出现 47、57、73\n三种结果）以及抛硬币（出现正面与反面两种结果），说明完全相同的提示词在多次调用中输出了不同的文本。这一现象削弱了“网关只是简单做\nResponse Cache\n静态缓存”的假说，不过它还没有完全确定服务栈内部的缓存机制到底如何工作。\n这不是 Codex 的怪癖\n这种集中偏好的分布，并不是某一个模型或偶然的特例。\n2026 年发表的论文\nOne\nToken Is Enough\n测试了 165\n个大语言模型。结果显示，在极简短回答下，不同模型回答分布的中位熵（median\nentropy）只有约 1.0\nbit。也就是说，模型在面对自由选择时，天生就会把大部分概率压在极少数选项上。\n当我们每天收集这 100\n个问题的回答频率时，要怎么比较前后两天、或者两个时间段的分布变化？论文使用了\nJensen-Shannon\ndivergence（JSD）这个指标。它其实就是一个衡量两张概率分布表“有多不像”的数字：数值接近\n0，说明分布几乎没变；数值变大，说明回答的偏好发生了偏移。\n论文进一步验证了这种分布对变化的敏感度：在包含 40\n组问题的测试集中，仅凭回答分布来区分不同模型的等错误率（Equal Error\nRate, EER）能低至 7.3%；即使压缩到 8 组问题，错误率也只有 10.6%\n左右。不过需要明确的是，论文研究的是用分布指纹来识别不同模型，而我们关注的是另一个方向：在同一个\nAPI 终点上，用这种敏感的分布变化来感应推理栈的行为漂移。\n为什么每天都要问一次\n为什么要每天重复问这 100 个无聊的小问题？\n回顾过去的技术事故，例如 Anthropic 曾确认基础设施隐患导致 Claude\n模型的错误率上升，当时许多开发者都凭直觉感到“输出质量变差了”。但用户和厂商之间缺少一个公开、低成本且量化的共同观测数据。服务调整发生后，大家只能凭感觉猜，没人能准确说出变化究竟是从哪一天开始的。\n大模型 API\n的服务栈包含众多环节，从底层的采样参数、路由规则，到上层的安全过滤或推理协议调整，任何微小的改动都有可能改变模型在低熵提问上的输出分布。\n每天问 100 个小问题，就像在 API\n终点旁挂了一支轻量的温度计。虽然单个小问题的偏好改变无法直接指出底层具体出了什么故障（它提示变化，但不归因），但这种低成本的时间序列能够率先捕获推理栈发生的意外漂移，提示开发者何时需要发起更深度的诊断。\n把温度计公开出来\n为了把论文中揭示的分布特性变成长期持续的观测实践，我们建立了\nCodex Behavior\nToday\n项目，并上线了公开监控看板\nDashboard\n。\n项目的运行方式保持了清晰的隐私与数据分离： -\n本地采样器每天自动针对目标终点发起 100\n次极简提问，并将包含详细延迟与原始回答的数据保留在本地 SQLite\n数据库中，不需要共享凭据或公开私有对话。 -\n每次运行只把汇总后的回答计数、延迟摘要与分布差异指标提交到 Git，并通过\nGitHub Pages 自动渲染成公开看板。\n无论是想复现看板还是扩展观测，整个流程都比较轻量：开发者只需 clone\n仓库，使用\nuv venv .venv\n创建虚拟环境并安装依赖，配置好本地授权 CLI\n后即可运行采样与站点构建。即便没有 API\n凭据，也可以直接利用仓库中开源的每日 aggregate\n数据重新生成站点与校验测试。我也欢迎社区提交\nPR，把这套观测机制扩展到更多 API 终点上。\n它能告诉我们什么\n最后，我们需要平和客观地看待这支温度计的边界。\n低熵短回答的分布改变，只代表该 API\n终点的服务栈行为相比历史基线发生了偏移。它并不等同于“供应商偷偷替换了模型权重”，也不代表模型的能力发生了下降。\nCodex Behavior Today\n概念图：浅蓝色的研究仪表盘展示部分低熵问题集中在单一答案，旁边保留跨日趋势线\n第一天（2026-07-22）的 100\n次采样为我们记录下了第一个初始观察点。在接下来的 7 到 14\n天里，持续的公开采样实验将逐步建立起稳定的历史基线。只有经过这段时间的观察，我们才能验证这组低成本的无聊问题，能否真正成为大模型\nAPI 领域中敏锐而可靠的探矿金丝雀。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/codex-api-behavior-thermometer-20260724.html",
+      "content_chars": 2636,
+      "content_sha256": "5f67c721f3e21e8050b128c65b6490d59934a90818d5474194e68b7466f6124a",
+      "content_fetched_at": "2026-07-24T22:12:40.854826+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-24T00:00:00+00:00",
+      "collected_at": "2026-07-24T22:11:21.612313+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/codex-api-behavior-thermometer-20260724.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "每天问大模型 100 个无聊问题，能当作 API 的“温度计”吗？",
+          "url": "https://yage.ai/share/codex-api-behavior-thermometer-20260724.html",
+          "content_sha256": "5f67c721f3e21e8050b128c65b6490d59934a90818d5474194e68b7466f6124a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:7b837a147b2462e3",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Cursor 重写 SQLite：一次把 Harness Engineering 三个维度同时往前推的理想实验",
+      "target_url": "https://yage.ai/share/cursor-sqlite-harness-swarm-20260723.html",
+      "text": "yage-share published: Cursor 重写 SQLite：一次把 Harness Engineering 三个维度同时往前推的理想实验",
+      "at": "2026-07-23T00:00:00+00:00",
+      "external_id": "a:7b837a147b2462e3",
+      "url": "https://yage.ai/share/cursor-sqlite-harness-swarm-20260723.html",
+      "title": "Cursor 重写 SQLite：一次把 Harness Engineering 三个维度同时往前推的理想实验",
+      "content": "AI Agent\nAI 编程\nCursor 这次到底做了什么\n2026 年 7 月 20 日，Anysphere 团队在 Cursor 官方博客发布了一篇由\nWilson Lin 署名的文章《Agent swarms and the new model economics》（\nCursor\n博文\n）。在这篇文章中，团队公布了一项新的工程实验：他们使用名为\nCursor Swarm 的 Agent 编排系统，完全基于 835 页 SQLite 官方手册，用 Rust\n语言从零实现了一个兼容 SQLite 语义与存储格式的数据库引擎。\n消息传出后，社区讨论很快分化成两种声音。不少人认为 AI 已经能成功重写\nSQLite，随时可以替换生产环境里的数据库。这种解读把实验的焦点看偏了。SQLite\n实验并不是在展示可以上线的生产软件，而是团队针对上一轮 Agent Swarm\n暴露出的痛点，做出的一轮受控工程回应。\n在上一次浏览器实验里，Cursor 曾部署几百个 Agent\n并行运行一周，试图从零构建一个 Web 浏览器引擎，最终生成了超过一百万行\nRust 代码。在当时的\nHarness\nEngineering 调研\n中，我们记录过那个实验暴露的矛盾：代码行数和提交数量被当作 Agent\n生产力的证明，系统却没有收敛成可用的软件。在这次博文中，Cursor\n主动把浏览器项目定性为“完成了概念验证，但距离精致软件还差得很远”。单纯投入计算资源去膨胀代码量，如果缺少有效的行为验证和质量约束，海量代码很难转化成成熟的产品。\n因此在 2026 年 7 月的新实验中，Cursor 团队选择回到旧版 Swarm\n曾经陷入挣扎的同一项任务：根据 SQLite 规范重新编写 Rust 实现。他们把旧版\nSwarm 与新版 Harness\n放在完全相同的任务、相同的模型以及相同的时间预算下，进行受控对照。团队给\nAgent 的输入是 835 页 SQLite 官方手册，同时扣留了 SQLite 的 C\n源码、原版测试套件、编译后的 SQLite\n二进制文件以及互联网访问权限。衡量标准也变了：团队使用包含数百万条带有已知标准答案\nSQL 查询的隐蔽测试集\nsqllogictest\n，替代了过去对代码行数或提交数量的统计。\n这场受控对照拉开了明显的差距。搭载 Grok 4.5 的新 Harness 在 4\n小时内达到了\nsqllogictest\n80% 的通过率；相比之下，旧版\nSwarm 在第 2 个小时前就因为失控的代码冲突与接口漂移而被强制暂停。Cursor\n报告称，在新 Harness 的支持下，所有的全新配置最终都达到了\nsqllogictest\n100% 的通过率。\n为什么重写 SQLite 这样一个底层的复杂系统，不仅没有让新 Harness\n陷入瘫痪，反而能比之前的浏览器项目揭示出更多关于 Agent 编排与 Harness\nEngineering 的本质规律？\nSQLite\n为什么难，又为什么特别适合当考题\n要写出一个 SQLite，在底层实现上要越过很多硬门槛。SQLite\n远不是一层简单的 SQL\n接口封装，而是一个完整的嵌入式关系型数据库。开发者需要从零构建手写的词法与语法解析器、查询绑定与优化器、基于\nPull 架构的算子树执行器、系统目录、B-Tree 索引、数据页管理器、回滚日志与\nWAL 编解码，以及磁盘上的 SQLite format 3\n文件格式。这些子系统交织在一起，要求系统在 SQL 语义、事务 ACID\n特性、数据类型隐式转换和磁盘持久化格式上维持严格一致。\n然而，正是这样一个实现难度极高的底层系统，在作为 Agent Evaluation\n的考题时，展现出了三种罕见的优越属性：\n完整且稳定的规范说明：835\n页官方手册定义了完备且确定的目标行为，完全排除了需求模糊或目标动态漂移的干扰。\n高密度的确定性反馈：以 Rust 为实现语言，强类型系统、所有权检查和\nCargo\n工具链提供了高密度的编译时反馈，每一次修改都能立刻得到编译器的明确报错或通过信号。\n隐蔽且客观的行结果裁判：SQL\n语言自带可自动化比对的“行结果正确性”。通过未见的\nsqllogictest\n，外部评测系统可以在不依赖 Agent\n自评的前提下，对最终输出的 SQL 查询结果进行逐行校验。\n下图展示了 Cursor Swarm 针对 SQLite 手册建立的编排与评估机制：\nCursor Swarm 把 SQLite\n手册分配给规划与执行角色，再由独立 SQL\n测试集检查行为结果；测试分数不等于生产成熟度\n需要明确的是，Cursor 报告的所有配置最终达到 100% 通过\nsqllogictest\n，只代表系统在 SQL\n查询行结果正确性这一特定测试集上表现完备。测试集得分不等于生产环境里的成熟度，因为该测试集并没有覆盖\nC API 导出、操作系统级文件锁、复杂并发与崩溃恢复压力。\n既然 SQLite 提供了一套规范确定、反馈密集的测试土壤，那么当 Agent\n规模扩大到成百上千个并发单位时，系统的主要矛盾会发生怎样的转移，又为什么会让\nHarness Engineering 的三条扩展线在 Swarm 中同时变难？\nHarness\nEngineering 的三条扩展线，在 Swarm 里一起变难\n我们在\n三个\nScaling 维度的统一框架\n中建立过 Harness Engineering\n的三条扩展线：\n时间扩展性：系统能否在长生命周期的任务中保持上下文不失真、目标不漂移、错误不累积。\n空间扩展性：系统能否通过部署成百上千个 Agent\n并行工作，把投入的计算资源转化为有意义的工程吞吐量，而不被代码分支合并与冲突挤压所淹没。\n人机交互扩展性：人类开发者能否从逐行审阅代码、手动纠正错误的微观操作中解放出来，转向在更高维度的规范、约束与\nEvaluation 层面操纵 Agent 系统。\n对于单个 Agent，或是像 Codex、Claude Code 在常规开发中所调用的少量\nSub-agent 来说，瓶颈主要在于单线程的时间序列与上下文窗口限制。然而，当\nAgent\n的规模扩大到数十甚至上百个并发运行单位时，工程的核心矛盾发生了转移。\n在多 Agent 并行场景下，简单增加 Agent\n数量并不等于提升工程进度。如果不控制协同开销，大规模 Swarm\n会同时在三个维度上遭遇退化。多个 Worker\n在没有统一设计基准时并行编码，会定义出互相冲突的接口格式与类型声明，导致系统在时间推移中迅速失控；几十上百个\nAgent 同时提交改动，代码合并冲突会呈爆发式增长，在旧版 Swarm\n的浏览器实验中，累积的合并冲突超过了 70,000\n次，大量算力和时间被浪费在解决代码冲突上；而如果每一个 Worker\n的产出都需要人类开发者进行 Code\nReview，人类的注意力带宽会瞬间被填满，人机交互的扩展性也会彻底失效。\n正如我们在\nEvaluation-First\n文章\n中所强调的，评测的对象从来不是孤立的大语言模型本身，而是由模型与 Harness\n组合而成的整体系统。在 Swarm\n场景下，实际的任务难度是“实现难度”与“协同难度”的乘积。\n面对多 Agent 并行时接口碰撞、代码冲突与合并瘫痪的巨大协同成本，Cursor\n的新 Harness 必须拿出具体的控制手段，才能把这三条扩展线重新理顺。\nCursor\n怎样把三条扩展线放进同一套 harness\nCursor 并没有把实验总结为“大家都去用\nSwarm”的抽象倡议，而是把空间、时间、人机交互与模型经济学融合成一套紧密的工程\nHarness 机制：\n空间扩展：建立了递归的任务树架构，严格划分 planner 与 worker\n的角色边界。在 Cursor 的定义中，planner\n仅负责分解目标、设计架构与分发任务，绝不编写具体实现代码；worker\n仅负责执行被分发的叶子节点任务，绝不进行全局规划。为了防止架构分裂，系统通过共享设计文档和带有编译检查的引用维护全局约束。在合并协同上，Cursor\n引入了专门的 Reconciler 和第三方 Merge Agent 机制，结合自动注入的\nField Guide/index.md\n，把合并冲突从旧实验的 70,000\n多次大幅降低到新实验 4 小时内不到 1,000 次。\n时间扩展：把庞大的数据库构建任务切碎为作用域受限的叶子节点，并为\nworker 提供持久化的书面上下文。worker\n只需要在局部的上下文内完成窄范围的代码编写与编译验证，大大降低了单 Agent\n随时间推移而产生的目标漂移。这并没有从根本上消除长时运行中的上下文漂移，但系统通过架构约束缩短了单次执行的暴露时间。\n人机交互扩展：人类工程师无需审阅每一个 worker\n的微观代码，而是把控制力上移到最上游：将既有的 835 页 SQLite\n手册与编译、架构约束转成任务边界，并保留外部独立的裁判\nsqllogictest\n。人类通过定义 spec 与 Evaluation\n来操纵系统。\n经济学与模型分工：实验揭示了模型分工在经济学上的影响。Cursor\n发现，把昂贵的前沿模型部署在任务树的 planner\n节点进行架构分解，而让更便宜、更快速的模型充当 worker\n舰队执行具体叶子节点，可以在保持 100% 测试通过率的同时大幅降低总成本。在\nCursor 报告的受控对照中，GPT-5.5 独挑大梁的单次运行成本高达 $10,565，而\nOpus 4.8（作为 planner）加上 Composer 2.5（作为\nworker）的混合方案总成本仅为 $1,339（其中 worker 舰队仅花费\n$411）。在另一项测试中，单独使用 Grok 4.5 作为 planner 与 worker 也在 4\n小时内达到了 80%\n的通过率。需要明确的是，这是针对该特定任务实验的报告数据，不能简单外推为通用场景下固定\n15 倍的成本节省。\n在底层机制上，Swarm 是一套由多个 Agent\n组成的分布式协调控制平面，无需赋予其魔力模型标签。只有在必须依靠共享控制平面来解决庞大冲突与分工时，普通\nSub-agent 才有升级为 Swarm 的必要。\n这套控制平面能够高效运转，前提在于任务拥有确定的规范、密集的机制反馈以及可自动化检验的规则。一旦脱离了这个前提条件，看似强悍的\nHarness 就会面临截然不同的工程现实。\n这是一次秀肌肉，不是大多数产品团队的日常\n尽管 Cursor 的 SQLite 实验在 Harness Engineering\n上取得了突破，但我们必须客观评价其工程边界：它是在理想条件下展示能力上限的一场工程演示，无法直接当作大多数产品团队日常工程的通用解法。\n为什么说它不是产品团队的日常？因为真实世界的产品开发与 SQLite\n重写有着本质的不同：\nSQLite 重写的核心特征在于“目标高度确定”：它有 835\n页长达多年的成熟规范，有确定的磁盘格式和 SQL\n语义。工程的主要矛盾是“如何高效实现已知规范”。\n大多数真实产品工程的核心困境在于“确定要构建什么”：需求在不断变化，用户反馈在动态调整，系统需要与复杂的遗留系统集成，处理边界模糊的副作用、权限控制与跨进程并发。在这种场景下，意图本身是不完整的。\n如果在需求尚不明确、约束尚未固化的产品早期强行引入大规模 Swarm，Swarm\n强大的代码生成吞吐量只会以极高的效率成倍放大错误的意图，产生大量不可维护的代码。\n这一点在 Cursor 公开的代码仓库\ncursor/minisqlite\n中得到了印证。审阅该仓库可以发现：\n该代码库来自 solo Opus 4.8 的运行产物，没有采用成本对比实验中的 Opus\n4.8 + Composer 2.5 混合架构。\n尽管代码库包含了约 200,000 行 Rust 代码、14 个 crate 和 5,650\n个测试，但在接口与生产功能上存在明确的边界：它没有任何 CLI\n命令行工具、没有 C API 导出、没有 prepared statement\n预编译接口，且只支持进程内并发协调，完全没有操作系统级跨进程文件锁与\n-shm\n共享内存协议（参见\nminisqlite\nGitHub Issue #1\n讨论）。\n关于市场上对“Rust 重写 SQLite”的误解也需要澄清：Cursor 的\nminisqlite\n是一个研究性的生成产物，与 Turso 团队主导的\nLimbo/Turso Database\n项目属于完全不同的组织与工程路线，不能混为一谈。\n下图清晰地划分了从 SQL 行正确性到生产级数据库之间的多维工程边界：\n从 SQL 行结果正确到可替代生产 SQLite\n之间，还要分别检查接口兼容、跨进程并发、性能和长期维护\n最终，我们可以为工程团队得出一个清晰的选择法则：\n当产品意图尚在探索、需求与约束随用户反馈不断变化时，应当使用单个\nAgent 或少量 Sub-agent（如 Codex、Claude\nCode）配合人类开发者的紧密反馈；\n只有当产品的意图与规范已经高度固化、任务可以被拆分为独立的机械可验证单元，且系统协调成本明显低于并行带来的速度提升时，投入资源去构建和运行一个复杂的\nSwarm Harness 才真正具备工程合理性。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/cursor-sqlite-harness-swarm-20260723.html",
+      "content_chars": 5557,
+      "content_sha256": "438376d25f41e6b25dfbfedaf43326441e84c163f164e1f62a4fc616fe4749c6",
+      "content_fetched_at": "2026-07-24T22:12:41.028899+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-23T00:00:00+00:00",
+      "collected_at": "2026-07-24T22:11:21.612313+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/cursor-sqlite-harness-swarm-20260723.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Cursor 重写 SQLite：一次把 Harness Engineering 三个维度同时往前推的理想实验",
+          "url": "https://yage.ai/share/cursor-sqlite-harness-swarm-20260723.html",
+          "content_sha256": "438376d25f41e6b25dfbfedaf43326441e84c163f164e1f62a4fc616fe4749c6"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
