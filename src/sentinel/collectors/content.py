@@ -264,8 +264,8 @@ def enrich(article: dict[str, Any], source: Source) -> dict[str, Any]:
                     if selected_text:
                         text = selected_text
                         content_via = f"{transport}_llm_blocks"
-                elif extraction_method == "body":
-                    raise RuntimeError("content_body_ambiguous_without_llm")
+                else:
+                    content_via = f"{transport}_body_fallback"
             if len(text) < min_chars:
                 raise RuntimeError(f"content_too_short:{len(text)}")
             return _apply_content(

@@ -385,3 +385,63 @@ sources:
     collect_mode: rss
     tags: [blog, lab]
     enabled: true
+
+  - id: cisco-advisory
+    name: Cisco Security Advisory
+    home_url: https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml
+    rss_url: https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml
+    collect_mode: rss
+    tags: [advisory, vendor]
+    enabled: true
+    notes: "Links contain tracking query params (vs_f, vs_cat, vs_type, vs_p, vs_k)"
+
+  - id: forti-ir
+    name: FortiGuard IR Advisories
+    home_url: https://fortiguard.fortinet.com/rss/ir.xml
+    rss_url: https://filestore.fortinet.com/fortiguard/rss/ir.xml
+    collect_mode: rss
+    tags: [advisory, vendor]
+    enabled: true
+
+  - id: ivanti-advisory
+    name: Ivanti Security Advisory
+    home_url: https://www.ivanti.com/blog/topics/security-advisory
+    rss_url: https://www.ivanti.com/blog/topics/security-advisory/rss
+    collect_mode: rss
+    tags: [advisory, vendor]
+    enabled: true
+
+  - id: paloalto-advisory
+    name: Palo Alto Networks Security Advisories
+    home_url: https://security.paloaltonetworks.com/
+    rss_url: https://security.paloaltonetworks.com/rss.xml
+    collect_mode: rss
+    tags: [advisory, vendor]
+    enabled: true
+    notes: "Minimal feed – title contains CVE + severity; no description/body; content fetched from linked pages"
+
+  - id: mist-security
+    name: Mist Security Alerts
+    home_url: https://www.mist.com/documentation/category/security-alerts/
+    rss_url: https://www.mist.com/documentation/category/security-alerts/feed/
+    collect_mode: rss
+    tags: [advisory, vendor]
+    enabled: true
+    notes: "WordPress RSS with full content:encoded; infrequent updates"
+
+  - id: sonicwall-advisory
+    name: SonicWall Security Advisories
+    home_url: https://psirt.global.sonicwall.com/
+    rss_url: https://psirtapi.global.sonicwall.com/api/v1/feed/rss.xml
+    collect_mode: rss
+    tags: [advisory, vendor]
+    enabled: true
+    notes: "Large feed (100+ items); description contains CVSS/CVE details; custom ext fields: cve, advisory_id, revision_history"
+
+  - id: watchtowr-labs
+    name: watchTowr Labs
+    home_url: https://labs.watchtowr.com/
+    rss_url: https://labs.watchtowr.com/rss/
+    collect_mode: rss
+    tags: [blog, lab]
+    enabled: true

@@ -80,6 +80,11 @@ def _entry_content(entry: Any) -> str:
     encoded = getattr(entry, "content_encoded", None)
     if encoded:
         values.append(str(encoded))
+    description = getattr(entry, "description", None) or ""
+    if description and hasattr(description, "strip"):
+        description = description.strip()
+    if description:
+        values.append(str(description))
     return max(values, key=len) if values else ""
 
 
