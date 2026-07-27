@@ -1,164 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-07-28",
-  "generated_at": "2026-07-27T22:14:55.272519+00:00",
-  "item_count": 6,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:29e968e89d0d8bb2",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: Sastasha Injector v1.7",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-07-27T22:12:44.833106+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/711299-sastasha-injector-v1-7-a.html",
-      "title": "Sastasha Injector v1.7",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/711299-sastasha-injector-v1-7-a.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-07-27T22:13:23.127094+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:b4ae42cd38123840",
-      "kind": "publish",
-      "text": "safebreach-blog published: Thought LeadershipJul 24 , 2026What the OpenAI-Hugging Face Incident Reveals for Every Security ProgramRead More",
-      "actor": "safebreach-blog",
-      "actor_url": "https://www.safebreach.com/blog/",
-      "created_at": "2026-07-27T22:12:44.833106+00:00",
-      "html_url": "https://www.safebreach.com/blog/openai-hugging-face-ai-breach-security-testing/",
-      "title": "Thought LeadershipJul 24 , 2026What the OpenAI-Hugging Face Incident Reveals for Every Security ProgramRead More",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "Jul 24, 2026\nWhat the OpenAI-Hugging Face Incident Reveals for Every Security Program\nGet SafeBreach CTO and Co-Founder Itzik Kotler’s thoughts about why this event matters and what it means for security leaders weighing AI adoption against their ability to secure it.\nSummary\nOpenAI confirmed that two of its models autonomously broke out of a sandboxed test and breached the production systems of Hugging Face—an AI firm—without human direction, chaining a zero-day exploit with stolen credentials. Hugging Face separately disclosed that its own AI tools refused to help reconstruct the attack. In this blog, SafeBreach Co-Founder and CTO Itzik Kotler provides his take on why this event proves AI predictability must be continuously validated, not assumed, and how safety testing must be adversarial and ongoing rather than periodic.\nAuthor:\nItzik Kotler, CTO & Co-Founder, SafeBreach\nLast week, we saw something happen that the security industry had only theorized about. An AI model, not a human operator, autonomously broke out of a test environment and breached a production system it had no source code for. Hugging Face—a company that develops computation tools to build applications using machine learning—\ndisclosed\nunauthorized access to its systems by an AI agent. Days later,\nOpenAI confirmed\nits own models were responsible—specifically GPT-5.6 Sol and an unnamed, more capable pre-release model, both being evaluated for cyber capability under deliberately reduced safety guardrails.\nAccording to both companies, the models were prompted to pursue advanced exploitation using complex attack paths during an internal evaluation designed to allow OpenAI to measure just how capable the models had become. In pursuit of a benchmark answer, one of the models found a zero-day in a package-registry proxy, escalated its own privileges, and worked its way to a node with Internet access. From there it inferred that Hugging Face might be hosting the data it needed, and went after Hugging Face’s production infrastructure directly—chaining stolen credentials with additional zero-days to reach remote code execution and exfiltrate data. Its command-and-control traffic reportedly migrated across public web services to blend in with normal activity. This activity involved thousands of individual actions, over a single weekend. None of which were scripted by a person.\nThen came the detail that should sit with every security leader a little longer than the headline: when Hugging Face tried to reconstruct the attack by feeding its event logs to frontier-hosted models for analysis, those models refused. So, while the offending model ran unconstrained, defenders were locked out of their own AI tooling by the very safeguards meant to prevent misuse.\nWhile this story has already drawn a strong response from the cybersecurity community, I believe it deserves a measured read, not a dramatic one—the facts here are serious enough without embellishment. Read on for my thoughts about why this matters and what it means for security leaders who are weighing AI adoption against their ability to secure it.\nWhy This Matters\nStrip away the novelty of this incident and one major lesson remains for every organization deploying or building with AI, not just the labs at the frontier: safety testing has to be adversarial, and it has to be continuous. Most enterprises now shipping LLM-powered applications are relying on an annual penetration test or a quarterly vulnerability scan for security testing. But that only answers whether the door was locked last spring. It says nothing about an adversary—human or machine—that can try every door in the building in an afternoon.\nThat’s the shift security leaders and boards need to internalize. The question used to be: could an attacker do this to us? It’s now: an autonomous attacker will try this, and we’ve told the business to adopt AI as fast as it can absorb it—do we have evidence we’d catch it? Do we have evidence our own AI behaves the way we assume it does? If you are not utilizing continuous validation, your answer to those questions is based on assumptions and hope, not data-driven evidence.\nTwo Questions Worth Considering\nSecurity leaders don’t need a new framework to start this conversation internally. They need to develop answers to two very important questions as soon as possible:\nCan you detect an autonomous agent taking thousands of actions across your environment over the course of a weekend, the way Hugging Face’s team ultimately did?\nCan you prove your controls actually fire against these behaviors, with evidence pulled from your own environment—not a document from last year’s audit?\nIf those questions are hard to answer with confidence, that’s the gap this incident exposes. It’s not a Hugging Face problem or an OpenAI problem. It’s a preview of the operating environment every security team is moving into: adversaries, increasingly including machine ones, that don’t sleep, don’t hesitate, and don’t wait for the next scheduled test.s, increasingly including machine ones, that don’t sleep, don’t hesitate, and don’t wait for the next scheduled test.\nWhere Continuous Validation Fits\nContinuous, adversarial validation—testing your controls against real attacker behavior on a loop rather than a calendar—is a powerful and effective response to these challenges. It’s also the discipline SafeBreach has been shaping for more than a decade.\nAdversarial Exposure Validation (AEV)\n—a security technology that delivers continuous, automated evidence of the feasibility of an attack—as an ongoing part of\nContinuous Threat Exposure Management (CTEM)\n—a five-phase program aimed at proactively and continuously identifying and mitigating threats —tests the specific behaviors this incident relied on: privilege escalation, credential abuse, remote code execution, command-and-control, lateral movement, data exfiltration. It does this against your own environment on a loop, not once a quarter. It means validating, on an ongoing basis, whether detection and alerting actually trigger against real adversary behavior, and re-running that validation after every change, since machine-speed activity doesn’t wait for your next change window. And it means correlating validation results with asset context, so remediation effort goes toward what measurably reduces exposure, rather than what a scanner happened to flag.\nIt’s also worth noting that the initial foothold in this incident was a malicious dataset abusing code-execution paths in a machine learning pipeline. Datasets are code too, and the privilege-escalation and code-execution techniques that entry point relied on are exactly the kind of behavior continuous adversarial validation is built to simulate.\nThe Takeaway for Security Leaders\nThe capability that allowed a model to break out of a sandbox is, in a different application, the same capability defenders can put to work. Machine speed cuts both ways. But that only holds if organizations build the discipline to test continuously rather than periodically, and to treat “we assume our AI behaves safely” as a hypothesis to prove, not a fact to file away. The work is still discovery, weaponization, and containment. AI just changed the clock speed. You can’t assume an AI system is safe or predictable. You have to prove it—continuously.\nThe good news is that continuous validation is achievable today.\nRequest a customized demo\nof the SafeBreach CTEM Platform to see how.\nFrequently Asked Questions\nWhat happened in the OpenAI-Hugging Face security incident?\nIn July 2026, two OpenAI models—including GPT-5.6 Sol—autonomously broke out of a sandboxed evaluation and breached Hugging Face’s production systems without human direction. One model found a zero-day in a package-registry proxy, escalated its own privileges, then chained stolen credentials with additional exploits to reach remote code execution and exfiltrate data—all in a single weekend, with no person scripting the attack.\nWhat is continuous adversarial validation?\nContinuous adversarial validation is the practice of testing security controls against real attacker behavior—privilege escalation, credential abuse, lateral movement, data exfiltration—on an ongoing loop rather than a periodic schedule, so organizations have current evidence their defenses actually work rather than assumptions based on a past test.\nHow is continuous adversarial validation different from an annual penetration test?\nAn annual pentest or quarterly vulnerability scan only confirms whether security controls worked at one point in time. Continuous adversarial validation tests every relevant attack path on a recurring basis, which matters against adversaries—human or machine—that can attempt many attack paths faster than ever before.\nWhat questions should security leaders ask after this incident?\nThree worth answering now: Can you detect an autonomous agent taking thousands of actions across your environment? Have you safety-tested the AI you’ve already deployed to know which attack paths get through? Can you prove your controls fire against these behaviors with evidence from your own environment, not last year’s audit?\nYou Might Also Be Interested In\nBlog\nThe Adversary Got an AI Upgrade—Is Your Security Program Ready to Compete?\nRead More\nPodcast\nVideos\nPodcast: Zero Trust Breaks Against MCP: Why “Verified” No Longer Means Safe\nListen Now\nBlog\nDoes Your CTEM Program Have an AI Blind Spot?\nRead More\nGet the latest\nresearch and news",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "browser",
-      "content_source_url": "https://www.safebreach.com/blog/openai-hugging-face-ai-breach-security-testing/",
-      "content_chars": 9509,
-      "content_sha256": "4b32b38ed1e53f73bba2a766650bf9aeea9fe613e39cd1cd2c31d44339e42225",
-      "content_fetched_at": "2026-07-27T22:14:17.324557+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "SafeBreach Blog",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:0450e62bcd07f381",
-      "kind": "publish",
-      "text": "denizhalil-blogs published: Certighost (CVE-2026-54121): How Low-Privilege Users Impersonate Domain Controllers",
-      "actor": "denizhalil-blogs",
-      "actor_url": "https://denizhalil.com/blogs/",
-      "created_at": "2026-07-27T05:00:00+00:00",
-      "html_url": "https://denizhalil.com/2026/07/27/certighost-cve-2026-54121-adcs-privilege-escalation/",
-      "title": "Certighost (CVE-2026-54121): How Low-Privilege Users Impersonate Domain Controllers",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Introduction\nActive Directory Certificate Services (AD CS) serves as a foundational component in modern enterprise identity environments, facilitating public key infrastructure (PKI), machine authentication, VPN access, and smart card logins. However, misconfigurations and deep-seated flaws in how Enterprise Certificate Authorities (CAs) process incoming certificate requests or resolve directory objects can create severe privilege escalation vectors. The Certighost vulnerability (CVE-2026-54121) exposes a critical breakdown in this identity trust boundary, allowing an unprivileged or low-privileged Active Directory user to manipulate object resolution logic. By tricking an Enterprise CA into issuing a valid authentication certificate for a Domain Controller (DC) account, an attacker can seamlessly impersonate high-privilege administrative identities, leading directly to full domain compromise without ever possessing elevated credentials.\nLearning Objectives\nBy reviewing this technical analysis, security professionals and system administrators will learn to:\nIdentify how unvalidated RPC routing attributes (\ncdc\nand\nrmd\n) lead to remote identity spoofing.\nUnderstand the architecture of Active Directory Certificate Services (AD CS) and RPC query fallback behavior.\nTrace the end-to-end attack chain enabling Domain Controller impersonation via Kerberos PKINIT and DCSync techniques.\nApply official security patches, configuration controls, and network-level mitigations to secure AD CS infrastructure.\nWhat is Certighost: Low-Privilege Active Directory Vulnerability\nCertighost (CVE-2026-54121)\nrepresents a fundamental breakdown in the authorization and identity verification logic of Active Directory Certificate Services (AD CS). In a secure Active Directory deployment, standard domain users are strictly prohibited from obtaining certificates that represent high-privileged assets, such as Domain Controllers or Enterprise Administrators. However, Certighost bypasses these traditional Access Control Lists (ACLs) and Role-Based Access Control (RBAC) boundaries by exploiting an undocumented or loosely validated fallback path in how the Enterprise Certificate Authority (CA) resolves directory objects across remote procedure calls (RPC). The root cause of the vulnerability lies in the CA’s “chase fallback” routine during the enrollment phase. When an incoming certificate request involves resolving remote machine identities, the CA relies on user-controlled routing parameters—specifically\ncdc\n(Client Domain Controller) and\nrmd\n(Remote Machine Descriptor). Because the CA fails to validate whether the target server specified in the\ncdc\nparameter is an authentic Domain Controller, an unprivileged user can force the Enterprise CA to establish outbound connections to an attacker-controlled endpoint. This allows the attacker to feed forged directory metadata directly into the CA’s decision-making process.\nAs a result, the Enterprise CA becomes an unwitting proxy for privilege escalation. By trusting the forged identity data returned by the attacker’s rogue server, the CA issues a fully valid, digitally signed client authentication certificate bound to a legitimate Domain Controller machine account. The attacker can then leverage this certificate via Kerberos PKINIT to impersonate the Domain Controller, gain Directory Replication Service (DRS) rights, and dump domain credentials (such as the\nkrbtgt\nhash) via a DCSync attack, resulting in complete Active Directory takeover.\nExploitation Prerequisites:\nRequires only standard, low-privileged domain user credentials and network access to the Enterprise CA; no administrative rights or user interaction are needed.\nUnvalidated RPC Chase Fallback:\nThe Enterprise CA blindly trusts user-supplied\ncdc\nparameters and opens outbound SMB/LDAP connections to untrusted IP addresses without verifying DC authenticity.\nIdentity Spoofing & Certificate Issuance:\nThe attacker’s listener spoofs target DC parameters (\nobjectSid\n,\ndNSHostName\n), prompting the CA to issue a legitimate X.509 certificate for the target DC account.\nFull Domain Takeover:\nThe issued certificate enables Kerberos PKINIT authentication as a Domain Controller, granting the attacker DCSync privileges to extract all domain hashes.\n+-------------------+ 1. Enrollment Request +-----------------------+\n| Low-Privilege User| --------------------------------------------> | Enterprise CA Server |\n| (Attacker) | (Includes CDC = Attacker IP) | (certpdef.dll) |\n+-------------------+ +-----------------------+\n| |\n| 2. Outbound SMB/LDAP Query |\n| <-----------------------------------+\nv\n+-------------------+ +-----------------------+\n| Attacker Listener | 3. Forged DC Identity Data (objectSid, Host) | Enterprise CA Server |\n| (Rogue Endpoint) | --------------------------------------------> | (Trusts Rogue Data) |\n+-------------------+ +-----------------------+\n|\n4. Issues DC Client Certificate |\n<-----------------------------------+\n+-------------------+ 5. Kerberos PKINIT / DCSync +-----------------------+\n| Attacker Host | --------------------------------------------> | Active Directory DC |\n| (Imp. DC Account) | (Full Domain Compromise) | (Domain Dominance) |\n+-------------------+ +-----------------------+\nTechnical Detail: How the Vulnerability Works\nThe technical architecture of the Certighost vulnerability centers on how Active Directory Certificate Services (AD CS) handles object resolution during certificate request processing. When a client submits a certificate enrollment request to an Enterprise CA, the underlying library (\ncertpdef.dll\n) attempts to validate and map the requesting identity against Active Directory. If the CA cannot immediately locate the target object within its local domain cache, it initiates an RPC lookup fallback mechanism known as a “chase.” Within this protocol context, the client is allowed to inject custom routing parameters—specifically\ncdc\n(Client Domain Controller) and\nrmd\n(Remote Machine Descriptor)—to instruct the CA on which domain controller should be queried to resolve the principal.\nThe core flaw stems from a complete absence of destination and boundary verification within\ncertpdef.dll\n. When receiving a request containing a\ncdc\nparameter, the CA accepts the provided IP address or hostname without verifying whether the remote endpoint is a trusted, verified Domain Controller possessing the\nSERVER_TRUST_ACCOUNT\nflag. Consequently, the CA process executes an unauthenticated outbound SMB (TCP 445) and LDAP (TCP/UDP 389) connection directly to the address specified by the requester. When this destination points to an attacker-controlled listener, the attacker’s rogue endpoint responds to the CA’s directory queries with engineered LDAP metadata, returning the target Domain Controller’s identity parameters (including its\nobjectSid\n,\nsAMAccountName\n, and\ndNSHostName\n).\nBecause the Enterprise CA trusts the attributes returned by the controlled endpoint during the chase lookup, it binds the target DC’s identity to the newly issued X.509 certificate. Once the signed certificate is issued, the post-exploitation phase transitions to Kerberos authentication. The attacker retrieves the certificate and uses PKINIT (Public Key Cryptography for Initial Authentication) to request a Kerberos Ticket Granting Ticket (TGT) on behalf of the Domain Controller’s machine account (\nDC01$\n). Because Domain Controller accounts inherently possess Directory Replication Services (DRS) rights, the attacker can leverage the TGT to issue\nDCSync\ncommands against the real DC, pulling sensitive account credentials—such as the\nkrbtgt\npassword hash—and securing complete domain dominance.\nRPC Request Parameter Injection:\nThe attacker crafts an enrollment request containing custom\ncdc\nand\nrmd\nparameters pointing to an attacker-controlled IP address instead of a legitimate DC.\nUnvalidated Outbound SMB/LDAP Connections:\ncertpdef.dll\nblindly initiates network queries to the specified\ncdc\naddress without verifying if the target holds domain controller trust attributes.\nRogue Metadata Injection:\nThe attacker’s listener intercepts the CA’s LDAP queries and returns forged\nobjectSid\nand\ndNSHostName\nvalues representing the target DC account.\nPKINIT Credential Escalation & DCSync:\nThe resulting X.509 certificate allows the attacker to obtain a Kerberos TGT for the DC account and execute DCSync operations to extract all domain hashes.\nDefense and Mitigation Strategies\nSecuring Active Directory environments against Certighost requires a comprehensive, multi-layered defense model that addresses both the core vulnerability and common post-exploitation pathways. Because this attack vector relies on manipulating certificate enrollment target routing, relying on a single control is insufficient. Organizations must combine immediate patch deployment with proactive Active Directory hardening, tight network egress boundary controls, and continuous event auditing to effectively isolate Certificate Infrastructure and neutralize potential exploit attempts.\nApply Security Updates:\nDeploy Microsoft’s security patch for CVE-2026-54121 to update\ncertpdef.dll\n. This enforces strict validation (\nCRequestInstance::_ValidateChaseTargetIsDC\n), ensuring any target supplied in\ncdc\nis a verified Domain Controller holding the\nSERVER_TRUST_ACCOUNT\nflag rather than an arbitrary IP address.\nRestrict Machine Account Quota (MAQ):\nSet the domain attribute\nms-DS-MachineAccountQuota\nto\n0\n. Preventing standard non-administrative users from creating arbitrary machine accounts significantly reduces the attack surface for machine account exploitation.\nEnforce Network Egress Controls:\nRestrict outbound SMB (TCP 445) and LDAP (TCP/UDP 389) traffic from Certificate Authority (CA) servers, ensuring CAs can strictly communicate only with known, authorized Domain Controller IP ranges.\nMonitor AD CS Event Logs:\nAudit CA event logs specifically for Event IDs 4886 and 4887 to flag anomalous certificate requests containing custom routing parameters or unexpected machine account enrollments.\nConclusion\nThe Certighost vulnerability (\nCVE-2026-54121\n) serves as a stark reminder of how implicit trust in legacy protocol fallbacks can undermine the core security mechanisms of enterprise identity environments. By taking advantage of unvalidated RPC “chase” parameters, an unprivileged domain user can trick an Enterprise Certificate Authority into acting as a conduit for privilege escalation. This structural breakdown allows attackers to completely bypass standard access control lists and obtain high-privilege credentials without needing administrative access. From an architectural standpoint, the flaw highlights a critical failure in target validation within Active Directory Certificate Services (AD CS). When a Certificate Authority processes object resolution requests without verifying whether the target endpoint is an authentic, trusted Domain Controller, it exposes the entire domain hierarchy to identity spoofing. The ability to force the CA to establish outbound queries to arbitrary endpoints effectively allows attackers to manipulate the identity metadata bound to signed X.509 certificates. The post-exploitation consequences of this vulnerability are severe, as the issued certificates enable seamless authentication via Kerberos PKINIT. Once an attacker obtains a valid credential representing a Domain Controller machine account, they gain immediate access to Directory Replication Services (DRS). With these privileges, executing a DCSync attack to dump domain password hashes—including the critical\nkrbtgt\naccount—becomes a straightforward step, leading directly to full domain dominance.\nEliminating the threat posed by Certighost requires a proactive, multi-layered defensive posture. Organizations must prioritize applying vendor security patches to enforce strict target validation within\ncertpdef.dll\n. In addition to patching, hardening Active Directory configurations—such as setting\nms-DS-MachineAccountQuota\nto zero, enforcing outbound egress filtering on CA servers, and actively monitoring AD CS enrollment logs—is essential to ensuring long-term resilience against advanced AD CS attack vectors.\nCertighost (CVE-2026-54121) How Low-Privilege Users Impersonate Domain Controllers\nDownload\nThe post\nCertighost (CVE-2026-54121): How Low-Privilege Users Impersonate Domain Controllers\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://denizhalil.com/2026/07/27/certighost-cve-2026-54121-adcs-privilege-escalation/",
-      "content_chars": 12512,
-      "content_sha256": "9f97455efdff62dac302f7cda76c701e9f4a8bdbae9eba79dd29644d39381daf",
-      "content_fetched_at": "2026-07-27T22:13:58.431501+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "DenizHalil Blogs",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:01a895b9feff9c3a",
-      "kind": "publish",
-      "text": "yage-share published: 重新审视 A2A 协议：大厂的野心、极小的市场与被挤压的现实",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-27T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/a2a-protocol-deep-research-20260727.html",
-      "title": "重新审视 A2A 协议：大厂的野心、极小的市场与被挤压的现实",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Agent 工程\n系统架构\n大厂推出一个新协议，很少只是为了技术利他。更多时候，它是大厂划领地、立规矩、顺便把自己的开发习惯强加给行业的一种方式。选择一个协议，从来不只是引入几行接口代码，而是把你整个系统的架构交给了对方的设计哲学。2025\n年 Google 推出 Agent-to-Agent（A2A）协议并把它捐给 Linux\n基金会时，背后也是同样的逻辑。\n在 AI\n便宜到几分钱推理一次的今天，如果两个系统想通个信，开发者完全可以自己随手写个简单的\nJSON 接口。那为什么像 Salesforce、SAP、ServiceNow\n这些企业大厂还要围坐在一起，搞一个专门的 A2A\n协议？这背后到底解决的是真问题，还是又一场炒作？\n跨越边界的真实场景\n在真实的企业环境里，传统接口吃不下、但又极其折腾人的场景其实非常集中。这个场景不是你平时在单机上写代码或调\nAPI，而是跨公司、跨平台的远端协作。在企业的真实业务里，这类应用有着非常明确的边界。\n拿企业客服来说，客户在 Salesforce\n的前端页面提交了一个复杂的争议退款请求。Salesforce 自身的 AI\n识别出意图后，光查自家的 CRM 数据还不够，它必须找到 SAP 的 AI 查 ERP\n里的财务扣款，同时还得叫 ServiceNow 的 AI 去翻翻过去的客服工单。这三个\nAI\n运行在完全不同的云端，由三家不同的巨头开发，互相谁也不信任谁的数据。如果只是取点数据，普通的\nREST API 就能做到；但这里关键的要求是，SAP 和 ServiceNow 的 AI\n必须在自己内部做独立的推理和逻辑评估。\n在执行过程中，SAP\n可能会因为风险规则超标，不得不暂停手头的工作，等待人工管理员审核；或者因为凭证过期，需要跨租户重新要求用户授权。这种需要长耗时运行、中途可能会暂停等待、还要跨系统把控权限的远端委派，才是这类需求真正生长的土壤。\n泰森食品与大型分销商 Gordon Food Service\n在供应链上的试点，呈现了另一个代表性的跨公司场景。泰森的 AI 销售 Agent\n与 Gordon 的 AI 采购 Agent 之间，直接建立起了长期的对话机制。两家公司的\nAgent 就像两个黑盒，泰森不需要向对方暴露自家的数据库结构或内部\nPrompt，Gordon 也不需要开放自家的采购系统接口。双方的 Agent\n在框架约束下，自动分享实时库存、协商补货计划、传递销售线索。远端协作场景的本质，不在于替代代码里的函数调用，而是为了在两个互不信任、架构完全不同的企业系统之间，搭建一条能够带状态、带权限管控的跨界通道。\n为什么特定场景需要专门的协议\n既然这种跨界协作的需求真实存在，为什么不能直接用已有的 API\n拼凑，而是非要搞出一套专门的标准化协议？要理清这个需求，不妨把 Anthropic\n推出的 Model Context\nProtocol（MCP）放在一起看。两者的脾气秉性完全不同，恰好折射出两类完全不同的工程难题。\nMCP 的切入点很直接，主要解决怎么让 AI 顺畅地去读本地文件、查 Postgres\n数据库或者调 Slack。它诞生于 Anthropic 想改进 Claude Desktop 和 IDE\n体验的需求。它非常轻，基于标准输入输出或者简单的\nHTTP，目标就是让开发者在十分钟内，把工具接进 AI 的上下文里。\n但当场景从给 AI 调本地工具变成让一个 AI 向另一个公司的 AI\n委派任务时，传统的 API 和 MCP\n就都力不从心了。在跨公司协作里，你无法假设远端 Agent\n的技术栈，无法预知它需要处理多久，更无法用简单的同步请求拿回结果。远端\nAgent\n可能在推理三分钟后发现权限不足，需要暂时挂起任务，等待人工干预；也可能在生成结果的过程中，需要不断向发起方实时推送进度。\n更残酷的现实来自于商业与市场规模的悬殊。钓鱼要去鱼多的地方，MCP\n面对的是绝大多数普通的 AI 开发者——任何一个做 AI\n应用的人，都需要让模型连数据库、读文件。这种刚需和低门槛，让 MCP 在\nCursor、VS Code 和开源社区里迅速形成了爆发式的生态红利。而跨 Agent\n委派所面对的，是一个极度小众的企业远端 RPC 市场，只有当公司大到需要把\nSalesforce、SAP、UiPath 这些巨头的 AI\n串在一起跨公司干活时，这种专门的标准化协议才用得上。市场大小的悬殊，直接决定了这种协议在开发者里的热度天然远低于\nMCP。\nGoogle 的工程解法与设计取舍\n为了解决上述跨界协作里的长耗时、不信任与鉴权难题，Google\n给出了极其鲜明的 Google 风格工程解法。Google 写 A2A\n的思路很像写微服务，用 HTTP 传 JSON，把接口全做成标准 RPC\n调用的形式。它要求把能力名片挂在指定的网址上（\n/.well-known/agent-card.json\n），用规范的签名校验。这套设计，全是为了满足大企业对\nAPI 网关路由、防火墙穿越、OAuth2 授权和实时推流的工程死要求。\n在任务调度上，Google\n引入了一套明确的任务状态机，涵盖了从已提交、处理中，到挂起等待输入、挂起等待授权，最后到完成或失败的全生命周期。这种架构和\nMCP 即调即返回的模式完全不同。MCP 像调一个本地函数，调完马上拿结果；而\nA2A 必须考虑到网络另一端的 Agent\n可能会干很久，随时需要暂停下来等你给新权限。在角色分工上，Google\n的解法极其干脆，必须分清谁是下指令的主控，谁是只管干活的远端工具。\n去年很多团队试多 Agent 时，最直观的想法是搞个 Agent 自由聊天室——让 PM\nAgent、Dev Agent、QA Agent\n在一个群里用自然语言自由开会讨论。但跑了一阵子后，账单和延迟把大家打醒了。一个简单的任务，几个\nAgent 客套澄清几轮，Token 翻了五倍，耗时拉到一分半，还经常因为某个 Agent\n的小错导致全盘乱套。靠 Agent 自由聊天干活，在工程上根本跑不通。Google\n彻底放弃了这种聊天室幻想，明确了控制流，必须由一个主控掌控全局，远端\nAgent 仅仅是提供特定能力的工具。\n然而，这种设计虽然解决了远端 RPC 问题，却在单系统内部遭遇了应用内\nSub-agent 机制的剧烈挤压。很多人在谈多 Agent 的价值时，常喜欢举出用子\nAgent\n读五万字日志只返回两百字摘要来清理上下文、用大模型规划配合小模型清洗来省钱、以及同时派几个子\nAgent\n并行搜索等典型用法。但这其实是一个很大的误区，大家以为自己在谈专门的网络协议，但这些场景在实际落地时，根本不需要任何网络协议。\n在 Claude Code、Codex 或 OpenCode 这类工具里，应用内部的 Sub-agent\n机制已经在本地以零网络开销完美解决了这些问题。开发者可以在本地内存里直接派发子任务，根本不需要部署\nHTTP 接口，也不需要配置能力名片。本地 Sub-agent\n在单体工具里的出色表现，直接吃掉了这类协议在单系统内部的绝大部分生存空间。真正不可替代的价值，被死死压缩在剩下\n10% 的跨公司远端 RPC 场景里。\n安全瓶颈与不温不火的宿命\n上述工程取舍与市场挤压交织在一起，最终构成了此类协议极其尴尬的后继后果。极其狭窄的市场空间，加上技术和安全上的巨大麻烦，让\nA2A 陷入了吃力不讨好的困局。跨网络让 Agent\n互相通信，安全上的隐患层出不穷。\n最致命的安全风险是提示词注入级联。一个负责抓取网页的子 Agent\n被恶意数据污染后，返回的结果可能会诱骗主控 Agent\n去执行删除本地文件或导出密钥的操作。另一个棘手的问题是混淆代理越权，低权限的外部\nAgent 可能会利用远端高权限 Agent 的身份，去越权调取敏感数据。\n更深层的危险在于授权模型的断层。本地命令行工具默认继承你本机的确认授权，但一旦暴露成\nHTTP 接口，它就变成了远程多租户服务。Google 自身的 Gemini CLI\n之前紧急修复 A2A 隔离漏洞，就是因为发现如果多个 A2A\n任务共享工作区，注入攻击会直接变成远程代码执行。僵尸任务的缠绕同样难以收拾。在跨网络调用中，如果用户点了取消，远端子\nAgent 如果没有可靠的通知机制，就会变成在后台默默烧 Token\n且随时可能写脏数据的僵尸进程。\n极其狭窄的目标市场，加上提示词注入、身份传递、多租户沙盒和僵尸任务等一堆极难解决的工程死穴，最终决定了\nA2A 协议的命运。它可能会作为大企业 B2B\n基础设施的一部分安静存在，但在更广泛的 AI\n开发者圈子里，它注定会长期保持不温不火的状态。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/a2a-protocol-deep-research-20260727.html",
-      "content_chars": 3612,
-      "content_sha256": "71b25b1d638b8cff385c4f85040a61dcd98cb4a4d7d0851c06650d0dc1a97db4",
-      "content_fetched_at": "2026-07-27T22:13:32.638926+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:ddbf3f77af80d291",
-      "kind": "publish",
-      "text": "yage-share published: 都是 Multi-Agent，各家 AI 编程 Harness 的基因与信仰到底有何不同？",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-27T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/harness-genes-multi-agent-20260727.html",
-      "title": "都是 Multi-Agent，各家 AI 编程 Harness 的基因与信仰到底有何不同？",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\nAI 编程\n架构演进\n现在随便打开一个主流的 AI 编程工具，不管是终端里的命令行 CLI\n还是编辑器里的插件，官宣日志里基本都写着支持多 Agent\n协作。大家可能觉得，它们干的事情大同小异，无非都是在给大模型外包一层函数调用循环：主进程开几个子线程，调调模型接口，分发几个搜代码、写文件的工具，表面看没什么两样。\n但如果把这几家的 Harness 拿到实际生产工程里折腾，翻开它们的 CLI\n源码、配置文件以及底层的进程通信日志，就会发现情况并非如此。这些工具表面上都在叫多\nAgent，但底层落地的工程路径、状态同步机制以及对未来软件工程形态的假设，完全是四条不同的路。它们各自选择的架构，背后都有一套鲜明的产品基因与设计信仰。\nClaude\nCode：网络拓扑与双轨阵列的探索\n先看 Anthropic 的 Claude Code。它虽然运行在终端里，但 Anthropic 对\nAgent 之间的通信拓扑有着持续的探索。\n在树状派生这条主线上，Anthropic 一直在积极完善纵向深度的可控性。在\nv2.1.219 版本里，它将子 Agent 的默认派生深度设为 3 层（可通过\nCLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH 配置最高放开至 5\n层）。为了解决深层递归带来的思考盲区，它配合 –forward-subagent-text\n命令行参数，把深层子节点的思考上下文逐级向上回传，并按创建该 Agent 的\ntool_use ID\n进行精确归属。这种设计让层级拆解在保持上下文隔离的同时，依然拥有全局可追踪的调试能力。\n在横向探索这条支线上，Claude Code 推出了实验性的 Agent Teams\n机制，通过开启环境变量 CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1\n就能激活。这一机制尝试打破传统的主从汇报关系，转向点对点的网络拓扑。为了支撑平级协作，它引入了一个叫\ntasks.md\n的共享账本机制，所有的任务状态、领取记录和产出依赖都被写进去中心化的账本文件里，Agent\n之间可以通过解析 tasks.md 动态抢占任务与交接中间结果。\n此外，Anthropic 在其拓扑体系中还引入了 Dynamic Workflows\n动态工作流概念。系统不是盲目启动无限多的\nAgent，而是根据具体任务的依赖图动态规划 Agent\n规模与流转顺序。官方在动态工作流中默认建议将单次协同的 Agent 数量控制在\n15\n个以内，同时也允许开发者通过设置进行覆盖，尝试在自动化拓展与系统资源开销之间寻找平衡。从这些设计来看，Anthropic\n的基因里带着强烈的网络拓扑色彩，把软件工程视为一个在树状与网状之间灵活演进的通信阵列。\nOpenAI\nCodex：异构算力与推理亲和度匹配\n跟 Anthropic 追求通信拓扑的美感不同，OpenAI 在 Codex CLI\n里展现出的是一种现实的工程实用主义（自 0.145.0 版本引入 Multi-Agent V2\n架构）。\n在多 Agent\n派发中，传统的默认行为大多是让子节点继承主节点的模型配置（或仅做粗粒度的子模型指定）。但在真实开发里，去跑一个简单的静态语法检查，或者翻找某个配置文件的路径，根本不需要顶级的深度推理能力。很多时候终端里几十个子节点全在调最贵的模型或进行高强度推理，不仅响应慢，还会烧掉大量的\nToken 预算。\nOpenAI 在 Codex Multi-Agent V2\n里解决问题的核心逻辑是因材施教，也就是任务与推理能力的亲和度匹配。主节点在调度子\nAgent 时，拥有精细的控制权限。它可以根据子 Agent\n的角色模板，动态指定不同的基础模型，甚至精细调控每个子 Agent\n的推理力度，可以在 low、medium、high\n三档之间灵活切换，同时严格限定并发调度的上限。\n比如在处理大范围重构时，Codex 会派发一个推理力度设为 high\n的子节点去作跨模块的架构设计与类型推导；同时并行派发若干个推理力度设为\nlow 的轻量子节点去批量更新边缘文件的导入声明和测试用例。另外，它还扩展了\n/import\n命令行指令，支持把外部的项目规范、历史决策上下文和记忆规则无缝导入到指定子\nAgent 的运行空间里。从它的 Rust\n调度逻辑来看，这种基因完全是以成本、吞吐量和推理效率为核心导向的，用经济的算力去组合出较高的重构产出比。\nCursor：无感融合 IDE\n状态的模型无偏见引擎\n如果说 CLI 工具的战场在终端，那么 Cursor 则代表了另一种方向：把 Agent\n抹平在 IDE 的交互体验里。\nCursor 的 Agent 协同建立在其 Composer 界面与 Agent Mode\n模式之上。Composer\n本身是嵌入在编辑器架构深处的多文件交互界面与调度系统，而 Agent Mode\n模式则赋予其自主执行终端命令与多文件改写的能力。这套 Harness\n架构与底层具体的语言模型是解耦的。在基因上，Cursor\n是彻底的模型无偏见主义者，无论底层接入的是 Claude Opus\n5、GPT-5.6、Gemini 3.6 Flash，还是 Grok\n4.5，上层的交互体验和上下文感知都是一致的。\nCursor 的特点在于它把 Composer 的 Agent 执行循环与 VS Code IDE\n的本地状态做到了深度绑定。在 Multitask 模式下发起多文件修改任务时，Agent\n并不是在后台跑 Shell\n脚本，而是直接作用于编辑区状态、后台未保存的标签页、.cursor/rules\n规则库以及本地的 SQLite 数据库 state.vscdb。\n为了在海量文件修改时保持毫秒级的上下文检索，它在后台构建了基于 Merkle\nTree 的仓库索引架构。当多个 Agent\n循环同时在后台对不同文件进行局部修改、代码生成和预览时，开发者感觉不到阻塞，甚至可以在前台继续编写代码，随时审查\nAgent 生成的修改。在 Cursor\n里，这种后台索引、前台呈现修改预览的体验相对顺畅，它追求的是无感与流畅，把复杂的\nAgent 调度细节隐化在熟悉的快捷键与编辑界面之下。\nAntigravity：谋定而后动的显式工作流与治理原生\n最后再看 Google DeepMind 推出的 Antigravity。如果说 Cursor\n追求的是隐形与无感，那么 Antigravity\n展现出的则是一种具备明确治理色彩的工程信仰——谋定而后动。\nAntigravity\n本身真正原生的底层原语，完全围绕着显式工作流和安全治理来设计。\n一个是它的 Planning Mode\n规划模式。在开启规划模式后，主节点不会贸然去修改任何一行代码或执行破坏性命令，而是必须先生成一份详尽的结构化\nPlan，并明确触发 Proceed Gate\n执行门禁。只有当开发者在界面上审阅并点击批准后，Agent\n才会进入代码修改阶段。\n另一个是它拥有原生支持的一等公民产物引擎，所有的计划、架构分析和阶段性交付物都会被结构化持久化写入到\nbrain/\n专属目录中。更难能可贵的是它的透明追踪能力，系统日志里保留了未经截断的\ntranscript.jsonl，任何一步思考过程、工具调用细节和报错信息都有据可查。\n在多 Agent 隔离方面，Antigravity 在 invoke_subagent\n原语里原生支持了基于 Git Worktree 的隔离机制，特别是在 share\n共享模式下。当派生多个子节点并行探索或修改代码时，它们拥有各自独立的工作目录空间，却共享底层的\nGit\n仓库目录，既避免了重复磁盘占用的空间浪费，又避免了并发修改同一文件导致的冲突。面对大型关键系统的重构时，这种规划先行、产物落地和独立\nWorktree 隔离带来的确定性与可追溯性，是其他工具无法替代的。\n总结：基因光谱与工程选型\n拆解完这四家 Harness 的底层机制，答案就很清晰了。多 Agent\n协作绝非一个简单的通用标配功能，每一家工具的设计都深刻印着各自团队的思考痕迹：\n如果你面对的业务场景涉及复杂的长链路架构解耦与模块重构，需要 Agent\n之间频繁对齐与动态分工，Claude Code 那套基于 Agent Teams 和 tasks.md\n的网络拓扑演进无疑是最顺手的；如果你管理着大规模的代码库重构项目，在意\nToken 消耗成本、任务吞吐量与不同任务精细化算力分配，Codex\n提供的异构模型与推理亲和度匹配会带来非常高效的 Pareto\n最优解；如果你习惯在编辑器内完成全流程开发，追求界面的响应速度、本地索引与无缝预览，Cursor\n这种基于 SQLite 和 Merkle Tree\n的模型无偏见引擎体验依然无可替代；而如果你面对的是高风险生产系统、复杂的多人协作规范，或者需要极其严密的过程审计与显式规划，Antigravity\n凭着规划模式、Proceed Gate 门禁校验、产物引擎以及 Git Worktree\n共享隔离机制，给出了极具安全感和确定性的工程解法。\n软件工程从来没有绝对的银弹。看清了这些 AI 编程 Harness\n底层的基因与信仰，我们在为团队做工程选型或者搭建自己的 Agent\n工作流时，才能不再被营销概念遮眼，真正选出最匹配自己代码库和团队习惯的那把利刃。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/harness-genes-multi-agent-20260727.html",
-      "content_chars": 3902,
-      "content_sha256": "8f06bfdcc34ea4caa5cfd63fd70ab23a550759a4979b6a9b05cfe599958b39c5",
-      "content_fetched_at": "2026-07-27T22:13:32.763034+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:a39b71a17fe38ab4",
-      "kind": "publish",
-      "text": "yage-share published: 27B 模型进了 iPhone，问题终于从“能不能跑”变成“跑它有什么用”",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-26T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/bonsai-iphone-on-device-model-routes-20260726.html",
-      "title": "27B 模型进了 iPhone，问题终于从“能不能跑”变成“跑它有什么用”",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "推理与性能\n模型架构\nAI Agent\n把大语言模型放进 iPhone，最常听到的疑问有两个：手机上跑 LLM\n到底能做什么，以及就算跑得起来，又怎么可能好用。这两个问题比单纯看参数量更重要。刚发布的\nBonsai 27B\n并没有证明手机能取代云端\nAgent，但它给这两个问题提供了一个更具体的讨论参照。\n手机集中保存着大量个人隐私：相册、截图、聊天记录、位置、健康数据、银行通知和工作文件，往往同时集中在同一块屏幕上。特别是图片输入，发往云端既有隐私泄露的顾虑，也要面对文件体积大、网络波动与等待返回的时间成本。用户拍下收据、截取付款页面或打开医疗报告时，最希望设备能在本地当场处理完毕，省去数据上传远端并等待响应的过程。\n端侧模型的用处就在这里。与其让聊天机器人在地铁里离线写诗，不如把那些短小、私密、需要立刻看到结果的理解需求留在本地：读取屏幕、识别票据、整理照片、从本地资料中提取关键字段，或者把敏感内容压缩成一段摘要，由用户决定要不要发送出去。这样数据不用离开手机，首轮交互也省下了一次网络往返。\n再往前看，ambient agent 给手机带来了新的应用空间。\nGoogle 在 I/O\n上演示过这类探索\n：系统能理解用户眼前的屏幕和当前情境，在合适的时机给出建议，或者在拿到明确授权后替用户完成操作。它不会频繁打断人，更像个安静的协作者。ambient\nagent 的逻辑也是如此：Agent\n要想看懂屏幕、图片和即时上下文，手机就是离这些原始数据最近的地方。端侧视觉模型给这个方向划出了更合理的隐私与延迟边界，但它本身还没能解决权限控制、失败恢复、后台调度和责任认定这些关键工程问题。\n端侧模型的两条路线：高效视觉理解与极低比特大模型压缩\n真正难的不是下载一个模型\n手机端模型推理的限制主要集中在四个地方。\n一是内存。模型文件能塞进手机闪存，不代表运行时就能顺利装进内存。运行时的实际内存占用（也就是工作集），除了模型本身，还要算上上下文\nKV cache、激活值、runtime buffer\n以及视觉编码器。一个模型即使表面指标“只有 4\nGB”，一旦读入大图或拉长对话，依然可能直接撞上 iOS 的进程内存上限。\n二是功耗与发热。生成每一个 token\n都要反复读取模型权重；模型越大，内存带宽和散热极限就越早变成瓶颈。跑完一次\n20 秒的回答并不难，但要连续生成 30 分钟\ntoken、在插拔充电器时保持速度稳定、并且从后台切回来后还能正常恢复，才是真正的产品门槛。\n三是视觉\nprefill（预填充阶段）。对手机上的多模态任务来说，耗时主要集中在最初的图像处理环节，而非后半段逐字生成。图片需要先解码、缩放、切分，再通过视觉编码器转换成语言模型能读取的视觉\nembedding。模型在纯文字聊天时反应快，不代表它能迅速看清一张密集的表格。\n四是可靠性。Agent\n任务能否完成，取决于整条交互链条，绝非模型输出一段顺畅的话那么简单。它还得准确看懂屏幕、判断要不要调用工具、拿到用户授权、处理网络或系统中断，同时留好随时能恢复的任务状态。端侧模型解决的，只是这整条链路中的一步。\n主流路线：把模型做小，并把视觉做省\n过去主流的思路，是先缩减模型体量，再在架构与量化策略上精打细算，省下每次推理的开销。\nMiniCPM-V\n4.6\n就是典型的例子。它由 SigLIP2-400M 视觉编码器和 Qwen3.5-0.8B\n语言模型组合而成，总参数量约\n1.3B。它的优势在于处理手机上的图片、截图、文档、OCR、视频和 UI\n界面，而非通用的长文本推理。这个模型设计了 4x 和 16x 两档视觉 token\n压缩率：16x 跑得更快，4x\n能保留更多细节。这也解释了许多人使用时的直观体感：图片刚进入模型时处理最慢，一旦视觉\nprefill 跑完，后面的文本生成就会显得飞快。但在读取精细的 OCR\n资料时，速度模式替代不了细节模式。\n在 OpenBMB 公布的数据里，MiniCPM-V 4.6 在 4x 设置下的成绩是：OCRBench\nv2 英文 40.6、中文 47.3，OmniDocBench 84.6，DocVQA 89.4；在\nArtificial\nAnalysis 的发布测试\n中得到 13 分的 Intelligence Index 指数，在 2B\n以下的开源权重模型中名列前茅。这些跑分虽然替代不了拿真实票据或财务表格去实测，但方向很明确：先把手机需要的这双“眼睛”做出来。\nGoogle 的 Gemma 系列也是这个方向。最新的\nGemma 4\nE2B/E4B\n主打移动与边缘场景，支持文本、图片、音频和视频输入；其中 E4B\n的有效参数约 4.5B，总参数约 8B。\nArtificial\nAnalysis\n与 Google 官方数据显示，E4B 在 MMLU Pro、AIME\n2026、LiveCodeBench v6 和 Tau2 测试上的得分分别是 69.4、42.5、52.0 和\n42.2。它的策略避开了对超大稠密模型的强行硬压缩，选择在手机能容纳的内存工作集内，守住多模态感知与工具调用的能力。\n微软的 Phi 系列则更偏向纯文本。Phi-4 Mini 是个 3.8B\n左右的文本模型，适合做轻量的本地文字推理；若需要看图或语音，就得换成 Phi\n的多模态版本或其他模型。这也说明，“小而强”不能直接和“手机上的视觉\nAgent”划等号：模型的模态支持、runtime 优化以及应用集成，都缺一不可。\nMiniCPM5-1B 则提供了另一种搭配思路。它不处理视觉输入，而是聚焦于 1B\n级别纯文本模型在本地总结、任务规划、写代码和轻量工具调用上的效率。把它和\nMiniCPM-V 4.6\n放在一起看，能看到一种比单纯比较参数更实用的分工协作方式：视觉模型负责“看见和提取”，文本模型负责“读懂文字、做规划并决定下一步操作”。\nBonsai\n的不同赌注：保留大模型，压缩每个权重\nBonsai 27B 选择了不同的路线。它没有重新训练一个 1B 或 4B\n模型，而是直接拿 Qwen3.6-27B 当基座，把语言网络的权重压成二元\n{-1,+1}\n格式，每 128 个权重共享一个 FP16\n缩放因子（scale），实际折算约为 1.125 bit/weight。经过这种处理后，27.3B\n参数的语言模型在运行时的原生工作集约为 3.9 GB；加上大约 0.63 GB\n的可选视觉塔，公开发布的 MLX 权重包总共大约 5.13 GB。\n这次设计的启发点在于打破了传统的端侧选型假设，而非“27B”这一规格标签。过去的惯性思维认为，模型要进手机必须先缩小基础参数。而\nBonsai\n提出的假想是：只要量化足够激进，同时计算内核（kernel）可以直接高效处理打包好的二进制权重（packed\nbinary\nweights），就有机会把大模型自带的推理和代码能力塞进手机的内存窗口里。\n根据\nPrismML\n官方公布的数据\n，1-bit 版 Bonsai 在 15\n项思考模式（thinking-mode）测试中的平均成绩是 76.11，相比 Qwen3.6-27B\nFP16 基座的 85.07 分，保留了大约 89.5%\n的能力。细看分类，它在数学类别得分 91.66、代码类别得分\n81.88；但在工具调用上降至 66.03，视觉类别只有\n59.57，说明极端压缩并不是没有代价。在 iPhone 17 Pro Max 上，PrismML\n测得它的 TG128 decode 速度是 11 tok/s，连续生成约 10.8\ntok/s；但这组数据来自厂商自测，且演示中注明使用了预先缓存/预填充的图像上下文（cached/prefilled\nimage context），不能当成未缓存图片的冷启动 OCR 端到端速度。\n大模型加\n1-bit，还是小模型加较高精度？\n这才是 Bonsai\n真正提出的核心问题。两条路线针对不同的使用场景，在实际选型中并非由单一路线全面胜出。\n在通用文字推理、数学、写代码和边界清晰的工具任务上，“大模型加极低比特”的优势相当突出。Bonsai\n靠着 27B\n的基座，保留了小模型难以补回的知识与复杂推理空间；厂商自己的测试也说明，它在\n1-bit\n下对数学和代码的保留，明显好于工具调用和看图。如果主要拿它做离线阅读、总结、写草稿或辅助编程，且手机内存足够装下模型与短上下文，它确实触及了此前手机上未曾出现过的能力上限。\n但在面对看图、解析文档和操作手机界面时，“小模型加更高精度”未必会落后。视觉任务的瓶颈往往卡在图像编码与预处理上，而不只是语言模型的\ndecode 阶段。MiniCPM-V 4.6\n的做法是用小一点的语言模型、专门优化的视觉编码路径以及可调的压缩率，把首次读图的开销压到实用范围内；Gemma\n的边缘型号则补充了多模态与音频能力。遇到“快速看懂高分辨率票据并准确提取字段”这种具体需求，较小但专门优化过视觉的模型，可能比极低比特的大模型更可靠、更省电，工程上也更容易落地。\n公开测试数据衡量的是不同维度的侧重点。Bonsai 的 76.11 分是 PrismML 在\nH100 显卡上用 EvalScope 和 vLLM 测出的 15\n项思考模式均分，侧重评估纯文本逻辑与代码能力，却反映不出手机上的热衰减与无缓存视觉延迟；MiniCPM\n的 13 分是 Artificial Analysis\n推出的综合能力指数，无法直接衡量复杂财务单据的提取精度；Gemma\n的数据则源自其特定的多模态测试配置。即便同在 OCRBench v2 上，Bonsai\n公布的 58.65 与 MiniCPM-V 4.6 的 40.6（英文）/\n47.3（中文），也因图像预处理、prompt、视觉 token\n压缩率及评分条件的不同而无法横向换算。对产品构建者而言，这些指标揭示了模型在各自设定下的强项，但文本推理、视觉识别与设备端实际运行是三个独立的选型决策，不能试图用单一的分数来笼统覆盖。\n更具参考价值的结论，应当分条件来看：\n任务主要是文字推理、代码与短上下文综合，并且模型能稳定装进手机时，优先评估“大基座加极低比特”这条路线。\n任务主要是图片、截图、表格、票据和视频时，视觉编码效率、图像\ntoken 数量、OCR\n细节保留与首轮延迟，比语言模型的参数量重要得多；这时应该优先评估\nMiniCPM-V 或 Gemma 这类专门做端侧多模态优化的方案。\n要做高可靠的多步\nAgent，绝不能只看模型跑分。工具调用准不准、权限怎么设计、出错了能否恢复、设备发热稳不稳定，以及后台运行有什么限制，才是决定它能否替用户真正完成任务的关键。\n从演示到产品，还差一组手机上的共同实验\nBonsai 的出现说明：27B\n级别的模型不再必然被存储与内存门槛挡在手机门外。MiniCPM-V 4.6\n则说明：模型不用很大，也能把手机上的看图能力做得很顺畅。这两条路线展现的并非简单的替代关系，而是两种完全不同的端侧系统设计思路。\n接下来真正需要横向对比的，绝不是宣传页上的 token/s 速度，而是在同一部\niPhone\n上，面对同一组收据、表格、截图和屏幕交互等真实任务，同时测出冷启动耗时、无缓存图片\nprefill 延时、首 token 响应时间、decode 速率、字段级 OCR\n准确率、峰值内存、单 token 能耗以及连续跑 30\n分钟后的发热衰减。只有完成这组实测，才有可能对“手机上的大模型有什么用”给出一个有据可依的答案：端侧模型究竟更适合当一个私密的本地\ncopilot、一双看懂屏幕的眼睛，还是一个能在拿到授权后可靠执行操作的\nambient agent。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/bonsai-iphone-on-device-model-routes-20260726.html",
-      "content_chars": 4843,
-      "content_sha256": "c6156f6b9f2e9663aa54ec80df10162e5db43af926cd8848f3bd36eb3d34ddbf",
-      "content_fetched_at": "2026-07-27T22:13:32.974693+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-07-28",
+  "collect_window": {
+    "start": "2026-07-26T00:00:00+00:00",
+    "end": "2026-07-27T22:12:44.833106+00:00",
+    "hours": 46
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "30309871755",
+    "commit": "77ba1ee"
+  },
+  "stats": {
+    "total": 6,
     "by_kind": {
       "publish": 6
     },
@@ -172,9 +28,492 @@
       "denizhalil-blogs": 1,
       "yage-share": 3
     },
+    "failed_lists": [],
+    "sources_ok": 51,
+    "sources_failed": [],
+    "baselines": 7,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 8,
+      "rss": 33
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 13,
+      "calls": 13,
+      "prompt_tokens": 13439,
+      "completion_tokens": 2438,
+      "total_tokens": 15877,
+      "prompt_cache_hit_tokens": 9344,
+      "prompt_cache_miss_tokens": 4095
+    },
     "by_content_status": {
       "failed": 1,
       "ok": 5
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:29e968e89d0d8bb2",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "Sastasha Injector v1.7",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/711299-sastasha-injector-v1-7-a.html",
+      "text": "unknowncheats-ac published: Sastasha Injector v1.7",
+      "at": "2026-07-27T22:12:44.833106+00:00",
+      "external_id": "a:29e968e89d0d8bb2",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/711299-sastasha-injector-v1-7-a.html",
+      "title": "Sastasha Injector v1.7",
+      "content": "unknowncheats-ac published: Sastasha Injector v1.7",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/711299-sastasha-injector-v1-7-a.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-07-27T22:13:23.127094+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-07-27T22:12:44.833106+00:00",
+      "collected_at": "2026-07-27T22:12:44.833106+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/711299-sastasha-injector-v1-7-a.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "Sastasha Injector v1.7",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/711299-sastasha-injector-v1-7-a.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:b4ae42cd38123840",
+      "who": "safebreach-blog",
+      "who_url": "https://www.safebreach.com/blog/",
+      "action": "publish",
+      "target": "Thought LeadershipJul 24 , 2026What the OpenAI-Hugging Face Incident Reveals for Every Security ProgramRead More",
+      "target_url": "https://www.safebreach.com/blog/openai-hugging-face-ai-breach-security-testing/",
+      "text": "safebreach-blog published: Thought LeadershipJul 24 , 2026What the OpenAI-Hugging Face Incident Reveals for Every Security ProgramRead More",
+      "at": "2026-07-27T22:12:44.833106+00:00",
+      "external_id": "a:b4ae42cd38123840",
+      "url": "https://www.safebreach.com/blog/openai-hugging-face-ai-breach-security-testing/",
+      "title": "Thought LeadershipJul 24 , 2026What the OpenAI-Hugging Face Incident Reveals for Every Security ProgramRead More",
+      "content": "Jul 24, 2026\nWhat the OpenAI-Hugging Face Incident Reveals for Every Security Program\nGet SafeBreach CTO and Co-Founder Itzik Kotler’s thoughts about why this event matters and what it means for security leaders weighing AI adoption against their ability to secure it.\nSummary\nOpenAI confirmed that two of its models autonomously broke out of a sandboxed test and breached the production systems of Hugging Face—an AI firm—without human direction, chaining a zero-day exploit with stolen credentials. Hugging Face separately disclosed that its own AI tools refused to help reconstruct the attack. In this blog, SafeBreach Co-Founder and CTO Itzik Kotler provides his take on why this event proves AI predictability must be continuously validated, not assumed, and how safety testing must be adversarial and ongoing rather than periodic.\nAuthor:\nItzik Kotler, CTO & Co-Founder, SafeBreach\nLast week, we saw something happen that the security industry had only theorized about. An AI model, not a human operator, autonomously broke out of a test environment and breached a production system it had no source code for. Hugging Face—a company that develops computation tools to build applications using machine learning—\ndisclosed\nunauthorized access to its systems by an AI agent. Days later,\nOpenAI confirmed\nits own models were responsible—specifically GPT-5.6 Sol and an unnamed, more capable pre-release model, both being evaluated for cyber capability under deliberately reduced safety guardrails.\nAccording to both companies, the models were prompted to pursue advanced exploitation using complex attack paths during an internal evaluation designed to allow OpenAI to measure just how capable the models had become. In pursuit of a benchmark answer, one of the models found a zero-day in a package-registry proxy, escalated its own privileges, and worked its way to a node with Internet access. From there it inferred that Hugging Face might be hosting the data it needed, and went after Hugging Face’s production infrastructure directly—chaining stolen credentials with additional zero-days to reach remote code execution and exfiltrate data. Its command-and-control traffic reportedly migrated across public web services to blend in with normal activity. This activity involved thousands of individual actions, over a single weekend. None of which were scripted by a person.\nThen came the detail that should sit with every security leader a little longer than the headline: when Hugging Face tried to reconstruct the attack by feeding its event logs to frontier-hosted models for analysis, those models refused. So, while the offending model ran unconstrained, defenders were locked out of their own AI tooling by the very safeguards meant to prevent misuse.\nWhile this story has already drawn a strong response from the cybersecurity community, I believe it deserves a measured read, not a dramatic one—the facts here are serious enough without embellishment. Read on for my thoughts about why this matters and what it means for security leaders who are weighing AI adoption against their ability to secure it.\nWhy This Matters\nStrip away the novelty of this incident and one major lesson remains for every organization deploying or building with AI, not just the labs at the frontier: safety testing has to be adversarial, and it has to be continuous. Most enterprises now shipping LLM-powered applications are relying on an annual penetration test or a quarterly vulnerability scan for security testing. But that only answers whether the door was locked last spring. It says nothing about an adversary—human or machine—that can try every door in the building in an afternoon.\nThat’s the shift security leaders and boards need to internalize. The question used to be: could an attacker do this to us? It’s now: an autonomous attacker will try this, and we’ve told the business to adopt AI as fast as it can absorb it—do we have evidence we’d catch it? Do we have evidence our own AI behaves the way we assume it does? If you are not utilizing continuous validation, your answer to those questions is based on assumptions and hope, not data-driven evidence.\nTwo Questions Worth Considering\nSecurity leaders don’t need a new framework to start this conversation internally. They need to develop answers to two very important questions as soon as possible:\nCan you detect an autonomous agent taking thousands of actions across your environment over the course of a weekend, the way Hugging Face’s team ultimately did?\nCan you prove your controls actually fire against these behaviors, with evidence pulled from your own environment—not a document from last year’s audit?\nIf those questions are hard to answer with confidence, that’s the gap this incident exposes. It’s not a Hugging Face problem or an OpenAI problem. It’s a preview of the operating environment every security team is moving into: adversaries, increasingly including machine ones, that don’t sleep, don’t hesitate, and don’t wait for the next scheduled test.s, increasingly including machine ones, that don’t sleep, don’t hesitate, and don’t wait for the next scheduled test.\nWhere Continuous Validation Fits\nContinuous, adversarial validation—testing your controls against real attacker behavior on a loop rather than a calendar—is a powerful and effective response to these challenges. It’s also the discipline SafeBreach has been shaping for more than a decade.\nAdversarial Exposure Validation (AEV)\n—a security technology that delivers continuous, automated evidence of the feasibility of an attack—as an ongoing part of\nContinuous Threat Exposure Management (CTEM)\n—a five-phase program aimed at proactively and continuously identifying and mitigating threats —tests the specific behaviors this incident relied on: privilege escalation, credential abuse, remote code execution, command-and-control, lateral movement, data exfiltration. It does this against your own environment on a loop, not once a quarter. It means validating, on an ongoing basis, whether detection and alerting actually trigger against real adversary behavior, and re-running that validation after every change, since machine-speed activity doesn’t wait for your next change window. And it means correlating validation results with asset context, so remediation effort goes toward what measurably reduces exposure, rather than what a scanner happened to flag.\nIt’s also worth noting that the initial foothold in this incident was a malicious dataset abusing code-execution paths in a machine learning pipeline. Datasets are code too, and the privilege-escalation and code-execution techniques that entry point relied on are exactly the kind of behavior continuous adversarial validation is built to simulate.\nThe Takeaway for Security Leaders\nThe capability that allowed a model to break out of a sandbox is, in a different application, the same capability defenders can put to work. Machine speed cuts both ways. But that only holds if organizations build the discipline to test continuously rather than periodically, and to treat “we assume our AI behaves safely” as a hypothesis to prove, not a fact to file away. The work is still discovery, weaponization, and containment. AI just changed the clock speed. You can’t assume an AI system is safe or predictable. You have to prove it—continuously.\nThe good news is that continuous validation is achievable today.\nRequest a customized demo\nof the SafeBreach CTEM Platform to see how.\nFrequently Asked Questions\nWhat happened in the OpenAI-Hugging Face security incident?\nIn July 2026, two OpenAI models—including GPT-5.6 Sol—autonomously broke out of a sandboxed evaluation and breached Hugging Face’s production systems without human direction. One model found a zero-day in a package-registry proxy, escalated its own privileges, then chained stolen credentials with additional exploits to reach remote code execution and exfiltrate data—all in a single weekend, with no person scripting the attack.\nWhat is continuous adversarial validation?\nContinuous adversarial validation is the practice of testing security controls against real attacker behavior—privilege escalation, credential abuse, lateral movement, data exfiltration—on an ongoing loop rather than a periodic schedule, so organizations have current evidence their defenses actually work rather than assumptions based on a past test.\nHow is continuous adversarial validation different from an annual penetration test?\nAn annual pentest or quarterly vulnerability scan only confirms whether security controls worked at one point in time. Continuous adversarial validation tests every relevant attack path on a recurring basis, which matters against adversaries—human or machine—that can attempt many attack paths faster than ever before.\nWhat questions should security leaders ask after this incident?\nThree worth answering now: Can you detect an autonomous agent taking thousands of actions across your environment? Have you safety-tested the AI you’ve already deployed to know which attack paths get through? Can you prove your controls fire against these behaviors with evidence from your own environment, not last year’s audit?\nYou Might Also Be Interested In\nBlog\nThe Adversary Got an AI Upgrade—Is Your Security Program Ready to Compete?\nRead More\nPodcast\nVideos\nPodcast: Zero Trust Breaks Against MCP: Why “Verified” No Longer Means Safe\nListen Now\nBlog\nDoes Your CTEM Program Have an AI Blind Spot?\nRead More\nGet the latest\nresearch and news",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.safebreach.com/blog/openai-hugging-face-ai-breach-security-testing/",
+      "content_chars": 9509,
+      "content_sha256": "4b32b38ed1e53f73bba2a766650bf9aeea9fe613e39cd1cd2c31d44339e42225",
+      "content_fetched_at": "2026-07-27T22:14:17.324557+00:00",
+      "author": "safebreach-blog",
+      "author_name": "SafeBreach Blog",
+      "author_url": "https://www.safebreach.com/blog/",
+      "published_at": "2026-07-27T22:12:44.833106+00:00",
+      "collected_at": "2026-07-27T22:12:44.833106+00:00",
+      "tags": [
+        "kind:publish",
+        "src:safebreach-blog",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.safebreach.com/blog/",
+        "https://www.safebreach.com/blog/openai-hugging-face-ai-breach-security-testing/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "safebreach-blog",
+          "url": "https://www.safebreach.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "safebreach-blog",
+          "name": "SafeBreach Blog",
+          "home_url": "https://www.safebreach.com/blog/"
+        },
+        "article": {
+          "title": "Thought LeadershipJul 24 , 2026What the OpenAI-Hugging Face Incident Reveals for Every Security ProgramRead More",
+          "url": "https://www.safebreach.com/blog/openai-hugging-face-ai-breach-security-testing/",
+          "content_sha256": "4b32b38ed1e53f73bba2a766650bf9aeea9fe613e39cd1cd2c31d44339e42225"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:0450e62bcd07f381",
+      "who": "denizhalil-blogs",
+      "who_url": "https://denizhalil.com/blogs/",
+      "action": "publish",
+      "target": "Certighost (CVE-2026-54121): How Low-Privilege Users Impersonate Domain Controllers",
+      "target_url": "https://denizhalil.com/2026/07/27/certighost-cve-2026-54121-adcs-privilege-escalation/",
+      "text": "denizhalil-blogs published: Certighost (CVE-2026-54121): How Low-Privilege Users Impersonate Domain Controllers",
+      "at": "2026-07-27T05:00:00+00:00",
+      "external_id": "a:0450e62bcd07f381",
+      "url": "https://denizhalil.com/2026/07/27/certighost-cve-2026-54121-adcs-privilege-escalation/",
+      "title": "Certighost (CVE-2026-54121): How Low-Privilege Users Impersonate Domain Controllers",
+      "content": "Introduction\nActive Directory Certificate Services (AD CS) serves as a foundational component in modern enterprise identity environments, facilitating public key infrastructure (PKI), machine authentication, VPN access, and smart card logins. However, misconfigurations and deep-seated flaws in how Enterprise Certificate Authorities (CAs) process incoming certificate requests or resolve directory objects can create severe privilege escalation vectors. The Certighost vulnerability (CVE-2026-54121) exposes a critical breakdown in this identity trust boundary, allowing an unprivileged or low-privileged Active Directory user to manipulate object resolution logic. By tricking an Enterprise CA into issuing a valid authentication certificate for a Domain Controller (DC) account, an attacker can seamlessly impersonate high-privilege administrative identities, leading directly to full domain compromise without ever possessing elevated credentials.\nLearning Objectives\nBy reviewing this technical analysis, security professionals and system administrators will learn to:\nIdentify how unvalidated RPC routing attributes (\ncdc\nand\nrmd\n) lead to remote identity spoofing.\nUnderstand the architecture of Active Directory Certificate Services (AD CS) and RPC query fallback behavior.\nTrace the end-to-end attack chain enabling Domain Controller impersonation via Kerberos PKINIT and DCSync techniques.\nApply official security patches, configuration controls, and network-level mitigations to secure AD CS infrastructure.\nWhat is Certighost: Low-Privilege Active Directory Vulnerability\nCertighost (CVE-2026-54121)\nrepresents a fundamental breakdown in the authorization and identity verification logic of Active Directory Certificate Services (AD CS). In a secure Active Directory deployment, standard domain users are strictly prohibited from obtaining certificates that represent high-privileged assets, such as Domain Controllers or Enterprise Administrators. However, Certighost bypasses these traditional Access Control Lists (ACLs) and Role-Based Access Control (RBAC) boundaries by exploiting an undocumented or loosely validated fallback path in how the Enterprise Certificate Authority (CA) resolves directory objects across remote procedure calls (RPC). The root cause of the vulnerability lies in the CA’s “chase fallback” routine during the enrollment phase. When an incoming certificate request involves resolving remote machine identities, the CA relies on user-controlled routing parameters—specifically\ncdc\n(Client Domain Controller) and\nrmd\n(Remote Machine Descriptor). Because the CA fails to validate whether the target server specified in the\ncdc\nparameter is an authentic Domain Controller, an unprivileged user can force the Enterprise CA to establish outbound connections to an attacker-controlled endpoint. This allows the attacker to feed forged directory metadata directly into the CA’s decision-making process.\nAs a result, the Enterprise CA becomes an unwitting proxy for privilege escalation. By trusting the forged identity data returned by the attacker’s rogue server, the CA issues a fully valid, digitally signed client authentication certificate bound to a legitimate Domain Controller machine account. The attacker can then leverage this certificate via Kerberos PKINIT to impersonate the Domain Controller, gain Directory Replication Service (DRS) rights, and dump domain credentials (such as the\nkrbtgt\nhash) via a DCSync attack, resulting in complete Active Directory takeover.\nExploitation Prerequisites:\nRequires only standard, low-privileged domain user credentials and network access to the Enterprise CA; no administrative rights or user interaction are needed.\nUnvalidated RPC Chase Fallback:\nThe Enterprise CA blindly trusts user-supplied\ncdc\nparameters and opens outbound SMB/LDAP connections to untrusted IP addresses without verifying DC authenticity.\nIdentity Spoofing & Certificate Issuance:\nThe attacker’s listener spoofs target DC parameters (\nobjectSid\n,\ndNSHostName\n), prompting the CA to issue a legitimate X.509 certificate for the target DC account.\nFull Domain Takeover:\nThe issued certificate enables Kerberos PKINIT authentication as a Domain Controller, granting the attacker DCSync privileges to extract all domain hashes.\n+-------------------+ 1. Enrollment Request +-----------------------+\n| Low-Privilege User| --------------------------------------------> | Enterprise CA Server |\n| (Attacker) | (Includes CDC = Attacker IP) | (certpdef.dll) |\n+-------------------+ +-----------------------+\n| |\n| 2. Outbound SMB/LDAP Query |\n| <-----------------------------------+\nv\n+-------------------+ +-----------------------+\n| Attacker Listener | 3. Forged DC Identity Data (objectSid, Host) | Enterprise CA Server |\n| (Rogue Endpoint) | --------------------------------------------> | (Trusts Rogue Data) |\n+-------------------+ +-----------------------+\n|\n4. Issues DC Client Certificate |\n<-----------------------------------+\n+-------------------+ 5. Kerberos PKINIT / DCSync +-----------------------+\n| Attacker Host | --------------------------------------------> | Active Directory DC |\n| (Imp. DC Account) | (Full Domain Compromise) | (Domain Dominance) |\n+-------------------+ +-----------------------+\nTechnical Detail: How the Vulnerability Works\nThe technical architecture of the Certighost vulnerability centers on how Active Directory Certificate Services (AD CS) handles object resolution during certificate request processing. When a client submits a certificate enrollment request to an Enterprise CA, the underlying library (\ncertpdef.dll\n) attempts to validate and map the requesting identity against Active Directory. If the CA cannot immediately locate the target object within its local domain cache, it initiates an RPC lookup fallback mechanism known as a “chase.” Within this protocol context, the client is allowed to inject custom routing parameters—specifically\ncdc\n(Client Domain Controller) and\nrmd\n(Remote Machine Descriptor)—to instruct the CA on which domain controller should be queried to resolve the principal.\nThe core flaw stems from a complete absence of destination and boundary verification within\ncertpdef.dll\n. When receiving a request containing a\ncdc\nparameter, the CA accepts the provided IP address or hostname without verifying whether the remote endpoint is a trusted, verified Domain Controller possessing the\nSERVER_TRUST_ACCOUNT\nflag. Consequently, the CA process executes an unauthenticated outbound SMB (TCP 445) and LDAP (TCP/UDP 389) connection directly to the address specified by the requester. When this destination points to an attacker-controlled listener, the attacker’s rogue endpoint responds to the CA’s directory queries with engineered LDAP metadata, returning the target Domain Controller’s identity parameters (including its\nobjectSid\n,\nsAMAccountName\n, and\ndNSHostName\n).\nBecause the Enterprise CA trusts the attributes returned by the controlled endpoint during the chase lookup, it binds the target DC’s identity to the newly issued X.509 certificate. Once the signed certificate is issued, the post-exploitation phase transitions to Kerberos authentication. The attacker retrieves the certificate and uses PKINIT (Public Key Cryptography for Initial Authentication) to request a Kerberos Ticket Granting Ticket (TGT) on behalf of the Domain Controller’s machine account (\nDC01$\n). Because Domain Controller accounts inherently possess Directory Replication Services (DRS) rights, the attacker can leverage the TGT to issue\nDCSync\ncommands against the real DC, pulling sensitive account credentials—such as the\nkrbtgt\npassword hash—and securing complete domain dominance.\nRPC Request Parameter Injection:\nThe attacker crafts an enrollment request containing custom\ncdc\nand\nrmd\nparameters pointing to an attacker-controlled IP address instead of a legitimate DC.\nUnvalidated Outbound SMB/LDAP Connections:\ncertpdef.dll\nblindly initiates network queries to the specified\ncdc\naddress without verifying if the target holds domain controller trust attributes.\nRogue Metadata Injection:\nThe attacker’s listener intercepts the CA’s LDAP queries and returns forged\nobjectSid\nand\ndNSHostName\nvalues representing the target DC account.\nPKINIT Credential Escalation & DCSync:\nThe resulting X.509 certificate allows the attacker to obtain a Kerberos TGT for the DC account and execute DCSync operations to extract all domain hashes.\nDefense and Mitigation Strategies\nSecuring Active Directory environments against Certighost requires a comprehensive, multi-layered defense model that addresses both the core vulnerability and common post-exploitation pathways. Because this attack vector relies on manipulating certificate enrollment target routing, relying on a single control is insufficient. Organizations must combine immediate patch deployment with proactive Active Directory hardening, tight network egress boundary controls, and continuous event auditing to effectively isolate Certificate Infrastructure and neutralize potential exploit attempts.\nApply Security Updates:\nDeploy Microsoft’s security patch for CVE-2026-54121 to update\ncertpdef.dll\n. This enforces strict validation (\nCRequestInstance::_ValidateChaseTargetIsDC\n), ensuring any target supplied in\ncdc\nis a verified Domain Controller holding the\nSERVER_TRUST_ACCOUNT\nflag rather than an arbitrary IP address.\nRestrict Machine Account Quota (MAQ):\nSet the domain attribute\nms-DS-MachineAccountQuota\nto\n0\n. Preventing standard non-administrative users from creating arbitrary machine accounts significantly reduces the attack surface for machine account exploitation.\nEnforce Network Egress Controls:\nRestrict outbound SMB (TCP 445) and LDAP (TCP/UDP 389) traffic from Certificate Authority (CA) servers, ensuring CAs can strictly communicate only with known, authorized Domain Controller IP ranges.\nMonitor AD CS Event Logs:\nAudit CA event logs specifically for Event IDs 4886 and 4887 to flag anomalous certificate requests containing custom routing parameters or unexpected machine account enrollments.\nConclusion\nThe Certighost vulnerability (\nCVE-2026-54121\n) serves as a stark reminder of how implicit trust in legacy protocol fallbacks can undermine the core security mechanisms of enterprise identity environments. By taking advantage of unvalidated RPC “chase” parameters, an unprivileged domain user can trick an Enterprise Certificate Authority into acting as a conduit for privilege escalation. This structural breakdown allows attackers to completely bypass standard access control lists and obtain high-privilege credentials without needing administrative access. From an architectural standpoint, the flaw highlights a critical failure in target validation within Active Directory Certificate Services (AD CS). When a Certificate Authority processes object resolution requests without verifying whether the target endpoint is an authentic, trusted Domain Controller, it exposes the entire domain hierarchy to identity spoofing. The ability to force the CA to establish outbound queries to arbitrary endpoints effectively allows attackers to manipulate the identity metadata bound to signed X.509 certificates. The post-exploitation consequences of this vulnerability are severe, as the issued certificates enable seamless authentication via Kerberos PKINIT. Once an attacker obtains a valid credential representing a Domain Controller machine account, they gain immediate access to Directory Replication Services (DRS). With these privileges, executing a DCSync attack to dump domain password hashes—including the critical\nkrbtgt\naccount—becomes a straightforward step, leading directly to full domain dominance.\nEliminating the threat posed by Certighost requires a proactive, multi-layered defensive posture. Organizations must prioritize applying vendor security patches to enforce strict target validation within\ncertpdef.dll\n. In addition to patching, hardening Active Directory configurations—such as setting\nms-DS-MachineAccountQuota\nto zero, enforcing outbound egress filtering on CA servers, and actively monitoring AD CS enrollment logs—is essential to ensuring long-term resilience against advanced AD CS attack vectors.\nCertighost (CVE-2026-54121) How Low-Privilege Users Impersonate Domain Controllers\nDownload\nThe post\nCertighost (CVE-2026-54121): How Low-Privilege Users Impersonate Domain Controllers\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://denizhalil.com/2026/07/27/certighost-cve-2026-54121-adcs-privilege-escalation/",
+      "content_chars": 12512,
+      "content_sha256": "9f97455efdff62dac302f7cda76c701e9f4a8bdbae9eba79dd29644d39381daf",
+      "content_fetched_at": "2026-07-27T22:13:58.431501+00:00",
+      "author": "denizhalil-blogs",
+      "author_name": "DenizHalil Blogs",
+      "author_url": "https://denizhalil.com/blogs/",
+      "published_at": "2026-07-27T05:00:00+00:00",
+      "collected_at": "2026-07-27T22:12:44.833106+00:00",
+      "tags": [
+        "kind:publish",
+        "src:denizhalil-blogs",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://denizhalil.com/blogs/",
+        "https://denizhalil.com/2026/07/27/certighost-cve-2026-54121-adcs-privilege-escalation/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "denizhalil-blogs",
+          "url": "https://denizhalil.com/blogs/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "denizhalil-blogs",
+          "name": "DenizHalil Blogs",
+          "home_url": "https://denizhalil.com/blogs/"
+        },
+        "article": {
+          "title": "Certighost (CVE-2026-54121): How Low-Privilege Users Impersonate Domain Controllers",
+          "url": "https://denizhalil.com/2026/07/27/certighost-cve-2026-54121-adcs-privilege-escalation/",
+          "content_sha256": "9f97455efdff62dac302f7cda76c701e9f4a8bdbae9eba79dd29644d39381daf"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:01a895b9feff9c3a",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "重新审视 A2A 协议：大厂的野心、极小的市场与被挤压的现实",
+      "target_url": "https://yage.ai/share/a2a-protocol-deep-research-20260727.html",
+      "text": "yage-share published: 重新审视 A2A 协议：大厂的野心、极小的市场与被挤压的现实",
+      "at": "2026-07-27T00:00:00+00:00",
+      "external_id": "a:01a895b9feff9c3a",
+      "url": "https://yage.ai/share/a2a-protocol-deep-research-20260727.html",
+      "title": "重新审视 A2A 协议：大厂的野心、极小的市场与被挤压的现实",
+      "content": "Agent 工程\n系统架构\n大厂推出一个新协议，很少只是为了技术利他。更多时候，它是大厂划领地、立规矩、顺便把自己的开发习惯强加给行业的一种方式。选择一个协议，从来不只是引入几行接口代码，而是把你整个系统的架构交给了对方的设计哲学。2025\n年 Google 推出 Agent-to-Agent（A2A）协议并把它捐给 Linux\n基金会时，背后也是同样的逻辑。\n在 AI\n便宜到几分钱推理一次的今天，如果两个系统想通个信，开发者完全可以自己随手写个简单的\nJSON 接口。那为什么像 Salesforce、SAP、ServiceNow\n这些企业大厂还要围坐在一起，搞一个专门的 A2A\n协议？这背后到底解决的是真问题，还是又一场炒作？\n跨越边界的真实场景\n在真实的企业环境里，传统接口吃不下、但又极其折腾人的场景其实非常集中。这个场景不是你平时在单机上写代码或调\nAPI，而是跨公司、跨平台的远端协作。在企业的真实业务里，这类应用有着非常明确的边界。\n拿企业客服来说，客户在 Salesforce\n的前端页面提交了一个复杂的争议退款请求。Salesforce 自身的 AI\n识别出意图后，光查自家的 CRM 数据还不够，它必须找到 SAP 的 AI 查 ERP\n里的财务扣款，同时还得叫 ServiceNow 的 AI 去翻翻过去的客服工单。这三个\nAI\n运行在完全不同的云端，由三家不同的巨头开发，互相谁也不信任谁的数据。如果只是取点数据，普通的\nREST API 就能做到；但这里关键的要求是，SAP 和 ServiceNow 的 AI\n必须在自己内部做独立的推理和逻辑评估。\n在执行过程中，SAP\n可能会因为风险规则超标，不得不暂停手头的工作，等待人工管理员审核；或者因为凭证过期，需要跨租户重新要求用户授权。这种需要长耗时运行、中途可能会暂停等待、还要跨系统把控权限的远端委派，才是这类需求真正生长的土壤。\n泰森食品与大型分销商 Gordon Food Service\n在供应链上的试点，呈现了另一个代表性的跨公司场景。泰森的 AI 销售 Agent\n与 Gordon 的 AI 采购 Agent 之间，直接建立起了长期的对话机制。两家公司的\nAgent 就像两个黑盒，泰森不需要向对方暴露自家的数据库结构或内部\nPrompt，Gordon 也不需要开放自家的采购系统接口。双方的 Agent\n在框架约束下，自动分享实时库存、协商补货计划、传递销售线索。远端协作场景的本质，不在于替代代码里的函数调用，而是为了在两个互不信任、架构完全不同的企业系统之间，搭建一条能够带状态、带权限管控的跨界通道。\n为什么特定场景需要专门的协议\n既然这种跨界协作的需求真实存在，为什么不能直接用已有的 API\n拼凑，而是非要搞出一套专门的标准化协议？要理清这个需求，不妨把 Anthropic\n推出的 Model Context\nProtocol（MCP）放在一起看。两者的脾气秉性完全不同，恰好折射出两类完全不同的工程难题。\nMCP 的切入点很直接，主要解决怎么让 AI 顺畅地去读本地文件、查 Postgres\n数据库或者调 Slack。它诞生于 Anthropic 想改进 Claude Desktop 和 IDE\n体验的需求。它非常轻，基于标准输入输出或者简单的\nHTTP，目标就是让开发者在十分钟内，把工具接进 AI 的上下文里。\n但当场景从给 AI 调本地工具变成让一个 AI 向另一个公司的 AI\n委派任务时，传统的 API 和 MCP\n就都力不从心了。在跨公司协作里，你无法假设远端 Agent\n的技术栈，无法预知它需要处理多久，更无法用简单的同步请求拿回结果。远端\nAgent\n可能在推理三分钟后发现权限不足，需要暂时挂起任务，等待人工干预；也可能在生成结果的过程中，需要不断向发起方实时推送进度。\n更残酷的现实来自于商业与市场规模的悬殊。钓鱼要去鱼多的地方，MCP\n面对的是绝大多数普通的 AI 开发者——任何一个做 AI\n应用的人，都需要让模型连数据库、读文件。这种刚需和低门槛，让 MCP 在\nCursor、VS Code 和开源社区里迅速形成了爆发式的生态红利。而跨 Agent\n委派所面对的，是一个极度小众的企业远端 RPC 市场，只有当公司大到需要把\nSalesforce、SAP、UiPath 这些巨头的 AI\n串在一起跨公司干活时，这种专门的标准化协议才用得上。市场大小的悬殊，直接决定了这种协议在开发者里的热度天然远低于\nMCP。\nGoogle 的工程解法与设计取舍\n为了解决上述跨界协作里的长耗时、不信任与鉴权难题，Google\n给出了极其鲜明的 Google 风格工程解法。Google 写 A2A\n的思路很像写微服务，用 HTTP 传 JSON，把接口全做成标准 RPC\n调用的形式。它要求把能力名片挂在指定的网址上（\n/.well-known/agent-card.json\n），用规范的签名校验。这套设计，全是为了满足大企业对\nAPI 网关路由、防火墙穿越、OAuth2 授权和实时推流的工程死要求。\n在任务调度上，Google\n引入了一套明确的任务状态机，涵盖了从已提交、处理中，到挂起等待输入、挂起等待授权，最后到完成或失败的全生命周期。这种架构和\nMCP 即调即返回的模式完全不同。MCP 像调一个本地函数，调完马上拿结果；而\nA2A 必须考虑到网络另一端的 Agent\n可能会干很久，随时需要暂停下来等你给新权限。在角色分工上，Google\n的解法极其干脆，必须分清谁是下指令的主控，谁是只管干活的远端工具。\n去年很多团队试多 Agent 时，最直观的想法是搞个 Agent 自由聊天室——让 PM\nAgent、Dev Agent、QA Agent\n在一个群里用自然语言自由开会讨论。但跑了一阵子后，账单和延迟把大家打醒了。一个简单的任务，几个\nAgent 客套澄清几轮，Token 翻了五倍，耗时拉到一分半，还经常因为某个 Agent\n的小错导致全盘乱套。靠 Agent 自由聊天干活，在工程上根本跑不通。Google\n彻底放弃了这种聊天室幻想，明确了控制流，必须由一个主控掌控全局，远端\nAgent 仅仅是提供特定能力的工具。\n然而，这种设计虽然解决了远端 RPC 问题，却在单系统内部遭遇了应用内\nSub-agent 机制的剧烈挤压。很多人在谈多 Agent 的价值时，常喜欢举出用子\nAgent\n读五万字日志只返回两百字摘要来清理上下文、用大模型规划配合小模型清洗来省钱、以及同时派几个子\nAgent\n并行搜索等典型用法。但这其实是一个很大的误区，大家以为自己在谈专门的网络协议，但这些场景在实际落地时，根本不需要任何网络协议。\n在 Claude Code、Codex 或 OpenCode 这类工具里，应用内部的 Sub-agent\n机制已经在本地以零网络开销完美解决了这些问题。开发者可以在本地内存里直接派发子任务，根本不需要部署\nHTTP 接口，也不需要配置能力名片。本地 Sub-agent\n在单体工具里的出色表现，直接吃掉了这类协议在单系统内部的绝大部分生存空间。真正不可替代的价值，被死死压缩在剩下\n10% 的跨公司远端 RPC 场景里。\n安全瓶颈与不温不火的宿命\n上述工程取舍与市场挤压交织在一起，最终构成了此类协议极其尴尬的后继后果。极其狭窄的市场空间，加上技术和安全上的巨大麻烦，让\nA2A 陷入了吃力不讨好的困局。跨网络让 Agent\n互相通信，安全上的隐患层出不穷。\n最致命的安全风险是提示词注入级联。一个负责抓取网页的子 Agent\n被恶意数据污染后，返回的结果可能会诱骗主控 Agent\n去执行删除本地文件或导出密钥的操作。另一个棘手的问题是混淆代理越权，低权限的外部\nAgent 可能会利用远端高权限 Agent 的身份，去越权调取敏感数据。\n更深层的危险在于授权模型的断层。本地命令行工具默认继承你本机的确认授权，但一旦暴露成\nHTTP 接口，它就变成了远程多租户服务。Google 自身的 Gemini CLI\n之前紧急修复 A2A 隔离漏洞，就是因为发现如果多个 A2A\n任务共享工作区，注入攻击会直接变成远程代码执行。僵尸任务的缠绕同样难以收拾。在跨网络调用中，如果用户点了取消，远端子\nAgent 如果没有可靠的通知机制，就会变成在后台默默烧 Token\n且随时可能写脏数据的僵尸进程。\n极其狭窄的目标市场，加上提示词注入、身份传递、多租户沙盒和僵尸任务等一堆极难解决的工程死穴，最终决定了\nA2A 协议的命运。它可能会作为大企业 B2B\n基础设施的一部分安静存在，但在更广泛的 AI\n开发者圈子里，它注定会长期保持不温不火的状态。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/a2a-protocol-deep-research-20260727.html",
+      "content_chars": 3612,
+      "content_sha256": "71b25b1d638b8cff385c4f85040a61dcd98cb4a4d7d0851c06650d0dc1a97db4",
+      "content_fetched_at": "2026-07-27T22:13:32.638926+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-27T00:00:00+00:00",
+      "collected_at": "2026-07-27T22:12:44.833106+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/a2a-protocol-deep-research-20260727.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "重新审视 A2A 协议：大厂的野心、极小的市场与被挤压的现实",
+          "url": "https://yage.ai/share/a2a-protocol-deep-research-20260727.html",
+          "content_sha256": "71b25b1d638b8cff385c4f85040a61dcd98cb4a4d7d0851c06650d0dc1a97db4"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:ddbf3f77af80d291",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "都是 Multi-Agent，各家 AI 编程 Harness 的基因与信仰到底有何不同？",
+      "target_url": "https://yage.ai/share/harness-genes-multi-agent-20260727.html",
+      "text": "yage-share published: 都是 Multi-Agent，各家 AI 编程 Harness 的基因与信仰到底有何不同？",
+      "at": "2026-07-27T00:00:00+00:00",
+      "external_id": "a:ddbf3f77af80d291",
+      "url": "https://yage.ai/share/harness-genes-multi-agent-20260727.html",
+      "title": "都是 Multi-Agent，各家 AI 编程 Harness 的基因与信仰到底有何不同？",
+      "content": "AI Agent\nAI 编程\n架构演进\n现在随便打开一个主流的 AI 编程工具，不管是终端里的命令行 CLI\n还是编辑器里的插件，官宣日志里基本都写着支持多 Agent\n协作。大家可能觉得，它们干的事情大同小异，无非都是在给大模型外包一层函数调用循环：主进程开几个子线程，调调模型接口，分发几个搜代码、写文件的工具，表面看没什么两样。\n但如果把这几家的 Harness 拿到实际生产工程里折腾，翻开它们的 CLI\n源码、配置文件以及底层的进程通信日志，就会发现情况并非如此。这些工具表面上都在叫多\nAgent，但底层落地的工程路径、状态同步机制以及对未来软件工程形态的假设，完全是四条不同的路。它们各自选择的架构，背后都有一套鲜明的产品基因与设计信仰。\nClaude\nCode：网络拓扑与双轨阵列的探索\n先看 Anthropic 的 Claude Code。它虽然运行在终端里，但 Anthropic 对\nAgent 之间的通信拓扑有着持续的探索。\n在树状派生这条主线上，Anthropic 一直在积极完善纵向深度的可控性。在\nv2.1.219 版本里，它将子 Agent 的默认派生深度设为 3 层（可通过\nCLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH 配置最高放开至 5\n层）。为了解决深层递归带来的思考盲区，它配合 –forward-subagent-text\n命令行参数，把深层子节点的思考上下文逐级向上回传，并按创建该 Agent 的\ntool_use ID\n进行精确归属。这种设计让层级拆解在保持上下文隔离的同时，依然拥有全局可追踪的调试能力。\n在横向探索这条支线上，Claude Code 推出了实验性的 Agent Teams\n机制，通过开启环境变量 CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1\n就能激活。这一机制尝试打破传统的主从汇报关系，转向点对点的网络拓扑。为了支撑平级协作，它引入了一个叫\ntasks.md\n的共享账本机制，所有的任务状态、领取记录和产出依赖都被写进去中心化的账本文件里，Agent\n之间可以通过解析 tasks.md 动态抢占任务与交接中间结果。\n此外，Anthropic 在其拓扑体系中还引入了 Dynamic Workflows\n动态工作流概念。系统不是盲目启动无限多的\nAgent，而是根据具体任务的依赖图动态规划 Agent\n规模与流转顺序。官方在动态工作流中默认建议将单次协同的 Agent 数量控制在\n15\n个以内，同时也允许开发者通过设置进行覆盖，尝试在自动化拓展与系统资源开销之间寻找平衡。从这些设计来看，Anthropic\n的基因里带着强烈的网络拓扑色彩，把软件工程视为一个在树状与网状之间灵活演进的通信阵列。\nOpenAI\nCodex：异构算力与推理亲和度匹配\n跟 Anthropic 追求通信拓扑的美感不同，OpenAI 在 Codex CLI\n里展现出的是一种现实的工程实用主义（自 0.145.0 版本引入 Multi-Agent V2\n架构）。\n在多 Agent\n派发中，传统的默认行为大多是让子节点继承主节点的模型配置（或仅做粗粒度的子模型指定）。但在真实开发里，去跑一个简单的静态语法检查，或者翻找某个配置文件的路径，根本不需要顶级的深度推理能力。很多时候终端里几十个子节点全在调最贵的模型或进行高强度推理，不仅响应慢，还会烧掉大量的\nToken 预算。\nOpenAI 在 Codex Multi-Agent V2\n里解决问题的核心逻辑是因材施教，也就是任务与推理能力的亲和度匹配。主节点在调度子\nAgent 时，拥有精细的控制权限。它可以根据子 Agent\n的角色模板，动态指定不同的基础模型，甚至精细调控每个子 Agent\n的推理力度，可以在 low、medium、high\n三档之间灵活切换，同时严格限定并发调度的上限。\n比如在处理大范围重构时，Codex 会派发一个推理力度设为 high\n的子节点去作跨模块的架构设计与类型推导；同时并行派发若干个推理力度设为\nlow 的轻量子节点去批量更新边缘文件的导入声明和测试用例。另外，它还扩展了\n/import\n命令行指令，支持把外部的项目规范、历史决策上下文和记忆规则无缝导入到指定子\nAgent 的运行空间里。从它的 Rust\n调度逻辑来看，这种基因完全是以成本、吞吐量和推理效率为核心导向的，用经济的算力去组合出较高的重构产出比。\nCursor：无感融合 IDE\n状态的模型无偏见引擎\n如果说 CLI 工具的战场在终端，那么 Cursor 则代表了另一种方向：把 Agent\n抹平在 IDE 的交互体验里。\nCursor 的 Agent 协同建立在其 Composer 界面与 Agent Mode\n模式之上。Composer\n本身是嵌入在编辑器架构深处的多文件交互界面与调度系统，而 Agent Mode\n模式则赋予其自主执行终端命令与多文件改写的能力。这套 Harness\n架构与底层具体的语言模型是解耦的。在基因上，Cursor\n是彻底的模型无偏见主义者，无论底层接入的是 Claude Opus\n5、GPT-5.6、Gemini 3.6 Flash，还是 Grok\n4.5，上层的交互体验和上下文感知都是一致的。\nCursor 的特点在于它把 Composer 的 Agent 执行循环与 VS Code IDE\n的本地状态做到了深度绑定。在 Multitask 模式下发起多文件修改任务时，Agent\n并不是在后台跑 Shell\n脚本，而是直接作用于编辑区状态、后台未保存的标签页、.cursor/rules\n规则库以及本地的 SQLite 数据库 state.vscdb。\n为了在海量文件修改时保持毫秒级的上下文检索，它在后台构建了基于 Merkle\nTree 的仓库索引架构。当多个 Agent\n循环同时在后台对不同文件进行局部修改、代码生成和预览时，开发者感觉不到阻塞，甚至可以在前台继续编写代码，随时审查\nAgent 生成的修改。在 Cursor\n里，这种后台索引、前台呈现修改预览的体验相对顺畅，它追求的是无感与流畅，把复杂的\nAgent 调度细节隐化在熟悉的快捷键与编辑界面之下。\nAntigravity：谋定而后动的显式工作流与治理原生\n最后再看 Google DeepMind 推出的 Antigravity。如果说 Cursor\n追求的是隐形与无感，那么 Antigravity\n展现出的则是一种具备明确治理色彩的工程信仰——谋定而后动。\nAntigravity\n本身真正原生的底层原语，完全围绕着显式工作流和安全治理来设计。\n一个是它的 Planning Mode\n规划模式。在开启规划模式后，主节点不会贸然去修改任何一行代码或执行破坏性命令，而是必须先生成一份详尽的结构化\nPlan，并明确触发 Proceed Gate\n执行门禁。只有当开发者在界面上审阅并点击批准后，Agent\n才会进入代码修改阶段。\n另一个是它拥有原生支持的一等公民产物引擎，所有的计划、架构分析和阶段性交付物都会被结构化持久化写入到\nbrain/\n专属目录中。更难能可贵的是它的透明追踪能力，系统日志里保留了未经截断的\ntranscript.jsonl，任何一步思考过程、工具调用细节和报错信息都有据可查。\n在多 Agent 隔离方面，Antigravity 在 invoke_subagent\n原语里原生支持了基于 Git Worktree 的隔离机制，特别是在 share\n共享模式下。当派生多个子节点并行探索或修改代码时，它们拥有各自独立的工作目录空间，却共享底层的\nGit\n仓库目录，既避免了重复磁盘占用的空间浪费，又避免了并发修改同一文件导致的冲突。面对大型关键系统的重构时，这种规划先行、产物落地和独立\nWorktree 隔离带来的确定性与可追溯性，是其他工具无法替代的。\n总结：基因光谱与工程选型\n拆解完这四家 Harness 的底层机制，答案就很清晰了。多 Agent\n协作绝非一个简单的通用标配功能，每一家工具的设计都深刻印着各自团队的思考痕迹：\n如果你面对的业务场景涉及复杂的长链路架构解耦与模块重构，需要 Agent\n之间频繁对齐与动态分工，Claude Code 那套基于 Agent Teams 和 tasks.md\n的网络拓扑演进无疑是最顺手的；如果你管理着大规模的代码库重构项目，在意\nToken 消耗成本、任务吞吐量与不同任务精细化算力分配，Codex\n提供的异构模型与推理亲和度匹配会带来非常高效的 Pareto\n最优解；如果你习惯在编辑器内完成全流程开发，追求界面的响应速度、本地索引与无缝预览，Cursor\n这种基于 SQLite 和 Merkle Tree\n的模型无偏见引擎体验依然无可替代；而如果你面对的是高风险生产系统、复杂的多人协作规范，或者需要极其严密的过程审计与显式规划，Antigravity\n凭着规划模式、Proceed Gate 门禁校验、产物引擎以及 Git Worktree\n共享隔离机制，给出了极具安全感和确定性的工程解法。\n软件工程从来没有绝对的银弹。看清了这些 AI 编程 Harness\n底层的基因与信仰，我们在为团队做工程选型或者搭建自己的 Agent\n工作流时，才能不再被营销概念遮眼，真正选出最匹配自己代码库和团队习惯的那把利刃。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/harness-genes-multi-agent-20260727.html",
+      "content_chars": 3902,
+      "content_sha256": "8f06bfdcc34ea4caa5cfd63fd70ab23a550759a4979b6a9b05cfe599958b39c5",
+      "content_fetched_at": "2026-07-27T22:13:32.763034+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-27T00:00:00+00:00",
+      "collected_at": "2026-07-27T22:12:44.833106+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/harness-genes-multi-agent-20260727.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "都是 Multi-Agent，各家 AI 编程 Harness 的基因与信仰到底有何不同？",
+          "url": "https://yage.ai/share/harness-genes-multi-agent-20260727.html",
+          "content_sha256": "8f06bfdcc34ea4caa5cfd63fd70ab23a550759a4979b6a9b05cfe599958b39c5"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:a39b71a17fe38ab4",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "27B 模型进了 iPhone，问题终于从“能不能跑”变成“跑它有什么用”",
+      "target_url": "https://yage.ai/share/bonsai-iphone-on-device-model-routes-20260726.html",
+      "text": "yage-share published: 27B 模型进了 iPhone，问题终于从“能不能跑”变成“跑它有什么用”",
+      "at": "2026-07-26T00:00:00+00:00",
+      "external_id": "a:a39b71a17fe38ab4",
+      "url": "https://yage.ai/share/bonsai-iphone-on-device-model-routes-20260726.html",
+      "title": "27B 模型进了 iPhone，问题终于从“能不能跑”变成“跑它有什么用”",
+      "content": "推理与性能\n模型架构\nAI Agent\n把大语言模型放进 iPhone，最常听到的疑问有两个：手机上跑 LLM\n到底能做什么，以及就算跑得起来，又怎么可能好用。这两个问题比单纯看参数量更重要。刚发布的\nBonsai 27B\n并没有证明手机能取代云端\nAgent，但它给这两个问题提供了一个更具体的讨论参照。\n手机集中保存着大量个人隐私：相册、截图、聊天记录、位置、健康数据、银行通知和工作文件，往往同时集中在同一块屏幕上。特别是图片输入，发往云端既有隐私泄露的顾虑，也要面对文件体积大、网络波动与等待返回的时间成本。用户拍下收据、截取付款页面或打开医疗报告时，最希望设备能在本地当场处理完毕，省去数据上传远端并等待响应的过程。\n端侧模型的用处就在这里。与其让聊天机器人在地铁里离线写诗，不如把那些短小、私密、需要立刻看到结果的理解需求留在本地：读取屏幕、识别票据、整理照片、从本地资料中提取关键字段，或者把敏感内容压缩成一段摘要，由用户决定要不要发送出去。这样数据不用离开手机，首轮交互也省下了一次网络往返。\n再往前看，ambient agent 给手机带来了新的应用空间。\nGoogle 在 I/O\n上演示过这类探索\n：系统能理解用户眼前的屏幕和当前情境，在合适的时机给出建议，或者在拿到明确授权后替用户完成操作。它不会频繁打断人，更像个安静的协作者。ambient\nagent 的逻辑也是如此：Agent\n要想看懂屏幕、图片和即时上下文，手机就是离这些原始数据最近的地方。端侧视觉模型给这个方向划出了更合理的隐私与延迟边界，但它本身还没能解决权限控制、失败恢复、后台调度和责任认定这些关键工程问题。\n端侧模型的两条路线：高效视觉理解与极低比特大模型压缩\n真正难的不是下载一个模型\n手机端模型推理的限制主要集中在四个地方。\n一是内存。模型文件能塞进手机闪存，不代表运行时就能顺利装进内存。运行时的实际内存占用（也就是工作集），除了模型本身，还要算上上下文\nKV cache、激活值、runtime buffer\n以及视觉编码器。一个模型即使表面指标“只有 4\nGB”，一旦读入大图或拉长对话，依然可能直接撞上 iOS 的进程内存上限。\n二是功耗与发热。生成每一个 token\n都要反复读取模型权重；模型越大，内存带宽和散热极限就越早变成瓶颈。跑完一次\n20 秒的回答并不难，但要连续生成 30 分钟\ntoken、在插拔充电器时保持速度稳定、并且从后台切回来后还能正常恢复，才是真正的产品门槛。\n三是视觉\nprefill（预填充阶段）。对手机上的多模态任务来说，耗时主要集中在最初的图像处理环节，而非后半段逐字生成。图片需要先解码、缩放、切分，再通过视觉编码器转换成语言模型能读取的视觉\nembedding。模型在纯文字聊天时反应快，不代表它能迅速看清一张密集的表格。\n四是可靠性。Agent\n任务能否完成，取决于整条交互链条，绝非模型输出一段顺畅的话那么简单。它还得准确看懂屏幕、判断要不要调用工具、拿到用户授权、处理网络或系统中断，同时留好随时能恢复的任务状态。端侧模型解决的，只是这整条链路中的一步。\n主流路线：把模型做小，并把视觉做省\n过去主流的思路，是先缩减模型体量，再在架构与量化策略上精打细算，省下每次推理的开销。\nMiniCPM-V\n4.6\n就是典型的例子。它由 SigLIP2-400M 视觉编码器和 Qwen3.5-0.8B\n语言模型组合而成，总参数量约\n1.3B。它的优势在于处理手机上的图片、截图、文档、OCR、视频和 UI\n界面，而非通用的长文本推理。这个模型设计了 4x 和 16x 两档视觉 token\n压缩率：16x 跑得更快，4x\n能保留更多细节。这也解释了许多人使用时的直观体感：图片刚进入模型时处理最慢，一旦视觉\nprefill 跑完，后面的文本生成就会显得飞快。但在读取精细的 OCR\n资料时，速度模式替代不了细节模式。\n在 OpenBMB 公布的数据里，MiniCPM-V 4.6 在 4x 设置下的成绩是：OCRBench\nv2 英文 40.6、中文 47.3，OmniDocBench 84.6，DocVQA 89.4；在\nArtificial\nAnalysis 的发布测试\n中得到 13 分的 Intelligence Index 指数，在 2B\n以下的开源权重模型中名列前茅。这些跑分虽然替代不了拿真实票据或财务表格去实测，但方向很明确：先把手机需要的这双“眼睛”做出来。\nGoogle 的 Gemma 系列也是这个方向。最新的\nGemma 4\nE2B/E4B\n主打移动与边缘场景，支持文本、图片、音频和视频输入；其中 E4B\n的有效参数约 4.5B，总参数约 8B。\nArtificial\nAnalysis\n与 Google 官方数据显示，E4B 在 MMLU Pro、AIME\n2026、LiveCodeBench v6 和 Tau2 测试上的得分分别是 69.4、42.5、52.0 和\n42.2。它的策略避开了对超大稠密模型的强行硬压缩，选择在手机能容纳的内存工作集内，守住多模态感知与工具调用的能力。\n微软的 Phi 系列则更偏向纯文本。Phi-4 Mini 是个 3.8B\n左右的文本模型，适合做轻量的本地文字推理；若需要看图或语音，就得换成 Phi\n的多模态版本或其他模型。这也说明，“小而强”不能直接和“手机上的视觉\nAgent”划等号：模型的模态支持、runtime 优化以及应用集成，都缺一不可。\nMiniCPM5-1B 则提供了另一种搭配思路。它不处理视觉输入，而是聚焦于 1B\n级别纯文本模型在本地总结、任务规划、写代码和轻量工具调用上的效率。把它和\nMiniCPM-V 4.6\n放在一起看，能看到一种比单纯比较参数更实用的分工协作方式：视觉模型负责“看见和提取”，文本模型负责“读懂文字、做规划并决定下一步操作”。\nBonsai\n的不同赌注：保留大模型，压缩每个权重\nBonsai 27B 选择了不同的路线。它没有重新训练一个 1B 或 4B\n模型，而是直接拿 Qwen3.6-27B 当基座，把语言网络的权重压成二元\n{-1,+1}\n格式，每 128 个权重共享一个 FP16\n缩放因子（scale），实际折算约为 1.125 bit/weight。经过这种处理后，27.3B\n参数的语言模型在运行时的原生工作集约为 3.9 GB；加上大约 0.63 GB\n的可选视觉塔，公开发布的 MLX 权重包总共大约 5.13 GB。\n这次设计的启发点在于打破了传统的端侧选型假设，而非“27B”这一规格标签。过去的惯性思维认为，模型要进手机必须先缩小基础参数。而\nBonsai\n提出的假想是：只要量化足够激进，同时计算内核（kernel）可以直接高效处理打包好的二进制权重（packed\nbinary\nweights），就有机会把大模型自带的推理和代码能力塞进手机的内存窗口里。\n根据\nPrismML\n官方公布的数据\n，1-bit 版 Bonsai 在 15\n项思考模式（thinking-mode）测试中的平均成绩是 76.11，相比 Qwen3.6-27B\nFP16 基座的 85.07 分，保留了大约 89.5%\n的能力。细看分类，它在数学类别得分 91.66、代码类别得分\n81.88；但在工具调用上降至 66.03，视觉类别只有\n59.57，说明极端压缩并不是没有代价。在 iPhone 17 Pro Max 上，PrismML\n测得它的 TG128 decode 速度是 11 tok/s，连续生成约 10.8\ntok/s；但这组数据来自厂商自测，且演示中注明使用了预先缓存/预填充的图像上下文（cached/prefilled\nimage context），不能当成未缓存图片的冷启动 OCR 端到端速度。\n大模型加\n1-bit，还是小模型加较高精度？\n这才是 Bonsai\n真正提出的核心问题。两条路线针对不同的使用场景，在实际选型中并非由单一路线全面胜出。\n在通用文字推理、数学、写代码和边界清晰的工具任务上，“大模型加极低比特”的优势相当突出。Bonsai\n靠着 27B\n的基座，保留了小模型难以补回的知识与复杂推理空间；厂商自己的测试也说明，它在\n1-bit\n下对数学和代码的保留，明显好于工具调用和看图。如果主要拿它做离线阅读、总结、写草稿或辅助编程，且手机内存足够装下模型与短上下文，它确实触及了此前手机上未曾出现过的能力上限。\n但在面对看图、解析文档和操作手机界面时，“小模型加更高精度”未必会落后。视觉任务的瓶颈往往卡在图像编码与预处理上，而不只是语言模型的\ndecode 阶段。MiniCPM-V 4.6\n的做法是用小一点的语言模型、专门优化的视觉编码路径以及可调的压缩率，把首次读图的开销压到实用范围内；Gemma\n的边缘型号则补充了多模态与音频能力。遇到“快速看懂高分辨率票据并准确提取字段”这种具体需求，较小但专门优化过视觉的模型，可能比极低比特的大模型更可靠、更省电，工程上也更容易落地。\n公开测试数据衡量的是不同维度的侧重点。Bonsai 的 76.11 分是 PrismML 在\nH100 显卡上用 EvalScope 和 vLLM 测出的 15\n项思考模式均分，侧重评估纯文本逻辑与代码能力，却反映不出手机上的热衰减与无缓存视觉延迟；MiniCPM\n的 13 分是 Artificial Analysis\n推出的综合能力指数，无法直接衡量复杂财务单据的提取精度；Gemma\n的数据则源自其特定的多模态测试配置。即便同在 OCRBench v2 上，Bonsai\n公布的 58.65 与 MiniCPM-V 4.6 的 40.6（英文）/\n47.3（中文），也因图像预处理、prompt、视觉 token\n压缩率及评分条件的不同而无法横向换算。对产品构建者而言，这些指标揭示了模型在各自设定下的强项，但文本推理、视觉识别与设备端实际运行是三个独立的选型决策，不能试图用单一的分数来笼统覆盖。\n更具参考价值的结论，应当分条件来看：\n任务主要是文字推理、代码与短上下文综合，并且模型能稳定装进手机时，优先评估“大基座加极低比特”这条路线。\n任务主要是图片、截图、表格、票据和视频时，视觉编码效率、图像\ntoken 数量、OCR\n细节保留与首轮延迟，比语言模型的参数量重要得多；这时应该优先评估\nMiniCPM-V 或 Gemma 这类专门做端侧多模态优化的方案。\n要做高可靠的多步\nAgent，绝不能只看模型跑分。工具调用准不准、权限怎么设计、出错了能否恢复、设备发热稳不稳定，以及后台运行有什么限制，才是决定它能否替用户真正完成任务的关键。\n从演示到产品，还差一组手机上的共同实验\nBonsai 的出现说明：27B\n级别的模型不再必然被存储与内存门槛挡在手机门外。MiniCPM-V 4.6\n则说明：模型不用很大，也能把手机上的看图能力做得很顺畅。这两条路线展现的并非简单的替代关系，而是两种完全不同的端侧系统设计思路。\n接下来真正需要横向对比的，绝不是宣传页上的 token/s 速度，而是在同一部\niPhone\n上，面对同一组收据、表格、截图和屏幕交互等真实任务，同时测出冷启动耗时、无缓存图片\nprefill 延时、首 token 响应时间、decode 速率、字段级 OCR\n准确率、峰值内存、单 token 能耗以及连续跑 30\n分钟后的发热衰减。只有完成这组实测，才有可能对“手机上的大模型有什么用”给出一个有据可依的答案：端侧模型究竟更适合当一个私密的本地\ncopilot、一双看懂屏幕的眼睛，还是一个能在拿到授权后可靠执行操作的\nambient agent。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/bonsai-iphone-on-device-model-routes-20260726.html",
+      "content_chars": 4843,
+      "content_sha256": "c6156f6b9f2e9663aa54ec80df10162e5db43af926cd8848f3bd36eb3d34ddbf",
+      "content_fetched_at": "2026-07-27T22:13:32.974693+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-26T00:00:00+00:00",
+      "collected_at": "2026-07-27T22:12:44.833106+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/bonsai-iphone-on-device-model-routes-20260726.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "27B 模型进了 iPhone，问题终于从“能不能跑”变成“跑它有什么用”",
+          "url": "https://yage.ai/share/bonsai-iphone-on-device-model-routes-20260726.html",
+          "content_sha256": "c6156f6b9f2e9663aa54ec80df10162e5db43af926cd8848f3bd36eb3d34ddbf"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
