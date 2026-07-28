@@ -1,189 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-07-29",
-  "generated_at": "2026-07-28T22:13:33.865893+00:00",
-  "item_count": 7,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:e0394e312fa3ea10",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/764124-scp-sl-ac-post4754400.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-07-28T22:11:33.675493+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764124-scp-sl-ac.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764124-scp-sl-ac-post4754400.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "Currently the only spoofer well known that is purchasable hooks the AC as the game launches or hooks the api it uses to gather HWID info and changes the data sent to servers with random valid data you would need the spoofer to not only change the data the AC gathers or change it + a cleaner.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "browser",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764124-scp-sl-ac.html",
-      "content_chars": 292,
-      "content_sha256": "01a0362ee7c88f008b6d9e1333dc3aea4920050547703ebe6c391cd9e1363135",
-      "content_fetched_at": "2026-07-28T22:12:08.964664+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:df29e022ebc1776e",
-      "kind": "publish",
-      "text": "cymulate-blog published: Preparing for the AI Onslaught at Black HatRead More",
-      "actor": "cymulate-blog",
-      "actor_url": "https://cymulate.com/blog/",
-      "created_at": "2026-07-28T22:11:33.675493+00:00",
-      "html_url": "https://cymulate.com/blog/preparing-for-the-ai-onslaught-at-black-hat/",
-      "title": "Preparing for the AI Onslaught at Black HatRead More",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Preparing for the AI Onslaught at Black Hat\nBy:\nBrian Moran, VP of Product Marketing\nJuly 28, 2026\nAI will be everywhere at Black Hat 2026. Again.\nThankfully, the conversation is finally moving past booth signage, dashboard sparkle and “ask me anything” copilots toward something more useful: AI embedded into how security teams prioritize, investigate, remediate and prove outcomes.\nAs attackers use AI to move faster and scale broader, defenders need more than another chat window. They need acceleration without more headcount, more tool sprawl or more brittle automation.\nAt Cymulate, we see this as a turning point. AI in cybersecurity can’t stop at chat interfaces or isolated “copilots.” It needs to become operational: taking action, orchestrating workflows and continuously improving security posture based on real-world evidence. That’s why we’ve been investing in agentic cyber defense engineering -- a practical approach that uses autonomous, goal-driven agents to help security teams measure exposure, prioritize what matters and drive mitigation from findings to fixes.\nAnd at Black Hat, we’ll be sharing more about what’s next. If you are in Las Vegas for the conference, please make sure you stop by booth 1369 or\nschedule a meeting\n.\nFrom AI assistants to agentic cyber defense engineering\nSecurity teams have experimented with automation for years: playbooks, scripts, SOAR and rule-based workflows. Those tools can be effective, but they often require constant tuning and assume that the environment is static. Reality is the opposite -- modern environments change daily and the threat landscape changes hourly.\nAgentic systems are designed for that reality. Instead of executing a rigid sequence of steps, they pursue an objective, adapt to constraints and collaborate with people and other systems. Applied to cyber defense engineering, this means moving beyond “tell me what’s wrong” toward “help me\nfix\nwhat’s wrong, validate it and keep it fixed.”\nWe introduced this approach in our post on agentic cyber defense engineering, outlining how agentic capabilities can continuously translate security intent into measurable outcomes across environments and controls. (Read more at\nIntroducing Agentic Cyber Defense Engineering\n.)\nIn practical terms, an agentic defense engineering model can:\nContinuously assess exposure (not just compliance)\nTurn raw findings into prioritized, context-rich tasks\nRecommend and guide remediation actions\nValidate whether mitigation works—then re-test as conditions change\nThat loop -- test, learn, mitigate, verify -- is where AI delivers real value.\nMeet Cymulate Vero AI: purpose-built for agentic defense engineering\nOne of the biggest challenges with “AI everywhere” is separating signal from noise. Generic AI models can summarize, generate and chat -- but effective cyber defense requires domain-specific reasoning, knowledge of the environment and a tight feedback loop with validation.\nThat’s where Cymulate Vero AI comes in. In our post on Vero AI and agentic cyber defense engineering, we described how Vero AI is designed to bring agentic capabilities into security operations in a way that is grounded in the Cymulate platform data, exposure context and mitigation workflows.\nThink of Vero AI as more than a conversational layer. It’s a system that can:\nInterpret exposure data in context (assets, controls, configurations, attack paths\n,\nand business risk)\nIdentify what’s actionable -- and what’s merely interesting\nHelp coordinate remediation by turning insights into concrete steps\nClose the loop with validation by re-testing and measuring progress\nIn other words, Vero AI is designed to support the operational cycle of defense engineering—not just the presentation of information.\nFurther reading\nThe Truth About Your Security: Why We Built Cymulate Vero AI\nMeet Cymulate Vero AI: the agentic AI system that validates threats, proves defenses and drives action.\nRead More\nThe missing link: turning findings into fixes\nEvery security leader knows the pain: assessments generate findings, findings generate tickets and tickets generate… delay. Even organizations with mature processes struggle to connect discovery to remediation at the pace the business demands.\nThat’s why Cymulate launched Mitigation Hub, a capability that focuses specifically on driving remediation outcomes, helping teams go from “we found issues” to “we fixed issues” and “we verified the fixes.” Our post on Mitigation Hub details how it brings structure and prioritization to the remediation process, aligning stakeholders and making it easier to track mitigation progress over time.\nFurther reading\nMitigation Hub Turns Findings into Fixes\nShiraz Arush Brinder, Senior Product ManagerAvigayil Stein, Senior Product Marketing Manager Security teams don’t need more dashboards or disconnected findings. They need a faster...\nRead More\nIn an AI-enabled world, the goal isn’t to produce more findings faster. The goal is to reduce exposure faster. Mitigation Hub supports that goal by:\nConsolidating and organizing remediation work\nHelping prioritize based on impact and feasibility\nProviding a clear workflow from issue identification to resolution\nEnabling teams to verify whether mitigation actions actually reduce risk\nThis is where agentic capabilities become especially powerful. An agent can help identify the most impactful fixes, suggest remediation steps, coordinate stakeholders and continuously validate the results -- reducing back-and-forth and speeding up the path to measurable risk reduction.\nWhat we’re excited to share at Black Hat\nAt Black Hat, Cymulate will continue the conversation about AI by focusing on what matters most: turning AI into measurable security outcomes.\nWe’ll be discussing how agentic cyber defense engineering can help organizations:\nMove from periodic assessments to continuous exposure validation\nTranslate technical signals into prioritized, actionable work\nAccelerate mitigation across teams and tools\nEstablish an evidence-based feedback loop that proves progress\nAnd yes -- we’ll have more to announce at Black Hat about how Cymulate is expanding what’s possible with agentic capabilities across the platform.\nThe road ahead: outcomes over hype\nAI will be everywhere at Black Hat. The organizations that get the most value won’t be the ones that simply “add AI” to their stack. They’ll be the ones who use AI to tighten the cycle between discovery, decision, action and verification.\nThat’s the promise of agentic cyber defense engineering -- and the direction Cymulate is building toward.\nWe look forward to connecting at Black Hat and sharing what’s next. Come see us at booth 1639.\nBrian Moran, VP of Product Marketing\nWith over a decade in cybersecurity product marketing managerial positions, VP of Product Marketing Brian Moran is a driven product manager and product marketer with a track record of launching new innovative products and reigniting the growth of mature portfolios.\nMore about Author\nTable of Contents\nFrom AI assistants to agentic cyber defense engineering\nMeet Cymulate Vero AI: purpose-built for agentic defense engineering\nThe missing link: turning findings into fixes\nWhat we’re excited to share at Black Hat\nThe road ahead: outcomes over hype\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nFeatured Resources\nView More Resources\nblog\nBeyond Validation. The Future is Agentic Cyber Defense Engineering.\nCymulate’s Vero AI powers agentic cyber defense engineering to prove, prioritize and adapt security.\nRead More\nblog\nThe Truth About Your Security: Why We Built Cymulate Vero AI\nMeet Cymulate Vero AI: the agentic AI system that validates threats, proves defenses and drives action.\nRead More\nblog\nMitigation Hub Turns Findings into Fixes\nShiraz Arush Brinder, Senior Product ManagerAvigayil Stein, Senior Product Marketing Manager Security teams don’t need more dashboards or disconnected findings. They need a faster\nRead More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://cymulate.com/blog/preparing-for-the-ai-onslaught-at-black-hat/",
-      "content_chars": 8213,
-      "content_sha256": "920f57f6ca334962d47fa5ca8861a6aaa24937019e4458ae8678feb46ccc4905",
-      "content_fetched_at": "2026-07-28T22:13:24.769155+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Cymulate Blog",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:283159a0cc7fd0a1",
-      "kind": "publish",
-      "text": "rastamouse published: COFF Mixing - Hiding in Plain Sight",
-      "actor": "rastamouse",
-      "actor_url": "https://rastamouse.me/",
-      "created_at": "2026-07-28T14:27:46+00:00",
-      "html_url": "https://rastamouse.me/coff-mixing/",
-      "title": "COFF Mixing - Hiding in Plain Sight",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Capabilities written to PICO conventions can be output as PIC, PICOs, or COFFs. These formats typically require some sort of 'runner' to inject them into memory - whether that's a shellcode runner, PICO runner, or COFF/BOF runner. There are several challenges with memory-injected content, including:\nRW/RX memory allocation/flux.\nUnbacked RX memory or janky module stomping.\nCall stack analysis of WinAPI calls.\nThe\nSimple Loader\ntakes a COFF, turns it into a PICO, and pairs it with a loader. The following call stack is from a memory-injected PICO executing MessageBoxA:\n# Child-SP RetAddr Call Site\n00 0000000d`b7fffc58 00007ff4`dde6002d USER32!MessageBoxA\n01 0000000d`b7fffc60 0000000d`b7fffd50 0x00007ff4`dde6002d\n02 0000000d`b7fffc68 00000133`170e1360 0x0000000d`b7fffd50\n03 0000000d`b7fffc70 00000000`00000000 0x00000133`170e1360\nCOFF Mixing\nis an idea to mix a capability with benign code and output a PE-ready COFF. Linking said COFF to a PE frees us from memory-injected content as the capability lives in image-backed memory instead.\nThe following is a basic program that has a PE-ready entry point which just calls the capability.\n#include <windows.h>\n//\n// basic pico convention\nvoid go( );\n//\n// pe-ready entry point\nint main( int argc, char * argv[ ] )\n{\ngo( );\nreturn 0;\n}\nmain.c\nThe capability is merged with this program via a specification file:\ncapability.x64:\npush $OBJECT\nmake coff +optimize +mutate\nload \"../simple_pic/bin/services.x64.o\"\nmerge\ndfr \"resolve\" \"ror13\" \"KERNEL32, NTDLL\"\ndfr \"resolve_ext\" \"strings\"\nmergelib \"../libtcg/libtcg.x64.zip\"\nexport\nx64:\n.capability\nmake coff +unwind\nload \"bin/main.x64.o\"\nmerge\nexport\nmix.spec\nThis works in two steps:\nPrepare the capability by merging DFR functionality and optionally perform link-time optimization, mutations, ised surgery, etc.\nMerge the processed capability into the PE-ready COFF. The\n+unwind\noption generates the correct .xdata and .pdata sections for stack unwinding to work on x64.\nThe\ncpl\nutility can produce the PE-ready COFF, e.g:\ncpl link mix.spec ../../demo/test.x64.o out.x64.o\n. Then that COFF can be linked to a Windows PE:\nx86_64-w64-mingw32-gcc -mwindows out.x64.o -o out.x64.exe\n.\nExecuting the PE produces the following call stack:\n# Child-SP RetAddr Call Site\n00 000000c3`5c1ff9c8 00007ff6`f9aa1932 USER32!MessageBoxA\n01 000000c3`5c1ff9d0 00007ff6`f9aa15a9 out_x64+0x1932\n02 000000c3`5c1ffa00 00007ff6`f9aa10d9 out_x64+0x15a9\n03 000000c3`5c1ffa30 00007ff6`f9aa1436 out_x64+0x10d9\n04 000000c3`5c1ffad0 00007ffe`691de957 out_x64+0x1436\n05 000000c3`5c1ffb00 00007ffe`6b08ad6c KERNEL32!BaseThreadInitThunk+0x17\n06 000000c3`5c1ffb30 00000000`00000000 ntdll!RtlUserThreadStart+0x2c\nSymbols\nOpening the PE in a tool like\nBinary Ninja\nwill reveal symbols that are present in the capability.\nThese can be removed frm the COFF using the\nstrip\ncommand:\nload \"bin/main.x64.o\"\nmerge\nstrip \"findFunctionByHash, resolve_ext, ParseDLL, go, hash_function, isForwardedFunction, GetDataDirectory, hash_module, findModuleByHash, resolve\"\n💡\nUse\ncoffparse\nto get a list of symbols in the COFF.\nThey will then be harder to identify in the final PE.\nFunction ordering\nInstead of just merging a simple PE entry point, you can merge lots more benign code to make the PE look more legitimate. I found a library that contains lots of mathematical functionality.\nGitHub - ohirose/bcpd: Domain Elastic Transform / Bayesian Coherent Point Drift\nDomain Elastic Transform / Bayesian Coherent Point Drift - ohirose/bcpd\nI built several of the .c files to their own COFF objects:\nx64: bin\n$(CC_64) $(CFLAGS) -c src/main.c -o bin/main.x64.o\n$(CC_64) $(CFLAGS) -c src/digamma.c -o bin/digamma.x64.o\n$(CC_64) $(CFLAGS) -c src/dijkstra.c -o bin/dijkstra.x64.o\n$(CC_64) $(CFLAGS) -c src/heap.c -o bin/heap.x64.o\n$(CC_64) $(CFLAGS) -c src/kernel.c -o bin/kernel.x64.o\n$(CC_64) $(CFLAGS) -c src/median.c -o bin/median.x64.o\n$(CC_64) $(CFLAGS) -c src/misc.c -o bin/misc.x64.o\n$(CC_64) $(CFLAGS) -c src/mt19937-64.c -o bin/mt19937-64.x64.o\n$(CC_64) $(CFLAGS) -c src/stat.c -o bin/stat.x64.o\n$(CC_64) $(CFLAGS) -c src/util.c -o bin/util.x64.o\nMakefile\nAnd then merged each one into the PE-ready COFF:\n.capability\nmake coff +unwind +disco\nload \"bin/main.x64.o\"\nmerge\nload \"bin/digamma.x64.o\"\nmerge\nload \"bin/dijkstra.x64.o\"\nmerge\nload \"bin/heap.x64.o\"\nmerge\nload \"bin/kernel.x64.o\"\nmerge\nload \"bin/median.x64.o\"\nmerge\nload \"bin/misc.x64.o\"\nmerge\nload \"bin/mt19937-64.x64.o\"\nmerge\nload \"bin/stat.x64.o\"\nmerge\nload \"bin/util.x64.o\"\nmerge\nmix.spec\nAdding the\n+disco\noption means that the capability's code will be randomly shuffled in with the benign code. You can also bury execution of the capability somewhere within the benign code. For example, modify\ndigamma\nto call\ngo\n:\ndouble digamma (double x)\n{\ndouble r, f, t;\nr = 0;\nwhile (x<=5)\n{ r -= 1/x;\nx += 1;\n}\nf = 1/(x*x);\nt = f*(-1/12.0 + f*(1/120.0 + f*(-1/252.0 + f*(1/240.0 + f*(-1/132.0\n+ f*(691/32760.0 + f*(-1/12.0 + f*3617/8160.0)))))));\ngo();\nreturn r + log(x) - 0.5/x + t;\n}\ndigamma.c\nThen have\nmain\ncall\ndigamma\ninstead of\ngo\ndirectly:\n#include <windows.h>\ndouble digamma( double x );\nint main( int argc, char * argv[ ] )\n{\ndigamma( 1 );\nreturn 0;\n}\nThat doesn't do much from a call stack perspective but it may make analysis of a PE more complicated.\nConclusion\nCOFF mixing presents the opportunity to leverage capabilities without the presumption (and IOCs) of memory-injected content. This doesn't make sense for every scenario - memory injection is still useful - but for situations where injecting capabilities isn't required, and may just introduce more IOCs, COFF mixing is certainly an interesting alternative.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://rastamouse.me/coff-mixing/",
-      "content_chars": 5637,
-      "content_sha256": "ed2b7079b31414a9e36b982db899a40baa75851254b1c9f2feb45896e3d85516",
-      "content_fetched_at": "2026-07-28T22:12:19.412766+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "Rasta Mouse",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:1def605f5260229d",
-      "kind": "publish",
-      "text": "yage-share published: 别再依赖提示词防 Agent 了：从 GitHub Secure Code Game 看红队攻防的 5 级提权",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-28T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/github-secure-code-game-prodbot-20260728.html",
-      "title": "别再依赖提示词防 Agent 了：从 GitHub Secure Code Game 看红队攻防的 5 级提权",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n安全与供应链\nGitHub Security Lab 于 2026 年 7 月 24 日推出了 Secure Code Game\nSeason 4。在这次的赛题中，官方设计了一个名为 ProdBot 的靶机。\nProdBot 的通关目标：通过自然语言交互，诱导 Agent\n绕过权限检查与隔离机制，读取存放于沙箱目录之外的敏感文件\n../password.txt\n。\n如果你想亲自上手体验这个 CTF，建议先点击\nGitHub Secure Code Game\n启动 Codespaces\n尝试通关；玩过一轮或者卡住后，再回来对照下面的 5\n级提权拆解与红队视角。\nGitHub Secure Code Game\n赛季演进：从传统代码到 Agentic AI\n从 Season 1 到 Season\n4：应用安全的范式演进\n回顾 GitHub Secure Code Game 的演进轨迹，恰好映射了过去几年软件工程与\nAI 发展的完整脉络：\nSeason 1（基础应用安全）\n：聚焦传统 Web\n与系统安全，使用 Python 与 C 语言，演练 SQL\n注入、内存溢出和路径遍历等经典漏洞。\nSeason 2（多栈与供应链安全）\n：跨越到 CI/CD\n管线与基础设施，围绕 Go、JavaScript 和 GitHub\nActions，演练自动化构建与依赖项安全。\nSeason 3（LLM\n模型安全）\n：首次引入大语言模型，聚焦基础的 Prompt\n注入、输入输出过滤与 LLM 文本交互的安全边界。\nSeason 4（Agentic AI 智能体安全）\n：以 ProdBot\n为核心，演练当模型拥有命令行执行、网页浏览、MCP\n工具调用、持久记忆与多智能体协作等自主行动能力时的复杂攻击面。\n对于 AI 应用开发者而言，Season 3 与 Season 4\n显然与我们最为相关。如果说 Season 3 防范的是“模型文本通道被污染”，那么\nSeason 4 则直击当代 Agent\n系统的软肋——当模型从“只能聊天”升级为“拥有工具与行动权”时，攻击者是如何在真实环境里完成提权的。\n当一种攻击模式被收录进 GitHub\n的入门级赛题时，说明它已经从学术论文和黑客试验场走出来，成为了大众红队的标准技能。\nLevel 1：当关键词拦截遇到\nShell 解释器\n在防护 Agent 执行 Bash 命令时，不少开发者最直觉的做法是写一句严格的\nSystem\nPrompt（如“严禁执行危险命令”），或者在代码里加几行敏感词判定，试图拦截包含\n..\n或\npassword\n的输入字符串。\n攻击者没有硬碰硬地输入\ncat ../password.txt\n，而是利用了\nShell 自身的变量扩展与字符串拼接机制。通过传入类似\nD=..; cat $D/pass\"word\".txt\n这样的指令，或者使用 Base64\n编解码语句，将原本敏感的路径在表面上拆解得干干净净。Agent\n在接收到需求后，顺理成章地生成了这段看似合规的脚本。\n这暴露出字面量校验在动态解释器面前的局限。前端或 Guardrail\n校验只能检查静态文本，避开了对变量\nD\n和拆分字符串\n\"word\"\n的拦截；然而当这段命令投递给 Bash 解释器时，Bash\n在运行期完成了变量扩展与字符串拼接，精确还原出了越界读取敏感文件的真正动作。\nLevel 2：隐藏在网页里的控制权\n进入第二个关卡，系统禁止了直接请求敏感文件的指令，但在处理常规任务（例如“帮我总结这个网页的内容”）时，允许\nAgent 访问外部 URL 并读取网页内容。\n攻击者并不在对话框里直接下达恶意命令，而是将攻击语句嵌入到 Agent\n需要抓取的外部网页中。网页内部放置了带有高优先级覆盖语气的 Prompt\n说明，要求读取沙箱外的文件。\n当 Agent 调用 Web 浏览工具把网页抓取回来时，外部数据被直接填入了 LLM\n的 Prompt\n上下文中。在当前大语言模型的架构中，从外部读取的数据与系统原有的控制指令共享同一个上下文空间。Agent\n无法识别这段文本究竟是“被分析的客观数据”还是“必须遵守的最高指令”，最终顺从地执行了网页中的恶性文本，调用底层能力拿到了敏感文件。\nLevel 3：被毒化的上下文通道\n系统在第三关引入了基于 MCP 架构的工具链，为 Agent\n提供了标准化的工具调用机制，试图通过协议规范来管控输入和输出。\n攻击者将攻击逻辑隐藏在 MCP\n工具的说明文档（Docstring）中，或者通过上游工具的返回数据进行注入。\nAgent\n在挑选工具或接收工具输出时，解析了这些包含恶意指令的说明与文本。上游工具返回的数据像一把“毒匙”，诱导\nAgent\n在调用后续的高权限工具时，把包含越界读取路径的参数透传了过去。协议本身能够约束参数的格式，却无法鉴别上下文里的自然语言内容是否受过污染，导致工具链形成了连锁失控。\nLevel 4：跨 Session\n的隐蔽提权\n到了第四关，Agent 挂载了具备全局文件与网络读写能力的 Skill\n插件，并启用了跨 Session 记忆功能，以支持连续的自动化任务。\n攻击者在一次看似普通的对话中，诱导 Agent\n将特定的恶性状态写入持久化记忆数据库；或者通过特定条件唤醒拥有高权限的\nSkill。\n在随后发起的全新对话中，用户仅仅发起了一项合规的日常查询。然而 Agent\n在初始化时读取了被毒化的历史记忆，将旧有的恶意上下文混入了当前决策逻辑，自动触发了具备全局读写能力的\nSkill 去读取沙箱外的敏感文件。持久化记忆打破了对话 Session\n之间的隔离边界，把一次性注入转变为长期的持久化后门。\nLevel 5：帮凶竟是我自己\nMulti-Agent 混淆代理人（Confused\nDeputy）提权机制\n在最终关中，系统采用了多 Agent 协作架构。低权限的 Subagent\n专门用于处理不可信的外部输入，高权限的 Parent Agent\n则负责指挥与调度。\n攻击者向低权限 Subagent 提交恶意数据。Subagent\n在完成处理后，将包含了恶性指令的内容写入了生成的中间工件（Child\nArtifact）中。\n当高权限 Parent Agent 提取并解析这个 Child Artifact\n时，它缺乏对工件内部数据来源的显式鉴别，把工件里的攻击语句误认为是来自\nSubagent\n的合法控制指令并予以执行。这是典型的混淆代理人场景：虽然架构上设计了高低权限隔离，但\nParent Agent 盲目信任了 Subagent 产出的工件，低权限 Subagent\n无意中成为了攻击者的帮凶，替攻击者骗取了高权限执行权。\n实践者的落脚点：从文本防御走向物理隔离\n拆解完 ProdBot 的这 5 个关卡，红队视角的变迁非常清晰：Agent\n攻防的本质不是在语言层面去“猜模型会做出什么回应”，而是跟踪指令与数据如何在系统架构中流转。\n单靠 Guardrail 提示词去“劝阻”模型，都无法在 Shell\n语法扩展、上下文混淆、工具链毒化、记忆持久化和多智能体工件传递面前提供确定性防御。\n真正稳固的安全边界，不能建立在对自然语言输出的概率预测上，而必须落在架构设计上：将\nShell 命令行限制在严格隔离的物理沙箱中，在 MCP 和 Skill\n层面实施最小权限原则，并在多 Agent\n架构中对工件内容进行严格的上下文解耦与数据溯源。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/github-secure-code-game-prodbot-20260728.html",
-      "content_chars": 3100,
-      "content_sha256": "3bacc247842f96adf20c660cc79fe805bc48450c6abc8a877cd8f3a26e0c7e49",
-      "content_fetched_at": "2026-07-28T22:12:18.851423+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:cf545b6e3ebdcd3b",
-      "kind": "publish",
-      "text": "yage-share published: 公开信背后的立场与算盘：美国“开放权重”大论战拆解",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-28T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/open-weights-american-ai-leadership-20260728.html",
-      "title": "公开信背后的立场与算盘：美国“开放权重”大论战拆解",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI行业观察\n模型与算法\n一份签署名单背后的阵营对峙\n7 月 24 日，英伟达官网上悄悄挂出了一份叫\n《Open\nWeights and American AI Leadership》\n的联合公开信。黄仁勋还在社交平台 X\n上发了他人生中第一条推文专门来转发它。但比这份声明本身更有意思的，是下面那一排名字：英伟达、Meta、微软、IBM、戴尔、AMD、Hugging\nFace、a16z 以及 Y\nCombinator，硬件厂商、开源龙头、云巨头与顶级风投全到齐了。\n有趣的是，7 月 24 日首发时，名单上并没有 OpenAI、Google 以及\nAnthropic 的名字。然而在随后的 48 小时内，局势迅速分化：OpenAI 和 Google\n在周末（7 月 25–26 日）选择顺应舆论大势补签了公开信；唯独\nAnthropic\n（以及 Amazon）未参与签署。这也让 Anthropic\n成了备受关注的坚守者，引发了开源社区的集中讨论。\n这种“谁签了、谁补签了、谁未签署”的直观对照，把当下美 AI\n产业的裂痕看得清清楚楚——这不只是一场行业道德宣誓，而是开源产业链联盟与前沿闭源护城河之间的一次公开对阵。而\nAnthropic 的这一决定，也直接引发了随后 7 月 27 日 CEO Dario Amodei\n发文阐述其政策框架与反击。\n开源产业链联盟与闭源前沿实验室阵营划分\n公开信打出的招牌是历史经验：1980 年代 Linux 和 Apache\n这些开源软件打破了专有软件的垄断，才筑起了今天全球互联网、美军系统与科研机构的数字底座。公开信据此亮出观点：美国\nAI\n的领导力不单取决于一两家前沿闭源模型，而在于能不能建立一个能渗透进千行百业的开放生态。\n拆开商业版图：大家都在算什么账？\n如果把这 25\n家公司的算盘拆开来看，会发现大家站在一起，其实不是为了什么抽象的技术理想，纯粹是因为各自手里的生意账：\n卖硬件的厂商（英伟达、AMD、戴尔）\n：逻辑最直接。如果大家都只用集中式的闭源\nAPI，算力就被锁在少数几个巨头的数据中心里。只有当模型权重开源，成千上万的企业能在本地或者私有云里跑起来，才会有铺天盖地的私有算力需求。\n做开源模型的龙头（Meta、Mistral AI、Hugging\nFace）\n：要的是技术栈的主导权。Meta 用 Llama\n系列把全球开发者的工具链和习惯绑定在自己身上，顺便用免费模型直接把闭源\nAPI 的高毛利好日子给搅黄了。\n风投机构（a16z、Y\nCombinator）\n：心里想的是自家投的成百上千家初创公司。小团队哪有钱去烧几亿美元做预训练？天天按每百万\nToken 15 美元给前沿闭源 API\n缴税，现金流很快就会见底；而靠开源大模型蒸馏出专用小模型，Token\n成本能直接掉到 0.2 美元以下，这是初创公司能活下去的商业底线。\n企业级 SaaS\n和安全巨头（Palantir、CrowdStrike、ServiceNow、Box、Replit）\n：干的是国防和内网的活，最怕数据外流。前阵子\nAnthropic 的 Fable 5 和 Mythos 5\n被政府要求限制外国人访问，公司一时难以在后台精确识别调用者国籍，最终被迫全局暂停服务。集中式\nAPI\n随时可能因为合规问题被单点切断的软肋暴露无遗，而拿在自己手里的模型参数一旦下载了就谁也拿不走。\n云厂商（微软）\n：微软玩得最活，两头下注。它既是\nOpenAI 最大的金主，又在 Azure 上把 Llama、DeepSeek 和 Qwen\n统统架好。模型开不出名并不重要，只要你的工作负载跑在 Azure\n的云上，它就能稳稳赚到钱。\n“AI 共产主义”标签与蒸馏生命线\n随着两边阵营动真格，舆论场上的嘴仗也越打越热闹。比如 OpenAI\n的战略主管迪恩·鲍尔（Dean\nBall）等闭源派评论家在公开讨论中甩出了一个听起来很耸动的词：‘AI\n共产主义’。他的逻辑是，把动辄耗资几亿美元训练出来的模型免费发出来，等于把\nAI\n强行变成了免费的公共设施，这会把资本继续砸钱预训练的积极性给抹杀掉。但大卫·萨克斯（David\nSacks）、马克·安德森（Marc Andreessen）以及 Meta\n这帮开源派立马反唇相讥，指责所谓的‘AI\n共产主义’纯粹是闭源巨头借着监管名义搞垄断的遮羞布。\n这场嘴仗背后，真正牵动开发者神经的是对“蒸馏”的定义。公开信在四大政策诉求——扩大初创公司算力访问、投资公共训练资产与评测框架、避免早熟限制、明确保护模型蒸馏——中，专门开辟段落强调蒸馏技术的合法性。\n集中式 API\n交付通道与本地开放权重控制权对比\n用 70B/405B 大模型的输出来教 8B/14B 小模型，是开发者把首 Token\n延迟压到 100ms 以内、把模型塞进复杂 Agent\n工作流里的关键手艺。闭源实验室一直向政府游说，想把蒸馏定性为不正当抽取并搞笼统限制；而公开信明确警告，绝不能把合法的蒸馏技术与非法侵权混为一谈。如果蒸馏被一刀切限制，广大初创公司将直接丧失定制模型与控制成本的自主权。\n防守者的现实陷阱：集中式\nAPI 停服黑天鹅\n为了证明开放权重的不可替代性，公开信特别提及了集中式系统的单点故障风险。这并非虚构的担忧，今年\n6 月在美科技界发生的 Anthropic 停服事件就是一个极其沉重的现实例证。\n当时，商务部向 Anthropic 发出指令，要求限制特定外国主体访问其最新的\nFable 5 与 Mythos 5 模型。然而，统一运营集中式 API 的 Anthropic\n发现，要在毫秒级的接口调用中实时校验每个请求背后的真实国籍极为困难。为了避免合规踩雷，Anthropic\n最终采取了严厉的自保措施——直接对全球客户临时停服。这次黑天鹅事件导致大量依赖\nFable 5 接口的企业自动化工作流瞬间瘫痪。\n这件事直接震撼了 Palantir、CrowdStrike\n这类国防与网络安全供应商。集中式 API\n的开关掌握在服务商与监管机构手中，哪怕你支付了服务费，服务也可能因为一条行政指令在一夜之间化为乌有。开放权重则彻底打破了这种单点控制：模型下载并部署在私有服务器后，运行权与控制权完全交交给了企业自己，外界无法通过远程物理开关将其收回。\n中国开放权重的杠杆效应与华盛顿的真实选择\n我们很多在做 AI 应用的开发者，手里其实都在用 DeepSeek、Qwen 或者\nKimi。中国开源模型的套路非常实在：用极低成本甚至免费的顶尖模型，去打掉美国闭源\nAPI 的溢价；同时像当年的 Android 一样，把全球开发者的分词标准和 Token\n架构都给占领了。\n更有意思的是，这个现实反而成了美股开源巨头向华盛顿摊牌的王牌。他们在公开信里直接对政策制定者说：如果你在美国把开源给限制了，开源并不会消失，全球开发者只会转身全跑去用中国的开源模型。\n华盛顿的政策管道目前其实还在拉锯。7 月 13\n日，《华盛顿邮报》曾透露过一项关于“中国模型参照线”的内部讨论，看是不是要以中国领先开源模型的能力作为限制参照；行政监管上，拜登-特朗普过渡期延展的\nEO 14409 行政令聚焦在高级网络攻击能力的测试上，而 BIS 4E091\n扩散规则目前处于不予执行状态。这些迹象都说明，公开信是一场在政策落地前发起的预先游说。\nDario\nAmodei 的“第三条路线”：把安全、生意与国安合在一起讲\n面对开源公开信的攻势，加上外界议论闭源巨头是不是在拿安全当借口搞垄断，Anthropic\nCEO Dario Amodei 于 7 月 27 日也发表了一篇声明\n《Our\nposition on open-weights models》\n。他在里面第一句就澄清：Anthropic\n从未要求一刀切禁止开源模型。接着，他开出了一套自己的政策处方：不禁用开源权重，但要卡住高端芯片出口、打击工业级蒸馏，并且对前沿大模型做强制安全测试。\n看 Dario 这篇声明，会发现他的思考其实很符合 Anthropic\n一贯的逻辑，把几件事情揉在了一起：\n首先是技术层面的真实担忧。Anthropic 从成立第一天起，就把\nRSP（责任缩放策略）\n和安全防范放在最核心的位置。开源模型有一个物理现实：权重一旦发出去，用户下载到本地，原本在云端设好的安全护栏很容易被微调剥离，也没法像集中式\nAPI\n那样随时在线发补丁。在真正的生化风险或自动化黑客攻击面前，这种“一旦散布就无法收回”的特点确实是个棘手的工程问题。\n但与此同时，这套安全逻辑也正好护住了闭源模型最大的生意账。现在大模型蒸馏太普遍了，如果初创团队都能用极便宜的价格，靠蒸馏把开源小模型教得接近顶尖大模型的水平，那\nAnthropic 烧掉几亿甚至几十亿美元做预训练的高价 API 就很难卖出溢价。Dario\n在声明里专门把“打击工业级蒸馏”提出来，客观上也保住了前沿闭源预训练的商业回报。\n最后是他在华盛顿的表达方式。在政策制定者的耳朵里，纯粹的技术安全讨论或者企业间关于利润的抱怨很难引起重视，而“地缘政治与竞争”则是华盛顿最关心的议题。Dario\n把技术上“开源不可控”的隐患和商业上“蒸馏侵蚀利润”的现实，顺理成章地对接到了国家安全与出口管制的议程中。\n在控制权分化中寻找架构解法\n看懂了 2026 年 7 月 24 日发布的《Open Weights and American AI\nLeadership》公开信与 Dario Amodei 7 月 27\n日的连夜回应，首先得分清产业游说和正式立法的界限，同时也需要明确权重开放并不等同于训练数据、源代码与配方的完全开源。\n对我们开发者来说，公开信背后的博弈预示着未来的技术环境演变：集中式\nAPI 容易受制于合规审查与单点停服，而 Dario\n推动的“蒸馏限制”和“前沿管制”又给未来的模型定制埋下了政策变数。在自己的系统设计里，随时保留集中式\nAPI\n和本地开放权重模型之间的动态切换能力，才是应对未来无论政策怎么变、商业怎么打的最踏实的解法。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/open-weights-american-ai-leadership-20260728.html",
-      "content_chars": 4153,
-      "content_sha256": "552f28eedbed35612e73147cecd924eb108530700e9e01681e73ea9d0fac7b2a",
-      "content_fetched_at": "2026-07-28T22:12:19.109895+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:2f43f6c3b58deeb4",
-      "kind": "publish",
-      "text": "yage-share published: 为什么 SWE-bench 高分，在大厂 Kotlin 项目里依然会打转？",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-07-27T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/jetbrains-kotlin-benchmark-reframe-20260727.html",
-      "title": "为什么 SWE-bench 高分，在大厂 Kotlin 项目里依然会打转？",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Agentic AI\nAI 评估\n如果只看\nSWE-bench\n或各类公开排行榜，很多团队在选 AI Coding Agent\n时都会产生一种错觉：某个模型在 Python 榜单上刷出了 80%\n以上的成功率，拿进公司项目应该也能自动修 Bug、发\nPR。在真实的业务项目里，Agent\n不是看不懂报错，就是在极其耗时的构建日志和类型约束里盲目试错。\n这个落差引发了一个贯穿选型始终的核心问题：我们究竟该怎样测量 AI\nCoding Agent，才能真正预测它在生产代码库里的实际工程 ROI？\n为什么在\nPython 上刷出来的调试策略，换到 Kotlin 里就失灵了？\n通用榜单之所以频繁在企业落地中失真，最直接的原因就是它把 Python\n语境下的解题习惯，误当作了所有语言通用的能力。\n以\nSWE-bench\n为例，它的基准几乎完全建立在 Python 开源项目上。\nOpenAI\n对 SWE-bench Verified 进行审计\n时曾指出，高失败样本中超过 59.4%\n存在测试或题述缺陷，且预训练数据污染显著。但比起数据缺陷本身，更深刻的问题在于：大家很容易有一种直觉，觉得\nPython 代码简单、LLM 的预训练数据集中 Python 占比又极大，Agent 在 Python\n上表现好，迁移到 Kotlin 或 Java\n上自然也差不到哪里去。但这恰恰混淆了\n预训练数据密度\n与\n语言类型系统约束\n的底层物理差异。\nPython 的优势在于极高的预训练数据密度，模型写 Python\n几乎是直觉反射。但在 Agent\n自主寻优和纠错的闭环里，动态类型反而是一根隐形的绊脚石。Python\n代码中的语法错漏或类型传错，在编辑阶段是毫无提示的。Agent\n必须运行完整测试套件，且执行流唯有精准走到包含缺陷的那条代码路径，才能在堆栈追踪里拿到报错。这种依赖运行时的反馈路径，既漫长又充满随机性。\nKotlin 和 Java 这类静态强类型语言正好相反。Language Server\n和编译器检查不需要真正执行代码，就能在编辑瞬间给出确凿的类型不匹配、空指针风险或缺失参数报错。这种就地、确定性的静态诊断，相当于在\nAgent\n纠错的路上设了实时路标，大幅缩短了它的探路路径。静态语言真正的工程阻力，在于端到端验证时的物理开销——每次想确认整个流程是否通过，都伴随着启动\nGradle Daemon、解析 KTS 脚本、求解多模块依赖拓扑以及 KSP 代码生成。\n这就构成了两种生态完全不同的工程摩擦：\nPython\n靠高密度的预训练直觉生成代码，却依赖漫长且不确定的动态运行去捕获类型报错；Kotlin\n拥有极精准的编辑期静态诊断，但每次端到端测试校验都伴随着重型 Gradle\n构建的资源等待。\n一个在 Python 语境下靠频频试错就能逼近正确 Patch 的 Agent，在 Kotlin\n项目里很快就会被重型构建拖垮。\n同样是 Opus 4.7，差出 4%\n成功率的真正原因\n理解了编译型生态的工程摩擦，再来看真正的 Kotlin 评测，就会发现一个在\nPython 榜单上被完全掩盖的变量：外层 Harness。\n2026 年 7 月 24 日 JetBrains 发布的\nKotlin\nBenchmark 官方公布数据\n（源码见\nKotlin/kotlin-swe-bench\n仓库\n），用 8 个开源项目（如\nktlint\n,\ndetekt\n,\nokhttp\n,\nAnki-Android\n）的\n105 个真实工程任务，以及\nHarbor Agent\n评估框架\n的 Docker\n容器隔离环境，首次提供了观察这个变量的标准样本。\n首测公布的数据呈现出一个非常有意思的对比：在底层模型同为 Opus 4.7\n的情况下，Claude Code 达到了 85.71%（90/105）的成功率，而 JetBrains\n自家的 Junie 则是 81.9%（86/105）。\n同样的模型智商，换了外层 Harness，结果拉开了近 4\n个百分点的差距。如果深入到 Agent 处理 Gradle\n构建的现场，就会发现这个差距发生在对报错日志的“解毒”与“分级编排”上。\n当 Gradle\n编译失败时，终端吐出的往往是数百行交织着守护进程任务树、Task\n依赖失败与堆栈信息的无序日志。如果 Harness 粗暴地把全量 log\n原封不动塞进上下文，巨大的垃圾信息会瞬间污染 Agent\n的上下文窗口并诱发幻觉。优秀的 Harness\n建立的是一套\n分级反馈回路（Tiered Feedback\nCircuit）\n：在修改代码后，它优先利用 Language Server\n在文件编辑层级捕获静态报错，就地清零语法与类型问题；只有在关键节点才发起一次真正的\nGradle\n构建，并从冗长的输出中精准清洗提取出阻断构建的那几行符号错误。\n这解答了选型里最关键的观察：评测 Coding Agent\n的最小有效单位绝不是单一的模型，而是\n模型 x Agent Harness x\n语言生态 x 真实仓库\n。Harness\n在静态诊断嗅探和重型构建清洗上的设计，决定了底层模型的智商到底是被臃肿的构建日志吞噬，还是被精准转化为有效代码。\n放弃看通用榜单采购，拿公开种子建私有微评测\n理清了 Harness\n的编排逻辑，也就回答了选型里最大的困惑：为什么再权威的公开榜单，都不能直接拿来当采买手册？\n因为公开 Benchmark 考核的是 Agent 在通用开源项目（如\nokhttp\n）里的解题能力，这些项目遵循的是公认的标准公共库模式。但企业生产环境的绝大多数真实\nBug，并不是卡在通用算法上，而是嵌在团队自身的\n隐性架构约束（Implicit\nArchitectural Constraints）\n中。\n在具体的业务代码库里，一行看起来完全符合 Kotlin\n语法和公共最佳实践的修改，可能会悄悄破坏内部框架自定义的依赖注入作用域（如\nHilt 或 Koin\n线程约束），或者违背了未书面化的异步协程调度约定。大模型预训练见过再多开源代码，也无法凭空预知公司内部未公开的架构防线。\n通用榜单为了追求跨公司、跨团队的“绝对通用可比性”，必须过滤掉所有企业特有的私有约束。但这恰恰决定了没有任何一个通用榜单能够直接预测\nAgent 在你公司私有仓库里的真实 ROI。\n像 JetBrains Kotlin Benchmark 这样的公开基准，真正合理的定位是\nEvaluation\nSeeds（基准种子）\n。它贡献的不是排行榜上的名次顺序，而是输出了\n一套可自动化的沙箱打桩机制\n。\n团队真正需要的，是借用公开种子中的\nHarbor\n容器打包规范\n与 Verifier 校验逻辑蓝图，把团队过去半年内真实的历史 PR\n与踩坑 Issue 转化为私有代码库的断言\nVerifier，建立属于自己的私有微评测矩阵（Micro-Eval Matrix）：\n看结果与连续稳定性\n：不仅看 Pass@1，更参考 AI Agent\n可靠性评估体系中强调的连续重复运行稳定性（\np\na\ns\nk\n），观察\nAgent 是稳定修复还是靠随机试错；\n看资源消耗与构建开销\n：统计修复单个任务耗费的 Token\n成本、API 调用次数，以及卡在 Gradle 构建上的时间；\n看架构侵入与 Patch 坏味道\n：检查产出的 Patch\n是优雅契合团队现有的隐式架构规范，还是为了通过测试而引入了冗长补丁。\n从识别生态摩擦、看懂 Harness 编排，最终落脚到利用 Evaluation Seeds\n自建私有微评测，AI Coding Agent 的选型才算真正落到了工程实处。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/jetbrains-kotlin-benchmark-reframe-20260727.html",
-      "content_chars": 3186,
-      "content_sha256": "014b31a49ace5e18b9bb28ec462664af0f93f3579930d7157d9929a7eb2b8263",
-      "content_fetched_at": "2026-07-28T22:12:19.255628+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:95037461bedd6278",
-      "kind": "publish",
-      "text": "paloalto-advisory published: PAN-SA-2026-0008 Chromium: Monthly Vulnerability Update (June 2026) (Severity: HIGH)",
-      "actor": "paloalto-advisory",
-      "actor_url": "https://security.paloaltonetworks.com/",
-      "created_at": "2026-06-10T16:00:00+00:00",
-      "html_url": "https://security.paloaltonetworks.com/PAN-SA-2026-0008",
-      "title": "PAN-SA-2026-0008 Chromium: Monthly Vulnerability Update (June 2026) (Severity: HIGH)",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Palo Alto Networks Security Advisories\n/\nPAN-SA-2026-0008\nPAN-SA-2026-0008 Chromium: Monthly Vulnerability Update (June 2026)\nUrgency\nMODERATE\nSeverity\n8.4 ·\nHIGH\nExploit Maturity\nUNREPORTED\nResponse Effort\nMODERATE\nRecovery\nAUTOMATIC\nValue Density\nDIFFUSE\nAttack Vector\nNETWORK\nAttack Complexity\nHIGH\nAttack Requirements\nNONE\nAutomatable\nNO\nUser Interaction\nNONE\nProduct Confidentiality\nHIGH\nProduct Integrity\nHIGH\nProduct Availability\nHIGH\nPrivileges Required\nNONE\nSubsequent Confidentiality\nHIGH\nSubsequent Integrity\nHIGH\nSubsequent Availability\nHIGH\nJSON\nCSAF\nPublished\n2026-06-10\nUpdated\n2026-06-10\nDiscovered\nexternally\nDescription\nPalo Alto Networks incorporated the following Chromium security fixes into our products:\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html\nhttps://chromereleases.googleblog.com/2026/05/stable-channel-update-for-desktop_0877304591.html\nhttps://chromereleases.googleblog.com/2026/05/stable-channel-update-for-desktop_0841193308.html\nhttps://chromereleases.googleblog.com/2026/05/stable-channel-update-for-desktop_12.html\nCVE\nSummary\nCVE-2026-8509\nHeap buffer overflow in WebML\nCVE-2026-8510\nInteger overflow in Skia\nCVE-2026-8511\nUse after free in UI\nCVE-2026-8512\nUse after free in FileSystem\nCVE-2026-8513\nUse after free in Input\nCVE-2026-8514\nUse after free in Aura\nCVE-2026-8515\nUse after free in HID\nCVE-2026-8516\nInsufficient validation of untrusted input in DataTransfer\nCVE-2026-8517\nObject lifecycle issue in WebShare\nCVE-2026-8518\nUse after free in Blink\nCVE-2026-8519\nInteger overflow in ANGLE\nCVE-2026-8520\nRace in Payments\nCVE-2026-8521\nUse after free in Tab Groups\nCVE-2026-8522\nUse after free in Downloads\nCVE-2026-8523\nUse after free in Mojo\nCVE-2026-8524\nOut of bounds write in WebAudio\nCVE-2026-8525\nHeap buffer overflow in ANGLE\nCVE-2026-8526\nOut of bounds write in WebRTC\nCVE-2026-8527\nInsufficient validation of untrusted input in Downloads\nCVE-2026-8528\nInsufficient validation of untrusted input in SiteIsolation\nCVE-2026-8529\nHeap buffer overflow in Codecs\nCVE-2026-8530\nUse after free in Network\nCVE-2026-8531\nHeap buffer overflow in WebML\nCVE-2026-8532\nInteger overflow in XML\nCVE-2026-8533\nUse after free in Accessibility\nCVE-2026-8534\nInteger overflow in GPU\nCVE-2026-8535\nOut of bounds read in Media\nCVE-2026-8536\nInsufficient validation of untrusted input in ReadingMode\nCVE-2026-8537\nInsufficient policy enforcement in ViewTransitions\nCVE-2026-8538\nInsufficient validation of untrusted input in GPU\nCVE-2026-8539\nScript injection in SanitizerAPI\nCVE-2026-8540\nType Confusion in V8\nCVE-2026-8541\nOut of bounds read in UI\nCVE-2026-8542\nUse after free in Core\nCVE-2026-8543\nOut of bounds read in FileSystem\nCVE-2026-8544\nUse after free in Media\nCVE-2026-8545\nObject corruption in Compositing\nCVE-2026-8546\nOut of bounds read in GPU\nCVE-2026-8547\nInsufficient policy enforcement in Passwords\nCVE-2026-8548\nOut of bounds write in Media\nCVE-2026-8549\nUse after free in Media\nCVE-2026-8550\nUse after free in Google Lens\nCVE-2026-8551\nUse after free in Downloads\nCVE-2026-8552\nHeap buffer overflow in GPU\nCVE-2026-8553\nUse after free in GPU\nCVE-2026-8554\nType Confusion in ANGLE\nCVE-2026-8555\nUse after free in GTK\nCVE-2026-8556\nInappropriate implementation in ANGLE\nCVE-2026-8557\nUse after free in Accessibility\nCVE-2026-8558\nOut of bounds write in Fonts\nCVE-2026-8559\nInteger overflow in Internationalization\nCVE-2026-8560\nHeap buffer overflow in SwiftShader\nCVE-2026-8561\nIncorrect security UI in Fullscreen\nCVE-2026-8562\nSide-channel information leakage in Navigation\nCVE-2026-8563\nInsufficient policy enforcement in IFrame Sandbox\nCVE-2026-8564\nIncorrect security UI in Downloads\nCVE-2026-8565\nInappropriate implementation in Downloads\nCVE-2026-8566\nInsufficient policy enforcement in Payments\nCVE-2026-8567\nInteger overflow in ANGLE\nCVE-2026-8568\nInsufficient policy enforcement in AI\nCVE-2026-8569\nOut of bounds write in Codecs\nCVE-2026-8570\nType Confusion in V8\nCVE-2026-8571\nInsufficient policy enforcement in GPU\nCVE-2026-8572\nInsufficient policy enforcement in Network\nCVE-2026-8573\nInteger overflow in Codecs\nCVE-2026-8574\nUse after free in Core\nCVE-2026-8575\nUse after free in UI\nCVE-2026-8576\nInappropriate implementation in CORS\nCVE-2026-8577\nInteger overflow in Fonts\nCVE-2026-8578\nOut of bounds read in GPU\nCVE-2026-8579\nInsufficient validation of untrusted input in Skia\nCVE-2026-8580\nUse after free in Mojo\nCVE-2026-8581\nUse after free in GPU\nCVE-2026-8582\nObject lifecycle issue in Dawn\nCVE-2026-8583\nInsufficient policy enforcement in WebXR\nCVE-2026-8584\nInappropriate implementation in Views\nCVE-2026-8585\nInappropriate implementation in Media\nCVE-2026-8586\nInappropriate implementation in Chromoting\nCVE-2026-8587\nUse after free in Extensions\nCVE-2026-9110\nInappropriate implementation in UI\nCVE-2026-9111\nUse after free in WebRTC\nCVE-2026-9112\nUse after free in GPU\nCVE-2026-9113\nOut of bounds read in GPU\nCVE-2026-9114\nUse after free in QUIC\nCVE-2026-9115\nInsufficient policy enforcement in Service Worker\nCVE-2026-9116\nInsufficient policy enforcement in ServiceWorker\nCVE-2026-9117\nType Confusion in GFX\nCVE-2026-9118\nUse after free in XR\nCVE-2026-9120\nUse after free in WebRTC\nCVE-2026-9121\nOut of bounds read in GPU\nCVE-2026-9123\nHeap buffer overflow in Chromecast\nCVE-2026-9124\nInsufficient validation of untrusted input in Input\nCVE-2026-9126\nUse after free in DOM\nCVE-2026-9872\nOut of bounds write in GPU\nCVE-2026-9873\nUse after free in Network\nCVE-2026-9874\nUse after free in Dawn\nCVE-2026-9875\nOut of bounds read in WebGL\nCVE-2026-9876\nUse after free in WebGL\nCVE-2026-9877\nUse after free in ANGLE\nCVE-2026-9878\nUse after free in ANGLE\nCVE-2026-9879\nOut of bounds write in ANGLE\nCVE-2026-9880\nInsufficient validation of untrusted input in WebGL\nCVE-2026-9881\nUse after free in Bluetooth\nCVE-2026-9882\nInteger overflow in ANGLE\nCVE-2026-9883\nUse after free in Base\nCVE-2026-9884\nUse after free in Browser\nCVE-2026-9885\nInsufficient validation of untrusted input in UI\nCVE-2026-9886\nUse after free in Base\nCVE-2026-9887\nUse after free in Proxy\nCVE-2026-9888\nUse after free in WebView\nCVE-2026-9889\nOut of bounds read and write in Dawn\nCVE-2026-9890\nUse after free in XR\nCVE-2026-9891\nUse after free in Extensions\nCVE-2026-9892\nInappropriate implementation in Skia\nCVE-2026-9893\nUse after free in Skia\nCVE-2026-9894\nUse after free in GPU\nCVE-2026-9895\nOut of bounds read in GPU\nCVE-2026-9896\nOut of bounds write in V8\nCVE-2026-9897\nUse after free in DOM\nCVE-2026-9898\nInsufficient validation of untrusted input in GPU\nCVE-2026-9899\nUse after free in ANGLE\nCVE-2026-9900\nOut of bounds write in ANGLE\nCVE-2026-9901\nUse after free in ANGLE\nCVE-2026-9902\nUse after free in Accessibility\nCVE-2026-9903\nInsufficient validation of untrusted input in Site Isolation\nCVE-2026-9904\nUse after free in ANGLE\nCVE-2026-9905\nUse after free in Accessibility\nCVE-2026-9906\nOut of bounds write in GPU\nCVE-2026-9907\nOut of bounds read in Dawn\nCVE-2026-9908\nOut of bounds read in ANGLE\nCVE-2026-9909\nInteger overflow in Skia\nCVE-2026-9910\nOut of bounds memory access in ANGLE\nCVE-2026-9911\nInteger overflow in ANGLE\nCVE-2026-9912\nInappropriate implementation in GPU\nCVE-2026-9913\nInappropriate implementation in ANGLE\nCVE-2026-9914\nInsufficient validation of untrusted input in ANGLE\nCVE-2026-9915\nHeap buffer overflow in ANGLE\nCVE-2026-9916\nOut of bounds write in ANGLE\nCVE-2026-9917\nUninitialized Use in WebGL\nCVE-2026-9918\nInappropriate implementation in Tint\nCVE-2026-9919\nOut of bounds read in WebGL\nCVE-2026-9920\nUninitialized Use in GPU\nCVE-2026-9921\nUninitialized Use in WebGL\nCVE-2026-9922\nUse after free in GPU\nCVE-2026-9923\nUse after free in Skia\nCVE-2026-9924\nHeap buffer overflow in ANGLE\nCVE-2026-9925\nUse after free in ANGLE\nCVE-2026-9926\nHeap buffer overflow in ANGLE\nCVE-2026-9927\nUse after free in ANGLE\nCVE-2026-9928\nOut of bounds read in ANGLE\nCVE-2026-9929\nInappropriate implementation in WebGL\nCVE-2026-9930\nOut of bounds write in Dawn\nCVE-2026-9931\nUse after free in GPU\nCVE-2026-9932\nUse after free in ANGLE\nCVE-2026-9933\nUse after free in Input\nCVE-2026-9934\nUse after free in Aura\nCVE-2026-9935\nUninitialized Use in ANGLE\nCVE-2026-9936\nUse after free in GFX\nCVE-2026-9937\nUse after free in UI\nCVE-2026-9938\nInappropriate implementation in V8\nCVE-2026-9939\nHeap buffer overflow in WebCodecs\nCVE-2026-9940\nHeap buffer overflow in ANGLE\nCVE-2026-9941\nUse after free in ANGLE\nCVE-2026-9942\nUninitialized Use in ANGLE\nCVE-2026-9943\nOut of bounds read in WebGL\nCVE-2026-9944\nUninitialized Use in ANGLE\nCVE-2026-9945\nUse after free in Media\nCVE-2026-9946\nUse after free in ANGLE\nCVE-2026-9947\nUse after free in XML\nCVE-2026-9948\nUse after free in Views\nCVE-2026-9949\nUse after free in Core\nCVE-2026-9950\nInsufficient validation of untrusted input in iOS\nCVE-2026-9951\nUse after free in UI\nCVE-2026-9952\nUse after free in WebAudio\nCVE-2026-9953\nOut of bounds read in ANGLE\nCVE-2026-9954\nUse after free in TabStrip\nCVE-2026-9955\nInappropriate implementation in iOS\nCVE-2026-9956\nUse after free in iOS\nCVE-2026-9957\nUse after free in PDF\nCVE-2026-9958\nUse after free in PDFium\nCVE-2026-9959\nRace in WebRTC\nCVE-2026-9960\nInteger overflow in PDFium\nCVE-2026-9961\nUse after free in SurfaceCapture\nCVE-2026-9962\nUse after free in WebRTC\nCVE-2026-9963\nUninitialized Use in iOS\nCVE-2026-9964\nUse after free in Bluetooth\nCVE-2026-9965\nOut of bounds write in ANGLE\nCVE-2026-9966\nInteger overflow in XML\nCVE-2026-9967\nOut of bounds write in GPU\nCVE-2026-9968\nInteger overflow in V8\nCVE-2026-9969\nInsufficient validation of untrusted input in ANGLE\nCVE-2026-9970\nUse after free in WebGL\nCVE-2026-9971\nInappropriate implementation in iOS\nCVE-2026-9972\nUninitialized Use in Gamepad\nCVE-2026-9973\nOut of bounds write in V8\nCVE-2026-9974\nOut of bounds write in GPU\nCVE-2026-9975\nOut of bounds read and write in ANGLE\nCVE-2026-9976\nInappropriate implementation in USB\nCVE-2026-9977\nInsufficient validation of untrusted input in WebShare\nCVE-2026-9978\nUse after free in Glic\nCVE-2026-9979\nInsufficient validation of untrusted input in Input\nCVE-2026-9980\nInsufficient validation of untrusted input in Printing\nCVE-2026-9981\nInappropriate implementation in Skia\nCVE-2026-9982\nInsufficient validation of untrusted input in ANGLE\nCVE-2026-9983\nType Confusion in Skia\nCVE-2026-9984\nUse after free in UI\nCVE-2026-9985\nInsufficient validation of untrusted input in Media\nCVE-2026-9986\nInsufficient validation of untrusted input in OptimizationGuide\nCVE-2026-9987\nInsufficient validation of untrusted input in WebAppInstalls\nCVE-2026-9988\nUse after free in WebRTC\nCVE-2026-9989\nInappropriate implementation in Media\nCVE-2026-9990\nUse after free in WebAppInstalls\nCVE-2026-9991\nInappropriate implementation in Media\nCVE-2026-9992\nUse after free in Network\nCVE-2026-9993\nUse after free in Views\nCVE-2026-9994\nUse after free in Core\nCVE-2026-9995\nUse after free in WebXR\nCVE-2026-9996\nOut of bounds read in WebRTC\nCVE-2026-9997\nUse after free in Input\nCVE-2026-9998\nInteger overflow in Skia\nCVE-2026-9999\nInappropriate implementation in ANGLE\nCVE-2026-10000\nUse after free in Passwords\nCVE-2026-10001\nUse after free in PerformanceManager\nCVE-2026-10002\nUse after free in PDFium\nCVE-2026-10003\nUse after free in Views\nCVE-2026-10004\nInsufficient validation of untrusted input in Passwords\nCVE-2026-10005\nUse after free in WebAppInstalls\nCVE-2026-10006\nRace in WebAudio\nCVE-2026-10007\nUse after free in SVG\nCVE-2026-10008\nUninitialized Use in GPU\nCVE-2026-10009\nInteger overflow in Skia\nCVE-2026-10010\nInappropriate implementation in Input\nCVE-2026-10011\nInappropriate implementation in Skia\nCVE-2026-10012\nUse after free in Skia\nCVE-2026-10013\nUse after free in WebCodecs\nCVE-2026-10014\nUse after free in WebMIDI\nCVE-2026-10015\nInteger overflow in WTF\nCVE-2026-10016\nUse after free in DOM\nCVE-2026-10017\nOut of bounds read in Headless\nCVE-2026-10018\nInteger overflow in ANGLE\nCVE-2026-10019\nInteger overflow in ANGLE\nCVE-2026-10020\nInsufficient validation of untrusted input in Skia\nCVE-2026-10021\nInsufficient validation of untrusted input in USB\nCVE-2026-10022\nType Confusion in V8\nProduct Status\nVersions\nAffected\nUnaffected\nPrisma Browser\n< 148.18.4.217\n>= 148.18.4.217\nRequired Configuration for Exposure\nNo special configuration is required to be affected by this issue.\nSeverity:\nHIGH, Suggested Urgency:\nMODERATE\nCVSS-BT:\n8.4 /\nCVSS-B:\n9.5 (\nCVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:U/AU:N/R:A/V:D/RE:M/U:Amber\n)\nExploitation Status\nPalo Alto Networks is not aware of any malicious exploitation of this issue.\nSolution\nCVE\nPrisma Browser\nCVE-2026-8509\n148.12.1.168\nCVE-2026-8510\n148.12.1.168\nCVE-2026-8511\n148.12.1.168\nCVE-2026-8512\n148.12.1.168\nCVE-2026-8513\n148.12.1.168\nCVE-2026-8514\n148.12.1.168\nCVE-2026-8515\n148.12.1.168\nCVE-2026-8516\n148.12.1.168\nCVE-2026-8517\n148.12.1.168\nCVE-2026-8518\n148.12.1.168\nCVE-2026-8519\n148.12.1.168\nCVE-2026-8520\n148.12.1.168\nCVE-2026-8521\n148.12.1.168\nCVE-2026-8522\n148.12.1.168\nCVE-2026-8523\n148.12.1.168\nCVE-2026-8524\n148.12.1.168\nCVE-2026-8525\n148.12.1.168\nCVE-2026-8526\n148.12.1.168\nCVE-2026-8527\n148.12.1.168\nCVE-2026-8528\n148.12.1.168\nCVE-2026-8529\n148.12.1.168\nCVE-2026-8530\n148.12.1.168\nCVE-2026-8531\n148.12.1.168\nCVE-2026-8532\n148.12.1.168\nCVE-2026-8533\n148.12.1.168\nCVE-2026-8534\n148.12.1.168\nCVE-2026-8535\n148.12.1.168\nCVE-2026-8536\n148.12.1.168\nCVE-2026-8537\n148.12.1.168\nCVE-2026-8538\n148.12.1.168\nCVE-2026-8539\n148.12.1.168\nCVE-2026-8540\n148.12.1.168\nCVE-2026-8541\n148.12.1.168\nCVE-2026-8542\n148.12.1.168\nCVE-2026-8543\n148.12.1.168\nCVE-2026-8544\n148.12.1.168\nCVE-2026-8545\n148.12.1.168\nCVE-2026-8546\n148.12.1.168\nCVE-2026-8547\n148.12.1.168\nCVE-2026-8548\n148.12.1.168\nCVE-2026-8549\n148.12.1.168\nCVE-2026-8550\n148.12.1.168\nCVE-2026-8551\n148.12.1.168\nCVE-2026-8552\n148.12.1.168\nCVE-2026-8553\n148.12.1.168\nCVE-2026-8554\n148.12.1.168\nCVE-2026-8555\n148.12.1.168\nCVE-2026-8556\n148.12.1.168\nCVE-2026-8557\n148.12.1.168\nCVE-2026-8558\n148.12.1.168\nCVE-2026-8559\n148.12.1.168\nCVE-2026-8560\n148.12.1.168\nCVE-2026-8561\n148.12.1.168\nCVE-2026-8562\n148.12.1.168\nCVE-2026-8563\n148.12.1.168\nCVE-2026-8564\n148.12.1.168\nCVE-2026-8565\n148.12.1.168\nCVE-2026-8566\n148.12.1.168\nCVE-2026-8567\n148.12.1.168\nCVE-2026-8568\n148.12.1.168\nCVE-2026-8569\n148.12.1.168\nCVE-2026-8570\n148.12.1.168\nCVE-2026-8571\n148.12.1.168\nCVE-2026-8572\n148.12.1.168\nCVE-2026-8573\n148.12.1.168\nCVE-2026-8574\n148.12.1.168\nCVE-2026-8575\n148.12.1.168\nCVE-2026-8576\n148.12.1.168\nCVE-2026-8577\n148.12.1.168\nCVE-2026-8578\n148.12.1.168\nCVE-2026-8579\n148.12.1.168\nCVE-2026-8580\n148.12.1.168\nCVE-2026-8581\n148.12.1.168\nCVE-2026-8582\n148.12.1.168\nCVE-2026-8583\n148.12.1.168\nCVE-2026-8584\n148.12.1.168\nCVE-2026-8585\n148.12.1.168\nCVE-2026-8586\n148.12.1.168\nCVE-2026-8587\n148.12.1.168\nCVE-2026-9110\n148.18.2.179\nCVE-2026-9111\n148.18.2.179\nCVE-2026-9112\n148.18.2.179\nCVE-2026-9113\n148.18.2.179\nCVE-2026-9114\n148.18.2.179\nCVE-2026-9115\n148.18.2.179\nCVE-2026-9116\n148.18.2.179\nCVE-2026-9117\n148.18.2.179\nCVE-2026-9118\n148.18.2.179\nCVE-2026-9120\n148.18.2.179\nCVE-2026-9121\n148.18.2.179\nCVE-2026-9123\n148.18.2.179\nCVE-2026-9124\n148.18.2.179\nCVE-2026-9126\n148.18.2.179\nCVE-2026-10000\n148.18.4.217\nCVE-2026-10001\n148.18.4.217\nCVE-2026-10002\n148.18.4.217\nCVE-2026-10003\n148.18.4.217\nCVE-2026-10004\n148.18.4.217\nCVE-2026-10005\n148.18.4.217\nCVE-2026-10006\n148.18.4.217\nCVE-2026-10007\n148.18.4.217\nCVE-2026-10008\n148.18.4.217\nCVE-2026-10009\n148.18.4.217\nCVE-2026-10010\n148.18.4.217\nCVE-2026-10011\n148.18.4.217\nCVE-2026-10012\n148.18.4.217\nCVE-2026-10013\n148.18.4.217\nCVE-2026-10014\n148.18.4.217\nCVE-2026-10015\n148.18.4.217\nCVE-2026-10016\n148.18.4.217\nCVE-2026-10017\n148.18.4.217\nCVE-2026-10018\n148.18.4.217\nCVE-2026-10019\n148.18.4.217\nCVE-2026-10020\n148.18.4.217\nCVE-2026-10021\n148.18.4.217\nCVE-2026-10022\n148.18.4.217\nCVE-2026-9872\n148.18.4.217\nCVE-2026-9873\n148.18.4.217\nCVE-2026-9874\n148.18.4.217\nCVE-2026-9875\n148.18.4.217\nCVE-2026-9876\n148.18.4.217\nCVE-2026-9877\n148.18.4.217\nCVE-2026-9878\n148.18.4.217\nCVE-2026-9879\n148.18.4.217\nCVE-2026-9880\n148.18.4.217\nCVE-2026-9881\n148.18.4.217\nCVE-2026-9882\n148.18.4.217\nCVE-2026-9883\n148.18.4.217\nCVE-2026-9884\n148.18.4.217\nCVE-2026-9885\n148.18.4.217\nCVE-2026-9886\n148.18.4.217\nCVE-2026-9887\n148.18.4.217\nCVE-2026-9888\n148.18.4.217\nCVE-2026-9889\n148.18.4.217\nCVE-2026-9890\n148.18.4.217\nCVE-2026-9891\n148.18.4.217\nCVE-2026-9892\n148.18.4.217\nCVE-2026-9893\n148.18.4.217\nCVE-2026-9894\n148.18.4.217\nCVE-2026-9895\n148.18.4.217\nCVE-2026-9896\n148.18.4.217\nCVE-2026-9897\n148.18.4.217\nCVE-2026-9898\n148.18.4.217\nCVE-2026-9899\n148.18.4.217\nCVE-2026-9900\n148.18.4.217\nCVE-2026-9901\n148.18.4.217\nCVE-2026-9902\n148.18.4.217\nCVE-2026-9903\n148.18.4.217\nCVE-2026-9904\n148.18.4.217\nCVE-2026-9905\n148.18.4.217\nCVE-2026-9906\n148.18.4.217\nCVE-2026-9907\n148.18.4.217\nCVE-2026-9908\n148.18.4.217\nCVE-2026-9909\n148.18.4.217\nCVE-2026-9910\n148.18.4.217\nCVE-2026-9911\n148.18.4.217\nCVE-2026-9912\n148.18.4.217\nCVE-2026-9913\n148.18.4.217\nCVE-2026-9914\n148.18.4.217\nCVE-2026-9915\n148.18.4.217\nCVE-2026-9916\n148.18.4.217\nCVE-2026-9917\n148.18.4.217\nCVE-2026-9918\n148.18.4.217\nCVE-2026-9919\n148.18.4.217\nCVE-2026-9920\n148.18.4.217\nCVE-2026-9921\n148.18.4.217\nCVE-2026-9922\n148.18.4.217\nCVE-2026-9923\n148.18.4.217\nCVE-2026-9924\n148.18.4.217\nCVE-2026-9925\n148.18.4.217\nCVE-2026-9926\n148.18.4.217\nCVE-2026-9927\n148.18.4.217\nCVE-2026-9928\n148.18.4.217\nCVE-2026-9929\n148.18.4.217\nCVE-2026-9930\n148.18.4.217\nCVE-2026-9931\n148.18.4.217\nCVE-2026-9932\n148.18.4.217\nCVE-2026-9933\n148.18.4.217\nCVE-2026-9934\n148.18.4.217\nCVE-2026-9935\n148.18.4.217\nCVE-2026-9936\n148.18.4.217\nCVE-2026-9937\n148.18.4.217\nCVE-2026-9938\n148.18.4.217\nCVE-2026-9939\n148.18.4.217\nCVE-2026-9940\n148.18.4.217\nCVE-2026-9941\n148.18.4.217\nCVE-2026-9942\n148.18.4.217\nCVE-2026-9943\n148.18.4.217\nCVE-2026-9944\n148.18.4.217\nCVE-2026-9945\n148.18.4.217\nCVE-2026-9946\n148.18.4.217\nCVE-2026-9947\n148.18.4.217\nCVE-2026-9948\n148.18.4.217\nCVE-2026-9949\n148.18.4.217\nCVE-2026-9950\n148.18.4.217\nCVE-2026-9951\n148.18.4.217\nCVE-2026-9952\n148.18.4.217\nCVE-2026-9953\n148.18.4.217\nCVE-2026-9954\n148.18.4.217\nCVE-2026-9955\n148.18.4.217\nCVE-2026-9956\n148.18.4.217\nCVE-2026-9957\n148.18.4.217\nCVE-2026-9958\n148.18.4.217\nCVE-2026-9959\n148.18.4.217\nCVE-2026-9960\n148.18.4.217\nCVE-2026-9961\n148.18.4.217\nCVE-2026-9962\n148.18.4.217\nCVE-2026-9963\n148.18.4.217\nCVE-2026-9964\n148.18.4.217\nCVE-2026-9965\n148.18.4.217\nCVE-2026-9966\n148.18.4.217\nCVE-2026-9967\n148.18.4.217\nCVE-2026-9968\n148.18.4.217\nCVE-2026-9969\n148.18.4.217\nCVE-2026-9970\n148.18.4.217\nCVE-2026-9971\n148.18.4.217\nCVE-2026-9972\n148.18.4.217\nCVE-2026-9973\n148.18.4.217\nCVE-2026-9974\n148.18.4.217\nCVE-2026-9975\n148.18.4.217\nCVE-2026-9976\n148.18.4.217\nCVE-2026-9977\n148.18.4.217\nCVE-2026-9978\n148.18.4.217\nCVE-2026-9979\n148.18.4.217\nCVE-2026-9980\n148.18.4.217\nCVE-2026-9981\n148.18.4.217\nCVE-2026-9982\n148.18.4.217\nCVE-2026-9983\n148.18.4.217\nCVE-2026-9984\n148.18.4.217\nCVE-2026-9985\n148.18.4.217\nCVE-2026-9986\n148.18.4.217\nCVE-2026-9987\n148.18.4.217\nCVE-2026-9988\n148.18.4.217\nCVE-2026-9989\n148.18.4.217\nCVE-2026-9990\n148.18.4.217\nCVE-2026-9991\n148.18.4.217\nCVE-2026-9992\n148.18.4.217\nCVE-2026-9993\n148.18.4.217\nCVE-2026-9994\n148.18.4.217\nCVE-2026-9995\n148.18.4.217\nCVE-2026-9996\n148.18.4.217\nCVE-2026-9997\n148.18.4.217\nCVE-2026-9998\n148.18.4.217\nCVE-2026-9999\n148.18.4.217\nWorkarounds and Mitigations\nNo known workarounds exist for this issue.\nCPE Applicability\ncpe:2.3:a:palo_alto_networks:prisma_browser:*:*:*:*:*:*:*:*\nis vulnerable\nfrom (including)148.18.4\nand\nup to (excluding)148.18.4.217\nTimeline\n2026-06-10\nInitial Publication",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http_llm_blocks",
-      "content_source_url": "https://security.paloaltonetworks.com/PAN-SA-2026-0008",
-      "content_chars": 19436,
-      "content_sha256": "ebfe7c0639909cd061d3af9dd77dea3e20232f59f5df9bcb8b8a8aacf224b672",
-      "content_fetched_at": "2026-07-28T22:13:31.505249+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "Palo Alto Networks Security Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-07-29",
+  "collect_window": {
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-07-28T22:11:33.675493+00:00",
+    "hours": 1158
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "30403622470",
+    "commit": "22fcf12"
+  },
+  "stats": {
+    "total": 7,
     "by_kind": {
       "publish": 7
     },
@@ -199,8 +30,575 @@
       "yage-share": 3,
       "paloalto-advisory": 1
     },
+    "failed_lists": [
+      "redsiege-blog"
+    ],
+    "sources_ok": 50,
+    "sources_failed": [
+      {
+        "id": "redsiege-blog",
+        "error": "no_candidates"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 7,
+      "rss": 33
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 13,
+      "calls": 13,
+      "prompt_tokens": 12846,
+      "completion_tokens": 3001,
+      "total_tokens": 15847,
+      "prompt_cache_hit_tokens": 8576,
+      "prompt_cache_miss_tokens": 4270
+    },
     "by_content_status": {
       "ok": 7
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:e0394e312fa3ea10",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764124-scp-sl-ac-post4754400.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764124-scp-sl-ac.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/764124-scp-sl-ac-post4754400.html",
+      "at": "2026-07-28T22:11:33.675493+00:00",
+      "external_id": "a:e0394e312fa3ea10",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764124-scp-sl-ac.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764124-scp-sl-ac-post4754400.html",
+      "content": "Currently the only spoofer well known that is purchasable hooks the AC as the game launches or hooks the api it uses to gather HWID info and changes the data sent to servers with random valid data you would need the spoofer to not only change the data the AC gathers or change it + a cleaner.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764124-scp-sl-ac.html",
+      "content_chars": 292,
+      "content_sha256": "01a0362ee7c88f008b6d9e1333dc3aea4920050547703ebe6c391cd9e1363135",
+      "content_fetched_at": "2026-07-28T22:12:08.964664+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-07-28T22:11:33.675493+00:00",
+      "collected_at": "2026-07-28T22:11:33.675493+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/764124-scp-sl-ac.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764124-scp-sl-ac-post4754400.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764124-scp-sl-ac.html",
+          "content_sha256": "01a0362ee7c88f008b6d9e1333dc3aea4920050547703ebe6c391cd9e1363135"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:df29e022ebc1776e",
+      "who": "cymulate-blog",
+      "who_url": "https://cymulate.com/blog/",
+      "action": "publish",
+      "target": "Preparing for the AI Onslaught at Black HatRead More",
+      "target_url": "https://cymulate.com/blog/preparing-for-the-ai-onslaught-at-black-hat/",
+      "text": "cymulate-blog published: Preparing for the AI Onslaught at Black HatRead More",
+      "at": "2026-07-28T22:11:33.675493+00:00",
+      "external_id": "a:df29e022ebc1776e",
+      "url": "https://cymulate.com/blog/preparing-for-the-ai-onslaught-at-black-hat/",
+      "title": "Preparing for the AI Onslaught at Black HatRead More",
+      "content": "Preparing for the AI Onslaught at Black Hat\nBy:\nBrian Moran, VP of Product Marketing\nJuly 28, 2026\nAI will be everywhere at Black Hat 2026. Again.\nThankfully, the conversation is finally moving past booth signage, dashboard sparkle and “ask me anything” copilots toward something more useful: AI embedded into how security teams prioritize, investigate, remediate and prove outcomes.\nAs attackers use AI to move faster and scale broader, defenders need more than another chat window. They need acceleration without more headcount, more tool sprawl or more brittle automation.\nAt Cymulate, we see this as a turning point. AI in cybersecurity can’t stop at chat interfaces or isolated “copilots.” It needs to become operational: taking action, orchestrating workflows and continuously improving security posture based on real-world evidence. That’s why we’ve been investing in agentic cyber defense engineering -- a practical approach that uses autonomous, goal-driven agents to help security teams measure exposure, prioritize what matters and drive mitigation from findings to fixes.\nAnd at Black Hat, we’ll be sharing more about what’s next. If you are in Las Vegas for the conference, please make sure you stop by booth 1369 or\nschedule a meeting\n.\nFrom AI assistants to agentic cyber defense engineering\nSecurity teams have experimented with automation for years: playbooks, scripts, SOAR and rule-based workflows. Those tools can be effective, but they often require constant tuning and assume that the environment is static. Reality is the opposite -- modern environments change daily and the threat landscape changes hourly.\nAgentic systems are designed for that reality. Instead of executing a rigid sequence of steps, they pursue an objective, adapt to constraints and collaborate with people and other systems. Applied to cyber defense engineering, this means moving beyond “tell me what’s wrong” toward “help me\nfix\nwhat’s wrong, validate it and keep it fixed.”\nWe introduced this approach in our post on agentic cyber defense engineering, outlining how agentic capabilities can continuously translate security intent into measurable outcomes across environments and controls. (Read more at\nIntroducing Agentic Cyber Defense Engineering\n.)\nIn practical terms, an agentic defense engineering model can:\nContinuously assess exposure (not just compliance)\nTurn raw findings into prioritized, context-rich tasks\nRecommend and guide remediation actions\nValidate whether mitigation works—then re-test as conditions change\nThat loop -- test, learn, mitigate, verify -- is where AI delivers real value.\nMeet Cymulate Vero AI: purpose-built for agentic defense engineering\nOne of the biggest challenges with “AI everywhere” is separating signal from noise. Generic AI models can summarize, generate and chat -- but effective cyber defense requires domain-specific reasoning, knowledge of the environment and a tight feedback loop with validation.\nThat’s where Cymulate Vero AI comes in. In our post on Vero AI and agentic cyber defense engineering, we described how Vero AI is designed to bring agentic capabilities into security operations in a way that is grounded in the Cymulate platform data, exposure context and mitigation workflows.\nThink of Vero AI as more than a conversational layer. It’s a system that can:\nInterpret exposure data in context (assets, controls, configurations, attack paths\n,\nand business risk)\nIdentify what’s actionable -- and what’s merely interesting\nHelp coordinate remediation by turning insights into concrete steps\nClose the loop with validation by re-testing and measuring progress\nIn other words, Vero AI is designed to support the operational cycle of defense engineering—not just the presentation of information.\nFurther reading\nThe Truth About Your Security: Why We Built Cymulate Vero AI\nMeet Cymulate Vero AI: the agentic AI system that validates threats, proves defenses and drives action.\nRead More\nThe missing link: turning findings into fixes\nEvery security leader knows the pain: assessments generate findings, findings generate tickets and tickets generate… delay. Even organizations with mature processes struggle to connect discovery to remediation at the pace the business demands.\nThat’s why Cymulate launched Mitigation Hub, a capability that focuses specifically on driving remediation outcomes, helping teams go from “we found issues” to “we fixed issues” and “we verified the fixes.” Our post on Mitigation Hub details how it brings structure and prioritization to the remediation process, aligning stakeholders and making it easier to track mitigation progress over time.\nFurther reading\nMitigation Hub Turns Findings into Fixes\nShiraz Arush Brinder, Senior Product ManagerAvigayil Stein, Senior Product Marketing Manager Security teams don’t need more dashboards or disconnected findings. They need a faster...\nRead More\nIn an AI-enabled world, the goal isn’t to produce more findings faster. The goal is to reduce exposure faster. Mitigation Hub supports that goal by:\nConsolidating and organizing remediation work\nHelping prioritize based on impact and feasibility\nProviding a clear workflow from issue identification to resolution\nEnabling teams to verify whether mitigation actions actually reduce risk\nThis is where agentic capabilities become especially powerful. An agent can help identify the most impactful fixes, suggest remediation steps, coordinate stakeholders and continuously validate the results -- reducing back-and-forth and speeding up the path to measurable risk reduction.\nWhat we’re excited to share at Black Hat\nAt Black Hat, Cymulate will continue the conversation about AI by focusing on what matters most: turning AI into measurable security outcomes.\nWe’ll be discussing how agentic cyber defense engineering can help organizations:\nMove from periodic assessments to continuous exposure validation\nTranslate technical signals into prioritized, actionable work\nAccelerate mitigation across teams and tools\nEstablish an evidence-based feedback loop that proves progress\nAnd yes -- we’ll have more to announce at Black Hat about how Cymulate is expanding what’s possible with agentic capabilities across the platform.\nThe road ahead: outcomes over hype\nAI will be everywhere at Black Hat. The organizations that get the most value won’t be the ones that simply “add AI” to their stack. They’ll be the ones who use AI to tighten the cycle between discovery, decision, action and verification.\nThat’s the promise of agentic cyber defense engineering -- and the direction Cymulate is building toward.\nWe look forward to connecting at Black Hat and sharing what’s next. Come see us at booth 1639.\nBrian Moran, VP of Product Marketing\nWith over a decade in cybersecurity product marketing managerial positions, VP of Product Marketing Brian Moran is a driven product manager and product marketer with a track record of launching new innovative products and reigniting the growth of mature portfolios.\nMore about Author\nTable of Contents\nFrom AI assistants to agentic cyber defense engineering\nMeet Cymulate Vero AI: purpose-built for agentic defense engineering\nThe missing link: turning findings into fixes\nWhat we’re excited to share at Black Hat\nThe road ahead: outcomes over hype\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nFeatured Resources\nView More Resources\nblog\nBeyond Validation. The Future is Agentic Cyber Defense Engineering.\nCymulate’s Vero AI powers agentic cyber defense engineering to prove, prioritize and adapt security.\nRead More\nblog\nThe Truth About Your Security: Why We Built Cymulate Vero AI\nMeet Cymulate Vero AI: the agentic AI system that validates threats, proves defenses and drives action.\nRead More\nblog\nMitigation Hub Turns Findings into Fixes\nShiraz Arush Brinder, Senior Product ManagerAvigayil Stein, Senior Product Marketing Manager Security teams don’t need more dashboards or disconnected findings. They need a faster\nRead More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://cymulate.com/blog/preparing-for-the-ai-onslaught-at-black-hat/",
+      "content_chars": 8213,
+      "content_sha256": "920f57f6ca334962d47fa5ca8861a6aaa24937019e4458ae8678feb46ccc4905",
+      "content_fetched_at": "2026-07-28T22:13:24.769155+00:00",
+      "author": "cymulate-blog",
+      "author_name": "Cymulate Blog",
+      "author_url": "https://cymulate.com/blog/",
+      "published_at": "2026-07-28T22:11:33.675493+00:00",
+      "collected_at": "2026-07-28T22:11:33.675493+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cymulate-blog",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://cymulate.com/blog/",
+        "https://cymulate.com/blog/preparing-for-the-ai-onslaught-at-black-hat/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cymulate-blog",
+          "url": "https://cymulate.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cymulate-blog",
+          "name": "Cymulate Blog",
+          "home_url": "https://cymulate.com/blog/"
+        },
+        "article": {
+          "title": "Preparing for the AI Onslaught at Black HatRead More",
+          "url": "https://cymulate.com/blog/preparing-for-the-ai-onslaught-at-black-hat/",
+          "content_sha256": "920f57f6ca334962d47fa5ca8861a6aaa24937019e4458ae8678feb46ccc4905"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:283159a0cc7fd0a1",
+      "who": "rastamouse",
+      "who_url": "https://rastamouse.me/",
+      "action": "publish",
+      "target": "COFF Mixing - Hiding in Plain Sight",
+      "target_url": "https://rastamouse.me/coff-mixing/",
+      "text": "rastamouse published: COFF Mixing - Hiding in Plain Sight",
+      "at": "2026-07-28T14:27:46+00:00",
+      "external_id": "a:283159a0cc7fd0a1",
+      "url": "https://rastamouse.me/coff-mixing/",
+      "title": "COFF Mixing - Hiding in Plain Sight",
+      "content": "Capabilities written to PICO conventions can be output as PIC, PICOs, or COFFs. These formats typically require some sort of 'runner' to inject them into memory - whether that's a shellcode runner, PICO runner, or COFF/BOF runner. There are several challenges with memory-injected content, including:\nRW/RX memory allocation/flux.\nUnbacked RX memory or janky module stomping.\nCall stack analysis of WinAPI calls.\nThe\nSimple Loader\ntakes a COFF, turns it into a PICO, and pairs it with a loader. The following call stack is from a memory-injected PICO executing MessageBoxA:\n# Child-SP RetAddr Call Site\n00 0000000d`b7fffc58 00007ff4`dde6002d USER32!MessageBoxA\n01 0000000d`b7fffc60 0000000d`b7fffd50 0x00007ff4`dde6002d\n02 0000000d`b7fffc68 00000133`170e1360 0x0000000d`b7fffd50\n03 0000000d`b7fffc70 00000000`00000000 0x00000133`170e1360\nCOFF Mixing\nis an idea to mix a capability with benign code and output a PE-ready COFF. Linking said COFF to a PE frees us from memory-injected content as the capability lives in image-backed memory instead.\nThe following is a basic program that has a PE-ready entry point which just calls the capability.\n#include <windows.h>\n//\n// basic pico convention\nvoid go( );\n//\n// pe-ready entry point\nint main( int argc, char * argv[ ] )\n{\ngo( );\nreturn 0;\n}\nmain.c\nThe capability is merged with this program via a specification file:\ncapability.x64:\npush $OBJECT\nmake coff +optimize +mutate\nload \"../simple_pic/bin/services.x64.o\"\nmerge\ndfr \"resolve\" \"ror13\" \"KERNEL32, NTDLL\"\ndfr \"resolve_ext\" \"strings\"\nmergelib \"../libtcg/libtcg.x64.zip\"\nexport\nx64:\n.capability\nmake coff +unwind\nload \"bin/main.x64.o\"\nmerge\nexport\nmix.spec\nThis works in two steps:\nPrepare the capability by merging DFR functionality and optionally perform link-time optimization, mutations, ised surgery, etc.\nMerge the processed capability into the PE-ready COFF. The\n+unwind\noption generates the correct .xdata and .pdata sections for stack unwinding to work on x64.\nThe\ncpl\nutility can produce the PE-ready COFF, e.g:\ncpl link mix.spec ../../demo/test.x64.o out.x64.o\n. Then that COFF can be linked to a Windows PE:\nx86_64-w64-mingw32-gcc -mwindows out.x64.o -o out.x64.exe\n.\nExecuting the PE produces the following call stack:\n# Child-SP RetAddr Call Site\n00 000000c3`5c1ff9c8 00007ff6`f9aa1932 USER32!MessageBoxA\n01 000000c3`5c1ff9d0 00007ff6`f9aa15a9 out_x64+0x1932\n02 000000c3`5c1ffa00 00007ff6`f9aa10d9 out_x64+0x15a9\n03 000000c3`5c1ffa30 00007ff6`f9aa1436 out_x64+0x10d9\n04 000000c3`5c1ffad0 00007ffe`691de957 out_x64+0x1436\n05 000000c3`5c1ffb00 00007ffe`6b08ad6c KERNEL32!BaseThreadInitThunk+0x17\n06 000000c3`5c1ffb30 00000000`00000000 ntdll!RtlUserThreadStart+0x2c\nSymbols\nOpening the PE in a tool like\nBinary Ninja\nwill reveal symbols that are present in the capability.\nThese can be removed frm the COFF using the\nstrip\ncommand:\nload \"bin/main.x64.o\"\nmerge\nstrip \"findFunctionByHash, resolve_ext, ParseDLL, go, hash_function, isForwardedFunction, GetDataDirectory, hash_module, findModuleByHash, resolve\"\n💡\nUse\ncoffparse\nto get a list of symbols in the COFF.\nThey will then be harder to identify in the final PE.\nFunction ordering\nInstead of just merging a simple PE entry point, you can merge lots more benign code to make the PE look more legitimate. I found a library that contains lots of mathematical functionality.\nGitHub - ohirose/bcpd: Domain Elastic Transform / Bayesian Coherent Point Drift\nDomain Elastic Transform / Bayesian Coherent Point Drift - ohirose/bcpd\nI built several of the .c files to their own COFF objects:\nx64: bin\n$(CC_64) $(CFLAGS) -c src/main.c -o bin/main.x64.o\n$(CC_64) $(CFLAGS) -c src/digamma.c -o bin/digamma.x64.o\n$(CC_64) $(CFLAGS) -c src/dijkstra.c -o bin/dijkstra.x64.o\n$(CC_64) $(CFLAGS) -c src/heap.c -o bin/heap.x64.o\n$(CC_64) $(CFLAGS) -c src/kernel.c -o bin/kernel.x64.o\n$(CC_64) $(CFLAGS) -c src/median.c -o bin/median.x64.o\n$(CC_64) $(CFLAGS) -c src/misc.c -o bin/misc.x64.o\n$(CC_64) $(CFLAGS) -c src/mt19937-64.c -o bin/mt19937-64.x64.o\n$(CC_64) $(CFLAGS) -c src/stat.c -o bin/stat.x64.o\n$(CC_64) $(CFLAGS) -c src/util.c -o bin/util.x64.o\nMakefile\nAnd then merged each one into the PE-ready COFF:\n.capability\nmake coff +unwind +disco\nload \"bin/main.x64.o\"\nmerge\nload \"bin/digamma.x64.o\"\nmerge\nload \"bin/dijkstra.x64.o\"\nmerge\nload \"bin/heap.x64.o\"\nmerge\nload \"bin/kernel.x64.o\"\nmerge\nload \"bin/median.x64.o\"\nmerge\nload \"bin/misc.x64.o\"\nmerge\nload \"bin/mt19937-64.x64.o\"\nmerge\nload \"bin/stat.x64.o\"\nmerge\nload \"bin/util.x64.o\"\nmerge\nmix.spec\nAdding the\n+disco\noption means that the capability's code will be randomly shuffled in with the benign code. You can also bury execution of the capability somewhere within the benign code. For example, modify\ndigamma\nto call\ngo\n:\ndouble digamma (double x)\n{\ndouble r, f, t;\nr = 0;\nwhile (x<=5)\n{ r -= 1/x;\nx += 1;\n}\nf = 1/(x*x);\nt = f*(-1/12.0 + f*(1/120.0 + f*(-1/252.0 + f*(1/240.0 + f*(-1/132.0\n+ f*(691/32760.0 + f*(-1/12.0 + f*3617/8160.0)))))));\ngo();\nreturn r + log(x) - 0.5/x + t;\n}\ndigamma.c\nThen have\nmain\ncall\ndigamma\ninstead of\ngo\ndirectly:\n#include <windows.h>\ndouble digamma( double x );\nint main( int argc, char * argv[ ] )\n{\ndigamma( 1 );\nreturn 0;\n}\nThat doesn't do much from a call stack perspective but it may make analysis of a PE more complicated.\nConclusion\nCOFF mixing presents the opportunity to leverage capabilities without the presumption (and IOCs) of memory-injected content. This doesn't make sense for every scenario - memory injection is still useful - but for situations where injecting capabilities isn't required, and may just introduce more IOCs, COFF mixing is certainly an interesting alternative.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://rastamouse.me/coff-mixing/",
+      "content_chars": 5637,
+      "content_sha256": "ed2b7079b31414a9e36b982db899a40baa75851254b1c9f2feb45896e3d85516",
+      "content_fetched_at": "2026-07-28T22:12:19.412766+00:00",
+      "author": "rastamouse",
+      "author_name": "Rasta Mouse",
+      "author_url": "https://rastamouse.me/",
+      "published_at": "2026-07-28T14:27:46+00:00",
+      "collected_at": "2026-07-28T22:11:33.675493+00:00",
+      "tags": [
+        "kind:publish",
+        "src:rastamouse",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://rastamouse.me/",
+        "https://rastamouse.me/coff-mixing/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "rastamouse",
+          "url": "https://rastamouse.me/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "rastamouse",
+          "name": "Rasta Mouse",
+          "home_url": "https://rastamouse.me/"
+        },
+        "article": {
+          "title": "COFF Mixing - Hiding in Plain Sight",
+          "url": "https://rastamouse.me/coff-mixing/",
+          "content_sha256": "ed2b7079b31414a9e36b982db899a40baa75851254b1c9f2feb45896e3d85516"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:1def605f5260229d",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "别再依赖提示词防 Agent 了：从 GitHub Secure Code Game 看红队攻防的 5 级提权",
+      "target_url": "https://yage.ai/share/github-secure-code-game-prodbot-20260728.html",
+      "text": "yage-share published: 别再依赖提示词防 Agent 了：从 GitHub Secure Code Game 看红队攻防的 5 级提权",
+      "at": "2026-07-28T00:00:00+00:00",
+      "external_id": "a:1def605f5260229d",
+      "url": "https://yage.ai/share/github-secure-code-game-prodbot-20260728.html",
+      "title": "别再依赖提示词防 Agent 了：从 GitHub Secure Code Game 看红队攻防的 5 级提权",
+      "content": "AI Agent\n安全与供应链\nGitHub Security Lab 于 2026 年 7 月 24 日推出了 Secure Code Game\nSeason 4。在这次的赛题中，官方设计了一个名为 ProdBot 的靶机。\nProdBot 的通关目标：通过自然语言交互，诱导 Agent\n绕过权限检查与隔离机制，读取存放于沙箱目录之外的敏感文件\n../password.txt\n。\n如果你想亲自上手体验这个 CTF，建议先点击\nGitHub Secure Code Game\n启动 Codespaces\n尝试通关；玩过一轮或者卡住后，再回来对照下面的 5\n级提权拆解与红队视角。\nGitHub Secure Code Game\n赛季演进：从传统代码到 Agentic AI\n从 Season 1 到 Season\n4：应用安全的范式演进\n回顾 GitHub Secure Code Game 的演进轨迹，恰好映射了过去几年软件工程与\nAI 发展的完整脉络：\nSeason 1（基础应用安全）\n：聚焦传统 Web\n与系统安全，使用 Python 与 C 语言，演练 SQL\n注入、内存溢出和路径遍历等经典漏洞。\nSeason 2（多栈与供应链安全）\n：跨越到 CI/CD\n管线与基础设施，围绕 Go、JavaScript 和 GitHub\nActions，演练自动化构建与依赖项安全。\nSeason 3（LLM\n模型安全）\n：首次引入大语言模型，聚焦基础的 Prompt\n注入、输入输出过滤与 LLM 文本交互的安全边界。\nSeason 4（Agentic AI 智能体安全）\n：以 ProdBot\n为核心，演练当模型拥有命令行执行、网页浏览、MCP\n工具调用、持久记忆与多智能体协作等自主行动能力时的复杂攻击面。\n对于 AI 应用开发者而言，Season 3 与 Season 4\n显然与我们最为相关。如果说 Season 3 防范的是“模型文本通道被污染”，那么\nSeason 4 则直击当代 Agent\n系统的软肋——当模型从“只能聊天”升级为“拥有工具与行动权”时，攻击者是如何在真实环境里完成提权的。\n当一种攻击模式被收录进 GitHub\n的入门级赛题时，说明它已经从学术论文和黑客试验场走出来，成为了大众红队的标准技能。\nLevel 1：当关键词拦截遇到\nShell 解释器\n在防护 Agent 执行 Bash 命令时，不少开发者最直觉的做法是写一句严格的\nSystem\nPrompt（如“严禁执行危险命令”），或者在代码里加几行敏感词判定，试图拦截包含\n..\n或\npassword\n的输入字符串。\n攻击者没有硬碰硬地输入\ncat ../password.txt\n，而是利用了\nShell 自身的变量扩展与字符串拼接机制。通过传入类似\nD=..; cat $D/pass\"word\".txt\n这样的指令，或者使用 Base64\n编解码语句，将原本敏感的路径在表面上拆解得干干净净。Agent\n在接收到需求后，顺理成章地生成了这段看似合规的脚本。\n这暴露出字面量校验在动态解释器面前的局限。前端或 Guardrail\n校验只能检查静态文本，避开了对变量\nD\n和拆分字符串\n\"word\"\n的拦截；然而当这段命令投递给 Bash 解释器时，Bash\n在运行期完成了变量扩展与字符串拼接，精确还原出了越界读取敏感文件的真正动作。\nLevel 2：隐藏在网页里的控制权\n进入第二个关卡，系统禁止了直接请求敏感文件的指令，但在处理常规任务（例如“帮我总结这个网页的内容”）时，允许\nAgent 访问外部 URL 并读取网页内容。\n攻击者并不在对话框里直接下达恶意命令，而是将攻击语句嵌入到 Agent\n需要抓取的外部网页中。网页内部放置了带有高优先级覆盖语气的 Prompt\n说明，要求读取沙箱外的文件。\n当 Agent 调用 Web 浏览工具把网页抓取回来时，外部数据被直接填入了 LLM\n的 Prompt\n上下文中。在当前大语言模型的架构中，从外部读取的数据与系统原有的控制指令共享同一个上下文空间。Agent\n无法识别这段文本究竟是“被分析的客观数据”还是“必须遵守的最高指令”，最终顺从地执行了网页中的恶性文本，调用底层能力拿到了敏感文件。\nLevel 3：被毒化的上下文通道\n系统在第三关引入了基于 MCP 架构的工具链，为 Agent\n提供了标准化的工具调用机制，试图通过协议规范来管控输入和输出。\n攻击者将攻击逻辑隐藏在 MCP\n工具的说明文档（Docstring）中，或者通过上游工具的返回数据进行注入。\nAgent\n在挑选工具或接收工具输出时，解析了这些包含恶意指令的说明与文本。上游工具返回的数据像一把“毒匙”，诱导\nAgent\n在调用后续的高权限工具时，把包含越界读取路径的参数透传了过去。协议本身能够约束参数的格式，却无法鉴别上下文里的自然语言内容是否受过污染，导致工具链形成了连锁失控。\nLevel 4：跨 Session\n的隐蔽提权\n到了第四关，Agent 挂载了具备全局文件与网络读写能力的 Skill\n插件，并启用了跨 Session 记忆功能，以支持连续的自动化任务。\n攻击者在一次看似普通的对话中，诱导 Agent\n将特定的恶性状态写入持久化记忆数据库；或者通过特定条件唤醒拥有高权限的\nSkill。\n在随后发起的全新对话中，用户仅仅发起了一项合规的日常查询。然而 Agent\n在初始化时读取了被毒化的历史记忆，将旧有的恶意上下文混入了当前决策逻辑，自动触发了具备全局读写能力的\nSkill 去读取沙箱外的敏感文件。持久化记忆打破了对话 Session\n之间的隔离边界，把一次性注入转变为长期的持久化后门。\nLevel 5：帮凶竟是我自己\nMulti-Agent 混淆代理人（Confused\nDeputy）提权机制\n在最终关中，系统采用了多 Agent 协作架构。低权限的 Subagent\n专门用于处理不可信的外部输入，高权限的 Parent Agent\n则负责指挥与调度。\n攻击者向低权限 Subagent 提交恶意数据。Subagent\n在完成处理后，将包含了恶性指令的内容写入了生成的中间工件（Child\nArtifact）中。\n当高权限 Parent Agent 提取并解析这个 Child Artifact\n时，它缺乏对工件内部数据来源的显式鉴别，把工件里的攻击语句误认为是来自\nSubagent\n的合法控制指令并予以执行。这是典型的混淆代理人场景：虽然架构上设计了高低权限隔离，但\nParent Agent 盲目信任了 Subagent 产出的工件，低权限 Subagent\n无意中成为了攻击者的帮凶，替攻击者骗取了高权限执行权。\n实践者的落脚点：从文本防御走向物理隔离\n拆解完 ProdBot 的这 5 个关卡，红队视角的变迁非常清晰：Agent\n攻防的本质不是在语言层面去“猜模型会做出什么回应”，而是跟踪指令与数据如何在系统架构中流转。\n单靠 Guardrail 提示词去“劝阻”模型，都无法在 Shell\n语法扩展、上下文混淆、工具链毒化、记忆持久化和多智能体工件传递面前提供确定性防御。\n真正稳固的安全边界，不能建立在对自然语言输出的概率预测上，而必须落在架构设计上：将\nShell 命令行限制在严格隔离的物理沙箱中，在 MCP 和 Skill\n层面实施最小权限原则，并在多 Agent\n架构中对工件内容进行严格的上下文解耦与数据溯源。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/github-secure-code-game-prodbot-20260728.html",
+      "content_chars": 3100,
+      "content_sha256": "3bacc247842f96adf20c660cc79fe805bc48450c6abc8a877cd8f3a26e0c7e49",
+      "content_fetched_at": "2026-07-28T22:12:18.851423+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-28T00:00:00+00:00",
+      "collected_at": "2026-07-28T22:11:33.675493+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/github-secure-code-game-prodbot-20260728.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "别再依赖提示词防 Agent 了：从 GitHub Secure Code Game 看红队攻防的 5 级提权",
+          "url": "https://yage.ai/share/github-secure-code-game-prodbot-20260728.html",
+          "content_sha256": "3bacc247842f96adf20c660cc79fe805bc48450c6abc8a877cd8f3a26e0c7e49"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:cf545b6e3ebdcd3b",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "公开信背后的立场与算盘：美国“开放权重”大论战拆解",
+      "target_url": "https://yage.ai/share/open-weights-american-ai-leadership-20260728.html",
+      "text": "yage-share published: 公开信背后的立场与算盘：美国“开放权重”大论战拆解",
+      "at": "2026-07-28T00:00:00+00:00",
+      "external_id": "a:cf545b6e3ebdcd3b",
+      "url": "https://yage.ai/share/open-weights-american-ai-leadership-20260728.html",
+      "title": "公开信背后的立场与算盘：美国“开放权重”大论战拆解",
+      "content": "AI行业观察\n模型与算法\n一份签署名单背后的阵营对峙\n7 月 24 日，英伟达官网上悄悄挂出了一份叫\n《Open\nWeights and American AI Leadership》\n的联合公开信。黄仁勋还在社交平台 X\n上发了他人生中第一条推文专门来转发它。但比这份声明本身更有意思的，是下面那一排名字：英伟达、Meta、微软、IBM、戴尔、AMD、Hugging\nFace、a16z 以及 Y\nCombinator，硬件厂商、开源龙头、云巨头与顶级风投全到齐了。\n有趣的是，7 月 24 日首发时，名单上并没有 OpenAI、Google 以及\nAnthropic 的名字。然而在随后的 48 小时内，局势迅速分化：OpenAI 和 Google\n在周末（7 月 25–26 日）选择顺应舆论大势补签了公开信；唯独\nAnthropic\n（以及 Amazon）未参与签署。这也让 Anthropic\n成了备受关注的坚守者，引发了开源社区的集中讨论。\n这种“谁签了、谁补签了、谁未签署”的直观对照，把当下美 AI\n产业的裂痕看得清清楚楚——这不只是一场行业道德宣誓，而是开源产业链联盟与前沿闭源护城河之间的一次公开对阵。而\nAnthropic 的这一决定，也直接引发了随后 7 月 27 日 CEO Dario Amodei\n发文阐述其政策框架与反击。\n开源产业链联盟与闭源前沿实验室阵营划分\n公开信打出的招牌是历史经验：1980 年代 Linux 和 Apache\n这些开源软件打破了专有软件的垄断，才筑起了今天全球互联网、美军系统与科研机构的数字底座。公开信据此亮出观点：美国\nAI\n的领导力不单取决于一两家前沿闭源模型，而在于能不能建立一个能渗透进千行百业的开放生态。\n拆开商业版图：大家都在算什么账？\n如果把这 25\n家公司的算盘拆开来看，会发现大家站在一起，其实不是为了什么抽象的技术理想，纯粹是因为各自手里的生意账：\n卖硬件的厂商（英伟达、AMD、戴尔）\n：逻辑最直接。如果大家都只用集中式的闭源\nAPI，算力就被锁在少数几个巨头的数据中心里。只有当模型权重开源，成千上万的企业能在本地或者私有云里跑起来，才会有铺天盖地的私有算力需求。\n做开源模型的龙头（Meta、Mistral AI、Hugging\nFace）\n：要的是技术栈的主导权。Meta 用 Llama\n系列把全球开发者的工具链和习惯绑定在自己身上，顺便用免费模型直接把闭源\nAPI 的高毛利好日子给搅黄了。\n风投机构（a16z、Y\nCombinator）\n：心里想的是自家投的成百上千家初创公司。小团队哪有钱去烧几亿美元做预训练？天天按每百万\nToken 15 美元给前沿闭源 API\n缴税，现金流很快就会见底；而靠开源大模型蒸馏出专用小模型，Token\n成本能直接掉到 0.2 美元以下，这是初创公司能活下去的商业底线。\n企业级 SaaS\n和安全巨头（Palantir、CrowdStrike、ServiceNow、Box、Replit）\n：干的是国防和内网的活，最怕数据外流。前阵子\nAnthropic 的 Fable 5 和 Mythos 5\n被政府要求限制外国人访问，公司一时难以在后台精确识别调用者国籍，最终被迫全局暂停服务。集中式\nAPI\n随时可能因为合规问题被单点切断的软肋暴露无遗，而拿在自己手里的模型参数一旦下载了就谁也拿不走。\n云厂商（微软）\n：微软玩得最活，两头下注。它既是\nOpenAI 最大的金主，又在 Azure 上把 Llama、DeepSeek 和 Qwen\n统统架好。模型开不出名并不重要，只要你的工作负载跑在 Azure\n的云上，它就能稳稳赚到钱。\n“AI 共产主义”标签与蒸馏生命线\n随着两边阵营动真格，舆论场上的嘴仗也越打越热闹。比如 OpenAI\n的战略主管迪恩·鲍尔（Dean\nBall）等闭源派评论家在公开讨论中甩出了一个听起来很耸动的词：‘AI\n共产主义’。他的逻辑是，把动辄耗资几亿美元训练出来的模型免费发出来，等于把\nAI\n强行变成了免费的公共设施，这会把资本继续砸钱预训练的积极性给抹杀掉。但大卫·萨克斯（David\nSacks）、马克·安德森（Marc Andreessen）以及 Meta\n这帮开源派立马反唇相讥，指责所谓的‘AI\n共产主义’纯粹是闭源巨头借着监管名义搞垄断的遮羞布。\n这场嘴仗背后，真正牵动开发者神经的是对“蒸馏”的定义。公开信在四大政策诉求——扩大初创公司算力访问、投资公共训练资产与评测框架、避免早熟限制、明确保护模型蒸馏——中，专门开辟段落强调蒸馏技术的合法性。\n集中式 API\n交付通道与本地开放权重控制权对比\n用 70B/405B 大模型的输出来教 8B/14B 小模型，是开发者把首 Token\n延迟压到 100ms 以内、把模型塞进复杂 Agent\n工作流里的关键手艺。闭源实验室一直向政府游说，想把蒸馏定性为不正当抽取并搞笼统限制；而公开信明确警告，绝不能把合法的蒸馏技术与非法侵权混为一谈。如果蒸馏被一刀切限制，广大初创公司将直接丧失定制模型与控制成本的自主权。\n防守者的现实陷阱：集中式\nAPI 停服黑天鹅\n为了证明开放权重的不可替代性，公开信特别提及了集中式系统的单点故障风险。这并非虚构的担忧，今年\n6 月在美科技界发生的 Anthropic 停服事件就是一个极其沉重的现实例证。\n当时，商务部向 Anthropic 发出指令，要求限制特定外国主体访问其最新的\nFable 5 与 Mythos 5 模型。然而，统一运营集中式 API 的 Anthropic\n发现，要在毫秒级的接口调用中实时校验每个请求背后的真实国籍极为困难。为了避免合规踩雷，Anthropic\n最终采取了严厉的自保措施——直接对全球客户临时停服。这次黑天鹅事件导致大量依赖\nFable 5 接口的企业自动化工作流瞬间瘫痪。\n这件事直接震撼了 Palantir、CrowdStrike\n这类国防与网络安全供应商。集中式 API\n的开关掌握在服务商与监管机构手中，哪怕你支付了服务费，服务也可能因为一条行政指令在一夜之间化为乌有。开放权重则彻底打破了这种单点控制：模型下载并部署在私有服务器后，运行权与控制权完全交交给了企业自己，外界无法通过远程物理开关将其收回。\n中国开放权重的杠杆效应与华盛顿的真实选择\n我们很多在做 AI 应用的开发者，手里其实都在用 DeepSeek、Qwen 或者\nKimi。中国开源模型的套路非常实在：用极低成本甚至免费的顶尖模型，去打掉美国闭源\nAPI 的溢价；同时像当年的 Android 一样，把全球开发者的分词标准和 Token\n架构都给占领了。\n更有意思的是，这个现实反而成了美股开源巨头向华盛顿摊牌的王牌。他们在公开信里直接对政策制定者说：如果你在美国把开源给限制了，开源并不会消失，全球开发者只会转身全跑去用中国的开源模型。\n华盛顿的政策管道目前其实还在拉锯。7 月 13\n日，《华盛顿邮报》曾透露过一项关于“中国模型参照线”的内部讨论，看是不是要以中国领先开源模型的能力作为限制参照；行政监管上，拜登-特朗普过渡期延展的\nEO 14409 行政令聚焦在高级网络攻击能力的测试上，而 BIS 4E091\n扩散规则目前处于不予执行状态。这些迹象都说明，公开信是一场在政策落地前发起的预先游说。\nDario\nAmodei 的“第三条路线”：把安全、生意与国安合在一起讲\n面对开源公开信的攻势，加上外界议论闭源巨头是不是在拿安全当借口搞垄断，Anthropic\nCEO Dario Amodei 于 7 月 27 日也发表了一篇声明\n《Our\nposition on open-weights models》\n。他在里面第一句就澄清：Anthropic\n从未要求一刀切禁止开源模型。接着，他开出了一套自己的政策处方：不禁用开源权重，但要卡住高端芯片出口、打击工业级蒸馏，并且对前沿大模型做强制安全测试。\n看 Dario 这篇声明，会发现他的思考其实很符合 Anthropic\n一贯的逻辑，把几件事情揉在了一起：\n首先是技术层面的真实担忧。Anthropic 从成立第一天起，就把\nRSP（责任缩放策略）\n和安全防范放在最核心的位置。开源模型有一个物理现实：权重一旦发出去，用户下载到本地，原本在云端设好的安全护栏很容易被微调剥离，也没法像集中式\nAPI\n那样随时在线发补丁。在真正的生化风险或自动化黑客攻击面前，这种“一旦散布就无法收回”的特点确实是个棘手的工程问题。\n但与此同时，这套安全逻辑也正好护住了闭源模型最大的生意账。现在大模型蒸馏太普遍了，如果初创团队都能用极便宜的价格，靠蒸馏把开源小模型教得接近顶尖大模型的水平，那\nAnthropic 烧掉几亿甚至几十亿美元做预训练的高价 API 就很难卖出溢价。Dario\n在声明里专门把“打击工业级蒸馏”提出来，客观上也保住了前沿闭源预训练的商业回报。\n最后是他在华盛顿的表达方式。在政策制定者的耳朵里，纯粹的技术安全讨论或者企业间关于利润的抱怨很难引起重视，而“地缘政治与竞争”则是华盛顿最关心的议题。Dario\n把技术上“开源不可控”的隐患和商业上“蒸馏侵蚀利润”的现实，顺理成章地对接到了国家安全与出口管制的议程中。\n在控制权分化中寻找架构解法\n看懂了 2026 年 7 月 24 日发布的《Open Weights and American AI\nLeadership》公开信与 Dario Amodei 7 月 27\n日的连夜回应，首先得分清产业游说和正式立法的界限，同时也需要明确权重开放并不等同于训练数据、源代码与配方的完全开源。\n对我们开发者来说，公开信背后的博弈预示着未来的技术环境演变：集中式\nAPI 容易受制于合规审查与单点停服，而 Dario\n推动的“蒸馏限制”和“前沿管制”又给未来的模型定制埋下了政策变数。在自己的系统设计里，随时保留集中式\nAPI\n和本地开放权重模型之间的动态切换能力，才是应对未来无论政策怎么变、商业怎么打的最踏实的解法。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/open-weights-american-ai-leadership-20260728.html",
+      "content_chars": 4153,
+      "content_sha256": "552f28eedbed35612e73147cecd924eb108530700e9e01681e73ea9d0fac7b2a",
+      "content_fetched_at": "2026-07-28T22:12:19.109895+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-28T00:00:00+00:00",
+      "collected_at": "2026-07-28T22:11:33.675493+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/open-weights-american-ai-leadership-20260728.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "公开信背后的立场与算盘：美国“开放权重”大论战拆解",
+          "url": "https://yage.ai/share/open-weights-american-ai-leadership-20260728.html",
+          "content_sha256": "552f28eedbed35612e73147cecd924eb108530700e9e01681e73ea9d0fac7b2a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:2f43f6c3b58deeb4",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "为什么 SWE-bench 高分，在大厂 Kotlin 项目里依然会打转？",
+      "target_url": "https://yage.ai/share/jetbrains-kotlin-benchmark-reframe-20260727.html",
+      "text": "yage-share published: 为什么 SWE-bench 高分，在大厂 Kotlin 项目里依然会打转？",
+      "at": "2026-07-27T00:00:00+00:00",
+      "external_id": "a:2f43f6c3b58deeb4",
+      "url": "https://yage.ai/share/jetbrains-kotlin-benchmark-reframe-20260727.html",
+      "title": "为什么 SWE-bench 高分，在大厂 Kotlin 项目里依然会打转？",
+      "content": "Agentic AI\nAI 评估\n如果只看\nSWE-bench\n或各类公开排行榜，很多团队在选 AI Coding Agent\n时都会产生一种错觉：某个模型在 Python 榜单上刷出了 80%\n以上的成功率，拿进公司项目应该也能自动修 Bug、发\nPR。在真实的业务项目里，Agent\n不是看不懂报错，就是在极其耗时的构建日志和类型约束里盲目试错。\n这个落差引发了一个贯穿选型始终的核心问题：我们究竟该怎样测量 AI\nCoding Agent，才能真正预测它在生产代码库里的实际工程 ROI？\n为什么在\nPython 上刷出来的调试策略，换到 Kotlin 里就失灵了？\n通用榜单之所以频繁在企业落地中失真，最直接的原因就是它把 Python\n语境下的解题习惯，误当作了所有语言通用的能力。\n以\nSWE-bench\n为例，它的基准几乎完全建立在 Python 开源项目上。\nOpenAI\n对 SWE-bench Verified 进行审计\n时曾指出，高失败样本中超过 59.4%\n存在测试或题述缺陷，且预训练数据污染显著。但比起数据缺陷本身，更深刻的问题在于：大家很容易有一种直觉，觉得\nPython 代码简单、LLM 的预训练数据集中 Python 占比又极大，Agent 在 Python\n上表现好，迁移到 Kotlin 或 Java\n上自然也差不到哪里去。但这恰恰混淆了\n预训练数据密度\n与\n语言类型系统约束\n的底层物理差异。\nPython 的优势在于极高的预训练数据密度，模型写 Python\n几乎是直觉反射。但在 Agent\n自主寻优和纠错的闭环里，动态类型反而是一根隐形的绊脚石。Python\n代码中的语法错漏或类型传错，在编辑阶段是毫无提示的。Agent\n必须运行完整测试套件，且执行流唯有精准走到包含缺陷的那条代码路径，才能在堆栈追踪里拿到报错。这种依赖运行时的反馈路径，既漫长又充满随机性。\nKotlin 和 Java 这类静态强类型语言正好相反。Language Server\n和编译器检查不需要真正执行代码，就能在编辑瞬间给出确凿的类型不匹配、空指针风险或缺失参数报错。这种就地、确定性的静态诊断，相当于在\nAgent\n纠错的路上设了实时路标，大幅缩短了它的探路路径。静态语言真正的工程阻力，在于端到端验证时的物理开销——每次想确认整个流程是否通过，都伴随着启动\nGradle Daemon、解析 KTS 脚本、求解多模块依赖拓扑以及 KSP 代码生成。\n这就构成了两种生态完全不同的工程摩擦：\nPython\n靠高密度的预训练直觉生成代码，却依赖漫长且不确定的动态运行去捕获类型报错；Kotlin\n拥有极精准的编辑期静态诊断，但每次端到端测试校验都伴随着重型 Gradle\n构建的资源等待。\n一个在 Python 语境下靠频频试错就能逼近正确 Patch 的 Agent，在 Kotlin\n项目里很快就会被重型构建拖垮。\n同样是 Opus 4.7，差出 4%\n成功率的真正原因\n理解了编译型生态的工程摩擦，再来看真正的 Kotlin 评测，就会发现一个在\nPython 榜单上被完全掩盖的变量：外层 Harness。\n2026 年 7 月 24 日 JetBrains 发布的\nKotlin\nBenchmark 官方公布数据\n（源码见\nKotlin/kotlin-swe-bench\n仓库\n），用 8 个开源项目（如\nktlint\n,\ndetekt\n,\nokhttp\n,\nAnki-Android\n）的\n105 个真实工程任务，以及\nHarbor Agent\n评估框架\n的 Docker\n容器隔离环境，首次提供了观察这个变量的标准样本。\n首测公布的数据呈现出一个非常有意思的对比：在底层模型同为 Opus 4.7\n的情况下，Claude Code 达到了 85.71%（90/105）的成功率，而 JetBrains\n自家的 Junie 则是 81.9%（86/105）。\n同样的模型智商，换了外层 Harness，结果拉开了近 4\n个百分点的差距。如果深入到 Agent 处理 Gradle\n构建的现场，就会发现这个差距发生在对报错日志的“解毒”与“分级编排”上。\n当 Gradle\n编译失败时，终端吐出的往往是数百行交织着守护进程任务树、Task\n依赖失败与堆栈信息的无序日志。如果 Harness 粗暴地把全量 log\n原封不动塞进上下文，巨大的垃圾信息会瞬间污染 Agent\n的上下文窗口并诱发幻觉。优秀的 Harness\n建立的是一套\n分级反馈回路（Tiered Feedback\nCircuit）\n：在修改代码后，它优先利用 Language Server\n在文件编辑层级捕获静态报错，就地清零语法与类型问题；只有在关键节点才发起一次真正的\nGradle\n构建，并从冗长的输出中精准清洗提取出阻断构建的那几行符号错误。\n这解答了选型里最关键的观察：评测 Coding Agent\n的最小有效单位绝不是单一的模型，而是\n模型 x Agent Harness x\n语言生态 x 真实仓库\n。Harness\n在静态诊断嗅探和重型构建清洗上的设计，决定了底层模型的智商到底是被臃肿的构建日志吞噬，还是被精准转化为有效代码。\n放弃看通用榜单采购，拿公开种子建私有微评测\n理清了 Harness\n的编排逻辑，也就回答了选型里最大的困惑：为什么再权威的公开榜单，都不能直接拿来当采买手册？\n因为公开 Benchmark 考核的是 Agent 在通用开源项目（如\nokhttp\n）里的解题能力，这些项目遵循的是公认的标准公共库模式。但企业生产环境的绝大多数真实\nBug，并不是卡在通用算法上，而是嵌在团队自身的\n隐性架构约束（Implicit\nArchitectural Constraints）\n中。\n在具体的业务代码库里，一行看起来完全符合 Kotlin\n语法和公共最佳实践的修改，可能会悄悄破坏内部框架自定义的依赖注入作用域（如\nHilt 或 Koin\n线程约束），或者违背了未书面化的异步协程调度约定。大模型预训练见过再多开源代码，也无法凭空预知公司内部未公开的架构防线。\n通用榜单为了追求跨公司、跨团队的“绝对通用可比性”，必须过滤掉所有企业特有的私有约束。但这恰恰决定了没有任何一个通用榜单能够直接预测\nAgent 在你公司私有仓库里的真实 ROI。\n像 JetBrains Kotlin Benchmark 这样的公开基准，真正合理的定位是\nEvaluation\nSeeds（基准种子）\n。它贡献的不是排行榜上的名次顺序，而是输出了\n一套可自动化的沙箱打桩机制\n。\n团队真正需要的，是借用公开种子中的\nHarbor\n容器打包规范\n与 Verifier 校验逻辑蓝图，把团队过去半年内真实的历史 PR\n与踩坑 Issue 转化为私有代码库的断言\nVerifier，建立属于自己的私有微评测矩阵（Micro-Eval Matrix）：\n看结果与连续稳定性\n：不仅看 Pass@1，更参考 AI Agent\n可靠性评估体系中强调的连续重复运行稳定性（\np\na\ns\nk\n），观察\nAgent 是稳定修复还是靠随机试错；\n看资源消耗与构建开销\n：统计修复单个任务耗费的 Token\n成本、API 调用次数，以及卡在 Gradle 构建上的时间；\n看架构侵入与 Patch 坏味道\n：检查产出的 Patch\n是优雅契合团队现有的隐式架构规范，还是为了通过测试而引入了冗长补丁。\n从识别生态摩擦、看懂 Harness 编排，最终落脚到利用 Evaluation Seeds\n自建私有微评测，AI Coding Agent 的选型才算真正落到了工程实处。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/jetbrains-kotlin-benchmark-reframe-20260727.html",
+      "content_chars": 3186,
+      "content_sha256": "014b31a49ace5e18b9bb28ec462664af0f93f3579930d7157d9929a7eb2b8263",
+      "content_fetched_at": "2026-07-28T22:12:19.255628+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-07-27T00:00:00+00:00",
+      "collected_at": "2026-07-28T22:11:33.675493+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/jetbrains-kotlin-benchmark-reframe-20260727.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "为什么 SWE-bench 高分，在大厂 Kotlin 项目里依然会打转？",
+          "url": "https://yage.ai/share/jetbrains-kotlin-benchmark-reframe-20260727.html",
+          "content_sha256": "014b31a49ace5e18b9bb28ec462664af0f93f3579930d7157d9929a7eb2b8263"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:95037461bedd6278",
+      "who": "paloalto-advisory",
+      "who_url": "https://security.paloaltonetworks.com/",
+      "action": "publish",
+      "target": "PAN-SA-2026-0008 Chromium: Monthly Vulnerability Update (June 2026) (Severity: HIGH)",
+      "target_url": "https://security.paloaltonetworks.com/PAN-SA-2026-0008",
+      "text": "paloalto-advisory published: PAN-SA-2026-0008 Chromium: Monthly Vulnerability Update (June 2026) (Severity: HIGH)",
+      "at": "2026-06-10T16:00:00+00:00",
+      "external_id": "a:95037461bedd6278",
+      "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0008",
+      "title": "PAN-SA-2026-0008 Chromium: Monthly Vulnerability Update (June 2026) (Severity: HIGH)",
+      "content": "Palo Alto Networks Security Advisories\n/\nPAN-SA-2026-0008\nPAN-SA-2026-0008 Chromium: Monthly Vulnerability Update (June 2026)\nUrgency\nMODERATE\nSeverity\n8.4 ·\nHIGH\nExploit Maturity\nUNREPORTED\nResponse Effort\nMODERATE\nRecovery\nAUTOMATIC\nValue Density\nDIFFUSE\nAttack Vector\nNETWORK\nAttack Complexity\nHIGH\nAttack Requirements\nNONE\nAutomatable\nNO\nUser Interaction\nNONE\nProduct Confidentiality\nHIGH\nProduct Integrity\nHIGH\nProduct Availability\nHIGH\nPrivileges Required\nNONE\nSubsequent Confidentiality\nHIGH\nSubsequent Integrity\nHIGH\nSubsequent Availability\nHIGH\nJSON\nCSAF\nPublished\n2026-06-10\nUpdated\n2026-06-10\nDiscovered\nexternally\nDescription\nPalo Alto Networks incorporated the following Chromium security fixes into our products:\nhttps://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop.html\nhttps://chromereleases.googleblog.com/2026/05/stable-channel-update-for-desktop_0877304591.html\nhttps://chromereleases.googleblog.com/2026/05/stable-channel-update-for-desktop_0841193308.html\nhttps://chromereleases.googleblog.com/2026/05/stable-channel-update-for-desktop_12.html\nCVE\nSummary\nCVE-2026-8509\nHeap buffer overflow in WebML\nCVE-2026-8510\nInteger overflow in Skia\nCVE-2026-8511\nUse after free in UI\nCVE-2026-8512\nUse after free in FileSystem\nCVE-2026-8513\nUse after free in Input\nCVE-2026-8514\nUse after free in Aura\nCVE-2026-8515\nUse after free in HID\nCVE-2026-8516\nInsufficient validation of untrusted input in DataTransfer\nCVE-2026-8517\nObject lifecycle issue in WebShare\nCVE-2026-8518\nUse after free in Blink\nCVE-2026-8519\nInteger overflow in ANGLE\nCVE-2026-8520\nRace in Payments\nCVE-2026-8521\nUse after free in Tab Groups\nCVE-2026-8522\nUse after free in Downloads\nCVE-2026-8523\nUse after free in Mojo\nCVE-2026-8524\nOut of bounds write in WebAudio\nCVE-2026-8525\nHeap buffer overflow in ANGLE\nCVE-2026-8526\nOut of bounds write in WebRTC\nCVE-2026-8527\nInsufficient validation of untrusted input in Downloads\nCVE-2026-8528\nInsufficient validation of untrusted input in SiteIsolation\nCVE-2026-8529\nHeap buffer overflow in Codecs\nCVE-2026-8530\nUse after free in Network\nCVE-2026-8531\nHeap buffer overflow in WebML\nCVE-2026-8532\nInteger overflow in XML\nCVE-2026-8533\nUse after free in Accessibility\nCVE-2026-8534\nInteger overflow in GPU\nCVE-2026-8535\nOut of bounds read in Media\nCVE-2026-8536\nInsufficient validation of untrusted input in ReadingMode\nCVE-2026-8537\nInsufficient policy enforcement in ViewTransitions\nCVE-2026-8538\nInsufficient validation of untrusted input in GPU\nCVE-2026-8539\nScript injection in SanitizerAPI\nCVE-2026-8540\nType Confusion in V8\nCVE-2026-8541\nOut of bounds read in UI\nCVE-2026-8542\nUse after free in Core\nCVE-2026-8543\nOut of bounds read in FileSystem\nCVE-2026-8544\nUse after free in Media\nCVE-2026-8545\nObject corruption in Compositing\nCVE-2026-8546\nOut of bounds read in GPU\nCVE-2026-8547\nInsufficient policy enforcement in Passwords\nCVE-2026-8548\nOut of bounds write in Media\nCVE-2026-8549\nUse after free in Media\nCVE-2026-8550\nUse after free in Google Lens\nCVE-2026-8551\nUse after free in Downloads\nCVE-2026-8552\nHeap buffer overflow in GPU\nCVE-2026-8553\nUse after free in GPU\nCVE-2026-8554\nType Confusion in ANGLE\nCVE-2026-8555\nUse after free in GTK\nCVE-2026-8556\nInappropriate implementation in ANGLE\nCVE-2026-8557\nUse after free in Accessibility\nCVE-2026-8558\nOut of bounds write in Fonts\nCVE-2026-8559\nInteger overflow in Internationalization\nCVE-2026-8560\nHeap buffer overflow in SwiftShader\nCVE-2026-8561\nIncorrect security UI in Fullscreen\nCVE-2026-8562\nSide-channel information leakage in Navigation\nCVE-2026-8563\nInsufficient policy enforcement in IFrame Sandbox\nCVE-2026-8564\nIncorrect security UI in Downloads\nCVE-2026-8565\nInappropriate implementation in Downloads\nCVE-2026-8566\nInsufficient policy enforcement in Payments\nCVE-2026-8567\nInteger overflow in ANGLE\nCVE-2026-8568\nInsufficient policy enforcement in AI\nCVE-2026-8569\nOut of bounds write in Codecs\nCVE-2026-8570\nType Confusion in V8\nCVE-2026-8571\nInsufficient policy enforcement in GPU\nCVE-2026-8572\nInsufficient policy enforcement in Network\nCVE-2026-8573\nInteger overflow in Codecs\nCVE-2026-8574\nUse after free in Core\nCVE-2026-8575\nUse after free in UI\nCVE-2026-8576\nInappropriate implementation in CORS\nCVE-2026-8577\nInteger overflow in Fonts\nCVE-2026-8578\nOut of bounds read in GPU\nCVE-2026-8579\nInsufficient validation of untrusted input in Skia\nCVE-2026-8580\nUse after free in Mojo\nCVE-2026-8581\nUse after free in GPU\nCVE-2026-8582\nObject lifecycle issue in Dawn\nCVE-2026-8583\nInsufficient policy enforcement in WebXR\nCVE-2026-8584\nInappropriate implementation in Views\nCVE-2026-8585\nInappropriate implementation in Media\nCVE-2026-8586\nInappropriate implementation in Chromoting\nCVE-2026-8587\nUse after free in Extensions\nCVE-2026-9110\nInappropriate implementation in UI\nCVE-2026-9111\nUse after free in WebRTC\nCVE-2026-9112\nUse after free in GPU\nCVE-2026-9113\nOut of bounds read in GPU\nCVE-2026-9114\nUse after free in QUIC\nCVE-2026-9115\nInsufficient policy enforcement in Service Worker\nCVE-2026-9116\nInsufficient policy enforcement in ServiceWorker\nCVE-2026-9117\nType Confusion in GFX\nCVE-2026-9118\nUse after free in XR\nCVE-2026-9120\nUse after free in WebRTC\nCVE-2026-9121\nOut of bounds read in GPU\nCVE-2026-9123\nHeap buffer overflow in Chromecast\nCVE-2026-9124\nInsufficient validation of untrusted input in Input\nCVE-2026-9126\nUse after free in DOM\nCVE-2026-9872\nOut of bounds write in GPU\nCVE-2026-9873\nUse after free in Network\nCVE-2026-9874\nUse after free in Dawn\nCVE-2026-9875\nOut of bounds read in WebGL\nCVE-2026-9876\nUse after free in WebGL\nCVE-2026-9877\nUse after free in ANGLE\nCVE-2026-9878\nUse after free in ANGLE\nCVE-2026-9879\nOut of bounds write in ANGLE\nCVE-2026-9880\nInsufficient validation of untrusted input in WebGL\nCVE-2026-9881\nUse after free in Bluetooth\nCVE-2026-9882\nInteger overflow in ANGLE\nCVE-2026-9883\nUse after free in Base\nCVE-2026-9884\nUse after free in Browser\nCVE-2026-9885\nInsufficient validation of untrusted input in UI\nCVE-2026-9886\nUse after free in Base\nCVE-2026-9887\nUse after free in Proxy\nCVE-2026-9888\nUse after free in WebView\nCVE-2026-9889\nOut of bounds read and write in Dawn\nCVE-2026-9890\nUse after free in XR\nCVE-2026-9891\nUse after free in Extensions\nCVE-2026-9892\nInappropriate implementation in Skia\nCVE-2026-9893\nUse after free in Skia\nCVE-2026-9894\nUse after free in GPU\nCVE-2026-9895\nOut of bounds read in GPU\nCVE-2026-9896\nOut of bounds write in V8\nCVE-2026-9897\nUse after free in DOM\nCVE-2026-9898\nInsufficient validation of untrusted input in GPU\nCVE-2026-9899\nUse after free in ANGLE\nCVE-2026-9900\nOut of bounds write in ANGLE\nCVE-2026-9901\nUse after free in ANGLE\nCVE-2026-9902\nUse after free in Accessibility\nCVE-2026-9903\nInsufficient validation of untrusted input in Site Isolation\nCVE-2026-9904\nUse after free in ANGLE\nCVE-2026-9905\nUse after free in Accessibility\nCVE-2026-9906\nOut of bounds write in GPU\nCVE-2026-9907\nOut of bounds read in Dawn\nCVE-2026-9908\nOut of bounds read in ANGLE\nCVE-2026-9909\nInteger overflow in Skia\nCVE-2026-9910\nOut of bounds memory access in ANGLE\nCVE-2026-9911\nInteger overflow in ANGLE\nCVE-2026-9912\nInappropriate implementation in GPU\nCVE-2026-9913\nInappropriate implementation in ANGLE\nCVE-2026-9914\nInsufficient validation of untrusted input in ANGLE\nCVE-2026-9915\nHeap buffer overflow in ANGLE\nCVE-2026-9916\nOut of bounds write in ANGLE\nCVE-2026-9917\nUninitialized Use in WebGL\nCVE-2026-9918\nInappropriate implementation in Tint\nCVE-2026-9919\nOut of bounds read in WebGL\nCVE-2026-9920\nUninitialized Use in GPU\nCVE-2026-9921\nUninitialized Use in WebGL\nCVE-2026-9922\nUse after free in GPU\nCVE-2026-9923\nUse after free in Skia\nCVE-2026-9924\nHeap buffer overflow in ANGLE\nCVE-2026-9925\nUse after free in ANGLE\nCVE-2026-9926\nHeap buffer overflow in ANGLE\nCVE-2026-9927\nUse after free in ANGLE\nCVE-2026-9928\nOut of bounds read in ANGLE\nCVE-2026-9929\nInappropriate implementation in WebGL\nCVE-2026-9930\nOut of bounds write in Dawn\nCVE-2026-9931\nUse after free in GPU\nCVE-2026-9932\nUse after free in ANGLE\nCVE-2026-9933\nUse after free in Input\nCVE-2026-9934\nUse after free in Aura\nCVE-2026-9935\nUninitialized Use in ANGLE\nCVE-2026-9936\nUse after free in GFX\nCVE-2026-9937\nUse after free in UI\nCVE-2026-9938\nInappropriate implementation in V8\nCVE-2026-9939\nHeap buffer overflow in WebCodecs\nCVE-2026-9940\nHeap buffer overflow in ANGLE\nCVE-2026-9941\nUse after free in ANGLE\nCVE-2026-9942\nUninitialized Use in ANGLE\nCVE-2026-9943\nOut of bounds read in WebGL\nCVE-2026-9944\nUninitialized Use in ANGLE\nCVE-2026-9945\nUse after free in Media\nCVE-2026-9946\nUse after free in ANGLE\nCVE-2026-9947\nUse after free in XML\nCVE-2026-9948\nUse after free in Views\nCVE-2026-9949\nUse after free in Core\nCVE-2026-9950\nInsufficient validation of untrusted input in iOS\nCVE-2026-9951\nUse after free in UI\nCVE-2026-9952\nUse after free in WebAudio\nCVE-2026-9953\nOut of bounds read in ANGLE\nCVE-2026-9954\nUse after free in TabStrip\nCVE-2026-9955\nInappropriate implementation in iOS\nCVE-2026-9956\nUse after free in iOS\nCVE-2026-9957\nUse after free in PDF\nCVE-2026-9958\nUse after free in PDFium\nCVE-2026-9959\nRace in WebRTC\nCVE-2026-9960\nInteger overflow in PDFium\nCVE-2026-9961\nUse after free in SurfaceCapture\nCVE-2026-9962\nUse after free in WebRTC\nCVE-2026-9963\nUninitialized Use in iOS\nCVE-2026-9964\nUse after free in Bluetooth\nCVE-2026-9965\nOut of bounds write in ANGLE\nCVE-2026-9966\nInteger overflow in XML\nCVE-2026-9967\nOut of bounds write in GPU\nCVE-2026-9968\nInteger overflow in V8\nCVE-2026-9969\nInsufficient validation of untrusted input in ANGLE\nCVE-2026-9970\nUse after free in WebGL\nCVE-2026-9971\nInappropriate implementation in iOS\nCVE-2026-9972\nUninitialized Use in Gamepad\nCVE-2026-9973\nOut of bounds write in V8\nCVE-2026-9974\nOut of bounds write in GPU\nCVE-2026-9975\nOut of bounds read and write in ANGLE\nCVE-2026-9976\nInappropriate implementation in USB\nCVE-2026-9977\nInsufficient validation of untrusted input in WebShare\nCVE-2026-9978\nUse after free in Glic\nCVE-2026-9979\nInsufficient validation of untrusted input in Input\nCVE-2026-9980\nInsufficient validation of untrusted input in Printing\nCVE-2026-9981\nInappropriate implementation in Skia\nCVE-2026-9982\nInsufficient validation of untrusted input in ANGLE\nCVE-2026-9983\nType Confusion in Skia\nCVE-2026-9984\nUse after free in UI\nCVE-2026-9985\nInsufficient validation of untrusted input in Media\nCVE-2026-9986\nInsufficient validation of untrusted input in OptimizationGuide\nCVE-2026-9987\nInsufficient validation of untrusted input in WebAppInstalls\nCVE-2026-9988\nUse after free in WebRTC\nCVE-2026-9989\nInappropriate implementation in Media\nCVE-2026-9990\nUse after free in WebAppInstalls\nCVE-2026-9991\nInappropriate implementation in Media\nCVE-2026-9992\nUse after free in Network\nCVE-2026-9993\nUse after free in Views\nCVE-2026-9994\nUse after free in Core\nCVE-2026-9995\nUse after free in WebXR\nCVE-2026-9996\nOut of bounds read in WebRTC\nCVE-2026-9997\nUse after free in Input\nCVE-2026-9998\nInteger overflow in Skia\nCVE-2026-9999\nInappropriate implementation in ANGLE\nCVE-2026-10000\nUse after free in Passwords\nCVE-2026-10001\nUse after free in PerformanceManager\nCVE-2026-10002\nUse after free in PDFium\nCVE-2026-10003\nUse after free in Views\nCVE-2026-10004\nInsufficient validation of untrusted input in Passwords\nCVE-2026-10005\nUse after free in WebAppInstalls\nCVE-2026-10006\nRace in WebAudio\nCVE-2026-10007\nUse after free in SVG\nCVE-2026-10008\nUninitialized Use in GPU\nCVE-2026-10009\nInteger overflow in Skia\nCVE-2026-10010\nInappropriate implementation in Input\nCVE-2026-10011\nInappropriate implementation in Skia\nCVE-2026-10012\nUse after free in Skia\nCVE-2026-10013\nUse after free in WebCodecs\nCVE-2026-10014\nUse after free in WebMIDI\nCVE-2026-10015\nInteger overflow in WTF\nCVE-2026-10016\nUse after free in DOM\nCVE-2026-10017\nOut of bounds read in Headless\nCVE-2026-10018\nInteger overflow in ANGLE\nCVE-2026-10019\nInteger overflow in ANGLE\nCVE-2026-10020\nInsufficient validation of untrusted input in Skia\nCVE-2026-10021\nInsufficient validation of untrusted input in USB\nCVE-2026-10022\nType Confusion in V8\nProduct Status\nVersions\nAffected\nUnaffected\nPrisma Browser\n< 148.18.4.217\n>= 148.18.4.217\nRequired Configuration for Exposure\nNo special configuration is required to be affected by this issue.\nSeverity:\nHIGH, Suggested Urgency:\nMODERATE\nCVSS-BT:\n8.4 /\nCVSS-B:\n9.5 (\nCVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:U/AU:N/R:A/V:D/RE:M/U:Amber\n)\nExploitation Status\nPalo Alto Networks is not aware of any malicious exploitation of this issue.\nSolution\nCVE\nPrisma Browser\nCVE-2026-8509\n148.12.1.168\nCVE-2026-8510\n148.12.1.168\nCVE-2026-8511\n148.12.1.168\nCVE-2026-8512\n148.12.1.168\nCVE-2026-8513\n148.12.1.168\nCVE-2026-8514\n148.12.1.168\nCVE-2026-8515\n148.12.1.168\nCVE-2026-8516\n148.12.1.168\nCVE-2026-8517\n148.12.1.168\nCVE-2026-8518\n148.12.1.168\nCVE-2026-8519\n148.12.1.168\nCVE-2026-8520\n148.12.1.168\nCVE-2026-8521\n148.12.1.168\nCVE-2026-8522\n148.12.1.168\nCVE-2026-8523\n148.12.1.168\nCVE-2026-8524\n148.12.1.168\nCVE-2026-8525\n148.12.1.168\nCVE-2026-8526\n148.12.1.168\nCVE-2026-8527\n148.12.1.168\nCVE-2026-8528\n148.12.1.168\nCVE-2026-8529\n148.12.1.168\nCVE-2026-8530\n148.12.1.168\nCVE-2026-8531\n148.12.1.168\nCVE-2026-8532\n148.12.1.168\nCVE-2026-8533\n148.12.1.168\nCVE-2026-8534\n148.12.1.168\nCVE-2026-8535\n148.12.1.168\nCVE-2026-8536\n148.12.1.168\nCVE-2026-8537\n148.12.1.168\nCVE-2026-8538\n148.12.1.168\nCVE-2026-8539\n148.12.1.168\nCVE-2026-8540\n148.12.1.168\nCVE-2026-8541\n148.12.1.168\nCVE-2026-8542\n148.12.1.168\nCVE-2026-8543\n148.12.1.168\nCVE-2026-8544\n148.12.1.168\nCVE-2026-8545\n148.12.1.168\nCVE-2026-8546\n148.12.1.168\nCVE-2026-8547\n148.12.1.168\nCVE-2026-8548\n148.12.1.168\nCVE-2026-8549\n148.12.1.168\nCVE-2026-8550\n148.12.1.168\nCVE-2026-8551\n148.12.1.168\nCVE-2026-8552\n148.12.1.168\nCVE-2026-8553\n148.12.1.168\nCVE-2026-8554\n148.12.1.168\nCVE-2026-8555\n148.12.1.168\nCVE-2026-8556\n148.12.1.168\nCVE-2026-8557\n148.12.1.168\nCVE-2026-8558\n148.12.1.168\nCVE-2026-8559\n148.12.1.168\nCVE-2026-8560\n148.12.1.168\nCVE-2026-8561\n148.12.1.168\nCVE-2026-8562\n148.12.1.168\nCVE-2026-8563\n148.12.1.168\nCVE-2026-8564\n148.12.1.168\nCVE-2026-8565\n148.12.1.168\nCVE-2026-8566\n148.12.1.168\nCVE-2026-8567\n148.12.1.168\nCVE-2026-8568\n148.12.1.168\nCVE-2026-8569\n148.12.1.168\nCVE-2026-8570\n148.12.1.168\nCVE-2026-8571\n148.12.1.168\nCVE-2026-8572\n148.12.1.168\nCVE-2026-8573\n148.12.1.168\nCVE-2026-8574\n148.12.1.168\nCVE-2026-8575\n148.12.1.168\nCVE-2026-8576\n148.12.1.168\nCVE-2026-8577\n148.12.1.168\nCVE-2026-8578\n148.12.1.168\nCVE-2026-8579\n148.12.1.168\nCVE-2026-8580\n148.12.1.168\nCVE-2026-8581\n148.12.1.168\nCVE-2026-8582\n148.12.1.168\nCVE-2026-8583\n148.12.1.168\nCVE-2026-8584\n148.12.1.168\nCVE-2026-8585\n148.12.1.168\nCVE-2026-8586\n148.12.1.168\nCVE-2026-8587\n148.12.1.168\nCVE-2026-9110\n148.18.2.179\nCVE-2026-9111\n148.18.2.179\nCVE-2026-9112\n148.18.2.179\nCVE-2026-9113\n148.18.2.179\nCVE-2026-9114\n148.18.2.179\nCVE-2026-9115\n148.18.2.179\nCVE-2026-9116\n148.18.2.179\nCVE-2026-9117\n148.18.2.179\nCVE-2026-9118\n148.18.2.179\nCVE-2026-9120\n148.18.2.179\nCVE-2026-9121\n148.18.2.179\nCVE-2026-9123\n148.18.2.179\nCVE-2026-9124\n148.18.2.179\nCVE-2026-9126\n148.18.2.179\nCVE-2026-10000\n148.18.4.217\nCVE-2026-10001\n148.18.4.217\nCVE-2026-10002\n148.18.4.217\nCVE-2026-10003\n148.18.4.217\nCVE-2026-10004\n148.18.4.217\nCVE-2026-10005\n148.18.4.217\nCVE-2026-10006\n148.18.4.217\nCVE-2026-10007\n148.18.4.217\nCVE-2026-10008\n148.18.4.217\nCVE-2026-10009\n148.18.4.217\nCVE-2026-10010\n148.18.4.217\nCVE-2026-10011\n148.18.4.217\nCVE-2026-10012\n148.18.4.217\nCVE-2026-10013\n148.18.4.217\nCVE-2026-10014\n148.18.4.217\nCVE-2026-10015\n148.18.4.217\nCVE-2026-10016\n148.18.4.217\nCVE-2026-10017\n148.18.4.217\nCVE-2026-10018\n148.18.4.217\nCVE-2026-10019\n148.18.4.217\nCVE-2026-10020\n148.18.4.217\nCVE-2026-10021\n148.18.4.217\nCVE-2026-10022\n148.18.4.217\nCVE-2026-9872\n148.18.4.217\nCVE-2026-9873\n148.18.4.217\nCVE-2026-9874\n148.18.4.217\nCVE-2026-9875\n148.18.4.217\nCVE-2026-9876\n148.18.4.217\nCVE-2026-9877\n148.18.4.217\nCVE-2026-9878\n148.18.4.217\nCVE-2026-9879\n148.18.4.217\nCVE-2026-9880\n148.18.4.217\nCVE-2026-9881\n148.18.4.217\nCVE-2026-9882\n148.18.4.217\nCVE-2026-9883\n148.18.4.217\nCVE-2026-9884\n148.18.4.217\nCVE-2026-9885\n148.18.4.217\nCVE-2026-9886\n148.18.4.217\nCVE-2026-9887\n148.18.4.217\nCVE-2026-9888\n148.18.4.217\nCVE-2026-9889\n148.18.4.217\nCVE-2026-9890\n148.18.4.217\nCVE-2026-9891\n148.18.4.217\nCVE-2026-9892\n148.18.4.217\nCVE-2026-9893\n148.18.4.217\nCVE-2026-9894\n148.18.4.217\nCVE-2026-9895\n148.18.4.217\nCVE-2026-9896\n148.18.4.217\nCVE-2026-9897\n148.18.4.217\nCVE-2026-9898\n148.18.4.217\nCVE-2026-9899\n148.18.4.217\nCVE-2026-9900\n148.18.4.217\nCVE-2026-9901\n148.18.4.217\nCVE-2026-9902\n148.18.4.217\nCVE-2026-9903\n148.18.4.217\nCVE-2026-9904\n148.18.4.217\nCVE-2026-9905\n148.18.4.217\nCVE-2026-9906\n148.18.4.217\nCVE-2026-9907\n148.18.4.217\nCVE-2026-9908\n148.18.4.217\nCVE-2026-9909\n148.18.4.217\nCVE-2026-9910\n148.18.4.217\nCVE-2026-9911\n148.18.4.217\nCVE-2026-9912\n148.18.4.217\nCVE-2026-9913\n148.18.4.217\nCVE-2026-9914\n148.18.4.217\nCVE-2026-9915\n148.18.4.217\nCVE-2026-9916\n148.18.4.217\nCVE-2026-9917\n148.18.4.217\nCVE-2026-9918\n148.18.4.217\nCVE-2026-9919\n148.18.4.217\nCVE-2026-9920\n148.18.4.217\nCVE-2026-9921\n148.18.4.217\nCVE-2026-9922\n148.18.4.217\nCVE-2026-9923\n148.18.4.217\nCVE-2026-9924\n148.18.4.217\nCVE-2026-9925\n148.18.4.217\nCVE-2026-9926\n148.18.4.217\nCVE-2026-9927\n148.18.4.217\nCVE-2026-9928\n148.18.4.217\nCVE-2026-9929\n148.18.4.217\nCVE-2026-9930\n148.18.4.217\nCVE-2026-9931\n148.18.4.217\nCVE-2026-9932\n148.18.4.217\nCVE-2026-9933\n148.18.4.217\nCVE-2026-9934\n148.18.4.217\nCVE-2026-9935\n148.18.4.217\nCVE-2026-9936\n148.18.4.217\nCVE-2026-9937\n148.18.4.217\nCVE-2026-9938\n148.18.4.217\nCVE-2026-9939\n148.18.4.217\nCVE-2026-9940\n148.18.4.217\nCVE-2026-9941\n148.18.4.217\nCVE-2026-9942\n148.18.4.217\nCVE-2026-9943\n148.18.4.217\nCVE-2026-9944\n148.18.4.217\nCVE-2026-9945\n148.18.4.217\nCVE-2026-9946\n148.18.4.217\nCVE-2026-9947\n148.18.4.217\nCVE-2026-9948\n148.18.4.217\nCVE-2026-9949\n148.18.4.217\nCVE-2026-9950\n148.18.4.217\nCVE-2026-9951\n148.18.4.217\nCVE-2026-9952\n148.18.4.217\nCVE-2026-9953\n148.18.4.217\nCVE-2026-9954\n148.18.4.217\nCVE-2026-9955\n148.18.4.217\nCVE-2026-9956\n148.18.4.217\nCVE-2026-9957\n148.18.4.217\nCVE-2026-9958\n148.18.4.217\nCVE-2026-9959\n148.18.4.217\nCVE-2026-9960\n148.18.4.217\nCVE-2026-9961\n148.18.4.217\nCVE-2026-9962\n148.18.4.217\nCVE-2026-9963\n148.18.4.217\nCVE-2026-9964\n148.18.4.217\nCVE-2026-9965\n148.18.4.217\nCVE-2026-9966\n148.18.4.217\nCVE-2026-9967\n148.18.4.217\nCVE-2026-9968\n148.18.4.217\nCVE-2026-9969\n148.18.4.217\nCVE-2026-9970\n148.18.4.217\nCVE-2026-9971\n148.18.4.217\nCVE-2026-9972\n148.18.4.217\nCVE-2026-9973\n148.18.4.217\nCVE-2026-9974\n148.18.4.217\nCVE-2026-9975\n148.18.4.217\nCVE-2026-9976\n148.18.4.217\nCVE-2026-9977\n148.18.4.217\nCVE-2026-9978\n148.18.4.217\nCVE-2026-9979\n148.18.4.217\nCVE-2026-9980\n148.18.4.217\nCVE-2026-9981\n148.18.4.217\nCVE-2026-9982\n148.18.4.217\nCVE-2026-9983\n148.18.4.217\nCVE-2026-9984\n148.18.4.217\nCVE-2026-9985\n148.18.4.217\nCVE-2026-9986\n148.18.4.217\nCVE-2026-9987\n148.18.4.217\nCVE-2026-9988\n148.18.4.217\nCVE-2026-9989\n148.18.4.217\nCVE-2026-9990\n148.18.4.217\nCVE-2026-9991\n148.18.4.217\nCVE-2026-9992\n148.18.4.217\nCVE-2026-9993\n148.18.4.217\nCVE-2026-9994\n148.18.4.217\nCVE-2026-9995\n148.18.4.217\nCVE-2026-9996\n148.18.4.217\nCVE-2026-9997\n148.18.4.217\nCVE-2026-9998\n148.18.4.217\nCVE-2026-9999\n148.18.4.217\nWorkarounds and Mitigations\nNo known workarounds exist for this issue.\nCPE Applicability\ncpe:2.3:a:palo_alto_networks:prisma_browser:*:*:*:*:*:*:*:*\nis vulnerable\nfrom (including)148.18.4\nand\nup to (excluding)148.18.4.217\nTimeline\n2026-06-10\nInitial Publication",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http_llm_blocks",
+      "content_source_url": "https://security.paloaltonetworks.com/PAN-SA-2026-0008",
+      "content_chars": 19436,
+      "content_sha256": "ebfe7c0639909cd061d3af9dd77dea3e20232f59f5df9bcb8b8a8aacf224b672",
+      "content_fetched_at": "2026-07-28T22:13:31.505249+00:00",
+      "author": "paloalto-advisory",
+      "author_name": "Palo Alto Networks Security Advisories",
+      "author_url": "https://security.paloaltonetworks.com/",
+      "published_at": "2026-06-10T16:00:00+00:00",
+      "collected_at": "2026-07-28T22:11:33.675493+00:00",
+      "tags": [
+        "kind:publish",
+        "src:paloalto-advisory",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://security.paloaltonetworks.com/",
+        "https://security.paloaltonetworks.com/PAN-SA-2026-0008"
+      ],
+      "refs": {
+        "actor": {
+          "login": "paloalto-advisory",
+          "url": "https://security.paloaltonetworks.com/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "paloalto-advisory",
+          "name": "Palo Alto Networks Security Advisories",
+          "home_url": "https://security.paloaltonetworks.com/"
+        },
+        "article": {
+          "title": "PAN-SA-2026-0008 Chromium: Monthly Vulnerability Update (June 2026) (Severity: HIGH)",
+          "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0008",
+          "content_sha256": "ebfe7c0639909cd061d3af9dd77dea3e20232f59f5df9bcb8b8a8aacf224b672"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http_llm_blocks"
+      }
+    }
+  ]
 }
