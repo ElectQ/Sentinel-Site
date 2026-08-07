@@ -1,139 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-08-07",
-  "generated_at": "2026-08-07T01:04:11.088326+00:00",
-  "item_count": 5,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:49a0d653f74c2449",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: So, ISE Console, PS1 code, what can i do with it ..",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-07T01:01:38.685400+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/765956-ise-console-ps1-code.html",
-      "title": "So, ISE Console, PS1 code, what can i do with it ..",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/765956-ise-console-ps1-code.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-07T01:02:20.601526+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:cf8ba7cf0ed004ec",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: Xenos injector v2.3.2",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-07T01:01:38.685400+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/124013-xenos-injector-v2-3-2-a.html",
-      "title": "Xenos injector v2.3.2",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/124013-xenos-injector-v2-3-2-a.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-07T01:02:31.355269+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:565eac6a11df7011",
-      "kind": "publish",
-      "text": "yage-share published: 微调回来了，但理由变了：2026 LLM Fine-tuning 从能力增强到成本工程",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-06T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/llm-finetuning-cost-engineering-20260806.html",
-      "title": "微调回来了，但理由变了：2026 LLM Fine-tuning 从能力增强到成本工程",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "推理与性能\n产业与竞争\nAI 产品与平台\n在 2026 年的 AI\n工程落地中，许多团队都会遇到一个常见的矛盾：当一个应用需要每天处理数十万次固定规则判断（比如电商商品违规审核、内部工单分类或安防监控帧检测）时，如果每次都调用顶尖的云端大语言模型，系统在准确率上表现优异，但月度\nAPI 账单与几秒钟的响应延迟会让项目在经济上难以为继。\n面对这一瓶颈，工程界在 2026\n年重新聚拢到同一个解决方案：针对特定窄领域任务，fine-tune\n一个专精的小型模型或端侧分类器。无论是语言文本还是计算机视觉，这一微调路线都在展现其工程价值：\n语言模型端的微调\n：有团队（如\nFermiSense）针对电商目录审核任务，通过后训练将规则内化到一个 9B\n参数的小型语言模型中，在特定规则测试上取得了优于通用顶尖大模型的准确率，并将每千次调用成本从数十美元压缩至\n0.5 美元。\n视觉模型端的微调\n：在鸭哥的\nDINOv3\n分类器工作流\n工程实践中，面对 12\n万帧车库监控视频的开闭状态检测，同样走微调路线——结合计算机视觉的领域经验（选用表示能力强的\nDINOv3\n主干）与多模态大模型的自动标注能力（利用大模型自动提议标签，人工仅做少量的规则与边界抽样盲审），仅用\n839 张审核样本就微调出了一个零 API 成本的本地线性分类器（最终 ONNX\n部署工件受 Fail-closed 门控阻塞，待 Owner 审核 35\n处预测分歧后方可落地）。\n在通用大模型表现出色的今天，为什么团队反而开始重新选择微调小模型与端侧分类器？这究竟是技术的重复，还是大模型落地认知成熟后的必然选择？要回答这个问题，需要先从过去几年工程界对微调技术的认知演进说起。\n认知的两次演进：从 BERT\n惯性到能力面解耦\n在 2018 至 2022\n年的预训练时代，预训练与微调是自然语言处理的标准路线。工程师的习惯是：面对任何新任务，第一反应都是收集一批标注数据，对已有模型做全参数微调。然而，大语言模型的出现打破了这一惯性。在关于\n基础大模型定义与历史\n的讨论中曾指出，基础模型的核心突破在于适应新场景不再需要改动模型权重，也不需要工程师投入算力微调，只需在\nPrompt 中放入若干示范样例即可完成适配。\n在随后的工程实践中，大家对微调的能力边界有了更清晰的实证定位。在关于\n提示词到微调适配\n的工程实践中曾分析，微调并不能凭空为模型注入未曾具备的推理能力或新知识，其本质在于激发已有能力并对齐输出格式。2025\n至 2026 年的多项研究进一步印证了这一点：\n知识注入的局限\n：在\nNEJM AI 2025\n年的医疗微调受控实验\n中，研究团队对主流模型进行临床医学数据微调。模型虽然记忆了静态参数，但在合成电子病历测试中平均准确率仅有\n12%，且通用医学推理能力出现了下滑。\n训练集学不全\n：在关于\n微调不完全学习现象研究\n中显示，即使训练损失收敛，微调模型在面对训练集里低频、高密度的复杂样本时依然存在学不全的现象。\n结构侵蚀与安全风险\n：在关于\n灾难性遗忘的底层注意力分析\n中表明，微调会干扰模型浅层\n15% 至 23% 的注意力头，导致模型对先前学会的知识产生遗忘。同时，\nACL 2026\n关于安全护栏坍塌的研究\n证明，微调极易破坏预训练建立的安全护栏，即使使用看似无害的数据集也可能导致安全对齐退化。此外，\n微调投毒攻击研究\n进一步显示，在仅约\n250 条投毒样本干预下即可在 600M 到 13B 规模模型中植入后门触发器（产生\ngibberish 文本），且所需样本数与模型规模几乎无关。\n与此同时，提示工程与检索技术的演进，进一步证明了在知识与推理任务上不需要依赖微调：\n*\n提示优化超越微调\n：微软的\nMedPrompt\n提示框架\n通过少样本提示与思维链组合，在不修改权重的条件下，在 9\n项医疗评测中超越了专门微调的医学模型。\nGEPA\n结构化提示词优化框架\n在效果上也显著优于强化学习微调。 *\n输入缓存降低门槛\n：主流 API 服务商提供的 Prompt Caching\n技术带来了 60% 至 90%\n的输入成本降幅，这直接将微调小模型在成本上何时划算的平衡点，从每天约 1\n万次请求推高到了每天 5 万至 10 万次请求。\n这些事实说明：\n如果目标是让模型变聪明、学会新知识或做复杂推理，微调不仅不是最佳路径，反而可能破坏模型的通用能力。\n2026 年行业\nLandscape：作为成本与延迟工程的微调\n既然微调无法提升智能上限，为什么 2026\n年依然有大量团队在生产环境中使用微调？原因在于工程界对微调的定位完成了重构：\n微调不再是用来提升底层智力或能力上限的手段，而是一项以成本、延迟与控制力为核心的工程权衡（Trade-off）。\n微调针对形式与行为，检索针对事实与内容。当一个业务任务满足以下三个条件时，微调小模型（3B\n至 14B 参数）相比直接调用顶级 API 具备明确的工程价值：\n高频调用\n：每日请求量达到 5 万至 10 万次以上，通用\nAPI 的按 Token 计费构成显著成本瓶颈。\n窄领域与输出格式确定\n：任务目标单一（如结构化提取、分类、固定的格式化输出），不需要模型维持广博的通用对话能力。\n输出结果可评分与可验证\n：存在明确的规则校验、代码编译器判定或客观\nReward 函数，能够形成自动化评估闭环。\n在 2026 年的生产部署中，在关于\n287\n个生产级小语言模型落地案例调研\n中显示，有 40%\n的团队采用了\n混合路由架构\n：由微调后的小模型处理 80% 至\n95% 的标准高频请求，仅将 5% 至 20% 的复杂难例路由给顶级 API。\n下表梳理了 2026 年行业代表性的微调实践及其工程定位：\n团队 / 案例\n基础架构与方法\n核心业务场景\n效果与成本表现\n证据强度与公开缺口\nFermiSense\n(2026-07)\nQwen3.5-9B + GRPO (3.5 天, $500 GPU)\n电商商品目录审核 (17.7万 Episode)\n归一化得分 87.3% vs 顶级 API\n76.9%\n成本从 $19-172/k 次降至 $0.50/k 次\n厂商自报数据；未公开测试集；评估器存在自我偏置风险\nHarvey + Applied Compute\n(2026)\nGLM-5.1 全参数异步 RL\n法律 Agent 复杂推理\nLAB 基准测试 Rubric 通过率 0.913 vs\nGPT-5.5 / Opus 4.8\n客户与厂商联合声明；基于内部专有评测集\nIntercom Fin Apex\n(2026)\n客户支持专用后训练小模型\n自动化客服解决与转接\n客服解决率 73.1% vs GPT-5.4\n71.1%\n响应延迟 3.7s，单次成本 $0.99 (仅顶级 API 的 1/5)\n公司自报数据；2026 年 6 月被 Salesforce 以\n$36 亿收购侧面印证商业价值\nBridgewater + Thinking\nMachines\n(2026)\nQwen3-235B + GRPO / CISPO / OPD\n金融文档专家研判\n得分 84.7% vs 顶级 API\n78.2%\n推理成本降低 13.8 倍\n联合发表声明；5 位作者中有 3\n位来自供应商；无公开训练/测试划分\nPrime Intellect / Ramp\nFastAsk\n(2026)\nQwen3.5-35B + RL\n财务表格结构化搜索\n准确率 66.25% vs Opus 4.6 61.88%\n(+4.4%)\n速度提升 27%，成本降低至 Haiku 级别\n客户签署声明 +\n公开评测集；未经第三方独立复核\n287 生产案例调查\n(Florin\nChis, 2026)\n混合路由 (3B-14B 微调 SLM + 顶级 API)\n多行业生产环境部署\n40% 的团队采用 SLM 处理 80-95% 请求，顶级\nAPI 处理 5-20%\n多行业统计抽样调查\n这些案例表明：2026\n年成功的微调都集中在规则明确、可自动打分的狭窄场景。同时，行业对厂商自报的成绩保持着理性审慎，因为大部分高分案例缺乏第三方可复现的公开测试集，这也是为什么混合路由架构成为了许多团队的折中选择。\n视觉端的微调实践：鸭哥\nDINOv3 Classifier Skill 的杠杆力\n在视觉领域，将高频二元判断从云端大模型解耦、微调为本地分类器的工程目标完全相同。但在具体的微调实现上，传统或一般的微调方法通常面临两大痛点：一是依赖大量人工逐帧标注，人力成本昂贵；二是不加区分地对大模型做全参数重训，既消耗大量算力又容易破坏底层表征。\n鸭哥开源的\nDINOv3\n分类器工作流\n针对这两大痛点进行了重新设计，展示了与传统微调不同的两个核心杠杆：\n计算机视觉的领域经验\n：得益于 DINOv3\n主干出色的通用视觉特征表示能力，无需对庞大的大视觉语言模型进行全参数微调。只需冻结主干特征、在顶部微调一层轻量级的线性分类头，就能在数秒内训练出性能稳定、零\nAPI 成本的本地分类器。\n多模态大模型的自动标注杠杆\n：借助当前多模态大模型出色的视觉理解与提议能力，全量\n12\n万帧视频的候选标签初始化由大模型自动完成。人类无需逐帧进行人工标注，只需在关键节点进行局部主动抽样盲审（Top正例\n/ 边界难例 / 低分负例），提高了数据工程的杠杆效率。\nDINOv3 分类器工作流：从 12\n万帧原始视频到本地 ONNX 分类器\n在车库门开闭状态识别测试中，系统处理了 121,467\n帧监控图像，全流程仅凭大模型自动提议 + 人工审阅 839\n张图片即完成微调，重训练后的线性分类器在验证集上达到了 AP 0.9731 与 F1\n0.9500（精确率 0.9236，召回率 0.9779）。在重训练迭代中，系统自动检出了\n35 处预测分歧样本提请 Owner 确认，并通过 Fail-closed\n自动化门控在所有分歧审核完成前阻塞最终 ONNX 导出。\n对比传统的重度微调，这种领域经验冻结主干 + 多模态大模型自动标注 +\n轻量线性头微调的模式证明：\n微调的核心不在于把全网参数重练一遍，而在于利用大模型的能力与领域经验快速打磨出高质量数据与轻量权重，将高频窄场景的推理下沉\n。\n决策指南与落地 Checklist\n当工程团队面临模型适配的选型决策时，可以通过以下 2×2\n矩阵评估是否需要引入微调：\n输出可客观评分 / 判定规则确定\n(Scored)\n输出不可客观评分 / 开放式推理\n(Unscored)\n高频调用 (>\n5万次/天)\n推荐微调小模型 /\n部署端侧分类器\n· 选用 3B-14B 模型或 DINOv3 类专用小模型\n·\n典型场景：结构化提取、客服分类、商品审核、视频帧状态判定\n推荐 Prompt Caching +\nRAG\n· 保持通用大模型能力，通过输入缓存与检索降低成本\n·\n典型场景：开放对话、复杂研报撰写、创意写作\n低频调用 (<\n5千次/天)\n推荐 API + Tool Calling /\n代码校验\n·\n使用代码断言或函数调用完成规则校验，无需运维成本\n·\n典型场景：低频自动化脚本、定期合规检查\n推荐 直接调用通用顶级\nAPI\n· 依靠 Few-shot 示例完成适配\n·\n典型场景：架构设计评估、长尾问题诊断\n生产落地 Checklist\n在决定开启微调项目前，建议确认以下 4 项标准：\n频次核算\n：日均 API\n调用量是否已达到通过自托管小模型收回算力与运维成本的平衡点？\n评估闭环\n：任务是否存在明确、可自动判定的校验规则、单元测试或\nReward 函数？\n知识解耦\n：领域事实是否已通过 RAG 或\nPrompt 解耦，而非试图把动态知识强行训练进模型权重？\n杠杆最大化\n：是否利用了多模态大模型的自动标注/提议能力，使人工干预仅集中于极少量的校验与审阅门控？\n微调并不是通往通用人工智能的捷径。但在高频、窄领域的生产实践中，作为一项以成本、延迟与控制力为目标的工程手段，它在\n2026 年的工程实践中重新找到了清晰而坚实的定位。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/llm-finetuning-cost-engineering-20260806.html",
-      "content_chars": 4992,
-      "content_sha256": "ffcabef80b8cbeeb44176e34e7a96577b4d0761a18361ea6d247417bb02f9c9e",
-      "content_fetched_at": "2026-08-07T01:02:40.920812+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:b3ab904361fc60f1",
-      "kind": "publish",
-      "text": "yage-share published: OpenAI 带来的上下文工程范式反思：为何离线编撰能让在线 RAG 看得更少、更准？",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-06T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/openai-data-agent-offline-context-20260806.html",
-      "title": "OpenAI 带来的上下文工程范式反思：为何离线编撰能让在线 RAG 看得更少、更准？",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n检索与知识系统\n我最近注意到 OpenAI 在 2026 年初发的一份介绍内部数据 Agent（Data\nAgent）的报告\n《Inside\nour in-house data agent》\n，里面的工程细节挺有意思。据\nVentureBeat\n，这个\nagent 的初版由两名工程师在三个月内搭成，后来已有数千名员工使用。若采用\nOpenAI 2026 年 1 月官方披露的统一口径，其数据平台服务 3,500\n多名内部用户，覆盖 70,000 个 datasets 和 600 PB 以上数据。\n很长一段时间里，大家做 Agent\n遇到海量数据和复杂业务时，第一反应往往是去做复杂的实时检索。从向量数据库检索、Graph\nRAG\n到各种在线分发机制，行业里好像默认觉得在线把匹配做复杂，才是解决上下文问题的终极办法。但\nOpenAI 这份报告和后续透露出的细节，其实给出了一个挺不一样的视角。\n支撑这么大数仓分析的系统，OpenAI\n并没有把主要复杂度堆在在线控制流上。根据\nOpenAI\n官方博客\n和\nByteByteGo\n访谈\n的披露，在线 agent loop 相当简洁：OpenAI 2026 年 1\n月披露的版本由 GPT-5.2 驱动，后来的 ByteByteGo 报道称在线主模型已升级到\nGPT-5.5；每个请求仍进入同一个主模型，约 13 个精选工具按次暴露，没有独立\nrouter，也尚未 fine-tune。这里的“单模型”只指在线 agent loop，离线\nenrichment 和检索仍使用 Codex 与 Embeddings API。\nOpenAI 的核心工程师 Emma Tang 在接受\nVentureBeat\n采访\n时提到：“我们用的都是外部完全可用的同款\nAPI，没用微调模型，完全依赖\nGPT-5.2，所以你完全可以搭出这样的系统。”在全行业都在研究实时 RAG\n搜索的时候，这种把复杂度前移到离线生产的做法，反而在复杂场景下跑出了相当不错的稳定性。\n真正反直觉的地方，在于它把复杂度搬到了提问之前\n刚看到 OpenAI\n披露的内部架构时，最吸引我注意的就是它在线部分的简洁。在常见的工程设想里，一个要同时服务几千名顶级科学家和工程师的数据\nAgent，后台怎么也得堆上一堆模型微调策略、多层路由以及复杂的工具链。\n但真实的数据和技术细节却展示了很鲜明的反差：在线任务就靠一个主模型在跑，每次调用只暴露约\n13\n个工具。这种架构的干炼，打破了大家对大厂必须有神级在线算法的迷思。它真正反直觉的地方在于：OpenAI\n并不是用离线目录取代 RAG——官方明确写了查询时仍通过 RAG 拉取最相关的\nembedded context。本文所谓 Yahoo\n模式，是我对离线编撰环节的比喻；真正的变化是把 RAG\n的检索对象从原始元数据和日志，换成预先加工的高密度 context。\n仔细拆解这个案例会发现，大家很容易踩进一个误区，以为越厉害的 Agent\n就越需要复杂的在线控制流。但在实际工程里，在线部分太复杂往往是系统不稳定的根源。当所有的精力都放在怎么在用户提问的那几秒钟里完成高效检索和多步推理时，本质上是在用在线计算的不确定性，去硬扛数据本身的语义模糊。\n离线编撰到在线投影：后台维护丰富\ncontext，前台只投影当前需要的片段\n范式之辩：检索 vs\n编撰，企业内部系统的假设破灭\n为什么处理企业级复杂数据时，传统的在线 RAG\n搜索很容易遇到瓶颈？这背后的根源，其实是 Google 模式和 Yahoo\n模式对信息是怎么存在的这个前提假设完全不同。这里的 Google / Yahoo\n都是我的比喻框架，不是 OpenAI 的术语。\nGoogle 模式（实时 RAG\n搜索）在公开互联网上之所以大获成功，是因为互联网有着极端丰富的信息供给。公网上几乎什么都有，不管你问什么，大概率早就有现成的网页或文档把答案写好了。所以\nGoogle\n模式的基本假设是：\n信息本身就已经在那里了，我们只需要在用户提问时把它检索出来\n。\n但企业内部的数据和知识系统，恰恰彻底打破了这个前提。\n在实际的数仓治理里，表名往往充满了像\nt_usr_evt_v2\n这样高度抽象的代号，字段的具体含义也和业务上下文绑定得非常深。数据表真正的业务语义——比如主键粒度、指标判定边界、下游依赖链条——\n往往没有被完整、及时地写入\nschema 或现成文档\n，而是隐式藏在 Airflow 或 Spark 的 ETL\n管道代码里，甚至只保存在老员工的脑子里。OpenAI 自己的 Lesson #3\n说得很直白：schema 和 query history 描述的是表的形状和用法，true meaning\n在产生它的代码里。\n在信息没有被充分文字化、结构化的企业内部，如果盲目用 Google\n模式在提问时去搞实时向量搜索，搜出来的多半是字面相似但逻辑完全对不上的垃圾片段。原因很简单：\n你很难检索出一个还没有被写出来的语义\n。\n而 Yahoo\n模式的核心，从来就不是死板的分类，而是一个人工主编与整理的过程。在早期的互联网，Yahoo\n依靠主编人员手动去筛选、撰写和组织网站分类目录。在 OpenAI\n的案例里，大语言模型真正替代的并不是检索的动作，而是\n接管了主编与整理人的角色\n——然后，在线端仍然用\nRAG 去检索这些已经被编好的材料。\nOpenAI\n并没有靠人工去死板地维护这份目录，而是让大模型（Codex）担任离线主编，针对热门或重要表自动去读其生产\npipeline\n代码，结合专家标注和历史使用信号，在提问发生之前，就把原本杂乱无章的数仓代码编译成按表组织的结构化描述，以及可单独检索的机构知识和\nmemory。\n这种离线提炼直接决定了前台调用的极简。正因为离线阶段已经把原始代码、Schema\n和历史使用信号提炼成按表组织的结构化描述，在线推理时，模型只需检索与当前问题相关的片段，而不必扫描原始元数据和日志——这就顺理成章地引出了上下文工程里的另一个核心原则：少即是多。\nEmma Tang 在\nVentureBeat\n访谈\n里专门提到，很多团队做 Agent\n时，习惯把搜到的所有资料一股脑塞进上下文窗口，寄希望于大模型自己能在海量信息里看出端倪，但\nevals 发现效果刚好相反：给模型更少但更准确、经过策展的\ncontext，结果反而更好。\n甚至连工具的收敛也是同一个逻辑：正因为离线卡片把语义交代得更干净，前台模型不再那么容易犯迷糊，ByteByteGo\n报道团队最初接入约 40\n个工具，后来移除重叠能力，并把每次调用可见的工具控制在约 13 个。\n归因之辩：抛开分层表象，它到底在解决什么工程痛点？\n为了支撑这套离线主编机制，OpenAI\n在后台把上下文的收集与整理分成了六个层级，也就是他们报告里提到的六层上下文架构。\n如果光看这六层架构本身，很容易把它读成一份枯燥的说明书：第一层是什么、第二层是什么……但作为工程实践者，架构图表面的分层并不重要，真正有启发的是：\n他们当年到底遇到了什么数据死穴，才倒逼出这六种设计？\n下面是我对官方六层的重组，不是 OpenAI\n自己的四痛点框架。把这六层拆开，本质上是在用离线基础设施去解决企业数据分析里的四个核心痛点：\n四个工程痛点对应六层\ncontext：语义、噪声、权限、过期与纠错\n痛点一：表的真实逻辑，往往不写在数据库\nSchema 里\n光看数据库表名和字段类型，你往往不知道\nt_usr_evt_v2\n到底是一天更新一次还是一小时更新一次，更不知道主键和 Join\n关系是什么。这些逻辑大量藏在 Airflow/Spark\n的管道代码和资深工程师的经验里。 为了解决这个语义黑盒，他们才设计了\nCodex 代码解析（Layer 3）\n与\n专家标注（Layer\n2）\n：让 Codex 每日异步任务针对热门或重要表读取其生产 pipeline\n代码，从代码里反推主键、粒度和替代表；同时让数据专家补充隐性的业务意图。因为代码才是业务语义真正的载体之一。\n痛点二：数仓里有大量低信号表和\none-off 查询，乱喂历史只会引入噪音\n企业数仓里充斥着大量的临时测试表和一次性实验\nSQL。如果把所有历史查询都当成范例喂给模型，模型就会学到一堆错误写法。\n为了解决垃圾数据噪点，他们设计了\n表使用率与血缘（Layer\n1）\n：汇总\nSchema、血缘和历史查询，并按使用量与可信度给历史查询排序——高使用量\ndashboard 背后的查询优先，一次性探索查询降权。公开材料没有说 one-off\n查询会全部删除，也不应把它们与 eval 中的 golden SQL 混为一谈。\n痛点三：业务指标在文档里，且必须尊重权限红线\n数据分析师提问“这个月 DAU 是多少”时，DAU 的定义往往在 Notion 或 Slack\n讨论里，而不是在数据库里。同时，不同员工能看的数据权限完全不同。\n为了解决指标一致性与数据安全，他们设计了\n机构知识与权限隔离（Layer 4）\n：打通 Notion、Docs 和\nSlack 的指标定义。内部文档在 retrieval 时做权限检查；warehouse\n查询则继承用户已有的表权限，agent 不会因为代写 SQL 获得额外授权。\n痛点四：AI\n怎么才能不踩同一个坑，又不被过时的 Schema 误导？\n如果用户纠正了一次“EMEA 市场要剔除测试账号”，AI\n下次还犯，用户就会失去信任；但如果完全依赖离线目录，遇到 Schema\n刚改过的情况，AI 就可能用旧 Schema 写出报错 SQL。\n为了解决重复犯错与静态延迟，他们设计了\n记忆回路（Layer\n5）\n与\n运行时 Live 校验（Layer\n6）\n：记忆层负责把用户的纠错变成可复用资产；而 Layer 6 允许\nagent 在离线 context 缺失或过时时按需 live query warehouse，并调用\nAirflow、Spark 等平台系统补充 runtime\ncontext。公开材料没有披露固定的执行前 information_schema\n校验、在线校验比例或六层统一刷新周期。\n看懂了这四个痛点，就会明白 Emma Tang\n在访谈里说的“真正的工程工作在基础设施层，不在模型层”是什么意思。后续版本使用\nGPT-5.5 作为在线主模型，团队把可靠性主要归因于 context\ninfrastructure；但未公开准确率或 ablation\n数据。正是因为后台基础设施把这四个痛点在前置阶段消化掉了，在线端才能只用约\n13 个工具和单模型跑得更轻。\n动态之辩：静态目录的时效短板与在线动态校验\n但天下没有完美的架构。离线主编模式虽然在语义提炼上优势明显，但它天生带有一个避不开的短板：时效性延迟。企业数仓的\nSchema\n几乎每天都在变，离线批处理任务肯定存在更新滞后。如果完全依赖静态的离线目录，模型难免会用过时的表结构写出错误的\nSQL。\n为了解决离线目录的陈旧性问题，OpenAI 引入了 Layer 6（Runtime\nContext）来做双相补偿。在运行时，当离线 context 缺失或过时时，模型可以\nlive query warehouse 校验实际 Schema，并对接 Airflow 和 Spark\n动态获取最新的执行状态。Layer 6\n并不是对离线架构的否定，而是在保持离线目录高密度优势的同时，专门用来修补最后那点状态延迟。另外，agent\n生成 SQL 后去 live 执行拿结果，本来就是正常分析流程，不是偶发兜底。\n同样，我们也能很客观地看到这套系统在实践里的边界。Emma Tang 在\nVentureBeat\n访谈\n里坦言，模型过度自信是一个需要注意的问题，模型有时会在上下文不够时表现出盲目的确定性。在\nInfoQ\n演讲\n里披露的真实案例也显示，这个 Agent 曾把 ChatGPT\n的活跃用户数误算成了 500 万（对照约 8 亿），甚至还把视频生成模型 Sora\n误判成了游戏《王国之心》里的角色。\n另外，长期积累的记忆机制也存在概念漂移的风险，旧的偏好可能会过度拟合并干扰新的业务逻辑；InfoQ\nQ&A 中 Bonnie Xu 也承认 bad memory 会造成真实失败，当前主要靠\nauditing 和 pruning。甚至官方 demo 截图对比了无 memory 时仍运行 22m41s\n与有 memory 时 1m22s 完成——这属于厂商 demo，没有生产 telemetry\n或独立复现。理清这些边界，能帮我们更客观地评估离线编撰架构的适用场景。\n给实践者的启发：别再死磕在线\nPrompt，去建离线数据供应链\n复盘 OpenAI Data Agent 的架构演进，给 Agent\n开发者带来的最直接启发是：别再在在线 Prompt\n和复杂的实时分发机制上做无谓的内耗了，把精力转向建设离线数据供应链。\n对大多数资源有限的团队来说，完全复制一套六层 Context\n机制既没有必要也不现实。我们可以从最小闭环切入，分三步建立自己的离线整理管线：\n首先，清洗历史日志。别把所有历史对话或 SQL\n记录直接往向量库里扔，而是根据使用频率和验证状态做筛选，让高频、高信任度的查询优先进入检索材料。\n其次，引入 AI 离线提炼。部署轻量级的定时任务，利用大语言模型（比如\nCodex 或通用模型）定期扫描数据管道代码和 SQL\n脚本，提取表粒度、主键约束和业务含义，自动生成结构化的离线描述。\n最后，建立纠错记忆回路。把用户在日常协作里提出的修正意见抓取下来，写入轻量化的记忆文件，在下一次离线更新时合并进目录上下文——但要有\nauditing 和 pruning，否则 bad memory 会把错误永久放大。\n好的上下文工程，精髓不在于运行时检索到了多么海量的数据，而在于离线阶段利用大模型充当主编，把可检索材料整理得有多准确。当数据供应链能在后台消化掉绝大部分复杂性时，在线端的\nAgent 自然可以用很简洁的架构，跑出相当稳定高效的结果。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/openai-data-agent-offline-context-20260806.html",
-      "content_chars": 5828,
-      "content_sha256": "cacd02c5440473680a02bbe51fea8a61ea25d717744e2fed4ce500cd0065a3ed",
-      "content_fetched_at": "2026-08-07T01:02:42.382571+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:680184851fbec979",
-      "kind": "publish",
-      "text": "yage-share published: 最后一块拼图：Cloudflare 搭建的 Agent 双边市场与它的冷清现实",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-05T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/cloudflare-wallets-agentic-commerce-20260805.html",
-      "title": "最后一块拼图：Cloudflare 搭建的 Agent 双边市场与它的冷清现实",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\nAI 产品与平台\n过去几个月里，如果仔细观察 Cloudflare 在 AI Agent\n领域的动作，就会发现一条非常清晰的技术主线。从最初让网络看懂 Agent\n请求的\n格式协商与\nCloudflare Drop 策略\n，到后来的\nPrecursor\n边缘防刮与行为检测\n，Cloudflare 一直在为即将到来的 Agentic Web\n铺设管道。\n但要让 Agent\n真正像人类一样在互联网上自主协作，光有流量管道是不够的，核心在于商业交易的闭环。回顾过去两个月的发布，Cloudflare\n实际上在按部就班地推进一场三步走的基础设施建设：先是厘清底层结算协议，接着在卖方侧设立计费关卡，最后在\n2026 年 8 月 4 日的 Agents Week 上，通过\n官方 Blog\n与\nFortune\n报道\n推出了面向买方的可编程钱包与身份系统。至此，一套理论上的 Agent\n商业双边基础设施拼图，终于宣告合拢。\nAgent 商业双边市场架构：x402\n协议层、Monetization Gateway 卖方网关与 Cloudflare Wallets\n买方钱包，cloudflare.pay 身份层贯穿其间\n拼图的前两块：从 x402\n协议到卖方计费网关\n要理解本次发布的买方钱包，必须先看清前两块拼图所解决的瓶颈与机制。\n第一块拼图解决的是\n机器结算的标准协议\n。传统互联网的支付体系完全围绕人类设计——无论是信用卡还是\nStripe\n弹窗，都需要填表、二次验证和手动点击，且每笔交易有较高的固定手续费，无法支持几分甚至几厘钱的单次\nAPI 微支付；而传统的 API Key\n模式则要求预先注册、绑定计费账户并获取密钥，无法支持 Agent\n在互联网上即时调取陌生的第三方服务。\n2025 年 5 月由 Coinbase 牵头发布的\nx402\n协议\n，在 2026 年 7 月转入\nLinux\nFoundation 旗下基金会运营\n，打破了这个僵局。它重新激活了休眠数十年的\nHTTP 402 Payment Required\n标准\n，用标准化请求头规范了机器握手：当 Agent\n请求付费资源时，服务器返回 402\n状态码以及包含收款地址与价格的响应头；Agent\n无需弹窗，直接用稳定币签署授权凭证发回；服务端自行或经中继节点验证后结算并返回资源。目标是实现亚秒级的单次\nHTTP 请求微支付。\n第二块拼图解决的是\n卖方侧的设卡与合规门槛\n。当协议标准化后，网站出版商、数据提供方或\nMCP 工具开发者面临新的难题：如果想对 AI 爬虫或 Agent\n的单次请求收费，难道每个开发者都要自己搭建一套复杂的鉴权服务器、计费系统和跨国结算账单？\n2026 年 7 月发布的\nMonetization\nGateway 卖方网关\n（详见\nCloudflare 官方\nBlog\n）将这个门槛降到了最低。依托其全球 330\n多个城市的边缘节点，卖家只需在 Dashboard 里对特定路由设价（例如设定对\n/api/premium/*\n单次 GET 请求收取 0.01\n美元），网关就会在边缘侧自动完成 x402 握手与拦截。更关键的是，Cloudflare\n根据其\nPay\nPer Crawl 文档\n，在该产品中明确担任名义商家（Merchant of\nRecord）。Monetization Gateway\n是否采用相同的责任模型尚未公布，但卖方获准加入后，无需改动后端代码，就能在边缘节点对\nAgent 挂牌营业。\n有了收钱的标准，也在边缘设立了卖方收费卡口，但整个商业模型依然悬在半空：买方\nAgent\n究竟该如何持有资金，又如何在没有人类逐笔批准的情况下，安全地出资付款？\n补齐买方拼图：Cloudflare\nWallets 如何给 Agent 配备有界钱包\n8 月 4 日发布的\nCloudflare Wallets\n以及配套的\ncloudflare.pay\n身份预留平台\n，正是为了回答这最后的买方难题。\n写过 Agent\n程序的开发者都知道，直接把私钥或充值卡交给模型是非常危险的。Prompt\nInjection 攻击或模型的偶发幻觉，可能在几秒钟内掏空所有余额。为了解决这种\nAgent\n支付信任链\n上的风险，Cloudflare 在买方侧引入了双层钱包架构：\n第一层是账户钱包，由人类所有者掌控，负责存放资金、分配预算并配置全局支出策略；第二层则是专门分配给\nAgent 的虚拟钱包，通过 API 密钥进行操作。Agent\n在执行任务时可以在授权额度内自动完成付款，无需逐笔向人类请求二次确认。不过\nCloudflare 尚未公布钱包的托管模型——是 Cloudflare\n替你持私钥，还是你自己掌握——这直接决定了资金丢失时的责任归属。\n为了确保资金不至于失控，Cloudflare\n在虚拟钱包上挂载了三道硬性风控策略： -\n周期预算上限\n：限制特定时间窗口内的最大支出额。 -\n商家白名单\n：限定 Agent 仅能在已验证或指定的域名与\nHandle 上花钱。 -\n单笔交易上限\n：防止突发的异常大额扣款。\n一旦 Agent\n的消费速率或单笔金额触发异常，硬性上限会限制继续支出，管理员可以人工复核并决定提额或补充资金。与此同时，配套发布的\ncloudflare.pay\n给 Agent 提供了一个建立在\nWeb\nBot Auth 公钥对\n之上的 Handle，例如\nresearch.example.cloudflare.pay\n。这个 Handle\n是公钥对的人类可读别名，Agent\n可以选择声明身份，商家也自行决定是否优先服务已标识的\nAgent——它不是强制身份认证。\n双边闭环后的领域变更：按次打车、爬虫变局与花钱的真隐患\n当协议层、卖方网关与买方钱包在基础设施层面连通，最直接的变化是从提前办月票变成了随时按次打车。在以前的开发模式下，如果希望\nAgent\n调用某个外部服务，流程通常是人类去那个网站注册账号、绑定信用卡、充值并生成\nAPI\n密钥。这种模式本质上是提前签好的长期批发契约。但在真实的互联网协作里，Agent\n在执行任务时可能会临时需要调取一个冷门的数据节点，不可能每次都把人类叫醒去填表充值。功能上线后，理论流程将是：卖方在边缘网关按次标价，买方\nAgent\n觉得符合当前任务的优先级，直接用钱包现场结账。任何独立的工具或数据节点，只要在边缘挂牌就能开门营业，不再依赖大厂复杂的计费系统。\n但随之而来的，是商家端迎来了一个反直觉的新头疼事。在传统网站运营中，大家习惯用要不要付钱来区分普通用户和恶意爬虫，以为只要加上付费门槛，扫数据的机器人就会知难而退。但一旦给爬虫也装上了钱包，这个旧经验就彻底失效了。正如\nfintech 分析师 Yuval Gilad 在社区讨论中所说的：“An extraction bot with a\nwallet is still an extraction bot.”\n一个带着预算来刮数据的机器人，依然是恶意爬虫。钱包只解决了 Agent\n给不给得起钱的问题，却把更难的问题留给了商家：哪怕它付得起这一分钱，我究竟该不该把数据卖给它？怎么防止它花钱把独家数据资产快速搬空？\n而在买方这边，钱包的风控上限也挡不住买错东西的隐患。很多开发者以为在虚拟钱包上设好了周期预算上限和商家白名单，Agent\n的消费就万无一失了。但正如社区评论者 Daniel Antcliff 指出的：“A spending\ncap and a merchant allow-list aren’t governance. They’re authorisation.”\n白名单和预算上限只管钱不能花超，不管钱有没有花对。一个 Agent\n完全可以在严格遵守所有预算上限的前提下，把钱包里的每一分钱都拿去购买了被诱导的废话或者伪造数据。钱包侧的硬限制可以把潜在损失封顶，却替代不了\nAgent 自身的逻辑审慎与结果判定。\n架构合拢 vs\n冷清现实：左侧是完整的协议/网关/钱包/身份四层架构，右侧是未上线的文档、未开放的功能与未发生的交易\n冰冷的现实：拼图架构合拢，但买卖家都尚未进场\n然而，从架构图上的逻辑自洽落地到现实生产环境，中间隔着巨大的鸿沟。如果仔细核对发布当天的实际状态，就会发现这套基础设施依然处于极度的冷清之中。\n首先，买方功能尚未真正就位。发布当天，Cloudflare Wallets\n的官方专属开发文档（\ndevelopers.cloudflare.com/wallets/\n）点击后直接返回\n404 错误。钱包的核心充值、资金划拨与虚拟钱包接口全线标明为\n“in the\ncoming months”\n，当天唯一开放的仅有 Handle 的名称预留。\n其次，卖方市场同样处于锁门状态。7 月发布的 Monetization Gateway\n截至目前依然是 waitlist 制，没有任何主流数据出版商或高频 API\n商家公开宣布接入并开启计费，也没有公开的已签约商家名单。\n更值得关注的是链上交易数据的真相。尽管 x402 协议在宣传中提到了超过\n1.6 亿笔累计交易，但\nChainalysis\n的 x402 采用追踪报告\n指出，早期交易笔数的大幅增长受到 Base 链上 PING\n等 Meme 币刷量行为驱动。公开链上数据无法可靠区分真实 agent\n采购、测试交易和投机 farming，因此 1.6\n亿笔不能直接视为商业采用量。球场虽然搭好了，但买卖双方都还没有真正入场。\n早期生态缝隙与总结：一个超前的架构脚手架\n这种发布宣传与工程落地的张力，在发布首日的一个社区插曲中展现得淋漓尽致。\n在\nHacker\nNews 的热门讨论帖 #49172834\n中，有用户尝试询问 Cloudflare 自家部署的\nAI 机器人是否有 Wallet 产品，机器人却给出了矛盾的回答：“我们的文档或\nDashboard 中没有这样的产品，请把任何声称是 ‘Cloudflare Wallet’\n的邮件、网站或消息视为网络钓鱼。”另有用户核验\ncloudflare.pay\n的 TLS\n证书，发现其仅为缺少组织与地址信息的通用 DV 证书；还有用户报告 Brave\n浏览器将站点标记为可疑。\n这并不是简单的公关疏漏，而是提供了一个值得警惕的信号：当 Cloudflare\n以极高的节奏拼凑 Agent\n基础设施时，其内部的安全验证体系与前端应用层生态之间还存在缝隙。\n回顾 Cloudflare\n这三轮的连续动作，它的战略意图非常清晰——争夺其边缘网络上的 agent\n交易控制点，构建出 Agent 商业双边市场的全套工程脚手架。CEO Matthew\nPrince 在官方公告中说：“It’s the identity and payment infrastructure the\nagentic web needs to function.” 首席战略官 Stephanie Cohen 在 Fortune\n采访中则更进一步：“Every interaction on the internet is a chance for\ncommerce.” 两种 framing 之间的张力本身就反映了 Cloudflare\n从”管道”向”交易控制面”转型时的角色拉扯。但对于广大的 Agent\n开发者与企业而言，必须清醒地认识到：拼图的合拢目前依然停留在架构演进的理论阶段。在没有真正的杀手级买方\nAgent\n和高价值卖方服务大规模入场之前，它依然是一个值得保持关注、但离生产部署尚有相当距离的前瞻性实验。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/cloudflare-wallets-agentic-commerce-20260805.html",
-      "content_chars": 4804,
-      "content_sha256": "54d9ae49c41f0fb3b035f12776914ed1fea099ffc786658d78dc7f9376c080c2",
-      "content_fetched_at": "2026-08-07T01:02:42.865351+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-08-07",
+  "collect_window": {
+    "start": "2026-08-05T00:00:00+00:00",
+    "end": "2026-08-07T01:01:38.685400+00:00",
+    "hours": 49
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "31136652052",
+    "commit": "e2da060"
+  },
+  "stats": {
+    "total": 5,
     "by_kind": {
       "publish": 5
     },
@@ -145,9 +26,427 @@
       "unknowncheats-ac": 2,
       "yage-share": 3
     },
+    "failed_lists": [
+      "denizhalil-blogs",
+      "redsiege-blog"
+    ],
+    "sources_ok": 49,
+    "sources_failed": [
+      {
+        "id": "denizhalil-blogs",
+        "error": "no_candidates"
+      },
+      {
+        "id": "redsiege-blog",
+        "error": "no_candidates"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 8,
+      "rss": 30
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 13,
+      "calls": 13,
+      "prompt_tokens": 14823,
+      "completion_tokens": 2266,
+      "total_tokens": 17089,
+      "prompt_cache_hit_tokens": 5504,
+      "prompt_cache_miss_tokens": 9319
+    },
     "by_content_status": {
       "failed": 2,
       "ok": 3
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:49a0d653f74c2449",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "So, ISE Console, PS1 code, what can i do with it ..",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/765956-ise-console-ps1-code.html",
+      "text": "unknowncheats-ac published: So, ISE Console, PS1 code, what can i do with it ..",
+      "at": "2026-08-07T01:01:38.685400+00:00",
+      "external_id": "a:49a0d653f74c2449",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/765956-ise-console-ps1-code.html",
+      "title": "So, ISE Console, PS1 code, what can i do with it ..",
+      "content": "unknowncheats-ac published: So, ISE Console, PS1 code, what can i do with it ..",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/765956-ise-console-ps1-code.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-07T01:02:20.601526+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-07T01:01:38.685400+00:00",
+      "collected_at": "2026-08-07T01:01:38.685400+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/765956-ise-console-ps1-code.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "So, ISE Console, PS1 code, what can i do with it ..",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/765956-ise-console-ps1-code.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:cf8ba7cf0ed004ec",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "Xenos injector v2.3.2",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/124013-xenos-injector-v2-3-2-a.html",
+      "text": "unknowncheats-ac published: Xenos injector v2.3.2",
+      "at": "2026-08-07T01:01:38.685400+00:00",
+      "external_id": "a:cf8ba7cf0ed004ec",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/124013-xenos-injector-v2-3-2-a.html",
+      "title": "Xenos injector v2.3.2",
+      "content": "unknowncheats-ac published: Xenos injector v2.3.2",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/124013-xenos-injector-v2-3-2-a.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-07T01:02:31.355269+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-07T01:01:38.685400+00:00",
+      "collected_at": "2026-08-07T01:01:38.685400+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/124013-xenos-injector-v2-3-2-a.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "Xenos injector v2.3.2",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/124013-xenos-injector-v2-3-2-a.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:565eac6a11df7011",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "微调回来了，但理由变了：2026 LLM Fine-tuning 从能力增强到成本工程",
+      "target_url": "https://yage.ai/share/llm-finetuning-cost-engineering-20260806.html",
+      "text": "yage-share published: 微调回来了，但理由变了：2026 LLM Fine-tuning 从能力增强到成本工程",
+      "at": "2026-08-06T00:00:00+00:00",
+      "external_id": "a:565eac6a11df7011",
+      "url": "https://yage.ai/share/llm-finetuning-cost-engineering-20260806.html",
+      "title": "微调回来了，但理由变了：2026 LLM Fine-tuning 从能力增强到成本工程",
+      "content": "推理与性能\n产业与竞争\nAI 产品与平台\n在 2026 年的 AI\n工程落地中，许多团队都会遇到一个常见的矛盾：当一个应用需要每天处理数十万次固定规则判断（比如电商商品违规审核、内部工单分类或安防监控帧检测）时，如果每次都调用顶尖的云端大语言模型，系统在准确率上表现优异，但月度\nAPI 账单与几秒钟的响应延迟会让项目在经济上难以为继。\n面对这一瓶颈，工程界在 2026\n年重新聚拢到同一个解决方案：针对特定窄领域任务，fine-tune\n一个专精的小型模型或端侧分类器。无论是语言文本还是计算机视觉，这一微调路线都在展现其工程价值：\n语言模型端的微调\n：有团队（如\nFermiSense）针对电商目录审核任务，通过后训练将规则内化到一个 9B\n参数的小型语言模型中，在特定规则测试上取得了优于通用顶尖大模型的准确率，并将每千次调用成本从数十美元压缩至\n0.5 美元。\n视觉模型端的微调\n：在鸭哥的\nDINOv3\n分类器工作流\n工程实践中，面对 12\n万帧车库监控视频的开闭状态检测，同样走微调路线——结合计算机视觉的领域经验（选用表示能力强的\nDINOv3\n主干）与多模态大模型的自动标注能力（利用大模型自动提议标签，人工仅做少量的规则与边界抽样盲审），仅用\n839 张审核样本就微调出了一个零 API 成本的本地线性分类器（最终 ONNX\n部署工件受 Fail-closed 门控阻塞，待 Owner 审核 35\n处预测分歧后方可落地）。\n在通用大模型表现出色的今天，为什么团队反而开始重新选择微调小模型与端侧分类器？这究竟是技术的重复，还是大模型落地认知成熟后的必然选择？要回答这个问题，需要先从过去几年工程界对微调技术的认知演进说起。\n认知的两次演进：从 BERT\n惯性到能力面解耦\n在 2018 至 2022\n年的预训练时代，预训练与微调是自然语言处理的标准路线。工程师的习惯是：面对任何新任务，第一反应都是收集一批标注数据，对已有模型做全参数微调。然而，大语言模型的出现打破了这一惯性。在关于\n基础大模型定义与历史\n的讨论中曾指出，基础模型的核心突破在于适应新场景不再需要改动模型权重，也不需要工程师投入算力微调，只需在\nPrompt 中放入若干示范样例即可完成适配。\n在随后的工程实践中，大家对微调的能力边界有了更清晰的实证定位。在关于\n提示词到微调适配\n的工程实践中曾分析，微调并不能凭空为模型注入未曾具备的推理能力或新知识，其本质在于激发已有能力并对齐输出格式。2025\n至 2026 年的多项研究进一步印证了这一点：\n知识注入的局限\n：在\nNEJM AI 2025\n年的医疗微调受控实验\n中，研究团队对主流模型进行临床医学数据微调。模型虽然记忆了静态参数，但在合成电子病历测试中平均准确率仅有\n12%，且通用医学推理能力出现了下滑。\n训练集学不全\n：在关于\n微调不完全学习现象研究\n中显示，即使训练损失收敛，微调模型在面对训练集里低频、高密度的复杂样本时依然存在学不全的现象。\n结构侵蚀与安全风险\n：在关于\n灾难性遗忘的底层注意力分析\n中表明，微调会干扰模型浅层\n15% 至 23% 的注意力头，导致模型对先前学会的知识产生遗忘。同时，\nACL 2026\n关于安全护栏坍塌的研究\n证明，微调极易破坏预训练建立的安全护栏，即使使用看似无害的数据集也可能导致安全对齐退化。此外，\n微调投毒攻击研究\n进一步显示，在仅约\n250 条投毒样本干预下即可在 600M 到 13B 规模模型中植入后门触发器（产生\ngibberish 文本），且所需样本数与模型规模几乎无关。\n与此同时，提示工程与检索技术的演进，进一步证明了在知识与推理任务上不需要依赖微调：\n*\n提示优化超越微调\n：微软的\nMedPrompt\n提示框架\n通过少样本提示与思维链组合，在不修改权重的条件下，在 9\n项医疗评测中超越了专门微调的医学模型。\nGEPA\n结构化提示词优化框架\n在效果上也显著优于强化学习微调。 *\n输入缓存降低门槛\n：主流 API 服务商提供的 Prompt Caching\n技术带来了 60% 至 90%\n的输入成本降幅，这直接将微调小模型在成本上何时划算的平衡点，从每天约 1\n万次请求推高到了每天 5 万至 10 万次请求。\n这些事实说明：\n如果目标是让模型变聪明、学会新知识或做复杂推理，微调不仅不是最佳路径，反而可能破坏模型的通用能力。\n2026 年行业\nLandscape：作为成本与延迟工程的微调\n既然微调无法提升智能上限，为什么 2026\n年依然有大量团队在生产环境中使用微调？原因在于工程界对微调的定位完成了重构：\n微调不再是用来提升底层智力或能力上限的手段，而是一项以成本、延迟与控制力为核心的工程权衡（Trade-off）。\n微调针对形式与行为，检索针对事实与内容。当一个业务任务满足以下三个条件时，微调小模型（3B\n至 14B 参数）相比直接调用顶级 API 具备明确的工程价值：\n高频调用\n：每日请求量达到 5 万至 10 万次以上，通用\nAPI 的按 Token 计费构成显著成本瓶颈。\n窄领域与输出格式确定\n：任务目标单一（如结构化提取、分类、固定的格式化输出），不需要模型维持广博的通用对话能力。\n输出结果可评分与可验证\n：存在明确的规则校验、代码编译器判定或客观\nReward 函数，能够形成自动化评估闭环。\n在 2026 年的生产部署中，在关于\n287\n个生产级小语言模型落地案例调研\n中显示，有 40%\n的团队采用了\n混合路由架构\n：由微调后的小模型处理 80% 至\n95% 的标准高频请求，仅将 5% 至 20% 的复杂难例路由给顶级 API。\n下表梳理了 2026 年行业代表性的微调实践及其工程定位：\n团队 / 案例\n基础架构与方法\n核心业务场景\n效果与成本表现\n证据强度与公开缺口\nFermiSense\n(2026-07)\nQwen3.5-9B + GRPO (3.5 天, $500 GPU)\n电商商品目录审核 (17.7万 Episode)\n归一化得分 87.3% vs 顶级 API\n76.9%\n成本从 $19-172/k 次降至 $0.50/k 次\n厂商自报数据；未公开测试集；评估器存在自我偏置风险\nHarvey + Applied Compute\n(2026)\nGLM-5.1 全参数异步 RL\n法律 Agent 复杂推理\nLAB 基准测试 Rubric 通过率 0.913 vs\nGPT-5.5 / Opus 4.8\n客户与厂商联合声明；基于内部专有评测集\nIntercom Fin Apex\n(2026)\n客户支持专用后训练小模型\n自动化客服解决与转接\n客服解决率 73.1% vs GPT-5.4\n71.1%\n响应延迟 3.7s，单次成本 $0.99 (仅顶级 API 的 1/5)\n公司自报数据；2026 年 6 月被 Salesforce 以\n$36 亿收购侧面印证商业价值\nBridgewater + Thinking\nMachines\n(2026)\nQwen3-235B + GRPO / CISPO / OPD\n金融文档专家研判\n得分 84.7% vs 顶级 API\n78.2%\n推理成本降低 13.8 倍\n联合发表声明；5 位作者中有 3\n位来自供应商；无公开训练/测试划分\nPrime Intellect / Ramp\nFastAsk\n(2026)\nQwen3.5-35B + RL\n财务表格结构化搜索\n准确率 66.25% vs Opus 4.6 61.88%\n(+4.4%)\n速度提升 27%，成本降低至 Haiku 级别\n客户签署声明 +\n公开评测集；未经第三方独立复核\n287 生产案例调查\n(Florin\nChis, 2026)\n混合路由 (3B-14B 微调 SLM + 顶级 API)\n多行业生产环境部署\n40% 的团队采用 SLM 处理 80-95% 请求，顶级\nAPI 处理 5-20%\n多行业统计抽样调查\n这些案例表明：2026\n年成功的微调都集中在规则明确、可自动打分的狭窄场景。同时，行业对厂商自报的成绩保持着理性审慎，因为大部分高分案例缺乏第三方可复现的公开测试集，这也是为什么混合路由架构成为了许多团队的折中选择。\n视觉端的微调实践：鸭哥\nDINOv3 Classifier Skill 的杠杆力\n在视觉领域，将高频二元判断从云端大模型解耦、微调为本地分类器的工程目标完全相同。但在具体的微调实现上，传统或一般的微调方法通常面临两大痛点：一是依赖大量人工逐帧标注，人力成本昂贵；二是不加区分地对大模型做全参数重训，既消耗大量算力又容易破坏底层表征。\n鸭哥开源的\nDINOv3\n分类器工作流\n针对这两大痛点进行了重新设计，展示了与传统微调不同的两个核心杠杆：\n计算机视觉的领域经验\n：得益于 DINOv3\n主干出色的通用视觉特征表示能力，无需对庞大的大视觉语言模型进行全参数微调。只需冻结主干特征、在顶部微调一层轻量级的线性分类头，就能在数秒内训练出性能稳定、零\nAPI 成本的本地分类器。\n多模态大模型的自动标注杠杆\n：借助当前多模态大模型出色的视觉理解与提议能力，全量\n12\n万帧视频的候选标签初始化由大模型自动完成。人类无需逐帧进行人工标注，只需在关键节点进行局部主动抽样盲审（Top正例\n/ 边界难例 / 低分负例），提高了数据工程的杠杆效率。\nDINOv3 分类器工作流：从 12\n万帧原始视频到本地 ONNX 分类器\n在车库门开闭状态识别测试中，系统处理了 121,467\n帧监控图像，全流程仅凭大模型自动提议 + 人工审阅 839\n张图片即完成微调，重训练后的线性分类器在验证集上达到了 AP 0.9731 与 F1\n0.9500（精确率 0.9236，召回率 0.9779）。在重训练迭代中，系统自动检出了\n35 处预测分歧样本提请 Owner 确认，并通过 Fail-closed\n自动化门控在所有分歧审核完成前阻塞最终 ONNX 导出。\n对比传统的重度微调，这种领域经验冻结主干 + 多模态大模型自动标注 +\n轻量线性头微调的模式证明：\n微调的核心不在于把全网参数重练一遍，而在于利用大模型的能力与领域经验快速打磨出高质量数据与轻量权重，将高频窄场景的推理下沉\n。\n决策指南与落地 Checklist\n当工程团队面临模型适配的选型决策时，可以通过以下 2×2\n矩阵评估是否需要引入微调：\n输出可客观评分 / 判定规则确定\n(Scored)\n输出不可客观评分 / 开放式推理\n(Unscored)\n高频调用 (>\n5万次/天)\n推荐微调小模型 /\n部署端侧分类器\n· 选用 3B-14B 模型或 DINOv3 类专用小模型\n·\n典型场景：结构化提取、客服分类、商品审核、视频帧状态判定\n推荐 Prompt Caching +\nRAG\n· 保持通用大模型能力，通过输入缓存与检索降低成本\n·\n典型场景：开放对话、复杂研报撰写、创意写作\n低频调用 (<\n5千次/天)\n推荐 API + Tool Calling /\n代码校验\n·\n使用代码断言或函数调用完成规则校验，无需运维成本\n·\n典型场景：低频自动化脚本、定期合规检查\n推荐 直接调用通用顶级\nAPI\n· 依靠 Few-shot 示例完成适配\n·\n典型场景：架构设计评估、长尾问题诊断\n生产落地 Checklist\n在决定开启微调项目前，建议确认以下 4 项标准：\n频次核算\n：日均 API\n调用量是否已达到通过自托管小模型收回算力与运维成本的平衡点？\n评估闭环\n：任务是否存在明确、可自动判定的校验规则、单元测试或\nReward 函数？\n知识解耦\n：领域事实是否已通过 RAG 或\nPrompt 解耦，而非试图把动态知识强行训练进模型权重？\n杠杆最大化\n：是否利用了多模态大模型的自动标注/提议能力，使人工干预仅集中于极少量的校验与审阅门控？\n微调并不是通往通用人工智能的捷径。但在高频、窄领域的生产实践中，作为一项以成本、延迟与控制力为目标的工程手段，它在\n2026 年的工程实践中重新找到了清晰而坚实的定位。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/llm-finetuning-cost-engineering-20260806.html",
+      "content_chars": 4992,
+      "content_sha256": "ffcabef80b8cbeeb44176e34e7a96577b4d0761a18361ea6d247417bb02f9c9e",
+      "content_fetched_at": "2026-08-07T01:02:40.920812+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-06T00:00:00+00:00",
+      "collected_at": "2026-08-07T01:01:38.685400+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/llm-finetuning-cost-engineering-20260806.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "微调回来了，但理由变了：2026 LLM Fine-tuning 从能力增强到成本工程",
+          "url": "https://yage.ai/share/llm-finetuning-cost-engineering-20260806.html",
+          "content_sha256": "ffcabef80b8cbeeb44176e34e7a96577b4d0761a18361ea6d247417bb02f9c9e"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:b3ab904361fc60f1",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "OpenAI 带来的上下文工程范式反思：为何离线编撰能让在线 RAG 看得更少、更准？",
+      "target_url": "https://yage.ai/share/openai-data-agent-offline-context-20260806.html",
+      "text": "yage-share published: OpenAI 带来的上下文工程范式反思：为何离线编撰能让在线 RAG 看得更少、更准？",
+      "at": "2026-08-06T00:00:00+00:00",
+      "external_id": "a:b3ab904361fc60f1",
+      "url": "https://yage.ai/share/openai-data-agent-offline-context-20260806.html",
+      "title": "OpenAI 带来的上下文工程范式反思：为何离线编撰能让在线 RAG 看得更少、更准？",
+      "content": "AI Agent\n检索与知识系统\n我最近注意到 OpenAI 在 2026 年初发的一份介绍内部数据 Agent（Data\nAgent）的报告\n《Inside\nour in-house data agent》\n，里面的工程细节挺有意思。据\nVentureBeat\n，这个\nagent 的初版由两名工程师在三个月内搭成，后来已有数千名员工使用。若采用\nOpenAI 2026 年 1 月官方披露的统一口径，其数据平台服务 3,500\n多名内部用户，覆盖 70,000 个 datasets 和 600 PB 以上数据。\n很长一段时间里，大家做 Agent\n遇到海量数据和复杂业务时，第一反应往往是去做复杂的实时检索。从向量数据库检索、Graph\nRAG\n到各种在线分发机制，行业里好像默认觉得在线把匹配做复杂，才是解决上下文问题的终极办法。但\nOpenAI 这份报告和后续透露出的细节，其实给出了一个挺不一样的视角。\n支撑这么大数仓分析的系统，OpenAI\n并没有把主要复杂度堆在在线控制流上。根据\nOpenAI\n官方博客\n和\nByteByteGo\n访谈\n的披露，在线 agent loop 相当简洁：OpenAI 2026 年 1\n月披露的版本由 GPT-5.2 驱动，后来的 ByteByteGo 报道称在线主模型已升级到\nGPT-5.5；每个请求仍进入同一个主模型，约 13 个精选工具按次暴露，没有独立\nrouter，也尚未 fine-tune。这里的“单模型”只指在线 agent loop，离线\nenrichment 和检索仍使用 Codex 与 Embeddings API。\nOpenAI 的核心工程师 Emma Tang 在接受\nVentureBeat\n采访\n时提到：“我们用的都是外部完全可用的同款\nAPI，没用微调模型，完全依赖\nGPT-5.2，所以你完全可以搭出这样的系统。”在全行业都在研究实时 RAG\n搜索的时候，这种把复杂度前移到离线生产的做法，反而在复杂场景下跑出了相当不错的稳定性。\n真正反直觉的地方，在于它把复杂度搬到了提问之前\n刚看到 OpenAI\n披露的内部架构时，最吸引我注意的就是它在线部分的简洁。在常见的工程设想里，一个要同时服务几千名顶级科学家和工程师的数据\nAgent，后台怎么也得堆上一堆模型微调策略、多层路由以及复杂的工具链。\n但真实的数据和技术细节却展示了很鲜明的反差：在线任务就靠一个主模型在跑，每次调用只暴露约\n13\n个工具。这种架构的干炼，打破了大家对大厂必须有神级在线算法的迷思。它真正反直觉的地方在于：OpenAI\n并不是用离线目录取代 RAG——官方明确写了查询时仍通过 RAG 拉取最相关的\nembedded context。本文所谓 Yahoo\n模式，是我对离线编撰环节的比喻；真正的变化是把 RAG\n的检索对象从原始元数据和日志，换成预先加工的高密度 context。\n仔细拆解这个案例会发现，大家很容易踩进一个误区，以为越厉害的 Agent\n就越需要复杂的在线控制流。但在实际工程里，在线部分太复杂往往是系统不稳定的根源。当所有的精力都放在怎么在用户提问的那几秒钟里完成高效检索和多步推理时，本质上是在用在线计算的不确定性，去硬扛数据本身的语义模糊。\n离线编撰到在线投影：后台维护丰富\ncontext，前台只投影当前需要的片段\n范式之辩：检索 vs\n编撰，企业内部系统的假设破灭\n为什么处理企业级复杂数据时，传统的在线 RAG\n搜索很容易遇到瓶颈？这背后的根源，其实是 Google 模式和 Yahoo\n模式对信息是怎么存在的这个前提假设完全不同。这里的 Google / Yahoo\n都是我的比喻框架，不是 OpenAI 的术语。\nGoogle 模式（实时 RAG\n搜索）在公开互联网上之所以大获成功，是因为互联网有着极端丰富的信息供给。公网上几乎什么都有，不管你问什么，大概率早就有现成的网页或文档把答案写好了。所以\nGoogle\n模式的基本假设是：\n信息本身就已经在那里了，我们只需要在用户提问时把它检索出来\n。\n但企业内部的数据和知识系统，恰恰彻底打破了这个前提。\n在实际的数仓治理里，表名往往充满了像\nt_usr_evt_v2\n这样高度抽象的代号，字段的具体含义也和业务上下文绑定得非常深。数据表真正的业务语义——比如主键粒度、指标判定边界、下游依赖链条——\n往往没有被完整、及时地写入\nschema 或现成文档\n，而是隐式藏在 Airflow 或 Spark 的 ETL\n管道代码里，甚至只保存在老员工的脑子里。OpenAI 自己的 Lesson #3\n说得很直白：schema 和 query history 描述的是表的形状和用法，true meaning\n在产生它的代码里。\n在信息没有被充分文字化、结构化的企业内部，如果盲目用 Google\n模式在提问时去搞实时向量搜索，搜出来的多半是字面相似但逻辑完全对不上的垃圾片段。原因很简单：\n你很难检索出一个还没有被写出来的语义\n。\n而 Yahoo\n模式的核心，从来就不是死板的分类，而是一个人工主编与整理的过程。在早期的互联网，Yahoo\n依靠主编人员手动去筛选、撰写和组织网站分类目录。在 OpenAI\n的案例里，大语言模型真正替代的并不是检索的动作，而是\n接管了主编与整理人的角色\n——然后，在线端仍然用\nRAG 去检索这些已经被编好的材料。\nOpenAI\n并没有靠人工去死板地维护这份目录，而是让大模型（Codex）担任离线主编，针对热门或重要表自动去读其生产\npipeline\n代码，结合专家标注和历史使用信号，在提问发生之前，就把原本杂乱无章的数仓代码编译成按表组织的结构化描述，以及可单独检索的机构知识和\nmemory。\n这种离线提炼直接决定了前台调用的极简。正因为离线阶段已经把原始代码、Schema\n和历史使用信号提炼成按表组织的结构化描述，在线推理时，模型只需检索与当前问题相关的片段，而不必扫描原始元数据和日志——这就顺理成章地引出了上下文工程里的另一个核心原则：少即是多。\nEmma Tang 在\nVentureBeat\n访谈\n里专门提到，很多团队做 Agent\n时，习惯把搜到的所有资料一股脑塞进上下文窗口，寄希望于大模型自己能在海量信息里看出端倪，但\nevals 发现效果刚好相反：给模型更少但更准确、经过策展的\ncontext，结果反而更好。\n甚至连工具的收敛也是同一个逻辑：正因为离线卡片把语义交代得更干净，前台模型不再那么容易犯迷糊，ByteByteGo\n报道团队最初接入约 40\n个工具，后来移除重叠能力，并把每次调用可见的工具控制在约 13 个。\n归因之辩：抛开分层表象，它到底在解决什么工程痛点？\n为了支撑这套离线主编机制，OpenAI\n在后台把上下文的收集与整理分成了六个层级，也就是他们报告里提到的六层上下文架构。\n如果光看这六层架构本身，很容易把它读成一份枯燥的说明书：第一层是什么、第二层是什么……但作为工程实践者，架构图表面的分层并不重要，真正有启发的是：\n他们当年到底遇到了什么数据死穴，才倒逼出这六种设计？\n下面是我对官方六层的重组，不是 OpenAI\n自己的四痛点框架。把这六层拆开，本质上是在用离线基础设施去解决企业数据分析里的四个核心痛点：\n四个工程痛点对应六层\ncontext：语义、噪声、权限、过期与纠错\n痛点一：表的真实逻辑，往往不写在数据库\nSchema 里\n光看数据库表名和字段类型，你往往不知道\nt_usr_evt_v2\n到底是一天更新一次还是一小时更新一次，更不知道主键和 Join\n关系是什么。这些逻辑大量藏在 Airflow/Spark\n的管道代码和资深工程师的经验里。 为了解决这个语义黑盒，他们才设计了\nCodex 代码解析（Layer 3）\n与\n专家标注（Layer\n2）\n：让 Codex 每日异步任务针对热门或重要表读取其生产 pipeline\n代码，从代码里反推主键、粒度和替代表；同时让数据专家补充隐性的业务意图。因为代码才是业务语义真正的载体之一。\n痛点二：数仓里有大量低信号表和\none-off 查询，乱喂历史只会引入噪音\n企业数仓里充斥着大量的临时测试表和一次性实验\nSQL。如果把所有历史查询都当成范例喂给模型，模型就会学到一堆错误写法。\n为了解决垃圾数据噪点，他们设计了\n表使用率与血缘（Layer\n1）\n：汇总\nSchema、血缘和历史查询，并按使用量与可信度给历史查询排序——高使用量\ndashboard 背后的查询优先，一次性探索查询降权。公开材料没有说 one-off\n查询会全部删除，也不应把它们与 eval 中的 golden SQL 混为一谈。\n痛点三：业务指标在文档里，且必须尊重权限红线\n数据分析师提问“这个月 DAU 是多少”时，DAU 的定义往往在 Notion 或 Slack\n讨论里，而不是在数据库里。同时，不同员工能看的数据权限完全不同。\n为了解决指标一致性与数据安全，他们设计了\n机构知识与权限隔离（Layer 4）\n：打通 Notion、Docs 和\nSlack 的指标定义。内部文档在 retrieval 时做权限检查；warehouse\n查询则继承用户已有的表权限，agent 不会因为代写 SQL 获得额外授权。\n痛点四：AI\n怎么才能不踩同一个坑，又不被过时的 Schema 误导？\n如果用户纠正了一次“EMEA 市场要剔除测试账号”，AI\n下次还犯，用户就会失去信任；但如果完全依赖离线目录，遇到 Schema\n刚改过的情况，AI 就可能用旧 Schema 写出报错 SQL。\n为了解决重复犯错与静态延迟，他们设计了\n记忆回路（Layer\n5）\n与\n运行时 Live 校验（Layer\n6）\n：记忆层负责把用户的纠错变成可复用资产；而 Layer 6 允许\nagent 在离线 context 缺失或过时时按需 live query warehouse，并调用\nAirflow、Spark 等平台系统补充 runtime\ncontext。公开材料没有披露固定的执行前 information_schema\n校验、在线校验比例或六层统一刷新周期。\n看懂了这四个痛点，就会明白 Emma Tang\n在访谈里说的“真正的工程工作在基础设施层，不在模型层”是什么意思。后续版本使用\nGPT-5.5 作为在线主模型，团队把可靠性主要归因于 context\ninfrastructure；但未公开准确率或 ablation\n数据。正是因为后台基础设施把这四个痛点在前置阶段消化掉了，在线端才能只用约\n13 个工具和单模型跑得更轻。\n动态之辩：静态目录的时效短板与在线动态校验\n但天下没有完美的架构。离线主编模式虽然在语义提炼上优势明显，但它天生带有一个避不开的短板：时效性延迟。企业数仓的\nSchema\n几乎每天都在变，离线批处理任务肯定存在更新滞后。如果完全依赖静态的离线目录，模型难免会用过时的表结构写出错误的\nSQL。\n为了解决离线目录的陈旧性问题，OpenAI 引入了 Layer 6（Runtime\nContext）来做双相补偿。在运行时，当离线 context 缺失或过时时，模型可以\nlive query warehouse 校验实际 Schema，并对接 Airflow 和 Spark\n动态获取最新的执行状态。Layer 6\n并不是对离线架构的否定，而是在保持离线目录高密度优势的同时，专门用来修补最后那点状态延迟。另外，agent\n生成 SQL 后去 live 执行拿结果，本来就是正常分析流程，不是偶发兜底。\n同样，我们也能很客观地看到这套系统在实践里的边界。Emma Tang 在\nVentureBeat\n访谈\n里坦言，模型过度自信是一个需要注意的问题，模型有时会在上下文不够时表现出盲目的确定性。在\nInfoQ\n演讲\n里披露的真实案例也显示，这个 Agent 曾把 ChatGPT\n的活跃用户数误算成了 500 万（对照约 8 亿），甚至还把视频生成模型 Sora\n误判成了游戏《王国之心》里的角色。\n另外，长期积累的记忆机制也存在概念漂移的风险，旧的偏好可能会过度拟合并干扰新的业务逻辑；InfoQ\nQ&A 中 Bonnie Xu 也承认 bad memory 会造成真实失败，当前主要靠\nauditing 和 pruning。甚至官方 demo 截图对比了无 memory 时仍运行 22m41s\n与有 memory 时 1m22s 完成——这属于厂商 demo，没有生产 telemetry\n或独立复现。理清这些边界，能帮我们更客观地评估离线编撰架构的适用场景。\n给实践者的启发：别再死磕在线\nPrompt，去建离线数据供应链\n复盘 OpenAI Data Agent 的架构演进，给 Agent\n开发者带来的最直接启发是：别再在在线 Prompt\n和复杂的实时分发机制上做无谓的内耗了，把精力转向建设离线数据供应链。\n对大多数资源有限的团队来说，完全复制一套六层 Context\n机制既没有必要也不现实。我们可以从最小闭环切入，分三步建立自己的离线整理管线：\n首先，清洗历史日志。别把所有历史对话或 SQL\n记录直接往向量库里扔，而是根据使用频率和验证状态做筛选，让高频、高信任度的查询优先进入检索材料。\n其次，引入 AI 离线提炼。部署轻量级的定时任务，利用大语言模型（比如\nCodex 或通用模型）定期扫描数据管道代码和 SQL\n脚本，提取表粒度、主键约束和业务含义，自动生成结构化的离线描述。\n最后，建立纠错记忆回路。把用户在日常协作里提出的修正意见抓取下来，写入轻量化的记忆文件，在下一次离线更新时合并进目录上下文——但要有\nauditing 和 pruning，否则 bad memory 会把错误永久放大。\n好的上下文工程，精髓不在于运行时检索到了多么海量的数据，而在于离线阶段利用大模型充当主编，把可检索材料整理得有多准确。当数据供应链能在后台消化掉绝大部分复杂性时，在线端的\nAgent 自然可以用很简洁的架构，跑出相当稳定高效的结果。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/openai-data-agent-offline-context-20260806.html",
+      "content_chars": 5828,
+      "content_sha256": "cacd02c5440473680a02bbe51fea8a61ea25d717744e2fed4ce500cd0065a3ed",
+      "content_fetched_at": "2026-08-07T01:02:42.382571+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-06T00:00:00+00:00",
+      "collected_at": "2026-08-07T01:01:38.685400+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/openai-data-agent-offline-context-20260806.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "OpenAI 带来的上下文工程范式反思：为何离线编撰能让在线 RAG 看得更少、更准？",
+          "url": "https://yage.ai/share/openai-data-agent-offline-context-20260806.html",
+          "content_sha256": "cacd02c5440473680a02bbe51fea8a61ea25d717744e2fed4ce500cd0065a3ed"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:680184851fbec979",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "最后一块拼图：Cloudflare 搭建的 Agent 双边市场与它的冷清现实",
+      "target_url": "https://yage.ai/share/cloudflare-wallets-agentic-commerce-20260805.html",
+      "text": "yage-share published: 最后一块拼图：Cloudflare 搭建的 Agent 双边市场与它的冷清现实",
+      "at": "2026-08-05T00:00:00+00:00",
+      "external_id": "a:680184851fbec979",
+      "url": "https://yage.ai/share/cloudflare-wallets-agentic-commerce-20260805.html",
+      "title": "最后一块拼图：Cloudflare 搭建的 Agent 双边市场与它的冷清现实",
+      "content": "AI Agent\nAI 产品与平台\n过去几个月里，如果仔细观察 Cloudflare 在 AI Agent\n领域的动作，就会发现一条非常清晰的技术主线。从最初让网络看懂 Agent\n请求的\n格式协商与\nCloudflare Drop 策略\n，到后来的\nPrecursor\n边缘防刮与行为检测\n，Cloudflare 一直在为即将到来的 Agentic Web\n铺设管道。\n但要让 Agent\n真正像人类一样在互联网上自主协作，光有流量管道是不够的，核心在于商业交易的闭环。回顾过去两个月的发布，Cloudflare\n实际上在按部就班地推进一场三步走的基础设施建设：先是厘清底层结算协议，接着在卖方侧设立计费关卡，最后在\n2026 年 8 月 4 日的 Agents Week 上，通过\n官方 Blog\n与\nFortune\n报道\n推出了面向买方的可编程钱包与身份系统。至此，一套理论上的 Agent\n商业双边基础设施拼图，终于宣告合拢。\nAgent 商业双边市场架构：x402\n协议层、Monetization Gateway 卖方网关与 Cloudflare Wallets\n买方钱包，cloudflare.pay 身份层贯穿其间\n拼图的前两块：从 x402\n协议到卖方计费网关\n要理解本次发布的买方钱包，必须先看清前两块拼图所解决的瓶颈与机制。\n第一块拼图解决的是\n机器结算的标准协议\n。传统互联网的支付体系完全围绕人类设计——无论是信用卡还是\nStripe\n弹窗，都需要填表、二次验证和手动点击，且每笔交易有较高的固定手续费，无法支持几分甚至几厘钱的单次\nAPI 微支付；而传统的 API Key\n模式则要求预先注册、绑定计费账户并获取密钥，无法支持 Agent\n在互联网上即时调取陌生的第三方服务。\n2025 年 5 月由 Coinbase 牵头发布的\nx402\n协议\n，在 2026 年 7 月转入\nLinux\nFoundation 旗下基金会运营\n，打破了这个僵局。它重新激活了休眠数十年的\nHTTP 402 Payment Required\n标准\n，用标准化请求头规范了机器握手：当 Agent\n请求付费资源时，服务器返回 402\n状态码以及包含收款地址与价格的响应头；Agent\n无需弹窗，直接用稳定币签署授权凭证发回；服务端自行或经中继节点验证后结算并返回资源。目标是实现亚秒级的单次\nHTTP 请求微支付。\n第二块拼图解决的是\n卖方侧的设卡与合规门槛\n。当协议标准化后，网站出版商、数据提供方或\nMCP 工具开发者面临新的难题：如果想对 AI 爬虫或 Agent\n的单次请求收费，难道每个开发者都要自己搭建一套复杂的鉴权服务器、计费系统和跨国结算账单？\n2026 年 7 月发布的\nMonetization\nGateway 卖方网关\n（详见\nCloudflare 官方\nBlog\n）将这个门槛降到了最低。依托其全球 330\n多个城市的边缘节点，卖家只需在 Dashboard 里对特定路由设价（例如设定对\n/api/premium/*\n单次 GET 请求收取 0.01\n美元），网关就会在边缘侧自动完成 x402 握手与拦截。更关键的是，Cloudflare\n根据其\nPay\nPer Crawl 文档\n，在该产品中明确担任名义商家（Merchant of\nRecord）。Monetization Gateway\n是否采用相同的责任模型尚未公布，但卖方获准加入后，无需改动后端代码，就能在边缘节点对\nAgent 挂牌营业。\n有了收钱的标准，也在边缘设立了卖方收费卡口，但整个商业模型依然悬在半空：买方\nAgent\n究竟该如何持有资金，又如何在没有人类逐笔批准的情况下，安全地出资付款？\n补齐买方拼图：Cloudflare\nWallets 如何给 Agent 配备有界钱包\n8 月 4 日发布的\nCloudflare Wallets\n以及配套的\ncloudflare.pay\n身份预留平台\n，正是为了回答这最后的买方难题。\n写过 Agent\n程序的开发者都知道，直接把私钥或充值卡交给模型是非常危险的。Prompt\nInjection 攻击或模型的偶发幻觉，可能在几秒钟内掏空所有余额。为了解决这种\nAgent\n支付信任链\n上的风险，Cloudflare 在买方侧引入了双层钱包架构：\n第一层是账户钱包，由人类所有者掌控，负责存放资金、分配预算并配置全局支出策略；第二层则是专门分配给\nAgent 的虚拟钱包，通过 API 密钥进行操作。Agent\n在执行任务时可以在授权额度内自动完成付款，无需逐笔向人类请求二次确认。不过\nCloudflare 尚未公布钱包的托管模型——是 Cloudflare\n替你持私钥，还是你自己掌握——这直接决定了资金丢失时的责任归属。\n为了确保资金不至于失控，Cloudflare\n在虚拟钱包上挂载了三道硬性风控策略： -\n周期预算上限\n：限制特定时间窗口内的最大支出额。 -\n商家白名单\n：限定 Agent 仅能在已验证或指定的域名与\nHandle 上花钱。 -\n单笔交易上限\n：防止突发的异常大额扣款。\n一旦 Agent\n的消费速率或单笔金额触发异常，硬性上限会限制继续支出，管理员可以人工复核并决定提额或补充资金。与此同时，配套发布的\ncloudflare.pay\n给 Agent 提供了一个建立在\nWeb\nBot Auth 公钥对\n之上的 Handle，例如\nresearch.example.cloudflare.pay\n。这个 Handle\n是公钥对的人类可读别名，Agent\n可以选择声明身份，商家也自行决定是否优先服务已标识的\nAgent——它不是强制身份认证。\n双边闭环后的领域变更：按次打车、爬虫变局与花钱的真隐患\n当协议层、卖方网关与买方钱包在基础设施层面连通，最直接的变化是从提前办月票变成了随时按次打车。在以前的开发模式下，如果希望\nAgent\n调用某个外部服务，流程通常是人类去那个网站注册账号、绑定信用卡、充值并生成\nAPI\n密钥。这种模式本质上是提前签好的长期批发契约。但在真实的互联网协作里，Agent\n在执行任务时可能会临时需要调取一个冷门的数据节点，不可能每次都把人类叫醒去填表充值。功能上线后，理论流程将是：卖方在边缘网关按次标价，买方\nAgent\n觉得符合当前任务的优先级，直接用钱包现场结账。任何独立的工具或数据节点，只要在边缘挂牌就能开门营业，不再依赖大厂复杂的计费系统。\n但随之而来的，是商家端迎来了一个反直觉的新头疼事。在传统网站运营中，大家习惯用要不要付钱来区分普通用户和恶意爬虫，以为只要加上付费门槛，扫数据的机器人就会知难而退。但一旦给爬虫也装上了钱包，这个旧经验就彻底失效了。正如\nfintech 分析师 Yuval Gilad 在社区讨论中所说的：“An extraction bot with a\nwallet is still an extraction bot.”\n一个带着预算来刮数据的机器人，依然是恶意爬虫。钱包只解决了 Agent\n给不给得起钱的问题，却把更难的问题留给了商家：哪怕它付得起这一分钱，我究竟该不该把数据卖给它？怎么防止它花钱把独家数据资产快速搬空？\n而在买方这边，钱包的风控上限也挡不住买错东西的隐患。很多开发者以为在虚拟钱包上设好了周期预算上限和商家白名单，Agent\n的消费就万无一失了。但正如社区评论者 Daniel Antcliff 指出的：“A spending\ncap and a merchant allow-list aren’t governance. They’re authorisation.”\n白名单和预算上限只管钱不能花超，不管钱有没有花对。一个 Agent\n完全可以在严格遵守所有预算上限的前提下，把钱包里的每一分钱都拿去购买了被诱导的废话或者伪造数据。钱包侧的硬限制可以把潜在损失封顶，却替代不了\nAgent 自身的逻辑审慎与结果判定。\n架构合拢 vs\n冷清现实：左侧是完整的协议/网关/钱包/身份四层架构，右侧是未上线的文档、未开放的功能与未发生的交易\n冰冷的现实：拼图架构合拢，但买卖家都尚未进场\n然而，从架构图上的逻辑自洽落地到现实生产环境，中间隔着巨大的鸿沟。如果仔细核对发布当天的实际状态，就会发现这套基础设施依然处于极度的冷清之中。\n首先，买方功能尚未真正就位。发布当天，Cloudflare Wallets\n的官方专属开发文档（\ndevelopers.cloudflare.com/wallets/\n）点击后直接返回\n404 错误。钱包的核心充值、资金划拨与虚拟钱包接口全线标明为\n“in the\ncoming months”\n，当天唯一开放的仅有 Handle 的名称预留。\n其次，卖方市场同样处于锁门状态。7 月发布的 Monetization Gateway\n截至目前依然是 waitlist 制，没有任何主流数据出版商或高频 API\n商家公开宣布接入并开启计费，也没有公开的已签约商家名单。\n更值得关注的是链上交易数据的真相。尽管 x402 协议在宣传中提到了超过\n1.6 亿笔累计交易，但\nChainalysis\n的 x402 采用追踪报告\n指出，早期交易笔数的大幅增长受到 Base 链上 PING\n等 Meme 币刷量行为驱动。公开链上数据无法可靠区分真实 agent\n采购、测试交易和投机 farming，因此 1.6\n亿笔不能直接视为商业采用量。球场虽然搭好了，但买卖双方都还没有真正入场。\n早期生态缝隙与总结：一个超前的架构脚手架\n这种发布宣传与工程落地的张力，在发布首日的一个社区插曲中展现得淋漓尽致。\n在\nHacker\nNews 的热门讨论帖 #49172834\n中，有用户尝试询问 Cloudflare 自家部署的\nAI 机器人是否有 Wallet 产品，机器人却给出了矛盾的回答：“我们的文档或\nDashboard 中没有这样的产品，请把任何声称是 ‘Cloudflare Wallet’\n的邮件、网站或消息视为网络钓鱼。”另有用户核验\ncloudflare.pay\n的 TLS\n证书，发现其仅为缺少组织与地址信息的通用 DV 证书；还有用户报告 Brave\n浏览器将站点标记为可疑。\n这并不是简单的公关疏漏，而是提供了一个值得警惕的信号：当 Cloudflare\n以极高的节奏拼凑 Agent\n基础设施时，其内部的安全验证体系与前端应用层生态之间还存在缝隙。\n回顾 Cloudflare\n这三轮的连续动作，它的战略意图非常清晰——争夺其边缘网络上的 agent\n交易控制点，构建出 Agent 商业双边市场的全套工程脚手架。CEO Matthew\nPrince 在官方公告中说：“It’s the identity and payment infrastructure the\nagentic web needs to function.” 首席战略官 Stephanie Cohen 在 Fortune\n采访中则更进一步：“Every interaction on the internet is a chance for\ncommerce.” 两种 framing 之间的张力本身就反映了 Cloudflare\n从”管道”向”交易控制面”转型时的角色拉扯。但对于广大的 Agent\n开发者与企业而言，必须清醒地认识到：拼图的合拢目前依然停留在架构演进的理论阶段。在没有真正的杀手级买方\nAgent\n和高价值卖方服务大规模入场之前，它依然是一个值得保持关注、但离生产部署尚有相当距离的前瞻性实验。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/cloudflare-wallets-agentic-commerce-20260805.html",
+      "content_chars": 4804,
+      "content_sha256": "54d9ae49c41f0fb3b035f12776914ed1fea099ffc786658d78dc7f9376c080c2",
+      "content_fetched_at": "2026-08-07T01:02:42.865351+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-05T00:00:00+00:00",
+      "collected_at": "2026-08-07T01:01:38.685400+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/cloudflare-wallets-agentic-commerce-20260805.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "最后一块拼图：Cloudflare 搭建的 Agent 双边市场与它的冷清现实",
+          "url": "https://yage.ai/share/cloudflare-wallets-agentic-commerce-20260805.html",
+          "content_sha256": "54d9ae49c41f0fb3b035f12776914ed1fea099ffc786658d78dc7f9376c080c2"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
