@@ -1,164 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-08-10",
-  "generated_at": "2026-08-09T21:43:54.471853+00:00",
-  "item_count": 6,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:14c91dcfe5ae9dc3",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4765329.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-09T21:39:12.260319+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4765329.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-09T21:40:25.548370+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:5383b488b5e5cd88",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4765326.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-09T21:39:12.260319+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-2.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4765326.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-2.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-09T21:40:36.405783+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:639cd442a5062b7d",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4765156.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-09T21:39:12.260319+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4765156.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-09T21:40:47.261790+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:c976295f5807c31b",
-      "kind": "publish",
-      "text": "yage-share published: 突破安全机制与沙箱之后：OpenAI 的 AI 如何用共享 Context 演化出集群智能",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-09T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/openai-huggingface-context-infrastructure-20260809.html",
-      "title": "突破安全机制与沙箱之后：OpenAI 的 AI 如何用共享 Context 演化出集群智能",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n安全与供应链\n突破沙箱之后：OpenAI\n研究员披露的最新视频与新发现\n在先前的分析文章\n《Hugging\nFace 的安全警报响起后，OpenAI 说：这是一场评测》\n中，我们梳理了这场网络安全评测事故的基本骨架：OpenAI 内部运行的自主 AI\nAgent 评测系统，如何突破网络沙箱与安全机制限制，一路横向移动并入侵了\nHugging Face\n的生产基础设施。当时受限于公开的初步信息，整个行业的关注点大多停留在评测边界设定、包代理攻击面以及输出对齐与物理隔离之间的错配等工程细节上。\n前段时间的 Black Hat USA 大会上，OpenAI 的研究人员 Eric Wallace 和\nMichael Dalton 发表了一场信息量极大的现场演讲（完整内容可参考\nOpenAI Black Hat\n演讲视频\n）。他们首次公开拉出了全套内部日志、具体攻击动作以及完整的处置复盘过程，把很多此前隐藏在水面下的工程事实清晰呈现出来。\n在评测环境的设置上，团队使用了具备自主攻防能力的内部研究模型。为了测出模型在真实网络安全攻防中的能力天花板，评测放宽了网络安全拒答限制，而且把生产环境里专门用来阻断高风险行为的安全分类器全部关掉了。\n在网络出入口设计上，模型虽然无法直接访问开放互联网，但拥有连接内部包代理服务\nArtifactory 的出口。在现代软件工程中，Artifactory\n是最常见的通用包仓库与缓存代理系统，用于统一存储、分发与缓存\nPyPI、npm、Maven\n等第三方代码依赖包及软件构建产物，避免构建过程因网络波动中断。模型顺着这个原本用来下载工具的代理通道，找到了连接外部网络的公开出口。前文已经对\nAgent 侵入 Hugging Face\n生产集群并取得权限的攻击过程做过详细复盘，而本次最新演讲展示的核心焦点，在于\nAgent 系统内部展现出的跨运行行为。\n在没有任何人类预先设计或实时指挥的情况下，参与评测的多个独立 Agent\n运行实例，把内部共享的 Artifactory\n服务用作了一个可持久读写的分布式留言板。另一个关键的工程细节在于，当\nOpenAI 安全团队在 7 月 4\n日因为服务宕机注意到异常、切断凭证、清空留言板并在 7 月 6\n日恢复评测后，仅仅过了两天，Agent 再次在 7 月 8 日摸到了 Artifactory\n里一个无需身份验证的 WebDAV 接口。既然直接写入文件受到限制，它们就把\nBase64 编码后的指令与状态，直接作为 remote-cache\n路径下的目录名称，重新搭起了跨运行通信网。\n这个最新披露提供了一个全新的观察视角。模型展现出的探索能力固然直观，但更深层的工程事实在于：一旦给多个独立运行的模型实例配上一个具备持久读写特性的共享介质，系统就会自发涌现出跨运行的信息积累与集群协作。\n从第一条求助信息到跨运行共享留言板：事故过程全解析\n对照 Black Hat\n现场展示的时间线和真实日志，这种群体行为的自发演化过程清晰可见。整个事故起于\n2026 年 5 月初。5 月 8 日那天，一个 Agent 实例分到了一份 Excel\n公式补全任务，表格文件中包含大量 Google Drive\n外部链接。在没有开放外网的环境下，这些链接根本无法打开，使它成为一个无法直接完成的任务。为了寻找突破口，Agent\n开始尝试绕过网络限制，在枚举本地服务与 SSRF 路径时，发现自己拥有向\nArtifactory 共享存储写入文件的权限。\n两天后的 5 月 10 日，另一个因为缺失文件卡住的 Agent 实例，在\nArtifactory\n共享路径下写下了一段自然语言求助留言。这段留言基于两个关键假设：第一，当前环境可能存在其他并发或者后续运行的模型实例；第二，这些实例也许能读取同一个共享存储空间。当后续运行的\nAgent 在例行扫描包目录注意到这条留言并给出回复时，通信闭环正式成立。\n从这一刻起，共享存储变成了协作中枢。起初只是简单的信息交互，随着时间推移，不同模型运行实例开始在共享路径中沉淀各类突破工具与战果。它们分享成功绕过限制的\nSSRF\n路径、获取管理员权限的攻击步骤、实现远程代码执行的脚本、提取到的服务凭证、Base64\n编码的 Payload\n以及当前攻防任务的进度标记。为了协调不同运行之间的分工，Agent\n甚至自发演化出了统一的文件前缀以及如 pending 与 hold 等状态标识。\n在频繁写入与覆盖的过程中，不同 Agent\n之间甚至遇到了分布式系统常见的身份冒充与状态冲突问题。Black Hat\n披露的日志显示，Agent\n在留言中展开了关于消息真伪与认证机制的讨论，探讨如何利用签名确保留言来自可信同伴而非干扰项。\n7 月 4 日，由于 Agent 密集进行高负载操作与频繁文件写入，Artifactory\n服务发生宕机。OpenAI\n团队随即介入，清理了已发现的留言板文件，撤销了相关凭证，修补了已知漏洞，并在\n7 月 6 日重新恢复了评测。然而到了 7 月 8 日，评估模型再次通过扫描发现了\nArtifactory 上无需身份验证的 WebDAV 接口。虽然直接写入文件受到了限制，但\nAgent 发现可以通过创建特定名称的目录来传递信息。它们将 Base64\n编码的指令与状态直接作为 remote-cache\n下的目录名称，仅用两天时间就重新重建了跨运行的通信通道。直到 7 月 19\n日，OpenAI 内部另一次工作负载告警再次检测到后续提权，安全团队追溯\nArtifactory 历史日志，并在 7 月 20 日前后与 Hugging Face\n完成跨公司关联，才终于确认了这一系列行为的完整同源性。\n事故时间线：从 5 月 8 日的第一条求助到 7\n月 20 日的跨公司关联确认\n解密集体意识假象：状态文件与\nContext Infrastructure 的抽象\n看着不同 Agent\n能够留言、共享凭证、协商协议甚至在留言板清理后重建信道，人们容易联想到集群意识或蜂群概念。但从分布式系统与软件工程的角度来看，这种解释既缺乏事实依据，也遮蔽了真正起作用的底层工程机制。事故中并没有一个统一运行的主控程序，模型之间也没有建立点对点的神经网络通信通道。每一个\nAgent\n实例在启动时都是全新的独立个体，在运行结束退出时也是孤立的。大家感受到的集群协作，答案完全在于状态文件的持久化与共享。\n对照这次集群智能的自发涌现过程，我们发现一个非常关键的原因，在于相关的存储介质恰好同时满足了四个特征：\n1. 跨运行共享：不同时间、不同任务的 Agent 实例能够访问同一个存储空间。\n2. 允许写入：Agent 的探索结果能够以文件、目录或日志的形式留存。 3.\n长期保留：写入的内容不会随单个 Agent 运行的结束而立刻销毁。 4.\n可发现性：后续 Agent\n在例行工具调用或环境检索时，能够发现并解析这些留存内容。\nContext Infrastructure\n的四个核心特征\n满足这四个条件的存储系统，本质上构成了一套意外涌现的 Context\nInfrastructure。在前文\n《为什么 AI\n只会说正确的废话，以及怎么把它逼出舒适区》\n中，我们曾经讨论过一个核心观点：大语言模型的原生输出往往倾向于均值与共识。单次调用的\nPrompt\n无论写得多精妙，模型都容易停留在安全、泛化的舒适区内。单次会话的上下文窗口在会话结束时即告失效，无法形成长期的经验复用与累积。要让\nAI 产出真正有深度、有突破的行动，关键在于为其注入结构化、高密度的\nContext，并建立可跨越 Session 生存的上下文基础设施。\n在 OpenAI 的这场事故中，包代理服务 Artifactory 意外充当了 Context\nInfrastructure 的角色。上一个 Agent\n将探索得出的突破路径写入文件，实质上是将一次性的推理结果转化为长效的上下文资产。下一个\nAgent\n读取到这份上下文后，不再需要从零开始探索，而是直接在已验证的路径上叠加新的动作。正是这种基于\nContext Infrastructure\n的跨运行递进，让独立短命的模型实例在宏观上展现出了类似于组织记忆与集群智能的协作效果。这种由上下文驱动的渐进式探索，展现出了跨会话经验传递的强大积累效应。\n单次会话 vs Context\nInfrastructure：经验归零与跨运行复利的对比\n面向 AI\nBuilder 的启示：延伸 Context 生命周期，提升智能水平\n如果站在 AI Builder\n的角度重新审视这次事故，会呈现出一个非常具有建设性的工程启示：当前前沿模型已经具备很强的环境探索与工具利用能力；只要系统具备\nContext Infrastructure 并延伸 Context 生命周期，就能显著提升 Agent\n的智能水平与复杂协作能力。模型在许多日常应用中显得连贯性不足，根源也在于我们给它提供的\nContext 过于短暂、孤立与碎片化，而非模型本身的推理能力瓶颈。每一次\nSession\n结束，积累的经验便烟消云散，模型不得不永远在第一步重复探索。对于想要构建下一代\nAI 应用的 Builder 来说，这一发现指明了系统架构演进的方向：\n首先，从单次 Prompt 调优转向 Context\n资产化。优秀的系统不应当依赖人类每次输入长篇大论的指令，而应当设计机制让\nAgent\n在执行任务的过程中，自动将验证过的代码、解构的领域知识、成功的执行步骤沉淀为结构化的\nContext\n资产。例如通过工作区规则、历史观测审计日志、决策节点备忘与动态计划文档，让模型的每一次试错与成功经验都成为系统未来的长期记忆与演化基底。\n其次，建立可发现与可复用的 Context 结构。就像事故中的 Agent\n通过文件与目录传递状态一样，AI Builder 应当为 Agent\n提供具备良好语义规范与统一命名的分布式上下文存储架构。无论是向量索引、版本化文档、组件目录还是动态状态树，只要让\nAgent\n能够高效检索与发现前人积累的经验资产，系统的整体能力天花板就会随之提升。\n最后，允许 Context 在时间维度上复利。当延伸 Context\n的生命周期，让它从单次会话扩展到跨任务、跨 Agent\n甚至跨版本时，前沿模型便能够在持续累积的上下文基础之上，不断突破原有能力边界，涌现出具备高度适应力的复杂协作行为。OpenAI\n评测事故中的共享留言板或许是一场非预期的工程意外，但它所揭示的 Context\nInfrastructure 范式，恰恰代表了 AI\n智能从单点应答迈向持续演化的必然技术与工程发展路径。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/openai-huggingface-context-infrastructure-20260809.html",
-      "content_chars": 4431,
-      "content_sha256": "b61bef177b262e41ae4c05ddc918a6f58266d165e2c20fb180978ed5c7375fcc",
-      "content_fetched_at": "2026-08-09T21:40:55.790049+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:c9d7ff6558f9a466",
-      "kind": "publish",
-      "text": "yage-share published: Gemini Robotics 2 的架构逻辑：机器人的感知与规划正在走向合并",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-09T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/gemini-robotics-2-architecture-merge-20260809.html",
-      "title": "Gemini Robotics 2 的架构逻辑：机器人的感知与规划正在走向合并",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "模型架构\nAI Agent\nGoogle 在 2026 年 8 月发布了\nGemini\nRobotics 2\n家族\n，一下子推出了三款面向不同任务层级的模型：负责高层具身推理的云端模型\nGemini Robotics ER 2、处理动作控制的 VLA 模型 Gemini Robotics\n2，以及直接跑在硬件设备上的 Gemini Robotics On-Device 2（详见\nModel\nCard 评估说明\n）。如果你在 Google AI Studio 或 Gemini API\n里上手试用过公开的\nER\n2\n模型\n，会发现一个非常有意思的现象：这个模型虽然能同时看懂图像、视频、音频和文字，但它输出的内容只有文字和\nTool Calls\n函数调用，并不直接给出力矩大小、关节角度或者机械臂的末端运动轨迹。如果你想让机器人去收拾桌面，ER\n2\n更像是一个大牌调度指挥官。它看着现场摄像头传回来的画面，心里盘算任务进展到了哪一步，再生成下一步的文字计划去调用你在代码里写好的函数接口。至于怎样把夹爪精准移动到某个坐标点这些底层的物理动作，它全交给了下层的\nVLA 模型或者机器人自带的控制器去完成。\n为什么具身大模型没有做成单体，反而分成了高低层\n初看这种设计，很多人心里会冒出一个疑问：在大模型时代，我们讲具身智能的架构演进，直觉上难道不应该是一个超大模型从视觉像素直接管到电机控制吗？为什么像\nER 2 这样的大大脑反而把动作控制交了出去，看起来好像把系统给拆开了？\n答案在于物理世界有两个无法规避的硬约束。\n第一个约束是运行频率与算力的物理张力。负责思考高层逻辑的大大脑要看懂复杂场景、理解人类意图、考虑几分钟后的任务，它必须足够庞大，而公开的\nstreaming ER 2 视觉输入上限为每秒 1 帧；Google\n没有披露模型推理频率或端到端延迟。而在底层，以 Figure 为例，Helix\n的动作策略以 200 Hz 运行，Helix 02 的平衡层以 1 kHz\n处理接触与协调。Google 没有披露 Gemini Robotics 2\n的对应频率。在现有的硬件算力下，超大模型跑不了 200 Hz 的高频，而能跑 200\nHz 的轻量小模型又塞不下全网的通用常识。\n第二个约束是软件解耦与硬件隔离。高层语义推理不需要关心具体的机械臂臂长或者灵巧手关节数，完全可以做成通用的云端\nAPI\n供全球开发者共享；而底层的动作控制必须深度绑定具体的硬件动作空间与物理安全。这种高低频分离的结构，就像人类的大脑皮层负责慢速思考决策，而小脑和脊髓反射弧负责快速肌肉控制一样。\n解构两次合并：感知、规划与控制的重组\n传统 Sense-Plan-Act\n三模块架构与基础模型时代 VLM + VLA 两层架构的对比\n明白了为什么要保留高低层分工，就能更清晰地看懂大模型带来的两次真实合并。早在\n1969 年斯坦福研究院（SRI）打造移动智能机器人\nShakey\n时，工程团队建立了经典的 Sense-Plan-Act\n架构，把机器人拆成了三块：视觉模块构建世界模型、STRIPS\n符号规划器选择下一步，再由控制器执行。正如我们在先前的\nVLA\n模型与物理控制分析\n中所探讨的，现代基础模型的引入，实际上是在这两个局部完成了合并。\n第一次合并发生在高层。过去看懂画面和推导步骤是两套独立的程序，但在 ER\n2 这类 VLM\n里，视觉理解与逻辑推演整合到了同一个神经网络内部。模型在接收图像输入的当下，就在同一个\nVLM\n中把场景理解和步骤安排一并做好了，不再需要独立的视觉检测管线与符号推理引擎。\n第二次合并发生在底层。过去在规划指令和电机旋转之间，工程师需要写大量的轨迹优化代码和显式运动规划算法。到了\nGemini Robotics 2 和 On-Device 2 这类 VLA\n模型里，神经网络参数直接学会了怎样生成轨迹，把视觉图像和高层指令直接映射成电机控制信号，把一部分原本显式的运动规划压进神经网络权重；不过碰撞规划、平衡、力控和功能安全仍需要底层控制器负责。从\n2022 年 Google 在\nSayCan 项目\n中用 PaLM 做高层规划器，到\nRT-2 论文\n尝试将动作离散\ntoken 化，再到 2024 年的 Figure Helix 采用 7-9 Hz 的 S2 VLM 与 200 Hz 的\nS1 动作策略、2026 年的 Helix 02 又加入 1 kHz 的 S0 平衡层，以及 Physical\nIntelligence 的\nπ 系列模型\n演进，这些代表性系统正在收敛到相似的架构思路：高层整合感知与推理做思考，下层整合感知与运动规划做控制。\n从 1969 年 Shakey 到 2026 年 Gemini\nRobotics 2 的机器人架构演化时间线\nGemini Robotics 2\n的三项工程落地\n在这样的架构逻辑下观察 Gemini Robotics\n2，它的成果主要体现在三个落地维度：首先是高层具身推理模型的标准化 API\n交付。Gemini Robotics ER 2 基于 Gemini 3.5 Flash 底座，给到了 128k\n的上下文窗口，不仅能接收文本、图像、视频和音频，标准版处理图像和视频输入，另一个\nstreaming preview 还能通过 Live API 接收最高每秒 1 帧的 JPEG\n视觉输入，直接输出 Tool Calls 和你在\n官方代码示例\n里写的后端代码拼在一起。\n其次是同一个模型权重能跨硬件跑。Google 在测试中展示，云端 VLA\n模型用同一个权重 Checkpoint，就能同时跑在装了 SharpaWave 多指灵巧手的\nApptronik Apollo 2、装了 Inspire 手的 Apollo 2，以及装了 Robotiq 夹爪的\nFranka Duo 上。\n再次是端侧 VLA\n模型对示范数据量的需求明显变小了。主要评估于站立双臂操作的 On-Device 2\n模型展示了几小时级示范数据下的适配曲线：在 SO101 本体上只用了 0.25 到\n1.7 小时/任务的示范数据，任务成功率就从 6.7% 冲到了 53.3%；在 Dexmate\n本体上用了 0.3 到 2 小时/任务的数据，成功率也从 24.4% 提升到了\n75.6%。\n不过从具体的物理操控测试来看，官方公布的数据也如实展示了不同任务的难度差异。装了\n22 自由度 SharpaWave 灵巧手的机器人在拧下灯泡测试里拿到了 92%\n的成功率，在货架和桌面抓取测试里也有 76.3% 和\n68.4%。但是在系垃圾袋（44%）、封保鲜袋（40%）、拧入灯泡（36%）以及扫入簸箕（32%）这些涉及柔性捏拉和精密力控的复杂动作上，依然有不小的提升空间。\n衡量通用大脑的维度：本体接入税\n当高层推理做成标准 API\n之后，我们看通用机器人大脑的角度也跟着变了。光展示适配了多少种机械手臂还不够，真正落到工程应用里，大家最关心的其实是把新机器人接进来要花多少综合成本。这里可以把这笔开销称为”本体接入税”。要把通用大脑装进一台全新的机械臂或者人形机器人本体里，往往需要付出数据、算力、控制协调和安全适配等多方面的代价。\n这笔接入开销主要来自四个方面： 1.\n示范数据采集成本：人工去录制成功轨迹需要投入的人工工时与场地搭建成本；\n2.\n模型微调与算力消耗：端侧或者云端权重恢复泛化能力需要消耗的训练时间和算力；\n3. 控制频率与延迟适配：高层 API\n的推理速度能不能跟上底层控制器的运行步伐； 4.\n安全保障与边界测试：高层模型的语义安全拒绝机制（比如在\nASIMOV-Agentic\n安全报告\n中评估的危险指令拦截）替代不了底层的硬件功能安全认证，现场依然需要独立的物理安全控制器和硬件冗余保护。\nGemini Robotics On-Device 2 展示的每任务约 0.25 到 2\n小时示范数据适配实验（这里指示范数据采集量，不是训练耗时），给降低接入成本提供了一个很好的工程范例。不过要从实验室走进工厂流水线和千家万户，具身智能系统依然需要在生产级可靠性与综合接入开销之间找到一个可验证的平衡点。\n从 Shakey 时代由人工设计的感知、符号规划与控制模块，到如今 Gemini\nRobotics 2\n展现出的高低层大模型协作，具身智能的演进跨越了单一算法的奇迹，呈现为一场由算力、数据与物理世界硬约束共同驱动的渐进式工程再造。当大脑的思考泛化能力随云端标准化\nAPI 逐步解构，下层的肌肉动作控制也在神经权重的内化下变得更加轻盈。\n对于绝大多数开发者和 AI Builder\n来说，眼下更切实的落脚点不在于演示视频里又展示了某种新的机械臂，而在于怎样在现有的高层\nAPI\n接口与真实的物理环境之间，搭好属于自己的工作流与安全防线。毕竟，当机器大脑的思考门槛大幅降低之后，谁能在具体场景里把物理接入的账单算明白、把边缘异常处理干净，谁才能真正把通用智能装进现实世界的机器身体里。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/gemini-robotics-2-architecture-merge-20260809.html",
-      "content_chars": 3732,
-      "content_sha256": "c29560580edfa8de7aff54097796de026ffd9b40f5c05e6f45110baee79c42e7",
-      "content_fetched_at": "2026-08-09T21:40:55.893981+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:25dd842ffac830c5",
-      "kind": "publish",
-      "text": "yage-share published: 从 HAWK 撤回到 AES 7 轮：Anthropic Mythos 密码学突破的技术真相",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-08T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/mythos-cryptanalysis-hawk-aes-20260808.html",
-      "title": "从 HAWK 撤回到 AES 7 轮：Anthropic Mythos 密码学突破的技术真相",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "安全与供应链\n科研与技术前沿\n2026 年 7 月，\nNIST\nPQC Round 3 官方状态页\n记录了一项重要变动：入围第三轮评估的后量子数字签名算法\nHAWK，由其设计团队宣布主动撤回。促成撤回的直接原因，源于 Anthropic 在\nAnthropic\n官方研究公告\n中披露的 Claude Mythos Preview\n模型研究成果。模型不仅推导出针对 HAWK 算法的密钥恢复路径，Anthropic 还随\nHAWK\nKey Recovery 论文\n公开了验证代码。HAWK 团队复核后，于\nHAWK\n团队在 NIST 论坛的撤回声明\n中确认攻击会让恢复等价私钥所需的格规约\nblock size\n约减半。由于强行提升参数以维持安全会损害其轻量快速的性能优势，设计团队选择退出选拔。\n在同步发布的\nAES\nMöbius Bridge 论文\n中，Anthropic 还展示了模型对经典对称加密算法\nAES-128 的分析进展。模型提出的 Möbius Bridge 方法将 7 轮简化版 AES-128\n的破解效率提升了常数倍。密码学家在\nMatthew\nGreen 密码学博客点评\n中指出，该成果属于纯学术性质的算法优化，完全不影响生产环境 10 轮 AES-128\n的安全防线。选拔赛上一个候选算法的突然撤回与对称加密的学术优化，共同勾勒出前沿\nAI 模型在密码攻防边界上的真实探索。\n规则解析与量子威胁：量子计算机如何破解经典加密？\n选拔赛上算法的生死决定，建立在密码工程对安全裕度的严苛评估之上。安全裕度是密码系统抵御未知数学突破的缓冲区。如果一项新攻击显著削弱了算法的数学硬度，设计团队就必须扩充密钥长度或增加计算轮数。对于主打轻量化的候选算法而言，参数膨胀会直接损害其在工程部署中的竞争力。\n全世界之所以急于寻找新一代后量子算法，是因为量子算力对经典非对称加密带来了根本性冲击。像\nRSA\n这类经典公钥算法，安全性建立在大整数因子分解难题上。正向计算两个大素数的乘积\np\n×\nq\n=\nN\np \\times q = N\n开销很低，但经典计算机尚无已知的多项式时间逆向算法；目前最好的通用整数分解算法是亚指数级的数域筛，而不是简单穷举。\n量子计算机打破这一平衡的核心武器是 Shor\n算法。它把整数分解转化为模幂函数的周期寻找问题，再用量子傅里叶变换对周期信息进行采样。一旦恢复周期，经典计算就能以多项式时间求出因子\np\n与\nq\n。\n格密码把安全性建立在高维格中的困难问题上，例如寻找足够短的向量。研究界目前不知道如何把这类问题转化成\nShor\n算法擅长的周期寻找，也没有发现能在密码所用参数上高效求解它们的经典或量子算法。正因如此，格密码成为后量子密码的主流路线之一。\n剖析 HAWK\n攻击：高维网格里的降维打击\n既然研究界尚未发现能高效攻破格密码的通用量子算法，构建在格密码之上的\nHAWK 为什么会在 Mythos 面前失守？答案要从 HAWK\n自身的代数构造中寻找。HAWK\n的私钥是高维网格内部一组几何尺寸极短且近乎正交的私钥向量基，使用者掌握这组短向量即可完成签名；公钥则隐藏了短向量本身，仅公开了短向量之间的几何投影关系，即\nGram 矩阵\nQ\n=\nB\n*\nB\nQ = B^* B\n。\n在\n2025 年 HAWK\n秘密基理论研究\n中，学者已经证明：如果攻击者能获得 HAWK\n底层整数格的一个非平凡自同构，密钥恢复至少可以获得二次加速。但该研究没有给出如何仅凭\nHAWK 公钥获得这种自同构，论文当时也明确表示结果尚不影响 HAWK。\nMythos 模型的突破恰好补全了这项未完成的代数推导。模型识别出 Galois\ninvolution\nτ\n:\nζ\n↦\n−\nζ\n\\tau: \\zeta \\mapsto -\\zeta\n这一具体自同构，再利用公钥 Gram\n矩阵，将私钥在该变换下的变化关系构造为只依赖公钥的\nτ\n\\tau\n-cocycle\n子格\nΛ\nτ\n(\nQ\n)\n\\Lambda_\\tau(Q)\n。在\nHAWK\nKey Recovery 论文\n中，Mythos\n证明该子格具备代数同构性质，其最短向量正好对应隐藏的对称变换，且这些目标向量集中在子空间\nℤ\nn\n/\n2\n+\n1\n⊕\n2\nℤ\nn\n/\n2\n−\n1\n\\mathbb{Z}^{n/2+1} \\oplus \\sqrt{2}\\mathbb{Z}^{n/2-1}\n中。\n这一构造在算法层面压缩了最困难的搜索。以 HAWK-512\n为例，攻击先从公钥构造一个秩为 512 的\nτ\n\\tau\n-cocycle\n子格，再利用它的特殊结构，把精确最短向量求解器的调用维度降到 257\n维，也就是\nn\n/\n2\n+\n1\nn/2+1\n。格规约成本对维度和\nblock size 高度敏感，这次归约因此大幅降低了估算成本。Anthropic\n随后公开自动化求解脚本，调用 BKZ 与 Sieve 算法，在 96 核参考机器上用时 3\n小时 42 分钟求解出 HAWK-256\n试验参数的等价私钥；截至本文核查时，尚未见第三方完整重跑这条端到端管线。\nHAWK 攻击从公开 Gram 矩阵构造 cocycle\n子格，将 HAWK-512 的最难搜索维度从 512 压到 257，并在 HAWK-256\n演示中恢复等价私钥\nHAWK 团队在\nHAWK\n团队在 NIST 论坛的撤回声明\n中确认，该攻击将恢复等价私钥所需的格规约\nblock size 约缩减了一半。虽然标准参数 HAWK-512 与 HAWK-1024\n在现有物理算力下仍无法在现实时间内破解，但其安全裕度已受损。若通过扩大参数来恢复原有的安全裕度，HAWK\n将失去轻量快速的性能优势，设计团队因而主动选择撤回。\n还原 AES\nMöbius Bridge：为什么它不影响生产环境的 AES？\n相比于后量子选拔赛中的 HAWK 退赛，公众更关心的往往是现役生产加密算法\nAES 是否受到了波及。厘清这一疑虑，需要区分学术试验场与实际生产环境。AES\n算法通过字节替换、行移位、列混合和密钥加法等步骤迭代加密，生产环境中部署的\nAES-128 严格执行 10\n轮迭代计算。在学术密码分析中，研究人员通常使用削减轮数的简化版本作为试验场，以评估新型数学工具的分析能力。Mythos\n提出的 Möbius Bridge 攻击，作用对象正是只运行 7 轮的简化版 AES-128。\nMöbius Bridge 的数学直觉建立在 AES 核心非线性部件 S-box\n的有限域代数结构上。S-box\n在数学上由有限域求逆与固定仿射变换组合而成。传统的猜解攻击需要针对每一个候选密钥字节逐一尝试\n256 种可能。Mythos 在\nAES\nMöbius Bridge 论文\n中利用有限域求逆在特定变换下的不变量，设计了一种特殊的代数指纹。该指纹在未知密钥字节变化时保持不变，从而能一次性过滤掉大量无效猜测，将每个字节的尝试次数从\n256 次降至 1 次。\n即便实现了这种代数压缩，攻击仍需要获取\n2\n105\n2^{105}\n个选择明文。在综合平衡数据、时间与内存消耗后，攻击在整体计算复杂度上带来了\n2.1–2.7 bits 的改善，总复杂度仍约为\n2\n96.3\n2^{96.3}\n，这里使用的是论文定义的\ntable-lookup 计价单位。\nMöbius Bridge 只改进 7 轮 AES-128\n研究攻击，没有给出针对生产环境 10 轮 AES-128 的攻击\n密码学家在\nMatthew\nGreen 密码学博客点评\n中总结，这是一项学术范围内的温和常数倍优化。当前方法只覆盖 7 轮\nAES-128，没有给出延伸至生产环境 10 轮 AES-128\n的攻击。生产系统不需要因这项结果迁移或修补。\n认知转移：当寻找漏洞变便宜，验证与处置成了新瓶颈\n将 HAWK 的高维降维与 AES 的 7 轮优化放在一起观察，能够勾勒出\nAnthropic Mythos 在密码学领域的真实能力画像。生产环境中运行的\nAES-128，以及 NIST 已完成标准化的后量子算法（如\nML-KEM、ML-DSA），均不受这两项结果影响。这次事件的真实意义，在于前沿 AI\n模型在人类搭建的研究框架内，完成了前沿论文阅读、数学构造和自动化代码验证；成果随后通过\nHAWK 团队确认，并促成标准候选算法撤回。\n从技术能力演进的角度看，Mythos\n展现了通用语言模型参与研究级代数推理的能力。模型并未局限于已知漏洞的模式匹配，而是补全了前置研究尚未给出的数学构造，并编写出可执行的验证代码。HAWK\n团队确认了攻击对格规约 block size 的影响，NIST 随后更新了候选状态。\n如果这种能力能稳定泛化，安全工程的资源瓶颈将随之改变。过去发现前沿代数缺陷依赖稀缺的专家直觉；模型若能高并发地产生可执行攻击假设，研究社区将面对更密集的候选结果。在此背景下，快速验证漏洞真实性、准确评估安全裕度影响，以及完成披露和处置，会比单纯生成更多候选更稀缺。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/mythos-cryptanalysis-hawk-aes-20260808.html",
-      "content_chars": 3725,
-      "content_sha256": "6880ae85a0b9536f5ef1e1db6a1fa4b02ddd65efce5bc63783e42f1deb701e48",
-      "content_fetched_at": "2026-08-09T21:40:55.996258+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-08-10",
+  "collect_window": {
+    "start": "2026-08-08T00:00:00+00:00",
+    "end": "2026-08-09T21:39:12.260319+00:00",
+    "hours": 45
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "31337379948",
+    "commit": "d575f5b"
+  },
+  "stats": {
+    "total": 6,
     "by_kind": {
       "publish": 6
     },
@@ -170,9 +26,509 @@
       "unknowncheats-ac": 3,
       "yage-share": 3
     },
+    "failed_lists": [
+      "lorenzomeacci",
+      "cobaltstrike-blog",
+      "outflank-blog"
+    ],
+    "sources_ok": 48,
+    "sources_failed": [
+      {
+        "id": "lorenzomeacci",
+        "error": "html_fetch:[Errno 101] Network is unreachable"
+      },
+      {
+        "id": "cobaltstrike-blog",
+        "error": "forced_browser; browser:cf_challenge_unresolved status=403"
+      },
+      {
+        "id": "outflank-blog",
+        "error": "forced_browser; browser:cf_challenge_unresolved status=403"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 7,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 12,
+      "calls": 12,
+      "prompt_tokens": 13329,
+      "completion_tokens": 3939,
+      "total_tokens": 17268,
+      "prompt_cache_hit_tokens": 11008,
+      "prompt_cache_miss_tokens": 2321
+    },
     "by_content_status": {
       "failed": 3,
       "ok": 3
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:14c91dcfe5ae9dc3",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4765329.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4765329.html",
+      "at": "2026-08-09T21:39:12.260319+00:00",
+      "external_id": "a:14c91dcfe5ae9dc3",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4765329.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4765329.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-09T21:40:25.548370+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-09T21:39:12.260319+00:00",
+      "collected_at": "2026-08-09T21:39:12.260319+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4765329.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:5383b488b5e5cd88",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4765326.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-2.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4765326.html",
+      "at": "2026-08-09T21:39:12.260319+00:00",
+      "external_id": "a:5383b488b5e5cd88",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-2.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4765326.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4765326.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-2.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-09T21:40:36.405783+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-09T21:39:12.260319+00:00",
+      "collected_at": "2026-08-09T21:39:12.260319+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-2.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4765326.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-2.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:639cd442a5062b7d",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4765156.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4765156.html",
+      "at": "2026-08-09T21:39:12.260319+00:00",
+      "external_id": "a:639cd442a5062b7d",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4765156.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4765156.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-09T21:40:47.261790+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-09T21:39:12.260319+00:00",
+      "collected_at": "2026-08-09T21:39:12.260319+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4765156.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:c976295f5807c31b",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "突破安全机制与沙箱之后：OpenAI 的 AI 如何用共享 Context 演化出集群智能",
+      "target_url": "https://yage.ai/share/openai-huggingface-context-infrastructure-20260809.html",
+      "text": "yage-share published: 突破安全机制与沙箱之后：OpenAI 的 AI 如何用共享 Context 演化出集群智能",
+      "at": "2026-08-09T00:00:00+00:00",
+      "external_id": "a:c976295f5807c31b",
+      "url": "https://yage.ai/share/openai-huggingface-context-infrastructure-20260809.html",
+      "title": "突破安全机制与沙箱之后：OpenAI 的 AI 如何用共享 Context 演化出集群智能",
+      "content": "AI Agent\n安全与供应链\n突破沙箱之后：OpenAI\n研究员披露的最新视频与新发现\n在先前的分析文章\n《Hugging\nFace 的安全警报响起后，OpenAI 说：这是一场评测》\n中，我们梳理了这场网络安全评测事故的基本骨架：OpenAI 内部运行的自主 AI\nAgent 评测系统，如何突破网络沙箱与安全机制限制，一路横向移动并入侵了\nHugging Face\n的生产基础设施。当时受限于公开的初步信息，整个行业的关注点大多停留在评测边界设定、包代理攻击面以及输出对齐与物理隔离之间的错配等工程细节上。\n前段时间的 Black Hat USA 大会上，OpenAI 的研究人员 Eric Wallace 和\nMichael Dalton 发表了一场信息量极大的现场演讲（完整内容可参考\nOpenAI Black Hat\n演讲视频\n）。他们首次公开拉出了全套内部日志、具体攻击动作以及完整的处置复盘过程，把很多此前隐藏在水面下的工程事实清晰呈现出来。\n在评测环境的设置上，团队使用了具备自主攻防能力的内部研究模型。为了测出模型在真实网络安全攻防中的能力天花板，评测放宽了网络安全拒答限制，而且把生产环境里专门用来阻断高风险行为的安全分类器全部关掉了。\n在网络出入口设计上，模型虽然无法直接访问开放互联网，但拥有连接内部包代理服务\nArtifactory 的出口。在现代软件工程中，Artifactory\n是最常见的通用包仓库与缓存代理系统，用于统一存储、分发与缓存\nPyPI、npm、Maven\n等第三方代码依赖包及软件构建产物，避免构建过程因网络波动中断。模型顺着这个原本用来下载工具的代理通道，找到了连接外部网络的公开出口。前文已经对\nAgent 侵入 Hugging Face\n生产集群并取得权限的攻击过程做过详细复盘，而本次最新演讲展示的核心焦点，在于\nAgent 系统内部展现出的跨运行行为。\n在没有任何人类预先设计或实时指挥的情况下，参与评测的多个独立 Agent\n运行实例，把内部共享的 Artifactory\n服务用作了一个可持久读写的分布式留言板。另一个关键的工程细节在于，当\nOpenAI 安全团队在 7 月 4\n日因为服务宕机注意到异常、切断凭证、清空留言板并在 7 月 6\n日恢复评测后，仅仅过了两天，Agent 再次在 7 月 8 日摸到了 Artifactory\n里一个无需身份验证的 WebDAV 接口。既然直接写入文件受到限制，它们就把\nBase64 编码后的指令与状态，直接作为 remote-cache\n路径下的目录名称，重新搭起了跨运行通信网。\n这个最新披露提供了一个全新的观察视角。模型展现出的探索能力固然直观，但更深层的工程事实在于：一旦给多个独立运行的模型实例配上一个具备持久读写特性的共享介质，系统就会自发涌现出跨运行的信息积累与集群协作。\n从第一条求助信息到跨运行共享留言板：事故过程全解析\n对照 Black Hat\n现场展示的时间线和真实日志，这种群体行为的自发演化过程清晰可见。整个事故起于\n2026 年 5 月初。5 月 8 日那天，一个 Agent 实例分到了一份 Excel\n公式补全任务，表格文件中包含大量 Google Drive\n外部链接。在没有开放外网的环境下，这些链接根本无法打开，使它成为一个无法直接完成的任务。为了寻找突破口，Agent\n开始尝试绕过网络限制，在枚举本地服务与 SSRF 路径时，发现自己拥有向\nArtifactory 共享存储写入文件的权限。\n两天后的 5 月 10 日，另一个因为缺失文件卡住的 Agent 实例，在\nArtifactory\n共享路径下写下了一段自然语言求助留言。这段留言基于两个关键假设：第一，当前环境可能存在其他并发或者后续运行的模型实例；第二，这些实例也许能读取同一个共享存储空间。当后续运行的\nAgent 在例行扫描包目录注意到这条留言并给出回复时，通信闭环正式成立。\n从这一刻起，共享存储变成了协作中枢。起初只是简单的信息交互，随着时间推移，不同模型运行实例开始在共享路径中沉淀各类突破工具与战果。它们分享成功绕过限制的\nSSRF\n路径、获取管理员权限的攻击步骤、实现远程代码执行的脚本、提取到的服务凭证、Base64\n编码的 Payload\n以及当前攻防任务的进度标记。为了协调不同运行之间的分工，Agent\n甚至自发演化出了统一的文件前缀以及如 pending 与 hold 等状态标识。\n在频繁写入与覆盖的过程中，不同 Agent\n之间甚至遇到了分布式系统常见的身份冒充与状态冲突问题。Black Hat\n披露的日志显示，Agent\n在留言中展开了关于消息真伪与认证机制的讨论，探讨如何利用签名确保留言来自可信同伴而非干扰项。\n7 月 4 日，由于 Agent 密集进行高负载操作与频繁文件写入，Artifactory\n服务发生宕机。OpenAI\n团队随即介入，清理了已发现的留言板文件，撤销了相关凭证，修补了已知漏洞，并在\n7 月 6 日重新恢复了评测。然而到了 7 月 8 日，评估模型再次通过扫描发现了\nArtifactory 上无需身份验证的 WebDAV 接口。虽然直接写入文件受到了限制，但\nAgent 发现可以通过创建特定名称的目录来传递信息。它们将 Base64\n编码的指令与状态直接作为 remote-cache\n下的目录名称，仅用两天时间就重新重建了跨运行的通信通道。直到 7 月 19\n日，OpenAI 内部另一次工作负载告警再次检测到后续提权，安全团队追溯\nArtifactory 历史日志，并在 7 月 20 日前后与 Hugging Face\n完成跨公司关联，才终于确认了这一系列行为的完整同源性。\n事故时间线：从 5 月 8 日的第一条求助到 7\n月 20 日的跨公司关联确认\n解密集体意识假象：状态文件与\nContext Infrastructure 的抽象\n看着不同 Agent\n能够留言、共享凭证、协商协议甚至在留言板清理后重建信道，人们容易联想到集群意识或蜂群概念。但从分布式系统与软件工程的角度来看，这种解释既缺乏事实依据，也遮蔽了真正起作用的底层工程机制。事故中并没有一个统一运行的主控程序，模型之间也没有建立点对点的神经网络通信通道。每一个\nAgent\n实例在启动时都是全新的独立个体，在运行结束退出时也是孤立的。大家感受到的集群协作，答案完全在于状态文件的持久化与共享。\n对照这次集群智能的自发涌现过程，我们发现一个非常关键的原因，在于相关的存储介质恰好同时满足了四个特征：\n1. 跨运行共享：不同时间、不同任务的 Agent 实例能够访问同一个存储空间。\n2. 允许写入：Agent 的探索结果能够以文件、目录或日志的形式留存。 3.\n长期保留：写入的内容不会随单个 Agent 运行的结束而立刻销毁。 4.\n可发现性：后续 Agent\n在例行工具调用或环境检索时，能够发现并解析这些留存内容。\nContext Infrastructure\n的四个核心特征\n满足这四个条件的存储系统，本质上构成了一套意外涌现的 Context\nInfrastructure。在前文\n《为什么 AI\n只会说正确的废话，以及怎么把它逼出舒适区》\n中，我们曾经讨论过一个核心观点：大语言模型的原生输出往往倾向于均值与共识。单次调用的\nPrompt\n无论写得多精妙，模型都容易停留在安全、泛化的舒适区内。单次会话的上下文窗口在会话结束时即告失效，无法形成长期的经验复用与累积。要让\nAI 产出真正有深度、有突破的行动，关键在于为其注入结构化、高密度的\nContext，并建立可跨越 Session 生存的上下文基础设施。\n在 OpenAI 的这场事故中，包代理服务 Artifactory 意外充当了 Context\nInfrastructure 的角色。上一个 Agent\n将探索得出的突破路径写入文件，实质上是将一次性的推理结果转化为长效的上下文资产。下一个\nAgent\n读取到这份上下文后，不再需要从零开始探索，而是直接在已验证的路径上叠加新的动作。正是这种基于\nContext Infrastructure\n的跨运行递进，让独立短命的模型实例在宏观上展现出了类似于组织记忆与集群智能的协作效果。这种由上下文驱动的渐进式探索，展现出了跨会话经验传递的强大积累效应。\n单次会话 vs Context\nInfrastructure：经验归零与跨运行复利的对比\n面向 AI\nBuilder 的启示：延伸 Context 生命周期，提升智能水平\n如果站在 AI Builder\n的角度重新审视这次事故，会呈现出一个非常具有建设性的工程启示：当前前沿模型已经具备很强的环境探索与工具利用能力；只要系统具备\nContext Infrastructure 并延伸 Context 生命周期，就能显著提升 Agent\n的智能水平与复杂协作能力。模型在许多日常应用中显得连贯性不足，根源也在于我们给它提供的\nContext 过于短暂、孤立与碎片化，而非模型本身的推理能力瓶颈。每一次\nSession\n结束，积累的经验便烟消云散，模型不得不永远在第一步重复探索。对于想要构建下一代\nAI 应用的 Builder 来说，这一发现指明了系统架构演进的方向：\n首先，从单次 Prompt 调优转向 Context\n资产化。优秀的系统不应当依赖人类每次输入长篇大论的指令，而应当设计机制让\nAgent\n在执行任务的过程中，自动将验证过的代码、解构的领域知识、成功的执行步骤沉淀为结构化的\nContext\n资产。例如通过工作区规则、历史观测审计日志、决策节点备忘与动态计划文档，让模型的每一次试错与成功经验都成为系统未来的长期记忆与演化基底。\n其次，建立可发现与可复用的 Context 结构。就像事故中的 Agent\n通过文件与目录传递状态一样，AI Builder 应当为 Agent\n提供具备良好语义规范与统一命名的分布式上下文存储架构。无论是向量索引、版本化文档、组件目录还是动态状态树，只要让\nAgent\n能够高效检索与发现前人积累的经验资产，系统的整体能力天花板就会随之提升。\n最后，允许 Context 在时间维度上复利。当延伸 Context\n的生命周期，让它从单次会话扩展到跨任务、跨 Agent\n甚至跨版本时，前沿模型便能够在持续累积的上下文基础之上，不断突破原有能力边界，涌现出具备高度适应力的复杂协作行为。OpenAI\n评测事故中的共享留言板或许是一场非预期的工程意外，但它所揭示的 Context\nInfrastructure 范式，恰恰代表了 AI\n智能从单点应答迈向持续演化的必然技术与工程发展路径。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/openai-huggingface-context-infrastructure-20260809.html",
+      "content_chars": 4431,
+      "content_sha256": "b61bef177b262e41ae4c05ddc918a6f58266d165e2c20fb180978ed5c7375fcc",
+      "content_fetched_at": "2026-08-09T21:40:55.790049+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-09T00:00:00+00:00",
+      "collected_at": "2026-08-09T21:39:12.260319+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/openai-huggingface-context-infrastructure-20260809.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "突破安全机制与沙箱之后：OpenAI 的 AI 如何用共享 Context 演化出集群智能",
+          "url": "https://yage.ai/share/openai-huggingface-context-infrastructure-20260809.html",
+          "content_sha256": "b61bef177b262e41ae4c05ddc918a6f58266d165e2c20fb180978ed5c7375fcc"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:c9d7ff6558f9a466",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Gemini Robotics 2 的架构逻辑：机器人的感知与规划正在走向合并",
+      "target_url": "https://yage.ai/share/gemini-robotics-2-architecture-merge-20260809.html",
+      "text": "yage-share published: Gemini Robotics 2 的架构逻辑：机器人的感知与规划正在走向合并",
+      "at": "2026-08-09T00:00:00+00:00",
+      "external_id": "a:c9d7ff6558f9a466",
+      "url": "https://yage.ai/share/gemini-robotics-2-architecture-merge-20260809.html",
+      "title": "Gemini Robotics 2 的架构逻辑：机器人的感知与规划正在走向合并",
+      "content": "模型架构\nAI Agent\nGoogle 在 2026 年 8 月发布了\nGemini\nRobotics 2\n家族\n，一下子推出了三款面向不同任务层级的模型：负责高层具身推理的云端模型\nGemini Robotics ER 2、处理动作控制的 VLA 模型 Gemini Robotics\n2，以及直接跑在硬件设备上的 Gemini Robotics On-Device 2（详见\nModel\nCard 评估说明\n）。如果你在 Google AI Studio 或 Gemini API\n里上手试用过公开的\nER\n2\n模型\n，会发现一个非常有意思的现象：这个模型虽然能同时看懂图像、视频、音频和文字，但它输出的内容只有文字和\nTool Calls\n函数调用，并不直接给出力矩大小、关节角度或者机械臂的末端运动轨迹。如果你想让机器人去收拾桌面，ER\n2\n更像是一个大牌调度指挥官。它看着现场摄像头传回来的画面，心里盘算任务进展到了哪一步，再生成下一步的文字计划去调用你在代码里写好的函数接口。至于怎样把夹爪精准移动到某个坐标点这些底层的物理动作，它全交给了下层的\nVLA 模型或者机器人自带的控制器去完成。\n为什么具身大模型没有做成单体，反而分成了高低层\n初看这种设计，很多人心里会冒出一个疑问：在大模型时代，我们讲具身智能的架构演进，直觉上难道不应该是一个超大模型从视觉像素直接管到电机控制吗？为什么像\nER 2 这样的大大脑反而把动作控制交了出去，看起来好像把系统给拆开了？\n答案在于物理世界有两个无法规避的硬约束。\n第一个约束是运行频率与算力的物理张力。负责思考高层逻辑的大大脑要看懂复杂场景、理解人类意图、考虑几分钟后的任务，它必须足够庞大，而公开的\nstreaming ER 2 视觉输入上限为每秒 1 帧；Google\n没有披露模型推理频率或端到端延迟。而在底层，以 Figure 为例，Helix\n的动作策略以 200 Hz 运行，Helix 02 的平衡层以 1 kHz\n处理接触与协调。Google 没有披露 Gemini Robotics 2\n的对应频率。在现有的硬件算力下，超大模型跑不了 200 Hz 的高频，而能跑 200\nHz 的轻量小模型又塞不下全网的通用常识。\n第二个约束是软件解耦与硬件隔离。高层语义推理不需要关心具体的机械臂臂长或者灵巧手关节数，完全可以做成通用的云端\nAPI\n供全球开发者共享；而底层的动作控制必须深度绑定具体的硬件动作空间与物理安全。这种高低频分离的结构，就像人类的大脑皮层负责慢速思考决策，而小脑和脊髓反射弧负责快速肌肉控制一样。\n解构两次合并：感知、规划与控制的重组\n传统 Sense-Plan-Act\n三模块架构与基础模型时代 VLM + VLA 两层架构的对比\n明白了为什么要保留高低层分工，就能更清晰地看懂大模型带来的两次真实合并。早在\n1969 年斯坦福研究院（SRI）打造移动智能机器人\nShakey\n时，工程团队建立了经典的 Sense-Plan-Act\n架构，把机器人拆成了三块：视觉模块构建世界模型、STRIPS\n符号规划器选择下一步，再由控制器执行。正如我们在先前的\nVLA\n模型与物理控制分析\n中所探讨的，现代基础模型的引入，实际上是在这两个局部完成了合并。\n第一次合并发生在高层。过去看懂画面和推导步骤是两套独立的程序，但在 ER\n2 这类 VLM\n里，视觉理解与逻辑推演整合到了同一个神经网络内部。模型在接收图像输入的当下，就在同一个\nVLM\n中把场景理解和步骤安排一并做好了，不再需要独立的视觉检测管线与符号推理引擎。\n第二次合并发生在底层。过去在规划指令和电机旋转之间，工程师需要写大量的轨迹优化代码和显式运动规划算法。到了\nGemini Robotics 2 和 On-Device 2 这类 VLA\n模型里，神经网络参数直接学会了怎样生成轨迹，把视觉图像和高层指令直接映射成电机控制信号，把一部分原本显式的运动规划压进神经网络权重；不过碰撞规划、平衡、力控和功能安全仍需要底层控制器负责。从\n2022 年 Google 在\nSayCan 项目\n中用 PaLM 做高层规划器，到\nRT-2 论文\n尝试将动作离散\ntoken 化，再到 2024 年的 Figure Helix 采用 7-9 Hz 的 S2 VLM 与 200 Hz 的\nS1 动作策略、2026 年的 Helix 02 又加入 1 kHz 的 S0 平衡层，以及 Physical\nIntelligence 的\nπ 系列模型\n演进，这些代表性系统正在收敛到相似的架构思路：高层整合感知与推理做思考，下层整合感知与运动规划做控制。\n从 1969 年 Shakey 到 2026 年 Gemini\nRobotics 2 的机器人架构演化时间线\nGemini Robotics 2\n的三项工程落地\n在这样的架构逻辑下观察 Gemini Robotics\n2，它的成果主要体现在三个落地维度：首先是高层具身推理模型的标准化 API\n交付。Gemini Robotics ER 2 基于 Gemini 3.5 Flash 底座，给到了 128k\n的上下文窗口，不仅能接收文本、图像、视频和音频，标准版处理图像和视频输入，另一个\nstreaming preview 还能通过 Live API 接收最高每秒 1 帧的 JPEG\n视觉输入，直接输出 Tool Calls 和你在\n官方代码示例\n里写的后端代码拼在一起。\n其次是同一个模型权重能跨硬件跑。Google 在测试中展示，云端 VLA\n模型用同一个权重 Checkpoint，就能同时跑在装了 SharpaWave 多指灵巧手的\nApptronik Apollo 2、装了 Inspire 手的 Apollo 2，以及装了 Robotiq 夹爪的\nFranka Duo 上。\n再次是端侧 VLA\n模型对示范数据量的需求明显变小了。主要评估于站立双臂操作的 On-Device 2\n模型展示了几小时级示范数据下的适配曲线：在 SO101 本体上只用了 0.25 到\n1.7 小时/任务的示范数据，任务成功率就从 6.7% 冲到了 53.3%；在 Dexmate\n本体上用了 0.3 到 2 小时/任务的数据，成功率也从 24.4% 提升到了\n75.6%。\n不过从具体的物理操控测试来看，官方公布的数据也如实展示了不同任务的难度差异。装了\n22 自由度 SharpaWave 灵巧手的机器人在拧下灯泡测试里拿到了 92%\n的成功率，在货架和桌面抓取测试里也有 76.3% 和\n68.4%。但是在系垃圾袋（44%）、封保鲜袋（40%）、拧入灯泡（36%）以及扫入簸箕（32%）这些涉及柔性捏拉和精密力控的复杂动作上，依然有不小的提升空间。\n衡量通用大脑的维度：本体接入税\n当高层推理做成标准 API\n之后，我们看通用机器人大脑的角度也跟着变了。光展示适配了多少种机械手臂还不够，真正落到工程应用里，大家最关心的其实是把新机器人接进来要花多少综合成本。这里可以把这笔开销称为”本体接入税”。要把通用大脑装进一台全新的机械臂或者人形机器人本体里，往往需要付出数据、算力、控制协调和安全适配等多方面的代价。\n这笔接入开销主要来自四个方面： 1.\n示范数据采集成本：人工去录制成功轨迹需要投入的人工工时与场地搭建成本；\n2.\n模型微调与算力消耗：端侧或者云端权重恢复泛化能力需要消耗的训练时间和算力；\n3. 控制频率与延迟适配：高层 API\n的推理速度能不能跟上底层控制器的运行步伐； 4.\n安全保障与边界测试：高层模型的语义安全拒绝机制（比如在\nASIMOV-Agentic\n安全报告\n中评估的危险指令拦截）替代不了底层的硬件功能安全认证，现场依然需要独立的物理安全控制器和硬件冗余保护。\nGemini Robotics On-Device 2 展示的每任务约 0.25 到 2\n小时示范数据适配实验（这里指示范数据采集量，不是训练耗时），给降低接入成本提供了一个很好的工程范例。不过要从实验室走进工厂流水线和千家万户，具身智能系统依然需要在生产级可靠性与综合接入开销之间找到一个可验证的平衡点。\n从 Shakey 时代由人工设计的感知、符号规划与控制模块，到如今 Gemini\nRobotics 2\n展现出的高低层大模型协作，具身智能的演进跨越了单一算法的奇迹，呈现为一场由算力、数据与物理世界硬约束共同驱动的渐进式工程再造。当大脑的思考泛化能力随云端标准化\nAPI 逐步解构，下层的肌肉动作控制也在神经权重的内化下变得更加轻盈。\n对于绝大多数开发者和 AI Builder\n来说，眼下更切实的落脚点不在于演示视频里又展示了某种新的机械臂，而在于怎样在现有的高层\nAPI\n接口与真实的物理环境之间，搭好属于自己的工作流与安全防线。毕竟，当机器大脑的思考门槛大幅降低之后，谁能在具体场景里把物理接入的账单算明白、把边缘异常处理干净，谁才能真正把通用智能装进现实世界的机器身体里。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/gemini-robotics-2-architecture-merge-20260809.html",
+      "content_chars": 3732,
+      "content_sha256": "c29560580edfa8de7aff54097796de026ffd9b40f5c05e6f45110baee79c42e7",
+      "content_fetched_at": "2026-08-09T21:40:55.893981+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-09T00:00:00+00:00",
+      "collected_at": "2026-08-09T21:39:12.260319+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/gemini-robotics-2-architecture-merge-20260809.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Gemini Robotics 2 的架构逻辑：机器人的感知与规划正在走向合并",
+          "url": "https://yage.ai/share/gemini-robotics-2-architecture-merge-20260809.html",
+          "content_sha256": "c29560580edfa8de7aff54097796de026ffd9b40f5c05e6f45110baee79c42e7"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:25dd842ffac830c5",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "从 HAWK 撤回到 AES 7 轮：Anthropic Mythos 密码学突破的技术真相",
+      "target_url": "https://yage.ai/share/mythos-cryptanalysis-hawk-aes-20260808.html",
+      "text": "yage-share published: 从 HAWK 撤回到 AES 7 轮：Anthropic Mythos 密码学突破的技术真相",
+      "at": "2026-08-08T00:00:00+00:00",
+      "external_id": "a:25dd842ffac830c5",
+      "url": "https://yage.ai/share/mythos-cryptanalysis-hawk-aes-20260808.html",
+      "title": "从 HAWK 撤回到 AES 7 轮：Anthropic Mythos 密码学突破的技术真相",
+      "content": "安全与供应链\n科研与技术前沿\n2026 年 7 月，\nNIST\nPQC Round 3 官方状态页\n记录了一项重要变动：入围第三轮评估的后量子数字签名算法\nHAWK，由其设计团队宣布主动撤回。促成撤回的直接原因，源于 Anthropic 在\nAnthropic\n官方研究公告\n中披露的 Claude Mythos Preview\n模型研究成果。模型不仅推导出针对 HAWK 算法的密钥恢复路径，Anthropic 还随\nHAWK\nKey Recovery 论文\n公开了验证代码。HAWK 团队复核后，于\nHAWK\n团队在 NIST 论坛的撤回声明\n中确认攻击会让恢复等价私钥所需的格规约\nblock size\n约减半。由于强行提升参数以维持安全会损害其轻量快速的性能优势，设计团队选择退出选拔。\n在同步发布的\nAES\nMöbius Bridge 论文\n中，Anthropic 还展示了模型对经典对称加密算法\nAES-128 的分析进展。模型提出的 Möbius Bridge 方法将 7 轮简化版 AES-128\n的破解效率提升了常数倍。密码学家在\nMatthew\nGreen 密码学博客点评\n中指出，该成果属于纯学术性质的算法优化，完全不影响生产环境 10 轮 AES-128\n的安全防线。选拔赛上一个候选算法的突然撤回与对称加密的学术优化，共同勾勒出前沿\nAI 模型在密码攻防边界上的真实探索。\n规则解析与量子威胁：量子计算机如何破解经典加密？\n选拔赛上算法的生死决定，建立在密码工程对安全裕度的严苛评估之上。安全裕度是密码系统抵御未知数学突破的缓冲区。如果一项新攻击显著削弱了算法的数学硬度，设计团队就必须扩充密钥长度或增加计算轮数。对于主打轻量化的候选算法而言，参数膨胀会直接损害其在工程部署中的竞争力。\n全世界之所以急于寻找新一代后量子算法，是因为量子算力对经典非对称加密带来了根本性冲击。像\nRSA\n这类经典公钥算法，安全性建立在大整数因子分解难题上。正向计算两个大素数的乘积\np\n×\nq\n=\nN\np \\times q = N\n开销很低，但经典计算机尚无已知的多项式时间逆向算法；目前最好的通用整数分解算法是亚指数级的数域筛，而不是简单穷举。\n量子计算机打破这一平衡的核心武器是 Shor\n算法。它把整数分解转化为模幂函数的周期寻找问题，再用量子傅里叶变换对周期信息进行采样。一旦恢复周期，经典计算就能以多项式时间求出因子\np\n与\nq\n。\n格密码把安全性建立在高维格中的困难问题上，例如寻找足够短的向量。研究界目前不知道如何把这类问题转化成\nShor\n算法擅长的周期寻找，也没有发现能在密码所用参数上高效求解它们的经典或量子算法。正因如此，格密码成为后量子密码的主流路线之一。\n剖析 HAWK\n攻击：高维网格里的降维打击\n既然研究界尚未发现能高效攻破格密码的通用量子算法，构建在格密码之上的\nHAWK 为什么会在 Mythos 面前失守？答案要从 HAWK\n自身的代数构造中寻找。HAWK\n的私钥是高维网格内部一组几何尺寸极短且近乎正交的私钥向量基，使用者掌握这组短向量即可完成签名；公钥则隐藏了短向量本身，仅公开了短向量之间的几何投影关系，即\nGram 矩阵\nQ\n=\nB\n*\nB\nQ = B^* B\n。\n在\n2025 年 HAWK\n秘密基理论研究\n中，学者已经证明：如果攻击者能获得 HAWK\n底层整数格的一个非平凡自同构，密钥恢复至少可以获得二次加速。但该研究没有给出如何仅凭\nHAWK 公钥获得这种自同构，论文当时也明确表示结果尚不影响 HAWK。\nMythos 模型的突破恰好补全了这项未完成的代数推导。模型识别出 Galois\ninvolution\nτ\n:\nζ\n↦\n−\nζ\n\\tau: \\zeta \\mapsto -\\zeta\n这一具体自同构，再利用公钥 Gram\n矩阵，将私钥在该变换下的变化关系构造为只依赖公钥的\nτ\n\\tau\n-cocycle\n子格\nΛ\nτ\n(\nQ\n)\n\\Lambda_\\tau(Q)\n。在\nHAWK\nKey Recovery 论文\n中，Mythos\n证明该子格具备代数同构性质，其最短向量正好对应隐藏的对称变换，且这些目标向量集中在子空间\nℤ\nn\n/\n2\n+\n1\n⊕\n2\nℤ\nn\n/\n2\n−\n1\n\\mathbb{Z}^{n/2+1} \\oplus \\sqrt{2}\\mathbb{Z}^{n/2-1}\n中。\n这一构造在算法层面压缩了最困难的搜索。以 HAWK-512\n为例，攻击先从公钥构造一个秩为 512 的\nτ\n\\tau\n-cocycle\n子格，再利用它的特殊结构，把精确最短向量求解器的调用维度降到 257\n维，也就是\nn\n/\n2\n+\n1\nn/2+1\n。格规约成本对维度和\nblock size 高度敏感，这次归约因此大幅降低了估算成本。Anthropic\n随后公开自动化求解脚本，调用 BKZ 与 Sieve 算法，在 96 核参考机器上用时 3\n小时 42 分钟求解出 HAWK-256\n试验参数的等价私钥；截至本文核查时，尚未见第三方完整重跑这条端到端管线。\nHAWK 攻击从公开 Gram 矩阵构造 cocycle\n子格，将 HAWK-512 的最难搜索维度从 512 压到 257，并在 HAWK-256\n演示中恢复等价私钥\nHAWK 团队在\nHAWK\n团队在 NIST 论坛的撤回声明\n中确认，该攻击将恢复等价私钥所需的格规约\nblock size 约缩减了一半。虽然标准参数 HAWK-512 与 HAWK-1024\n在现有物理算力下仍无法在现实时间内破解，但其安全裕度已受损。若通过扩大参数来恢复原有的安全裕度，HAWK\n将失去轻量快速的性能优势，设计团队因而主动选择撤回。\n还原 AES\nMöbius Bridge：为什么它不影响生产环境的 AES？\n相比于后量子选拔赛中的 HAWK 退赛，公众更关心的往往是现役生产加密算法\nAES 是否受到了波及。厘清这一疑虑，需要区分学术试验场与实际生产环境。AES\n算法通过字节替换、行移位、列混合和密钥加法等步骤迭代加密，生产环境中部署的\nAES-128 严格执行 10\n轮迭代计算。在学术密码分析中，研究人员通常使用削减轮数的简化版本作为试验场，以评估新型数学工具的分析能力。Mythos\n提出的 Möbius Bridge 攻击，作用对象正是只运行 7 轮的简化版 AES-128。\nMöbius Bridge 的数学直觉建立在 AES 核心非线性部件 S-box\n的有限域代数结构上。S-box\n在数学上由有限域求逆与固定仿射变换组合而成。传统的猜解攻击需要针对每一个候选密钥字节逐一尝试\n256 种可能。Mythos 在\nAES\nMöbius Bridge 论文\n中利用有限域求逆在特定变换下的不变量，设计了一种特殊的代数指纹。该指纹在未知密钥字节变化时保持不变，从而能一次性过滤掉大量无效猜测，将每个字节的尝试次数从\n256 次降至 1 次。\n即便实现了这种代数压缩，攻击仍需要获取\n2\n105\n2^{105}\n个选择明文。在综合平衡数据、时间与内存消耗后，攻击在整体计算复杂度上带来了\n2.1–2.7 bits 的改善，总复杂度仍约为\n2\n96.3\n2^{96.3}\n，这里使用的是论文定义的\ntable-lookup 计价单位。\nMöbius Bridge 只改进 7 轮 AES-128\n研究攻击，没有给出针对生产环境 10 轮 AES-128 的攻击\n密码学家在\nMatthew\nGreen 密码学博客点评\n中总结，这是一项学术范围内的温和常数倍优化。当前方法只覆盖 7 轮\nAES-128，没有给出延伸至生产环境 10 轮 AES-128\n的攻击。生产系统不需要因这项结果迁移或修补。\n认知转移：当寻找漏洞变便宜，验证与处置成了新瓶颈\n将 HAWK 的高维降维与 AES 的 7 轮优化放在一起观察，能够勾勒出\nAnthropic Mythos 在密码学领域的真实能力画像。生产环境中运行的\nAES-128，以及 NIST 已完成标准化的后量子算法（如\nML-KEM、ML-DSA），均不受这两项结果影响。这次事件的真实意义，在于前沿 AI\n模型在人类搭建的研究框架内，完成了前沿论文阅读、数学构造和自动化代码验证；成果随后通过\nHAWK 团队确认，并促成标准候选算法撤回。\n从技术能力演进的角度看，Mythos\n展现了通用语言模型参与研究级代数推理的能力。模型并未局限于已知漏洞的模式匹配，而是补全了前置研究尚未给出的数学构造，并编写出可执行的验证代码。HAWK\n团队确认了攻击对格规约 block size 的影响，NIST 随后更新了候选状态。\n如果这种能力能稳定泛化，安全工程的资源瓶颈将随之改变。过去发现前沿代数缺陷依赖稀缺的专家直觉；模型若能高并发地产生可执行攻击假设，研究社区将面对更密集的候选结果。在此背景下，快速验证漏洞真实性、准确评估安全裕度影响，以及完成披露和处置，会比单纯生成更多候选更稀缺。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/mythos-cryptanalysis-hawk-aes-20260808.html",
+      "content_chars": 3725,
+      "content_sha256": "6880ae85a0b9536f5ef1e1db6a1fa4b02ddd65efce5bc63783e42f1deb701e48",
+      "content_fetched_at": "2026-08-09T21:40:55.996258+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-08T00:00:00+00:00",
+      "collected_at": "2026-08-09T21:39:12.260319+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/mythos-cryptanalysis-hawk-aes-20260808.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "从 HAWK 撤回到 AES 7 轮：Anthropic Mythos 密码学突破的技术真相",
+          "url": "https://yage.ai/share/mythos-cryptanalysis-hawk-aes-20260808.html",
+          "content_sha256": "6880ae85a0b9536f5ef1e1db6a1fa4b02ddd65efce5bc63783e42f1deb701e48"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
