@@ -1,189 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-08-11",
-  "generated_at": "2026-08-10T21:52:17.102808+00:00",
-  "item_count": 7,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:92ec5590c4abcf67",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-10T21:49:59.999600+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-10T21:50:42.686735+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:f237657b09f62203",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-10T21:49:59.999600+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-10T21:50:53.556858+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:b4a689ad8e7d6d71",
-      "kind": "publish",
-      "text": "zusda published: 从零开始的LLM 9. A-MEM 与 LangChain/LangGraph学习",
-      "actor": "zusda",
-      "actor_url": "https://zusda.github.io/",
-      "created_at": "2026-08-10T21:49:59.999600+00:00",
-      "html_url": "https://zusda.github.io/2026/08/08/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-9/",
-      "title": "从零开始的LLM 9. A-MEM 与 LangChain/LangGraph学习",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "前言\n本文将介绍 A-MEM 的核心原理、API 使用方法，以及如何基于 LangChain\n构建一个具备记忆能力的 Agent。\n经过前面的学习，我们已经系统地完成了大语言模型（LLM）的基础部分，主要参考了以下资料：\n《动手学深度学习》\n《蘑菇书》\n《Happy-LLM》\n《Hello-Agents》\n《all-in-rag》\n到这里，可以认为已经具备了继续深入学习 Agent 的基础能力。\n接下来的内容将不再像之前那样按照固定课程循序渐进，而是更多围绕当前\nAgent 领域的研究方向展开。学习内容既会涉及工程实践（如各种 Agent\n框架、工作流、记忆系统等），也会涉及算法与模型层面的探索（如多模态、持续学习等）。\nGenerative Agents\nLetta\nA-MEM\nVoyager\n这条路线主要围绕\nAgent 的持续学习（Continual\nLearning）\n展开，也是我目前最感兴趣的方向：\n如何让一个\nAgent\n在长期运行过程中不断积累经验、提升能力，而不是每次都从零开始。\n目前来看，大致有两种思路：\n不修改模型本身。\n仅通过\nPrompt、记忆系统（Memory）、RAG、工具调用等机制，使 Agent\n能够不断积累知识和经验，实现能力的持续增长。\n修改模型本身。\n基于 Agent\n长期运行过程中积累的对话、笔记和总结等数据，在合适的时机对模型进行持续训练（Continual\nFine-tuning），使模型真正将这些经验内化，而不仅仅依赖外部记忆。\n由于这一阶段更多是阅读论文、分析开源项目、验证实验以及整理个人理解，而不是单纯跟着教程学习，因此资料收集、实验和整理都会比之前花费更多时间。\n本章节主要是对 A-MEM 的学习和总结。A-MEM\n是一个挺有创意的设计，我认为「卡片化记忆」这个思路本身非常不错，但真正将这个想法落地，实现成一个可以运行的系统，又是另一件很厉害的事情。当然，A-MEM\n目前也存在一些问题，还有不少可以优化的空间。\n在学习 A-MEM 的过程中，我也重新熟悉了一遍如何使用 LangChain 构造\nAgent。因此，本文不会把重点全部放在 A-MEM\n的理论介绍上，而是会结合实际代码实现，探索如何构建一个带有 Memory 能力的\nAgent。\n除此之外，在调研 Memory 方案的过程中，我发现目前使用较多的方案之一是\nmem0。一个方案能够被大量使用，通常都有其存在的原因。因此，后续在学习\nVoyager 之前，我会先对 mem0\n的设计和实现进行学习，了解它为什么能够得到较广泛的应用。\n1. A-MEM原理\n论文链接：https://arxiv.org/abs/2502.12110\nA-MEM（Agentic Memory）的整体结构并不复杂，其核心思想是：\n将每次交互转换为结构化 memory\nnote，并通过记忆之间的关联和动态更新，使长期记忆逐渐形成一个可演化的记忆网络。\n1.1 Note 结构（Structured\nMemory Notes）\n对于每一个记忆\n\\(m_i\\)\n，A-MEM都会构建一个结构化 memory\nnote：\n\\[\nm_i=\\{c_i,t_i,K_i,G_i,X_i,e_i,L_i\\}\n\\]\n其中：\n\\(c_i\\)\n：对话内容，即用户的问题和\nLLM 的回答；\n\\(t_i\\)\n：该次交互发生的时间戳；\n\\(L_i\\)\n：关联记忆列表，保存与当前记忆存在语义关系的其他\nmemory id。\n除了原始的交互内容和时间信息外，A-MEM还会通过 LLM\n对当前记忆进行进一步分析，生成额外的结构化信息：\n\\[\nK_i,G_i,X_i \\leftarrow \\text{LLM}(c_i||t_i||P_{s1})\n\\]\n其中：\n\\(K_i\\)\n：关键词，用于表示当前记忆中的核心概念；\n\\(G_i\\)\n：标签，用于对记忆进行分类；\n\\(X_i\\)\n：内容描述，对当前记忆提供更加丰富的语义信息。\n简单来说：\n1\n关键词、tag、描述 = LLM(对话内容 + 时间戳)\n相比直接保存原始对话，这种方式能够提取出更适合检索的高层语义信息。\n之后，将原始对话内容以及生成的关键词、标签、描述进行拼接，并通过\nEncoder 转换成向量：\n\\[\ne_i=f_{enc}[\\text{concat}(c_i,K_i,G_i,X_i)]\n\\]\n其中：\n\\(e_i\\)\n是该 memory note\n的向量表示；\n它融合了原始交互内容以及 LLM 提取出的结构化信息，后续的 memory\n检索和关联发现都会基于该向量进行。\n1.2 记忆关联生成（Link\nGeneration）\n当新的记忆\n\\(m_n\\)\n加入系统时，A-MEM首先会寻找与它可能相关的已有记忆。\n首先，通过 embedding （\n\\(e_i\\)\n）计算新记忆与已有记忆之间的相似度：\n\\[\ns_{n,j}=\\frac{e_n * e_j}{|e_n|*|e_j|}\n\\]\n取出其中最相似的k个记忆\n\\(m_j\\)\n，他们组成集合\n\\(M^n_\\text{near}\\)\n\\[\nM^n_\\text{near}=\\{m_j|\\text{rank}(s_{n,j})\\le k,m_j \\in M\\}\n\\]\n这些记忆作为候选关联对象。\n随后，将新记忆\n\\(m_n\\)\n和候选记忆集合\n\\(M^n_{near}\\)\n输入\nLLM，让模型进一步判断它们之间是否存在语义关系，如果 LLM 判断两个 memory\n之间存在关联，则会将对应 memory id 添加到\n当前 memory\n的\n\\(L_n\\)\n中。：\n\\[\nL_n \\leftarrow \\text{LLM}(m_n||M^n_\\text{near}||P_{s2})\n\\]\n整体流程：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n新memory\n↓\nEmbedding相似度检索\n↓\n获取候选memory\n↓\nLLM判断关系\n↓\n建立memory link\n这里可以看到：\nEmbedding 负责快速筛选可能相关的 memory；\nLLM 负责进一步理解语义关系并决定是否建立连接。\n相比单纯的向量检索，memory link 可以让不同记忆之间形成显式关系。\n1.3 记忆演化（Memory Evolution）\n除了建立新的关联，A-MEM还会根据新产生的 memory\n对已有相关\nmemory 进行更新\n。\n对于候选集合\n\\(M^n_{near}\\)\n中的每一个记忆\n\\(m_j\\)\n：\n\\[\nm^*_j \\leftarrow \\text{LLM}(m_n||m_j||P_{s3})\n\\]\nLLM 会分析新旧 memory 之间的关系，并更新已有 memory\n的内容，包括：\n内容描述；\n关键词；\n标签。\n例如：\n已有 memory：用户正在学习机器学习。\n新增 memory：用户最近开始学习 PyTorch。\n经过更新后，memory 可以变成：用户正在学习机器学习，并开始深入学习\nPyTorch。\n这里我认为也是 A-MEM 一个可以进一步改进的地方。\n目前 A-MEM主要采用\n更新机制\n，即通过新信息优化已有\nmemory，但是没有进一步处理：\n两条 memory 高度重复时，是否应该合并；\n新旧 memory 发生冲突时，如何判断哪个信息更加可靠；\n长期无效或者过时的 memory 是否应该删除。\n因此，可以进一步加入：\n1\n2\n3\nmemory merge（记忆合并）\nmemory conflict resolution（冲突解决）\nmemory forgetting（记忆遗忘）\n等机制，使长期记忆管理更加完善。\n1.4 相关记忆检索（Retrieve\nRelative Memory）\n在每次 LLM 回复之前，A-MEM都会执行一次 memory retrieval。\n具体流程如下：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n用户问题\n↓\nEmbedding编码\n↓\n向量相似度搜索\n↓\n获取Top-k相关memory\n↓\n加入Prompt\n↓\nLLM生成回答\n具体来说：\n将用户当前问题转换成向量；\n与已有 memory 的 embedding 计算相似度；\n获取最相关的 k 条 memory；\n将检索到的 memory 与用户问题一起输入 LLM。\n1.5 总结\nA-MEM的核心并不是提出一种新的向量检索方法，而是\n重新设计了长期\nmemory 的组织方式\n。\nA-MEM 与传统的历史聊天记录存储方案（例如 Letta 的 recall\nmemory）最大的区别在于：\n传统方案\n更接近“\n历史聊天记录数据库 +\n向量检索\n”，而 A-MEM\n更关注如何将历史交互转换为可组织、可关联、可演化的长期记忆。\n传统 recall memory 的流程：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n历史聊天记录\n↓\nEmbedding编码\n↓\n向量检索\n↓\n找到相关历史对话\n↓\n加入Prompt\n↓\nLLM生成回答\n这种方式本质上是对过去对话的检索。当用户再次提到相关内容时，系统通过相似度找到之前的聊天记录，并将其提供给\nLLM。\n而 A-MEM 的流程：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n用户交互\n↓\n生成结构化memory note\n↓\n建立memory link\n↓\n更新已有memory\n↓\n形成memory网络\n↓\n检索相关memory\n↓\nLLM生成回答\nA-MEM 不只是保存“过去发生了什么”，而是进一步提取：\n关键词；\n标签；\n内容描述；\n记忆之间的关联关系。\n因此，memory\n不再是一堆独立的历史记录，而是逐渐形成一个具有结构和关系的知识网络。\n这里要提一点。可能初学者不太区分\n长期记忆（Long-term\nMemory）\n和\n短期记忆（Short-term Memory）\n。\nA-MEM主要针对的是长期记忆，因此采用类似 RAG\n的方式，通过向量检索获取与当前问题相关的历史 memory 是合理的。\n而短期记忆主要指当前会话中的上下文（多轮对话历史）。由于这些信息通常距离当前问题较近，不需要额外进行复杂的检索，可以直接根据上下文窗口大小进行裁剪，并放入\nPrompt 中。\n2. LangChain 和 LangGraph 学习\n首先需要说明LangChain 和 LangGraph 两者之间的关系。\n简单来说：\nLangChain 主要负责提供构建 LLM\n应用的基础组件。\nLangGraph 主要负责定义这些组件之间的执行流程。\n二者通常配合使用。\n可以简单理解：\nLangChain 提供 Agent 的各种“零件”，LangGraph\n负责把这些零件按照一定流程组织起来。\n2.1 LangChain\nLangChain 是一个用于构建 LLM\n应用的开发框架，主要提供各种基础能力，例如：\n定义模型：\n1\n2\nfrom\nlangchain_ollama\nimport\nChatOllama\nllm = ChatOllama(model=\n\"qwen2.5:7b\"\n, temperature=\n0\n)\n调用模型：\n1\nllm.invoke(messages)\n定义工具：\n1\n2\n3\n@tool\ndef\nsearch_memory\n(\nquery:\nstr\n):\n...\n绑定工具：\n1\nllm.bind_tools(tools)\n还有其他向量库等各种零件工具。\n2.2 LangGraph\nLangGraph 主要负责 Agent 的流程编排。\n它提供：\nState（全局状态）\nNode（节点）\nEdge（节点连接）\nConditional Edge（条件分支）\n2.2.1 LangChain 的消息系统\nLangChain 使用统一的消息抽象：\n1\nBaseMessage\n是所有消息类型的基类。\n常见消息：\n消息类型\n作用\nHumanMessage\n用户输入\nAIMessage\nLLM输出\nSystemMessage\n系统提示\nToolMessage\n工具执行结果\n一次完整 Agent 流程如下。\na. 用户输入\n用户：\n1\n帮我查北京天气\n转换为：\n1\n2\n3\nHumanMessage(\ncontent=\n\"帮我查北京天气\"\n)\n此时状态：\n1\n2\n3\nmessages=[\nHumanMessage(\n\"帮我查北京天气\"\n)\n]\nb. LLM 判断调用工具\nLLM 根据当前绑定的工具，决定调用天气查询工具：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nAIMessage(\ncontent=\n\"\"\n,\ntool_calls=[\n{\n\"name\"\n:\n\"weather\"\n,\n\"args\"\n:{\n\"city\"\n:\n\"北京\"\n}\n]\n)\n注意：\n这里的 AIMessage 不是最终回答。\n它表示：\nLLM 请求执行 weather 工具。\n此时：\n1\n2\n3\n4\n5\n6\n7\n8\n9\nmessages=[\nHumanMessage(\n\"帮我查北京天气\"\n),\nAIMessage(\ntool_calls=[\nweather(\n\"北京\"\n)\n]\n)\n]\nc. ToolNode 执行工具\nToolNode 读取：\n1\nAIMessage.tool_calls\n找到对应工具并执行。\n工具返回：\n1\n2\n3\n4\nToolMessage(\ncontent=\n\"北京今天晴，25度\"\n,\ntool_call_id=\n\"xxx\"\n)\n状态：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nmessages=[\nHumanMessage(...),\nAIMessage(\ntool_calls=[weather]\n),\nToolMessage(\ncontent=\n\"北京今天晴，25度\"\n)\n]\nd. LLM 生成最终答案\nLLM 根据工具返回结果继续生成：\n1\n2\n3\nAIMessage(\ncontent=\n\"北京今天晴，气温25度。\"\n)\n最终：\n1\n2\n3\n4\n5\n6\n7\n8\n9\nmessages=[\nHumanMessage,\nAIMessage(tool_call),\nToolMessage,\nAIMessage(answer)\n]\n2.2.2 全局状态（State）\nLangGraph 中，所有节点共享一个状态对象（State）。\n例如：\n1\n2\nclass\nAgentState\n(\nTypedDict\n):\nmessages:\nSequence\n[BaseMessage]\n这里使用 Python 的\nTypedDict\n定义 State 的结构，即\nState 本质上是一个字典\n，其中\nmessages\n字段保存由多个\nBaseMessage\n对象组成的消息序列，例如：\n1\n2\n3\n4\n5\n6\n{\n\"messages\"\n: [\nHumanMessage(...),\nAIMessage(...)\n]\n}\n如果希望 LangGraph 在更新\nmessages\n时自动合并新旧消息，而不是直接覆盖，可以使用\nAnnotated\n指定\nreducer：\n1\n2\n3\n4\n5\n6\n7\nfrom\ntyping\nimport\nAnnotated,\nSequence\n, TypedDict\nfrom\nlanggraph.graph.message\nimport\nadd_messages\nclass\nAgentState\n(\nTypedDict\n):\nmessages: Annotated[\nSequence\n[BaseMessage],\nadd_message\n]\n其中，\nAnnotated\n为\nmessages\n附加了\nadd_messages\n这一更新规则。也就是说，当节点返回新的\nmessages\n时，\n不会直接覆盖原有消息\n，而是由\nadd_messages\n将新旧消息进行合并，从而保留之前的消息。例如原来有\n[HumanMessage]\n，节点返回\n[AIMessage]\n，经过\nadd_messages\n后会变成\n[HumanMessage, AIMessage]\n。\n我们也可以自定义 reducer，例如只保留最近 50 条消息：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\ndef\nlimited_messages\n(\nold:\nSequence\n[BaseMessage],\nnew:\nSequence\n[BaseMessage]\n):\nmessages =\nlist\n(old) +\nlist\n(new)\nreturn\nmessages[-\n50\n:]\nclass\nAgentState\n(\nTypedDict\n):\nmessages: Annotated[\nSequence\n[BaseMessage],\nlimited_messages\n]\n定义好 State ，然后就是最开始的一步，创建图\n1\n2\n3\n4\n# ---------------------------------------------------------------------------\n# 5. 构建 LangGraph 图\n# ---------------------------------------------------------------------------\ngraph = StateGraph(AgentState)\n2.2.3 节点函数\nLangGraph 中的 Node 本质上就是一个普通 Python 函数。\n节点函数主要负责：\n接收当前全局状态（State）；\n根据任务进行处理；\n返回需要更新的状态字段。\n1\n2\n3\n4\n5\n6\ndef\nretrieve_context\n(\nstate: AgentState\n) -> AgentState:\n...\nsystem_note = SystemMessage(\ncontent=\nf\"以下是与当前问题相关的历史记忆，可参考但不必照搬:\\n\n{context_text}\n\"\n)\nreturn\n{\n\"messages\"\n: [system_note]}\n这里的：\n1\nreturn\n{\n\"messages\"\n: [system_note]}\n并不是直接修改全局状态，而是告诉 LangGraph：\n当前节点需要更新\nmessages\n字段。\nLangGraph 会将节点的返回值识别为\nState\nUpdate\n，然后根据\nAgentState\n中定义的 reducer\n处理新旧状态，最后更新全局 State，并将更新后的 State\n传递给下一节点。\n节点也可以直接通过\nstate[\"messages\"]\n修改状态，例如：\n1\n2\n3\ndef\nretrieve_context\n(\nstate: AgentState\n):\nstate[\n\"messages\"\n].append(system_note)\nreturn\nstate\n但通常不推荐这样做。\nLangGraph 的设计是让节点通过\nreturn\n返回\nState\nUpdate\n，再由 LangGraph 统一处理状态更新。这样可以：\n由 reducer 统一决定新旧状态如何合并；\n避免节点直接修改共享 State；\n使节点的输入、输出更加明确，便于维护和调试。\n因此，更推荐：\n1\nreturn\n{\n\"messages\"\n: [system_note]}\n而不是直接修改：\n1\nstate[\n\"messages\"\n].append(system_note)\n另外，节点不需要返回完整的\nAgentState\n，只需要\n返回需要更新的字段\n即可。\n定义节点函数后，需要将其\n添加到 LangGraph 图\n中：\n1\n2\n3\n4\ngraph.add_node(\n\"retrieve_context\"\n,\nretrieve_context\n)\n其中：\n\"retrieve_context\"\n：节点名称，用于后续定义边（Edge）时引用；\nretrieve_context\n：实际执行的 Python 函数。\n2.2.4 流程控制（Edge）\nEdge 用于定义 LangGraph 中节点之间的执行关系，可以简单理解为：\n指定一个节点执行完成后，下一步进入哪个节点。\n首先定义入口节点，注意这里填写的是\n节点名称\n：\n1\ngraph.set_entry_point(\n\"retrieve_context\"\n)\n普通边\n添加普通单向边：\n1\ngraph.add_edge(\n\"retrieve_context\"\n,\n\"agent\"\n)\n即\nretrieve_context\n节点执行完成后，进入\nagent\n节点。\n条件边（Conditional Edge）\n除了固定流向外，LangGraph 也支持根据条件动态选择下一节点：\n1\n2\n3\n4\n5\ngraph.add_conditional_edges(\n\"agent\"\n,\ntools_condition,\n{\n\"tools\"\n:\n\"tools\"\n,\n\"__end__\"\n:\n\"persist\"\n},\n)\n其中：\n\"agent\"\n：表示从哪个节点开始判断；\ntools_condition\n：条件判断函数；\n字典：定义条件函数返回值对应的目标节点。\n条件函数的返回值必须是字符串\n，并且该字符串需要存在于映射表中。\n例如，条件函数执行完后返回如下字符：\n1\nreturn\n\"tools\"\n会根据\n{\"tools\": \"tools\", \"__end__\": \"persist\"},\n进入tool节点。\n2.2.5 工具处理（Tool）\nLangGraph 提供了预构建工具节点：\n1\nfrom\nlanggraph.prebuilt\nimport\nToolNode, tools_condition\n其中：\nToolNode\n：负责执行工具调用；\ntools_condition\n：负责判断是否需要调用工具。\n定义工具\n首先通过 LangChain 的\n@tool\n装饰器定义工具：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n@tool\ndef\nsave_memory\n(\ncontent:\nstr\n, tags:\nstr\n=\n\"\"\n, category:\nstr\n=\n\"General\"\n) ->\nstr\n:\n\"\"\"把一条重要信息主动写入长期记忆(A-MEM)。tags 用逗号分隔，如 \"项目,决策\"。\"\"\"\n...\nreturn\nf\"已写入记忆，memory_id=\n{memory_id}\n\"\n@tool\ndef\nsearch_memory\n(\nquery:\nstr\n, k:\nint\n=\n5\n) ->\nstr\n:\n\"\"\"在长期记忆(A-MEM)中检索与 query 语义相关的历史笔记，k 为返回条数。\"\"\"\n...\nreturn\n\"\\n\"\n.join(lines)\n@tool\n会根据函数名称、参数类型、描述信息等\n自动生成 Tool\nSchema\n，使 LLM 能够理解：\n工具名称；\n工具作用；\n参数格式。\n然后将工具保存：\n1\ntools = [save_memory, search_memory]\n绑定工具到 LLM\nLLM 通过\nbind_tools()\n将工具信息提供给模型：\n1\n2\n3\n4\nllm = ChatOllama(\nmodel=\n\"qwen2.5:7b\"\n,\ntemperature=\n0\n).bind_tools(tools)\n此时工具的名称、描述、参数结构等信息会被 LangChain\n添加到模型输入中。\n在真正发送给模型前，LangChain 会根据模型对应的 Chat\nTemplate，将消息和工具定义转换成模型能够理解的格式。\n现代 LLM 通常通过特殊 token 和结构化消息格式处理工具调用，例如：\n模型通过这些信息知道：\n当前有哪些工具可以调用；\n每个工具的作用；\n工具需要哪些参数；\n如何生成符合格式的\ntool_calls\n。\n创建工具节点\n通过：\n1\n2\n3\n4\ngraph.add_node(\n\"tools\"\n,\nToolNode(tools)\n)\n添加工具节点。\nToolNode(tools)\n可以理解为：\n一个专门执行 LLM 工具调用请求的节点。\n它主要负责：\n获取 LLM 输出中的\ntool_calls\n；\n根据工具名称找到对应函数；\n执行工具；\n将结果转换为\nToolMessage\n。\n例如 LLM 输出：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nAIMessage(\ntool_calls=[\n{\n\"name\"\n:\n\"search_memory\"\n,\n\"args\"\n: {\n\"query\"\n:\n\"项目资料\"\n}\n]\n)\nToolNode 接收到后，会转换并执行：\n1\nsearch_memory(query=\n\"项目资料\"\n)\n然后返回：\n1\n2\n3\nToolMessage(\ncontent=\n\"检索结果...\"\n)\ntools_condition 判断工具调用\n在 Agent 流程中，LLM 节点执行完成后，需要判断下一步应该：\n调用工具；\n还是直接生成最终答案。\n1\n2\n3\n4\n5\n6\n7\nfrom\nlanggraph.prebuilt\nimport\nToolNode, tools_condition\n# tools_condition: 若 LLM 触发了 tool_calls -> \"tools\"，否则 -> \"__end__\"\ngraph.add_conditional_edges(\n\"agent\"\n,\ntools_condition,\n{\n\"tools\"\n:\n\"tools\"\n,\n\"__end__\"\n:\n\"persist\"\n},\n)\ntools_condition\n的作用：\n检查最后一条\nAIMessage\n是否包含\ntool_calls\n，并根据结果返回对应的路由名称。\n如果 LLM 决定调用工具：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nAIMessage(\ncontent=\n\"\"\n,\ntool_calls=[\n{\n\"name\"\n:\n\"search_memory\"\n,\n\"args\"\n: {\n\"query\"\n:\n\"项目资料\"\n}\n]\n)\n此时：\n1\ntools_condition(state)\n返回：\n1\n\"tools\"\n如果 LLM 不需要调用工具，直接生成回答：\n1\n2\n3\nAIMessage(\ncontent=\n\"答案是...\"\n)\n由于不存在\ntool_calls\n，因此：\n1\ntools_condition(state)\n返回：\n1\n\"__end__\"\n进入结束流程。\n需要注意，\ntools_condition\n不会执行工具\n，它只负责判断下一步流程。\n实际执行工具的是：\n1\nToolNode(tools)\n2.3 Graph应用运行与会话管理\n在完成 Graph 构建后，主程序主要负责\n初始化 Graph\n应用\n、\n配置会话状态\n、\n处理用户交互\n以及\n执行\nAgent 流程\n。\n2.3.1 配置Graph状态持久化\n首先，需要为 Graph 添加状态保存能力：\n1\n2\n3\n4\n5\nfrom\nlanggraph.checkpoint.memory\nimport\nMemorySaver\napp = graph.\ncompile\n(\ncheckpointer=MemorySaver()\n)\n注意：如果不配置\ncheckpointer=MemorySaver()\n，Graph\n执行过程中的状态不会被保存，每次调用\ninvoke()\n都会从初始状态开始，无法保留历史对话。\ncheckpointer机制\ncheckpointer\n是 LangGraph 中用于\n保存和恢复 Graph\n状态（state）\n的组件，可以理解为 Graph 的\"存档系统\"。\n在 LangGraph 中，节点之间通过\nstate\n传递数据，例如：\n1\n2\nclass\nAgentState\n(\nTypedDict\n):\nmessages: Annotated[\nSequence\n[BaseMessage], add_messages]\n其中\nmessages\n保存当前会话产生的消息。\n如果没有配置\ncheckpointer\n，这些状态只存在于当前一次\nGraph 执行过程中。当\ninvoke()\n结束后，状态不会被保存，下一次调用无法继续之前的会话。\n配置\ncheckpointer\n后，LangGraph 会在执行过程中保存当前\nstate 的 checkpoint，并与\nthread_id\n关联。当下一次使用相同\nthread_id\n调用 Graph 时，会自动恢复对应的 state。\n常见checkpointer实现\nLangGraph提供了多种状态存储方式：\n实现\n说明\n适用场景\nMemorySaver\n保存在内存中，程序退出后丢失\n本地开发、调试\nSqliteSaver\n保存到SQLite文件\n单机应用、小规模持久化\nPostgresSaver\n保存到PostgreSQL\n生产环境、多实例部署\nthread_id机制\ncheckpointer\n需要通过唯一标识区分不同会话，这个标识就是：\n1\nconfig[\n\"configurable\"\n][\n\"thread_id\"\n]\n这里的\n\"thread_id\"\n是 LangGraph checkpoint\n机制规定的固定字段，而不是自定义名称。\ncheckpointer\n在保存和读取 state 时，会从：\n1\nconfig[\n\"configurable\"\n]\n中获取：\n1\nthread_id\n并将其作为当前会话状态的索引。\n因此：\n相同\nthread_id\n：恢复之前保存的状态；\n不同\nthread_id\n：创建新的独立状态。\n2.3.2 会话模式设计\n基于\nthread_id\n，可以实现两种不同的会话模式。\n模式一：固定thread_id（开启短期记忆）\n固定使用一个 session：\n1\nthread_id = FIXED_THREAD_ID\n此时，之前的消息会一直保存在\nmessages\n中。\n例如：\n第一次调用：\n1\n2\n3\n4\nmessages=[\nHumanMessage(\n\"你好\"\n),\nAIMessage(\n\"你好\"\n)\n]\n第二次调用：\n1\n2\n3\n4\n5\nmessages=[\nHumanMessage(\n\"你好\"\n),\nAIMessage(\n\"你好\"\n),\nHumanMessage(\n\"介绍一下自己\"\n)\n]\n新的消息会追加到已有消息列表中，并作为当前 Graph state 继续传递。\n这种模式适用于：\n多轮聊天机器人；\n需要上下文理解的 Agent；\n普通对话场景。\n模式二：每轮新thread_id（关闭短期记忆）\n每次生成新的：\n1\nthread_id = uuid.uuid4().\nhex\n此时每轮对话都是独立 session，不会携带之前的\nmessages\n。\n这种方式适合测试长期记忆能力：\n不依赖短期上下文；\n通过 Memory / RAG 检索历史信息；\n验证 Agent 是否真正使用长期记忆。\n实际代码中，可以通过开关控制两种模式：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nwhile\nTrue\n:\nuser_input =\ninput\n(\n\"你: \"\n).strip()\nif\nuser_input.lower()\nin\n(\n\"exit\"\n,\n\"quit\"\n,\n\"退出\"\n):\nbreak\n# 根据开关生成 thread_id\nif\nUSE_PERSISTENT_THREAD:\nthread_id = FIXED_THREAD_ID\nelse\n:\nthread_id = uuid.uuid4().\nhex\n# 每次随机生成新 ID\n随后生成 Graph 配置：\n1\nconfig = {\n\"configurable\"\n: {\n\"thread_id\"\n: thread_id}}\n2.3.3 Graph执行流程\n在调用 Graph 前，需要先获取当前 thread 已保存的消息。\n这里主要用于：\n判断本轮新增消息；\n打印 Agent 执行过程中的工具调用和返回结果。\n代码：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n# 记录本轮开始前的消息 ID（用于打印新增内容）\ntry\n:\nprev_snapshot = app.get_state(config)\nif\nprev_snapshot.values:\nprev_messages = prev_snapshot.values.get(\n\"messages\"\n, [])\nelse\n:\nprev_messages = []\nprev_ids = {m.\nid\nfor\nm\nin\nprev_messages}\nexcept\nException:\n# 如果 thread_id 从未使用过，get_state 可能报错，视为空历史\nprev_ids =\nset\n()\n然后将用户输入传入 Graph：\n1\n2\n3\n4\nresult = app.invoke(\n{\n\"messages\"\n: [HumanMessage(content=user_input)]},\nconfig=config,\n)\nresult\n是\n这一次\ninvoke()\n执行结束后返回的最终 state（Graph状态快照）\n。\nresult[\"messages\"]\n中包含整个 Graph\n执行过程产生的消息，包括：\n用户消息；\nAI 回复；\n工具调用消息；\n工具执行结果。\n2.3.4 打印新增消息\n由于：\n1\nresult[\n\"messages\"\n]\n包含历史消息，因此需要过滤出本轮新增内容：\n1\nnew_messages = [m\nfor\nm\nin\nresult[\n\"messages\"\n]\nif\nm.\nid\nnot\nin\nprev_ids]\n然后根据消息类型进行打印：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n# 打印本轮新增消息（工具调用等）\nfor\nm\nin\nnew_messages:\nrole =\ntype\n(m).__name__\nif\nisinstance\n(m, AIMessage)\nand\nm.tool_calls:\nfor\ncall\nin\nm.tool_calls:\nprint\n(\nf\"[\n{role}\n] 调用工具:\n{call[\n'name'\n]}\n(\n{call[\n'args'\n]}\n)\"\n)\nelif\nisinstance\n(m, ToolMessage):\nprint\n(\nf\"[\n{role}\n] 工具结果:\n{m.content}\n\"\n)\nelse\n:\nprint\n(\nf\"[\n{role}\n]\n{m.content}\n\"\n)\nprint\n()\n例如：\n1\n2\n3\n4\n5\n6\n7\n8\n[HumanMessage] 查询天气\n[AIMessage] 调用工具:\nweather_api({\n'city'\n:\n'Tokyo'\n})\n[ToolMessage] 东京今天晴天\n[AIMessage] 今天东京天气晴朗\n代码中\nrole = type(m).__name__\n用于获取消息类型名称。\n1\n2\n3\nm = AIMessage(content=\n\"hello\"\n)\ntype\n(m)\n# → <class 'langchain_core.messages.ai.AIMessage'> （这是类对象，不是字符串）\ntype\n(m).__name__\n# → \"AIMessage\" （这才是字符串，类名本身）\n3. A-MEM 使用以及 Agent 制作\n在第 2 章节中，已经介绍了 Agent 的整体实现流程。本章节主要补充 A-MEM\n的实际使用方式，以及如何将其接入 Agent 工作流。\nA-MEM 官方仓库： https://github.com/agiresearch/A-mem\n安装:\n1\n2\ngit clone https://github.com/agiresearch/A-mem.git\ncd\nA-mem && pip install .\n安装完成后导入：\n1\nfrom\nagentic_memory.memory_system\nimport\nAgenticMemorySystem\n虽然前面介绍了 A-MEM\n的核心思想，包括记忆生成、记忆关联以及检索机制，但实际使用时，A-MEM\n已经通过 API 封装好了大部分细节，我们主要关注以下几个接口：\n初始化记忆系统；\n添加记忆；\n检索记忆。\n3.1 初始化 A-MEM\n首先创建 A-MEM 记忆系统：\n1\n2\n3\n4\n5\nmemory_system = AgenticMemorySystem(\nmodel_name=\n\"paraphrase-multilingual-MiniLM-L12-v2\"\n,\nllm_backend=\n\"ollama\"\n,\nllm_model=\n\"qwen2.5:7b\"\n,\n)\n其中：\nmodel_name\n用于 ChromaDB 向量检索的\nembedding 模型\n；\n不是 LLM，仅负责文本向量化；\n默认使用\nsentence-transformers\n加载。\nllm_backend\n指定生成记忆时调用的 LLM 后端。\nllm_model\n指定具体使用的模型名称，需要与 Ollama\n中已经下载的模型名称保持一致。\n第一次运行时\nparaphrase-multilingual-MiniLM-L12-v2\n会通过\nsentence-transformers\n自动从 HuggingFace Hub\n下载模型权重，并缓存到：\n~/.cache/huggingface\n。该模型大小约几十\nMB。\n另外需要注意，默认情况下 A-MEM 使用的是内存版\nChromaRetriever，并没有启用持久化存储。\n因此：\n程序运行期间，记忆可以正常保存和检索；\n程序退出后，记忆数据会丢失。\n3.2 保存记忆\nA-MEM 提供\nadd_note()\n接口用于向记忆库中添加新的记忆。调用方式：\n1\n2\n3\n4\n5\nmemory_system.add_note(\ncontent=content,\ntags=tag_list,\ncategory=category\n)\n主要参数：\ncontent\n：记忆内容。\ntags\n：标签信息。\ncategory\n：记忆类别。\n在 Agent 中，可以封装成 Tool，让 LLM 根据上下文主动决定是否保存：\n1\n2\n3\n4\n5\n6\n@tool\ndef\nsave_memory\n(\ncontent:\nstr\n, tags:\nstr\n=\n\"\"\n, category:\nstr\n=\n\"General\"\n) ->\nstr\n:\n\"\"\"把一条重要信息主动写入长期记忆(A-MEM)。tags 用逗号分隔，如 \"项目,决策\"。\"\"\"\ntag_list = [t.strip()\nfor\nt\nin\ntags.split(\n\",\"\n)\nif\nt.strip()]\nmemory_id = memory_system.add_note(content=content, tags=tag_list, category=category)\nreturn\nf\"已写入记忆，memory_id=\n{memory_id}\n\"\n3.3 检索记忆\nA-MEM 使用\nsearch_agentic()\n接口检索相关记忆。\n调用方式：\n1\nresults = memory_system.search_agentic(query, k=k)\n其中\nquery\n是当前查询内容，\nk\n是初始检索数量。\n同样，将其封装成 Agent Tool：\n1\n2\n3\n4\n5\n6\n7\n8\n@tool\ndef\nsearch_memory\n(\nquery:\nstr\n, k:\nint\n=\n5\n) ->\nstr\n:\n\"\"\"在长期记忆(A-MEM)中检索与 query 语义相关的历史笔记，k 为返回条数。\"\"\"\nresults = memory_system.search_agentic(query, k=k)\nif\nnot\nresults:\nreturn\n\"未检索到相关记忆。\"\nlines = [\nf\"- [\n{r[\n'id'\n]}\n]\n{r[\n'content'\n]}\n(tags=\n{r.get(\n'tags'\n)}\n)\"\nfor\nr\nin\nresults]\nreturn\n\"\\n\"\n.join(lines)\n3.4 search_agentic 源码分析\n按照论文中的设计，A-MEM 的检索过程应该是：\n首先通过 embedding 相似度找到当前问题相关的 Top-K\n记忆，然后根据这些记忆之间建立的 link\n关系继续扩展，将关联记忆加入结果集合。\n因此理论上：\nsearch_agentic 返回的结果不应该只有 k 条，而应该包含初始检索得到的 k\n条记忆，以及这些记忆关联的其他记忆。\n但是查看实际源码后发现，当前实现与论文描述存在一定差异。\n源码首先通过 ChromaDB 获取相似度最高的 k 条记忆：\n1\nresults =\nself\n.retriever.search(query, k)\n然后将这些记忆加入：\n1\nmemories.append(memory_dict)\n之后遍历这些记忆，根据：\n1\nlinks = memory.get(\n'links'\n, [])\n获取关联记忆最多k条，并继续加入：\n1\nmemories.append(...)\n最后：\n1\nreturn memories[:k]\n直接截取前 k 条返回。\n因此实际流程是：\n根据向量相似度获取 k 条候选记忆；\n尝试添加关联记忆；\n最终只返回前 k 条。\n这意味着：\n如果返回数量不足 k，可能包含部分关联记忆；\n如果记忆数量足够，前 k 条通常仍然是最初的相似度检索结果；\n后续添加的关联记忆大概率会因为\n[:k]\n被截断。\n所以当前版本的\nsearch_agentic()\n实际效果更接近：\n基于向量相似度检索，并尝试补充关联记忆，但最终返回数量仍受到 k\n限制。\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\ndef\nsearch_agentic\n(\nself, query:\nstr\n, k:\nint\n=\n5\n) ->\nList\n[\nDict\n[\nstr\n,\nAny\n]]:\n\"\"\"Search for memories using ChromaDB retrieval.\"\"\"\nif\nnot\nself\n.memories:\nreturn\n[]\ntry\n:\n# Get results from ChromaDB\nresults =\nself\n.retriever.search(query, k)\n...\n# Process ChromaDB results\nfor\ni, doc_id\nin\nenumerate\n(results[\n'ids'\n][\n0\n][:k]):\n...\n# Create result dictionary with all metadata fields\nmemory_dict = {\n'id'\n: doc_id,\n'content'\n: metadata.get(\n'content'\n,\n''\n),\n'context'\n: metadata.get(\n'context'\n,\n''\n),\n'keywords'\n: metadata.get(\n'keywords'\n, []),\n'tags'\n: metadata.get(\n'tags'\n, []),\n'timestamp'\n: metadata.get(\n'timestamp'\n,\n''\n),\n'category'\n: metadata.get(\n'category'\n,\n'Uncategorized'\n),\n'is_neighbor'\n:\nFalse\n}\n...\nmemories.append(memory_dict)\nseen_ids.add(doc_id)\n# Add linked memories (neighbors)\nneighbor_count =\n0\nfor\nmemory\nin\nlist\n(memories):\n# Use a copy to avoid modification during iteration\nif\nneighbor_count >= k:\nbreak\n# Get links from metadata\nlinks = memory.get(\n'links'\n, [])\n...\nfor\nlink_id\nin\nlinks:\nif\nlink_id\nnot\nin\nseen_ids\nand\nneighbor_count < k:\nneighbor =\nself\n.memories.get(link_id)\nif\nneighbor:\nmemories.append({\n'id'\n: link_id,\n'content'\n: neighbor.content,\n'context'\n: neighbor.context,\n'keywords'\n: neighbor.keywords,\n'tags'\n: neighbor.tags,\n'timestamp'\n: neighbor.timestamp,\n'category'\n: neighbor.category,\n'is_neighbor'\n:\nTrue\n})\nseen_ids.add(link_id)\nneighbor_count +=\n1\nreturn\nmemories[:k]\n3.5 Agent 接入 A-MEM\n在 Agent\n流程中，我们会在\n每次对话开始前\n，进行一次\n长期记忆的读取\n，通过当前问题检索\nA-MEM 中相关的历史记忆，并将检索结果加入上下文。\n在\n每次对话结束后\n，我们会\n将本轮对话的内容保存\n到记忆库中，形成新的长期记忆。\n3.5.1 对话开始前读取长期记忆\n在 LangGraph 中增加一个节点，用于在 Agent 执行前检索相关记忆：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\ndef\nretrieve_context\n(\nstate: AgentState\n) -> AgentState:\nlast_user_msg =\nNone\nfor\nm\nin\nreversed\n(state[\n\"messages\"\n]):\nif\nisinstance\n(m, HumanMessage):\nlast_user_msg = m.content\nbreak\nif\nnot\nlast_user_msg:\nreturn\n{}\n# 不是 return state\n# LangGraph 里空更新表示\"这个 channel 不变\"\nresults = memory_system.search_agentic(last_user_msg, k=\n5\n)\nif\nnot\nresults:\nreturn\n{}\n# 不是 return state\ncontext_text =\n\"\\n\"\n.join(\nf\"-\n{r[\n'content'\n]}\n\"\nfor\nr\nin\nresults)\nsystem_note = SystemMessage(\ncontent=\nf\"以下是与当前问题相关的历史记忆，可参考但不必照搬:\\n\n{context_text}\n\"\n)\nreturn\n{\n\"messages\"\n: [system_note]}\n该节点主要完成两件事情：\n获取当前对话中的用户输入；\n调用 A-MEM 检索相关长期记忆，并作为\nSystemMessage\n添加到当前消息列表中。\n如果当前节点没有需要修改的 State，只需要返回空字典即可。\n3.5.2 对话结束后保存长期记忆\n在 Agent 完成回答后，将本轮对话保存到 A-MEM：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\ndef\npersist_turn\n(\nstate: AgentState\n) -> AgentState:\nlast_ai = state[\n\"messages\"\n][-\n1\n]\nif\nisinstance\n(last_ai, AIMessage)\nand\nnot\ngetattr\n(last_ai,\n\"tool_calls\"\n,\nNone\n):\nlast_user_msg =\n\"\"\nfor\nm\nin\nreversed\n(state[\n\"messages\"\n]):\nif\nisinstance\n(m, HumanMessage):\nlast_user_msg = m.content\nbreak\nmemory_system.add_note(\ncontent=\nf\"Q:\n{last_user_msg}\n\\nA:\n{last_ai.content}\n\"\n,\ntags=[\n\"conversation\"\n],\ncategory=\n\"Dialogue\"\n,\n)\nreturn\n{}\n# 不是 return state\n其他的节点构造，以及完整的节点连接等，可以参考以下完整agent代码：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86\n87\n88\n89\n90\n91\n92\n93\n94\n95\n96\n97\n98\n99\n100\n101\n102\n103\n104\n105\n106\n107\n108\n109\n110\n111\n112\n113\n114\n115\n116\n117\n118\n119\n120\n121\n122\n123\n124\n125\n126\n127\n128\n129\n130\n131\n132\n133\n134\n135\n136\n137\n138\n139\n140\n141\n142\n143\n144\n145\n146\n147\n148\n149\n150\n151\n152\n153\n154\n155\n156\n157\n158\n159\n160\n161\n162\n163\n164\n165\n166\n167\n168\n169\n170\n171\n172\n173\n174\n175\n176\n177\n178\n179\n180\n181\n182\n183\n184\n185\n186\n187\n188\n189\n190\n191\n192\n193\n194\n195\n196\n197\n198\n199\n200\n201\n202\n203\n204\n205\n206\n207\n208\n209\n210\n211\n212\n213\n214\n215\n216\n217\n218\n219\n220\n221\n222\n223\n224\n225\n226\n227\n228\n229\n230\n231\n232\n233\n234\n235\n236\n237\n238\n239\n240\n241\n242\n\"\"\"\nA-MEM + LangGraph Agent\n=======================\n集成 A-MEM (Agentic Memory) 作为长期记忆系统的 LangGraph agent 示例。\nA-MEM 仓库: https://github.com/agiresearch/A-mem\n安装:\ngit clone https://github.com/agiresearch/A-mem.git\ncd A-mem && pip install .\n依赖:\npip install langgraph langchain-openai langchain-core\n\"\"\"\nimport\nos\nfrom\ntyping\nimport\nAnnotated,\nSequence\n, TypedDict\nfrom\nlangchain_core.messages\nimport\n(\nAIMessage,\nBaseMessage,\nHumanMessage,\nSystemMessage, ToolMessage,\n)\nfrom\nlangchain_core.tools\nimport\ntool\nfrom\nlangchain_openai\nimport\nChatOpenAI\nfrom\nlanggraph.graph\nimport\nEND, StateGraph\nfrom\nlanggraph.graph.message\nimport\nadd_messages\nfrom\nlanggraph.prebuilt\nimport\nToolNode, tools_condition\n# A-MEM 官方 API：https://github.com/agiresearch/A-mem\nfrom\nagentic_memory.memory_system\nimport\nAgenticMemorySystem\n# ---------------------------------------------------------------------------\n# 1. 初始化 A-MEM 记忆系统\n# ---------------------------------------------------------------------------\nmemory_system = AgenticMemorySystem(\nmodel_name=\n\"paraphrase-multilingual-MiniLM-L12-v2\"\n,\n# ChromaDB 用的 embedding 模型（本地，非LLM，不用改）\nllm_backend=\n\"ollama\"\n,\n# openai -> ollama\nllm_model=\n\"qwen2.5:7b\"\n,\n# gpt-4o-mini -> qwen2.5:7b（要跟 ollama pull 的名字一致）\n)\n# \"paraphrase-multilingual-MiniLM-L12-v2\"\n# 第一次用的时候，sentence-transformers 库自动从 HuggingFace Hub 下载一次模型权重（几十 MB，缓存到 ~/.cache/huggingface）\n# 用的默认就是纯内存版 ChromaRetriever，根本没有走持久化路径，程序一退出数据就没了。\n# ---------------------------------------------------------------------------\n# 2. 把 A-MEM 的读写能力包装成 LangChain Tool，供 agent 在推理中主动调用\n# ---------------------------------------------------------------------------\n@tool\ndef\nsave_memory\n(\ncontent:\nstr\n, tags:\nstr\n=\n\"\"\n, category:\nstr\n=\n\"General\"\n) ->\nstr\n:\n\"\"\"把一条重要信息主动写入长期记忆(A-MEM)。tags 用逗号分隔，如 \"项目,决策\"。\"\"\"\ntag_list = [t.strip()\nfor\nt\nin\ntags.split(\n\",\"\n)\nif\nt.strip()]\nmemory_id = memory_system.add_note(content=content, tags=tag_list, category=category)\nreturn\nf\"已写入记忆，memory_id=\n{memory_id}\n\"\n@tool\ndef\nsearch_memory\n(\nquery:\nstr\n, k:\nint\n=\n5\n) ->\nstr\n:\n\"\"\"在长期记忆(A-MEM)中检索与 query 语义相关的历史笔记，k 为返回条数。\"\"\"\nresults = memory_system.search_agentic(query, k=k)\nif\nnot\nresults:\nreturn\n\"未检索到相关记忆。\"\nlines = [\nf\"- [\n{r[\n'id'\n]}\n]\n{r[\n'content'\n]}\n(tags=\n{r.get(\n'tags'\n)}\n)\"\nfor\nr\nin\nresults]\nreturn\n\"\\n\"\n.join(lines)\ntools = [save_memory, search_memory]\n# llm = ChatOpenAI(model=\"gpt-4o-mini\", temperature=0).bind_tools(tools)\nfrom\nlangchain_ollama\nimport\nChatOllama\nllm = ChatOllama(model=\n\"qwen2.5:7b\"\n, temperature=\n0\n).bind_tools(tools)\n# ---------------------------------------------------------------------------\n# 3. LangGraph 状态定义\n# ---------------------------------------------------------------------------\n# class AgentState(TypedDict):\n# messages: Annotated[Sequence[BaseMessage], add_messages]\n#\ndef\nlimited_messages\n(\nold:\nSequence\n[BaseMessage],\nnew:\nSequence\n[BaseMessage]\n):\nmessages =\nlist\n(old) +\nlist\n(new)\nreturn\nmessages[-\n50\n:]\nclass\nAgentState\n(\nTypedDict\n):\nmessages: Annotated[\nSequence\n[BaseMessage],\nlimited_messages\n]\n# ---------------------------------------------------------------------------\n# 4. 节点定义\n# ---------------------------------------------------------------------------\ndef\nretrieve_context\n(\nstate: AgentState\n) -> AgentState:\nlast_user_msg =\nNone\nfor\nm\nin\nreversed\n(state[\n\"messages\"\n]):\nif\nisinstance\n(m, HumanMessage):\nlast_user_msg = m.content\nbreak\nif\nnot\nlast_user_msg:\nreturn\n{}\n# 不是 return state\n# LangGraph 里空更新表示\"这个 channel 不变\"\nresults = memory_system.search_agentic(last_user_msg, k=\n5\n)\nif\nnot\nresults:\nreturn\n{}\n# 不是 return state\ncontext_text =\n\"\\n\"\n.join(\nf\"-\n{r[\n'content'\n]}\n\"\nfor\nr\nin\nresults)\nsystem_note = SystemMessage(\ncontent=\nf\"以下是与当前问题相关的历史记忆，可参考但不必照搬:\\n\n{context_text}\n\"\n)\nreturn\n{\n\"messages\"\n: [system_note]}\ndef\ncall_model\n(\nstate: AgentState\n) -> AgentState:\nresponse = llm.invoke(state[\n\"messages\"\n])\nreturn\n{\n\"messages\"\n: [response]}\ndef\npersist_turn\n(\nstate: AgentState\n) -> AgentState:\nlast_ai = state[\n\"messages\"\n][-\n1\n]\nif\nisinstance\n(last_ai, AIMessage)\nand\nnot\ngetattr\n(last_ai,\n\"tool_calls\"\n,\nNone\n):\nlast_user_msg =\n\"\"\nfor\nm\nin\nreversed\n(state[\n\"messages\"\n]):\nif\nisinstance\n(m, HumanMessage):\nlast_user_msg = m.content\nbreak\nmemory_system.add_note(\ncontent=\nf\"Q:\n{last_user_msg}\n\\nA:\n{last_ai.content}\n\"\n,\ntags=[\n\"conversation\"\n],\ncategory=\n\"Dialogue\"\n,\n)\nreturn\n{}\n# 不是 return state\n# ---------------------------------------------------------------------------\n# 5. 构建 LangGraph 图\n# ---------------------------------------------------------------------------\ngraph = StateGraph(AgentState)\ngraph.add_node(\n\"retrieve_context\"\n, retrieve_context)\ngraph.add_node(\n\"agent\"\n, call_model)\ngraph.add_node(\n\"tools\"\n, ToolNode(tools))\ngraph.add_node(\n\"persist\"\n, persist_turn)\ngraph.set_entry_point(\n\"retrieve_context\"\n)\ngraph.add_edge(\n\"retrieve_context\"\n,\n\"agent\"\n)\n# tools_condition: 若 LLM 触发了 tool_calls -> \"tools\"，否则 -> \"__end__\"\ngraph.add_conditional_edges(\n\"agent\"\n,\ntools_condition,\n{\n\"tools\"\n:\n\"tools\"\n,\n\"__end__\"\n:\n\"persist\"\n},\n)\ngraph.add_edge(\n\"tools\"\n,\n\"agent\"\n)\ngraph.add_edge(\n\"persist\"\n, END)\nfrom\nlanggraph.checkpoint.memory\nimport\nMemorySaver\napp = graph.\ncompile\n(checkpointer=MemorySaver())\n# ---------------------------------------------------------------------------\n# 6. 运行示例\n# ---------------------------------------------------------------------------\nimport\nuuid\n# 确保在文件顶部已导入\nif\n__name__ ==\n\"__main__\"\n:\n# ============ 你可以在下面两行修改 ============\n# USE_PERSISTENT_THREAD = True # True: 使用固定 thread_id，False: 每次新 thread_id\nUSE_PERSISTENT_THREAD =\nFalse\nFIXED_THREAD_ID =\n\"cli-session-1\"\n# =============================================\n# print(\"Agent 已启动，记忆文件: my_agent.amem\")\nprint\n(\n\"输入 'exit' 或 'quit' 退出。\\n\"\n)\nwhile\nTrue\n:\nuser_input =\ninput\n(\n\"你: \"\n).strip()\nif\nuser_input.lower()\nin\n(\n\"exit\"\n,\n\"quit\"\n,\n\"退出\"\n):\nbreak\n# 根据开关生成 thread_id\nif\nUSE_PERSISTENT_THREAD:\nthread_id = FIXED_THREAD_ID\nelse\n:\nthread_id = uuid.uuid4().\nhex\n# 每次随机生成新 ID\nconfig = {\n\"configurable\"\n: {\n\"thread_id\"\n: thread_id}}\n# 记录本轮开始前的消息 ID（用于打印新增内容）\ntry\n:\nprev_snapshot = app.get_state(config)\nif\nprev_snapshot.values:\nprev_messages = prev_snapshot.values.get(\n\"messages\"\n, [])\nelse\n:\nprev_messages = []\nprev_ids = {m.\nid\nfor\nm\nin\nprev_messages}\nexcept\nException:\n# 如果 thread_id 从未使用过，get_state 可能报错，视为空历史\nprev_ids =\nset\n()\nresult = app.invoke(\n{\n\"messages\"\n: [HumanMessage(content=user_input)]},\nconfig=config,\n)\n# 打印本轮新增消息（工具调用等）\nnew_messages = [m\nfor\nm\nin\nresult[\n\"messages\"\n]\nif\nm.\nid\nnot\nin\nprev_ids]\nfor\nm\nin\nnew_messages:\nrole =\ntype\n(m).__name__\nif\nisinstance\n(m, AIMessage)\nand\nm.tool_calls:\nfor\ncall\nin\nm.tool_calls:\nprint\n(\nf\"[\n{role}\n] 调用工具:\n{call[\n'name'\n]}\n(\n{call[\n'args'\n]}\n)\"\n)\nelif\nisinstance\n(m, ToolMessage):\nprint\n(\nf\"[\n{role}\n] 工具结果:\n{m.content}\n\"\n)\nelse\n:\nprint\n(\nf\"[\n{role}\n]\n{m.content}\n\"\n)\nprint\n()\n4. 总结\n虽然当前 A-MEM 提供的 API\n实现仍然存在一些不足，例如检索逻辑与论文描述存在一定差异、默认存储方式不适合长期使用等问题，但其整体设计思想仍然具有较高的参考价值。\n其中，基于卡片化的记忆表示方式、记忆之间的关联关系以及通过 Agent\n主动管理长期记忆的思路，都为构建具有长期记忆能力的 Agent\n提供了一种较好的设计方向。\n如果需要将 A-MEM\n应用于实际生产环境，可能需要根据具体业务需求重新设计和实现对应的记忆管理模块，包括记忆存储、检索策略、关联关系维护以及生命周期管理等部分，而不是直接依赖当前提供的\nAPI。\n总体来说，A-MEM 更像是一个验证长期记忆 Agent\n思路的研究实现，其核心价值在于提出了一种较新的记忆组织方式，而\n实际工程落地仍需要进一步优化\n。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://zusda.github.io/2026/08/08/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-9/",
-      "content_chars": 28611,
-      "content_sha256": "ad66de2882a6fde3e300d380b4a3bba90d8255650344d43b52b02e79ae61a6ea",
-      "content_fetched_at": "2026-08-10T21:51:17.113115+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "zusda",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:40ecebc586a283ae",
-      "kind": "publish",
-      "text": "denizhalil-blogs published: Vulnerability Analysis: CVE-2026-63077 Unauthenticated Remote Code Execution in JetBrains TeamCity",
-      "actor": "denizhalil-blogs",
-      "actor_url": "https://denizhalil.com/blogs/",
-      "created_at": "2026-08-10T04:53:00+00:00",
-      "html_url": "https://denizhalil.com/2026/08/10/cve-2026-63077-jetbrains-teamcity-rce-analysis/",
-      "title": "Vulnerability Analysis: CVE-2026-63077 Unauthenticated Remote Code Execution in JetBrains TeamCity",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Introduction\nOn August 5, 2026, cybersecurity researchers disclosed a critical security vulnerability designated as\nCVE-2026-63077\n(CVSS v3.1 Score: 9.8 – Critical) affecting JetBrains TeamCity On-Premises installations. TeamCity is one of the world’s most widely adopted Continuous Integration and Continuous Deployment (CI/CD) server solutions, serving as the core infrastructure for source code compilation, secret storage, and automated deployment pipelines across enterprise environments. CVE-2026-63077 represents an unauthenticated Remote Code Execution (RCE) vulnerability that allows threat actors to bypass authentication controls and execute arbitrary system commands on the host operating system with the privileges of the TeamCity process. Because CI/CD infrastructure holds extensive secrets—including cloud provider credentials, private SSH keys, and source code access—a breach of this nature poses catastrophic supply chain risks. Following evidence of active exploitation in wild campaigns, the US Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2026-63077 to its Known Exploited Vulnerabilities (KEV) catalog.\nLearning Objectives\nAfter reviewing this technical article, security professionals, DevSecOps engineers, and system administrators will be able to:\nUnderstand the root cause and architectural mechanisms enabling CVE-2026-63077 exploitation.\nIdentify the specific HTTP communication protocols and Java deserialization vectors involved.\nEvaluate the impact of CI/CD server compromise on organizational supply chain security.\nImplement effective patching, mitigation, and network hardening strategies to neutralize the threat.\nWhat is Remote Code Execution in JetBrains TeamCity (CVE-2026-63077)\nJetBrains TeamCity relies on a distributed architecture where a centralized server orchestrates build tasks across multiple remote build agents. To coordinate these tasks, build agents continuously send HTTP(S) requests to server-side endpoints, polling for new jobs, reporting status updates, and uploading build artifacts. To allow seamless agent onboarding without manual user authorization, specific communication endpoints—particularly those under the\n/app/agents/v1/\nroute—were intentionally designed to process incoming requests without requiring traditional administrative authentication or user session tokens. The vulnerability designated as CVE-2026-63077 is a critical, unauthenticated Remote Code Execution (RCE) flaw arising from how the TeamCity server processes data incoming through these open agent polling endpoints. When receiving HTTP requests from build agents, the server uses XML serialization mechanisms to reconstruct client-side Java objects. However, because these endpoints lack robust access controls and rely on insecure unmarshaling practices, an unauthenticated attacker on the network can masquerade as a build agent and send malicious XML data directly to the server.\nWhen the TeamCity server processes this untrusted input, the application automatically deserializes the payload without first validating the safety of the object types being instantiated. This allows a remote attacker to trigger arbitrary Java class execution, leading directly to operating system command execution under the privileges of the TeamCity server process. Because CI/CD platforms typically possess elevated network privileges, stored cloud provider keys, and source code access, successfully exploiting this vulnerability allows adversaries to establish a persistent foothold, compromise intellectual property, and initiate widespread software supply chain attacks.\nKey characteristics and impact factors of this vulnerability include:\nUnauthenticated Access:\nAttackers do not require valid user credentials, session cookies, or prior agent registration tokens to reach the vulnerable endpoint handlers.\nNetwork Attack Vector:\nExploitation occurs entirely over network protocols (HTTP/HTTPS), making any internet-facing TeamCity instance directly vulnerable to remote automated exploitation.\nElevated Operational Risk:\nCode executed via this vulnerability inherits the permissions of the host account running the TeamCity service, often enabling total host takeover or container escape.\nSupply Chain Exposure:\nGaining unauthorized control over the primary CI/CD server enables threat actors to modify source code repositories, tamper with build artifacts, and inject malicious code into downstream software releases.\n// Vulnerable Server-Side Request Handling (Conceptual Example)\n@POST\n@Path(\"/app/agents/v1/poll\")\n@Consumes(MediaType.APPLICATION_XML)\npublic Response handleAgentPoll(InputStream rawPayload) {\n// VULNERABILITY: Unauthenticated endpoint accepting raw XML stream\nXStream xstream = new XStream();\n// An explicit allowlist was specified...\nxstream.allowTypes(new Class[]{ AgentPollResponse.class, BuildStatus.class });\n// BUG: Missing 'xstream.addPermission(NoTypePermission.NONE);'\n// Without resetting permissions, XStream defaults allow arbitrary gadget chains!\n// Deserializing untrusted input executes attacker-controlled gadget chains\nObject deserializedObj = xstream.fromXML(rawPayload);\nreturn Response.ok().build();\n}\nTechnical Detail: How the Vulnerability Works\nUnder the hood, CVE-2026-63077 is rooted in insecure Java object deserialization within TeamCity’s agent communications module, which uses the\nXStream\nlibrary to serialize and unmarshal XML data payload traffic. Distributed build agents routinely exchange status updates, job polling signals, and environment metadata with the central server via REST endpoints under the\n/app/agents/v1/\nroute. Because new build agents must be able to register dynamically without pre-existing administrator session cookies, these specific routes were deliberately designed to accept incoming HTTP requests without enforcing strict authentication checks. The critical flaw lies in how the TeamCity server configured its XStream parser to process these incoming unauthenticated XML streams. Although JetBrains developers attempted to restrict accepted classes by defining explicit allowlists (such as specifying expected agent status objects), they omitted the essential security initialization step: clearing XStream’s default permissive fallback rules via\nxstream.addPermission(NoTypePermission.NONE)\n. Consequently, the security allowlist acted only as an additive filter rather than a restrictive boundary, leaving XStream’s underlying object creation engine exposed to arbitrary Java class instantiation.\nWhen an attacker transmits a maliciously crafted HTTP POST request containing XML-formatted gadget chains (such as dynamic proxy handlers,\njava.lang.reflect.Proxy\n, or standard JDK reflection utilities), XStream processes the payload without validation. During the unmarshaling phase, XStream automatically reconstructs the nested object structure, invoking object constructors, getter/setter methods, or\nhashCode()\ncall chains. This chain reaction causes the server JVM to invoke sensitive runtime methods—such as\njava.lang.ProcessBuilder.start()\n—and immediately executes arbitrary system commands with the host permissions of the TeamCity process.\nKey technical breakdown of the vulnerability flow:\nUnauthenticated Endpoint Reachability:\nThe agent communication handlers beneath\n/app/agents/v1/\nprocess incoming XML payloads directly from untrusted network sources without requiring pre-shared secrets or valid authentication tokens.\nIncomplete XStream Security Configuration:\nAdding allowed types without invoking\nNoTypePermission.NONE\nleaves XStream’s default permissive type resolution active, completely bypassing developer-intended type constraints.\nGadget Chain Triggering:\nAttackers leverage well-known Java class behaviors during deserialization to transform standard method invocations into arbitrary execution paths within the JVM.\nDirect Process Invocation:\nObject unmarshaling seamlessly cascades into OS-level process execution, enabling arbitrary binary execution, shell commands, or reverse connection establishment.\n+------------------+ HTTP POST /app/agents/v1/poll +--------------------------+\n| | -------------------------------------------> | |\n| Attacker | Malicious XML Payload (XStream Gadget) | TeamCity Server |\n| (Unauthenticated)| | |\n+------------------+ +--------------------------+\n|\n1. Receives Raw XML Stream\nv\n+--------------------------+\n| XStream Deserializer |\n+--------------------------+\n|\n2. Allowlist Check Fails:\nDefault permissions NOT\ncleared (NoTypePermission)\nv\n+--------------------------+\n| Gadget Chain Execution |\n| (Reflection / Proxy) |\n+--------------------------+\n|\n3. Triggers ProcessBuilder\nv\n+---------------------------+\n| OS Command Execution |\n| (RCE under Server Context)|\n+---------------------------+\nRemediation & Mitigation\nOrganizations operating JetBrains TeamCity On-Premises must take swift and decisive action to address the threat posed by CVE-2026-63077. Because this unauthenticated remote code execution vulnerability is actively exploited in the wild and targetable over network protocols, relying solely on perimeter defenses is insufficient. Securing vulnerable build environments requires a combination of immediate vendor patching, application-level mitigation plugins, and aggressive network defense controls. Prioritizing full server upgrades provides the most complete protection, ensuring that the flawed XStream deserialization logic and underlying endpoints are natively fixed. However, in environments where maintenance windows or release cycles delay immediate full-version updates, security teams must deploy JetBrains’ official patch plugins and enforce strict network access policies to block unauthorized access to build agent communication routes.\nKey remediation actions and hardening measures include:\nUpgrade On-Premises Servers Immediately:\nUpdate TeamCity On-Premises installations to patched releases\n2025.11.7\nor\n2026.1.3\n(or later) to permanently eliminate the unsafe deserialization flaw.\nVerify Cloud Instance Safety:\nConfirm that managed\nTeamCity Cloud\nenvironments are running normally, as JetBrains automatically patched cloud-hosted infrastructure without requiring customer intervention.\nApply the Official Security Patch Plugin:\nInstall JetBrains’ standalone\nSecurity Patch Plugin\n(compatible with TeamCity versions 2017.1 through 2026.1.2) if an immediate full upgrade cannot be performed due to operational constraints.\nUtilize Automatic Patching Features:\nFetch and enable the security patch directly from the TeamCity administration console for servers running version\n2024.03\nor newer.\nRestrict Internet Exposure:\nRemove direct public internet access to TeamCity management interfaces and server endpoints, placing access behind corporate VPNs or Zero-Trust Network Access (ZTNA) solutions.\nImplement IP Allowlisting for Agents:\nConfigure firewalls and Web Application Firewalls (WAFs) to restrict access to\n/app/agents/*\nendpoints strictly to known IP address ranges belonging to legitimate build agents.\nAudit Web Server Access Logs:\nMonitor access and execution logs for anomalous HTTP POST requests directed toward\n/app/agents/v1/\noriginating from unknown or external IP addresses.\nRotate Build Secrets and Credentials:\nRevoke and reissue cloud provider keys, access tokens, SSH credentials, and service accounts stored within TeamCity if suspicious activity or indicators of compromise are identified.\nConclusion\nThe discovery and active exploitation of CVE-2026-63077 underscore the critical operational risks associated with insecure object deserialization within core enterprise infrastructure. Modern Continuous Integration and Continuous Deployment (CI/CD) engines like JetBrains TeamCity serve as the central orchestration hubs for modern software development pipelines. Consequently, any security flaw that grants unauthenticated remote code execution on these systems effectively surrenders the keys to an organization’s digital crown jewels. When adversaries achieve execution privileges on a CI/CD server, the impact extends far beyond local system compromise. Build environments routinely store and process highly sensitive assets, including source code repositories, deployment scripts, cloud provider access tokens, API keys, and SSH credentials. An attacker exploiting CVE-2026-63077 can quietly exfiltrate these secrets, establish persistent backdoors across internal corporate networks, or manipulate build outputs to inject malicious code directly into downstream production releases, resulting in devastating software supply chain attacks. Furthermore, the vulnerability highlights a persistent challenge in software engineering: the subtle security pitfalls of legacy serialization frameworks like XStream. While developers frequently attempt to mitigate deserialization risks using class allowlists, incomplete initialization—such as failing to reset default type permissions—can render defense mechanisms entirely ineffective against modern gadget chains. This flaw serves as a reminder that input validation and object unmarshaling at network boundaries require rigorous defense-in-depth engineering and strict zero-trust principles.\nUltimately, protecting enterprise environments against CVE-2026-63077 demands immediate, coordinated action between security and operational teams. Organizations operating TeamCity On-Premises must prioritize upgrading to patched releases (\n2025.11.7\nor\n2026.1.3\n) or deploying official security patch plugins without delay. Combining timely software remediation with robust network segmentation, agent IP allowlisting, and proactive log monitoring remains the only effective strategy to neutralize active threat actors and preserve software supply chain integrity.\nCVE-2026-63077 Unauthenticated Remote Code Execution in JetBrains TeamCity\nDownload\nAI Agents’ Sandbox Revolt: CVE-2026-50548 and CVE-2026-50549\nPython C2 Server for Red Teaming: A Comprehensive Hands-On Guide\nExploiting Zero-Day Vulnerabilities in SonicWall SMA Prior to Disclosure\nCVE-2026-20253 – Splunk Enterprise Unauthenticated Arbitrary File Vulnerability\nExploitation of DbGate Remote Code Execution via Dynamic Import Bypass (CVE-2026-47670)\nRapid7 Analysis\nThe post\nVulnerability Analysis: CVE-2026-63077 Unauthenticated Remote Code Execution in JetBrains TeamCity\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://denizhalil.com/2026/08/10/cve-2026-63077-jetbrains-teamcity-rce-analysis/",
-      "content_chars": 14446,
-      "content_sha256": "e10dcd908d00f675bee9b6eb4cb76ef74d03ab7d678cc90ff64f899384322e5b",
-      "content_fetched_at": "2026-08-10T21:51:26.081604+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "DenizHalil Blogs",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:c7357f9f31dfeab6",
-      "kind": "publish",
-      "text": "yage-share published: 模型权重也会成为侵权复制品？从 Suno 案看 AI 发布的版权新防线",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-09T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/suno-copyright-model-release-20260809.html",
-      "title": "模型权重也会成为侵权复制品？从 Suno 案看 AI 发布的版权新防线",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "治理与合规\nAI 产品与平台\n以前我们搞 AI\n产品上线，合规这块的精力基本上都花在两个头尾环节。前端主要管数据抓取，看看许可拿没拿到；后端主要做生成防堵，加一些敏感词过滤。至于中间训练跑出来的模型权重参数，大家习惯把它当作一堆单纯的概率矩阵和数学特征，很少会专门去查模型文件本身到底有没有版权风险。\n不过，慕尼黑第一州法院在 2026 年 7 月 31 日对 GEMA 诉 Suno 案（案号\nLG München I 42 O\n763/25）做出的一审判决，给这种习惯做法敲响了警钟。法院这次没有停留在数据输入和文本输出上，直接把过去大家容易忽视的模型权重，拉进了版权侵权的审查范围。需要说明的是，这是一审判决，尚未最终生效，但多项救济可在\nGEMA 提供担保后临时执行。具体判决细节可以查阅\n法院新闻稿\n。\n版权合规不再只看数据源与生成端：模型权重本身成为审查对象\n德国音乐版权管理机构 GEMA 代表多位作曲家和填词人，起诉了音乐生成平台\nSuno。他们在测试时做了一组实验：向 Suno 提交 Prompt\n时，里面只包含原歌词、作品标题和音乐风格描述，完全没有给模型输入原曲的旋律、和声或者节奏。需要说明的是，歌词在这里只是测试输入，本案裁判的是音乐作品中的作曲表达，歌词侵权不在争议范围内。这次测试一共涵盖了《Atemlos\ndurch die Nacht》、《Daddy Cool》、《Rasputin》、《Big in\nJapan》、《Forever Young》5 首经典曲目，加上《Mambo No. 5 A little bit\nof》的副歌段落。\n测试人员在进行了 4 到 176\n次不等的反复生成采样之后，每首作品最终只提交了一个输出，Suno\n跑出了在旋律和和声上能清晰认出原作特征的音频。法院看懂了这个逻辑：用户输入的提示词里没有任何旋律信息，模型却把原作的音乐表达吐了出来。这说明\nSuno v3.5 和 v4 模型权重内部依然保留了作品的表达形式。详细的裁判记录放在\nopenJur\n判决文本\n（非官方转录本，截至发稿时法院官网尚未发布认证全文）。\n按德国版权法，只要作品固定在特定载体上且能让人感知，就满足了法律认定复制品的必备条件。法院顺着这个原则判定，部署在服务器上的\nSuno\n模型文件本身就构成了侵权复制品。不过法院也明确写道”并非所有模型都会记忆训练数据”，因此这不是判决所有训练数据都让整个模型变成侵权复制品，而是针对六项作品和两个版本的具体认定。这也意味着，我们以前只顾数据来源和输出过滤的合规思路不够用了，模型权重文件本身现在也得接受合规检查。\n从概率输出反推模型参数：司法如何将黑盒抽样接受为记忆探针？\n过去的机器学习领域，过拟合或者模型到底有没有硬记训练集，一直是个界定起来非常模糊、偏软性的学术概念。在学术研究里，要严谨证明模型记住了某段数据，往往需要昂贵的白盒手段，比如检查神经元特征、跑线性探针或者计算复杂的梯度影响函数。但在\nSuno\n这个案子里，慕尼黑法院做出了一个具有信号意义的认定：司法体系正式接受了一种低成本的黑盒测试方法（Prompt\n抽样），将其作为证明模型参数留存了作品记忆的合法证据。\nGEMA 的测试团队完全没有侵入 Suno\n的服务器去调取模型内部权重，也没有跑任何昂贵的白盒分析。他们只是把原歌词、歌名和风格作为\nPrompt 输入给模型，在不提供任何旋律的情况下，通过 4 到 176\n次不等的黑盒抽样，诱导模型吐出了原作的旋律与和声。\n法院看懂并接受了这套探针逻辑：既然输入端只有文本，输出端却跑出了高复杂度的旋律表达，这种重合度不可能出于巧合。法官不再纠结于过拟合这个抽象的学术定义，而是将提示词提取测试作为本案中推断模型内部存在作品留存的证据。\n这种推理方式也揭示了法律认定与工程实践之间的深刻交锋。从测试记录来看，GEMA\n的团队往往要连续采样几十次甚至上百次，每首作品最终只提交一个输出，才能偶然捕捉到一次可识别的相似输出。在概率分布的长尾里通过高频采样触发作品重现，到底能不能直接推导出特定作品固化在了参数矩阵中？\n这恰好是 Suno\n正在评估包括上诉在内的选项时的潜在核心争点——截至发稿时尚未验证 Suno\n已正式提交上诉。不过对于工程团队而言，信号已经足够明确：黑盒抽取测试不再只是安全极客玩耍的攻击手段，也不再是学术论文里模糊的概念，它已经变成了法庭上用来指控模型侵权的高效探针。法官只要看到\nPrompt\n能把训练集作品钩出来，就倾向认定权重文件存留了作品表达；反过来，哪怕单次阴性测试没有跑出相似音频，也不能当作免受起诉的法律安全港。\n厘清误区：为什么在美国训练隔离不了在欧洲存储与服务？\nAI\n模型版权的四个法律环节：数据获取与训练、模型存储、服务提供、输出生成\n过去不少做跨国产品的团队有一个习惯假设：只要把模型训练放在美国机房，靠着美国版权法的合理使用原则保驾护航，整个模型就能足够安全。Suno\n这个案子直接打破了这种跨国隔离的想法。\n版权法规遵循严格的属地原则。美国合理使用原则只管辖发生在美境内的抓取和训练动作。团队一旦把训练好的权重文件复制部署到欧洲服务器，或者面向欧洲用户开通推理服务，合规评估就会自动切换到欧洲及当地法律的管辖下。\n慕尼黑法院在审理时把 Suno 的完整业务流拆分成了四个独立的法律环节： 1.\n获取与训练\n：在美国提取作品并制作训练副本。因为抓取动作发生在美国，法院按美国版权法审查\nSuno\n提出的合理使用理由，并判定本案的商业抓取行为在美国法下同样不构成合理使用；\n2.\n模型存储\n：在德国服务器上保存包含作品固定特征的模型权重。法院适用德国法，认定构成存储复制侵权；\n3.\n提供服务\n：向公众开放包含这些作品的模型与应用。法院认定构成公共传播侵权；\n4.\n生成输出\n：模型在用户终端生成相似音频。法院认定再次发生复制与公共传播侵权。\n欧洲的 DSM\n指令虽然给文本和数据挖掘留出了豁免空间，允许出于模式分析开展自动化抓取，但这项豁免给出了明确限制：分析完成后，规律可以留在参数里，作品本身却不能长期固定并重新提供给用户。况且\nSuno 当时抓取数据时绕过了 YouTube 的 Rolling Cipher\n技术，获取手段本身不合规，无法适用数据挖掘豁免。因此，即便团队在美国拿到了合理使用免责理由，一旦把模型文件跨国部署到欧洲服务器，欧洲法院依然可以独立判定模型存储侵权，并针对模型文件和线上服务下发禁令。\n水印、商业许可与发布治理：工程团队的六项控制\n为了应对这类版权风险，业界尝试过不少技术和商业手段。比如 Google\n推广的\nSynthID\n水印技术\n，能在生成的音频里嵌入水纹标记，用来校验输出端的来源。但这套技术管不了训练阶段有没有拿授权，也挡不住模型在参数里记忆原作。而在商业合作方面，华纳音乐与\nSuno、环球音乐与 Udio\n的谈判路径也释放了信号：唱片公司并没有给旧模型补发许可，统一的做法是上线授权过的崭新模型，同时下线旧模型，把重新训练与旧模型退市做成绑定迭代。因此，当法院把审查视角延伸到模型权重本身，工程团队就不能再把代码、数据和权重看作彼此孤立的模块了，我们需要把每次模型发布都当成一次完整的风险治理过程，在发布管线里落实六项工程控制：\n模型发布的六项版权控制：分项记录权利、区分获取与训练依据、不可变发布追踪链、模型吐回测试、地域审查模型存储、版本回退与重训\n分项记录每种权利\n把曲谱、歌词、录音母带、表演者声音与肖像等不同权利做独立标记，不要在元数据里混成一个泛泛的标签。\n区分获取依据与训练依据\n能公开访问、已经付费订阅或者拿到了 API\n调取权限，只代表我们打通了获取数据的通道，并不等于拿到了批量复制和商业训练的法律授权。\n建立不可变的发布追踪链条\n打通从数据快照、训练任务、权重\nCheckpoint、部署节点到服务终端的全链路版本映射，防止线上服务静默替换底层模型。\n建立模型吐回测试机制\n模型正式发布前，用敏感训练作品和特定 Prompt\n做抽样提取测试，记录输入的提示词、采样参数、音频指纹和复核结论，评估记忆留存风险。把黑盒\nPrompt 提取当作发布前的定量探针，主动发现记忆风险。\n按地域审查模型存储\n在美国机房跑完训练，不代表模型权重能自动同步到全球各个节点。任何跨国服务器的权重复制和部署，都要单独走一遍当地的合规审查。\n预建快速版本回退与重训路径\n保证线上服务可以按版本和地域灵活隔离下线，同时准备好基于授权清晰的数据快照重新训练的备选方案。\n做模型吐回测试是发布前的一道风险门控，不等于拿到一张法律免责单。要建立长久的合规防线，底层数据的来源合法性以及发布管线的严密管理，依然是我们最关键的基础。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/suno-copyright-model-release-20260809.html",
-      "content_chars": 3608,
-      "content_sha256": "700b18d91c175078d5760c91d05f3064338f800c6f504882fe571930af186b43",
-      "content_fetched_at": "2026-08-10T21:51:05.053655+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:c501bcc4b487f05f",
-      "kind": "publish",
-      "text": "yage-share published: 浏览器是 Agent 覆盖面最广的兼容层，但 Chrome 不是：为什么我们需要 Kitesurf？",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-09T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/kitesurf-agent-browser-compatibility-layer-20260809.html",
-      "title": "浏览器是 Agent 覆盖面最广的兼容层，但 Chrome 不是：为什么我们需要 Kitesurf？",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\nAI 产品与平台\n推理与性能\n浏览器作为 Agent 兼容层\n聊起 AI Agent 的基础设施，大家常假设未来的软件都会暴露一套干净优雅的\nAI 原生接口。可现实往往正好相反，市面上数以万计的网页应用、SaaS\n系统和企业内网软件，在未来很长一段时间里都不可能专程为了模型去重写\nAPI。面对这个现实断层，行业选了一条看似笨拙却格外管用的路径：直接让\nAgent 操控浏览器去接管既有应用。Cloudflare 最近发布的\nKitesurf\n，正是专为这一场景打造的\nAgent 无头浏览器基础设施：它允许 Agent 通过兼容现有工具的 Chrome\nDevTools Protocol (CDP) endpoint\n操控云端网页渲染与交互，同时把原本属于传统浏览器的庞大开销压到了较低水平。\n兼容层困境：为什么在很长一段时间内，Agent\n都无法摆脱浏览器？\n图形界面是人类与软件交互了几十年的底层通用协议。现代网页和桌面 UI\n构成了现实世界最完整的数据流动网络。绝大多数在线服务都提供一个能让普通人在屏幕上点击、阅读的网页，即使没有开放开发者\nAPI 也有这个入口。\n当 Agent 需要跨越多个软件去完成复杂任务时，指望所有服务商主动接入\nREST API 或者 Model Context Protocol (MCP) 接口是不现实的。给外部开 API\n远不只是写几道接口代码那么简单，背后涉及到繁重的代码重构、商业合规谈判、安全审计、防刷限流，还有各家对核心数据壁垒的死守。与其漫长等待生态自行改造，直接让\nAgent 操控网页，在无法获得 API 时常是改造成本较低的路径。\n浏览器也因此顺理成章地成了 Agent\n操作既有软件覆盖面最广的兼容层。只要某个功能在网页上看得见、点得到，Agent\n就有机会接管操作。这个兼容层不需要等待应用厂商配合，直接复用了现成的互联网基础设施。\n这种兼容层还会长期陪伴我们。对于绝大多数 SaaS 和 Web\n厂商来说，人类用户的订阅与广告点击是直接的收入来源，而专门为 AI 构建 API\nKey\n分发、计费与鉴权体系需要额外的投入。在缺乏直接商业激励的前提下，厂商更愿意维护现有的\nWeb\n界面。只要网页依然是软件交付的主渠道，浏览器作为通用适配器的地位就很难动摇。面对这种现实，将浏览器改造为适应\nAgent 调用的计算通道，便成了工程上水到渠成的路径。\n然而，一旦把这套模式从实验室探索推向大规模的生产环境，底层架构上的负担与瓶颈就会快速爆发。\n扩展性悖论：给人类视觉定制的\nChrome 为什么扛不住 Agent 的高并发？\n这种架构上的负担，根源在于传统浏览器的设计前提：Chromium\n这类引擎，全都是围绕人类的生理特征与行为模式构建的。当访问的主体从人类变成\nAgent 时，需求层面爆发了两个根本性的错位。\n第一个错位是扩展性与并发诉求的错位。人类使用者同一时间只有一个注意力焦点，手里只有一只鼠标，眼前只有一对眼睛。哪怕是重度用户，一次也只能在一个活动标签页里打字或浏览，剩下几十个后台标签页基本处于静止或挂起状态。但\nAgent\n作为可以弹性扩容的执行实体，优势偏偏在于并发吞吐。Agent不仅要同时打开几十甚至上百个网页，还要在这些页面上持续提取结构化数据、触发交互并监控状态变化。在网页面前，Agent\n是时刻处于高频交互状态的多任务实体，不同于后台挂起的人类标签页。\n第二个错位是功能需求与冗余优化配比的错位。现代 Chromium\n相当一部分额外的资源开销，全都是浏览器几十年里专程为人类视觉体验与富媒体演进出的高级优化：为了人类眼中的\n60fps 平滑滚动与 3D 动画，构建了占内存的 GPU 图层贴图合成与 WebGL/WebGPU\n渲染管线；为了 JS 的执行速度，拉起了包含多级编译管线的 V8 JIT\n优化编译器堆与 Inline Cache\n缓存；为了防崩溃与跨站安全，设计了多进程沙箱骨架，通过 Site Isolation\n按站点分配渲染进程；为了多媒体集成，内置了 WebRTC\n与音视频解码协议栈。\n这些优化对人类很有意义，但对许多 Agent\n工作负载来说并非刚需，反而带来了额外的资源负担。Kitesurf\n针对的是短生命周期、突发式的截图和 HTML 提取等任务，这类任务不需要 60\n帧滚动、GPU 3D 贴图或音视频流。当然，Agent\n的需求并不总是如此简单，有些需要长期认证、复杂渲染或对抗反爬，Cloudflare\n明确建议这些场景回退到 Chromium。\n当 Agent 高频并发的吞吐需求，撞上 Chromium\n为人类视觉与富媒体定制的重型架构，资源开销就会快速叠加。Chromium\n的多进程模型通常带来数百 MiB 级任务内存：Cloudflare 自己的对照测试测得\nwarm Chromium 池在截图和 HTML 提取任务中分别占用 271.0 MiB 和 273.7\nMiB。在实际部署中，具体内存取决于页面复杂度、进程复用和站点隔离策略，但\nRAM 往往先于 CPU\n成为瓶颈。一旦业务请求量上涨，成百上千个操作系统进程会迅速挤爆 cgroups\n的限制，内核因为内存耗尽触发 OOM\nKiller，直接清理掉运行中的浏览器进程，反映到上层业务里就是莫名其妙的请求超时或任务中断。\n个人开发者用单台服务器很难扛住高并发\nAgent，云基础设施服务商也面临着沉重的算力负担。\n场景破局与技术接应：如何在\nV8 Isolate 里重新构建浏览器？\nChromium 多进程 vs Kitesurf V8 Isolate\n架构对比\n针对上面提到的扩展性瓶颈，Cloudflare 推出的 Kitesurf\n给出了一套非常直观的解题路径：既然 Agent\n不需要人类的眼睛，那就把所有给人类看的高级优化统统剥离；既然在本地单机上跑\nChrome 太占资源，就把渲染的重活直接搬到分布式边缘网络上。\n在实现上，Kitesurf 没有选择移植动辄千万行代码的 Chromium\n源码，而是把基于 Rust 开发的轻量级渲染引擎直接编译成 WebAssembly\n(WASM)，让它运行在\nCloudflare\nWorkers\n的 V8 Isolate\n环境里。这么一来，系统彻底扔掉了操作系统多进程模型的沉重骨架，把页面渲染与数据提取做成了轻量调用的组件。Cloudflare\n2018 年称一般 Workers isolate 可在约 5\n毫秒启动，不过这是平台级的启动指标，不是 Kitesurf\n页面上下文完整生命周期的 benchmark。\n更妙的是算力与内存压力的转移。以前用 Playwright 或\nPuppeteer，我们需要在自己的电脑或服务器上开着笨重的 Headless Chrome。而\nKitesurf 把最吃资源的 DOM 解析、CSS 布局和栅格化计算，搬到了 Cloudflare\n宣称覆盖 330+ 城市的全球网络上执行。请求会被路由到最近的 PoP，相关的\nWorkers 和 isolate 在那里协作完成渲染。本地只需要维持极轻量的信号编排与\nCDP 协议握手，真正的内存和算力消耗都直接卸载到了云端。\n这种架构上的重构，反映在工程数据上是非常清晰的折中。以下数字均来自\nCloudflare 自己的基准测试：14 个 URL、每项运行 5 次取中位数，对比的是\nCloudflare 自己的 warm Chromium\n池，目前尚无第三方独立复现。在该测试中，提取 HTML 数据时单页内存占用只有\n39.4 MiB，对照 warm Chromium 为 273.7 MiB，约低 7 倍，CPU 节省了 3.8\n倍；渲染截图时内存为 57.8 MiB，降低了 4.7\n倍。当然，天下没有免费的午餐。因为 Kitesurf\n使用冷启动的软件渲染器，而对照的 Chromium 有 warm JIT 优势，Kitesurf\n截取图片的端到端耗时是 1,148 毫秒，比 Chromium 的 637 毫秒慢了约 1.8\n倍，差距主要来自栅格化与 JPEG/PNG 编码。\n同时在功能边界上，Kitesurf 当前明确不支持视频播放、WebGL 3D\n渲染以及要求真实 TLS 指纹的 bot challenge\n握手，也不适合需要长期持久状态的认证会话。这些有些是当前未实现的能力，有些是短生命周期、尽量无状态设计带来的取舍，并非全部由\nWorkers\n安全模型\n直接禁止。但对于高并发、短生命周期的数据提取任务来说，用较慢的响应延迟去换取显著更低的\nCPU\n和内存，在系统工程里常常是个划算的交易。实际并发密度和成本收益还需按具体\nworkload 验证。Kitesurf 实际上为 Agent 重新打造了一个剥离视觉开销的 Web\n通道。\n终局思考：从\nAccessibility 对抗看 AI-Native 兼容层的两难本质\nKitesurf 的探索其实勾勒出了一个规律：把现有的旧软件改造成 Agent\n适用的基础设施，最管用的办法往往是重新设计底层兼容层。顺着这个视角回看隔离技术的演进，有两条并行谱系。一条是端点侧的硬件隔离：Bromium\n在 2010 年用 Intel VT-x 硬件虚拟化给每个浏览器标签页和下载起一个\nmicroVM。另一条是远程浏览器隔离（RBI）：把整个浏览器搬到云端，先是用像素流把渲染结果传回，后来演进出\nDOM 树重建和网络矢量渲染（NVR）。\n到了今天，Kitesurf 在 V8 isolate\n这个语言运行时级别的边界上引入了新的执行粒度。但它没有取代 OS\n进程和系统沙箱——Workers 的安全模型仍然在 isolate 外叠加进程分组、Linux\nnamespace/seccomp 和出站代理，生产安全边界是分层组合。类似的思路在桌面\nGUI 自动化领域也有体现。许多 Agent 会优先使用 DOM 或 Accessibility\n树的结构化语义，在结构不可得或视觉信息关键时才使用截图和 VLM。毕竟\nAccessibility 树自带控件层级与语义标记，Agent\n读写软件状态的开销远低于去分析像素图片。\n然而，这种通过重构兼容层来提升机器效率的方案，很快就会撞上一条现实中的深层次矛盾：适配效率与生态安全之间的长期博弈。\n拿 Accessibility 接口和无头自动化通道来说，站在 Agent\n开发者角度，它们无疑是交互成本较低的捷径。但在应用服务商眼中，这种绕过视觉\nUI\n的自动化接口，在技术特征上会共享许多反自动化系统关注的技术信号：无头、高速、重复、非人类交互模式。因此仅靠协议和无头特征往往难以判断意图。为了保护用户隐私、维护生态安全与数据资产，部分应用会限制或检测非人类手势的自动化通道。\n这种矛盾在 Cloudflare 身上体现得尤为生硬。Cloudflare\n自称其整体网络位于约 20% 的 web 前方，Bot Management\n利用这部分网络可见性来检测和拦截自动化爬虫；另一方面，Cloudflare 又是\nKitesurf 这类 Agent 浏览器基础设施的推手。当 Agent 借由 Kitesurf\n高频访问网页时，流量经 SandboxOutbound worker 发出，其外部可见的 TLS\n指纹具体是什么尚需实测确认，但官方已明确 Kitesurf 当前不能处理要求真实\nTLS 指纹的 bot challenge。这会产生一个尚未解决的问题：Kitesurf\n流量如何被 Cloudflare\n及其他反自动化系统分类，目前没有公开测试或政策答案。在协议握手阶段，安全系统很难判断发起的到底是个善意的\nAI 助手，还是恶意的抓取脚本。\n只要现存的软件生态还没有全面迈向 AI 原生形态，这种在提升 Agent\n效率与服务商防范自动化之间的攻防对抗就会一直持续。Kitesurf\n尝试用边缘中介与组件解耦来缓解冲突，但如何在机器交互效率与安全防护界限之间找到平衡，依然是\nAgent 基础设施演进中绕不开的深水区课题。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/kitesurf-agent-browser-compatibility-layer-20260809.html",
-      "content_chars": 5014,
-      "content_sha256": "716f6d4bd7e7ce30f54f5156e9432444a87858c92845841627ac603451da5121",
-      "content_fetched_at": "2026-08-10T21:51:05.548235+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:d5cd2eba019bce0a",
-      "kind": "publish",
-      "text": "yage-share published: Agent 读过的数据，分享后还能给谁看？Cloudflare OS 的授权实践与源码真相",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-08T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/cloudflare-os-authorization-20260808.html",
-      "title": "Agent 读过的数据，分享后还能给谁看？Cloudflare OS 的授权实践与源码真相",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n安全与供应链\n前阵子 Cloudflare 把 Cloudflare OS\n开源了\n。在写完上一篇关于\nCloudflare\nAgent 架构演进\n的文章之后，我把他们的代码克隆下来研究了一圈。最触动我的地方在于一个容易被忽略的硬核痛点：Agent\n读过的数据，在团队二次分享、导出或者继续对话时，到底该怎么授权？\n平时咱们做 Agent，习惯拿 Model Context Protocol（MCP）或者 API\n网关在前面挡一把，觉得只要 Agent 调 API\n的那一瞬间校验了身份就万事大吉。但在实际的团队协作里，这种工具调用的静态关卡一旦遇到落盘的数据和生成的产物，很快就会失去控制。\nCloudflare\n发布说明\n提供了一个可借鉴的思路：借用操作系统的角色隐喻重新组织应用架构，把原本一次性的调用检查，延伸到读取登记与共享准入两个环节。需要说明的是，它目前没有覆盖所有外发出口的统一检查，webFetch、模型调用、blueprint\n发布等走各自不同的控制路径。把代码翻透之后，我想从一线开发者的视角，聊聊这套设计背后的真实机制，以及咱们在自己架构里落地时到底该怎么取舍。\n薪资表生成后共享：工具调用检查为何在这一刻失效？\n传统工具调用检查 vs Cloudflare OS\n的读取登记与分享重验\n咱们从团队日常里一个常见的场景说起。HR 负责人 Alice\n具备薪资库权限，在 Agent 工作区里调数据仓库 API\n算了一张团队平均薪资看板。她觉得做得很棒，顺手把工作区链接发给了团队主管\nBob。但 Bob 在公司里并没有看薪资的权限。当 Bob\n点开链接的那一秒，现有的安全防线就失去了作用。\n无论是传统的 API 网关还是 MCP 协议，校验都发生在 Agent\n伸手拿数据的瞬间。当时 Alice\n在场，权限校验顺利通过，数据读出来生成了看板。等看板做好、工作区发给 Bob\n时，工具调用早就完成了。眼前只有一份生成好的看板，系统丢掉了三样东西：记不住数据源来自哪里、跟踪不到哪些图表染了敏感数据、也无法在\nBob 进门时拿 Bob 的凭据去重测数据源。\n这就是典型的读取时合法，落地后失忆。一旦数据进了工作区，光靠 API\n调用的那一下拦阻，根本管不住后面的分享与二次泄露。要解决这个问题，防线必须覆盖数据读取后的整个生命周期：当数据读进工作区变成产物，需要把控的已经超出了某一次接口调用，延伸到了整个运行环境。\n为什么叫 Cloudflare\nOS？看清它的操作系统隐喻\nCloudflare OS\n部件与传统操作系统的对照\n这正是 Cloudflare 把它叫作操作系统的原因。当 Agent\n拥有了长期运行的小程序、共享工作区和外部数据连接时，它的运行环境本身就是一个微型\nOS。正如他们在\n发布说明\n和\n内部采用说明\n里说明的那样，叫\nCloudflare OS 并非要搞一个替代 Linux 或 macOS 的系统，而是给共享 Agent\n应用建立一套清晰的底层抽象。\n翻看源码可以发现，Cloudflare OS 沿着 Agent\n处理请求的物理动作推进，将传统操作系统的核心组件做出了具体的工程实现：\n用户接入的 Workspace 相当于操作系统的用户 Session\n和共享工作目录，承载着会话历史、上下文文件、生成的小应用以及外部资源连接。系统的前后端（\nworkshop-frontend\n和\nworkshop-backend\n）则分别扮演 Shell\n与内核子系统的角色，负责接收用户输入与调度底层资源。\n当 Agent 需要访问 GitHub、Notion 或 Slack\n等外部服务时，它并不能直接接触底层长期凭据，而是通过 Gatekeeper\n发起请求。Gatekeeper 就像设备驱动，向环境注入类似\nenv.PROJECT\n的对象能力绑定，负责执行实际的外部读取，并在敏感写入时触发用户审批。每次外部读取完成后，Gatekeeper\n都会将数据源头向内核报备。\n当 Agent 在运行中动态生成带有前端、后端逻辑与数据库的交互式小应用\nGadget\n时，这些小程序就像是在隔离沙箱里运行的进程。如果用户希望将应用模板分享给他人，但不带走自己的运行数据与凭据，系统会导出\nBlueprint，这便相当于可执行文件的代码模板。\n而在后台统筹这一切的，是运行在 Cloudflare Durable Objects\n上的持久化进程 Overseer。Overseer\n扮演着操作系统内核的角色，保存着工作区的完整状态、协作者关系，以及由各个驱动报备上来的历史观察集合。这么一设计，驱动按合同应当读了什么都向内核报备，内核再拿着这本账本去把控工作区的入口。需要说明的是，这套完整报备依赖每个驱动的正确实现，core\n并不能强制保证分页、子\nsession、缓存等边缘路径上不漏记。安全防线找到了收敛的支点，但这个支点的牢固程度取决于驱动的实现质量。\n把授权拉长到读取后与共享时：观察记录与双向不变量\n在这个支点上，Cloudflare OS 解决 Alice 和 Bob\n困局的思路是：不在分享瞬间去解析看板内容，而是在内核里维持一套双向不变量。\n第一个动作发生在读取数据时。每当 Agent\n通过驱动去外部取数据，驱动必须显式调用\nauthorizeObservation()\n接口\n。内核把这次读取的数据源 ID 和所需权限存进持久化的 Observation\nSet 清单里。工作区不仅记录了用户发过什么\nPrompt，还记下了这个工作区吸收过哪些受控数据源。\n第二个动作发生在\n打开与分享拦截路径\n上，内核实施双向把关：\n入口重验（协作者打开时）\n：当 Bob 尝试打开 Alice\n分享的工作区时，Overseer 会取出该工作区积累的所有观察记录，用 Bob\n的身份凭据逐一向底层 API 发起重新校验。只要 Bob\n缺少其中任何一个数据源的读取权限，Overseer 就会阻断 Bob\n打开该工作区。\n后序阻断（共享后新读取）\n：如果工作区已经被 Alice 和\nBob 共享，当 Alice 在后续对话中想让 Agent 读一个新的敏感源时，Overseer\n在 Gatekeeper\n准备读取前就会拦截该请求，因为允许这次读取会导致工作区的观察集合超出 Bob\n的权限范围。\n闭锁降级（Fail-closed 机制）\n：对于某些标记为仅\nOwner 可读的高敏感数据源，一旦在工作区中读取后，Overseer\n会立即锁定该工作区，禁止添加新的协作者，同时切断外部公开的网络获取接口。\n有了这套机制，系统不用费劲去理解看板内容，只要发现 Bob\n的权限包不住工作区历史吸纳的数据源清单，就能在入口处把风险掐断。\n坐标系定位：它与\nCapability、Taint Tracking 及 MCP 的关系\n理解了 Cloudflare OS\n的这套做法，咱们从安全理论和工程实践的角度，可以给它找个准确的位置。\n重新捋一遍它的物理过程：调用前不给全局密钥给受控句柄（如\nenv.PROJECT\n）；读取后在工作区追加数据源清单；分享和打开时拿清单跟接收者的身份做匹配；导出\nblueprint\n时只剥离数据和凭据，不做身份匹配。在安全坐标系里，这三步物理动作分别对应了对象能力代理、粗粒度观察污点标记和身份权益追溯。它没有停留在调用完就管不到的传统\nAPI\n关卡，也没有去走给每个字符做动态跟踪的高成本路线。它选在工作区这个粒度做记账，是在实现成本和实用安全之间做了一次务实的折中。\n明白了这个定位，也就看清了它和当下火热的 Model Context\nProtocol（MCP）的关系：MCP\n规范（2026-07-28）的核心在于工具调用的标准化、OAuth 授权以及调用前的\nScope 协商，管的是如何规范地去拿数据。Cloudflare OS\n管的是拿完数据之后的故事，在 MCP\n上层叠加了一层观察追溯和共享准入。两者在上下游各司其职，形成互补。\n在处理通用的 MCP 绑定时，Cloudflare OS 在\nMCP\n共享策略定义\n里采取了保守的态度：它不允许用户直接把带凭据的 MCP\n连接分享给别人。如果你想分享 Gadget，只能分享不带凭据和数据的 Blueprint\n代码模板，让新协作者用自己的账号去重新绑定。\n落地蓝图：如何为你自己的\nAgent 架构补齐这一层？\n看清这套设计的机制后，咱们搭建自己的企业级 Agent\n架构时，可以顺理成章把安全治理划分为三个平面：\n[ 1. 调用前平面 Pre-call Plane ]\nCapability 代理 / 动态 Scope / 凭据隔离 (如 env.PROJECT)\n│\n▼ (数据读取)\n[ 2. 读取后平面 Post-read Plane ]\nGatekeeper 显式记录 ──► Overseer 动态 Observation Set 清单\n│\n▼ (上下文/产物分享)\n[ 3. 传播与出口平面 Pre-egress Plane ]\nWorkspace / 产物准入校验（Cloudflare OS 已做）\n──► 统一 Egress Sink Policy（需自行补齐，Cloudflare OS 当前未做）\n调用前平面\n：继续贯彻 Capability 思想。别在 Agent\n上下文中直传全局 API 密钥，统一用有限权限的代理句柄或临时凭据。\n读取后平面\n：在数据接入层强制埋点。只要发生了外部数据读取，必须向服务端持久化上下文写入\nObservation Set，把账本记明白。\n传播与出口平面\n：在工作区打开、分享时调用统一的策略引擎，比对受众身份与历史账本。向外发请求的统一出口检查需要自行补齐——Cloudflare\nOS 当前只做了 share/open\n准入，webFetch、模型调用等外发渠道走各自不同的控制路径。\n当然，咱们也没必要在所有项目里都搞这么重。结合实践，建议大家按场景做取舍：\n场景类型\n是否需要观察追溯与受众重验\n架构建议\n单用户受控终端 / 本地\nCLI\n不需要\n传统的 API Key\n加本地沙箱足够，没必要加内核开销。\n单人使用但具备公开 Web\n导出\n简易需要\n重点把守出口检查，防止公开 Fetch\n泄露数据。\n企业多人共享\nWorkspace\n必须构建\n必须建立 Observation Set\n清单，并在打开与分享节点做身份重验。\n跨部门数据协同分析\n必须构建（需升级）\n在工作区记账的基础上，把标记做细到文件或产物粒度，避免过度污染。\n从工具调用的瞬间拦截，走向工作区级的观察追溯与共享准入，是 Agent\n从个人助手走向企业生产力系统绕不开的一关。Cloudflare OS\n用一套贴切的操作系统隐喻帮咱们把路探了出来，它推进了授权模型，但尚未完成从资源、产物到所有出口的端到端闭环。至于如何把出口守严、把标记做细，就看咱们在实际工程里的手艺了。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/cloudflare-os-authorization-20260808.html",
-      "content_chars": 4542,
-      "content_sha256": "55d6fae8826535c83fc784443c607d6e5d76372209b170697c01503576e39024",
-      "content_fetched_at": "2026-08-10T21:51:05.912639+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-08-11",
+  "collect_window": {
+    "start": "2026-08-08T00:00:00+00:00",
+    "end": "2026-08-10T21:49:59.999600+00:00",
+    "hours": 69
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "31435629987",
+    "commit": "690d633"
+  },
+  "stats": {
+    "total": 7,
     "by_kind": {
       "publish": 7
     },
@@ -198,9 +29,581 @@
       "denizhalil-blogs": 1,
       "yage-share": 3
     },
+    "failed_lists": [
+      "r136a1",
+      "redsiege-blog"
+    ],
+    "sources_ok": 49,
+    "sources_failed": [
+      {
+        "id": "r136a1",
+        "error": "html_fetch:[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000); browser:Page.goto: net::ERR_CONNECTION_CLOSED at https://r136a1.dev/\nCall log:\n  - navigating to \"https://r136a1.dev/\", waiting until \"domcontentloaded\"\n"
+      },
+      {
+        "id": "redsiege-blog",
+        "error": "no_candidates"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 8,
+      "rss": 30
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 14,
+      "calls": 14,
+      "prompt_tokens": 15535,
+      "completion_tokens": 2775,
+      "total_tokens": 18310,
+      "prompt_cache_hit_tokens": 11264,
+      "prompt_cache_miss_tokens": 4271
+    },
     "by_content_status": {
       "failed": 2,
       "ok": 5
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:92ec5590c4abcf67",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html",
+      "at": "2026-08-10T21:49:59.999600+00:00",
+      "external_id": "a:92ec5590c4abcf67",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-10T21:50:42.686735+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-10T21:49:59.999600+00:00",
+      "collected_at": "2026-08-10T21:49:59.999600+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4766885.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:f237657b09f62203",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html",
+      "at": "2026-08-10T21:49:59.999600+00:00",
+      "external_id": "a:f237657b09f62203",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-10T21:50:53.556858+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-10T21:49:59.999600+00:00",
+      "collected_at": "2026-08-10T21:49:59.999600+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4766121.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:b4a689ad8e7d6d71",
+      "who": "zusda",
+      "who_url": "https://zusda.github.io/",
+      "action": "publish",
+      "target": "从零开始的LLM 9. A-MEM 与 LangChain/LangGraph学习",
+      "target_url": "https://zusda.github.io/2026/08/08/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-9/",
+      "text": "zusda published: 从零开始的LLM 9. A-MEM 与 LangChain/LangGraph学习",
+      "at": "2026-08-10T21:49:59.999600+00:00",
+      "external_id": "a:b4a689ad8e7d6d71",
+      "url": "https://zusda.github.io/2026/08/08/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-9/",
+      "title": "从零开始的LLM 9. A-MEM 与 LangChain/LangGraph学习",
+      "content": "前言\n本文将介绍 A-MEM 的核心原理、API 使用方法，以及如何基于 LangChain\n构建一个具备记忆能力的 Agent。\n经过前面的学习，我们已经系统地完成了大语言模型（LLM）的基础部分，主要参考了以下资料：\n《动手学深度学习》\n《蘑菇书》\n《Happy-LLM》\n《Hello-Agents》\n《all-in-rag》\n到这里，可以认为已经具备了继续深入学习 Agent 的基础能力。\n接下来的内容将不再像之前那样按照固定课程循序渐进，而是更多围绕当前\nAgent 领域的研究方向展开。学习内容既会涉及工程实践（如各种 Agent\n框架、工作流、记忆系统等），也会涉及算法与模型层面的探索（如多模态、持续学习等）。\nGenerative Agents\nLetta\nA-MEM\nVoyager\n这条路线主要围绕\nAgent 的持续学习（Continual\nLearning）\n展开，也是我目前最感兴趣的方向：\n如何让一个\nAgent\n在长期运行过程中不断积累经验、提升能力，而不是每次都从零开始。\n目前来看，大致有两种思路：\n不修改模型本身。\n仅通过\nPrompt、记忆系统（Memory）、RAG、工具调用等机制，使 Agent\n能够不断积累知识和经验，实现能力的持续增长。\n修改模型本身。\n基于 Agent\n长期运行过程中积累的对话、笔记和总结等数据，在合适的时机对模型进行持续训练（Continual\nFine-tuning），使模型真正将这些经验内化，而不仅仅依赖外部记忆。\n由于这一阶段更多是阅读论文、分析开源项目、验证实验以及整理个人理解，而不是单纯跟着教程学习，因此资料收集、实验和整理都会比之前花费更多时间。\n本章节主要是对 A-MEM 的学习和总结。A-MEM\n是一个挺有创意的设计，我认为「卡片化记忆」这个思路本身非常不错，但真正将这个想法落地，实现成一个可以运行的系统，又是另一件很厉害的事情。当然，A-MEM\n目前也存在一些问题，还有不少可以优化的空间。\n在学习 A-MEM 的过程中，我也重新熟悉了一遍如何使用 LangChain 构造\nAgent。因此，本文不会把重点全部放在 A-MEM\n的理论介绍上，而是会结合实际代码实现，探索如何构建一个带有 Memory 能力的\nAgent。\n除此之外，在调研 Memory 方案的过程中，我发现目前使用较多的方案之一是\nmem0。一个方案能够被大量使用，通常都有其存在的原因。因此，后续在学习\nVoyager 之前，我会先对 mem0\n的设计和实现进行学习，了解它为什么能够得到较广泛的应用。\n1. A-MEM原理\n论文链接：https://arxiv.org/abs/2502.12110\nA-MEM（Agentic Memory）的整体结构并不复杂，其核心思想是：\n将每次交互转换为结构化 memory\nnote，并通过记忆之间的关联和动态更新，使长期记忆逐渐形成一个可演化的记忆网络。\n1.1 Note 结构（Structured\nMemory Notes）\n对于每一个记忆\n\\(m_i\\)\n，A-MEM都会构建一个结构化 memory\nnote：\n\\[\nm_i=\\{c_i,t_i,K_i,G_i,X_i,e_i,L_i\\}\n\\]\n其中：\n\\(c_i\\)\n：对话内容，即用户的问题和\nLLM 的回答；\n\\(t_i\\)\n：该次交互发生的时间戳；\n\\(L_i\\)\n：关联记忆列表，保存与当前记忆存在语义关系的其他\nmemory id。\n除了原始的交互内容和时间信息外，A-MEM还会通过 LLM\n对当前记忆进行进一步分析，生成额外的结构化信息：\n\\[\nK_i,G_i,X_i \\leftarrow \\text{LLM}(c_i||t_i||P_{s1})\n\\]\n其中：\n\\(K_i\\)\n：关键词，用于表示当前记忆中的核心概念；\n\\(G_i\\)\n：标签，用于对记忆进行分类；\n\\(X_i\\)\n：内容描述，对当前记忆提供更加丰富的语义信息。\n简单来说：\n1\n关键词、tag、描述 = LLM(对话内容 + 时间戳)\n相比直接保存原始对话，这种方式能够提取出更适合检索的高层语义信息。\n之后，将原始对话内容以及生成的关键词、标签、描述进行拼接，并通过\nEncoder 转换成向量：\n\\[\ne_i=f_{enc}[\\text{concat}(c_i,K_i,G_i,X_i)]\n\\]\n其中：\n\\(e_i\\)\n是该 memory note\n的向量表示；\n它融合了原始交互内容以及 LLM 提取出的结构化信息，后续的 memory\n检索和关联发现都会基于该向量进行。\n1.2 记忆关联生成（Link\nGeneration）\n当新的记忆\n\\(m_n\\)\n加入系统时，A-MEM首先会寻找与它可能相关的已有记忆。\n首先，通过 embedding （\n\\(e_i\\)\n）计算新记忆与已有记忆之间的相似度：\n\\[\ns_{n,j}=\\frac{e_n * e_j}{|e_n|*|e_j|}\n\\]\n取出其中最相似的k个记忆\n\\(m_j\\)\n，他们组成集合\n\\(M^n_\\text{near}\\)\n\\[\nM^n_\\text{near}=\\{m_j|\\text{rank}(s_{n,j})\\le k,m_j \\in M\\}\n\\]\n这些记忆作为候选关联对象。\n随后，将新记忆\n\\(m_n\\)\n和候选记忆集合\n\\(M^n_{near}\\)\n输入\nLLM，让模型进一步判断它们之间是否存在语义关系，如果 LLM 判断两个 memory\n之间存在关联，则会将对应 memory id 添加到\n当前 memory\n的\n\\(L_n\\)\n中。：\n\\[\nL_n \\leftarrow \\text{LLM}(m_n||M^n_\\text{near}||P_{s2})\n\\]\n整体流程：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n新memory\n↓\nEmbedding相似度检索\n↓\n获取候选memory\n↓\nLLM判断关系\n↓\n建立memory link\n这里可以看到：\nEmbedding 负责快速筛选可能相关的 memory；\nLLM 负责进一步理解语义关系并决定是否建立连接。\n相比单纯的向量检索，memory link 可以让不同记忆之间形成显式关系。\n1.3 记忆演化（Memory Evolution）\n除了建立新的关联，A-MEM还会根据新产生的 memory\n对已有相关\nmemory 进行更新\n。\n对于候选集合\n\\(M^n_{near}\\)\n中的每一个记忆\n\\(m_j\\)\n：\n\\[\nm^*_j \\leftarrow \\text{LLM}(m_n||m_j||P_{s3})\n\\]\nLLM 会分析新旧 memory 之间的关系，并更新已有 memory\n的内容，包括：\n内容描述；\n关键词；\n标签。\n例如：\n已有 memory：用户正在学习机器学习。\n新增 memory：用户最近开始学习 PyTorch。\n经过更新后，memory 可以变成：用户正在学习机器学习，并开始深入学习\nPyTorch。\n这里我认为也是 A-MEM 一个可以进一步改进的地方。\n目前 A-MEM主要采用\n更新机制\n，即通过新信息优化已有\nmemory，但是没有进一步处理：\n两条 memory 高度重复时，是否应该合并；\n新旧 memory 发生冲突时，如何判断哪个信息更加可靠；\n长期无效或者过时的 memory 是否应该删除。\n因此，可以进一步加入：\n1\n2\n3\nmemory merge（记忆合并）\nmemory conflict resolution（冲突解决）\nmemory forgetting（记忆遗忘）\n等机制，使长期记忆管理更加完善。\n1.4 相关记忆检索（Retrieve\nRelative Memory）\n在每次 LLM 回复之前，A-MEM都会执行一次 memory retrieval。\n具体流程如下：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n用户问题\n↓\nEmbedding编码\n↓\n向量相似度搜索\n↓\n获取Top-k相关memory\n↓\n加入Prompt\n↓\nLLM生成回答\n具体来说：\n将用户当前问题转换成向量；\n与已有 memory 的 embedding 计算相似度；\n获取最相关的 k 条 memory；\n将检索到的 memory 与用户问题一起输入 LLM。\n1.5 总结\nA-MEM的核心并不是提出一种新的向量检索方法，而是\n重新设计了长期\nmemory 的组织方式\n。\nA-MEM 与传统的历史聊天记录存储方案（例如 Letta 的 recall\nmemory）最大的区别在于：\n传统方案\n更接近“\n历史聊天记录数据库 +\n向量检索\n”，而 A-MEM\n更关注如何将历史交互转换为可组织、可关联、可演化的长期记忆。\n传统 recall memory 的流程：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n历史聊天记录\n↓\nEmbedding编码\n↓\n向量检索\n↓\n找到相关历史对话\n↓\n加入Prompt\n↓\nLLM生成回答\n这种方式本质上是对过去对话的检索。当用户再次提到相关内容时，系统通过相似度找到之前的聊天记录，并将其提供给\nLLM。\n而 A-MEM 的流程：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n用户交互\n↓\n生成结构化memory note\n↓\n建立memory link\n↓\n更新已有memory\n↓\n形成memory网络\n↓\n检索相关memory\n↓\nLLM生成回答\nA-MEM 不只是保存“过去发生了什么”，而是进一步提取：\n关键词；\n标签；\n内容描述；\n记忆之间的关联关系。\n因此，memory\n不再是一堆独立的历史记录，而是逐渐形成一个具有结构和关系的知识网络。\n这里要提一点。可能初学者不太区分\n长期记忆（Long-term\nMemory）\n和\n短期记忆（Short-term Memory）\n。\nA-MEM主要针对的是长期记忆，因此采用类似 RAG\n的方式，通过向量检索获取与当前问题相关的历史 memory 是合理的。\n而短期记忆主要指当前会话中的上下文（多轮对话历史）。由于这些信息通常距离当前问题较近，不需要额外进行复杂的检索，可以直接根据上下文窗口大小进行裁剪，并放入\nPrompt 中。\n2. LangChain 和 LangGraph 学习\n首先需要说明LangChain 和 LangGraph 两者之间的关系。\n简单来说：\nLangChain 主要负责提供构建 LLM\n应用的基础组件。\nLangGraph 主要负责定义这些组件之间的执行流程。\n二者通常配合使用。\n可以简单理解：\nLangChain 提供 Agent 的各种“零件”，LangGraph\n负责把这些零件按照一定流程组织起来。\n2.1 LangChain\nLangChain 是一个用于构建 LLM\n应用的开发框架，主要提供各种基础能力，例如：\n定义模型：\n1\n2\nfrom\nlangchain_ollama\nimport\nChatOllama\nllm = ChatOllama(model=\n\"qwen2.5:7b\"\n, temperature=\n0\n)\n调用模型：\n1\nllm.invoke(messages)\n定义工具：\n1\n2\n3\n@tool\ndef\nsearch_memory\n(\nquery:\nstr\n):\n...\n绑定工具：\n1\nllm.bind_tools(tools)\n还有其他向量库等各种零件工具。\n2.2 LangGraph\nLangGraph 主要负责 Agent 的流程编排。\n它提供：\nState（全局状态）\nNode（节点）\nEdge（节点连接）\nConditional Edge（条件分支）\n2.2.1 LangChain 的消息系统\nLangChain 使用统一的消息抽象：\n1\nBaseMessage\n是所有消息类型的基类。\n常见消息：\n消息类型\n作用\nHumanMessage\n用户输入\nAIMessage\nLLM输出\nSystemMessage\n系统提示\nToolMessage\n工具执行结果\n一次完整 Agent 流程如下。\na. 用户输入\n用户：\n1\n帮我查北京天气\n转换为：\n1\n2\n3\nHumanMessage(\ncontent=\n\"帮我查北京天气\"\n)\n此时状态：\n1\n2\n3\nmessages=[\nHumanMessage(\n\"帮我查北京天气\"\n)\n]\nb. LLM 判断调用工具\nLLM 根据当前绑定的工具，决定调用天气查询工具：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nAIMessage(\ncontent=\n\"\"\n,\ntool_calls=[\n{\n\"name\"\n:\n\"weather\"\n,\n\"args\"\n:{\n\"city\"\n:\n\"北京\"\n}\n]\n)\n注意：\n这里的 AIMessage 不是最终回答。\n它表示：\nLLM 请求执行 weather 工具。\n此时：\n1\n2\n3\n4\n5\n6\n7\n8\n9\nmessages=[\nHumanMessage(\n\"帮我查北京天气\"\n),\nAIMessage(\ntool_calls=[\nweather(\n\"北京\"\n)\n]\n)\n]\nc. ToolNode 执行工具\nToolNode 读取：\n1\nAIMessage.tool_calls\n找到对应工具并执行。\n工具返回：\n1\n2\n3\n4\nToolMessage(\ncontent=\n\"北京今天晴，25度\"\n,\ntool_call_id=\n\"xxx\"\n)\n状态：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nmessages=[\nHumanMessage(...),\nAIMessage(\ntool_calls=[weather]\n),\nToolMessage(\ncontent=\n\"北京今天晴，25度\"\n)\n]\nd. LLM 生成最终答案\nLLM 根据工具返回结果继续生成：\n1\n2\n3\nAIMessage(\ncontent=\n\"北京今天晴，气温25度。\"\n)\n最终：\n1\n2\n3\n4\n5\n6\n7\n8\n9\nmessages=[\nHumanMessage,\nAIMessage(tool_call),\nToolMessage,\nAIMessage(answer)\n]\n2.2.2 全局状态（State）\nLangGraph 中，所有节点共享一个状态对象（State）。\n例如：\n1\n2\nclass\nAgentState\n(\nTypedDict\n):\nmessages:\nSequence\n[BaseMessage]\n这里使用 Python 的\nTypedDict\n定义 State 的结构，即\nState 本质上是一个字典\n，其中\nmessages\n字段保存由多个\nBaseMessage\n对象组成的消息序列，例如：\n1\n2\n3\n4\n5\n6\n{\n\"messages\"\n: [\nHumanMessage(...),\nAIMessage(...)\n]\n}\n如果希望 LangGraph 在更新\nmessages\n时自动合并新旧消息，而不是直接覆盖，可以使用\nAnnotated\n指定\nreducer：\n1\n2\n3\n4\n5\n6\n7\nfrom\ntyping\nimport\nAnnotated,\nSequence\n, TypedDict\nfrom\nlanggraph.graph.message\nimport\nadd_messages\nclass\nAgentState\n(\nTypedDict\n):\nmessages: Annotated[\nSequence\n[BaseMessage],\nadd_message\n]\n其中，\nAnnotated\n为\nmessages\n附加了\nadd_messages\n这一更新规则。也就是说，当节点返回新的\nmessages\n时，\n不会直接覆盖原有消息\n，而是由\nadd_messages\n将新旧消息进行合并，从而保留之前的消息。例如原来有\n[HumanMessage]\n，节点返回\n[AIMessage]\n，经过\nadd_messages\n后会变成\n[HumanMessage, AIMessage]\n。\n我们也可以自定义 reducer，例如只保留最近 50 条消息：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\ndef\nlimited_messages\n(\nold:\nSequence\n[BaseMessage],\nnew:\nSequence\n[BaseMessage]\n):\nmessages =\nlist\n(old) +\nlist\n(new)\nreturn\nmessages[-\n50\n:]\nclass\nAgentState\n(\nTypedDict\n):\nmessages: Annotated[\nSequence\n[BaseMessage],\nlimited_messages\n]\n定义好 State ，然后就是最开始的一步，创建图\n1\n2\n3\n4\n# ---------------------------------------------------------------------------\n# 5. 构建 LangGraph 图\n# ---------------------------------------------------------------------------\ngraph = StateGraph(AgentState)\n2.2.3 节点函数\nLangGraph 中的 Node 本质上就是一个普通 Python 函数。\n节点函数主要负责：\n接收当前全局状态（State）；\n根据任务进行处理；\n返回需要更新的状态字段。\n1\n2\n3\n4\n5\n6\ndef\nretrieve_context\n(\nstate: AgentState\n) -> AgentState:\n...\nsystem_note = SystemMessage(\ncontent=\nf\"以下是与当前问题相关的历史记忆，可参考但不必照搬:\\n\n{context_text}\n\"\n)\nreturn\n{\n\"messages\"\n: [system_note]}\n这里的：\n1\nreturn\n{\n\"messages\"\n: [system_note]}\n并不是直接修改全局状态，而是告诉 LangGraph：\n当前节点需要更新\nmessages\n字段。\nLangGraph 会将节点的返回值识别为\nState\nUpdate\n，然后根据\nAgentState\n中定义的 reducer\n处理新旧状态，最后更新全局 State，并将更新后的 State\n传递给下一节点。\n节点也可以直接通过\nstate[\"messages\"]\n修改状态，例如：\n1\n2\n3\ndef\nretrieve_context\n(\nstate: AgentState\n):\nstate[\n\"messages\"\n].append(system_note)\nreturn\nstate\n但通常不推荐这样做。\nLangGraph 的设计是让节点通过\nreturn\n返回\nState\nUpdate\n，再由 LangGraph 统一处理状态更新。这样可以：\n由 reducer 统一决定新旧状态如何合并；\n避免节点直接修改共享 State；\n使节点的输入、输出更加明确，便于维护和调试。\n因此，更推荐：\n1\nreturn\n{\n\"messages\"\n: [system_note]}\n而不是直接修改：\n1\nstate[\n\"messages\"\n].append(system_note)\n另外，节点不需要返回完整的\nAgentState\n，只需要\n返回需要更新的字段\n即可。\n定义节点函数后，需要将其\n添加到 LangGraph 图\n中：\n1\n2\n3\n4\ngraph.add_node(\n\"retrieve_context\"\n,\nretrieve_context\n)\n其中：\n\"retrieve_context\"\n：节点名称，用于后续定义边（Edge）时引用；\nretrieve_context\n：实际执行的 Python 函数。\n2.2.4 流程控制（Edge）\nEdge 用于定义 LangGraph 中节点之间的执行关系，可以简单理解为：\n指定一个节点执行完成后，下一步进入哪个节点。\n首先定义入口节点，注意这里填写的是\n节点名称\n：\n1\ngraph.set_entry_point(\n\"retrieve_context\"\n)\n普通边\n添加普通单向边：\n1\ngraph.add_edge(\n\"retrieve_context\"\n,\n\"agent\"\n)\n即\nretrieve_context\n节点执行完成后，进入\nagent\n节点。\n条件边（Conditional Edge）\n除了固定流向外，LangGraph 也支持根据条件动态选择下一节点：\n1\n2\n3\n4\n5\ngraph.add_conditional_edges(\n\"agent\"\n,\ntools_condition,\n{\n\"tools\"\n:\n\"tools\"\n,\n\"__end__\"\n:\n\"persist\"\n},\n)\n其中：\n\"agent\"\n：表示从哪个节点开始判断；\ntools_condition\n：条件判断函数；\n字典：定义条件函数返回值对应的目标节点。\n条件函数的返回值必须是字符串\n，并且该字符串需要存在于映射表中。\n例如，条件函数执行完后返回如下字符：\n1\nreturn\n\"tools\"\n会根据\n{\"tools\": \"tools\", \"__end__\": \"persist\"},\n进入tool节点。\n2.2.5 工具处理（Tool）\nLangGraph 提供了预构建工具节点：\n1\nfrom\nlanggraph.prebuilt\nimport\nToolNode, tools_condition\n其中：\nToolNode\n：负责执行工具调用；\ntools_condition\n：负责判断是否需要调用工具。\n定义工具\n首先通过 LangChain 的\n@tool\n装饰器定义工具：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n@tool\ndef\nsave_memory\n(\ncontent:\nstr\n, tags:\nstr\n=\n\"\"\n, category:\nstr\n=\n\"General\"\n) ->\nstr\n:\n\"\"\"把一条重要信息主动写入长期记忆(A-MEM)。tags 用逗号分隔，如 \"项目,决策\"。\"\"\"\n...\nreturn\nf\"已写入记忆，memory_id=\n{memory_id}\n\"\n@tool\ndef\nsearch_memory\n(\nquery:\nstr\n, k:\nint\n=\n5\n) ->\nstr\n:\n\"\"\"在长期记忆(A-MEM)中检索与 query 语义相关的历史笔记，k 为返回条数。\"\"\"\n...\nreturn\n\"\\n\"\n.join(lines)\n@tool\n会根据函数名称、参数类型、描述信息等\n自动生成 Tool\nSchema\n，使 LLM 能够理解：\n工具名称；\n工具作用；\n参数格式。\n然后将工具保存：\n1\ntools = [save_memory, search_memory]\n绑定工具到 LLM\nLLM 通过\nbind_tools()\n将工具信息提供给模型：\n1\n2\n3\n4\nllm = ChatOllama(\nmodel=\n\"qwen2.5:7b\"\n,\ntemperature=\n0\n).bind_tools(tools)\n此时工具的名称、描述、参数结构等信息会被 LangChain\n添加到模型输入中。\n在真正发送给模型前，LangChain 会根据模型对应的 Chat\nTemplate，将消息和工具定义转换成模型能够理解的格式。\n现代 LLM 通常通过特殊 token 和结构化消息格式处理工具调用，例如：\n模型通过这些信息知道：\n当前有哪些工具可以调用；\n每个工具的作用；\n工具需要哪些参数；\n如何生成符合格式的\ntool_calls\n。\n创建工具节点\n通过：\n1\n2\n3\n4\ngraph.add_node(\n\"tools\"\n,\nToolNode(tools)\n)\n添加工具节点。\nToolNode(tools)\n可以理解为：\n一个专门执行 LLM 工具调用请求的节点。\n它主要负责：\n获取 LLM 输出中的\ntool_calls\n；\n根据工具名称找到对应函数；\n执行工具；\n将结果转换为\nToolMessage\n。\n例如 LLM 输出：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nAIMessage(\ntool_calls=[\n{\n\"name\"\n:\n\"search_memory\"\n,\n\"args\"\n: {\n\"query\"\n:\n\"项目资料\"\n}\n]\n)\nToolNode 接收到后，会转换并执行：\n1\nsearch_memory(query=\n\"项目资料\"\n)\n然后返回：\n1\n2\n3\nToolMessage(\ncontent=\n\"检索结果...\"\n)\ntools_condition 判断工具调用\n在 Agent 流程中，LLM 节点执行完成后，需要判断下一步应该：\n调用工具；\n还是直接生成最终答案。\n1\n2\n3\n4\n5\n6\n7\nfrom\nlanggraph.prebuilt\nimport\nToolNode, tools_condition\n# tools_condition: 若 LLM 触发了 tool_calls -> \"tools\"，否则 -> \"__end__\"\ngraph.add_conditional_edges(\n\"agent\"\n,\ntools_condition,\n{\n\"tools\"\n:\n\"tools\"\n,\n\"__end__\"\n:\n\"persist\"\n},\n)\ntools_condition\n的作用：\n检查最后一条\nAIMessage\n是否包含\ntool_calls\n，并根据结果返回对应的路由名称。\n如果 LLM 决定调用工具：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nAIMessage(\ncontent=\n\"\"\n,\ntool_calls=[\n{\n\"name\"\n:\n\"search_memory\"\n,\n\"args\"\n: {\n\"query\"\n:\n\"项目资料\"\n}\n]\n)\n此时：\n1\ntools_condition(state)\n返回：\n1\n\"tools\"\n如果 LLM 不需要调用工具，直接生成回答：\n1\n2\n3\nAIMessage(\ncontent=\n\"答案是...\"\n)\n由于不存在\ntool_calls\n，因此：\n1\ntools_condition(state)\n返回：\n1\n\"__end__\"\n进入结束流程。\n需要注意，\ntools_condition\n不会执行工具\n，它只负责判断下一步流程。\n实际执行工具的是：\n1\nToolNode(tools)\n2.3 Graph应用运行与会话管理\n在完成 Graph 构建后，主程序主要负责\n初始化 Graph\n应用\n、\n配置会话状态\n、\n处理用户交互\n以及\n执行\nAgent 流程\n。\n2.3.1 配置Graph状态持久化\n首先，需要为 Graph 添加状态保存能力：\n1\n2\n3\n4\n5\nfrom\nlanggraph.checkpoint.memory\nimport\nMemorySaver\napp = graph.\ncompile\n(\ncheckpointer=MemorySaver()\n)\n注意：如果不配置\ncheckpointer=MemorySaver()\n，Graph\n执行过程中的状态不会被保存，每次调用\ninvoke()\n都会从初始状态开始，无法保留历史对话。\ncheckpointer机制\ncheckpointer\n是 LangGraph 中用于\n保存和恢复 Graph\n状态（state）\n的组件，可以理解为 Graph 的\"存档系统\"。\n在 LangGraph 中，节点之间通过\nstate\n传递数据，例如：\n1\n2\nclass\nAgentState\n(\nTypedDict\n):\nmessages: Annotated[\nSequence\n[BaseMessage], add_messages]\n其中\nmessages\n保存当前会话产生的消息。\n如果没有配置\ncheckpointer\n，这些状态只存在于当前一次\nGraph 执行过程中。当\ninvoke()\n结束后，状态不会被保存，下一次调用无法继续之前的会话。\n配置\ncheckpointer\n后，LangGraph 会在执行过程中保存当前\nstate 的 checkpoint，并与\nthread_id\n关联。当下一次使用相同\nthread_id\n调用 Graph 时，会自动恢复对应的 state。\n常见checkpointer实现\nLangGraph提供了多种状态存储方式：\n实现\n说明\n适用场景\nMemorySaver\n保存在内存中，程序退出后丢失\n本地开发、调试\nSqliteSaver\n保存到SQLite文件\n单机应用、小规模持久化\nPostgresSaver\n保存到PostgreSQL\n生产环境、多实例部署\nthread_id机制\ncheckpointer\n需要通过唯一标识区分不同会话，这个标识就是：\n1\nconfig[\n\"configurable\"\n][\n\"thread_id\"\n]\n这里的\n\"thread_id\"\n是 LangGraph checkpoint\n机制规定的固定字段，而不是自定义名称。\ncheckpointer\n在保存和读取 state 时，会从：\n1\nconfig[\n\"configurable\"\n]\n中获取：\n1\nthread_id\n并将其作为当前会话状态的索引。\n因此：\n相同\nthread_id\n：恢复之前保存的状态；\n不同\nthread_id\n：创建新的独立状态。\n2.3.2 会话模式设计\n基于\nthread_id\n，可以实现两种不同的会话模式。\n模式一：固定thread_id（开启短期记忆）\n固定使用一个 session：\n1\nthread_id = FIXED_THREAD_ID\n此时，之前的消息会一直保存在\nmessages\n中。\n例如：\n第一次调用：\n1\n2\n3\n4\nmessages=[\nHumanMessage(\n\"你好\"\n),\nAIMessage(\n\"你好\"\n)\n]\n第二次调用：\n1\n2\n3\n4\n5\nmessages=[\nHumanMessage(\n\"你好\"\n),\nAIMessage(\n\"你好\"\n),\nHumanMessage(\n\"介绍一下自己\"\n)\n]\n新的消息会追加到已有消息列表中，并作为当前 Graph state 继续传递。\n这种模式适用于：\n多轮聊天机器人；\n需要上下文理解的 Agent；\n普通对话场景。\n模式二：每轮新thread_id（关闭短期记忆）\n每次生成新的：\n1\nthread_id = uuid.uuid4().\nhex\n此时每轮对话都是独立 session，不会携带之前的\nmessages\n。\n这种方式适合测试长期记忆能力：\n不依赖短期上下文；\n通过 Memory / RAG 检索历史信息；\n验证 Agent 是否真正使用长期记忆。\n实际代码中，可以通过开关控制两种模式：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nwhile\nTrue\n:\nuser_input =\ninput\n(\n\"你: \"\n).strip()\nif\nuser_input.lower()\nin\n(\n\"exit\"\n,\n\"quit\"\n,\n\"退出\"\n):\nbreak\n# 根据开关生成 thread_id\nif\nUSE_PERSISTENT_THREAD:\nthread_id = FIXED_THREAD_ID\nelse\n:\nthread_id = uuid.uuid4().\nhex\n# 每次随机生成新 ID\n随后生成 Graph 配置：\n1\nconfig = {\n\"configurable\"\n: {\n\"thread_id\"\n: thread_id}}\n2.3.3 Graph执行流程\n在调用 Graph 前，需要先获取当前 thread 已保存的消息。\n这里主要用于：\n判断本轮新增消息；\n打印 Agent 执行过程中的工具调用和返回结果。\n代码：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n# 记录本轮开始前的消息 ID（用于打印新增内容）\ntry\n:\nprev_snapshot = app.get_state(config)\nif\nprev_snapshot.values:\nprev_messages = prev_snapshot.values.get(\n\"messages\"\n, [])\nelse\n:\nprev_messages = []\nprev_ids = {m.\nid\nfor\nm\nin\nprev_messages}\nexcept\nException:\n# 如果 thread_id 从未使用过，get_state 可能报错，视为空历史\nprev_ids =\nset\n()\n然后将用户输入传入 Graph：\n1\n2\n3\n4\nresult = app.invoke(\n{\n\"messages\"\n: [HumanMessage(content=user_input)]},\nconfig=config,\n)\nresult\n是\n这一次\ninvoke()\n执行结束后返回的最终 state（Graph状态快照）\n。\nresult[\"messages\"]\n中包含整个 Graph\n执行过程产生的消息，包括：\n用户消息；\nAI 回复；\n工具调用消息；\n工具执行结果。\n2.3.4 打印新增消息\n由于：\n1\nresult[\n\"messages\"\n]\n包含历史消息，因此需要过滤出本轮新增内容：\n1\nnew_messages = [m\nfor\nm\nin\nresult[\n\"messages\"\n]\nif\nm.\nid\nnot\nin\nprev_ids]\n然后根据消息类型进行打印：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n# 打印本轮新增消息（工具调用等）\nfor\nm\nin\nnew_messages:\nrole =\ntype\n(m).__name__\nif\nisinstance\n(m, AIMessage)\nand\nm.tool_calls:\nfor\ncall\nin\nm.tool_calls:\nprint\n(\nf\"[\n{role}\n] 调用工具:\n{call[\n'name'\n]}\n(\n{call[\n'args'\n]}\n)\"\n)\nelif\nisinstance\n(m, ToolMessage):\nprint\n(\nf\"[\n{role}\n] 工具结果:\n{m.content}\n\"\n)\nelse\n:\nprint\n(\nf\"[\n{role}\n]\n{m.content}\n\"\n)\nprint\n()\n例如：\n1\n2\n3\n4\n5\n6\n7\n8\n[HumanMessage] 查询天气\n[AIMessage] 调用工具:\nweather_api({\n'city'\n:\n'Tokyo'\n})\n[ToolMessage] 东京今天晴天\n[AIMessage] 今天东京天气晴朗\n代码中\nrole = type(m).__name__\n用于获取消息类型名称。\n1\n2\n3\nm = AIMessage(content=\n\"hello\"\n)\ntype\n(m)\n# → <class 'langchain_core.messages.ai.AIMessage'> （这是类对象，不是字符串）\ntype\n(m).__name__\n# → \"AIMessage\" （这才是字符串，类名本身）\n3. A-MEM 使用以及 Agent 制作\n在第 2 章节中，已经介绍了 Agent 的整体实现流程。本章节主要补充 A-MEM\n的实际使用方式，以及如何将其接入 Agent 工作流。\nA-MEM 官方仓库： https://github.com/agiresearch/A-mem\n安装:\n1\n2\ngit clone https://github.com/agiresearch/A-mem.git\ncd\nA-mem && pip install .\n安装完成后导入：\n1\nfrom\nagentic_memory.memory_system\nimport\nAgenticMemorySystem\n虽然前面介绍了 A-MEM\n的核心思想，包括记忆生成、记忆关联以及检索机制，但实际使用时，A-MEM\n已经通过 API 封装好了大部分细节，我们主要关注以下几个接口：\n初始化记忆系统；\n添加记忆；\n检索记忆。\n3.1 初始化 A-MEM\n首先创建 A-MEM 记忆系统：\n1\n2\n3\n4\n5\nmemory_system = AgenticMemorySystem(\nmodel_name=\n\"paraphrase-multilingual-MiniLM-L12-v2\"\n,\nllm_backend=\n\"ollama\"\n,\nllm_model=\n\"qwen2.5:7b\"\n,\n)\n其中：\nmodel_name\n用于 ChromaDB 向量检索的\nembedding 模型\n；\n不是 LLM，仅负责文本向量化；\n默认使用\nsentence-transformers\n加载。\nllm_backend\n指定生成记忆时调用的 LLM 后端。\nllm_model\n指定具体使用的模型名称，需要与 Ollama\n中已经下载的模型名称保持一致。\n第一次运行时\nparaphrase-multilingual-MiniLM-L12-v2\n会通过\nsentence-transformers\n自动从 HuggingFace Hub\n下载模型权重，并缓存到：\n~/.cache/huggingface\n。该模型大小约几十\nMB。\n另外需要注意，默认情况下 A-MEM 使用的是内存版\nChromaRetriever，并没有启用持久化存储。\n因此：\n程序运行期间，记忆可以正常保存和检索；\n程序退出后，记忆数据会丢失。\n3.2 保存记忆\nA-MEM 提供\nadd_note()\n接口用于向记忆库中添加新的记忆。调用方式：\n1\n2\n3\n4\n5\nmemory_system.add_note(\ncontent=content,\ntags=tag_list,\ncategory=category\n)\n主要参数：\ncontent\n：记忆内容。\ntags\n：标签信息。\ncategory\n：记忆类别。\n在 Agent 中，可以封装成 Tool，让 LLM 根据上下文主动决定是否保存：\n1\n2\n3\n4\n5\n6\n@tool\ndef\nsave_memory\n(\ncontent:\nstr\n, tags:\nstr\n=\n\"\"\n, category:\nstr\n=\n\"General\"\n) ->\nstr\n:\n\"\"\"把一条重要信息主动写入长期记忆(A-MEM)。tags 用逗号分隔，如 \"项目,决策\"。\"\"\"\ntag_list = [t.strip()\nfor\nt\nin\ntags.split(\n\",\"\n)\nif\nt.strip()]\nmemory_id = memory_system.add_note(content=content, tags=tag_list, category=category)\nreturn\nf\"已写入记忆，memory_id=\n{memory_id}\n\"\n3.3 检索记忆\nA-MEM 使用\nsearch_agentic()\n接口检索相关记忆。\n调用方式：\n1\nresults = memory_system.search_agentic(query, k=k)\n其中\nquery\n是当前查询内容，\nk\n是初始检索数量。\n同样，将其封装成 Agent Tool：\n1\n2\n3\n4\n5\n6\n7\n8\n@tool\ndef\nsearch_memory\n(\nquery:\nstr\n, k:\nint\n=\n5\n) ->\nstr\n:\n\"\"\"在长期记忆(A-MEM)中检索与 query 语义相关的历史笔记，k 为返回条数。\"\"\"\nresults = memory_system.search_agentic(query, k=k)\nif\nnot\nresults:\nreturn\n\"未检索到相关记忆。\"\nlines = [\nf\"- [\n{r[\n'id'\n]}\n]\n{r[\n'content'\n]}\n(tags=\n{r.get(\n'tags'\n)}\n)\"\nfor\nr\nin\nresults]\nreturn\n\"\\n\"\n.join(lines)\n3.4 search_agentic 源码分析\n按照论文中的设计，A-MEM 的检索过程应该是：\n首先通过 embedding 相似度找到当前问题相关的 Top-K\n记忆，然后根据这些记忆之间建立的 link\n关系继续扩展，将关联记忆加入结果集合。\n因此理论上：\nsearch_agentic 返回的结果不应该只有 k 条，而应该包含初始检索得到的 k\n条记忆，以及这些记忆关联的其他记忆。\n但是查看实际源码后发现，当前实现与论文描述存在一定差异。\n源码首先通过 ChromaDB 获取相似度最高的 k 条记忆：\n1\nresults =\nself\n.retriever.search(query, k)\n然后将这些记忆加入：\n1\nmemories.append(memory_dict)\n之后遍历这些记忆，根据：\n1\nlinks = memory.get(\n'links'\n, [])\n获取关联记忆最多k条，并继续加入：\n1\nmemories.append(...)\n最后：\n1\nreturn memories[:k]\n直接截取前 k 条返回。\n因此实际流程是：\n根据向量相似度获取 k 条候选记忆；\n尝试添加关联记忆；\n最终只返回前 k 条。\n这意味着：\n如果返回数量不足 k，可能包含部分关联记忆；\n如果记忆数量足够，前 k 条通常仍然是最初的相似度检索结果；\n后续添加的关联记忆大概率会因为\n[:k]\n被截断。\n所以当前版本的\nsearch_agentic()\n实际效果更接近：\n基于向量相似度检索，并尝试补充关联记忆，但最终返回数量仍受到 k\n限制。\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\ndef\nsearch_agentic\n(\nself, query:\nstr\n, k:\nint\n=\n5\n) ->\nList\n[\nDict\n[\nstr\n,\nAny\n]]:\n\"\"\"Search for memories using ChromaDB retrieval.\"\"\"\nif\nnot\nself\n.memories:\nreturn\n[]\ntry\n:\n# Get results from ChromaDB\nresults =\nself\n.retriever.search(query, k)\n...\n# Process ChromaDB results\nfor\ni, doc_id\nin\nenumerate\n(results[\n'ids'\n][\n0\n][:k]):\n...\n# Create result dictionary with all metadata fields\nmemory_dict = {\n'id'\n: doc_id,\n'content'\n: metadata.get(\n'content'\n,\n''\n),\n'context'\n: metadata.get(\n'context'\n,\n''\n),\n'keywords'\n: metadata.get(\n'keywords'\n, []),\n'tags'\n: metadata.get(\n'tags'\n, []),\n'timestamp'\n: metadata.get(\n'timestamp'\n,\n''\n),\n'category'\n: metadata.get(\n'category'\n,\n'Uncategorized'\n),\n'is_neighbor'\n:\nFalse\n}\n...\nmemories.append(memory_dict)\nseen_ids.add(doc_id)\n# Add linked memories (neighbors)\nneighbor_count =\n0\nfor\nmemory\nin\nlist\n(memories):\n# Use a copy to avoid modification during iteration\nif\nneighbor_count >= k:\nbreak\n# Get links from metadata\nlinks = memory.get(\n'links'\n, [])\n...\nfor\nlink_id\nin\nlinks:\nif\nlink_id\nnot\nin\nseen_ids\nand\nneighbor_count < k:\nneighbor =\nself\n.memories.get(link_id)\nif\nneighbor:\nmemories.append({\n'id'\n: link_id,\n'content'\n: neighbor.content,\n'context'\n: neighbor.context,\n'keywords'\n: neighbor.keywords,\n'tags'\n: neighbor.tags,\n'timestamp'\n: neighbor.timestamp,\n'category'\n: neighbor.category,\n'is_neighbor'\n:\nTrue\n})\nseen_ids.add(link_id)\nneighbor_count +=\n1\nreturn\nmemories[:k]\n3.5 Agent 接入 A-MEM\n在 Agent\n流程中，我们会在\n每次对话开始前\n，进行一次\n长期记忆的读取\n，通过当前问题检索\nA-MEM 中相关的历史记忆，并将检索结果加入上下文。\n在\n每次对话结束后\n，我们会\n将本轮对话的内容保存\n到记忆库中，形成新的长期记忆。\n3.5.1 对话开始前读取长期记忆\n在 LangGraph 中增加一个节点，用于在 Agent 执行前检索相关记忆：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\ndef\nretrieve_context\n(\nstate: AgentState\n) -> AgentState:\nlast_user_msg =\nNone\nfor\nm\nin\nreversed\n(state[\n\"messages\"\n]):\nif\nisinstance\n(m, HumanMessage):\nlast_user_msg = m.content\nbreak\nif\nnot\nlast_user_msg:\nreturn\n{}\n# 不是 return state\n# LangGraph 里空更新表示\"这个 channel 不变\"\nresults = memory_system.search_agentic(last_user_msg, k=\n5\n)\nif\nnot\nresults:\nreturn\n{}\n# 不是 return state\ncontext_text =\n\"\\n\"\n.join(\nf\"-\n{r[\n'content'\n]}\n\"\nfor\nr\nin\nresults)\nsystem_note = SystemMessage(\ncontent=\nf\"以下是与当前问题相关的历史记忆，可参考但不必照搬:\\n\n{context_text}\n\"\n)\nreturn\n{\n\"messages\"\n: [system_note]}\n该节点主要完成两件事情：\n获取当前对话中的用户输入；\n调用 A-MEM 检索相关长期记忆，并作为\nSystemMessage\n添加到当前消息列表中。\n如果当前节点没有需要修改的 State，只需要返回空字典即可。\n3.5.2 对话结束后保存长期记忆\n在 Agent 完成回答后，将本轮对话保存到 A-MEM：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\ndef\npersist_turn\n(\nstate: AgentState\n) -> AgentState:\nlast_ai = state[\n\"messages\"\n][-\n1\n]\nif\nisinstance\n(last_ai, AIMessage)\nand\nnot\ngetattr\n(last_ai,\n\"tool_calls\"\n,\nNone\n):\nlast_user_msg =\n\"\"\nfor\nm\nin\nreversed\n(state[\n\"messages\"\n]):\nif\nisinstance\n(m, HumanMessage):\nlast_user_msg = m.content\nbreak\nmemory_system.add_note(\ncontent=\nf\"Q:\n{last_user_msg}\n\\nA:\n{last_ai.content}\n\"\n,\ntags=[\n\"conversation\"\n],\ncategory=\n\"Dialogue\"\n,\n)\nreturn\n{}\n# 不是 return state\n其他的节点构造，以及完整的节点连接等，可以参考以下完整agent代码：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86\n87\n88\n89\n90\n91\n92\n93\n94\n95\n96\n97\n98\n99\n100\n101\n102\n103\n104\n105\n106\n107\n108\n109\n110\n111\n112\n113\n114\n115\n116\n117\n118\n119\n120\n121\n122\n123\n124\n125\n126\n127\n128\n129\n130\n131\n132\n133\n134\n135\n136\n137\n138\n139\n140\n141\n142\n143\n144\n145\n146\n147\n148\n149\n150\n151\n152\n153\n154\n155\n156\n157\n158\n159\n160\n161\n162\n163\n164\n165\n166\n167\n168\n169\n170\n171\n172\n173\n174\n175\n176\n177\n178\n179\n180\n181\n182\n183\n184\n185\n186\n187\n188\n189\n190\n191\n192\n193\n194\n195\n196\n197\n198\n199\n200\n201\n202\n203\n204\n205\n206\n207\n208\n209\n210\n211\n212\n213\n214\n215\n216\n217\n218\n219\n220\n221\n222\n223\n224\n225\n226\n227\n228\n229\n230\n231\n232\n233\n234\n235\n236\n237\n238\n239\n240\n241\n242\n\"\"\"\nA-MEM + LangGraph Agent\n=======================\n集成 A-MEM (Agentic Memory) 作为长期记忆系统的 LangGraph agent 示例。\nA-MEM 仓库: https://github.com/agiresearch/A-mem\n安装:\ngit clone https://github.com/agiresearch/A-mem.git\ncd A-mem && pip install .\n依赖:\npip install langgraph langchain-openai langchain-core\n\"\"\"\nimport\nos\nfrom\ntyping\nimport\nAnnotated,\nSequence\n, TypedDict\nfrom\nlangchain_core.messages\nimport\n(\nAIMessage,\nBaseMessage,\nHumanMessage,\nSystemMessage, ToolMessage,\n)\nfrom\nlangchain_core.tools\nimport\ntool\nfrom\nlangchain_openai\nimport\nChatOpenAI\nfrom\nlanggraph.graph\nimport\nEND, StateGraph\nfrom\nlanggraph.graph.message\nimport\nadd_messages\nfrom\nlanggraph.prebuilt\nimport\nToolNode, tools_condition\n# A-MEM 官方 API：https://github.com/agiresearch/A-mem\nfrom\nagentic_memory.memory_system\nimport\nAgenticMemorySystem\n# ---------------------------------------------------------------------------\n# 1. 初始化 A-MEM 记忆系统\n# ---------------------------------------------------------------------------\nmemory_system = AgenticMemorySystem(\nmodel_name=\n\"paraphrase-multilingual-MiniLM-L12-v2\"\n,\n# ChromaDB 用的 embedding 模型（本地，非LLM，不用改）\nllm_backend=\n\"ollama\"\n,\n# openai -> ollama\nllm_model=\n\"qwen2.5:7b\"\n,\n# gpt-4o-mini -> qwen2.5:7b（要跟 ollama pull 的名字一致）\n)\n# \"paraphrase-multilingual-MiniLM-L12-v2\"\n# 第一次用的时候，sentence-transformers 库自动从 HuggingFace Hub 下载一次模型权重（几十 MB，缓存到 ~/.cache/huggingface）\n# 用的默认就是纯内存版 ChromaRetriever，根本没有走持久化路径，程序一退出数据就没了。\n# ---------------------------------------------------------------------------\n# 2. 把 A-MEM 的读写能力包装成 LangChain Tool，供 agent 在推理中主动调用\n# ---------------------------------------------------------------------------\n@tool\ndef\nsave_memory\n(\ncontent:\nstr\n, tags:\nstr\n=\n\"\"\n, category:\nstr\n=\n\"General\"\n) ->\nstr\n:\n\"\"\"把一条重要信息主动写入长期记忆(A-MEM)。tags 用逗号分隔，如 \"项目,决策\"。\"\"\"\ntag_list = [t.strip()\nfor\nt\nin\ntags.split(\n\",\"\n)\nif\nt.strip()]\nmemory_id = memory_system.add_note(content=content, tags=tag_list, category=category)\nreturn\nf\"已写入记忆，memory_id=\n{memory_id}\n\"\n@tool\ndef\nsearch_memory\n(\nquery:\nstr\n, k:\nint\n=\n5\n) ->\nstr\n:\n\"\"\"在长期记忆(A-MEM)中检索与 query 语义相关的历史笔记，k 为返回条数。\"\"\"\nresults = memory_system.search_agentic(query, k=k)\nif\nnot\nresults:\nreturn\n\"未检索到相关记忆。\"\nlines = [\nf\"- [\n{r[\n'id'\n]}\n]\n{r[\n'content'\n]}\n(tags=\n{r.get(\n'tags'\n)}\n)\"\nfor\nr\nin\nresults]\nreturn\n\"\\n\"\n.join(lines)\ntools = [save_memory, search_memory]\n# llm = ChatOpenAI(model=\"gpt-4o-mini\", temperature=0).bind_tools(tools)\nfrom\nlangchain_ollama\nimport\nChatOllama\nllm = ChatOllama(model=\n\"qwen2.5:7b\"\n, temperature=\n0\n).bind_tools(tools)\n# ---------------------------------------------------------------------------\n# 3. LangGraph 状态定义\n# ---------------------------------------------------------------------------\n# class AgentState(TypedDict):\n# messages: Annotated[Sequence[BaseMessage], add_messages]\n#\ndef\nlimited_messages\n(\nold:\nSequence\n[BaseMessage],\nnew:\nSequence\n[BaseMessage]\n):\nmessages =\nlist\n(old) +\nlist\n(new)\nreturn\nmessages[-\n50\n:]\nclass\nAgentState\n(\nTypedDict\n):\nmessages: Annotated[\nSequence\n[BaseMessage],\nlimited_messages\n]\n# ---------------------------------------------------------------------------\n# 4. 节点定义\n# ---------------------------------------------------------------------------\ndef\nretrieve_context\n(\nstate: AgentState\n) -> AgentState:\nlast_user_msg =\nNone\nfor\nm\nin\nreversed\n(state[\n\"messages\"\n]):\nif\nisinstance\n(m, HumanMessage):\nlast_user_msg = m.content\nbreak\nif\nnot\nlast_user_msg:\nreturn\n{}\n# 不是 return state\n# LangGraph 里空更新表示\"这个 channel 不变\"\nresults = memory_system.search_agentic(last_user_msg, k=\n5\n)\nif\nnot\nresults:\nreturn\n{}\n# 不是 return state\ncontext_text =\n\"\\n\"\n.join(\nf\"-\n{r[\n'content'\n]}\n\"\nfor\nr\nin\nresults)\nsystem_note = SystemMessage(\ncontent=\nf\"以下是与当前问题相关的历史记忆，可参考但不必照搬:\\n\n{context_text}\n\"\n)\nreturn\n{\n\"messages\"\n: [system_note]}\ndef\ncall_model\n(\nstate: AgentState\n) -> AgentState:\nresponse = llm.invoke(state[\n\"messages\"\n])\nreturn\n{\n\"messages\"\n: [response]}\ndef\npersist_turn\n(\nstate: AgentState\n) -> AgentState:\nlast_ai = state[\n\"messages\"\n][-\n1\n]\nif\nisinstance\n(last_ai, AIMessage)\nand\nnot\ngetattr\n(last_ai,\n\"tool_calls\"\n,\nNone\n):\nlast_user_msg =\n\"\"\nfor\nm\nin\nreversed\n(state[\n\"messages\"\n]):\nif\nisinstance\n(m, HumanMessage):\nlast_user_msg = m.content\nbreak\nmemory_system.add_note(\ncontent=\nf\"Q:\n{last_user_msg}\n\\nA:\n{last_ai.content}\n\"\n,\ntags=[\n\"conversation\"\n],\ncategory=\n\"Dialogue\"\n,\n)\nreturn\n{}\n# 不是 return state\n# ---------------------------------------------------------------------------\n# 5. 构建 LangGraph 图\n# ---------------------------------------------------------------------------\ngraph = StateGraph(AgentState)\ngraph.add_node(\n\"retrieve_context\"\n, retrieve_context)\ngraph.add_node(\n\"agent\"\n, call_model)\ngraph.add_node(\n\"tools\"\n, ToolNode(tools))\ngraph.add_node(\n\"persist\"\n, persist_turn)\ngraph.set_entry_point(\n\"retrieve_context\"\n)\ngraph.add_edge(\n\"retrieve_context\"\n,\n\"agent\"\n)\n# tools_condition: 若 LLM 触发了 tool_calls -> \"tools\"，否则 -> \"__end__\"\ngraph.add_conditional_edges(\n\"agent\"\n,\ntools_condition,\n{\n\"tools\"\n:\n\"tools\"\n,\n\"__end__\"\n:\n\"persist\"\n},\n)\ngraph.add_edge(\n\"tools\"\n,\n\"agent\"\n)\ngraph.add_edge(\n\"persist\"\n, END)\nfrom\nlanggraph.checkpoint.memory\nimport\nMemorySaver\napp = graph.\ncompile\n(checkpointer=MemorySaver())\n# ---------------------------------------------------------------------------\n# 6. 运行示例\n# ---------------------------------------------------------------------------\nimport\nuuid\n# 确保在文件顶部已导入\nif\n__name__ ==\n\"__main__\"\n:\n# ============ 你可以在下面两行修改 ============\n# USE_PERSISTENT_THREAD = True # True: 使用固定 thread_id，False: 每次新 thread_id\nUSE_PERSISTENT_THREAD =\nFalse\nFIXED_THREAD_ID =\n\"cli-session-1\"\n# =============================================\n# print(\"Agent 已启动，记忆文件: my_agent.amem\")\nprint\n(\n\"输入 'exit' 或 'quit' 退出。\\n\"\n)\nwhile\nTrue\n:\nuser_input =\ninput\n(\n\"你: \"\n).strip()\nif\nuser_input.lower()\nin\n(\n\"exit\"\n,\n\"quit\"\n,\n\"退出\"\n):\nbreak\n# 根据开关生成 thread_id\nif\nUSE_PERSISTENT_THREAD:\nthread_id = FIXED_THREAD_ID\nelse\n:\nthread_id = uuid.uuid4().\nhex\n# 每次随机生成新 ID\nconfig = {\n\"configurable\"\n: {\n\"thread_id\"\n: thread_id}}\n# 记录本轮开始前的消息 ID（用于打印新增内容）\ntry\n:\nprev_snapshot = app.get_state(config)\nif\nprev_snapshot.values:\nprev_messages = prev_snapshot.values.get(\n\"messages\"\n, [])\nelse\n:\nprev_messages = []\nprev_ids = {m.\nid\nfor\nm\nin\nprev_messages}\nexcept\nException:\n# 如果 thread_id 从未使用过，get_state 可能报错，视为空历史\nprev_ids =\nset\n()\nresult = app.invoke(\n{\n\"messages\"\n: [HumanMessage(content=user_input)]},\nconfig=config,\n)\n# 打印本轮新增消息（工具调用等）\nnew_messages = [m\nfor\nm\nin\nresult[\n\"messages\"\n]\nif\nm.\nid\nnot\nin\nprev_ids]\nfor\nm\nin\nnew_messages:\nrole =\ntype\n(m).__name__\nif\nisinstance\n(m, AIMessage)\nand\nm.tool_calls:\nfor\ncall\nin\nm.tool_calls:\nprint\n(\nf\"[\n{role}\n] 调用工具:\n{call[\n'name'\n]}\n(\n{call[\n'args'\n]}\n)\"\n)\nelif\nisinstance\n(m, ToolMessage):\nprint\n(\nf\"[\n{role}\n] 工具结果:\n{m.content}\n\"\n)\nelse\n:\nprint\n(\nf\"[\n{role}\n]\n{m.content}\n\"\n)\nprint\n()\n4. 总结\n虽然当前 A-MEM 提供的 API\n实现仍然存在一些不足，例如检索逻辑与论文描述存在一定差异、默认存储方式不适合长期使用等问题，但其整体设计思想仍然具有较高的参考价值。\n其中，基于卡片化的记忆表示方式、记忆之间的关联关系以及通过 Agent\n主动管理长期记忆的思路，都为构建具有长期记忆能力的 Agent\n提供了一种较好的设计方向。\n如果需要将 A-MEM\n应用于实际生产环境，可能需要根据具体业务需求重新设计和实现对应的记忆管理模块，包括记忆存储、检索策略、关联关系维护以及生命周期管理等部分，而不是直接依赖当前提供的\nAPI。\n总体来说，A-MEM 更像是一个验证长期记忆 Agent\n思路的研究实现，其核心价值在于提出了一种较新的记忆组织方式，而\n实际工程落地仍需要进一步优化\n。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://zusda.github.io/2026/08/08/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-9/",
+      "content_chars": 28611,
+      "content_sha256": "ad66de2882a6fde3e300d380b4a3bba90d8255650344d43b52b02e79ae61a6ea",
+      "content_fetched_at": "2026-08-10T21:51:17.113115+00:00",
+      "author": "zusda",
+      "author_name": "zusda",
+      "author_url": "https://zusda.github.io/",
+      "published_at": "2026-08-10T21:49:59.999600+00:00",
+      "collected_at": "2026-08-10T21:49:59.999600+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zusda",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://zusda.github.io/",
+        "https://zusda.github.io/2026/08/08/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-9/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zusda",
+          "url": "https://zusda.github.io/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zusda",
+          "name": "zusda",
+          "home_url": "https://zusda.github.io/"
+        },
+        "article": {
+          "title": "从零开始的LLM 9. A-MEM 与 LangChain/LangGraph学习",
+          "url": "https://zusda.github.io/2026/08/08/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-9/",
+          "content_sha256": "ad66de2882a6fde3e300d380b4a3bba90d8255650344d43b52b02e79ae61a6ea"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:40ecebc586a283ae",
+      "who": "denizhalil-blogs",
+      "who_url": "https://denizhalil.com/blogs/",
+      "action": "publish",
+      "target": "Vulnerability Analysis: CVE-2026-63077 Unauthenticated Remote Code Execution in JetBrains TeamCity",
+      "target_url": "https://denizhalil.com/2026/08/10/cve-2026-63077-jetbrains-teamcity-rce-analysis/",
+      "text": "denizhalil-blogs published: Vulnerability Analysis: CVE-2026-63077 Unauthenticated Remote Code Execution in JetBrains TeamCity",
+      "at": "2026-08-10T04:53:00+00:00",
+      "external_id": "a:40ecebc586a283ae",
+      "url": "https://denizhalil.com/2026/08/10/cve-2026-63077-jetbrains-teamcity-rce-analysis/",
+      "title": "Vulnerability Analysis: CVE-2026-63077 Unauthenticated Remote Code Execution in JetBrains TeamCity",
+      "content": "Introduction\nOn August 5, 2026, cybersecurity researchers disclosed a critical security vulnerability designated as\nCVE-2026-63077\n(CVSS v3.1 Score: 9.8 – Critical) affecting JetBrains TeamCity On-Premises installations. TeamCity is one of the world’s most widely adopted Continuous Integration and Continuous Deployment (CI/CD) server solutions, serving as the core infrastructure for source code compilation, secret storage, and automated deployment pipelines across enterprise environments. CVE-2026-63077 represents an unauthenticated Remote Code Execution (RCE) vulnerability that allows threat actors to bypass authentication controls and execute arbitrary system commands on the host operating system with the privileges of the TeamCity process. Because CI/CD infrastructure holds extensive secrets—including cloud provider credentials, private SSH keys, and source code access—a breach of this nature poses catastrophic supply chain risks. Following evidence of active exploitation in wild campaigns, the US Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2026-63077 to its Known Exploited Vulnerabilities (KEV) catalog.\nLearning Objectives\nAfter reviewing this technical article, security professionals, DevSecOps engineers, and system administrators will be able to:\nUnderstand the root cause and architectural mechanisms enabling CVE-2026-63077 exploitation.\nIdentify the specific HTTP communication protocols and Java deserialization vectors involved.\nEvaluate the impact of CI/CD server compromise on organizational supply chain security.\nImplement effective patching, mitigation, and network hardening strategies to neutralize the threat.\nWhat is Remote Code Execution in JetBrains TeamCity (CVE-2026-63077)\nJetBrains TeamCity relies on a distributed architecture where a centralized server orchestrates build tasks across multiple remote build agents. To coordinate these tasks, build agents continuously send HTTP(S) requests to server-side endpoints, polling for new jobs, reporting status updates, and uploading build artifacts. To allow seamless agent onboarding without manual user authorization, specific communication endpoints—particularly those under the\n/app/agents/v1/\nroute—were intentionally designed to process incoming requests without requiring traditional administrative authentication or user session tokens. The vulnerability designated as CVE-2026-63077 is a critical, unauthenticated Remote Code Execution (RCE) flaw arising from how the TeamCity server processes data incoming through these open agent polling endpoints. When receiving HTTP requests from build agents, the server uses XML serialization mechanisms to reconstruct client-side Java objects. However, because these endpoints lack robust access controls and rely on insecure unmarshaling practices, an unauthenticated attacker on the network can masquerade as a build agent and send malicious XML data directly to the server.\nWhen the TeamCity server processes this untrusted input, the application automatically deserializes the payload without first validating the safety of the object types being instantiated. This allows a remote attacker to trigger arbitrary Java class execution, leading directly to operating system command execution under the privileges of the TeamCity server process. Because CI/CD platforms typically possess elevated network privileges, stored cloud provider keys, and source code access, successfully exploiting this vulnerability allows adversaries to establish a persistent foothold, compromise intellectual property, and initiate widespread software supply chain attacks.\nKey characteristics and impact factors of this vulnerability include:\nUnauthenticated Access:\nAttackers do not require valid user credentials, session cookies, or prior agent registration tokens to reach the vulnerable endpoint handlers.\nNetwork Attack Vector:\nExploitation occurs entirely over network protocols (HTTP/HTTPS), making any internet-facing TeamCity instance directly vulnerable to remote automated exploitation.\nElevated Operational Risk:\nCode executed via this vulnerability inherits the permissions of the host account running the TeamCity service, often enabling total host takeover or container escape.\nSupply Chain Exposure:\nGaining unauthorized control over the primary CI/CD server enables threat actors to modify source code repositories, tamper with build artifacts, and inject malicious code into downstream software releases.\n// Vulnerable Server-Side Request Handling (Conceptual Example)\n@POST\n@Path(\"/app/agents/v1/poll\")\n@Consumes(MediaType.APPLICATION_XML)\npublic Response handleAgentPoll(InputStream rawPayload) {\n// VULNERABILITY: Unauthenticated endpoint accepting raw XML stream\nXStream xstream = new XStream();\n// An explicit allowlist was specified...\nxstream.allowTypes(new Class[]{ AgentPollResponse.class, BuildStatus.class });\n// BUG: Missing 'xstream.addPermission(NoTypePermission.NONE);'\n// Without resetting permissions, XStream defaults allow arbitrary gadget chains!\n// Deserializing untrusted input executes attacker-controlled gadget chains\nObject deserializedObj = xstream.fromXML(rawPayload);\nreturn Response.ok().build();\n}\nTechnical Detail: How the Vulnerability Works\nUnder the hood, CVE-2026-63077 is rooted in insecure Java object deserialization within TeamCity’s agent communications module, which uses the\nXStream\nlibrary to serialize and unmarshal XML data payload traffic. Distributed build agents routinely exchange status updates, job polling signals, and environment metadata with the central server via REST endpoints under the\n/app/agents/v1/\nroute. Because new build agents must be able to register dynamically without pre-existing administrator session cookies, these specific routes were deliberately designed to accept incoming HTTP requests without enforcing strict authentication checks. The critical flaw lies in how the TeamCity server configured its XStream parser to process these incoming unauthenticated XML streams. Although JetBrains developers attempted to restrict accepted classes by defining explicit allowlists (such as specifying expected agent status objects), they omitted the essential security initialization step: clearing XStream’s default permissive fallback rules via\nxstream.addPermission(NoTypePermission.NONE)\n. Consequently, the security allowlist acted only as an additive filter rather than a restrictive boundary, leaving XStream’s underlying object creation engine exposed to arbitrary Java class instantiation.\nWhen an attacker transmits a maliciously crafted HTTP POST request containing XML-formatted gadget chains (such as dynamic proxy handlers,\njava.lang.reflect.Proxy\n, or standard JDK reflection utilities), XStream processes the payload without validation. During the unmarshaling phase, XStream automatically reconstructs the nested object structure, invoking object constructors, getter/setter methods, or\nhashCode()\ncall chains. This chain reaction causes the server JVM to invoke sensitive runtime methods—such as\njava.lang.ProcessBuilder.start()\n—and immediately executes arbitrary system commands with the host permissions of the TeamCity process.\nKey technical breakdown of the vulnerability flow:\nUnauthenticated Endpoint Reachability:\nThe agent communication handlers beneath\n/app/agents/v1/\nprocess incoming XML payloads directly from untrusted network sources without requiring pre-shared secrets or valid authentication tokens.\nIncomplete XStream Security Configuration:\nAdding allowed types without invoking\nNoTypePermission.NONE\nleaves XStream’s default permissive type resolution active, completely bypassing developer-intended type constraints.\nGadget Chain Triggering:\nAttackers leverage well-known Java class behaviors during deserialization to transform standard method invocations into arbitrary execution paths within the JVM.\nDirect Process Invocation:\nObject unmarshaling seamlessly cascades into OS-level process execution, enabling arbitrary binary execution, shell commands, or reverse connection establishment.\n+------------------+ HTTP POST /app/agents/v1/poll +--------------------------+\n| | -------------------------------------------> | |\n| Attacker | Malicious XML Payload (XStream Gadget) | TeamCity Server |\n| (Unauthenticated)| | |\n+------------------+ +--------------------------+\n|\n1. Receives Raw XML Stream\nv\n+--------------------------+\n| XStream Deserializer |\n+--------------------------+\n|\n2. Allowlist Check Fails:\nDefault permissions NOT\ncleared (NoTypePermission)\nv\n+--------------------------+\n| Gadget Chain Execution |\n| (Reflection / Proxy) |\n+--------------------------+\n|\n3. Triggers ProcessBuilder\nv\n+---------------------------+\n| OS Command Execution |\n| (RCE under Server Context)|\n+---------------------------+\nRemediation & Mitigation\nOrganizations operating JetBrains TeamCity On-Premises must take swift and decisive action to address the threat posed by CVE-2026-63077. Because this unauthenticated remote code execution vulnerability is actively exploited in the wild and targetable over network protocols, relying solely on perimeter defenses is insufficient. Securing vulnerable build environments requires a combination of immediate vendor patching, application-level mitigation plugins, and aggressive network defense controls. Prioritizing full server upgrades provides the most complete protection, ensuring that the flawed XStream deserialization logic and underlying endpoints are natively fixed. However, in environments where maintenance windows or release cycles delay immediate full-version updates, security teams must deploy JetBrains’ official patch plugins and enforce strict network access policies to block unauthorized access to build agent communication routes.\nKey remediation actions and hardening measures include:\nUpgrade On-Premises Servers Immediately:\nUpdate TeamCity On-Premises installations to patched releases\n2025.11.7\nor\n2026.1.3\n(or later) to permanently eliminate the unsafe deserialization flaw.\nVerify Cloud Instance Safety:\nConfirm that managed\nTeamCity Cloud\nenvironments are running normally, as JetBrains automatically patched cloud-hosted infrastructure without requiring customer intervention.\nApply the Official Security Patch Plugin:\nInstall JetBrains’ standalone\nSecurity Patch Plugin\n(compatible with TeamCity versions 2017.1 through 2026.1.2) if an immediate full upgrade cannot be performed due to operational constraints.\nUtilize Automatic Patching Features:\nFetch and enable the security patch directly from the TeamCity administration console for servers running version\n2024.03\nor newer.\nRestrict Internet Exposure:\nRemove direct public internet access to TeamCity management interfaces and server endpoints, placing access behind corporate VPNs or Zero-Trust Network Access (ZTNA) solutions.\nImplement IP Allowlisting for Agents:\nConfigure firewalls and Web Application Firewalls (WAFs) to restrict access to\n/app/agents/*\nendpoints strictly to known IP address ranges belonging to legitimate build agents.\nAudit Web Server Access Logs:\nMonitor access and execution logs for anomalous HTTP POST requests directed toward\n/app/agents/v1/\noriginating from unknown or external IP addresses.\nRotate Build Secrets and Credentials:\nRevoke and reissue cloud provider keys, access tokens, SSH credentials, and service accounts stored within TeamCity if suspicious activity or indicators of compromise are identified.\nConclusion\nThe discovery and active exploitation of CVE-2026-63077 underscore the critical operational risks associated with insecure object deserialization within core enterprise infrastructure. Modern Continuous Integration and Continuous Deployment (CI/CD) engines like JetBrains TeamCity serve as the central orchestration hubs for modern software development pipelines. Consequently, any security flaw that grants unauthenticated remote code execution on these systems effectively surrenders the keys to an organization’s digital crown jewels. When adversaries achieve execution privileges on a CI/CD server, the impact extends far beyond local system compromise. Build environments routinely store and process highly sensitive assets, including source code repositories, deployment scripts, cloud provider access tokens, API keys, and SSH credentials. An attacker exploiting CVE-2026-63077 can quietly exfiltrate these secrets, establish persistent backdoors across internal corporate networks, or manipulate build outputs to inject malicious code directly into downstream production releases, resulting in devastating software supply chain attacks. Furthermore, the vulnerability highlights a persistent challenge in software engineering: the subtle security pitfalls of legacy serialization frameworks like XStream. While developers frequently attempt to mitigate deserialization risks using class allowlists, incomplete initialization—such as failing to reset default type permissions—can render defense mechanisms entirely ineffective against modern gadget chains. This flaw serves as a reminder that input validation and object unmarshaling at network boundaries require rigorous defense-in-depth engineering and strict zero-trust principles.\nUltimately, protecting enterprise environments against CVE-2026-63077 demands immediate, coordinated action between security and operational teams. Organizations operating TeamCity On-Premises must prioritize upgrading to patched releases (\n2025.11.7\nor\n2026.1.3\n) or deploying official security patch plugins without delay. Combining timely software remediation with robust network segmentation, agent IP allowlisting, and proactive log monitoring remains the only effective strategy to neutralize active threat actors and preserve software supply chain integrity.\nCVE-2026-63077 Unauthenticated Remote Code Execution in JetBrains TeamCity\nDownload\nAI Agents’ Sandbox Revolt: CVE-2026-50548 and CVE-2026-50549\nPython C2 Server for Red Teaming: A Comprehensive Hands-On Guide\nExploiting Zero-Day Vulnerabilities in SonicWall SMA Prior to Disclosure\nCVE-2026-20253 – Splunk Enterprise Unauthenticated Arbitrary File Vulnerability\nExploitation of DbGate Remote Code Execution via Dynamic Import Bypass (CVE-2026-47670)\nRapid7 Analysis\nThe post\nVulnerability Analysis: CVE-2026-63077 Unauthenticated Remote Code Execution in JetBrains TeamCity\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://denizhalil.com/2026/08/10/cve-2026-63077-jetbrains-teamcity-rce-analysis/",
+      "content_chars": 14446,
+      "content_sha256": "e10dcd908d00f675bee9b6eb4cb76ef74d03ab7d678cc90ff64f899384322e5b",
+      "content_fetched_at": "2026-08-10T21:51:26.081604+00:00",
+      "author": "denizhalil-blogs",
+      "author_name": "DenizHalil Blogs",
+      "author_url": "https://denizhalil.com/blogs/",
+      "published_at": "2026-08-10T04:53:00+00:00",
+      "collected_at": "2026-08-10T21:49:59.999600+00:00",
+      "tags": [
+        "kind:publish",
+        "src:denizhalil-blogs",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://denizhalil.com/blogs/",
+        "https://denizhalil.com/2026/08/10/cve-2026-63077-jetbrains-teamcity-rce-analysis/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "denizhalil-blogs",
+          "url": "https://denizhalil.com/blogs/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "denizhalil-blogs",
+          "name": "DenizHalil Blogs",
+          "home_url": "https://denizhalil.com/blogs/"
+        },
+        "article": {
+          "title": "Vulnerability Analysis: CVE-2026-63077 Unauthenticated Remote Code Execution in JetBrains TeamCity",
+          "url": "https://denizhalil.com/2026/08/10/cve-2026-63077-jetbrains-teamcity-rce-analysis/",
+          "content_sha256": "e10dcd908d00f675bee9b6eb4cb76ef74d03ab7d678cc90ff64f899384322e5b"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:c7357f9f31dfeab6",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "模型权重也会成为侵权复制品？从 Suno 案看 AI 发布的版权新防线",
+      "target_url": "https://yage.ai/share/suno-copyright-model-release-20260809.html",
+      "text": "yage-share published: 模型权重也会成为侵权复制品？从 Suno 案看 AI 发布的版权新防线",
+      "at": "2026-08-09T00:00:00+00:00",
+      "external_id": "a:c7357f9f31dfeab6",
+      "url": "https://yage.ai/share/suno-copyright-model-release-20260809.html",
+      "title": "模型权重也会成为侵权复制品？从 Suno 案看 AI 发布的版权新防线",
+      "content": "治理与合规\nAI 产品与平台\n以前我们搞 AI\n产品上线，合规这块的精力基本上都花在两个头尾环节。前端主要管数据抓取，看看许可拿没拿到；后端主要做生成防堵，加一些敏感词过滤。至于中间训练跑出来的模型权重参数，大家习惯把它当作一堆单纯的概率矩阵和数学特征，很少会专门去查模型文件本身到底有没有版权风险。\n不过，慕尼黑第一州法院在 2026 年 7 月 31 日对 GEMA 诉 Suno 案（案号\nLG München I 42 O\n763/25）做出的一审判决，给这种习惯做法敲响了警钟。法院这次没有停留在数据输入和文本输出上，直接把过去大家容易忽视的模型权重，拉进了版权侵权的审查范围。需要说明的是，这是一审判决，尚未最终生效，但多项救济可在\nGEMA 提供担保后临时执行。具体判决细节可以查阅\n法院新闻稿\n。\n版权合规不再只看数据源与生成端：模型权重本身成为审查对象\n德国音乐版权管理机构 GEMA 代表多位作曲家和填词人，起诉了音乐生成平台\nSuno。他们在测试时做了一组实验：向 Suno 提交 Prompt\n时，里面只包含原歌词、作品标题和音乐风格描述，完全没有给模型输入原曲的旋律、和声或者节奏。需要说明的是，歌词在这里只是测试输入，本案裁判的是音乐作品中的作曲表达，歌词侵权不在争议范围内。这次测试一共涵盖了《Atemlos\ndurch die Nacht》、《Daddy Cool》、《Rasputin》、《Big in\nJapan》、《Forever Young》5 首经典曲目，加上《Mambo No. 5 A little bit\nof》的副歌段落。\n测试人员在进行了 4 到 176\n次不等的反复生成采样之后，每首作品最终只提交了一个输出，Suno\n跑出了在旋律和和声上能清晰认出原作特征的音频。法院看懂了这个逻辑：用户输入的提示词里没有任何旋律信息，模型却把原作的音乐表达吐了出来。这说明\nSuno v3.5 和 v4 模型权重内部依然保留了作品的表达形式。详细的裁判记录放在\nopenJur\n判决文本\n（非官方转录本，截至发稿时法院官网尚未发布认证全文）。\n按德国版权法，只要作品固定在特定载体上且能让人感知，就满足了法律认定复制品的必备条件。法院顺着这个原则判定，部署在服务器上的\nSuno\n模型文件本身就构成了侵权复制品。不过法院也明确写道”并非所有模型都会记忆训练数据”，因此这不是判决所有训练数据都让整个模型变成侵权复制品，而是针对六项作品和两个版本的具体认定。这也意味着，我们以前只顾数据来源和输出过滤的合规思路不够用了，模型权重文件本身现在也得接受合规检查。\n从概率输出反推模型参数：司法如何将黑盒抽样接受为记忆探针？\n过去的机器学习领域，过拟合或者模型到底有没有硬记训练集，一直是个界定起来非常模糊、偏软性的学术概念。在学术研究里，要严谨证明模型记住了某段数据，往往需要昂贵的白盒手段，比如检查神经元特征、跑线性探针或者计算复杂的梯度影响函数。但在\nSuno\n这个案子里，慕尼黑法院做出了一个具有信号意义的认定：司法体系正式接受了一种低成本的黑盒测试方法（Prompt\n抽样），将其作为证明模型参数留存了作品记忆的合法证据。\nGEMA 的测试团队完全没有侵入 Suno\n的服务器去调取模型内部权重，也没有跑任何昂贵的白盒分析。他们只是把原歌词、歌名和风格作为\nPrompt 输入给模型，在不提供任何旋律的情况下，通过 4 到 176\n次不等的黑盒抽样，诱导模型吐出了原作的旋律与和声。\n法院看懂并接受了这套探针逻辑：既然输入端只有文本，输出端却跑出了高复杂度的旋律表达，这种重合度不可能出于巧合。法官不再纠结于过拟合这个抽象的学术定义，而是将提示词提取测试作为本案中推断模型内部存在作品留存的证据。\n这种推理方式也揭示了法律认定与工程实践之间的深刻交锋。从测试记录来看，GEMA\n的团队往往要连续采样几十次甚至上百次，每首作品最终只提交一个输出，才能偶然捕捉到一次可识别的相似输出。在概率分布的长尾里通过高频采样触发作品重现，到底能不能直接推导出特定作品固化在了参数矩阵中？\n这恰好是 Suno\n正在评估包括上诉在内的选项时的潜在核心争点——截至发稿时尚未验证 Suno\n已正式提交上诉。不过对于工程团队而言，信号已经足够明确：黑盒抽取测试不再只是安全极客玩耍的攻击手段，也不再是学术论文里模糊的概念，它已经变成了法庭上用来指控模型侵权的高效探针。法官只要看到\nPrompt\n能把训练集作品钩出来，就倾向认定权重文件存留了作品表达；反过来，哪怕单次阴性测试没有跑出相似音频，也不能当作免受起诉的法律安全港。\n厘清误区：为什么在美国训练隔离不了在欧洲存储与服务？\nAI\n模型版权的四个法律环节：数据获取与训练、模型存储、服务提供、输出生成\n过去不少做跨国产品的团队有一个习惯假设：只要把模型训练放在美国机房，靠着美国版权法的合理使用原则保驾护航，整个模型就能足够安全。Suno\n这个案子直接打破了这种跨国隔离的想法。\n版权法规遵循严格的属地原则。美国合理使用原则只管辖发生在美境内的抓取和训练动作。团队一旦把训练好的权重文件复制部署到欧洲服务器，或者面向欧洲用户开通推理服务，合规评估就会自动切换到欧洲及当地法律的管辖下。\n慕尼黑法院在审理时把 Suno 的完整业务流拆分成了四个独立的法律环节： 1.\n获取与训练\n：在美国提取作品并制作训练副本。因为抓取动作发生在美国，法院按美国版权法审查\nSuno\n提出的合理使用理由，并判定本案的商业抓取行为在美国法下同样不构成合理使用；\n2.\n模型存储\n：在德国服务器上保存包含作品固定特征的模型权重。法院适用德国法，认定构成存储复制侵权；\n3.\n提供服务\n：向公众开放包含这些作品的模型与应用。法院认定构成公共传播侵权；\n4.\n生成输出\n：模型在用户终端生成相似音频。法院认定再次发生复制与公共传播侵权。\n欧洲的 DSM\n指令虽然给文本和数据挖掘留出了豁免空间，允许出于模式分析开展自动化抓取，但这项豁免给出了明确限制：分析完成后，规律可以留在参数里，作品本身却不能长期固定并重新提供给用户。况且\nSuno 当时抓取数据时绕过了 YouTube 的 Rolling Cipher\n技术，获取手段本身不合规，无法适用数据挖掘豁免。因此，即便团队在美国拿到了合理使用免责理由，一旦把模型文件跨国部署到欧洲服务器，欧洲法院依然可以独立判定模型存储侵权，并针对模型文件和线上服务下发禁令。\n水印、商业许可与发布治理：工程团队的六项控制\n为了应对这类版权风险，业界尝试过不少技术和商业手段。比如 Google\n推广的\nSynthID\n水印技术\n，能在生成的音频里嵌入水纹标记，用来校验输出端的来源。但这套技术管不了训练阶段有没有拿授权，也挡不住模型在参数里记忆原作。而在商业合作方面，华纳音乐与\nSuno、环球音乐与 Udio\n的谈判路径也释放了信号：唱片公司并没有给旧模型补发许可，统一的做法是上线授权过的崭新模型，同时下线旧模型，把重新训练与旧模型退市做成绑定迭代。因此，当法院把审查视角延伸到模型权重本身，工程团队就不能再把代码、数据和权重看作彼此孤立的模块了，我们需要把每次模型发布都当成一次完整的风险治理过程，在发布管线里落实六项工程控制：\n模型发布的六项版权控制：分项记录权利、区分获取与训练依据、不可变发布追踪链、模型吐回测试、地域审查模型存储、版本回退与重训\n分项记录每种权利\n把曲谱、歌词、录音母带、表演者声音与肖像等不同权利做独立标记，不要在元数据里混成一个泛泛的标签。\n区分获取依据与训练依据\n能公开访问、已经付费订阅或者拿到了 API\n调取权限，只代表我们打通了获取数据的通道，并不等于拿到了批量复制和商业训练的法律授权。\n建立不可变的发布追踪链条\n打通从数据快照、训练任务、权重\nCheckpoint、部署节点到服务终端的全链路版本映射，防止线上服务静默替换底层模型。\n建立模型吐回测试机制\n模型正式发布前，用敏感训练作品和特定 Prompt\n做抽样提取测试，记录输入的提示词、采样参数、音频指纹和复核结论，评估记忆留存风险。把黑盒\nPrompt 提取当作发布前的定量探针，主动发现记忆风险。\n按地域审查模型存储\n在美国机房跑完训练，不代表模型权重能自动同步到全球各个节点。任何跨国服务器的权重复制和部署，都要单独走一遍当地的合规审查。\n预建快速版本回退与重训路径\n保证线上服务可以按版本和地域灵活隔离下线，同时准备好基于授权清晰的数据快照重新训练的备选方案。\n做模型吐回测试是发布前的一道风险门控，不等于拿到一张法律免责单。要建立长久的合规防线，底层数据的来源合法性以及发布管线的严密管理，依然是我们最关键的基础。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/suno-copyright-model-release-20260809.html",
+      "content_chars": 3608,
+      "content_sha256": "700b18d91c175078d5760c91d05f3064338f800c6f504882fe571930af186b43",
+      "content_fetched_at": "2026-08-10T21:51:05.053655+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-09T00:00:00+00:00",
+      "collected_at": "2026-08-10T21:49:59.999600+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/suno-copyright-model-release-20260809.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "模型权重也会成为侵权复制品？从 Suno 案看 AI 发布的版权新防线",
+          "url": "https://yage.ai/share/suno-copyright-model-release-20260809.html",
+          "content_sha256": "700b18d91c175078d5760c91d05f3064338f800c6f504882fe571930af186b43"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:c501bcc4b487f05f",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "浏览器是 Agent 覆盖面最广的兼容层，但 Chrome 不是：为什么我们需要 Kitesurf？",
+      "target_url": "https://yage.ai/share/kitesurf-agent-browser-compatibility-layer-20260809.html",
+      "text": "yage-share published: 浏览器是 Agent 覆盖面最广的兼容层，但 Chrome 不是：为什么我们需要 Kitesurf？",
+      "at": "2026-08-09T00:00:00+00:00",
+      "external_id": "a:c501bcc4b487f05f",
+      "url": "https://yage.ai/share/kitesurf-agent-browser-compatibility-layer-20260809.html",
+      "title": "浏览器是 Agent 覆盖面最广的兼容层，但 Chrome 不是：为什么我们需要 Kitesurf？",
+      "content": "AI Agent\nAI 产品与平台\n推理与性能\n浏览器作为 Agent 兼容层\n聊起 AI Agent 的基础设施，大家常假设未来的软件都会暴露一套干净优雅的\nAI 原生接口。可现实往往正好相反，市面上数以万计的网页应用、SaaS\n系统和企业内网软件，在未来很长一段时间里都不可能专程为了模型去重写\nAPI。面对这个现实断层，行业选了一条看似笨拙却格外管用的路径：直接让\nAgent 操控浏览器去接管既有应用。Cloudflare 最近发布的\nKitesurf\n，正是专为这一场景打造的\nAgent 无头浏览器基础设施：它允许 Agent 通过兼容现有工具的 Chrome\nDevTools Protocol (CDP) endpoint\n操控云端网页渲染与交互，同时把原本属于传统浏览器的庞大开销压到了较低水平。\n兼容层困境：为什么在很长一段时间内，Agent\n都无法摆脱浏览器？\n图形界面是人类与软件交互了几十年的底层通用协议。现代网页和桌面 UI\n构成了现实世界最完整的数据流动网络。绝大多数在线服务都提供一个能让普通人在屏幕上点击、阅读的网页，即使没有开放开发者\nAPI 也有这个入口。\n当 Agent 需要跨越多个软件去完成复杂任务时，指望所有服务商主动接入\nREST API 或者 Model Context Protocol (MCP) 接口是不现实的。给外部开 API\n远不只是写几道接口代码那么简单，背后涉及到繁重的代码重构、商业合规谈判、安全审计、防刷限流，还有各家对核心数据壁垒的死守。与其漫长等待生态自行改造，直接让\nAgent 操控网页，在无法获得 API 时常是改造成本较低的路径。\n浏览器也因此顺理成章地成了 Agent\n操作既有软件覆盖面最广的兼容层。只要某个功能在网页上看得见、点得到，Agent\n就有机会接管操作。这个兼容层不需要等待应用厂商配合，直接复用了现成的互联网基础设施。\n这种兼容层还会长期陪伴我们。对于绝大多数 SaaS 和 Web\n厂商来说，人类用户的订阅与广告点击是直接的收入来源，而专门为 AI 构建 API\nKey\n分发、计费与鉴权体系需要额外的投入。在缺乏直接商业激励的前提下，厂商更愿意维护现有的\nWeb\n界面。只要网页依然是软件交付的主渠道，浏览器作为通用适配器的地位就很难动摇。面对这种现实，将浏览器改造为适应\nAgent 调用的计算通道，便成了工程上水到渠成的路径。\n然而，一旦把这套模式从实验室探索推向大规模的生产环境，底层架构上的负担与瓶颈就会快速爆发。\n扩展性悖论：给人类视觉定制的\nChrome 为什么扛不住 Agent 的高并发？\n这种架构上的负担，根源在于传统浏览器的设计前提：Chromium\n这类引擎，全都是围绕人类的生理特征与行为模式构建的。当访问的主体从人类变成\nAgent 时，需求层面爆发了两个根本性的错位。\n第一个错位是扩展性与并发诉求的错位。人类使用者同一时间只有一个注意力焦点，手里只有一只鼠标，眼前只有一对眼睛。哪怕是重度用户，一次也只能在一个活动标签页里打字或浏览，剩下几十个后台标签页基本处于静止或挂起状态。但\nAgent\n作为可以弹性扩容的执行实体，优势偏偏在于并发吞吐。Agent不仅要同时打开几十甚至上百个网页，还要在这些页面上持续提取结构化数据、触发交互并监控状态变化。在网页面前，Agent\n是时刻处于高频交互状态的多任务实体，不同于后台挂起的人类标签页。\n第二个错位是功能需求与冗余优化配比的错位。现代 Chromium\n相当一部分额外的资源开销，全都是浏览器几十年里专程为人类视觉体验与富媒体演进出的高级优化：为了人类眼中的\n60fps 平滑滚动与 3D 动画，构建了占内存的 GPU 图层贴图合成与 WebGL/WebGPU\n渲染管线；为了 JS 的执行速度，拉起了包含多级编译管线的 V8 JIT\n优化编译器堆与 Inline Cache\n缓存；为了防崩溃与跨站安全，设计了多进程沙箱骨架，通过 Site Isolation\n按站点分配渲染进程；为了多媒体集成，内置了 WebRTC\n与音视频解码协议栈。\n这些优化对人类很有意义，但对许多 Agent\n工作负载来说并非刚需，反而带来了额外的资源负担。Kitesurf\n针对的是短生命周期、突发式的截图和 HTML 提取等任务，这类任务不需要 60\n帧滚动、GPU 3D 贴图或音视频流。当然，Agent\n的需求并不总是如此简单，有些需要长期认证、复杂渲染或对抗反爬，Cloudflare\n明确建议这些场景回退到 Chromium。\n当 Agent 高频并发的吞吐需求，撞上 Chromium\n为人类视觉与富媒体定制的重型架构，资源开销就会快速叠加。Chromium\n的多进程模型通常带来数百 MiB 级任务内存：Cloudflare 自己的对照测试测得\nwarm Chromium 池在截图和 HTML 提取任务中分别占用 271.0 MiB 和 273.7\nMiB。在实际部署中，具体内存取决于页面复杂度、进程复用和站点隔离策略，但\nRAM 往往先于 CPU\n成为瓶颈。一旦业务请求量上涨，成百上千个操作系统进程会迅速挤爆 cgroups\n的限制，内核因为内存耗尽触发 OOM\nKiller，直接清理掉运行中的浏览器进程，反映到上层业务里就是莫名其妙的请求超时或任务中断。\n个人开发者用单台服务器很难扛住高并发\nAgent，云基础设施服务商也面临着沉重的算力负担。\n场景破局与技术接应：如何在\nV8 Isolate 里重新构建浏览器？\nChromium 多进程 vs Kitesurf V8 Isolate\n架构对比\n针对上面提到的扩展性瓶颈，Cloudflare 推出的 Kitesurf\n给出了一套非常直观的解题路径：既然 Agent\n不需要人类的眼睛，那就把所有给人类看的高级优化统统剥离；既然在本地单机上跑\nChrome 太占资源，就把渲染的重活直接搬到分布式边缘网络上。\n在实现上，Kitesurf 没有选择移植动辄千万行代码的 Chromium\n源码，而是把基于 Rust 开发的轻量级渲染引擎直接编译成 WebAssembly\n(WASM)，让它运行在\nCloudflare\nWorkers\n的 V8 Isolate\n环境里。这么一来，系统彻底扔掉了操作系统多进程模型的沉重骨架，把页面渲染与数据提取做成了轻量调用的组件。Cloudflare\n2018 年称一般 Workers isolate 可在约 5\n毫秒启动，不过这是平台级的启动指标，不是 Kitesurf\n页面上下文完整生命周期的 benchmark。\n更妙的是算力与内存压力的转移。以前用 Playwright 或\nPuppeteer，我们需要在自己的电脑或服务器上开着笨重的 Headless Chrome。而\nKitesurf 把最吃资源的 DOM 解析、CSS 布局和栅格化计算，搬到了 Cloudflare\n宣称覆盖 330+ 城市的全球网络上执行。请求会被路由到最近的 PoP，相关的\nWorkers 和 isolate 在那里协作完成渲染。本地只需要维持极轻量的信号编排与\nCDP 协议握手，真正的内存和算力消耗都直接卸载到了云端。\n这种架构上的重构，反映在工程数据上是非常清晰的折中。以下数字均来自\nCloudflare 自己的基准测试：14 个 URL、每项运行 5 次取中位数，对比的是\nCloudflare 自己的 warm Chromium\n池，目前尚无第三方独立复现。在该测试中，提取 HTML 数据时单页内存占用只有\n39.4 MiB，对照 warm Chromium 为 273.7 MiB，约低 7 倍，CPU 节省了 3.8\n倍；渲染截图时内存为 57.8 MiB，降低了 4.7\n倍。当然，天下没有免费的午餐。因为 Kitesurf\n使用冷启动的软件渲染器，而对照的 Chromium 有 warm JIT 优势，Kitesurf\n截取图片的端到端耗时是 1,148 毫秒，比 Chromium 的 637 毫秒慢了约 1.8\n倍，差距主要来自栅格化与 JPEG/PNG 编码。\n同时在功能边界上，Kitesurf 当前明确不支持视频播放、WebGL 3D\n渲染以及要求真实 TLS 指纹的 bot challenge\n握手，也不适合需要长期持久状态的认证会话。这些有些是当前未实现的能力，有些是短生命周期、尽量无状态设计带来的取舍，并非全部由\nWorkers\n安全模型\n直接禁止。但对于高并发、短生命周期的数据提取任务来说，用较慢的响应延迟去换取显著更低的\nCPU\n和内存，在系统工程里常常是个划算的交易。实际并发密度和成本收益还需按具体\nworkload 验证。Kitesurf 实际上为 Agent 重新打造了一个剥离视觉开销的 Web\n通道。\n终局思考：从\nAccessibility 对抗看 AI-Native 兼容层的两难本质\nKitesurf 的探索其实勾勒出了一个规律：把现有的旧软件改造成 Agent\n适用的基础设施，最管用的办法往往是重新设计底层兼容层。顺着这个视角回看隔离技术的演进，有两条并行谱系。一条是端点侧的硬件隔离：Bromium\n在 2010 年用 Intel VT-x 硬件虚拟化给每个浏览器标签页和下载起一个\nmicroVM。另一条是远程浏览器隔离（RBI）：把整个浏览器搬到云端，先是用像素流把渲染结果传回，后来演进出\nDOM 树重建和网络矢量渲染（NVR）。\n到了今天，Kitesurf 在 V8 isolate\n这个语言运行时级别的边界上引入了新的执行粒度。但它没有取代 OS\n进程和系统沙箱——Workers 的安全模型仍然在 isolate 外叠加进程分组、Linux\nnamespace/seccomp 和出站代理，生产安全边界是分层组合。类似的思路在桌面\nGUI 自动化领域也有体现。许多 Agent 会优先使用 DOM 或 Accessibility\n树的结构化语义，在结构不可得或视觉信息关键时才使用截图和 VLM。毕竟\nAccessibility 树自带控件层级与语义标记，Agent\n读写软件状态的开销远低于去分析像素图片。\n然而，这种通过重构兼容层来提升机器效率的方案，很快就会撞上一条现实中的深层次矛盾：适配效率与生态安全之间的长期博弈。\n拿 Accessibility 接口和无头自动化通道来说，站在 Agent\n开发者角度，它们无疑是交互成本较低的捷径。但在应用服务商眼中，这种绕过视觉\nUI\n的自动化接口，在技术特征上会共享许多反自动化系统关注的技术信号：无头、高速、重复、非人类交互模式。因此仅靠协议和无头特征往往难以判断意图。为了保护用户隐私、维护生态安全与数据资产，部分应用会限制或检测非人类手势的自动化通道。\n这种矛盾在 Cloudflare 身上体现得尤为生硬。Cloudflare\n自称其整体网络位于约 20% 的 web 前方，Bot Management\n利用这部分网络可见性来检测和拦截自动化爬虫；另一方面，Cloudflare 又是\nKitesurf 这类 Agent 浏览器基础设施的推手。当 Agent 借由 Kitesurf\n高频访问网页时，流量经 SandboxOutbound worker 发出，其外部可见的 TLS\n指纹具体是什么尚需实测确认，但官方已明确 Kitesurf 当前不能处理要求真实\nTLS 指纹的 bot challenge。这会产生一个尚未解决的问题：Kitesurf\n流量如何被 Cloudflare\n及其他反自动化系统分类，目前没有公开测试或政策答案。在协议握手阶段，安全系统很难判断发起的到底是个善意的\nAI 助手，还是恶意的抓取脚本。\n只要现存的软件生态还没有全面迈向 AI 原生形态，这种在提升 Agent\n效率与服务商防范自动化之间的攻防对抗就会一直持续。Kitesurf\n尝试用边缘中介与组件解耦来缓解冲突，但如何在机器交互效率与安全防护界限之间找到平衡，依然是\nAgent 基础设施演进中绕不开的深水区课题。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/kitesurf-agent-browser-compatibility-layer-20260809.html",
+      "content_chars": 5014,
+      "content_sha256": "716f6d4bd7e7ce30f54f5156e9432444a87858c92845841627ac603451da5121",
+      "content_fetched_at": "2026-08-10T21:51:05.548235+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-09T00:00:00+00:00",
+      "collected_at": "2026-08-10T21:49:59.999600+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/kitesurf-agent-browser-compatibility-layer-20260809.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "浏览器是 Agent 覆盖面最广的兼容层，但 Chrome 不是：为什么我们需要 Kitesurf？",
+          "url": "https://yage.ai/share/kitesurf-agent-browser-compatibility-layer-20260809.html",
+          "content_sha256": "716f6d4bd7e7ce30f54f5156e9432444a87858c92845841627ac603451da5121"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:d5cd2eba019bce0a",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Agent 读过的数据，分享后还能给谁看？Cloudflare OS 的授权实践与源码真相",
+      "target_url": "https://yage.ai/share/cloudflare-os-authorization-20260808.html",
+      "text": "yage-share published: Agent 读过的数据，分享后还能给谁看？Cloudflare OS 的授权实践与源码真相",
+      "at": "2026-08-08T00:00:00+00:00",
+      "external_id": "a:d5cd2eba019bce0a",
+      "url": "https://yage.ai/share/cloudflare-os-authorization-20260808.html",
+      "title": "Agent 读过的数据，分享后还能给谁看？Cloudflare OS 的授权实践与源码真相",
+      "content": "AI Agent\n安全与供应链\n前阵子 Cloudflare 把 Cloudflare OS\n开源了\n。在写完上一篇关于\nCloudflare\nAgent 架构演进\n的文章之后，我把他们的代码克隆下来研究了一圈。最触动我的地方在于一个容易被忽略的硬核痛点：Agent\n读过的数据，在团队二次分享、导出或者继续对话时，到底该怎么授权？\n平时咱们做 Agent，习惯拿 Model Context Protocol（MCP）或者 API\n网关在前面挡一把，觉得只要 Agent 调 API\n的那一瞬间校验了身份就万事大吉。但在实际的团队协作里，这种工具调用的静态关卡一旦遇到落盘的数据和生成的产物，很快就会失去控制。\nCloudflare\n发布说明\n提供了一个可借鉴的思路：借用操作系统的角色隐喻重新组织应用架构，把原本一次性的调用检查，延伸到读取登记与共享准入两个环节。需要说明的是，它目前没有覆盖所有外发出口的统一检查，webFetch、模型调用、blueprint\n发布等走各自不同的控制路径。把代码翻透之后，我想从一线开发者的视角，聊聊这套设计背后的真实机制，以及咱们在自己架构里落地时到底该怎么取舍。\n薪资表生成后共享：工具调用检查为何在这一刻失效？\n传统工具调用检查 vs Cloudflare OS\n的读取登记与分享重验\n咱们从团队日常里一个常见的场景说起。HR 负责人 Alice\n具备薪资库权限，在 Agent 工作区里调数据仓库 API\n算了一张团队平均薪资看板。她觉得做得很棒，顺手把工作区链接发给了团队主管\nBob。但 Bob 在公司里并没有看薪资的权限。当 Bob\n点开链接的那一秒，现有的安全防线就失去了作用。\n无论是传统的 API 网关还是 MCP 协议，校验都发生在 Agent\n伸手拿数据的瞬间。当时 Alice\n在场，权限校验顺利通过，数据读出来生成了看板。等看板做好、工作区发给 Bob\n时，工具调用早就完成了。眼前只有一份生成好的看板，系统丢掉了三样东西：记不住数据源来自哪里、跟踪不到哪些图表染了敏感数据、也无法在\nBob 进门时拿 Bob 的凭据去重测数据源。\n这就是典型的读取时合法，落地后失忆。一旦数据进了工作区，光靠 API\n调用的那一下拦阻，根本管不住后面的分享与二次泄露。要解决这个问题，防线必须覆盖数据读取后的整个生命周期：当数据读进工作区变成产物，需要把控的已经超出了某一次接口调用，延伸到了整个运行环境。\n为什么叫 Cloudflare\nOS？看清它的操作系统隐喻\nCloudflare OS\n部件与传统操作系统的对照\n这正是 Cloudflare 把它叫作操作系统的原因。当 Agent\n拥有了长期运行的小程序、共享工作区和外部数据连接时，它的运行环境本身就是一个微型\nOS。正如他们在\n发布说明\n和\n内部采用说明\n里说明的那样，叫\nCloudflare OS 并非要搞一个替代 Linux 或 macOS 的系统，而是给共享 Agent\n应用建立一套清晰的底层抽象。\n翻看源码可以发现，Cloudflare OS 沿着 Agent\n处理请求的物理动作推进，将传统操作系统的核心组件做出了具体的工程实现：\n用户接入的 Workspace 相当于操作系统的用户 Session\n和共享工作目录，承载着会话历史、上下文文件、生成的小应用以及外部资源连接。系统的前后端（\nworkshop-frontend\n和\nworkshop-backend\n）则分别扮演 Shell\n与内核子系统的角色，负责接收用户输入与调度底层资源。\n当 Agent 需要访问 GitHub、Notion 或 Slack\n等外部服务时，它并不能直接接触底层长期凭据，而是通过 Gatekeeper\n发起请求。Gatekeeper 就像设备驱动，向环境注入类似\nenv.PROJECT\n的对象能力绑定，负责执行实际的外部读取，并在敏感写入时触发用户审批。每次外部读取完成后，Gatekeeper\n都会将数据源头向内核报备。\n当 Agent 在运行中动态生成带有前端、后端逻辑与数据库的交互式小应用\nGadget\n时，这些小程序就像是在隔离沙箱里运行的进程。如果用户希望将应用模板分享给他人，但不带走自己的运行数据与凭据，系统会导出\nBlueprint，这便相当于可执行文件的代码模板。\n而在后台统筹这一切的，是运行在 Cloudflare Durable Objects\n上的持久化进程 Overseer。Overseer\n扮演着操作系统内核的角色，保存着工作区的完整状态、协作者关系，以及由各个驱动报备上来的历史观察集合。这么一设计，驱动按合同应当读了什么都向内核报备，内核再拿着这本账本去把控工作区的入口。需要说明的是，这套完整报备依赖每个驱动的正确实现，core\n并不能强制保证分页、子\nsession、缓存等边缘路径上不漏记。安全防线找到了收敛的支点，但这个支点的牢固程度取决于驱动的实现质量。\n把授权拉长到读取后与共享时：观察记录与双向不变量\n在这个支点上，Cloudflare OS 解决 Alice 和 Bob\n困局的思路是：不在分享瞬间去解析看板内容，而是在内核里维持一套双向不变量。\n第一个动作发生在读取数据时。每当 Agent\n通过驱动去外部取数据，驱动必须显式调用\nauthorizeObservation()\n接口\n。内核把这次读取的数据源 ID 和所需权限存进持久化的 Observation\nSet 清单里。工作区不仅记录了用户发过什么\nPrompt，还记下了这个工作区吸收过哪些受控数据源。\n第二个动作发生在\n打开与分享拦截路径\n上，内核实施双向把关：\n入口重验（协作者打开时）\n：当 Bob 尝试打开 Alice\n分享的工作区时，Overseer 会取出该工作区积累的所有观察记录，用 Bob\n的身份凭据逐一向底层 API 发起重新校验。只要 Bob\n缺少其中任何一个数据源的读取权限，Overseer 就会阻断 Bob\n打开该工作区。\n后序阻断（共享后新读取）\n：如果工作区已经被 Alice 和\nBob 共享，当 Alice 在后续对话中想让 Agent 读一个新的敏感源时，Overseer\n在 Gatekeeper\n准备读取前就会拦截该请求，因为允许这次读取会导致工作区的观察集合超出 Bob\n的权限范围。\n闭锁降级（Fail-closed 机制）\n：对于某些标记为仅\nOwner 可读的高敏感数据源，一旦在工作区中读取后，Overseer\n会立即锁定该工作区，禁止添加新的协作者，同时切断外部公开的网络获取接口。\n有了这套机制，系统不用费劲去理解看板内容，只要发现 Bob\n的权限包不住工作区历史吸纳的数据源清单，就能在入口处把风险掐断。\n坐标系定位：它与\nCapability、Taint Tracking 及 MCP 的关系\n理解了 Cloudflare OS\n的这套做法，咱们从安全理论和工程实践的角度，可以给它找个准确的位置。\n重新捋一遍它的物理过程：调用前不给全局密钥给受控句柄（如\nenv.PROJECT\n）；读取后在工作区追加数据源清单；分享和打开时拿清单跟接收者的身份做匹配；导出\nblueprint\n时只剥离数据和凭据，不做身份匹配。在安全坐标系里，这三步物理动作分别对应了对象能力代理、粗粒度观察污点标记和身份权益追溯。它没有停留在调用完就管不到的传统\nAPI\n关卡，也没有去走给每个字符做动态跟踪的高成本路线。它选在工作区这个粒度做记账，是在实现成本和实用安全之间做了一次务实的折中。\n明白了这个定位，也就看清了它和当下火热的 Model Context\nProtocol（MCP）的关系：MCP\n规范（2026-07-28）的核心在于工具调用的标准化、OAuth 授权以及调用前的\nScope 协商，管的是如何规范地去拿数据。Cloudflare OS\n管的是拿完数据之后的故事，在 MCP\n上层叠加了一层观察追溯和共享准入。两者在上下游各司其职，形成互补。\n在处理通用的 MCP 绑定时，Cloudflare OS 在\nMCP\n共享策略定义\n里采取了保守的态度：它不允许用户直接把带凭据的 MCP\n连接分享给别人。如果你想分享 Gadget，只能分享不带凭据和数据的 Blueprint\n代码模板，让新协作者用自己的账号去重新绑定。\n落地蓝图：如何为你自己的\nAgent 架构补齐这一层？\n看清这套设计的机制后，咱们搭建自己的企业级 Agent\n架构时，可以顺理成章把安全治理划分为三个平面：\n[ 1. 调用前平面 Pre-call Plane ]\nCapability 代理 / 动态 Scope / 凭据隔离 (如 env.PROJECT)\n│\n▼ (数据读取)\n[ 2. 读取后平面 Post-read Plane ]\nGatekeeper 显式记录 ──► Overseer 动态 Observation Set 清单\n│\n▼ (上下文/产物分享)\n[ 3. 传播与出口平面 Pre-egress Plane ]\nWorkspace / 产物准入校验（Cloudflare OS 已做）\n──► 统一 Egress Sink Policy（需自行补齐，Cloudflare OS 当前未做）\n调用前平面\n：继续贯彻 Capability 思想。别在 Agent\n上下文中直传全局 API 密钥，统一用有限权限的代理句柄或临时凭据。\n读取后平面\n：在数据接入层强制埋点。只要发生了外部数据读取，必须向服务端持久化上下文写入\nObservation Set，把账本记明白。\n传播与出口平面\n：在工作区打开、分享时调用统一的策略引擎，比对受众身份与历史账本。向外发请求的统一出口检查需要自行补齐——Cloudflare\nOS 当前只做了 share/open\n准入，webFetch、模型调用等外发渠道走各自不同的控制路径。\n当然，咱们也没必要在所有项目里都搞这么重。结合实践，建议大家按场景做取舍：\n场景类型\n是否需要观察追溯与受众重验\n架构建议\n单用户受控终端 / 本地\nCLI\n不需要\n传统的 API Key\n加本地沙箱足够，没必要加内核开销。\n单人使用但具备公开 Web\n导出\n简易需要\n重点把守出口检查，防止公开 Fetch\n泄露数据。\n企业多人共享\nWorkspace\n必须构建\n必须建立 Observation Set\n清单，并在打开与分享节点做身份重验。\n跨部门数据协同分析\n必须构建（需升级）\n在工作区记账的基础上，把标记做细到文件或产物粒度，避免过度污染。\n从工具调用的瞬间拦截，走向工作区级的观察追溯与共享准入，是 Agent\n从个人助手走向企业生产力系统绕不开的一关。Cloudflare OS\n用一套贴切的操作系统隐喻帮咱们把路探了出来，它推进了授权模型，但尚未完成从资源、产物到所有出口的端到端闭环。至于如何把出口守严、把标记做细，就看咱们在实际工程里的手艺了。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/cloudflare-os-authorization-20260808.html",
+      "content_chars": 4542,
+      "content_sha256": "55d6fae8826535c83fc784443c607d6e5d76372209b170697c01503576e39024",
+      "content_fetched_at": "2026-08-10T21:51:05.912639+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-08T00:00:00+00:00",
+      "collected_at": "2026-08-10T21:49:59.999600+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/cloudflare-os-authorization-20260808.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Agent 读过的数据，分享后还能给谁看？Cloudflare OS 的授权实践与源码真相",
+          "url": "https://yage.ai/share/cloudflare-os-authorization-20260808.html",
+          "content_sha256": "55d6fae8826535c83fc784443c607d6e5d76372209b170697c01503576e39024"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
