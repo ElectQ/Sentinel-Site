@@ -1,339 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-08-12",
-  "generated_at": "2026-08-11T21:58:18.268439+00:00",
-  "item_count": 13,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:f8fad94255cc1019",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-11T21:55:40.757554+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-11T21:56:21.076677+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:116081946ef31194",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-11T21:55:40.757554+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-11T21:56:31.943721+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:ea42cc931f875372",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-11T21:55:40.757554+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-11T21:56:42.791356+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:1a3c239953d250ba",
-      "kind": "publish",
-      "text": "idov31-posts published: 09 Aug 2026Inside Event Tracing for Windows with EtwSuiteEvent Tracing for Windows is one of Windows' richest telemetry systems. This video introduces the ETW ecosystem and shows how EtwSuite can turn",
-      "actor": "idov31-posts",
-      "actor_url": "https://idov31.github.io/posts",
-      "created_at": "2026-08-11T21:55:40.757554+00:00",
-      "html_url": "https://idov31.github.io/posts/inside-etw-with-etwsuite",
-      "title": "09 Aug 2026Inside Event Tracing for Windows with EtwSuiteEvent Tracing for Windows is one of Windows' richest telemetry systems. This video introduces the ETW ecosystem and shows how EtwSuite can turn",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "09.08.2026\nInside Event Tracing for Windows with EtwSuite\nIdo Veltzman\nTable Of Contents\nEvent Tracing for Windows (ETW) is one of the richest sources of telemetry available on Windows. It can expose activity from the kernel, drivers, services, frameworks, and applications, but the provider models, sessions, and metadata can make it difficult to approach as a researcher or defender.\nIn this video, I walk through the ETW ecosystem, look at what happens when providers register and sessions start, and demonstrate how EtwSuite can turn those events into a practical research workflow.\nWhat the Video Covers\n▸\nThe ETW architecture: providers, controllers, consumers, and the session infrastructure that connects them.\n▸\nClassic, WPP, manifest-based, and TraceLogging providers, including the practical limitations and access restrictions that matter when consuming them.\n▸\nHow ETW is initialized during boot, how providers register, and how a controller creates a tracing session.\n▸\nUsing EtwSuite to find providers, consume live events, filter results, and record or export traces for later analysis.\n▸\nA UAC-bypass case study that compares benign and malicious requests to identify useful detection signals.\nEtwSuite as a Research Tool\nEtwSuite\nis a Windows-native ETW inspection suite built to make the full workflow easier to work with from one desktop application. You can browse registered providers, inspect their metadata, collect live events, and save recordings as ETL, JSON, or CSV files.\nThat combination is especially useful when exploring an unfamiliar provider. Rather than writing a consumer before knowing whether a provider exposes the fields you need, you can inspect the manifest, generate a controlled event, and compare the resulting telemetry directly in the tool.\nFrom Telemetry to Detection\nThe demonstration uses the Microsoft Antimalware UAC Scan provider to compare a normal elevation request with a UAC bypass. By examining the requesting process, request type, trust state, auto-elevation information, command line, and related COM data, it becomes possible to identify signals that distinguish the two cases.\nThe important takeaway is not a single static rule. It is the research process: select a relevant provider, collect benign and suspicious samples, compare the fields that change, and then validate the resulting detection against more real-world activity.\nGet Started\nIf you want to follow along, download EtwSuite from the\nproject repository\nand use the video as a starting point for exploring the providers on your own system.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://idov31.github.io/posts/inside-etw-with-etwsuite",
-      "content_chars": 2568,
-      "content_sha256": "088302197e66b15091135d2bf466d39407e77b7f905178241edf61a2081ad842",
-      "content_fetched_at": "2026-08-11T21:56:44.874685+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Ido Veltzman Posts",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:6ec06842a26afee3",
-      "kind": "publish",
-      "text": "safebreach-blog published: Threat Coverage | ResearchAug 11 , 2026Gunra Ransomware: SafeBreach Coverage for CISA Alert AA26-222ALearn how SafeBreach maps CISA Advisory AA26-222A to simulations that v...Read More",
-      "actor": "safebreach-blog",
-      "actor_url": "https://www.safebreach.com/blog/",
-      "created_at": "2026-08-11T21:55:40.757554+00:00",
-      "html_url": "https://www.safebreach.com/blog/gunra-ransomware-cert-alert-aa26-222a/",
-      "title": "Threat Coverage | ResearchAug 11 , 2026Gunra Ransomware: SafeBreach Coverage for CISA Alert AA26-222ALearn how SafeBreach maps CISA Advisory AA26-222A to simulations that v...Read More",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "Aug 11, 2026\nGunra Ransomware: SafeBreach Coverage for CISA Alert AA26-222A\nLearn how SafeBreach maps CISA Alert AA26-222A to simulations that validate your controls against key activities of the Gunra Ransomware variant, including\nNTDS credential dumping, pass-the-hash lateral movement, SMB and RDP lateral movement, and more.\nSummary\nCISA Alert AA26-222A details the Gunra ransomware-as-a-service operation, a Conti-derived double-extortion variant also branded Golden Community, which has hit government, critical infrastructure, and commercial targets worldwide. This post outlines the campaign’s TTPs mapped to MITRE ATT&CK, summarizes the advisory’s IOCs, and covers the new and existing content SafeBreach has added to its platform to help customers validate that their controls detect and block NTDS credential dumping, pass-the-hash lateral movement, SMB and RDP lateral movement, indicator removal, Volume Shadow Copy manipulation, and SharePoint data exfiltration.\nAuthor:\nStacey Nosan, Senior Director of Content & Communications\nOn August 10, 2026, the Federal Bureau of Investigation (FBI), Cybersecurity and Infrastructure Security Agency (CISA), Department of Defense Cyber Crime Center (DC3), National Security Agency (NSA), U.S. Secret Service (USSS), and Republic of Korea’s National Police Agency (KNPA) released a joint Cybersecurity Advisory (CSA) titled\n“#StopRansomware: Gunra Ransomware” (Alert Code: AA26-222A)\n. This advisory provides critical intelligence on the Gunra ransomware-as-a-service operation, including its tactics, techniques, and procedures (TTPs) and indicators of compromise (IOCs) identified through FBI and KNPA investigations.\nGunra actors have targeted government, critical infrastructure, and commercial organizations across the Americas, Europe, the Middle East, Africa, and the Asia-Pacific, operating a double-extortion model that pairs full-volume encryption with the threat of publishing stolen data to a dedicated leak site.\nUnderstanding the Gunra Threat\nThe FBI first observed Gunra in\nApril 2025\nas a sophisticated double-extortion ransomware variant derived from the\nConti\nransomware source code leaked in 2022—placing it in the same lineage as\nBlack Basta\n,\nRhysida\n, and other post-Conti families. The actors set up a Tor-based dedicated leak site (DLS) almost immediately to name victims and publish exfiltrated data.\nAs of\nJanuary 2026\n, Gunra expanded into a structured\nransomware-as-a-service (RaaS)\naffiliate program advertised on dark web forums, supplying affiliates with a management panel, a configurable ransomware builder, cross-platform locker payloads, and structured affiliate documentation. The FBI has observed the group adopting new branding aliases in support of that expansion, notably operating under the name\nGolden Community\n.\nGunra has also commercialized the front end of the intrusion. The group actively recruits penetration testers and self-described ethical hackers to serve as\ninitial access brokers\n, offering a share of ransom profits in exchange for enterprise network access. For defenders this matters more than the branding: the locker is consistent from victim to victim, but the intrusion tradecraft that precedes it varies by whoever sold the access. Do not expect a single repeatable entry signature.\nCampaigns initially focused on Windows environments; reporting from mid-2025 onward documents a\nLinux variant\nand a move toward broader cross-platform targeting, which materially widens the attack surface inside a virtualized estate.\nVictims on the actors’ DLS span healthcare and public health, financial services and insurance, critical manufacturing and construction, transportation systems and logistics, government services and facilities, utilities, academia, media and communications, retail, and professional and nonprofit services.\nKey Tactics, Techniques, & Procedures (TTPs)\nThe advisory maps Gunra activity to\nMITRE ATT&CK for Enterprise v19.1\n.\nInitial Access\nGunra actors gain access primarily by exploiting known vulnerabilities in internet-facing firewall and VPN appliances (\nT1190\n). The FBI observed exploitation of two FortiOS / FortiProxy authentication bypass flaws (both CWE-288):\nCVE-2024-55591\nCVE-2025-24472\nBoth allow actors to abuse scheduled tasks on vulnerable FortiOS firewalls to create a persistent malicious super-user account named\nforticloud-sync\nwith a hard-coded password. That account name is a high-value hunt target.\nSeparately, KNPA observed Gunra actors exploiting credential-exposure and SSH access-control weaknesses in internet-facing VPN gateways to obtain unauthorized remote access.\nExecution\nThe Windows encryptor drives execution and targeted encryption through native OS APIs, using FindFirstFileW / FindNextFileW to enumerate files and directories across all accessible drive letters, A through Z (\nT1106\n). Actors execute commands via cmd.exe (\nT1059.003\n) to initiate WMI operations (\nT1047\n).\nPersistence & Privilege Escalation\nIn one KNPA-investigated intrusion, actors reached an administrator account on an SSL-VPN appliance by exploiting default credentials in the absence of account lockout controls (\nT1078.001\n,\nT1078.002\n), then used external-facing remote services to maintain that access (\nT1133\n).\nHaving reached the SSL-VPN administrative web console, the actors identified an unused account with reach into both internet-facing and internal corporate networks, and modified its configuration to bypass the mandatory password-change requirement so it could be reused (\nT1098\n).\nLateral Movement\nSMB / Windows admin shares\nvia Impacket’s psexec.py and smbclient.py (\nT1021.002\n).\nRDP\ninto the internal VDI environment using stolen session data, pivoting to the VDI authentication web server, the internal Active Directory server, and IT staff virtual desktops (\nT1021.001\n).\nPass-the-hash\n(\nT1550.002\n) and\npass-the-ticket\n(\nT1550.003\n) into privileged systems.\nCommand & Control\nSSH tunneling\nusing OpenSSH downloaded from an attacker-controlled server (\nT1105\n,\nT1572\n).\nCredential Access\nThis is the deepest section of the advisory, and the most relevant to validation:\nNTDS credential dumping\nusing Impacket’s secretsdump.py against compromised domain controllers to extract password hashes (\nT1003.003\n).\nNetwork sniffing\n—abusing SSL-VPN traffic-control functionality to capture VDI login credentials and session data in transit (\nT1040\n).\nSession cookie theft\nand reuse to hijack active sessions and impersonate legitimate users (\nT1539\n).\nMFA bypass via authentication-process modification\n—altering files on a victim’s VDI authentication portal server so that a specific attacker-chosen one-time password always succeeds, creating a persistent MFA backdoor (\nT1556.006\n).\nCredentials from password stores\n—accessing a Hiware access-control server over SSH from a compromised virtual desktop and stealing its symmetric encryption key (\nT1555\n), then using that key to decrypt and dump stored enterprise server passwords (\nT1003\n).\nStealth, Defense Impairment, & Discovery\nGunra actors delete system and network access logs (\nT1685\n) and clear command history (\nT1070.003\n). They deliberately time reconnaissance and malicious activity to\nlate-night and early-morning hours (10:00 p.m. to 06:00 a.m.)\nto avoid administrator detection (\nT1678\n)—a scheduling signal defenders can build alerting around.\nThe Windows binary includes the IsDebuggerPresent API to frustrate reverse engineering (\nT1622\n), and applies selective exclusion logic (\nT1679\n): it skips C:\\Windows, C:\\Program Files, and C:\\Program Files (x86), then filters out system-critical extensions such as .exe, .dll, and .sys. Files consistent with user data—documents, databases, images, archives—are queued for encryption. The binary also avoids re-encrypting its own output. The purpose is operational, not merciful: it keeps the host bootable and the ransom note readable.\nThe binary performs file and directory discovery across all accessible drive letters (\nT1083\n), and actors enumerate active network connections to map reachable infrastructure before deployment (\nT1049\n).\nNotably, the ransomware binary is self-contained and performs full-volume encryption\nwithout observable network indicators\n— no DNS, no HTTP. Detection has to come from behavior, not egress.\nCollection & Exfiltration\nActors collect business-critical documents, databases, PII, and internal email (\nTA0009\n,\nT1005\n,\nT1114\n), archive it with 7-Zip, WinRAR, and RClone (\nT1560\n), and move it out over the file-sharing service\nMega\n(\nT1567\n) or over FTP via FileZilla (\nT1048\n). A malicious executable (main.exe) specifically targets\nMicrosoft OneDrive and SharePoint\nfor cloud data theft (\nT1530\n).\nFor at least one known victim, exfiltrated volume reached\ntens of terabytes\n.\nImpact\nData encrypted for impact\n(\nT1486\n)—a multi-threaded architecture encrypting many files in parallel using\nChaCha20 + RSA-4096\n. Encrypted files are renamed with the\n.ENCRT\nextension; one documented July 2025 sample used\n.CRYPT\n, and Linux ELF variants append\n.GNRA\n.\nInhibit system recovery\n(\nT1490\n)—WMI-driven deletion of volume shadow copies prior to encryption, e.g. cmd.exe /c C:\\Windows\\System32\\wbem\\WMIC.exe shadowcopy where “ID='{guid}'” delete. In one case, actors deleted backup and archived data at both the primary data center\nand\nthe disaster recovery center, before and after deployment.\nFinancial theft\n(\nT1657\n)—a static ransom note,\nR3ADM3.txt\n, written into every affected directory, assigning victims a Client ID and initial password for a Tor negotiation portal. Victims are directed to negotiate within\nfive to seven days\nvia the portal or qTox. Opening demands have run\nover tens of millions of US dollars\n.\nA recovery opportunity worth knowing about:\nas of March 2026, researchers identified a weakness in Gunra’s\nLinux ELF variant\n(.GNRA). Its encryption keys use a weak pseudorandom number generator seeded with the predictable srand(time(NULL)). Defenders may be able to mathematically reconstruct keys using file timestamps and recover files\nwithout paying the ransom\n. If you are responding to a Gunra Linux incident, preserve encrypted files, file timestamps, ransom notes, and system logs before doing anything else.\nLeveraged Tools\nThe advisory names publicly available tooling observed on Gunra infrastructure:\nFileZilla, Amass, RClone, Sliver, 7-Zip, WinRAR, DBeaver, Slack, Microsoft Visual Studio Code, MobaXterm, AnyDesk, Google Remote Desktop, Mimikatz,\nand\nImpacket\n(smbclient, psexec, secretsdump). Presence alone is not proof of compromise—several are legitimate admin tools—but co-occurrence warrants investigation.\nIndicators of Compromise (IOCs)\nThe advisory provides extensive IOCs, including:\nIP addresses associated with Gunra infrastructure from June 2025 through December 2025.\nThe clearnet DLS mirror domain datapub[.]news (June–July 2025) and three Tor .onion DLS addresses spanning April 2025 to July 2026.\nFour ProtonMail / Gmail ransom-negotiation email addresses and four qTox IDs.\nSHA-256 hashes for four malicious files: two main.exe variants (OneDrive / SharePoint exfiltration), cryptor.exe, and msmp.exe.\nThe malicious Fortinet user account forticloud-sync.\nFor the full list, download the AA26-222A STIX XML (55 KB) or STIX JSON (62 KB) bundles from the CISA advisory page. The authoring agencies note that observed IPs and domains may be historical, and recommend vetting them before blocking.\nBeyond the indicator lists, hunt for the behaviors: WMI-driven shadow copy deletion, creation of a forticloud-sync account on Fortinet devices, .ENCRT / .CRYPT / .GNRA file extensions and R3ADM3.txt notes appearing across shares, Impacket execution against domain controllers, and privileged activity clustered between 10:00 p.m. and 06:00 a.m.\nSafeBreach Coverage and Playbook Attack Updates\nExisting Behavioral Coverage\nSafeBreach already simulates several of the attacker behaviors detailed in this campaign, including:\n6807 and 7223 – NTDS.dit credential dumping\n2273 – Pass the Hash lateral movement over SMB using Mimikatz\n6473 – Agentless lateral movement over RDP\n483, 6513, and 6550 – Agentless lateral movement over SMB with remote code execution\n2245 – Indicator removal on host\n6372 – Volume Shadow Copy manipulation\n10975 – Files exfiltration from Azure SharePoint\nThese simulations are mapped to MITRE ATT&CK and can be used immediately to validate detection and response capabilities across your infrastructure.\nNew IOC-Based Coverage\nTo address the newly released IOC guidance, we added the following new simulation:\n11754 – Communication with APT (US-CERT AA26-222A) using HTTP. This simulation validates outbound HTTP communication with Gunra’s advisory listed command and control infrastructure.\nWe also tagged 12 existing Gunra malware sample moves, covering write to disk, pre-execution, transfer over HTTP/S, and email delivery for two sample variants, so they now filter under this advisory.\nIt’s worth noting the advisory’s own\nValidate Security Controls\nsection explicitly recommends selecting the ATT&CK techniques in Tables 6–18, aligning security technologies against them, testing, analyzing performance, and tuning—continuously, at scale, in production. That is precisely the exercise the SafeBreach platform automates.\nWhat You Should Do Now\nSafeBreach customers can now validate their security controls against these TTPs in multiple ways.\nMethod 1 — SafeBreach Scenarios:\nNavigate to the SafeBreach Scenarios page and choose\nCISA Alert AA26-222A (Gunra Ransomware)\n.\nMethod 2 — Attack Playbook:\nOpen the Attack Playbook and filter attacks related to\nCISA Alert AA26-222A (Gunra Ransomware)\n. Additionally, you can refer to the list above as well to ensure a comprehensive level of coverage.\nMethod 3 — Known Threat Series Report:\nFrom the Known Threats Series report, select\nCISA Alert AA26-222A (Gunra Ransomware)\nand select Run Simulations, which will run all attack methods.\nAdditional Advisory Steps\nRun the SafeBreach Platform Simulations\nLog into the SafeBreach platform and navigate to the updated playbooks mapped to AA26-222A.\nExecute simulations that emulate Gunra behaviors—NTDS credential dumping, pass-the-hash lateral movement, Volume Shadow Copy manipulation, indicator removal on host, and SharePoint data exfiltration..\nUse the simulation IDs listed above to test both behavioral and IOC-based coverage:\n11754 (C2 communication check)\n6807 (NTDS.dit credential dumping)\n2273 (Pass the Hash lateral movement)\n6372 (Volume Shadow Copy manipulation)\n10975 (SharePoint data exfiltration)\nReview results to validate detection, surface gaps, and guide remediation.\nMitigation Strategies\nDrawn from the advisory’s Mitigations section, which aligns to the CISA/NIST Cross-Sector Cybersecurity Performance Goals (CPGs):\nPrioritize patching known exploited vulnerabilities\n[CPG 2.B]—including CVE-2024-55591 and CVE-2025-24472—in internet-facing systems such as VPN gateways and RDP-exposed infrastructure, and keep all OSs, software, and firmware current.\nImplement a recovery plan\n[CPG 3.I, 3.0, 1.C] that maintains multiple copies of sensitive data and servers in a physically separate, segmented, secure location.\nReview domain controllers, servers, workstations, and Active Directory\nfor new or unrecognized accounts [CPG 2.A, 2.E]—forticloud-sync is a known Gunra artifact.\nAudit administrative accounts and configure access controls\nto the principle of least privilege [CPG 3.G].\nSegment networks\n[CPG 3.I] to control traffic flows between subnetworks and restrict adversary lateral movement.\nRequire MFA\nfor all services to the extent possible, particularly webmail, VPNs, and accounts accessing critical systems [CPG 3.F].\nDisable command-line and scripting activities and permissions\n[CPG 3.G, 3.M]—Gunra’s privilege escalation and lateral movement depend heavily on command-line tooling.\nProactive Threat Monitoring\nAlert on recovery inhibition as high-severity.\nTreat WMIC.exe shadowcopy delete and equivalent WMI/PowerShell shadow copy operations as incidents, not informational events.\nWatch for the forticloud-sync account\nand any other unrecognized super-user account on Fortinet firewall devices.\nBaseline off-hours privileged activity.\nGunra deliberately operates between 10:00 p.m. and 06:00 a.m.; administrative logons and reconnaissance in that window deserve their own detection logic.\nHunt for encryption artifacts at rest\n—.ENCRT, .CRYPT, and .GNRA extensions and R3ADM3.txt notes across file shares and NAS.\nMonitor for archive-then-upload sequences\n—7-Zip / WinRAR / RClone activity on file servers followed by outbound transfer to Mega or FTP.\nDetect on behavior, not egress.\nThe locker itself generates no network indicators; encryption will not announce itself on the wire.\nStay Ahead with SafeBreach\nFor a complete view of your security gaps against Gunra ransomware attacks, sign into the SafeBreach platform and run the latest simulations mapped to AA26-222A. This content validates NTDS credential dumping, pass-the-hash lateral movement, SMB and RDP lateral movement, indicator removal, Volume Shadow Copy manipulation, and SharePoint data exfiltration. It does not currently validate the Fortinet CVE exploitation used for initial access, MFA bypass, session cookie theft, or actual ransomware encryption. Note that several of these simulations, specifically 10975, 6372, 6473, 6483, 6513, 6550, 6807, and 7223, are flagged as Advanced Actions, meaning they do more than a passive simulation. For example, 10975 makes a real Microsoft Graph API call using your own Azure credentials. Review these before running in a production environment.\nYou can also take your testing a step further with\nSafeBreach Propagate\n. Propagate enables you to assess how attackers could pivot across your environment post-compromise—mapping high-risk attack paths, visualizing lateral movement, and prioritizing remediation efforts based on exposure to your most critical assets. Find out more in the\nSafeBreach Propagate solution brief\n.\nYou Might Also Be Interested In\nResearch\nBlog\nIranian-Affiliated PLC Exploitation: SafeBreach Coverage for CISA Advisory AA26-097A\nRead More\nResearch\nBlog\nRussian State-Supported Zimbra Phishing: SafeBreach Coverage for CISA Advisory AA26-204A\nRead More\nPodcast\nVideos\nPodcast: Poisoned Pipelines: TeamPCP and the FBI Flash on Weaponized Dev Tools\nListen Now\nGet the latest\nresearch and news",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "browser",
-      "content_source_url": "https://www.safebreach.com/blog/gunra-ransomware-cert-alert-aa26-222a/",
-      "content_chars": 18441,
-      "content_sha256": "7aaf551ae025e82e78fa0bef9c5225bd89c1a5345e03a8a0c20eed78e5935462",
-      "content_fetched_at": "2026-08-11T21:57:22.879639+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "SafeBreach Blog",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:67a256105e343caa",
-      "kind": "publish",
-      "text": "cymulate-blog published: When Monitored Content Strikes Back: Account Takeover in Microsoft PurviewRead More",
-      "actor": "cymulate-blog",
-      "actor_url": "https://cymulate.com/blog/",
-      "created_at": "2026-08-11T21:55:40.757554+00:00",
-      "html_url": "https://cymulate.com/blog/microsoft-purview-xss-account-takeover/",
-      "title": "When Monitored Content Strikes Back: Account Takeover in Microsoft PurviewRead More",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "When Monitored Content Strikes Back: Account Takeover in Microsoft Purview\nBy:\nCymulate Research Lab\nAugust 11, 2026\nIlan Kalendarov, Security Research Team Lead\nBen Zamir, Security Researcher\nElad Beber, Security Researcher\nHow a single external message could hand over your credentials.\nMicrosoft Purview is built to catch dangerous messages. But what happens when the message fights back? Cymulate Research Labs found that a single external Teams message, email or Copilot prompt could carry stored malicious code into a Purview reviewer’s authenticated browser - turning a routine compliance check into a path to token theft and account takeover.\nResearch Overview\nMicrosoft Purview Communication Compliance is a monitoring product: its job is to capture data or messages that users shouldn't have sent or received and allow actions to be taken. Cymulate researched Purview as part of its ongoing efforts to help secure AI and AI security controls for its clients and the global security community.\nThe vulnerability found was responsibly disclosed and fixed. Cymulate continues to assist its clients with their journey to become “AI-ready” and secure in the AI era.\nWhen the Review Console Becomes the Attack Surface\nCymulate Research Labs found that the Purview console doing the reviewing rendered captured messages as live HTML. A standard user, including a user in a completely different tenant with no permissions in yours, could send a Teams message, an email or a Copilot prompt containing a malicious payload, wait for it to be flagged and have their JavaScript execute inside the authenticated purview.microsoft.com session of every compliance analyst who opened the case.\nIn our proof of concept, that meant the reviewer's access and refresh tokens leaving the browser and reaching an attacker-controlled server, which constitutes full impersonation of a privileged compliance identity. Microsoft confirmed the behavior and shipped a service-side fix; no customer action is required.\nThe durable lesson is the one worth acting on: the consoles your analysts use to inspect hostile content are themselves part of your attack surface and they are reachable by anyone who can send your organization a message.\nVulnerability at a Glance\nField\nDetails\nAffected product\nMicrosoft Purview - Communication Compliance\nPortal\npurview.microsoft.com\nComponent\nCommunication Compliance review experience - “Matches in other sources”\nVulnerability class\nExternally deliverable stored cross-site scripting leading to privileged reviewer account takeover\nCWE\nCWE-79: Improper Neutralization of Input During Web Page Generation\nAttack vector\nNetwork: any monitored communication channel, including Teams chat, email and Microsoft 365 Copilot interaction\nPrivileges required\nNone in the target tenant. A standard M365 license in any tenant is sufficient\nUser interaction\nRequired - a reviewer opens the case and clicks View all\nImpact\nArbitrary JavaScript in the purview.microsoft.com origin, MSAL access and refresh token theft, impersonation of Communication Compliance Analyst / Investigator / Reviewer identities. Stored and multi-victim\nVendor response\nFix implemented service-side\nHow the Research Started\nOur customers place a high level of trust in Purview. It is where their DLP policies live, where insider risk signals land and where interactions with SaaS and now AI are governed. The Copilot prompt an employee typed at 11 p.m. is retained and reviewed in the same place as the email they sent to a competitor. When a control plane accumulates that much authority, “we deployed it” and “it works” stop being the same statement.\nSo we do what we always do: we build the attack scenarios that a customer can run against their own environment to find out which of their Purview policies actually fire, which classifiers actually match, and which alerts actually reach a human. That work normally ends with a question about the policy - did the DLP rule trigger, was the Copilot interaction captured, did the supervision policy flag the message?\nWhile generating deliberately offensive content to trigger a Communication Compliance supervision policy, we ended up spending a lot of time in the reviewer's seat and asking a different question. Not\nonly does the message get flagged, but\nwhat exactly happens in the browser of the analyst who opens it?\nWhat Communication Compliance Actually Does\nCommunication Compliance sits downstream of the channels your organization already runs. A supervision policy defines what to watch: Teams chats, Exchange mailboxes, Copilot interactions and what to match on, whether that is Microsoft's built-in offensive-language and harassment classifiers or an organization-specific rule.\nWhen something matches, the pipeline captures the message and stores its body, then surfaces the item in a review queue for the users in the Communication Compliance Analyst, Investigator or Reviewer role groups.\nTriage is rarely about a single message. So the product helps: when the same matched content appears elsewhere, the review pane shows a bar that reads “Match detected in X other sources,\n”\nwith a\nView all\nbutton. Clicking it opens the\nMatches in other sources\nflyout, which is a timeline that, in Microsoft's own words, shows messages containing the same matched content across other sources, including Teams chats, emails and Copilot interactions. The UserTimelineView API populates the flyout, and each item it returns carries an extractedText field: the captured body of the monitored communication.\nThat field is the entire finding. extractedText is, by definition, whatever the sender wrote. Communication Compliance is a system designed to store content that a human deems unacceptable. Hostile input is not an edge case in this product; it is the product. The one assumption it cannot afford to make is that the content it captured is safe to render.\nThe Field That Was Never Meant To Be Trusted\nIn the application, the flyout renderer passed extractedText straight into React's dangerouslySetInnerHTML, which is the API whose name exists specifically to make this decision hard to make by accident. There was no sanitization step in the path, in either of the two branches that render a timeline item.\nThe Teams-message branch of the timeline renderer passes extractedText into dangerouslySetInnerHTML.\nEmail (IPM.Note) messages, in the same function\nThe IPM.Note branch, same pattern, same unsensitized field.\nThe UserTimelineView response contained the raw message HTML with no server-side processing, so nothing upstream was neutralizing markup either. Whatever an attacker put in a monitored message would be parsed by the reviewer's browser as HTML.\nThe Attack, Step by Step\nStep 1: Say something worth reviewing\nThe attacker needs the compliance engine to care. That is the easy part. A supervision policy exists precisely to catch content like this. In our proof of concept, a message reading “I hate you !” was enough to simulate an offensive-language classifier and create a review item.\nStep 2: Send the payload down the same channel\nImmediately after the trigger message, the attacker sends a second message in the same conversation. This one is not offensive\n,\n; it is the payload. Because the two messages share a sender and a conversation, the second is captured and correlated with the first in the same user timeline.\nThe minimal payload that confirms execution\n<img src=x onerror=console.log(1)>\nAnd the weaponized form used in the PoC — an onerror handler that decodes and runs an arbitrary script\n<img src=x onerror=\"eval(atob('<base64-encoded exfiltration script>'))\">\nThe attacker sends both messages in Teams: the base64-wrapped payload, and the “I hate you !” message that trips the supervision policy.\nStep 3: Let the compliance pipeline persist it\nThe attacker's work is now finished. The supervision policy captures both messages and stores their raw bodies. The payload is not sitting in a transient DOM somewhere. It is persistent content in the compliance datastore, waiting to be served to every reviewer who ever pulls up this sender's timeline: one message, an indefinite number of victims.\nStep 4: Wait\nA compliance analyst working the queue selects the flagged message, sees\n“Match detected in 3 other sources,”\nand clicks\nView all\nbecause correlating a sender's behavior across channels is exactly the job the exploit fires during the intended investigation of the attacker's own message.\nThe reviewer opens the flagged item in the Communication Compliance queue. The “Match detected in 3 other sources” bar and its View all button are the trigger.\nStep 5: Execute in the reviewer's origin\nThe flyout renders every timeline item, including the payload item. The <img> fails to load, the onerror handler fires, and the attacker's script now runs as first-party JavaScript on purview.microsoft.com in a fully authenticated, privileged session.\nStep 6: Walk out with the tokens\nAs in most Azure-portal-derived applications, the reviewer's MSAL artifacts, access tokens, refresh tokens, account and tenant identifiers live in browser storage that JavaScript on the origin can read. The payload enumerated localStorage and sessionStorage, packaged the contents together with the page URL and user agent as JSON, and posted it to an attacker-controlled HTTPS listener.\nPayload executed. The console dump shows MSAL access and refresh tokens being read from the reviewer's browser storage. Identifiers and token values redacted.\nThe attacker's listener receives the exfiltration: a 243 KB JSON body, Content-Type application/json, Origin and Referer purview.microsoft.com. Body redacted.\nFrom here, the attacker impersonates the reviewer and inherits their access. A Communication Compliance reviewer is, by design, an identity that can read the organization's most sensitive captured communications.\nNote: an attacker with high privilege may create new policies that promote additional payloads, exploit other users and further elevate privileges.\nStep 7: Do all of it from another tenant\nNothing in the chain requires the attacker to be inside the victim organization. The full flow, with the sender in a separate tenant (an external user) and no permissions of any kind in the target tenant, produced the same result: the payload was captured, stored and rendered in the reviewer's session exactly as before.\nThe same attack from an external tenant: the sender is flagged “External” in Teams, and both the trigger and the payload land in the monitored conversation.\nEmail works identically. The payload arrives as a normal Outlook message with the “You don't often get email from…” external-sender banner and a Copilot summary bar above it, and it lands in the same timeline through the IPM. Note the branch.\nDelivery by email from an external sender. The captured body is what later reaches the reviewer's browser.\nProof of Concept: Watch the Exploit\nXSS And Copilot\nStored XSS in an enterprise portal is a familiar finding. Yet, this same vulnerability can be abused by Copilot as well:\nPurview surface messages sent in a Copilot session.\nDelivery uses a channel you cannot switch off.\nEngagement is guaranteed.\nBroader monitoring meant broader exposure.\nSecurity and compliance tooling is built to collect attacker-controlled content and display it to high-privilege humans. That makes the analyst console a target, and it makes “how does this product neutralize what it captured before showing it to my team?” a question worth asking of every vendor in that category - email security gateways, DLP consoles, SIEM and ticketing systems, EDR alert views.\nDisclosure Timeline\nDate\nEvent\nJun 30, 2026\nThe issue was reported to MSRC\nJul 21, 2026\nMicrosoft confirms the reported behavior and continues its investigation\nJul 22, 2026\nMicrosoft confirms a fix has been implemented\nVendor Response\nMSRC's handling was straightforward,\nvery quick and efficient\n. Microsoft confirmed the reported behavior, and a fix was implemented roughly three weeks after the report using a cloud-side change. Because Purview is a cloud-\nbased SaaS service, the fix was applied to tenants without any customer action.\nRecommended Actions for CISOs and Organizations\nTreat compliance and security consoles as tier-0 applications.\nA Communication Compliance reviewer can read the contents of your most sensitive conversations. Protect those identities the way you protect administrators: phishing-resistant MFA, PIM-based just-in-time role activation, conditional access scoped to compliant devices, and ideally a separate browser profile or workstation for review work.\nAssume attacker-controlled content will reach your analysts' browsers.\nInventory the tools that render captured or user-submitted content to privileged staff, and ask each vendor how that content is neutralized. This is a category-wide exposure, not a Purview-specific one.\nReduce what a stolen browser session is worth.\nToken protection and bound sessions, shorter token lifetimes, continuous access evaluation, and sign-in risk policies all shrink the window between “the attacker has your refresh token” and “the attacker is you.”\nScope reviewer access deliberately.\nFewer reviewers, correctly separated Analyst and Investigator role groups, and reviewer identities that are not also global administrators. Every additional reviewer was an additional independent victim of the same stored payload.\nValidate the second half of the chain, not just the first.\nThe interesting question is not only whether markup in a monitored message would have been caught. It is whether your controls would have noticed a portal origin posting hundreds of kilobytes of JSON to an unknown domain, or a compliance identity's token suddenly used from new infrastructure. Test it, don't assume it.\nWant to know whether your security stack would detect and stop this type of attack?\nRequest a demo\nto find out more about validating your security controls, testing detection coverage, and strengthening your resilience against evolving identity- and browser-based attacks.\nCymulate Research Lab\nOur highly experienced and diverse researchers are fluent in security intelligence practices, combining expertise in private security, military, and intelligence experience. Continuously examining the cyber-threat landscape, our experts deliver in-depth visibility into today’s threats and the actors behind them.\nMore about Author\nTable of Contents\nResearch Overview\nWhen the Review Console Becomes the Attack Surface\nVulnerability at a Glance\nHow the Research Started\nWhat Communication Compliance Actually Does\nThe Field That Was Never Meant To Be Trusted\nThe Attack, Step by Step\nProof of Concept: Watch the Exploit\nDisclosure Timeline\nVendor Response\nRecommended Actions for CISOs and Organizations\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nMore from the Cymulate Research Lab\nView More Resources\nblog\nThe Race to Ship AI Tools Left Security Behind. Part 1: Sandbox Escape\nAI tools shipped fast - but weak sandboxing left escape paths, exposing systems to data access, abuse, and full compromise.\nRead More\nblog\nCVE-2026-35603: Exploiting Configuration Trust in AI Coding Tools\nA Windows configuration flaw lets low-privileged users compromise AI coding tools, enabling cross-user code execution.\nRead More\nblog\nWhen AI Tools Become the Backdoor: Zero-Click RCE via Prompt Injection\nPrompt injection flaws in AI tools can trigger zero-click remote code execution through silent config poisoning.\nRead More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://cymulate.com/blog/microsoft-purview-xss-account-takeover/",
-      "content_chars": 15783,
-      "content_sha256": "46013f9953ec61febeec77db30c4143b00ddaaeb1b2ac448da06f697856c9c2e",
-      "content_fetched_at": "2026-08-11T21:57:55.625141+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Cymulate Blog",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:1db2d7555dfde648",
-      "kind": "publish",
-      "text": "cisco-advisory published: Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Remote Access SSL VPN Denial of Service Vulnerability",
-      "actor": "cisco-advisory",
-      "actor_url": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml",
-      "created_at": "2026-08-11T16:39:00+00:00",
-      "html_url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-dos-dzv4mQFF?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Denial+of+Service+Vulnerability%26vs_k%3D1",
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Remote Access SSL VPN Denial of Service Vulnerability",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "A vulnerability in the Remote Access SSL VPN service for Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.\nThis vulnerability is due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to the Remote Access SSL VPN service on an affected device. A successful exploit could allow the attacker to cause the affected device to reload, resulting in a DoS condition.\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\nThis advisory is available at the following link:\nhttps://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-dos-dzv4mQFF\n<br/>Security Impact Rating: High\n<br/>CVE: CVE-2026-20349",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-dos-dzv4mQFF?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Denial+of+Service+Vulnerability%26vs_k%3D1",
-      "content_chars": 1009,
-      "content_sha256": "ded2e58db86e1cb607d3a1a43e9bfa5583de091368c7b3b05c79ac3e256fca59",
-      "content_fetched_at": "2026-08-11T21:58:12.758313+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "Cisco Security Advisory",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:562408c327eeafde",
-      "kind": "publish",
-      "text": "ivanti-advisory published: August 2026 Security Update",
-      "actor": "ivanti-advisory",
-      "actor_url": "https://www.ivanti.com/blog/topics/security-advisory",
-      "created_at": "2026-08-11T14:23:41+00:00",
-      "html_url": "https://www.ivanti.com/blog/august-2026-security-update",
-      "title": "August 2026 Security Update",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Ivanti releases standard security patches on the second Tuesday of every month. In today’s rapidly evolving technology and threat landscape, we believe responsible transparency should be a cornerstone of any product security program.\nAI is compressing the time-to-exploit\n, and Ivanti uses leading technologies to proactively find and fix issues ––including integrating advanced LLMs into our Engineering and product security to enhance the capabilities of our teams.\nOur philosophy is simple: discovering and communicating vulnerabilities, and sharing that information with defenders, is not an indication of weakness; rather it is evidence of rigorous scrutiny and a proactive vulnerability management program. By aggressively seeking to identify and address vulnerabilities, our aim is to get ahead of threat actors to ensure our customers can take the steps needed to protect their environments.\nTo that end, today Ivanti is disclosing vulnerabilities in Ivanti Neurons for MDM and Endpoint Manager (EPM).\nIt is important for customers to know:\nWe have no evidence of these vulnerabilities being exploited in the wild.\nThese vulnerabilities do not impact any other Ivanti solutions.\nMore information on these vulnerabilities and detailed instructions on how to remediate the issues can be found in the Security Advisories:\nIvanti Neurons for MDM\nEndpoint Manager (EPM)\nHow AI will affect vulnerability disclosures in our products\nIvanti continues to explore, test, and implement leading technologies and processes in every stage of our product development. In recent months, our security team began a project to integrate multiple advanced LLM models into our product security processes.\nThis project has increased the capabilities of our Engineering and Product Security Red Teams to identify and fix vulnerabilities, especially those that are difficult to identify with traditional tooling, such as SAST and DAST. We have already successfully identified vulnerabilities which traditional tools missed.\nAs these tools are integrated further into our processes and refined, we expect an increase in vulnerability disclosures. We will continue to share transparently what we have found and resolved to ensure the security of our products. If you are not already following our Security Blog or subscribed to receive alerts for updates on the products you own through the Ivanti Innovators Hub, we highly recommend you do so.\nImportantly, we are committed to using AI responsibly in product security, including keeping a human in the loop to verify automated or agentic work. While this will result in an uptick in disclosures, we see this as a good thing, and an important part of ensuring our products keep pace with modern security requirements as they change.\nOur top priority is the security of our customers and believe the increase in identified, resolved, and transparently communicated vulnerabilities demonstrates that commitment.\nOur Support team is always available to help customers and partners should they have any questions. Cases can be logged via the\nIvanti Innovators Hub\n(login credentials required).\nWant to stay up to date on Ivanti Security Advisories? Paste\nhttps://www.ivanti.com/blog/topics/security-advisory/rss\ninto your preferred RSS reader / functionality in your email program.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://www.ivanti.com/blog/august-2026-security-update",
-      "content_chars": 3309,
-      "content_sha256": "54480e892704ea134d84673938c273f09d56e80813d0de6df8f61aa28a1eec52",
-      "content_fetched_at": "2026-08-11T21:58:13.580698+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "Ivanti Security Advisory",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:36228de7829cc21d",
-      "kind": "publish",
-      "text": "sonicwall-advisory published: SonicWall GMS Security Affected By Multiple Vulnerabilities",
-      "actor": "sonicwall-advisory",
-      "actor_url": "https://psirt.global.sonicwall.com/",
-      "created_at": "2026-08-11T13:23:57+00:00",
-      "html_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0011",
-      "title": "SonicWall GMS Security Affected By Multiple Vulnerabilities",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "<p>SonicWall GMS (Virtual Appliance, Windows) - 9.5.1 and earlier versions are vulnerable to the following security issues.</p><div><font color=\"#e79439\">1) CVE-2026-66145 -\nAn unauthenticated remote code execution vulnerability</font></div><div>An unauthenticated remote code execution vulnerability was identified in GMS 9.5.1 (Build 9510.1044) and earlier versions which allows remote attacker to read sensitive data and perform arbitrary file write via zipslip.</div><div>CVSS Score: 9.1</div><div>CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N</div><div>\nCWE-94: Improper Control of Generation of Code ('Code Injection')</div><div><br></div><div><span style=\"color: rgb(231, 148, 57);\">2) CVE-2026-66146 - GMS Multiple Cross-Site Scripting (XSS) Vulnerabilities</span></div><div>Multiple Cross-Site Scripting (XSS) vulnerabilities were identified in GMS 9.5.1 (Build 9510.1044) and earlier versions that allow a remote attacker to execute javascript script in a user's browser.</div><div>CVSS Score: 5.5</div><div>CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:L</div><div>CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')<br></div><div><br></div><div><span style=\"color: rgb(231, 148, 57);\">3) CVE-2026-66147 - GMS Unauthenticated Command Injection in Dispatcher Service</span></div><div>An unauthenticated command injection vulnerability was identified in the GMS Dispatcher Service in GMS 9.5.1 and earlier versions which allows remote attacker to perform remote code execution through specially crafted requests.</div><div>CVSS Score: 9.4</div><div>CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H</div><div>\nCWE-94: Improper Control of Generation of Code ('Code Injection')<br></div><div><br></div><div><span style=\"color: rgb(231, 148, 57);\">4) CVE-2026-66148 - GMS Local Privilege Escalation via Authenticated Command Injection</span></div><div>An authenticated command injection vulnerability was identified in GMS Command-Line Interface (CLI) 9.5.1 (Build 9510.1044) and earlier versions which allows low-privileged local user to execute system commands with root privileges.</div><div>CVSS Score: 6.3</div><div>CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L</div><div>\nCWE-94: Improper Control of Generation of Code ('Code Injection')</div><div><br></div><div><span style=\"color: rgb(231, 148, 57);\">5) CVE-2026-66154 - GMS Weak Certificate Verification to User Compromise via MiTM</span></div><div>An insufficient certificate validation in a privileged communication workflow, was identified in a GMS application 9.5.1 (Build 9510.1044) and earlier versions which, under a successful MitM attack and controlled network conditions, could permit unauthorized changes.</div><div>CVSS Score: 8.3</div><div>CVSS Vector: CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H</div><div>\nCWE-295: Improper Certificate Validation</div><div><br></div><div><span style=\"color: rgb(231, 148, 57);\">6) CVE-2026-18634 - GMS Local Privilege Escalation via Deserialization</span></div><div>An insecure handling of serialized objects vulnerability was found in the one of the service of GMS application 9.5.1 (Build 9510.1044) and earlier versions. A local attacker with the ability to interact with the service could exploit this behavior to perform unauthorized actions through the affected component.</div><div>CVSS Score: 8.4</div><div>CVSS Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</div><div>\nCWE-502: Deserialization of Untrusted Data</div><div><br></div>\n<p>While it is crucial to highlight that SonicWall Analytics products remain unaffected by these vulnerabilities. Additionally, there is no substantiated evidence to suggest that these vulnerabilities are currently being actively exploited in real-world scenarios.<br><br>SonicWall strongly recommends that organizations running older versions of GMS builds upgrade to newer fixed versions.</p>\nCVE: CVE-2026-66145, CVE-2026-66146, CVE-2026-66147, CVE-2026-66148\nLast updated: Aug. 11, 2026, 1:23 p.m.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0011",
-      "content_chars": 4047,
-      "content_sha256": "0f4d6760ce8cb7f61da999b7efc8f7504b2952747461c719efc19e56e5f81f01",
-      "content_fetched_at": "2026-08-11T21:58:18.063118+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "SonicWall Security Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:64a2b72150cf7076",
-      "kind": "publish",
-      "text": "sonicwall-advisory published: SonicWall Email Security Affected By Multiple Vulnerabilities",
-      "actor": "sonicwall-advisory",
-      "actor_url": "https://psirt.global.sonicwall.com/",
-      "created_at": "2026-08-11T13:23:57+00:00",
-      "html_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0012",
-      "title": "SonicWall Email Security Affected By Multiple Vulnerabilities",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "<p><span style=\"font-size: 11pt; color: rgb(181, 99, 8);\">1) CVE-2026-66149 - Improper Control of Generation of Code ('Code Injection') Vulnerability via netmask</span></p><p>Improper Control of Generation of Code ('Code Injection') Vulnerability in the SonicWall Email Security appliance allows an authenticated attacker with access to the SonicWall Email Security restricted CLI can inject arbitrary OS commands that execute as root via netmask.\n<br></p><p>CVSS Score: 7.8<br>\nCVSS Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H<br>\nCWE-94: Improper Control of Generation of Code ('Code Injection')\n</p><p>\n</p><p><span style=\"color: rgb(196, 89, 17); font-size: 11pt;\">2) CVE-2026-66150 - Improper Control of Generation of Code ('Code Injection') Vulnerability via SNMP</span></p><p>Improper Control of Generation of Code ('Code Injection') Vulnerability in the SonicWall Email Security appliance allows an authenticated attacker with access to the SonicWall Email Security restricted CLI can inject arbitrary OS commands that execute as root via SNMP.\n<br></p><p>CVSS Score: 7.8<br>\nCVSS Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H<br>\nCWE-94: Improper Control of Generation of Code ('Code Injection')\n</p>\n<p></p><p>\n</p>\n<p>SonicWall strongly advises users of the Email Security products (ES Appliance 5000, 5050, 7000, 7050, 9000, VMWare and Hyper-V) to upgrade to the mentioned fixed release version to address these vulnerabilities. <br>There is currently no evidence any of the vulnerabilities addressed in this release are being exploited in the wild.</p>\nCVE: CVE-2026-66149, CVE-2026-66150\nLast updated: Aug. 11, 2026, 1:23 p.m.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0012",
-      "content_chars": 1656,
-      "content_sha256": "dae1c019e16d57f96a3f354676cd0b0285120e793252c92287dea7b327a6482f",
-      "content_fetched_at": "2026-08-11T21:58:18.063271+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "SonicWall Security Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:e382da9417493bc7",
-      "kind": "publish",
-      "text": "yage-share published: 一台 PC 工作站上的 13 小时训练实验：为什么做优化的前提是测量？",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-11T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/pc-workstation-training-optimization-20260811.html",
-      "title": "一台 PC 工作站上的 13 小时训练实验：为什么做优化的前提是测量？",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "推理与性能\n模型架构\n四张工作站 GPU\n连接到一条训练时间轨迹，Profiler 测量关口将耗时从 62 小时缩短到 13.2\n小时。\n搞模型训练或者系统优化的时候，我们很容易掉进一个直觉陷阱：看到论文里说某个算法融合能提速，就兴冲冲地花几周手写\nCUDA\n代码；听说哪个通信库性能好，立刻着手重构管线。但如果不先做实际测量，这些辛苦写出来的代码，很可能根本没踩在真正的瓶颈上。\n前\nHuggingFace\nAccelerate\n技术负责人、现\nLambda\nDevRel 负责人 Zach Mueller 在\nAI Council 2026 的演讲\nOptimizing Model\nTraining End-to-End: A Tiny MoE Case Study\n中分享过一个很有意思的实验。他在一台可以放在家里的 PC 工作站中安装了 4\n张 NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation\nEdition。它们属于专业工作站\nGPU，整台机器采用普通工作站形态：主机链路运行在 PCIe 4，没有 NVLink 或\nInfiniBand，也不需要服务器机房的水冷和网络配置。\n在这个受限环境里，他把一个 500M 参数 MoE 模型的训练\nwall-clock，从未优化单卡估算的约 62 小时压到了优化后四卡配置的 13.2\n小时，端到端缩短约 4.7 倍。这个比值同时包含软件优化与 GPU 数量从 1 增到\n4，不能理解成同一套硬件上的纯软件加速。案例的核心在优化顺序：先拿测量数据说话，再由数据决定代码到底改不改。\n问题的基线：PC\n工作站上的性能失真\n做训练实验不一定非要等到万卡集群上线。Zach\n在这台个人四卡工作站上动手，反而把平时隐藏在高速互连背后的低效问题暴露了出来。\n这套实验用的是基于\nQwen3\n风格的 MoE 模型。Zach 将它描述为 500M total parameters、每个 token 约\n330M activated parameters；他还口头提到去掉 embeddings 后约为\n120M，但演讲没有继续说明这 120M 是 total 还是 activated\n口径，因此不能直接把它称为模型主干总参数。模型仍然小到单张显卡可以容纳。\n训练目标按约 20 倍参数量设置为约 10B tokens。按演讲后文约 100k\ntokens/microbatch 的口径，对应约 101,000 个\nmicrobatches。按照最原始的代码直接跑单卡，估算下来要约 62 小时。\n在刚开始跑的时候，系统的整体利用率相当低。显卡上的计算核心大量时间都在等待\nCPU\n准备数据或等待框架调度。如果这时候不打开诊断工具查看真实的耗时分布，盲目增加并行度或者修改代码，训练时间可能不降反升。\n优化的前提是测量：Profiler\n驱动的三步排查\n在实际工程优化里，大家通常会先凭经验处理最显眼的候选项。比如在\nAttention 算法上，换用更高效的\nFlex Attention\n替代默认实现。Zach 报告当时配置的耗时立即下降约\n30%，但演讲没有给出这一刀对应的独立总小时数；在 batch、data pipeline 和\noptimizer 等单卡调整全部完成后，他回顾的整体结果是约 61 小时降到 43\n小时。\n但当这些靠经验就能替换的大块算子搞定之后，再往下的优化就不能再靠拍脑袋了。未经测量的优化，本质上是在黑盒里凭空猜想。如果没有工具帮你看清运行时的时间到底花在了哪里，你很可能会花上好几天时间精雕细琢一段只占总耗时\n1% 的代码，却对旁边霸占了 50% 时间的真正瓶颈视而不见。\n建立测量思维的第一步，是使用诊断工具把系统执行过程中的暗物质给显性化。Zach\n随后的调优完全交给了数据：打开\nPyTorch\nProfiler\n，将系统每一微秒的开销转化为可视化的色块。找到当前占比最大的那个色块，集中精力攻击它，改完代码立刻重新跑一遍测试。只要总训练时长下降了就保留修改，没有改善就顺手回退。整个排查过程分成了三步。\n1.\n剥离框架与数据等待开销（单卡：62h → 43h）\n完成 Attention 替换后，Profiler 里依然能看到一块没有标记名字的粉色\nother\n区域，约占当时 step time 的 8%-9%。Zach\n没有直接确定它的统一含义，而是通过逐项实验观察哪些改动能让它缩小。\n为了把这 8% 的无谓等待给拔掉，Zach 连续做了三招清理： - 打开\nDataLoader 的\npin_memory=True\n，让取出的\nCPU tensor 位于 page-locked host memory，从而加快 CPU 到 GPU\n的传输。它不负责避免显存重复分配。 - 在训练前把整个数据集预先 Token\n化存到磁盘上，不用在训练循环里边跑边做词表转换。这么一理，那块粉色等待直接从\n8% 缩到了 3%。 - 启用 PyTorch\nAdamW\n的 fused implementation，把\noptimizer.step()\n中跨参数、跨操作的 elementwise 更新做 horizontal / vertical\nfusion，减少连续的 kernel launches。它不等于把 backprop\n本身合成一个任务。\n把算法升级与这三项清理合在一起，那块粉色等待基本降到了 1%\n以下，单卡训练时间稳定降到了 43\n小时。这时候显卡才算真正吃上了算力，大半时间都在算矩阵。\n2.\n用梯度累积跨越 PCIe 通信墙（多卡 DDP：约 43h → <18h → 13.2h）\n等把训练扩到 4 张卡跑 DDP 时，并没有出现理想中的 4\n倍线性提速。单纯把未经优化的配置扩到四卡 DDP，Zach 测得约 2.6 倍，将 62\n小时级的单卡估算压到一天以内；随后重新加入前述单卡优化，才进一步降到 18\n小时以内。若直接比较约 43 小时与 18 小时，隐含加速约为 2.4 倍，不能标成\n2.6 倍。\n拿测量数据拆开来看：在没有高速互连的 PCIe 4\n总线上，梯度通信占了单步时间的 50%，真正做矩阵乘法的时间只有约 20%。单次\nAll-Reduce 在当时配置上约花 0.08 秒；按约 101,000 个 microbatches\n估算，累计约 2.26 小时花在梯度同步上。\n想降低这部分通信成本，不一定先换硬件，也可以减少同步频率。Zach 采用约\n100k tokens 的 microbatch，配合\ngradient_accumulation=10\n，形成约 1M tokens 的 effective\nbatch。DDP 每个 rank 处理不同数据，并通过 All-Reduce\n同步梯度；只有框架在前 9 次 backward 正确跳过同步、在第 10\n次才同步时，All-Reduce 频率才会约降为原来的十分之一。PyTorch\n对应的底层机制是\nDDP.no_sync()\n或框架提供的等价实现。\n这么一调，多卡同步的触发次数直接少了一个数量级。通信再也不是拖后腿的主要因素，总训练时间顺理成章地从\n18 小时一路滑到了 13.2 小时。\n3.\n理性放弃无法带来测量收益的伪优化\n在单卡阶段，Zach 也试过为这个 MoE 架构编写 custom CUDA\nkernel，希望省掉部分\nmatmul。听起来手写底层算子是个很硬核的技术动作，也容易让人预设它一定能提速。\n但测出来的真实结果没有支持这个方向：模型总规模只有\n500M，单次矩阵计算很短，kernel overhead\n抵消了预期收益，没有带来可见加速。Zach\n没有在演讲中进一步量化相对默认实现的退化，也没有说明是否删除了代码。\n既然测量数据没有显示收益，这条路径就不应继续占用当前实验的优化预算。跟着测量数据走，可以避免把时间耗在对总时长没有贡献的局部细节上。\n性能 Regime\n的分界线：测量方法可迁移，微观结论不可照搬\n训练优化路径从 62\n小时基线，经单卡优化降至约 43 小时，再用四卡 DDP 与前述优化降至 18\n小时以内，最后通过梯度累积降至 13.2\n小时；下方提示方法可迁移，具体瓶颈不可照搬。\n看完这个实验，最容易踩的坑就是把里面的具体参数或技巧生搬硬套。Zach\n专门提醒过，在单张显卡上好使的手法，换个规模未必继续成立。这个案例更精确的边界，需要放回我此前对\npre-training\n难度\n的判断里理解：真正的难点来自多个中等难度问题在万卡规模和数月周期下同时存在、相互耦合，而且大规模验证既昂贵，最优配置也会随硬件与目标变化。\n小模型场景：在这个 500M 参数、PCIe 4 互连的具体配置上，CPU\n数据加载、框架固定开销和梯度通信构成了显著瓶颈。预先 Token 化、fused\noptimizer 和梯度累积因此能清理掉大量等待。\n大规模场景：模型和 local batch 变大后，固定的 framework /\nkernel-launch overhead 相对占比常会下降，但 large-scale training\n不会自动变成单一的 compute-bound regime。瓶颈还取决于模型结构、sequence\nlength、batch、并行策略和互连拓扑；dense、MoE 与 long-context workload\n可能分别受 compute、memory 或 communication 限制。\nFlashAttention\n优化的是\nAttention 的 IO 路径，是否成为全局核心提速项仍要靠 profile；\nMegatron-LM\n这类大规模训练系统还要同时处理张量并行、流水线并行、设备空闲和网络通信。\n如果因为在 500M\n小模型上看到自定义算子没见效，就下结论说融合算子没用，到了 70B\n大模型上肯定要吃大亏。规模变了，主导瓶颈完全不一样，不能拿小实验的微观结果当普适套路。\n真正能搬到各个项目里用的，是先用工具测出真实瓶颈的方法。至于具体的瓶颈在什么位置、该怎么收拾，得看你手里的硬件和模型正处于什么规模区间。\n从显卡到系统：测量思维在\nAI Agent 与架构中的延伸\n下面是从训练案例延伸出的工程启发，不是 Zach 演讲验证过的 Agent\n性能结论。训练与 Agent 系统面对的瓶颈不同，但都可以先做端到端\ntracing，再依据实测决定是否采用 async、cache 或 request batching。\n在实际开发中，没有测量就无法知道性能预算究竟花在哪里。一次简单的端到端\ntracing\n可能暴露容易修复的等待，也可能证明主要成本确实来自模型调用。两种结果都有价值：前者给出明确改动方向，后者可以阻止团队继续优化占比很小的框架代码。\n1. 剥离 Agent\n运行框架中的粉色开销\n在做复杂的多 Agent\n协同或者上下文检索管线时，远端模型响应只是候选瓶颈之一。端到端 tracing\n应当把模型调用、JSON 校验、Prompt\n拼装、向量数据库连接和进程间通信分别计时，再根据实际占比决定先处理哪一项。\n在这些从未经过测量的系统里，瓶颈有时确实来自同步阻塞、重复序列化或连接复用不足；也可能根本不在这里。先测量端到端延迟，再决定是否改成异步、加入缓存或复用连接，才能知道改动有没有真实收益。在埋怨模型慢之前，先把框架层耗时从远端推理耗时中分离出来，是更可靠的起点。\n2.\n在廉价沙盒里建立密集的测试反馈\nZach\n能在自己的工作站上把整套流程跑通，很关键的一点是他把一次完整实验压到了\n13.2 小时，接近约 12\n小时、每天迭代两次的目标。如果直接去云端按小时计费的高端集群上边跑边试代码，研发账单会迅速增加。\n做 Agent 架构设计也是一样的道理。刚开始没必要直接挂着昂贵的高端 API\n去抠编排逻辑。先搭个本地的模拟接口，或者用个小参数模型做测试沙盒，在几乎零成本的环境里把工具调用、重试机制和上下文拼接给调溜顺，确认控制框架本身又快又稳之后，再接入生产端的高端模型。\n3. 以局部累积降低远端同步频次\n梯度累积是在多个 microbatches 上累积梯度，再触发一次 optimizer\nstep；在 DDP 正确跳过中间同步的前提下，它也能降低跨卡 All-Reduce\n频率。在 Agent\n应用中，也可以检查远程调用是否存在安全的合并空间，但这不是 gradient\naccumulation 的直接等价物。只有彼此独立、语义允许合并的请求才适合\nbatching；依赖前一轮模型输出的后续步骤不能提前攒成一次请求。是否适合合并，还要同时衡量吞吐、交互延迟、上下文长度与错误隔离成本。\n性能优化的核心，是用工程手段处理真实测出的瓶颈。未经测量的推测容易把精力引向占比很小的细节；测量也不保证一定找到改动极小、收益巨大的捷径，但它能让团队知道下一步该改哪里，以及哪些代码暂时不该动。不管是训练一个\n500M 参数的小模型，还是搭建复杂的 AI\n应用系统，先看测量数据，再决定下一行代码改什么，是更可靠的工程习惯。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/pc-workstation-training-optimization-20260811.html",
-      "content_chars": 5452,
-      "content_sha256": "68d7c5143d711bca9a382a188e17d7df1a9476f71cb9bbc5f5a2c8f04a7bd5cd",
-      "content_fetched_at": "2026-08-11T21:56:46.835422+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:35bfc39588c9e0dd",
-      "kind": "publish",
-      "text": "yage-share published: 挂在无人机上的离线网络：Reticulum 怎么把电波和协议玩出花？",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-11T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/reticulum-drone-offline-network-20260811.html",
-      "title": "挂在无人机上的离线网络：Reticulum 怎么把电波和协议玩出花？",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "科研与技术前沿\nAI Agent\n在荒野里，一台关闭了蜂窝、Wi-Fi\n和蓝牙的手机屏幕突然亮起，收到一条几英里外发来的短消息。这条消息的旅程相当折腾：先走\nLTE 蜂窝网络发到云端，再从 Starlink\n卫星落回地面网桥，转成无线电波穿过有大量植被和障碍物的地面路径。地面路径失联后，一架小型无人机吊着硬币大小的开发板升空接力，终于把数据送到了手机上。\n这项工程走的是好玩的极客实验路线，不同于商业电信产品。实验的主角叫\nReticulum\n。它不用 IP\n地址，也不管运营商是谁，硬是把卫星、以太网和微弱的 LoRa\n无线电波缝在了一起，搭出了一个自给自足的网络。\n挂在无人机上的离线网络：一场硬核的极客实验\n在 Data Slayer 的\n测试现场\n，一台\nLTE 联网手机要把消息送到另一台关闭蜂窝、Wi-Fi\n和蓝牙的手机，消息传输路径在底层拆成了五段不同 carrier。发送端手机在\nAndroid 上运行\nColumba\n客户端，数据先走 LTE 发给 GCP 上的公网 Reticulum TCP 节点，再跨越\nInternet，从 Starlink 卫星链路下发到地面 Linux 网桥 Haven。Haven\n上的节点通过 USB 驱动射频模块，把数据直接塞进 915 MHz 的 LoRa\n无线电频段。\n当车开到约 2.5 英里外时，地面 LoRa\n路径失联；现场有大量植被和障碍物，但视频没有测量到足以隔离具体原因的数据。Data\nSlayer 甩出一个特别酷的现场解法：他把一块几厘米见方的微型 MCU\n开发板挂在小型无人机肚子里，直接飞到了树冠上方。板子刷着开源的\nRTNode\n路由固件\n，在半空中监听广播。继续升高、触发 Announce\n并反复试发后，离线手机终于收到了这条跨越公网、卫星、丛林和天空的消息。\n用无人机做空中中继不仅展现了无线节点在地形阻隔下的弹性，手把手搭起来的成本也很吸引人。视频作者把这块集成\nESP32-S3 与 SX1262 的 Heltec V4 称为 “a $20 transport\nnode”。它不需要完整操作系统，但仍需要 LoRa\nradio、兼容固件、匹配的无线参数和供电；只有 ESP32\n的基础开发板不能直接充当这个中继。虽然这次测试的长途段还是用了 Internet\n和 Starlink，但它展示的事情非常过瘾：路径跨过了 5 段\ncarrier，收发两端的加密身份、应用逻辑与消息协议却不用为每一段重写。\nReticulum 消息从联网 Android 经\nGCP、Starlink、Haven 和 LoRa 无人机中继抵达离线 Android 的五段 carrier\n路径\n密码学即寻址：Reticulum\n是怎么做到的？\nReticulum 没走常规 TCP/IP\n的路子，而是在用户态重新写了一整套独立的网络协议栈。平时上网靠 IP 地址和\nDNS 域名找设备，Reticulum 在底层干脆不要 IP 了。\n在 Reticulum 的世界里，找设备全靠密码学身份\nIdentity。每个端点或服务都会生成一套包含 X25519 加密公钥和 Ed25519\n签名公钥的 Identity。把 Identity 加上应用名称与属性一起做哈希，就能算出\n128 位的 Destination 地址：\ndestination = trunc128(SHA256(name_hash || identity_hash))\n这么做直接把设备位置和身份解耦了。地址只代表具体的应用端点，管你在哪里、用什么网段、走什么介质。就算设备从局域网切到\nWi-Fi，或者从 Starlink 切到 LoRa，它的 Destination\n地址始终原封不动。\n找路这件事靠带有签名的 Announce 宣告在网络里广播。需要公布可达性的\ninbound\nSINGLE\nDestination 会主动发送 Announce，沿途的\nTransport 节点验过签名后，在路由表里记下去找这个 Destination\n时下一跳该走哪个接口，然后按规则接着往外发。整个网络里没有掌握完整地图的大脑，数据包全靠下一跳指引往目的地挪。\n各种不一样的介质，在这套体系下收拾得齐齐整整。Reticulum\n把所有物理链路统一抽象成了 Interface。同一个 RNS 数据包，走公网时套上\nTCP 报文，走串口时直接发原始字节，飞在空中就变成 LoRa 射频帧。Haven\n不需要把 LXMF 消息翻译成另一种应用协议，而是根据 RNS 路径把 routing\nenvelope 从 TCP/Starlink 一侧转交到 LoRa 接口；无人机上的节点只在两个\nLoRa hop 之间继续转发。\n应对工程挑战：协议层怎么顶住物理限制\n把网络协议扔进没有基础设施的野外，各种物理限制立刻就找上门来。Reticulum\n在协议层想了不少精妙招数。\n山头和树林阻挡无线信号是第一道难关。这套地面配置在约 2.5\n英里处失联；无人机升到树冠以上后最终恢复了路径，但这次前后对比没有控制变量，不能把失败确定归因于山体视距。Reticulum\n允许用户把运行它的实例显式配置为 Transport\nNode；这个角色默认关闭，实际网络通常只让少量稳定、位置合适的节点承担转发。无人机高空接力只是个好玩的例子，固定高位节点、系留气球或其他持续供电的中继也可能提供替代路径。源码把建立\nLink 的最低介质 bitrate 设为 5\nbps，说明控制面考虑了极低速链路；这不等于任意弱信号下都能建链，也不代表\n5 bps 足以正常聊天或传文件。\n极不均匀的传输带宽是第二道难关。光纤以太网一口能吞下上千字节，LoRa\n无线电的信道却窄得可怜。Reticulum 在传输层设计了三级递进： -\nPacket：适合单次短消息，默认 MTU 只有 500 字节，在窄信道里保持低开销。 -\nLink：两端建立带验证的双向加密会话，自动协商临时密钥，默认自带前向安全性。\n- Resource：专门用来搬运图片或文件这类大块头。Resource 会在 Link\n上自动分段、压缩、按顺序发完并在对面拼好。\n没人管的网络里怎么保安全是第三道难关。视频所用的\nSINGLE\n/Link LXMF\n消息按协议设计端到端加密，中继正常情况下不需要 payload\nkey；未泄露私钥时，它也不能伪造合法发送者的签名。但\nPLAIN\ntraffic、Announce 和部分控制或证明报文是例外，routing 与下层链路\nmetadata 仍可见，因此拿到中继硬件不能概括成只会看到加密乱码。\n当然，极客项目和成熟的电信基础设施比起来，物理限制依然客观存在。LoRa\n是低带宽、半双工的共享介质，airtime、重发和频谱规则共同限制容量，适合发发短文本和控制指令，撑不起高频实时语音；手机系统的后台休眠也偶尔会把无线连接挂断。但这完全不妨碍\nReticulum 成为一个让人眼前一亮的工程范本。\n思想外溢：从\nReticulum 到 AI Builder 的脑洞\nReticulum\n的出发点是在荒野里搭不受制于人的自组网，但它亮出来的工程思想，对每天跟模型和\nAPI 打交道的 AI Builder 同样非常有启发。把视线从电波和开发板上挪开，把\nReticulum 的解耦哲学平移到 AI 系统里，能碰出不少好玩的方向。\nReticulum 将应用与消息、身份寻址和可替换\ncarrier 分层，并把控制权向上移动\n启发 1：Agent\n网络的边缘自组网与离线容灾\n当前的 Agent 架构高度依赖云端控制节点和稳定的公网 API。如果把\nReticulum 的网络能力引入边缘\nAgent，比如跑在树莓派、手机或车机上的小模型，Agent\n之间就能在断网或局域网环境里，直接用蓝牙、Wi-Fi 甚至 LoRa\n交换消息。Reticulum 可以为这些 Agent\n提供离线寻址、路径发现和消息传输；应用层还需要自行定义 Tool\n描述、能力匹配、调度、任务委派与结果确认，Announce 和 Transport\n本身不会把这些工作自动完成。\n启发\n2：Identity 与 Location 解耦对 Durable Agent 的启发\n在很多 Agent 框架里，Agent 的身份总是和部署 URL、容器 IP 或者云厂商\nClient ID\n绞在一起。服务器一迁移，上下文和身份经常跟着灰飞烟灭。Reticulum\n这种地址跟密钥走、不跟 IP 走的设计，给长寿命 Agent\n提供了特别干净的参考：Agent\n的主身份密钥、任务记忆和状态连续性，应该彻底跟底层运行环境解耦。就算换了服务器甚至换了模型供应商，Agent\n的加密身份和没完成的任务契约依然安然无恙。\n启发\n3：极端低带宽约束下的 Agent 协议压缩\nReticulum 逼着开发者在 500 字节的 MTU\n限制里琢磨协议效率。相比之下，现在的 AI 开发习惯了挥霍 Token，JSON\n报文里填满了各种冗余字段。如果要在带宽极度吃紧的信道，比如在卫星通信或者边缘设备之间，传递\nAgent 的意图与决策，就得设计更紧凑的 Agent\n协议。剥掉自然语言的废话，把工具调用和结构化推理压缩成紧凑的二进制\nPayload，是 Agent 走向现实受限环境的必经之路。\n启发\n4：Reticulum 作为边端 AI 传感与 C2 通信总线\n把端侧 AI\n模型扔到野外无人机、摄像头或者边缘传感器上时，在配置好接口、无线参数、转发节点和可达路径后，Reticulum\n可以承载控制与遥测消息，并为合适的 Destination 类型提供端到端加密。AI\n可以在边缘节点完成感知和推理，再通过这条消息路径把高价值的极简事件摘要推回控制端。抗干扰、抗封锁和抗毁性仍取决于射频设计、冗余路径、供电与部署拓扑，协议本身不保证这些性质。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/reticulum-drone-offline-network-20260811.html",
-      "content_chars": 4115,
-      "content_sha256": "22e02421ce006a65a3cc2c75b1858547c593e83483d4a935c78c434eb8a2610d",
-      "content_fetched_at": "2026-08-11T21:56:46.977618+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:78c906c7d2de9a28",
-      "kind": "publish",
-      "text": "yage-share published: 搜索没有变便宜，但 Agent 把它拆成了新的供应链",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-10T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/agentic-web-search-supply-chain-20260810.html",
-      "title": "搜索没有变便宜，但 Agent 把它拆成了新的供应链",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n检索与知识系统\n产业与竞争\n引言：为什么\nAgent 时代突然到处都是 Web Search API？\n任何对技术基础设施有敬畏心的开发者心里都有一个共识：做搜索引擎是一件极其困难的事。在\nPC\n互联网到移动互联网的漫长二十年里，全球真正拥有显著市场份额的通用搜索引擎，来来回回一只手就能数得过来（Google、Bing、Baidu、Yandex）。想要搞定全网高频抓取、防爬虫对抗、反垃圾网页以及秒级新鲜度，背后需要海量的硬件、带宽与工程沉没成本，这使得通用搜索一直是个极高门槛的巨头游戏。\n但到了 2026 年中这几个月，一个看似反直觉的现象出现了：专注于 Agent\n搜索的 Exa、Tavily 刷屏不说，连 AWS 都连续发布了\nAgentCore\nWeb Search\n和\nBedrock\nWeb Search\n。搜索接口一下子堆到了每个开发者的桌头上。\n我和团队给 Agent\n重构外部检索架构时，心里最先冒出来的疑惑就是：做搜索明明那么难，为什么到了\nAgent 时代，突然间感觉好像任何公司都能跑出来做 Web Search API\n了？难道在大模型时代，搞定全网搜索突然变便宜、变简单了吗？我们之前在讨论\n多模型路由进入\nAgent 会话\n以及\nAgent\n上下文演进\n时，也一直在关注底层检索成本的真实变迁。\n把这几家 API\n真正接进生产环境、拆开数据流看了一圈，我们才明白背后的真实逻辑：搞定全网搜索一点都没变简单，底层抓网页、搞防爬、做索引的重活依然极其硬核。真实发生的，其实是\n搜索需求的改变与供应链的拆分\n。\n旧搜索难在哪里：无法拆分的黑盒与商业飞轮\n要理解为什么过去几乎没有人能挑战传统搜索，得看看旧搜索引擎那套垂直一体化的黑盒到底是怎么运转的。\n传统搜索的极难之处，在于你必须同时做对三件事：看见足够多的全网网页、把最相关的排到人类面前、并且靠广告收回高昂基础设施成本。这构成了旧搜索看似不可战胜的商业飞轮：靠默认入口拿海量查询\n→ 把查询与点击转化为训练信号 → 用信号把长尾与突发查询的排序越调越准 →\n靠精准排序支撑广告展示变现 →\n再拿赚钱买断浏览器默认位、养庞大的抓取团队。在\n美国诉\nGoogle 反垄断案判决书\n中披露的数据显示，Google\n向浏览器、设备厂商等分发商支付的默认搜索位 revenue-share 在 2021\n年合计超过 260 亿美元。\n这背后真正起决定性作用的技术纽带，是他们内部叫 NavBoost\n的系统，一个靠海量聚合查询与点击行为持续校准相关性的反馈机制，详见\nDOJ 提交的 NavBoost\n证词文档\n。\n这套飞轮把全网抓取、算法排序与广告商业模式死死打包在一起。在过去，你不可能单独把抓取网页或相关性排序拿出来做成独立生意，因为单拆任何一步都无法收回基础设施成本。必须由同一家巨头把所有重活全包下来，直接输出给人看的网页列表并靠广告变现。\n并没有人复制\nGoogle：大家是如何把搜索的某一层变便宜可售的？\n到了 Agent\n时代，调用检索的主体从人类变成了大模型。模型既不看广告，也不去地址栏敲字，它不需要包含复杂的\nHTML 样式和广告位的网页列表，它只要能直接塞进 Context Window\n的干净正文、抽样片段以及权威 URL 引用。\n交付契约从人看网页变成模型吞吐\nToken，使得原本闷在搜索引擎肚子里大包干的抓取、召回、解析、压缩各个步骤被拆开了。这一拆分并非\nLLM 单独驱动，也依赖公共 crawl（如 Common\nCrawl）、开源搜索基础设施、定向索引和云账单直接变现的同时成熟。\n市面上并没有十几家公司在重新复制\nGoogle，大家其实是在用不同的方式偷懒或借力，把搜索 stack\n的某一层变便宜、可单独出售的：\n第一种是透传大厂结果的代理层。以 Serper\n为代表，它们工程实现非常轻量，根本不上网抓网页，也不建立任何索引。它们只是包装了一层\nAPI 去透传 Google\n的原始排序列表。最硬核的全网抓取、反垃圾和相关性排序，依然是 Google\n以年度数十亿美元级基础设施和工程投入在替它们做。\n第二种是缩小战场的定向语义索引。以 Exa 为代表，面对 Google\n自报每天数十亿级垃圾网页（厂商自报数字）的对抗压力，Exa 选择优先抓取\nGitHub、ArXiv、Wikipedia\n和高质量技术博客等信息密度高的站点，把抓取和存储成本大幅降低。它在特定技术或学术领域搜得很准，但做不了全网生活通用搜索；其\nindex\n规模属厂商自报、未经独立审计。真正建立在自建通用爬虫和物理索引之上的，市面上只有\nBrave 这一类极少数玩家（详见\nBrave\n声明独立索引\n）。\n第三种是上下文精炼与混合检索层。以 Tavily 为代表（参考\nTavily\n服务条款\n），它的核心卖点不是凭空自建一套替代 Google\n的全网搜索引擎，而是专注于针对 LLM 的 RAG\n需求做网页降噪、正文抽取和文本压缩，专门输出高信息密度的片段。\n第四种是云原生基础设施层。就是 AWS 在 2026\n年推出的两个独立产品面——AgentCore Web Search Tool（6 月 GA，MCP\n连接器）和 Amazon Bedrock Web Search（8 月 GA，模型 server-side\ntool），把检索能力直接挂进云端的模型 API 运行时里。\n至于大家常用的 Perplexity，本质上是面向 C\n端用户的端到端答案引擎，里面混了自研爬虫和第三方 crawling/indexing\n服务，并不是开发者直接拿来拼装的基础设施中间件。\n搜索供应链的拆分：传统搜索一体化黑盒 vs\nAgent 时代分层可售\nAWS\n进场的本质：用云端分发替代浏览器分发\n明白了 Search Stack 的分层，再看 AWS 在 2026 年先后推出 AgentCore Web\nSearch Tool 和 Bedrock Web Search\n这两个产品面，就能看懂它进场的深层逻辑了。\n很多开发者可能会好奇：为什么是 Amazon？为什么偏偏选在 2026 年？\n这背后并不是 AWS 突然决定去和 Google 抢 C\n端搜索市场，而是两个因素重叠的结果：\n第一是内部基础设施的二次商业化机会。在把搜索 API\n卖给开发者之前，Amazon 内部为了支撑 Alexa+（新一代语音助手）、Amazon\nQuick（企业智能分析）和 Kiro（云开发环境），已经建立了庞大的\nAmzn-SearchBot\n网页抓取与检索基础设施。在过去，这只是一笔昂贵的内部支持成本；到了 2026\n年，当外部企业在 Bedrock 上搭建 Agent 成为主流，AWS\n敏锐地捕捉到了这个新的 B2B\n变现机会——把内部现存的基础设施包装成云服务输出。理论上，外部开发者的 API\n调用可以和内部工作负载一起分摊抓取与新鲜度维护的固定成本；但 AWS\n未披露后端共用比例和单位经济，这属于战略推断而非已公开事实。\n第二是搜索分发渠道发生了根本性的 B2B 转型。在传统的 C\n端搜索时代，获客靠的是争夺浏览器默认位，Google 每年砸下数百亿美元买断\nSafari 和 Android 地址栏；但在 Agent 时代，搜索变成了一个纯粹的 B2B\n开发者产品，流量入口从手机/浏览器的地址栏，转移到了 Bedrock 或 SageMaker\n上的模型 API 运行时。\n这对云巨头来说是一个巨大的结构性机会。AWS 根本不需要去 C\n端买断任何设备入口，因为它本身就掌握着企业级 Agent\n的云端运行环境。开发者已经在 AWS 上管理 IAM\n鉴权、结云账单、跑模型上下文，原生的 Web Search\n自然就成了开箱即用、合规摩擦最小的默认选项。用”云端 B2B\n基础设施分发”部分替代”C\n端浏览器分发”，是云巨头捕捉搜索供应链重构红利的核心牌局。\n搜索分发渠道的迁移：消费者浏览器默认位 vs\n云端模型 API 运行时\n护城河的迁移：哪些被绕过，哪些变成了新壁垒？\n把整个搜索供应链的重构梳理一遍，壁垒的迁移路径就看得更具体了。\n那些被顺手绕过去的是传统 SERP 相关的商业与交互栈：SERP\n页面排版、广告竞价系统、基于搜索框的流量分发，以及由系统厂商控制的默认搜索入口。\n但那些依然横在眼前的工程硬骨头一点没少：全网高频抓取需要的带宽和 IP\n资源、防爬虫对抗和版权许可谈判、网页新鲜度索引，还有防垃圾网站的权威度计算。这些物理世界的工程约束，大模型再聪明也没法替你省掉。\n同时，新的护城河与数据闭环也开始显现。在分发这端，模型 SDK、MCP\n协议标准和云厂商的模型 API\n运行时，成了新的默认入口；在数据这端，校准排序质量的信号从人类的点击与停留，变成了\nAgent 跑任务时的代码运行成功率、工具重试率和引用链接打开率。\n对我们架构师来说，给 Agent\n选联网方案时，千万别被大家都能做搜索的假象误导。纯透传 SERP\n的包装层在面对自建索引厂商和云巨头时，长期来看存在确定性劣势；而深耕上下文精炼或者持有独立索引的数据源，会在特定\nAgent 场景里保持独特价值。看清不同供应商在 Stack\n里真实的位置，按自己系统对延迟、隐私、COGS\n和证据深度的需求去组合采购，才是应对这场供应链解耦最踏实的方式。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/agentic-web-search-supply-chain-20260810.html",
-      "content_chars": 3881,
-      "content_sha256": "5c998917fefca7eb67c0f474a93c86520326471452d7277c1b1a51941fffaf0b",
-      "content_fetched_at": "2026-08-11T21:56:47.118841+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-08-12",
+  "collect_window": {
+    "start": "2026-08-10T00:00:00+00:00",
+    "end": "2026-08-11T21:55:40.757554+00:00",
+    "hours": 45
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "31540124227",
+    "commit": "4c21e4b"
+  },
+  "stats": {
+    "total": 13,
     "by_kind": {
       "publish": 13
     },
@@ -352,9 +33,1038 @@
       "sonicwall-advisory": 2,
       "yage-share": 3
     },
+    "failed_lists": [
+      "r136a1"
+    ],
+    "sources_ok": 50,
+    "sources_failed": [
+      {
+        "id": "r136a1",
+        "error": "html_fetch:[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000); browser:Page.goto: net::ERR_CONNECTION_CLOSED at https://r136a1.dev/\nCall log:\n  - navigating to \"https://r136a1.dev/\", waiting until \"domcontentloaded\"\n"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 9,
+      "rss": 30
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 14,
+      "calls": 14,
+      "prompt_tokens": 15702,
+      "completion_tokens": 2420,
+      "total_tokens": 18122,
+      "prompt_cache_hit_tokens": 11264,
+      "prompt_cache_miss_tokens": 4438
+    },
     "by_content_status": {
       "failed": 3,
       "ok": 10
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:f8fad94255cc1019",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html",
+      "at": "2026-08-11T21:55:40.757554+00:00",
+      "external_id": "a:f8fad94255cc1019",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-11T21:56:21.076677+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-11T21:55:40.757554+00:00",
+      "collected_at": "2026-08-11T21:55:40.757554+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/748063-easyanticheat-sys-kernel-driver-re-rust-post4767867.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:116081946ef31194",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html",
+      "at": "2026-08-11T21:55:40.757554+00:00",
+      "external_id": "a:116081946ef31194",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-11T21:56:31.943721+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-11T21:55:40.757554+00:00",
+      "collected_at": "2026-08-11T21:55:40.757554+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4767860.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:ea42cc931f875372",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html",
+      "at": "2026-08-11T21:55:40.757554+00:00",
+      "external_id": "a:ea42cc931f875372",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-11T21:56:42.791356+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-11T21:55:40.757554+00:00",
+      "collected_at": "2026-08-11T21:55:40.757554+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766387-reverse-engineering-tool-post4766831.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:1a3c239953d250ba",
+      "who": "idov31-posts",
+      "who_url": "https://idov31.github.io/posts",
+      "action": "publish",
+      "target": "09 Aug 2026Inside Event Tracing for Windows with EtwSuiteEvent Tracing for Windows is one of Windows' richest telemetry systems. This video introduces the ETW ecosystem and shows how EtwSuite can turn",
+      "target_url": "https://idov31.github.io/posts/inside-etw-with-etwsuite",
+      "text": "idov31-posts published: 09 Aug 2026Inside Event Tracing for Windows with EtwSuiteEvent Tracing for Windows is one of Windows' richest telemetry systems. This video introduces the ETW ecosystem and shows how EtwSuite can turn",
+      "at": "2026-08-11T21:55:40.757554+00:00",
+      "external_id": "a:1a3c239953d250ba",
+      "url": "https://idov31.github.io/posts/inside-etw-with-etwsuite",
+      "title": "09 Aug 2026Inside Event Tracing for Windows with EtwSuiteEvent Tracing for Windows is one of Windows' richest telemetry systems. This video introduces the ETW ecosystem and shows how EtwSuite can turn",
+      "content": "09.08.2026\nInside Event Tracing for Windows with EtwSuite\nIdo Veltzman\nTable Of Contents\nEvent Tracing for Windows (ETW) is one of the richest sources of telemetry available on Windows. It can expose activity from the kernel, drivers, services, frameworks, and applications, but the provider models, sessions, and metadata can make it difficult to approach as a researcher or defender.\nIn this video, I walk through the ETW ecosystem, look at what happens when providers register and sessions start, and demonstrate how EtwSuite can turn those events into a practical research workflow.\nWhat the Video Covers\n▸\nThe ETW architecture: providers, controllers, consumers, and the session infrastructure that connects them.\n▸\nClassic, WPP, manifest-based, and TraceLogging providers, including the practical limitations and access restrictions that matter when consuming them.\n▸\nHow ETW is initialized during boot, how providers register, and how a controller creates a tracing session.\n▸\nUsing EtwSuite to find providers, consume live events, filter results, and record or export traces for later analysis.\n▸\nA UAC-bypass case study that compares benign and malicious requests to identify useful detection signals.\nEtwSuite as a Research Tool\nEtwSuite\nis a Windows-native ETW inspection suite built to make the full workflow easier to work with from one desktop application. You can browse registered providers, inspect their metadata, collect live events, and save recordings as ETL, JSON, or CSV files.\nThat combination is especially useful when exploring an unfamiliar provider. Rather than writing a consumer before knowing whether a provider exposes the fields you need, you can inspect the manifest, generate a controlled event, and compare the resulting telemetry directly in the tool.\nFrom Telemetry to Detection\nThe demonstration uses the Microsoft Antimalware UAC Scan provider to compare a normal elevation request with a UAC bypass. By examining the requesting process, request type, trust state, auto-elevation information, command line, and related COM data, it becomes possible to identify signals that distinguish the two cases.\nThe important takeaway is not a single static rule. It is the research process: select a relevant provider, collect benign and suspicious samples, compare the fields that change, and then validate the resulting detection against more real-world activity.\nGet Started\nIf you want to follow along, download EtwSuite from the\nproject repository\nand use the video as a starting point for exploring the providers on your own system.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://idov31.github.io/posts/inside-etw-with-etwsuite",
+      "content_chars": 2568,
+      "content_sha256": "088302197e66b15091135d2bf466d39407e77b7f905178241edf61a2081ad842",
+      "content_fetched_at": "2026-08-11T21:56:44.874685+00:00",
+      "author": "idov31-posts",
+      "author_name": "Ido Veltzman Posts",
+      "author_url": "https://idov31.github.io/posts",
+      "published_at": "2026-08-11T21:55:40.757554+00:00",
+      "collected_at": "2026-08-11T21:55:40.757554+00:00",
+      "tags": [
+        "kind:publish",
+        "src:idov31-posts",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://idov31.github.io/posts",
+        "https://idov31.github.io/posts/inside-etw-with-etwsuite"
+      ],
+      "refs": {
+        "actor": {
+          "login": "idov31-posts",
+          "url": "https://idov31.github.io/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "idov31-posts",
+          "name": "Ido Veltzman Posts",
+          "home_url": "https://idov31.github.io/posts"
+        },
+        "article": {
+          "title": "09 Aug 2026Inside Event Tracing for Windows with EtwSuiteEvent Tracing for Windows is one of Windows' richest telemetry systems. This video introduces the ETW ecosystem and shows how EtwSuite can turn",
+          "url": "https://idov31.github.io/posts/inside-etw-with-etwsuite",
+          "content_sha256": "088302197e66b15091135d2bf466d39407e77b7f905178241edf61a2081ad842"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:6ec06842a26afee3",
+      "who": "safebreach-blog",
+      "who_url": "https://www.safebreach.com/blog/",
+      "action": "publish",
+      "target": "Threat Coverage | ResearchAug 11 , 2026Gunra Ransomware: SafeBreach Coverage for CISA Alert AA26-222ALearn how SafeBreach maps CISA Advisory AA26-222A to simulations that v...Read More",
+      "target_url": "https://www.safebreach.com/blog/gunra-ransomware-cert-alert-aa26-222a/",
+      "text": "safebreach-blog published: Threat Coverage | ResearchAug 11 , 2026Gunra Ransomware: SafeBreach Coverage for CISA Alert AA26-222ALearn how SafeBreach maps CISA Advisory AA26-222A to simulations that v...Read More",
+      "at": "2026-08-11T21:55:40.757554+00:00",
+      "external_id": "a:6ec06842a26afee3",
+      "url": "https://www.safebreach.com/blog/gunra-ransomware-cert-alert-aa26-222a/",
+      "title": "Threat Coverage | ResearchAug 11 , 2026Gunra Ransomware: SafeBreach Coverage for CISA Alert AA26-222ALearn how SafeBreach maps CISA Advisory AA26-222A to simulations that v...Read More",
+      "content": "Aug 11, 2026\nGunra Ransomware: SafeBreach Coverage for CISA Alert AA26-222A\nLearn how SafeBreach maps CISA Alert AA26-222A to simulations that validate your controls against key activities of the Gunra Ransomware variant, including\nNTDS credential dumping, pass-the-hash lateral movement, SMB and RDP lateral movement, and more.\nSummary\nCISA Alert AA26-222A details the Gunra ransomware-as-a-service operation, a Conti-derived double-extortion variant also branded Golden Community, which has hit government, critical infrastructure, and commercial targets worldwide. This post outlines the campaign’s TTPs mapped to MITRE ATT&CK, summarizes the advisory’s IOCs, and covers the new and existing content SafeBreach has added to its platform to help customers validate that their controls detect and block NTDS credential dumping, pass-the-hash lateral movement, SMB and RDP lateral movement, indicator removal, Volume Shadow Copy manipulation, and SharePoint data exfiltration.\nAuthor:\nStacey Nosan, Senior Director of Content & Communications\nOn August 10, 2026, the Federal Bureau of Investigation (FBI), Cybersecurity and Infrastructure Security Agency (CISA), Department of Defense Cyber Crime Center (DC3), National Security Agency (NSA), U.S. Secret Service (USSS), and Republic of Korea’s National Police Agency (KNPA) released a joint Cybersecurity Advisory (CSA) titled\n“#StopRansomware: Gunra Ransomware” (Alert Code: AA26-222A)\n. This advisory provides critical intelligence on the Gunra ransomware-as-a-service operation, including its tactics, techniques, and procedures (TTPs) and indicators of compromise (IOCs) identified through FBI and KNPA investigations.\nGunra actors have targeted government, critical infrastructure, and commercial organizations across the Americas, Europe, the Middle East, Africa, and the Asia-Pacific, operating a double-extortion model that pairs full-volume encryption with the threat of publishing stolen data to a dedicated leak site.\nUnderstanding the Gunra Threat\nThe FBI first observed Gunra in\nApril 2025\nas a sophisticated double-extortion ransomware variant derived from the\nConti\nransomware source code leaked in 2022—placing it in the same lineage as\nBlack Basta\n,\nRhysida\n, and other post-Conti families. The actors set up a Tor-based dedicated leak site (DLS) almost immediately to name victims and publish exfiltrated data.\nAs of\nJanuary 2026\n, Gunra expanded into a structured\nransomware-as-a-service (RaaS)\naffiliate program advertised on dark web forums, supplying affiliates with a management panel, a configurable ransomware builder, cross-platform locker payloads, and structured affiliate documentation. The FBI has observed the group adopting new branding aliases in support of that expansion, notably operating under the name\nGolden Community\n.\nGunra has also commercialized the front end of the intrusion. The group actively recruits penetration testers and self-described ethical hackers to serve as\ninitial access brokers\n, offering a share of ransom profits in exchange for enterprise network access. For defenders this matters more than the branding: the locker is consistent from victim to victim, but the intrusion tradecraft that precedes it varies by whoever sold the access. Do not expect a single repeatable entry signature.\nCampaigns initially focused on Windows environments; reporting from mid-2025 onward documents a\nLinux variant\nand a move toward broader cross-platform targeting, which materially widens the attack surface inside a virtualized estate.\nVictims on the actors’ DLS span healthcare and public health, financial services and insurance, critical manufacturing and construction, transportation systems and logistics, government services and facilities, utilities, academia, media and communications, retail, and professional and nonprofit services.\nKey Tactics, Techniques, & Procedures (TTPs)\nThe advisory maps Gunra activity to\nMITRE ATT&CK for Enterprise v19.1\n.\nInitial Access\nGunra actors gain access primarily by exploiting known vulnerabilities in internet-facing firewall and VPN appliances (\nT1190\n). The FBI observed exploitation of two FortiOS / FortiProxy authentication bypass flaws (both CWE-288):\nCVE-2024-55591\nCVE-2025-24472\nBoth allow actors to abuse scheduled tasks on vulnerable FortiOS firewalls to create a persistent malicious super-user account named\nforticloud-sync\nwith a hard-coded password. That account name is a high-value hunt target.\nSeparately, KNPA observed Gunra actors exploiting credential-exposure and SSH access-control weaknesses in internet-facing VPN gateways to obtain unauthorized remote access.\nExecution\nThe Windows encryptor drives execution and targeted encryption through native OS APIs, using FindFirstFileW / FindNextFileW to enumerate files and directories across all accessible drive letters, A through Z (\nT1106\n). Actors execute commands via cmd.exe (\nT1059.003\n) to initiate WMI operations (\nT1047\n).\nPersistence & Privilege Escalation\nIn one KNPA-investigated intrusion, actors reached an administrator account on an SSL-VPN appliance by exploiting default credentials in the absence of account lockout controls (\nT1078.001\n,\nT1078.002\n), then used external-facing remote services to maintain that access (\nT1133\n).\nHaving reached the SSL-VPN administrative web console, the actors identified an unused account with reach into both internet-facing and internal corporate networks, and modified its configuration to bypass the mandatory password-change requirement so it could be reused (\nT1098\n).\nLateral Movement\nSMB / Windows admin shares\nvia Impacket’s psexec.py and smbclient.py (\nT1021.002\n).\nRDP\ninto the internal VDI environment using stolen session data, pivoting to the VDI authentication web server, the internal Active Directory server, and IT staff virtual desktops (\nT1021.001\n).\nPass-the-hash\n(\nT1550.002\n) and\npass-the-ticket\n(\nT1550.003\n) into privileged systems.\nCommand & Control\nSSH tunneling\nusing OpenSSH downloaded from an attacker-controlled server (\nT1105\n,\nT1572\n).\nCredential Access\nThis is the deepest section of the advisory, and the most relevant to validation:\nNTDS credential dumping\nusing Impacket’s secretsdump.py against compromised domain controllers to extract password hashes (\nT1003.003\n).\nNetwork sniffing\n—abusing SSL-VPN traffic-control functionality to capture VDI login credentials and session data in transit (\nT1040\n).\nSession cookie theft\nand reuse to hijack active sessions and impersonate legitimate users (\nT1539\n).\nMFA bypass via authentication-process modification\n—altering files on a victim’s VDI authentication portal server so that a specific attacker-chosen one-time password always succeeds, creating a persistent MFA backdoor (\nT1556.006\n).\nCredentials from password stores\n—accessing a Hiware access-control server over SSH from a compromised virtual desktop and stealing its symmetric encryption key (\nT1555\n), then using that key to decrypt and dump stored enterprise server passwords (\nT1003\n).\nStealth, Defense Impairment, & Discovery\nGunra actors delete system and network access logs (\nT1685\n) and clear command history (\nT1070.003\n). They deliberately time reconnaissance and malicious activity to\nlate-night and early-morning hours (10:00 p.m. to 06:00 a.m.)\nto avoid administrator detection (\nT1678\n)—a scheduling signal defenders can build alerting around.\nThe Windows binary includes the IsDebuggerPresent API to frustrate reverse engineering (\nT1622\n), and applies selective exclusion logic (\nT1679\n): it skips C:\\Windows, C:\\Program Files, and C:\\Program Files (x86), then filters out system-critical extensions such as .exe, .dll, and .sys. Files consistent with user data—documents, databases, images, archives—are queued for encryption. The binary also avoids re-encrypting its own output. The purpose is operational, not merciful: it keeps the host bootable and the ransom note readable.\nThe binary performs file and directory discovery across all accessible drive letters (\nT1083\n), and actors enumerate active network connections to map reachable infrastructure before deployment (\nT1049\n).\nNotably, the ransomware binary is self-contained and performs full-volume encryption\nwithout observable network indicators\n— no DNS, no HTTP. Detection has to come from behavior, not egress.\nCollection & Exfiltration\nActors collect business-critical documents, databases, PII, and internal email (\nTA0009\n,\nT1005\n,\nT1114\n), archive it with 7-Zip, WinRAR, and RClone (\nT1560\n), and move it out over the file-sharing service\nMega\n(\nT1567\n) or over FTP via FileZilla (\nT1048\n). A malicious executable (main.exe) specifically targets\nMicrosoft OneDrive and SharePoint\nfor cloud data theft (\nT1530\n).\nFor at least one known victim, exfiltrated volume reached\ntens of terabytes\n.\nImpact\nData encrypted for impact\n(\nT1486\n)—a multi-threaded architecture encrypting many files in parallel using\nChaCha20 + RSA-4096\n. Encrypted files are renamed with the\n.ENCRT\nextension; one documented July 2025 sample used\n.CRYPT\n, and Linux ELF variants append\n.GNRA\n.\nInhibit system recovery\n(\nT1490\n)—WMI-driven deletion of volume shadow copies prior to encryption, e.g. cmd.exe /c C:\\Windows\\System32\\wbem\\WMIC.exe shadowcopy where “ID='{guid}'” delete. In one case, actors deleted backup and archived data at both the primary data center\nand\nthe disaster recovery center, before and after deployment.\nFinancial theft\n(\nT1657\n)—a static ransom note,\nR3ADM3.txt\n, written into every affected directory, assigning victims a Client ID and initial password for a Tor negotiation portal. Victims are directed to negotiate within\nfive to seven days\nvia the portal or qTox. Opening demands have run\nover tens of millions of US dollars\n.\nA recovery opportunity worth knowing about:\nas of March 2026, researchers identified a weakness in Gunra’s\nLinux ELF variant\n(.GNRA). Its encryption keys use a weak pseudorandom number generator seeded with the predictable srand(time(NULL)). Defenders may be able to mathematically reconstruct keys using file timestamps and recover files\nwithout paying the ransom\n. If you are responding to a Gunra Linux incident, preserve encrypted files, file timestamps, ransom notes, and system logs before doing anything else.\nLeveraged Tools\nThe advisory names publicly available tooling observed on Gunra infrastructure:\nFileZilla, Amass, RClone, Sliver, 7-Zip, WinRAR, DBeaver, Slack, Microsoft Visual Studio Code, MobaXterm, AnyDesk, Google Remote Desktop, Mimikatz,\nand\nImpacket\n(smbclient, psexec, secretsdump). Presence alone is not proof of compromise—several are legitimate admin tools—but co-occurrence warrants investigation.\nIndicators of Compromise (IOCs)\nThe advisory provides extensive IOCs, including:\nIP addresses associated with Gunra infrastructure from June 2025 through December 2025.\nThe clearnet DLS mirror domain datapub[.]news (June–July 2025) and three Tor .onion DLS addresses spanning April 2025 to July 2026.\nFour ProtonMail / Gmail ransom-negotiation email addresses and four qTox IDs.\nSHA-256 hashes for four malicious files: two main.exe variants (OneDrive / SharePoint exfiltration), cryptor.exe, and msmp.exe.\nThe malicious Fortinet user account forticloud-sync.\nFor the full list, download the AA26-222A STIX XML (55 KB) or STIX JSON (62 KB) bundles from the CISA advisory page. The authoring agencies note that observed IPs and domains may be historical, and recommend vetting them before blocking.\nBeyond the indicator lists, hunt for the behaviors: WMI-driven shadow copy deletion, creation of a forticloud-sync account on Fortinet devices, .ENCRT / .CRYPT / .GNRA file extensions and R3ADM3.txt notes appearing across shares, Impacket execution against domain controllers, and privileged activity clustered between 10:00 p.m. and 06:00 a.m.\nSafeBreach Coverage and Playbook Attack Updates\nExisting Behavioral Coverage\nSafeBreach already simulates several of the attacker behaviors detailed in this campaign, including:\n6807 and 7223 – NTDS.dit credential dumping\n2273 – Pass the Hash lateral movement over SMB using Mimikatz\n6473 – Agentless lateral movement over RDP\n483, 6513, and 6550 – Agentless lateral movement over SMB with remote code execution\n2245 – Indicator removal on host\n6372 – Volume Shadow Copy manipulation\n10975 – Files exfiltration from Azure SharePoint\nThese simulations are mapped to MITRE ATT&CK and can be used immediately to validate detection and response capabilities across your infrastructure.\nNew IOC-Based Coverage\nTo address the newly released IOC guidance, we added the following new simulation:\n11754 – Communication with APT (US-CERT AA26-222A) using HTTP. This simulation validates outbound HTTP communication with Gunra’s advisory listed command and control infrastructure.\nWe also tagged 12 existing Gunra malware sample moves, covering write to disk, pre-execution, transfer over HTTP/S, and email delivery for two sample variants, so they now filter under this advisory.\nIt’s worth noting the advisory’s own\nValidate Security Controls\nsection explicitly recommends selecting the ATT&CK techniques in Tables 6–18, aligning security technologies against them, testing, analyzing performance, and tuning—continuously, at scale, in production. That is precisely the exercise the SafeBreach platform automates.\nWhat You Should Do Now\nSafeBreach customers can now validate their security controls against these TTPs in multiple ways.\nMethod 1 — SafeBreach Scenarios:\nNavigate to the SafeBreach Scenarios page and choose\nCISA Alert AA26-222A (Gunra Ransomware)\n.\nMethod 2 — Attack Playbook:\nOpen the Attack Playbook and filter attacks related to\nCISA Alert AA26-222A (Gunra Ransomware)\n. Additionally, you can refer to the list above as well to ensure a comprehensive level of coverage.\nMethod 3 — Known Threat Series Report:\nFrom the Known Threats Series report, select\nCISA Alert AA26-222A (Gunra Ransomware)\nand select Run Simulations, which will run all attack methods.\nAdditional Advisory Steps\nRun the SafeBreach Platform Simulations\nLog into the SafeBreach platform and navigate to the updated playbooks mapped to AA26-222A.\nExecute simulations that emulate Gunra behaviors—NTDS credential dumping, pass-the-hash lateral movement, Volume Shadow Copy manipulation, indicator removal on host, and SharePoint data exfiltration..\nUse the simulation IDs listed above to test both behavioral and IOC-based coverage:\n11754 (C2 communication check)\n6807 (NTDS.dit credential dumping)\n2273 (Pass the Hash lateral movement)\n6372 (Volume Shadow Copy manipulation)\n10975 (SharePoint data exfiltration)\nReview results to validate detection, surface gaps, and guide remediation.\nMitigation Strategies\nDrawn from the advisory’s Mitigations section, which aligns to the CISA/NIST Cross-Sector Cybersecurity Performance Goals (CPGs):\nPrioritize patching known exploited vulnerabilities\n[CPG 2.B]—including CVE-2024-55591 and CVE-2025-24472—in internet-facing systems such as VPN gateways and RDP-exposed infrastructure, and keep all OSs, software, and firmware current.\nImplement a recovery plan\n[CPG 3.I, 3.0, 1.C] that maintains multiple copies of sensitive data and servers in a physically separate, segmented, secure location.\nReview domain controllers, servers, workstations, and Active Directory\nfor new or unrecognized accounts [CPG 2.A, 2.E]—forticloud-sync is a known Gunra artifact.\nAudit administrative accounts and configure access controls\nto the principle of least privilege [CPG 3.G].\nSegment networks\n[CPG 3.I] to control traffic flows between subnetworks and restrict adversary lateral movement.\nRequire MFA\nfor all services to the extent possible, particularly webmail, VPNs, and accounts accessing critical systems [CPG 3.F].\nDisable command-line and scripting activities and permissions\n[CPG 3.G, 3.M]—Gunra’s privilege escalation and lateral movement depend heavily on command-line tooling.\nProactive Threat Monitoring\nAlert on recovery inhibition as high-severity.\nTreat WMIC.exe shadowcopy delete and equivalent WMI/PowerShell shadow copy operations as incidents, not informational events.\nWatch for the forticloud-sync account\nand any other unrecognized super-user account on Fortinet firewall devices.\nBaseline off-hours privileged activity.\nGunra deliberately operates between 10:00 p.m. and 06:00 a.m.; administrative logons and reconnaissance in that window deserve their own detection logic.\nHunt for encryption artifacts at rest\n—.ENCRT, .CRYPT, and .GNRA extensions and R3ADM3.txt notes across file shares and NAS.\nMonitor for archive-then-upload sequences\n—7-Zip / WinRAR / RClone activity on file servers followed by outbound transfer to Mega or FTP.\nDetect on behavior, not egress.\nThe locker itself generates no network indicators; encryption will not announce itself on the wire.\nStay Ahead with SafeBreach\nFor a complete view of your security gaps against Gunra ransomware attacks, sign into the SafeBreach platform and run the latest simulations mapped to AA26-222A. This content validates NTDS credential dumping, pass-the-hash lateral movement, SMB and RDP lateral movement, indicator removal, Volume Shadow Copy manipulation, and SharePoint data exfiltration. It does not currently validate the Fortinet CVE exploitation used for initial access, MFA bypass, session cookie theft, or actual ransomware encryption. Note that several of these simulations, specifically 10975, 6372, 6473, 6483, 6513, 6550, 6807, and 7223, are flagged as Advanced Actions, meaning they do more than a passive simulation. For example, 10975 makes a real Microsoft Graph API call using your own Azure credentials. Review these before running in a production environment.\nYou can also take your testing a step further with\nSafeBreach Propagate\n. Propagate enables you to assess how attackers could pivot across your environment post-compromise—mapping high-risk attack paths, visualizing lateral movement, and prioritizing remediation efforts based on exposure to your most critical assets. Find out more in the\nSafeBreach Propagate solution brief\n.\nYou Might Also Be Interested In\nResearch\nBlog\nIranian-Affiliated PLC Exploitation: SafeBreach Coverage for CISA Advisory AA26-097A\nRead More\nResearch\nBlog\nRussian State-Supported Zimbra Phishing: SafeBreach Coverage for CISA Advisory AA26-204A\nRead More\nPodcast\nVideos\nPodcast: Poisoned Pipelines: TeamPCP and the FBI Flash on Weaponized Dev Tools\nListen Now\nGet the latest\nresearch and news",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.safebreach.com/blog/gunra-ransomware-cert-alert-aa26-222a/",
+      "content_chars": 18441,
+      "content_sha256": "7aaf551ae025e82e78fa0bef9c5225bd89c1a5345e03a8a0c20eed78e5935462",
+      "content_fetched_at": "2026-08-11T21:57:22.879639+00:00",
+      "author": "safebreach-blog",
+      "author_name": "SafeBreach Blog",
+      "author_url": "https://www.safebreach.com/blog/",
+      "published_at": "2026-08-11T21:55:40.757554+00:00",
+      "collected_at": "2026-08-11T21:55:40.757554+00:00",
+      "tags": [
+        "kind:publish",
+        "src:safebreach-blog",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.safebreach.com/blog/",
+        "https://www.safebreach.com/blog/gunra-ransomware-cert-alert-aa26-222a/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "safebreach-blog",
+          "url": "https://www.safebreach.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "safebreach-blog",
+          "name": "SafeBreach Blog",
+          "home_url": "https://www.safebreach.com/blog/"
+        },
+        "article": {
+          "title": "Threat Coverage | ResearchAug 11 , 2026Gunra Ransomware: SafeBreach Coverage for CISA Alert AA26-222ALearn how SafeBreach maps CISA Advisory AA26-222A to simulations that v...Read More",
+          "url": "https://www.safebreach.com/blog/gunra-ransomware-cert-alert-aa26-222a/",
+          "content_sha256": "7aaf551ae025e82e78fa0bef9c5225bd89c1a5345e03a8a0c20eed78e5935462"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:67a256105e343caa",
+      "who": "cymulate-blog",
+      "who_url": "https://cymulate.com/blog/",
+      "action": "publish",
+      "target": "When Monitored Content Strikes Back: Account Takeover in Microsoft PurviewRead More",
+      "target_url": "https://cymulate.com/blog/microsoft-purview-xss-account-takeover/",
+      "text": "cymulate-blog published: When Monitored Content Strikes Back: Account Takeover in Microsoft PurviewRead More",
+      "at": "2026-08-11T21:55:40.757554+00:00",
+      "external_id": "a:67a256105e343caa",
+      "url": "https://cymulate.com/blog/microsoft-purview-xss-account-takeover/",
+      "title": "When Monitored Content Strikes Back: Account Takeover in Microsoft PurviewRead More",
+      "content": "When Monitored Content Strikes Back: Account Takeover in Microsoft Purview\nBy:\nCymulate Research Lab\nAugust 11, 2026\nIlan Kalendarov, Security Research Team Lead\nBen Zamir, Security Researcher\nElad Beber, Security Researcher\nHow a single external message could hand over your credentials.\nMicrosoft Purview is built to catch dangerous messages. But what happens when the message fights back? Cymulate Research Labs found that a single external Teams message, email or Copilot prompt could carry stored malicious code into a Purview reviewer’s authenticated browser - turning a routine compliance check into a path to token theft and account takeover.\nResearch Overview\nMicrosoft Purview Communication Compliance is a monitoring product: its job is to capture data or messages that users shouldn't have sent or received and allow actions to be taken. Cymulate researched Purview as part of its ongoing efforts to help secure AI and AI security controls for its clients and the global security community.\nThe vulnerability found was responsibly disclosed and fixed. Cymulate continues to assist its clients with their journey to become “AI-ready” and secure in the AI era.\nWhen the Review Console Becomes the Attack Surface\nCymulate Research Labs found that the Purview console doing the reviewing rendered captured messages as live HTML. A standard user, including a user in a completely different tenant with no permissions in yours, could send a Teams message, an email or a Copilot prompt containing a malicious payload, wait for it to be flagged and have their JavaScript execute inside the authenticated purview.microsoft.com session of every compliance analyst who opened the case.\nIn our proof of concept, that meant the reviewer's access and refresh tokens leaving the browser and reaching an attacker-controlled server, which constitutes full impersonation of a privileged compliance identity. Microsoft confirmed the behavior and shipped a service-side fix; no customer action is required.\nThe durable lesson is the one worth acting on: the consoles your analysts use to inspect hostile content are themselves part of your attack surface and they are reachable by anyone who can send your organization a message.\nVulnerability at a Glance\nField\nDetails\nAffected product\nMicrosoft Purview - Communication Compliance\nPortal\npurview.microsoft.com\nComponent\nCommunication Compliance review experience - “Matches in other sources”\nVulnerability class\nExternally deliverable stored cross-site scripting leading to privileged reviewer account takeover\nCWE\nCWE-79: Improper Neutralization of Input During Web Page Generation\nAttack vector\nNetwork: any monitored communication channel, including Teams chat, email and Microsoft 365 Copilot interaction\nPrivileges required\nNone in the target tenant. A standard M365 license in any tenant is sufficient\nUser interaction\nRequired - a reviewer opens the case and clicks View all\nImpact\nArbitrary JavaScript in the purview.microsoft.com origin, MSAL access and refresh token theft, impersonation of Communication Compliance Analyst / Investigator / Reviewer identities. Stored and multi-victim\nVendor response\nFix implemented service-side\nHow the Research Started\nOur customers place a high level of trust in Purview. It is where their DLP policies live, where insider risk signals land and where interactions with SaaS and now AI are governed. The Copilot prompt an employee typed at 11 p.m. is retained and reviewed in the same place as the email they sent to a competitor. When a control plane accumulates that much authority, “we deployed it” and “it works” stop being the same statement.\nSo we do what we always do: we build the attack scenarios that a customer can run against their own environment to find out which of their Purview policies actually fire, which classifiers actually match, and which alerts actually reach a human. That work normally ends with a question about the policy - did the DLP rule trigger, was the Copilot interaction captured, did the supervision policy flag the message?\nWhile generating deliberately offensive content to trigger a Communication Compliance supervision policy, we ended up spending a lot of time in the reviewer's seat and asking a different question. Not\nonly does the message get flagged, but\nwhat exactly happens in the browser of the analyst who opens it?\nWhat Communication Compliance Actually Does\nCommunication Compliance sits downstream of the channels your organization already runs. A supervision policy defines what to watch: Teams chats, Exchange mailboxes, Copilot interactions and what to match on, whether that is Microsoft's built-in offensive-language and harassment classifiers or an organization-specific rule.\nWhen something matches, the pipeline captures the message and stores its body, then surfaces the item in a review queue for the users in the Communication Compliance Analyst, Investigator or Reviewer role groups.\nTriage is rarely about a single message. So the product helps: when the same matched content appears elsewhere, the review pane shows a bar that reads “Match detected in X other sources,\n”\nwith a\nView all\nbutton. Clicking it opens the\nMatches in other sources\nflyout, which is a timeline that, in Microsoft's own words, shows messages containing the same matched content across other sources, including Teams chats, emails and Copilot interactions. The UserTimelineView API populates the flyout, and each item it returns carries an extractedText field: the captured body of the monitored communication.\nThat field is the entire finding. extractedText is, by definition, whatever the sender wrote. Communication Compliance is a system designed to store content that a human deems unacceptable. Hostile input is not an edge case in this product; it is the product. The one assumption it cannot afford to make is that the content it captured is safe to render.\nThe Field That Was Never Meant To Be Trusted\nIn the application, the flyout renderer passed extractedText straight into React's dangerouslySetInnerHTML, which is the API whose name exists specifically to make this decision hard to make by accident. There was no sanitization step in the path, in either of the two branches that render a timeline item.\nThe Teams-message branch of the timeline renderer passes extractedText into dangerouslySetInnerHTML.\nEmail (IPM.Note) messages, in the same function\nThe IPM.Note branch, same pattern, same unsensitized field.\nThe UserTimelineView response contained the raw message HTML with no server-side processing, so nothing upstream was neutralizing markup either. Whatever an attacker put in a monitored message would be parsed by the reviewer's browser as HTML.\nThe Attack, Step by Step\nStep 1: Say something worth reviewing\nThe attacker needs the compliance engine to care. That is the easy part. A supervision policy exists precisely to catch content like this. In our proof of concept, a message reading “I hate you !” was enough to simulate an offensive-language classifier and create a review item.\nStep 2: Send the payload down the same channel\nImmediately after the trigger message, the attacker sends a second message in the same conversation. This one is not offensive\n,\n; it is the payload. Because the two messages share a sender and a conversation, the second is captured and correlated with the first in the same user timeline.\nThe minimal payload that confirms execution\n<img src=x onerror=console.log(1)>\nAnd the weaponized form used in the PoC — an onerror handler that decodes and runs an arbitrary script\n<img src=x onerror=\"eval(atob('<base64-encoded exfiltration script>'))\">\nThe attacker sends both messages in Teams: the base64-wrapped payload, and the “I hate you !” message that trips the supervision policy.\nStep 3: Let the compliance pipeline persist it\nThe attacker's work is now finished. The supervision policy captures both messages and stores their raw bodies. The payload is not sitting in a transient DOM somewhere. It is persistent content in the compliance datastore, waiting to be served to every reviewer who ever pulls up this sender's timeline: one message, an indefinite number of victims.\nStep 4: Wait\nA compliance analyst working the queue selects the flagged message, sees\n“Match detected in 3 other sources,”\nand clicks\nView all\nbecause correlating a sender's behavior across channels is exactly the job the exploit fires during the intended investigation of the attacker's own message.\nThe reviewer opens the flagged item in the Communication Compliance queue. The “Match detected in 3 other sources” bar and its View all button are the trigger.\nStep 5: Execute in the reviewer's origin\nThe flyout renders every timeline item, including the payload item. The <img> fails to load, the onerror handler fires, and the attacker's script now runs as first-party JavaScript on purview.microsoft.com in a fully authenticated, privileged session.\nStep 6: Walk out with the tokens\nAs in most Azure-portal-derived applications, the reviewer's MSAL artifacts, access tokens, refresh tokens, account and tenant identifiers live in browser storage that JavaScript on the origin can read. The payload enumerated localStorage and sessionStorage, packaged the contents together with the page URL and user agent as JSON, and posted it to an attacker-controlled HTTPS listener.\nPayload executed. The console dump shows MSAL access and refresh tokens being read from the reviewer's browser storage. Identifiers and token values redacted.\nThe attacker's listener receives the exfiltration: a 243 KB JSON body, Content-Type application/json, Origin and Referer purview.microsoft.com. Body redacted.\nFrom here, the attacker impersonates the reviewer and inherits their access. A Communication Compliance reviewer is, by design, an identity that can read the organization's most sensitive captured communications.\nNote: an attacker with high privilege may create new policies that promote additional payloads, exploit other users and further elevate privileges.\nStep 7: Do all of it from another tenant\nNothing in the chain requires the attacker to be inside the victim organization. The full flow, with the sender in a separate tenant (an external user) and no permissions of any kind in the target tenant, produced the same result: the payload was captured, stored and rendered in the reviewer's session exactly as before.\nThe same attack from an external tenant: the sender is flagged “External” in Teams, and both the trigger and the payload land in the monitored conversation.\nEmail works identically. The payload arrives as a normal Outlook message with the “You don't often get email from…” external-sender banner and a Copilot summary bar above it, and it lands in the same timeline through the IPM. Note the branch.\nDelivery by email from an external sender. The captured body is what later reaches the reviewer's browser.\nProof of Concept: Watch the Exploit\nXSS And Copilot\nStored XSS in an enterprise portal is a familiar finding. Yet, this same vulnerability can be abused by Copilot as well:\nPurview surface messages sent in a Copilot session.\nDelivery uses a channel you cannot switch off.\nEngagement is guaranteed.\nBroader monitoring meant broader exposure.\nSecurity and compliance tooling is built to collect attacker-controlled content and display it to high-privilege humans. That makes the analyst console a target, and it makes “how does this product neutralize what it captured before showing it to my team?” a question worth asking of every vendor in that category - email security gateways, DLP consoles, SIEM and ticketing systems, EDR alert views.\nDisclosure Timeline\nDate\nEvent\nJun 30, 2026\nThe issue was reported to MSRC\nJul 21, 2026\nMicrosoft confirms the reported behavior and continues its investigation\nJul 22, 2026\nMicrosoft confirms a fix has been implemented\nVendor Response\nMSRC's handling was straightforward,\nvery quick and efficient\n. Microsoft confirmed the reported behavior, and a fix was implemented roughly three weeks after the report using a cloud-side change. Because Purview is a cloud-\nbased SaaS service, the fix was applied to tenants without any customer action.\nRecommended Actions for CISOs and Organizations\nTreat compliance and security consoles as tier-0 applications.\nA Communication Compliance reviewer can read the contents of your most sensitive conversations. Protect those identities the way you protect administrators: phishing-resistant MFA, PIM-based just-in-time role activation, conditional access scoped to compliant devices, and ideally a separate browser profile or workstation for review work.\nAssume attacker-controlled content will reach your analysts' browsers.\nInventory the tools that render captured or user-submitted content to privileged staff, and ask each vendor how that content is neutralized. This is a category-wide exposure, not a Purview-specific one.\nReduce what a stolen browser session is worth.\nToken protection and bound sessions, shorter token lifetimes, continuous access evaluation, and sign-in risk policies all shrink the window between “the attacker has your refresh token” and “the attacker is you.”\nScope reviewer access deliberately.\nFewer reviewers, correctly separated Analyst and Investigator role groups, and reviewer identities that are not also global administrators. Every additional reviewer was an additional independent victim of the same stored payload.\nValidate the second half of the chain, not just the first.\nThe interesting question is not only whether markup in a monitored message would have been caught. It is whether your controls would have noticed a portal origin posting hundreds of kilobytes of JSON to an unknown domain, or a compliance identity's token suddenly used from new infrastructure. Test it, don't assume it.\nWant to know whether your security stack would detect and stop this type of attack?\nRequest a demo\nto find out more about validating your security controls, testing detection coverage, and strengthening your resilience against evolving identity- and browser-based attacks.\nCymulate Research Lab\nOur highly experienced and diverse researchers are fluent in security intelligence practices, combining expertise in private security, military, and intelligence experience. Continuously examining the cyber-threat landscape, our experts deliver in-depth visibility into today’s threats and the actors behind them.\nMore about Author\nTable of Contents\nResearch Overview\nWhen the Review Console Becomes the Attack Surface\nVulnerability at a Glance\nHow the Research Started\nWhat Communication Compliance Actually Does\nThe Field That Was Never Meant To Be Trusted\nThe Attack, Step by Step\nProof of Concept: Watch the Exploit\nDisclosure Timeline\nVendor Response\nRecommended Actions for CISOs and Organizations\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nMore from the Cymulate Research Lab\nView More Resources\nblog\nThe Race to Ship AI Tools Left Security Behind. Part 1: Sandbox Escape\nAI tools shipped fast - but weak sandboxing left escape paths, exposing systems to data access, abuse, and full compromise.\nRead More\nblog\nCVE-2026-35603: Exploiting Configuration Trust in AI Coding Tools\nA Windows configuration flaw lets low-privileged users compromise AI coding tools, enabling cross-user code execution.\nRead More\nblog\nWhen AI Tools Become the Backdoor: Zero-Click RCE via Prompt Injection\nPrompt injection flaws in AI tools can trigger zero-click remote code execution through silent config poisoning.\nRead More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://cymulate.com/blog/microsoft-purview-xss-account-takeover/",
+      "content_chars": 15783,
+      "content_sha256": "46013f9953ec61febeec77db30c4143b00ddaaeb1b2ac448da06f697856c9c2e",
+      "content_fetched_at": "2026-08-11T21:57:55.625141+00:00",
+      "author": "cymulate-blog",
+      "author_name": "Cymulate Blog",
+      "author_url": "https://cymulate.com/blog/",
+      "published_at": "2026-08-11T21:55:40.757554+00:00",
+      "collected_at": "2026-08-11T21:55:40.757554+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cymulate-blog",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://cymulate.com/blog/",
+        "https://cymulate.com/blog/microsoft-purview-xss-account-takeover/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cymulate-blog",
+          "url": "https://cymulate.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cymulate-blog",
+          "name": "Cymulate Blog",
+          "home_url": "https://cymulate.com/blog/"
+        },
+        "article": {
+          "title": "When Monitored Content Strikes Back: Account Takeover in Microsoft PurviewRead More",
+          "url": "https://cymulate.com/blog/microsoft-purview-xss-account-takeover/",
+          "content_sha256": "46013f9953ec61febeec77db30c4143b00ddaaeb1b2ac448da06f697856c9c2e"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:1db2d7555dfde648",
+      "who": "cisco-advisory",
+      "who_url": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml",
+      "action": "publish",
+      "target": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Remote Access SSL VPN Denial of Service Vulnerability",
+      "target_url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-dos-dzv4mQFF?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Denial+of+Service+Vulnerability%26vs_k%3D1",
+      "text": "cisco-advisory published: Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Remote Access SSL VPN Denial of Service Vulnerability",
+      "at": "2026-08-11T16:39:00+00:00",
+      "external_id": "a:1db2d7555dfde648",
+      "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-dos-dzv4mQFF?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Denial+of+Service+Vulnerability%26vs_k%3D1",
+      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Remote Access SSL VPN Denial of Service Vulnerability",
+      "content": "A vulnerability in the Remote Access SSL VPN service for Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.\nThis vulnerability is due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to the Remote Access SSL VPN service on an affected device. A successful exploit could allow the attacker to cause the affected device to reload, resulting in a DoS condition.\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\nThis advisory is available at the following link:\nhttps://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-dos-dzv4mQFF\n<br/>Security Impact Rating: High\n<br/>CVE: CVE-2026-20349",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-dos-dzv4mQFF?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Denial+of+Service+Vulnerability%26vs_k%3D1",
+      "content_chars": 1009,
+      "content_sha256": "ded2e58db86e1cb607d3a1a43e9bfa5583de091368c7b3b05c79ac3e256fca59",
+      "content_fetched_at": "2026-08-11T21:58:12.758313+00:00",
+      "author": "cisco-advisory",
+      "author_name": "Cisco Security Advisory",
+      "author_url": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml",
+      "published_at": "2026-08-11T16:39:00+00:00",
+      "collected_at": "2026-08-11T21:55:40.757554+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cisco-advisory",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml",
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-dos-dzv4mQFF?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Denial+of+Service+Vulnerability%26vs_k%3D1"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cisco-advisory",
+          "url": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cisco-advisory",
+          "name": "Cisco Security Advisory",
+          "home_url": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml"
+        },
+        "article": {
+          "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Remote Access SSL VPN Denial of Service Vulnerability",
+          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-dos-dzv4mQFF?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Denial+of+Service+Vulnerability%26vs_k%3D1",
+          "content_sha256": "ded2e58db86e1cb607d3a1a43e9bfa5583de091368c7b3b05c79ac3e256fca59"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:562408c327eeafde",
+      "who": "ivanti-advisory",
+      "who_url": "https://www.ivanti.com/blog/topics/security-advisory",
+      "action": "publish",
+      "target": "August 2026 Security Update",
+      "target_url": "https://www.ivanti.com/blog/august-2026-security-update",
+      "text": "ivanti-advisory published: August 2026 Security Update",
+      "at": "2026-08-11T14:23:41+00:00",
+      "external_id": "a:562408c327eeafde",
+      "url": "https://www.ivanti.com/blog/august-2026-security-update",
+      "title": "August 2026 Security Update",
+      "content": "Ivanti releases standard security patches on the second Tuesday of every month. In today’s rapidly evolving technology and threat landscape, we believe responsible transparency should be a cornerstone of any product security program.\nAI is compressing the time-to-exploit\n, and Ivanti uses leading technologies to proactively find and fix issues ––including integrating advanced LLMs into our Engineering and product security to enhance the capabilities of our teams.\nOur philosophy is simple: discovering and communicating vulnerabilities, and sharing that information with defenders, is not an indication of weakness; rather it is evidence of rigorous scrutiny and a proactive vulnerability management program. By aggressively seeking to identify and address vulnerabilities, our aim is to get ahead of threat actors to ensure our customers can take the steps needed to protect their environments.\nTo that end, today Ivanti is disclosing vulnerabilities in Ivanti Neurons for MDM and Endpoint Manager (EPM).\nIt is important for customers to know:\nWe have no evidence of these vulnerabilities being exploited in the wild.\nThese vulnerabilities do not impact any other Ivanti solutions.\nMore information on these vulnerabilities and detailed instructions on how to remediate the issues can be found in the Security Advisories:\nIvanti Neurons for MDM\nEndpoint Manager (EPM)\nHow AI will affect vulnerability disclosures in our products\nIvanti continues to explore, test, and implement leading technologies and processes in every stage of our product development. In recent months, our security team began a project to integrate multiple advanced LLM models into our product security processes.\nThis project has increased the capabilities of our Engineering and Product Security Red Teams to identify and fix vulnerabilities, especially those that are difficult to identify with traditional tooling, such as SAST and DAST. We have already successfully identified vulnerabilities which traditional tools missed.\nAs these tools are integrated further into our processes and refined, we expect an increase in vulnerability disclosures. We will continue to share transparently what we have found and resolved to ensure the security of our products. If you are not already following our Security Blog or subscribed to receive alerts for updates on the products you own through the Ivanti Innovators Hub, we highly recommend you do so.\nImportantly, we are committed to using AI responsibly in product security, including keeping a human in the loop to verify automated or agentic work. While this will result in an uptick in disclosures, we see this as a good thing, and an important part of ensuring our products keep pace with modern security requirements as they change.\nOur top priority is the security of our customers and believe the increase in identified, resolved, and transparently communicated vulnerabilities demonstrates that commitment.\nOur Support team is always available to help customers and partners should they have any questions. Cases can be logged via the\nIvanti Innovators Hub\n(login credentials required).\nWant to stay up to date on Ivanti Security Advisories? Paste\nhttps://www.ivanti.com/blog/topics/security-advisory/rss\ninto your preferred RSS reader / functionality in your email program.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://www.ivanti.com/blog/august-2026-security-update",
+      "content_chars": 3309,
+      "content_sha256": "54480e892704ea134d84673938c273f09d56e80813d0de6df8f61aa28a1eec52",
+      "content_fetched_at": "2026-08-11T21:58:13.580698+00:00",
+      "author": "ivanti-advisory",
+      "author_name": "Ivanti Security Advisory",
+      "author_url": "https://www.ivanti.com/blog/topics/security-advisory",
+      "published_at": "2026-08-11T14:23:41+00:00",
+      "collected_at": "2026-08-11T21:55:40.757554+00:00",
+      "tags": [
+        "kind:publish",
+        "src:ivanti-advisory",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.ivanti.com/blog/topics/security-advisory",
+        "https://www.ivanti.com/blog/august-2026-security-update"
+      ],
+      "refs": {
+        "actor": {
+          "login": "ivanti-advisory",
+          "url": "https://www.ivanti.com/blog/topics/security-advisory"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "ivanti-advisory",
+          "name": "Ivanti Security Advisory",
+          "home_url": "https://www.ivanti.com/blog/topics/security-advisory"
+        },
+        "article": {
+          "title": "August 2026 Security Update",
+          "url": "https://www.ivanti.com/blog/august-2026-security-update",
+          "content_sha256": "54480e892704ea134d84673938c273f09d56e80813d0de6df8f61aa28a1eec52"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:36228de7829cc21d",
+      "who": "sonicwall-advisory",
+      "who_url": "https://psirt.global.sonicwall.com/",
+      "action": "publish",
+      "target": "SonicWall GMS Security Affected By Multiple Vulnerabilities",
+      "target_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0011",
+      "text": "sonicwall-advisory published: SonicWall GMS Security Affected By Multiple Vulnerabilities",
+      "at": "2026-08-11T13:23:57+00:00",
+      "external_id": "a:36228de7829cc21d",
+      "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0011",
+      "title": "SonicWall GMS Security Affected By Multiple Vulnerabilities",
+      "content": "<p>SonicWall GMS (Virtual Appliance, Windows) - 9.5.1 and earlier versions are vulnerable to the following security issues.</p><div><font color=\"#e79439\">1) CVE-2026-66145 -\nAn unauthenticated remote code execution vulnerability</font></div><div>An unauthenticated remote code execution vulnerability was identified in GMS 9.5.1 (Build 9510.1044) and earlier versions which allows remote attacker to read sensitive data and perform arbitrary file write via zipslip.</div><div>CVSS Score: 9.1</div><div>CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N</div><div>\nCWE-94: Improper Control of Generation of Code ('Code Injection')</div><div><br></div><div><span style=\"color: rgb(231, 148, 57);\">2) CVE-2026-66146 - GMS Multiple Cross-Site Scripting (XSS) Vulnerabilities</span></div><div>Multiple Cross-Site Scripting (XSS) vulnerabilities were identified in GMS 9.5.1 (Build 9510.1044) and earlier versions that allow a remote attacker to execute javascript script in a user's browser.</div><div>CVSS Score: 5.5</div><div>CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:L</div><div>CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')<br></div><div><br></div><div><span style=\"color: rgb(231, 148, 57);\">3) CVE-2026-66147 - GMS Unauthenticated Command Injection in Dispatcher Service</span></div><div>An unauthenticated command injection vulnerability was identified in the GMS Dispatcher Service in GMS 9.5.1 and earlier versions which allows remote attacker to perform remote code execution through specially crafted requests.</div><div>CVSS Score: 9.4</div><div>CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H</div><div>\nCWE-94: Improper Control of Generation of Code ('Code Injection')<br></div><div><br></div><div><span style=\"color: rgb(231, 148, 57);\">4) CVE-2026-66148 - GMS Local Privilege Escalation via Authenticated Command Injection</span></div><div>An authenticated command injection vulnerability was identified in GMS Command-Line Interface (CLI) 9.5.1 (Build 9510.1044) and earlier versions which allows low-privileged local user to execute system commands with root privileges.</div><div>CVSS Score: 6.3</div><div>CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L</div><div>\nCWE-94: Improper Control of Generation of Code ('Code Injection')</div><div><br></div><div><span style=\"color: rgb(231, 148, 57);\">5) CVE-2026-66154 - GMS Weak Certificate Verification to User Compromise via MiTM</span></div><div>An insufficient certificate validation in a privileged communication workflow, was identified in a GMS application 9.5.1 (Build 9510.1044) and earlier versions which, under a successful MitM attack and controlled network conditions, could permit unauthorized changes.</div><div>CVSS Score: 8.3</div><div>CVSS Vector: CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H</div><div>\nCWE-295: Improper Certificate Validation</div><div><br></div><div><span style=\"color: rgb(231, 148, 57);\">6) CVE-2026-18634 - GMS Local Privilege Escalation via Deserialization</span></div><div>An insecure handling of serialized objects vulnerability was found in the one of the service of GMS application 9.5.1 (Build 9510.1044) and earlier versions. A local attacker with the ability to interact with the service could exploit this behavior to perform unauthorized actions through the affected component.</div><div>CVSS Score: 8.4</div><div>CVSS Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</div><div>\nCWE-502: Deserialization of Untrusted Data</div><div><br></div>\n<p>While it is crucial to highlight that SonicWall Analytics products remain unaffected by these vulnerabilities. Additionally, there is no substantiated evidence to suggest that these vulnerabilities are currently being actively exploited in real-world scenarios.<br><br>SonicWall strongly recommends that organizations running older versions of GMS builds upgrade to newer fixed versions.</p>\nCVE: CVE-2026-66145, CVE-2026-66146, CVE-2026-66147, CVE-2026-66148\nLast updated: Aug. 11, 2026, 1:23 p.m.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0011",
+      "content_chars": 4047,
+      "content_sha256": "0f4d6760ce8cb7f61da999b7efc8f7504b2952747461c719efc19e56e5f81f01",
+      "content_fetched_at": "2026-08-11T21:58:18.063118+00:00",
+      "author": "sonicwall-advisory",
+      "author_name": "SonicWall Security Advisories",
+      "author_url": "https://psirt.global.sonicwall.com/",
+      "published_at": "2026-08-11T13:23:57+00:00",
+      "collected_at": "2026-08-11T21:55:40.757554+00:00",
+      "tags": [
+        "kind:publish",
+        "src:sonicwall-advisory",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://psirt.global.sonicwall.com/",
+        "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0011"
+      ],
+      "refs": {
+        "actor": {
+          "login": "sonicwall-advisory",
+          "url": "https://psirt.global.sonicwall.com/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "sonicwall-advisory",
+          "name": "SonicWall Security Advisories",
+          "home_url": "https://psirt.global.sonicwall.com/"
+        },
+        "article": {
+          "title": "SonicWall GMS Security Affected By Multiple Vulnerabilities",
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0011",
+          "content_sha256": "0f4d6760ce8cb7f61da999b7efc8f7504b2952747461c719efc19e56e5f81f01"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:64a2b72150cf7076",
+      "who": "sonicwall-advisory",
+      "who_url": "https://psirt.global.sonicwall.com/",
+      "action": "publish",
+      "target": "SonicWall Email Security Affected By Multiple Vulnerabilities",
+      "target_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0012",
+      "text": "sonicwall-advisory published: SonicWall Email Security Affected By Multiple Vulnerabilities",
+      "at": "2026-08-11T13:23:57+00:00",
+      "external_id": "a:64a2b72150cf7076",
+      "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0012",
+      "title": "SonicWall Email Security Affected By Multiple Vulnerabilities",
+      "content": "<p><span style=\"font-size: 11pt; color: rgb(181, 99, 8);\">1) CVE-2026-66149 - Improper Control of Generation of Code ('Code Injection') Vulnerability via netmask</span></p><p>Improper Control of Generation of Code ('Code Injection') Vulnerability in the SonicWall Email Security appliance allows an authenticated attacker with access to the SonicWall Email Security restricted CLI can inject arbitrary OS commands that execute as root via netmask.\n<br></p><p>CVSS Score: 7.8<br>\nCVSS Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H<br>\nCWE-94: Improper Control of Generation of Code ('Code Injection')\n</p><p>\n</p><p><span style=\"color: rgb(196, 89, 17); font-size: 11pt;\">2) CVE-2026-66150 - Improper Control of Generation of Code ('Code Injection') Vulnerability via SNMP</span></p><p>Improper Control of Generation of Code ('Code Injection') Vulnerability in the SonicWall Email Security appliance allows an authenticated attacker with access to the SonicWall Email Security restricted CLI can inject arbitrary OS commands that execute as root via SNMP.\n<br></p><p>CVSS Score: 7.8<br>\nCVSS Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H<br>\nCWE-94: Improper Control of Generation of Code ('Code Injection')\n</p>\n<p></p><p>\n</p>\n<p>SonicWall strongly advises users of the Email Security products (ES Appliance 5000, 5050, 7000, 7050, 9000, VMWare and Hyper-V) to upgrade to the mentioned fixed release version to address these vulnerabilities. <br>There is currently no evidence any of the vulnerabilities addressed in this release are being exploited in the wild.</p>\nCVE: CVE-2026-66149, CVE-2026-66150\nLast updated: Aug. 11, 2026, 1:23 p.m.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0012",
+      "content_chars": 1656,
+      "content_sha256": "dae1c019e16d57f96a3f354676cd0b0285120e793252c92287dea7b327a6482f",
+      "content_fetched_at": "2026-08-11T21:58:18.063271+00:00",
+      "author": "sonicwall-advisory",
+      "author_name": "SonicWall Security Advisories",
+      "author_url": "https://psirt.global.sonicwall.com/",
+      "published_at": "2026-08-11T13:23:57+00:00",
+      "collected_at": "2026-08-11T21:55:40.757554+00:00",
+      "tags": [
+        "kind:publish",
+        "src:sonicwall-advisory",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://psirt.global.sonicwall.com/",
+        "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0012"
+      ],
+      "refs": {
+        "actor": {
+          "login": "sonicwall-advisory",
+          "url": "https://psirt.global.sonicwall.com/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "sonicwall-advisory",
+          "name": "SonicWall Security Advisories",
+          "home_url": "https://psirt.global.sonicwall.com/"
+        },
+        "article": {
+          "title": "SonicWall Email Security Affected By Multiple Vulnerabilities",
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0012",
+          "content_sha256": "dae1c019e16d57f96a3f354676cd0b0285120e793252c92287dea7b327a6482f"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:e382da9417493bc7",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "一台 PC 工作站上的 13 小时训练实验：为什么做优化的前提是测量？",
+      "target_url": "https://yage.ai/share/pc-workstation-training-optimization-20260811.html",
+      "text": "yage-share published: 一台 PC 工作站上的 13 小时训练实验：为什么做优化的前提是测量？",
+      "at": "2026-08-11T00:00:00+00:00",
+      "external_id": "a:e382da9417493bc7",
+      "url": "https://yage.ai/share/pc-workstation-training-optimization-20260811.html",
+      "title": "一台 PC 工作站上的 13 小时训练实验：为什么做优化的前提是测量？",
+      "content": "推理与性能\n模型架构\n四张工作站 GPU\n连接到一条训练时间轨迹，Profiler 测量关口将耗时从 62 小时缩短到 13.2\n小时。\n搞模型训练或者系统优化的时候，我们很容易掉进一个直觉陷阱：看到论文里说某个算法融合能提速，就兴冲冲地花几周手写\nCUDA\n代码；听说哪个通信库性能好，立刻着手重构管线。但如果不先做实际测量，这些辛苦写出来的代码，很可能根本没踩在真正的瓶颈上。\n前\nHuggingFace\nAccelerate\n技术负责人、现\nLambda\nDevRel 负责人 Zach Mueller 在\nAI Council 2026 的演讲\nOptimizing Model\nTraining End-to-End: A Tiny MoE Case Study\n中分享过一个很有意思的实验。他在一台可以放在家里的 PC 工作站中安装了 4\n张 NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation\nEdition。它们属于专业工作站\nGPU，整台机器采用普通工作站形态：主机链路运行在 PCIe 4，没有 NVLink 或\nInfiniBand，也不需要服务器机房的水冷和网络配置。\n在这个受限环境里，他把一个 500M 参数 MoE 模型的训练\nwall-clock，从未优化单卡估算的约 62 小时压到了优化后四卡配置的 13.2\n小时，端到端缩短约 4.7 倍。这个比值同时包含软件优化与 GPU 数量从 1 增到\n4，不能理解成同一套硬件上的纯软件加速。案例的核心在优化顺序：先拿测量数据说话，再由数据决定代码到底改不改。\n问题的基线：PC\n工作站上的性能失真\n做训练实验不一定非要等到万卡集群上线。Zach\n在这台个人四卡工作站上动手，反而把平时隐藏在高速互连背后的低效问题暴露了出来。\n这套实验用的是基于\nQwen3\n风格的 MoE 模型。Zach 将它描述为 500M total parameters、每个 token 约\n330M activated parameters；他还口头提到去掉 embeddings 后约为\n120M，但演讲没有继续说明这 120M 是 total 还是 activated\n口径，因此不能直接把它称为模型主干总参数。模型仍然小到单张显卡可以容纳。\n训练目标按约 20 倍参数量设置为约 10B tokens。按演讲后文约 100k\ntokens/microbatch 的口径，对应约 101,000 个\nmicrobatches。按照最原始的代码直接跑单卡，估算下来要约 62 小时。\n在刚开始跑的时候，系统的整体利用率相当低。显卡上的计算核心大量时间都在等待\nCPU\n准备数据或等待框架调度。如果这时候不打开诊断工具查看真实的耗时分布，盲目增加并行度或者修改代码，训练时间可能不降反升。\n优化的前提是测量：Profiler\n驱动的三步排查\n在实际工程优化里，大家通常会先凭经验处理最显眼的候选项。比如在\nAttention 算法上，换用更高效的\nFlex Attention\n替代默认实现。Zach 报告当时配置的耗时立即下降约\n30%，但演讲没有给出这一刀对应的独立总小时数；在 batch、data pipeline 和\noptimizer 等单卡调整全部完成后，他回顾的整体结果是约 61 小时降到 43\n小时。\n但当这些靠经验就能替换的大块算子搞定之后，再往下的优化就不能再靠拍脑袋了。未经测量的优化，本质上是在黑盒里凭空猜想。如果没有工具帮你看清运行时的时间到底花在了哪里，你很可能会花上好几天时间精雕细琢一段只占总耗时\n1% 的代码，却对旁边霸占了 50% 时间的真正瓶颈视而不见。\n建立测量思维的第一步，是使用诊断工具把系统执行过程中的暗物质给显性化。Zach\n随后的调优完全交给了数据：打开\nPyTorch\nProfiler\n，将系统每一微秒的开销转化为可视化的色块。找到当前占比最大的那个色块，集中精力攻击它，改完代码立刻重新跑一遍测试。只要总训练时长下降了就保留修改，没有改善就顺手回退。整个排查过程分成了三步。\n1.\n剥离框架与数据等待开销（单卡：62h → 43h）\n完成 Attention 替换后，Profiler 里依然能看到一块没有标记名字的粉色\nother\n区域，约占当时 step time 的 8%-9%。Zach\n没有直接确定它的统一含义，而是通过逐项实验观察哪些改动能让它缩小。\n为了把这 8% 的无谓等待给拔掉，Zach 连续做了三招清理： - 打开\nDataLoader 的\npin_memory=True\n，让取出的\nCPU tensor 位于 page-locked host memory，从而加快 CPU 到 GPU\n的传输。它不负责避免显存重复分配。 - 在训练前把整个数据集预先 Token\n化存到磁盘上，不用在训练循环里边跑边做词表转换。这么一理，那块粉色等待直接从\n8% 缩到了 3%。 - 启用 PyTorch\nAdamW\n的 fused implementation，把\noptimizer.step()\n中跨参数、跨操作的 elementwise 更新做 horizontal / vertical\nfusion，减少连续的 kernel launches。它不等于把 backprop\n本身合成一个任务。\n把算法升级与这三项清理合在一起，那块粉色等待基本降到了 1%\n以下，单卡训练时间稳定降到了 43\n小时。这时候显卡才算真正吃上了算力，大半时间都在算矩阵。\n2.\n用梯度累积跨越 PCIe 通信墙（多卡 DDP：约 43h → <18h → 13.2h）\n等把训练扩到 4 张卡跑 DDP 时，并没有出现理想中的 4\n倍线性提速。单纯把未经优化的配置扩到四卡 DDP，Zach 测得约 2.6 倍，将 62\n小时级的单卡估算压到一天以内；随后重新加入前述单卡优化，才进一步降到 18\n小时以内。若直接比较约 43 小时与 18 小时，隐含加速约为 2.4 倍，不能标成\n2.6 倍。\n拿测量数据拆开来看：在没有高速互连的 PCIe 4\n总线上，梯度通信占了单步时间的 50%，真正做矩阵乘法的时间只有约 20%。单次\nAll-Reduce 在当时配置上约花 0.08 秒；按约 101,000 个 microbatches\n估算，累计约 2.26 小时花在梯度同步上。\n想降低这部分通信成本，不一定先换硬件，也可以减少同步频率。Zach 采用约\n100k tokens 的 microbatch，配合\ngradient_accumulation=10\n，形成约 1M tokens 的 effective\nbatch。DDP 每个 rank 处理不同数据，并通过 All-Reduce\n同步梯度；只有框架在前 9 次 backward 正确跳过同步、在第 10\n次才同步时，All-Reduce 频率才会约降为原来的十分之一。PyTorch\n对应的底层机制是\nDDP.no_sync()\n或框架提供的等价实现。\n这么一调，多卡同步的触发次数直接少了一个数量级。通信再也不是拖后腿的主要因素，总训练时间顺理成章地从\n18 小时一路滑到了 13.2 小时。\n3.\n理性放弃无法带来测量收益的伪优化\n在单卡阶段，Zach 也试过为这个 MoE 架构编写 custom CUDA\nkernel，希望省掉部分\nmatmul。听起来手写底层算子是个很硬核的技术动作，也容易让人预设它一定能提速。\n但测出来的真实结果没有支持这个方向：模型总规模只有\n500M，单次矩阵计算很短，kernel overhead\n抵消了预期收益，没有带来可见加速。Zach\n没有在演讲中进一步量化相对默认实现的退化，也没有说明是否删除了代码。\n既然测量数据没有显示收益，这条路径就不应继续占用当前实验的优化预算。跟着测量数据走，可以避免把时间耗在对总时长没有贡献的局部细节上。\n性能 Regime\n的分界线：测量方法可迁移，微观结论不可照搬\n训练优化路径从 62\n小时基线，经单卡优化降至约 43 小时，再用四卡 DDP 与前述优化降至 18\n小时以内，最后通过梯度累积降至 13.2\n小时；下方提示方法可迁移，具体瓶颈不可照搬。\n看完这个实验，最容易踩的坑就是把里面的具体参数或技巧生搬硬套。Zach\n专门提醒过，在单张显卡上好使的手法，换个规模未必继续成立。这个案例更精确的边界，需要放回我此前对\npre-training\n难度\n的判断里理解：真正的难点来自多个中等难度问题在万卡规模和数月周期下同时存在、相互耦合，而且大规模验证既昂贵，最优配置也会随硬件与目标变化。\n小模型场景：在这个 500M 参数、PCIe 4 互连的具体配置上，CPU\n数据加载、框架固定开销和梯度通信构成了显著瓶颈。预先 Token 化、fused\noptimizer 和梯度累积因此能清理掉大量等待。\n大规模场景：模型和 local batch 变大后，固定的 framework /\nkernel-launch overhead 相对占比常会下降，但 large-scale training\n不会自动变成单一的 compute-bound regime。瓶颈还取决于模型结构、sequence\nlength、batch、并行策略和互连拓扑；dense、MoE 与 long-context workload\n可能分别受 compute、memory 或 communication 限制。\nFlashAttention\n优化的是\nAttention 的 IO 路径，是否成为全局核心提速项仍要靠 profile；\nMegatron-LM\n这类大规模训练系统还要同时处理张量并行、流水线并行、设备空闲和网络通信。\n如果因为在 500M\n小模型上看到自定义算子没见效，就下结论说融合算子没用，到了 70B\n大模型上肯定要吃大亏。规模变了，主导瓶颈完全不一样，不能拿小实验的微观结果当普适套路。\n真正能搬到各个项目里用的，是先用工具测出真实瓶颈的方法。至于具体的瓶颈在什么位置、该怎么收拾，得看你手里的硬件和模型正处于什么规模区间。\n从显卡到系统：测量思维在\nAI Agent 与架构中的延伸\n下面是从训练案例延伸出的工程启发，不是 Zach 演讲验证过的 Agent\n性能结论。训练与 Agent 系统面对的瓶颈不同，但都可以先做端到端\ntracing，再依据实测决定是否采用 async、cache 或 request batching。\n在实际开发中，没有测量就无法知道性能预算究竟花在哪里。一次简单的端到端\ntracing\n可能暴露容易修复的等待，也可能证明主要成本确实来自模型调用。两种结果都有价值：前者给出明确改动方向，后者可以阻止团队继续优化占比很小的框架代码。\n1. 剥离 Agent\n运行框架中的粉色开销\n在做复杂的多 Agent\n协同或者上下文检索管线时，远端模型响应只是候选瓶颈之一。端到端 tracing\n应当把模型调用、JSON 校验、Prompt\n拼装、向量数据库连接和进程间通信分别计时，再根据实际占比决定先处理哪一项。\n在这些从未经过测量的系统里，瓶颈有时确实来自同步阻塞、重复序列化或连接复用不足；也可能根本不在这里。先测量端到端延迟，再决定是否改成异步、加入缓存或复用连接，才能知道改动有没有真实收益。在埋怨模型慢之前，先把框架层耗时从远端推理耗时中分离出来，是更可靠的起点。\n2.\n在廉价沙盒里建立密集的测试反馈\nZach\n能在自己的工作站上把整套流程跑通，很关键的一点是他把一次完整实验压到了\n13.2 小时，接近约 12\n小时、每天迭代两次的目标。如果直接去云端按小时计费的高端集群上边跑边试代码，研发账单会迅速增加。\n做 Agent 架构设计也是一样的道理。刚开始没必要直接挂着昂贵的高端 API\n去抠编排逻辑。先搭个本地的模拟接口，或者用个小参数模型做测试沙盒，在几乎零成本的环境里把工具调用、重试机制和上下文拼接给调溜顺，确认控制框架本身又快又稳之后，再接入生产端的高端模型。\n3. 以局部累积降低远端同步频次\n梯度累积是在多个 microbatches 上累积梯度，再触发一次 optimizer\nstep；在 DDP 正确跳过中间同步的前提下，它也能降低跨卡 All-Reduce\n频率。在 Agent\n应用中，也可以检查远程调用是否存在安全的合并空间，但这不是 gradient\naccumulation 的直接等价物。只有彼此独立、语义允许合并的请求才适合\nbatching；依赖前一轮模型输出的后续步骤不能提前攒成一次请求。是否适合合并，还要同时衡量吞吐、交互延迟、上下文长度与错误隔离成本。\n性能优化的核心，是用工程手段处理真实测出的瓶颈。未经测量的推测容易把精力引向占比很小的细节；测量也不保证一定找到改动极小、收益巨大的捷径，但它能让团队知道下一步该改哪里，以及哪些代码暂时不该动。不管是训练一个\n500M 参数的小模型，还是搭建复杂的 AI\n应用系统，先看测量数据，再决定下一行代码改什么，是更可靠的工程习惯。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/pc-workstation-training-optimization-20260811.html",
+      "content_chars": 5452,
+      "content_sha256": "68d7c5143d711bca9a382a188e17d7df1a9476f71cb9bbc5f5a2c8f04a7bd5cd",
+      "content_fetched_at": "2026-08-11T21:56:46.835422+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-11T00:00:00+00:00",
+      "collected_at": "2026-08-11T21:55:40.757554+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/pc-workstation-training-optimization-20260811.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "一台 PC 工作站上的 13 小时训练实验：为什么做优化的前提是测量？",
+          "url": "https://yage.ai/share/pc-workstation-training-optimization-20260811.html",
+          "content_sha256": "68d7c5143d711bca9a382a188e17d7df1a9476f71cb9bbc5f5a2c8f04a7bd5cd"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:35bfc39588c9e0dd",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "挂在无人机上的离线网络：Reticulum 怎么把电波和协议玩出花？",
+      "target_url": "https://yage.ai/share/reticulum-drone-offline-network-20260811.html",
+      "text": "yage-share published: 挂在无人机上的离线网络：Reticulum 怎么把电波和协议玩出花？",
+      "at": "2026-08-11T00:00:00+00:00",
+      "external_id": "a:35bfc39588c9e0dd",
+      "url": "https://yage.ai/share/reticulum-drone-offline-network-20260811.html",
+      "title": "挂在无人机上的离线网络：Reticulum 怎么把电波和协议玩出花？",
+      "content": "科研与技术前沿\nAI Agent\n在荒野里，一台关闭了蜂窝、Wi-Fi\n和蓝牙的手机屏幕突然亮起，收到一条几英里外发来的短消息。这条消息的旅程相当折腾：先走\nLTE 蜂窝网络发到云端，再从 Starlink\n卫星落回地面网桥，转成无线电波穿过有大量植被和障碍物的地面路径。地面路径失联后，一架小型无人机吊着硬币大小的开发板升空接力，终于把数据送到了手机上。\n这项工程走的是好玩的极客实验路线，不同于商业电信产品。实验的主角叫\nReticulum\n。它不用 IP\n地址，也不管运营商是谁，硬是把卫星、以太网和微弱的 LoRa\n无线电波缝在了一起，搭出了一个自给自足的网络。\n挂在无人机上的离线网络：一场硬核的极客实验\n在 Data Slayer 的\n测试现场\n，一台\nLTE 联网手机要把消息送到另一台关闭蜂窝、Wi-Fi\n和蓝牙的手机，消息传输路径在底层拆成了五段不同 carrier。发送端手机在\nAndroid 上运行\nColumba\n客户端，数据先走 LTE 发给 GCP 上的公网 Reticulum TCP 节点，再跨越\nInternet，从 Starlink 卫星链路下发到地面 Linux 网桥 Haven。Haven\n上的节点通过 USB 驱动射频模块，把数据直接塞进 915 MHz 的 LoRa\n无线电频段。\n当车开到约 2.5 英里外时，地面 LoRa\n路径失联；现场有大量植被和障碍物，但视频没有测量到足以隔离具体原因的数据。Data\nSlayer 甩出一个特别酷的现场解法：他把一块几厘米见方的微型 MCU\n开发板挂在小型无人机肚子里，直接飞到了树冠上方。板子刷着开源的\nRTNode\n路由固件\n，在半空中监听广播。继续升高、触发 Announce\n并反复试发后，离线手机终于收到了这条跨越公网、卫星、丛林和天空的消息。\n用无人机做空中中继不仅展现了无线节点在地形阻隔下的弹性，手把手搭起来的成本也很吸引人。视频作者把这块集成\nESP32-S3 与 SX1262 的 Heltec V4 称为 “a $20 transport\nnode”。它不需要完整操作系统，但仍需要 LoRa\nradio、兼容固件、匹配的无线参数和供电；只有 ESP32\n的基础开发板不能直接充当这个中继。虽然这次测试的长途段还是用了 Internet\n和 Starlink，但它展示的事情非常过瘾：路径跨过了 5 段\ncarrier，收发两端的加密身份、应用逻辑与消息协议却不用为每一段重写。\nReticulum 消息从联网 Android 经\nGCP、Starlink、Haven 和 LoRa 无人机中继抵达离线 Android 的五段 carrier\n路径\n密码学即寻址：Reticulum\n是怎么做到的？\nReticulum 没走常规 TCP/IP\n的路子，而是在用户态重新写了一整套独立的网络协议栈。平时上网靠 IP 地址和\nDNS 域名找设备，Reticulum 在底层干脆不要 IP 了。\n在 Reticulum 的世界里，找设备全靠密码学身份\nIdentity。每个端点或服务都会生成一套包含 X25519 加密公钥和 Ed25519\n签名公钥的 Identity。把 Identity 加上应用名称与属性一起做哈希，就能算出\n128 位的 Destination 地址：\ndestination = trunc128(SHA256(name_hash || identity_hash))\n这么做直接把设备位置和身份解耦了。地址只代表具体的应用端点，管你在哪里、用什么网段、走什么介质。就算设备从局域网切到\nWi-Fi，或者从 Starlink 切到 LoRa，它的 Destination\n地址始终原封不动。\n找路这件事靠带有签名的 Announce 宣告在网络里广播。需要公布可达性的\ninbound\nSINGLE\nDestination 会主动发送 Announce，沿途的\nTransport 节点验过签名后，在路由表里记下去找这个 Destination\n时下一跳该走哪个接口，然后按规则接着往外发。整个网络里没有掌握完整地图的大脑，数据包全靠下一跳指引往目的地挪。\n各种不一样的介质，在这套体系下收拾得齐齐整整。Reticulum\n把所有物理链路统一抽象成了 Interface。同一个 RNS 数据包，走公网时套上\nTCP 报文，走串口时直接发原始字节，飞在空中就变成 LoRa 射频帧。Haven\n不需要把 LXMF 消息翻译成另一种应用协议，而是根据 RNS 路径把 routing\nenvelope 从 TCP/Starlink 一侧转交到 LoRa 接口；无人机上的节点只在两个\nLoRa hop 之间继续转发。\n应对工程挑战：协议层怎么顶住物理限制\n把网络协议扔进没有基础设施的野外，各种物理限制立刻就找上门来。Reticulum\n在协议层想了不少精妙招数。\n山头和树林阻挡无线信号是第一道难关。这套地面配置在约 2.5\n英里处失联；无人机升到树冠以上后最终恢复了路径，但这次前后对比没有控制变量，不能把失败确定归因于山体视距。Reticulum\n允许用户把运行它的实例显式配置为 Transport\nNode；这个角色默认关闭，实际网络通常只让少量稳定、位置合适的节点承担转发。无人机高空接力只是个好玩的例子，固定高位节点、系留气球或其他持续供电的中继也可能提供替代路径。源码把建立\nLink 的最低介质 bitrate 设为 5\nbps，说明控制面考虑了极低速链路；这不等于任意弱信号下都能建链，也不代表\n5 bps 足以正常聊天或传文件。\n极不均匀的传输带宽是第二道难关。光纤以太网一口能吞下上千字节，LoRa\n无线电的信道却窄得可怜。Reticulum 在传输层设计了三级递进： -\nPacket：适合单次短消息，默认 MTU 只有 500 字节，在窄信道里保持低开销。 -\nLink：两端建立带验证的双向加密会话，自动协商临时密钥，默认自带前向安全性。\n- Resource：专门用来搬运图片或文件这类大块头。Resource 会在 Link\n上自动分段、压缩、按顺序发完并在对面拼好。\n没人管的网络里怎么保安全是第三道难关。视频所用的\nSINGLE\n/Link LXMF\n消息按协议设计端到端加密，中继正常情况下不需要 payload\nkey；未泄露私钥时，它也不能伪造合法发送者的签名。但\nPLAIN\ntraffic、Announce 和部分控制或证明报文是例外，routing 与下层链路\nmetadata 仍可见，因此拿到中继硬件不能概括成只会看到加密乱码。\n当然，极客项目和成熟的电信基础设施比起来，物理限制依然客观存在。LoRa\n是低带宽、半双工的共享介质，airtime、重发和频谱规则共同限制容量，适合发发短文本和控制指令，撑不起高频实时语音；手机系统的后台休眠也偶尔会把无线连接挂断。但这完全不妨碍\nReticulum 成为一个让人眼前一亮的工程范本。\n思想外溢：从\nReticulum 到 AI Builder 的脑洞\nReticulum\n的出发点是在荒野里搭不受制于人的自组网，但它亮出来的工程思想，对每天跟模型和\nAPI 打交道的 AI Builder 同样非常有启发。把视线从电波和开发板上挪开，把\nReticulum 的解耦哲学平移到 AI 系统里，能碰出不少好玩的方向。\nReticulum 将应用与消息、身份寻址和可替换\ncarrier 分层，并把控制权向上移动\n启发 1：Agent\n网络的边缘自组网与离线容灾\n当前的 Agent 架构高度依赖云端控制节点和稳定的公网 API。如果把\nReticulum 的网络能力引入边缘\nAgent，比如跑在树莓派、手机或车机上的小模型，Agent\n之间就能在断网或局域网环境里，直接用蓝牙、Wi-Fi 甚至 LoRa\n交换消息。Reticulum 可以为这些 Agent\n提供离线寻址、路径发现和消息传输；应用层还需要自行定义 Tool\n描述、能力匹配、调度、任务委派与结果确认，Announce 和 Transport\n本身不会把这些工作自动完成。\n启发\n2：Identity 与 Location 解耦对 Durable Agent 的启发\n在很多 Agent 框架里，Agent 的身份总是和部署 URL、容器 IP 或者云厂商\nClient ID\n绞在一起。服务器一迁移，上下文和身份经常跟着灰飞烟灭。Reticulum\n这种地址跟密钥走、不跟 IP 走的设计，给长寿命 Agent\n提供了特别干净的参考：Agent\n的主身份密钥、任务记忆和状态连续性，应该彻底跟底层运行环境解耦。就算换了服务器甚至换了模型供应商，Agent\n的加密身份和没完成的任务契约依然安然无恙。\n启发\n3：极端低带宽约束下的 Agent 协议压缩\nReticulum 逼着开发者在 500 字节的 MTU\n限制里琢磨协议效率。相比之下，现在的 AI 开发习惯了挥霍 Token，JSON\n报文里填满了各种冗余字段。如果要在带宽极度吃紧的信道，比如在卫星通信或者边缘设备之间，传递\nAgent 的意图与决策，就得设计更紧凑的 Agent\n协议。剥掉自然语言的废话，把工具调用和结构化推理压缩成紧凑的二进制\nPayload，是 Agent 走向现实受限环境的必经之路。\n启发\n4：Reticulum 作为边端 AI 传感与 C2 通信总线\n把端侧 AI\n模型扔到野外无人机、摄像头或者边缘传感器上时，在配置好接口、无线参数、转发节点和可达路径后，Reticulum\n可以承载控制与遥测消息，并为合适的 Destination 类型提供端到端加密。AI\n可以在边缘节点完成感知和推理，再通过这条消息路径把高价值的极简事件摘要推回控制端。抗干扰、抗封锁和抗毁性仍取决于射频设计、冗余路径、供电与部署拓扑，协议本身不保证这些性质。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/reticulum-drone-offline-network-20260811.html",
+      "content_chars": 4115,
+      "content_sha256": "22e02421ce006a65a3cc2c75b1858547c593e83483d4a935c78c434eb8a2610d",
+      "content_fetched_at": "2026-08-11T21:56:46.977618+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-11T00:00:00+00:00",
+      "collected_at": "2026-08-11T21:55:40.757554+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/reticulum-drone-offline-network-20260811.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "挂在无人机上的离线网络：Reticulum 怎么把电波和协议玩出花？",
+          "url": "https://yage.ai/share/reticulum-drone-offline-network-20260811.html",
+          "content_sha256": "22e02421ce006a65a3cc2c75b1858547c593e83483d4a935c78c434eb8a2610d"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:78c906c7d2de9a28",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "搜索没有变便宜，但 Agent 把它拆成了新的供应链",
+      "target_url": "https://yage.ai/share/agentic-web-search-supply-chain-20260810.html",
+      "text": "yage-share published: 搜索没有变便宜，但 Agent 把它拆成了新的供应链",
+      "at": "2026-08-10T00:00:00+00:00",
+      "external_id": "a:78c906c7d2de9a28",
+      "url": "https://yage.ai/share/agentic-web-search-supply-chain-20260810.html",
+      "title": "搜索没有变便宜，但 Agent 把它拆成了新的供应链",
+      "content": "AI Agent\n检索与知识系统\n产业与竞争\n引言：为什么\nAgent 时代突然到处都是 Web Search API？\n任何对技术基础设施有敬畏心的开发者心里都有一个共识：做搜索引擎是一件极其困难的事。在\nPC\n互联网到移动互联网的漫长二十年里，全球真正拥有显著市场份额的通用搜索引擎，来来回回一只手就能数得过来（Google、Bing、Baidu、Yandex）。想要搞定全网高频抓取、防爬虫对抗、反垃圾网页以及秒级新鲜度，背后需要海量的硬件、带宽与工程沉没成本，这使得通用搜索一直是个极高门槛的巨头游戏。\n但到了 2026 年中这几个月，一个看似反直觉的现象出现了：专注于 Agent\n搜索的 Exa、Tavily 刷屏不说，连 AWS 都连续发布了\nAgentCore\nWeb Search\n和\nBedrock\nWeb Search\n。搜索接口一下子堆到了每个开发者的桌头上。\n我和团队给 Agent\n重构外部检索架构时，心里最先冒出来的疑惑就是：做搜索明明那么难，为什么到了\nAgent 时代，突然间感觉好像任何公司都能跑出来做 Web Search API\n了？难道在大模型时代，搞定全网搜索突然变便宜、变简单了吗？我们之前在讨论\n多模型路由进入\nAgent 会话\n以及\nAgent\n上下文演进\n时，也一直在关注底层检索成本的真实变迁。\n把这几家 API\n真正接进生产环境、拆开数据流看了一圈，我们才明白背后的真实逻辑：搞定全网搜索一点都没变简单，底层抓网页、搞防爬、做索引的重活依然极其硬核。真实发生的，其实是\n搜索需求的改变与供应链的拆分\n。\n旧搜索难在哪里：无法拆分的黑盒与商业飞轮\n要理解为什么过去几乎没有人能挑战传统搜索，得看看旧搜索引擎那套垂直一体化的黑盒到底是怎么运转的。\n传统搜索的极难之处，在于你必须同时做对三件事：看见足够多的全网网页、把最相关的排到人类面前、并且靠广告收回高昂基础设施成本。这构成了旧搜索看似不可战胜的商业飞轮：靠默认入口拿海量查询\n→ 把查询与点击转化为训练信号 → 用信号把长尾与突发查询的排序越调越准 →\n靠精准排序支撑广告展示变现 →\n再拿赚钱买断浏览器默认位、养庞大的抓取团队。在\n美国诉\nGoogle 反垄断案判决书\n中披露的数据显示，Google\n向浏览器、设备厂商等分发商支付的默认搜索位 revenue-share 在 2021\n年合计超过 260 亿美元。\n这背后真正起决定性作用的技术纽带，是他们内部叫 NavBoost\n的系统，一个靠海量聚合查询与点击行为持续校准相关性的反馈机制，详见\nDOJ 提交的 NavBoost\n证词文档\n。\n这套飞轮把全网抓取、算法排序与广告商业模式死死打包在一起。在过去，你不可能单独把抓取网页或相关性排序拿出来做成独立生意，因为单拆任何一步都无法收回基础设施成本。必须由同一家巨头把所有重活全包下来，直接输出给人看的网页列表并靠广告变现。\n并没有人复制\nGoogle：大家是如何把搜索的某一层变便宜可售的？\n到了 Agent\n时代，调用检索的主体从人类变成了大模型。模型既不看广告，也不去地址栏敲字，它不需要包含复杂的\nHTML 样式和广告位的网页列表，它只要能直接塞进 Context Window\n的干净正文、抽样片段以及权威 URL 引用。\n交付契约从人看网页变成模型吞吐\nToken，使得原本闷在搜索引擎肚子里大包干的抓取、召回、解析、压缩各个步骤被拆开了。这一拆分并非\nLLM 单独驱动，也依赖公共 crawl（如 Common\nCrawl）、开源搜索基础设施、定向索引和云账单直接变现的同时成熟。\n市面上并没有十几家公司在重新复制\nGoogle，大家其实是在用不同的方式偷懒或借力，把搜索 stack\n的某一层变便宜、可单独出售的：\n第一种是透传大厂结果的代理层。以 Serper\n为代表，它们工程实现非常轻量，根本不上网抓网页，也不建立任何索引。它们只是包装了一层\nAPI 去透传 Google\n的原始排序列表。最硬核的全网抓取、反垃圾和相关性排序，依然是 Google\n以年度数十亿美元级基础设施和工程投入在替它们做。\n第二种是缩小战场的定向语义索引。以 Exa 为代表，面对 Google\n自报每天数十亿级垃圾网页（厂商自报数字）的对抗压力，Exa 选择优先抓取\nGitHub、ArXiv、Wikipedia\n和高质量技术博客等信息密度高的站点，把抓取和存储成本大幅降低。它在特定技术或学术领域搜得很准，但做不了全网生活通用搜索；其\nindex\n规模属厂商自报、未经独立审计。真正建立在自建通用爬虫和物理索引之上的，市面上只有\nBrave 这一类极少数玩家（详见\nBrave\n声明独立索引\n）。\n第三种是上下文精炼与混合检索层。以 Tavily 为代表（参考\nTavily\n服务条款\n），它的核心卖点不是凭空自建一套替代 Google\n的全网搜索引擎，而是专注于针对 LLM 的 RAG\n需求做网页降噪、正文抽取和文本压缩，专门输出高信息密度的片段。\n第四种是云原生基础设施层。就是 AWS 在 2026\n年推出的两个独立产品面——AgentCore Web Search Tool（6 月 GA，MCP\n连接器）和 Amazon Bedrock Web Search（8 月 GA，模型 server-side\ntool），把检索能力直接挂进云端的模型 API 运行时里。\n至于大家常用的 Perplexity，本质上是面向 C\n端用户的端到端答案引擎，里面混了自研爬虫和第三方 crawling/indexing\n服务，并不是开发者直接拿来拼装的基础设施中间件。\n搜索供应链的拆分：传统搜索一体化黑盒 vs\nAgent 时代分层可售\nAWS\n进场的本质：用云端分发替代浏览器分发\n明白了 Search Stack 的分层，再看 AWS 在 2026 年先后推出 AgentCore Web\nSearch Tool 和 Bedrock Web Search\n这两个产品面，就能看懂它进场的深层逻辑了。\n很多开发者可能会好奇：为什么是 Amazon？为什么偏偏选在 2026 年？\n这背后并不是 AWS 突然决定去和 Google 抢 C\n端搜索市场，而是两个因素重叠的结果：\n第一是内部基础设施的二次商业化机会。在把搜索 API\n卖给开发者之前，Amazon 内部为了支撑 Alexa+（新一代语音助手）、Amazon\nQuick（企业智能分析）和 Kiro（云开发环境），已经建立了庞大的\nAmzn-SearchBot\n网页抓取与检索基础设施。在过去，这只是一笔昂贵的内部支持成本；到了 2026\n年，当外部企业在 Bedrock 上搭建 Agent 成为主流，AWS\n敏锐地捕捉到了这个新的 B2B\n变现机会——把内部现存的基础设施包装成云服务输出。理论上，外部开发者的 API\n调用可以和内部工作负载一起分摊抓取与新鲜度维护的固定成本；但 AWS\n未披露后端共用比例和单位经济，这属于战略推断而非已公开事实。\n第二是搜索分发渠道发生了根本性的 B2B 转型。在传统的 C\n端搜索时代，获客靠的是争夺浏览器默认位，Google 每年砸下数百亿美元买断\nSafari 和 Android 地址栏；但在 Agent 时代，搜索变成了一个纯粹的 B2B\n开发者产品，流量入口从手机/浏览器的地址栏，转移到了 Bedrock 或 SageMaker\n上的模型 API 运行时。\n这对云巨头来说是一个巨大的结构性机会。AWS 根本不需要去 C\n端买断任何设备入口，因为它本身就掌握着企业级 Agent\n的云端运行环境。开发者已经在 AWS 上管理 IAM\n鉴权、结云账单、跑模型上下文，原生的 Web Search\n自然就成了开箱即用、合规摩擦最小的默认选项。用”云端 B2B\n基础设施分发”部分替代”C\n端浏览器分发”，是云巨头捕捉搜索供应链重构红利的核心牌局。\n搜索分发渠道的迁移：消费者浏览器默认位 vs\n云端模型 API 运行时\n护城河的迁移：哪些被绕过，哪些变成了新壁垒？\n把整个搜索供应链的重构梳理一遍，壁垒的迁移路径就看得更具体了。\n那些被顺手绕过去的是传统 SERP 相关的商业与交互栈：SERP\n页面排版、广告竞价系统、基于搜索框的流量分发，以及由系统厂商控制的默认搜索入口。\n但那些依然横在眼前的工程硬骨头一点没少：全网高频抓取需要的带宽和 IP\n资源、防爬虫对抗和版权许可谈判、网页新鲜度索引，还有防垃圾网站的权威度计算。这些物理世界的工程约束，大模型再聪明也没法替你省掉。\n同时，新的护城河与数据闭环也开始显现。在分发这端，模型 SDK、MCP\n协议标准和云厂商的模型 API\n运行时，成了新的默认入口；在数据这端，校准排序质量的信号从人类的点击与停留，变成了\nAgent 跑任务时的代码运行成功率、工具重试率和引用链接打开率。\n对我们架构师来说，给 Agent\n选联网方案时，千万别被大家都能做搜索的假象误导。纯透传 SERP\n的包装层在面对自建索引厂商和云巨头时，长期来看存在确定性劣势；而深耕上下文精炼或者持有独立索引的数据源，会在特定\nAgent 场景里保持独特价值。看清不同供应商在 Stack\n里真实的位置，按自己系统对延迟、隐私、COGS\n和证据深度的需求去组合采购，才是应对这场供应链解耦最踏实的方式。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/agentic-web-search-supply-chain-20260810.html",
+      "content_chars": 3881,
+      "content_sha256": "5c998917fefca7eb67c0f474a93c86520326471452d7277c1b1a51941fffaf0b",
+      "content_fetched_at": "2026-08-11T21:56:47.118841+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-10T00:00:00+00:00",
+      "collected_at": "2026-08-11T21:55:40.757554+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/agentic-web-search-supply-chain-20260810.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "搜索没有变便宜，但 Agent 把它拆成了新的供应链",
+          "url": "https://yage.ai/share/agentic-web-search-supply-chain-20260810.html",
+          "content_sha256": "5c998917fefca7eb67c0f474a93c86520326471452d7277c1b1a51941fffaf0b"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
