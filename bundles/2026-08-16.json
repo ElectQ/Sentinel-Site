@@ -1,114 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-08-16",
-  "generated_at": "2026-08-15T21:29:33.593723+00:00",
-  "item_count": 4,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:5de1fe44f9e259a9",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-15T21:27:09.383913+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-15T21:27:53.919650+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:6743bf2f6e4a80eb",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-15T21:27:09.383913+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-15T21:28:04.925598+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:5be18113548a39fc",
-      "kind": "publish",
-      "text": "yage-share published: 同一个模型差 20 分：DeepSeek 的 harness 依赖性和合成数据的隐藏天花板",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-15T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/simulator-collapse-deepseek-harness-20260815.html",
-      "title": "同一个模型差 20 分：DeepSeek 的 harness 依赖性和合成数据的隐藏天花板",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Agentic AI\nHarness Engineering\nDeepSeek\nDeepSeek V4 Flash 的官方跑分相当亮眼：13B 激活参数的 MoE\n架构，价格只有同级模型的几十分之一，在 Terminal-Bench 2.1 上拿到 82.7\n分，Toolathlon-Verified 70.3 分，Cybergym 76.7\n分。但把同一个模型套进不同的运行环境，同一批任务的成绩就会剧烈波动。\n2026 年 8 月，\nComposio\n把 DeepSeek V4 Flash 接入 8 个不同的 agent harness，测试同样的 30 个\nSaaS 工具调用任务。在模型完全不变的情况下，Pi Agent 跑通了 20\n个任务，胜率 66.7%；而 OpenCode 只过了 14 个，胜率\n46.7%。同一个模型，只因为换了 harness，通过率就差了 20 个百分点。（\n36kr\n同步报道了这次测试。）\n类似的偏差也出现在第三方复现中。\nArtificial Analysis\n用自己的\nharness 独立复现 DeepSeek V4 Pro 的 Terminal-Bench 2.1 时，只拿到 79\n分，比官方公布的 87.9 分低了 9 分。Cloud Codes 在\n分析这笔差距\n时指出，87.9\n分跑在 DeepSeek 自己的 harness 上，79\n分则跑在外部环境里。跑分从来不只是模型自身的能力，而是模型与脚手架叠加后的综合输出。Hacker\nNews 上有人\n直接问了\n：“我们到底在测模型还是在测\nharness？”\n为什么换了脚手架成绩差距这么大？答案其实藏在\nDeepSeek 自己的 API\nchangelog\n里。官方 benchmark 表格下方有一行脚注：所有代码 Agent\n任务的测试，都跑在 DeepSeek Harness 的 minimal mode\n上。这个精简模式只提供常驻 bash 和 str_replace_editor\n两个工具，没有加入网络搜索、技能库、子 Agent\n或规划模块。在这个专门裁切过的极简环境里，模型跑得很顺；但只要离开这个环境，测试通过率就会掉下来。Agent\n性能依赖 harness\n本来是行业常识，但这行脚注暴露出的问题更具体：模型的高分表现，高度绑定在一个特定的极简运行环境上。\n同一束光照只照亮了一个面，其余部分留在阴影里\nDeepSeek 为什么只能这么做\nDeepSeek\n走到这一步，背后既有技术路径的选择，也有产品形态的限制。首先是技术基因的惯性。从\nR1-Zero 开始，DeepSeek\n就全面转向合成数据，用数学和编程领域生成的合成数据来提升模型推理能力，证明了不用大规模人类标注也能训出强推理能力。这类单轮任务有明确的客观标准：数学题有唯一解，代码跑没跑对可以直接判定。R1-Zero\n的成功奠定了合成数据的方法论。到了 V4 Flash 0731 版本，\n后训练依然沿用这条路线\n：按领域切分专家模型，用\nSFT 和 GRPO 训练各个专家，最后合并蒸馏。GRPO\n是一种组内相对强化学习算法，它直接在同组生成的多个采样之间按奖励比较优劣。这种算法特点，和后面暴露出的环境依赖直接相关。\n这套合成数据路线在单轮任务上行得通，因为数学题有标准答案，代码能不能跑通有客观判定，合成数据可以自带\nverifier。但多轮 Agent 任务不一样。一个客服 agent\n要跟用户来回对话好几轮，一个编程 agent\n要反复执行工具、看报错、再改，它的 reward\n来自整个交互序列，没有标准答案可以提前判定。这时候训练环境里的用户行为或工具反馈本身就决定了模型学到什么策略，环境的行为分布就是训练分布。合成数据可以造出任务，但很难造出足够多样、足够真实的交互轨迹来覆盖各种用户反应。\n这就引出了 DeepSeek 的数据难题：它没有大规模真实用户行为轨迹。OpenAI\n有 Codex，Anthropic 有 Claude Code，Cursor 有自己的 IDE，这些产品是\nagent\n任务的执行环境，也是收集真实编程交互数据的入口。用户在实际使用中怎么澄清需求、怎么根据报错改代码、什么情况下选择放弃、哪些任务需要多轮迭代，这些行为轨迹都沉淀在厂商的基础设施里，成为在合规前提下优化模型\nagent 能力的真实底料。ChatGPT 和 Claude\n的订阅产品本身拿不到编程场景的真实交互数据，聊天界面和 agent\n执行环境是两回事。DeepSeek\n连前者都没有，后者更是长期空白。它的服务主要走\nAPI，长期没有自有的终端产品和交互界面。我们在\n此前分析\ncoding agent 形态变化\n时已经指出，DeepSeek 一直不发布 first-party\nharness，把执行环境里的行为数据入口让给了第三方。直到 2026 年 8 月 13\n日发布\nDSH\n（\n时间线见\norcarouter\n），DeepSeek 才第一次拥有了自己的\nharness。开发者用它的模型搭 Agent 时，所有行为轨迹都留在 Codex、Claude\nCode 或 OpenCode 这些第三方工具里，数据流不回 DeepSeek。\n这里需要说明一点：没有自有终端产品就无法直接收集大规模真实用户行为数据，这是基于\nDeepSeek 产品形态的逻辑推论，不是 DeepSeek\n官方表述。但产品形态是公开事实，推论链条很短。\n技术惯性与数据短板就这样成了一个循环：对合成数据的依赖，放慢了搭自主\nharness\n收集真实数据的步伐；而真实行为数据的匮乏，又反过来逼着训练继续靠合成环境。多轮交互成为\nAgent 训练的主战场之后，这个瓶颈就暴露出来了。\n合成数据的天花板终于有了量化\n2026 年 8 月 12 日，来自 Stanford、UC Berkeley、Northeastern、NYU 和\nUW 的联合团队发表论文《\nOne\nFrozen Simulator Is Not Enough: Simulator Collapse in Multi-Agent\nRL\n》，揭示了一种叫 simulator collapse 的坍缩机制，正好解释了\nDeepSeek 的 harness 依赖现象。论文指出了单模拟器训练的核心缺陷：只用单个\nLLM 充当用户模拟器来训练\nAgent，模型演化出的策略会专门针对这个模拟器的特定响应模式找捷径，对多样化的人类行为反而失去了适应能力。\n经过对齐的 LLM 普遍存在 mode collapse\n倾向，容易抑制边缘分布而集中输出高频典型回复。把这种模型当成环境模拟器，它在交互每一步给出的反馈都高度单一。Agent\n的训练梯度因此集中在这种主导模式上，优化方向逐渐变成如何在固定回应下刷高分。随着强化学习继续跑，交互路径的多样性快速下降。研究团队追踪了训练过程，发现两个清晰的信号：同一批采样里，整组对话拿到的\nreward 越来越趋同，最后超过 85% 的 batch\n里所有样本分数完全一样，模型在这些 batch\n上学不到任何区分性的信号；与此同时，策略熵从 1.9 nats 一路跌到 0.4\nnats，意味着它几乎只产出同一种对话路径了。\n这种坍缩会导致训练指标和泛化能力走向背离：虽然模型在训练环境里的\nreward\n一直在涨，但只要换到没见过的模拟器或真实人类场景，实际胜率就会掉下来。研究团队做了一项包含\n320 个 Prolific sessions 的人类实验，让 Agent\n执行劝说捐款任务。结果显示，用单一模拟器训练出来的 Agent，平均只筹到\n0.46 美元捐款，反而低于未经强化训练的基线模型（0.51 美元）。\n论文测试了 GPT-5-mini、Haiku-4.5 和 Gemini-3-Flash\n三个不同家族的模拟器，都观察到了坍缩现象。哪怕把策略模型规模从 4B 扩大到\n8B，坍缩依然会发生。这说明瓶颈不在于模型或模拟器的绝对大小，而在于环境行为分布有多宽。\n论文发现的这种坍缩机制，正好对应上 DeepSeek 的测试表现。DeepSeek V4\nFlash 0731 版本在后训练中用了 GRPO 算法。GRPO 的核心是 group-relative\nadvantage，也就是在一组采样序列里，通过奖励的均值和方差归一化来算相对排名。这和\nsimulator collapse 论文采用的组内奖励归一化机制，在算法逻辑上同源。\n根据公开证据，可以推导出一个合理的解释：0731\n版本的更新只改了后训练阶段，底座架构和参数没变，而官方公布的基准测试又全部跑在只给\nbash 和 str_replace_editor 的 DSH minimal mode 上。如果在后训练时，Agent\nloop 的实际运行模式和 minimal mode 高度重合，缺少网络搜索、子 Agent\n协作和复杂规划，模型学到的最优策略就会深度绑定在这个特定环境里。跑在官方\nharness 里时，任务还在训练分布内；一旦换到第三方\nharness，环境一变，模型就跌出了训练分布。\n需要明确说明的是，上述关于 harness\n过拟合的逻辑属于基于公开证据的推论，并非 DeepSeek\n官方确认。在没有公开训练日志的情况下，后训练时 Agent loop\n的确切配置还无法确定。但从 0731 只改动后训练、官方高分绑定 minimal\nmode、第三方复现成绩下滑，以及论文对坍缩机制的验证来看，这个推导有连贯的证据支撑。\n为什么换个更好的 harness\n不解决问题\n模型换了环境成绩掉下来，直觉上的解决思路往往是升级测试容器，开启包含搜索、子\nAgent 和规划能力的 Standard mode，想把分数拉回来。Simulator collapse\n论文否定了这种简单替换的做法。研究显示，从 GPT-5-mini 到\nGemini-3-Flash，不同家族的模拟器无一例外都触发了坍缩。问题的根源不在于模拟器本身强不强，而在于它的行为响应分布太窄。对齐后的\nLLM 自带 mode collapse\n倾向，光靠换个模型，解决不了输出模式同质化的问题。\n对应到 harness 上也是一样。如果训练时模型只接触过 minimal mode\n的行为轨迹，到了推理阶段再换\nharness，改变的只是暴露过拟合问题的程度，并没有解决训练时留下的分布偏差。即便在\nStandard mode 下测出的成绩可能比 OpenCode 高，也只是因为 Standard mode\n的工具配置离训练条件更近一点。这依然是原训练分布的局部延伸，算不上独立的泛化检验。\n要解决这个问题，论文提出了两条改进路径，核心都是拓宽环境的行为分布，而不是去调整策略层面的探索调度。第一种方法是在推理阶段加入\nVerbalized\nSampling。它要求模拟器在生成回复前，先输出候选文本列表和对应的概率分布，再从中采样。这样做能强行调出那些本来概率较低、模型容易忽略的非典型回复，重新恢复环境反馈的多样性。这种机制不需要重新训练模型，只增加推理时的解码计算量，就让\nheld-out 场景下的任务成功率最高提升了 9%。\n第二种方法是在训练阶段引入\nCo-Training。让模拟器和策略模型同步迭代更新，使模拟器的响应特性随着训练不断漂移。策略模型之前找的捷径会随着环境改变而失效，从而逼着策略维持泛化能力。论文还设计了\nPopulation Co-Training 的增强版，每轮训练都从最近 5 个模拟器 checkpoint\n里随机抽一个作为对战环境，最终把 held-out 成功率最高提升了 14%。\n这两种方案的共同点，都是在拓宽训练环境的反馈分布。这也正好映照出\nDeepSeek 之前的短板。在没有 first-party harness 的阶段，DeepSeek\n训练环境的反馈分布完全由合成数据塑造，宽度上限受限于合成规则覆盖的范围。发布\nDSH\n为它打开了收集真实用户行为轨迹、拓宽分布范围的通道；不过因为这个工程刚刚上线，数据的积累才刚刚开始。\nDSH 是 DeepSeek\n对这个天花板的回应\n用 simulator collapse 论文的框架重新看\nDSH，能对其架构设计有更深的理解。之前我们\n详细分析过\nDSH\n支持热替换 Agent loop\n的特性，把它看作一种自进化基础设施。但如果放在多 Agent\n强化学习的视角下，这种设计其实就是 Co-Training 思想在 harness\n架构上的工程落地。\nCo-Training\n的核心逻辑，是让训练环境和策略模型同步演进，避免策略过拟合到单一的环境响应模式上。DSH\n把 agent loop\n拆成了可以在运行时动态加载的插件，让训练环境能够随着策略迭代跟着调整。如果\nDeepSeek 在后面的后训练流程里引入 DSH 的多元 agent loop\n配置，而不是继续局限于 minimal mode，其实就是在环境层面推行\nCo-Training。\n开源 DSH（\n代码在\nGitHub\n）的价值，不只是为了方便社区复现已有的跑分。在一个已经过拟合的环境里重演测试，拿到的依然是有偏差的分数。它的真正意义，是把模型训练所依托的环境结构公开出来，让社区共同审计和扩充。通过在\nDSH 中调整 agent loop\n并观察分数漂移，开发者可以把模型自身的能力与脚手架的辅助作用拆开，这是诊断并纠正策略坍缩的必要步骤。\n这些实验和理论框架，给 Agent 研发团队提供了一套明确的诊断依据。当\nAgent 在特定训练容器里的 reward 稳步上升，但只要换个\nharness、接入不同用户群或切换任务分布，成绩就大幅下滑，这就说明系统陷入了\nsimulator\ncollapse。这时候排查的重点，不该盲目去调策略探索算法或扩大模型参数，而应该放在拓宽训练环境的行为分布上。\n对 DeepSeek\n来说，他们的认知经历了一次转变：从最初相信合成数据能覆盖全流程，到意识到训练环境的分布宽度才是最终的屏障。这个转变推动他们从单纯做模型研发，走向搭建\nharness 基础设施。开发 DSH 的初衷，是意识到限制 Agent\n性能提升的核心瓶颈已经从模型架构转移到了数据分布。要想突破这个限制，就必须把\nharness 的掌控权握在自己手里。至于和 Codex\n抢终端市场，那是顺带的事。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/simulator-collapse-deepseek-harness-20260815.html",
-      "content_chars": 5989,
-      "content_sha256": "e49e812bf90961400e59d415b5f85af06df8dcb0b103a327eefcb19711f2e6fc",
-      "content_fetched_at": "2026-08-15T21:28:09.705011+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:d5735b7a286f2fa8",
-      "kind": "publish",
-      "text": "yage-share published: 给性价比最高的推理引擎装一双眼睛",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-15T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/deepseek-vision-workaround-20260815.html",
-      "title": "给性价比最高的推理引擎装一双眼睛",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "模型架构\n推理与性能\n感知层与推理层分离架构示意\n性价比最高的推理引擎，没有眼睛\nDeepSeek V4 在 2026 年 4 月发布，两个模型：V4-Pro，1.6T 总参数，49B\n激活；V4-Flash，284B 总参数，13B 激活。两个都原生支持 100 万 token\n上下文，支持三级推理模式，从快速直接回答到逐步推理到最大推理努力，还支持\nfunction calling。V4-Flash 定价每百万 token 输入 $0.14、输出\n$0.28，大约比 Claude Opus 5 便宜 36 倍。能力上 V4 落后闭源前沿约 3 到 6\n个月，价格是几十分之一。8 月 16 日 DeepSeek 切换到峰谷定价，V4-Flash\n峰时涨到 $0.44/$1.32，谷时 $0.22/$0.66，大致是原来的 1.6 到 4.7\n倍。涨了之后 V4-Flash 仍然是市面上最便宜的推理 API 之一，Claude Opus 5\n的输出价格仍然是 V4-Flash 峰时输出价格的 19 倍。\n这不是某一版的运气。DeepSeek 从 V2 起就贴着效率走。V2 的论文标题就叫\n“A Strong, Economical, and Efficient Mixture-of-Experts Language\nModel”。它提出的 Multi-head Latent Attention 把 KV cache\n压缩进一个低维潜在向量，DeepSeekMoE 用细粒度专家分割把训练成本降下来。V3\n延续这条路线，671B 总参数但每 token 只激活 37B。训练花了 557\n万美元，能力与 GPT-4 级模型可比。V4-Pro 的 CSA+HCA 混合注意力把百万\ntoken 推理的计算量压到 V3.2 的 27%，KV cache 压到 10%。\n向这个引擎发送\nimage_url\n字段，返回一行 JSON\n反序列化报错：\nFailed to deserialize the JSON body into the target type:\nmessages[0]: unknown variant ‘image_url’, expected ‘text’\n请求还没进推理引擎就挡住了。API schema 里没有图片输入这个选项。模型\ncatalog 列出 11 个 DeepSeek 模型，modality 全部是 text。\nDeepSeek 不是做不了视觉。2024 年 12 月它发布过独立的视觉模型\nDeepSeek-VL2\n，在\nOCRBench 上拿 834 分，发布时超过 GPT-4o。2026 年 7 月，一位 DeepSeek\n研究员在 GitHub 上短暂公开了一篇名为 “Thinking with Visual Primitives”\n的论文，4 小时后撤下，原始 repo 已经 404，只剩\n社区镜像和解读视频\n。论文把\nbounding box 和 point 直接编织进推理链，在迷宫导航任务上做到 66.9%，同期\nGPT-5.4 约\n49-51%。但论文撤回了，权重从未发布，官方只说未来集成到基础模型，没有时间表。VL2\n的上下文窗口只有 4096 tokens，没有 function\ncalling，发布后几乎没迭代。这些视觉能力都没进商用 API。\n不做多模态是当前的产品选择，不是技术限制。DeepSeek\n有视觉研究线和前沿论文，可能在未来某个时间点加入原生多模态。那个时间点是什么时候，不知道。\n在它长出眼睛之前\n2026 年 8 月 12 日，\nLiquid AI\n发布\nLFM2.5-VL-3B，一个 3.1B\n参数的视觉语言模型。模型卡有一段少见的明确声明：推荐它做单轮、高吞吐、低延迟的任务，比如实时目标检测、批量\nOCR、菜单路牌翻译。然后写明不推荐用于长上下文或重推理任务，比如视觉网页设计或回答蓝图的技术问题。大多数小\nVLM 想证明自己什么都能做。这个模型卡反过来写明自己不擅长什么。\nLFM2.5-VL-3B 把 3.1B 参数塞进 3.3 GB 内存，在\nApple M5 Max 上跑\n228 tokens/s\n，在 Galaxy S26 Ultra 手机上跑 20\ntokens/s。厂商横评里，屏幕定位 ScreenSpot-v2 拿 80.7 分，物体定位\nRefCOCO 87.9 分，ToolSandbox 59.5 分。这些数字在 3B\n级别领先，部分指标接近 5B 模型。全部来自 Liquid AI\n自己的横评，目前没有独立复现。Reddit 上有人专门发帖问有没有外部\nbenchmark，没有找到。\n这个模型专做感知不碰推理，DeepSeek V4 专做推理不碰感知。在 DeepSeek\n原生支持多模态之前，这两个模型可以拼成一条 pipeline：LFM2.5-VL-3B\n在边缘做视觉感知，输出结构化文本（门开了，画面中有车），DeepSeek V4\n在云端做推理（这是主人的车还是异常？应该触发什么通知？）。\nLFM2.5-VL-3B 发布后，我在家里的 garage\n摄像头数据上跑了一组评估。验证集 280\n张图片，人工标注了车库门开或关，任何可见开口都算开，只有完全关闭才算关。LFM2.5-VL-3B\n从没见过任何 garage 画面。零样本跑下来，准确率 94.3%，开门 recall\n92.6%。和专门在这个任务上训练过的小模型比，差距大概 3 到 5\n个百分点。一个 3B 的通用 VLM 没用任何 garage\n数据训练，在明确的单问题判断上接近了专用模型。\n但如果把任务换成多类别物体检测，从 13\n类里找有没有车、有没有人，recall 掉到 66.2%，空场景误报率为 47%。零样本\nVLM 做简单的 binary\n判断够用，做精细多类别检测还不够。这个差距不影响分工架构的价值，因为感知层不需要替代专用\nCNN 做所有事。\n感知层做第一层判断：门开了吗？有人吗？这一层用通用 VLM\n零样本就够。检测到异常，把结构化的感知结果发给 DeepSeek V4\n做推理。感知在本地 1.5 秒完成，推理在云端再花 1 到 3\n秒。对于只在异常时触发、不需要每帧判断的场景，这个延迟可以接受。\n不只是临时的凑合\n分离架构有原生多模态给不了的东西。\n第一是延迟。感知在本地 1.5\n秒完成，不依赖网络。如果把视觉和推理放在同一个云端多模态模型里，图片上传、视觉编码、推理生成加起来\n3 到 5 秒起步，还要算上网络往返。1.5 秒的本地感知和 3 到 5\n秒的云端推理之间的延迟差是物理限制，不是优化空间。任何软件升级都消不掉它。\n第二是隐私。感知在本地完成，图片不出设备。只有结构化文本上传云端。对于家庭监控、医疗文档、财务表单这类场景，图片本身不上传是一个独立的安全属性，和模型能力无关。\n第三是成本。高频感知用 3B\n模型在本地跑，边际成本为零。只有检测到异常时才调用 DeepSeek\nAPI。如果用一个多模态大模型每帧都跑云端推理，成本会高几个数量级。\n业界已经按这个方向在做了。\nviso.ai\n在\n2026 年 7 月把生产级视觉 AI\n的架构分成三层：感知模型捕获场景，视觉语言模型解释场景，行动层关闭回路。他们写了一句关键约束：感知层决定整个\nagent workflow\n的节奏。检测结果到达推理层太慢或不准确，所有下游决策都会退化。Moondream\n是一个 2B 参数的小型 VLM，有开发者把它和大 LLM\n组合使用，大模型做规划，Moondream 做 UI 理解，比直接用 Computer Use API\n更快更可靠。\nvLLM\n项目\n在 2026 年 1 月发布了 Semantic\nRouter，一个位于用户和模型之间的路由层。RouteLLM 的数据显示维持 95%\n的质量同时可以降低 45-85% 的成本。Apple Intelligence 约 85%\n请求在设备本地处理，12% 走 Private Cloud Compute，3%\n走合作伙伴云端。苹果按部署位置分层，但思路一样：按需升级，cost-aware\nrouting。\nDeepSeek 可能明天就发布 V4-VL，把视觉能力加进\nAPI。即使如此，上面三个优势仍然成立。1.5 秒的本地感知和 3 到 5\n秒的云端推理之间的延迟差，任何软件升级都消不掉。图片不出设备的隐私属性不会因为模型变强就不再重要，高频感知用\n3B 本地跑的成本优势不会因为 API\n降价就消失。一个模型同时做视觉和推理，不意味着应该在同一层做。\n还缺什么\n从概念成立到生产可用之间还有一个缺口。cascade 架构需要一个 confidence\nsignal 来决定什么时候从感知层升级到推理层。LFM2.5-VL-3B\n输出的是自然语言，不是概率分数。怎么从自然语言里提取一个可靠的置信度信号，是这套架构从\nLLM cascade 迁移到 VLM cascade 的过程中需要人补的环节。\nTMLS 的\nmodel routing 报告\n指出了这一点：在 LLM 域已经验证的 cascade\n方法论，向多模态迁移的核心障碍是 confidence signal\n的校准。这是一个需要工程解决的问题，不是等待模型能力提升就能消失的问题。\nDeepSeek\n什么时候加视觉不知道。它有视觉研究线，有前沿论文，有技术储备。可能下个版本，可能明年，可能更久。分离架构的价值不依赖那个时间点。在\nDeepSeek 长出眼睛之前，用一个 3B 模型做感知、DeepSeek\n做推理，是一个现在就能跑的\nworkaround。跑通后积累的工程经验，怎么桥接感知输出和推理输入、怎么校准\nconfidence、怎么设计 escalation\n逻辑，在原生多模态来了之后也不会浪费。物理层面的分工优势，比任何一家公司的产品线都持久。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/deepseek-vision-workaround-20260815.html",
-      "content_chars": 4131,
-      "content_sha256": "b8eee4d660da658f2374b2995cd13b037141497f76d8b913144862f86a06d756",
-      "content_fetched_at": "2026-08-15T21:28:09.825130+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-08-16",
+  "collect_window": {
+    "start": "2026-08-15T00:00:00+00:00",
+    "end": "2026-08-15T21:27:09.383913+00:00",
+    "hours": 21
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "31909461899",
+    "commit": "70c91a1"
+  },
+  "stats": {
+    "total": 4,
     "by_kind": {
       "publish": 4
     },
@@ -120,9 +26,338 @@
       "unknowncheats-ac": 2,
       "yage-share": 2
     },
+    "failed_lists": [],
+    "sources_ok": 51,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 9,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 14,
+      "calls": 14,
+      "prompt_tokens": 15224,
+      "completion_tokens": 2811,
+      "total_tokens": 18035,
+      "prompt_cache_hit_tokens": 12288,
+      "prompt_cache_miss_tokens": 2936
+    },
     "by_content_status": {
       "failed": 2,
       "ok": 2
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:5de1fe44f9e259a9",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html",
+      "at": "2026-08-15T21:27:09.383913+00:00",
+      "external_id": "a:5de1fe44f9e259a9",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-15T21:27:53.919650+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-15T21:27:09.383913+00:00",
+      "collected_at": "2026-08-15T21:27:09.383913+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767293-help-crackme-post4771767.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:6743bf2f6e4a80eb",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html",
+      "at": "2026-08-15T21:27:09.383913+00:00",
+      "external_id": "a:6743bf2f6e4a80eb",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-15T21:28:04.925598+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-15T21:27:09.383913+00:00",
+      "collected_at": "2026-08-15T21:27:09.383913+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766955-reverse-engineering-club-mstar-vfun-2026-client-structure-post4771338.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:5be18113548a39fc",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "同一个模型差 20 分：DeepSeek 的 harness 依赖性和合成数据的隐藏天花板",
+      "target_url": "https://yage.ai/share/simulator-collapse-deepseek-harness-20260815.html",
+      "text": "yage-share published: 同一个模型差 20 分：DeepSeek 的 harness 依赖性和合成数据的隐藏天花板",
+      "at": "2026-08-15T00:00:00+00:00",
+      "external_id": "a:5be18113548a39fc",
+      "url": "https://yage.ai/share/simulator-collapse-deepseek-harness-20260815.html",
+      "title": "同一个模型差 20 分：DeepSeek 的 harness 依赖性和合成数据的隐藏天花板",
+      "content": "Agentic AI\nHarness Engineering\nDeepSeek\nDeepSeek V4 Flash 的官方跑分相当亮眼：13B 激活参数的 MoE\n架构，价格只有同级模型的几十分之一，在 Terminal-Bench 2.1 上拿到 82.7\n分，Toolathlon-Verified 70.3 分，Cybergym 76.7\n分。但把同一个模型套进不同的运行环境，同一批任务的成绩就会剧烈波动。\n2026 年 8 月，\nComposio\n把 DeepSeek V4 Flash 接入 8 个不同的 agent harness，测试同样的 30 个\nSaaS 工具调用任务。在模型完全不变的情况下，Pi Agent 跑通了 20\n个任务，胜率 66.7%；而 OpenCode 只过了 14 个，胜率\n46.7%。同一个模型，只因为换了 harness，通过率就差了 20 个百分点。（\n36kr\n同步报道了这次测试。）\n类似的偏差也出现在第三方复现中。\nArtificial Analysis\n用自己的\nharness 独立复现 DeepSeek V4 Pro 的 Terminal-Bench 2.1 时，只拿到 79\n分，比官方公布的 87.9 分低了 9 分。Cloud Codes 在\n分析这笔差距\n时指出，87.9\n分跑在 DeepSeek 自己的 harness 上，79\n分则跑在外部环境里。跑分从来不只是模型自身的能力，而是模型与脚手架叠加后的综合输出。Hacker\nNews 上有人\n直接问了\n：“我们到底在测模型还是在测\nharness？”\n为什么换了脚手架成绩差距这么大？答案其实藏在\nDeepSeek 自己的 API\nchangelog\n里。官方 benchmark 表格下方有一行脚注：所有代码 Agent\n任务的测试，都跑在 DeepSeek Harness 的 minimal mode\n上。这个精简模式只提供常驻 bash 和 str_replace_editor\n两个工具，没有加入网络搜索、技能库、子 Agent\n或规划模块。在这个专门裁切过的极简环境里，模型跑得很顺；但只要离开这个环境，测试通过率就会掉下来。Agent\n性能依赖 harness\n本来是行业常识，但这行脚注暴露出的问题更具体：模型的高分表现，高度绑定在一个特定的极简运行环境上。\n同一束光照只照亮了一个面，其余部分留在阴影里\nDeepSeek 为什么只能这么做\nDeepSeek\n走到这一步，背后既有技术路径的选择，也有产品形态的限制。首先是技术基因的惯性。从\nR1-Zero 开始，DeepSeek\n就全面转向合成数据，用数学和编程领域生成的合成数据来提升模型推理能力，证明了不用大规模人类标注也能训出强推理能力。这类单轮任务有明确的客观标准：数学题有唯一解，代码跑没跑对可以直接判定。R1-Zero\n的成功奠定了合成数据的方法论。到了 V4 Flash 0731 版本，\n后训练依然沿用这条路线\n：按领域切分专家模型，用\nSFT 和 GRPO 训练各个专家，最后合并蒸馏。GRPO\n是一种组内相对强化学习算法，它直接在同组生成的多个采样之间按奖励比较优劣。这种算法特点，和后面暴露出的环境依赖直接相关。\n这套合成数据路线在单轮任务上行得通，因为数学题有标准答案，代码能不能跑通有客观判定，合成数据可以自带\nverifier。但多轮 Agent 任务不一样。一个客服 agent\n要跟用户来回对话好几轮，一个编程 agent\n要反复执行工具、看报错、再改，它的 reward\n来自整个交互序列，没有标准答案可以提前判定。这时候训练环境里的用户行为或工具反馈本身就决定了模型学到什么策略，环境的行为分布就是训练分布。合成数据可以造出任务，但很难造出足够多样、足够真实的交互轨迹来覆盖各种用户反应。\n这就引出了 DeepSeek 的数据难题：它没有大规模真实用户行为轨迹。OpenAI\n有 Codex，Anthropic 有 Claude Code，Cursor 有自己的 IDE，这些产品是\nagent\n任务的执行环境，也是收集真实编程交互数据的入口。用户在实际使用中怎么澄清需求、怎么根据报错改代码、什么情况下选择放弃、哪些任务需要多轮迭代，这些行为轨迹都沉淀在厂商的基础设施里，成为在合规前提下优化模型\nagent 能力的真实底料。ChatGPT 和 Claude\n的订阅产品本身拿不到编程场景的真实交互数据，聊天界面和 agent\n执行环境是两回事。DeepSeek\n连前者都没有，后者更是长期空白。它的服务主要走\nAPI，长期没有自有的终端产品和交互界面。我们在\n此前分析\ncoding agent 形态变化\n时已经指出，DeepSeek 一直不发布 first-party\nharness，把执行环境里的行为数据入口让给了第三方。直到 2026 年 8 月 13\n日发布\nDSH\n（\n时间线见\norcarouter\n），DeepSeek 才第一次拥有了自己的\nharness。开发者用它的模型搭 Agent 时，所有行为轨迹都留在 Codex、Claude\nCode 或 OpenCode 这些第三方工具里，数据流不回 DeepSeek。\n这里需要说明一点：没有自有终端产品就无法直接收集大规模真实用户行为数据，这是基于\nDeepSeek 产品形态的逻辑推论，不是 DeepSeek\n官方表述。但产品形态是公开事实，推论链条很短。\n技术惯性与数据短板就这样成了一个循环：对合成数据的依赖，放慢了搭自主\nharness\n收集真实数据的步伐；而真实行为数据的匮乏，又反过来逼着训练继续靠合成环境。多轮交互成为\nAgent 训练的主战场之后，这个瓶颈就暴露出来了。\n合成数据的天花板终于有了量化\n2026 年 8 月 12 日，来自 Stanford、UC Berkeley、Northeastern、NYU 和\nUW 的联合团队发表论文《\nOne\nFrozen Simulator Is Not Enough: Simulator Collapse in Multi-Agent\nRL\n》，揭示了一种叫 simulator collapse 的坍缩机制，正好解释了\nDeepSeek 的 harness 依赖现象。论文指出了单模拟器训练的核心缺陷：只用单个\nLLM 充当用户模拟器来训练\nAgent，模型演化出的策略会专门针对这个模拟器的特定响应模式找捷径，对多样化的人类行为反而失去了适应能力。\n经过对齐的 LLM 普遍存在 mode collapse\n倾向，容易抑制边缘分布而集中输出高频典型回复。把这种模型当成环境模拟器，它在交互每一步给出的反馈都高度单一。Agent\n的训练梯度因此集中在这种主导模式上，优化方向逐渐变成如何在固定回应下刷高分。随着强化学习继续跑，交互路径的多样性快速下降。研究团队追踪了训练过程，发现两个清晰的信号：同一批采样里，整组对话拿到的\nreward 越来越趋同，最后超过 85% 的 batch\n里所有样本分数完全一样，模型在这些 batch\n上学不到任何区分性的信号；与此同时，策略熵从 1.9 nats 一路跌到 0.4\nnats，意味着它几乎只产出同一种对话路径了。\n这种坍缩会导致训练指标和泛化能力走向背离：虽然模型在训练环境里的\nreward\n一直在涨，但只要换到没见过的模拟器或真实人类场景，实际胜率就会掉下来。研究团队做了一项包含\n320 个 Prolific sessions 的人类实验，让 Agent\n执行劝说捐款任务。结果显示，用单一模拟器训练出来的 Agent，平均只筹到\n0.46 美元捐款，反而低于未经强化训练的基线模型（0.51 美元）。\n论文测试了 GPT-5-mini、Haiku-4.5 和 Gemini-3-Flash\n三个不同家族的模拟器，都观察到了坍缩现象。哪怕把策略模型规模从 4B 扩大到\n8B，坍缩依然会发生。这说明瓶颈不在于模型或模拟器的绝对大小，而在于环境行为分布有多宽。\n论文发现的这种坍缩机制，正好对应上 DeepSeek 的测试表现。DeepSeek V4\nFlash 0731 版本在后训练中用了 GRPO 算法。GRPO 的核心是 group-relative\nadvantage，也就是在一组采样序列里，通过奖励的均值和方差归一化来算相对排名。这和\nsimulator collapse 论文采用的组内奖励归一化机制，在算法逻辑上同源。\n根据公开证据，可以推导出一个合理的解释：0731\n版本的更新只改了后训练阶段，底座架构和参数没变，而官方公布的基准测试又全部跑在只给\nbash 和 str_replace_editor 的 DSH minimal mode 上。如果在后训练时，Agent\nloop 的实际运行模式和 minimal mode 高度重合，缺少网络搜索、子 Agent\n协作和复杂规划，模型学到的最优策略就会深度绑定在这个特定环境里。跑在官方\nharness 里时，任务还在训练分布内；一旦换到第三方\nharness，环境一变，模型就跌出了训练分布。\n需要明确说明的是，上述关于 harness\n过拟合的逻辑属于基于公开证据的推论，并非 DeepSeek\n官方确认。在没有公开训练日志的情况下，后训练时 Agent loop\n的确切配置还无法确定。但从 0731 只改动后训练、官方高分绑定 minimal\nmode、第三方复现成绩下滑，以及论文对坍缩机制的验证来看，这个推导有连贯的证据支撑。\n为什么换个更好的 harness\n不解决问题\n模型换了环境成绩掉下来，直觉上的解决思路往往是升级测试容器，开启包含搜索、子\nAgent 和规划能力的 Standard mode，想把分数拉回来。Simulator collapse\n论文否定了这种简单替换的做法。研究显示，从 GPT-5-mini 到\nGemini-3-Flash，不同家族的模拟器无一例外都触发了坍缩。问题的根源不在于模拟器本身强不强，而在于它的行为响应分布太窄。对齐后的\nLLM 自带 mode collapse\n倾向，光靠换个模型，解决不了输出模式同质化的问题。\n对应到 harness 上也是一样。如果训练时模型只接触过 minimal mode\n的行为轨迹，到了推理阶段再换\nharness，改变的只是暴露过拟合问题的程度，并没有解决训练时留下的分布偏差。即便在\nStandard mode 下测出的成绩可能比 OpenCode 高，也只是因为 Standard mode\n的工具配置离训练条件更近一点。这依然是原训练分布的局部延伸，算不上独立的泛化检验。\n要解决这个问题，论文提出了两条改进路径，核心都是拓宽环境的行为分布，而不是去调整策略层面的探索调度。第一种方法是在推理阶段加入\nVerbalized\nSampling。它要求模拟器在生成回复前，先输出候选文本列表和对应的概率分布，再从中采样。这样做能强行调出那些本来概率较低、模型容易忽略的非典型回复，重新恢复环境反馈的多样性。这种机制不需要重新训练模型，只增加推理时的解码计算量，就让\nheld-out 场景下的任务成功率最高提升了 9%。\n第二种方法是在训练阶段引入\nCo-Training。让模拟器和策略模型同步迭代更新，使模拟器的响应特性随着训练不断漂移。策略模型之前找的捷径会随着环境改变而失效，从而逼着策略维持泛化能力。论文还设计了\nPopulation Co-Training 的增强版，每轮训练都从最近 5 个模拟器 checkpoint\n里随机抽一个作为对战环境，最终把 held-out 成功率最高提升了 14%。\n这两种方案的共同点，都是在拓宽训练环境的反馈分布。这也正好映照出\nDeepSeek 之前的短板。在没有 first-party harness 的阶段，DeepSeek\n训练环境的反馈分布完全由合成数据塑造，宽度上限受限于合成规则覆盖的范围。发布\nDSH\n为它打开了收集真实用户行为轨迹、拓宽分布范围的通道；不过因为这个工程刚刚上线，数据的积累才刚刚开始。\nDSH 是 DeepSeek\n对这个天花板的回应\n用 simulator collapse 论文的框架重新看\nDSH，能对其架构设计有更深的理解。之前我们\n详细分析过\nDSH\n支持热替换 Agent loop\n的特性，把它看作一种自进化基础设施。但如果放在多 Agent\n强化学习的视角下，这种设计其实就是 Co-Training 思想在 harness\n架构上的工程落地。\nCo-Training\n的核心逻辑，是让训练环境和策略模型同步演进，避免策略过拟合到单一的环境响应模式上。DSH\n把 agent loop\n拆成了可以在运行时动态加载的插件，让训练环境能够随着策略迭代跟着调整。如果\nDeepSeek 在后面的后训练流程里引入 DSH 的多元 agent loop\n配置，而不是继续局限于 minimal mode，其实就是在环境层面推行\nCo-Training。\n开源 DSH（\n代码在\nGitHub\n）的价值，不只是为了方便社区复现已有的跑分。在一个已经过拟合的环境里重演测试，拿到的依然是有偏差的分数。它的真正意义，是把模型训练所依托的环境结构公开出来，让社区共同审计和扩充。通过在\nDSH 中调整 agent loop\n并观察分数漂移，开发者可以把模型自身的能力与脚手架的辅助作用拆开，这是诊断并纠正策略坍缩的必要步骤。\n这些实验和理论框架，给 Agent 研发团队提供了一套明确的诊断依据。当\nAgent 在特定训练容器里的 reward 稳步上升，但只要换个\nharness、接入不同用户群或切换任务分布，成绩就大幅下滑，这就说明系统陷入了\nsimulator\ncollapse。这时候排查的重点，不该盲目去调策略探索算法或扩大模型参数，而应该放在拓宽训练环境的行为分布上。\n对 DeepSeek\n来说，他们的认知经历了一次转变：从最初相信合成数据能覆盖全流程，到意识到训练环境的分布宽度才是最终的屏障。这个转变推动他们从单纯做模型研发，走向搭建\nharness 基础设施。开发 DSH 的初衷，是意识到限制 Agent\n性能提升的核心瓶颈已经从模型架构转移到了数据分布。要想突破这个限制，就必须把\nharness 的掌控权握在自己手里。至于和 Codex\n抢终端市场，那是顺带的事。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/simulator-collapse-deepseek-harness-20260815.html",
+      "content_chars": 5989,
+      "content_sha256": "e49e812bf90961400e59d415b5f85af06df8dcb0b103a327eefcb19711f2e6fc",
+      "content_fetched_at": "2026-08-15T21:28:09.705011+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-15T00:00:00+00:00",
+      "collected_at": "2026-08-15T21:27:09.383913+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/simulator-collapse-deepseek-harness-20260815.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "同一个模型差 20 分：DeepSeek 的 harness 依赖性和合成数据的隐藏天花板",
+          "url": "https://yage.ai/share/simulator-collapse-deepseek-harness-20260815.html",
+          "content_sha256": "e49e812bf90961400e59d415b5f85af06df8dcb0b103a327eefcb19711f2e6fc"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:d5735b7a286f2fa8",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "给性价比最高的推理引擎装一双眼睛",
+      "target_url": "https://yage.ai/share/deepseek-vision-workaround-20260815.html",
+      "text": "yage-share published: 给性价比最高的推理引擎装一双眼睛",
+      "at": "2026-08-15T00:00:00+00:00",
+      "external_id": "a:d5735b7a286f2fa8",
+      "url": "https://yage.ai/share/deepseek-vision-workaround-20260815.html",
+      "title": "给性价比最高的推理引擎装一双眼睛",
+      "content": "模型架构\n推理与性能\n感知层与推理层分离架构示意\n性价比最高的推理引擎，没有眼睛\nDeepSeek V4 在 2026 年 4 月发布，两个模型：V4-Pro，1.6T 总参数，49B\n激活；V4-Flash，284B 总参数，13B 激活。两个都原生支持 100 万 token\n上下文，支持三级推理模式，从快速直接回答到逐步推理到最大推理努力，还支持\nfunction calling。V4-Flash 定价每百万 token 输入 $0.14、输出\n$0.28，大约比 Claude Opus 5 便宜 36 倍。能力上 V4 落后闭源前沿约 3 到 6\n个月，价格是几十分之一。8 月 16 日 DeepSeek 切换到峰谷定价，V4-Flash\n峰时涨到 $0.44/$1.32，谷时 $0.22/$0.66，大致是原来的 1.6 到 4.7\n倍。涨了之后 V4-Flash 仍然是市面上最便宜的推理 API 之一，Claude Opus 5\n的输出价格仍然是 V4-Flash 峰时输出价格的 19 倍。\n这不是某一版的运气。DeepSeek 从 V2 起就贴着效率走。V2 的论文标题就叫\n“A Strong, Economical, and Efficient Mixture-of-Experts Language\nModel”。它提出的 Multi-head Latent Attention 把 KV cache\n压缩进一个低维潜在向量，DeepSeekMoE 用细粒度专家分割把训练成本降下来。V3\n延续这条路线，671B 总参数但每 token 只激活 37B。训练花了 557\n万美元，能力与 GPT-4 级模型可比。V4-Pro 的 CSA+HCA 混合注意力把百万\ntoken 推理的计算量压到 V3.2 的 27%，KV cache 压到 10%。\n向这个引擎发送\nimage_url\n字段，返回一行 JSON\n反序列化报错：\nFailed to deserialize the JSON body into the target type:\nmessages[0]: unknown variant ‘image_url’, expected ‘text’\n请求还没进推理引擎就挡住了。API schema 里没有图片输入这个选项。模型\ncatalog 列出 11 个 DeepSeek 模型，modality 全部是 text。\nDeepSeek 不是做不了视觉。2024 年 12 月它发布过独立的视觉模型\nDeepSeek-VL2\n，在\nOCRBench 上拿 834 分，发布时超过 GPT-4o。2026 年 7 月，一位 DeepSeek\n研究员在 GitHub 上短暂公开了一篇名为 “Thinking with Visual Primitives”\n的论文，4 小时后撤下，原始 repo 已经 404，只剩\n社区镜像和解读视频\n。论文把\nbounding box 和 point 直接编织进推理链，在迷宫导航任务上做到 66.9%，同期\nGPT-5.4 约\n49-51%。但论文撤回了，权重从未发布，官方只说未来集成到基础模型，没有时间表。VL2\n的上下文窗口只有 4096 tokens，没有 function\ncalling，发布后几乎没迭代。这些视觉能力都没进商用 API。\n不做多模态是当前的产品选择，不是技术限制。DeepSeek\n有视觉研究线和前沿论文，可能在未来某个时间点加入原生多模态。那个时间点是什么时候，不知道。\n在它长出眼睛之前\n2026 年 8 月 12 日，\nLiquid AI\n发布\nLFM2.5-VL-3B，一个 3.1B\n参数的视觉语言模型。模型卡有一段少见的明确声明：推荐它做单轮、高吞吐、低延迟的任务，比如实时目标检测、批量\nOCR、菜单路牌翻译。然后写明不推荐用于长上下文或重推理任务，比如视觉网页设计或回答蓝图的技术问题。大多数小\nVLM 想证明自己什么都能做。这个模型卡反过来写明自己不擅长什么。\nLFM2.5-VL-3B 把 3.1B 参数塞进 3.3 GB 内存，在\nApple M5 Max 上跑\n228 tokens/s\n，在 Galaxy S26 Ultra 手机上跑 20\ntokens/s。厂商横评里，屏幕定位 ScreenSpot-v2 拿 80.7 分，物体定位\nRefCOCO 87.9 分，ToolSandbox 59.5 分。这些数字在 3B\n级别领先，部分指标接近 5B 模型。全部来自 Liquid AI\n自己的横评，目前没有独立复现。Reddit 上有人专门发帖问有没有外部\nbenchmark，没有找到。\n这个模型专做感知不碰推理，DeepSeek V4 专做推理不碰感知。在 DeepSeek\n原生支持多模态之前，这两个模型可以拼成一条 pipeline：LFM2.5-VL-3B\n在边缘做视觉感知，输出结构化文本（门开了，画面中有车），DeepSeek V4\n在云端做推理（这是主人的车还是异常？应该触发什么通知？）。\nLFM2.5-VL-3B 发布后，我在家里的 garage\n摄像头数据上跑了一组评估。验证集 280\n张图片，人工标注了车库门开或关，任何可见开口都算开，只有完全关闭才算关。LFM2.5-VL-3B\n从没见过任何 garage 画面。零样本跑下来，准确率 94.3%，开门 recall\n92.6%。和专门在这个任务上训练过的小模型比，差距大概 3 到 5\n个百分点。一个 3B 的通用 VLM 没用任何 garage\n数据训练，在明确的单问题判断上接近了专用模型。\n但如果把任务换成多类别物体检测，从 13\n类里找有没有车、有没有人，recall 掉到 66.2%，空场景误报率为 47%。零样本\nVLM 做简单的 binary\n判断够用，做精细多类别检测还不够。这个差距不影响分工架构的价值，因为感知层不需要替代专用\nCNN 做所有事。\n感知层做第一层判断：门开了吗？有人吗？这一层用通用 VLM\n零样本就够。检测到异常，把结构化的感知结果发给 DeepSeek V4\n做推理。感知在本地 1.5 秒完成，推理在云端再花 1 到 3\n秒。对于只在异常时触发、不需要每帧判断的场景，这个延迟可以接受。\n不只是临时的凑合\n分离架构有原生多模态给不了的东西。\n第一是延迟。感知在本地 1.5\n秒完成，不依赖网络。如果把视觉和推理放在同一个云端多模态模型里，图片上传、视觉编码、推理生成加起来\n3 到 5 秒起步，还要算上网络往返。1.5 秒的本地感知和 3 到 5\n秒的云端推理之间的延迟差是物理限制，不是优化空间。任何软件升级都消不掉它。\n第二是隐私。感知在本地完成，图片不出设备。只有结构化文本上传云端。对于家庭监控、医疗文档、财务表单这类场景，图片本身不上传是一个独立的安全属性，和模型能力无关。\n第三是成本。高频感知用 3B\n模型在本地跑，边际成本为零。只有检测到异常时才调用 DeepSeek\nAPI。如果用一个多模态大模型每帧都跑云端推理，成本会高几个数量级。\n业界已经按这个方向在做了。\nviso.ai\n在\n2026 年 7 月把生产级视觉 AI\n的架构分成三层：感知模型捕获场景，视觉语言模型解释场景，行动层关闭回路。他们写了一句关键约束：感知层决定整个\nagent workflow\n的节奏。检测结果到达推理层太慢或不准确，所有下游决策都会退化。Moondream\n是一个 2B 参数的小型 VLM，有开发者把它和大 LLM\n组合使用，大模型做规划，Moondream 做 UI 理解，比直接用 Computer Use API\n更快更可靠。\nvLLM\n项目\n在 2026 年 1 月发布了 Semantic\nRouter，一个位于用户和模型之间的路由层。RouteLLM 的数据显示维持 95%\n的质量同时可以降低 45-85% 的成本。Apple Intelligence 约 85%\n请求在设备本地处理，12% 走 Private Cloud Compute，3%\n走合作伙伴云端。苹果按部署位置分层，但思路一样：按需升级，cost-aware\nrouting。\nDeepSeek 可能明天就发布 V4-VL，把视觉能力加进\nAPI。即使如此，上面三个优势仍然成立。1.5 秒的本地感知和 3 到 5\n秒的云端推理之间的延迟差，任何软件升级都消不掉。图片不出设备的隐私属性不会因为模型变强就不再重要，高频感知用\n3B 本地跑的成本优势不会因为 API\n降价就消失。一个模型同时做视觉和推理，不意味着应该在同一层做。\n还缺什么\n从概念成立到生产可用之间还有一个缺口。cascade 架构需要一个 confidence\nsignal 来决定什么时候从感知层升级到推理层。LFM2.5-VL-3B\n输出的是自然语言，不是概率分数。怎么从自然语言里提取一个可靠的置信度信号，是这套架构从\nLLM cascade 迁移到 VLM cascade 的过程中需要人补的环节。\nTMLS 的\nmodel routing 报告\n指出了这一点：在 LLM 域已经验证的 cascade\n方法论，向多模态迁移的核心障碍是 confidence signal\n的校准。这是一个需要工程解决的问题，不是等待模型能力提升就能消失的问题。\nDeepSeek\n什么时候加视觉不知道。它有视觉研究线，有前沿论文，有技术储备。可能下个版本，可能明年，可能更久。分离架构的价值不依赖那个时间点。在\nDeepSeek 长出眼睛之前，用一个 3B 模型做感知、DeepSeek\n做推理，是一个现在就能跑的\nworkaround。跑通后积累的工程经验，怎么桥接感知输出和推理输入、怎么校准\nconfidence、怎么设计 escalation\n逻辑，在原生多模态来了之后也不会浪费。物理层面的分工优势，比任何一家公司的产品线都持久。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/deepseek-vision-workaround-20260815.html",
+      "content_chars": 4131,
+      "content_sha256": "b8eee4d660da658f2374b2995cd13b037141497f76d8b913144862f86a06d756",
+      "content_fetched_at": "2026-08-15T21:28:09.825130+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-15T00:00:00+00:00",
+      "collected_at": "2026-08-15T21:27:09.383913+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/deepseek-vision-workaround-20260815.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "给性价比最高的推理引擎装一双眼睛",
+          "url": "https://yage.ai/share/deepseek-vision-workaround-20260815.html",
+          "content_sha256": "b8eee4d660da658f2374b2995cd13b037141497f76d8b913144862f86a06d756"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
