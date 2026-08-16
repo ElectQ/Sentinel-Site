@@ -1,189 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-08-17",
-  "generated_at": "2026-08-16T21:28:46.588834+00:00",
-  "item_count": 7,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:9d56e06df21249d1",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: DMA-Memory-Editor",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-16T21:26:24.714535+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html",
-      "title": "DMA-Memory-Editor",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-16T21:27:07.116019+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:611b116d91c87ddc",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: vibecoding or manual coding ?",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-16T21:26:24.714535+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html",
-      "title": "vibecoding or manual coding ?",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-16T21:27:18.118186+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:b577975cb22a4a7b",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: ARP Spoofer",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-16T21:26:24.714535+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767527-arp-spoofer.html",
-      "title": "ARP Spoofer",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767527-arp-spoofer.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-16T21:27:29.157019+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:248c1b26a0e6dd71",
-      "kind": "publish",
-      "text": "zusda published: 从零开始的LLM 10. mem0原理及API使用",
-      "actor": "zusda",
-      "actor_url": "https://zusda.github.io/",
-      "created_at": "2026-08-16T21:26:24.714535+00:00",
-      "html_url": "https://zusda.github.io/2026/08/13/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-10/",
-      "title": "从零开始的LLM 10. mem0原理及API使用",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "前言\n本文将介绍 mem0 的原理以及简单的agent制作。\n经过前面的学习，我们已经系统地完成了大语言模型（LLM）的基础部分，主要参考了以下资料：\n《动手学深度学习》\n《蘑菇书》\n《Happy-LLM》\n《Hello-Agents》\n《all-in-rag》\n到这里，可以认为已经具备了继续深入学习 Agent 的基础能力。\n接下来的内容将不再像之前那样按照固定课程循序渐进，而是更多围绕当前\nAgent 领域的研究方向展开。学习内容既会涉及工程实践（如各种 Agent\n框架、工作流、记忆系统等），也会涉及算法与模型层面的探索（如多模态、持续学习等）。\nGenerative Agents\nLetta\nA-MEM\nVoyager\n这条路线主要围绕\nAgent 的持续学习（Continual\nLearning）\n展开，也是我目前最感兴趣的方向：\n如何让一个\nAgent\n在长期运行过程中不断积累经验、提升能力，而不是每次都从零开始。\n目前来看，大致有两种思路：\n不修改模型本身。\n仅通过\nPrompt、记忆系统（Memory）、RAG、工具调用等机制，使 Agent\n能够不断积累知识和经验，实现能力的持续增长。\n修改模型本身。\n基于 Agent\n长期运行过程中积累的对话、笔记和总结等数据，在合适的时机对模型进行持续训练（Continual\nFine-tuning），使模型真正将这些经验内化，而不仅仅依赖外部记忆。\n由于这一阶段更多是阅读论文、分析开源项目、验证实验以及整理个人理解，而不是单纯跟着教程学习，因此资料收集、实验和整理都会比之前花费更多时间。\n相比之前学习的 A-MEM，mem0\n在实际应用中的知名度和社区活跃度都更高，整体也更加成熟。本章节会花一些时间先了解\nmem0 的核心原理，然后再基于 mem0 实现一个简单的 Agent。不过mem0的v2和v3\npipeline版本实现有非常大的不同，我们先讲论文中v2的实现，再分析v3的不同。\n和之前的 A-MEM 类似，这次我们同样会把重点放在“记忆系统是如何融入\nAgent”这件事情上。不过这次不再使用\nLangGraph，整体实现会更加简单，也更方便我们直接理解 mem0\n的使用方式。\n1. Mem0 原理\n论文地址：https://arxiv.org/abs/2504.19413\nMem0\n的核心目标是：\n从对话中提取长期有价值的信息，并将这些信息持续写入、更新到长期记忆中，同时支持后续检索。\n从整体流程来看，可以将 Mem0 理解为三个主要部分：\nExtraction：从对话中提取 candidate memories\nUpdate：将 candidate memories 与已有 memories\n进行比较并更新\nRetrieval：从长期记忆中检索与当前 query\n相关的信息\n1.1 提取阶段（Extraction Phase）\nMem0 的记忆提取通常以一对消息作为当前输入，即：\n一条 user message\n一条 assistant response\n可以表示为：\n\\[\n(m_{t-1},m_t)\n\\]\n其中，\n\\(m_t\\)\n表示当前消息，\n\\(m_{t-1}\\)\n表示紧邻当前消息的上一条消息。\n但是，仅仅将当前消息对交给 LLM 并不足以判断哪些信息值得长期保存。\n因此，Mem0 会进一步提供一些\n历史上下文信息\n，共同构成\nextraction 的输入。\n1.1.1 当前消息对（Current\nMessage Pair）\n当前消息对：\n\\[\n(m_{t-1},m_t)\n\\]\n通常可以理解为：\n1\n2\n3\nUser: 我最近开始学习 LangGraph。\nAssistant: LangGraph 可以用于构建有状态的 Agent 工作流……\n这部分是当前 extraction\n最重要的信息来源，因为新的长期记忆通常与当前对话内容直接相关。\n1.1.2\n对话总结（Conversation Summary / Summary Context）\n如果每次提取记忆时，都把整个 conversation history 放进 LLM\nprompt，那么随着对话不断增长，prompt 会越来越长。\n因此，Mem0\n会维护一种\n对历史对话的压缩表示\n，用于在不保留全部原始消息的情况下，为\nLLM 提供更长期的上下文。\n例如，一个较长的 conversation 可能包含：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n第1轮\nUser: 我叫 Bob。\n第2轮\nUser: 我是一名程序员。\n第3轮\nUser: 我主要使用 Python。\n第4轮\nUser: 最近开始学习 LangGraph。\n第5轮\nUser: 我还在研究 A-MEM。\n...\n第30轮\nUser: ToolNode 是干什么的？\n经过 summary 后，可以形成类似：\n1\n2\n3\n用户 Bob 是一名程序员，主要使用 Python，\n近期正在学习 LangGraph，并研究 A-MEM、Agent Memory\n以及 ToolNode 等相关技术。\n这个 summary 的作用并不是直接充当最终\nmemory，而是作为\n历史上下文压缩信息\n，帮助 extraction LLM\n理解当前对话所处的背景。\n因此，可以将它理解为：\nSummary 解决的是“历史太长，无法全部放入 extraction\nprompt”的问题。\n需要注意的是，\nS 是针对当前 conversation history\n生成的总结信息\n，其作用是压缩当前 conversation\n中的历史内容。因此，当开始一个新的 conversation 时，通常会对应新的\nconversation context / summary，而不会直接继承上一段 conversation 的\nS。\n换句话说，S 主要用于帮助 extraction 阶段理解\n当前 conversation\n的历史背景\n，而不是一个跨 conversation 永久保存的长期\nmemory。\n1.1.3 最近的历史消息（Recent\nMessages）\n除了 summary 之外，Mem0 还可以提供最近的一部分历史消息：\n\\[\n{m_{t-n},m_{t-n+1},...,m_{t-2}}\n\\]\n这些消息用于保留\n比 summary\n更具体、更细粒度的近期上下文\n。\n例如：\n1\n2\n3\n4\n5\n6\n7\n最近历史消息：\nUser: 我最近开始研究 Agent Memory。\nAssistant: Agent Memory 可以分为短期记忆和长期记忆……\nUser: 我现在正在看 A-MEM。\nAssistant: A-MEM 使用类似记忆网络的方式组织长期记忆……\n这些信息可以帮助 LLM 判断当前消息中的内容是否与最近的对话有关。\n1.1.4 Extraction Prompt\n最终，Mem0 会将这些上下文共同提供给 LLM：\n\\[\nP=\n\\left(\nS,\n{m_{t-n},...,m_{t-2}},\n(m_{t-1},m_t)\n\\right)\n\\]\n其中：\n\\(S\\)\n：历史 conversation 的\nsummary/context\n\\({m_{t-n},...,m_{t-2}}\\)\n：最近的一部分历史消息\n\\((m_{t-1},m_t)\\)\n：当前消息对\n然后通过 LLM：\n\\[\n\\phi(P)\\rightarrow\\Omega\n\\]\n提取出一组值得考虑保存的候选记忆：\n\\[\n\\Omega={\\omega_1,\\omega_2,...,\\omega_n}\n\\]\n这些\n\\(\\omega_i\\)\n可以称为：\ncandidate facts / candidate memories\n例如当前对话：\n1\n2\n3\nUser:\n我叫 Bob，是一名 Python 程序员。\n最近开始学习 LangGraph。\nLLM 可能提取：\n1\n2\n3\nBob 是一名程序员\nBob 使用 Python\nBob 正在学习 LangGraph\n此时这些内容还只是\n候选记忆\n，并不意味着已经直接写入长期记忆数据库。\n因此：\nExtraction\n的任务是“发现可能值得保存的记忆”，而不是直接决定数据库最终应该保存什么。\n最终是否 ADD、UPDATE、DELETE 或 NOOP，要在下一阶段决定。\n1.2 更新阶段（Update Phase）\nExtraction 得到：\n\\[\n\\Omega={\\omega_1,\\omega_2,...,\\omega_n}\n\\]\n之后，Mem0 需要判断：\n这些新的 candidate memories 与数据库中已有的 memories\n是什么关系？\n因为不能简单地把每一次对话产生的新信息全部\nADD\n到数据库。\n否则：\n1\n2\n3\n4\n5\n6\n7\n8\nUser: 我使用 Python。\n→ ADD\nUser: 我主要使用 Python。\n→ ADD\nUser: 我经常使用 Python。\n→ ADD\n最终数据库可能出现大量语义重复的 memory。\n因此，对于每一个 candidate fact，Mem0 会首先从已有 memory\n中检索语义上最相关的 memories（向量相似检索）。\n可以抽象为：\n1\n2\n3\n4\n5\n6\n7\ncandidate fact\n↓\n向量相似度检索\n↓\nTop-k existing memories\n↓\nLLM 判断如何处理\n对于每一个 candidate fact，Mem0 会将其与检索到的相关 existing\nmemories 一起交给 LLM，由 LLM 判断应该对长期记忆执行哪一种操作：\n操作\n含义\nADD\n数据库中不存在语义等价的 memory，因此创建新的 memory\nUPDATE\n已存在相关 memory，但新的信息可以对其进行补充或完善，因此更新已有\nmemory\nDELETE\n新信息与已有 memory 发生冲突，使原 memory\n失效，因此删除或标记其为无效\nNOOP\n新信息不会对现有 knowledge base 产生实际变化，因此不做任何修改\n1.3 Mem0 Graph Memory\n前面的\nExtraction + Update\n主要解决的是：\n从对话中提取长期记忆，并判断这些记忆应该如何写入或修改。\n在此基础上，Mem0 还提供\nGraph\nMemory\n，用于将记忆中的\n实体（Entity）及其关系（Relationship）结构化组织起来\n。\n也就是说，普通 Memory 主要关注：\n1\n“Bob 正在学习 LangGraph”\n而 Graph Memory 会进一步将它结构化为：\n1\nBob ──learns──> LangGraph\n因此，Graph Memory 的核心就是：\n将记忆中的信息表示成由 Node 和 Edge\n构成的知识图谱，从而利用实体之间的关系进行存储、更新和检索。\n1.3.1 Graph 的基本结构\nMem0 的 Graph Memory 可以抽象表示为：\n\\[\nG=(V,E,L)\n\\]\n其中：\n\\(V\\)\n：\nNodes\n，表示实体（Entities）\n\\(E\\)\n：\nEdges\n，表示实体之间的关系（Relationships）\n\\(L\\)\n：\nLabels\n，表示实体的语义类型等标签信息\n1.3.2 Node（实体节点）\nNode 对应 Graph 中的一个\nEntity\n，例如：\nBob\n、\nPython\n、\nLangGraph\n、\nGoogle\n每个 Node 主要包含：\nEntity Type\n：实体类型，例如\nBob → Person\n、\nGoogle → Organization\nEmbedding\nVector\n：实体的向量表示，用于语义匹配和检索\nMetadata\n：实体的其他元数据，例如创建时间等\n因此，一个 Node 可以抽象表示为：\n1\nv=(entity_type, embedding, metadata)\n1.3.3 Relationship（关系）\n在 Graph 中，\nRelationship 对应连接两个 Node 的\nEdge\n，用于表示两个 Entity 之间存在的语义关系。\n一个 Relationship 可以表示为：\n\\[\n(v_s,r,v_d)\n\\]\n其中：\n\\(v_s\\)\n：source\nnode，即关系的起点\n\\(r\\)\n：relationship，即两个实体之间的关系\n\\(v_d\\)\n：destination\nnode，即关系的终点\n例如：\n\\[\n(Bob,\\ learns,\\ LangGraph)\n\\]\n其中：\nBob\n是 source entity\nlearns\n是 relationship\nLangGraph\n是 destination entity\n在构建 Relationship 时，Mem0 会将关系转换成文本形式，例如：\n1\nBob learns LangGraph\n并对该文本进行\nembedding，得到关系的向量表示，用于后续的关系语义检索。\nRelationship\n不仅记录了\n两个实体之间是什么关系\n，还具有对应的文本表示和向量表示，从而可以参与后续的语义检索。\n1.3.4 Graph Memory 的构建\n当新的 memory 被写入 Graph Memory\n时，需要将其进一步结构化为实体和关系。\n整体可以理解为两个步骤。\nStep 1：Entity Extraction\n首先从新的文本 memory 中提取实体：\n1\nAlice works at Google and lives in San Francisco.\n可能提取：\n1\n2\n3\nAlice → Person\nGoogle → Organization\nSan Francisco → City\n这些实体成为 graph 中的候选 nodes。\nStep 2：Relationship\nExtraction\n然后从这些实体之间提取关系：\n1\n2\n3\n(Alice, works_at, Google)\n(Alice, lives_in, San Francisco)\n这里有一个非常重要的点：\n关系\n主要是\n在当前这次新提取出来的 entities\n之间\n建立的。\n也就是说，并不是把整个知识图谱中的所有实体两两组合，再让 LLM\n判断关系。\nStep 3：判断Entity\n是否已经存在\n系统首先需要判断：\n1\n2\nAlice 是否已经存在？\nGoogle 是否已经存在？\n根据检查结果，可能出现：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n两个 entity 都不存在\n→ 创建 Alice + Google\n→ 建立关系\nAlice 已存在，Google 不存在\n→ 复用 Alice\n→ 创建 Google\n→ 建立关系\nAlice 不存在，Google 已存在\n→ 创建 Alice\n→ 复用 Google\n→ 建立关系\n两个都存在\n→ 直接使用已有 nodes\n→ 建立或更新 relationship\n因此，\nentity matching / existence checking\n是避免知识图谱中产生重复节点的重要步骤。\nRelationship Conflict Detection\n当新的 relationship 到来时，还需要考虑它是否与已有 relationship\n冲突。Graph Memory 会进行 conflict detection，并由 LLM-based resolver\n判断已有关系是否已经过时。\n过时的关系不一定被物理删除，而可以被标记为\nobsolete\n/\ninvalid\n，从而保留历史信息。\n1.4 Mem0 的记忆检索（Retrieval）\n当用户提出新的 query 时，Mem0 需要从长期 memory\n中找到与当前问题最相关的信息。\nGraph Memory 中采用的是一种\n双轨检索策略（dual retrieval\nstrategy）\n。\n可以简单理解为：\n方法一：Entity-centric\nRetrieval\n第一条路径是：\n先从 query 中找到关键 Entity，再围绕这些 Entity\n在图中进行扩展，最终找到与这些 Entity 相关的 Memories。\n例如 query：\n1\nBob 最近在学习什么？\n首先从 query 中识别：\n1\nBob\n然后对 Bob 进行 entity-level 的语义检索，找到最相关的 entity。\n之后进一步查看这些 entity 的邻居关系，例如：\n1\n2\n3\n4\nBob\n├── uses ──> Python\n├── learns ──> LangGraph\n└── studies ──> A-MEM\n最终，方法一返回的是\n与命中 Entity 及其一阶关系相关entity的\nmemories 构成的候选结果集合\n，并对结果进行去重和排序。\nentity\n会记录其来源的memory。所以一个entity里面可能来自多条不同memory，但是都全部作为结果返回。会由后续的LLM进行判断是否相关。\n方法二：Relation-centric\nRetrieval\n第二条路径则不依赖于先找到某个实体，而是直接从\n关系三元组\n出发。\n例如知识图谱中存在：\n1\n2\n3\n4\n(Bob, uses, Python)\n(Bob, learns, LangGraph)\n(Bob, studies, A-MEM)\n(Alice, works_at, Google)\n每个 Relationship 在构建时都会形成对应的文本表示，例如：\n1\n2\n3\n4\nBob uses Python\nBob learns LangGraph\nBob studies A-MEM\nAlice works_at Google\n系统将 query 转换为 embedding，并与 Graph 中各个 Relationship\n的文本表示进行相似度匹配，得到与 query 最相关的 Top-k\nRelationships，并返回这些关系对应的文本描述。\n双轨检索结果融合\n两种检索方式会\n并行执行\n，分别得到 Entity-centric 和\nRelation-centric 的检索结果。Mem0\n将两路结果进行合并、去重并统一排序，最终选取得分最高的 Top-k\n结果，作为提供给 Agent / LLM 的相关记忆上下文。\n2. mem0 v3 pipeline 版本变动\n目前通过\npip install mem0ai\n安装的最新 mem0 版本，其默认\nPipeline 已经采用\nv3\n；而 mem0 论文中介绍的 Pipeline\n主要对应\nv2\n。\nv3 相比 v2\n在记忆写入、图数据组织以及检索方式等方面都进行了较大调整。因此，本节单独介绍\nv2 → v3 的主要变化。\n其中最显著的变化是：\nv3 不再使用 Neo4j\n等外部图数据库，而是直接移除了原有的 Graph\nMemory，并将部分图结构能力合并到 Memory Store 中。\n2.1 整体架构：从\nMemory + Graph 转向 Memory-centric\nv2 的整体架构可以理解为两部分：\nMemory Store\n+\nGraph Memory\n其中：\nMemory Store\n：负责存储和检索 memory；\nGraph Memory\n：负责提取 Entity，并通过\nEntity-to-Entity 的关系构建 Knowledge Graph。\nv3 则移除了独立的 Graph\nMemory，直接用同一个数据库存储memory和entity：\n1\n2\n3\nMemory Store\n├── Memory\n└── Entity → Memory 关联索引\n也就是说，v3 不再维护一个独立的 Entity-to-Entity Knowledge\nGraph，而是将 Entity 作为 Memory 的检索辅助结构。\n同时，原有图数据库相关代码被大幅移除，包括\nmem0/graphs/\n、\ngraph_memory.py\n等，Neo4j、Memgraph、Kuzu、Apache AGE、Neptune 等外部图数据库也不再属于\nOSS SDK 的 Graph Memory 实现。\n2.2 Memory 写入：从 “提取\n+ 更新” 变为 “增量累积”\n这是 v3 在 Memory 层面最重要的变化之一。\nv2：提取后再进行更新判断\nv2 的写入过程大致需要经过两个阶段：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n新消息\n↓\nLLM 提取候选 facts\n↓\n对每个 fact 检索已有 memories\n↓\nLLM 判断如何处理\n↓\nADD / UPDATE / DELETE / NOOP\n也就是说，v2 不仅负责发现新的 memory，还会主动判断新信息与已有 memory\n之间的关系，并决定是否修改或删除已有 memory。\nv3：提取后直接 ADD\nv3 则将这一过程简化为：\n1\n2\n3\n4\n5\n6\n7\n新消息\n↓\nADDITIVE_EXTRACTION_PROMPT\n↓\n提取新的 memories\n↓\nADD\n主要变化包括：\n使用\nADDITIVE_EXTRACTION_PROMPT\n直接提取新的\nmemory；\n不再执行 v2 中的\nUPDATE / DELETE / NOOP\n判断；\n新旧 memory 不再通过覆盖的方式更新，而是通过\nlinked_memory_ids\n建立关联；\n摘要\nS\n、recent messages 和当前 message pair\n等输入信息的整体构造逻辑没有发生根本变化，主要变化集中在\n提取之后的\nMemory 处理阶段\n。\n因此，v3 的核心思想可以概括为：\n不主动覆盖旧 memory，而是持续增加新的\nmemory，并通过关联关系表达新旧信息之间的联系。\n例如：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n旧 memory：\n\"用户喜欢 Python\"\n新 memory：\n\"用户现在更喜欢 Rust\"\nv2：\n可能判断 UPDATE，从而修改旧 memory。\nv3：\n保留两条 memory，并通过 linked_memory_ids 建立关联。\n这样做的好处是避免错误覆盖历史信息。例如，“喜欢 Python” → “喜欢\nRust”并不一定意味着前者是错误的，也可能只是用户偏好随时间发生了变化。\n因此，v3\n更倾向于\n保留完整历史信息，以支持时间维度上的推理\n。\n其代价也很明显：Memory 不再通过 UPDATE / DELETE\n自动控制规模，因此会持续累积，需要额外的删除和管理机制。\n手动删除机制\nv3 仍然提供显式的 Memory 管理能力，例如：\ndelete(memory_id)\n：删除指定 memory；\ndelete_all(filters)\n：根据条件批量删除；\ndelete_linked=True\n：删除某条 memory 时，同时沿\nlinked_memory_ids\n关联链删除相关的旧 memory，避免被替代的旧\nmemory 在后续检索中重新出现。\n2.3 Graph\nMemory：从 Entity → Entity 转变为 Entity → Memory\nv3 最大的架构变化之一，是\n彻底取消了 v2 中基于 Knowledge Graph\n的 Entity-to-Entity 关系组织方式\n。\nv2：Entity → Entity\nv2 中，Entity 是 Knowledge Graph 的节点。\n例如：\n1\n2\nAlice ──works_at──> OpenAI\nOpenAI ──located_in──> San Francisco\n通过这种带有语义关系类型的边：\n1\n(source entity, relation, destination entity)\n将多个 Entity 连接起来，形成 Knowledge Graph。\n因此，v2 的核心结构可以概括为：\n1\nEntity → Entity\nv3：Entity → Memory\nv3 不再维护这种 Entity-to-Entity 的显式关系，而是建立：\n1\nEntity → Memory\n即：\nEntity 不再作为一个具有复杂关系的 Knowledge Graph\n节点，而主要\n作为 Memory 的检索索引\n。\n例如：（\"python\" 是作为例子的entity）\n1\n2\n3\n4\n5\n6\n7\nPython → {\nmemory_ids: [\nmem_001,\nmem_017,\nmem_032\n]\n}\n这里的 Memory 就是包含或提取出该 Entity 的源记忆。\n因此，v3 的结构更接近一个\nEntity → Memory\n的倒排索引\n。\n2.4 Entity 的提取与存储\nv3 中，Entity 不再通过 Graph Memory 和 LLM 构建 Knowledge\nGraph，而是使用\nspaCy\n从每条 Memory\n的文本中提取实体。\n这里需要特别注意：\nv3 的 Entity 提取不是通过 LLM 完成的，而是使用 spaCy\n进行实体识别。\nspaCy 主要用于从 Memory 中识别：\n专有名词；\n引用文本；\n复合名词短语等实体信息。\n提取出的 Entity 随后被存储到与 Memory Store 配合使用的独立 Entity\ncollection 中：\n1\n{collection}_entities\n并建立：\n1\nEntity → Memory IDs\n的关联。\n2.5 检索：Hybrid Search\n+ Entity-aware Ranking\nv3 的检索不再依赖 v2 的 Graph\nRetrieval，而是将多种检索方式进行融合，主要包括：\n稠密检索（向量/语义）\n：将 query 转换为\nembedding，与 Memory Store 中已有 memory 的 embedding\n进行相似度匹配，找到语义上最相关的 memory。\n稀疏检索（关键词）\n：利用 query\n中的关键词、实体等信息，对 memory\n文本进行关键词匹配，弥补纯向量检索可能遗漏的结果。\nEntity-aware Ranking\n：从 query 中提取关键\nentity，并利用已经建立的\nEntity → Memory\n关联，找到与这些 entity 相关的 memory。\n最终综合\nsemantic similarity、entity information 以及\nmetadata 等信息\n对候选 memory\n进行排序，选择排名靠前的结果。\n2.6 v2 → v3 的核心变化总结\nv2 → v3 的核心变化主要有以下四点：\nMemory 写入\n：从\nADD / UPDATE / DELETE / NOOP\n转变为以\nADD\n为主的累积式记忆\n，通过\nlinked_memory_ids\n关联新旧\nmemory。\nGraph Memory\n：移除 Neo4j 等外部图数据库，不再维护\nEntity → Entity\n的 Knowledge Graph，改为\nEntity\n→ Memory\n的关联机制。\nEntity 提取\n：从原来的 Graph Memory 机制转变为使用\nspaCy（非 LLM）\n提取 Entity，并建立 Entity Index。\nMemory 检索\n：从原来的 Graph Retrieval 转变为\nHybrid Search + Entity-aware Ranking\n。\n总体来说，v3 的设计目标是：\n简化架构、降低延迟、减少旧记忆被错误覆盖的风险，同时保留\nEntity 对 Memory 检索的辅助能力。\n3. mem0 使用\n首先安装\nmem0ai\n：\n1\n2\npip install mem0ai\npip install \"mem0ai[extras]\"\n3.1 初始化 Memory\n安装完成后，可以通过两种方式使用 Mem0。\n方式一：\nMemoryClient\n——托管 Platform\nAPI\n1\n2\nfrom\nmem0\nimport\nMemoryClient\nclient = MemoryClient(api_key=\n\"your-api-key\"\n)\nMemoryClient\n本质上是一个 HTTP Client，实际的\nmemory extraction、update、storage 和 retrieval\n都由\nMem0 官方云端完成。\n方式二：\nMemory\n——开源自托管\n1\n2\nfrom\nmem0\nimport\nMemory\nm = Memory()\n这种方式运行在本地进程中，\nLLM、Embedding\n模型以及向量数据库都由用户自行配置和管理\n。\n3.2 配置\n以\nOllama + Qdrant\n为例：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\nollama_client = OllamaClient(host=\n\"http://localhost:11434\"\n)\nconfig = {\n\"llm\"\n: {\n\"provider\"\n:\n\"ollama\"\n,\n\"config\"\n: {\n\"model\"\n:\n\"qwen2.5:7b\"\n,\n\"temperature\"\n:\n0.1\n,\n\"max_tokens\"\n:\n2000\n,\n\"ollama_base_url\"\n:\n\"http://localhost:11434\"\n,\n},\n\"embedder\"\n: {\n\"provider\"\n:\n\"ollama\"\n,\n\"config\"\n: {\n\"model\"\n:\n\"qwen3-embedding:0.6b\"\n,\n\"ollama_base_url\"\n:\n\"http://localhost:11434\"\n,\n},\n\"vector_store\"\n: {\n\"provider\"\n:\n\"qdrant\"\n,\n\"config\"\n: {\n\"collection_name\"\n:\n\"zusda_memories\"\n,\n\"host\"\n:\n\"localhost\"\n,\n\"port\"\n:\n6333\n,\n\"embedding_model_dims\"\n:\n1024\n,\n},\n}\n整个配置主要由三个部分组成：\n1.\nllm\n：记忆抽取模型\n负责 Mem0 pipeline 中的\nMemory Extraction\n，即通过\nLLM 从对话中提取 candidate memories。\n在 v3 中，这里主要对应\nADDITIVE_EXTRACTION_PROMPT\n的 LLM\n调用，用于生成新的 memory。\n2.\nembedder\n：Embedding\n模型\n负责将每条 memory 文本转换成向量，供后续的\nDense\nRetrieval\n使用。\n3.\nvector_store\n：向量数据库\n负责 memory 的向量存储和检索，这里使用 Qdrant。\n其中：\ncollection_name\n：Qdrant 中存储 memory 的 collection\n名称。\nembedding_model_dims\n：向量维度，\n必须与\nEmbedding 模型实际输出的维度一致\n，否则写入 Qdrant\n时会出现维度不匹配。\n例如可以通过 Ollama 确认实际维度：\n1\n2\n3\n4\n5\n6\n7\n8\nimport\nollama\nresponse = ollama.embed(\nmodel=\n\"qwen3-embedding:0.6b\"\n,\ninput\n=\n\"测试文本\"\n)\nprint\n(\nlen\n(response[\n\"embeddings\"\n][\n0\n]))\n确认维度后，再将其设置到：\n1\n\"embedding_model_dims\"\n:\n1024\n最后根据配置实例化 Mem0：\n1\nmemory = Memory.from_config(config)\n3.3 构建一个带长期记忆的 Agent\n一个最简单的 Mem0 Agent 可以按照以下流程工作：\n用户输入 → 检索长期记忆 → 注入 Prompt → LLM 回答 → 将对话写入\nMem0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\nUSER_ID =\n\"zusda\"\ndef\nchat_with_memory\n(\nuser_input:\nstr\n) ->\nstr\n:\n# 1. 回答前搜索长期记忆，使用 memory.search()\nrelevant = memory.search(\nquery=user_input,\nfilters={\n\"user_id\"\n: USER_ID},\nlimit=\n5\n)\n# 2. 将相关记忆加入 Prompt\nmemories_str =\n\"\\n\"\n.join(\nf\"-\n{m[\n'memory'\n]}\n\"\nfor\nm\nin\nrelevant[\n\"results\"\n]\n)\nsystem_prompt = (\n\"你是一个有长期记忆的助手，回答时结合下面的用户记忆。\\n\"\nf\"用户记忆：\\n\n{memories_str}\n\"\n)\nmessages = [\n{\n\"role\"\n:\n\"system\"\n,\n\"content\"\n: system_prompt},\n{\n\"role\"\n:\n\"user\"\n,\n\"content\"\n: user_input},\n]\n# 3. 调用 LLM 生成回复\nresponse = ollama_client.chat(\nmodel=\n\"qwen2.5:7b\"\n,\nmessages=messages,\n)\nassistant_reply = response[\n\"message\"\n][\n\"content\"\n]\n# 4. 将本轮对话写入 Mem0，使用 memory.append()\nmessages.append({\n\"role\"\n:\n\"assistant\"\n,\n\"content\"\n: assistant_reply\n})\nmemory.add(\nmessages,\nuser_id=USER_ID\n)\nreturn\nassistant_reply\n其中最关键的是两个操作：\n1\nmemory.search(...)\n负责\n检索已有的长期记忆\n；\n1\nmemory.add(...)\n负责将\n本轮对话交给 Mem0 的 memory pipeline\n处理并写入记忆库\n。\n因此，整个 Agent 可以简单理解为：\n3.4 Main 函数\n最后通过循环实现一个简单的命令行 Agent：\n1\n2\n3\n4\n5\n6\n7\nif\n__name__ ==\n\"__main__\"\n:\nwhile\nTrue\n:\ntext =\ninput\n(\n\"You: \"\n)\nif\ntext.lower()\nin\n(\n\"exit\"\n,\n\"quit\"\n):\nbreak\nprint\n(\n\"AI:\"\n, chat_with_memory(text))\n这样，一个最基本的\nMem0 + Ollama + Qdrant 长期记忆\nAgent\n就搭建完成了。\n4. 其他\n4.1 安装 Qdrant\n如果使用 Docker 部署 Qdrant，首先拉取镜像：\n1\ndocker pull qdrant/qdrant\n然后启动 Qdrant 容器：\n1\ndocker run -p\n6333\n:\n6333\n-p\n6334\n:\n6334\n-v C:\\Users\\admin\\qdrant_storage:/qdrant/storage qdrant/qdrant\n其中：\n6333\n：Qdrant HTTP API 端口\n6334\n：Qdrant gRPC 端口\n-v\n：将宿主机目录挂载到容器中的\n/qdrant/storage\n，用于持久化数据。\n例如：\n1\nC:\\Users\\admin\\qdrant_storage\n表示 Windows 本地的一个磁盘目录。Qdrant\n的数据会通过目录映射保存到该位置。\n如果不使用\n-v\n进行持久化，Qdrant\n数据只保存在容器内部。\n删除容器后，容器中的数据也会随之丢失。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://zusda.github.io/2026/08/13/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-10/",
-      "content_chars": 15274,
-      "content_sha256": "bbadbaa5ad07a62cb6f2dd2863ca9370f40b8689ebb88634581a4f7215c72553",
-      "content_fetched_at": "2026-08-16T21:27:51.484113+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "zusda",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:654f62a5f39a602c",
-      "kind": "publish",
-      "text": "yage-share published: Google 发布 DiffusionGemma：当语言模型不再只能从左到右写",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-16T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/diffusiongemma-text-diffusion-20260816.html",
-      "title": "Google 发布 DiffusionGemma：当语言模型不再只能从左到右写",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "模型架构\n推理与性能\nGoogle 近期发布了开源模型 DiffusionGemma，并同步公开了\nDiffusionGemma\n技术报告\n。它直接从完成全部后训练的 Gemma 4 26B-A4B\n权重出发，通过离散多项式扩散算法，把原本逐个词单向提交的自回归生成过程，改写为在\n256 个 token 大小的画布内通过多轮双向注意力迭代去噪的并行生成机制。\n与此前闭源部署或参数与训练细节未完全公开的工业探索相比，Google\n这次在发布\nGoogle\n模型卡\n的同时，直接在\nHugging\nFace\n开放权重页面\n开源了完整的模型参数，并在架构中保留了可切回经典自回归模式的\nAR fallback\n接口，让工程团队可以直接在主流推理引擎上部署和测试离散文本扩散。\n在官方公布的数据中，三个数字构成了鲜明的张力：在单张 NVIDIA H100\n显卡上，模型单请求解码速度达到每秒 1,456 个 token；追加训练 token\n预算少于原 Gemma 4 总训练预算的 10%；但在 AIME 2026\n数学推理测试中，得分从原模型的 88.3 分回落到 69.1\n分。作为一名跟踪语言模型推理演进的工程师，我最初看到发布时最容易关注千级别的解码速度，但在核对这组测试条件与消融数据后，更核心的问题浮现出来：这种通过改变生成顺序换取推理加速的架构尝试，在底层执行动作中改变了什么，又在模型能力上支付了怎样的代价。\n前缀一旦写下就成了历史，但在局部画布里还能反复修改\n普通自回归语言模型依据条件概率\np\n(\nx\ni\n|\nx\n<\ni\n)\np(x_i | x_{<i})\n生成文本，从左到右逐个预测下一个\ntoken。每一步前向计算都建立在已有前缀的基础之上。以多位数乘法\n23 × 47 = 1081\n为例，如果将四个数字视作四个生成位置，自回归模型在第一步输出\n1\n之后，该位置便立即固化为后续计算必须接受的历史前缀。如果模型在第一步输出错误数值，在当前同一条生成轨迹中，后续计算无法返回第一位直接修改，只能在后续文本中承认失误或由外部系统重试。\n文本扩散改变了这一生成过程。它在开始时先铺出若干未定稿的候选位置，随后在多轮前向计算中让整块文本同时演进。在第一轮计算中，第二位可能暂为\n1\n，呈现\n1181\n的临时状态；在下一轮前向计算中，模型借助双向注意力机制同时参考前后相邻位置的信息，根据上下文约束将第二位修正为\n0\n。随着去噪推进，高置信度位置先行锁定，低置信度位置持续调整，直至整段文本达到稳定。\nDiffusionGemma 将这种双向迭代约束在固定的局部窗口内。模型每次处理包含\n256 个 token 的 canvas 区域。在当前 canvas\n内，模型通过多轮前向反复调整所有候选 token。当前 canvas\n完成去噪并定稿后，模型将它完整写入 KV\ncache，作为后续生成步骤中只读的前缀上下文。模型处理新 canvas\n块时，无法回写已定稿的历史块：\nprompt / 已提交块 1 / 已提交块 2 / 正在修改块 3\n只读 只读 块内可改\n在实际生成中，\n关于\nDiffusionGemma token 提交动态的研究\n记录了 686\n个测试提示词，发现模型并非在最后一步将 canvas 内的 256\n个位置一次性定稿，而是随任务和文本粒度呈现分批锁定的动态过程。这种机制打破了自回归每个\ntoken\n必须即时提交的限制，同时保留了块级别向前推进的因果结构。单次前向能够同时推进多个位置，但模型只能修改当前\n256 个 token 范围内的内容。\n自回归逐 token 提交与文本扩散在当前\ncanvas 内反复修订的生成顺序对比\n文本没法直接加高斯噪声，但现成的语言模型可以换一种生成方式\n扩散模型在图像领域早已成熟，但迁移至自然语言处理经历了数年探索。图像像素与潜在空间特征处于连续数值空间，数值受到微小扰动或叠加高斯噪声后依然属于连续流形，神经网络能够通过连续得分函数学习逐步去噪。文本\ntoken ID 则是离散类别索引，为特定 token ID\n加上连续数值在词表中没有定义，相邻索引之间也缺乏连续的语义关联。文本无法直接叠加高斯噪声，必须专门构造离散空间的加噪与去噪规则。\n离散加噪的数学形式化在 2021 年有了关键进展。\nD3PM\n论文\n提出了结构化状态转移矩阵与吸收态机制，解决了 token\n在离散空间中如何逐步加噪与去噪的转移概率建模问题。另一条探索路线是将\ntoken 映射到连续词向量空间施加高斯扩散，2022 年的\nDiffusion-LM\n论文\n展示了连续轨迹在可控生成与局部填空上的灵活性，但连续向量向离散\ntoken 映射时产生的舍入误差会导致文本质量受损，且其 200\n步去噪采样在端到端耗时上达到自回归基准的 7 倍。\n随后，离散扩散逐步向自回归的建模质量靠拢。2023 年发表的\nSEDD 论文\n在 LM1B 数据集与\nGPT-2-small 规模实验中，相对此前离散扩散基线将困惑度降低了 50% 至\n75%，将困惑度差距缩小到距离同配置下从头训练的自回归基准约 1 个 PPL\n以内。\n到了大模型阶段，从头训练的算力开销促使研究转向复用成熟权重。\nLLaDA 论文\n使用 2.3T token\n从头训练了 8B\n规模的离散扩散模型，验证了在大规模数据下离散扩散同样可以涌现上下文学习与指令遵循能力，但也展示了从零预训练大模型的庞大开销。为此，\nDiffuLLaMA\n论文\n探索了直接转换路线，将预训练好的 GPT-2 与 LLaMA2（127M 至 7B\n参数）检查点转换为扩散模型，在 7B 模型上使用约 60B 至 65B token\n完成适应，低于该研究设定的 200B token\n上限，证明扩散模型无需从零重新学习通用语言分布。\n工程部署与推理延迟随之成为新的焦点。\nMercury Coder\n技术报告\n展示了面向代码场景的低延迟扩散模型，在 Artificial Analysis\n采用约 1K 输入搭配 1K 输出的专用代码提示词测试中，单张 H100 测得 1,109\n与 737 output tok/s\n的解码输出，但其模型参数量、初始化来源与具体训练配方未作披露。\nGemini Diffusion\n官方页面\n公布了每秒 1,479 个 token 的采样速度（不计 0.84\n秒固定开销），在未披露硬件型号与上下文长度的前提下，其测试显示在\nGPQA（40.4 对 56.5）和 Global MMLU（69.1 对 79.0）等基准上相较 Gemini\n2.0 Flash-Lite 仍存在明显差距。在此之后，\nDream 论文\n与\nLLaDA 2.0\n论文\n在模型转换、MoE 架构、分块扩散以及 KV cache 整合上继续推进。\nDiffusionGemma\n延续了此前的文本扩散与权重转换路线。它的技术增量，是把成熟模型资产复用、少步数采样器蒸馏、自回归回退、开放权重以及主流推理引擎支持整合进同一个可以直接分发的工程工件。模型以完成全部后训练的\nGemma 4 26B-A4B 权重作为初始化起点。该基座拥有 25.2B 总参数，每个 token\n激活约 3.8B\n参数，出发点本身已具备指令遵循、长思考、多模态理解与工具调用能力。\n在加噪方式上，模型采用多项式离散扩散，按照噪声水平以一定概率将 token\n替换为词表中均匀采样的随机\ntoken。训练过程分为两个阶段：模型先在去噪适应训练中学习如何从随机 token\n污染的 256-token canvas\n块中重建干净文本。经过这一步后，模型使用较多采样步数能生成正常文本，但把采样压缩至极少步数会造成质量崩溃。接着，采样器蒸馏与强化学习（SD·RL）将任务奖励最大化与采样步数压缩整合进统一目标，由高步数\nteacher 模型提供轨迹引导，训练 student\n模型使用更少的前向计算轮次快速逼近定稿文本。在 SD·RL\n训练后，模型在整条输出轨迹上平均单次网络前向传播能够产出约 19.74 个有效\ntoken（TPF）。这是一个摊销平均值，并不意味着模型在每一次前向中固定写入\n19.74 个 token。\n根据\nDiffusionGemma\n技术报告\n披露的信息，上述两个阶段追加训练所消耗的 token\n总量，少于起始 Gemma 4 模型总训练 token 预算的 10%。这个比例描述的是训练\ntoken 预算，并不等同于整体算力成本只有原模型的\n10%。报告并未公开追加训练消耗的绝对 token 数量、FLOPs、GPU\n机时或完整的转换配方。\n文本扩散从离散加噪、语言质量、资产复用走向部署延迟的四道门槛\n每秒 1456\n个 token 的测试条件，以及真实请求下的延迟表现\n官方公布的 1,456 output tok/s\n解码速度对应着一套精确的硬件与负载测试条件。\n根据\nDiffusionGemma\n技术报告\n的记录，该数据测定于单张 NVIDIA H100 GPU、FP8\n精度、单并发请求（batch size 为 1）、4096 输入 token 搭配 1024 输出\ntoken 的场景下，并且统计区间仅包含 decode 解码阶段，排除了 prefill\n耗时。在该配置下，单次扩散前向平均硬件耗时为 13.56 毫秒，结合平均 19.74\n的 TPF 产出率，得出每秒 1,456 个输出\ntoken。在相同的硬件与请求配置下，标准 Gemma 4 自回归模型解码速度为 204\ntok/s，开启多 token 预测（MTP）加速后为 303 tok/s。\n这一加速效果来自于对 GPU\n访存特性的改变。在单请求低并发场景下，自回归模型由于每次前向计算仅生成 1\n个 token，计算密度较低，执行时间大量消耗在将模型权重与 KV cache\n从显存读入计算核心的带宽开销上。DiffusionGemma 每次前向同时处理 256\n个候选\ntoken，减少了串行前向的总轮次，从而大幅缩减了在低并发下单请求对模型权重与\nKV cache 的重复读取次数。\n在引擎适配方面，\nvLLM\n官方博客文章\n公布了与 Google 及 NVIDIA 联合开展的测试结果：在 batch\nsize 1 的 FP8 环境下，单张 H100 测得 1,008 generation tok/s，H200 测得\n1,288 generation\ntok/s。这是多方联合针对性优化的工程实现结果，不宜表述为第三方团队完全独立的盲复现基准。\n在实际服务中，纯解码阶段的峰值 TPS\n并不等同于用户感知的端到端响应延迟。\nvLLM\nSPEED-Bench recipe\n在单张 NVIDIA H100、BF16\n精度、单并发、\nmax_tokens=256\n且使用推荐熵界采样器的标准评测套件下，提供了更为全面的性能对照：\n指标\nGemma 4 AR\nDiffusionGemma\n每请求 generation TPS\n205\n1282\n总 output TPS\n199\n375\n平均端到端时间\n2.87 秒\n0.88 秒\n平均首 token 时间\n53 ms\n489 ms\n这组数据反映了吞吐量在实际交互链路中的转化特征。每请求 generation TPS\n从 205 提升至 1282（约 6.2 倍），但由于 DiffusionGemma\n在该测试集上生成的平均文本长度短于自回归模型，整体总 output TPS 从 199\n提升至 375（约 1.9 倍）。平均端到端耗时从 2.87 秒缩短至 0.88\n秒，带来了约 3.3 倍的实际加速。\n同时，平均首 token 响应时间（TTFT）从自回归模型的 53\n毫秒上升至扩散模型的 489 毫秒。自回归模型在完成 prefill\n后只需执行单次轻量前向即可吐出首个 token，而扩散模型必须在首个 256-token\ncanvas\n上完成多轮前向去噪迭代并达到定稿阈值后，才能向外流式输出文本。\n随着并发请求增加，Google 报告的并发实验显示，在约 32\n个并发请求的测试配置下，自回归模式的总吞吐量开始反超扩散模式。高并发\ncontinuous batching\n聚合多个请求，逐渐填满显存带宽与计算单元，也把自回归的单步访存开销摊到多个请求上。扩散模式依靠减少单请求访存轮次获得的边际收益随之减弱。这个交叉点只属于报告中的测试配置，并非固定的系统常数。\n速度提上去之后，复杂推理为什么会掉分，切回自回归又能找回多少\n在生成吞吐量大幅拉升的同时，DiffusionGemma\n在复杂推理任务上的表现出现了明显下滑。\nGoogle\n模型卡中的测试对比\n记录了 DiffusionGemma 扩散思考模式与原始 Gemma 4\n在 AR+MTP 思考模式下的基准成绩：\n任务\nDiffusionGemma\n原 Gemma 4\nAIME 2026\n69.1\n88.3\nTau2\n56.2\n68.2\nMRCR 128K\n32.0\n44.1\n在数学竞赛测试 AIME 2026 上，扩散思考模式得分从 88.3 分下滑至 69.1\n分，落差达 19.2 分；在检验多轮工具调用与智能体规划能力的 Tau2\n测试中，得分从 68.2 分下降至 56.2 分；在长上下文多针检索任务 MRCR 128K\n上，得分从 44.1 分下降至 32.0 分。\n与这一质量落差相对照的，是模型保留的 AR fallback 机制。当工程人员将\nDiffusionGemma 训练完成的最终权重重新加载回原版 Gemma 4\n的经典自回归执行流程中，并在自回归模式下展开思考过程时，其各项推理指标出现了大幅回升：AIME\n得分从 69.1 分恢复至 84.2 分（对比原始模型的 88.3 分），GPQA 得分从 73.2\n分恢复至 79.8 分（对比原始模型的 82.3 分），BigBench Extra Hard 得分从\n47.6 分恢复至 59.1 分（对比原始模型的 64.8\n分）。此时，模型的解码速度也相应回落至自回归基线的约 204 tok/s。\nAR fallback\n的测试结果提供了重要的归因线索。指标的明显回升表明两阶段追加训练并未彻底破坏存储在模型权重底层的知识表征，提示运行时的扩散生成模式承担了部分质量损失。\n但这一回升并不等同于无损转换。首先，切回自回归模式后，各项指标距离原版\nGemma 4 依然存在 3 到 6\n个百分点的性能缺口；其次，由于技术报告缺乏单独强化学习、单独蒸馏以及联合因子设计的完整对照消融实验，无法在定量层面干净地区分质量差距究竟有多少来自于追加训练的数据预算限制，有多少来自于蒸馏压缩采样步数对输出多样性的影响，又有多少来自于\nSD·RL 训练导致的更短平均输出长度。\n高 TPF\n生成与深度逻辑推理之间可能存在串行依赖深度的机制权衡。在自回归生成中，每输出一个推理\ntoken，模型就执行一次严格基于全部既有前缀的有向条件计算\np\n(\nx\ni\n|\nx\n<\ni\n)\np(x_i | x_{<i})\n。复杂的数学推导和代码逻辑具有高度的串行因果依赖，后续推导步骤必须建立在前面步骤成立的基础之上。\n在文本扩散模式下，单次前向计算虽然能够并行更新约 20 个 token\n的内容，但这 20 个 token\n是在同一个前向步内通过双向注意力协同调整的，属于同层并行更新，在机制推断上无法等价于连续执行\n20 步串行状态转移所具备的因果计算深度。SD·RL\n训练过程也反映了这一倾向：当任务奖励进入平台期后，继续训练主要在压低模型的预测熵并缩短输出文本长度，最终\ncheckpoint 的平均输出长度接近 SFT checkpoint\n的一半，作者也承认这放弃了长链条推理可能带来的部分能力收益。\n生成顺序不再只有一种，不同负载下的取舍依然分明\n结合执行机制、吞吐条件与推理能力的综合表现，文本扩散在工程实践中的定位逐渐清晰。它并非在所有维度上全面替代自回归，而是为特定任务特征提供了一个可以在运行时进行针对性配置的性能档位。\n低并发、长输出是优先测试扩散模式的一类负载，因为 decode\n提速有更多空间抵消较高的首 token 延迟。但现有 SPEED-Bench\n结果来自特定测试集与请求形状，不能直接外推到所有长文本任务。局部文本编辑与中间填空是另一个优先实验方向：256-token\ncanvas\n内的双向注意力可以同时参考待编辑区域前后的上下文，也允许后续候选影响前序位置。不过\nDiffusionGemma 自身缺乏散文修订与跨 block 编辑的独立 benchmark，canvas\n写入 KV cache 后也无法跨块回写，实际编辑收益仍需结合具体工作流验证。\n较高并发下，成熟的 continuous batching\n已能提高硬件利用率与总吞吐，扩散模式减少单请求访存的收益随之缩小。延迟敏感的短工具调用与请求路由通常只输出几十个\ntoken，系统耗时主要由 prefill 与首 token 延迟主导，扩散模式较高的首\ntoken\n延迟反而可能增加响应时间。强约束结构化输出也仍偏向成熟的自回归栈：自回归引擎可以在逐\ntoken 生成过程中应用文法或 JSON Schema\n状态机，而离散扩散单步更新多个位置，现有语法状态机难以直接施加同样的逐\ntoken 约束。根据\nvLLM\n仓库的结构化输出讨论\n，当前扩散解码主要依赖全局生成后的校验与重试。\n按并发程度与串行依赖深度划分的文本扩散候选任务和自回归默认任务\n评估这一技术路线的后续演进，关键在于接下来出现的一系列实测证据。我们需要观察在控制相同任务准确率与输出长度的前提下，扩散模型在更广泛的任务集上是否依然能够维持端到端响应耗时的实际优势；也需要观察在代码局部重构与文本编辑场景中，原生双向画布去噪能否在编辑质量上系统性超越成熟自回归模型搭配外部编辑循环的方案；而在模型层面上，未来的采样器蒸馏算法或新型混合架构能否在保持高\nTPF 并行输出的同时，有效弥合串行因果推理深度的差距。\n在这些问题获得进一步数据验证之前，从左到右单向提交的自回归范式依然是复杂逻辑推理与通用生产服务的默认选择。DiffusionGemma\n带来的变化，是让生成顺序从固定的模型假设，变成一个可以根据任务特征单独测试的运行选项。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/diffusiongemma-text-diffusion-20260816.html",
-      "content_chars": 7596,
-      "content_sha256": "620fdbeda1931aeeed2571a99b84eed62627efb10aa0f98fdd37855397f48c4b",
-      "content_fetched_at": "2026-08-16T21:27:39.900944+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:ae1f7145caed9fe1",
-      "kind": "publish",
-      "text": "yage-share published: 一个闹钟，一份验收，就能养一个代码库",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-16T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/alarm-acceptance-maintenance-20260816.html",
-      "title": "一个闹钟，一份验收，就能养一个代码库",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI 编程\nAI Agent\nBoris\nCherny\n前段时间做了个实验。团队建了一个专用的 Slack 频道，让 Claude\n每天在里面跑一套例程，跨 iOS、Android、桌面、Web、CLI 和 Agent SDK\n去做机械维护。跑了几个星期，这套例程一共提了 388 张 PR。截至发帖，其中\n180 张通过了 Claude Code Review 与人工审查，合并进了代码主干。\n浅色书桌上的时钟、清单和一张待审卡片\n很多人习惯把这组数字当成单纯的模型新闻，觉得 Claude 已经能替\nAnthropic 维护软件了；也有人觉得这无非是定时任务挂个\nClaude，没什么新鲜。这两种看法都没看到点子上。388 张 PR\n最显眼的地方，并不能归功于单次对话有多聪明。一套每天自己启动的维护机制，正在持续给代码主干供应变更。大家真正该看的，是这套机制到底搭在怎样的基础设施上。\n这跟我们在\nHarness\nEngineering\n里聊过的观察是一回事。OpenAI 拿 Codex\n做内部产品，模型会顺手照搬仓库里变差的写法；Cursor\n并行修改同一套代码，问题往往先卡在协调和合并环节，单段代码本身倒不见得写不出来。两边的踩坑经验指着同一个地方：体力活交给代理以后，真正决定成败的是环境、约束和验收。OpenAI\n最初每周五抽 20% 的时间人工清理 slop，很快发现扛不住，后来换成让后台\nCodex 定期扫描偏离、打分、提交修复 PR；Cursor 把实现层分派给\nworker；Cherny\n则往前多走了一步，把触发权从某一次聊天里抽出来，交给了每天按时响铃的例程。\n388 张 PR\n看起来像模型新闻，其实是 Infra 新闻\n原帖展示的配置其实挺简单。频道名字叫\nproj-claude-maintains-apps\n，Claude\n每天在里面跑例程，产物就是 GitHub PR。合入主干前，那 180\n张提交都经过了自动审查与人工审查。要是哪次跑出来的结果不合心意，团队不会只去修补那张单薄的\nPR，还会直接叫 Claude 调整例程定义，让第二天的运行换上新规矩。\n在\nYC\n访谈\n里，Cherny\n把本地循环看作本质上的定时任务，把例程看作同套逻辑放到了云端，电脑随手合上也不影响运行。这和我们在\nLoop\nEngineering\n里聊到的点完全一致：循环本身到处都有，真正难得的是怎么验收、怎么观察、下一次怎么修正。他还提到这类重复任务不需要共享完整的对话上下文，但可以共享记忆。这两句话把问题拉回了工程现实。只要昨天跑过的痕迹落在了代码库、运行日志、PR\n和例程配置里，哪怕聊天窗口全关掉，每天清空上下文重新跑也完全行得通。\n388 和 180 说明这条流水线在最近几周持续产出候选 PR。在已提交的 PR\n里，大约 46.4%\n合并进了主干。这个数字不代表模型准确率，也不是首次成功率；它的分母算的是已经提交的\nPR 数，没算发现的问题总数，也没算代理运行的总轮数。至于剩下 208\n张未合并的\nPR，公开材料并未说明是驳回、重复、过期还是在排队。这里说明了一件具体的事：候选提交天然必须多于实际合并。审查漏斗本身就是这套机制的一部分，不需要事后补加。\n两条旧路：写成程序，或写成一次聊天\n过去做自动化维护，大家基本只有两条路走：要么把逻辑硬写进程序，要么拉个人开个会话现场聊。走第一条路，就是把维护写成写死的脚本与规则。靠静态分析去猜代码有没有人调用，拿\nlinter\n扫一遍重复逻辑与命名，再在工作流里把分段、重试和拼接写得严丝合缝。我们以前做中翻英任务就踩过这个坑。待翻译的文本一长，模型就开始丢三落四；前面的术语翻得好好的，到后面段落又变了样；输出里偶尔还夹着中文，动不动还遇上接口超时。为了兜底，我们只能一段段切文本、塞术语表、写正则扫残余中文、记录失败断点。输出成功率虽说提上去了，大把精力却全耗在给这套写死的流程擦屁股上。程序能应付的意外，永远超不过预先写下的那几条规则。\n死代码清理比翻译还要难用硬规则管住。编译器能确认静态不可达的地方，删掉自然安全；可要是碰上那些疑似没人碰、编译器又不敢打包票的代码，写再厚的检测器也防不住漏网之鱼。判定规则越垒越厚，到最后维护这套检测器本身，反倒成了团队甩不掉的新负担。\n第二条路则是人工打开聊天窗口，把代码丢给模型扫一遍，让它提个\nPR。现在的模型做这种单次任务大多驾轻就熟。麻烦在于会话一关，清理工作跟着停摆。就算你在提示词里写了明天接着做，明天也不会自己跑起来。终端进程退出了，昨晚的运行日志就孤零零躺在磁盘里，没人会把它重新塞回模型的上下文。\n这两条老路其实共享着同一个前置假定：要么把所有判断逻辑提前写死在程序里，要么就得让人一直坐在屏幕前守着。结果确定性换了个打法，直接绕开了这个长期以来的习惯。\n结果确定性让 cron 和\nwebhook 变得很贵\n换到结果确定性的做法，思路就不一样了。我们不用把每一步怎么走定得死死的，只要把终点长什么样、到了终点怎么验证交代清楚就行。中间怎么倒腾随它去，可以先检查后改写，也可以边写边调。代理自己能读上一轮留下的文件，跑一段验证脚本，看到报错再接着修。工程师把力气省下来盯好最后的验收环节，用不着提前把所有可能的分支预先编译进代码。\nCherny\n拿来清理死代码的例程，走的正是这套路子。代码静态不可达的，顺手直接拔掉；要是碰上拿不准的疑似废弃代码，第一天先插上日志埋点，第二天根据日志确认它是否真的没人使用，确认后才开\nPR\n提议删掉。工程师不用费劲去写一套证明某段代码永远不会被调用的复杂程序，只要定好分两天交差的结果：第一天埋点观察，第二天照着数据做决定。中间具体怎么摸索交给代理，只要验收标准卡得足够清晰。\n先留下观察、再决定去留的两拍示意图\n这样一来，触发器只需要老老实实做最纯粹的唤醒工作：要么定点响铃，要么等版本发布、CI\n跑红、或者新提了 PR 之后立刻介入。定时任务还是那个定时任务，webhook\n也还是那个\nwebhook。真正身价倍增的，是挂在触发器后面的那套执行环境。它摆脱了按部就班跑死脚本的旧模式，摇身一变成了能翻看昨夜日志、自己写脚本跑验证、并自主决定下一步怎么走的智能环境。\n表面上看，定时任务确实还是定时任务，但触发器背后再也不用画满处理各种特例的流程图了。做单次任务可以这么搞，我们在\n从过程确定性到结果确定性\n里写过这个逻辑；Cherny\n带来的新启发，则是把同套逻辑拉长到了跨日连续运行的尺度上。要是闭环必须有人坐在旁边盯着才能转，那它充其量只是个辅助工具，还算不上真正的维护基础设施。\n这层 Infra 仍然应该很薄\n既然繁琐的逻辑已经交给代理去跑，基础设施这层就用不着急着堆成庞大的工作流引擎。翻看目前公开的落地经验，大家伸手就能用上的，其实只有四样很轻便的构件。\n时钟、日志、印章和文件夹并排放在书桌上\n第一样是唤醒机制。Cherny\n挑了每天定时跑一轮，产品文档里也提到例程支持通过 API 或者 GitHub\n事件来唤醒。至于那 388 张 PR\n背后有没有混合多种触发方式，公开材料并没有细说。在实际业务里挑一种顺手的就够，比如每天固定扫描一回，或者每次发版后跑一次检查，没必要过早去设计一套复杂的触发拓扑。\n第二样是把上一轮的上下文甩到模型外面。新加的日志埋点、代码提交记录、提出来的\nPR\n以及例程自己的配置，都比聊天记录管用得多。做这种周期任务不用带上整个对话历史，下一轮跑起来就是一个干净的新起点；模型该读的是代码库里沉淀的客观证据，毕竟聊天记录随手就丢了。甩到外面不等于扔掉。第二天的会话醒来，先得知道上一次做到哪儿、当时为什么停。我们每天把各家\nCLI 的会话自动导出成统一的 Markdown\n归档，再配一套先关键词、后语义的检索，新一轮代理缺背景时自己去翻档案（导出用\nai_session_export\n，检索\nskill 在\ncontext-infrastructure\n）。会话可导出、可搜索之后，跨日共享记忆才落到下一轮真的读得到的东西上，这跟死代码例程翻看昨夜日志是同一件事的两面。把上下文做成文件还能带来意外的收获。OpenAI\n的评测环境里，好几个 agent\n在没人指挥的情况下，自己把一个包代理服务改造成了跨运行周期的共享留言板，集群层面的协作顺着共享文件就冒了出来（\n案例复盘\n）。只要共享存储满足了基本条件，后一轮智能就能踩着前一轮留下的文件接力。\n第三样是把完工的边界划得清清楚楚。在清理死代码这件事上，完工的标准可以写得具体：静态不可达的部分删干净，拿不准的地方埋好点，等日志确认未被使用后再提\nPR\n建议删除。做翻译任务也是一样，完工标准就是没有中文残留、排版格式整齐、专业术语前后统一。要是连怎样才算完工都说不明白，定时任务跑起来就只会源源不断制造垃圾提交。我们在\nHANDBOOK.md\n的实验\n里就聊过，结果确定性同样会翻车，复盘看到的短板就在运行时反馈、分层状态和提交门控这几处。\n第四样是死死把住合入主干的关口。在提交的那些 PR\n里面，截至发帖已合并的 180\n张都经过了机器审查与人工审查。写代码和合代码本来就是两码事，46.4%\n的合入比例正好印证了这层审查漏斗的存在。要是候选提交的数量猛增，人工审查很容易看着绿灯和摘要就顺手放行。团队的审查带宽一旦跟不上，整条流水线就会卡在审核上，倒不会卡在模型写不出代码这里。\n如果只是低频跑跑单个例程，还犯不上去搬队列、租约和精确一次消费这套重型武器。只有唤醒频率大幅拉高、不同提交开始频繁撞车，才有必要考虑引入这些机制。当下拿来参考，还是轻装上阵最划算。\n可抄的是挂载方式，不是内部架构\nOpenAI 的后台清理、Codex 的定时任务，还有 Cursor 与 Devin\n的自动化功能，都在想方设法把唤醒代理的过程做成产品能力。各家的日常编码\nharness 在功能层面已经撞衫撞得差不多了，我们在\n横向对比\n里盘点过，延时唤醒与定时任务也都在列。公开的接口文档能证明它们支持定时拉起，却证明不了它们能拿到同样的合并成绩，更说不准漏报、去重和自动重试是不是已经有了标准答案。Anthropic\n同样没有公开内部实现，盲目去猜内部架构很容易扑空。\n真正能搬来用的，是这套机制的挂载方式。挑一件以前写死程序很难搞定、验收起来却一清二楚的体力活，挂上时钟或者事件触发器，把验收要求写成下一轮代理读得懂的格式。权限上只给它提建议的资格，不直接给合并权限，更不能塞给它生产环境凭据。\nClinejection\n那个事故里，不受信任的 issue 标题混进了带 shell\n权限的流水线，直接捅出了令牌泄漏；而在\nPocketOS\n里，代理在测试环境找不到凭证，从无关文件里翻出高权限令牌，几秒钟就误删了生产\nvolume\n和同域备份。这类事故全砸在权限敞口上，跟提示词写得漂不漂亮毫无关系。\n要是跑出来的结果不合预期，该做的是去修改明天还会继续跑的例程，不要随手在代码里硬塞分支。Cherny\n在公开分享里就提过这种做法。某天看似一把通过的\nPR，也可能建立在此前对例程的调整上。所谓的一次跑通，排除不掉产线早已反复打磨的可能。\n过去习惯了过程确定性，大家总想把心思花在写一套面面俱到的复杂程序上；换到结果确定性，重心自然挪到了触发器和验收契约上。那些平日里看着最不起眼的定时任务，悄悄变成了杠杆很高的基础设施。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/alarm-acceptance-maintenance-20260816.html",
-      "content_chars": 4706,
-      "content_sha256": "8f1c8145fb3f62e08335c10e002e834ca962e7bde11b7f744b172b92c290d21e",
-      "content_fetched_at": "2026-08-16T21:27:40.077968+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:cf5c4edae9606090",
-      "kind": "publish",
-      "text": "yage-share published: GPU 之后，AI 公司在抢通电日期",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-15T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/gpu-ai-power-competition-20260815.html",
-      "title": "GPU 之后，AI 公司在抢通电日期",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "产业与竞争\nAI 产品与平台\n过去两年，大家看 AI 基建，眼睛多半盯在芯片上。Amazon 这类公司要买\nGPU、建云、跑模型，卡不够就开不了工。TSMC 到 2026 年一季度还在说，AI\n和高性能计算的供应仍然紧。Nvidia\n自己是卖卡的。它现在要操心的是另一头：客户把卡买回去以后，有没有电、有没有机房，能把卡用起来。\n2026 年 8 月同一周，这两家公司都把钱和规划放到了电上。\nReuters\n转述 The Information 的报道：Nvidia 打算先向德州的电力和园区开发商\nLancium 投 20 亿美元，拿大约两成股份；电接上了、约定的进度到了，再最多加\n10 亿美元。同一周，\nAmazon\n确认要在 Pecos County\n做数据中心园区，计划先在园区旁边自己发电，以后再按进度接到公共电网上。\n同一周里的两条通电路径：Nvidia\n入股开发商，Amazon 计划现场发电\nLancium 在西德州找地、建园区、接电网。Nvidia\n如果投成了，就是入股这个做通电的人。电接上了，开发商更值钱，Nvidia\n的股份也更值钱。第二笔钱要等接通电进度才付。\nAbilene 已经有人在用这些园区。\nOracle\n宣布 AI\n工作已经上线。\nCrusoe\n写的是先按 200 兆瓦以上来设计，再分阶段做到 1.2 吉瓦。\nAmazon\n走的是另一条路。它打算在园区旁边自己发电，先不用去德州大电网排队。马斯克在孟菲斯用燃气轮机把\nColossus 先开起来，也是这一套，\n当时写过\n。\nPacifico\n把设计写成：初期不从电网买电，也不往回送。Amazon\n说以后还是要接回电网。许可文件写了 35 台燃机、名义出力 5,000\n兆瓦，按全年满负荷小时数算出的排放上限超过 3,300 万美吨。\n一家卖卡，一家买卡建云。两家同时在抢的，是某个日期、某块地、能送进机房的电。\n为什么通电日期变成了竞争变量\n芯片先一步抵达建设链条。数据中心的建筑壳体可以在一两年内建成，但把电接入壳体往往需要漫长的时间。铺设高压线路与建设专用变电站常年耗时；根据\nPower\nMagazine\n报道的 2025\n年二季度行业调查，大型变压器平均交付周期延长至大约 128\n周，发电机升压变压器大约需要 144 周。\n微软对这种错配的表述十分直白。CFO Amy Hood 在\n2026\n财年一季报\n中指出，过去几年公司面临的瓶颈是能够安放芯片的空间或电力。CEO Satya\nNadella\n补充说明，芯片可能已经作为库存到位，却没有配套完成调试的机房可供通电使用。\n德州主电网的数据将申请与现实拉开差距。ERCOT 在\n2026\n年 6 月运行概览\n中披露，大负荷接入申请大约为 474\n吉瓦，其中约九成标注为数据中心；真正获准送电的容量只有 8.926\n吉瓦。电网实际观测到的负荷峰值，是各项目各自月度峰值加总后的 3.966\n吉瓦。\n德州大负荷从申请到获准送电再到观察用电的漏斗\n这里的瓶颈并非源于美国突然发不出电。芯片还在到货，房子也还能盖，卡住的是电能不能在说好的那天走进这间机房。谁先锁住这个日期，卡才能开始干活。\n三条已经能看见的抢法\nNvidia\n如果按报道成交，是在入股一个已经在德州做园区、接电的开发商。Lancium 2017\n年成立时就说，要把用电搬到风电最集中的地方。\nHouston\nChronicle\n报道，它在 Fort Stockton\n的园区一度登记成可以在几秒内加减用电的负荷。公司后来向州里自称，Abilene\n约 1.2 吉瓦已经签约在建，另外还有 3 吉瓦拿到了接入批准。\nAmazon 则选择自建现场电源，以此绕过主电网的队列等待。\nE&E\nNews\n报道了这种在园区旁直接建设燃气电厂的新趋势。这种做法实际上是用一套工程链条替换另一套：燃气轮机需要重新排队采购，燃气支线需要申请许可，空气排放需要接受州环保审查，燃料价格与碳排放成本也会在电厂整个寿命周期内持续存在。Amazon\n表示自建发电不会抬高德州居民电价，同时确认未来仍打算接回电网。\n两家公司将项目选在西德州，也体现了把负荷直接搬到电源附近的考量。西德州同时具备风电过剩节点、天然气与便宜土地。Lancium\n利用了可再生能源过剩的天然优势，Amazon\n依靠气源、土地和采出水配套。Virginia 依然是全美最大的存量市场，\nUtility\nDive\n将 Texas\n排在第二。企业前往德州，是因为更容易将公共输电网的瓶颈转化为内部可控的工程变量。相比之下，在北弗吉尼亚新建骨干输电线路，PJM\n官方评估需要五年以上。\n现在的地图：区域和成熟度\n在区域格局上，德州依然是边际扩张最快的地区之一，原因在于开发商可以迁址、分期建设以及自建电源。然而，这种扩张速度正在受到政策调整。2026\n年 6\n月，德州州长要求数据中心自行承担基础设施费用，降低对居民电价的影响；8\n月又根据审计要求，暂停推进新的电网互联审批。PJM\n与北弗吉尼亚市场的刚性更强：容量拍卖紧密贴合电力系统可靠性需求，数据中心预测的增量远高于新清算的发电能力，社区与输电许可审批也更加严格。\n相比区域划分，同一兆瓦所处的成熟度层级对资产价值起着更决定性的作用。规划中的园区、已签约的容量、正在土建的机房壳体，以及已经获准送电并正式用电的设施，各阶段对应的现金流确定性相差甚远。市场已经在对接近稳定运行、出租给大客户的通电资产进行重估定价。Digital\nRealty 与 Blackstone 成交的北弗吉尼亚三处资产合计 288 兆瓦，毛值口径 78\n亿美元。上游设备制造端，客户也在提前数年下单锁定变压器与开关。通电日期已经被拿来标价。\n以后看扩产，先问通电日期\n以后看到某家公司又订购了多少芯片、宣布了多少吉瓦级别的园区规划，可以先考量四个更为具体的执行问题：电力是否已经获准送到这块场地？关键设备的交货期有没有提前锁定？环保与社区审批程序是否履行完毕？如果通电时间晚了一年，合同规定由谁支付违约成本？\n卡还在出货。下一场能看见的竞争，是谁先让这些卡插进已经来电、可以开机的机房。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/gpu-ai-power-competition-20260815.html",
-      "content_chars": 2538,
-      "content_sha256": "e541afe2bcfb96b0b7291307fb5091b24964c5db7a625148bf24088feb6762b0",
-      "content_fetched_at": "2026-08-16T21:27:40.280719+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-08-17",
+  "collect_window": {
+    "start": "2026-08-15T00:00:00+00:00",
+    "end": "2026-08-16T21:26:24.714535+00:00",
+    "hours": 45
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "31973481699",
+    "commit": "2f3ee57"
+  },
+  "stats": {
+    "total": 7,
     "by_kind": {
       "publish": 7
     },
@@ -197,9 +28,576 @@
       "zusda": 1,
       "yage-share": 3
     },
+    "failed_lists": [
+      "redsiege-blog"
+    ],
+    "sources_ok": 50,
+    "sources_failed": [
+      {
+        "id": "redsiege-blog",
+        "error": "no_candidates"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 8,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 14,
+      "calls": 14,
+      "prompt_tokens": 15946,
+      "completion_tokens": 2678,
+      "total_tokens": 18624,
+      "prompt_cache_hit_tokens": 12928,
+      "prompt_cache_miss_tokens": 3018
+    },
     "by_content_status": {
       "failed": 3,
       "ok": 4
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:9d56e06df21249d1",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "DMA-Memory-Editor",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html",
+      "text": "unknowncheats-ac published: DMA-Memory-Editor",
+      "at": "2026-08-16T21:26:24.714535+00:00",
+      "external_id": "a:9d56e06df21249d1",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html",
+      "title": "DMA-Memory-Editor",
+      "content": "unknowncheats-ac published: DMA-Memory-Editor",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-16T21:27:07.116019+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-16T21:26:24.714535+00:00",
+      "collected_at": "2026-08-16T21:26:24.714535+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "DMA-Memory-Editor",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:611b116d91c87ddc",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "vibecoding or manual coding ?",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html",
+      "text": "unknowncheats-ac published: vibecoding or manual coding ?",
+      "at": "2026-08-16T21:26:24.714535+00:00",
+      "external_id": "a:611b116d91c87ddc",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html",
+      "title": "vibecoding or manual coding ?",
+      "content": "unknowncheats-ac published: vibecoding or manual coding ?",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-16T21:27:18.118186+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-16T21:26:24.714535+00:00",
+      "collected_at": "2026-08-16T21:26:24.714535+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "vibecoding or manual coding ?",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:b577975cb22a4a7b",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "ARP Spoofer",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767527-arp-spoofer.html",
+      "text": "unknowncheats-ac published: ARP Spoofer",
+      "at": "2026-08-16T21:26:24.714535+00:00",
+      "external_id": "a:b577975cb22a4a7b",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767527-arp-spoofer.html",
+      "title": "ARP Spoofer",
+      "content": "unknowncheats-ac published: ARP Spoofer",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767527-arp-spoofer.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-16T21:27:29.157019+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-16T21:26:24.714535+00:00",
+      "collected_at": "2026-08-16T21:26:24.714535+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/767527-arp-spoofer.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "ARP Spoofer",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767527-arp-spoofer.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:248c1b26a0e6dd71",
+      "who": "zusda",
+      "who_url": "https://zusda.github.io/",
+      "action": "publish",
+      "target": "从零开始的LLM 10. mem0原理及API使用",
+      "target_url": "https://zusda.github.io/2026/08/13/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-10/",
+      "text": "zusda published: 从零开始的LLM 10. mem0原理及API使用",
+      "at": "2026-08-16T21:26:24.714535+00:00",
+      "external_id": "a:248c1b26a0e6dd71",
+      "url": "https://zusda.github.io/2026/08/13/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-10/",
+      "title": "从零开始的LLM 10. mem0原理及API使用",
+      "content": "前言\n本文将介绍 mem0 的原理以及简单的agent制作。\n经过前面的学习，我们已经系统地完成了大语言模型（LLM）的基础部分，主要参考了以下资料：\n《动手学深度学习》\n《蘑菇书》\n《Happy-LLM》\n《Hello-Agents》\n《all-in-rag》\n到这里，可以认为已经具备了继续深入学习 Agent 的基础能力。\n接下来的内容将不再像之前那样按照固定课程循序渐进，而是更多围绕当前\nAgent 领域的研究方向展开。学习内容既会涉及工程实践（如各种 Agent\n框架、工作流、记忆系统等），也会涉及算法与模型层面的探索（如多模态、持续学习等）。\nGenerative Agents\nLetta\nA-MEM\nVoyager\n这条路线主要围绕\nAgent 的持续学习（Continual\nLearning）\n展开，也是我目前最感兴趣的方向：\n如何让一个\nAgent\n在长期运行过程中不断积累经验、提升能力，而不是每次都从零开始。\n目前来看，大致有两种思路：\n不修改模型本身。\n仅通过\nPrompt、记忆系统（Memory）、RAG、工具调用等机制，使 Agent\n能够不断积累知识和经验，实现能力的持续增长。\n修改模型本身。\n基于 Agent\n长期运行过程中积累的对话、笔记和总结等数据，在合适的时机对模型进行持续训练（Continual\nFine-tuning），使模型真正将这些经验内化，而不仅仅依赖外部记忆。\n由于这一阶段更多是阅读论文、分析开源项目、验证实验以及整理个人理解，而不是单纯跟着教程学习，因此资料收集、实验和整理都会比之前花费更多时间。\n相比之前学习的 A-MEM，mem0\n在实际应用中的知名度和社区活跃度都更高，整体也更加成熟。本章节会花一些时间先了解\nmem0 的核心原理，然后再基于 mem0 实现一个简单的 Agent。不过mem0的v2和v3\npipeline版本实现有非常大的不同，我们先讲论文中v2的实现，再分析v3的不同。\n和之前的 A-MEM 类似，这次我们同样会把重点放在“记忆系统是如何融入\nAgent”这件事情上。不过这次不再使用\nLangGraph，整体实现会更加简单，也更方便我们直接理解 mem0\n的使用方式。\n1. Mem0 原理\n论文地址：https://arxiv.org/abs/2504.19413\nMem0\n的核心目标是：\n从对话中提取长期有价值的信息，并将这些信息持续写入、更新到长期记忆中，同时支持后续检索。\n从整体流程来看，可以将 Mem0 理解为三个主要部分：\nExtraction：从对话中提取 candidate memories\nUpdate：将 candidate memories 与已有 memories\n进行比较并更新\nRetrieval：从长期记忆中检索与当前 query\n相关的信息\n1.1 提取阶段（Extraction Phase）\nMem0 的记忆提取通常以一对消息作为当前输入，即：\n一条 user message\n一条 assistant response\n可以表示为：\n\\[\n(m_{t-1},m_t)\n\\]\n其中，\n\\(m_t\\)\n表示当前消息，\n\\(m_{t-1}\\)\n表示紧邻当前消息的上一条消息。\n但是，仅仅将当前消息对交给 LLM 并不足以判断哪些信息值得长期保存。\n因此，Mem0 会进一步提供一些\n历史上下文信息\n，共同构成\nextraction 的输入。\n1.1.1 当前消息对（Current\nMessage Pair）\n当前消息对：\n\\[\n(m_{t-1},m_t)\n\\]\n通常可以理解为：\n1\n2\n3\nUser: 我最近开始学习 LangGraph。\nAssistant: LangGraph 可以用于构建有状态的 Agent 工作流……\n这部分是当前 extraction\n最重要的信息来源，因为新的长期记忆通常与当前对话内容直接相关。\n1.1.2\n对话总结（Conversation Summary / Summary Context）\n如果每次提取记忆时，都把整个 conversation history 放进 LLM\nprompt，那么随着对话不断增长，prompt 会越来越长。\n因此，Mem0\n会维护一种\n对历史对话的压缩表示\n，用于在不保留全部原始消息的情况下，为\nLLM 提供更长期的上下文。\n例如，一个较长的 conversation 可能包含：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n第1轮\nUser: 我叫 Bob。\n第2轮\nUser: 我是一名程序员。\n第3轮\nUser: 我主要使用 Python。\n第4轮\nUser: 最近开始学习 LangGraph。\n第5轮\nUser: 我还在研究 A-MEM。\n...\n第30轮\nUser: ToolNode 是干什么的？\n经过 summary 后，可以形成类似：\n1\n2\n3\n用户 Bob 是一名程序员，主要使用 Python，\n近期正在学习 LangGraph，并研究 A-MEM、Agent Memory\n以及 ToolNode 等相关技术。\n这个 summary 的作用并不是直接充当最终\nmemory，而是作为\n历史上下文压缩信息\n，帮助 extraction LLM\n理解当前对话所处的背景。\n因此，可以将它理解为：\nSummary 解决的是“历史太长，无法全部放入 extraction\nprompt”的问题。\n需要注意的是，\nS 是针对当前 conversation history\n生成的总结信息\n，其作用是压缩当前 conversation\n中的历史内容。因此，当开始一个新的 conversation 时，通常会对应新的\nconversation context / summary，而不会直接继承上一段 conversation 的\nS。\n换句话说，S 主要用于帮助 extraction 阶段理解\n当前 conversation\n的历史背景\n，而不是一个跨 conversation 永久保存的长期\nmemory。\n1.1.3 最近的历史消息（Recent\nMessages）\n除了 summary 之外，Mem0 还可以提供最近的一部分历史消息：\n\\[\n{m_{t-n},m_{t-n+1},...,m_{t-2}}\n\\]\n这些消息用于保留\n比 summary\n更具体、更细粒度的近期上下文\n。\n例如：\n1\n2\n3\n4\n5\n6\n7\n最近历史消息：\nUser: 我最近开始研究 Agent Memory。\nAssistant: Agent Memory 可以分为短期记忆和长期记忆……\nUser: 我现在正在看 A-MEM。\nAssistant: A-MEM 使用类似记忆网络的方式组织长期记忆……\n这些信息可以帮助 LLM 判断当前消息中的内容是否与最近的对话有关。\n1.1.4 Extraction Prompt\n最终，Mem0 会将这些上下文共同提供给 LLM：\n\\[\nP=\n\\left(\nS,\n{m_{t-n},...,m_{t-2}},\n(m_{t-1},m_t)\n\\right)\n\\]\n其中：\n\\(S\\)\n：历史 conversation 的\nsummary/context\n\\({m_{t-n},...,m_{t-2}}\\)\n：最近的一部分历史消息\n\\((m_{t-1},m_t)\\)\n：当前消息对\n然后通过 LLM：\n\\[\n\\phi(P)\\rightarrow\\Omega\n\\]\n提取出一组值得考虑保存的候选记忆：\n\\[\n\\Omega={\\omega_1,\\omega_2,...,\\omega_n}\n\\]\n这些\n\\(\\omega_i\\)\n可以称为：\ncandidate facts / candidate memories\n例如当前对话：\n1\n2\n3\nUser:\n我叫 Bob，是一名 Python 程序员。\n最近开始学习 LangGraph。\nLLM 可能提取：\n1\n2\n3\nBob 是一名程序员\nBob 使用 Python\nBob 正在学习 LangGraph\n此时这些内容还只是\n候选记忆\n，并不意味着已经直接写入长期记忆数据库。\n因此：\nExtraction\n的任务是“发现可能值得保存的记忆”，而不是直接决定数据库最终应该保存什么。\n最终是否 ADD、UPDATE、DELETE 或 NOOP，要在下一阶段决定。\n1.2 更新阶段（Update Phase）\nExtraction 得到：\n\\[\n\\Omega={\\omega_1,\\omega_2,...,\\omega_n}\n\\]\n之后，Mem0 需要判断：\n这些新的 candidate memories 与数据库中已有的 memories\n是什么关系？\n因为不能简单地把每一次对话产生的新信息全部\nADD\n到数据库。\n否则：\n1\n2\n3\n4\n5\n6\n7\n8\nUser: 我使用 Python。\n→ ADD\nUser: 我主要使用 Python。\n→ ADD\nUser: 我经常使用 Python。\n→ ADD\n最终数据库可能出现大量语义重复的 memory。\n因此，对于每一个 candidate fact，Mem0 会首先从已有 memory\n中检索语义上最相关的 memories（向量相似检索）。\n可以抽象为：\n1\n2\n3\n4\n5\n6\n7\ncandidate fact\n↓\n向量相似度检索\n↓\nTop-k existing memories\n↓\nLLM 判断如何处理\n对于每一个 candidate fact，Mem0 会将其与检索到的相关 existing\nmemories 一起交给 LLM，由 LLM 判断应该对长期记忆执行哪一种操作：\n操作\n含义\nADD\n数据库中不存在语义等价的 memory，因此创建新的 memory\nUPDATE\n已存在相关 memory，但新的信息可以对其进行补充或完善，因此更新已有\nmemory\nDELETE\n新信息与已有 memory 发生冲突，使原 memory\n失效，因此删除或标记其为无效\nNOOP\n新信息不会对现有 knowledge base 产生实际变化，因此不做任何修改\n1.3 Mem0 Graph Memory\n前面的\nExtraction + Update\n主要解决的是：\n从对话中提取长期记忆，并判断这些记忆应该如何写入或修改。\n在此基础上，Mem0 还提供\nGraph\nMemory\n，用于将记忆中的\n实体（Entity）及其关系（Relationship）结构化组织起来\n。\n也就是说，普通 Memory 主要关注：\n1\n“Bob 正在学习 LangGraph”\n而 Graph Memory 会进一步将它结构化为：\n1\nBob ──learns──> LangGraph\n因此，Graph Memory 的核心就是：\n将记忆中的信息表示成由 Node 和 Edge\n构成的知识图谱，从而利用实体之间的关系进行存储、更新和检索。\n1.3.1 Graph 的基本结构\nMem0 的 Graph Memory 可以抽象表示为：\n\\[\nG=(V,E,L)\n\\]\n其中：\n\\(V\\)\n：\nNodes\n，表示实体（Entities）\n\\(E\\)\n：\nEdges\n，表示实体之间的关系（Relationships）\n\\(L\\)\n：\nLabels\n，表示实体的语义类型等标签信息\n1.3.2 Node（实体节点）\nNode 对应 Graph 中的一个\nEntity\n，例如：\nBob\n、\nPython\n、\nLangGraph\n、\nGoogle\n每个 Node 主要包含：\nEntity Type\n：实体类型，例如\nBob → Person\n、\nGoogle → Organization\nEmbedding\nVector\n：实体的向量表示，用于语义匹配和检索\nMetadata\n：实体的其他元数据，例如创建时间等\n因此，一个 Node 可以抽象表示为：\n1\nv=(entity_type, embedding, metadata)\n1.3.3 Relationship（关系）\n在 Graph 中，\nRelationship 对应连接两个 Node 的\nEdge\n，用于表示两个 Entity 之间存在的语义关系。\n一个 Relationship 可以表示为：\n\\[\n(v_s,r,v_d)\n\\]\n其中：\n\\(v_s\\)\n：source\nnode，即关系的起点\n\\(r\\)\n：relationship，即两个实体之间的关系\n\\(v_d\\)\n：destination\nnode，即关系的终点\n例如：\n\\[\n(Bob,\\ learns,\\ LangGraph)\n\\]\n其中：\nBob\n是 source entity\nlearns\n是 relationship\nLangGraph\n是 destination entity\n在构建 Relationship 时，Mem0 会将关系转换成文本形式，例如：\n1\nBob learns LangGraph\n并对该文本进行\nembedding，得到关系的向量表示，用于后续的关系语义检索。\nRelationship\n不仅记录了\n两个实体之间是什么关系\n，还具有对应的文本表示和向量表示，从而可以参与后续的语义检索。\n1.3.4 Graph Memory 的构建\n当新的 memory 被写入 Graph Memory\n时，需要将其进一步结构化为实体和关系。\n整体可以理解为两个步骤。\nStep 1：Entity Extraction\n首先从新的文本 memory 中提取实体：\n1\nAlice works at Google and lives in San Francisco.\n可能提取：\n1\n2\n3\nAlice → Person\nGoogle → Organization\nSan Francisco → City\n这些实体成为 graph 中的候选 nodes。\nStep 2：Relationship\nExtraction\n然后从这些实体之间提取关系：\n1\n2\n3\n(Alice, works_at, Google)\n(Alice, lives_in, San Francisco)\n这里有一个非常重要的点：\n关系\n主要是\n在当前这次新提取出来的 entities\n之间\n建立的。\n也就是说，并不是把整个知识图谱中的所有实体两两组合，再让 LLM\n判断关系。\nStep 3：判断Entity\n是否已经存在\n系统首先需要判断：\n1\n2\nAlice 是否已经存在？\nGoogle 是否已经存在？\n根据检查结果，可能出现：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n两个 entity 都不存在\n→ 创建 Alice + Google\n→ 建立关系\nAlice 已存在，Google 不存在\n→ 复用 Alice\n→ 创建 Google\n→ 建立关系\nAlice 不存在，Google 已存在\n→ 创建 Alice\n→ 复用 Google\n→ 建立关系\n两个都存在\n→ 直接使用已有 nodes\n→ 建立或更新 relationship\n因此，\nentity matching / existence checking\n是避免知识图谱中产生重复节点的重要步骤。\nRelationship Conflict Detection\n当新的 relationship 到来时，还需要考虑它是否与已有 relationship\n冲突。Graph Memory 会进行 conflict detection，并由 LLM-based resolver\n判断已有关系是否已经过时。\n过时的关系不一定被物理删除，而可以被标记为\nobsolete\n/\ninvalid\n，从而保留历史信息。\n1.4 Mem0 的记忆检索（Retrieval）\n当用户提出新的 query 时，Mem0 需要从长期 memory\n中找到与当前问题最相关的信息。\nGraph Memory 中采用的是一种\n双轨检索策略（dual retrieval\nstrategy）\n。\n可以简单理解为：\n方法一：Entity-centric\nRetrieval\n第一条路径是：\n先从 query 中找到关键 Entity，再围绕这些 Entity\n在图中进行扩展，最终找到与这些 Entity 相关的 Memories。\n例如 query：\n1\nBob 最近在学习什么？\n首先从 query 中识别：\n1\nBob\n然后对 Bob 进行 entity-level 的语义检索，找到最相关的 entity。\n之后进一步查看这些 entity 的邻居关系，例如：\n1\n2\n3\n4\nBob\n├── uses ──> Python\n├── learns ──> LangGraph\n└── studies ──> A-MEM\n最终，方法一返回的是\n与命中 Entity 及其一阶关系相关entity的\nmemories 构成的候选结果集合\n，并对结果进行去重和排序。\nentity\n会记录其来源的memory。所以一个entity里面可能来自多条不同memory，但是都全部作为结果返回。会由后续的LLM进行判断是否相关。\n方法二：Relation-centric\nRetrieval\n第二条路径则不依赖于先找到某个实体，而是直接从\n关系三元组\n出发。\n例如知识图谱中存在：\n1\n2\n3\n4\n(Bob, uses, Python)\n(Bob, learns, LangGraph)\n(Bob, studies, A-MEM)\n(Alice, works_at, Google)\n每个 Relationship 在构建时都会形成对应的文本表示，例如：\n1\n2\n3\n4\nBob uses Python\nBob learns LangGraph\nBob studies A-MEM\nAlice works_at Google\n系统将 query 转换为 embedding，并与 Graph 中各个 Relationship\n的文本表示进行相似度匹配，得到与 query 最相关的 Top-k\nRelationships，并返回这些关系对应的文本描述。\n双轨检索结果融合\n两种检索方式会\n并行执行\n，分别得到 Entity-centric 和\nRelation-centric 的检索结果。Mem0\n将两路结果进行合并、去重并统一排序，最终选取得分最高的 Top-k\n结果，作为提供给 Agent / LLM 的相关记忆上下文。\n2. mem0 v3 pipeline 版本变动\n目前通过\npip install mem0ai\n安装的最新 mem0 版本，其默认\nPipeline 已经采用\nv3\n；而 mem0 论文中介绍的 Pipeline\n主要对应\nv2\n。\nv3 相比 v2\n在记忆写入、图数据组织以及检索方式等方面都进行了较大调整。因此，本节单独介绍\nv2 → v3 的主要变化。\n其中最显著的变化是：\nv3 不再使用 Neo4j\n等外部图数据库，而是直接移除了原有的 Graph\nMemory，并将部分图结构能力合并到 Memory Store 中。\n2.1 整体架构：从\nMemory + Graph 转向 Memory-centric\nv2 的整体架构可以理解为两部分：\nMemory Store\n+\nGraph Memory\n其中：\nMemory Store\n：负责存储和检索 memory；\nGraph Memory\n：负责提取 Entity，并通过\nEntity-to-Entity 的关系构建 Knowledge Graph。\nv3 则移除了独立的 Graph\nMemory，直接用同一个数据库存储memory和entity：\n1\n2\n3\nMemory Store\n├── Memory\n└── Entity → Memory 关联索引\n也就是说，v3 不再维护一个独立的 Entity-to-Entity Knowledge\nGraph，而是将 Entity 作为 Memory 的检索辅助结构。\n同时，原有图数据库相关代码被大幅移除，包括\nmem0/graphs/\n、\ngraph_memory.py\n等，Neo4j、Memgraph、Kuzu、Apache AGE、Neptune 等外部图数据库也不再属于\nOSS SDK 的 Graph Memory 实现。\n2.2 Memory 写入：从 “提取\n+ 更新” 变为 “增量累积”\n这是 v3 在 Memory 层面最重要的变化之一。\nv2：提取后再进行更新判断\nv2 的写入过程大致需要经过两个阶段：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n新消息\n↓\nLLM 提取候选 facts\n↓\n对每个 fact 检索已有 memories\n↓\nLLM 判断如何处理\n↓\nADD / UPDATE / DELETE / NOOP\n也就是说，v2 不仅负责发现新的 memory，还会主动判断新信息与已有 memory\n之间的关系，并决定是否修改或删除已有 memory。\nv3：提取后直接 ADD\nv3 则将这一过程简化为：\n1\n2\n3\n4\n5\n6\n7\n新消息\n↓\nADDITIVE_EXTRACTION_PROMPT\n↓\n提取新的 memories\n↓\nADD\n主要变化包括：\n使用\nADDITIVE_EXTRACTION_PROMPT\n直接提取新的\nmemory；\n不再执行 v2 中的\nUPDATE / DELETE / NOOP\n判断；\n新旧 memory 不再通过覆盖的方式更新，而是通过\nlinked_memory_ids\n建立关联；\n摘要\nS\n、recent messages 和当前 message pair\n等输入信息的整体构造逻辑没有发生根本变化，主要变化集中在\n提取之后的\nMemory 处理阶段\n。\n因此，v3 的核心思想可以概括为：\n不主动覆盖旧 memory，而是持续增加新的\nmemory，并通过关联关系表达新旧信息之间的联系。\n例如：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n旧 memory：\n\"用户喜欢 Python\"\n新 memory：\n\"用户现在更喜欢 Rust\"\nv2：\n可能判断 UPDATE，从而修改旧 memory。\nv3：\n保留两条 memory，并通过 linked_memory_ids 建立关联。\n这样做的好处是避免错误覆盖历史信息。例如，“喜欢 Python” → “喜欢\nRust”并不一定意味着前者是错误的，也可能只是用户偏好随时间发生了变化。\n因此，v3\n更倾向于\n保留完整历史信息，以支持时间维度上的推理\n。\n其代价也很明显：Memory 不再通过 UPDATE / DELETE\n自动控制规模，因此会持续累积，需要额外的删除和管理机制。\n手动删除机制\nv3 仍然提供显式的 Memory 管理能力，例如：\ndelete(memory_id)\n：删除指定 memory；\ndelete_all(filters)\n：根据条件批量删除；\ndelete_linked=True\n：删除某条 memory 时，同时沿\nlinked_memory_ids\n关联链删除相关的旧 memory，避免被替代的旧\nmemory 在后续检索中重新出现。\n2.3 Graph\nMemory：从 Entity → Entity 转变为 Entity → Memory\nv3 最大的架构变化之一，是\n彻底取消了 v2 中基于 Knowledge Graph\n的 Entity-to-Entity 关系组织方式\n。\nv2：Entity → Entity\nv2 中，Entity 是 Knowledge Graph 的节点。\n例如：\n1\n2\nAlice ──works_at──> OpenAI\nOpenAI ──located_in──> San Francisco\n通过这种带有语义关系类型的边：\n1\n(source entity, relation, destination entity)\n将多个 Entity 连接起来，形成 Knowledge Graph。\n因此，v2 的核心结构可以概括为：\n1\nEntity → Entity\nv3：Entity → Memory\nv3 不再维护这种 Entity-to-Entity 的显式关系，而是建立：\n1\nEntity → Memory\n即：\nEntity 不再作为一个具有复杂关系的 Knowledge Graph\n节点，而主要\n作为 Memory 的检索索引\n。\n例如：（\"python\" 是作为例子的entity）\n1\n2\n3\n4\n5\n6\n7\nPython → {\nmemory_ids: [\nmem_001,\nmem_017,\nmem_032\n]\n}\n这里的 Memory 就是包含或提取出该 Entity 的源记忆。\n因此，v3 的结构更接近一个\nEntity → Memory\n的倒排索引\n。\n2.4 Entity 的提取与存储\nv3 中，Entity 不再通过 Graph Memory 和 LLM 构建 Knowledge\nGraph，而是使用\nspaCy\n从每条 Memory\n的文本中提取实体。\n这里需要特别注意：\nv3 的 Entity 提取不是通过 LLM 完成的，而是使用 spaCy\n进行实体识别。\nspaCy 主要用于从 Memory 中识别：\n专有名词；\n引用文本；\n复合名词短语等实体信息。\n提取出的 Entity 随后被存储到与 Memory Store 配合使用的独立 Entity\ncollection 中：\n1\n{collection}_entities\n并建立：\n1\nEntity → Memory IDs\n的关联。\n2.5 检索：Hybrid Search\n+ Entity-aware Ranking\nv3 的检索不再依赖 v2 的 Graph\nRetrieval，而是将多种检索方式进行融合，主要包括：\n稠密检索（向量/语义）\n：将 query 转换为\nembedding，与 Memory Store 中已有 memory 的 embedding\n进行相似度匹配，找到语义上最相关的 memory。\n稀疏检索（关键词）\n：利用 query\n中的关键词、实体等信息，对 memory\n文本进行关键词匹配，弥补纯向量检索可能遗漏的结果。\nEntity-aware Ranking\n：从 query 中提取关键\nentity，并利用已经建立的\nEntity → Memory\n关联，找到与这些 entity 相关的 memory。\n最终综合\nsemantic similarity、entity information 以及\nmetadata 等信息\n对候选 memory\n进行排序，选择排名靠前的结果。\n2.6 v2 → v3 的核心变化总结\nv2 → v3 的核心变化主要有以下四点：\nMemory 写入\n：从\nADD / UPDATE / DELETE / NOOP\n转变为以\nADD\n为主的累积式记忆\n，通过\nlinked_memory_ids\n关联新旧\nmemory。\nGraph Memory\n：移除 Neo4j 等外部图数据库，不再维护\nEntity → Entity\n的 Knowledge Graph，改为\nEntity\n→ Memory\n的关联机制。\nEntity 提取\n：从原来的 Graph Memory 机制转变为使用\nspaCy（非 LLM）\n提取 Entity，并建立 Entity Index。\nMemory 检索\n：从原来的 Graph Retrieval 转变为\nHybrid Search + Entity-aware Ranking\n。\n总体来说，v3 的设计目标是：\n简化架构、降低延迟、减少旧记忆被错误覆盖的风险，同时保留\nEntity 对 Memory 检索的辅助能力。\n3. mem0 使用\n首先安装\nmem0ai\n：\n1\n2\npip install mem0ai\npip install \"mem0ai[extras]\"\n3.1 初始化 Memory\n安装完成后，可以通过两种方式使用 Mem0。\n方式一：\nMemoryClient\n——托管 Platform\nAPI\n1\n2\nfrom\nmem0\nimport\nMemoryClient\nclient = MemoryClient(api_key=\n\"your-api-key\"\n)\nMemoryClient\n本质上是一个 HTTP Client，实际的\nmemory extraction、update、storage 和 retrieval\n都由\nMem0 官方云端完成。\n方式二：\nMemory\n——开源自托管\n1\n2\nfrom\nmem0\nimport\nMemory\nm = Memory()\n这种方式运行在本地进程中，\nLLM、Embedding\n模型以及向量数据库都由用户自行配置和管理\n。\n3.2 配置\n以\nOllama + Qdrant\n为例：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\nollama_client = OllamaClient(host=\n\"http://localhost:11434\"\n)\nconfig = {\n\"llm\"\n: {\n\"provider\"\n:\n\"ollama\"\n,\n\"config\"\n: {\n\"model\"\n:\n\"qwen2.5:7b\"\n,\n\"temperature\"\n:\n0.1\n,\n\"max_tokens\"\n:\n2000\n,\n\"ollama_base_url\"\n:\n\"http://localhost:11434\"\n,\n},\n\"embedder\"\n: {\n\"provider\"\n:\n\"ollama\"\n,\n\"config\"\n: {\n\"model\"\n:\n\"qwen3-embedding:0.6b\"\n,\n\"ollama_base_url\"\n:\n\"http://localhost:11434\"\n,\n},\n\"vector_store\"\n: {\n\"provider\"\n:\n\"qdrant\"\n,\n\"config\"\n: {\n\"collection_name\"\n:\n\"zusda_memories\"\n,\n\"host\"\n:\n\"localhost\"\n,\n\"port\"\n:\n6333\n,\n\"embedding_model_dims\"\n:\n1024\n,\n},\n}\n整个配置主要由三个部分组成：\n1.\nllm\n：记忆抽取模型\n负责 Mem0 pipeline 中的\nMemory Extraction\n，即通过\nLLM 从对话中提取 candidate memories。\n在 v3 中，这里主要对应\nADDITIVE_EXTRACTION_PROMPT\n的 LLM\n调用，用于生成新的 memory。\n2.\nembedder\n：Embedding\n模型\n负责将每条 memory 文本转换成向量，供后续的\nDense\nRetrieval\n使用。\n3.\nvector_store\n：向量数据库\n负责 memory 的向量存储和检索，这里使用 Qdrant。\n其中：\ncollection_name\n：Qdrant 中存储 memory 的 collection\n名称。\nembedding_model_dims\n：向量维度，\n必须与\nEmbedding 模型实际输出的维度一致\n，否则写入 Qdrant\n时会出现维度不匹配。\n例如可以通过 Ollama 确认实际维度：\n1\n2\n3\n4\n5\n6\n7\n8\nimport\nollama\nresponse = ollama.embed(\nmodel=\n\"qwen3-embedding:0.6b\"\n,\ninput\n=\n\"测试文本\"\n)\nprint\n(\nlen\n(response[\n\"embeddings\"\n][\n0\n]))\n确认维度后，再将其设置到：\n1\n\"embedding_model_dims\"\n:\n1024\n最后根据配置实例化 Mem0：\n1\nmemory = Memory.from_config(config)\n3.3 构建一个带长期记忆的 Agent\n一个最简单的 Mem0 Agent 可以按照以下流程工作：\n用户输入 → 检索长期记忆 → 注入 Prompt → LLM 回答 → 将对话写入\nMem0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\nUSER_ID =\n\"zusda\"\ndef\nchat_with_memory\n(\nuser_input:\nstr\n) ->\nstr\n:\n# 1. 回答前搜索长期记忆，使用 memory.search()\nrelevant = memory.search(\nquery=user_input,\nfilters={\n\"user_id\"\n: USER_ID},\nlimit=\n5\n)\n# 2. 将相关记忆加入 Prompt\nmemories_str =\n\"\\n\"\n.join(\nf\"-\n{m[\n'memory'\n]}\n\"\nfor\nm\nin\nrelevant[\n\"results\"\n]\n)\nsystem_prompt = (\n\"你是一个有长期记忆的助手，回答时结合下面的用户记忆。\\n\"\nf\"用户记忆：\\n\n{memories_str}\n\"\n)\nmessages = [\n{\n\"role\"\n:\n\"system\"\n,\n\"content\"\n: system_prompt},\n{\n\"role\"\n:\n\"user\"\n,\n\"content\"\n: user_input},\n]\n# 3. 调用 LLM 生成回复\nresponse = ollama_client.chat(\nmodel=\n\"qwen2.5:7b\"\n,\nmessages=messages,\n)\nassistant_reply = response[\n\"message\"\n][\n\"content\"\n]\n# 4. 将本轮对话写入 Mem0，使用 memory.append()\nmessages.append({\n\"role\"\n:\n\"assistant\"\n,\n\"content\"\n: assistant_reply\n})\nmemory.add(\nmessages,\nuser_id=USER_ID\n)\nreturn\nassistant_reply\n其中最关键的是两个操作：\n1\nmemory.search(...)\n负责\n检索已有的长期记忆\n；\n1\nmemory.add(...)\n负责将\n本轮对话交给 Mem0 的 memory pipeline\n处理并写入记忆库\n。\n因此，整个 Agent 可以简单理解为：\n3.4 Main 函数\n最后通过循环实现一个简单的命令行 Agent：\n1\n2\n3\n4\n5\n6\n7\nif\n__name__ ==\n\"__main__\"\n:\nwhile\nTrue\n:\ntext =\ninput\n(\n\"You: \"\n)\nif\ntext.lower()\nin\n(\n\"exit\"\n,\n\"quit\"\n):\nbreak\nprint\n(\n\"AI:\"\n, chat_with_memory(text))\n这样，一个最基本的\nMem0 + Ollama + Qdrant 长期记忆\nAgent\n就搭建完成了。\n4. 其他\n4.1 安装 Qdrant\n如果使用 Docker 部署 Qdrant，首先拉取镜像：\n1\ndocker pull qdrant/qdrant\n然后启动 Qdrant 容器：\n1\ndocker run -p\n6333\n:\n6333\n-p\n6334\n:\n6334\n-v C:\\Users\\admin\\qdrant_storage:/qdrant/storage qdrant/qdrant\n其中：\n6333\n：Qdrant HTTP API 端口\n6334\n：Qdrant gRPC 端口\n-v\n：将宿主机目录挂载到容器中的\n/qdrant/storage\n，用于持久化数据。\n例如：\n1\nC:\\Users\\admin\\qdrant_storage\n表示 Windows 本地的一个磁盘目录。Qdrant\n的数据会通过目录映射保存到该位置。\n如果不使用\n-v\n进行持久化，Qdrant\n数据只保存在容器内部。\n删除容器后，容器中的数据也会随之丢失。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://zusda.github.io/2026/08/13/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-10/",
+      "content_chars": 15274,
+      "content_sha256": "bbadbaa5ad07a62cb6f2dd2863ca9370f40b8689ebb88634581a4f7215c72553",
+      "content_fetched_at": "2026-08-16T21:27:51.484113+00:00",
+      "author": "zusda",
+      "author_name": "zusda",
+      "author_url": "https://zusda.github.io/",
+      "published_at": "2026-08-16T21:26:24.714535+00:00",
+      "collected_at": "2026-08-16T21:26:24.714535+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zusda",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://zusda.github.io/",
+        "https://zusda.github.io/2026/08/13/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-10/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zusda",
+          "url": "https://zusda.github.io/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zusda",
+          "name": "zusda",
+          "home_url": "https://zusda.github.io/"
+        },
+        "article": {
+          "title": "从零开始的LLM 10. mem0原理及API使用",
+          "url": "https://zusda.github.io/2026/08/13/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-10/",
+          "content_sha256": "bbadbaa5ad07a62cb6f2dd2863ca9370f40b8689ebb88634581a4f7215c72553"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:654f62a5f39a602c",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Google 发布 DiffusionGemma：当语言模型不再只能从左到右写",
+      "target_url": "https://yage.ai/share/diffusiongemma-text-diffusion-20260816.html",
+      "text": "yage-share published: Google 发布 DiffusionGemma：当语言模型不再只能从左到右写",
+      "at": "2026-08-16T00:00:00+00:00",
+      "external_id": "a:654f62a5f39a602c",
+      "url": "https://yage.ai/share/diffusiongemma-text-diffusion-20260816.html",
+      "title": "Google 发布 DiffusionGemma：当语言模型不再只能从左到右写",
+      "content": "模型架构\n推理与性能\nGoogle 近期发布了开源模型 DiffusionGemma，并同步公开了\nDiffusionGemma\n技术报告\n。它直接从完成全部后训练的 Gemma 4 26B-A4B\n权重出发，通过离散多项式扩散算法，把原本逐个词单向提交的自回归生成过程，改写为在\n256 个 token 大小的画布内通过多轮双向注意力迭代去噪的并行生成机制。\n与此前闭源部署或参数与训练细节未完全公开的工业探索相比，Google\n这次在发布\nGoogle\n模型卡\n的同时，直接在\nHugging\nFace\n开放权重页面\n开源了完整的模型参数，并在架构中保留了可切回经典自回归模式的\nAR fallback\n接口，让工程团队可以直接在主流推理引擎上部署和测试离散文本扩散。\n在官方公布的数据中，三个数字构成了鲜明的张力：在单张 NVIDIA H100\n显卡上，模型单请求解码速度达到每秒 1,456 个 token；追加训练 token\n预算少于原 Gemma 4 总训练预算的 10%；但在 AIME 2026\n数学推理测试中，得分从原模型的 88.3 分回落到 69.1\n分。作为一名跟踪语言模型推理演进的工程师，我最初看到发布时最容易关注千级别的解码速度，但在核对这组测试条件与消融数据后，更核心的问题浮现出来：这种通过改变生成顺序换取推理加速的架构尝试，在底层执行动作中改变了什么，又在模型能力上支付了怎样的代价。\n前缀一旦写下就成了历史，但在局部画布里还能反复修改\n普通自回归语言模型依据条件概率\np\n(\nx\ni\n|\nx\n<\ni\n)\np(x_i | x_{<i})\n生成文本，从左到右逐个预测下一个\ntoken。每一步前向计算都建立在已有前缀的基础之上。以多位数乘法\n23 × 47 = 1081\n为例，如果将四个数字视作四个生成位置，自回归模型在第一步输出\n1\n之后，该位置便立即固化为后续计算必须接受的历史前缀。如果模型在第一步输出错误数值，在当前同一条生成轨迹中，后续计算无法返回第一位直接修改，只能在后续文本中承认失误或由外部系统重试。\n文本扩散改变了这一生成过程。它在开始时先铺出若干未定稿的候选位置，随后在多轮前向计算中让整块文本同时演进。在第一轮计算中，第二位可能暂为\n1\n，呈现\n1181\n的临时状态；在下一轮前向计算中，模型借助双向注意力机制同时参考前后相邻位置的信息，根据上下文约束将第二位修正为\n0\n。随着去噪推进，高置信度位置先行锁定，低置信度位置持续调整，直至整段文本达到稳定。\nDiffusionGemma 将这种双向迭代约束在固定的局部窗口内。模型每次处理包含\n256 个 token 的 canvas 区域。在当前 canvas\n内，模型通过多轮前向反复调整所有候选 token。当前 canvas\n完成去噪并定稿后，模型将它完整写入 KV\ncache，作为后续生成步骤中只读的前缀上下文。模型处理新 canvas\n块时，无法回写已定稿的历史块：\nprompt / 已提交块 1 / 已提交块 2 / 正在修改块 3\n只读 只读 块内可改\n在实际生成中，\n关于\nDiffusionGemma token 提交动态的研究\n记录了 686\n个测试提示词，发现模型并非在最后一步将 canvas 内的 256\n个位置一次性定稿，而是随任务和文本粒度呈现分批锁定的动态过程。这种机制打破了自回归每个\ntoken\n必须即时提交的限制，同时保留了块级别向前推进的因果结构。单次前向能够同时推进多个位置，但模型只能修改当前\n256 个 token 范围内的内容。\n自回归逐 token 提交与文本扩散在当前\ncanvas 内反复修订的生成顺序对比\n文本没法直接加高斯噪声，但现成的语言模型可以换一种生成方式\n扩散模型在图像领域早已成熟，但迁移至自然语言处理经历了数年探索。图像像素与潜在空间特征处于连续数值空间，数值受到微小扰动或叠加高斯噪声后依然属于连续流形，神经网络能够通过连续得分函数学习逐步去噪。文本\ntoken ID 则是离散类别索引，为特定 token ID\n加上连续数值在词表中没有定义，相邻索引之间也缺乏连续的语义关联。文本无法直接叠加高斯噪声，必须专门构造离散空间的加噪与去噪规则。\n离散加噪的数学形式化在 2021 年有了关键进展。\nD3PM\n论文\n提出了结构化状态转移矩阵与吸收态机制，解决了 token\n在离散空间中如何逐步加噪与去噪的转移概率建模问题。另一条探索路线是将\ntoken 映射到连续词向量空间施加高斯扩散，2022 年的\nDiffusion-LM\n论文\n展示了连续轨迹在可控生成与局部填空上的灵活性，但连续向量向离散\ntoken 映射时产生的舍入误差会导致文本质量受损，且其 200\n步去噪采样在端到端耗时上达到自回归基准的 7 倍。\n随后，离散扩散逐步向自回归的建模质量靠拢。2023 年发表的\nSEDD 论文\n在 LM1B 数据集与\nGPT-2-small 规模实验中，相对此前离散扩散基线将困惑度降低了 50% 至\n75%，将困惑度差距缩小到距离同配置下从头训练的自回归基准约 1 个 PPL\n以内。\n到了大模型阶段，从头训练的算力开销促使研究转向复用成熟权重。\nLLaDA 论文\n使用 2.3T token\n从头训练了 8B\n规模的离散扩散模型，验证了在大规模数据下离散扩散同样可以涌现上下文学习与指令遵循能力，但也展示了从零预训练大模型的庞大开销。为此，\nDiffuLLaMA\n论文\n探索了直接转换路线，将预训练好的 GPT-2 与 LLaMA2（127M 至 7B\n参数）检查点转换为扩散模型，在 7B 模型上使用约 60B 至 65B token\n完成适应，低于该研究设定的 200B token\n上限，证明扩散模型无需从零重新学习通用语言分布。\n工程部署与推理延迟随之成为新的焦点。\nMercury Coder\n技术报告\n展示了面向代码场景的低延迟扩散模型，在 Artificial Analysis\n采用约 1K 输入搭配 1K 输出的专用代码提示词测试中，单张 H100 测得 1,109\n与 737 output tok/s\n的解码输出，但其模型参数量、初始化来源与具体训练配方未作披露。\nGemini Diffusion\n官方页面\n公布了每秒 1,479 个 token 的采样速度（不计 0.84\n秒固定开销），在未披露硬件型号与上下文长度的前提下，其测试显示在\nGPQA（40.4 对 56.5）和 Global MMLU（69.1 对 79.0）等基准上相较 Gemini\n2.0 Flash-Lite 仍存在明显差距。在此之后，\nDream 论文\n与\nLLaDA 2.0\n论文\n在模型转换、MoE 架构、分块扩散以及 KV cache 整合上继续推进。\nDiffusionGemma\n延续了此前的文本扩散与权重转换路线。它的技术增量，是把成熟模型资产复用、少步数采样器蒸馏、自回归回退、开放权重以及主流推理引擎支持整合进同一个可以直接分发的工程工件。模型以完成全部后训练的\nGemma 4 26B-A4B 权重作为初始化起点。该基座拥有 25.2B 总参数，每个 token\n激活约 3.8B\n参数，出发点本身已具备指令遵循、长思考、多模态理解与工具调用能力。\n在加噪方式上，模型采用多项式离散扩散，按照噪声水平以一定概率将 token\n替换为词表中均匀采样的随机\ntoken。训练过程分为两个阶段：模型先在去噪适应训练中学习如何从随机 token\n污染的 256-token canvas\n块中重建干净文本。经过这一步后，模型使用较多采样步数能生成正常文本，但把采样压缩至极少步数会造成质量崩溃。接着，采样器蒸馏与强化学习（SD·RL）将任务奖励最大化与采样步数压缩整合进统一目标，由高步数\nteacher 模型提供轨迹引导，训练 student\n模型使用更少的前向计算轮次快速逼近定稿文本。在 SD·RL\n训练后，模型在整条输出轨迹上平均单次网络前向传播能够产出约 19.74 个有效\ntoken（TPF）。这是一个摊销平均值，并不意味着模型在每一次前向中固定写入\n19.74 个 token。\n根据\nDiffusionGemma\n技术报告\n披露的信息，上述两个阶段追加训练所消耗的 token\n总量，少于起始 Gemma 4 模型总训练 token 预算的 10%。这个比例描述的是训练\ntoken 预算，并不等同于整体算力成本只有原模型的\n10%。报告并未公开追加训练消耗的绝对 token 数量、FLOPs、GPU\n机时或完整的转换配方。\n文本扩散从离散加噪、语言质量、资产复用走向部署延迟的四道门槛\n每秒 1456\n个 token 的测试条件，以及真实请求下的延迟表现\n官方公布的 1,456 output tok/s\n解码速度对应着一套精确的硬件与负载测试条件。\n根据\nDiffusionGemma\n技术报告\n的记录，该数据测定于单张 NVIDIA H100 GPU、FP8\n精度、单并发请求（batch size 为 1）、4096 输入 token 搭配 1024 输出\ntoken 的场景下，并且统计区间仅包含 decode 解码阶段，排除了 prefill\n耗时。在该配置下，单次扩散前向平均硬件耗时为 13.56 毫秒，结合平均 19.74\n的 TPF 产出率，得出每秒 1,456 个输出\ntoken。在相同的硬件与请求配置下，标准 Gemma 4 自回归模型解码速度为 204\ntok/s，开启多 token 预测（MTP）加速后为 303 tok/s。\n这一加速效果来自于对 GPU\n访存特性的改变。在单请求低并发场景下，自回归模型由于每次前向计算仅生成 1\n个 token，计算密度较低，执行时间大量消耗在将模型权重与 KV cache\n从显存读入计算核心的带宽开销上。DiffusionGemma 每次前向同时处理 256\n个候选\ntoken，减少了串行前向的总轮次，从而大幅缩减了在低并发下单请求对模型权重与\nKV cache 的重复读取次数。\n在引擎适配方面，\nvLLM\n官方博客文章\n公布了与 Google 及 NVIDIA 联合开展的测试结果：在 batch\nsize 1 的 FP8 环境下，单张 H100 测得 1,008 generation tok/s，H200 测得\n1,288 generation\ntok/s。这是多方联合针对性优化的工程实现结果，不宜表述为第三方团队完全独立的盲复现基准。\n在实际服务中，纯解码阶段的峰值 TPS\n并不等同于用户感知的端到端响应延迟。\nvLLM\nSPEED-Bench recipe\n在单张 NVIDIA H100、BF16\n精度、单并发、\nmax_tokens=256\n且使用推荐熵界采样器的标准评测套件下，提供了更为全面的性能对照：\n指标\nGemma 4 AR\nDiffusionGemma\n每请求 generation TPS\n205\n1282\n总 output TPS\n199\n375\n平均端到端时间\n2.87 秒\n0.88 秒\n平均首 token 时间\n53 ms\n489 ms\n这组数据反映了吞吐量在实际交互链路中的转化特征。每请求 generation TPS\n从 205 提升至 1282（约 6.2 倍），但由于 DiffusionGemma\n在该测试集上生成的平均文本长度短于自回归模型，整体总 output TPS 从 199\n提升至 375（约 1.9 倍）。平均端到端耗时从 2.87 秒缩短至 0.88\n秒，带来了约 3.3 倍的实际加速。\n同时，平均首 token 响应时间（TTFT）从自回归模型的 53\n毫秒上升至扩散模型的 489 毫秒。自回归模型在完成 prefill\n后只需执行单次轻量前向即可吐出首个 token，而扩散模型必须在首个 256-token\ncanvas\n上完成多轮前向去噪迭代并达到定稿阈值后，才能向外流式输出文本。\n随着并发请求增加，Google 报告的并发实验显示，在约 32\n个并发请求的测试配置下，自回归模式的总吞吐量开始反超扩散模式。高并发\ncontinuous batching\n聚合多个请求，逐渐填满显存带宽与计算单元，也把自回归的单步访存开销摊到多个请求上。扩散模式依靠减少单请求访存轮次获得的边际收益随之减弱。这个交叉点只属于报告中的测试配置，并非固定的系统常数。\n速度提上去之后，复杂推理为什么会掉分，切回自回归又能找回多少\n在生成吞吐量大幅拉升的同时，DiffusionGemma\n在复杂推理任务上的表现出现了明显下滑。\nGoogle\n模型卡中的测试对比\n记录了 DiffusionGemma 扩散思考模式与原始 Gemma 4\n在 AR+MTP 思考模式下的基准成绩：\n任务\nDiffusionGemma\n原 Gemma 4\nAIME 2026\n69.1\n88.3\nTau2\n56.2\n68.2\nMRCR 128K\n32.0\n44.1\n在数学竞赛测试 AIME 2026 上，扩散思考模式得分从 88.3 分下滑至 69.1\n分，落差达 19.2 分；在检验多轮工具调用与智能体规划能力的 Tau2\n测试中，得分从 68.2 分下降至 56.2 分；在长上下文多针检索任务 MRCR 128K\n上，得分从 44.1 分下降至 32.0 分。\n与这一质量落差相对照的，是模型保留的 AR fallback 机制。当工程人员将\nDiffusionGemma 训练完成的最终权重重新加载回原版 Gemma 4\n的经典自回归执行流程中，并在自回归模式下展开思考过程时，其各项推理指标出现了大幅回升：AIME\n得分从 69.1 分恢复至 84.2 分（对比原始模型的 88.3 分），GPQA 得分从 73.2\n分恢复至 79.8 分（对比原始模型的 82.3 分），BigBench Extra Hard 得分从\n47.6 分恢复至 59.1 分（对比原始模型的 64.8\n分）。此时，模型的解码速度也相应回落至自回归基线的约 204 tok/s。\nAR fallback\n的测试结果提供了重要的归因线索。指标的明显回升表明两阶段追加训练并未彻底破坏存储在模型权重底层的知识表征，提示运行时的扩散生成模式承担了部分质量损失。\n但这一回升并不等同于无损转换。首先，切回自回归模式后，各项指标距离原版\nGemma 4 依然存在 3 到 6\n个百分点的性能缺口；其次，由于技术报告缺乏单独强化学习、单独蒸馏以及联合因子设计的完整对照消融实验，无法在定量层面干净地区分质量差距究竟有多少来自于追加训练的数据预算限制，有多少来自于蒸馏压缩采样步数对输出多样性的影响，又有多少来自于\nSD·RL 训练导致的更短平均输出长度。\n高 TPF\n生成与深度逻辑推理之间可能存在串行依赖深度的机制权衡。在自回归生成中，每输出一个推理\ntoken，模型就执行一次严格基于全部既有前缀的有向条件计算\np\n(\nx\ni\n|\nx\n<\ni\n)\np(x_i | x_{<i})\n。复杂的数学推导和代码逻辑具有高度的串行因果依赖，后续推导步骤必须建立在前面步骤成立的基础之上。\n在文本扩散模式下，单次前向计算虽然能够并行更新约 20 个 token\n的内容，但这 20 个 token\n是在同一个前向步内通过双向注意力协同调整的，属于同层并行更新，在机制推断上无法等价于连续执行\n20 步串行状态转移所具备的因果计算深度。SD·RL\n训练过程也反映了这一倾向：当任务奖励进入平台期后，继续训练主要在压低模型的预测熵并缩短输出文本长度，最终\ncheckpoint 的平均输出长度接近 SFT checkpoint\n的一半，作者也承认这放弃了长链条推理可能带来的部分能力收益。\n生成顺序不再只有一种，不同负载下的取舍依然分明\n结合执行机制、吞吐条件与推理能力的综合表现，文本扩散在工程实践中的定位逐渐清晰。它并非在所有维度上全面替代自回归，而是为特定任务特征提供了一个可以在运行时进行针对性配置的性能档位。\n低并发、长输出是优先测试扩散模式的一类负载，因为 decode\n提速有更多空间抵消较高的首 token 延迟。但现有 SPEED-Bench\n结果来自特定测试集与请求形状，不能直接外推到所有长文本任务。局部文本编辑与中间填空是另一个优先实验方向：256-token\ncanvas\n内的双向注意力可以同时参考待编辑区域前后的上下文，也允许后续候选影响前序位置。不过\nDiffusionGemma 自身缺乏散文修订与跨 block 编辑的独立 benchmark，canvas\n写入 KV cache 后也无法跨块回写，实际编辑收益仍需结合具体工作流验证。\n较高并发下，成熟的 continuous batching\n已能提高硬件利用率与总吞吐，扩散模式减少单请求访存的收益随之缩小。延迟敏感的短工具调用与请求路由通常只输出几十个\ntoken，系统耗时主要由 prefill 与首 token 延迟主导，扩散模式较高的首\ntoken\n延迟反而可能增加响应时间。强约束结构化输出也仍偏向成熟的自回归栈：自回归引擎可以在逐\ntoken 生成过程中应用文法或 JSON Schema\n状态机，而离散扩散单步更新多个位置，现有语法状态机难以直接施加同样的逐\ntoken 约束。根据\nvLLM\n仓库的结构化输出讨论\n，当前扩散解码主要依赖全局生成后的校验与重试。\n按并发程度与串行依赖深度划分的文本扩散候选任务和自回归默认任务\n评估这一技术路线的后续演进，关键在于接下来出现的一系列实测证据。我们需要观察在控制相同任务准确率与输出长度的前提下，扩散模型在更广泛的任务集上是否依然能够维持端到端响应耗时的实际优势；也需要观察在代码局部重构与文本编辑场景中，原生双向画布去噪能否在编辑质量上系统性超越成熟自回归模型搭配外部编辑循环的方案；而在模型层面上，未来的采样器蒸馏算法或新型混合架构能否在保持高\nTPF 并行输出的同时，有效弥合串行因果推理深度的差距。\n在这些问题获得进一步数据验证之前，从左到右单向提交的自回归范式依然是复杂逻辑推理与通用生产服务的默认选择。DiffusionGemma\n带来的变化，是让生成顺序从固定的模型假设，变成一个可以根据任务特征单独测试的运行选项。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/diffusiongemma-text-diffusion-20260816.html",
+      "content_chars": 7596,
+      "content_sha256": "620fdbeda1931aeeed2571a99b84eed62627efb10aa0f98fdd37855397f48c4b",
+      "content_fetched_at": "2026-08-16T21:27:39.900944+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-16T00:00:00+00:00",
+      "collected_at": "2026-08-16T21:26:24.714535+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/diffusiongemma-text-diffusion-20260816.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Google 发布 DiffusionGemma：当语言模型不再只能从左到右写",
+          "url": "https://yage.ai/share/diffusiongemma-text-diffusion-20260816.html",
+          "content_sha256": "620fdbeda1931aeeed2571a99b84eed62627efb10aa0f98fdd37855397f48c4b"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:ae1f7145caed9fe1",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "一个闹钟，一份验收，就能养一个代码库",
+      "target_url": "https://yage.ai/share/alarm-acceptance-maintenance-20260816.html",
+      "text": "yage-share published: 一个闹钟，一份验收，就能养一个代码库",
+      "at": "2026-08-16T00:00:00+00:00",
+      "external_id": "a:ae1f7145caed9fe1",
+      "url": "https://yage.ai/share/alarm-acceptance-maintenance-20260816.html",
+      "title": "一个闹钟，一份验收，就能养一个代码库",
+      "content": "AI 编程\nAI Agent\nBoris\nCherny\n前段时间做了个实验。团队建了一个专用的 Slack 频道，让 Claude\n每天在里面跑一套例程，跨 iOS、Android、桌面、Web、CLI 和 Agent SDK\n去做机械维护。跑了几个星期，这套例程一共提了 388 张 PR。截至发帖，其中\n180 张通过了 Claude Code Review 与人工审查，合并进了代码主干。\n浅色书桌上的时钟、清单和一张待审卡片\n很多人习惯把这组数字当成单纯的模型新闻，觉得 Claude 已经能替\nAnthropic 维护软件了；也有人觉得这无非是定时任务挂个\nClaude，没什么新鲜。这两种看法都没看到点子上。388 张 PR\n最显眼的地方，并不能归功于单次对话有多聪明。一套每天自己启动的维护机制，正在持续给代码主干供应变更。大家真正该看的，是这套机制到底搭在怎样的基础设施上。\n这跟我们在\nHarness\nEngineering\n里聊过的观察是一回事。OpenAI 拿 Codex\n做内部产品，模型会顺手照搬仓库里变差的写法；Cursor\n并行修改同一套代码，问题往往先卡在协调和合并环节，单段代码本身倒不见得写不出来。两边的踩坑经验指着同一个地方：体力活交给代理以后，真正决定成败的是环境、约束和验收。OpenAI\n最初每周五抽 20% 的时间人工清理 slop，很快发现扛不住，后来换成让后台\nCodex 定期扫描偏离、打分、提交修复 PR；Cursor 把实现层分派给\nworker；Cherny\n则往前多走了一步，把触发权从某一次聊天里抽出来，交给了每天按时响铃的例程。\n388 张 PR\n看起来像模型新闻，其实是 Infra 新闻\n原帖展示的配置其实挺简单。频道名字叫\nproj-claude-maintains-apps\n，Claude\n每天在里面跑例程，产物就是 GitHub PR。合入主干前，那 180\n张提交都经过了自动审查与人工审查。要是哪次跑出来的结果不合心意，团队不会只去修补那张单薄的\nPR，还会直接叫 Claude 调整例程定义，让第二天的运行换上新规矩。\n在\nYC\n访谈\n里，Cherny\n把本地循环看作本质上的定时任务，把例程看作同套逻辑放到了云端，电脑随手合上也不影响运行。这和我们在\nLoop\nEngineering\n里聊到的点完全一致：循环本身到处都有，真正难得的是怎么验收、怎么观察、下一次怎么修正。他还提到这类重复任务不需要共享完整的对话上下文，但可以共享记忆。这两句话把问题拉回了工程现实。只要昨天跑过的痕迹落在了代码库、运行日志、PR\n和例程配置里，哪怕聊天窗口全关掉，每天清空上下文重新跑也完全行得通。\n388 和 180 说明这条流水线在最近几周持续产出候选 PR。在已提交的 PR\n里，大约 46.4%\n合并进了主干。这个数字不代表模型准确率，也不是首次成功率；它的分母算的是已经提交的\nPR 数，没算发现的问题总数，也没算代理运行的总轮数。至于剩下 208\n张未合并的\nPR，公开材料并未说明是驳回、重复、过期还是在排队。这里说明了一件具体的事：候选提交天然必须多于实际合并。审查漏斗本身就是这套机制的一部分，不需要事后补加。\n两条旧路：写成程序，或写成一次聊天\n过去做自动化维护，大家基本只有两条路走：要么把逻辑硬写进程序，要么拉个人开个会话现场聊。走第一条路，就是把维护写成写死的脚本与规则。靠静态分析去猜代码有没有人调用，拿\nlinter\n扫一遍重复逻辑与命名，再在工作流里把分段、重试和拼接写得严丝合缝。我们以前做中翻英任务就踩过这个坑。待翻译的文本一长，模型就开始丢三落四；前面的术语翻得好好的，到后面段落又变了样；输出里偶尔还夹着中文，动不动还遇上接口超时。为了兜底，我们只能一段段切文本、塞术语表、写正则扫残余中文、记录失败断点。输出成功率虽说提上去了，大把精力却全耗在给这套写死的流程擦屁股上。程序能应付的意外，永远超不过预先写下的那几条规则。\n死代码清理比翻译还要难用硬规则管住。编译器能确认静态不可达的地方，删掉自然安全；可要是碰上那些疑似没人碰、编译器又不敢打包票的代码，写再厚的检测器也防不住漏网之鱼。判定规则越垒越厚，到最后维护这套检测器本身，反倒成了团队甩不掉的新负担。\n第二条路则是人工打开聊天窗口，把代码丢给模型扫一遍，让它提个\nPR。现在的模型做这种单次任务大多驾轻就熟。麻烦在于会话一关，清理工作跟着停摆。就算你在提示词里写了明天接着做，明天也不会自己跑起来。终端进程退出了，昨晚的运行日志就孤零零躺在磁盘里，没人会把它重新塞回模型的上下文。\n这两条老路其实共享着同一个前置假定：要么把所有判断逻辑提前写死在程序里，要么就得让人一直坐在屏幕前守着。结果确定性换了个打法，直接绕开了这个长期以来的习惯。\n结果确定性让 cron 和\nwebhook 变得很贵\n换到结果确定性的做法，思路就不一样了。我们不用把每一步怎么走定得死死的，只要把终点长什么样、到了终点怎么验证交代清楚就行。中间怎么倒腾随它去，可以先检查后改写，也可以边写边调。代理自己能读上一轮留下的文件，跑一段验证脚本，看到报错再接着修。工程师把力气省下来盯好最后的验收环节，用不着提前把所有可能的分支预先编译进代码。\nCherny\n拿来清理死代码的例程，走的正是这套路子。代码静态不可达的，顺手直接拔掉；要是碰上拿不准的疑似废弃代码，第一天先插上日志埋点，第二天根据日志确认它是否真的没人使用，确认后才开\nPR\n提议删掉。工程师不用费劲去写一套证明某段代码永远不会被调用的复杂程序，只要定好分两天交差的结果：第一天埋点观察，第二天照着数据做决定。中间具体怎么摸索交给代理，只要验收标准卡得足够清晰。\n先留下观察、再决定去留的两拍示意图\n这样一来，触发器只需要老老实实做最纯粹的唤醒工作：要么定点响铃，要么等版本发布、CI\n跑红、或者新提了 PR 之后立刻介入。定时任务还是那个定时任务，webhook\n也还是那个\nwebhook。真正身价倍增的，是挂在触发器后面的那套执行环境。它摆脱了按部就班跑死脚本的旧模式，摇身一变成了能翻看昨夜日志、自己写脚本跑验证、并自主决定下一步怎么走的智能环境。\n表面上看，定时任务确实还是定时任务，但触发器背后再也不用画满处理各种特例的流程图了。做单次任务可以这么搞，我们在\n从过程确定性到结果确定性\n里写过这个逻辑；Cherny\n带来的新启发，则是把同套逻辑拉长到了跨日连续运行的尺度上。要是闭环必须有人坐在旁边盯着才能转，那它充其量只是个辅助工具，还算不上真正的维护基础设施。\n这层 Infra 仍然应该很薄\n既然繁琐的逻辑已经交给代理去跑，基础设施这层就用不着急着堆成庞大的工作流引擎。翻看目前公开的落地经验，大家伸手就能用上的，其实只有四样很轻便的构件。\n时钟、日志、印章和文件夹并排放在书桌上\n第一样是唤醒机制。Cherny\n挑了每天定时跑一轮，产品文档里也提到例程支持通过 API 或者 GitHub\n事件来唤醒。至于那 388 张 PR\n背后有没有混合多种触发方式，公开材料并没有细说。在实际业务里挑一种顺手的就够，比如每天固定扫描一回，或者每次发版后跑一次检查，没必要过早去设计一套复杂的触发拓扑。\n第二样是把上一轮的上下文甩到模型外面。新加的日志埋点、代码提交记录、提出来的\nPR\n以及例程自己的配置，都比聊天记录管用得多。做这种周期任务不用带上整个对话历史，下一轮跑起来就是一个干净的新起点；模型该读的是代码库里沉淀的客观证据，毕竟聊天记录随手就丢了。甩到外面不等于扔掉。第二天的会话醒来，先得知道上一次做到哪儿、当时为什么停。我们每天把各家\nCLI 的会话自动导出成统一的 Markdown\n归档，再配一套先关键词、后语义的检索，新一轮代理缺背景时自己去翻档案（导出用\nai_session_export\n，检索\nskill 在\ncontext-infrastructure\n）。会话可导出、可搜索之后，跨日共享记忆才落到下一轮真的读得到的东西上，这跟死代码例程翻看昨夜日志是同一件事的两面。把上下文做成文件还能带来意外的收获。OpenAI\n的评测环境里，好几个 agent\n在没人指挥的情况下，自己把一个包代理服务改造成了跨运行周期的共享留言板，集群层面的协作顺着共享文件就冒了出来（\n案例复盘\n）。只要共享存储满足了基本条件，后一轮智能就能踩着前一轮留下的文件接力。\n第三样是把完工的边界划得清清楚楚。在清理死代码这件事上，完工的标准可以写得具体：静态不可达的部分删干净，拿不准的地方埋好点，等日志确认未被使用后再提\nPR\n建议删除。做翻译任务也是一样，完工标准就是没有中文残留、排版格式整齐、专业术语前后统一。要是连怎样才算完工都说不明白，定时任务跑起来就只会源源不断制造垃圾提交。我们在\nHANDBOOK.md\n的实验\n里就聊过，结果确定性同样会翻车，复盘看到的短板就在运行时反馈、分层状态和提交门控这几处。\n第四样是死死把住合入主干的关口。在提交的那些 PR\n里面，截至发帖已合并的 180\n张都经过了机器审查与人工审查。写代码和合代码本来就是两码事，46.4%\n的合入比例正好印证了这层审查漏斗的存在。要是候选提交的数量猛增，人工审查很容易看着绿灯和摘要就顺手放行。团队的审查带宽一旦跟不上，整条流水线就会卡在审核上，倒不会卡在模型写不出代码这里。\n如果只是低频跑跑单个例程，还犯不上去搬队列、租约和精确一次消费这套重型武器。只有唤醒频率大幅拉高、不同提交开始频繁撞车，才有必要考虑引入这些机制。当下拿来参考，还是轻装上阵最划算。\n可抄的是挂载方式，不是内部架构\nOpenAI 的后台清理、Codex 的定时任务，还有 Cursor 与 Devin\n的自动化功能，都在想方设法把唤醒代理的过程做成产品能力。各家的日常编码\nharness 在功能层面已经撞衫撞得差不多了，我们在\n横向对比\n里盘点过，延时唤醒与定时任务也都在列。公开的接口文档能证明它们支持定时拉起，却证明不了它们能拿到同样的合并成绩，更说不准漏报、去重和自动重试是不是已经有了标准答案。Anthropic\n同样没有公开内部实现，盲目去猜内部架构很容易扑空。\n真正能搬来用的，是这套机制的挂载方式。挑一件以前写死程序很难搞定、验收起来却一清二楚的体力活，挂上时钟或者事件触发器，把验收要求写成下一轮代理读得懂的格式。权限上只给它提建议的资格，不直接给合并权限，更不能塞给它生产环境凭据。\nClinejection\n那个事故里，不受信任的 issue 标题混进了带 shell\n权限的流水线，直接捅出了令牌泄漏；而在\nPocketOS\n里，代理在测试环境找不到凭证，从无关文件里翻出高权限令牌，几秒钟就误删了生产\nvolume\n和同域备份。这类事故全砸在权限敞口上，跟提示词写得漂不漂亮毫无关系。\n要是跑出来的结果不合预期，该做的是去修改明天还会继续跑的例程，不要随手在代码里硬塞分支。Cherny\n在公开分享里就提过这种做法。某天看似一把通过的\nPR，也可能建立在此前对例程的调整上。所谓的一次跑通，排除不掉产线早已反复打磨的可能。\n过去习惯了过程确定性，大家总想把心思花在写一套面面俱到的复杂程序上；换到结果确定性，重心自然挪到了触发器和验收契约上。那些平日里看着最不起眼的定时任务，悄悄变成了杠杆很高的基础设施。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/alarm-acceptance-maintenance-20260816.html",
+      "content_chars": 4706,
+      "content_sha256": "8f1c8145fb3f62e08335c10e002e834ca962e7bde11b7f744b172b92c290d21e",
+      "content_fetched_at": "2026-08-16T21:27:40.077968+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-16T00:00:00+00:00",
+      "collected_at": "2026-08-16T21:26:24.714535+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/alarm-acceptance-maintenance-20260816.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "一个闹钟，一份验收，就能养一个代码库",
+          "url": "https://yage.ai/share/alarm-acceptance-maintenance-20260816.html",
+          "content_sha256": "8f1c8145fb3f62e08335c10e002e834ca962e7bde11b7f744b172b92c290d21e"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:cf5c4edae9606090",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "GPU 之后，AI 公司在抢通电日期",
+      "target_url": "https://yage.ai/share/gpu-ai-power-competition-20260815.html",
+      "text": "yage-share published: GPU 之后，AI 公司在抢通电日期",
+      "at": "2026-08-15T00:00:00+00:00",
+      "external_id": "a:cf5c4edae9606090",
+      "url": "https://yage.ai/share/gpu-ai-power-competition-20260815.html",
+      "title": "GPU 之后，AI 公司在抢通电日期",
+      "content": "产业与竞争\nAI 产品与平台\n过去两年，大家看 AI 基建，眼睛多半盯在芯片上。Amazon 这类公司要买\nGPU、建云、跑模型，卡不够就开不了工。TSMC 到 2026 年一季度还在说，AI\n和高性能计算的供应仍然紧。Nvidia\n自己是卖卡的。它现在要操心的是另一头：客户把卡买回去以后，有没有电、有没有机房，能把卡用起来。\n2026 年 8 月同一周，这两家公司都把钱和规划放到了电上。\nReuters\n转述 The Information 的报道：Nvidia 打算先向德州的电力和园区开发商\nLancium 投 20 亿美元，拿大约两成股份；电接上了、约定的进度到了，再最多加\n10 亿美元。同一周，\nAmazon\n确认要在 Pecos County\n做数据中心园区，计划先在园区旁边自己发电，以后再按进度接到公共电网上。\n同一周里的两条通电路径：Nvidia\n入股开发商，Amazon 计划现场发电\nLancium 在西德州找地、建园区、接电网。Nvidia\n如果投成了，就是入股这个做通电的人。电接上了，开发商更值钱，Nvidia\n的股份也更值钱。第二笔钱要等接通电进度才付。\nAbilene 已经有人在用这些园区。\nOracle\n宣布 AI\n工作已经上线。\nCrusoe\n写的是先按 200 兆瓦以上来设计，再分阶段做到 1.2 吉瓦。\nAmazon\n走的是另一条路。它打算在园区旁边自己发电，先不用去德州大电网排队。马斯克在孟菲斯用燃气轮机把\nColossus 先开起来，也是这一套，\n当时写过\n。\nPacifico\n把设计写成：初期不从电网买电，也不往回送。Amazon\n说以后还是要接回电网。许可文件写了 35 台燃机、名义出力 5,000\n兆瓦，按全年满负荷小时数算出的排放上限超过 3,300 万美吨。\n一家卖卡，一家买卡建云。两家同时在抢的，是某个日期、某块地、能送进机房的电。\n为什么通电日期变成了竞争变量\n芯片先一步抵达建设链条。数据中心的建筑壳体可以在一两年内建成，但把电接入壳体往往需要漫长的时间。铺设高压线路与建设专用变电站常年耗时；根据\nPower\nMagazine\n报道的 2025\n年二季度行业调查，大型变压器平均交付周期延长至大约 128\n周，发电机升压变压器大约需要 144 周。\n微软对这种错配的表述十分直白。CFO Amy Hood 在\n2026\n财年一季报\n中指出，过去几年公司面临的瓶颈是能够安放芯片的空间或电力。CEO Satya\nNadella\n补充说明，芯片可能已经作为库存到位，却没有配套完成调试的机房可供通电使用。\n德州主电网的数据将申请与现实拉开差距。ERCOT 在\n2026\n年 6 月运行概览\n中披露，大负荷接入申请大约为 474\n吉瓦，其中约九成标注为数据中心；真正获准送电的容量只有 8.926\n吉瓦。电网实际观测到的负荷峰值，是各项目各自月度峰值加总后的 3.966\n吉瓦。\n德州大负荷从申请到获准送电再到观察用电的漏斗\n这里的瓶颈并非源于美国突然发不出电。芯片还在到货，房子也还能盖，卡住的是电能不能在说好的那天走进这间机房。谁先锁住这个日期，卡才能开始干活。\n三条已经能看见的抢法\nNvidia\n如果按报道成交，是在入股一个已经在德州做园区、接电的开发商。Lancium 2017\n年成立时就说，要把用电搬到风电最集中的地方。\nHouston\nChronicle\n报道，它在 Fort Stockton\n的园区一度登记成可以在几秒内加减用电的负荷。公司后来向州里自称，Abilene\n约 1.2 吉瓦已经签约在建，另外还有 3 吉瓦拿到了接入批准。\nAmazon 则选择自建现场电源，以此绕过主电网的队列等待。\nE&E\nNews\n报道了这种在园区旁直接建设燃气电厂的新趋势。这种做法实际上是用一套工程链条替换另一套：燃气轮机需要重新排队采购，燃气支线需要申请许可，空气排放需要接受州环保审查，燃料价格与碳排放成本也会在电厂整个寿命周期内持续存在。Amazon\n表示自建发电不会抬高德州居民电价，同时确认未来仍打算接回电网。\n两家公司将项目选在西德州，也体现了把负荷直接搬到电源附近的考量。西德州同时具备风电过剩节点、天然气与便宜土地。Lancium\n利用了可再生能源过剩的天然优势，Amazon\n依靠气源、土地和采出水配套。Virginia 依然是全美最大的存量市场，\nUtility\nDive\n将 Texas\n排在第二。企业前往德州，是因为更容易将公共输电网的瓶颈转化为内部可控的工程变量。相比之下，在北弗吉尼亚新建骨干输电线路，PJM\n官方评估需要五年以上。\n现在的地图：区域和成熟度\n在区域格局上，德州依然是边际扩张最快的地区之一，原因在于开发商可以迁址、分期建设以及自建电源。然而，这种扩张速度正在受到政策调整。2026\n年 6\n月，德州州长要求数据中心自行承担基础设施费用，降低对居民电价的影响；8\n月又根据审计要求，暂停推进新的电网互联审批。PJM\n与北弗吉尼亚市场的刚性更强：容量拍卖紧密贴合电力系统可靠性需求，数据中心预测的增量远高于新清算的发电能力，社区与输电许可审批也更加严格。\n相比区域划分，同一兆瓦所处的成熟度层级对资产价值起着更决定性的作用。规划中的园区、已签约的容量、正在土建的机房壳体，以及已经获准送电并正式用电的设施，各阶段对应的现金流确定性相差甚远。市场已经在对接近稳定运行、出租给大客户的通电资产进行重估定价。Digital\nRealty 与 Blackstone 成交的北弗吉尼亚三处资产合计 288 兆瓦，毛值口径 78\n亿美元。上游设备制造端，客户也在提前数年下单锁定变压器与开关。通电日期已经被拿来标价。\n以后看扩产，先问通电日期\n以后看到某家公司又订购了多少芯片、宣布了多少吉瓦级别的园区规划，可以先考量四个更为具体的执行问题：电力是否已经获准送到这块场地？关键设备的交货期有没有提前锁定？环保与社区审批程序是否履行完毕？如果通电时间晚了一年，合同规定由谁支付违约成本？\n卡还在出货。下一场能看见的竞争，是谁先让这些卡插进已经来电、可以开机的机房。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/gpu-ai-power-competition-20260815.html",
+      "content_chars": 2538,
+      "content_sha256": "e541afe2bcfb96b0b7291307fb5091b24964c5db7a625148bf24088feb6762b0",
+      "content_fetched_at": "2026-08-16T21:27:40.280719+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-15T00:00:00+00:00",
+      "collected_at": "2026-08-16T21:26:24.714535+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/gpu-ai-power-competition-20260815.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "GPU 之后，AI 公司在抢通电日期",
+          "url": "https://yage.ai/share/gpu-ai-power-competition-20260815.html",
+          "content_sha256": "e541afe2bcfb96b0b7291307fb5091b24964c5db7a625148bf24088feb6762b0"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
