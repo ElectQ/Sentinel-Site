@@ -1,239 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-08-19",
-  "generated_at": "2026-08-18T21:33:00.303809+00:00",
-  "item_count": 9,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:d95d07ae1a725f3f",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: My first Kernel Driver",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-18T21:30:12.796441+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver.html",
-      "title": "My first Kernel Driver",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-18T21:31:00.980332+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:f6aee2a993090f94",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-18T21:30:12.796441+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-18T21:31:11.972203+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:7c912c498db91a5c",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-18T21:30:12.796441+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-18T21:31:22.957079+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:e314411385c93251",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-18T21:30:12.796441+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-18T21:31:33.990970+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:1dcf0b5799451a41",
-      "kind": "publish",
-      "text": "zusda published: 从零开始的LLM 11. Voyager原理学习",
-      "actor": "zusda",
-      "actor_url": "https://zusda.github.io/",
-      "created_at": "2026-08-18T21:30:12.796441+00:00",
-      "html_url": "https://zusda.github.io/2026/08/17/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-11/",
-      "title": "从零开始的LLM 11. Voyager原理学习",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "前言\n本文将介绍 Voyager 的原理。\n经过前面的学习，我们已经系统地完成了大语言模型（LLM）的基础部分，主要参考了以下资料：\n《动手学深度学习》\n《蘑菇书》\n《Happy-LLM》\n《Hello-Agents》\n《all-in-rag》\n到这里，可以认为已经具备了继续深入学习 Agent 的基础能力。\n接下来的内容将不再像之前那样按照固定课程循序渐进，而是更多围绕当前\nAgent 领域的研究方向展开。学习内容既会涉及工程实践（如各种 Agent\n框架、工作流、记忆系统等），也会涉及算法与模型层面的探索（如多模态、持续学习等）。\nGenerative Agents\nLetta\nA-MEM\nVoyager\n这条路线主要围绕\nAgent 的持续学习（Continual\nLearning）\n展开，也是我目前最感兴趣的方向：\n如何让一个\nAgent\n在长期运行过程中不断积累经验、提升能力，而不是每次都从零开始。\n目前来看，大致有两种思路：\n不修改模型本身。\n仅通过\nPrompt、记忆系统（Memory）、RAG、工具调用等机制，使 Agent\n能够不断积累知识和经验，实现能力的持续增长。\n修改模型本身。\n基于 Agent\n长期运行过程中积累的对话、笔记和总结等数据，在合适的时机对模型进行持续训练（Continual\nFine-tuning），使模型真正将这些经验内化，而不仅仅依赖外部记忆。\n由于这一阶段更多是阅读论文、分析开源项目、验证实验以及整理个人理解，而不是单纯跟着教程学习，因此资料收集、实验和整理都会比之前花费更多时间。\n1. Voyager 介绍\nVoyager\n是一个基于\nGPT-4 的 Minecraft\n开放世界探索智能体（embodied agent）\n。\n它的核心目标并不是让 GPT-4 单纯回答 Minecraft 相关问题，而是让\nGPT-4：\n通过生成并执行代码，在 Minecraft\n世界中自主探索、学习技能，并逐渐完成更加复杂的任务。\nVoyager 的整体工作过程可以概括为：\n生成任务\n→ 检索相关 Skill → GPT-4 生成代码\n执行代码\nExecution Error\n→ 修改代码 → 重新执行\n执行成功\n→ Self-Verification\n验证成功\n→ 保存 Skill → 生成下一任务\n验证失败\n→ 根据 Critique 修改代码 → 重新执行\n因此，Voyager 的核心不是单纯的“让 LLM 玩\nMinecraft”，而是建立一个能够\n持续探索、积累技能并逐渐变强\n的闭环。\n由于 Voyager 的具体实现与 Minecraft\n环境高度绑定，其代码本身并不具有通用性，因此这里主要学习它背后的\n系统设计思想和核心机制\n。\n2. Voyager 的三个核心组成部分\nVoyager 由三个核心组件组成：\n组件\n作用\n核心问题\nAutomatic Curriculum\n自动提出下一个探索目标\n下一步做什么？\nSkill Library\n保存已经学会的可复用技能\n已经学会了什么？\nIterative Prompting Mechanism\n生成、执行和不断改进代码\n怎么完成当前任务？\n三者形成一个循环：\n可以简单理解为：\nAutomatic Curriculum\n：决定\n做什么\nIterative Prompting\n：决定\n怎么做\nSkill Library\n：保存\n学会了什么\n3. Automatic Curriculum ——\n自动课程\n3.1 它解决什么问题？\nMinecraft 是开放世界，不存在固定的任务清单，例如：\n挖木 → 做木镐 → 挖石 → 做石镐 → 挖铁\nVoyager 需要\n自主生成任务序列\n。\n其总体目标是：\n尽可能多地发现游戏中的多样化元素。\n同时，下一项任务不能太难，否则当前 Agent\n可能没有足够的资源或技能完成任务。\n因此，Automatic Curriculum 的核心就是：\n根据 Agent\n当前的状态和探索进度，自动决定下一步应该做什么。\n4. Automatic Curriculum 的输入\nGPT-4\n在决定下一个任务时，并不是凭空生成任务，而是会获得多方面的信息。\nAutomatic Curriculum 在生成下一任务时，LLM 的 Prompt\n需要以下输入信息：\nDirectives\n：总体探索目标和约束\nCurrent State\n：智能体当前 Minecraft 状态\nCompleted / Failed Tasks\n：之前完成和失败的任务\nAdditional Context\n：由 GPT-3.5\n根据当前状态和探索进度进行 self-ask 得到的问答结果\n4.1 Directives —— 总体目标与约束\n首先告诉 GPT-4 Voyager 的总体目标。\n例如：\n“My ultimate goal is to discover as many diverse things as\npossible.”\n同时还会加入约束：\n“The next task should not be too hard since I may not have the\nnecessary resources or have learned enough skills to complete it\nyet.”\n也就是说：\n任务既要推动探索，又不能一下子难到当前智能体无法完成。\n4.2 Agent Current State ——\n当前状态\nVoyager 会把\n当前 Minecraft 状态\n提供给\nGPT-4，例如：\ninventory：背包\nequipment：装备\nnearby blocks：附近方块\nnearby entities：附近实体\nbiome：生物群系\ntime：游戏时间\nhealth：生命值\nhunger：饥饿值\nposition：当前位置\n例如 GPT-4 可以知道：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\nInventory:\nWood: 10\nStone: 5\nIron: 0\nEquipment:\nWooden Pickaxe\nBiome:\nPlains\nHealth:\n20\nPosition:\n...\n这样 GPT-4 就能够判断：\n当前已经有什么？当前还缺什么？下一步适合做什么？\n从而生成一个与当前状态匹配的任务。\n4.3 Previously Completed /\nFailed Tasks\nVoyager 还会告诉 GPT-4：\n已经完成过什么任务\n哪些任务失败过\n例如：\n1\n2\n3\n4\n5\n6\n7\n8\nCompleted:\n- collect wood\n- craft wooden pickaxe\n- collect stone\nFailed:\n- craft iron chestplate\n这些信息能够反映 Voyager\n当前的\n探索进度和能力边界（capabilities frontier）\n。\n例如：\n木头和石头相关能力已经掌握，但是铁相关能力还没有完全掌握。\n因此，GPT-4\n可以根据之前的执行情况生成更加合适的后续任务，而不是盲目提出一个当前难以完成的高级任务。\n4.4 GPT-3.5 Self-Ask\nVoyager 还会利用 GPT-3.5 根据当前状态和探索进度：\n自己提出问题\n自己回答问题\n例如可以围绕当前状态产生一些辅助性问题：\n1\n2\n3\nWhat resources are currently available?\nWhat can be crafted with these resources?\nWhat should be explored next?\n这些问答结果可以作为额外上下文，帮助后续的任务生成。\n这里使用 GPT-3.5 而不是\nGPT-4，主要是为了\n降低成本\n。\n5. Skill Library —— 技能库\nAutomatic Curriculum 解决：\n下一步做什么？\nSkill Library\n解决：\n以前学会的东西怎么保存和复用？\n这是 Voyager 非常重要的一部分。\n5.1 Skill 是什么？\nVoyager\n并不是简单地把“我会做石镐”保存成一句自然语言描述，而是把技能表示为：\n可执行代码（executable\ncode）\n。\n例如：\n1\ncraftStoneShovel()\n或者：\n1\ncombatZombieWithSword()\n因此，一个 Skill 本质上是：\n能够完成某个具体任务的一段可执行程序。\nSkill 可以进一步组合：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncollectWood()\n↓\ncraftWoodenPickaxe()\n↓\ncollectStone()\n↓\ncraftStonePickaxe()\n↓\ncollectIron()\n↓\ncraftIronPickaxe()\n后面的复杂任务可以直接调用之前已经学会的\nSkill，而不需要每次都从零开始。\n论文中的：\nskills scaffold temporally extended actions\n其中\nscaffold\n可以理解为：\n为更复杂的行为提供基础和支撑。\n5.2 Skill 的存储结构\n一份 Skill 主要涉及\n4 类持久化存储\n：\n1\n2\n3\n4\nU.f_mkdir(\nf\"\n{ckpt_dir}\n/skill/code\"\n)\n# 保存 .js 完整代码\nU.f_mkdir(\nf\"\n{ckpt_dir}\n/skill/description\"\n)\n# 保存 .txt 自然语言描述\nU.f_mkdir(\nf\"\n{ckpt_dir}\n/skill/vectordb\"\n)\n# 保存 Chroma 向量库\nf\"\n{ckpt_dir}\n/skill/skills.json\"\n# 保存 Skill 映射关系\n对应关系：\ncode/\n：保存\nprogram_code\n，即 LLM\n生成并执行验证通过的完整\nJS 函数代码\ndescription/\n：保存 LLM\n根据代码和函数名生成的\n自然语言描述\nvectordb/\n：保存\ndescription\n的\nembedding 向量\n，用于语义检索\nskills.json\n：保存\nself.skills\n，记录\nprogram_name → code + description\n的\n映射\nskills.json\n主要用于保存 Skill\n的\n代码和描述映射\n：\n1\n2\n3\n4\n5\n6\n{\nprogram_name: {\n\"code\"\n: ...,\n\"description\"\n: ...\n}\n5.3 添加\nSkill：\nadd_new_skill\n主要流程：\n过滤\n：排除不值得复用的一次性任务，例如往箱子存杂物。\n生成描述\n：调用\ngenerate_skill_description\n，让 LLM 根据代码和函数名生成\nskill_description\n。\n处理重名\n：如果\nprogram_name\n已存在，则删除 Vector DB 中旧条目；旧代码文件可以改名为\nxxxV2.js\n留档，但\nself.skills\n只保留最新版本。\n更新\n：将新的 description 加入 Vector DB，并更新\nself.skills[program_name]\n。\n持久化\n：代码、描述、\nskills.json\n和\nVector DB 分别保存。\n5.4 检索\nSkill：\nretrieve_skills\nquery\n是当前任务的自然语言描述。\nk = min(库中现有技能数, retrieval_top_k)\n，避免库中\nSkill 较少时出错。\nsimilarity_search_with_score(query, k=k)\n：将\nquery\n转成 embedding，与 Skill Description 的 embedding\n计算相似度，取 Top-K。\n根据\ndoc.metadata[\"name\"]\n反查\nself.skills[name][\"code\"]\n，返回真正的 Skill Code。\n6. GPT-4 生成 Skill 所需\n的输入\nSkill Library 生成新 Skill 时，LLM Prompt 需要以下输入信息：\n代码生成规范（Guidelines）\n：要求 Skill\n具有通用性和可复用性，便于后续组合成更复杂的 Skill。\nPrimitive APIs + 相关已有\nSkill\n：提供最基础的执行操作 API，以及从 Skill Library\n中检索出的相关已有 Skill，供 GPT-4 复用和组合。\n上一轮代码及执行反馈\n：包括上一轮生成的代码、环境反馈、执行错误和\nCritique，用于迭代改进。\n当前环境状态（Current\nState）\n：包括背包、装备、附近方块/实体、生物群系、时间、生命值、饥饿值和位置。\nChain-of-Thought\n：要求 GPT-4\n在生成代码前进行任务分析和步骤规划。\n这样和前面的：\n6.1 Code Generation Guidelines\n首先要求 GPT-4 生成的 Skill\n具有\n通用性、可复用性和模块化特征\n，因为生成的 Skill\n后续还会被其他更复杂的 Skill 调用。\n也就是说，不应该只针对当前任务编写一次性的代码，而应该尽可能将其设计成可以被后续任务重复调用的技能。\n例如，Prompt 可以要求：\nThe code should be generic, reusable, and modular, as it may be\nreused by other skills in the future. Avoid writing code that only works\nfor the current specific situation.\n6.2 Control Primitive\nAPIs + Relevant Skills\n6.2.1 Control Primitive APIs\nVoyager 提供底层控制 API。\n例如可以理解为：\n1\n2\n3\n4\n5\n6\n7\n移动\n攻击\n跳跃\n挖掘\n放置\n交互\n聊天\n这些属于比较底层的\ncontrol primitives\n。\nGPT-4 可以利用这些 API 编写更高级的 Skill。\n6.2.2 Relevant Skills\nVoyager 会从 Skill Library 中检索与当前任务相关的技能，并把它们放进\nGPT-4 的 prompt。\n例如当前任务：\n制作铁胸甲\nGPT-4 可能已经拥有：\n1\n2\n3\n4\ncollectWood()\ncraftPickaxe()\ncollectStone()\ncollectIron()\n那么 GPT-4\n就可以直接组合这些已有技能，而不是重新学习所有底层操作。\n这实际上形成了：\nSkill Library → In-context Learning → 更复杂的新\nSkill\n6.3 Previous Code +\nFeedback + Errors + Critique\n如果上一轮代码失败了，GPT-4 还会看到：\n上一轮生成的代码\n环境反馈\nexecution error\ncritique\n然后根据这些信息进行修改。\n因此技能生成并不是：\nGPT-4 → 一次生成 → 完成\n而是：\nGPT-4 生成代码 → 执行 → 发现问题 → 修改代码 → 再次执行\n6.4 Current State\n同样会提供 Minecraft 当前状态：\n1\n2\n3\n4\n5\n6\n7\n8\n9\nInventory\nEquipment\nNearby blocks\nNearby entities\nBiome\nTime\nHealth\nHunger\nPosition\n因为代码必须适应\n当前真实环境\n。\n6.5 Chain-of-Thought Prompting\n在生成代码之前，让 GPT-4 先进行任务分析和推理。\n可以简单理解为：\n任务 → 分析所需资源 → 分析可使用的 API / Skill → 规划执行步骤\n→ 生成代码\n因此，并不是直接要求：\n“Write code.”\n而是让 GPT-4：\n先思考如何完成任务，再生成代码。\n这里的\nCoT\n更接近于在\n同一次 LLM\n调用中先进行推理，再生成代码\n，而不是先输出一个完整的分步骤计划，再针对每一步单独调用\nLLM 生成代码并执行。\n因此：\n有 CoT ≠ 有显式的 Plan-then-Act Pipeline\nCoT 主要用于提升\n单次代码生成的质量\n，例如让 GPT-4\n在生成代码前先分析需要哪些资源、应该使用哪些 Primitive APIs、哪些已有\nSkill，以及任务的执行步骤。\n例如，Prompt 可以要求 GPT-4：\nYour task is to write a program to accomplish the following task.\nBefore writing the code, think about: 1. What resources are required?\n2. What skills or APIs can be reused? 3. What steps are needed to\naccomplish the task? 4. How should these steps be implemented?\nThen write the code to accomplish the task.\n6.6 源码prompt\nvoyager/prompts/action_template.txt\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\nYou are a helpful assistant that writes Mineflayer javascript code to complete any Minecraft task specified by me.\nHere are some useful programs written with Mineflayer APIs.\n{programs}\nAt each round of conversation, I will give you\nCode from the last round: ...\nExecution error: ...\nChat log: ...\nBiome: ...\nTime: ...\nNearby blocks: ...\nNearby entities (nearest to farthest):\nHealth: ...\nHunger: ...\nPosition: ...\nEquipment: ...\nInventory (xx/36): ...\nChests: ...\nTask: ...\nContext: ...\nCritique: ...\nYou should then respond to me with\nExplain (if applicable): Are there any steps missing in your plan? Why does the code not complete the task? What does the chat log and execution error imply?\nPlan: How to complete the task step by step. You should pay attention to Inventory since it tells what you have. The task completeness check is also based on your final inventory.\nCode:\n1) Write an async function taking the bot as the only argument.\n2) Reuse the above useful programs as much as possible.\n- Use `mineBlock(bot, name, count)` to collect blocks. Do not use `bot.dig` directly.\n- Use `craftItem(bot, name, count)` to craft items. Do not use `bot.craft` or `bot.recipesFor` directly.\n- Use `smeltItem(bot, name count)` to smelt items. Do not use `bot.openFurnace` directly.\n- Use `placeItem(bot, name, position)` to place blocks. Do not use `bot.placeBlock` directly.\n- Use `killMob(bot, name, timeout)` to kill mobs. Do not use `bot.attack` directly.\n3) Your function will be reused for building more complex functions. Therefore, you should make it generic and reusable. You should not make strong assumption about the inventory (as it may be changed at a later time), and therefore you should always check whether you have the required items before using them. If not, you should first collect the required items and reuse the above useful programs.\n4) Functions in the \"Code from the last round\" section will not be saved or executed. Do not reuse functions listed there.\n5) Anything defined outside a function will be ignored, define all your variables inside your functions.\n6) Call `bot.chat` to show the intermediate progress.\n7) Use `exploreUntil(bot, direction, maxDistance, callback)` when you cannot find something. You should frequently call this before mining blocks or killing mobs. You should select a direction at random every time instead of constantly using (1, 0, 1).\n8) `maxDistance` should always be 32 for `bot.findBlocks` and `bot.findBlock`. Do not cheat.\n9) Do not write infinite loops or recursive functions.\n10) Do not use `bot.on` or `bot.once` to register event listeners. You definitely do not need them.\n11) Name your function in a meaningful way (can infer the task from the name).\nYou should only respond in the format as described below:\nRESPONSE FORMAT:\n{response_format}\n1. Primitive APIs + 已有 Skill\n{programs}\n：提供已有的 Mineflayer API 示例和已学习的\nSkill。\n规则 2 中显式列出的函数，例如\nmineBlock\n等，可直接调用。\n2. 上一轮代码与执行反馈\n每轮提供上一轮执行结果，包括：\nCode from the last round\nExecution error\nChat log\nCritique\n用于分析上一轮代码的问题，并据此调整下一轮实现。\n3. 当前环境状态\n每轮提供 Minecraft Agent\n的实时状态，包括：\nBiome\nTime\nNearby blocks\nNearby entities\nHealth\nHunger\nPosition\nEquipment\nInventory\nChests\n其中\nInventory\n是任务规划和完成度判断的重要依据\n，最终任务是否完成也会结合最终\nInventory 进行检查。\n4. 推理与任务规划要求\nPrompt 要求 Agent\n在生成代码前进行以下分析：\nExplain（如适用）\n：检查当前计划是否存在遗漏，并分析代码为什么未能完成任务，以及\nChat log\n和\nExecution error\n反映出的问题。\nPlan\n：给出完成任务的分步计划，并结合当前环境状态，尤其是\nInventory\n，确定下一步需要执行的操作。\n5. 代码生成规范\n遵循 Prompt 后半部分的\n规则\n1～11\n，并满足输出格式中对代码的通用性要求，最终生成可执行的\nMineflayer JavaScript 代码。\n{response_format} 内容如下\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\nExplain: ...\nPlan:\n1) ...\n2) ...\n3) ...\n...\nCode:\n```javascript\n// helper functions (only if needed, try to avoid them)\n...\n// main function after the helper functions\nasync function yourMainFunctionName(bot) {\n// ...\n}\n```\n7. 迭代式提示机制\n迭代式提示机制是 Voyager\n的核心代码生成与执行框架。其基本流程为：GPT-4\n生成代码后立即执行，系统根据执行结果和任务完成状态，决定是否进行下一轮修改。完整循环如下：\n生成代码 → 执行 → 获取反馈 → 修改代码 → 再次执行\n该迭代将持续进行，直至任务成功完成或达到预设的最大尝试次数。\n执行结果主要对应以下三类反馈情形：\n环境反馈\n：代码运行正常，但 Minecraft\n环境反馈任务前置条件不满足，需调整行动策略。\n执行错误\n：代码本身引发异常（如语法错误、API\n调用失败），需修正程序逻辑。\n自我验证\n：代码无报错，但任务目标实际未达成，需分析失败原因并提出改进方案。\n7.1\n环境反馈（代码执行正常，但环境条件不满足）\n代码本身运行无误，但 Minecraft 环境反馈任务前置条件未能满足。\n例如，环境返回：\n“无法合成铁胸甲，因为还缺少 7 个铁锭。”\n此反馈向 GPT-4 传递了明确的语义信息：\ntext\n1\n2\n3\n4\n5\n任务目标：合成铁胸甲\n↓\n执行受阻\n↓\n根本原因：铁锭数量不足（缺 7 个）\n据此，GPT-4\n可针对性地调整策略（如先采集更多铁锭），而非盲目重试。\n本质\n：环境反馈是 Minecraft\n世界向大语言模型传递的状态信息，用于指导下一步行动决策。\n7.2 执行错误（代码运行异常）\n代码在执行器层面抛出异常，包括但不限于：\n语法错误（SyntaxError）\n非法操作（Invalid Operation）\nAPI 调用异常（API Error）\n此类错误直接暴露了代码本身的缺陷，能够帮助 GPT-4\n快速定位并修正程序逻辑中的具体问题。\n7.3\n自我验证（代码执行正常，但任务目标未达成）\n代码运行虽未报错，却并不代表任务真正完成。\n例如，任务要求“获得一个铁胸甲”，执行全程无 Python\n异常，但最终状态为：\n1\n铁胸甲数量 = 0\n此时，任务仍然失败。\n为此，Voyager 引入了一个独立的\nGPT-4 智能体\n负责自我验证（Self-Verification）。该智能体以当前任务和智能体状态为输入，输出任务是否完成（Yes\n/ No）。当判定失败时，它还会进一步提供：\n批评意见（Critique）\n：解释为什么失败；\n改进建议（Suggestion）\n：指出下一步应如何调整。\n因此，自我验证提供的并非简单的“成功/失败”二值信号，而是包含失败原因和修正方向的高质量语义反馈，可显著提升后续迭代的效率和准确性。\n8. 三个组件如何形成完整闭环？\n最后复习一下流程\n9. Voyager 的亮点\nVoyager 最值得关注的亮点，是其提出的\n“用代码作为 Agent\n的动作空间（Code as Action Space）”\n这一核心思想。\n传统 LLM Agent 通常让模型输出 JSON、文本指令或预定义的 API\n调用作为动作，而 Voyager 则让 GPT-4\n直接生成可执行的 JavaScript\n代码\n，通过代码调用 Minecraft 环境中的 API\n来完成复杂、连续的操作。\n这种方式的优势在于：\n代码天然可以表达多步、组合式和具有时间跨度的动作\n。Agent\n不需要每一步都重新生成一个简单动作，而是可以生成一段程序，一次完成多个连续操作，并根据执行结果不断修改和扩展代码。\n9.1 从 Voyager 到 CodeAct\nVoyager 最初是在\nMinecraft\n开放世界环境\n中验证这一思想。\n之后，\nCodeAct\n将这一思想进一步抽象为一种通用的 LLM\nAgent 动作范式：\n不再限制 Agent 输出固定格式的 JSON / 文本动作，而是让 LLM\n直接生成可执行代码作为动作。\nCodeAct 将 Agent 的动作空间统一为可执行的 Python 代码，并通过 Python\n解释器执行这些代码。Agent\n可以根据执行结果获得反馈，在后续交互中继续\n修正代码、组合已有操作或生成新的动作\n。\n9.2 Voyager 的 Skill Library\n除了\nCode as Action Space\n，Voyager\n的另一个重要亮点是\nSkill Library（技能库）\n。\nVoyager 并不是让 Agent\n每次遇到任务都从零生成代码，而是会将已经验证有效的技能保存下来，并在后续任务中进行\n检索和复用\n。每个\nSkill 本质上是一段可以执行的 Mineflayer JavaScript\n程序，用于完成某个具有明确功能的任务，例如获取资源、制作物品或执行一系列连续操作。\nSkill Library 主要解决的是\n“已有能力如何积累和复用”\n的问题：\nSkill 生成\n：GPT-4 根据当前任务、Agent\n状态以及已有程序等信息生成新的可执行代码。\nSkill 执行与验证\n：生成的代码在 Minecraft\n环境中执行，并根据执行结果判断其是否有效。\nSkill 存储\n：验证成功的代码及其描述被保存到 Skill\nLibrary 中。\nSkill 检索\n：面对新任务时，根据任务语义从已有 Skill\n中检索相关技能，并将其作为后续代码生成的参考。\nSkill 组合\n：Agent 可以调用或组合多个已有\nSkill，完成比单个 Skill 更复杂的任务。\n因此，Skill Library 与\nCode as Action Space\n是相互配合的：\nCode as Action Space 解决“Agent 如何表达和执行复杂动作”，而\nSkill Library 解决“Agent\n如何积累、检索和复用已经学会的动作”。\n这使 Voyager\n不仅能够在当前任务中生成代码，还能够随着探索过程\n持续积累可复用的程序化技能\n，从而逐渐形成能力库。\n9.3 OpenHands：代码 Agent\n的实际落地\n这一思路后来被\nOpenHands（原 OpenDevin）\n等开源\nCoding Agent 框架进一步采用和发展。\nOpenHands 将 Agent 的动作空间扩展到真实的软件开发环境，使 Agent\n能够通过代码、Shell、文件操作等方式与开发环境交互，完成编程、调试、运行程序等任务。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://zusda.github.io/2026/08/17/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-11/",
-      "content_chars": 13916,
-      "content_sha256": "70a4d92dd7f13ea777d9bec39746b23adc050bcd4532fc03efd757c13e41cfb0",
-      "content_fetched_at": "2026-08-18T21:31:55.717191+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "zusda",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:1c8626e3b55aafaa",
-      "kind": "publish",
-      "text": "denizhalil-blogs published: Top 10 Add-ons for Burp Suite in Web Security",
-      "actor": "denizhalil-blogs",
-      "actor_url": "https://denizhalil.com/blogs/",
-      "created_at": "2026-08-18T05:25:00+00:00",
-      "html_url": "https://denizhalil.com/2026/08/18/top-10-burp-suite-extensions/",
-      "title": "Top 10 Add-ons for Burp Suite in Web Security",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Introduction\nWeb application security testing demands absolute precision, high operational speed, and granular visibility into non-standard protocols, modern API structures, and complex application logic. While Burp Suite (developed by PortSwigger) provides an industry-standard core engine for proxying traffic, its true power lies in its extensible architecture. By leveraging community-developed and commercial extensions, security researchers and penetration testers can seamlessly transform Burp Suite into a fully tailored auditing framework. These add-ons significantly enhance manual workflows by discovering hidden edge-case vulnerabilities, automating repetitive authorization and authentication checks, parsing custom payload formats, and executing high-speed, multi-threaded attack scenarios with minimal performance overhead.\nLearning Objectives\nAfter reading this article, you will be able to:\nUnderstand the role and utility of extensions within the Burp Suite ecosystem.\nInstall, manage, and configure add-ons directly through Burp’s native BApp Store.\nConfigure environment dependencies (such as Jython) required to run Python-based extensions.\nIdentify and deploy the top 10 Burp Suite add-ons for specific security testing scenarios, including IDOR, HTTP request smuggling, SAML tampering, and out-of-band vulnerability discovery.\nWhat are the Burp Suite add-ons?\nBurp Suite add-ons—commonly referred to as\nBApps\nor\nextensions\n—are modular software packages engineered to expand, customize, and enhance the primary feature set of the Burp Suite ecosystem. While the base installation of Burp Suite offers robust tools for intercepting traffic, analyzing HTTP requests, and scanning basic application flaws, modern web environments often use proprietary protocols, complex authentication mechanisms, or custom data formats that require specialized handling. Extensions bridge this gap by enabling security engineers to adapt the platform’s core architecture to meet unique, highly specific testing demands. At their core, these add-ons are developed using Burp Suite’s modern\nMontoya API\n(or its legacy Extender API framework), allowing developers to write custom code in\nJava\n,\nPython\n(via Jython), or\nRuby\n(via JRuby). By hooking directly into Burp’s runtime environment, an extension can passively inspect or actively alter network communications in real time. This deep integration allows security professionals to automate intricate manual workflows, implement novel vulnerability checks, and extend Burp’s passive and active scanning engines far beyond their default parameters.\nFurthermore, the strength of Burp Suite add-ons lies in the massive collaborative community surrounding PortSwigger’s\nBApp Store\n. Security researchers worldwide continuously build and publish specialized plugins that address emerging attack vectors, zero-day research methodologies, and domain-specific security challenges. Whether a tester needs to decode custom token formats, parse binary protocols like WebSockets or gRPC, or audit complex enterprise single sign-on flows, add-ons provide the dedicated tooling needed to execute a thorough penetration test efficiently.\nTraffic Interception & Modification:\nIntercepts, inspects, and dynamically modifies HTTP/S traffic, custom headers, and request bodies in real time before they reach the target server.\nCustom Scanner Rules & Automation:\nAdds custom active and passive scanner checks to automatically flag emerging vulnerabilities, novel injection vectors, or misconfigurations.\nExtensive Language & API Support:\nBuilt on Burp’s Montoya API with cross-language support for Java, Python, and Ruby, allowing seamless integration of third-party security libraries.\nUI & Workflow Enhancement:\nIntroduces dedicated user interface tabs, custom logging windows, and tailored data parsers to streamline complex security assessments.\nHow to add these plugins to Burp Suite?\nInstalling add-ons in Burp Suite is a straightforward process integrated directly into the application’s core user interface. Whether you are adding official tools from PortSwigger’s centralized repository or installing standalone third-party scripts, the platform provides a streamlined workflow to manage, configure, and execute custom plugins.\nConfigure Language Environments:\nRequired only for Python and Ruby extensions. While Java-based extensions run natively out of the box, many popular extensions are written in Python or Ruby and rely on embedded runtime interpreters to compile and execute properly within Burp’s Java environment.\nDownload the Interpreter:\nVisit the official Jython website and download the standalone\nJython JAR\nfile (e.g.,\njython-standalone-2.7.x.jar\n). If you plan to run Ruby extensions, download the\nJRuby standalone JAR\n.\nAccess Burp Settings:\nLaunch Burp Suite, click the gear icon in the top right, or navigate directly to\nSettings\nin the main menu bar.\nSet Environment Paths:\nIn the settings sidebar, expand the\nExtensions\ncategory and select\nPython Environment\n(or\nRuby Environment\n).\nLink the JAR File:\nUnder\nLocation of Jython standalone JAR file\n, click\nSelect file\n, browse your local disk, and select the downloaded\n.jar\nfile. Burp will instantly bind the environment without requiring a restart.\nAccess the BApp Store:\nNavigating Burp’s central extension repository. PortSwigger maintains a curated store featuring hundreds of community and enterprise extensions that have been vetted for stability and performance.\nOpen Burp Suite and locate the main top navigation bar.\nClick on the\nExtensions\ntab to open the extension manager workspace.\nSelect the\nBApp Store\nsub-tab. You will see a complete, searchable directory of available add-ons alongside details like author, rating, and modern Montoya API compatibility.\nSearch and Select the Extension:\nFilter, evaluate, and inspect extension capabilities. Finding the exact tool for your specific penetration testing objective is simple with built-in search and filtering tools.\nLocate the Plugin:\nUse the search bar in the top-left corner of the BApp Store panel to search by extension name (e.g.,\nAutorize\n,\nParam Miner\n, or\nTurbo Intruder\n) or by target vulnerability category.\nInspect Requirements:\nClick on the extension to view its description panel. Review its features, user feedback, memory requirements, and whether it requires a Burp Suite Professional license or specific runtime dependencies.\nInstall or Load the Add-on:\nAutomatic compilation, execution, and manually loading custom extensions. Once you have selected your desired extension, the final setup step brings it into your active workflow.\nStandard BApp Installation:\nClick the\nInstall\nbutton located in the bottom-right details panel. Burp Suite will automatically download the source files, compile them in memory, and initialize the plugin.\nVerify Installation:\nSwitch to the\nInstalled\nsub-tab. Active extensions will show a checked\nLoaded\nbox, and any customized user interface elements (such as dedicated top-level tabs) will appear immediately in your Burp Suite window.\nManual Installation (Offline/Custom Extensions):\nIf you are developing a custom extension or installing a standalone file (\n.jar\n,\n.py\n, or\n.rb\n) obtained directly from GitHub, navigate to the\nInstalled\ntab, click\nAdd\n, select the extension type/file path, and manually click\nNext\nto load it.\nTop 10 Add-ons for Burp Suite in Web Security\n1. Autorize\nAutorize is an indispensable extension for detecting broken access control, authorization bypasses, and Insecure Direct Object Reference (IDOR) vulnerabilities across multi-role web applications. Manual authorization testing traditionally requires intercepting traffic, replacing session cookies, and replaying requests across different user roles—a process that is time-consuming and prone to human error. To automate this, testers configure Autorize with the authorization headers of a low-privileged user (and optionally an unauthenticated user). As the security researcher navigates the application using an administrative account, Autorize transparently repeats every intercepted request in the background using the lower-privileged credentials, comparing response status codes and message lengths to highlight endpoints where access controls are missing or bypassed.\n2. Param Miner\nDeveloped by PortSwigger Research, Param Miner is a high-speed discovery tool built to unearth hidden, unlinked, or unadvertised HTTP parameters. Web applications frequently accept debug flags, administrative switches, or non-standard headers that are absent from front-end code, leaving them exposed to logic flaws and cache manipulation. The extension utilizes optimized, asynchronous guessing algorithms to test thousands of potential GET/POST parameters and HTTP headers against target endpoints. By monitoring subtle variations in server responses—such as small changes in content length, status codes, or header reflections—Param Miner effectively uncovers Web Cache Poisoning vectors, unintended header processing (e.g.,\nX-Forwarded-Host\n), and secret administrative parameters.\n3. Turbo Intruder\nDesigned for high-performance HTTP request generation, Turbo Intruder is an extension that complements Burp Suite’s native Intruder. Standard Intruder threads are often bounded by GUI processing overhead and standard HTTP stacks, making them unsuitable for time-sensitive, high-volume, or single-packet attacks. Built on an asynchronous HTTP stack written in C/Python, Turbo Intruder can transmit tens of thousands of requests per second with minimal CPU and memory footprints. Testers write custom Python scripts to manage attack logic, making it the industry standard for executing single-packet race condition attacks (such as double-spending or multi-use promo codes), high-speed brute-forcing, and rate-limit evasion mechanisms.\n4. HTTP Request Smuggler\nHTTP Request Smuggler is the premier extension for detecting, analyzing, and exploiting HTTP Request Smuggling desynchronization vulnerabilities. These vulnerabilities occur when frontend reverse proxies and backend application servers parse HTTP request boundaries (\nContent-Length\nvs.\nTransfer-Encoding\n) differently, allowing an attacker to “smuggle” a hidden request into the backend pipeline. The extension automatically scans target servers for\nCL.TE\n,\nTE.CL\n, and HTTP/2 downgrade desynchronization flaws by crafting precise, non-destructive probe payloads. Once identified, it provides an integrated interface with pre-built exploit templates designed to hijack secondary user sessions, bypass frontend security controls, access internal management endpoints, or poison web caches.\n5. SAML Raider\nSAML Raider is a dedicated toolkit engineered for testing Single Sign-On (SSO) infrastructures that rely on Security Assertion Markup Language (SAML). Modern enterprise environments heavily utilize SAML for federated authentication, but manual inspection and cryptographic manipulation of raw, base64-encoded XML assertions can be tedious. SAML Raider adds a dedicated tab to Burp’s Proxy and Repeater tools whenever a SAML message is detected in the traffic stream. It automatically decodes and formats the XML body, granting security testers instant access to modify assertions, attributes, and NameIDs while offering built-in shortcuts to execute complex cryptographic attacks like SAML Signature Wrapping (XSW), certificate spoofing, signature stripping, and XML External Entity (XXE) injection.\n6. JWT Editor\nJSON Web Tokens (JWTs) are widely used for session management and API authorization. The JWT Editor extension simplifies auditing web applications that utilize JWTs by providing a dedicated suite for decoding, editing, re-signing, and attacking token implementations. The extension automatically detects JWT strings within HTTP headers, request bodies, and cookies across all Burp tools. It incorporates an integrated key store management system, allowing testers to import public/private keys or generate HMAC secrets. With built-in attack modules, researchers can perform automated signature stripping (\n\"alg\": \"none\"\nattacks), execute HMAC key confusion attacks (switching public key algorithms from RSA to HMAC), and run dictionary attacks to brute-force weak signing keys.\n7. Collaborator Everywhere\nCollaborator Everywhere extends Burp Suite Professional’s native Out-of-Band Application Security Testing (OAST) capabilities across ambient network traffic. While manual testing often involves manually inserting Burp Collaborator links into specific input fields, many application backends process headers asynchronously behind internal queues and logging pipelines. Collaborator Everywhere runs passively in the background, injecting uniquely tracked Burp Collaborator domain payloads into common HTTP request headers (such as\nUser-Agent\n,\nReferer\n,\nX-Forwarded-For\n,\nClient-IP\n, and\nTrue-Client-IP\n). If a backend application, logging server, or analytics pipeline processes these headers asynchronously and initiates an external connection, the extension logs an alert highlighting blind SSRF, DNS resolution leaks, or Pingback vulnerabilities.\n8. Active Scan++\nActive Scan++ acts as an add-on scanner module designed to expand the coverage of Burp Suite Professional’s built-in Active Scanner. It focuses on identifying subtle, complex vulnerability classes that require specialized payload structures and advanced heuristic checks. Operating seamlessly during active scans, Active Scan++ executes lightweight, high-probability probes designed to flag edge-case vulnerabilities with minimal false positives. It specifically tests for Server-Side Template Injection (SSTI) across multiple template engines, Host header injection, edge-side includes (ESI) processing flaws, asynchronous code evaluation, and obscure remote code execution (RCE) vectors.\n9. Logger++\nWhile Burp Suite provides an HTTP history tab, it is restricted to proxy traffic and lacks advanced multi-stage filtering capabilities. Logger++ bridges this gap by logging all requests and responses generated across every Burp module—including Proxy, Intruder, Scanner, Repeater, and custom third-party extensions—into a single centralized database. Logger++ logs traffic in real time and provides a highly customizable, multi-column viewing interface. Penetration testers can construct complex regular expression (Regex) filters, color-code specific status responses, search across request/response pairs, and analyze complete traffic timelines to ensure that automated checks or extension-generated traffic can be fully audited and exported for client documentation.\n10. Retire.js\nModern web applications rely heavily on client-side JavaScript frameworks and open-source libraries. Outdated client-side dependencies often contain publicly documented vulnerabilities (CVEs) that allow attackers to execute Cross-Site Scripting (XSS) or prototype pollution attacks. Operating purely as a passive analyzer, Retire.js continuously monitors incoming HTTP responses for JavaScript files, inline scripts, and library signatures. It compares detected library versions against a continuously updated vulnerability database. When a match is identified, it generates an issue entry detailing the outdated dependency, its exact version, associated CVE IDs, and direct links to public advisory notes.\nConclusion\nExtending Burp Suite using targeted add-ons significantly elevates the depth, precision, and efficiency of web application penetration testing. While the native suite provides an exceptionally strong foundation for standard traffic analysis and vulnerability identification, relying solely on core functionalities leaves critical gaps when auditing complex modern web targets. Extensions bridge these gaps by adapting the platform to handle non-standard authentication mechanisms, binary data formats, and intricate frontend/backend architectures. Integrating specialized tools like\nAutorize\nfor access control automation,\nTurbo Intruder\nfor high-speed concurrency attacks, and\nParam Miner\nfor unlinked parameter discovery completely shifts a security assessment from reactive manual testing to proactive, intelligent automation. These add-ons empower penetration testers to surface deep logic flaws, subtle race conditions, and hidden entry points that standard automated scanners routinely overlook, saving countless hours during time-constrained security engagements. Beyond immediate performance gains, maintaining a curated library of BApps ensures that security professionals stay ahead of the rapidly evolving threat landscape. Community-driven extensions rapidly incorporate research on novel attack surfaces—such as HTTP Request Smuggling variants, SAML signature wrapping, and JWT cryptographic flaws—giving security teams instant access to cutting-edge research methodologies without waiting for framework-level core updates.\nUltimately, mastering the extension ecosystem transforms Burp Suite from a standard interception proxy into a fully customized, high-powered security auditing framework. By properly configuring runtime dependencies like Jython and systematically deploying top-tier extensions across proxy, scanning, and exploitation phases, security researchers can deliver thorough, rigorous, and highly effective web application assessments.\nBrute Force Attack on Login Pages Using Burp Suite\nAircrack-ng: A Comprehensive Guide and Cheat Sheet\nNetwork Monitoring with C++: IP And Ethernet Sniffing\nTCP Network Monitoring with C++: A Comprehensive Guide\nWhat is Network Automation: The Key to Efficiency and Security\nThe post\nTop 10 Add-ons for Burp Suite in Web Security\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://denizhalil.com/2026/08/18/top-10-burp-suite-extensions/",
-      "content_chars": 17751,
-      "content_sha256": "7701ea157815717fc61a3edca9a7d561573dbca23cfe385a44b4932d735fad02",
-      "content_fetched_at": "2026-08-18T21:32:04.418874+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "DenizHalil Blogs",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:00638c9e67faa791",
-      "kind": "publish",
-      "text": "yage-share published: Btrfs 从零讲起：一个写盘动作换来的能力和账单",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-18T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/btrfs-design-story-20260818.html",
-      "title": "Btrfs 从零讲起：一个写盘动作换来的能力和账单",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "开发工具\n科研与技术前沿\n装系统走到磁盘分区格式化那一步，满屏幕文件系统列出来，大部分人习惯性敲回车选\next4。旁边其实一直趴着个\nBtrfs，很多人扫一眼就直接跳过。它同样是负责把数据落进物理磁盘，脾气却跟老牌文件系统大相径庭。\n说白了，这份脾气全由底层的一个写盘动作决定。Btrfs\n改文件从来不在原地覆盖，而是先找一处空白盘区把新内容写好，再把上层的指针移过去，老内容安稳留在原地。就这么一个简单的动作，既买来了它所有的看家本领，也欠下了后面的全部账单。琢磨透这笔交换，一行命令都不用记，就能看明白它怎么一步步演进到现在的形态，2026\n年手头的机器到底该不该选它，心里自然有数。\n2007 年，Linux 存储卡在哪\n看懂 Btrfs 得把视线拉回 2007 年，看看当年 Linux\n存储到底在为哪些麻烦事发愁。那时候整个社区眼前摆着几块难啃的心病。\n最直接的刺激来自隔壁阵营。2005 年 Sun 推出\nZFS，把快照、数据校验、多盘存储池这几项分散的功能整合成一层，整个存储业界为之震动。Linux\n这边眼馋归眼馋，偏偏\nZFS\n的许可证和 Linux\n内核不兼容\n，代码没法并入主线，头顶还顶着专利风险。当时内核核心开发者\nAndrew Morton 甚至公开批评这种设计是层次违规，这句话\n经 OSNews\n转述\n才流传开来。想要类似的本领，Linux 只能挽起袖子自己从零造。\n另一块心病是全盘检查太耗时间。文件系统在磁盘上记账，突发断电容易把账目搞乱，重启就必须跑一遍全盘检查才敢继续用。磁盘容量年年见涨，检查耗时跟着水涨船高。这亏\nLinux 社区早就吃过一次：后来主导 ext4 开发的 Ted Ts’o 回忆，早在\n2000、2001 年，40 到 80GB\n的磁盘就扫得人发狂，社区的一片呼声直接催生出带日志的\next3，断电后靠回放日志省去全盘检查。可这招只省掉了检查这一步，更深处的问题没动：ext\n家族只负责账本元数据对不对，从不管文件内容本身；硬盘要是悄悄吐出损坏的数据，只要格式合规，系统完全没有手段察觉。\n还有一套折磨人的麻烦是积木拼装。想用快照得靠 LVM\n在底层划逻辑卷，想做多盘冗余又得加一层 md\n组阵列，文件系统再扣在最上面。三层各自为政，互相并不知情。当时\n论坛评论留着一份操作清单\n：日常调个分区大小，得先卸载、跑检查，接着缩文件系统、缩逻辑卷，连敲四五个命令，还得祈祷两个工具对容量数字的换算别打架。\n2007 年 11\n月，各家公司的文件系统工程师坐到一起开工作坊，台上的直接由头就是 ZFS\n铺天盖地的营销攻势。大家当场定了两条路：短期给 ext3\n加扩展，做成次年才转为稳定版本的\next4；长期另起炉灶，做支持快照和校验的新文件系统。短期这条路后来确实兑现了：ext4\n能把 ext3 上要跑 45 分钟的检查压到 4 到 5\n分钟，可文件内容本身依旧没人看管，这正是长期路线要补的洞。选来选去，挑中了\nOracle 工程师 Chris Mason 刚刚起步的 Btrfs。Ts’o\n在会上给所有人泼了冷水，直言\n一个企业级文件系统要\n50 到 200 人年、五年日历时间\n，ZFS 本身也是 2001 年动工、2006\n年才端出来的。当时大家生怕吓跑金主投资，都拍胸脯说两三年就能搞定。后来\nTs’o 回顾结果，各发行版直到 2012\n年秋天核准消费级可用，算下来一天没少，正好五年。\n一个写盘动作定了它的性格\nBtrfs 所有的机制都从一个动作起步：\n改文件，不去覆盖硬盘上的旧数据\n。它每次修改，都是先把改动后的内容写进空白位置，等数据全部落盘，再把指向它的入口指针改过去。这种写法叫写时复制，先写新的，再移指针。指针没挪过去之前，原先的数据原封不动；指针一旦切过去，新内容立刻生效。旧数据就安稳留在原处，直到再也没有任何地方引用它。\n写入方式这么一变，快照立刻变得跟白送一样轻松。所谓快照，无非是给文件系统在某一瞬间存个状态，方便以后随时跳回来。传统的做法要么把数据硬拷贝一份，要么靠\nLVM 在底层战战兢兢预留空间切卷。Btrfs\n做快照只需要新建一个索引入口，指向现成的数据块，盘上的实体数据一个字节都不用搬。官方文档原话就是：\nthe\nsnapshot is instantaneous and only creates a new tree root\ncopy\n。\n伴随这个写盘动作，\n坏数据当场暴露\n。每个数据块落盘前都会算出一串校验值，如同给内容盖上钢印；读数据时重新算一遍，数值对不上马上报错。老\next\n家族没有这套机制，硬盘默默返回损坏的数据，系统会毫无知觉收下，甚至顺手打包进备份文件。有了钢印，脏数据就休想混进备份链条。不过要想把坏块修好，手里得有另一份完好的副本；单盘环境只有一份数据，校验机制负责把问题大声喊出来，修复则必须等冗余副本就位。\n在线挪动磁盘也顺理成章。它的索引结构里自带反向引用，文件系统随时清楚每个数据块具体躺在哪块物理盘上。日常想加盘、拔盘、扩容或者缩小分区，直接在线执行就行，不需要折腾三层工具费力接力。\n妙处在于，快照、校验、压缩和多盘管理这些特性全部挂在同一条写入路径上。这正是它跟老式拼装方案的分水岭：拼装方案是三套工具各管一段，Btrfs\n则是一层统管，所有能力全从同一个写盘动作里流淌出来。\n回头看 2007\n年那三个卡点，病根全是原地覆盖写：新内容一落盘，旧状态就没了。旧状态留不住，快照只能靠外层工具先抄一份；校验找不着统一点，只能各做各的；分配权不在手里，多盘只能外面再包一层。Btrfs\n改掉了这个默认行为。旧数据不销毁，旧状态仍躺在盘上，快照只需新建入口指过去；所有对象走同一条写路径，校验一次挂上全局生效；分配权收归自身，加盘拔盘在线就能做；突发断电后账本要么停在旧入口、要么切到新入口，理论上不存在半新半旧，ext2\n时代那种全盘检查从原理上不再需要。三个解法全来自这同一个动作的兑现。\n别把这笔交换记成 Btrfs 优化写、ext4 优化读的对称。准确的账是：Btrfs\n用读取的局部性，换落盘的历史。写入当下反而更快，因为永远挑连续空位落笔；吃亏的是反复修改的大文件回头读，数据块散落一盘。ext4\n并未参与这笔交易：原地覆盖，文件落在哪就待在哪，两头都不付账，它没有校验、快照与内置多盘，当年也未曾竞标这些。这也解释了为什么数据库跑在\nBtrfs\n上最吃力：数据库自己管页的物理布局，写时复制偏偏冲散了这套布局，后面的性能开关\n+C 就是为此准备的豁免通道。\n同一个动作签下的账单\n一个写盘动作的两侧：买到与签下\n天下没有免费的午餐。换来这些好处的同时，写盘动作也签下了一串账单，每一笔都是这个机制带来的直接后果，可别把它们看成孤立的偶发毛病。\n最先找上门的是磁盘碎片。旧数据不覆盖，新数据落新地，频繁改动的文件切片很快就七零八落散在盘上各处。\n官方手册自己承认：In\nCOW filesystems, files tend to fragment as they are modified\n。\nMason\n自己给过解释\n（2015 年 NYLUG 演讲的 YouTube\n自动字幕）：写入因为只挑连续空地反而更快，但代价全压给了后续的读取；数据库原本为顺序读精心规划的物理布局，全搅成一团乱麻。虚拟机镜像、数据库还有经常原地改写的大文件，都是替这笔账买单的常客。\n再看空间管理，它把磁盘分成了两本账。放文件实体的块组一块大约\n1GiB，放目录结构的块组一块大约\n256MiB，彼此分开核算。这就会引发一种让人摸不着头脑的怪事：明明显示磁盘还有剩余空间，存东西却报空间不足，原因其实是目录结构那本账先用光了。这时候想删几个大文件腾地方，偏偏删除操作也得写目录，结果连删文件都删不掉。这属于机制带来的正常逻辑，\n官方文档至今建议每卷留出 10GB\n余量，快照控制在 12 个以内\n。\n断电后的表现形式同样棘手。写时复制能保证账本完整，前提是物理硬盘按部就班遵守写入顺序。账本不乱并不代表开机就能顺顺当当：要是索引树出了差错，开机直接挂载失败跌进救援终端，需要输入专门的命令去修复。平时大家几乎不接触救援环境，真遇到了容易抓瞎。\n2025\n年夏天出现过一波集中踩坑\n，一个潜伏挺久的 bug 在内核 6.15.3\n变得非常容易触发，断电重启卡死在日志回放阶段。维护者确认了问题，主线修复排进\n6.17，Fedora 也在 6.15.9\n的补丁包里关闭了对应工单。这类问题露在用户眼前的样子足够反常：硬件和性能看着都好好的，偏偏就是进不去系统。\n性能调节开关也是个暗坑。针对数据库或虚拟机文件打上 +C\n属性，能关闭写时复制，随机写入性能马上回血。\n官方文档明确注明\n：加了这个标记，系统会连带停掉这批文件的数据校验。你想，为了抢性能，反而在最怕静默损坏的大文件上把刚换来的钢印给摘了。systemd\n默认给系统日志目录加 +C，虚拟化组件 libvirt\n也常给虚拟机镜像加，好多人对此浑然不觉。\n至于多盘阵列欠下的那笔债，牵涉更多，得单独拉出来细说。里面的坑到现在都没能填平。\n多盘的野心，和还没还清的债\n卷管理和文件系统合体之后，Btrfs\n顺理成章获得了统领多块磁盘的权力。两块盘做镜像，两边各自留一份完整数据，哪边读出坏块就从另一边拉数据修复，校验机制在这里才算实现了完整的自愈闭环；多块盘也能切片条带化，把读写吞吐拉上去。然而它的野心不止于此，它还想把\nRAID5/6\n收入囊中，也就是通过奇偶校验让挂掉一块盘时能靠剩下的算回数据。偏偏这块硬骨头，到现在都没能啃利索。\n翻开\n官方状态页（对应内核\n7.1）\n，RAID5/6 的栏目依然赫然写着 unstable，手册也直言 should not be\nused in production。问题的核心在 write hole\n这个老毛病。遭遇意外断电，一条数据可能处于新旧各写了一半的状态，底层的校验码到底锚定哪一半谁也说不清。系统重新开机，很可能拿损坏的脏数据当成参考标准，反手把完好的数据给覆盖修坏了。想堵住这个漏洞，要么引入写日志，要么每次老老实实做全量读改写。当年全量读改写因为性能太差落选，写日志机制又迟迟没做出来。两头落空，漏洞便一直留到了现在。\n官方版本史里关于\n6.2\n的复盘\n讲得直白：当年为了抢性能把读改写步骤直接砍掉，成了日后所有可靠性隐患的源头。2023\n年发布的 6.2 内核合入了一部分补丁，但 RAID6 仍有大量工作待完成；新的\nstripe tree\n架构已经进入实验分支，官方口径认为这条路线最终会解决现有问题。这笔设计初期欠下的技术债，到今天依然在分期偿还。\n十九年补课，补到了哪\n算上 2009 年合并进 Linux 主线的时间，Btrfs\n这十几年走过的路活脱脱就是一张长长的补课单。断电时空间写满报错的问题，2010\n年才收尾第一轮修复；管理空闲空间的缓存机制，2011 年拿出第一版，2016\n年推倒重写成 B 树，到 2021 年才扶正为默认配置，最早的那套实现直到 2024\n年才正式标为废弃。据双源转述，磁盘物理格式在 2013 年 11\n月宣布稳定，自那之后创建的分区，后续新内核都能直接挂载。2023\n年它在修多盘读改写逻辑，2025 年还在排查 6.15.3 的日志回放故障。\n对照着这条时间线，也能明白为什么它早年口碑相当糟糕。2011\n年前后，论坛上时不时能看到笔记本用户丢光整盘数据、或者空闲空间充足却写不进数据的求助。这些风波大部分集中在物理格式冻结的前后几年。\n2017 年 Red Hat 宣布把\nBtrfs 挡在转正门外，到 RHEL 8\n干脆整棵剔除\n，官方给出的口径是技术预览功能从未打算转正，通篇没提一句丢数据。早年那些糟糕体验确实存在过，只不过那些血泪史对应的旧代码，跟今天大家手头跑的版本隔了十多年的密集修补。\n2026 年，谁适合用它\n2026 年 Btrfs 使用面板\n要拿捏选型尺度，还是得回到那个写盘动作。它的长处和短板本就是一枚硬币的两面，到底合不合适，全看日常需求是恰好用上它的特性，还是迎头撞上它的账单。\n真能发挥它长处、可以闭眼选的，首推单盘系统盘。两大发行版已经用默认配置帮大家站台多年：\nSUSE\n系列把系统盘默认设为\nBtrfs\n，配合自动化快照，系统更新翻车了开机选前一天的镜像就能回滚，属于开箱即用的完整体验；\nFedora\n桌面版也默认使用\nBtrfs\n，不过官方写得很清楚，系统不自带自动快照回滚，想用得手动配工具。发行版的默认选型往往最能说明问题。对那些经常折腾内核、驱动或者频繁大版本升级的机器，快照回滚能省下大把时间。两块盘组镜像同样省心，官方给的评级是\nOK，坏块能靠镜像自动补全，自愈闭环这才完整。\n容易踩雷、建议绕着走的场景也要心里有数。想搭 RAID5/6\n阵列，踏踏实实用底层传统阵列工具组好，上层直接格式化成普通文件系统，避开\nBtrfs\n原生阵列。承载数据库和虚拟机镜像的目录，要么默默承受碎片折磨，要么手动加上\n+C 属性；顺便提醒一句，加了 +C\n之后这部分文件就享受不到校验保护了。跑容器服务也没必要折腾存储驱动，\n官方文档写明即使底层在\nBtrfs 上也建议继续用\noverlay2\n。要是不想花心思理解两本空间账，日常使用也要留神，剩余容量读数容易产生误导，快照也会在后台不知不觉占满磁盘。\n最后交代两句关于技术边界的实话。快照算不上备份，快照和原本的数据共用一套底层存储块，物理硬件损坏两边一起遭殃，官方文档一句话收尾：A\nsnapshot is not a\nbackup。校验码确实能揪出硬盘悄悄吐出的损坏数据，在有多余副本时把它救回来；但它拯救不了一块硬件故障无法读取的坏盘，更没法代替异地容灾；把错误找出来跟把数据修好，是两码事。\n想通了底层写盘的这一笔交换，比死记硬背任何功能清单都管用。以后 Btrfs\n再出新功能或者爆出新隐患，顺着这个核心动作一推就能明白原委。这个琢磨方式看别的底层软件同样行得通：摸清它最底层的那个关键动作，看它换来了什么本领、欠下了什么代价，后面的所有设计取舍自然一清二楚。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/btrfs-design-story-20260818.html",
-      "content_chars": 5831,
-      "content_sha256": "20f0852c7d1ae19780414a18bb442f250b0b18a22f323550d87725e033d6de52",
-      "content_fetched_at": "2026-08-18T21:31:41.365035+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:44e1143d9774ce95",
-      "kind": "publish",
-      "text": "yage-share published: 卖你 AI 产品经理的公司，自己的 agent 不设岗位：multi-agent 的角色、隔离与代码",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-18T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/multi-agent-hats-layers-20260818.html",
-      "title": "卖你 AI 产品经理的公司，自己的 agent 不设岗位：multi-agent 的角色、隔离与代码",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\nAI 产品与平台\n如果你同时跟踪几家 AI 公司的产品，大概见过三种互相矛盾的说法。Cursor\n和 Codex 讲 planner 加 executor，一个拆任务，一个干活。Grok Bot\n换了副调子，说你的账号里住着一批领工牌的 AI\n同事：销售外呼、报销对账、产品表现各有专人，管周报的叫\nPiper，你合上电脑他们继续干。到了 Claude\nCode，路子又变了，模型把编排直接写成 JavaScript 脚本，几十上百个\nsubagent 照着依赖图跑。三边都在说自己才是正解。\n一个自然的疑问是：给 agent\n套上职业岗位，到底是营销包装，还是真能帮模型提效？先把名字放一边，叫\nPiper\n还是老王纯属点缀，这里的帽子指的是岗位定义：你是产品经理、你是财务、你是\nQA。这种争论往往预设了前提，觉得岗位设定和底层机制在同台较量。但我 8\n月中旬测 Grok Build CLI\n时拿到的日志，指向了另一种读法：这几套设计分属不同层级，回答的也是不同问题。机制层管\nagent\n的实际表现，编排层决定谁握控制权，接口层负责把系统翻译给人用。职业帽子老老实实待在接口层，它有自己的真用途，只是对模型的输出质量帮不上忙。\n三个同时为真的现实\n先看三种产品的真实形态。Cursor 和 Codex 走的是功能分工路线。Codex 从\n0.145.0 版本引入 Multi-Agent V2 架构，Cursor 则把多 agent 协同架在\nComposer 与 Agent Mode 之上。两边的 agent\n都有明确职能，名字也是清一色的功能词：planner、executor、reviewer、explore。代码编辑器里没人会给\nsubagent 取名叫老王。\nGrok Bot 选了具名同事的走法。它在 2026 年 8 月 11 日开启\n早期测试\n，为每个账号分发一台\n24 小时开机的云电脑，里面住着挂着名牌和岗位的 AI 同事。\n官方文档\n直接列了八个岗位：销售外呼、招聘寻源、付费广告、报销对账、产品表现、缺陷复现、客户健康、幕僚长。每个角色绑定一份标准产出，比如销售外呼同事趁你睡觉做完客户研究与联系人排序，按你的语气拟好邮件，早上留下一份待审批列表。\nClaude Code 和 Grok Build 走了脚本编排的路。Claude Code 在 5 月底发布\ndynamic\nworkflows\n，由模型针对当前任务现场写出一段 JavaScript\n脚本，交由后台独立的 runtime\n跑起来。脚本只管流程控制，自己不动手，专职负责 spawn subagent。Grok\nBuild 也是一个思路，它的\n/deep-research\n命令背后趴着一段\nRhai 脚本，这种 Rust 生态里的脚本语言，做的事情和 JavaScript\n版本没有两样。\n这看起来像是路线分野。实际上，三款产品只是在不同层级上各取所需，而它们赖以运转的机制地基完全相同。\n地基：窗口隔离从不换人\n机制层的关键只有一件事：context window\n隔离。找个日常场景一试便知。假设你要做一份周度业务复盘，需要对比十家竞品的黑五营销。最省事的做法是把十家材料统统塞进同一个\nprompt。模型确实会交出一份格式周正的报告，目录清晰、分节工整。但只要稍微细读就会露馅：好几个小节都在换着花样倒腾同一套套话，内容深浅不一。这种失败往往很隐蔽，表面格式挑不出毛病，分析质量却平庸至极。十家公司的材料挤在一个窗口里互相稀释，模型的注意力预算摊得太薄，给不出任何一家有深度的判断。\n真正管用的手段是给每家竞品单独开一个干净窗口。一个 subagent\n只盯一家公司、只吃一家的材料，吐出一份独立摘要，主线程最后只负责归纳这十份产出。性能提升的真正推力是多了几个互不干扰的上下文窗口，开了几个角色反倒是细枝末节。光靠角色扮演救不了场：你在同一个窗口里对模型念咒，说你现在是资深销售分析师，视角和打分标准或许能调优一点，可窗口还是那个窗口。十家公司的材料依然挤在一块，既做不到并行，也没有任何物理隔离。\n左边的桌子堆满十摞文件混作一团，右边是一排各自独立、只放一份材料的干净小隔间\n这也是我翻看 Grok\n运行日志时最玩味的地方。卖具名同事最起劲的公司，自己的工程内核里愣是一个\npersona 都找不到。Grok Build 的 deep-research\n工作流把一次调研切成四阶段：规划、检索、验证、成稿。我当时跑出来的那张角色清单格外直白：research-planner\n一个、researcher-0 到 researcher-3 四个、evidence-verifier\n两个、report-synthesizer 一个，凑齐八个 child\nagent。清一色的功能性命名，从零编号，谁也没心思给它们取好听的名字。脚本里写死的工程参数同样朴素：检索宽度默认四路，agent\n总预算 128 个，并发上限 32 个，拿 journal\n文件做断点恢复。这里头找不到半点 Piper\n的影子。它骨子里就是前文说的干净窗口，再加上验证阶段的双倍采样：24\n条候选断言抛出来，两个独立的 verifier 各自核对一遍，24\n条全数通过才准写入最终报告。\n换言之，卖帽子的团队自己下场干重活时从不戴帽子。这谈不上言行不一，纯粹是分层架构的自然表现：机制层认的只有窗口隔离，职业帽子在这儿使不上半点力气。\n编排席：同一把椅子，三种坐法\n机制层解决的是 agent\n输出质量的问题，但它不插手另一件事：执行任务时，究竟谁来决定下一步往哪走。我把这个控制位称为编排席。前面提到的三类产品，刚好对应了三种截然不同的坐法。\n第一种坐法是队友人格坐上去。在 Grok Bot\n里，用户把需求甩给某位具名同事，接下来的步骤全凭这个角色的内置逻辑往前推，跑到关键节点再跳回来找人审批。用户操作时的心智模型是委派，跟在办公室吩咐真人下属没两样：这个客户归你跟了。\n第二种坐法是主 agent 坐上去。Codex、Cursor 以及 OpenHands\n全在此列。OpenHands 就是个现成的样本：通用的 CodeActAgent\n碰到自己处理不来的网页浏览，会触发\nAgentDelegateAction，把子任务转派给专用的\nBrowsingAgent。谁来拍板下一步？答案是当前的主\nagent，开发者只能靠提示词去引导它的判断倾向。\n第三种坐法是代码坐上去。Claude Code 的 dynamic workflow 和 Grok 的\nRhai\n脚本，直接把控制流从模型的上下文记忆里剥离出来，写成白纸黑字的可执行代码。先跑哪步、何时并发、在哪里分流，全由脚本说了算；各个\nsubagent\n守在自己的窗口里，只负责想办法搞定分派到的具体事务；验证环节再派几个独立的\nchild agent\n做交叉比对。我们之前写过一篇文章专门分析这套设计，核心结论是它在三个层级上组合了两种确定性：流程控制用过程确定性锁死，子任务的执行与判断则留给结果确定性。这种做法的代价是脚本无法中途随机应变，因而最适合那些能够预先写明执行计划的硬仗，比如代码审计、大规模仓库迁移，以及需要多角度交叉验证的深度调研。\n三种坐法押注的筹码各不相同。队友人格押的是用户的委派直觉，主 agent\n押的是开发者的提示词调优手感，代码押注的则是确定性本身。有意思的是，Grok\n这家公司同时把第一种和第三种端出来卖：消费端里的 Piper\n头戴岗位与姓名，工程底座里的 Rhai 脚本却连个 persona\n都不屑于写。同一家厂商，两款不同产品，恰好在商业现实里印证了这套分层逻辑。\n帽子住在接口层，解决的是人的问题\n一栋三层小楼的剖面：底层是一排干净的玻璃小工作间，中层控制桌旁有三把椅子，顶层的门厅挂着几顶不同的帽子\n既然帽子对模型本身的输出质量毫无助益，为什么商业产品还是这么乐此不疲地加码岗位设定？答案在接口层。帽子真正在解决的三件实事全围绕着人展开，直接对接人的协作直觉，跟模型本身的推理能力无关。\n第一件，帽子把人类的委派意图翻译成了系统配置。普通用户很难凭空讲出把外呼流程参数化、或者为\nCRM\n同步挂一条异步流水线这类术语，但谁都懂得怎么说给销售配个同事。人类在现实里唯一无师自通的多\nagent\n编排技能，就是给人派活。岗位帽子把这项生活经验直接嫁接到了软件交互上，省去了学习新指令集的门槛。接口层设计的优劣，完全取决于隐喻的普及程度。同事显然比\nplanner\n更符合大众直觉，这也是具名同事频频出现在订阅制消费级产品中、却很少出现在硬核开发者工具里的原因。\n第二件，帽子给触发器和审批门提供了天然的挂载锚点。按日程表跑的定时任务、由\nSlack 消息或 GitHub\n通知触发的自动化管线、外发邮件前的人工放行卡点，这类边界控制总需要依附于一个具体的具名实体。你得清楚知道每天清晨是谁在跑报销对账，也得知道自己点击批准的外联邮件出自哪位同事之手。如果不给名字，光靠冷冰冰的\nagent 编号，面向大众的产品就没办法向用户交代责任链。\n第三件，帽子为持久记忆划出了独立车道。具名角色的历史对话、本地文件和浏览器会话会随时间慢慢沉淀下来，留待下次调用。如果同一个账号下的上下文不做角色分流，跑上一个月就会混成一锅难以检索的浆糊。名字在这里充当了最直观的索引键。\n这方面早期的样本是\nMetaGPT\n。它在 2023\n年把软件公司的 SOP 硬编码进各种 agent 角色，产品经理写\nPRD，架构师出设计，工程师写代码，主打一行需求进、一个仓库出。那时基础模型能力有限，角色设定确实承担了部分行为锚定的任务，试图靠流程把容易跑偏的输出拽回来。三年后再看，这套角色划分的价值主要留在了演示\nDemo\n阶段，它让系统交互变得直观易懂，而在工程上沉淀下来的真正遗产，其实是文档、接口规格与流程图这些格式化的中间产物。帽子走在了前面，底层的窗口隔离与验证机制却未跟上，框架的热度自然也就停留在了模型稚嫩的特定历史阶段。\n近期的混合案例把这种分层展现得更透彻。Claude Code 的 agent teams\n功能在接口层全面借用了团队概念：一旦开启，派生出的会话改称\nteammate，不再叫 subagent，各个 agent\n还能点对点互发消息。但转到机制层，核心不过是一份共享的 tasks.md\n账本文件。任务状态、认领记录、产出依赖全写在里面，agent\n靠着解析这份文件去动态认领与交接。外壳借用了团队修辞，驱动内核依然是普通的文件读写加上消息循环。即便是功能派起家的团队，只要试图把产品推向大众，也会在接口层披上一层拟人外衣，底层的机制地基却始终波澜不惊。\n帽子底下还有张不得不亮出的底牌：它给不了安全边界。Grok Bot\n的官方文档写得很直白，同一个账号下的所有同事共享同一台云电脑，cookie、本地文件、终端凭证完全互通，每位同事仅仅分到了独立的虚拟显示屏。销售同事与报销同事之间并不存在真正的系统权限隔离，唯一能依仗的只有人工审批门。评估这类产品时，把这点想明白，比看花哨的功能清单要紧得多。\n判断与建造\n把这三层逻辑收拢成一张对照表，做架构选型时便能对号入座。不同路线在决策权归属、确定性来源与适用场景上，边界划分得相当分明。\n维度\n队友人格\n主 agent\n脚本编排\n谁决定下一步\n具名同事\n当前 agent\nJavaScript 或 Rhai 脚本\n确定性来源\n委派直觉加审批门\n提示词与模型能力\n控制流锁定为代码\n记忆放哪\n同事车道，持久沉淀\n会话上下文\n脚本变量加 checkpoint\n面向谁\n订阅制商业用户\n开发者\n计划可预先写清的重活\n如果你着手自建系统，资源投入的优先级和买商业软件的直觉恰恰相反。先扎牢窗口隔离，这是一切产出质量的物理地基；接着根据任务对可靠性的严苛程度挑编排坐法：需要可审计、可重复的流水线，就老老实实用代码把控制流锁死，探索性质的重活再交给\nagent\n自由发挥；人格包装排在最后，唯有系统要交付给不懂提示词的业务方时，才有必要投入。给内部使用的编排系统硬起名叫\nPiper，除了给日志平添一点趣味，工程上带不来任何可测量的收益。\n这个分层视角顺带能给出几条可检验的行业预测：开源框架会继续倒向功能性分工，因为核心开发者始终盯着机制层；订阅制消费工具会继续加码岗位包装，因为买单决策发生在接口层；代码生成工具则会把脚本编排沉淀为标配，因为工程世界对确定性有真金白银的定价。大可以拿未来一年的行业新品挨个对照。一旦\nPiper 们主动对外公开同事背后的窗口隔离参数，或者 Cursor 宣布把 planner\n改名叫老张，随时欢迎回过头来推翻我的结论。\n相关阅读：关于脚本编排那一层的确定性边界，我们此前写过一篇更详尽的分析，见\nClaude\nCode Dynamic Workflow：确定性边界画在了哪里\n。各家编码工具的多 agent\n架构基因对比，见\n多\nagent 基因比较\n。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/multi-agent-hats-layers-20260818.html",
-      "content_chars": 5378,
-      "content_sha256": "dce0566f4e7906a61dcebb328802c126a8f11348f7bf10afc7c9177c8bf3d01b",
-      "content_fetched_at": "2026-08-18T21:31:41.568612+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:a73a1a2b30e8d469",
-      "kind": "publish",
-      "text": "yage-share published: 每天一千万次调用的 GPT-4o mini，不聊天也不写代码",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-17T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/small-models-real-work-20260817.html",
-      "title": "每天一千万次调用的 GPT-4o mini，不聊天也不写代码",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "推理与性能\nAI 产品与平台\n2026 年 8 月 13 日，在开发者按次付费调用推理的 OpenRouter\n平台上，全天 509 条公开路由共消耗 11.135 万亿 token，处理了 6.392\n亿次请求。GPT-4o mini 主路由消耗 317 亿 token，调用 1,761\n万次，排在全站请求榜第七名，占 2.76%。若按 token\n消耗量计算，它排在第四十四名，份额仅占 0.29%。在平均单次调用中，它吞吐约\n1,800 个 token；全天输入总计 300.8 亿 token，输出 16.2 亿\ntoken，单次平均仅输出 92 个 token。\n这一进出特征直观反映了它的实际工作内容。编写代码单次需要吞吐数万\ntoken，长文本与多轮对话通常也需往返数千 token，而它两者皆不涉及。18.6 比\n1\n的输入输出比例，呈现出典型的读多写少特征。读入大段上下文，仅返回单一标签或若干指定字段，软件流水线上的分拣工位恰好对应着这种形态。\n若仅参考产品发布会，往往容易将轻量模型视作预算受限时的降级替代品，误以为其承担的任务与大模型相似、仅是能力有所折损。但综合分析付费流量分布、生产环境案例与实际失败记录，展现出的图景截然不同。小模型在工程流水线中牢牢占据了一批大模型无暇顾及的岗位；这些任务与人机对话关联不大，且相当一部分在过去并不属于传统软件的处理范畴。\n不聊天的第一名\n在整体付费流量中，这项数据还呈现出几处明显的分布特征。当天全市场 509\n条公开路由平均单次调用进出 17,419 个 token，而 GPT-4o mini 单次约 1,800\n个 token 的吞吐量仅为全网均值的十分之一左右。在 7 月 1 日至 8 月 13\n日连续 8 个采样日中，其请求量份额虽从 3.9% 缓慢回落至\n2.8%，但单次长度始终保持在 1,700 到 2,400 个 token\n之间，未见明显拓宽。在公开榜单中，头部应用的单次交互长度普遍落在 1.5\n万至 18 万 token\n之间，主流聊天或协同办公产品的调用体量极少会压缩至如此微小的范围。OpenRouter\n的编程语言用量统计里也从来没有它的名字，这和一个标题就想宣称的判断一致：它不在那里写代码。\nOpenRouter 与 a16z 曾联合发布覆盖 100 万亿 token 的用量研究，并在其\n平台数据分析报告\n（学术版见\narXiv:2601.10088\n）的留存章节中给出解释：2024\n年 7 月早期开发者将 GPT-4o mini\n接入系统后，形成了高度稳定的工作负载绑定。采纳的窗口期主要集中在模型发布初期，此后新增的用户群体多随时间沉淀流失，而\n2024 年夏天嵌入生产系统的既有管线则长期稳定运转。该项联合研究未对 4o\nmini 按细分任务做过统计，原因在于任务标签分类体系直至 2025\n年中才正式上线，追不回 2024\n年的历史调用队列。这也印证了当前每日上千万次的调用中，有相当一部分源于两年前已部署落地的稳定管线。\n流水线上的四个工位\n流水线上的分拣工位：小单元给传送带上的小包裹贴标签，远处一台吊车处理单个大箱子\n结合具体工程实践排查，这些管线在后台承担的工作大致可划分为四类工位。第一个工位是前端分拣与请求路由。在复杂架构中让大模型直接吞吐所有原始输入会造成明显的算力浪费，Google\n官方命令行工具便采用了分层路由机制。在\nGemini\n3.1 Flash-Lite 官方技术文档\n中，官方将轻量模型预判复杂度的架构列为生产环境中的推荐方案。\nGemini\nCLI 维护者在社区讨论区\n证实，后台统计中记录的 flash-lite\n请求专门负责评估问题复杂度，简单任务分发至 Flash，复杂推理逻辑才递交给\nPro 处理。在工作流自动化平台 n8n 的常见\nIntercom\n客服消息路由模板\n中，新接入的客服对话会直接交由 4o mini\n处理，由其提取问题类型、用户情绪、紧急程度与相关标签，再依据结构化字段分流至\nClickUp 或 Slack 对应频道。\n第二个工位是结构化字段抽取。非结构化文本中往往包含较多冗余信息，需要模型依循规范格式提取核心数据。在\nOpenAI\n的官方发布说明\n中，财务管理平台 Ramp 演示了利用 4o mini\n从各类收据与发票图像中抽取商家、金额、日期等结构化字段，将非结构化图像转化为标准格式表格。开源社区中的诸多自动化管线亦多遵循该逻辑：自合同文本中提取有效日期，自简历中检索联络方式，或自松散正文中抽离参数。此类任务无须深层长程推理，仅需遵循既定\nJSON Schema 规范返回指定键值即可。\n第三个工位是系统门卫与状态校验。在多步骤流程或多智能体架构中，轻量模型常驻守于各节点入口负责校验判定。例如，判断用户输入的补充信息是否延续上一轮对话主题，抑或评估当前上下文是否达到触发下游昂贵调用链路的阈值。它扮演着状态开关的角色，通常仅输出布尔值或枚举状态，完成判定后即刻退出上下文，将核心推理算力留给后置主模型。\n第四个工位是离线批处理与异步作业。无须秒级实时响应的数据清洗与标注任务，通常会导流至成本更具优势的离线通道。OpenAI\n提供的 Batch 接口具备半价费率优惠，于 24\n小时内返回处理结果，适配非实时的批处理场景。在合成数据生成与模型微调领域，评测研究\nAgoraBench 论文\n记录了一组对比成本：利用 4o mini 生成 5 万条训练样本，相比使用 GPT-4o\n生成 1 万条数据成本降低 3.4\n倍，且据此训练出的学生模型在三个评测设置中有两个表现更优。在特定应用场景下，借助低成本模型扩大生成规模，其收益往往优于获取高单价的少量数据。在评估打分场景中，评测平台\nGaltea\n的实验博客\n指出，经过校准的 4o mini 在评分对齐度指标上达到\n0.71，与单次调用成本高出约 13 倍的 GPT-4.1（对齐度\n0.75）差异有限。在常规业务数据整理中同样存在类似实践：有开发者花费约 30\n美元调用 Gemini Flash\n将数千条格式混乱的脏数据清洗为规范报表，替代了人工整理流程；亦有工程师通过\n4o mini 剔除故障工单中的非关键干扰信息，在提炼出清晰的故障现象后再交由\nClaude 深入分析根因。\n四类工位的核心特征十分明确：输入的上下文可能包含数千字符，但最终输出通常仅为一个分类标签、若干抽取字段或单项评估得分。产出内容天然偏短，其调用频次直接挂钩业务处理量，而非取决于人机对话的轮次深度。\n它带不动多步任务\n在多步复杂任务场景中，工程实践给出的反馈同样具备高度一致性。当尝试由\n4o mini\n承担中央调度角色、独立主导多步骤链式任务时，公开反馈记录大多以失败告终。\n微软问答社区中的生产案例记录\n记载了一个团队在 Azure AI Foundry 平台上的实际案例：部署于生产环境中的\n4o mini\n自动化流水线，在提示词未作调整的前提下突然无法按预期调用既定工具，直接跳过了工具执行环节；而在将相同提示词与工具定义迁移至\nGPT-5 Nano 后，函数调用迅速恢复正常。在\nOpenAI\n开发者论坛的工具调用讨论\n中，工程师列举了 4o mini\n在面对复杂工具链时出现的具体异常：偶发性构造不存在的函数参数名称、向整型字段填入字符串数据、或在命名相近的工具间发生调用混淆。多位开发者在排查后指出，后续迭代的\n4.1 mini 在复杂工具链调用的稳定性上相比 4o mini 有显著改善。\n权威基准测试与一线工程实测给出了相互印证的结论。在 Aider\n多语言代码生成基准测试中，业内常引用的数字是 4o mini 独立完成率仅 3%\n左右，这一数字来自发布语境下的二手转述，但与一线开发人员的实际体验吻合。进行过独立实测的测评者亦指出，该模型适合承担单点独立任务，却难以胜任复杂的多步协作工作流。\n此类失效现象并非偶发噪点。将基础模型缩减为轻量模型，缩减的不仅是参数规模与运算成本，更直接限制了其在长链条决策中的全局规划能力，以及步骤发生偏离时依赖上下文实现自我修正的容错空间。数据分拣、内容过滤与特征标注等单步工位无须统筹长程规划，小模型在其中能够维持高效稳定的表现；但一旦要求其主导全局任务调度，架构能力上的局限便会立刻显现。\n开源的那一半在家里\n分屏画面：左边是安静的家庭书桌，右边是大型云数据中心，小单元们把小箱子从数据中心搬往家庭一侧\n若将观察视角转向开源轻量模型，调用数据呈现出截然不同的分布格局。对于采用开源小模型的开发者而言，本地计算设备已足以支撑其日常运行，通常无须在云端持续承担\nAPI 租赁成本。\n在 2026 年 8 月 13 日当天，OpenRouter 平台用量首位由 DeepSeek\n占据，占据全站 26.75% 的 token 份额，而 Qwen 家族仅占 2.00%。进一步审视\nQwen 27B 系列，两代版本合并统计全天仅产生 45.8 亿 token 与 83\n万次调用，极少有用户在云端按 token 为其付费。其原因在于，27B\n规模的模型借助单张消费级显卡或高规格个人工作站即可在本地完成部署推理，开发者无须持续向云端支付\nAPI 调用开销。Llama 3.1 8B 在云端的分布形态亦十分接近，全天消耗 110.9 亿\ntoken、响应 1,020 万次请求，单次平均长度为 1,088 token，与 4o mini\n同属短请求阵营，但云端承接的总体请求规模明显偏低。作为对照，Gemini 2.5\nFlash-Lite 全天处理 1,047 亿 token、3,755 万次请求，单次均值 2,788\ntoken；DeepSeek V4 Flash 两代版本合计处理 2.32 万亿 token、1.24\n亿次请求，单次平均吞吐达到 18,702 token。\n而在 Hugging Face\n开源社区中，统计数据则勾勒出另一幅全然不同的图景。根据\nHugging\nFace 官方下载统计规则文档\n，客户端每向模型文件发起一次 HTTP 请求（含\nGET 与 HEAD\n请求），计数器即自动递增，平台既不对具体用户进行去重，亦不区分人工下载与自动化脚本调用。在该统计口径下，\nHugging\nFace 夏季开源模型报告\n指出，在所有明确标注参数规模的仓库中，参数量小于 1B\n的微型模型占据了历史下载总量的 83%。其中，明确标注参数的 Qwen\n仓库累计下载量达 20.45 亿次，而 Moonshot 仅为 3700 万次。\n位居下载榜榜首的并非通用对话模型，而是一款专门用于文本嵌入的微型工具\nall-MiniLM-L6-v2。七个月里它累计了 15.5 亿次下载和 5,156\n个赞，大量检索增强生成（RAG）入门教程默认把它写进依赖。Hugging Face\n春季报告亦指出，自动化 CI/CD\n流水线与容器镜像构建流程大幅推升了此类轻量模型的拉取频次。在本地推理引擎\nOllama 的累计拉取榜单中，排名前列的同样是 llama3.1、专注向量嵌入的\nnomic-embed-text 以及 Qwen 镜像，前两者累计拉取量依次约为 1.18\n亿次、8,200 万次，单个 Qwen 标签最高约为 3,680 万次。\n综合对比云端 API\n调用数据与开源社区下载记录，两者的分界线较为清晰。Qwen 27B 与 GPT-4o\nmini\n在大众印象里都是小模型，前者在付费路由榜单中鲜有显现，后者则在云端维持着每日上千万次的高频调用。决定两者分流走向的核心并非绝对参数量，而在于模型权重能否低门槛地迁移至本地端运行，以及替换生产系统中既有默认\nAPI\n所需付出的工程与迁移成本。能够部署在单机显存内的开源轻量模型，其主要应用场景从云端付费接口分流至开发者的本地环境与私有服务器；而个人设备跑不动的开源大模型（如\nDeepSeek\n的旗舰系列），以及云厂商深度集成、迁移阻力较大的闭源轻量模型，则持续驻留于云端基础设施中。此处应当说明，OpenRouter\n仅统计公开按量付费路由部分，并不等同于全球整体市场规模或总营收，各企业的私有自建机房、专属算力集群及区域独立镜像服务均未纳入该统计口径之内。\n先问答案的形状\n在系统技术选型阶段，首要问题在于明确目标任务所需的输出结构究竟呈现何种形态。输出文本的长度与结构特征，往往比通用评测榜单上的基准跑分更能指导工程实践。\n若业务目标仅限于判定分类标签、抽取规范的 JSON\n键值、生成单项评估打分，或对松散输入执行前置清洗过滤，轻量模型兼具低成本与低延迟优势，便足以稳定满足需求。仅当任务涉及展开严密长程推理、跨工具链协同决策，或在多步执行中进行动态容错纠偏时，方需引入高规格大模型介入。轻量模型并非大模型的低质廉价替代品，它在工程流水线中对应着独立的分工定位，承接的是过去由初级处理人员、众包标注流程或后台定时任务脚本所负责的结构化处理工作。\n这项基于调用形态的推论留有明确的可验证边界：若未来细粒度的应用监测数据表明，GPT-4o\nmini\n的主要流量来自长篇对话产品，或其单次输出长度普遍涨到与代码智能体相当的水平，分拣工位的判断就需要修正。在那之前，看到小模型冲上调用榜，不必急着追问它是否变聪明了，先看看它的答案有多短。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/small-models-real-work-20260817.html",
-      "content_chars": 5492,
-      "content_sha256": "e66e2de304077b71b7360ca1e4df807317bef0a3eca5430c608fdce3638cb1f1",
-      "content_fetched_at": "2026-08-18T21:31:41.710370+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-08-19",
+  "collect_window": {
+    "start": "2026-08-17T00:00:00+00:00",
+    "end": "2026-08-18T21:30:12.796441+00:00",
+    "hours": 45
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "32188033275",
+    "commit": "439bed7"
+  },
+  "stats": {
+    "total": 9,
     "by_kind": {
       "publish": 9
     },
@@ -248,9 +29,730 @@
       "denizhalil-blogs": 1,
       "yage-share": 3
     },
+    "failed_lists": [
+      "redsiege-blog"
+    ],
+    "sources_ok": 50,
+    "sources_failed": [
+      {
+        "id": "redsiege-blog",
+        "error": "no_candidates"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 8,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 14,
+      "calls": 14,
+      "prompt_tokens": 15614,
+      "completion_tokens": 3087,
+      "total_tokens": 18701,
+      "prompt_cache_hit_tokens": 12160,
+      "prompt_cache_miss_tokens": 3454
+    },
     "by_content_status": {
       "failed": 4,
       "ok": 5
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:d95d07ae1a725f3f",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "My first Kernel Driver",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver.html",
+      "text": "unknowncheats-ac published: My first Kernel Driver",
+      "at": "2026-08-18T21:30:12.796441+00:00",
+      "external_id": "a:d95d07ae1a725f3f",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver.html",
+      "title": "My first Kernel Driver",
+      "content": "unknowncheats-ac published: My first Kernel Driver",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-18T21:31:00.980332+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-18T21:30:12.796441+00:00",
+      "collected_at": "2026-08-18T21:30:12.796441+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "My first Kernel Driver",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:f6aee2a993090f94",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html",
+      "at": "2026-08-18T21:30:12.796441+00:00",
+      "external_id": "a:f6aee2a993090f94",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-18T21:31:11.972203+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-18T21:30:12.796441+00:00",
+      "collected_at": "2026-08-18T21:30:12.796441+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767880-kernel-driver-post4774311.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:7c912c498db91a5c",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html",
+      "at": "2026-08-18T21:30:12.796441+00:00",
+      "external_id": "a:7c912c498db91a5c",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-18T21:31:22.957079+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-18T21:30:12.796441+00:00",
+      "collected_at": "2026-08-18T21:30:12.796441+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764687-stealth-injector-post4774104.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:e314411385c93251",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html",
+      "at": "2026-08-18T21:30:12.796441+00:00",
+      "external_id": "a:e314411385c93251",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-18T21:31:33.990970+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-18T21:30:12.796441+00:00",
+      "collected_at": "2026-08-18T21:30:12.796441+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/766466-x64dbg-anti-debugger-post4773923.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:1dcf0b5799451a41",
+      "who": "zusda",
+      "who_url": "https://zusda.github.io/",
+      "action": "publish",
+      "target": "从零开始的LLM 11. Voyager原理学习",
+      "target_url": "https://zusda.github.io/2026/08/17/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-11/",
+      "text": "zusda published: 从零开始的LLM 11. Voyager原理学习",
+      "at": "2026-08-18T21:30:12.796441+00:00",
+      "external_id": "a:1dcf0b5799451a41",
+      "url": "https://zusda.github.io/2026/08/17/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-11/",
+      "title": "从零开始的LLM 11. Voyager原理学习",
+      "content": "前言\n本文将介绍 Voyager 的原理。\n经过前面的学习，我们已经系统地完成了大语言模型（LLM）的基础部分，主要参考了以下资料：\n《动手学深度学习》\n《蘑菇书》\n《Happy-LLM》\n《Hello-Agents》\n《all-in-rag》\n到这里，可以认为已经具备了继续深入学习 Agent 的基础能力。\n接下来的内容将不再像之前那样按照固定课程循序渐进，而是更多围绕当前\nAgent 领域的研究方向展开。学习内容既会涉及工程实践（如各种 Agent\n框架、工作流、记忆系统等），也会涉及算法与模型层面的探索（如多模态、持续学习等）。\nGenerative Agents\nLetta\nA-MEM\nVoyager\n这条路线主要围绕\nAgent 的持续学习（Continual\nLearning）\n展开，也是我目前最感兴趣的方向：\n如何让一个\nAgent\n在长期运行过程中不断积累经验、提升能力，而不是每次都从零开始。\n目前来看，大致有两种思路：\n不修改模型本身。\n仅通过\nPrompt、记忆系统（Memory）、RAG、工具调用等机制，使 Agent\n能够不断积累知识和经验，实现能力的持续增长。\n修改模型本身。\n基于 Agent\n长期运行过程中积累的对话、笔记和总结等数据，在合适的时机对模型进行持续训练（Continual\nFine-tuning），使模型真正将这些经验内化，而不仅仅依赖外部记忆。\n由于这一阶段更多是阅读论文、分析开源项目、验证实验以及整理个人理解，而不是单纯跟着教程学习，因此资料收集、实验和整理都会比之前花费更多时间。\n1. Voyager 介绍\nVoyager\n是一个基于\nGPT-4 的 Minecraft\n开放世界探索智能体（embodied agent）\n。\n它的核心目标并不是让 GPT-4 单纯回答 Minecraft 相关问题，而是让\nGPT-4：\n通过生成并执行代码，在 Minecraft\n世界中自主探索、学习技能，并逐渐完成更加复杂的任务。\nVoyager 的整体工作过程可以概括为：\n生成任务\n→ 检索相关 Skill → GPT-4 生成代码\n执行代码\nExecution Error\n→ 修改代码 → 重新执行\n执行成功\n→ Self-Verification\n验证成功\n→ 保存 Skill → 生成下一任务\n验证失败\n→ 根据 Critique 修改代码 → 重新执行\n因此，Voyager 的核心不是单纯的“让 LLM 玩\nMinecraft”，而是建立一个能够\n持续探索、积累技能并逐渐变强\n的闭环。\n由于 Voyager 的具体实现与 Minecraft\n环境高度绑定，其代码本身并不具有通用性，因此这里主要学习它背后的\n系统设计思想和核心机制\n。\n2. Voyager 的三个核心组成部分\nVoyager 由三个核心组件组成：\n组件\n作用\n核心问题\nAutomatic Curriculum\n自动提出下一个探索目标\n下一步做什么？\nSkill Library\n保存已经学会的可复用技能\n已经学会了什么？\nIterative Prompting Mechanism\n生成、执行和不断改进代码\n怎么完成当前任务？\n三者形成一个循环：\n可以简单理解为：\nAutomatic Curriculum\n：决定\n做什么\nIterative Prompting\n：决定\n怎么做\nSkill Library\n：保存\n学会了什么\n3. Automatic Curriculum ——\n自动课程\n3.1 它解决什么问题？\nMinecraft 是开放世界，不存在固定的任务清单，例如：\n挖木 → 做木镐 → 挖石 → 做石镐 → 挖铁\nVoyager 需要\n自主生成任务序列\n。\n其总体目标是：\n尽可能多地发现游戏中的多样化元素。\n同时，下一项任务不能太难，否则当前 Agent\n可能没有足够的资源或技能完成任务。\n因此，Automatic Curriculum 的核心就是：\n根据 Agent\n当前的状态和探索进度，自动决定下一步应该做什么。\n4. Automatic Curriculum 的输入\nGPT-4\n在决定下一个任务时，并不是凭空生成任务，而是会获得多方面的信息。\nAutomatic Curriculum 在生成下一任务时，LLM 的 Prompt\n需要以下输入信息：\nDirectives\n：总体探索目标和约束\nCurrent State\n：智能体当前 Minecraft 状态\nCompleted / Failed Tasks\n：之前完成和失败的任务\nAdditional Context\n：由 GPT-3.5\n根据当前状态和探索进度进行 self-ask 得到的问答结果\n4.1 Directives —— 总体目标与约束\n首先告诉 GPT-4 Voyager 的总体目标。\n例如：\n“My ultimate goal is to discover as many diverse things as\npossible.”\n同时还会加入约束：\n“The next task should not be too hard since I may not have the\nnecessary resources or have learned enough skills to complete it\nyet.”\n也就是说：\n任务既要推动探索，又不能一下子难到当前智能体无法完成。\n4.2 Agent Current State ——\n当前状态\nVoyager 会把\n当前 Minecraft 状态\n提供给\nGPT-4，例如：\ninventory：背包\nequipment：装备\nnearby blocks：附近方块\nnearby entities：附近实体\nbiome：生物群系\ntime：游戏时间\nhealth：生命值\nhunger：饥饿值\nposition：当前位置\n例如 GPT-4 可以知道：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\nInventory:\nWood: 10\nStone: 5\nIron: 0\nEquipment:\nWooden Pickaxe\nBiome:\nPlains\nHealth:\n20\nPosition:\n...\n这样 GPT-4 就能够判断：\n当前已经有什么？当前还缺什么？下一步适合做什么？\n从而生成一个与当前状态匹配的任务。\n4.3 Previously Completed /\nFailed Tasks\nVoyager 还会告诉 GPT-4：\n已经完成过什么任务\n哪些任务失败过\n例如：\n1\n2\n3\n4\n5\n6\n7\n8\nCompleted:\n- collect wood\n- craft wooden pickaxe\n- collect stone\nFailed:\n- craft iron chestplate\n这些信息能够反映 Voyager\n当前的\n探索进度和能力边界（capabilities frontier）\n。\n例如：\n木头和石头相关能力已经掌握，但是铁相关能力还没有完全掌握。\n因此，GPT-4\n可以根据之前的执行情况生成更加合适的后续任务，而不是盲目提出一个当前难以完成的高级任务。\n4.4 GPT-3.5 Self-Ask\nVoyager 还会利用 GPT-3.5 根据当前状态和探索进度：\n自己提出问题\n自己回答问题\n例如可以围绕当前状态产生一些辅助性问题：\n1\n2\n3\nWhat resources are currently available?\nWhat can be crafted with these resources?\nWhat should be explored next?\n这些问答结果可以作为额外上下文，帮助后续的任务生成。\n这里使用 GPT-3.5 而不是\nGPT-4，主要是为了\n降低成本\n。\n5. Skill Library —— 技能库\nAutomatic Curriculum 解决：\n下一步做什么？\nSkill Library\n解决：\n以前学会的东西怎么保存和复用？\n这是 Voyager 非常重要的一部分。\n5.1 Skill 是什么？\nVoyager\n并不是简单地把“我会做石镐”保存成一句自然语言描述，而是把技能表示为：\n可执行代码（executable\ncode）\n。\n例如：\n1\ncraftStoneShovel()\n或者：\n1\ncombatZombieWithSword()\n因此，一个 Skill 本质上是：\n能够完成某个具体任务的一段可执行程序。\nSkill 可以进一步组合：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncollectWood()\n↓\ncraftWoodenPickaxe()\n↓\ncollectStone()\n↓\ncraftStonePickaxe()\n↓\ncollectIron()\n↓\ncraftIronPickaxe()\n后面的复杂任务可以直接调用之前已经学会的\nSkill，而不需要每次都从零开始。\n论文中的：\nskills scaffold temporally extended actions\n其中\nscaffold\n可以理解为：\n为更复杂的行为提供基础和支撑。\n5.2 Skill 的存储结构\n一份 Skill 主要涉及\n4 类持久化存储\n：\n1\n2\n3\n4\nU.f_mkdir(\nf\"\n{ckpt_dir}\n/skill/code\"\n)\n# 保存 .js 完整代码\nU.f_mkdir(\nf\"\n{ckpt_dir}\n/skill/description\"\n)\n# 保存 .txt 自然语言描述\nU.f_mkdir(\nf\"\n{ckpt_dir}\n/skill/vectordb\"\n)\n# 保存 Chroma 向量库\nf\"\n{ckpt_dir}\n/skill/skills.json\"\n# 保存 Skill 映射关系\n对应关系：\ncode/\n：保存\nprogram_code\n，即 LLM\n生成并执行验证通过的完整\nJS 函数代码\ndescription/\n：保存 LLM\n根据代码和函数名生成的\n自然语言描述\nvectordb/\n：保存\ndescription\n的\nembedding 向量\n，用于语义检索\nskills.json\n：保存\nself.skills\n，记录\nprogram_name → code + description\n的\n映射\nskills.json\n主要用于保存 Skill\n的\n代码和描述映射\n：\n1\n2\n3\n4\n5\n6\n{\nprogram_name: {\n\"code\"\n: ...,\n\"description\"\n: ...\n}\n5.3 添加\nSkill：\nadd_new_skill\n主要流程：\n过滤\n：排除不值得复用的一次性任务，例如往箱子存杂物。\n生成描述\n：调用\ngenerate_skill_description\n，让 LLM 根据代码和函数名生成\nskill_description\n。\n处理重名\n：如果\nprogram_name\n已存在，则删除 Vector DB 中旧条目；旧代码文件可以改名为\nxxxV2.js\n留档，但\nself.skills\n只保留最新版本。\n更新\n：将新的 description 加入 Vector DB，并更新\nself.skills[program_name]\n。\n持久化\n：代码、描述、\nskills.json\n和\nVector DB 分别保存。\n5.4 检索\nSkill：\nretrieve_skills\nquery\n是当前任务的自然语言描述。\nk = min(库中现有技能数, retrieval_top_k)\n，避免库中\nSkill 较少时出错。\nsimilarity_search_with_score(query, k=k)\n：将\nquery\n转成 embedding，与 Skill Description 的 embedding\n计算相似度，取 Top-K。\n根据\ndoc.metadata[\"name\"]\n反查\nself.skills[name][\"code\"]\n，返回真正的 Skill Code。\n6. GPT-4 生成 Skill 所需\n的输入\nSkill Library 生成新 Skill 时，LLM Prompt 需要以下输入信息：\n代码生成规范（Guidelines）\n：要求 Skill\n具有通用性和可复用性，便于后续组合成更复杂的 Skill。\nPrimitive APIs + 相关已有\nSkill\n：提供最基础的执行操作 API，以及从 Skill Library\n中检索出的相关已有 Skill，供 GPT-4 复用和组合。\n上一轮代码及执行反馈\n：包括上一轮生成的代码、环境反馈、执行错误和\nCritique，用于迭代改进。\n当前环境状态（Current\nState）\n：包括背包、装备、附近方块/实体、生物群系、时间、生命值、饥饿值和位置。\nChain-of-Thought\n：要求 GPT-4\n在生成代码前进行任务分析和步骤规划。\n这样和前面的：\n6.1 Code Generation Guidelines\n首先要求 GPT-4 生成的 Skill\n具有\n通用性、可复用性和模块化特征\n，因为生成的 Skill\n后续还会被其他更复杂的 Skill 调用。\n也就是说，不应该只针对当前任务编写一次性的代码，而应该尽可能将其设计成可以被后续任务重复调用的技能。\n例如，Prompt 可以要求：\nThe code should be generic, reusable, and modular, as it may be\nreused by other skills in the future. Avoid writing code that only works\nfor the current specific situation.\n6.2 Control Primitive\nAPIs + Relevant Skills\n6.2.1 Control Primitive APIs\nVoyager 提供底层控制 API。\n例如可以理解为：\n1\n2\n3\n4\n5\n6\n7\n移动\n攻击\n跳跃\n挖掘\n放置\n交互\n聊天\n这些属于比较底层的\ncontrol primitives\n。\nGPT-4 可以利用这些 API 编写更高级的 Skill。\n6.2.2 Relevant Skills\nVoyager 会从 Skill Library 中检索与当前任务相关的技能，并把它们放进\nGPT-4 的 prompt。\n例如当前任务：\n制作铁胸甲\nGPT-4 可能已经拥有：\n1\n2\n3\n4\ncollectWood()\ncraftPickaxe()\ncollectStone()\ncollectIron()\n那么 GPT-4\n就可以直接组合这些已有技能，而不是重新学习所有底层操作。\n这实际上形成了：\nSkill Library → In-context Learning → 更复杂的新\nSkill\n6.3 Previous Code +\nFeedback + Errors + Critique\n如果上一轮代码失败了，GPT-4 还会看到：\n上一轮生成的代码\n环境反馈\nexecution error\ncritique\n然后根据这些信息进行修改。\n因此技能生成并不是：\nGPT-4 → 一次生成 → 完成\n而是：\nGPT-4 生成代码 → 执行 → 发现问题 → 修改代码 → 再次执行\n6.4 Current State\n同样会提供 Minecraft 当前状态：\n1\n2\n3\n4\n5\n6\n7\n8\n9\nInventory\nEquipment\nNearby blocks\nNearby entities\nBiome\nTime\nHealth\nHunger\nPosition\n因为代码必须适应\n当前真实环境\n。\n6.5 Chain-of-Thought Prompting\n在生成代码之前，让 GPT-4 先进行任务分析和推理。\n可以简单理解为：\n任务 → 分析所需资源 → 分析可使用的 API / Skill → 规划执行步骤\n→ 生成代码\n因此，并不是直接要求：\n“Write code.”\n而是让 GPT-4：\n先思考如何完成任务，再生成代码。\n这里的\nCoT\n更接近于在\n同一次 LLM\n调用中先进行推理，再生成代码\n，而不是先输出一个完整的分步骤计划，再针对每一步单独调用\nLLM 生成代码并执行。\n因此：\n有 CoT ≠ 有显式的 Plan-then-Act Pipeline\nCoT 主要用于提升\n单次代码生成的质量\n，例如让 GPT-4\n在生成代码前先分析需要哪些资源、应该使用哪些 Primitive APIs、哪些已有\nSkill，以及任务的执行步骤。\n例如，Prompt 可以要求 GPT-4：\nYour task is to write a program to accomplish the following task.\nBefore writing the code, think about: 1. What resources are required?\n2. What skills or APIs can be reused? 3. What steps are needed to\naccomplish the task? 4. How should these steps be implemented?\nThen write the code to accomplish the task.\n6.6 源码prompt\nvoyager/prompts/action_template.txt\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\nYou are a helpful assistant that writes Mineflayer javascript code to complete any Minecraft task specified by me.\nHere are some useful programs written with Mineflayer APIs.\n{programs}\nAt each round of conversation, I will give you\nCode from the last round: ...\nExecution error: ...\nChat log: ...\nBiome: ...\nTime: ...\nNearby blocks: ...\nNearby entities (nearest to farthest):\nHealth: ...\nHunger: ...\nPosition: ...\nEquipment: ...\nInventory (xx/36): ...\nChests: ...\nTask: ...\nContext: ...\nCritique: ...\nYou should then respond to me with\nExplain (if applicable): Are there any steps missing in your plan? Why does the code not complete the task? What does the chat log and execution error imply?\nPlan: How to complete the task step by step. You should pay attention to Inventory since it tells what you have. The task completeness check is also based on your final inventory.\nCode:\n1) Write an async function taking the bot as the only argument.\n2) Reuse the above useful programs as much as possible.\n- Use `mineBlock(bot, name, count)` to collect blocks. Do not use `bot.dig` directly.\n- Use `craftItem(bot, name, count)` to craft items. Do not use `bot.craft` or `bot.recipesFor` directly.\n- Use `smeltItem(bot, name count)` to smelt items. Do not use `bot.openFurnace` directly.\n- Use `placeItem(bot, name, position)` to place blocks. Do not use `bot.placeBlock` directly.\n- Use `killMob(bot, name, timeout)` to kill mobs. Do not use `bot.attack` directly.\n3) Your function will be reused for building more complex functions. Therefore, you should make it generic and reusable. You should not make strong assumption about the inventory (as it may be changed at a later time), and therefore you should always check whether you have the required items before using them. If not, you should first collect the required items and reuse the above useful programs.\n4) Functions in the \"Code from the last round\" section will not be saved or executed. Do not reuse functions listed there.\n5) Anything defined outside a function will be ignored, define all your variables inside your functions.\n6) Call `bot.chat` to show the intermediate progress.\n7) Use `exploreUntil(bot, direction, maxDistance, callback)` when you cannot find something. You should frequently call this before mining blocks or killing mobs. You should select a direction at random every time instead of constantly using (1, 0, 1).\n8) `maxDistance` should always be 32 for `bot.findBlocks` and `bot.findBlock`. Do not cheat.\n9) Do not write infinite loops or recursive functions.\n10) Do not use `bot.on` or `bot.once` to register event listeners. You definitely do not need them.\n11) Name your function in a meaningful way (can infer the task from the name).\nYou should only respond in the format as described below:\nRESPONSE FORMAT:\n{response_format}\n1. Primitive APIs + 已有 Skill\n{programs}\n：提供已有的 Mineflayer API 示例和已学习的\nSkill。\n规则 2 中显式列出的函数，例如\nmineBlock\n等，可直接调用。\n2. 上一轮代码与执行反馈\n每轮提供上一轮执行结果，包括：\nCode from the last round\nExecution error\nChat log\nCritique\n用于分析上一轮代码的问题，并据此调整下一轮实现。\n3. 当前环境状态\n每轮提供 Minecraft Agent\n的实时状态，包括：\nBiome\nTime\nNearby blocks\nNearby entities\nHealth\nHunger\nPosition\nEquipment\nInventory\nChests\n其中\nInventory\n是任务规划和完成度判断的重要依据\n，最终任务是否完成也会结合最终\nInventory 进行检查。\n4. 推理与任务规划要求\nPrompt 要求 Agent\n在生成代码前进行以下分析：\nExplain（如适用）\n：检查当前计划是否存在遗漏，并分析代码为什么未能完成任务，以及\nChat log\n和\nExecution error\n反映出的问题。\nPlan\n：给出完成任务的分步计划，并结合当前环境状态，尤其是\nInventory\n，确定下一步需要执行的操作。\n5. 代码生成规范\n遵循 Prompt 后半部分的\n规则\n1～11\n，并满足输出格式中对代码的通用性要求，最终生成可执行的\nMineflayer JavaScript 代码。\n{response_format} 内容如下\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\nExplain: ...\nPlan:\n1) ...\n2) ...\n3) ...\n...\nCode:\n```javascript\n// helper functions (only if needed, try to avoid them)\n...\n// main function after the helper functions\nasync function yourMainFunctionName(bot) {\n// ...\n}\n```\n7. 迭代式提示机制\n迭代式提示机制是 Voyager\n的核心代码生成与执行框架。其基本流程为：GPT-4\n生成代码后立即执行，系统根据执行结果和任务完成状态，决定是否进行下一轮修改。完整循环如下：\n生成代码 → 执行 → 获取反馈 → 修改代码 → 再次执行\n该迭代将持续进行，直至任务成功完成或达到预设的最大尝试次数。\n执行结果主要对应以下三类反馈情形：\n环境反馈\n：代码运行正常，但 Minecraft\n环境反馈任务前置条件不满足，需调整行动策略。\n执行错误\n：代码本身引发异常（如语法错误、API\n调用失败），需修正程序逻辑。\n自我验证\n：代码无报错，但任务目标实际未达成，需分析失败原因并提出改进方案。\n7.1\n环境反馈（代码执行正常，但环境条件不满足）\n代码本身运行无误，但 Minecraft 环境反馈任务前置条件未能满足。\n例如，环境返回：\n“无法合成铁胸甲，因为还缺少 7 个铁锭。”\n此反馈向 GPT-4 传递了明确的语义信息：\ntext\n1\n2\n3\n4\n5\n任务目标：合成铁胸甲\n↓\n执行受阻\n↓\n根本原因：铁锭数量不足（缺 7 个）\n据此，GPT-4\n可针对性地调整策略（如先采集更多铁锭），而非盲目重试。\n本质\n：环境反馈是 Minecraft\n世界向大语言模型传递的状态信息，用于指导下一步行动决策。\n7.2 执行错误（代码运行异常）\n代码在执行器层面抛出异常，包括但不限于：\n语法错误（SyntaxError）\n非法操作（Invalid Operation）\nAPI 调用异常（API Error）\n此类错误直接暴露了代码本身的缺陷，能够帮助 GPT-4\n快速定位并修正程序逻辑中的具体问题。\n7.3\n自我验证（代码执行正常，但任务目标未达成）\n代码运行虽未报错，却并不代表任务真正完成。\n例如，任务要求“获得一个铁胸甲”，执行全程无 Python\n异常，但最终状态为：\n1\n铁胸甲数量 = 0\n此时，任务仍然失败。\n为此，Voyager 引入了一个独立的\nGPT-4 智能体\n负责自我验证（Self-Verification）。该智能体以当前任务和智能体状态为输入，输出任务是否完成（Yes\n/ No）。当判定失败时，它还会进一步提供：\n批评意见（Critique）\n：解释为什么失败；\n改进建议（Suggestion）\n：指出下一步应如何调整。\n因此，自我验证提供的并非简单的“成功/失败”二值信号，而是包含失败原因和修正方向的高质量语义反馈，可显著提升后续迭代的效率和准确性。\n8. 三个组件如何形成完整闭环？\n最后复习一下流程\n9. Voyager 的亮点\nVoyager 最值得关注的亮点，是其提出的\n“用代码作为 Agent\n的动作空间（Code as Action Space）”\n这一核心思想。\n传统 LLM Agent 通常让模型输出 JSON、文本指令或预定义的 API\n调用作为动作，而 Voyager 则让 GPT-4\n直接生成可执行的 JavaScript\n代码\n，通过代码调用 Minecraft 环境中的 API\n来完成复杂、连续的操作。\n这种方式的优势在于：\n代码天然可以表达多步、组合式和具有时间跨度的动作\n。Agent\n不需要每一步都重新生成一个简单动作，而是可以生成一段程序，一次完成多个连续操作，并根据执行结果不断修改和扩展代码。\n9.1 从 Voyager 到 CodeAct\nVoyager 最初是在\nMinecraft\n开放世界环境\n中验证这一思想。\n之后，\nCodeAct\n将这一思想进一步抽象为一种通用的 LLM\nAgent 动作范式：\n不再限制 Agent 输出固定格式的 JSON / 文本动作，而是让 LLM\n直接生成可执行代码作为动作。\nCodeAct 将 Agent 的动作空间统一为可执行的 Python 代码，并通过 Python\n解释器执行这些代码。Agent\n可以根据执行结果获得反馈，在后续交互中继续\n修正代码、组合已有操作或生成新的动作\n。\n9.2 Voyager 的 Skill Library\n除了\nCode as Action Space\n，Voyager\n的另一个重要亮点是\nSkill Library（技能库）\n。\nVoyager 并不是让 Agent\n每次遇到任务都从零生成代码，而是会将已经验证有效的技能保存下来，并在后续任务中进行\n检索和复用\n。每个\nSkill 本质上是一段可以执行的 Mineflayer JavaScript\n程序，用于完成某个具有明确功能的任务，例如获取资源、制作物品或执行一系列连续操作。\nSkill Library 主要解决的是\n“已有能力如何积累和复用”\n的问题：\nSkill 生成\n：GPT-4 根据当前任务、Agent\n状态以及已有程序等信息生成新的可执行代码。\nSkill 执行与验证\n：生成的代码在 Minecraft\n环境中执行，并根据执行结果判断其是否有效。\nSkill 存储\n：验证成功的代码及其描述被保存到 Skill\nLibrary 中。\nSkill 检索\n：面对新任务时，根据任务语义从已有 Skill\n中检索相关技能，并将其作为后续代码生成的参考。\nSkill 组合\n：Agent 可以调用或组合多个已有\nSkill，完成比单个 Skill 更复杂的任务。\n因此，Skill Library 与\nCode as Action Space\n是相互配合的：\nCode as Action Space 解决“Agent 如何表达和执行复杂动作”，而\nSkill Library 解决“Agent\n如何积累、检索和复用已经学会的动作”。\n这使 Voyager\n不仅能够在当前任务中生成代码，还能够随着探索过程\n持续积累可复用的程序化技能\n，从而逐渐形成能力库。\n9.3 OpenHands：代码 Agent\n的实际落地\n这一思路后来被\nOpenHands（原 OpenDevin）\n等开源\nCoding Agent 框架进一步采用和发展。\nOpenHands 将 Agent 的动作空间扩展到真实的软件开发环境，使 Agent\n能够通过代码、Shell、文件操作等方式与开发环境交互，完成编程、调试、运行程序等任务。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://zusda.github.io/2026/08/17/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-11/",
+      "content_chars": 13916,
+      "content_sha256": "70a4d92dd7f13ea777d9bec39746b23adc050bcd4532fc03efd757c13e41cfb0",
+      "content_fetched_at": "2026-08-18T21:31:55.717191+00:00",
+      "author": "zusda",
+      "author_name": "zusda",
+      "author_url": "https://zusda.github.io/",
+      "published_at": "2026-08-18T21:30:12.796441+00:00",
+      "collected_at": "2026-08-18T21:30:12.796441+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zusda",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://zusda.github.io/",
+        "https://zusda.github.io/2026/08/17/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-11/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zusda",
+          "url": "https://zusda.github.io/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zusda",
+          "name": "zusda",
+          "home_url": "https://zusda.github.io/"
+        },
+        "article": {
+          "title": "从零开始的LLM 11. Voyager原理学习",
+          "url": "https://zusda.github.io/2026/08/17/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-11/",
+          "content_sha256": "70a4d92dd7f13ea777d9bec39746b23adc050bcd4532fc03efd757c13e41cfb0"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:1c8626e3b55aafaa",
+      "who": "denizhalil-blogs",
+      "who_url": "https://denizhalil.com/blogs/",
+      "action": "publish",
+      "target": "Top 10 Add-ons for Burp Suite in Web Security",
+      "target_url": "https://denizhalil.com/2026/08/18/top-10-burp-suite-extensions/",
+      "text": "denizhalil-blogs published: Top 10 Add-ons for Burp Suite in Web Security",
+      "at": "2026-08-18T05:25:00+00:00",
+      "external_id": "a:1c8626e3b55aafaa",
+      "url": "https://denizhalil.com/2026/08/18/top-10-burp-suite-extensions/",
+      "title": "Top 10 Add-ons for Burp Suite in Web Security",
+      "content": "Introduction\nWeb application security testing demands absolute precision, high operational speed, and granular visibility into non-standard protocols, modern API structures, and complex application logic. While Burp Suite (developed by PortSwigger) provides an industry-standard core engine for proxying traffic, its true power lies in its extensible architecture. By leveraging community-developed and commercial extensions, security researchers and penetration testers can seamlessly transform Burp Suite into a fully tailored auditing framework. These add-ons significantly enhance manual workflows by discovering hidden edge-case vulnerabilities, automating repetitive authorization and authentication checks, parsing custom payload formats, and executing high-speed, multi-threaded attack scenarios with minimal performance overhead.\nLearning Objectives\nAfter reading this article, you will be able to:\nUnderstand the role and utility of extensions within the Burp Suite ecosystem.\nInstall, manage, and configure add-ons directly through Burp’s native BApp Store.\nConfigure environment dependencies (such as Jython) required to run Python-based extensions.\nIdentify and deploy the top 10 Burp Suite add-ons for specific security testing scenarios, including IDOR, HTTP request smuggling, SAML tampering, and out-of-band vulnerability discovery.\nWhat are the Burp Suite add-ons?\nBurp Suite add-ons—commonly referred to as\nBApps\nor\nextensions\n—are modular software packages engineered to expand, customize, and enhance the primary feature set of the Burp Suite ecosystem. While the base installation of Burp Suite offers robust tools for intercepting traffic, analyzing HTTP requests, and scanning basic application flaws, modern web environments often use proprietary protocols, complex authentication mechanisms, or custom data formats that require specialized handling. Extensions bridge this gap by enabling security engineers to adapt the platform’s core architecture to meet unique, highly specific testing demands. At their core, these add-ons are developed using Burp Suite’s modern\nMontoya API\n(or its legacy Extender API framework), allowing developers to write custom code in\nJava\n,\nPython\n(via Jython), or\nRuby\n(via JRuby). By hooking directly into Burp’s runtime environment, an extension can passively inspect or actively alter network communications in real time. This deep integration allows security professionals to automate intricate manual workflows, implement novel vulnerability checks, and extend Burp’s passive and active scanning engines far beyond their default parameters.\nFurthermore, the strength of Burp Suite add-ons lies in the massive collaborative community surrounding PortSwigger’s\nBApp Store\n. Security researchers worldwide continuously build and publish specialized plugins that address emerging attack vectors, zero-day research methodologies, and domain-specific security challenges. Whether a tester needs to decode custom token formats, parse binary protocols like WebSockets or gRPC, or audit complex enterprise single sign-on flows, add-ons provide the dedicated tooling needed to execute a thorough penetration test efficiently.\nTraffic Interception & Modification:\nIntercepts, inspects, and dynamically modifies HTTP/S traffic, custom headers, and request bodies in real time before they reach the target server.\nCustom Scanner Rules & Automation:\nAdds custom active and passive scanner checks to automatically flag emerging vulnerabilities, novel injection vectors, or misconfigurations.\nExtensive Language & API Support:\nBuilt on Burp’s Montoya API with cross-language support for Java, Python, and Ruby, allowing seamless integration of third-party security libraries.\nUI & Workflow Enhancement:\nIntroduces dedicated user interface tabs, custom logging windows, and tailored data parsers to streamline complex security assessments.\nHow to add these plugins to Burp Suite?\nInstalling add-ons in Burp Suite is a straightforward process integrated directly into the application’s core user interface. Whether you are adding official tools from PortSwigger’s centralized repository or installing standalone third-party scripts, the platform provides a streamlined workflow to manage, configure, and execute custom plugins.\nConfigure Language Environments:\nRequired only for Python and Ruby extensions. While Java-based extensions run natively out of the box, many popular extensions are written in Python or Ruby and rely on embedded runtime interpreters to compile and execute properly within Burp’s Java environment.\nDownload the Interpreter:\nVisit the official Jython website and download the standalone\nJython JAR\nfile (e.g.,\njython-standalone-2.7.x.jar\n). If you plan to run Ruby extensions, download the\nJRuby standalone JAR\n.\nAccess Burp Settings:\nLaunch Burp Suite, click the gear icon in the top right, or navigate directly to\nSettings\nin the main menu bar.\nSet Environment Paths:\nIn the settings sidebar, expand the\nExtensions\ncategory and select\nPython Environment\n(or\nRuby Environment\n).\nLink the JAR File:\nUnder\nLocation of Jython standalone JAR file\n, click\nSelect file\n, browse your local disk, and select the downloaded\n.jar\nfile. Burp will instantly bind the environment without requiring a restart.\nAccess the BApp Store:\nNavigating Burp’s central extension repository. PortSwigger maintains a curated store featuring hundreds of community and enterprise extensions that have been vetted for stability and performance.\nOpen Burp Suite and locate the main top navigation bar.\nClick on the\nExtensions\ntab to open the extension manager workspace.\nSelect the\nBApp Store\nsub-tab. You will see a complete, searchable directory of available add-ons alongside details like author, rating, and modern Montoya API compatibility.\nSearch and Select the Extension:\nFilter, evaluate, and inspect extension capabilities. Finding the exact tool for your specific penetration testing objective is simple with built-in search and filtering tools.\nLocate the Plugin:\nUse the search bar in the top-left corner of the BApp Store panel to search by extension name (e.g.,\nAutorize\n,\nParam Miner\n, or\nTurbo Intruder\n) or by target vulnerability category.\nInspect Requirements:\nClick on the extension to view its description panel. Review its features, user feedback, memory requirements, and whether it requires a Burp Suite Professional license or specific runtime dependencies.\nInstall or Load the Add-on:\nAutomatic compilation, execution, and manually loading custom extensions. Once you have selected your desired extension, the final setup step brings it into your active workflow.\nStandard BApp Installation:\nClick the\nInstall\nbutton located in the bottom-right details panel. Burp Suite will automatically download the source files, compile them in memory, and initialize the plugin.\nVerify Installation:\nSwitch to the\nInstalled\nsub-tab. Active extensions will show a checked\nLoaded\nbox, and any customized user interface elements (such as dedicated top-level tabs) will appear immediately in your Burp Suite window.\nManual Installation (Offline/Custom Extensions):\nIf you are developing a custom extension or installing a standalone file (\n.jar\n,\n.py\n, or\n.rb\n) obtained directly from GitHub, navigate to the\nInstalled\ntab, click\nAdd\n, select the extension type/file path, and manually click\nNext\nto load it.\nTop 10 Add-ons for Burp Suite in Web Security\n1. Autorize\nAutorize is an indispensable extension for detecting broken access control, authorization bypasses, and Insecure Direct Object Reference (IDOR) vulnerabilities across multi-role web applications. Manual authorization testing traditionally requires intercepting traffic, replacing session cookies, and replaying requests across different user roles—a process that is time-consuming and prone to human error. To automate this, testers configure Autorize with the authorization headers of a low-privileged user (and optionally an unauthenticated user). As the security researcher navigates the application using an administrative account, Autorize transparently repeats every intercepted request in the background using the lower-privileged credentials, comparing response status codes and message lengths to highlight endpoints where access controls are missing or bypassed.\n2. Param Miner\nDeveloped by PortSwigger Research, Param Miner is a high-speed discovery tool built to unearth hidden, unlinked, or unadvertised HTTP parameters. Web applications frequently accept debug flags, administrative switches, or non-standard headers that are absent from front-end code, leaving them exposed to logic flaws and cache manipulation. The extension utilizes optimized, asynchronous guessing algorithms to test thousands of potential GET/POST parameters and HTTP headers against target endpoints. By monitoring subtle variations in server responses—such as small changes in content length, status codes, or header reflections—Param Miner effectively uncovers Web Cache Poisoning vectors, unintended header processing (e.g.,\nX-Forwarded-Host\n), and secret administrative parameters.\n3. Turbo Intruder\nDesigned for high-performance HTTP request generation, Turbo Intruder is an extension that complements Burp Suite’s native Intruder. Standard Intruder threads are often bounded by GUI processing overhead and standard HTTP stacks, making them unsuitable for time-sensitive, high-volume, or single-packet attacks. Built on an asynchronous HTTP stack written in C/Python, Turbo Intruder can transmit tens of thousands of requests per second with minimal CPU and memory footprints. Testers write custom Python scripts to manage attack logic, making it the industry standard for executing single-packet race condition attacks (such as double-spending or multi-use promo codes), high-speed brute-forcing, and rate-limit evasion mechanisms.\n4. HTTP Request Smuggler\nHTTP Request Smuggler is the premier extension for detecting, analyzing, and exploiting HTTP Request Smuggling desynchronization vulnerabilities. These vulnerabilities occur when frontend reverse proxies and backend application servers parse HTTP request boundaries (\nContent-Length\nvs.\nTransfer-Encoding\n) differently, allowing an attacker to “smuggle” a hidden request into the backend pipeline. The extension automatically scans target servers for\nCL.TE\n,\nTE.CL\n, and HTTP/2 downgrade desynchronization flaws by crafting precise, non-destructive probe payloads. Once identified, it provides an integrated interface with pre-built exploit templates designed to hijack secondary user sessions, bypass frontend security controls, access internal management endpoints, or poison web caches.\n5. SAML Raider\nSAML Raider is a dedicated toolkit engineered for testing Single Sign-On (SSO) infrastructures that rely on Security Assertion Markup Language (SAML). Modern enterprise environments heavily utilize SAML for federated authentication, but manual inspection and cryptographic manipulation of raw, base64-encoded XML assertions can be tedious. SAML Raider adds a dedicated tab to Burp’s Proxy and Repeater tools whenever a SAML message is detected in the traffic stream. It automatically decodes and formats the XML body, granting security testers instant access to modify assertions, attributes, and NameIDs while offering built-in shortcuts to execute complex cryptographic attacks like SAML Signature Wrapping (XSW), certificate spoofing, signature stripping, and XML External Entity (XXE) injection.\n6. JWT Editor\nJSON Web Tokens (JWTs) are widely used for session management and API authorization. The JWT Editor extension simplifies auditing web applications that utilize JWTs by providing a dedicated suite for decoding, editing, re-signing, and attacking token implementations. The extension automatically detects JWT strings within HTTP headers, request bodies, and cookies across all Burp tools. It incorporates an integrated key store management system, allowing testers to import public/private keys or generate HMAC secrets. With built-in attack modules, researchers can perform automated signature stripping (\n\"alg\": \"none\"\nattacks), execute HMAC key confusion attacks (switching public key algorithms from RSA to HMAC), and run dictionary attacks to brute-force weak signing keys.\n7. Collaborator Everywhere\nCollaborator Everywhere extends Burp Suite Professional’s native Out-of-Band Application Security Testing (OAST) capabilities across ambient network traffic. While manual testing often involves manually inserting Burp Collaborator links into specific input fields, many application backends process headers asynchronously behind internal queues and logging pipelines. Collaborator Everywhere runs passively in the background, injecting uniquely tracked Burp Collaborator domain payloads into common HTTP request headers (such as\nUser-Agent\n,\nReferer\n,\nX-Forwarded-For\n,\nClient-IP\n, and\nTrue-Client-IP\n). If a backend application, logging server, or analytics pipeline processes these headers asynchronously and initiates an external connection, the extension logs an alert highlighting blind SSRF, DNS resolution leaks, or Pingback vulnerabilities.\n8. Active Scan++\nActive Scan++ acts as an add-on scanner module designed to expand the coverage of Burp Suite Professional’s built-in Active Scanner. It focuses on identifying subtle, complex vulnerability classes that require specialized payload structures and advanced heuristic checks. Operating seamlessly during active scans, Active Scan++ executes lightweight, high-probability probes designed to flag edge-case vulnerabilities with minimal false positives. It specifically tests for Server-Side Template Injection (SSTI) across multiple template engines, Host header injection, edge-side includes (ESI) processing flaws, asynchronous code evaluation, and obscure remote code execution (RCE) vectors.\n9. Logger++\nWhile Burp Suite provides an HTTP history tab, it is restricted to proxy traffic and lacks advanced multi-stage filtering capabilities. Logger++ bridges this gap by logging all requests and responses generated across every Burp module—including Proxy, Intruder, Scanner, Repeater, and custom third-party extensions—into a single centralized database. Logger++ logs traffic in real time and provides a highly customizable, multi-column viewing interface. Penetration testers can construct complex regular expression (Regex) filters, color-code specific status responses, search across request/response pairs, and analyze complete traffic timelines to ensure that automated checks or extension-generated traffic can be fully audited and exported for client documentation.\n10. Retire.js\nModern web applications rely heavily on client-side JavaScript frameworks and open-source libraries. Outdated client-side dependencies often contain publicly documented vulnerabilities (CVEs) that allow attackers to execute Cross-Site Scripting (XSS) or prototype pollution attacks. Operating purely as a passive analyzer, Retire.js continuously monitors incoming HTTP responses for JavaScript files, inline scripts, and library signatures. It compares detected library versions against a continuously updated vulnerability database. When a match is identified, it generates an issue entry detailing the outdated dependency, its exact version, associated CVE IDs, and direct links to public advisory notes.\nConclusion\nExtending Burp Suite using targeted add-ons significantly elevates the depth, precision, and efficiency of web application penetration testing. While the native suite provides an exceptionally strong foundation for standard traffic analysis and vulnerability identification, relying solely on core functionalities leaves critical gaps when auditing complex modern web targets. Extensions bridge these gaps by adapting the platform to handle non-standard authentication mechanisms, binary data formats, and intricate frontend/backend architectures. Integrating specialized tools like\nAutorize\nfor access control automation,\nTurbo Intruder\nfor high-speed concurrency attacks, and\nParam Miner\nfor unlinked parameter discovery completely shifts a security assessment from reactive manual testing to proactive, intelligent automation. These add-ons empower penetration testers to surface deep logic flaws, subtle race conditions, and hidden entry points that standard automated scanners routinely overlook, saving countless hours during time-constrained security engagements. Beyond immediate performance gains, maintaining a curated library of BApps ensures that security professionals stay ahead of the rapidly evolving threat landscape. Community-driven extensions rapidly incorporate research on novel attack surfaces—such as HTTP Request Smuggling variants, SAML signature wrapping, and JWT cryptographic flaws—giving security teams instant access to cutting-edge research methodologies without waiting for framework-level core updates.\nUltimately, mastering the extension ecosystem transforms Burp Suite from a standard interception proxy into a fully customized, high-powered security auditing framework. By properly configuring runtime dependencies like Jython and systematically deploying top-tier extensions across proxy, scanning, and exploitation phases, security researchers can deliver thorough, rigorous, and highly effective web application assessments.\nBrute Force Attack on Login Pages Using Burp Suite\nAircrack-ng: A Comprehensive Guide and Cheat Sheet\nNetwork Monitoring with C++: IP And Ethernet Sniffing\nTCP Network Monitoring with C++: A Comprehensive Guide\nWhat is Network Automation: The Key to Efficiency and Security\nThe post\nTop 10 Add-ons for Burp Suite in Web Security\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://denizhalil.com/2026/08/18/top-10-burp-suite-extensions/",
+      "content_chars": 17751,
+      "content_sha256": "7701ea157815717fc61a3edca9a7d561573dbca23cfe385a44b4932d735fad02",
+      "content_fetched_at": "2026-08-18T21:32:04.418874+00:00",
+      "author": "denizhalil-blogs",
+      "author_name": "DenizHalil Blogs",
+      "author_url": "https://denizhalil.com/blogs/",
+      "published_at": "2026-08-18T05:25:00+00:00",
+      "collected_at": "2026-08-18T21:30:12.796441+00:00",
+      "tags": [
+        "kind:publish",
+        "src:denizhalil-blogs",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://denizhalil.com/blogs/",
+        "https://denizhalil.com/2026/08/18/top-10-burp-suite-extensions/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "denizhalil-blogs",
+          "url": "https://denizhalil.com/blogs/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "denizhalil-blogs",
+          "name": "DenizHalil Blogs",
+          "home_url": "https://denizhalil.com/blogs/"
+        },
+        "article": {
+          "title": "Top 10 Add-ons for Burp Suite in Web Security",
+          "url": "https://denizhalil.com/2026/08/18/top-10-burp-suite-extensions/",
+          "content_sha256": "7701ea157815717fc61a3edca9a7d561573dbca23cfe385a44b4932d735fad02"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:00638c9e67faa791",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Btrfs 从零讲起：一个写盘动作换来的能力和账单",
+      "target_url": "https://yage.ai/share/btrfs-design-story-20260818.html",
+      "text": "yage-share published: Btrfs 从零讲起：一个写盘动作换来的能力和账单",
+      "at": "2026-08-18T00:00:00+00:00",
+      "external_id": "a:00638c9e67faa791",
+      "url": "https://yage.ai/share/btrfs-design-story-20260818.html",
+      "title": "Btrfs 从零讲起：一个写盘动作换来的能力和账单",
+      "content": "开发工具\n科研与技术前沿\n装系统走到磁盘分区格式化那一步，满屏幕文件系统列出来，大部分人习惯性敲回车选\next4。旁边其实一直趴着个\nBtrfs，很多人扫一眼就直接跳过。它同样是负责把数据落进物理磁盘，脾气却跟老牌文件系统大相径庭。\n说白了，这份脾气全由底层的一个写盘动作决定。Btrfs\n改文件从来不在原地覆盖，而是先找一处空白盘区把新内容写好，再把上层的指针移过去，老内容安稳留在原地。就这么一个简单的动作，既买来了它所有的看家本领，也欠下了后面的全部账单。琢磨透这笔交换，一行命令都不用记，就能看明白它怎么一步步演进到现在的形态，2026\n年手头的机器到底该不该选它，心里自然有数。\n2007 年，Linux 存储卡在哪\n看懂 Btrfs 得把视线拉回 2007 年，看看当年 Linux\n存储到底在为哪些麻烦事发愁。那时候整个社区眼前摆着几块难啃的心病。\n最直接的刺激来自隔壁阵营。2005 年 Sun 推出\nZFS，把快照、数据校验、多盘存储池这几项分散的功能整合成一层，整个存储业界为之震动。Linux\n这边眼馋归眼馋，偏偏\nZFS\n的许可证和 Linux\n内核不兼容\n，代码没法并入主线，头顶还顶着专利风险。当时内核核心开发者\nAndrew Morton 甚至公开批评这种设计是层次违规，这句话\n经 OSNews\n转述\n才流传开来。想要类似的本领，Linux 只能挽起袖子自己从零造。\n另一块心病是全盘检查太耗时间。文件系统在磁盘上记账，突发断电容易把账目搞乱，重启就必须跑一遍全盘检查才敢继续用。磁盘容量年年见涨，检查耗时跟着水涨船高。这亏\nLinux 社区早就吃过一次：后来主导 ext4 开发的 Ted Ts’o 回忆，早在\n2000、2001 年，40 到 80GB\n的磁盘就扫得人发狂，社区的一片呼声直接催生出带日志的\next3，断电后靠回放日志省去全盘检查。可这招只省掉了检查这一步，更深处的问题没动：ext\n家族只负责账本元数据对不对，从不管文件内容本身；硬盘要是悄悄吐出损坏的数据，只要格式合规，系统完全没有手段察觉。\n还有一套折磨人的麻烦是积木拼装。想用快照得靠 LVM\n在底层划逻辑卷，想做多盘冗余又得加一层 md\n组阵列，文件系统再扣在最上面。三层各自为政，互相并不知情。当时\n论坛评论留着一份操作清单\n：日常调个分区大小，得先卸载、跑检查，接着缩文件系统、缩逻辑卷，连敲四五个命令，还得祈祷两个工具对容量数字的换算别打架。\n2007 年 11\n月，各家公司的文件系统工程师坐到一起开工作坊，台上的直接由头就是 ZFS\n铺天盖地的营销攻势。大家当场定了两条路：短期给 ext3\n加扩展，做成次年才转为稳定版本的\next4；长期另起炉灶，做支持快照和校验的新文件系统。短期这条路后来确实兑现了：ext4\n能把 ext3 上要跑 45 分钟的检查压到 4 到 5\n分钟，可文件内容本身依旧没人看管，这正是长期路线要补的洞。选来选去，挑中了\nOracle 工程师 Chris Mason 刚刚起步的 Btrfs。Ts’o\n在会上给所有人泼了冷水，直言\n一个企业级文件系统要\n50 到 200 人年、五年日历时间\n，ZFS 本身也是 2001 年动工、2006\n年才端出来的。当时大家生怕吓跑金主投资，都拍胸脯说两三年就能搞定。后来\nTs’o 回顾结果，各发行版直到 2012\n年秋天核准消费级可用，算下来一天没少，正好五年。\n一个写盘动作定了它的性格\nBtrfs 所有的机制都从一个动作起步：\n改文件，不去覆盖硬盘上的旧数据\n。它每次修改，都是先把改动后的内容写进空白位置，等数据全部落盘，再把指向它的入口指针改过去。这种写法叫写时复制，先写新的，再移指针。指针没挪过去之前，原先的数据原封不动；指针一旦切过去，新内容立刻生效。旧数据就安稳留在原处，直到再也没有任何地方引用它。\n写入方式这么一变，快照立刻变得跟白送一样轻松。所谓快照，无非是给文件系统在某一瞬间存个状态，方便以后随时跳回来。传统的做法要么把数据硬拷贝一份，要么靠\nLVM 在底层战战兢兢预留空间切卷。Btrfs\n做快照只需要新建一个索引入口，指向现成的数据块，盘上的实体数据一个字节都不用搬。官方文档原话就是：\nthe\nsnapshot is instantaneous and only creates a new tree root\ncopy\n。\n伴随这个写盘动作，\n坏数据当场暴露\n。每个数据块落盘前都会算出一串校验值，如同给内容盖上钢印；读数据时重新算一遍，数值对不上马上报错。老\next\n家族没有这套机制，硬盘默默返回损坏的数据，系统会毫无知觉收下，甚至顺手打包进备份文件。有了钢印，脏数据就休想混进备份链条。不过要想把坏块修好，手里得有另一份完好的副本；单盘环境只有一份数据，校验机制负责把问题大声喊出来，修复则必须等冗余副本就位。\n在线挪动磁盘也顺理成章。它的索引结构里自带反向引用，文件系统随时清楚每个数据块具体躺在哪块物理盘上。日常想加盘、拔盘、扩容或者缩小分区，直接在线执行就行，不需要折腾三层工具费力接力。\n妙处在于，快照、校验、压缩和多盘管理这些特性全部挂在同一条写入路径上。这正是它跟老式拼装方案的分水岭：拼装方案是三套工具各管一段，Btrfs\n则是一层统管，所有能力全从同一个写盘动作里流淌出来。\n回头看 2007\n年那三个卡点，病根全是原地覆盖写：新内容一落盘，旧状态就没了。旧状态留不住，快照只能靠外层工具先抄一份；校验找不着统一点，只能各做各的；分配权不在手里，多盘只能外面再包一层。Btrfs\n改掉了这个默认行为。旧数据不销毁，旧状态仍躺在盘上，快照只需新建入口指过去；所有对象走同一条写路径，校验一次挂上全局生效；分配权收归自身，加盘拔盘在线就能做；突发断电后账本要么停在旧入口、要么切到新入口，理论上不存在半新半旧，ext2\n时代那种全盘检查从原理上不再需要。三个解法全来自这同一个动作的兑现。\n别把这笔交换记成 Btrfs 优化写、ext4 优化读的对称。准确的账是：Btrfs\n用读取的局部性，换落盘的历史。写入当下反而更快，因为永远挑连续空位落笔；吃亏的是反复修改的大文件回头读，数据块散落一盘。ext4\n并未参与这笔交易：原地覆盖，文件落在哪就待在哪，两头都不付账，它没有校验、快照与内置多盘，当年也未曾竞标这些。这也解释了为什么数据库跑在\nBtrfs\n上最吃力：数据库自己管页的物理布局，写时复制偏偏冲散了这套布局，后面的性能开关\n+C 就是为此准备的豁免通道。\n同一个动作签下的账单\n一个写盘动作的两侧：买到与签下\n天下没有免费的午餐。换来这些好处的同时，写盘动作也签下了一串账单，每一笔都是这个机制带来的直接后果，可别把它们看成孤立的偶发毛病。\n最先找上门的是磁盘碎片。旧数据不覆盖，新数据落新地，频繁改动的文件切片很快就七零八落散在盘上各处。\n官方手册自己承认：In\nCOW filesystems, files tend to fragment as they are modified\n。\nMason\n自己给过解释\n（2015 年 NYLUG 演讲的 YouTube\n自动字幕）：写入因为只挑连续空地反而更快，但代价全压给了后续的读取；数据库原本为顺序读精心规划的物理布局，全搅成一团乱麻。虚拟机镜像、数据库还有经常原地改写的大文件，都是替这笔账买单的常客。\n再看空间管理，它把磁盘分成了两本账。放文件实体的块组一块大约\n1GiB，放目录结构的块组一块大约\n256MiB，彼此分开核算。这就会引发一种让人摸不着头脑的怪事：明明显示磁盘还有剩余空间，存东西却报空间不足，原因其实是目录结构那本账先用光了。这时候想删几个大文件腾地方，偏偏删除操作也得写目录，结果连删文件都删不掉。这属于机制带来的正常逻辑，\n官方文档至今建议每卷留出 10GB\n余量，快照控制在 12 个以内\n。\n断电后的表现形式同样棘手。写时复制能保证账本完整，前提是物理硬盘按部就班遵守写入顺序。账本不乱并不代表开机就能顺顺当当：要是索引树出了差错，开机直接挂载失败跌进救援终端，需要输入专门的命令去修复。平时大家几乎不接触救援环境，真遇到了容易抓瞎。\n2025\n年夏天出现过一波集中踩坑\n，一个潜伏挺久的 bug 在内核 6.15.3\n变得非常容易触发，断电重启卡死在日志回放阶段。维护者确认了问题，主线修复排进\n6.17，Fedora 也在 6.15.9\n的补丁包里关闭了对应工单。这类问题露在用户眼前的样子足够反常：硬件和性能看着都好好的，偏偏就是进不去系统。\n性能调节开关也是个暗坑。针对数据库或虚拟机文件打上 +C\n属性，能关闭写时复制，随机写入性能马上回血。\n官方文档明确注明\n：加了这个标记，系统会连带停掉这批文件的数据校验。你想，为了抢性能，反而在最怕静默损坏的大文件上把刚换来的钢印给摘了。systemd\n默认给系统日志目录加 +C，虚拟化组件 libvirt\n也常给虚拟机镜像加，好多人对此浑然不觉。\n至于多盘阵列欠下的那笔债，牵涉更多，得单独拉出来细说。里面的坑到现在都没能填平。\n多盘的野心，和还没还清的债\n卷管理和文件系统合体之后，Btrfs\n顺理成章获得了统领多块磁盘的权力。两块盘做镜像，两边各自留一份完整数据，哪边读出坏块就从另一边拉数据修复，校验机制在这里才算实现了完整的自愈闭环；多块盘也能切片条带化，把读写吞吐拉上去。然而它的野心不止于此，它还想把\nRAID5/6\n收入囊中，也就是通过奇偶校验让挂掉一块盘时能靠剩下的算回数据。偏偏这块硬骨头，到现在都没能啃利索。\n翻开\n官方状态页（对应内核\n7.1）\n，RAID5/6 的栏目依然赫然写着 unstable，手册也直言 should not be\nused in production。问题的核心在 write hole\n这个老毛病。遭遇意外断电，一条数据可能处于新旧各写了一半的状态，底层的校验码到底锚定哪一半谁也说不清。系统重新开机，很可能拿损坏的脏数据当成参考标准，反手把完好的数据给覆盖修坏了。想堵住这个漏洞，要么引入写日志，要么每次老老实实做全量读改写。当年全量读改写因为性能太差落选，写日志机制又迟迟没做出来。两头落空，漏洞便一直留到了现在。\n官方版本史里关于\n6.2\n的复盘\n讲得直白：当年为了抢性能把读改写步骤直接砍掉，成了日后所有可靠性隐患的源头。2023\n年发布的 6.2 内核合入了一部分补丁，但 RAID6 仍有大量工作待完成；新的\nstripe tree\n架构已经进入实验分支，官方口径认为这条路线最终会解决现有问题。这笔设计初期欠下的技术债，到今天依然在分期偿还。\n十九年补课，补到了哪\n算上 2009 年合并进 Linux 主线的时间，Btrfs\n这十几年走过的路活脱脱就是一张长长的补课单。断电时空间写满报错的问题，2010\n年才收尾第一轮修复；管理空闲空间的缓存机制，2011 年拿出第一版，2016\n年推倒重写成 B 树，到 2021 年才扶正为默认配置，最早的那套实现直到 2024\n年才正式标为废弃。据双源转述，磁盘物理格式在 2013 年 11\n月宣布稳定，自那之后创建的分区，后续新内核都能直接挂载。2023\n年它在修多盘读改写逻辑，2025 年还在排查 6.15.3 的日志回放故障。\n对照着这条时间线，也能明白为什么它早年口碑相当糟糕。2011\n年前后，论坛上时不时能看到笔记本用户丢光整盘数据、或者空闲空间充足却写不进数据的求助。这些风波大部分集中在物理格式冻结的前后几年。\n2017 年 Red Hat 宣布把\nBtrfs 挡在转正门外，到 RHEL 8\n干脆整棵剔除\n，官方给出的口径是技术预览功能从未打算转正，通篇没提一句丢数据。早年那些糟糕体验确实存在过，只不过那些血泪史对应的旧代码，跟今天大家手头跑的版本隔了十多年的密集修补。\n2026 年，谁适合用它\n2026 年 Btrfs 使用面板\n要拿捏选型尺度，还是得回到那个写盘动作。它的长处和短板本就是一枚硬币的两面，到底合不合适，全看日常需求是恰好用上它的特性，还是迎头撞上它的账单。\n真能发挥它长处、可以闭眼选的，首推单盘系统盘。两大发行版已经用默认配置帮大家站台多年：\nSUSE\n系列把系统盘默认设为\nBtrfs\n，配合自动化快照，系统更新翻车了开机选前一天的镜像就能回滚，属于开箱即用的完整体验；\nFedora\n桌面版也默认使用\nBtrfs\n，不过官方写得很清楚，系统不自带自动快照回滚，想用得手动配工具。发行版的默认选型往往最能说明问题。对那些经常折腾内核、驱动或者频繁大版本升级的机器，快照回滚能省下大把时间。两块盘组镜像同样省心，官方给的评级是\nOK，坏块能靠镜像自动补全，自愈闭环这才完整。\n容易踩雷、建议绕着走的场景也要心里有数。想搭 RAID5/6\n阵列，踏踏实实用底层传统阵列工具组好，上层直接格式化成普通文件系统，避开\nBtrfs\n原生阵列。承载数据库和虚拟机镜像的目录，要么默默承受碎片折磨，要么手动加上\n+C 属性；顺便提醒一句，加了 +C\n之后这部分文件就享受不到校验保护了。跑容器服务也没必要折腾存储驱动，\n官方文档写明即使底层在\nBtrfs 上也建议继续用\noverlay2\n。要是不想花心思理解两本空间账，日常使用也要留神，剩余容量读数容易产生误导，快照也会在后台不知不觉占满磁盘。\n最后交代两句关于技术边界的实话。快照算不上备份，快照和原本的数据共用一套底层存储块，物理硬件损坏两边一起遭殃，官方文档一句话收尾：A\nsnapshot is not a\nbackup。校验码确实能揪出硬盘悄悄吐出的损坏数据，在有多余副本时把它救回来；但它拯救不了一块硬件故障无法读取的坏盘，更没法代替异地容灾；把错误找出来跟把数据修好，是两码事。\n想通了底层写盘的这一笔交换，比死记硬背任何功能清单都管用。以后 Btrfs\n再出新功能或者爆出新隐患，顺着这个核心动作一推就能明白原委。这个琢磨方式看别的底层软件同样行得通：摸清它最底层的那个关键动作，看它换来了什么本领、欠下了什么代价，后面的所有设计取舍自然一清二楚。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/btrfs-design-story-20260818.html",
+      "content_chars": 5831,
+      "content_sha256": "20f0852c7d1ae19780414a18bb442f250b0b18a22f323550d87725e033d6de52",
+      "content_fetched_at": "2026-08-18T21:31:41.365035+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-18T00:00:00+00:00",
+      "collected_at": "2026-08-18T21:30:12.796441+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/btrfs-design-story-20260818.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Btrfs 从零讲起：一个写盘动作换来的能力和账单",
+          "url": "https://yage.ai/share/btrfs-design-story-20260818.html",
+          "content_sha256": "20f0852c7d1ae19780414a18bb442f250b0b18a22f323550d87725e033d6de52"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:44e1143d9774ce95",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "卖你 AI 产品经理的公司，自己的 agent 不设岗位：multi-agent 的角色、隔离与代码",
+      "target_url": "https://yage.ai/share/multi-agent-hats-layers-20260818.html",
+      "text": "yage-share published: 卖你 AI 产品经理的公司，自己的 agent 不设岗位：multi-agent 的角色、隔离与代码",
+      "at": "2026-08-18T00:00:00+00:00",
+      "external_id": "a:44e1143d9774ce95",
+      "url": "https://yage.ai/share/multi-agent-hats-layers-20260818.html",
+      "title": "卖你 AI 产品经理的公司，自己的 agent 不设岗位：multi-agent 的角色、隔离与代码",
+      "content": "AI Agent\nAI 产品与平台\n如果你同时跟踪几家 AI 公司的产品，大概见过三种互相矛盾的说法。Cursor\n和 Codex 讲 planner 加 executor，一个拆任务，一个干活。Grok Bot\n换了副调子，说你的账号里住着一批领工牌的 AI\n同事：销售外呼、报销对账、产品表现各有专人，管周报的叫\nPiper，你合上电脑他们继续干。到了 Claude\nCode，路子又变了，模型把编排直接写成 JavaScript 脚本，几十上百个\nsubagent 照着依赖图跑。三边都在说自己才是正解。\n一个自然的疑问是：给 agent\n套上职业岗位，到底是营销包装，还是真能帮模型提效？先把名字放一边，叫\nPiper\n还是老王纯属点缀，这里的帽子指的是岗位定义：你是产品经理、你是财务、你是\nQA。这种争论往往预设了前提，觉得岗位设定和底层机制在同台较量。但我 8\n月中旬测 Grok Build CLI\n时拿到的日志，指向了另一种读法：这几套设计分属不同层级，回答的也是不同问题。机制层管\nagent\n的实际表现，编排层决定谁握控制权，接口层负责把系统翻译给人用。职业帽子老老实实待在接口层，它有自己的真用途，只是对模型的输出质量帮不上忙。\n三个同时为真的现实\n先看三种产品的真实形态。Cursor 和 Codex 走的是功能分工路线。Codex 从\n0.145.0 版本引入 Multi-Agent V2 架构，Cursor 则把多 agent 协同架在\nComposer 与 Agent Mode 之上。两边的 agent\n都有明确职能，名字也是清一色的功能词：planner、executor、reviewer、explore。代码编辑器里没人会给\nsubagent 取名叫老王。\nGrok Bot 选了具名同事的走法。它在 2026 年 8 月 11 日开启\n早期测试\n，为每个账号分发一台\n24 小时开机的云电脑，里面住着挂着名牌和岗位的 AI 同事。\n官方文档\n直接列了八个岗位：销售外呼、招聘寻源、付费广告、报销对账、产品表现、缺陷复现、客户健康、幕僚长。每个角色绑定一份标准产出，比如销售外呼同事趁你睡觉做完客户研究与联系人排序，按你的语气拟好邮件，早上留下一份待审批列表。\nClaude Code 和 Grok Build 走了脚本编排的路。Claude Code 在 5 月底发布\ndynamic\nworkflows\n，由模型针对当前任务现场写出一段 JavaScript\n脚本，交由后台独立的 runtime\n跑起来。脚本只管流程控制，自己不动手，专职负责 spawn subagent。Grok\nBuild 也是一个思路，它的\n/deep-research\n命令背后趴着一段\nRhai 脚本，这种 Rust 生态里的脚本语言，做的事情和 JavaScript\n版本没有两样。\n这看起来像是路线分野。实际上，三款产品只是在不同层级上各取所需，而它们赖以运转的机制地基完全相同。\n地基：窗口隔离从不换人\n机制层的关键只有一件事：context window\n隔离。找个日常场景一试便知。假设你要做一份周度业务复盘，需要对比十家竞品的黑五营销。最省事的做法是把十家材料统统塞进同一个\nprompt。模型确实会交出一份格式周正的报告，目录清晰、分节工整。但只要稍微细读就会露馅：好几个小节都在换着花样倒腾同一套套话，内容深浅不一。这种失败往往很隐蔽，表面格式挑不出毛病，分析质量却平庸至极。十家公司的材料挤在一个窗口里互相稀释，模型的注意力预算摊得太薄，给不出任何一家有深度的判断。\n真正管用的手段是给每家竞品单独开一个干净窗口。一个 subagent\n只盯一家公司、只吃一家的材料，吐出一份独立摘要，主线程最后只负责归纳这十份产出。性能提升的真正推力是多了几个互不干扰的上下文窗口，开了几个角色反倒是细枝末节。光靠角色扮演救不了场：你在同一个窗口里对模型念咒，说你现在是资深销售分析师，视角和打分标准或许能调优一点，可窗口还是那个窗口。十家公司的材料依然挤在一块，既做不到并行，也没有任何物理隔离。\n左边的桌子堆满十摞文件混作一团，右边是一排各自独立、只放一份材料的干净小隔间\n这也是我翻看 Grok\n运行日志时最玩味的地方。卖具名同事最起劲的公司，自己的工程内核里愣是一个\npersona 都找不到。Grok Build 的 deep-research\n工作流把一次调研切成四阶段：规划、检索、验证、成稿。我当时跑出来的那张角色清单格外直白：research-planner\n一个、researcher-0 到 researcher-3 四个、evidence-verifier\n两个、report-synthesizer 一个，凑齐八个 child\nagent。清一色的功能性命名，从零编号，谁也没心思给它们取好听的名字。脚本里写死的工程参数同样朴素：检索宽度默认四路，agent\n总预算 128 个，并发上限 32 个，拿 journal\n文件做断点恢复。这里头找不到半点 Piper\n的影子。它骨子里就是前文说的干净窗口，再加上验证阶段的双倍采样：24\n条候选断言抛出来，两个独立的 verifier 各自核对一遍，24\n条全数通过才准写入最终报告。\n换言之，卖帽子的团队自己下场干重活时从不戴帽子。这谈不上言行不一，纯粹是分层架构的自然表现：机制层认的只有窗口隔离，职业帽子在这儿使不上半点力气。\n编排席：同一把椅子，三种坐法\n机制层解决的是 agent\n输出质量的问题，但它不插手另一件事：执行任务时，究竟谁来决定下一步往哪走。我把这个控制位称为编排席。前面提到的三类产品，刚好对应了三种截然不同的坐法。\n第一种坐法是队友人格坐上去。在 Grok Bot\n里，用户把需求甩给某位具名同事，接下来的步骤全凭这个角色的内置逻辑往前推，跑到关键节点再跳回来找人审批。用户操作时的心智模型是委派，跟在办公室吩咐真人下属没两样：这个客户归你跟了。\n第二种坐法是主 agent 坐上去。Codex、Cursor 以及 OpenHands\n全在此列。OpenHands 就是个现成的样本：通用的 CodeActAgent\n碰到自己处理不来的网页浏览，会触发\nAgentDelegateAction，把子任务转派给专用的\nBrowsingAgent。谁来拍板下一步？答案是当前的主\nagent，开发者只能靠提示词去引导它的判断倾向。\n第三种坐法是代码坐上去。Claude Code 的 dynamic workflow 和 Grok 的\nRhai\n脚本，直接把控制流从模型的上下文记忆里剥离出来，写成白纸黑字的可执行代码。先跑哪步、何时并发、在哪里分流，全由脚本说了算；各个\nsubagent\n守在自己的窗口里，只负责想办法搞定分派到的具体事务；验证环节再派几个独立的\nchild agent\n做交叉比对。我们之前写过一篇文章专门分析这套设计，核心结论是它在三个层级上组合了两种确定性：流程控制用过程确定性锁死，子任务的执行与判断则留给结果确定性。这种做法的代价是脚本无法中途随机应变，因而最适合那些能够预先写明执行计划的硬仗，比如代码审计、大规模仓库迁移，以及需要多角度交叉验证的深度调研。\n三种坐法押注的筹码各不相同。队友人格押的是用户的委派直觉，主 agent\n押的是开发者的提示词调优手感，代码押注的则是确定性本身。有意思的是，Grok\n这家公司同时把第一种和第三种端出来卖：消费端里的 Piper\n头戴岗位与姓名，工程底座里的 Rhai 脚本却连个 persona\n都不屑于写。同一家厂商，两款不同产品，恰好在商业现实里印证了这套分层逻辑。\n帽子住在接口层，解决的是人的问题\n一栋三层小楼的剖面：底层是一排干净的玻璃小工作间，中层控制桌旁有三把椅子，顶层的门厅挂着几顶不同的帽子\n既然帽子对模型本身的输出质量毫无助益，为什么商业产品还是这么乐此不疲地加码岗位设定？答案在接口层。帽子真正在解决的三件实事全围绕着人展开，直接对接人的协作直觉，跟模型本身的推理能力无关。\n第一件，帽子把人类的委派意图翻译成了系统配置。普通用户很难凭空讲出把外呼流程参数化、或者为\nCRM\n同步挂一条异步流水线这类术语，但谁都懂得怎么说给销售配个同事。人类在现实里唯一无师自通的多\nagent\n编排技能，就是给人派活。岗位帽子把这项生活经验直接嫁接到了软件交互上，省去了学习新指令集的门槛。接口层设计的优劣，完全取决于隐喻的普及程度。同事显然比\nplanner\n更符合大众直觉，这也是具名同事频频出现在订阅制消费级产品中、却很少出现在硬核开发者工具里的原因。\n第二件，帽子给触发器和审批门提供了天然的挂载锚点。按日程表跑的定时任务、由\nSlack 消息或 GitHub\n通知触发的自动化管线、外发邮件前的人工放行卡点，这类边界控制总需要依附于一个具体的具名实体。你得清楚知道每天清晨是谁在跑报销对账，也得知道自己点击批准的外联邮件出自哪位同事之手。如果不给名字，光靠冷冰冰的\nagent 编号，面向大众的产品就没办法向用户交代责任链。\n第三件，帽子为持久记忆划出了独立车道。具名角色的历史对话、本地文件和浏览器会话会随时间慢慢沉淀下来，留待下次调用。如果同一个账号下的上下文不做角色分流，跑上一个月就会混成一锅难以检索的浆糊。名字在这里充当了最直观的索引键。\n这方面早期的样本是\nMetaGPT\n。它在 2023\n年把软件公司的 SOP 硬编码进各种 agent 角色，产品经理写\nPRD，架构师出设计，工程师写代码，主打一行需求进、一个仓库出。那时基础模型能力有限，角色设定确实承担了部分行为锚定的任务，试图靠流程把容易跑偏的输出拽回来。三年后再看，这套角色划分的价值主要留在了演示\nDemo\n阶段，它让系统交互变得直观易懂，而在工程上沉淀下来的真正遗产，其实是文档、接口规格与流程图这些格式化的中间产物。帽子走在了前面，底层的窗口隔离与验证机制却未跟上，框架的热度自然也就停留在了模型稚嫩的特定历史阶段。\n近期的混合案例把这种分层展现得更透彻。Claude Code 的 agent teams\n功能在接口层全面借用了团队概念：一旦开启，派生出的会话改称\nteammate，不再叫 subagent，各个 agent\n还能点对点互发消息。但转到机制层，核心不过是一份共享的 tasks.md\n账本文件。任务状态、认领记录、产出依赖全写在里面，agent\n靠着解析这份文件去动态认领与交接。外壳借用了团队修辞，驱动内核依然是普通的文件读写加上消息循环。即便是功能派起家的团队，只要试图把产品推向大众，也会在接口层披上一层拟人外衣，底层的机制地基却始终波澜不惊。\n帽子底下还有张不得不亮出的底牌：它给不了安全边界。Grok Bot\n的官方文档写得很直白，同一个账号下的所有同事共享同一台云电脑，cookie、本地文件、终端凭证完全互通，每位同事仅仅分到了独立的虚拟显示屏。销售同事与报销同事之间并不存在真正的系统权限隔离，唯一能依仗的只有人工审批门。评估这类产品时，把这点想明白，比看花哨的功能清单要紧得多。\n判断与建造\n把这三层逻辑收拢成一张对照表，做架构选型时便能对号入座。不同路线在决策权归属、确定性来源与适用场景上，边界划分得相当分明。\n维度\n队友人格\n主 agent\n脚本编排\n谁决定下一步\n具名同事\n当前 agent\nJavaScript 或 Rhai 脚本\n确定性来源\n委派直觉加审批门\n提示词与模型能力\n控制流锁定为代码\n记忆放哪\n同事车道，持久沉淀\n会话上下文\n脚本变量加 checkpoint\n面向谁\n订阅制商业用户\n开发者\n计划可预先写清的重活\n如果你着手自建系统，资源投入的优先级和买商业软件的直觉恰恰相反。先扎牢窗口隔离，这是一切产出质量的物理地基；接着根据任务对可靠性的严苛程度挑编排坐法：需要可审计、可重复的流水线，就老老实实用代码把控制流锁死，探索性质的重活再交给\nagent\n自由发挥；人格包装排在最后，唯有系统要交付给不懂提示词的业务方时，才有必要投入。给内部使用的编排系统硬起名叫\nPiper，除了给日志平添一点趣味，工程上带不来任何可测量的收益。\n这个分层视角顺带能给出几条可检验的行业预测：开源框架会继续倒向功能性分工，因为核心开发者始终盯着机制层；订阅制消费工具会继续加码岗位包装，因为买单决策发生在接口层；代码生成工具则会把脚本编排沉淀为标配，因为工程世界对确定性有真金白银的定价。大可以拿未来一年的行业新品挨个对照。一旦\nPiper 们主动对外公开同事背后的窗口隔离参数，或者 Cursor 宣布把 planner\n改名叫老张，随时欢迎回过头来推翻我的结论。\n相关阅读：关于脚本编排那一层的确定性边界，我们此前写过一篇更详尽的分析，见\nClaude\nCode Dynamic Workflow：确定性边界画在了哪里\n。各家编码工具的多 agent\n架构基因对比，见\n多\nagent 基因比较\n。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/multi-agent-hats-layers-20260818.html",
+      "content_chars": 5378,
+      "content_sha256": "dce0566f4e7906a61dcebb328802c126a8f11348f7bf10afc7c9177c8bf3d01b",
+      "content_fetched_at": "2026-08-18T21:31:41.568612+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-18T00:00:00+00:00",
+      "collected_at": "2026-08-18T21:30:12.796441+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/multi-agent-hats-layers-20260818.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "卖你 AI 产品经理的公司，自己的 agent 不设岗位：multi-agent 的角色、隔离与代码",
+          "url": "https://yage.ai/share/multi-agent-hats-layers-20260818.html",
+          "content_sha256": "dce0566f4e7906a61dcebb328802c126a8f11348f7bf10afc7c9177c8bf3d01b"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:a73a1a2b30e8d469",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "每天一千万次调用的 GPT-4o mini，不聊天也不写代码",
+      "target_url": "https://yage.ai/share/small-models-real-work-20260817.html",
+      "text": "yage-share published: 每天一千万次调用的 GPT-4o mini，不聊天也不写代码",
+      "at": "2026-08-17T00:00:00+00:00",
+      "external_id": "a:a73a1a2b30e8d469",
+      "url": "https://yage.ai/share/small-models-real-work-20260817.html",
+      "title": "每天一千万次调用的 GPT-4o mini，不聊天也不写代码",
+      "content": "推理与性能\nAI 产品与平台\n2026 年 8 月 13 日，在开发者按次付费调用推理的 OpenRouter\n平台上，全天 509 条公开路由共消耗 11.135 万亿 token，处理了 6.392\n亿次请求。GPT-4o mini 主路由消耗 317 亿 token，调用 1,761\n万次，排在全站请求榜第七名，占 2.76%。若按 token\n消耗量计算，它排在第四十四名，份额仅占 0.29%。在平均单次调用中，它吞吐约\n1,800 个 token；全天输入总计 300.8 亿 token，输出 16.2 亿\ntoken，单次平均仅输出 92 个 token。\n这一进出特征直观反映了它的实际工作内容。编写代码单次需要吞吐数万\ntoken，长文本与多轮对话通常也需往返数千 token，而它两者皆不涉及。18.6 比\n1\n的输入输出比例，呈现出典型的读多写少特征。读入大段上下文，仅返回单一标签或若干指定字段，软件流水线上的分拣工位恰好对应着这种形态。\n若仅参考产品发布会，往往容易将轻量模型视作预算受限时的降级替代品，误以为其承担的任务与大模型相似、仅是能力有所折损。但综合分析付费流量分布、生产环境案例与实际失败记录，展现出的图景截然不同。小模型在工程流水线中牢牢占据了一批大模型无暇顾及的岗位；这些任务与人机对话关联不大，且相当一部分在过去并不属于传统软件的处理范畴。\n不聊天的第一名\n在整体付费流量中，这项数据还呈现出几处明显的分布特征。当天全市场 509\n条公开路由平均单次调用进出 17,419 个 token，而 GPT-4o mini 单次约 1,800\n个 token 的吞吐量仅为全网均值的十分之一左右。在 7 月 1 日至 8 月 13\n日连续 8 个采样日中，其请求量份额虽从 3.9% 缓慢回落至\n2.8%，但单次长度始终保持在 1,700 到 2,400 个 token\n之间，未见明显拓宽。在公开榜单中，头部应用的单次交互长度普遍落在 1.5\n万至 18 万 token\n之间，主流聊天或协同办公产品的调用体量极少会压缩至如此微小的范围。OpenRouter\n的编程语言用量统计里也从来没有它的名字，这和一个标题就想宣称的判断一致：它不在那里写代码。\nOpenRouter 与 a16z 曾联合发布覆盖 100 万亿 token 的用量研究，并在其\n平台数据分析报告\n（学术版见\narXiv:2601.10088\n）的留存章节中给出解释：2024\n年 7 月早期开发者将 GPT-4o mini\n接入系统后，形成了高度稳定的工作负载绑定。采纳的窗口期主要集中在模型发布初期，此后新增的用户群体多随时间沉淀流失，而\n2024 年夏天嵌入生产系统的既有管线则长期稳定运转。该项联合研究未对 4o\nmini 按细分任务做过统计，原因在于任务标签分类体系直至 2025\n年中才正式上线，追不回 2024\n年的历史调用队列。这也印证了当前每日上千万次的调用中，有相当一部分源于两年前已部署落地的稳定管线。\n流水线上的四个工位\n流水线上的分拣工位：小单元给传送带上的小包裹贴标签，远处一台吊车处理单个大箱子\n结合具体工程实践排查，这些管线在后台承担的工作大致可划分为四类工位。第一个工位是前端分拣与请求路由。在复杂架构中让大模型直接吞吐所有原始输入会造成明显的算力浪费，Google\n官方命令行工具便采用了分层路由机制。在\nGemini\n3.1 Flash-Lite 官方技术文档\n中，官方将轻量模型预判复杂度的架构列为生产环境中的推荐方案。\nGemini\nCLI 维护者在社区讨论区\n证实，后台统计中记录的 flash-lite\n请求专门负责评估问题复杂度，简单任务分发至 Flash，复杂推理逻辑才递交给\nPro 处理。在工作流自动化平台 n8n 的常见\nIntercom\n客服消息路由模板\n中，新接入的客服对话会直接交由 4o mini\n处理，由其提取问题类型、用户情绪、紧急程度与相关标签，再依据结构化字段分流至\nClickUp 或 Slack 对应频道。\n第二个工位是结构化字段抽取。非结构化文本中往往包含较多冗余信息，需要模型依循规范格式提取核心数据。在\nOpenAI\n的官方发布说明\n中，财务管理平台 Ramp 演示了利用 4o mini\n从各类收据与发票图像中抽取商家、金额、日期等结构化字段，将非结构化图像转化为标准格式表格。开源社区中的诸多自动化管线亦多遵循该逻辑：自合同文本中提取有效日期，自简历中检索联络方式，或自松散正文中抽离参数。此类任务无须深层长程推理，仅需遵循既定\nJSON Schema 规范返回指定键值即可。\n第三个工位是系统门卫与状态校验。在多步骤流程或多智能体架构中，轻量模型常驻守于各节点入口负责校验判定。例如，判断用户输入的补充信息是否延续上一轮对话主题，抑或评估当前上下文是否达到触发下游昂贵调用链路的阈值。它扮演着状态开关的角色，通常仅输出布尔值或枚举状态，完成判定后即刻退出上下文，将核心推理算力留给后置主模型。\n第四个工位是离线批处理与异步作业。无须秒级实时响应的数据清洗与标注任务，通常会导流至成本更具优势的离线通道。OpenAI\n提供的 Batch 接口具备半价费率优惠，于 24\n小时内返回处理结果，适配非实时的批处理场景。在合成数据生成与模型微调领域，评测研究\nAgoraBench 论文\n记录了一组对比成本：利用 4o mini 生成 5 万条训练样本，相比使用 GPT-4o\n生成 1 万条数据成本降低 3.4\n倍，且据此训练出的学生模型在三个评测设置中有两个表现更优。在特定应用场景下，借助低成本模型扩大生成规模，其收益往往优于获取高单价的少量数据。在评估打分场景中，评测平台\nGaltea\n的实验博客\n指出，经过校准的 4o mini 在评分对齐度指标上达到\n0.71，与单次调用成本高出约 13 倍的 GPT-4.1（对齐度\n0.75）差异有限。在常规业务数据整理中同样存在类似实践：有开发者花费约 30\n美元调用 Gemini Flash\n将数千条格式混乱的脏数据清洗为规范报表，替代了人工整理流程；亦有工程师通过\n4o mini 剔除故障工单中的非关键干扰信息，在提炼出清晰的故障现象后再交由\nClaude 深入分析根因。\n四类工位的核心特征十分明确：输入的上下文可能包含数千字符，但最终输出通常仅为一个分类标签、若干抽取字段或单项评估得分。产出内容天然偏短，其调用频次直接挂钩业务处理量，而非取决于人机对话的轮次深度。\n它带不动多步任务\n在多步复杂任务场景中，工程实践给出的反馈同样具备高度一致性。当尝试由\n4o mini\n承担中央调度角色、独立主导多步骤链式任务时，公开反馈记录大多以失败告终。\n微软问答社区中的生产案例记录\n记载了一个团队在 Azure AI Foundry 平台上的实际案例：部署于生产环境中的\n4o mini\n自动化流水线，在提示词未作调整的前提下突然无法按预期调用既定工具，直接跳过了工具执行环节；而在将相同提示词与工具定义迁移至\nGPT-5 Nano 后，函数调用迅速恢复正常。在\nOpenAI\n开发者论坛的工具调用讨论\n中，工程师列举了 4o mini\n在面对复杂工具链时出现的具体异常：偶发性构造不存在的函数参数名称、向整型字段填入字符串数据、或在命名相近的工具间发生调用混淆。多位开发者在排查后指出，后续迭代的\n4.1 mini 在复杂工具链调用的稳定性上相比 4o mini 有显著改善。\n权威基准测试与一线工程实测给出了相互印证的结论。在 Aider\n多语言代码生成基准测试中，业内常引用的数字是 4o mini 独立完成率仅 3%\n左右，这一数字来自发布语境下的二手转述，但与一线开发人员的实际体验吻合。进行过独立实测的测评者亦指出，该模型适合承担单点独立任务，却难以胜任复杂的多步协作工作流。\n此类失效现象并非偶发噪点。将基础模型缩减为轻量模型，缩减的不仅是参数规模与运算成本，更直接限制了其在长链条决策中的全局规划能力，以及步骤发生偏离时依赖上下文实现自我修正的容错空间。数据分拣、内容过滤与特征标注等单步工位无须统筹长程规划，小模型在其中能够维持高效稳定的表现；但一旦要求其主导全局任务调度，架构能力上的局限便会立刻显现。\n开源的那一半在家里\n分屏画面：左边是安静的家庭书桌，右边是大型云数据中心，小单元们把小箱子从数据中心搬往家庭一侧\n若将观察视角转向开源轻量模型，调用数据呈现出截然不同的分布格局。对于采用开源小模型的开发者而言，本地计算设备已足以支撑其日常运行，通常无须在云端持续承担\nAPI 租赁成本。\n在 2026 年 8 月 13 日当天，OpenRouter 平台用量首位由 DeepSeek\n占据，占据全站 26.75% 的 token 份额，而 Qwen 家族仅占 2.00%。进一步审视\nQwen 27B 系列，两代版本合并统计全天仅产生 45.8 亿 token 与 83\n万次调用，极少有用户在云端按 token 为其付费。其原因在于，27B\n规模的模型借助单张消费级显卡或高规格个人工作站即可在本地完成部署推理，开发者无须持续向云端支付\nAPI 调用开销。Llama 3.1 8B 在云端的分布形态亦十分接近，全天消耗 110.9 亿\ntoken、响应 1,020 万次请求，单次平均长度为 1,088 token，与 4o mini\n同属短请求阵营，但云端承接的总体请求规模明显偏低。作为对照，Gemini 2.5\nFlash-Lite 全天处理 1,047 亿 token、3,755 万次请求，单次均值 2,788\ntoken；DeepSeek V4 Flash 两代版本合计处理 2.32 万亿 token、1.24\n亿次请求，单次平均吞吐达到 18,702 token。\n而在 Hugging Face\n开源社区中，统计数据则勾勒出另一幅全然不同的图景。根据\nHugging\nFace 官方下载统计规则文档\n，客户端每向模型文件发起一次 HTTP 请求（含\nGET 与 HEAD\n请求），计数器即自动递增，平台既不对具体用户进行去重，亦不区分人工下载与自动化脚本调用。在该统计口径下，\nHugging\nFace 夏季开源模型报告\n指出，在所有明确标注参数规模的仓库中，参数量小于 1B\n的微型模型占据了历史下载总量的 83%。其中，明确标注参数的 Qwen\n仓库累计下载量达 20.45 亿次，而 Moonshot 仅为 3700 万次。\n位居下载榜榜首的并非通用对话模型，而是一款专门用于文本嵌入的微型工具\nall-MiniLM-L6-v2。七个月里它累计了 15.5 亿次下载和 5,156\n个赞，大量检索增强生成（RAG）入门教程默认把它写进依赖。Hugging Face\n春季报告亦指出，自动化 CI/CD\n流水线与容器镜像构建流程大幅推升了此类轻量模型的拉取频次。在本地推理引擎\nOllama 的累计拉取榜单中，排名前列的同样是 llama3.1、专注向量嵌入的\nnomic-embed-text 以及 Qwen 镜像，前两者累计拉取量依次约为 1.18\n亿次、8,200 万次，单个 Qwen 标签最高约为 3,680 万次。\n综合对比云端 API\n调用数据与开源社区下载记录，两者的分界线较为清晰。Qwen 27B 与 GPT-4o\nmini\n在大众印象里都是小模型，前者在付费路由榜单中鲜有显现，后者则在云端维持着每日上千万次的高频调用。决定两者分流走向的核心并非绝对参数量，而在于模型权重能否低门槛地迁移至本地端运行，以及替换生产系统中既有默认\nAPI\n所需付出的工程与迁移成本。能够部署在单机显存内的开源轻量模型，其主要应用场景从云端付费接口分流至开发者的本地环境与私有服务器；而个人设备跑不动的开源大模型（如\nDeepSeek\n的旗舰系列），以及云厂商深度集成、迁移阻力较大的闭源轻量模型，则持续驻留于云端基础设施中。此处应当说明，OpenRouter\n仅统计公开按量付费路由部分，并不等同于全球整体市场规模或总营收，各企业的私有自建机房、专属算力集群及区域独立镜像服务均未纳入该统计口径之内。\n先问答案的形状\n在系统技术选型阶段，首要问题在于明确目标任务所需的输出结构究竟呈现何种形态。输出文本的长度与结构特征，往往比通用评测榜单上的基准跑分更能指导工程实践。\n若业务目标仅限于判定分类标签、抽取规范的 JSON\n键值、生成单项评估打分，或对松散输入执行前置清洗过滤，轻量模型兼具低成本与低延迟优势，便足以稳定满足需求。仅当任务涉及展开严密长程推理、跨工具链协同决策，或在多步执行中进行动态容错纠偏时，方需引入高规格大模型介入。轻量模型并非大模型的低质廉价替代品，它在工程流水线中对应着独立的分工定位，承接的是过去由初级处理人员、众包标注流程或后台定时任务脚本所负责的结构化处理工作。\n这项基于调用形态的推论留有明确的可验证边界：若未来细粒度的应用监测数据表明，GPT-4o\nmini\n的主要流量来自长篇对话产品，或其单次输出长度普遍涨到与代码智能体相当的水平，分拣工位的判断就需要修正。在那之前，看到小模型冲上调用榜，不必急着追问它是否变聪明了，先看看它的答案有多短。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/small-models-real-work-20260817.html",
+      "content_chars": 5492,
+      "content_sha256": "e66e2de304077b71b7360ca1e4df807317bef0a3eca5430c608fdce3638cb1f1",
+      "content_fetched_at": "2026-08-18T21:31:41.710370+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-17T00:00:00+00:00",
+      "collected_at": "2026-08-18T21:30:12.796441+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/small-models-real-work-20260817.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "每天一千万次调用的 GPT-4o mini，不聊天也不写代码",
+          "url": "https://yage.ai/share/small-models-real-work-20260817.html",
+          "content_sha256": "e66e2de304077b71b7360ca1e4df807317bef0a3eca5430c608fdce3638cb1f1"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
