@@ -1,164 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-08-24",
-  "generated_at": "2026-08-23T21:31:36.880311+00:00",
-  "item_count": 6,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:f291a3ebb3ff3311",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a-post4778948.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-23T21:28:10.154633+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a-post4778948.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-23T21:29:59.378586+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:bab7a4ada9b14154",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot-post4778855.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-23T21:28:10.154633+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot-post4778855.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-23T21:30:10.348758+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:86fff8de645557ef",
-      "kind": "publish",
-      "text": "sud0ru published: RedNova: From arbitrary file write to command execution using COM in windows",
-      "actor": "sud0ru",
-      "actor_url": "https://sud0ru.ghost.io/",
-      "created_at": "2026-08-23T16:13:22+00:00",
-      "html_url": "https://sud0ru.ghost.io/rednova-from-arbitrary-file-write-to-command-execution-using-com-in-windows/",
-      "title": "RedNova: From arbitrary file write to command execution using COM in windows",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Imagine a scenario where you are a low-privilege user who can write files as SYSTEM on the filesystem, and you want to abuse that primitive to achieve command execution.\nOn top of that, you want to do it all from a single executable, you drop just one binary and immediately achieve command execution, with no user interaction required.\nThere are many ways to turn an arbitrary file write into command execution. They range from DLL hijacking to dropping a scheduled task file, and more. One less common path is through a COM server that is implemented as an executable rather than a DLL.\nCOM hijacking is a well-known technique when the COM server is implemented as a DLL: you overwrite that DLL with a malicious one, and when the COM object is activated, your DLL is loaded into the victim process. But when the COM server is implemented as an executable (out-of-process, a\nlocal server\n), it can also be hijacked and abused to achieve command execution.\nRedSun\nA few months ago, a security researcher going by the name\nChaotic Eclipse\nbegan dropping multiple Windows zero-day exploits following a dispute with Microsoft. The series started with an exploit called\nBlueHammer\n, and from there a steady stream of exploits followed, targeting then-unpatched vulnerabilities. Honestly, I lost count of how many were dropped, and of which are patched and which aren't.\nI won't cover all of those exploits or their patch status today. Instead, I want to focus on one that caught my attention:\nRedSun\n, a local privilege escalation (LPE) exploit that lets a low-privileged user obtain an arbitrary file write as SYSTEM within the Windows filesystem.\nI also won't dig into the underlying vulnerability behind RedSun, plenty of others have already done that. What interested me was\nhow the exploit converts that file-write-as-SYSTEM primitive into command execution\n, and that's what I'll walk through here.\nHow RedSun achieves execution\nRedSun is a single executable that a low-privileged user runs, and from which they end up with a SYSTEM-level command prompt.\nOnce it has obtained the arbitrary file write as SYSTEM, the exploit copies itself into\nC:\\Windows\\System32\\\nas\nTieringEngineService.exe\n— a COM server that exposes a COM object of the same name. The low-privileged process then activates that COM object (starting the COM server) by calling\nCoCreateInstance\nwith the object's CLSID. As a result, the planted executable runs as SYSTEM.\nInside that executable is a check: if the process detects that it is running as SYSTEM, it reads the original user's session from a named pipe and spawns a\ncmd\nin that session as SYSTEM.\nThe interesting part is that the\nTieringEngineService\nCOM object can be activated by a low-privileged user yet runs as SYSTEM, which is not the usual COM behavior. Normally a COM object runs as the interactive user, under the identity of whoever activated it. This one runs as SYSTEM instead.\nThe TieringEngineService COM object\nThe\nTieringEngineService\nCOM object isn't a typical COM object, because it's tied to a Windows service called\nStorage Tiers Management\n(I'll come back to this class of COM object later). This service relates to storage optimization, from what I've read, the system uses it to manage and move data between different tiers of storage (e.g. faster and slower drives).\nThe screenshot above shows the properties of this COM object as obtained through OleViewDotNet. We can see that the server is implemented in\nTieringEngineService.exe\n.\nIf we check the AppID we can see it has no\nRunAs\nvalue the field that would normally tell us which security identity the COM server runs under. Instead, it has a\nService\nvalue, which maps to the\nTieringEngineService\nservice.\nIf we inspect that service — either in OleViewDotNet or in the Windows Services GUI — we can see it runs as SYSTEM. Both screenshots below show this.\nReturning to the AppID: if we check the\nLaunch Permission\n(which users are allowed to launch this COM object), we can see that all authenticated users are permitted to do so.\nThe\nAccess Permission\n(who may access the interfaces and call the methods the object exposes), however, is empty. An empty value means access falls back to the machine-wide\nDefault Access Permission\nfor COM/DCOM (\ndcomcnfg\n→ My Computer → Properties → COM Security → Access Permissions → \"Edit Default\").\nThe screenshot above shows that ACL and as we can see, only higher-privileged users can access the object by default.\nWatching it happen\nNow, if we run Process Explorer and filter for\nTieringEngineService.exe\n, then open PowerShell\nas a low-privileged user\nand run:\n[Activator]::CreateInstance([Type]::GetTypeFromCLSID(\"50D185B9-FFF3-4656-92C7-E4018DA4361D\"))\nProcess Explorer shows\nTieringEngineService.exe\nbeing launched, and if we check its security properties, we can see it runs as SYSTEM.\nIn PowerShell, though, you'll get an\nAccess Denied\nerror because low-privileged users have no\naccess\npermission for this object, as we saw earlier. They do, however, have\nlaunch\npermission\nSo a low-privileged user was able to launch an executable and run it as SYSTEM,\nregardless of whether that user can access the object afterward\n. That's precisely what RedSun weaponized to turn its filesystem-write vulnerability into command execution.\nIt's a clever move: you don't need to drop a DLL, or plant something in the Startup folder, the whole chain is carried out with a single executable.\nAfter studying the exploit, I wondered whether there are\nother\nCOM objects that could be weaponized the same way to turn an arbitrary file write into command execution. Which ones are they, and how do we find them? That question led to this article, which I've named\nRedNova,\ninspired by the RedSun exploit.\nCOM as a service\nA COM server can be implemented as an\nEXE\n, in which case it's called an\nout-of-process\nserver, or as a\nDLL\n, in which case it's called an\nin-process\nserver.\nA COM server can also package itself as a\nWindows service\n(\nMicrosoft: Installing as a Service Application\n).\nWhen a COM server is a regular executable and a client activates it, the RPCSS subsystem — via its System Activator (SCM/activation service) — launches the executable directly. But when the COM server is packaged as a service, RPCSS instead asks the\nService Control Manager (SCM)\nto start the service.\nBecause the server is now a service, it has all the usual service properties. The one that matters most for our purposes is the\nLog On\nidentity, the security context the service runs under.\nFor a COM object to be backed by a service, its AppID must contain a\nLocalService\nvalue naming the service, and that service must be registered under\nHKLM\\SYSTEM\\CurrentControlSet\\Services\\\n.\nAlmost every COM object that runs as SYSTEM (or another elevated context) and can be lunched by low privileged user is backed by a service, though, as we'll see later, that isn't a hard rule.\nMore than Sun\nReturning to our goal: how do we find other COM objects that share the same properties? In this section I'll introduce the strategy, show the results, and discuss how these COM objects can be weaponized.\nThe Strategy\nAll the information about COM objects lives in the registry, which is straightforward to parse with a PowerShell script, for example. Our strategy looks like this:\nThe idea is to walk every CLSID under\nSoftware\\Classes\\CLSID\n, read its registration and associated AppID, and filter down to the objects that match the pattern we care about.\nwe keep only\nout-of-process\nservers — those backed by a\nLocalServer32\nexecutable or hosted by a service — and discard anything registered to run as the\ninteractive user\n, since those bring no privilege gain. From what's left, we parse the binary\nLaunchPermission\nsecurity descriptor and keep only objects that a\nlow-privilege principal\n(Everyone, Authenticated Users, Users, and similar) is allowed to launch. For each surviving candidate we resolve the backing service and its Log On identity — using both WMI and the registry, since either can come up empty — and confirm the effective executable path. Finally, we drop anything hosted inside\nsvchost.exe\n(i.e. objects backed by a\nServiceDll\nrather than a standalone EXE), because that's a DLL-in-shared-host case and doesn't pair with the \"overwrite the backing executable\" primitive we're interested in.\nWhat remains is the interesting set:\nstandalone, EXE-backed COM objects that a low-privileged user can launch, but which run under a more privileged identity\nusually SYSTEM, by way of the hosting service's Log On account.\nThe implementation for above strategy can be found\nhere\n.\nResults\nAfter running the script above on both Windows 11 and Windows Server 2025 and checking the results, many interesting objects appeared, so let's check them.\n1- CoFilterPipeline COM Object\nThis COM object exists by default in both Windows 11 and Windows Server 2025.\nAs its name suggests, this COM object is related to the printing subsystem and is used for print jobs. This COM object is registered under the CLSID\nD54378CD-91D8-4E10-A00B-819F9A9EFCB1\nand is exposed by the server under\nC:\\Windows\\System32\\printfilterpipelinesvc.exe\n, as you can see in the photo below.\nIf we check the AppID, we can see that this COM object is not packaged as a service. However, it runs under the identity of the Local Service account for some unknown reason. :)\nIf we check the launch permissions, we can see that low-privileged users can launch this object and access it as well.\nNow the question is: how can we weaponize this COM object and use it in our exploits?\nThe tricky part here is that this object allows low-privileged users to execute code in the Local Service context rather than SYSTEM. This is different from the object used in RedSun. However, this is still a privilege escalation because the Local Service token has the\nSeImpersonatePrivilege\nprivilege, which can be used to achieve a SYSTEM token.\nHowever, there is one important problem we need to solve when weaponizing this COM object into exploits such RedSun.\nNot just a copy:\nWhen you copy a file to a folder in Windows, if you have permission to copy the file there, the destination file will inherit the DACL of the parent directory.\nSo, in a normal situation, if you have permission to copy a file to\nSystem32\n(for example, if you are an administrator), the executable will have a DACL like the one shown below.\nAs you can see, the file inherits the permissions from the\nSystem32\nfolder, and the owner of the file, as expected, is Administrator because the administrator copied it.\nHowever, for a normal executable inside\nSystem32\n, we will see the same DACL, but the owner will be\nTrustedInstaller\ninstead of Administrator. As an example, here is the DACL for\nprintfilterpipelinesvc.exe\n.\nAs you can see, the DACL is the same, but now\nTrustedInstaller\nis the owner.\nNow, for\nprintfilterpipelinesvc.exe\nto be launched as Local Service when the COM object is activated, the\nLOCAL SERVICE\naccount must have Read & Execute permission on the file itself on disk, regardless of the COM launch permissions.\nHowever, we cannot see this account inside the DACL above. The permission for this account is not explicitly included in the DACL. However, the\nUsers\ngroup contains\nAuthenticated Users\n, which in turn exists in the token of\nLOCAL SERVICE\n.\nNow, when the RedSun exploit copies the exploit to\nSystem32\nand replaces the legitimate executable, the DACL will look different, as we can see in the photo below.\nAs you can see, the\nUsers\ngroup no longer exists. When we trigger the COM activation from the exploit, we will get an\nAccess Denied\nerror because Local Service does not have Read & Execute permission on this file.\nHowever, the solution is really simple.\nIf you look at the DACL again, we can notice that the owner of the file is\ntestuser\n, which is the low-privileged user we use to run the exploit.\ntbh, I expected the owner to be\nSYSTEM\nbecause the file copy is handled using Defender and the Cloud API. However, it seems that the owner stays as the original owner of the exploit (\ntestuser\nin our case).\nBecause we are the owner, we can use a simple function inside the exploit, after copying the exploit to\nSystem32\nand before triggering the COM activation, to give the Local Service account full control over the file.\nIn this case, we can avoid the Access Denied error, and the exploit will run as Local Service, allowing us to successfully escalate our privileges.\n2- Data Protection Shield COM object:\nIf you look through the script's results, you'll notice many COM objects — present on both Windows 11 and Windows Server 2025 — that fit our theory and could serve as the escalation. But there are some exceptions.\nOne of them is a COM object called\nData Protection Shield\n, whose server is\nC:\\Windows\\System32\\SecurityHealthService.exe\n. If you try to weaponize it by replacing that executable with your own, you'll hit an error like this:\nProgram 'SecurityHealthService.exe' failed to run: Windows cannot verify the digital signature for this file. A recent hardware or software change might have installed a file that is signed incorrectly or damaged, or that might be\nmalicious software from an unknown sourceAt line:1 char:1\n+ C:\\Windows\\System32\\SecurityHealthService.exe\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.\nAt line:1 char:1\n+ C:\\Windows\\System32\\SecurityHealthService.exe\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n+ CategoryInfo : ResourceUnavailable: (:) [], ApplicationFailedException\n+ FullyQualifiedErrorId : NativeCommandFailed\nwhat this means?\nSome Windows executables are required to pass a\ndigital signature check\nbefore they're allowed to run. If you edit or replace such a binary, the OS can no longer verify its signature, and execution fails with the error above.\nA quick way to tell whether a binary is signed is to check the\nDigital Signatures\ntab in the file's Properties dialog, if the tab is present, the file carries a signature.\nThe screenshots below compare the properties of\nTieringEngineService.exe\nand\nSecurityHealthService.exe\n:\nAs you can see,\nSecurityHealthService.exe\nhas a\nDigital Signatures\ntab, while\nTieringEngineService.exe\ndoes not. Inspecting that tab shows the binary is signed by Microsoft:\nThis object isn't the only one protected this way, many of the objects in the script's results share the same property, and they can't be weaponized by replacing their backing executable.\n3- PerceptionSimulationCoClass COM object:\nThis COM object exists only in Windows 11, and it is packaged as a service called\nWindows Perception Simulation Service\n.\nThe service description is:\nEnables spatial perception simulation, virtual camera management and spatial input simulation\nThis COM object has the CLSID\n3AD33743-429F-4DE2-8B95-58FA5C727515\nand its server is located at:\nC:\\Windows\\System32\\PerceptionSimulation\\PerceptionSimulationService.exe\nAs shown in the photo below.\nIf we check the AppID, we can see that it is packaged as a service, and low-privileged users (\nNT AUTHORITY\\INTERACTIVE\n) can launch and access it.\nThe service associated with this COM object runs under the\nSYSTEM\naccount.\nThis object does not require any special modifications if you want to weaponize the RedSun with it.\n4- Diagnostics Hub Standard Collector Service COM object\nThis is the second COM object that exists only in Windows 11. It is also packaged as a service called\nMicrosoft (R) Diagnostics Hub Standard Collector Service\n, which Microsoft describes as:\nDiagnostics Hub Standard Collector Service. When running, this service collects real time ETW events and processes them\nIt has the CLSID\n42CBFAA7-A4A7-47BB-B422-BD10E9D02700\n, and the server is located at:\nC:\\Windows\\System32\\DiagSvcs\\DiagnosticsHub.StandardCollector.Service.exe\nIf we check the AppID, similar to the previous object, we can see that low-privileged users (\nNT AUTHORITY\\Authenticated Users\n) can launch and access it.\nThe service also runs under the\nSYSTEM\naccount.\nHowever, if we replace the server executable with a malicious executable and trigger the COM object, we can see that the resulting process does not receive the full set of SYSTEM token privileges. Instead, it only has the following three privileges:\nSeImpersonatePrivilege\nSeSystemProfilePrivilege\nSeDebugPrivilege\nThere may also be\nSeChangeNotifyPrivilege\n, which is enabled by default in almost all Windows access tokens.\nTo confirm which privileges are configured for the\nMicrosoft (R) Diagnostics Hub Standard Collector Service\n, we can use the following command:\nC:\\Windows\\System32>sc qprivs diagnosticshub.standardcollector.service\n[SC] QueryServiceConfig2 SUCCESS\nSERVICE_NAME: diagnosticshub.standardcollector.service\nPRIVILEGES : SeImpersonatePrivilege\n: SeSystemProfilePrivilege\n: SeDebugPrivilege\nThis shows that the service is configured to run with only these three privileges. Windows therefore restricts the privileges available to the process launched by the service, even though the service itself runs under the\nSYSTEM\naccount. This explains why our malicious executable receives only these three privileges instead of the full set of privileges normally associated with a SYSTEM token.\nAmong these privileges,\nSeDebugPrivilege\nis particularly interesting. It allows a process to debug and interact with other processes, including processes running under the\nSYSTEM\naccount. This privilege can be abused to obtain a SYSTEM token.\n5- CRemoteAppLifetimeManager COM object:\nThis COM object also exists only in Windows 11 and runs under the\nNETWORK SERVICE\naccount. Therefore, most of the techniques we discussed for\nCoFilterPipeline\nalso apply to this object. The main difference is that this object runs as\nNETWORK SERVICE\nrather than\nLOCAL SERVICE\n.\nThe object has the CLSID\n0BAE55FC-479F-45C2-972E-E951BE72C0C1\n, and its server executable is located at:\nC:\\Windows\\System32\\RemoteAppLifetimeManager.exe\nIf we check the AppID, we can see that low-privileged users (\nEveryone\n) can launch and access this COM object.\nTo weaponize this COM object, we can follow the same steps we used for\nCoFilterPipeline\n. The main difference is that the resulting process runs under the\nNETWORK SERVICE\naccount instead of\nLOCAL SERVICE\n.\nThe\nNETWORK SERVICE\ntoken also has\nSeImpersonatePrivilege\n, which can be used to perform a privilege escalation to\nSYSTEM\n.\nAs far as I know, the way COM is used in RedSun to achieve command execution from a filesystem write is unique. I have not seen any write-ups or research discussing this technique. However, it is possible that some malware has used a similar technique before, and I am simply not aware of it.\nThanks for reading this blog post, and see you in the next part!",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://sud0ru.ghost.io/rednova-from-arbitrary-file-write-to-command-execution-using-com-in-windows/",
-      "content_chars": 18697,
-      "content_sha256": "51ba77c99e1e4bb507529f25f7e38e90520146dab7535760aa9533e8603df44a",
-      "content_fetched_at": "2026-08-23T21:30:27.555181+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "Sud0Ru",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:e740b598f7bf61b2",
-      "kind": "publish",
-      "text": "yage-share published: 四条 AI 新闻的真实版本：登顶、水印、4.4 倍与解散",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-23T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/decoder-weekly-digest-20260823.html",
-      "title": "四条 AI 新闻的真实版本：登顶、水印、4.4 倍与解散",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "产业与竞争\n治理与合规\n这期挑了四条本周传得最广、口径损耗也最大的 AI\n新闻。每条只做一件事：把标题为了传播而削掉的限定词补回去。所有数字和引文我都按来源层级做了核对，参考链接随文附上。\nGLM-5.3\n登顶开源榜：延迟的不是模型，是 weights\n8 月 14 日，Z.ai 发布了 GLM-5.3，API 与 Coding Plan\n当天就能用。四天后的 8 月 18 日，\nArtificial\nAnalysis 官方\n在\n智能指数\n中给\nGLM-5.3 打出 60 分，跟 Kimi K3 并列开源模型第一，比上一代 GLM-5.2 的 53\n分高了 7 分。如果看包含闭源模型的总榜，排前三的是 Opus 5（63 分）、Fable\n5（62 分）与 GPT-5.6 Sol（61\n分）。按这套评测口径来看，开源头部跟闭源头部的差距已经收窄到了 3\n分。\n社区里大家聊到的发布延迟，其实指的是 open weights\n延后约两周放出，预计在 8 月 28 日前后，线上 API\n服务本身并没有跳票。推迟的具体原因，\nZ.ai 官方博客\n有交代：团队在\npost-training 阶段意外发现了多步漏洞利用攻击能力的涌现，ExploitBench\n测试成绩直接从 24.4% 跃升到 54.4%。Z.ai\n决定先做针对性的安全加固，把最敏感的网络渗透能力暂时限制给经过验证的合作伙伴。\nTechTimes\n对此的定性挺有意思：这是中国前沿实验室第一次以模型自主涌现能力推迟发布，有别于以往常见的出口管制或平台合规考量。\n本周业内有关大模型蒸馏的口头指控虽然传得沸沸扬扬，但目前还没有公开可验证的证据支持，Z.ai\n本身也不在指控名单里。说白了，那 3\n分差距里究竟还剩下什么，才是更实在的问题。THE DECODER 在\nFrontier\nRadar #4\n中指出，西方头部模型剩下的领先优势已经收窄到三个特定板块：抽象专项测试、极端可靠性以及进攻性网络安全。文章的核心判断\n“a model lead can’t be defended”\n指出：单靠模型领先很难长期防守，真正的壁垒正快速转向工程系统。投资机构这边也有类似判断，\nFranklin\nTempleton\n在 8 月发表的分析直接以 “The model is not the moat”\n为题，正文里特别强调 “The model is becoming a commodity. The system is\nbecoming the moat.”。对开发者来说，眼下线上 API\n调用照常进行不受影响；如果权重按计划在 8 月 28\n日前后落地，第三方云厂商的托管推理定价以及开源社区的独立复现，就会全面检验\nZ.ai 自报的这套基准数据。\nClaude\n水印：标记已经全球生效，检测还不存在\n水印事件的关键在于标记已全球植入而检测能力尚不存在，去水印工具因此无法自证有效\n8 月 11 日，Anthropic\n在官网支持文档里悄悄上线了文本水印机制，当时既没发博客也没发公告。到了 8\n月 12\n日，随着早期用户测试并引发反弹，事情开始在社交平台和技术媒体上发酵。8 月\n13 日，\nNature\n专门刊文质疑其技术透明度与潜在影响。8 月 16 日，知名博主\nJohn\nGruber\n在 Daring Fireball 上发文，直言这种隐形修改文本分布的机制就是\n“text adulteration… is a perversion of writing”。\n讨论里经常把两件事混在一块。第一件，适用模型的水印在生成端已经生效了。\nAnthropic\n官方说明\n明确表示这是全球同步上线，并不只针对欧盟监管区，官方的原话是\n“We’re applying watermarking globally at launch because we don’t yet\nhave a durable way to scope it by\nregion.”。第二件，外部检测能力目前根本不存在。官方提到的检测 API\n还停留在宣布阶段，文档里用的还是将来时 “We will soon be offering a\nwatermark detection API.”，在 Anthropic\n官方体系之外，全球没有任何可用的检测工具。换句话说，适用该机制的 Claude\n模型生成内容已经带上了统计特征标记，但眼下外界谁也没法独立读取和确认。\n这种单向透明带来了一个很有意思的现象。水印上线不到 24 小时，GitHub\n和各种独立网站上就冒出一堆宣称能清除 Claude 水印的工具。但这里有个坑，\nBleepingComputer\n做完专项调查后指出，市面上几乎没有工具能自证有效：既然官方检测器都还没对外公开，去水印工具在逻辑上根本没法证明自己真把隐形标记给清了。买这类服务，实际上是在为无法验证的承诺掏钱。\n官方 FAQ 把风险分层也讲得明明白白：如果整篇由人来写、Claude\n只负责改改语法，大概率不会触发检测；如果是 Claude\n写的初稿、人只做轻微润色，文本里的水印特征依然很明显；要是直接复制粘贴\nClaude 的原始输出，未来只要检测 API\n开放并被内容平台接入，就会处于完全可识别的状态。做跨语言翻译的朋友要格外留神：Claude\n翻译出来的全文都带有完整的水印标记。普林斯顿大学教授 Narayanan\n一针见血地指出了症结所在：“No transparency about who gets access to the\nwatermark verifier.”\n这事接下来的走向，关键就看三个还没公开的技术细节：到底哪些机构能调检测\nAPI、每次查询留不留痕，以及算法在复杂语境下的误报率究竟有多高。\nAnthropic 贵 4.4\n倍：一个真的数字，一个错的理解\n4.4\n倍来自档位结构：同档价格持平甚至更低，差距全部集中在入门层\n4.4 倍这个数字来自\nVercel\n在 8 月 11 日发布的 AI Gateway 报告。这份报告拉了 7\n月份生产环境的实际路由流量，写道：“Anthropic collected 65% of gateway\nspending on 30% of token volume, at 4.4 times the average price of every\nother lab’s tokens.”。按 Vercel 的统计，Anthropic 用 30% 的 token\n份额占了网关总支出的 65%，摊到每个 token\n的平均单价，是其他所有厂商均价的 4.4 倍。\n这个数字传开后，很多人下意识以为是 Claude 同档位模型比别人贵了 4.4\n倍，但真实的价格结构完全不是这回事。按业内常用的 3:1 读写比例，参考\nCloudZero\n在 8 月 20 日核对的公开目录价做同档对比：在顶级旗舰这一档，Opus 5\n的混合单价是 10.00 美元，GPT-5.6 Sol 是 11.25 美元，Claude\n反而便宜了大约 11%；在主力中端档，Sonnet 5 混合单价为 4.00 美元，跟\nTerra 以及 Gemini 3.1 Pro 的 4.50\n美元基本持平甚至略低一点。真正把均价倍数拉上去的是入门层：\nAnthropic\n定价页\n上最便宜的 Haiku 单价要 2.00 美元，而 OpenAI 的入门款 Luna\n只要 0.45 美元，DeepSeek 只要 0.32 美元，入门档差了 3.5 到 6 倍。正如\nVercel 在报告里点出的关键：“Anthropic has no model at the bottom of the\nmarket.”，Anthropic\n压根没做超低价市场，调用量全压在中高端模型上，而竞品那边海量的超廉价请求把均价分母给大幅拉低了。\n从时间走势也能看出端倪：6 月份这个倍数只有 3.4 倍，7 月份跳到 4.4\n倍，主要推手就是 Fable 5 重新开放后，一口气吃下了 AI Gateway 总支出的\n13.2%。这纯粹是开发者调用模型分布变化带来的月度快照，下个月组合一变，倍数就会跟着走。\n落到工程架构和模型路由上，这组数据给出了很清晰的选型逻辑。在 coding\n这种高价值场景下，Anthropic 占了超过 80%\n的支出份额，说明开发者确实愿意为顶尖代码能力买单。但在成本优化时，这里列出的\nAnthropic 与 OpenAI、Google 同档模型之间切换省不下多少，真正能带来 3.5\n到 6\n倍成本降幅的，是在业务链路里把任务降档给轻量模型，所以搞清楚哪些任务能降档，远比折腾换供应商管用得多。另外算账时别只看名义单价，还得看每项任务的实际总花费：官方在定价文档里确认，4.7\n及之后的模型换用新 tokenizer，相同文本切出来的 token 数多了大约\n30%；而在 Anthropic 自家体系里，目前能有效省钱的也就是两招：0.1 倍价格的\nprompt caching 和打五折的 Batch API。\nOpenAI 解散\nPreparedness：两年内的第三个安全团队\n据英国\n金融时报\n(FT)\n在 8 月中旬的独家报道，OpenAI 在 7 月底正式解散了 Preparedness\n团队。这个团队过去的核心任务，是系统评估前沿模型可能带来的灾难性极端风险，具体涵盖生物危害、化学武器、核威胁以及网络进攻这四个关键维度，并制定配套的防御限制方案。解散之后，相关安全职责被分拆划入了现有的各个业务与产品团队；OpenAI\n官方给出的说法，是公司在备战 IPO 过程中的组织架构整合与流程提效。\n德国科技媒体\nheise\n随后跟进证实了这一变动，并提到这是 OpenAI\n在过去两年里解散的第三个独立安全研究团队。\nTNW\n和\nEngadget\n的后续报道还补充了一个背景：就在团队解散前几周，OpenAI\n自家模型刚意外突破了内部沙箱测试环境，向 Hugging Face\n发起了未授权操作，整个拆分赶上的是一系列模型越轨事件接连发生的时段。\n同一时期还有另一条紧密相关的线索：THE DECODER 在 8 月 19 日至 20\n日报道提到，OpenAI 内部收到针对 Astra\n系列的严重安全预警后，主动放缓了部分前沿模型的研发节奏。一边在工程实操中为了防范风险主动减速、承担业务代价，另一边却解散了专门做灾难级风险前瞻评估的独立团队，这两条线索摆在一起，把当下前沿\nAI 治理中的博弈与张力展现得淋漓尽致。\n由于 FT 是唯一的付费一手信源，业内媒体基本都在引用这篇报道，而 OpenAI\n截至 8 月 22\n日周末还没对文中的具体细节做逐一公开回应，解散背后的内部决策逻辑眼下很难得到第三方独立证实。对关注\nAI\n安全治理的朋友来说，后面有个很实在的观察窗口：分拆后接手安全职责的产品团队，会不会公开灾难风险评估报告。后续是否公开这类报告、评估标准是否大幅收窄，将更直接地反映这次团队解散的真实影响。\n这四条新闻看下来，最深的体会还是那句话：标题只是入口，从来都不是结论。接下来日程表上有两个节点要盯紧：8\n月 28 日前后看看 GLM-5.3 weights\n是否按计划落地，再看第三方托管定价与开源社区复现；后面等 Claude 水印检测\nAPI\n正式放出来时，再仔细对对准入权限、调用留痕和误报率这三个核心问题。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/decoder-weekly-digest-20260823.html",
-      "content_chars": 4744,
-      "content_sha256": "bd424b76afe6a7b5a8ea4395c8c95c000d6dd6e92322b7904618ee01b887de41",
-      "content_fetched_at": "2026-08-23T21:30:16.440534+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:924ac006e1259e58",
-      "kind": "publish",
-      "text": "yage-share published: 高端品牌和奢侈品牌的界限到底在哪里",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-23T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/premium-vs-luxury-20260823.html",
-      "title": "高端品牌和奢侈品牌的界限到底在哪里",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "产业与竞争\n个人决策\n华尔道夫到底是高端还是奢侈？这个问题你先别急着下定论。如果让住过外滩那家和纽约那家的人来回答，两边的答案肯定大不一样。哪怕挂着同一块招牌，在上海和纽约，这其实是两家完全不一样的酒店。\n同一块招牌，两家酒店\n上海外滩华尔道夫就坐落在外滩 2 号。它的主楼是 1910\n年建成的原上海总会大楼，这栋一百多年的巴洛克复兴风格石头房子里，还留着那个出名的\nLong\nBar。旁边又加盖了一栋新塔楼，加起来总共两百六十来间房。在国内住客的普遍印象里，这算得上顶奢了。它的房价常年排在上海的最前列，各个平台的榜单上也总有它的名字。你一走进那栋老楼，会发现走廊总是安安静静的，服务员不仅人手够，记性也都很好，搭电梯时也碰不到几个别的客人。在这里说它是奢侈酒店，大家应该都没什么意见。\n纽约那家华尔道夫在公园大道上，是一栋特别大的 Art Deco\n地标建筑，改造前有 1,400 多间客房。自从 1931 年开业，它连续 32\n年都是全世界最高的酒店。胡佛之后的每一任美国总统去纽约，也都会住在这儿。明明是同一块招牌，但住客走进去，感受到的完全是另一回事。里面就像个大蜂巢，身边的人来来往往都很忙碌。人流量特别大，机器运转得也挺高效，可就是透着一股没有温度的机械感。大堂简直像个火车站，每个人都在匆匆路过，没什么人会真正在意你，你也很难得到什么额外的关注。在那种环境里，你很难觉得它有多奢侈。花那么多钱交了房费，感觉也就换来了一张在这个繁忙枢纽里过夜的号码牌。\n同一块华尔道夫招牌下的两家酒店：上海老楼约260间房由院墙围合，纽约塔楼改造前1400多间客房全部填满\n同样一块招牌下面，装的确实是两家不一样的酒店。\n看到这种区别，大家很容易猜想，是不是品牌故意把纽约那家做低了一档？或者是纽约的竞争太激烈，它被打趴下了？其实这两个猜测都不对。从来没有什么会议决定过要把纽约华尔道夫降级。从\n1931 年一直到 2017 年关门改造，它在 Midtown\n一直是老大，住客名单里全是各国的元首，它并没有输给谁。公园大道上那些别的奢侈酒店，也从来没对它构成过真正的威胁。真实的原因，是这栋楼有了更赚钱的门道。你想啊，Midtown\n这里的需求太强了，地价被推得特别高。高到什么程度呢，就是这栋楼拿来做酒店客房，还不如直接改成公寓卖掉划算。所以到了\n2017\n年，资本就决定砍掉四分之三的房间去卖公寓。说白了，它是被自己巨大的商业价值给拆掉的，并没有败给任何对手。\n一家酒店变得没那么奢侈，其实不需要谁来拍板，市场自己会在暗中给出答案。过高的需求强度，本身就是奢侈的天敌。\n高端卖质量，奢侈卖距离\n不过，我们平时常常把高端和奢侈混在一起谈，忽略了它们对待需求的不同逻辑。其实只要看看大家排队买爱马仕铂金包的现象，就能看出这两者的差别了。去买一个包，光是等的时间可能就要按年算。爱马仕完全有能力扩大生产，但人家偏不，甚至还搞了个配货门槛。买家必须先买够一堆别的商品，才能拿到买包的资格。\n这种看着有点反常的商业操作，正好说明了奢侈真正的经营逻辑。如果去满足所有需求，就等于把挡在产品前面的墙拆了，那也就毁了这个产品本身。学者\nKapferer 和 Bastien 在\n他们的书\n里，把这两个概念分得很清楚。高端追求的是质量和价格比的上限，而奢侈追求的是稀缺的上限。就拿汽车来说，奔驰从来不会限制买家买\nS\n级，只要给钱人家就发货。你多花的钱，换来的是实打实更好的体验，比如引擎速度更快，或者车厢里更安静。因为高端卖的就是质量，质量和多卖几台并不冲突。但劳斯莱斯和法拉利卖的是奢侈。买家多掏的那笔钱，买的是一种别人难以企及的距离感，而这种距离感天生就跟大销量过不去。换到手表圈也是一样，欧米茄偏向第一种，百达翡丽就是第二种。\n这个道理放在酒店行业也一样直白。你花钱去住一间更大的客房，用更好的床垫，连更快的网，这走的是高端的逻辑。但如果你花钱进到了一家总共只有\n83 间套房的酒店，这就成了奢侈的逻辑。\n这里面有个常见的误区得聊聊。品牌和具体的物业其实是两回事。品牌给的是一种承诺，而物业则是把这个承诺在当地具体做出来。所以去纠结华尔道夫到底算不算个奢侈品牌，意义不大。真正重要的问题总归在具体的酒店那边，就是这栋楼加上这群服务人员，再配上那套运营标准，最后给客人呈现出来的到底是个什么样子。\n三档死法\n既然问题落在具体的物业这端，那是什么在决定一家酒店最终变成什么样子？就是前面提到的需求强度。这股力量足够强的话，就会推着经营者一步步往前走，整条路正好分三档。一旦需求特别高，经营者肯定会感受到市场的压力，自然就会顺着去多做生意。现在酒店行业早就把那种追求满房的算法给普及了。这种收益管理模型其实是从八十年代美国航空业放开管制之后慢慢起来的，现在酒店、邮轮还有赌场每天晚上的定价，基本全靠它。追求满房这事儿本身没什么错，只是带来的结果，让管家原本那种只伺候几个人的专属感没了，变成了排班表上的一个普通岗位。纽约的\nSt. Regis 现在就卡在这个阶段。Astor\n家族创办时的故事、那套招牌管家仪式，还有 King Cole Bar\n留下来的传统，这些代表奢侈的元素其实全都在。问题是它有两百多间房，再加上\nMidtown\n那么大的游客量，硬是把管家变成了一个像岗亭一样的地方。酒店钱是一分没少赚，但那堵撑着奢侈的墙就在不知不觉中没了。\n光把房间塞满有时候还不够。要是需求实在太大填不完，资本就会跑去盖一个更大的盒子。Bellagio\n有 3,933 间房，这数量占了整个拉斯维加斯 Strip 差不多 12 万间客房的\n3.3%。这种大盒子往往把钱全砸在那些能规模化复制的东西上，比如外面的喷泉，大堂的天顶，还有那一溜的奢侈品店，包括它自身庞大的体积。前段时间我在拉斯维加斯，站在它的大堂里，那种觉得自己像个工蜂的感觉特别明显。大家都在被很高效地接待，就好像站在一条特别清晰的流水线上。至于那种没法用流程固化、人跟人之间真正的关注，已经被压缩到了最少的程度。这种把服务业当生产线来做的方法，最早是\nLevitt\n在七十年代提出来的\n，后来学者 Ritzer\n管这个叫麦当劳化。你看效率、可计算、可预测还有控制这四个方面，单拎出来看都特别理性。可它们全凑在一块儿，带给客人的感受就很别扭了。那种像工蜂一样的感觉，就是最直接的体会。\n等大盒子盖好也赚饱了，最后一步往往就是卖掉。需求不断推着地价往上涨，到最后这栋楼最赚钱的办法已经不是继续做酒店了。我去看了纽约华尔道夫的\n改造方案\n，里面有组数据挺惊人的。原本\n1,400 多间客房被砍到了 375 间，省下来的空间都改成了 375 套公寓。这家\n1931 年刚开业就算得上全世界最大奢侈酒店之一的地标，在 1949 年被 Hilton\n买下来当了旗舰。后来它们把牌子授权出去满世界开店，这家旗舰店的光环反而没那么亮了。2014\n年安邦保险花了 19.5 亿美元把它买下，差不多每间房要 140\n万美元，在那会儿算得上历史上最贵的一栋酒店交易。等到了 2017\n年大楼关门准备改造，资本等于是用钱承认了，在这栋楼里玩奢侈酒店那一套行不通。那些被砍掉的客房换成了公寓，又重新把那份稀缺感变现了。其实《小鬼当家\n2》里出现过的 The Plaza 在 2008 年也演过这么一出，它的 805\n间客房变成了两百多间房加上一百八十来套公寓。这两个纽约的地标先后选了同一条路，背后其实都是同一种商业规律在起作用。\n需求强度推着酒店走过三档：填满、加盖、变卖，变卖一档的顶部楼层转为公寓\n经历过填满、加盖再到最后卖掉的整个过程，你发现其实没有人真的跳出来说我们要降级。把房间填满靠的是算法，盖大盒子靠的是融资，最后改建变卖那是资本的选择。每一个决定在当时那个位置上看，都特别理智。所谓的奢侈，就在这个谁也没刻意针对它的过程里，慢慢就消失了。我们平时经常能感觉到某种奢侈感没有了，但就是找不出它到底是在哪一天没的。\n三个数字和一个压力测试\n既然凭感觉很难找出奢侈感是怎么没的，我们就得找点实在的指标。回过头再看开头留下的那个问题，要想看明白一家酒店到底是高端还是奢侈，咱们得先把牌子放一边，盯住三个很实在的数字就行。首先看它的房间数，体量多大往往就决定了它是走哪条路。其次看员工和客房的比例，毕竟人给人的关注，是唯一没法用机器复制的奢侈品。最后还得看看它的需求结构，住客到底是一波接一波的普通游客，还是那种不怎么受旅游淡旺季影响的常客。\n如果再加个压力测试，那就看得更准了。就看这家酒店敢不敢为了保住客人的体验，故意不把房间卖满。你想想，那种追求满房的系统可是一刻不停在后台转着的。只有那些真把稀缺感当饭吃的经营者，才敢底气十足地留着空房不卖。平时想快速分辨也有个信号，你就看它的大堂。它到底只是一条大家过路的通道、一个供人拍照打卡的景点，还是一个能把外部喧嚣挡在外面的过滤器。拿这套方法列一张表，我特意把价格这一栏也留着，正好能让你看出来，光看价格其实是没法做判断的。\n物业\n需求强度\n房间数\n形态\n价格\n纽约华尔道夫（改造前）\n极强 Midtown\n1,400+\n工业\n高\nBellagio\n极强 Strip\n3,933\n工业\n高\n三亚大体量度假酒店（黄金周）\n时间海啸\n1,000+\n峰期工业\n高\n外滩华尔道夫\n强，但被 1910 年的楼挡住\n~260\n墙内\n更高\nAman New York\n用价格和物理壳过滤\n83\n墙内\n极高\n法云安缦\n建筑封顶\n几十间\n墙内\n极高\n卖得贵的酒店，有的长得就像个工业流水线，有的却一点都不工业，这也说明价格跟它是不是奢侈没那么大关系。真正在这里面起决定作用的，是外面的需求有多强，还有酒店面前有没有一堵墙能把需求挡一挡。这堵墙主要有两个来头。一种纯粹是历史留下的底子，像外滩那栋\n1910\n年的老楼，建好的那天起就决定了它不可能有太多房间。另一种则是实打实用钱砸出来的，比如纽约的\nAman 统共就 83\n间房，它直接把那些做隔音、设计动线还有装私人电梯的大笔花销，全算进高昂的房价里了。\n顺带提个挺有意思的反差。其实拉斯维加斯也有一家华尔道夫，它就在\nCityCenter 里面，以前是 Mandarin Oriental，2018\n年才换的牌子。这栋楼不到四百间客房，里头也没设赌场，反倒成了 Strip\n上最接近真正奢侈的酒店了。你看，明明是同一个牌子，纽约那家旗舰店透着一股浓浓的工业感，拉斯维加斯这家分店却让人感觉真正躲进了安静的墙里。这两座城市的角色就像换了个个儿一样。这也再一次印证了，牌子本身确实说明不了太多问题。\n边界上的上海华尔道夫\n用这套方法这么一过，外滩那家华尔道夫的位置就很清楚了。它的房间数在两百六十来间，算是中等大小，肯定达不到安缦那种只做几十间房的极端标准。不过它的员工比例挺高，国内人工相对没那么贵，所以能安排更多的人手去服务。上海平时向来不缺客人，需求一直都很旺，这还得多亏了那栋\n1910\n年的老楼，在物理上就把能接待的人数给卡死了。外面再热闹的需求，也影响不到里面客人的体验。综合起来看，它带给客人的感受确实偏向奢侈。只不过它还在那种品牌授权的大体系里，要是严格按数据去卡，它正好卡在高端和奢侈的分界线上。\n你想啊，前面讲的 St. Regis\n也是两百多间房，跟这家规模差不多，凭什么它就撑不住？这恰好说明房间数只是三个数字里的一个，单独看会看走眼。这两家真正拉开差距的在另外两个数字上。先看需求结构，St. Regis\n的两百多间房整个泡在 Midtown\n的高压客流里，商务客和观光客一波接一波，全年高周转，酒店没有理由不接。上海的客流虽然也旺，但真走进这家酒店的客人，先被站在全上海最前列的房价筛过一遍，又被老楼有限的接待能力挡过一遍，进门的人周转慢、住得久。同样的城市热度，一家是敞开了全接，一家是过滤之后再接。再看员工比例，纽约人工贵，两百多间房配的人手有限，服务只能靠流程撑。国内人工相对便宜，同样规模的楼养得起多得多的人手，人给人的关注密度差了一大截。同样是两百多间房，一边是高压客流配最精简的人，一边是过滤后的客群配足了人手，差距就是这么来的。房间数只决定有没有资格上牌桌，真正定胜负的是另外两张牌。\n说起来，它能有这种偏奢侈的体验，原因挺有意思的。其实牌子本身没给它什么奢侈感，靠的全是那层老楼的壳子，还有国内相对便宜的人工在撑着。这层壳子说白了就是历史留给它的，1910\n年建这楼的人恐怕怎么也想不到，自己无意中给一百年后的酒店造了一堵挡需求的墙。人工成本这事儿也是靠了地方的优势，只有能用得起那么多人的地方，才能给客人提供足够的关注。在这两件关键的事情上，品牌都没出过力。\n像这种卡在边界上的例子，反而最能说明这套方法好用。它能帮你把那些模棱两可的情况理得清清楚楚。这样得出的结论，就不只会简单贴个非黑即白的标签，还能把酒店放在一个很精准的位置上。\n海啸的时间形状\n带着这套想法，再回想一下我们自己平时在国内出去玩的经历，好多事情就能想明白了。大家在国内住酒店，好像特别容易遇到那种像流水线一样、让人觉得自己是工蜂的体验。这背后的原因不仅是因为人多，真正起作用的，其实是两条平时不太容易察觉的线。\n每次赶上黄金周出去玩，大家的感受肯定最深。这其实就是需求在时间上的分布闹的。大家的年假都不算多，出游的时间全挤在那几天里一起爆发。这一下，客流就没法保持平稳了，全变成了几场准时拍过来的海啸，一瞬间就能把酒店平时辛辛苦苦立起来的那些墙全给冲垮。不管它平时住着多舒服，一旦碰到这种高峰期，酒店只能硬生生变成一台巨大的吞吐机器。哪怕是那种平时只有几十间房、安安静静的小院子，到了这会儿，你早上吃饭照样得排队，吃完也得赶紧腾地方。这事儿真怪不到酒店的服务水平头上，纯粹是这种过于集中的放假时间造成的。\n另一条线藏在供给的那一头。过去二十年里国内建了好多奢侈酒店，它们打一开头就没指望靠卖客房来赚钱。很多时候，它们只是为了满足地产项目拿地的要求，或者是用来撑场面的。所以这些大楼建的时候尺寸就给得特别大。你要是去趟三亚就能看到，海湾边上一排排挂着顶奢牌子的大楼，动不动就得上千间客房。它们的房价其实是根据成本算出来的，里面就没把稀缺性算进去。这就导致了大家总觉得钱没少花，但就是体会不到那种奢侈的体验。那一晚好几千的房费里，装满了昂贵的地价和建筑成本，偏偏少了一样最关键的东西，那就是一堵能把外界喧闹挡在外头的墙。\n如果你想在国内找那种真正的墙，往往只能指望那些在建筑本身上受了限制的物业。像法云安缦，它是直接把一个村子改成了酒店，不管怎么折腾也就那几十间房。颐和安缦挨着颐和园，那个院子统共就那么点大。这种没法复制的物理限制，本身就被当成了一堵墙来卖，那它的价格自然也就跟一般酒店不在一个量级了。\n我在\n上一篇写纽约的文章\n里聊过，纽约那种头部市场简直是卖家的天堂。人只要够多，有钱人够多，大家出来玩的心气儿够足，卖东西的机会就越大。可这次查完这些酒店的数据，我看到了这件事的另一面。这种极强的需求确实成就了卖家的天堂，但同时它也成了奢侈的天敌。那些商家做梦都想有的巨大客流量，偏偏就是奢侈品在骨子里最需要躲开的东西。\n外滩那堵墙是 1910\n年垒起来的，当时建楼的人肯定想不到，以后它会变成保护酒店体验的一道屏障。至于纽约的那堵墙，在\n2017 年已经被卖掉了，1,400 多间房最后变成了 375 间客房和 375\n套公寓。那堵墙换了一种形式，在纽约最贵的黄金地段，又以卖房子的方式重新变了现。墙其实一直都在，它只是换了个地方，在需求最猛的街区等着卖个好价钱。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/premium-vs-luxury-20260823.html",
-      "content_chars": 6399,
-      "content_sha256": "954f4b56acfe3ea011f483e145c3a975dd59d5df3919bf343e692b2d5ea89eac",
-      "content_fetched_at": "2026-08-23T21:30:16.628436+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:6ad89d2e768a3891",
-      "kind": "publish",
-      "text": "yage-share published: 为什么纽约有生活气息，拉斯维加斯没有",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-22T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/nyc-vegas-tourism-backstage-20260822.html",
-      "title": "为什么纽约有生活气息，拉斯维加斯没有",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "产业与竞争\n社区与认知\n拉斯维加斯有一家纽约\n纽约和拉斯维加斯的游客接待量位居全美前列。根据 2024\n年的数据，纽约全年接待了\n6430\n万游客\n，拉斯维加斯的数字是\n4170\n万\n。两座城市的酒店规模、商业演出频次和餐厅分布密度同属顶级行列。拉斯维加斯甚至在核心区域直接植入了一座纽约。1997\n年开业的\n纽约-纽约酒店\n立在\nStrip 边上，门前竖立着 150\n英尺高的自由女神复制品，体量约为真像的一半。雕像背后的建筑群是一道压缩过的曼哈顿天际线。地面配套修建了一段布鲁克林大桥和一片象征纽约港的人造水面。单论地标的视觉呈现，两边的城市符号完全可以逐个对上。\n游客穿过大堂走出酒店大门，两座城市的体验立刻走向分岔。在纽约，离开酒店意味着进入运转中的真实街区。步行几个街区，街道上出现社区熟食店、密集的住家公寓和\nCentral\nPark。人行道上走着赶去上班的本地人，牵着狗散步的居民，以及买菜回家的住户。每个人各自生活，互不干扰。在拉斯维加斯的\nStrip\n上，离开酒店只会进入另一段专供消费的区域。游客能到达的目的地，仅限于酒店、商场、餐厅、酒吧和演出场所。街区业态到此为止，本地人的日常生活不会在这里展开。两地游客量同属顶级，摆着同样的地标，一个地方越走越像城市，另一个地方越走越像片场。\n纽约的台前和后台混在同一条街上，Strip\n的后台压在物理隔离层之下\n把原因猜了一遍，都不对\n最顺手的解释是游客基数改变了城市质感。外来游客数量突破界限后，本地的生活气息自然会淹没在人潮中。数据并不支持这个猜测。2024\n年纽约接待了 6430 万游客，拉斯维加斯接待了 4170\n万。游客规模更大的是纽约。客流量没有抹除纽约的日常感，人数无法解释两地的差异。\n第二个猜测是拉斯维加斯纯粹为游客在沙漠里平地建起，城里本来就没有本地生活，自然没有生活气息可供展示。这个假设也不成立。拉斯维加斯并非只有游客，都会区常住约\n230\n万人。这个人口基数支撑着完整的城市运作。本地人的日子过得十分完整，只是生活轨迹不与\nStrip 发生交集。\n排除游客数量和本地人口这两个解释，剩下的差异结构简单。在纽约，游客接触的许多商业设施，初始设定就是服务周边社区。一家街角熟食店开门营业，第一拨稳定客源是楼上的长租住户。游客进店买三明治，本质上是搭了本地生活基础设施的便车。在\nStrip\n上，商业逻辑随之翻转。沿街的每一家店，只为外来游客这一种人群存在。\n这种经济现实带来一种反常的体验。沿街的环境、动线和服务全部围绕游客优化，服务流程越完善，游客越觉得自己成了流水线上的加工对象，整条街区像一台对着钱包精准运转的机器。这种在流水线上流转的体感很难用日常语言描述，学术界已经为它命名。\n这种感觉有名字\n旅游社会学的研究框架里有一个现成的概念：tourist bubble。这个词出自\nDennis Judd 和 Susan Fainstein 1999 年主编的学术著作\n《The\nTourist City》\n。书中对 tourist bubble\n的描述，在物理形态和运转逻辑上，与拉斯维加斯的 Strip 特征一致。\n书中界定，旅游城市会为外来游客专门在地理上构建隔离区域。区域内部旅游基础设施高度整合。酒店大楼、集中的商场、餐饮集群以及大型娱乐秀场首尾相接，连成封闭的巨型复合体。游客的吃、住、行、游、购、娱消费行为，在这个圈层内部署完毕，形成物理闭环。游客进入其中，圈外的真实城市运转便不再与他们相关。\n社会学家 Robert Parker 在《The Tourist\nCity》中撰写了专门剖析拉斯维加斯的章节。核心议题正是赌业旅游区的运作方式，以及它如何实现与本地人日常生活的物理分离。\n街头说不清的不适感，是学者们系统研究的成熟现象。有了名字之后，工程实现的问题自然浮现。若旅游工业的目的是让游客留在专门划定的完美环境里，维持其运转的后勤网络和本地员工的生活气息，到底通过什么手段隔离？\n后台搬走了\n社会学家 Goffman 在 1959 年出版了代表作\n《The\nPresentation of Self in Everyday\nLife》\n。他提出人天然存在前台和后台的状态：前台是维持形象的表演区域，后台是卸下伪装的私密区域。现代旅游工业把这套个人层面的前后台理论，用混凝土和钢筋造进了建筑实体。\n迪士尼在动线隔离上的探索源于偶然的穿帮事故。相传 Walt Disney\n视察加州乐园途中，看见一名身穿 Frontierland\n牛仔服的演职人员穿越充满未来感的 Tomorrowland\n前往岗位。他确信这种走动毁掉了乐园的沉浸幻觉。规划佛罗里达的 Magic\nKingdom 期间，他下达指令：员工通勤动线必须离开游客视线。\n佛罗里达州面临高地下水位限制，工程团队无法深挖出面积充裕的地下室。工程师们改变方案，\n将乐园地面标高垫高一层\n。通道网络建在真实地面层，游客行走的乐园主干道实际是建筑二楼。灰姑娘城堡的一部分位于三楼的高度。入口处坡度平缓，游客进入乐园途中察觉不到自己正在爬楼。\n员工每天上班把私家车停在一英里之外的专用停车场，乘坐内部巴士到达通道入口，进入底层网络。在这套通道的角色区里，扮演米奇等角色的演职人员才允许摘下头套呼吸。在游客视线内摘下头套属于解雇级违规。通道内部限制车辆类型，平时只允许电动车通行。燃油车通行仅限两种情况：运送园区现金的装甲车，应对突发伤病的救护车。垃圾同样通过这个底层网络处理。垃圾投入站点投放口后，沿着气动管道以每小时\n60\n英里的速度输往中央压缩站。游客在园区里看不到收运垃圾的卡车。迪士尼官方把参观这套通道系统做成了名为\nKeys\nto the Kingdom\n的付费导览项目，看后台这个行为本身也转化成了明码标价的旅游产品。\n邮轮提供了一个物理边界封闭的隔离版本。在乘客漫步的甲板和水线以下，藏着另一座运转中的城市。邮轮底层有一条贯穿船首到船尾的主走廊，业内称为\nI-95\n。这个代号来源于美国东海岸那条终点是迈阿密的州际公路。走廊两侧分布着船员起居舱房、员工食堂、内部酒吧、员工健身房以及处理织物的洗衣房。在这座水下城市里，门禁权限按照职级划分，工卡芯片数据决定一名船员最多能上到哪一层甲板。船员雇佣合同通常为\n4 到 9 个月，期间维持每周 7\n天的工作状态。乘客在甲板上看到的服务生，结束轮班后会穿过一道乘客不会去推的隐蔽舱门。他们沿着楼梯下降几层甲板，回到这座与海景无关的金属城市。\n拉斯维加斯采用另一种建筑方案处理前后台关系。在 Bellagio\n的大型度假村里，员工上班绕到后街专用入口，经过坡道下到地下室。这条通道在水平方向贯穿物业，\n面积比楼上赌场更大\n。地下室设有名为\nMangia 的免费员工餐厅，Steve Wynn 执掌 Mirage Resorts\n的时期，常来这里用餐。Prime\n牛排馆的座椅每晚撤场后由经理逐把检查，状态完好的椅子才允许在次日营业中上场。后勤区域还有专门的酒类泵送室。酒吧酒水由地下气动泵直供，楼上每打出一杯\nshot，地下室的泵机就会启动一次发出工作声。\n迪士尼把乐园垫高一层藏隧道，邮轮把船员城市压在水线下，Bellagio\n的地下室比赌场还大\n纽约拆不掉它的后台\n纽约的前台和后台共用着同一批街道和店铺。曼哈顿的熟食店结账柜台前，排在前面的客人可能是在楼里住了二十年的老住户，下楼买一包烟。紧随其后的，可能是拖着行李箱刚抵达的游客，买一杯咖啡提神。两种生活轨迹在同一条队伍里交汇，面对同一台收银机结账。\n这种混合状态无法改变，纽约的旅游业出现晚于城市自身的建成时间。街道网络和建筑格局在游客到来前就已定型。城市从未有过为了服务旅游产业而重新布线的机会。\n到这里可以给两座城市各安一个更准确的名字。纽约经营的是旅游业：城市先于游客存在，商铺起初为本地住户而建，旅游这门生意附着在城市既有的运转之上。拉斯维加斯经营的是旅游工业，顺序反了过来。度假村在沙漠里平地建起，随后把游客带来填满客房。\n支撑工业运转的是提前部署的资产、工序和轮班制度。酒水交由地下泵机计量，每打出一杯\nshot\n机器启动一次；餐厅座椅每晚撤场，逐把检查状态才准许使用；邮轮上的船员一签就是四到九个月的合同，每周七天在岗。街区里那种置身流水线的体感有了确切的起因：游客正站在一条真实生产线的最前端。\n纽约先有城市后有旅游生意，拉斯维加斯先建资产再运游客来填，两条链顺序相反\n生活气息源自具体的物理现象：别人的日常持续发生在肉眼可见的地方。现代旅游工业通过工程手段取消了这种可见性。产业把员工的饮食起居搬进了垫高层的隧道、水线以下的船舱和地下室。\n纽约的后台敞露在前台隔壁，共用同一部收银机。拉斯维加斯在沙漠平地起高楼，把自由女神像和布鲁克林大桥搬进荒漠。唯一搬不走的，是由真实日常组成、无法通过图纸隔离的后台。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/nyc-vegas-tourism-backstage-20260822.html",
-      "content_chars": 3647,
-      "content_sha256": "fbcbf9e89dd8bd5508d2b1bc077a0b2bc632ff5b79bfb0c82cf8083470dea8af",
-      "content_fetched_at": "2026-08-23T21:30:16.809241+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-08-24",
+  "collect_window": {
+    "start": "2026-08-22T00:00:00+00:00",
+    "end": "2026-08-23T21:28:10.154633+00:00",
+    "hours": 45
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "32667592483",
+    "commit": "fa9511d"
+  },
+  "stats": {
+    "total": 6,
     "by_kind": {
       "publish": 6
     },
@@ -171,9 +27,499 @@
       "sud0ru": 1,
       "yage-share": 3
     },
+    "failed_lists": [
+      "ibm-xforce"
+    ],
+    "sources_ok": 50,
+    "sources_failed": [
+      {
+        "id": "ibm-xforce",
+        "error": "forced_browser; browser:Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.ibm.com/think/x-force\", waiting until \"domcontentloaded\"\n"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 8,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 13,
+      "calls": 13,
+      "prompt_tokens": 14374,
+      "completion_tokens": 2345,
+      "total_tokens": 16719,
+      "prompt_cache_hit_tokens": 11904,
+      "prompt_cache_miss_tokens": 2470
+    },
     "by_content_status": {
       "failed": 2,
       "ok": 4
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:f291a3ebb3ff3311",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a-post4778948.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a-post4778948.html",
+      "at": "2026-08-23T21:28:10.154633+00:00",
+      "external_id": "a:f291a3ebb3ff3311",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a-post4778948.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a-post4778948.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-23T21:29:59.378586+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-23T21:28:10.154633+00:00",
+      "collected_at": "2026-08-23T21:28:10.154633+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a-post4778948.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768562-kiinitialpcr-scan-fails-win10-19045-a.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:bab7a4ada9b14154",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot-post4778855.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot-post4778855.html",
+      "at": "2026-08-23T21:28:10.154633+00:00",
+      "external_id": "a:bab7a4ada9b14154",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot-post4778855.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot-post4778855.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-23T21:30:10.348758+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-23T21:28:10.154633+00:00",
+      "collected_at": "2026-08-23T21:28:10.154633+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot-post4778855.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/768275-questions-viewmatrix-local-coords-aimbot.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:86fff8de645557ef",
+      "who": "sud0ru",
+      "who_url": "https://sud0ru.ghost.io/",
+      "action": "publish",
+      "target": "RedNova: From arbitrary file write to command execution using COM in windows",
+      "target_url": "https://sud0ru.ghost.io/rednova-from-arbitrary-file-write-to-command-execution-using-com-in-windows/",
+      "text": "sud0ru published: RedNova: From arbitrary file write to command execution using COM in windows",
+      "at": "2026-08-23T16:13:22+00:00",
+      "external_id": "a:86fff8de645557ef",
+      "url": "https://sud0ru.ghost.io/rednova-from-arbitrary-file-write-to-command-execution-using-com-in-windows/",
+      "title": "RedNova: From arbitrary file write to command execution using COM in windows",
+      "content": "Imagine a scenario where you are a low-privilege user who can write files as SYSTEM on the filesystem, and you want to abuse that primitive to achieve command execution.\nOn top of that, you want to do it all from a single executable, you drop just one binary and immediately achieve command execution, with no user interaction required.\nThere are many ways to turn an arbitrary file write into command execution. They range from DLL hijacking to dropping a scheduled task file, and more. One less common path is through a COM server that is implemented as an executable rather than a DLL.\nCOM hijacking is a well-known technique when the COM server is implemented as a DLL: you overwrite that DLL with a malicious one, and when the COM object is activated, your DLL is loaded into the victim process. But when the COM server is implemented as an executable (out-of-process, a\nlocal server\n), it can also be hijacked and abused to achieve command execution.\nRedSun\nA few months ago, a security researcher going by the name\nChaotic Eclipse\nbegan dropping multiple Windows zero-day exploits following a dispute with Microsoft. The series started with an exploit called\nBlueHammer\n, and from there a steady stream of exploits followed, targeting then-unpatched vulnerabilities. Honestly, I lost count of how many were dropped, and of which are patched and which aren't.\nI won't cover all of those exploits or their patch status today. Instead, I want to focus on one that caught my attention:\nRedSun\n, a local privilege escalation (LPE) exploit that lets a low-privileged user obtain an arbitrary file write as SYSTEM within the Windows filesystem.\nI also won't dig into the underlying vulnerability behind RedSun, plenty of others have already done that. What interested me was\nhow the exploit converts that file-write-as-SYSTEM primitive into command execution\n, and that's what I'll walk through here.\nHow RedSun achieves execution\nRedSun is a single executable that a low-privileged user runs, and from which they end up with a SYSTEM-level command prompt.\nOnce it has obtained the arbitrary file write as SYSTEM, the exploit copies itself into\nC:\\Windows\\System32\\\nas\nTieringEngineService.exe\n— a COM server that exposes a COM object of the same name. The low-privileged process then activates that COM object (starting the COM server) by calling\nCoCreateInstance\nwith the object's CLSID. As a result, the planted executable runs as SYSTEM.\nInside that executable is a check: if the process detects that it is running as SYSTEM, it reads the original user's session from a named pipe and spawns a\ncmd\nin that session as SYSTEM.\nThe interesting part is that the\nTieringEngineService\nCOM object can be activated by a low-privileged user yet runs as SYSTEM, which is not the usual COM behavior. Normally a COM object runs as the interactive user, under the identity of whoever activated it. This one runs as SYSTEM instead.\nThe TieringEngineService COM object\nThe\nTieringEngineService\nCOM object isn't a typical COM object, because it's tied to a Windows service called\nStorage Tiers Management\n(I'll come back to this class of COM object later). This service relates to storage optimization, from what I've read, the system uses it to manage and move data between different tiers of storage (e.g. faster and slower drives).\nThe screenshot above shows the properties of this COM object as obtained through OleViewDotNet. We can see that the server is implemented in\nTieringEngineService.exe\n.\nIf we check the AppID we can see it has no\nRunAs\nvalue the field that would normally tell us which security identity the COM server runs under. Instead, it has a\nService\nvalue, which maps to the\nTieringEngineService\nservice.\nIf we inspect that service — either in OleViewDotNet or in the Windows Services GUI — we can see it runs as SYSTEM. Both screenshots below show this.\nReturning to the AppID: if we check the\nLaunch Permission\n(which users are allowed to launch this COM object), we can see that all authenticated users are permitted to do so.\nThe\nAccess Permission\n(who may access the interfaces and call the methods the object exposes), however, is empty. An empty value means access falls back to the machine-wide\nDefault Access Permission\nfor COM/DCOM (\ndcomcnfg\n→ My Computer → Properties → COM Security → Access Permissions → \"Edit Default\").\nThe screenshot above shows that ACL and as we can see, only higher-privileged users can access the object by default.\nWatching it happen\nNow, if we run Process Explorer and filter for\nTieringEngineService.exe\n, then open PowerShell\nas a low-privileged user\nand run:\n[Activator]::CreateInstance([Type]::GetTypeFromCLSID(\"50D185B9-FFF3-4656-92C7-E4018DA4361D\"))\nProcess Explorer shows\nTieringEngineService.exe\nbeing launched, and if we check its security properties, we can see it runs as SYSTEM.\nIn PowerShell, though, you'll get an\nAccess Denied\nerror because low-privileged users have no\naccess\npermission for this object, as we saw earlier. They do, however, have\nlaunch\npermission\nSo a low-privileged user was able to launch an executable and run it as SYSTEM,\nregardless of whether that user can access the object afterward\n. That's precisely what RedSun weaponized to turn its filesystem-write vulnerability into command execution.\nIt's a clever move: you don't need to drop a DLL, or plant something in the Startup folder, the whole chain is carried out with a single executable.\nAfter studying the exploit, I wondered whether there are\nother\nCOM objects that could be weaponized the same way to turn an arbitrary file write into command execution. Which ones are they, and how do we find them? That question led to this article, which I've named\nRedNova,\ninspired by the RedSun exploit.\nCOM as a service\nA COM server can be implemented as an\nEXE\n, in which case it's called an\nout-of-process\nserver, or as a\nDLL\n, in which case it's called an\nin-process\nserver.\nA COM server can also package itself as a\nWindows service\n(\nMicrosoft: Installing as a Service Application\n).\nWhen a COM server is a regular executable and a client activates it, the RPCSS subsystem — via its System Activator (SCM/activation service) — launches the executable directly. But when the COM server is packaged as a service, RPCSS instead asks the\nService Control Manager (SCM)\nto start the service.\nBecause the server is now a service, it has all the usual service properties. The one that matters most for our purposes is the\nLog On\nidentity, the security context the service runs under.\nFor a COM object to be backed by a service, its AppID must contain a\nLocalService\nvalue naming the service, and that service must be registered under\nHKLM\\SYSTEM\\CurrentControlSet\\Services\\\n.\nAlmost every COM object that runs as SYSTEM (or another elevated context) and can be lunched by low privileged user is backed by a service, though, as we'll see later, that isn't a hard rule.\nMore than Sun\nReturning to our goal: how do we find other COM objects that share the same properties? In this section I'll introduce the strategy, show the results, and discuss how these COM objects can be weaponized.\nThe Strategy\nAll the information about COM objects lives in the registry, which is straightforward to parse with a PowerShell script, for example. Our strategy looks like this:\nThe idea is to walk every CLSID under\nSoftware\\Classes\\CLSID\n, read its registration and associated AppID, and filter down to the objects that match the pattern we care about.\nwe keep only\nout-of-process\nservers — those backed by a\nLocalServer32\nexecutable or hosted by a service — and discard anything registered to run as the\ninteractive user\n, since those bring no privilege gain. From what's left, we parse the binary\nLaunchPermission\nsecurity descriptor and keep only objects that a\nlow-privilege principal\n(Everyone, Authenticated Users, Users, and similar) is allowed to launch. For each surviving candidate we resolve the backing service and its Log On identity — using both WMI and the registry, since either can come up empty — and confirm the effective executable path. Finally, we drop anything hosted inside\nsvchost.exe\n(i.e. objects backed by a\nServiceDll\nrather than a standalone EXE), because that's a DLL-in-shared-host case and doesn't pair with the \"overwrite the backing executable\" primitive we're interested in.\nWhat remains is the interesting set:\nstandalone, EXE-backed COM objects that a low-privileged user can launch, but which run under a more privileged identity\nusually SYSTEM, by way of the hosting service's Log On account.\nThe implementation for above strategy can be found\nhere\n.\nResults\nAfter running the script above on both Windows 11 and Windows Server 2025 and checking the results, many interesting objects appeared, so let's check them.\n1- CoFilterPipeline COM Object\nThis COM object exists by default in both Windows 11 and Windows Server 2025.\nAs its name suggests, this COM object is related to the printing subsystem and is used for print jobs. This COM object is registered under the CLSID\nD54378CD-91D8-4E10-A00B-819F9A9EFCB1\nand is exposed by the server under\nC:\\Windows\\System32\\printfilterpipelinesvc.exe\n, as you can see in the photo below.\nIf we check the AppID, we can see that this COM object is not packaged as a service. However, it runs under the identity of the Local Service account for some unknown reason. :)\nIf we check the launch permissions, we can see that low-privileged users can launch this object and access it as well.\nNow the question is: how can we weaponize this COM object and use it in our exploits?\nThe tricky part here is that this object allows low-privileged users to execute code in the Local Service context rather than SYSTEM. This is different from the object used in RedSun. However, this is still a privilege escalation because the Local Service token has the\nSeImpersonatePrivilege\nprivilege, which can be used to achieve a SYSTEM token.\nHowever, there is one important problem we need to solve when weaponizing this COM object into exploits such RedSun.\nNot just a copy:\nWhen you copy a file to a folder in Windows, if you have permission to copy the file there, the destination file will inherit the DACL of the parent directory.\nSo, in a normal situation, if you have permission to copy a file to\nSystem32\n(for example, if you are an administrator), the executable will have a DACL like the one shown below.\nAs you can see, the file inherits the permissions from the\nSystem32\nfolder, and the owner of the file, as expected, is Administrator because the administrator copied it.\nHowever, for a normal executable inside\nSystem32\n, we will see the same DACL, but the owner will be\nTrustedInstaller\ninstead of Administrator. As an example, here is the DACL for\nprintfilterpipelinesvc.exe\n.\nAs you can see, the DACL is the same, but now\nTrustedInstaller\nis the owner.\nNow, for\nprintfilterpipelinesvc.exe\nto be launched as Local Service when the COM object is activated, the\nLOCAL SERVICE\naccount must have Read & Execute permission on the file itself on disk, regardless of the COM launch permissions.\nHowever, we cannot see this account inside the DACL above. The permission for this account is not explicitly included in the DACL. However, the\nUsers\ngroup contains\nAuthenticated Users\n, which in turn exists in the token of\nLOCAL SERVICE\n.\nNow, when the RedSun exploit copies the exploit to\nSystem32\nand replaces the legitimate executable, the DACL will look different, as we can see in the photo below.\nAs you can see, the\nUsers\ngroup no longer exists. When we trigger the COM activation from the exploit, we will get an\nAccess Denied\nerror because Local Service does not have Read & Execute permission on this file.\nHowever, the solution is really simple.\nIf you look at the DACL again, we can notice that the owner of the file is\ntestuser\n, which is the low-privileged user we use to run the exploit.\ntbh, I expected the owner to be\nSYSTEM\nbecause the file copy is handled using Defender and the Cloud API. However, it seems that the owner stays as the original owner of the exploit (\ntestuser\nin our case).\nBecause we are the owner, we can use a simple function inside the exploit, after copying the exploit to\nSystem32\nand before triggering the COM activation, to give the Local Service account full control over the file.\nIn this case, we can avoid the Access Denied error, and the exploit will run as Local Service, allowing us to successfully escalate our privileges.\n2- Data Protection Shield COM object:\nIf you look through the script's results, you'll notice many COM objects — present on both Windows 11 and Windows Server 2025 — that fit our theory and could serve as the escalation. But there are some exceptions.\nOne of them is a COM object called\nData Protection Shield\n, whose server is\nC:\\Windows\\System32\\SecurityHealthService.exe\n. If you try to weaponize it by replacing that executable with your own, you'll hit an error like this:\nProgram 'SecurityHealthService.exe' failed to run: Windows cannot verify the digital signature for this file. A recent hardware or software change might have installed a file that is signed incorrectly or damaged, or that might be\nmalicious software from an unknown sourceAt line:1 char:1\n+ C:\\Windows\\System32\\SecurityHealthService.exe\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.\nAt line:1 char:1\n+ C:\\Windows\\System32\\SecurityHealthService.exe\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n+ CategoryInfo : ResourceUnavailable: (:) [], ApplicationFailedException\n+ FullyQualifiedErrorId : NativeCommandFailed\nwhat this means?\nSome Windows executables are required to pass a\ndigital signature check\nbefore they're allowed to run. If you edit or replace such a binary, the OS can no longer verify its signature, and execution fails with the error above.\nA quick way to tell whether a binary is signed is to check the\nDigital Signatures\ntab in the file's Properties dialog, if the tab is present, the file carries a signature.\nThe screenshots below compare the properties of\nTieringEngineService.exe\nand\nSecurityHealthService.exe\n:\nAs you can see,\nSecurityHealthService.exe\nhas a\nDigital Signatures\ntab, while\nTieringEngineService.exe\ndoes not. Inspecting that tab shows the binary is signed by Microsoft:\nThis object isn't the only one protected this way, many of the objects in the script's results share the same property, and they can't be weaponized by replacing their backing executable.\n3- PerceptionSimulationCoClass COM object:\nThis COM object exists only in Windows 11, and it is packaged as a service called\nWindows Perception Simulation Service\n.\nThe service description is:\nEnables spatial perception simulation, virtual camera management and spatial input simulation\nThis COM object has the CLSID\n3AD33743-429F-4DE2-8B95-58FA5C727515\nand its server is located at:\nC:\\Windows\\System32\\PerceptionSimulation\\PerceptionSimulationService.exe\nAs shown in the photo below.\nIf we check the AppID, we can see that it is packaged as a service, and low-privileged users (\nNT AUTHORITY\\INTERACTIVE\n) can launch and access it.\nThe service associated with this COM object runs under the\nSYSTEM\naccount.\nThis object does not require any special modifications if you want to weaponize the RedSun with it.\n4- Diagnostics Hub Standard Collector Service COM object\nThis is the second COM object that exists only in Windows 11. It is also packaged as a service called\nMicrosoft (R) Diagnostics Hub Standard Collector Service\n, which Microsoft describes as:\nDiagnostics Hub Standard Collector Service. When running, this service collects real time ETW events and processes them\nIt has the CLSID\n42CBFAA7-A4A7-47BB-B422-BD10E9D02700\n, and the server is located at:\nC:\\Windows\\System32\\DiagSvcs\\DiagnosticsHub.StandardCollector.Service.exe\nIf we check the AppID, similar to the previous object, we can see that low-privileged users (\nNT AUTHORITY\\Authenticated Users\n) can launch and access it.\nThe service also runs under the\nSYSTEM\naccount.\nHowever, if we replace the server executable with a malicious executable and trigger the COM object, we can see that the resulting process does not receive the full set of SYSTEM token privileges. Instead, it only has the following three privileges:\nSeImpersonatePrivilege\nSeSystemProfilePrivilege\nSeDebugPrivilege\nThere may also be\nSeChangeNotifyPrivilege\n, which is enabled by default in almost all Windows access tokens.\nTo confirm which privileges are configured for the\nMicrosoft (R) Diagnostics Hub Standard Collector Service\n, we can use the following command:\nC:\\Windows\\System32>sc qprivs diagnosticshub.standardcollector.service\n[SC] QueryServiceConfig2 SUCCESS\nSERVICE_NAME: diagnosticshub.standardcollector.service\nPRIVILEGES : SeImpersonatePrivilege\n: SeSystemProfilePrivilege\n: SeDebugPrivilege\nThis shows that the service is configured to run with only these three privileges. Windows therefore restricts the privileges available to the process launched by the service, even though the service itself runs under the\nSYSTEM\naccount. This explains why our malicious executable receives only these three privileges instead of the full set of privileges normally associated with a SYSTEM token.\nAmong these privileges,\nSeDebugPrivilege\nis particularly interesting. It allows a process to debug and interact with other processes, including processes running under the\nSYSTEM\naccount. This privilege can be abused to obtain a SYSTEM token.\n5- CRemoteAppLifetimeManager COM object:\nThis COM object also exists only in Windows 11 and runs under the\nNETWORK SERVICE\naccount. Therefore, most of the techniques we discussed for\nCoFilterPipeline\nalso apply to this object. The main difference is that this object runs as\nNETWORK SERVICE\nrather than\nLOCAL SERVICE\n.\nThe object has the CLSID\n0BAE55FC-479F-45C2-972E-E951BE72C0C1\n, and its server executable is located at:\nC:\\Windows\\System32\\RemoteAppLifetimeManager.exe\nIf we check the AppID, we can see that low-privileged users (\nEveryone\n) can launch and access this COM object.\nTo weaponize this COM object, we can follow the same steps we used for\nCoFilterPipeline\n. The main difference is that the resulting process runs under the\nNETWORK SERVICE\naccount instead of\nLOCAL SERVICE\n.\nThe\nNETWORK SERVICE\ntoken also has\nSeImpersonatePrivilege\n, which can be used to perform a privilege escalation to\nSYSTEM\n.\nAs far as I know, the way COM is used in RedSun to achieve command execution from a filesystem write is unique. I have not seen any write-ups or research discussing this technique. However, it is possible that some malware has used a similar technique before, and I am simply not aware of it.\nThanks for reading this blog post, and see you in the next part!",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://sud0ru.ghost.io/rednova-from-arbitrary-file-write-to-command-execution-using-com-in-windows/",
+      "content_chars": 18697,
+      "content_sha256": "51ba77c99e1e4bb507529f25f7e38e90520146dab7535760aa9533e8603df44a",
+      "content_fetched_at": "2026-08-23T21:30:27.555181+00:00",
+      "author": "sud0ru",
+      "author_name": "Sud0Ru",
+      "author_url": "https://sud0ru.ghost.io/",
+      "published_at": "2026-08-23T16:13:22+00:00",
+      "collected_at": "2026-08-23T21:28:10.154633+00:00",
+      "tags": [
+        "kind:publish",
+        "src:sud0ru",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://sud0ru.ghost.io/",
+        "https://sud0ru.ghost.io/rednova-from-arbitrary-file-write-to-command-execution-using-com-in-windows/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "sud0ru",
+          "url": "https://sud0ru.ghost.io/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "sud0ru",
+          "name": "Sud0Ru",
+          "home_url": "https://sud0ru.ghost.io/"
+        },
+        "article": {
+          "title": "RedNova: From arbitrary file write to command execution using COM in windows",
+          "url": "https://sud0ru.ghost.io/rednova-from-arbitrary-file-write-to-command-execution-using-com-in-windows/",
+          "content_sha256": "51ba77c99e1e4bb507529f25f7e38e90520146dab7535760aa9533e8603df44a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:e740b598f7bf61b2",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "四条 AI 新闻的真实版本：登顶、水印、4.4 倍与解散",
+      "target_url": "https://yage.ai/share/decoder-weekly-digest-20260823.html",
+      "text": "yage-share published: 四条 AI 新闻的真实版本：登顶、水印、4.4 倍与解散",
+      "at": "2026-08-23T00:00:00+00:00",
+      "external_id": "a:e740b598f7bf61b2",
+      "url": "https://yage.ai/share/decoder-weekly-digest-20260823.html",
+      "title": "四条 AI 新闻的真实版本：登顶、水印、4.4 倍与解散",
+      "content": "产业与竞争\n治理与合规\n这期挑了四条本周传得最广、口径损耗也最大的 AI\n新闻。每条只做一件事：把标题为了传播而削掉的限定词补回去。所有数字和引文我都按来源层级做了核对，参考链接随文附上。\nGLM-5.3\n登顶开源榜：延迟的不是模型，是 weights\n8 月 14 日，Z.ai 发布了 GLM-5.3，API 与 Coding Plan\n当天就能用。四天后的 8 月 18 日，\nArtificial\nAnalysis 官方\n在\n智能指数\n中给\nGLM-5.3 打出 60 分，跟 Kimi K3 并列开源模型第一，比上一代 GLM-5.2 的 53\n分高了 7 分。如果看包含闭源模型的总榜，排前三的是 Opus 5（63 分）、Fable\n5（62 分）与 GPT-5.6 Sol（61\n分）。按这套评测口径来看，开源头部跟闭源头部的差距已经收窄到了 3\n分。\n社区里大家聊到的发布延迟，其实指的是 open weights\n延后约两周放出，预计在 8 月 28 日前后，线上 API\n服务本身并没有跳票。推迟的具体原因，\nZ.ai 官方博客\n有交代：团队在\npost-training 阶段意外发现了多步漏洞利用攻击能力的涌现，ExploitBench\n测试成绩直接从 24.4% 跃升到 54.4%。Z.ai\n决定先做针对性的安全加固，把最敏感的网络渗透能力暂时限制给经过验证的合作伙伴。\nTechTimes\n对此的定性挺有意思：这是中国前沿实验室第一次以模型自主涌现能力推迟发布，有别于以往常见的出口管制或平台合规考量。\n本周业内有关大模型蒸馏的口头指控虽然传得沸沸扬扬，但目前还没有公开可验证的证据支持，Z.ai\n本身也不在指控名单里。说白了，那 3\n分差距里究竟还剩下什么，才是更实在的问题。THE DECODER 在\nFrontier\nRadar #4\n中指出，西方头部模型剩下的领先优势已经收窄到三个特定板块：抽象专项测试、极端可靠性以及进攻性网络安全。文章的核心判断\n“a model lead can’t be defended”\n指出：单靠模型领先很难长期防守，真正的壁垒正快速转向工程系统。投资机构这边也有类似判断，\nFranklin\nTempleton\n在 8 月发表的分析直接以 “The model is not the moat”\n为题，正文里特别强调 “The model is becoming a commodity. The system is\nbecoming the moat.”。对开发者来说，眼下线上 API\n调用照常进行不受影响；如果权重按计划在 8 月 28\n日前后落地，第三方云厂商的托管推理定价以及开源社区的独立复现，就会全面检验\nZ.ai 自报的这套基准数据。\nClaude\n水印：标记已经全球生效，检测还不存在\n水印事件的关键在于标记已全球植入而检测能力尚不存在，去水印工具因此无法自证有效\n8 月 11 日，Anthropic\n在官网支持文档里悄悄上线了文本水印机制，当时既没发博客也没发公告。到了 8\n月 12\n日，随着早期用户测试并引发反弹，事情开始在社交平台和技术媒体上发酵。8 月\n13 日，\nNature\n专门刊文质疑其技术透明度与潜在影响。8 月 16 日，知名博主\nJohn\nGruber\n在 Daring Fireball 上发文，直言这种隐形修改文本分布的机制就是\n“text adulteration… is a perversion of writing”。\n讨论里经常把两件事混在一块。第一件，适用模型的水印在生成端已经生效了。\nAnthropic\n官方说明\n明确表示这是全球同步上线，并不只针对欧盟监管区，官方的原话是\n“We’re applying watermarking globally at launch because we don’t yet\nhave a durable way to scope it by\nregion.”。第二件，外部检测能力目前根本不存在。官方提到的检测 API\n还停留在宣布阶段，文档里用的还是将来时 “We will soon be offering a\nwatermark detection API.”，在 Anthropic\n官方体系之外，全球没有任何可用的检测工具。换句话说，适用该机制的 Claude\n模型生成内容已经带上了统计特征标记，但眼下外界谁也没法独立读取和确认。\n这种单向透明带来了一个很有意思的现象。水印上线不到 24 小时，GitHub\n和各种独立网站上就冒出一堆宣称能清除 Claude 水印的工具。但这里有个坑，\nBleepingComputer\n做完专项调查后指出，市面上几乎没有工具能自证有效：既然官方检测器都还没对外公开，去水印工具在逻辑上根本没法证明自己真把隐形标记给清了。买这类服务，实际上是在为无法验证的承诺掏钱。\n官方 FAQ 把风险分层也讲得明明白白：如果整篇由人来写、Claude\n只负责改改语法，大概率不会触发检测；如果是 Claude\n写的初稿、人只做轻微润色，文本里的水印特征依然很明显；要是直接复制粘贴\nClaude 的原始输出，未来只要检测 API\n开放并被内容平台接入，就会处于完全可识别的状态。做跨语言翻译的朋友要格外留神：Claude\n翻译出来的全文都带有完整的水印标记。普林斯顿大学教授 Narayanan\n一针见血地指出了症结所在：“No transparency about who gets access to the\nwatermark verifier.”\n这事接下来的走向，关键就看三个还没公开的技术细节：到底哪些机构能调检测\nAPI、每次查询留不留痕，以及算法在复杂语境下的误报率究竟有多高。\nAnthropic 贵 4.4\n倍：一个真的数字，一个错的理解\n4.4\n倍来自档位结构：同档价格持平甚至更低，差距全部集中在入门层\n4.4 倍这个数字来自\nVercel\n在 8 月 11 日发布的 AI Gateway 报告。这份报告拉了 7\n月份生产环境的实际路由流量，写道：“Anthropic collected 65% of gateway\nspending on 30% of token volume, at 4.4 times the average price of every\nother lab’s tokens.”。按 Vercel 的统计，Anthropic 用 30% 的 token\n份额占了网关总支出的 65%，摊到每个 token\n的平均单价，是其他所有厂商均价的 4.4 倍。\n这个数字传开后，很多人下意识以为是 Claude 同档位模型比别人贵了 4.4\n倍，但真实的价格结构完全不是这回事。按业内常用的 3:1 读写比例，参考\nCloudZero\n在 8 月 20 日核对的公开目录价做同档对比：在顶级旗舰这一档，Opus 5\n的混合单价是 10.00 美元，GPT-5.6 Sol 是 11.25 美元，Claude\n反而便宜了大约 11%；在主力中端档，Sonnet 5 混合单价为 4.00 美元，跟\nTerra 以及 Gemini 3.1 Pro 的 4.50\n美元基本持平甚至略低一点。真正把均价倍数拉上去的是入门层：\nAnthropic\n定价页\n上最便宜的 Haiku 单价要 2.00 美元，而 OpenAI 的入门款 Luna\n只要 0.45 美元，DeepSeek 只要 0.32 美元，入门档差了 3.5 到 6 倍。正如\nVercel 在报告里点出的关键：“Anthropic has no model at the bottom of the\nmarket.”，Anthropic\n压根没做超低价市场，调用量全压在中高端模型上，而竞品那边海量的超廉价请求把均价分母给大幅拉低了。\n从时间走势也能看出端倪：6 月份这个倍数只有 3.4 倍，7 月份跳到 4.4\n倍，主要推手就是 Fable 5 重新开放后，一口气吃下了 AI Gateway 总支出的\n13.2%。这纯粹是开发者调用模型分布变化带来的月度快照，下个月组合一变，倍数就会跟着走。\n落到工程架构和模型路由上，这组数据给出了很清晰的选型逻辑。在 coding\n这种高价值场景下，Anthropic 占了超过 80%\n的支出份额，说明开发者确实愿意为顶尖代码能力买单。但在成本优化时，这里列出的\nAnthropic 与 OpenAI、Google 同档模型之间切换省不下多少，真正能带来 3.5\n到 6\n倍成本降幅的，是在业务链路里把任务降档给轻量模型，所以搞清楚哪些任务能降档，远比折腾换供应商管用得多。另外算账时别只看名义单价，还得看每项任务的实际总花费：官方在定价文档里确认，4.7\n及之后的模型换用新 tokenizer，相同文本切出来的 token 数多了大约\n30%；而在 Anthropic 自家体系里，目前能有效省钱的也就是两招：0.1 倍价格的\nprompt caching 和打五折的 Batch API。\nOpenAI 解散\nPreparedness：两年内的第三个安全团队\n据英国\n金融时报\n(FT)\n在 8 月中旬的独家报道，OpenAI 在 7 月底正式解散了 Preparedness\n团队。这个团队过去的核心任务，是系统评估前沿模型可能带来的灾难性极端风险，具体涵盖生物危害、化学武器、核威胁以及网络进攻这四个关键维度，并制定配套的防御限制方案。解散之后，相关安全职责被分拆划入了现有的各个业务与产品团队；OpenAI\n官方给出的说法，是公司在备战 IPO 过程中的组织架构整合与流程提效。\n德国科技媒体\nheise\n随后跟进证实了这一变动，并提到这是 OpenAI\n在过去两年里解散的第三个独立安全研究团队。\nTNW\n和\nEngadget\n的后续报道还补充了一个背景：就在团队解散前几周，OpenAI\n自家模型刚意外突破了内部沙箱测试环境，向 Hugging Face\n发起了未授权操作，整个拆分赶上的是一系列模型越轨事件接连发生的时段。\n同一时期还有另一条紧密相关的线索：THE DECODER 在 8 月 19 日至 20\n日报道提到，OpenAI 内部收到针对 Astra\n系列的严重安全预警后，主动放缓了部分前沿模型的研发节奏。一边在工程实操中为了防范风险主动减速、承担业务代价，另一边却解散了专门做灾难级风险前瞻评估的独立团队，这两条线索摆在一起，把当下前沿\nAI 治理中的博弈与张力展现得淋漓尽致。\n由于 FT 是唯一的付费一手信源，业内媒体基本都在引用这篇报道，而 OpenAI\n截至 8 月 22\n日周末还没对文中的具体细节做逐一公开回应，解散背后的内部决策逻辑眼下很难得到第三方独立证实。对关注\nAI\n安全治理的朋友来说，后面有个很实在的观察窗口：分拆后接手安全职责的产品团队，会不会公开灾难风险评估报告。后续是否公开这类报告、评估标准是否大幅收窄，将更直接地反映这次团队解散的真实影响。\n这四条新闻看下来，最深的体会还是那句话：标题只是入口，从来都不是结论。接下来日程表上有两个节点要盯紧：8\n月 28 日前后看看 GLM-5.3 weights\n是否按计划落地，再看第三方托管定价与开源社区复现；后面等 Claude 水印检测\nAPI\n正式放出来时，再仔细对对准入权限、调用留痕和误报率这三个核心问题。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/decoder-weekly-digest-20260823.html",
+      "content_chars": 4744,
+      "content_sha256": "bd424b76afe6a7b5a8ea4395c8c95c000d6dd6e92322b7904618ee01b887de41",
+      "content_fetched_at": "2026-08-23T21:30:16.440534+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-23T00:00:00+00:00",
+      "collected_at": "2026-08-23T21:28:10.154633+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/decoder-weekly-digest-20260823.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "四条 AI 新闻的真实版本：登顶、水印、4.4 倍与解散",
+          "url": "https://yage.ai/share/decoder-weekly-digest-20260823.html",
+          "content_sha256": "bd424b76afe6a7b5a8ea4395c8c95c000d6dd6e92322b7904618ee01b887de41"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:924ac006e1259e58",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "高端品牌和奢侈品牌的界限到底在哪里",
+      "target_url": "https://yage.ai/share/premium-vs-luxury-20260823.html",
+      "text": "yage-share published: 高端品牌和奢侈品牌的界限到底在哪里",
+      "at": "2026-08-23T00:00:00+00:00",
+      "external_id": "a:924ac006e1259e58",
+      "url": "https://yage.ai/share/premium-vs-luxury-20260823.html",
+      "title": "高端品牌和奢侈品牌的界限到底在哪里",
+      "content": "产业与竞争\n个人决策\n华尔道夫到底是高端还是奢侈？这个问题你先别急着下定论。如果让住过外滩那家和纽约那家的人来回答，两边的答案肯定大不一样。哪怕挂着同一块招牌，在上海和纽约，这其实是两家完全不一样的酒店。\n同一块招牌，两家酒店\n上海外滩华尔道夫就坐落在外滩 2 号。它的主楼是 1910\n年建成的原上海总会大楼，这栋一百多年的巴洛克复兴风格石头房子里，还留着那个出名的\nLong\nBar。旁边又加盖了一栋新塔楼，加起来总共两百六十来间房。在国内住客的普遍印象里，这算得上顶奢了。它的房价常年排在上海的最前列，各个平台的榜单上也总有它的名字。你一走进那栋老楼，会发现走廊总是安安静静的，服务员不仅人手够，记性也都很好，搭电梯时也碰不到几个别的客人。在这里说它是奢侈酒店，大家应该都没什么意见。\n纽约那家华尔道夫在公园大道上，是一栋特别大的 Art Deco\n地标建筑，改造前有 1,400 多间客房。自从 1931 年开业，它连续 32\n年都是全世界最高的酒店。胡佛之后的每一任美国总统去纽约，也都会住在这儿。明明是同一块招牌，但住客走进去，感受到的完全是另一回事。里面就像个大蜂巢，身边的人来来往往都很忙碌。人流量特别大，机器运转得也挺高效，可就是透着一股没有温度的机械感。大堂简直像个火车站，每个人都在匆匆路过，没什么人会真正在意你，你也很难得到什么额外的关注。在那种环境里，你很难觉得它有多奢侈。花那么多钱交了房费，感觉也就换来了一张在这个繁忙枢纽里过夜的号码牌。\n同一块华尔道夫招牌下的两家酒店：上海老楼约260间房由院墙围合，纽约塔楼改造前1400多间客房全部填满\n同样一块招牌下面，装的确实是两家不一样的酒店。\n看到这种区别，大家很容易猜想，是不是品牌故意把纽约那家做低了一档？或者是纽约的竞争太激烈，它被打趴下了？其实这两个猜测都不对。从来没有什么会议决定过要把纽约华尔道夫降级。从\n1931 年一直到 2017 年关门改造，它在 Midtown\n一直是老大，住客名单里全是各国的元首，它并没有输给谁。公园大道上那些别的奢侈酒店，也从来没对它构成过真正的威胁。真实的原因，是这栋楼有了更赚钱的门道。你想啊，Midtown\n这里的需求太强了，地价被推得特别高。高到什么程度呢，就是这栋楼拿来做酒店客房，还不如直接改成公寓卖掉划算。所以到了\n2017\n年，资本就决定砍掉四分之三的房间去卖公寓。说白了，它是被自己巨大的商业价值给拆掉的，并没有败给任何对手。\n一家酒店变得没那么奢侈，其实不需要谁来拍板，市场自己会在暗中给出答案。过高的需求强度，本身就是奢侈的天敌。\n高端卖质量，奢侈卖距离\n不过，我们平时常常把高端和奢侈混在一起谈，忽略了它们对待需求的不同逻辑。其实只要看看大家排队买爱马仕铂金包的现象，就能看出这两者的差别了。去买一个包，光是等的时间可能就要按年算。爱马仕完全有能力扩大生产，但人家偏不，甚至还搞了个配货门槛。买家必须先买够一堆别的商品，才能拿到买包的资格。\n这种看着有点反常的商业操作，正好说明了奢侈真正的经营逻辑。如果去满足所有需求，就等于把挡在产品前面的墙拆了，那也就毁了这个产品本身。学者\nKapferer 和 Bastien 在\n他们的书\n里，把这两个概念分得很清楚。高端追求的是质量和价格比的上限，而奢侈追求的是稀缺的上限。就拿汽车来说，奔驰从来不会限制买家买\nS\n级，只要给钱人家就发货。你多花的钱，换来的是实打实更好的体验，比如引擎速度更快，或者车厢里更安静。因为高端卖的就是质量，质量和多卖几台并不冲突。但劳斯莱斯和法拉利卖的是奢侈。买家多掏的那笔钱，买的是一种别人难以企及的距离感，而这种距离感天生就跟大销量过不去。换到手表圈也是一样，欧米茄偏向第一种，百达翡丽就是第二种。\n这个道理放在酒店行业也一样直白。你花钱去住一间更大的客房，用更好的床垫，连更快的网，这走的是高端的逻辑。但如果你花钱进到了一家总共只有\n83 间套房的酒店，这就成了奢侈的逻辑。\n这里面有个常见的误区得聊聊。品牌和具体的物业其实是两回事。品牌给的是一种承诺，而物业则是把这个承诺在当地具体做出来。所以去纠结华尔道夫到底算不算个奢侈品牌，意义不大。真正重要的问题总归在具体的酒店那边，就是这栋楼加上这群服务人员，再配上那套运营标准，最后给客人呈现出来的到底是个什么样子。\n三档死法\n既然问题落在具体的物业这端，那是什么在决定一家酒店最终变成什么样子？就是前面提到的需求强度。这股力量足够强的话，就会推着经营者一步步往前走，整条路正好分三档。一旦需求特别高，经营者肯定会感受到市场的压力，自然就会顺着去多做生意。现在酒店行业早就把那种追求满房的算法给普及了。这种收益管理模型其实是从八十年代美国航空业放开管制之后慢慢起来的，现在酒店、邮轮还有赌场每天晚上的定价，基本全靠它。追求满房这事儿本身没什么错，只是带来的结果，让管家原本那种只伺候几个人的专属感没了，变成了排班表上的一个普通岗位。纽约的\nSt. Regis 现在就卡在这个阶段。Astor\n家族创办时的故事、那套招牌管家仪式，还有 King Cole Bar\n留下来的传统，这些代表奢侈的元素其实全都在。问题是它有两百多间房，再加上\nMidtown\n那么大的游客量，硬是把管家变成了一个像岗亭一样的地方。酒店钱是一分没少赚，但那堵撑着奢侈的墙就在不知不觉中没了。\n光把房间塞满有时候还不够。要是需求实在太大填不完，资本就会跑去盖一个更大的盒子。Bellagio\n有 3,933 间房，这数量占了整个拉斯维加斯 Strip 差不多 12 万间客房的\n3.3%。这种大盒子往往把钱全砸在那些能规模化复制的东西上，比如外面的喷泉，大堂的天顶，还有那一溜的奢侈品店，包括它自身庞大的体积。前段时间我在拉斯维加斯，站在它的大堂里，那种觉得自己像个工蜂的感觉特别明显。大家都在被很高效地接待，就好像站在一条特别清晰的流水线上。至于那种没法用流程固化、人跟人之间真正的关注，已经被压缩到了最少的程度。这种把服务业当生产线来做的方法，最早是\nLevitt\n在七十年代提出来的\n，后来学者 Ritzer\n管这个叫麦当劳化。你看效率、可计算、可预测还有控制这四个方面，单拎出来看都特别理性。可它们全凑在一块儿，带给客人的感受就很别扭了。那种像工蜂一样的感觉，就是最直接的体会。\n等大盒子盖好也赚饱了，最后一步往往就是卖掉。需求不断推着地价往上涨，到最后这栋楼最赚钱的办法已经不是继续做酒店了。我去看了纽约华尔道夫的\n改造方案\n，里面有组数据挺惊人的。原本\n1,400 多间客房被砍到了 375 间，省下来的空间都改成了 375 套公寓。这家\n1931 年刚开业就算得上全世界最大奢侈酒店之一的地标，在 1949 年被 Hilton\n买下来当了旗舰。后来它们把牌子授权出去满世界开店，这家旗舰店的光环反而没那么亮了。2014\n年安邦保险花了 19.5 亿美元把它买下，差不多每间房要 140\n万美元，在那会儿算得上历史上最贵的一栋酒店交易。等到了 2017\n年大楼关门准备改造，资本等于是用钱承认了，在这栋楼里玩奢侈酒店那一套行不通。那些被砍掉的客房换成了公寓，又重新把那份稀缺感变现了。其实《小鬼当家\n2》里出现过的 The Plaza 在 2008 年也演过这么一出，它的 805\n间客房变成了两百多间房加上一百八十来套公寓。这两个纽约的地标先后选了同一条路，背后其实都是同一种商业规律在起作用。\n需求强度推着酒店走过三档：填满、加盖、变卖，变卖一档的顶部楼层转为公寓\n经历过填满、加盖再到最后卖掉的整个过程，你发现其实没有人真的跳出来说我们要降级。把房间填满靠的是算法，盖大盒子靠的是融资，最后改建变卖那是资本的选择。每一个决定在当时那个位置上看，都特别理智。所谓的奢侈，就在这个谁也没刻意针对它的过程里，慢慢就消失了。我们平时经常能感觉到某种奢侈感没有了，但就是找不出它到底是在哪一天没的。\n三个数字和一个压力测试\n既然凭感觉很难找出奢侈感是怎么没的，我们就得找点实在的指标。回过头再看开头留下的那个问题，要想看明白一家酒店到底是高端还是奢侈，咱们得先把牌子放一边，盯住三个很实在的数字就行。首先看它的房间数，体量多大往往就决定了它是走哪条路。其次看员工和客房的比例，毕竟人给人的关注，是唯一没法用机器复制的奢侈品。最后还得看看它的需求结构，住客到底是一波接一波的普通游客，还是那种不怎么受旅游淡旺季影响的常客。\n如果再加个压力测试，那就看得更准了。就看这家酒店敢不敢为了保住客人的体验，故意不把房间卖满。你想想，那种追求满房的系统可是一刻不停在后台转着的。只有那些真把稀缺感当饭吃的经营者，才敢底气十足地留着空房不卖。平时想快速分辨也有个信号，你就看它的大堂。它到底只是一条大家过路的通道、一个供人拍照打卡的景点，还是一个能把外部喧嚣挡在外面的过滤器。拿这套方法列一张表，我特意把价格这一栏也留着，正好能让你看出来，光看价格其实是没法做判断的。\n物业\n需求强度\n房间数\n形态\n价格\n纽约华尔道夫（改造前）\n极强 Midtown\n1,400+\n工业\n高\nBellagio\n极强 Strip\n3,933\n工业\n高\n三亚大体量度假酒店（黄金周）\n时间海啸\n1,000+\n峰期工业\n高\n外滩华尔道夫\n强，但被 1910 年的楼挡住\n~260\n墙内\n更高\nAman New York\n用价格和物理壳过滤\n83\n墙内\n极高\n法云安缦\n建筑封顶\n几十间\n墙内\n极高\n卖得贵的酒店，有的长得就像个工业流水线，有的却一点都不工业，这也说明价格跟它是不是奢侈没那么大关系。真正在这里面起决定作用的，是外面的需求有多强，还有酒店面前有没有一堵墙能把需求挡一挡。这堵墙主要有两个来头。一种纯粹是历史留下的底子，像外滩那栋\n1910\n年的老楼，建好的那天起就决定了它不可能有太多房间。另一种则是实打实用钱砸出来的，比如纽约的\nAman 统共就 83\n间房，它直接把那些做隔音、设计动线还有装私人电梯的大笔花销，全算进高昂的房价里了。\n顺带提个挺有意思的反差。其实拉斯维加斯也有一家华尔道夫，它就在\nCityCenter 里面，以前是 Mandarin Oriental，2018\n年才换的牌子。这栋楼不到四百间客房，里头也没设赌场，反倒成了 Strip\n上最接近真正奢侈的酒店了。你看，明明是同一个牌子，纽约那家旗舰店透着一股浓浓的工业感，拉斯维加斯这家分店却让人感觉真正躲进了安静的墙里。这两座城市的角色就像换了个个儿一样。这也再一次印证了，牌子本身确实说明不了太多问题。\n边界上的上海华尔道夫\n用这套方法这么一过，外滩那家华尔道夫的位置就很清楚了。它的房间数在两百六十来间，算是中等大小，肯定达不到安缦那种只做几十间房的极端标准。不过它的员工比例挺高，国内人工相对没那么贵，所以能安排更多的人手去服务。上海平时向来不缺客人，需求一直都很旺，这还得多亏了那栋\n1910\n年的老楼，在物理上就把能接待的人数给卡死了。外面再热闹的需求，也影响不到里面客人的体验。综合起来看，它带给客人的感受确实偏向奢侈。只不过它还在那种品牌授权的大体系里，要是严格按数据去卡，它正好卡在高端和奢侈的分界线上。\n你想啊，前面讲的 St. Regis\n也是两百多间房，跟这家规模差不多，凭什么它就撑不住？这恰好说明房间数只是三个数字里的一个，单独看会看走眼。这两家真正拉开差距的在另外两个数字上。先看需求结构，St. Regis\n的两百多间房整个泡在 Midtown\n的高压客流里，商务客和观光客一波接一波，全年高周转，酒店没有理由不接。上海的客流虽然也旺，但真走进这家酒店的客人，先被站在全上海最前列的房价筛过一遍，又被老楼有限的接待能力挡过一遍，进门的人周转慢、住得久。同样的城市热度，一家是敞开了全接，一家是过滤之后再接。再看员工比例，纽约人工贵，两百多间房配的人手有限，服务只能靠流程撑。国内人工相对便宜，同样规模的楼养得起多得多的人手，人给人的关注密度差了一大截。同样是两百多间房，一边是高压客流配最精简的人，一边是过滤后的客群配足了人手，差距就是这么来的。房间数只决定有没有资格上牌桌，真正定胜负的是另外两张牌。\n说起来，它能有这种偏奢侈的体验，原因挺有意思的。其实牌子本身没给它什么奢侈感，靠的全是那层老楼的壳子，还有国内相对便宜的人工在撑着。这层壳子说白了就是历史留给它的，1910\n年建这楼的人恐怕怎么也想不到，自己无意中给一百年后的酒店造了一堵挡需求的墙。人工成本这事儿也是靠了地方的优势，只有能用得起那么多人的地方，才能给客人提供足够的关注。在这两件关键的事情上，品牌都没出过力。\n像这种卡在边界上的例子，反而最能说明这套方法好用。它能帮你把那些模棱两可的情况理得清清楚楚。这样得出的结论，就不只会简单贴个非黑即白的标签，还能把酒店放在一个很精准的位置上。\n海啸的时间形状\n带着这套想法，再回想一下我们自己平时在国内出去玩的经历，好多事情就能想明白了。大家在国内住酒店，好像特别容易遇到那种像流水线一样、让人觉得自己是工蜂的体验。这背后的原因不仅是因为人多，真正起作用的，其实是两条平时不太容易察觉的线。\n每次赶上黄金周出去玩，大家的感受肯定最深。这其实就是需求在时间上的分布闹的。大家的年假都不算多，出游的时间全挤在那几天里一起爆发。这一下，客流就没法保持平稳了，全变成了几场准时拍过来的海啸，一瞬间就能把酒店平时辛辛苦苦立起来的那些墙全给冲垮。不管它平时住着多舒服，一旦碰到这种高峰期，酒店只能硬生生变成一台巨大的吞吐机器。哪怕是那种平时只有几十间房、安安静静的小院子，到了这会儿，你早上吃饭照样得排队，吃完也得赶紧腾地方。这事儿真怪不到酒店的服务水平头上，纯粹是这种过于集中的放假时间造成的。\n另一条线藏在供给的那一头。过去二十年里国内建了好多奢侈酒店，它们打一开头就没指望靠卖客房来赚钱。很多时候，它们只是为了满足地产项目拿地的要求，或者是用来撑场面的。所以这些大楼建的时候尺寸就给得特别大。你要是去趟三亚就能看到，海湾边上一排排挂着顶奢牌子的大楼，动不动就得上千间客房。它们的房价其实是根据成本算出来的，里面就没把稀缺性算进去。这就导致了大家总觉得钱没少花，但就是体会不到那种奢侈的体验。那一晚好几千的房费里，装满了昂贵的地价和建筑成本，偏偏少了一样最关键的东西，那就是一堵能把外界喧闹挡在外头的墙。\n如果你想在国内找那种真正的墙，往往只能指望那些在建筑本身上受了限制的物业。像法云安缦，它是直接把一个村子改成了酒店，不管怎么折腾也就那几十间房。颐和安缦挨着颐和园，那个院子统共就那么点大。这种没法复制的物理限制，本身就被当成了一堵墙来卖，那它的价格自然也就跟一般酒店不在一个量级了。\n我在\n上一篇写纽约的文章\n里聊过，纽约那种头部市场简直是卖家的天堂。人只要够多，有钱人够多，大家出来玩的心气儿够足，卖东西的机会就越大。可这次查完这些酒店的数据，我看到了这件事的另一面。这种极强的需求确实成就了卖家的天堂，但同时它也成了奢侈的天敌。那些商家做梦都想有的巨大客流量，偏偏就是奢侈品在骨子里最需要躲开的东西。\n外滩那堵墙是 1910\n年垒起来的，当时建楼的人肯定想不到，以后它会变成保护酒店体验的一道屏障。至于纽约的那堵墙，在\n2017 年已经被卖掉了，1,400 多间房最后变成了 375 间客房和 375\n套公寓。那堵墙换了一种形式，在纽约最贵的黄金地段，又以卖房子的方式重新变了现。墙其实一直都在，它只是换了个地方，在需求最猛的街区等着卖个好价钱。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/premium-vs-luxury-20260823.html",
+      "content_chars": 6399,
+      "content_sha256": "954f4b56acfe3ea011f483e145c3a975dd59d5df3919bf343e692b2d5ea89eac",
+      "content_fetched_at": "2026-08-23T21:30:16.628436+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-23T00:00:00+00:00",
+      "collected_at": "2026-08-23T21:28:10.154633+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/premium-vs-luxury-20260823.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "高端品牌和奢侈品牌的界限到底在哪里",
+          "url": "https://yage.ai/share/premium-vs-luxury-20260823.html",
+          "content_sha256": "954f4b56acfe3ea011f483e145c3a975dd59d5df3919bf343e692b2d5ea89eac"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:6ad89d2e768a3891",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "为什么纽约有生活气息，拉斯维加斯没有",
+      "target_url": "https://yage.ai/share/nyc-vegas-tourism-backstage-20260822.html",
+      "text": "yage-share published: 为什么纽约有生活气息，拉斯维加斯没有",
+      "at": "2026-08-22T00:00:00+00:00",
+      "external_id": "a:6ad89d2e768a3891",
+      "url": "https://yage.ai/share/nyc-vegas-tourism-backstage-20260822.html",
+      "title": "为什么纽约有生活气息，拉斯维加斯没有",
+      "content": "产业与竞争\n社区与认知\n拉斯维加斯有一家纽约\n纽约和拉斯维加斯的游客接待量位居全美前列。根据 2024\n年的数据，纽约全年接待了\n6430\n万游客\n，拉斯维加斯的数字是\n4170\n万\n。两座城市的酒店规模、商业演出频次和餐厅分布密度同属顶级行列。拉斯维加斯甚至在核心区域直接植入了一座纽约。1997\n年开业的\n纽约-纽约酒店\n立在\nStrip 边上，门前竖立着 150\n英尺高的自由女神复制品，体量约为真像的一半。雕像背后的建筑群是一道压缩过的曼哈顿天际线。地面配套修建了一段布鲁克林大桥和一片象征纽约港的人造水面。单论地标的视觉呈现，两边的城市符号完全可以逐个对上。\n游客穿过大堂走出酒店大门，两座城市的体验立刻走向分岔。在纽约，离开酒店意味着进入运转中的真实街区。步行几个街区，街道上出现社区熟食店、密集的住家公寓和\nCentral\nPark。人行道上走着赶去上班的本地人，牵着狗散步的居民，以及买菜回家的住户。每个人各自生活，互不干扰。在拉斯维加斯的\nStrip\n上，离开酒店只会进入另一段专供消费的区域。游客能到达的目的地，仅限于酒店、商场、餐厅、酒吧和演出场所。街区业态到此为止，本地人的日常生活不会在这里展开。两地游客量同属顶级，摆着同样的地标，一个地方越走越像城市，另一个地方越走越像片场。\n纽约的台前和后台混在同一条街上，Strip\n的后台压在物理隔离层之下\n把原因猜了一遍，都不对\n最顺手的解释是游客基数改变了城市质感。外来游客数量突破界限后，本地的生活气息自然会淹没在人潮中。数据并不支持这个猜测。2024\n年纽约接待了 6430 万游客，拉斯维加斯接待了 4170\n万。游客规模更大的是纽约。客流量没有抹除纽约的日常感，人数无法解释两地的差异。\n第二个猜测是拉斯维加斯纯粹为游客在沙漠里平地建起，城里本来就没有本地生活，自然没有生活气息可供展示。这个假设也不成立。拉斯维加斯并非只有游客，都会区常住约\n230\n万人。这个人口基数支撑着完整的城市运作。本地人的日子过得十分完整，只是生活轨迹不与\nStrip 发生交集。\n排除游客数量和本地人口这两个解释，剩下的差异结构简单。在纽约，游客接触的许多商业设施，初始设定就是服务周边社区。一家街角熟食店开门营业，第一拨稳定客源是楼上的长租住户。游客进店买三明治，本质上是搭了本地生活基础设施的便车。在\nStrip\n上，商业逻辑随之翻转。沿街的每一家店，只为外来游客这一种人群存在。\n这种经济现实带来一种反常的体验。沿街的环境、动线和服务全部围绕游客优化，服务流程越完善，游客越觉得自己成了流水线上的加工对象，整条街区像一台对着钱包精准运转的机器。这种在流水线上流转的体感很难用日常语言描述，学术界已经为它命名。\n这种感觉有名字\n旅游社会学的研究框架里有一个现成的概念：tourist bubble。这个词出自\nDennis Judd 和 Susan Fainstein 1999 年主编的学术著作\n《The\nTourist City》\n。书中对 tourist bubble\n的描述，在物理形态和运转逻辑上，与拉斯维加斯的 Strip 特征一致。\n书中界定，旅游城市会为外来游客专门在地理上构建隔离区域。区域内部旅游基础设施高度整合。酒店大楼、集中的商场、餐饮集群以及大型娱乐秀场首尾相接，连成封闭的巨型复合体。游客的吃、住、行、游、购、娱消费行为，在这个圈层内部署完毕，形成物理闭环。游客进入其中，圈外的真实城市运转便不再与他们相关。\n社会学家 Robert Parker 在《The Tourist\nCity》中撰写了专门剖析拉斯维加斯的章节。核心议题正是赌业旅游区的运作方式，以及它如何实现与本地人日常生活的物理分离。\n街头说不清的不适感，是学者们系统研究的成熟现象。有了名字之后，工程实现的问题自然浮现。若旅游工业的目的是让游客留在专门划定的完美环境里，维持其运转的后勤网络和本地员工的生活气息，到底通过什么手段隔离？\n后台搬走了\n社会学家 Goffman 在 1959 年出版了代表作\n《The\nPresentation of Self in Everyday\nLife》\n。他提出人天然存在前台和后台的状态：前台是维持形象的表演区域，后台是卸下伪装的私密区域。现代旅游工业把这套个人层面的前后台理论，用混凝土和钢筋造进了建筑实体。\n迪士尼在动线隔离上的探索源于偶然的穿帮事故。相传 Walt Disney\n视察加州乐园途中，看见一名身穿 Frontierland\n牛仔服的演职人员穿越充满未来感的 Tomorrowland\n前往岗位。他确信这种走动毁掉了乐园的沉浸幻觉。规划佛罗里达的 Magic\nKingdom 期间，他下达指令：员工通勤动线必须离开游客视线。\n佛罗里达州面临高地下水位限制，工程团队无法深挖出面积充裕的地下室。工程师们改变方案，\n将乐园地面标高垫高一层\n。通道网络建在真实地面层，游客行走的乐园主干道实际是建筑二楼。灰姑娘城堡的一部分位于三楼的高度。入口处坡度平缓，游客进入乐园途中察觉不到自己正在爬楼。\n员工每天上班把私家车停在一英里之外的专用停车场，乘坐内部巴士到达通道入口，进入底层网络。在这套通道的角色区里，扮演米奇等角色的演职人员才允许摘下头套呼吸。在游客视线内摘下头套属于解雇级违规。通道内部限制车辆类型，平时只允许电动车通行。燃油车通行仅限两种情况：运送园区现金的装甲车，应对突发伤病的救护车。垃圾同样通过这个底层网络处理。垃圾投入站点投放口后，沿着气动管道以每小时\n60\n英里的速度输往中央压缩站。游客在园区里看不到收运垃圾的卡车。迪士尼官方把参观这套通道系统做成了名为\nKeys\nto the Kingdom\n的付费导览项目，看后台这个行为本身也转化成了明码标价的旅游产品。\n邮轮提供了一个物理边界封闭的隔离版本。在乘客漫步的甲板和水线以下，藏着另一座运转中的城市。邮轮底层有一条贯穿船首到船尾的主走廊，业内称为\nI-95\n。这个代号来源于美国东海岸那条终点是迈阿密的州际公路。走廊两侧分布着船员起居舱房、员工食堂、内部酒吧、员工健身房以及处理织物的洗衣房。在这座水下城市里，门禁权限按照职级划分，工卡芯片数据决定一名船员最多能上到哪一层甲板。船员雇佣合同通常为\n4 到 9 个月，期间维持每周 7\n天的工作状态。乘客在甲板上看到的服务生，结束轮班后会穿过一道乘客不会去推的隐蔽舱门。他们沿着楼梯下降几层甲板，回到这座与海景无关的金属城市。\n拉斯维加斯采用另一种建筑方案处理前后台关系。在 Bellagio\n的大型度假村里，员工上班绕到后街专用入口，经过坡道下到地下室。这条通道在水平方向贯穿物业，\n面积比楼上赌场更大\n。地下室设有名为\nMangia 的免费员工餐厅，Steve Wynn 执掌 Mirage Resorts\n的时期，常来这里用餐。Prime\n牛排馆的座椅每晚撤场后由经理逐把检查，状态完好的椅子才允许在次日营业中上场。后勤区域还有专门的酒类泵送室。酒吧酒水由地下气动泵直供，楼上每打出一杯\nshot，地下室的泵机就会启动一次发出工作声。\n迪士尼把乐园垫高一层藏隧道，邮轮把船员城市压在水线下，Bellagio\n的地下室比赌场还大\n纽约拆不掉它的后台\n纽约的前台和后台共用着同一批街道和店铺。曼哈顿的熟食店结账柜台前，排在前面的客人可能是在楼里住了二十年的老住户，下楼买一包烟。紧随其后的，可能是拖着行李箱刚抵达的游客，买一杯咖啡提神。两种生活轨迹在同一条队伍里交汇，面对同一台收银机结账。\n这种混合状态无法改变，纽约的旅游业出现晚于城市自身的建成时间。街道网络和建筑格局在游客到来前就已定型。城市从未有过为了服务旅游产业而重新布线的机会。\n到这里可以给两座城市各安一个更准确的名字。纽约经营的是旅游业：城市先于游客存在，商铺起初为本地住户而建，旅游这门生意附着在城市既有的运转之上。拉斯维加斯经营的是旅游工业，顺序反了过来。度假村在沙漠里平地建起，随后把游客带来填满客房。\n支撑工业运转的是提前部署的资产、工序和轮班制度。酒水交由地下泵机计量，每打出一杯\nshot\n机器启动一次；餐厅座椅每晚撤场，逐把检查状态才准许使用；邮轮上的船员一签就是四到九个月的合同，每周七天在岗。街区里那种置身流水线的体感有了确切的起因：游客正站在一条真实生产线的最前端。\n纽约先有城市后有旅游生意，拉斯维加斯先建资产再运游客来填，两条链顺序相反\n生活气息源自具体的物理现象：别人的日常持续发生在肉眼可见的地方。现代旅游工业通过工程手段取消了这种可见性。产业把员工的饮食起居搬进了垫高层的隧道、水线以下的船舱和地下室。\n纽约的后台敞露在前台隔壁，共用同一部收银机。拉斯维加斯在沙漠平地起高楼，把自由女神像和布鲁克林大桥搬进荒漠。唯一搬不走的，是由真实日常组成、无法通过图纸隔离的后台。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/nyc-vegas-tourism-backstage-20260822.html",
+      "content_chars": 3647,
+      "content_sha256": "fbcbf9e89dd8bd5508d2b1bc077a0b2bc632ff5b79bfb0c82cf8083470dea8af",
+      "content_fetched_at": "2026-08-23T21:30:16.809241+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-22T00:00:00+00:00",
+      "collected_at": "2026-08-23T21:28:10.154633+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/nyc-vegas-tourism-backstage-20260822.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "为什么纽约有生活气息，拉斯维加斯没有",
+          "url": "https://yage.ai/share/nyc-vegas-tourism-backstage-20260822.html",
+          "content_sha256": "fbcbf9e89dd8bd5508d2b1bc077a0b2bc632ff5b79bfb0c82cf8083470dea8af"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
