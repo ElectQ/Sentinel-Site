@@ -1,214 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-08-26",
-  "generated_at": "2026-08-25T21:37:17.612113+00:00",
-  "item_count": 8,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:e7772d9f158d5f9d",
-      "kind": "publish",
-      "text": "zdi-advisories published: ZDI-26-610",
-      "actor": "zdi-advisories",
-      "actor_url": "https://www.zerodayinitiative.com/advisories/published/",
-      "created_at": "2026-08-25T21:35:10.595179+00:00",
-      "html_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-610/",
-      "title": "ZDI-26-610",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Apple Safari JavaScriptCore B3 ReduceStrength Phase Use-After-Free Remote Code Execution Vulnerability\nAugust 24th, 2026\nZDI-26-610\nZDI-CAN-32069\nCVE ID\nCVE-2026-64715\nCVSS Score\n8.8\nAV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H\nAffected Vendors\nApple\nAffected Products\nSafari\nVulnerability Details\nThis vulnerability allows remote attackers to execute arbitrary code on affected installations of Apple Safari. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\nThe specific flaw exists within the B3 ReduceStrength phase. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the renderer process.\nAdditional Details\nApple has issued an update to correct this vulnerability. More details can be found at:\nhttps://support.apple.com/en-us/148286\nDisclosure Timeline\n2026-07-16\n- Vulnerability reported to vendor\n2026-08-24\n- Coordinated public release of advisory\n2026-08-24\n- Advisory Updated\nCredit\nHossein Lotfi (@hosselot) of TrendAI Zero Day Initiative\nBack to Advisories",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-610/",
-      "content_chars": 1189,
-      "content_sha256": "7a6cb641566551ab224061c9d2e143dd6df58b27ef87a860682d9887c3a3d97b",
-      "content_fetched_at": "2026-08-25T21:35:21.195651+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Zero Day Initiative Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:f783381adab06aba",
-      "kind": "publish",
-      "text": "zdi-advisories published: ZDI-26-609",
-      "actor": "zdi-advisories",
-      "actor_url": "https://www.zerodayinitiative.com/advisories/published/",
-      "created_at": "2026-08-25T21:35:10.595179+00:00",
-      "html_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-609/",
-      "title": "ZDI-26-609",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Linux Kernel Net Scheduler Packet Classifier Use-After-Free Local Privilege Escalation Vulnerability\nAugust 24th, 2026\nZDI-26-609\nZDI-CAN-31524\nCVE ID\nCVSS Score\n7.8\nAV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H\nAffected Vendors\nLinux\nAffected Products\nKernel\nVulnerability Details\nThis vulnerability allows local attackers to escalate privileges on affected installations of Linux Kernel. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\nThe specific flaw exists within the route4_set_fastmap function. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the kernel.\nAdditional Details\nLinux has issued an update to correct this vulnerability. More details can be found at:\nhttps://github.com/torvalds/linux/commit/47d7f7051253bdc02b1d245d87e38f16d31a74df\nDisclosure Timeline\n2026-07-14\n- Vulnerability reported to vendor\n2026-08-24\n- Coordinated public release of advisory\n2026-08-24\n- Advisory Updated\nCredit\nelden, Bryan Mbeumo\nBack to Advisories",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-609/",
-      "content_chars": 1204,
-      "content_sha256": "a935f1920512150a01928fc38c9ac1ce926f714d16a4c4280aeaef55886b2e1c",
-      "content_fetched_at": "2026-08-25T21:35:22.354070+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Zero Day Initiative Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:942958318a6a85bf",
-      "kind": "publish",
-      "text": "zdi-advisories published: ZDI-26-608",
-      "actor": "zdi-advisories",
-      "actor_url": "https://www.zerodayinitiative.com/advisories/published/",
-      "created_at": "2026-08-25T21:35:10.595179+00:00",
-      "html_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-608/",
-      "title": "ZDI-26-608",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Linux Kernel KVM IOAPIC Use-After-Free Local Privilege Escalation Vulnerability\nAugust 24th, 2026\nZDI-26-608\nZDI-CAN-31468\nCVE ID\nCVSS Score\n8.2\nAV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H\nAffected Vendors\nLinux\nAffected Products\nKernel\nVulnerability Details\nThis vulnerability allows local attackers to escalate privileges on affected installations of Linux Kernel. An attacker must first obtain the ability to execute high-privileged code on the target system in order to exploit this vulnerability.\nThe specific flaw exists within the handling of kvm_lapic objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the kernel.\nAdditional Details\nLinux has issued an update to correct this vulnerability. More details can be found at:\nhttps://github.com/torvalds/linux/commit/9910e835580fef3bef53b70241dd00c4bffad693\nDisclosure Timeline\n2026-06-19\n- Vulnerability reported to vendor\n2026-08-24\n- Coordinated public release of advisory\n2026-08-24\n- Advisory Updated\nCredit\nGangMin Kim\nBack to Advisories",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-608/",
-      "content_chars": 1178,
-      "content_sha256": "07905da0f48bceeb0d6428ce4affbb44e2b552371648a4d0445030f324e68fde",
-      "content_fetched_at": "2026-08-25T21:35:23.518000+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Zero Day Initiative Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:9492bc42b7dbac78",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter-post4780761.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-25T21:35:10.595179+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter-post4780761.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-25T21:35:53.159792+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:510251747766c546",
-      "kind": "publish",
-      "text": "safebreach-blog published: Thought LeadershipAug 24 , 2026Another Actively Exploited Zimbra Flaw: Why CTEM Beats Patch-and-PrayRead More",
-      "actor": "safebreach-blog",
-      "actor_url": "https://www.safebreach.com/blog/",
-      "created_at": "2026-08-25T21:35:10.595179+00:00",
-      "html_url": "https://www.safebreach.com/blog/zimbra-rce-continuous-threat-exposure-management-ctem/",
-      "title": "Thought LeadershipAug 24 , 2026Another Actively Exploited Zimbra Flaw: Why CTEM Beats Patch-and-PrayRead More",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "Aug 24, 2026\nAnother Actively Exploited Zimbra Flaw: Why CTEM Beats Patch-and-Pray\nAnother actively exploited CVE just proved that point-in-time scans can’t keep pace with attackers—hear SafeBreach expert Adrian Culley’s take on how continuous threat exposure management closes the gap.\nSummary\nCVE-2026-73570\n, an unauthenticated remote code execution flaw in Zimbra Collaboration Suite (via SNMP command injection), is being actively exploited and was added to CISA’s Known Exploited Vulnerabilities (KEV) catalog after Poland’s CERT confirmed in-the-wild attacks.\nIt’s the latest in a recognizable pattern:\nMOVEit\n,\nIvanti\n,\nCitrix\n, and now Zimbra—critical, unauthenticated RCE on internet-facing collaboration/edge infrastructure, exploited within days of disclosure.\nPoint-in-time vulnerability scans tell you what was exposed at scan time, not what’s exploitable right now, which is the gap attackers keep using.\nContinuous Threat Exposure Management (CTEM)\nreplaces the scan-then-scramble cycle with ongoing, evidence-based validation of what’s actually exploitable in your environment.\nThe fix isn’t “patch faster”—it’s knowing, continuously, which of your exposed assets an attacker could actually use today.\nAuthor:\nAdrian Culley, Offensive Security Expert & Senior Sales Engineer\nAnother week, another unauthenticated remote code execution flaw on internet-facing infrastructure that most security teams didn’t choose to expose to this much risk. This time it’s Zimbra Collaboration Suite.\nCVE-2026-73570\n, an SNMP command injection vulnerability, is being actively exploited in the wild — confirmed by Poland’s CERT and now added to\nCISA’s Known Exploited Vulnerabilities (KEV) catalog\n, which means US federal agencies are under a binding deadline to patch it. Shadowserver’s internet-wide scans counted more than\n12,000 internet-facing Zimbra servers\nstill exposed as of mid-August, even though a fix has been available since version 10.1.20 shipped on July 20.\nWhat Happened\nCVE-2026-73570 allows an unauthenticated attacker to execute arbitrary system commands on affected Zimbra servers via SNMP. Zimbra is widely deployed as email and collaboration infrastructure, which means it sits exactly where attackers want to land: internet-facing, credential-rich, and often less closely watched than the identity and endpoint layers security teams have spent the last several years hardening. CERT Polska first flagged active exploitation on August 18; CISA confirmed it and added the CVE to the KEV catalog three days later, on August 21—roughly four weeks after the patch had already shipped.\nThe Pattern CISOs Should Recognize\nIf this feels familiar, it should.\nMOVEit\n.\nIvanti Connect Secure\n.\nCitrix NetScaler\n. Now Zimbra. The specific product changes; the shape of the incident doesn’t: a critical, unauthenticated RCE in edge-facing or collaboration infrastructure, a short window between disclosure and mass exploitation, and a scramble to patch environments that security teams ofteon didn’t even realize were internet-facing in the first place.\nHere’s the uncomfortable part: every one of those incidents was, in principle, avoidable with things most security programs already do—vulnerability scanning, asset inventory, patch management. The problem isn’t that these programs don’t exist. It’s that they run on a cadence (weekly scans, monthly patch cycles, quarterly pen tests) built for a world where attackers also move on a cadence. They don’t anymore.\nWhy “Patch Faster” Isn’t the Fix\nThe instinctive response to another KEV addition is “patch faster.” That’s necessary, but it’s not sufficient, for two reasons. First, a vulnerability scan tells you what was exposed at the moment you ran it—not what’s exploitable right now, and definitely not what’s exploitable six weeks from now when the next flaw drops. Second, “patch faster” treats every CVE as equally urgent, when the real question a CISO needs answered is narrower and more actionable: of everything currently exposed in our environment, what can an attacker actually reach and use today?\nThat’s a validation question, not a scanning question. And it’s the question point-in-time assessments—no matter how frequently you run them—structurally can’t answer between scans.\nWhat is Continuous Threat Exposure  Management (CTEM)?\nContinuous Threat Exposure Management (CTEM)\nis a security program model that continuously validates which of an organization’s exposed assets and misconfigurations are actually reachable and exploitable by an attacker, rather than relying on periodic vulnerability scans to estimate risk. Gartner introduced the term to describe a shift from point-in-time assessment to an ongoing cycle of scoping, discovery, prioritization, validation, and mobilization.\nWhat CTEM Actually Changes\nCTEM closes that gap by treating exposure validation as an ongoing process instead of a periodic event. Instead of waiting for the next scheduled scan or the next headline to tell you where you stand, CTEM continuously validates which of your exposed assets and misconfigurations are actually exploitable in your specific environment—so when the next Zimbra-, MOVEit-, or Citrix-shaped flaw makes headlines, you already know your exposure instead of scrambling to find out.\nSafeBreach’s\nAdversarial Exposure Validation (AEV)\ncapabilities address this exact problem: proving, with evidence rather than assumptions, whether a given exposure is reachable and exploitable in your environment right now. That’s a very different conversation with your board than “we’re patching as fast as we can.”\nThe Zimbra flaw will get patched. The next one—on some other piece of infrastructure nobody thought to prioritize—is already on its way. If you’d rather know your real exposure continuously than find out the hard way,\nschedule a demo\nand we’ll show you how the\nSafeBreach CTEM Platform\nchanges that math.\nAbout the Author\nAdrian Culley\nis Head of Engineering, EMEA for SafeBreach. He has over 35 years of computer security experience, particularly specialising in security operations, artificial intelligence, offensive security, threat intelligence, and malware — in short, cyber resilience. He is a core member of the OWASP Large Language Model Top Ten risks working group.\nHe is a graduate of the Information Security Group at Royal Holloway, University of London, and an occasional visiting lecturer there. Adrian was previously a Detective with Scotland Yard, working around the world with their Special Operations Directorate, and latterly served with the Computer Crime Unit there. He has also worked directly for the UK Central Government in a global role. He worked for Palo Alto Networks for five years as a Consulting Engineer and Head of Industry 4.0. Previously, he has also worked for PwC, Trellix, Cybereason, Guidance Software, AccessData, and Damballa. Adrian has a strong background in digital forensics and has worked with government, NGO, military, intelligence, law enforcement, and commercial clients around the world.\nFrequently Asked Questions\nWhat is CVE-2026-73570?\nCVE-2026-73570 is an unauthenticated remote code execution vulnerability in Zimbra Collaboration Suite caused by improper input sanitization in its SNMP monitoring component. It lets an attacker execute arbitrary operating system commands on an affected server without needing valid credentials. Zimbra patched it in version 10.1.20, released July 20, 2026.\nIs CVE-2026-73570 being actively exploited?\nYes. CERT Polska confirmed in-the-wild exploitation on August 18, 2026, and CISA added the flaw to its Known Exploited Vulnerabilities (KEV) catalog on August 21, giving US federal agencies until August 24 to patch. Shadowserver’s internet-wide scans still counted more than 12,000 exposed Zimbra servers as of mid-August.\nWhat is continuous threat exposure management (CTEM)?\nCTEM is a security program model—first defined by Gartner—that continuously validates which of an organization’s exposed assets and misconfigurations are actually reachable and exploitable by an attacker, instead of relying on periodic vulnerability scans. It replaces one-time or scheduled assessments with an ongoing cycle of scoping, discovery, prioritization, validation, and mobilization.\nHow is CTEM different from vulnerability scanning?\nA vulnerability scan tells you what was exposed at the moment you ran it; CTEM tells you what’s exploitable right now, continuously, as your environment and the threat landscape change. Scanning flags theoretical weaknesses; CTEM validates, with evidence, whether an attacker could actually reach and use a given exposure today.\nHow do I know if my organization is exposed to the Zimbra flaw?\nIf you run any Zimbra Collaboration Suite version prior to 10.1.20 with SNMP notifications enabled, you’re exposed. Patching to 10.1.20 or later closes this specific flaw, but continuous exposure validation is what tells you whether that—or any other internet-facing system—is actually reachable by an attacker in your environment right now.\nHow does adversarial exposure validation (AEV) relate to CTEM?\nAEV is one of the core validation techniques CTEM relies on—it safely simulates real attacker behavior against your actual environment to prove whether an exposure is exploitable, rather than just flagging that it theoretically could be. SafeBreach’s Exposure Validation Platform uses the breach and attack simulation (BAS) capabilities of SafeBreach Validate and the attack path validation capabilities of SafeBreach Propagate as the evidence engine behind the SafeBreach CTEM Platform.\nYou Might Also Be Interested In\nBlog\nThe Adversary Got an AI Upgrade—Is Your Security Program Ready to Compete?\nRead More\nReport\nAI & the Vulnerability Lifecycle Infographic\nRead More\nPodcast\nVideos\nPodcast: OpenAI’s Agent Hacked Hugging Face: The First Autonomous AI Breach\nListen Now\nGet the latest\nresearch and news",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "browser",
-      "content_source_url": "https://www.safebreach.com/blog/zimbra-rce-continuous-threat-exposure-management-ctem/",
-      "content_chars": 9913,
-      "content_sha256": "32261cdc9ce44a922dc4fc8b25c5b791050679908ff8d0b0fb9010b39e32d9c0",
-      "content_fetched_at": "2026-08-25T21:36:37.295501+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "SafeBreach Blog",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:7a79cc24b0a75685",
-      "kind": "publish",
-      "text": "sonicwall-advisory published: SonicWall NetExtender Linux Client Multiple Vulnerabilities",
-      "actor": "sonicwall-advisory",
-      "actor_url": "https://psirt.global.sonicwall.com/",
-      "created_at": "2026-08-25T16:38:18+00:00",
-      "html_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0013",
-      "title": "SonicWall NetExtender Linux Client Multiple Vulnerabilities",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "<p><span style=\"font-size: 11pt; color: rgb(181, 99, 8);\">1) CVE-2026-66152 - SonicWall NetExtender arbitrary file write via path traversal vulnerability</span></p><p>A Path traversal vulnerability in OPSWAT tarball in the SonicWall NetExtender Linux client allows an attacker to write arbitrary file as root.\n<br></p><p>CVSS Score: 8.8<br>\nCVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H<br>\nCWE-29: Path Traversal: '\\..\\filename'\n</p><p>\n</p><p><span style=\"color: rgb(196, 89, 17); font-size: 11pt;\">2) CVE-2026-66153 - SonicWall NetExtender Improper Link Resolution Before File Access ('Link Following') Vulnerability</span><br></p><p>The NEService auto-upgrade process insecurely handles temporary files in SonicWall NetExtender Linux client which allows an attacker to manipulate file paths.\n<br></p><p>CVSS Score: 7.0<br>\nCVSS Vector: CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/MAC:H<br>\nCWE-59: Improper Link Resolution Before File Access ('Link Following')<br></p><p>\n</p><p></p>\n<p>There is no evidence that these vulnerabilities are being exploited in the wild. SonicWall strongly advises users of the NetExtender Linux client to upgrade to the mentioned fixed release version to address these vulnerabilities.</p>\nCVE: CVE-2026-66152, CVE-2026-66153\nLast updated: Aug. 25, 2026, 4:38 p.m.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0013",
-      "content_chars": 1312,
-      "content_sha256": "13de200d7de78880a2ddcbd99c405aa13cae138bc2c7104136b9bbc1e4d6cb21",
-      "content_fetched_at": "2026-08-25T21:37:17.371803+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "SonicWall Security Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:8298e738a6f2b07f",
-      "kind": "publish",
-      "text": "yage-share published: 近处保真、远处有损：三种长上下文方法背后的同一个直觉",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-25T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/long-context-layering-yarn-v4-20260825.html",
-      "title": "近处保真、远处有损：三种长上下文方法背后的同一个直觉",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "模型架构\n推理与性能\nContext 是 inference\n的生命线\n在大语言模型的推理过程中，上下文窗口是模型的工作记忆。模型在单次推理中能看到多少内容、以多高的清晰度看到这些内容，直接决定了它能完成什么任务。无论是跨越数千行代码的调用链路排查、多步骤自主\nagent\n的状态维系，还是数百页财务文档的交叉比对，所有推理能力都建立在上下文之上。\n然而，一旦试图把上下文拉长，工程实现最先撞上的瓶颈是显存装不下、算力算不动。这其中最主要的拦路虎，是模型在显存里留下的\nKV cache，也就是那份工作草稿。推理时，上下文里的每个\ntoken，都需要模型实时记录一份供注意力调用的键值状态。这份草稿的大小取决于模型的层数、KV\n头数、头维度和存储精度。\n以 70B 规模的大模型（如 Llama-3-70B）为例：处理 100 万\ntoken（1M）的超长上下文，按 FP16 计算，光是保存这份工作草稿，就要吃掉约\n327 GB 显存。这已经远超单张高端显卡的物理容量。而且这 327 GB\n只是草稿本身的体积，还没算上模型自身的权重参数，以及随文本长度呈平方级暴涨的注意力计算量。为了跨过这堵由显存与算力构成的物理墙，工程界涌现出许多探索。梳理目前验证有效的三种主流路径，你会发现它们分别在模型技术栈的三个不同层次发力：\n坐标层\n：以 YaRN\n为代表，改造位置坐标的标尺，让原本只能看短距离的模型能量出更远的距离，同时不破坏近处词句的分辨力。\n信息通路层\n：以 DeepSeek V4\n为代表，改造注意力机制的计算通路，近处维持全保真计算，远处采用重度压缩与挑重点精看。\n输入表示层\n：以 DeepSeek-OCR\n为代表，在信息输入模型之前，把整页长文本压缩成高密度的二维视觉图景。\n这三套方案来自不同的研究团队，处理着不同形态的输入。但它们背后支撑整个工程设计的，是同一个古老的直觉。\n一个古老直觉：近处保真、远处有损\n这个直觉在计算机科学与认知科学中存在已久。在三维图形渲染中，工程师早就确立了多级纹理（mipmap）与细节层次（LOD）机制。距离摄像机较近的物体，使用数万面多边形和高清贴图完整渲染；而远在地平线上的山峦与树木，则自动切换为简化的粗糙网格与模糊贴图。对远景像素分配与近景相同的算力，是对渲染资源的浪费。在人类视觉系统中，视网膜中央凹只为视野中心约\n2\n度的狭窄范围提供高分辨率、高色彩敏锐度的视觉；视野边缘的余光成像则是模糊且粗粒度的，主要负责感知动态与大致轮廓。\n人类的记忆机制同样遵循这一规律。几分钟前对话里的具体用词、语气助词可以清晰回忆；而五年前的一场会议，大脑通常只保留几个核心结论和结构框架，记忆压缩早已把细节有损过滤掉。\n这些机制指向同一个先验：计算资源与存储预算有限，对所有距离的信息施加等同精度是最浪费的做法。最合理的资源分配策略，是将最高精度留给近处与关键焦点，对远距离或背景信息进行有损压缩。目前在长上下文工程中取得突破的三种方法，正是这一先验在模型技术栈三个不同层面的独立工程落地。\n坐标层：从 RoPE 到 YaRN\n瓶颈与既有方案\nTransformer\n本身不知道词的先后顺序，必须额外告诉它每个词在第几个位置。旋转位置编码（RoPE，出自苏剑林等人\n2021 年论文\narXiv:2104.09864\n）把向量在空间里按位置旋转特定角度，让模型通过相对距离判断词与词的关联。不同维度分配了不同的旋转快慢：转得快的维度负责分辨相邻的词，捕捉短语与语法细节；转得慢的维度负责把握跨段落的宏观位置。这种快慢分工在训练前就由\nRoPE\n按几何级数定好，属于写死的规则。因为模型的权重全程是带着这套固定旋转一起训练的，它在优化过程中自然学会了读快维度抓局部细节、读慢维度判远距离。\nRoPE\n具备相对位置感知、旋转不改变向量长度、无需查表三大特性，已成为主流大模型的行业标准（LLaMA、Mistral、Qwen、Gemma、DeepSeek\n普遍采用，Semantic Scholar 统计引用已达 6184 次）。但 RoPE\n的旋转快慢是在固定的训练长度里标定的。如果直接把超出训练长度的长文本喂给模型，超范围的位置旋转角度会让整把标尺失真，模型输出会迅速崩溃。\n最初的扩展尝试是位置插值。这相当于把整把尺子的刻度等比例拉长：要把上下文扩大\n4 倍，就把所有维度的旋转快慢统一放慢 4 倍。\n这种全局统一拉伸的问题在于忽视了不同维度的分工。转得慢的维度确实回到了可读区间，但负责近处精细语法、转得快的维度也跟着拉长，近处词与词之间的细微距离感随之消失，模型处理普通短文本的基础语言能力显著下滑。\n创新解法\n2023 年，Nous Research、EleutherAI 与日内瓦大学的研究者提出了\nYaRN（\narXiv:2309.00071\n）。它针对的是位置插值破坏近处分辨力的问题。核心机制叫\nNTK-by-parts，也就是分频处理，把尺子上的刻度分段对待：\n高频维度\n：波长短的部分完全不拉伸，保留全部近距离的精细刻度。\n低频维度\n：波长长的部分按扩展倍数完全压缩插值，让远距离坐标重新落在模型的认知范围里。\n中频维度\n：介于两者之间的过渡部分，采用平滑曲线连接。\n此外，坐标拉伸会导致注意力分布发散，模型难以聚焦。YaRN\n引入了注意力温度补偿，用温度系数重新收紧注意力的聚焦程度。\n实验表明，YaRN 让 Llama 2 7B 仅消耗约 384 个 A100 GPU 小时、经过\n400+200 步微调，就成功将上下文扩展至 128K；在 128K 长度的 passkey\n检索测试中达到 99.4% 准确率，短上下文性能衰退低于\n1%。相比纯位置插值，YaRN 节省了约 10 倍的训练 token。\n这一分频缩放策略已成为坐标层扩展的标准手段。Llama 3.1 128K\n配置文件中的\nllama3\n位置编码，底层就是分频阈值处理；Qwen2/2.5 以及开源模型\ngpt-oss-20b（配置明确指定\nrope_type \"yarn\"\n，扩展因子\n32）都采用了相同思路。\nYaRN\n在坐标层做的事直截了当：近处的细刻度不动，远处的粗刻度压缩。这正是近处保真、远处有损这一直觉在坐标层的落地。\n信息通路层：从 MLA 到 DeepSeek\nV4\n瓶颈与既有方案\n坐标层解决了位置标尺的度量问题，但跨不过前面提到的显存墙：以 70B\n模型为例，单条百万 token 序列的工作草稿就要吃掉 327\nGB，硬件集群难以承受。模型处理长上下文时，注意力要反复读写不断累积的历史信息，也就是\nKV\ncache：既要回读过去，又要写入当前。在标准多头注意力（MHA）中，每个注意力头各存一份完整的\nKey 和\nValue，历史信息的总量随头数成倍膨胀。后来的多查询注意力（MQA）和分组查询注意力（GQA）让多个头共用同一份历史，省了显存，但每个头能读到的信息只能变粗，妥协了表达能力。\n针对这种两难，DeepSeek 在 DeepSeek-V2（\narXiv:2405.04434\n）中提出了多头潜在注意力（MLA）：不再逐字保存每个头各一份的完整历史，而是把要存的信息压缩成一份大家共享的紧凑摘要，各头需要时再从摘要里还原。这一设计让\nKV cache 显存直接节省了 93.3%，同时表达能力甚至超过了标准\nMHA。为了让压缩摘要不受位置信息的干扰，模型单独拆出一条 64\n维的独立通道（解耦 key），专门用来承载 RoPE 旋转位置编码。（MLA\n机制另有一篇更通俗的讲解，见\n这里\n）\n创新解法\n到了支持 100 万 token 上下文的 DeepSeek-V4（\narXiv:2606.19348\n，2026-04），显存墙已经被\nMLA 大幅压缩。但计算量是另一回事：要让每个 token 与前面 100 万个历史\ntoken 逐一计算注意力，依然难以承受。DeepSeek-V4\n进而在计算通路层面重构了注意力机制，采用混合注意力架构：\n局部滑动窗口\n：每一层保留 128 个 token\n的局部滑动窗口。近处的上下文全部进入无压缩、高保真的完整注意力计算。\n重度压缩注意力（HCA）与压缩稀疏注意力（CSA）混合\n：在\n128 个 token 窗口之外的远距离历史中，模型交替使用两种机制。HCA\n把远距离历史大幅压缩成粗粒度的背景信息；CSA\n则利用轻量索引器快速扫描前缀序列，从中挑出 top-k\n个最相关的关键点，只对关键点做高精度的重点计算。\n这就像人的视觉观察：眼前正在读的 128\n个词看得一清二楚；远处的整本大书先整体打成模糊背景（HCA），一旦发现某几个段落跟当前问题高度相关，再把那几处放大精读（CSA）。在参数量\n1.6T（激活参数 49B）的 DeepSeek-V4-Pro 上，这种混合通路架构在 1M\n上下文下将单 token 推理 FLOPs 降至 V3.2 的 27%，将 KV cache 显存降至\nV3.2 的 10%。\n信息通路层的取舍正是全文核心直觉的落地：在有限的物理预算下，近处保真、远处有损。近处的\n128 个 token\n维持全保真通路，远距离历史则靠整体压缩与重点挑选来换取效率。（DeepSeek\nV4 在 agentic 场景的工程整合，见\n这篇\n）\n输入表示层：DeepSeek-OCR\n的光学压缩\n瓶颈与既有方案\n真实业务中的长上下文，往往来自成百上千页的\nPDF、研报、合同或扫描件。如果把这些文档逐字转录为普通的文本 token\n喂给大模型，不仅消耗庞大的 token\n预算，还会丢失文档原有的版面结构、表格嵌套与排版层级。模型需要理解整份文档，但\ntoken 吞吐预算有限。现有的文档解析与多模态输入方案面临两难：\n粗粒度的视觉压缩方案（如 GOT-OCR2.0）将每页纸统一压缩至 256 个视觉\ntoken 左右。面对复杂版面或高密度小字，信息丢失严重。\n细粒度的逐字转录方案（如 MinerU2.0）平均每页会产生 6000 个以上的文本\ntoken。几十页文档就会迅速填满模型的上下文窗口，长文档的全篇分析成本随之居高不下。\n创新解法\n2025 年 10 月，研究人员发布了 DeepSeek-OCR（\narXiv:2510.18234\n），提出\nContexts Optical Compression 方法，即光学 2D\n压缩。它的直觉就像给整页文档拍一张高密度的语义缩略图。大模型直接读取压缩后的二维视觉图景，跳过了逐字解析一维文本流的开销。DeepSeek-OCR\n包含两个核心组件： 1.\nDeepEncoder\n：图像编码器。处理高分辨率输入图像时保持较低显存开销，以高压缩比将整页或整段长文本压缩为数量可控的高密度视觉\ntoken。 2.\nDeepSeek3B-MoE-A570M\n解码器\n：从这些压缩后的视觉 token 中读回文字内容与排版结构。\n论文展示了清晰的压缩比与还原精度权衡关系。压缩比越高，省下的 token\n越多，但还原精度随之下降。具体数据如下： - 原始文本 token 数量在视觉\ntoken 数量的 10 倍以内（压缩比低于 10 倍），文字还原准确率达到 97%。 -\n压缩比激进提升到 20 倍，还原准确率仍维持在约 60%。\n在 OmniDocBench 基准测试中，DeepSeek-OCR 仅用 100 个视觉 token\n就超过了消耗 256 个 token 的 GOT-OCR2.0；用不到 800 个视觉 token\n便超越了平均每页消耗 6000 多个 token 的\nMinerU2.0。在实际生产环境中，单张 A100-40G 显卡每天可处理生成超过 20\n万页的训练数据。\nDeepSeek-OCR\n论文明确指出，这项工作的目标在于探索大语言模型中的历史长上下文压缩与主动遗忘机制。论文设想把当前的焦点维持在最高精度，让历史文档以密集视觉\ntoken\n的形式留在背景记忆中。输入表示层同样是这一直觉的落地：当前焦点页面维持最高精度，历史文档则以有损压缩的视觉\ntoken 留在背景里。\n同构：同一先验，三层独立收敛\n将这三种方法放在一起观察，可以看到它们在技术栈不同层次上的清晰对照。三者的差异集中在代表方案、作用机制，以及近处与远处各自的处理方式。下表逐层列出：\n技术层级\n代表方案\n作用机制\n近处/焦点处理\n远处/背景处理\n解决的核心瓶颈\n坐标层\nYaRN\n改造位置编码的旋转频率\n高频刻度不拉伸，保持近处精细分辨力\n低频刻度完全插值，平滑过渡\n坐标系外推失真与短文本性能退化\n信息通路层\nDeepSeek V4\n改造注意力前向计算通道\n128-token 滑动窗口保持全保真计算\n远距离重度压缩（HCA）与重点挑选（CSA）\nKV cache 显存墙与计算量二次方爆炸\n输入表示层\nDeepSeek-OCR\n改造进入模型前的原始输入\n当前焦点页面高保真解析\n整页文档压缩为少量高密度视觉 token\n长文档 token 数量过大与排版信息丢失\n坐标层、通路层、输入层三种方案用同一句古老直觉独立收敛，近处保真、远处有损，三者不是继承关系\n这三者之间没有技术继承或移植关系。YaRN 出自 Nous Research、EleutherAI\n与日内瓦大学研究者对位置标尺数学性质的探索；DeepSeek V4\n是模型架构团队在显卡显存极限上做出的计算通路重构；DeepSeek-OCR\n则是从光学图像与文档排版切入的输入重构。\n它们由不同的团队在不同时间提出，面对的是不同的物理瓶颈。之所以展现出高度一致的结构同构，是因为它们在各自的技术层级上，独立收敛到了同一个工程直觉：在有限的物理预算下，近处必须保真，远处允许有损。\n新难题：压缩/选择之后，位置怎么办\n工程实现从无差别的全量计算走向分层压缩与重点挑选，一个新的技术难题随之出现：\n位置感混乱\n。在传统的完整计算中，所有\ntoken 按顺序排列，先后关系清楚连贯。一旦做稀疏挑选（比如像 CSA\n那样从前缀中挑出几个关键\ntoken）或者把多篇文档拼在一起，挑出来的词就失去了原本连贯的物理间距。模型如果直接计算相对位置，很容易把相隔数千个词、只是碰巧一起入选的两个词，误判为紧挨着的相邻词。为了在压缩与挑选之后维持准确的位置感，近期的技术方案发展出了不同的解法：\n双轨独立标尺\n：在 DeepSeek-V3.2（\narXiv:2512.02556\n）提出的\nDSA（DeepSeek Sparse Attention）中，负责挑选 token\n的轻量索引器单独维护了一套自己的位置标尺，与主注意力机制中使用的标尺彻底分开。挑选阶段与精算阶段各自拥有独立的几何坐标系，互不干扰。\n文档级坐标重置\n：在 EverMind AI 开源的\nMemory-Sparse\nAttention（MSA）\n中，引入了 document-wise RoPE\n文档级位置编码。在长文本拼接场景下，每个子文档内部的位置坐标均从 0\n开始重新计数。这一设计避免了从短文本训练外推至超长上下文时的坐标漂移，使模型在\n16K 至 1 亿 token（100M）的测试范围内，性能退化低于 9%。（MSA\n的完整调研，见\n这篇\n）\n架构自带位置感知\n：Moonshot AI 在 2026 年 7 月发布的\nKimi\nK3 技术报告\n中展示了更激进的做法。K3 采用了 69 层递归架构 KDA（Kimi\nDelta Attention）与 24 层门控 MLA 混合的结构。其全部 MLA\n层完全去掉了位置编码（NoPE），序列先后顺序由 KDA\n的递归门控与自然衰减机制在架构内部承载。K3\n技术报告明确指出，这种设计正是为了避免微调 RoPE 基频或套用 YaRN\n等外置标尺修正，原生支持了 100 万 token 的长上下文。\n位置建模从外部坐标微调退守为补充手段，转向由选择机制或递归架构内部承载\n从这三条路径可以看出，位置感知能力正越来越多地由模型内部承载：要么嵌入稀疏挑选的专用索引器，要么交给递归架构的门控与自然衰减。随着序列长度向百万乃至千万级推进，单纯在外部坐标尺子上做拉伸调整，已经难以应对显存装不下与计算量暴涨的根本瓶颈，基于\nRoPE 基频微调与 YaRN\n的坐标层修正，正在从长上下文竞争的主战场逐渐退守为补充手段。\n不论工程实现如何从外部坐标变换迁移到内部计算通路，再迁移到前端输入表示，其背后的技术内核始终未变。在算力与显存预算受限的物理世界中，近处高保真、远处有损压缩，依然是构建超长上下文智能系统稳固而有效的直觉支撑。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/long-context-layering-yarn-v4-20260825.html",
-      "content_chars": 6855,
-      "content_sha256": "cc3114c887d3731201358fb8f1e4619df1ae1858e1da5bbfa0486f5f8c5077a9",
-      "content_fetched_at": "2026-08-25T21:36:01.108551+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:02b299ddd5644c57",
-      "kind": "publish",
-      "text": "yage-share published: 8 路并发每路仍有 141 tok/s：2×5090 跑 27B 小模型，为什么它已经是 sweet spot",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-24T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/2x5090-27b-sweet-spot-20260824.html",
-      "title": "8 路并发每路仍有 141 tok/s：2×5090 跑 27B 小模型，为什么它已经是 sweet spot",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "推理与性能\n过去这一天，我家里那台常驻服务器上的 2 张 32GB RTX 5090 组了 TP=2\n张量并行，用 SGLang 跑 NVFP4 浮点量化版 Qwen-3.8-27B。翻了下 08-23\n的监控记录：这台 27B 模型一天处理了约 2.24 亿 prefill token，其中 1.82\n亿是前缀缓存命中、几乎不占算力，真正新生成的 decode token 约 225\n万。按美国能源信息署（EIA）民用电价 $0.1844/kWh、整机满载约 500W\n来算，一天里真正在出 token 的时间只有约 3.8 小时，折算到月度电费大概\n$11。\n要是把这种生成负载拿去对标商业 API 的订阅套餐（比如 GPT-5.6 Luna 搭配\nCodex $200 套餐），平均每天成本大概 $1，一个月算下来约\n$30。单看账面支出，即使是像这样一天处理几亿 token 的重度使用，自建一天\n3.8 小时负载的电费（约 $11/月）一个月也就比订阅省个 $20\n左右。但初始硬件投入摆在那里，光两张 5090 加上整机就要\n$6,000–8,000，靠每月 $20 上下的电费差价去摊这 $6,000–8,000 的硬件，要\n25–33\n年才回得了本，纯靠省钱是完全回不了本的。所以自托管的理由不在省钱，我图的是数据完全留在本地介质上的合规与隐私、模型行为的无审查定制、全量微调与\nLoRA\n权重的动态插拔、哪怕断网脱机也能稳稳工作的确定性，还有一整套自己完全掌控的推理软件栈。从实测数据来看，双卡\n5090 跑 27B 级别小模型，解码吞吐充裕：开到 8 路并发，每路依然能提供 141\ntok/s 的速度，是当下消费级硬件的 sweet\nspot。当然，决定选型的核心依据还是业务的实际负载使用率，脱离使用率盲目追求单流速度很容易落入配置误区。\n5090 双卡：decode 吞吐已经够用\n为了摸清 2×5090\n的实际吞吐能力，我用同一道标准数学推理题目做了并发压测。在关闭思考模式、max_tokens\n设定为 1024 的基准条件下，从单路并发逐步加压至 8\n路并发，记录不同梯度下的整体吞吐与单流解码速率：\n并发\n总吞吐 tok/s\n单流 decode tok/s\n扩展倍率\n1\n268\n286\n1.00×\n2\n461\n253\n1.72×\n4\n692\n196\n2.58×\n8\n962\n141\n3.59×\n总吞吐是整机所有并发请求的合计（token 总数除以墙钟时间，含\nprefill），单流 decode 是单请求纯解码速率（不含 prefill）。并发=1\n时两者只差一个 TTFT 的摊销，所以 268 略低于 286。\n2×5090 TP=2 下总吞吐随并发从 1 路到 8\n路由 268 近线性扩展到 962 tok/s（3.59 倍），8 路并发时单流 decode 仍保持\n141 tok/s\n双卡并行跑多任务很顺畅，只要加并发，整机总吞吐几乎线性上涨。从单路并发的\n268 tok/s 到 8 路并发的 962 tok/s，扩展倍率 3.59 倍，说明 8\n路并发以内，双卡 TP=2 走消费级 PCIe\n总线的数据交换没成为瓶颈。与此同时，并发加到 8\n路时，每路独立的单流生成速率依然维持在 141\ntok/s。对比人类自然阅读速度（约 200–300 词/分钟），141 tok/s\n留了充裕的余量，系统的实际瓶颈不在模型，而是转移到了下游消费能力或上游任务派发节奏上。\n换到投机解码和长文本场景，双卡依然能跑出可观的生成速率。配合 DFlash2\n算法，实测投机 accept 步数分布在 3.3–5.6 之间，数学任务实测吞吐为\n215–256 tok/s，代码生成任务为 222–232 tok/s。对照\nSGLang\n官方 cookbook\n在单张 5090 上的 DFlash2 标准测试数据（输入 8192、输出\n1024、并发 1 下测得 206.1 tok/s），本地双卡 TP=2 实测单流 286 tok/s\n优势明显。在包含 5 条 16k\n长度文档的长文本测试集上，开启思考模式平均吞吐为 156.1\ntok/s，关闭思考模式平均吞吐为 195.4 tok/s，其中结构化 JSON\n抽取任务实测峰值达到 334 tok/s。\n如果以单流解码速率不低于 100 tok/s、整机总吞吐量不低于 500 tok/s 作为\n27B 实用门槛，2×5090 应对起来绰绰有余：4 路并发时就做到 196 tok/s\n单流、692 tok/s 总吞吐，8 路并发单流仍保持 141\ntok/s，全面超过基准线。RTX 5090 成为承载 27B 小模型的 sweet\nspot，在于四个硬件维度同时满足：Blackwell 架构原生集成的 FP4 tensor core\n提供高效的 NVFP4 计算支持、1792 GB/s 的显存带宽、32GB\n的单卡物理显存，以及每卡 $2,000\n的官方指导价。定位更高的专业卡没带来显存带宽增益，价格更低的旧款显卡则卡在量化支持与显存容量两道断层上。具体的部署配置与稳态运行数据见文末附录。\n4090 为什么不行：没有\nNVFP4，INT4 质量更差\n5090 是唯一同时满足 NVFP4 原生量化、1792\nGB/s 带宽、32GB 显存与官方指导价约 $2,000 的卡；4090 无 FP4\n硬件且已停产，PRO 6000 带宽与 5090 相同但价格是 5090 官方指导价的 8\n倍\n想用上一代旗舰 RTX 4090\n来做自托管，最直接的问题就是速度不够快。大模型的吐字速度主要看显存带宽。4090\n配备 24GB GDDR6X 显存，带宽只有 1008 GB/s，刚好是 RTX 5090（1792\nGB/s）的 56%。显存带宽成了硬上限，4090 在单流解码阶段的生成速率比 5090\n直接慢了约 40%。\n更麻烦的是量化格式。最新的 NVFP4 格式必须依靠 Blackwell 架构自带的\nFP4 tensor core 硬件单元。4090 基于上一代 Ada Lovelace 架构，没有 FP4\n硬件指令支持，跑 4-bit 量化时只能退回去用传统的 INT4 格式（如\nAWQ、GPTQ、AutoRound），或者用显存占用更大的 FP8 格式。来自\nRaZeR 论文\n与\n量化评测研究\n的数据表明，NVFP4 采用浮点表示与动态步长机制，动态范围达到 12，高出 INT4\n的 7 一大截，能更准确地保留权重分布里的长尾特征，模型输出质量普遍优于\nINT4。而且 INT4 做张量乘法前得先把权重反量化成 16-bit\n浮点，白白多一道计算开销。\n显存容量也处处受限。27B 模型在 NVFP4 格式下的基础权重是\n20.14GB，要是加上 3.38GB 的 DFlash2 投机解码草稿模型，显存总占用就到了\n23.5GB。4090 的 24GB 显存塞下投机模型后，几乎挤不出多余空间给 KV\n缓存。如果在 4090 上改用 INT4 格式，模型权重约 14–16GB，单卡只剩 8–10GB\n显存供 KV 缓存使用，只要上下文拉长或并发稍高就会用尽。如果改用 FP8\n格式，模型权重达到 27–28GB，单张 24GB 显卡连模型都装不下，必须凑至少 2\n张卡提供 48GB 显存才跑得起来。\n显存小在多卡场景下会放大成另一个问题：同样要凑出大显存，4090\n得插更多卡。96GB 总显存，5090 三张就到，4090\n要四张。卡一多，成本上去，还容易撞上非标准的张量并行切分：插 3 张\n4090（72GB）会碰到 TP=3 的切分限制，部分显存闲置；插 4 张（96GB）本来是\n70B 以上模型的配置，拿来跑 27B 纯属浪费。反过来，27B 用 INT4 其实单张\n4090 就装得下，但剩下给 KV 缓存的只有\n8–10GB，长上下文和并发一上来就见底。所以双卡 4090 顶多算跑 27B\n的勉强下限，带宽打折和量化质量变差这两样还是绕不开。\n更不用说现在的市场行情了。RTX 4090 已经全面停产，虽然 2022\n年发售时的官方指导价 MSRP 是 $1,599，但在 2026-08 的市场上，全新 4090\n售价上涨到了约 $2,755，二手市场交易价格也在 $2,200–2,350 区间。花比 5090\n还要贵的溢价，去买一张显存更小、带宽更低、还不支持现代浮点量化的停产老卡，无论从技术还是账面上看都非常吃亏。\nPRO 6000\n为什么不行：$16,000 买不到速度\n工作站级别的 RTX PRO 6000 Blackwell 配备了 96GB GDDR7 ECC\n显存，直觉上可能让人觉得它推理更强，但在 27B\n模型的自托管场景里，性能和成本完全倒挂。PRO 6000 的显存带宽是 1792\nGB/s，和官方指导价约 $2,000 的 RTX 5090\n完全一致。自回归解码的核心瓶颈全在显存读取带宽上，在带宽相同的前提下，PRO\n6000 无法为单流解码带来任何加速。96GB 大显存的核心价值在于提供更大的 KV\n缓存池：在 27B 模型的 FP8 模式下，模型权重占用约 28GB 显存，剩余约 65GB\n显存可以全部分配给 KV\n缓存池。但这种超大缓存池只有在超大并发搭配超长上下文的极端工况下才用得上，对个人日常开发或者小团队推理来说纯属资源过剩。\n价格更是高得离谱。\nTom’s\nHardware\n统计数据显示，PRO 6000 的零售价格从 2025 年 3 月发售时的\n$8,565，上调至 2026 年 6 月的 $13,250，并在 2026 年 8 月攀升至\n$16,000，累计涨幅达到 87%；Newegg 平台的实际零售挂牌价亦处于 $12,099\n高位。付出 8 倍于 5090 官方指导价的采购预算，在 27B\n推理上根本换不来等比例的速度提升。\n多卡互联同样受限于 PCIe Gen5 P2P，单向通信带宽约 55\nGB/s。而且它在固件上还有个让人头疼的问题。\nNVIDIA 开发者论坛\n365739\n帖子集中记录了大量固件崩溃报告：在 24×7 持续运行 vLLM\n推理服务的环境中，设备在稳定运行数月后会突发整卡重置，系统内核抛出与 GSP\n固件相关的 Xid 62、119、120、154 错误。该问题广泛存在于 570、580、595\n等多个驱动版本分支中。发生故障后只能通过机箱 PSU 物理断电重启恢复，截至\n2026-08-24 官方尚未发布修复补丁。对于追求 24×7\n高可用性的自托管节点而言，这一固件隐患构成了直接的运维阻碍。\n云端替代路径：GPU\n租赁、TPU 与 Neuron 的账单与供给错位\n如果不打算自行采购并维护物理硬件，直接去云端租算力，主要有三条路：公有云\nGPU 租赁、Google Cloud TPU 以及 AWS Neuron\n专用算力实例。但这几条路径在实际算账时，账单与供给端都存在不少错位。\n先看最常见的云 GPU 租赁：根据 2026-05 的市场行情，第三方算力平台（如\nVast、Spheron、RunPod）提供的 RTX 5090 租金约为 $0.51–0.99/小时（Spheron\n挂牌价 $0.76/小时，RunPod 挂牌价\n$0.99/小时），但现货算力库存长期紧张。企业级算力平台上，\nLambda\n提供的 PCIe 版 H100\n按需价格为 $3.29/小时，SXM 版 H100 为 $4.29/小时（全市场价格处于\n$2.19–4.29/小时区间），A6000 48GB 价格为 $1.09/小时。折算为 24×7\n全月不间断运行，单张 5090 实例的月度支出约 $370–715，单张 H100\n实例的月度支出达到 $2,300–3,100。更尴尬的是算力供给错位：2026-08 翻看\nLambda 等主流 AI 云平台的自助实例控制台，上面仅提供 B200（$6.99）、H100\nSXM（$4.29）、A100（$1.99）及 A6000（$1.09）等企业级算力，并未提供 5090\n或 PRO 6000\n这类兼具高带宽与合理单价的消费级或工作站显卡自助实例。你在主流云平台上，根本租不到与本地同等性价比的硬件组合。\nGoogle Cloud TPU 也是一条路，但硬件同样不对外零售。TPU v1 至 v7\n芯片历来不对个人开放；虽然 2026 年 Google 首次开放硬件直售渠道，通过\nBroadcom 面向 Anthropic 单独供应了 40 万颗 TPUv7 芯片（涉及金额约 100\n亿美元，预计 2027\n年上线交付），但普通开发者与企业只能通过云端租赁使用。TPU v5e 的\n官方按需租金\n为\n$1.20/chip-hr，1 年期预留承诺价为 $0.84，3 年期预留承诺价为 $0.54，spot\n竞价实例实测价格为 $0.5779。租用一套包含 4 颗芯片的 v5e-4 实例（提供\n64GB 显存），按需月度账单达到 $3,504，1 年期预留月度账单约为\n$2,453。软件支持方面，\nvLLM 官方 TPU\n后端\n对 9B–32B 标准稠密模型的支持已达到生产级别，但对 Qwen-3.8\n所采用的 GDN 混合注意力架构支持状态尚未确认；SGLang 的 TPU\n适配仅在独立的 sglang-jax 仓库中维护，且限定在 TPU v6e/v7\n硬件架构上运行。\nAWS Neuron 专用推理芯片同样仅以 EC2 实例形式对外出租。以 us-east-1\n区域按需定价为例，配备 32GB 显存的\ninf2.xlarge\n实例\n单价为 $0.7582/小时（折合月度约 $553），配备 192GB 显存的\ninf2.24xlarge 实例单价为 $6.49/小时（折合月度约\n$4,740）。框架支持上，vLLM 从 0.3.3 版本起通过\nNxD\nInference\n提供了官方支持并声明兼容 V1 API，支持模型清单包含 Llama\n2/3.1/3.3、Llama 4 及 Qwen 2.5/3，但 Qwen-3.8-27B 的 GDN\n混合架构适配尚未经过官方验证；SGLang 官方没有推出 Neuron\n后端，仅有第三方社区维护的 mini-sglang-neuron。真正上手时，Neuron\n首次加载 15GB 模型需要约 15 分钟的 AOT 前置编译；Reddit 的 r/aws 版块自\n2024 年 5 月起持续出现部署复杂度高与运行崩溃的反馈；AWS\n免费套餐账户默认未开放创建 inf2 实例的权限。\n公有云的核心优势在于为波动性业务提供弹性缓冲。但面对 24×7\n恒定连续的高负载推理场景，云端 GPU\n实例的月度账单开销是本地物理机电费支出的 6 倍至 50 倍。\n真正的决策变量：从月度使用率画像算经济账\n算清自建和租云哪个更划算，关键看使用率。把硬件采购成本摊销、折旧与实际电费汇总，对比按小时计费的公有云租金，自建硬件与按需租赁的成本分界线落在月度负载占用率\n26%–45% 区间（即每月实际高负载运行 192–328\n小时）。月度使用率高于该区间，自建物理机能有效拉低单 token\n推理成本；负载低于该区间，采用按需租赁或直接调用商业 API\n资金效率更优。\n在我的实际日常工作流中，推理服务保持 24×7 全天候常驻，单日处理约 2.24\n亿 prefill token、新生成约 225 万 decode\ntoken，真正高负载运转的时间一天约 3.8\n小时。按纯成本算，这个负载其实低于自建划算的门槛；但我选择自购\n2×5090，图的是完全掌控推理栈，而不是成本。但对于多数独立开发者与中小研发团队，日常调用呈现典型的脉冲式特征：工作时段集中调用，夜间与周末处于静默状态，各项目周期交替期间机器长期空转，真实硬件使用率通常低于\n30%。如果在低使用率场景下购置 24×7\n自建节点，硬件折旧与基础待机电费将转变为长期的闲置浪费。\n所以别急着下单买硬件，先测测自己的实际用量。可以在既有开发环境或测试节点中拉起\nSGLang 服务，通过暴露的 /metrics 端点进行为期 7–14\n天的连续监控，采集稳态 TTFT 延迟、KV\n缓存分配比例、前缀缓存命中率以及并发排队深度等核心指标。依据真实业务指标计算实际负载占用率与峰值并发规模，再结合硬件矩阵做出选型决策，避免硬件配置与真实业务需求发生偏离。\n使用率是自托管的核心决策轴：低于 30%\n走云或 API，26–45% 是自购与租赁的交点，高于 45% 且重视隐私时选 2×5090\n常驻\n超市的鱼又好又便宜，你为什么还去钓鱼\n回到开篇的成本账本：本地自托管一天 3.8 小时负载的月度电费约\n$11，比商业订阅套餐的 $30\n还低，纯粹从账面开销看自托管已经占优。那为什么还要投入精力自建服务？技术交流群中一位朋友给出了贴切的比喻：“现在超市买的鱼又好又便宜，但为什么还有这么多人去钓鱼？他不是为了吃鱼，他是享受这个过程。”自托管的逻辑同样在此：我要的是数据全程留在本地物理介质上的合规与隐私保障、脱离第三方服务内容策略限制的自由度、全参数微调与动态\nLoRA\n权重的完整控制权、断网脱机工况下的可靠运行能力，以及由自己完全掌控的全栈推理环境。在涉及核心隐私数据、定制化\nAgent\n行为以及高安全隔离要求的工作流中，这些特性构成了自托管的核心价值。\n针对 27B 级别小模型的部署选型，可以遵循三步决策框架：\n隐私与合规审计：若业务数据不涉及本地隔离或合规约束，优先选用商业 API\n订阅服务，无需投入精力维护底层硬件与推理栈。\n负载使用率画像：通过 7–14 天的系统 metrics\n监控，测算真实的有效算力使用率。月度使用率低于 30%\n优先选择弹性云算力或按量 API；使用率稳定超过 45%\n后，再推进自建硬件规划。\n算力硬件精准匹配：针对高使用率且注重数据隐私的场景，选用 2×5090 搭配\nNVFP4 量化与 SGLang DFlash2\n推理引擎（即本文实测方案）；针对阶段性突发流量，接入公有云 GPU\n弹性集群；针对极高并发下 KV\n缓存池成为瓶颈的特殊场景，直接采用云端多卡大显存实例，避免为单流生成速度溢价购买单卡\n$16,000 的 PRO 6000。\n面向 27B 级别小模型的自托管实践，技术选型已经清晰：5090\n双卡互联、NVFP4 浮点量化、SGLang\n优化构建，结合真实负载指标评估使用率，并接纳够用即好的性能边界。自托管买下的是一套独立完整的控制权，而\n5090 双卡在这个体量的模型上提供了扎实充裕的算力底座。\n本文由Qwen-3.8-27B调研与构思，Gemini 3.7 Flash成文\n附录：部署配置与稳态数据\nQwen-3.8-27B 采用 GDN\n混合注意力架构（线性注意力机制），对显存占用和注意力计算开销比较友好。NVFP4\n4-bit 浮点量化权重总体积 20.14GB，TP=2 双卡张量并行后每卡只占\n11.02GB。推理引擎是 SGLang 的本地 vendor 构建，带 DFlash2 量化 lm_head\n选择器。这套配置下 KV 缓存池 706,621 tokens，最大上下文 262,144\ntokens，单流 decode 282 tok/s（单卡基准 256 tok/s，卡间 PCIe\n互联没有拖累 decode），DFlash2 投机解码 accept 长度稳定在 5.2–5.4。\n稳态指标（生产日志，约 24 小时窗口）：首次冷启动 TTFT 约 78 秒（JIT\n编译），之后降到约 0.2 秒；decode 吞吐中位数 183 tok/s、峰值 664\ntok/s；前缀缓存命中率全天 96%、实时 gauge 99.3%。一天的 token\n账：prefill 输入约 2.24 亿 tokens，其中 1.82\n亿命中前缀缓存（真实计算量约 4,250 万）；decode 输出约 225 万\ntokens。负载形态是 agent 在需要时发起请求，不是 24 小时连续出\ntoken；decode 活跃时间约 3.8 小时，其余时间机器基本空闲。\n采样参数：temperature=1.0、top_p=0.95、top_k=20，enable_thinking=false\n关闭内置思考。上游模型是 DeepSeek Flash V4（Ollama Cloud\n托管，非本地）；盲测场景下这个 27B\n的综合逻辑与生成水平和它处于同一梯队。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/2x5090-27b-sweet-spot-20260824.html",
-      "content_chars": 8544,
-      "content_sha256": "e659a9527b66d666f17e06d52cbdb56c797b7a1a1e2e6d3557a587547c7a9b47",
-      "content_fetched_at": "2026-08-25T21:36:01.361987+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-08-26",
+  "collect_window": {
+    "start": "2026-08-24T00:00:00+00:00",
+    "end": "2026-08-25T21:35:10.595179+00:00",
+    "hours": 45
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "32901764428",
+    "commit": "7033037"
+  },
+  "stats": {
+    "total": 8,
     "by_kind": {
       "publish": 8
     },
@@ -224,9 +30,653 @@
       "sonicwall-advisory": 1,
       "yage-share": 2
     },
+    "failed_lists": [
+      "redsiege-blog"
+    ],
+    "sources_ok": 50,
+    "sources_failed": [
+      {
+        "id": "redsiege-blog",
+        "error": "no_candidates"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 8,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 13,
+      "calls": 13,
+      "prompt_tokens": 14350,
+      "completion_tokens": 2102,
+      "total_tokens": 16452,
+      "prompt_cache_hit_tokens": 10880,
+      "prompt_cache_miss_tokens": 3470
+    },
     "by_content_status": {
       "ok": 7,
       "failed": 1
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:e7772d9f158d5f9d",
+      "who": "zdi-advisories",
+      "who_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "action": "publish",
+      "target": "ZDI-26-610",
+      "target_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-610/",
+      "text": "zdi-advisories published: ZDI-26-610",
+      "at": "2026-08-25T21:35:10.595179+00:00",
+      "external_id": "a:e7772d9f158d5f9d",
+      "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-610/",
+      "title": "ZDI-26-610",
+      "content": "Apple Safari JavaScriptCore B3 ReduceStrength Phase Use-After-Free Remote Code Execution Vulnerability\nAugust 24th, 2026\nZDI-26-610\nZDI-CAN-32069\nCVE ID\nCVE-2026-64715\nCVSS Score\n8.8\nAV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H\nAffected Vendors\nApple\nAffected Products\nSafari\nVulnerability Details\nThis vulnerability allows remote attackers to execute arbitrary code on affected installations of Apple Safari. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\nThe specific flaw exists within the B3 ReduceStrength phase. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the renderer process.\nAdditional Details\nApple has issued an update to correct this vulnerability. More details can be found at:\nhttps://support.apple.com/en-us/148286\nDisclosure Timeline\n2026-07-16\n- Vulnerability reported to vendor\n2026-08-24\n- Coordinated public release of advisory\n2026-08-24\n- Advisory Updated\nCredit\nHossein Lotfi (@hosselot) of TrendAI Zero Day Initiative\nBack to Advisories",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-610/",
+      "content_chars": 1189,
+      "content_sha256": "7a6cb641566551ab224061c9d2e143dd6df58b27ef87a860682d9887c3a3d97b",
+      "content_fetched_at": "2026-08-25T21:35:21.195651+00:00",
+      "author": "zdi-advisories",
+      "author_name": "Zero Day Initiative Advisories",
+      "author_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "published_at": "2026-08-25T21:35:10.595179+00:00",
+      "collected_at": "2026-08-25T21:35:10.595179+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zdi-advisories",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.zerodayinitiative.com/advisories/published/",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-610/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zdi-advisories",
+          "url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zdi-advisories",
+          "name": "Zero Day Initiative Advisories",
+          "home_url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "article": {
+          "title": "ZDI-26-610",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-610/",
+          "content_sha256": "7a6cb641566551ab224061c9d2e143dd6df58b27ef87a860682d9887c3a3d97b"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:f783381adab06aba",
+      "who": "zdi-advisories",
+      "who_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "action": "publish",
+      "target": "ZDI-26-609",
+      "target_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-609/",
+      "text": "zdi-advisories published: ZDI-26-609",
+      "at": "2026-08-25T21:35:10.595179+00:00",
+      "external_id": "a:f783381adab06aba",
+      "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-609/",
+      "title": "ZDI-26-609",
+      "content": "Linux Kernel Net Scheduler Packet Classifier Use-After-Free Local Privilege Escalation Vulnerability\nAugust 24th, 2026\nZDI-26-609\nZDI-CAN-31524\nCVE ID\nCVSS Score\n7.8\nAV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H\nAffected Vendors\nLinux\nAffected Products\nKernel\nVulnerability Details\nThis vulnerability allows local attackers to escalate privileges on affected installations of Linux Kernel. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\nThe specific flaw exists within the route4_set_fastmap function. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the kernel.\nAdditional Details\nLinux has issued an update to correct this vulnerability. More details can be found at:\nhttps://github.com/torvalds/linux/commit/47d7f7051253bdc02b1d245d87e38f16d31a74df\nDisclosure Timeline\n2026-07-14\n- Vulnerability reported to vendor\n2026-08-24\n- Coordinated public release of advisory\n2026-08-24\n- Advisory Updated\nCredit\nelden, Bryan Mbeumo\nBack to Advisories",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-609/",
+      "content_chars": 1204,
+      "content_sha256": "a935f1920512150a01928fc38c9ac1ce926f714d16a4c4280aeaef55886b2e1c",
+      "content_fetched_at": "2026-08-25T21:35:22.354070+00:00",
+      "author": "zdi-advisories",
+      "author_name": "Zero Day Initiative Advisories",
+      "author_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "published_at": "2026-08-25T21:35:10.595179+00:00",
+      "collected_at": "2026-08-25T21:35:10.595179+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zdi-advisories",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.zerodayinitiative.com/advisories/published/",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-609/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zdi-advisories",
+          "url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zdi-advisories",
+          "name": "Zero Day Initiative Advisories",
+          "home_url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "article": {
+          "title": "ZDI-26-609",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-609/",
+          "content_sha256": "a935f1920512150a01928fc38c9ac1ce926f714d16a4c4280aeaef55886b2e1c"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:942958318a6a85bf",
+      "who": "zdi-advisories",
+      "who_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "action": "publish",
+      "target": "ZDI-26-608",
+      "target_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-608/",
+      "text": "zdi-advisories published: ZDI-26-608",
+      "at": "2026-08-25T21:35:10.595179+00:00",
+      "external_id": "a:942958318a6a85bf",
+      "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-608/",
+      "title": "ZDI-26-608",
+      "content": "Linux Kernel KVM IOAPIC Use-After-Free Local Privilege Escalation Vulnerability\nAugust 24th, 2026\nZDI-26-608\nZDI-CAN-31468\nCVE ID\nCVSS Score\n8.2\nAV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H\nAffected Vendors\nLinux\nAffected Products\nKernel\nVulnerability Details\nThis vulnerability allows local attackers to escalate privileges on affected installations of Linux Kernel. An attacker must first obtain the ability to execute high-privileged code on the target system in order to exploit this vulnerability.\nThe specific flaw exists within the handling of kvm_lapic objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the kernel.\nAdditional Details\nLinux has issued an update to correct this vulnerability. More details can be found at:\nhttps://github.com/torvalds/linux/commit/9910e835580fef3bef53b70241dd00c4bffad693\nDisclosure Timeline\n2026-06-19\n- Vulnerability reported to vendor\n2026-08-24\n- Coordinated public release of advisory\n2026-08-24\n- Advisory Updated\nCredit\nGangMin Kim\nBack to Advisories",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-608/",
+      "content_chars": 1178,
+      "content_sha256": "07905da0f48bceeb0d6428ce4affbb44e2b552371648a4d0445030f324e68fde",
+      "content_fetched_at": "2026-08-25T21:35:23.518000+00:00",
+      "author": "zdi-advisories",
+      "author_name": "Zero Day Initiative Advisories",
+      "author_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "published_at": "2026-08-25T21:35:10.595179+00:00",
+      "collected_at": "2026-08-25T21:35:10.595179+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zdi-advisories",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.zerodayinitiative.com/advisories/published/",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-608/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zdi-advisories",
+          "url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zdi-advisories",
+          "name": "Zero Day Initiative Advisories",
+          "home_url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "article": {
+          "title": "ZDI-26-608",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-608/",
+          "content_sha256": "07905da0f48bceeb0d6428ce4affbb44e2b552371648a4d0445030f324e68fde"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:9492bc42b7dbac78",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter-post4780761.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter-post4780761.html",
+      "at": "2026-08-25T21:35:10.595179+00:00",
+      "external_id": "a:9492bc42b7dbac78",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter-post4780761.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter-post4780761.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-25T21:35:53.159792+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-25T21:35:10.595179+00:00",
+      "collected_at": "2026-08-25T21:35:10.595179+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter-post4780761.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/764216-wow-classic-era-retail-diablo-iv-overwatch-eidolon-decrypter.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:510251747766c546",
+      "who": "safebreach-blog",
+      "who_url": "https://www.safebreach.com/blog/",
+      "action": "publish",
+      "target": "Thought LeadershipAug 24 , 2026Another Actively Exploited Zimbra Flaw: Why CTEM Beats Patch-and-PrayRead More",
+      "target_url": "https://www.safebreach.com/blog/zimbra-rce-continuous-threat-exposure-management-ctem/",
+      "text": "safebreach-blog published: Thought LeadershipAug 24 , 2026Another Actively Exploited Zimbra Flaw: Why CTEM Beats Patch-and-PrayRead More",
+      "at": "2026-08-25T21:35:10.595179+00:00",
+      "external_id": "a:510251747766c546",
+      "url": "https://www.safebreach.com/blog/zimbra-rce-continuous-threat-exposure-management-ctem/",
+      "title": "Thought LeadershipAug 24 , 2026Another Actively Exploited Zimbra Flaw: Why CTEM Beats Patch-and-PrayRead More",
+      "content": "Aug 24, 2026\nAnother Actively Exploited Zimbra Flaw: Why CTEM Beats Patch-and-Pray\nAnother actively exploited CVE just proved that point-in-time scans can’t keep pace with attackers—hear SafeBreach expert Adrian Culley’s take on how continuous threat exposure management closes the gap.\nSummary\nCVE-2026-73570\n, an unauthenticated remote code execution flaw in Zimbra Collaboration Suite (via SNMP command injection), is being actively exploited and was added to CISA’s Known Exploited Vulnerabilities (KEV) catalog after Poland’s CERT confirmed in-the-wild attacks.\nIt’s the latest in a recognizable pattern:\nMOVEit\n,\nIvanti\n,\nCitrix\n, and now Zimbra—critical, unauthenticated RCE on internet-facing collaboration/edge infrastructure, exploited within days of disclosure.\nPoint-in-time vulnerability scans tell you what was exposed at scan time, not what’s exploitable right now, which is the gap attackers keep using.\nContinuous Threat Exposure Management (CTEM)\nreplaces the scan-then-scramble cycle with ongoing, evidence-based validation of what’s actually exploitable in your environment.\nThe fix isn’t “patch faster”—it’s knowing, continuously, which of your exposed assets an attacker could actually use today.\nAuthor:\nAdrian Culley, Offensive Security Expert & Senior Sales Engineer\nAnother week, another unauthenticated remote code execution flaw on internet-facing infrastructure that most security teams didn’t choose to expose to this much risk. This time it’s Zimbra Collaboration Suite.\nCVE-2026-73570\n, an SNMP command injection vulnerability, is being actively exploited in the wild — confirmed by Poland’s CERT and now added to\nCISA’s Known Exploited Vulnerabilities (KEV) catalog\n, which means US federal agencies are under a binding deadline to patch it. Shadowserver’s internet-wide scans counted more than\n12,000 internet-facing Zimbra servers\nstill exposed as of mid-August, even though a fix has been available since version 10.1.20 shipped on July 20.\nWhat Happened\nCVE-2026-73570 allows an unauthenticated attacker to execute arbitrary system commands on affected Zimbra servers via SNMP. Zimbra is widely deployed as email and collaboration infrastructure, which means it sits exactly where attackers want to land: internet-facing, credential-rich, and often less closely watched than the identity and endpoint layers security teams have spent the last several years hardening. CERT Polska first flagged active exploitation on August 18; CISA confirmed it and added the CVE to the KEV catalog three days later, on August 21—roughly four weeks after the patch had already shipped.\nThe Pattern CISOs Should Recognize\nIf this feels familiar, it should.\nMOVEit\n.\nIvanti Connect Secure\n.\nCitrix NetScaler\n. Now Zimbra. The specific product changes; the shape of the incident doesn’t: a critical, unauthenticated RCE in edge-facing or collaboration infrastructure, a short window between disclosure and mass exploitation, and a scramble to patch environments that security teams ofteon didn’t even realize were internet-facing in the first place.\nHere’s the uncomfortable part: every one of those incidents was, in principle, avoidable with things most security programs already do—vulnerability scanning, asset inventory, patch management. The problem isn’t that these programs don’t exist. It’s that they run on a cadence (weekly scans, monthly patch cycles, quarterly pen tests) built for a world where attackers also move on a cadence. They don’t anymore.\nWhy “Patch Faster” Isn’t the Fix\nThe instinctive response to another KEV addition is “patch faster.” That’s necessary, but it’s not sufficient, for two reasons. First, a vulnerability scan tells you what was exposed at the moment you ran it—not what’s exploitable right now, and definitely not what’s exploitable six weeks from now when the next flaw drops. Second, “patch faster” treats every CVE as equally urgent, when the real question a CISO needs answered is narrower and more actionable: of everything currently exposed in our environment, what can an attacker actually reach and use today?\nThat’s a validation question, not a scanning question. And it’s the question point-in-time assessments—no matter how frequently you run them—structurally can’t answer between scans.\nWhat is Continuous Threat Exposure  Management (CTEM)?\nContinuous Threat Exposure Management (CTEM)\nis a security program model that continuously validates which of an organization’s exposed assets and misconfigurations are actually reachable and exploitable by an attacker, rather than relying on periodic vulnerability scans to estimate risk. Gartner introduced the term to describe a shift from point-in-time assessment to an ongoing cycle of scoping, discovery, prioritization, validation, and mobilization.\nWhat CTEM Actually Changes\nCTEM closes that gap by treating exposure validation as an ongoing process instead of a periodic event. Instead of waiting for the next scheduled scan or the next headline to tell you where you stand, CTEM continuously validates which of your exposed assets and misconfigurations are actually exploitable in your specific environment—so when the next Zimbra-, MOVEit-, or Citrix-shaped flaw makes headlines, you already know your exposure instead of scrambling to find out.\nSafeBreach’s\nAdversarial Exposure Validation (AEV)\ncapabilities address this exact problem: proving, with evidence rather than assumptions, whether a given exposure is reachable and exploitable in your environment right now. That’s a very different conversation with your board than “we’re patching as fast as we can.”\nThe Zimbra flaw will get patched. The next one—on some other piece of infrastructure nobody thought to prioritize—is already on its way. If you’d rather know your real exposure continuously than find out the hard way,\nschedule a demo\nand we’ll show you how the\nSafeBreach CTEM Platform\nchanges that math.\nAbout the Author\nAdrian Culley\nis Head of Engineering, EMEA for SafeBreach. He has over 35 years of computer security experience, particularly specialising in security operations, artificial intelligence, offensive security, threat intelligence, and malware — in short, cyber resilience. He is a core member of the OWASP Large Language Model Top Ten risks working group.\nHe is a graduate of the Information Security Group at Royal Holloway, University of London, and an occasional visiting lecturer there. Adrian was previously a Detective with Scotland Yard, working around the world with their Special Operations Directorate, and latterly served with the Computer Crime Unit there. He has also worked directly for the UK Central Government in a global role. He worked for Palo Alto Networks for five years as a Consulting Engineer and Head of Industry 4.0. Previously, he has also worked for PwC, Trellix, Cybereason, Guidance Software, AccessData, and Damballa. Adrian has a strong background in digital forensics and has worked with government, NGO, military, intelligence, law enforcement, and commercial clients around the world.\nFrequently Asked Questions\nWhat is CVE-2026-73570?\nCVE-2026-73570 is an unauthenticated remote code execution vulnerability in Zimbra Collaboration Suite caused by improper input sanitization in its SNMP monitoring component. It lets an attacker execute arbitrary operating system commands on an affected server without needing valid credentials. Zimbra patched it in version 10.1.20, released July 20, 2026.\nIs CVE-2026-73570 being actively exploited?\nYes. CERT Polska confirmed in-the-wild exploitation on August 18, 2026, and CISA added the flaw to its Known Exploited Vulnerabilities (KEV) catalog on August 21, giving US federal agencies until August 24 to patch. Shadowserver’s internet-wide scans still counted more than 12,000 exposed Zimbra servers as of mid-August.\nWhat is continuous threat exposure management (CTEM)?\nCTEM is a security program model—first defined by Gartner—that continuously validates which of an organization’s exposed assets and misconfigurations are actually reachable and exploitable by an attacker, instead of relying on periodic vulnerability scans. It replaces one-time or scheduled assessments with an ongoing cycle of scoping, discovery, prioritization, validation, and mobilization.\nHow is CTEM different from vulnerability scanning?\nA vulnerability scan tells you what was exposed at the moment you ran it; CTEM tells you what’s exploitable right now, continuously, as your environment and the threat landscape change. Scanning flags theoretical weaknesses; CTEM validates, with evidence, whether an attacker could actually reach and use a given exposure today.\nHow do I know if my organization is exposed to the Zimbra flaw?\nIf you run any Zimbra Collaboration Suite version prior to 10.1.20 with SNMP notifications enabled, you’re exposed. Patching to 10.1.20 or later closes this specific flaw, but continuous exposure validation is what tells you whether that—or any other internet-facing system—is actually reachable by an attacker in your environment right now.\nHow does adversarial exposure validation (AEV) relate to CTEM?\nAEV is one of the core validation techniques CTEM relies on—it safely simulates real attacker behavior against your actual environment to prove whether an exposure is exploitable, rather than just flagging that it theoretically could be. SafeBreach’s Exposure Validation Platform uses the breach and attack simulation (BAS) capabilities of SafeBreach Validate and the attack path validation capabilities of SafeBreach Propagate as the evidence engine behind the SafeBreach CTEM Platform.\nYou Might Also Be Interested In\nBlog\nThe Adversary Got an AI Upgrade—Is Your Security Program Ready to Compete?\nRead More\nReport\nAI & the Vulnerability Lifecycle Infographic\nRead More\nPodcast\nVideos\nPodcast: OpenAI’s Agent Hacked Hugging Face: The First Autonomous AI Breach\nListen Now\nGet the latest\nresearch and news",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.safebreach.com/blog/zimbra-rce-continuous-threat-exposure-management-ctem/",
+      "content_chars": 9913,
+      "content_sha256": "32261cdc9ce44a922dc4fc8b25c5b791050679908ff8d0b0fb9010b39e32d9c0",
+      "content_fetched_at": "2026-08-25T21:36:37.295501+00:00",
+      "author": "safebreach-blog",
+      "author_name": "SafeBreach Blog",
+      "author_url": "https://www.safebreach.com/blog/",
+      "published_at": "2026-08-25T21:35:10.595179+00:00",
+      "collected_at": "2026-08-25T21:35:10.595179+00:00",
+      "tags": [
+        "kind:publish",
+        "src:safebreach-blog",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.safebreach.com/blog/",
+        "https://www.safebreach.com/blog/zimbra-rce-continuous-threat-exposure-management-ctem/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "safebreach-blog",
+          "url": "https://www.safebreach.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "safebreach-blog",
+          "name": "SafeBreach Blog",
+          "home_url": "https://www.safebreach.com/blog/"
+        },
+        "article": {
+          "title": "Thought LeadershipAug 24 , 2026Another Actively Exploited Zimbra Flaw: Why CTEM Beats Patch-and-PrayRead More",
+          "url": "https://www.safebreach.com/blog/zimbra-rce-continuous-threat-exposure-management-ctem/",
+          "content_sha256": "32261cdc9ce44a922dc4fc8b25c5b791050679908ff8d0b0fb9010b39e32d9c0"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:7a79cc24b0a75685",
+      "who": "sonicwall-advisory",
+      "who_url": "https://psirt.global.sonicwall.com/",
+      "action": "publish",
+      "target": "SonicWall NetExtender Linux Client Multiple Vulnerabilities",
+      "target_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0013",
+      "text": "sonicwall-advisory published: SonicWall NetExtender Linux Client Multiple Vulnerabilities",
+      "at": "2026-08-25T16:38:18+00:00",
+      "external_id": "a:7a79cc24b0a75685",
+      "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0013",
+      "title": "SonicWall NetExtender Linux Client Multiple Vulnerabilities",
+      "content": "<p><span style=\"font-size: 11pt; color: rgb(181, 99, 8);\">1) CVE-2026-66152 - SonicWall NetExtender arbitrary file write via path traversal vulnerability</span></p><p>A Path traversal vulnerability in OPSWAT tarball in the SonicWall NetExtender Linux client allows an attacker to write arbitrary file as root.\n<br></p><p>CVSS Score: 8.8<br>\nCVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H<br>\nCWE-29: Path Traversal: '\\..\\filename'\n</p><p>\n</p><p><span style=\"color: rgb(196, 89, 17); font-size: 11pt;\">2) CVE-2026-66153 - SonicWall NetExtender Improper Link Resolution Before File Access ('Link Following') Vulnerability</span><br></p><p>The NEService auto-upgrade process insecurely handles temporary files in SonicWall NetExtender Linux client which allows an attacker to manipulate file paths.\n<br></p><p>CVSS Score: 7.0<br>\nCVSS Vector: CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/MAC:H<br>\nCWE-59: Improper Link Resolution Before File Access ('Link Following')<br></p><p>\n</p><p></p>\n<p>There is no evidence that these vulnerabilities are being exploited in the wild. SonicWall strongly advises users of the NetExtender Linux client to upgrade to the mentioned fixed release version to address these vulnerabilities.</p>\nCVE: CVE-2026-66152, CVE-2026-66153\nLast updated: Aug. 25, 2026, 4:38 p.m.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0013",
+      "content_chars": 1312,
+      "content_sha256": "13de200d7de78880a2ddcbd99c405aa13cae138bc2c7104136b9bbc1e4d6cb21",
+      "content_fetched_at": "2026-08-25T21:37:17.371803+00:00",
+      "author": "sonicwall-advisory",
+      "author_name": "SonicWall Security Advisories",
+      "author_url": "https://psirt.global.sonicwall.com/",
+      "published_at": "2026-08-25T16:38:18+00:00",
+      "collected_at": "2026-08-25T21:35:10.595179+00:00",
+      "tags": [
+        "kind:publish",
+        "src:sonicwall-advisory",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://psirt.global.sonicwall.com/",
+        "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0013"
+      ],
+      "refs": {
+        "actor": {
+          "login": "sonicwall-advisory",
+          "url": "https://psirt.global.sonicwall.com/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "sonicwall-advisory",
+          "name": "SonicWall Security Advisories",
+          "home_url": "https://psirt.global.sonicwall.com/"
+        },
+        "article": {
+          "title": "SonicWall NetExtender Linux Client Multiple Vulnerabilities",
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0013",
+          "content_sha256": "13de200d7de78880a2ddcbd99c405aa13cae138bc2c7104136b9bbc1e4d6cb21"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:8298e738a6f2b07f",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "近处保真、远处有损：三种长上下文方法背后的同一个直觉",
+      "target_url": "https://yage.ai/share/long-context-layering-yarn-v4-20260825.html",
+      "text": "yage-share published: 近处保真、远处有损：三种长上下文方法背后的同一个直觉",
+      "at": "2026-08-25T00:00:00+00:00",
+      "external_id": "a:8298e738a6f2b07f",
+      "url": "https://yage.ai/share/long-context-layering-yarn-v4-20260825.html",
+      "title": "近处保真、远处有损：三种长上下文方法背后的同一个直觉",
+      "content": "模型架构\n推理与性能\nContext 是 inference\n的生命线\n在大语言模型的推理过程中，上下文窗口是模型的工作记忆。模型在单次推理中能看到多少内容、以多高的清晰度看到这些内容，直接决定了它能完成什么任务。无论是跨越数千行代码的调用链路排查、多步骤自主\nagent\n的状态维系，还是数百页财务文档的交叉比对，所有推理能力都建立在上下文之上。\n然而，一旦试图把上下文拉长，工程实现最先撞上的瓶颈是显存装不下、算力算不动。这其中最主要的拦路虎，是模型在显存里留下的\nKV cache，也就是那份工作草稿。推理时，上下文里的每个\ntoken，都需要模型实时记录一份供注意力调用的键值状态。这份草稿的大小取决于模型的层数、KV\n头数、头维度和存储精度。\n以 70B 规模的大模型（如 Llama-3-70B）为例：处理 100 万\ntoken（1M）的超长上下文，按 FP16 计算，光是保存这份工作草稿，就要吃掉约\n327 GB 显存。这已经远超单张高端显卡的物理容量。而且这 327 GB\n只是草稿本身的体积，还没算上模型自身的权重参数，以及随文本长度呈平方级暴涨的注意力计算量。为了跨过这堵由显存与算力构成的物理墙，工程界涌现出许多探索。梳理目前验证有效的三种主流路径，你会发现它们分别在模型技术栈的三个不同层次发力：\n坐标层\n：以 YaRN\n为代表，改造位置坐标的标尺，让原本只能看短距离的模型能量出更远的距离，同时不破坏近处词句的分辨力。\n信息通路层\n：以 DeepSeek V4\n为代表，改造注意力机制的计算通路，近处维持全保真计算，远处采用重度压缩与挑重点精看。\n输入表示层\n：以 DeepSeek-OCR\n为代表，在信息输入模型之前，把整页长文本压缩成高密度的二维视觉图景。\n这三套方案来自不同的研究团队，处理着不同形态的输入。但它们背后支撑整个工程设计的，是同一个古老的直觉。\n一个古老直觉：近处保真、远处有损\n这个直觉在计算机科学与认知科学中存在已久。在三维图形渲染中，工程师早就确立了多级纹理（mipmap）与细节层次（LOD）机制。距离摄像机较近的物体，使用数万面多边形和高清贴图完整渲染；而远在地平线上的山峦与树木，则自动切换为简化的粗糙网格与模糊贴图。对远景像素分配与近景相同的算力，是对渲染资源的浪费。在人类视觉系统中，视网膜中央凹只为视野中心约\n2\n度的狭窄范围提供高分辨率、高色彩敏锐度的视觉；视野边缘的余光成像则是模糊且粗粒度的，主要负责感知动态与大致轮廓。\n人类的记忆机制同样遵循这一规律。几分钟前对话里的具体用词、语气助词可以清晰回忆；而五年前的一场会议，大脑通常只保留几个核心结论和结构框架，记忆压缩早已把细节有损过滤掉。\n这些机制指向同一个先验：计算资源与存储预算有限，对所有距离的信息施加等同精度是最浪费的做法。最合理的资源分配策略，是将最高精度留给近处与关键焦点，对远距离或背景信息进行有损压缩。目前在长上下文工程中取得突破的三种方法，正是这一先验在模型技术栈三个不同层面的独立工程落地。\n坐标层：从 RoPE 到 YaRN\n瓶颈与既有方案\nTransformer\n本身不知道词的先后顺序，必须额外告诉它每个词在第几个位置。旋转位置编码（RoPE，出自苏剑林等人\n2021 年论文\narXiv:2104.09864\n）把向量在空间里按位置旋转特定角度，让模型通过相对距离判断词与词的关联。不同维度分配了不同的旋转快慢：转得快的维度负责分辨相邻的词，捕捉短语与语法细节；转得慢的维度负责把握跨段落的宏观位置。这种快慢分工在训练前就由\nRoPE\n按几何级数定好，属于写死的规则。因为模型的权重全程是带着这套固定旋转一起训练的，它在优化过程中自然学会了读快维度抓局部细节、读慢维度判远距离。\nRoPE\n具备相对位置感知、旋转不改变向量长度、无需查表三大特性，已成为主流大模型的行业标准（LLaMA、Mistral、Qwen、Gemma、DeepSeek\n普遍采用，Semantic Scholar 统计引用已达 6184 次）。但 RoPE\n的旋转快慢是在固定的训练长度里标定的。如果直接把超出训练长度的长文本喂给模型，超范围的位置旋转角度会让整把标尺失真，模型输出会迅速崩溃。\n最初的扩展尝试是位置插值。这相当于把整把尺子的刻度等比例拉长：要把上下文扩大\n4 倍，就把所有维度的旋转快慢统一放慢 4 倍。\n这种全局统一拉伸的问题在于忽视了不同维度的分工。转得慢的维度确实回到了可读区间，但负责近处精细语法、转得快的维度也跟着拉长，近处词与词之间的细微距离感随之消失，模型处理普通短文本的基础语言能力显著下滑。\n创新解法\n2023 年，Nous Research、EleutherAI 与日内瓦大学的研究者提出了\nYaRN（\narXiv:2309.00071\n）。它针对的是位置插值破坏近处分辨力的问题。核心机制叫\nNTK-by-parts，也就是分频处理，把尺子上的刻度分段对待：\n高频维度\n：波长短的部分完全不拉伸，保留全部近距离的精细刻度。\n低频维度\n：波长长的部分按扩展倍数完全压缩插值，让远距离坐标重新落在模型的认知范围里。\n中频维度\n：介于两者之间的过渡部分，采用平滑曲线连接。\n此外，坐标拉伸会导致注意力分布发散，模型难以聚焦。YaRN\n引入了注意力温度补偿，用温度系数重新收紧注意力的聚焦程度。\n实验表明，YaRN 让 Llama 2 7B 仅消耗约 384 个 A100 GPU 小时、经过\n400+200 步微调，就成功将上下文扩展至 128K；在 128K 长度的 passkey\n检索测试中达到 99.4% 准确率，短上下文性能衰退低于\n1%。相比纯位置插值，YaRN 节省了约 10 倍的训练 token。\n这一分频缩放策略已成为坐标层扩展的标准手段。Llama 3.1 128K\n配置文件中的\nllama3\n位置编码，底层就是分频阈值处理；Qwen2/2.5 以及开源模型\ngpt-oss-20b（配置明确指定\nrope_type \"yarn\"\n，扩展因子\n32）都采用了相同思路。\nYaRN\n在坐标层做的事直截了当：近处的细刻度不动，远处的粗刻度压缩。这正是近处保真、远处有损这一直觉在坐标层的落地。\n信息通路层：从 MLA 到 DeepSeek\nV4\n瓶颈与既有方案\n坐标层解决了位置标尺的度量问题，但跨不过前面提到的显存墙：以 70B\n模型为例，单条百万 token 序列的工作草稿就要吃掉 327\nGB，硬件集群难以承受。模型处理长上下文时，注意力要反复读写不断累积的历史信息，也就是\nKV\ncache：既要回读过去，又要写入当前。在标准多头注意力（MHA）中，每个注意力头各存一份完整的\nKey 和\nValue，历史信息的总量随头数成倍膨胀。后来的多查询注意力（MQA）和分组查询注意力（GQA）让多个头共用同一份历史，省了显存，但每个头能读到的信息只能变粗，妥协了表达能力。\n针对这种两难，DeepSeek 在 DeepSeek-V2（\narXiv:2405.04434\n）中提出了多头潜在注意力（MLA）：不再逐字保存每个头各一份的完整历史，而是把要存的信息压缩成一份大家共享的紧凑摘要，各头需要时再从摘要里还原。这一设计让\nKV cache 显存直接节省了 93.3%，同时表达能力甚至超过了标准\nMHA。为了让压缩摘要不受位置信息的干扰，模型单独拆出一条 64\n维的独立通道（解耦 key），专门用来承载 RoPE 旋转位置编码。（MLA\n机制另有一篇更通俗的讲解，见\n这里\n）\n创新解法\n到了支持 100 万 token 上下文的 DeepSeek-V4（\narXiv:2606.19348\n，2026-04），显存墙已经被\nMLA 大幅压缩。但计算量是另一回事：要让每个 token 与前面 100 万个历史\ntoken 逐一计算注意力，依然难以承受。DeepSeek-V4\n进而在计算通路层面重构了注意力机制，采用混合注意力架构：\n局部滑动窗口\n：每一层保留 128 个 token\n的局部滑动窗口。近处的上下文全部进入无压缩、高保真的完整注意力计算。\n重度压缩注意力（HCA）与压缩稀疏注意力（CSA）混合\n：在\n128 个 token 窗口之外的远距离历史中，模型交替使用两种机制。HCA\n把远距离历史大幅压缩成粗粒度的背景信息；CSA\n则利用轻量索引器快速扫描前缀序列，从中挑出 top-k\n个最相关的关键点，只对关键点做高精度的重点计算。\n这就像人的视觉观察：眼前正在读的 128\n个词看得一清二楚；远处的整本大书先整体打成模糊背景（HCA），一旦发现某几个段落跟当前问题高度相关，再把那几处放大精读（CSA）。在参数量\n1.6T（激活参数 49B）的 DeepSeek-V4-Pro 上，这种混合通路架构在 1M\n上下文下将单 token 推理 FLOPs 降至 V3.2 的 27%，将 KV cache 显存降至\nV3.2 的 10%。\n信息通路层的取舍正是全文核心直觉的落地：在有限的物理预算下，近处保真、远处有损。近处的\n128 个 token\n维持全保真通路，远距离历史则靠整体压缩与重点挑选来换取效率。（DeepSeek\nV4 在 agentic 场景的工程整合，见\n这篇\n）\n输入表示层：DeepSeek-OCR\n的光学压缩\n瓶颈与既有方案\n真实业务中的长上下文，往往来自成百上千页的\nPDF、研报、合同或扫描件。如果把这些文档逐字转录为普通的文本 token\n喂给大模型，不仅消耗庞大的 token\n预算，还会丢失文档原有的版面结构、表格嵌套与排版层级。模型需要理解整份文档，但\ntoken 吞吐预算有限。现有的文档解析与多模态输入方案面临两难：\n粗粒度的视觉压缩方案（如 GOT-OCR2.0）将每页纸统一压缩至 256 个视觉\ntoken 左右。面对复杂版面或高密度小字，信息丢失严重。\n细粒度的逐字转录方案（如 MinerU2.0）平均每页会产生 6000 个以上的文本\ntoken。几十页文档就会迅速填满模型的上下文窗口，长文档的全篇分析成本随之居高不下。\n创新解法\n2025 年 10 月，研究人员发布了 DeepSeek-OCR（\narXiv:2510.18234\n），提出\nContexts Optical Compression 方法，即光学 2D\n压缩。它的直觉就像给整页文档拍一张高密度的语义缩略图。大模型直接读取压缩后的二维视觉图景，跳过了逐字解析一维文本流的开销。DeepSeek-OCR\n包含两个核心组件： 1.\nDeepEncoder\n：图像编码器。处理高分辨率输入图像时保持较低显存开销，以高压缩比将整页或整段长文本压缩为数量可控的高密度视觉\ntoken。 2.\nDeepSeek3B-MoE-A570M\n解码器\n：从这些压缩后的视觉 token 中读回文字内容与排版结构。\n论文展示了清晰的压缩比与还原精度权衡关系。压缩比越高，省下的 token\n越多，但还原精度随之下降。具体数据如下： - 原始文本 token 数量在视觉\ntoken 数量的 10 倍以内（压缩比低于 10 倍），文字还原准确率达到 97%。 -\n压缩比激进提升到 20 倍，还原准确率仍维持在约 60%。\n在 OmniDocBench 基准测试中，DeepSeek-OCR 仅用 100 个视觉 token\n就超过了消耗 256 个 token 的 GOT-OCR2.0；用不到 800 个视觉 token\n便超越了平均每页消耗 6000 多个 token 的\nMinerU2.0。在实际生产环境中，单张 A100-40G 显卡每天可处理生成超过 20\n万页的训练数据。\nDeepSeek-OCR\n论文明确指出，这项工作的目标在于探索大语言模型中的历史长上下文压缩与主动遗忘机制。论文设想把当前的焦点维持在最高精度，让历史文档以密集视觉\ntoken\n的形式留在背景记忆中。输入表示层同样是这一直觉的落地：当前焦点页面维持最高精度，历史文档则以有损压缩的视觉\ntoken 留在背景里。\n同构：同一先验，三层独立收敛\n将这三种方法放在一起观察，可以看到它们在技术栈不同层次上的清晰对照。三者的差异集中在代表方案、作用机制，以及近处与远处各自的处理方式。下表逐层列出：\n技术层级\n代表方案\n作用机制\n近处/焦点处理\n远处/背景处理\n解决的核心瓶颈\n坐标层\nYaRN\n改造位置编码的旋转频率\n高频刻度不拉伸，保持近处精细分辨力\n低频刻度完全插值，平滑过渡\n坐标系外推失真与短文本性能退化\n信息通路层\nDeepSeek V4\n改造注意力前向计算通道\n128-token 滑动窗口保持全保真计算\n远距离重度压缩（HCA）与重点挑选（CSA）\nKV cache 显存墙与计算量二次方爆炸\n输入表示层\nDeepSeek-OCR\n改造进入模型前的原始输入\n当前焦点页面高保真解析\n整页文档压缩为少量高密度视觉 token\n长文档 token 数量过大与排版信息丢失\n坐标层、通路层、输入层三种方案用同一句古老直觉独立收敛，近处保真、远处有损，三者不是继承关系\n这三者之间没有技术继承或移植关系。YaRN 出自 Nous Research、EleutherAI\n与日内瓦大学研究者对位置标尺数学性质的探索；DeepSeek V4\n是模型架构团队在显卡显存极限上做出的计算通路重构；DeepSeek-OCR\n则是从光学图像与文档排版切入的输入重构。\n它们由不同的团队在不同时间提出，面对的是不同的物理瓶颈。之所以展现出高度一致的结构同构，是因为它们在各自的技术层级上，独立收敛到了同一个工程直觉：在有限的物理预算下，近处必须保真，远处允许有损。\n新难题：压缩/选择之后，位置怎么办\n工程实现从无差别的全量计算走向分层压缩与重点挑选，一个新的技术难题随之出现：\n位置感混乱\n。在传统的完整计算中，所有\ntoken 按顺序排列，先后关系清楚连贯。一旦做稀疏挑选（比如像 CSA\n那样从前缀中挑出几个关键\ntoken）或者把多篇文档拼在一起，挑出来的词就失去了原本连贯的物理间距。模型如果直接计算相对位置，很容易把相隔数千个词、只是碰巧一起入选的两个词，误判为紧挨着的相邻词。为了在压缩与挑选之后维持准确的位置感，近期的技术方案发展出了不同的解法：\n双轨独立标尺\n：在 DeepSeek-V3.2（\narXiv:2512.02556\n）提出的\nDSA（DeepSeek Sparse Attention）中，负责挑选 token\n的轻量索引器单独维护了一套自己的位置标尺，与主注意力机制中使用的标尺彻底分开。挑选阶段与精算阶段各自拥有独立的几何坐标系，互不干扰。\n文档级坐标重置\n：在 EverMind AI 开源的\nMemory-Sparse\nAttention（MSA）\n中，引入了 document-wise RoPE\n文档级位置编码。在长文本拼接场景下，每个子文档内部的位置坐标均从 0\n开始重新计数。这一设计避免了从短文本训练外推至超长上下文时的坐标漂移，使模型在\n16K 至 1 亿 token（100M）的测试范围内，性能退化低于 9%。（MSA\n的完整调研，见\n这篇\n）\n架构自带位置感知\n：Moonshot AI 在 2026 年 7 月发布的\nKimi\nK3 技术报告\n中展示了更激进的做法。K3 采用了 69 层递归架构 KDA（Kimi\nDelta Attention）与 24 层门控 MLA 混合的结构。其全部 MLA\n层完全去掉了位置编码（NoPE），序列先后顺序由 KDA\n的递归门控与自然衰减机制在架构内部承载。K3\n技术报告明确指出，这种设计正是为了避免微调 RoPE 基频或套用 YaRN\n等外置标尺修正，原生支持了 100 万 token 的长上下文。\n位置建模从外部坐标微调退守为补充手段，转向由选择机制或递归架构内部承载\n从这三条路径可以看出，位置感知能力正越来越多地由模型内部承载：要么嵌入稀疏挑选的专用索引器，要么交给递归架构的门控与自然衰减。随着序列长度向百万乃至千万级推进，单纯在外部坐标尺子上做拉伸调整，已经难以应对显存装不下与计算量暴涨的根本瓶颈，基于\nRoPE 基频微调与 YaRN\n的坐标层修正，正在从长上下文竞争的主战场逐渐退守为补充手段。\n不论工程实现如何从外部坐标变换迁移到内部计算通路，再迁移到前端输入表示，其背后的技术内核始终未变。在算力与显存预算受限的物理世界中，近处高保真、远处有损压缩，依然是构建超长上下文智能系统稳固而有效的直觉支撑。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/long-context-layering-yarn-v4-20260825.html",
+      "content_chars": 6855,
+      "content_sha256": "cc3114c887d3731201358fb8f1e4619df1ae1858e1da5bbfa0486f5f8c5077a9",
+      "content_fetched_at": "2026-08-25T21:36:01.108551+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-25T00:00:00+00:00",
+      "collected_at": "2026-08-25T21:35:10.595179+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/long-context-layering-yarn-v4-20260825.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "近处保真、远处有损：三种长上下文方法背后的同一个直觉",
+          "url": "https://yage.ai/share/long-context-layering-yarn-v4-20260825.html",
+          "content_sha256": "cc3114c887d3731201358fb8f1e4619df1ae1858e1da5bbfa0486f5f8c5077a9"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:02b299ddd5644c57",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "8 路并发每路仍有 141 tok/s：2×5090 跑 27B 小模型，为什么它已经是 sweet spot",
+      "target_url": "https://yage.ai/share/2x5090-27b-sweet-spot-20260824.html",
+      "text": "yage-share published: 8 路并发每路仍有 141 tok/s：2×5090 跑 27B 小模型，为什么它已经是 sweet spot",
+      "at": "2026-08-24T00:00:00+00:00",
+      "external_id": "a:02b299ddd5644c57",
+      "url": "https://yage.ai/share/2x5090-27b-sweet-spot-20260824.html",
+      "title": "8 路并发每路仍有 141 tok/s：2×5090 跑 27B 小模型，为什么它已经是 sweet spot",
+      "content": "推理与性能\n过去这一天，我家里那台常驻服务器上的 2 张 32GB RTX 5090 组了 TP=2\n张量并行，用 SGLang 跑 NVFP4 浮点量化版 Qwen-3.8-27B。翻了下 08-23\n的监控记录：这台 27B 模型一天处理了约 2.24 亿 prefill token，其中 1.82\n亿是前缀缓存命中、几乎不占算力，真正新生成的 decode token 约 225\n万。按美国能源信息署（EIA）民用电价 $0.1844/kWh、整机满载约 500W\n来算，一天里真正在出 token 的时间只有约 3.8 小时，折算到月度电费大概\n$11。\n要是把这种生成负载拿去对标商业 API 的订阅套餐（比如 GPT-5.6 Luna 搭配\nCodex $200 套餐），平均每天成本大概 $1，一个月算下来约\n$30。单看账面支出，即使是像这样一天处理几亿 token 的重度使用，自建一天\n3.8 小时负载的电费（约 $11/月）一个月也就比订阅省个 $20\n左右。但初始硬件投入摆在那里，光两张 5090 加上整机就要\n$6,000–8,000，靠每月 $20 上下的电费差价去摊这 $6,000–8,000 的硬件，要\n25–33\n年才回得了本，纯靠省钱是完全回不了本的。所以自托管的理由不在省钱，我图的是数据完全留在本地介质上的合规与隐私、模型行为的无审查定制、全量微调与\nLoRA\n权重的动态插拔、哪怕断网脱机也能稳稳工作的确定性，还有一整套自己完全掌控的推理软件栈。从实测数据来看，双卡\n5090 跑 27B 级别小模型，解码吞吐充裕：开到 8 路并发，每路依然能提供 141\ntok/s 的速度，是当下消费级硬件的 sweet\nspot。当然，决定选型的核心依据还是业务的实际负载使用率，脱离使用率盲目追求单流速度很容易落入配置误区。\n5090 双卡：decode 吞吐已经够用\n为了摸清 2×5090\n的实际吞吐能力，我用同一道标准数学推理题目做了并发压测。在关闭思考模式、max_tokens\n设定为 1024 的基准条件下，从单路并发逐步加压至 8\n路并发，记录不同梯度下的整体吞吐与单流解码速率：\n并发\n总吞吐 tok/s\n单流 decode tok/s\n扩展倍率\n1\n268\n286\n1.00×\n2\n461\n253\n1.72×\n4\n692\n196\n2.58×\n8\n962\n141\n3.59×\n总吞吐是整机所有并发请求的合计（token 总数除以墙钟时间，含\nprefill），单流 decode 是单请求纯解码速率（不含 prefill）。并发=1\n时两者只差一个 TTFT 的摊销，所以 268 略低于 286。\n2×5090 TP=2 下总吞吐随并发从 1 路到 8\n路由 268 近线性扩展到 962 tok/s（3.59 倍），8 路并发时单流 decode 仍保持\n141 tok/s\n双卡并行跑多任务很顺畅，只要加并发，整机总吞吐几乎线性上涨。从单路并发的\n268 tok/s 到 8 路并发的 962 tok/s，扩展倍率 3.59 倍，说明 8\n路并发以内，双卡 TP=2 走消费级 PCIe\n总线的数据交换没成为瓶颈。与此同时，并发加到 8\n路时，每路独立的单流生成速率依然维持在 141\ntok/s。对比人类自然阅读速度（约 200–300 词/分钟），141 tok/s\n留了充裕的余量，系统的实际瓶颈不在模型，而是转移到了下游消费能力或上游任务派发节奏上。\n换到投机解码和长文本场景，双卡依然能跑出可观的生成速率。配合 DFlash2\n算法，实测投机 accept 步数分布在 3.3–5.6 之间，数学任务实测吞吐为\n215–256 tok/s，代码生成任务为 222–232 tok/s。对照\nSGLang\n官方 cookbook\n在单张 5090 上的 DFlash2 标准测试数据（输入 8192、输出\n1024、并发 1 下测得 206.1 tok/s），本地双卡 TP=2 实测单流 286 tok/s\n优势明显。在包含 5 条 16k\n长度文档的长文本测试集上，开启思考模式平均吞吐为 156.1\ntok/s，关闭思考模式平均吞吐为 195.4 tok/s，其中结构化 JSON\n抽取任务实测峰值达到 334 tok/s。\n如果以单流解码速率不低于 100 tok/s、整机总吞吐量不低于 500 tok/s 作为\n27B 实用门槛，2×5090 应对起来绰绰有余：4 路并发时就做到 196 tok/s\n单流、692 tok/s 总吞吐，8 路并发单流仍保持 141\ntok/s，全面超过基准线。RTX 5090 成为承载 27B 小模型的 sweet\nspot，在于四个硬件维度同时满足：Blackwell 架构原生集成的 FP4 tensor core\n提供高效的 NVFP4 计算支持、1792 GB/s 的显存带宽、32GB\n的单卡物理显存，以及每卡 $2,000\n的官方指导价。定位更高的专业卡没带来显存带宽增益，价格更低的旧款显卡则卡在量化支持与显存容量两道断层上。具体的部署配置与稳态运行数据见文末附录。\n4090 为什么不行：没有\nNVFP4，INT4 质量更差\n5090 是唯一同时满足 NVFP4 原生量化、1792\nGB/s 带宽、32GB 显存与官方指导价约 $2,000 的卡；4090 无 FP4\n硬件且已停产，PRO 6000 带宽与 5090 相同但价格是 5090 官方指导价的 8\n倍\n想用上一代旗舰 RTX 4090\n来做自托管，最直接的问题就是速度不够快。大模型的吐字速度主要看显存带宽。4090\n配备 24GB GDDR6X 显存，带宽只有 1008 GB/s，刚好是 RTX 5090（1792\nGB/s）的 56%。显存带宽成了硬上限，4090 在单流解码阶段的生成速率比 5090\n直接慢了约 40%。\n更麻烦的是量化格式。最新的 NVFP4 格式必须依靠 Blackwell 架构自带的\nFP4 tensor core 硬件单元。4090 基于上一代 Ada Lovelace 架构，没有 FP4\n硬件指令支持，跑 4-bit 量化时只能退回去用传统的 INT4 格式（如\nAWQ、GPTQ、AutoRound），或者用显存占用更大的 FP8 格式。来自\nRaZeR 论文\n与\n量化评测研究\n的数据表明，NVFP4 采用浮点表示与动态步长机制，动态范围达到 12，高出 INT4\n的 7 一大截，能更准确地保留权重分布里的长尾特征，模型输出质量普遍优于\nINT4。而且 INT4 做张量乘法前得先把权重反量化成 16-bit\n浮点，白白多一道计算开销。\n显存容量也处处受限。27B 模型在 NVFP4 格式下的基础权重是\n20.14GB，要是加上 3.38GB 的 DFlash2 投机解码草稿模型，显存总占用就到了\n23.5GB。4090 的 24GB 显存塞下投机模型后，几乎挤不出多余空间给 KV\n缓存。如果在 4090 上改用 INT4 格式，模型权重约 14–16GB，单卡只剩 8–10GB\n显存供 KV 缓存使用，只要上下文拉长或并发稍高就会用尽。如果改用 FP8\n格式，模型权重达到 27–28GB，单张 24GB 显卡连模型都装不下，必须凑至少 2\n张卡提供 48GB 显存才跑得起来。\n显存小在多卡场景下会放大成另一个问题：同样要凑出大显存，4090\n得插更多卡。96GB 总显存，5090 三张就到，4090\n要四张。卡一多，成本上去，还容易撞上非标准的张量并行切分：插 3 张\n4090（72GB）会碰到 TP=3 的切分限制，部分显存闲置；插 4 张（96GB）本来是\n70B 以上模型的配置，拿来跑 27B 纯属浪费。反过来，27B 用 INT4 其实单张\n4090 就装得下，但剩下给 KV 缓存的只有\n8–10GB，长上下文和并发一上来就见底。所以双卡 4090 顶多算跑 27B\n的勉强下限，带宽打折和量化质量变差这两样还是绕不开。\n更不用说现在的市场行情了。RTX 4090 已经全面停产，虽然 2022\n年发售时的官方指导价 MSRP 是 $1,599，但在 2026-08 的市场上，全新 4090\n售价上涨到了约 $2,755，二手市场交易价格也在 $2,200–2,350 区间。花比 5090\n还要贵的溢价，去买一张显存更小、带宽更低、还不支持现代浮点量化的停产老卡，无论从技术还是账面上看都非常吃亏。\nPRO 6000\n为什么不行：$16,000 买不到速度\n工作站级别的 RTX PRO 6000 Blackwell 配备了 96GB GDDR7 ECC\n显存，直觉上可能让人觉得它推理更强，但在 27B\n模型的自托管场景里，性能和成本完全倒挂。PRO 6000 的显存带宽是 1792\nGB/s，和官方指导价约 $2,000 的 RTX 5090\n完全一致。自回归解码的核心瓶颈全在显存读取带宽上，在带宽相同的前提下，PRO\n6000 无法为单流解码带来任何加速。96GB 大显存的核心价值在于提供更大的 KV\n缓存池：在 27B 模型的 FP8 模式下，模型权重占用约 28GB 显存，剩余约 65GB\n显存可以全部分配给 KV\n缓存池。但这种超大缓存池只有在超大并发搭配超长上下文的极端工况下才用得上，对个人日常开发或者小团队推理来说纯属资源过剩。\n价格更是高得离谱。\nTom’s\nHardware\n统计数据显示，PRO 6000 的零售价格从 2025 年 3 月发售时的\n$8,565，上调至 2026 年 6 月的 $13,250，并在 2026 年 8 月攀升至\n$16,000，累计涨幅达到 87%；Newegg 平台的实际零售挂牌价亦处于 $12,099\n高位。付出 8 倍于 5090 官方指导价的采购预算，在 27B\n推理上根本换不来等比例的速度提升。\n多卡互联同样受限于 PCIe Gen5 P2P，单向通信带宽约 55\nGB/s。而且它在固件上还有个让人头疼的问题。\nNVIDIA 开发者论坛\n365739\n帖子集中记录了大量固件崩溃报告：在 24×7 持续运行 vLLM\n推理服务的环境中，设备在稳定运行数月后会突发整卡重置，系统内核抛出与 GSP\n固件相关的 Xid 62、119、120、154 错误。该问题广泛存在于 570、580、595\n等多个驱动版本分支中。发生故障后只能通过机箱 PSU 物理断电重启恢复，截至\n2026-08-24 官方尚未发布修复补丁。对于追求 24×7\n高可用性的自托管节点而言，这一固件隐患构成了直接的运维阻碍。\n云端替代路径：GPU\n租赁、TPU 与 Neuron 的账单与供给错位\n如果不打算自行采购并维护物理硬件，直接去云端租算力，主要有三条路：公有云\nGPU 租赁、Google Cloud TPU 以及 AWS Neuron\n专用算力实例。但这几条路径在实际算账时，账单与供给端都存在不少错位。\n先看最常见的云 GPU 租赁：根据 2026-05 的市场行情，第三方算力平台（如\nVast、Spheron、RunPod）提供的 RTX 5090 租金约为 $0.51–0.99/小时（Spheron\n挂牌价 $0.76/小时，RunPod 挂牌价\n$0.99/小时），但现货算力库存长期紧张。企业级算力平台上，\nLambda\n提供的 PCIe 版 H100\n按需价格为 $3.29/小时，SXM 版 H100 为 $4.29/小时（全市场价格处于\n$2.19–4.29/小时区间），A6000 48GB 价格为 $1.09/小时。折算为 24×7\n全月不间断运行，单张 5090 实例的月度支出约 $370–715，单张 H100\n实例的月度支出达到 $2,300–3,100。更尴尬的是算力供给错位：2026-08 翻看\nLambda 等主流 AI 云平台的自助实例控制台，上面仅提供 B200（$6.99）、H100\nSXM（$4.29）、A100（$1.99）及 A6000（$1.09）等企业级算力，并未提供 5090\n或 PRO 6000\n这类兼具高带宽与合理单价的消费级或工作站显卡自助实例。你在主流云平台上，根本租不到与本地同等性价比的硬件组合。\nGoogle Cloud TPU 也是一条路，但硬件同样不对外零售。TPU v1 至 v7\n芯片历来不对个人开放；虽然 2026 年 Google 首次开放硬件直售渠道，通过\nBroadcom 面向 Anthropic 单独供应了 40 万颗 TPUv7 芯片（涉及金额约 100\n亿美元，预计 2027\n年上线交付），但普通开发者与企业只能通过云端租赁使用。TPU v5e 的\n官方按需租金\n为\n$1.20/chip-hr，1 年期预留承诺价为 $0.84，3 年期预留承诺价为 $0.54，spot\n竞价实例实测价格为 $0.5779。租用一套包含 4 颗芯片的 v5e-4 实例（提供\n64GB 显存），按需月度账单达到 $3,504，1 年期预留月度账单约为\n$2,453。软件支持方面，\nvLLM 官方 TPU\n后端\n对 9B–32B 标准稠密模型的支持已达到生产级别，但对 Qwen-3.8\n所采用的 GDN 混合注意力架构支持状态尚未确认；SGLang 的 TPU\n适配仅在独立的 sglang-jax 仓库中维护，且限定在 TPU v6e/v7\n硬件架构上运行。\nAWS Neuron 专用推理芯片同样仅以 EC2 实例形式对外出租。以 us-east-1\n区域按需定价为例，配备 32GB 显存的\ninf2.xlarge\n实例\n单价为 $0.7582/小时（折合月度约 $553），配备 192GB 显存的\ninf2.24xlarge 实例单价为 $6.49/小时（折合月度约\n$4,740）。框架支持上，vLLM 从 0.3.3 版本起通过\nNxD\nInference\n提供了官方支持并声明兼容 V1 API，支持模型清单包含 Llama\n2/3.1/3.3、Llama 4 及 Qwen 2.5/3，但 Qwen-3.8-27B 的 GDN\n混合架构适配尚未经过官方验证；SGLang 官方没有推出 Neuron\n后端，仅有第三方社区维护的 mini-sglang-neuron。真正上手时，Neuron\n首次加载 15GB 模型需要约 15 分钟的 AOT 前置编译；Reddit 的 r/aws 版块自\n2024 年 5 月起持续出现部署复杂度高与运行崩溃的反馈；AWS\n免费套餐账户默认未开放创建 inf2 实例的权限。\n公有云的核心优势在于为波动性业务提供弹性缓冲。但面对 24×7\n恒定连续的高负载推理场景，云端 GPU\n实例的月度账单开销是本地物理机电费支出的 6 倍至 50 倍。\n真正的决策变量：从月度使用率画像算经济账\n算清自建和租云哪个更划算，关键看使用率。把硬件采购成本摊销、折旧与实际电费汇总，对比按小时计费的公有云租金，自建硬件与按需租赁的成本分界线落在月度负载占用率\n26%–45% 区间（即每月实际高负载运行 192–328\n小时）。月度使用率高于该区间，自建物理机能有效拉低单 token\n推理成本；负载低于该区间，采用按需租赁或直接调用商业 API\n资金效率更优。\n在我的实际日常工作流中，推理服务保持 24×7 全天候常驻，单日处理约 2.24\n亿 prefill token、新生成约 225 万 decode\ntoken，真正高负载运转的时间一天约 3.8\n小时。按纯成本算，这个负载其实低于自建划算的门槛；但我选择自购\n2×5090，图的是完全掌控推理栈，而不是成本。但对于多数独立开发者与中小研发团队，日常调用呈现典型的脉冲式特征：工作时段集中调用，夜间与周末处于静默状态，各项目周期交替期间机器长期空转，真实硬件使用率通常低于\n30%。如果在低使用率场景下购置 24×7\n自建节点，硬件折旧与基础待机电费将转变为长期的闲置浪费。\n所以别急着下单买硬件，先测测自己的实际用量。可以在既有开发环境或测试节点中拉起\nSGLang 服务，通过暴露的 /metrics 端点进行为期 7–14\n天的连续监控，采集稳态 TTFT 延迟、KV\n缓存分配比例、前缀缓存命中率以及并发排队深度等核心指标。依据真实业务指标计算实际负载占用率与峰值并发规模，再结合硬件矩阵做出选型决策，避免硬件配置与真实业务需求发生偏离。\n使用率是自托管的核心决策轴：低于 30%\n走云或 API，26–45% 是自购与租赁的交点，高于 45% 且重视隐私时选 2×5090\n常驻\n超市的鱼又好又便宜，你为什么还去钓鱼\n回到开篇的成本账本：本地自托管一天 3.8 小时负载的月度电费约\n$11，比商业订阅套餐的 $30\n还低，纯粹从账面开销看自托管已经占优。那为什么还要投入精力自建服务？技术交流群中一位朋友给出了贴切的比喻：“现在超市买的鱼又好又便宜，但为什么还有这么多人去钓鱼？他不是为了吃鱼，他是享受这个过程。”自托管的逻辑同样在此：我要的是数据全程留在本地物理介质上的合规与隐私保障、脱离第三方服务内容策略限制的自由度、全参数微调与动态\nLoRA\n权重的完整控制权、断网脱机工况下的可靠运行能力，以及由自己完全掌控的全栈推理环境。在涉及核心隐私数据、定制化\nAgent\n行为以及高安全隔离要求的工作流中，这些特性构成了自托管的核心价值。\n针对 27B 级别小模型的部署选型，可以遵循三步决策框架：\n隐私与合规审计：若业务数据不涉及本地隔离或合规约束，优先选用商业 API\n订阅服务，无需投入精力维护底层硬件与推理栈。\n负载使用率画像：通过 7–14 天的系统 metrics\n监控，测算真实的有效算力使用率。月度使用率低于 30%\n优先选择弹性云算力或按量 API；使用率稳定超过 45%\n后，再推进自建硬件规划。\n算力硬件精准匹配：针对高使用率且注重数据隐私的场景，选用 2×5090 搭配\nNVFP4 量化与 SGLang DFlash2\n推理引擎（即本文实测方案）；针对阶段性突发流量，接入公有云 GPU\n弹性集群；针对极高并发下 KV\n缓存池成为瓶颈的特殊场景，直接采用云端多卡大显存实例，避免为单流生成速度溢价购买单卡\n$16,000 的 PRO 6000。\n面向 27B 级别小模型的自托管实践，技术选型已经清晰：5090\n双卡互联、NVFP4 浮点量化、SGLang\n优化构建，结合真实负载指标评估使用率，并接纳够用即好的性能边界。自托管买下的是一套独立完整的控制权，而\n5090 双卡在这个体量的模型上提供了扎实充裕的算力底座。\n本文由Qwen-3.8-27B调研与构思，Gemini 3.7 Flash成文\n附录：部署配置与稳态数据\nQwen-3.8-27B 采用 GDN\n混合注意力架构（线性注意力机制），对显存占用和注意力计算开销比较友好。NVFP4\n4-bit 浮点量化权重总体积 20.14GB，TP=2 双卡张量并行后每卡只占\n11.02GB。推理引擎是 SGLang 的本地 vendor 构建，带 DFlash2 量化 lm_head\n选择器。这套配置下 KV 缓存池 706,621 tokens，最大上下文 262,144\ntokens，单流 decode 282 tok/s（单卡基准 256 tok/s，卡间 PCIe\n互联没有拖累 decode），DFlash2 投机解码 accept 长度稳定在 5.2–5.4。\n稳态指标（生产日志，约 24 小时窗口）：首次冷启动 TTFT 约 78 秒（JIT\n编译），之后降到约 0.2 秒；decode 吞吐中位数 183 tok/s、峰值 664\ntok/s；前缀缓存命中率全天 96%、实时 gauge 99.3%。一天的 token\n账：prefill 输入约 2.24 亿 tokens，其中 1.82\n亿命中前缀缓存（真实计算量约 4,250 万）；decode 输出约 225 万\ntokens。负载形态是 agent 在需要时发起请求，不是 24 小时连续出\ntoken；decode 活跃时间约 3.8 小时，其余时间机器基本空闲。\n采样参数：temperature=1.0、top_p=0.95、top_k=20，enable_thinking=false\n关闭内置思考。上游模型是 DeepSeek Flash V4（Ollama Cloud\n托管，非本地）；盲测场景下这个 27B\n的综合逻辑与生成水平和它处于同一梯队。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/2x5090-27b-sweet-spot-20260824.html",
+      "content_chars": 8544,
+      "content_sha256": "e659a9527b66d666f17e06d52cbdb56c797b7a1a1e2e6d3557a587547c7a9b47",
+      "content_fetched_at": "2026-08-25T21:36:01.361987+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-24T00:00:00+00:00",
+      "collected_at": "2026-08-25T21:35:10.595179+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/2x5090-27b-sweet-spot-20260824.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "8 路并发每路仍有 141 tok/s：2×5090 跑 27B 小模型，为什么它已经是 sweet spot",
+          "url": "https://yage.ai/share/2x5090-27b-sweet-spot-20260824.html",
+          "content_sha256": "e659a9527b66d666f17e06d52cbdb56c797b7a1a1e2e6d3557a587547c7a9b47"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
