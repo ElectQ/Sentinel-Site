@@ -1,214 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-08-27",
-  "generated_at": "2026-08-27T00:41:46.598532+00:00",
-  "item_count": 8,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:6151aa44942637fe",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: Il2cpp Dumper Frida",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-27T00:37:10.787573+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/757918-il2cpp-dumper-frida.html",
-      "title": "Il2cpp Dumper Frida",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/757918-il2cpp-dumper-frida.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-27T00:37:54.534271+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:6fc85020aad36d8b",
-      "kind": "publish",
-      "text": "safebreach-blog published: Thought LeadershipAug 25 , 2026The EU AI Act’s August 2026 Deadline: What Actually Changed—and What Didn’tRead More",
-      "actor": "safebreach-blog",
-      "actor_url": "https://www.safebreach.com/blog/",
-      "created_at": "2026-08-27T00:37:10.787573+00:00",
-      "html_url": "https://www.safebreach.com/blog/blog/eu-ai-act-august-2026-deadline-cisos/",
-      "title": "Thought LeadershipAug 25 , 2026The EU AI Act’s August 2026 Deadline: What Actually Changed—and What Didn’tRead More",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "Aug 25, 2026\nThe EU AI Act’s August 2026 Deadline: What Actually Changed—and What Didn’t\nRecent amendments pushed the bulk of the high-risk AI obligations back more than a year. The transparency rules and GPAI enforcement machinery are still landing on schedule. Here’s five things security leaders need to do now.\nSummary\nThe EU AI Act is binding law, not guidance, with penalties up to €35 million or 7% of global annual turnover.\nNew amendments pushed the bulk of the high-risk AI obligations (Articles 9–15) from August 2, 2026, to December 2, 2027.\nNot delayed: Article 50 transparency rules (AI disclosure, synthetic content labeling) and the end of the GPAI enforcement grace period both still landed August 2, 2026.\n“High-risk” covers Annex III use cases—biometrics, hiring, credit scoring, law enforcement, and more—and applies to any company whose AI affects people in the EU, regardless of where it’s headquartered.\nArticle 15 requires proof of resilience against attack classes drawn from MITRE ATLAS and the OWASP LLM Top 10; continuous adversarial testing, not one-time assessment, is how CISOs generate that evidence.\nAuthor:\nAdrian Culley, Offensive Security Expert & Senior Sales Engineer\nThe\nEU AI Act\n, formally Regulation (EU) 2024/1689, applies a risk-based regulatory framework to artificial intelligence systems, in much the same way the\nGDPR\napplied a risk-based framework to data. The underlying logic: some AI systems create genuine risks to safety and fundamental rights, and those risks need to be managed, evidenced, and audited—not just declared.\nWhat sets it apart from prior AI governance efforts is that it’s binding law with penalties attached, not a set of voluntary principles. The penalty structure has three tiers.\nThe top tier, covering prohibited AI practices—the things banned outright—carries fines of up to €35 million or 7% of global annual turnover, whichever is higher. That 7% ceiling is notably steeper than GDPR’s 4%.\nThe second tier, for violations of the high-risk AI obligations, is up to €15 million or 3% of turnover.\nThe third tier, for providing misleading information to regulators, is up to €7.5 million or 1%.\nFor context, a company with €10 billion in global revenue is looking at up to €300 million in potential exposure at the second tier alone.\nWhat Landed on August 2, 2026 (and What Just Moved)\nThe Act entered into force on August 1, 2024, and its obligations have been phasing in ever since—which has led some organizations to assume nothing is actually enforceable yet. That’s not the case. Several obligations have already been live for over a year:\nFebruary 2, 2025:\nThe ban on prohibited AI practices took effect, along with AI literacy requirements. Prohibited practices include social scoring, manipulative AI, workplace emotion recognition, and biometric categorization based on sensitive characteristics like race or sexual orientation. Any organization still running these has been in violation for well over a year.\nAugust 2, 2025:\nGeneral-purpose AI (GPAI) model obligations took effect—documentation, transparency, and copyright requirements for foundation models placed on the EU market from that date forward. This covers the large language models (LLMs) underpinning most enterprise AI deployments. Models already on the market before August 2025 have a grace period running to August 2027. None of this has been affected by recent amendments.\nAugust 2, 2026, was originally set to be the date the bulk of the high-risk AI obligations (Articles 9–15) and the Article 50 transparency obligations both landed. That has changed. Amendments that recently cleared the European Parliament and Council—finalized but not yet formally published in the Official Journal at the time of writing—defer the bulk of the high-risk obligations for standalone Annex III systems to December 2, 2027. The amendments are now published and already in force.\nWhat has not moved is Article 50. If an AI system interacts with humans, it still must disclose that it is AI unless that would already be obvious to a reasonably attentive person. Synthetic audio, image, video, or text still requires machine-readable labeling. Deployers using emotion recognition or biometric categorization still have to notify the people exposed to it. Deepfakes still require disclosure, with narrow carve-outs for evidently artistic or satirical work. Separately, August 2, 2026, also marks the end of the AI Office’s supervisory grace period for GPAI models—meaning the Commission’s power to actually fine a foundation model provider becomes operative that day, not merely theoretical.\nHigh-risk AI embedded in already-regulated products under Annex I (medical devices, aviation, vehicles, industrial machinery) has its own timeline: August 2, 2028, on the same condition that the amendments are published.\nKey Dates at a Glance\nDate\nWhat Happens\nAugust 1, 2024\nEU AI Act enters into force\nFebruary 2, 2025\nProhibited practices ban and AI literacy requirements take effect\nAugust 2, 2025\nGPAI model obligations take effect (documentation, transparency, copyright); systemic-risk GPAI adversarial testing and incident reporting also binding\nAugust 2, 2026\nArticle 50 transparency obligations take effect; AI Office’s GPAI supervisory grace period ends\nDecember 2, 2027\nBulk of high-risk obligations (Articles 9–15) for Annex III systems take effect; GPAI grace period for pre-August-2025 models ends August 2027\nAugust 2, 2028\nHigh-risk AI obligations for AI embedded in Annex I regulated products take effect\nIs Your Organization “High-Risk” Under the AI Act?\nThere are two routes into high-risk classification. The first: your AI is a safety-critical component of a product already regulated under EU product safety law—medical devices, aviation equipment, vehicles, industrial machinery—where the product requires third-party conformity assessment. If your AI goes into those products, it’s automatically high-risk.\nThe second, broader route is Annex III: a specific catalog of AI use cases the regulation treats as inherently high-risk regardless of what product they sit inside. Annex III covers:\nBiometric identification and categorization systems\nAI safety components in critical infrastructure such as energy, water, transport, and financial infrastructure\nEducational and vocational training decisions, including admissions and qualifications\nEmployment decisions, including recruitment, performance evaluation, promotion, task allocation, and worker monitoring\nCredit scoring and insurance risk assessment\nLaw enforcement applications such as risk assessment of individuals, predictive policing, and emotional state detection\nMigration and asylum decisions\nAdministration of justice\nIf your organization uses AI in any of those domains, you’re high-risk and the full compliance burden applies once the relevant deadline arrives.\nCrucially, the Act is extraterritorial. If you’re placing AI systems on the EU market—meaning EU-based deployers use your system—or if your AI’s outputs affect people in the EU, you’re in scope, regardless of where your company is headquartered. A US-based HR software vendor whose product is used by a German company to screen job applicants is subject to the full Annex III high-risk obligations. The European Commission has been explicit that this is by design.\nThe Cybersecurity-Specific Obligations: Articles 9 Through 15\nThis is where the real operational work sits, and it’s worth understanding even with the extra runway to December 2027—recalibrating the timeline is not the same as shelving the work.\nArticle 9\nestablishes a continuous risk management obligation, not a one-time assessment. Organizations need a documented risk management system spanning the entire lifecycle—design, development, deployment, and post-market monitoring. It has to identify foreseeable risks to health, safety, and fundamental rights, estimate and evaluate those risks, implement mitigation measures, and loop production feedback back into the risk evaluation. That last requirement is what kills the “assess once, deploy, forget” model. Residual risks have to be confirmed as acceptable and reconfirmed as the system evolves.\nArticle 11\nsets the documentation burden. Technical documentation has to be drawn up before the system goes to market and maintained throughout its lifecycle, sufficient for a regulator to assess compliance. For providers—organizations that build or place the system on the market—this is a substantial upfront investment. For deployers using someone else’s high-risk system, the obligations are lighter but still include verifying the system is used within the provider’s instructions, monitoring performance, reporting incidents, and applying appropriate technical controls. A deployer that puts its own brand on a system or makes substantial modifications effectively becomes a provider, with the fuller set of obligations that entails.\nArticle 12\nrequires high-risk AI systems to automatically log events during operation, for the purposes of auditability, post-incident analysis, regulatory investigation, and evidence that human oversight was exercised. Logs have to be retained for the appropriate period and accessible to deployers and competent authorities.\nArticle 14\nis the human oversight requirement: systems must be designed so humans can monitor, understand, intervene in, and where necessary override or shut down the system. This isn’t just a governance checkbox—it has architectural implications for how the system is built.\nArticle 15\nis the one worth sitting with. It’s the accuracy, robustness, and cybersecurity requirement, and paragraph 5 gets specific: high-risk AI systems must include technical measures to prevent, detect, respond to, resolve, and control attacks targeting the training data set (data poisoning), pre-trained components used in training (model poisoning), inputs designed to cause the model to make a mistake (adversarial examples, model evasion), and confidentiality attacks that expose model flaws.\nNotably, these categories closely track the threat taxonomy MITRE ATLAS and\nOWASP’s LLM Top 10\nhave cataloged for years, even though the Act’s text doesn’t cite either framework by name. It’s not a soft obligation to “consider” AI security—it’s a mandate to have technical measures against named attack classes and to be able to evidence those measures to a regulator. That changes the compliance question from “have we thought about AI security?” to “can we prove our AI system is resilient against these specific attacks?” And this requirement doesn’t disappear because the deadline moved: it arrives in December 2027 for Annex III systems, at the same substantive bar.\nThis extends further for GPAI models assessed as presenting systemic risk—a tier determined by the computational power used for training, which captures the major frontier models. Those providers have additional obligations, including documented adversarial testing (red-teaming and attack simulation against the model itself) to identify and mitigate systemic risks, and mandatory reporting of serious incidents—death, serious injury, significant disruption of critical infrastructure, significant property damage, or infringement of fundamental rights—to the AI Office and national authorities without undue delay. This tier has been binding since August 2025 and is completely untouched by the recent amendments.\nWhere the AI Act Overlaps With DORA and NIS2\nThe intersection between these regimes is real, and most organizations haven’t mapped it yet. If a financial entity operating under\nDORA\nhas an AI system that qualifies as high-risk under the AI Act, that system is almost certainly also an ICT asset under DORA. That creates three overlapping sets of obligations at once: DORA’s ICT risk management and threat-led penetration testing requirements,\nNIS2’s\nrisk management and incident reporting requirements (for essential or important entities), and the AI Act’s Articles 9–15. A single AI incident can trigger reporting obligations under all three frameworks simultaneously, with different timelines and different regulatory addresses.\nTake an AI-powered fraud detection system deployed by a European bank. It’s simultaneously an ICT asset under DORA, a system operated by an essential entity under NIS2, and very likely an Annex III high-risk AI system under the AI Act—because credit and financial risk assessment sits directly on the Annex III list. All three regimes apply at once. Organizations treating each regulation as a separate compliance project, with a separate team and a separate testing cycle, are the ones in trouble. Organizations running one unified validation program are in far better shape.\nWhy Continuous Validation Is the Compliance Mechanism, Not Just a Best Practice\nMost compliance frameworks treat testing as a point-in-time activity: an annual pen test, a report, filed until next year. The AI Act explicitly doesn’t work that way. Article 9’s continuous risk management requirement means ongoing testing as the system changes, as new risks emerge, or as the threat landscape shifts. The Article 15 obligations—resilience against adversarial examples, data poisoning, and model evasion—aren’t satisfied by checking a box once. They require demonstrating that technical controls hold over time.\nThis is where\nAdversarial Exposure Validation (AEV)\nbecomes directly relevant to AI Act compliance, not as a stretch but as the literal mechanism. Organizations already running continuous adversarial testing against their AI systems—running adversarial inputs, attempting model evasion, testing data pipeline integrity, exercising detection and response—are generating exactly the kind of logged, timestamped validation evidence that Article 15 asks for. That’s not a compliance exercise bolted onto security operations; it’s an integrated program where the output serves as both an operational signal and compliance evidence.\nThe efficiency case is straightforward: one validation discipline, one evidence store, three sets of regulatory obligations satisfied. The reporting destinations differ—DORA incidents go to financial supervisors, NIS2 incidents go to the national cybersecurity authority, AI Act incidents go to the AI Office or national AI authority—but the underlying testing and validation practice that demonstrates compliance with all three is the same activity. “We believe our AI is robust” is not an answer a national supervisory authority’s auditor will accept. A logged record of what was tested, when, and what happened is.\nFive Things CISOs Should Do Immediately\nComplete your AI inventory and risk classification now.\nIdentify every AI system you operate or deploy, whether any fall into Annex III categories or the regulated-products route, and—just as importantly—whether any trigger Article 50’s transparency duties, since that obligation still lands on schedule regardless of the high-risk delay.\nGet Article 50 disclosures and labeling built and tested now.\nThis means chatbot notices at the right point in the interaction, machine-readable marking on synthetic audio, image, video, or text that survives your actual publication workflow (not just a demo), notices for any emotion recognition or biometric categorization system, and deepfake disclosure. If you placed a content-generating system on the market before August 2, check whether it qualifies for the narrow watermarking grace period running to December 2—but don’t assume every Article 50 duty gets that cushion, because most don’t.\nStart the high-risk documentation audit now, even with the extended runway.\nArticles 11 and 12 require documentation—technical design and validation records, automatic event logging, evidence of the risk management process—that most organizations don’t already have in shape. The deadline moved to December 2027, which is sixteen extra months of runway, not a reason to stop. Treating that time as cancellation rather than runway just means doing the same work in a much bigger hurry in 2027.\nChase down your GPAI model provider’s Article 53 documentation now.\nIf a foundation model is integrated into a high-risk AI system, Article 53 creates a pass-through obligation: the model provider must give downstream providers/integrators the documentation they need, and  must obtain and retain it. This obligation is entirely unaffected by the amendments. If your provider doesn’t have an AI Act Article 53 compliance package ready, that’s a vendor risk conversation worth having immediately—the date the AI Office’s fining power over those providers switches on.\nBuild or review your adversarial testing program, split into two tracks.\nFor GPAI systemic-risk models, this is already a live, binding obligation with real enforcement that arrived on August 2—if your organization builds or fine-tunes a model anywhere near that threshold, the work needs to be demonstrable now. For Annex III high-risk systems, Article 15 names data poisoning, model evasion, adversarial examples, and confidentiality attacks as the threat classes requiring technical measures, with a compliance deadline of December 2027. Start the pilot now rather than waiting: pick your highest-risk AI system, run a structured adversarial test against it, and document the methodology and outcomes. That’s your first compliance artifact under Article 15, and it’s worth having whether the clock reads two weeks or two years.\nWhat’s Coming in Part Two\nThis piece covers what the EU AI Act requires, how the recent amendments reshaped the August 2026 deadline, and what a CISO’s near-term action list looks like. In Part Two, coming soon, I’ll zoom out from the mechanics to the bigger picture: how the Act’s risk-based approach compares with other global AI governance efforts, and what it signals about the direction AI regulation is heading next. Stay tuned.\nTo see how the\nSafeBreach CTEM Platform\ncan help you prepare for these regulations by validating your readiness, quantifying your exposure, and proving your resilience continuously,\nschedule a personalized demo\ntoday.\nAbout the Author\nAdrian Culley\nis Head of Engineering, EMEA for SafeBreach. He has over 35 years of computer security experience, particularly specialising in security operations, artificial intelligence, offensive security, threat intelligence, and malware — in short, cyber resilience. He is a core member of the OWASP Large Language Model Top Ten risks working group.\nHe is a graduate of the Information Security Group at Royal Holloway, University of London, and an occasional visiting lecturer there. Adrian was previously a Detective with Scotland Yard, working around the world with their Special Operations Directorate, and latterly served with the Computer Crime Unit there. He has also worked directly for the UK Central Government in a global role. He worked for Palo Alto Networks for five years as a Consulting Engineer and Head of Industry 4.0. Previously, he has also worked for PwC, Trellix, Cybereason, Guidance Software, AccessData, and Damballa. Adrian has a strong background in digital forensics and has worked with government, NGO, military, intelligence, law enforcement, and commercial clients around the world.\nFrequently Asked Questions\nWhat is the EU AI Act and when does it take effect?\nThe EU AI Act (Regulation (EU) 2024/1689) is a binding EU law that applies a risk-based regulatory framework to artificial intelligence systems, similar to how the GDPR regulates data. It entered into force on August 1, 2024, with obligations phasing in over several years: prohibited practices and AI literacy requirements since February 2025, GPAI model obligations since August 2025, transparency obligations from August 2026, and the bulk of high-risk obligations from December 2027.\nWhat changed in the EU AI Act’s August 2026 deadline?\nAmendments that recently cleared the European Parliament and Council deferred the bulk of the high-risk AI obligations (Articles 9–15) for most Annex III systems from August 2, 2026 to December 2, 2027. The Article 50 transparency obligations were not delayed and took effect August 2, 2026, as did the end of the AI Office’s supervisory grace period for GPAI model providers.\nWhich AI systems are considered “high-risk” under the EU AI Act?\nAn AI system is high-risk if it’s a safety-critical component of a product already regulated under EU product safety law (medical devices, aviation, vehicles, industrial machinery), or if it falls under one of the Annex III use cases: biometric identification, critical infrastructure, education and employment decisions, credit scoring, law enforcement, migration and asylum, and administration of justice.\nDoes the EU AI Act apply to companies outside the EU?\nYes. The Act is extraterritorial. Any organization placing AI systems on the EU market, or whose AI outputs affect people in the EU, is in scope regardless of where the company is headquartered.\nWhat are the penalties for non-compliance with the EU AI Act?\nPenalties are tiered: up to €35 million or 7% of global annual turnover (whichever is higher) for prohibited AI practices, up to €15 million or 3% for violations of high-risk AI obligations, and up to €7.5 million or 1% for providing misleading information to regulators.\nWhat cybersecurity requirements does the EU AI Act impose on high-risk AI systems?\nArticle 15 requires high-risk AI systems to demonstrate accuracy, robustness, and cybersecurity, including technical measures against data poisoning, model poisoning, adversarial examples, model evasion, and confidentiality attacks—attack categories drawn from the MITRE ATLAS framework and the OWASP Top 10 for LLM Applications. Continuous adversarial testing, rather than one-time assessment, is the practical way to generate the evidence these articles require.\nYou Might Also Be Interested In\nBlog\nThe Adversary Got an AI Upgrade—Is Your Security Program Ready to Compete?\nRead More\nReport\nAI & the Vulnerability Lifecycle Infographic\nRead More\nPodcast\nVideos\nPodcast: OpenAI’s Agent Hacked Hugging Face: The First Autonomous AI Breach\nListen Now\nGet the latest\nresearch and news",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "browser",
-      "content_source_url": "https://www.safebreach.com/blog/blog/eu-ai-act-august-2026-deadline-cisos/",
-      "content_chars": 22174,
-      "content_sha256": "63ca66886fb825a0120ff6df1cdab2675430548d8ba794feaf022e5f7459cc54",
-      "content_fetched_at": "2026-08-27T00:40:09.703222+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "SafeBreach Blog",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:537292b2e4e9e3f1",
-      "kind": "publish",
-      "text": "bhis-blog published: Read article",
-      "actor": "bhis-blog",
-      "actor_url": "https://www.blackhillsinfosec.com/blog/",
-      "created_at": "2026-08-27T00:37:10.787573+00:00",
-      "html_url": "https://www.blackhillsinfosec.com/ai-in-soc/",
-      "title": "Read article",
-      "via": "llm",
-      "collect_mode": "rss",
-      "content": "This article was originally published in the InfoSec Survival Guide: Blue Book — SOC Analysts. Read it free online\nHERE\n, or grab it on the\nSpearphish General Store\n(free digital download or a $1.25 physical copy, your call).\nAs AI becomes increasingly utilized throughout the security space, it's important to consider how it should be used most effectively. We've all seen companies adding AI into every offering and function they perform, often as much as possible.\nIn security operations, this creates a divide between two types of companies:\nCompanies that rely primarily on AI to do the work\nCompanies that enable their operators to become higher performers through the use of AI\nBoth types address a clear problem: volume. Anyone who has worked in a SOC knows that alert volume results in burnout, limits the number of customers you can support, and takes time away from more important tasks. Using AI to accelerate triage of high-volume, lower-complexity alerts is a practical and effective strategy. It frees analysts to focus on the ambiguous cases that require human judgment. With the right context and data, AI can meaningfully assist in distinguishing malicious from benign activity — but \"most of the time\" isn't good enough when a miss means a breach. AI augments the analyst; it doesn't replace their judgment.\nThat said, keeping a human in the loop is critical for the fringe cases: AI hallucination, highly complex technical investigations, and even situations where attackers attempt to fool the models with injection or evasion techniques.\nLet's talk about some ways you can be the second type of company: the one that enables operators rather than replaces them.\nAI for Triage Enhancement\nUtilizing AI for enhancement of the triage process is something all security operation centers should be doing right now. While AI may occasionally be wrong or may hallucinate, anyone not taking advantage of it to work across the huge amount of data that SOCs process will fall behind their competitors.\nI'm not suggesting that an AI model should be constantly closing alerts. Instead, consider this: Could an AI elevate alerts that would otherwise not have been investigated?\nAll SOCs process swathes of low-fidelity or low-severity alerts that are usually suppressed, deduplicated, or closed out through automation. What if you could use an AI model to review these alerts that would've been closed anyway and elevate those requiring human response to higher priorities? The worst-case scenario—a false negative—isn't applicable here. These alerts wouldn't have received much attention anyway. In the ideal scenario, you could intelligently review alerts your analysts wouldn't have looked at otherwise, escalating truly concerning activity for a human to look at.\nAI for Quality Assurance\nAnother clear use case for AI in SOCs is quality assurance. Many QA checks on investigations are random, but what if you could curate a set of prompts that tasks AI with looking for common mistakes within your investigations and notifies a human to review them?\nThe AI could highlight the causes for concern, providing a starting point for the human analyst. It could even offer suggestions to both the reviewer and the analyst, making note of possible improvements. The higher quality the QA prompts, the better the feedback.\nAI for Validation\nSimilar to the first use case mentioned, AI could validate analyst investigations and look for logical gaps or potential blind spots. Effectively, it could be used to provide top cover for analysts, giving them more space to triage quicker without chasing down every lead, knowing that the model (ideally trained on past cases!) is fact-checking and logically validating their investigation, freeing them to confidently triage without second-guessing themselves.\nHuman Augmentation\nWhile AI excels at handling repetitive high-volume tasks, human expertise remains essential for complex investigations, fringe cases, and maintaining accountability. Rather than viewing AI as a cost-cutting tool to reduce headcount (or to take on many more customers with the same headcount), think of it as an investment that multiplies the effectiveness of your existing team. By strategically deploying AI to handle or fact-check routine work, you free your analysts to focus on the sophisticated threats that truly require human judgment and critical thinking.\nIf you take one thing from this article, I want it to be this:\nUsing AI to augment your operators may not show the same immediate \"return\" as replacing them, but, over time, it will increase your service quality tenfold.\nExplore the Infosec Survival Guide and more… for FREE!\nGet instant access to every issue of the Infosec Survival Guide, as well as our self-published infosec zine PROMPT#, and exclusive Darknet Diaries comics — all available at no cost.\nCHECK OUT ALL ISSUES HERE!\n← Back to blog",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://www.blackhillsinfosec.com/ai-in-soc/",
-      "content_chars": 4894,
-      "content_sha256": "f82e0409991a1c71f9190e34b95b865d3318b737496d02ba9a0b2d6dc5262f21",
-      "content_fetched_at": "2026-08-27T00:40:51.476265+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Black Hills Information Security Blog",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:264f04af52cfcbe4",
-      "kind": "publish",
-      "text": "cisco-advisory published: Cisco Advance Notification for Publication of September 2, 2026, Security Advisories",
-      "actor": "cisco-advisory",
-      "actor_url": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml",
-      "created_at": "2026-08-26T16:00:00+00:00",
-      "html_url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-f2SiMFxl?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Advance+Notification+for+Publication+of+September+2%2C+2026%2C+Security+Advisories%26vs_k%3D1",
-      "title": "Cisco Advance Notification for Publication of September 2, 2026, Security Advisories",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Cisco Security Advisory\nCisco Advance Notification for Publication of September 2, 2026, Security Advisories\nInformational\nAdvisory ID:\ncisco-sa-notice-f2SiMFxl\nFirst Published:\n2026 August 26 16:00 GMT\nVersion 1.0:\nInterim\nWorkarounds:\nNo workarounds available\nDownload CSAF\nEmail\nSummary\nOn September 2, 2026, the Cisco Product Security Incident Response Team (PSIRT) will publish advisories to disclose security vulnerability information along with fixed software releases for the following Cisco products:\nDesk Phone 9800, 7800 and 8800, and 8875 Series Software\nIOS XR Software (security hardening release)\nNexus 9000 Series Switches Silicon One\nSecure Email\nTo fully remediate vulnerabilities to be disclosed on September 2, 2026, Cisco strongly recommends that customers upgrade to the fixed software indicated in the advisories.\nFor more information about changes in Cisco PSIRT vulnerability disclosure, see\nCisco's Transition to a Risk-Based Vulnerability Disclosure Model\n.\nDetails\nUnder the Cisco risk-based disclosure process, hardening releases and other security advisories are scheduled to publish on the first and third Wednesday of each month. To help customers prepare, we provide this seven-day advance notice of upcoming security vulnerability disclosures. However, this schedule is not a final commitment of releases. If updates are delayed or unforeseen changes arise, specific products may be removed and rescheduled. Products may also be added when releases are ready ahead of schedule. The latest status is available in the Revision History section of this advance notice.\nCisco Security Vulnerability Policy\nTo learn about Cisco security vulnerability disclosure policies and publications, see the\nSecurity Vulnerability Policy\n. This document also contains instructions for obtaining fixed software and receiving security vulnerability information from Cisco.\nFor additional information on Cisco's vulnerability management, disclosure cadence, and software patching strategy, see\nCisco's Transition to a Risk-Based Vulnerability Disclosure Model\n.\nSubscribe to Cisco Security Notifications\nSubscribe\nRelated to This Advisory\nURL\nhttps://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-f2SiMFxl\nRevision History\nVersion\nDescription\nSection\nStatus\nDate\n1.0\nInitial public release.\n-\nInterim\n2026-AUG-26\nShow Less\nLegal Disclaimer\nSOFTWARE DOWNLOADS AND TECHNICAL SUPPORT\nThe\nCisco Support and Downloads\npage on Cisco.com provides information about licensing and downloads. This page can also display customer device support coverage for customers who use the My Devices tool. Please note that customers may download only software that was procured from Cisco directly or through a Cisco authorized reseller or partner and for which the license is still valid.\nCustomers who purchase directly from Cisco but do not hold a Cisco service contract and customers who make purchases through third-party vendors but are unsuccessful in obtaining fixed software through their point of sale should obtain upgrades by contacting the\nCisco Technical Assistance Center (TAC)\n. Customers should have the product serial number available and be prepared to provide the URL of this advisory as evidence of entitlement to a free upgrade.\nWhen\nconsidering software upgrades\n, customers are advised to regularly consult\nthe advisories\nfor the relevant Cisco products to determine exposure and a complete upgrade solution. In all cases, customers should ensure that the devices to be upgraded contain sufficient memory and confirm that current hardware and software configurations will continue to be supported properly by the new release. If the information is not clear, customers are advised to contact the\nCisco Technical Assistance Center (TAC)\nor their contracted maintenance providers.\nLEGAL DISCLAIMER DETAILS\nCISCO DOES NOT MAKE ANY EXPRESS OR IMPLIED GUARANTEES OR WARRANTIES OF ANY KIND, INCLUDING THE WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR USE. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, CISCO DOES NOT GUARANTEE THE ACCURACY OR COMPLETENESS OF THIS INFORMATION. THIS DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS. YOUR USE OF THE INFORMATION ON THE DOCUMENT OR MATERIALS LINKED FROM THE DOCUMENT IS AT YOUR OWN RISK. CISCO RESERVES THE RIGHT TO CHANGE OR UPDATE THIS DOCUMENT AT ANY TIME.\nCopies or summaries of the information contained in this Security Advisory may lack important information or contain factual errors. Customers are advised to visit the\nCisco Security Advisories\npage for the most recent version of this Security Advisory. The Cisco Product Security Incident Response Team (PSIRT) assesses only the affected and fixed release information that is documented in this advisory. See the\nCisco Security Vulnerability Policy\nfor more information.\nFeedback\nLeave additional feedback\nCisco Security Vulnerability Policy\nTo learn about Cisco security vulnerability disclosure policies and publications, see the\nSecurity Vulnerability Policy\n. This document also contains instructions for obtaining fixed software and receiving security vulnerability information from Cisco.\nFor additional information on Cisco's vulnerability management, disclosure cadence, and software patching strategy, see\nCisco's Transition to a Risk-Based Vulnerability Disclosure Model\n.\nSubscribe to Cisco Security Notifications\nSubscribe\nRelated to This Advisory",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http_llm_blocks",
-      "content_source_url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-f2SiMFxl?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Advance+Notification+for+Publication+of+September+2%2C+2026%2C+Security+Advisories%26vs_k%3D1",
-      "content_chars": 5427,
-      "content_sha256": "661a3b98b130e7ebf0d911c3580975e96da316077844d600d8e30f732bd57017",
-      "content_fetched_at": "2026-08-27T00:41:40.434713+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "Cisco Security Advisory",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:0f70c7a06c95efe3",
-      "kind": "publish",
-      "text": "yage-share published: 手机散热器上的 30W，是它吃掉的电，不是它搬走的热",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-26T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/tec-phone-cooler-30w-20260826.html",
-      "title": "手机散热器上的 30W，是它吃掉的电，不是它搬走的热",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "个人决策\n科研与技术前沿\n在海外安卓模拟器社区，一位玩家用红魔 10 手机运行大型 PC\n模拟器，芯片温度直接冲到了 87\n度。他特意买来磁吸散热器，通电后冷面摸上去冰凉刺骨，可运行游戏时，芯片温度毫无变化。他在\nReddit\n讨论帖\n里写下困惑：“It gets really cold, and sure, it makes the\nglass on the back of my phone cooler, but when I play the games the\ntemperatures stay the exact same with No drop at all.”\n最终他选择退货。社区热门回复调侃手机散热器是玩家买过的最大智商税，还有人在评论区吹嘘自己的散热器能结出冰块，引来围观者一句\nWtf。\n另一组公开测试呈现出完全不同的情况。\n新浪众测的横评\n记录了一台裸机小米 14 连续运行安兔兔压力测试的过程：裸机背面最高温冲到\n59\n度，第二轮测试时，手机直接提示温度过高并强行关闭程序。装上磁吸半导体散热背夹后，手机背面温度稳定在\n43 到 46\n度，压力测试顺利跑完，黑鲨散热器辅助下的跑分成绩比另外两家竞品高出约 6\n万分。这两组对立的数据都是真实的。差异不在于硬件真假，在于具体工况，以及冷量有没有真正送到发热的芯片上。\n你花 199 元买回来的小米磁吸散热背夹，盒子上标着峰值功率 30W。这个 30W\n是它从充电头抽走的电功率，并不代表它能从手机搬走 30W 的热量。\n黑鲨的官方通稿\n把这两个指标分得更清楚：黑鲨 5 Neo 散热背夹支持 15W\n满血供电功率，实际等效制冷量达\n7W。同一家厂商在同一份通稿里把两个数字分开写，带满血修饰的是输入功率\n15W。在\n京东的半导体制冷器类目\n里，在售商品达\n32 万件，头部链接积累了超过 20\n万条评价。买的人越多，参数误解就越普遍。这篇文章帮你弄清楚这些瓦数背后的实际情况、什么时候该掏钱、真正的工程代价在哪里。这是一次弄懂设备原理的梳理，不为产品站台，也不全盘否定：在特定极限场景下它确实管用，对多数日常使用则没必要。\n风扇做不到的唯一一件事：低于室温\n很多玩家挑散热背夹，愿意多付四成到一倍溢价。公开价格样本中，普通风扇散热夹约\n38 元，小米 30W 磁吸散热背夹约 199\n元。在海外市场，同品牌带制冷片款式比纯风扇版贵出 40% 到\n100%，例如黑鲨常规风扇款 FunCooler 5 在\n海外平台\n售价约\n35 美元，带制冷片的 MagCooler 5 Pro 在\n亚马逊平台\n标价达 49.99\n美元。带来这笔差价的关键，是传统风扇存在物理上限：它最多只能把物体表面吹到周围环境温度。身处\n35 度的盛夏无空调房间，风扇转速拉到极限，吹出来的风也是 35\n度，手机外壳不可能低于 35 度。\n行业内常把半导体制冷片称为 TEC，有时也叫 Peltier\n芯片。接通直流电后，它能把热量从一端强行搬到另一端，让贴着手机的冷面温度跌破周围空气温度。\n新浪众测的横评\n在 28 度室温下通电测试 1\n分钟，红魔、黑鲨、飞智三款散热器的冷面温度分别降到 4.4 度、负 4.1 度和\n2.4 度，热侧金属鳍片升温到 48 到 52 度；通电 5\n分钟后，黑鲨冷面最低达到负 4.7 度。\n天文摄影论坛的\nDIY 对照\n也记录了类似差距：加装纯风扇只降温 2.5\n度，换上制冷片后降温达到 15 度。在元器件零售渠道，一片标准的 40x40 毫米\nTEC1-12706\n制冷晶片\n挂牌价格约 20 元，封装进成品背夹后就卖出了几倍价格。\n制造低于周围环境温度的冷面，是重度玩家购买半导体散热器的关键理由。\n知乎高赞回答\n指出：散热的极限是周围环境温度，制冷却能把温度压低到环境温度以下。这种能力针对的主要是严苛场景：高温房间、长时间重度游戏、长时间户外直播，或者高强度电竞对战。如果是坐在凉爽的空调房里日常刷视频或玩轻度游戏，38\n元的常规风扇就已经够用。\n既然半导体制冷能把温度降到零下，手机为什么不直接做进机身？截至写作时，市场上没有走量智能手机内置\nTEC 制冷片。以主打性能释放的\n红魔 11 Pro\n官方页\n为例，机身内部搭载了主动液冷回路、13116\n平方毫米、把热量摊到整个背面的金属片与 24000\n转微型风扇，官方称这是全球首款量产液冷手机。手机内部散热只需把芯片温度控制在安全区间，内部金属片配合外壳散热就已足够。低于室温属于额外需求，把制冷片塞进密封机身所带来的耗电、热端排热与结露代价，在整机权衡中得不偿失。\n盒子上的 30W 是电费单\n半导体散热器工作时，热端散热片要散掉的总热量，等于从冷端搬走的热量加上制冷片自己消耗的电。\nAnalog\nDevices 的技术文章\n给出过明确的工程计算：制冷片从目标端吸走 25\n瓦热量，器件自身还会额外产生 50 瓦热量，热端散热片必须具备散掉 75\n瓦总热量的能力。\n这也解释了为什么散热背夹的热端风扇，吹出的风比手机本身还要烫得多。高负载运行的智能手机，芯片会持续发热。文中的黑鲨与小米背夹分别标注\n15 瓦和 30\n瓦输入功率，这些输入电功率最终都要由背夹热端排出。热端风扇不仅要吹走手机传来的热量，还要把背夹自己耗电产生的热量一起排入空气。\n盒子上的 30W\n是散热器从充电头吃掉的电，它能从手机真正搬走的热只有 10 到 15\n瓦\n市面上各类产品在标注功率时普遍存在混淆。\n黑鲨\n5 Neo 的官方通稿\n明确写道：产品支持 15W\n满血输入功率，实际等效制冷量达 7W，两者比值约 46%。标称\n一加 45W\n液冷散热器\n的产品，45W 指的是 USB-PD 输入供电；极客圈子里\nDIY 的 50W\n散热器\n同样需要 15V/3A 也就是 45W 以上充电头激活最高挡。在\n华强北的论坛帖\n的\nXperia 1 散热背夹选购语境中，有用户二手转述，部分几十元白牌散热器标称\n20W 实测取电不足 8W。在海外电商平台上，黑鲨 20W 款在\n亚马逊产品页\n甚至打出降温 95 华氏度也就是约 53 摄氏度的夸张话术，脱离了实际。\n部分\n选购指南类文章\n声称制冷功率直接决定降温能力，认为玩重度游戏至少需要 25W\n以上功率。这类说法把从插座吃进去的电，误当成了从手机抽走的热。平时选购时有一条粗算办法：把包装盒上标的输入功率除以二到三，作为真实搬热能力的心理预期。黑鲨\n15W 输入对应 7W 制冷量，比值约 2 倍；制冷片厂商的数据里，冷 10\n瓦热要消耗 50 瓦电，比值到 5 倍。一台标称 30W 输入的散热背夹，按 10 到\n15 瓦的搬热能力去设想它的降温效果，比按 30W 想更接近实际。\n为什么冷面冰手，CPU 不冷\n那位退货玩家遇到的困惑，很多人初次接触这类产品时都会遇到：散热器冷板摸上去明明像冰块一样凉，手机内部的芯片温度怎么降不下来？原因在于制冷背夹的导冷板只能降低紧密贴合的那一小块后盖区域，发热芯片深藏在机身内部，中间隔着导热硅脂、手机内部那片把热量摊到整个背面的金属片、金属中框以及后盖玻璃。\n热量从芯片传递到外部空气，必须穿过一整条漫长的通道：从芯片硅片出发，依次经过内部导热胶、手机内部把热量摊开的金属片、手机后盖、导热硅胶垫、散热器冷板、制冷片本身，最后到达热端散热鳍片与风扇吹出的气流。在这条热量要走的路线上，任何一个接触面贴得不紧，冷板的低温就很难传导到深层的芯片。\n一篇实测文\n测试一款 49.8 元白牌散热器时指出，冷板和手机中框之间夹着 0.3 到 0.5\n毫米的微小空隙，对热量来说像一道保温层，有实测认为这道缝隙贡献了整条热路将近一半的阻力（该数据来自网络测评，仅供参考）。权威研究同样说明了界面贴合与内部传热的重要性：\nQualcomm\n和 Stanford 的手机热管理论文\n显示内部热量扩散直接影响表面温度；而在\nSamsung\n的固态制冷冰箱项目\n中，固态接触面的传热效率也是主要工程挑战。\n热量要穿过背板、缝隙、制冷片才能到风扇，冷板和手机中框之间贴不紧，冷就传不到芯片\n外挂散热器在什么情况下才能真正发挥作用？通常需要满足两个条件：第一，手机触发了自我保护机制，芯片太烫就主动降速来防止过热，也就是通常说的降频；第二，散热器冷板与机身背面形成了平整紧密的贴合。新浪众测横评的数据展示了这一点：裸机小米\n14 在持续高负荷下背面升至 59\n度，触发过热保护中断测试；装上散热背夹后，热量顺畅导出，背面温度稳定在\n43 到 46 度，测试顺利跑完，跑分提升约 6 万分。\n2025 年\nCommunications Materials 的论文\n记录了一组更显著的对比：研究人员把集成微通道水冷的 TEC\n紧密贴合在手机背部，高强度测试中成功把手机最高表面温度从 49 度压制到 33\n度，降幅近 16\n度。虽然这项实验采用的是实验室级集成水冷循环而非消费级风冷背夹，但它清楚表明了传热界面的紧密贴合与热端排热设计，对最终降温表现有多大影响。\n社区里有人吐槽散热器是智商税，评测里又确实能测出跑分提升，这两种现象并不矛盾。分歧的核心在于具体工况，也就是手机是否真的达到了发热降频的临界点；热量传递是否顺畅，比如是否带着厚手机壳、贴合是否平整紧密；以及测量位置的区别。冷板温度、后盖红外测温、电池传感器读数与系统核心报告的芯片温度，代表的是不同位置的状态。冷板冰手只说明散热器局部在制冷，持续高负载下芯片温度降低与帧率稳定，才代表获得了真正的散热收益。\n电流越大，越不划算\n半导体制冷片还有一个反直觉的特性：并不是通的电越多，制冷效果就越好。它的净制冷能力由三件事同时决定：第一是通电后冷片把热量从一端搬到另一端的能力，这部分随电流增加大致线性上升；第二是电流穿过材料自己生出来的热，这部分随着电流平方快速飙升；第三是冷热两端拉开温差后，热量自发从热端倒流回冷端。在较低电流区间增加供电，搬运热量的能力占主导，制冷效果会变好；一旦电流超过某个平衡点，材料自己产生的热量增长得太快，继续加大电流不仅不能让冷端更凉，反而会让整个器件因为自己发热而越来越烫。\n可以这样理解：同一块半导体材料同时扮演着三个角色。它既是搬运热量的热泵，也是热量回流的通道，还是通电发热的电热丝。要搬运更多热量就得加大电流；电流流过晶体材料，必然产生随电流平方成倍增长的热量；冷端和热端连在一起，热端积聚的热量又会沿着材料倒灌回冷端。可以把它类比成一辆漏油的油罐车：多派车出动，初期运油量随着车辆增加而上升；但道路拥堵和车辆自身损耗增长得更快。超过某个平衡点，再增派车辆反而让实际送达的油量停滞甚至下降，沿途排出的废热却成倍增加。\n元件厂商的测试数据也是这个走向。\n这家厂商的技术文档\n指出：在特定温差条件下，冷端实现 10 瓦制冷量需要消耗 50\n瓦电功率；每花一度电搬走最多热量的高效工作区间，落在最大极限电流的 30%\n附近。\n关于热电制冷的技术概览\n也说明：能搬运最多热量的电流点，与每花一度电搬走最多热量的电流点，在曲线上落在不同的位置。\n部分厂商在包装盒上标出大瓦数峰值功率，是在效率更差的高电流曲线段上选了个位置。在电商平台上，同款散热背夹常常分为结冰款与普通风冷版销售。这两款产品在核心物料上往往没有本质差异，买家买到的只是设备在工作曲线上设定的挡位不同：结冰款把工作电流推入高功耗区间，让冷面在没贴手机空载时结出薄霜，代价是热端排出更多废热、散热背夹自己消耗更多电。\n同款散热器的结冰款和风冷版只差在效率曲线上的位置，结冰款把电流推到高功耗区间，热端更烫\n可结冰是卖点，结露是这个卖点的代价\n让冷板降到零度以下甚至结冰，长期是各大厂商吸引眼球的宣传卖点。电商详情页上常能看到可结冰标语，黑鲨官方也曾打出过至低降至零下\n7 度、至高降温 32\n度的话术。制造低于周围环境温度的冷面是半导体散热器的优势，但水汽结露也是追求超低温时不可避免的代价：冷面温度越低，就越接近空气的露点；冷面温度一旦跌破环境露点，空气中的水蒸气就会在冷板表面凝聚成小水珠。\n直觉上容易以为只有温度降到零度才会结出水来，物理上的露点温度往往比零度高得多。夏天从冰箱里拿出一瓶冰镇可乐，放在桌上没几分钟，塑料瓶外壁就会挂满水珠，这就是空气遇冷结露。根据\n热电制冷应用资料\n的测算，在日常室内环境中，如果室温保持在\n25 度、相对湿度为 60%，对应的空气露点大约在 17\n度。换句话说，散热器的冷板温度只要低于 17\n度，哪怕距离零度结冰还很远，周围空气中的水汽就会在冷面上凝结成水滴。\n在实际使用中，散热器表面出现冷凝水是确定会发生的现象。\nReddit\n用户的社区讨论\n提到，自己在几部手机上使用半导体背夹时接触面都出现过明显水珠，有些型号的出风口甚至会吹出微小水汽；\n一位维修师傅在帖子里转述\n自己修过多部主板生锈氧化的手机，机主反映平时长期带着散热背夹打游戏，手机此前从没掉进过水里；\n一个 B\n站维修视频的标题\n也提到散热器产生冷凝水导致 iPad\n进液。需要说明的是，来自社区与维修师傅的案例属于二手转述或视频标题层面的经验反馈，冷凝水渗入手机内部导致硬件损坏的具体概率目前尚无定论。反方的看法也有事实依据：\n知乎回答\n指出，只要手机本身的密封完好，正常使用散热背夹不会直接导致内部硬件进水损坏。\n对普通用户来说，更有实用价值的是了解水汽结露在什么条件下容易发生。在开着空调的房间里玩\n20\n分钟游戏，温差较小，结露的风险很低；如果在潮湿闷热的房间里开着最大功率连续高负载玩两小时以上，冷凝水就容易在手机后盖与散热器的夹缝处聚集。在\n社区讨论\n中有玩家指出：手机并不是真空密封的，内部空气会与外界交换，日常防泼溅不等于内部能免疫水汽结露。厂商对这个问题同样清楚：\n一项中国专利\n明确写道，制冷温度过低时，屏幕会因为散热器长期工作与手机发热在正面形成结露，影响触控操作；\n小米\n30W 背夹\n配备了冷面控温与热面温度追踪算法，新浪众测横评指出智能温控的作用正是为了避免急剧降温产生冷凝水。\n日常使用中有一套简单易行的防结露操作：留意房间的温度与湿度，心里估算一下露点，尽量让散热器的冷面温度保持在露点以上\n2 到 3\n度。如果散热器自带实时温度数显，可以根据环境变化调整挡位；如果散热器没有数显温控，在闷热潮湿的天气里，尽量避免长时间盲目开启最高制冷挡位。\n什么时候买，参数怎么看\n弄懂了背后的物理逻辑后，买不买的决定可以简化成一张清晰的对照表。如果你的使用场景是室温\n30\n度以上的高温闷热环境、连续两小时以上的高负载大型游戏、长时间不间断直播，或者高强度电竞训练：在这些严苛条件下，半导体散热背夹能有效帮手机稳住处理器频率。如果平时大多坐在凉爽的空调房里，只是玩玩轻中度游戏或刷刷视频：售价约\n38\n元的传统风扇夹就已经足够完成机身表面的热量吹拂。相比传统风扇，半导体散热器高出四成到一倍的溢价，买到的就是制造低于周围环境温度冷面这项能力。如果你平时的使用环境用不上把温度压到室温以下，多花这笔钱就换不来什么实际体验。\n挑选具体型号时，可以穿透营销宣传去看真实的参数。第一步是在商品详情页的规格表里寻找等效制冷量或实际制冷量这些指标。如果厂商没有明确标出实际制冷量，就不能仅凭外包装上的输入供电功率推算真实的制冷能力区间。愿意把\n15W 输入功率与 7W\n等效制冷量同时公开标注出来的厂商，在参数透明度上更加坦诚。\n成熟的半导体散热器会在电控上做几层保护，用买家语言读：冷面温度往下走时，功率自动跟着降，小米\n30W\n背夹的冷面控温算法就是干这个的；热面温度有算法持续追踪，积热过高时降功率或关机；冷面温度贴着测温探头闭环调节，而不是不管温度如何始终满功率运行。如果商品页只写了智能温控却没说明控什么，购买前可以向客服询问它的具体温控依据。\n回到最初关于智商税的争论：半导体散热器的作用不在于保护手机健康，它的价值是在高温高热工况下推迟芯片降速、维持稳定的性能输出。如果手机负载很轻并未触发降速保护，装上散热器能让后盖摸起来冰凉，游戏帧率却不会提高；只有在芯片面临过热降速、而且散热器冷板平整贴合机身导热路径的前提下，它才能发挥延缓降频的效果。这个小工具划不划算，取决于你是否需要低于室温这项能力。\n读完这篇文章，你可以带走一项通用的审视习惯：以后在任何电子设备上看到醒目的瓦特数字时，先在心里问一句，这究竟是它吃进去的电功率，还是它实际输出的工作功率。这个分辨习惯不仅适用于手机散热器，对于家用空调、除湿机以及各类充电设备同样适用。手机散热背夹只是把输入功率与实际输出能力的差距，直接摆在了大家面前。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/tec-phone-cooler-30w-20260826.html",
-      "content_chars": 6847,
-      "content_sha256": "aa11f00ca7387ffc8c94fb340c20c5c0ed8856497c79c10e6277cf455a093ee7",
-      "content_fetched_at": "2026-08-27T00:38:02.411083+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:8b22fff59ec0e997",
-      "kind": "publish",
-      "text": "yage-share published: 为什么你停不下来 babysit agents：不是 context 的问题，是管理的问题",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-26T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/babysit-agents-management-not-context-20260826.html",
-      "title": "为什么你停不下来 babysit agents：不是 context 的问题，是管理的问题",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI 编程\nAI Agent\n检索与知识系统\n社区里有位朋友，既要带团队又要写核心代码。每天日程排满了各种会议，只能在开会的缝隙里抓紧写上几行。前阵子他跟我们聊起近况，说自己没法把整个项目交给\nagents，大半精力全花在 babysit agents 上面。1M 的 context window\n跑不了多久就超出 30%-40% 的最佳区间，只能反复让 agent\n总结没做完的任务，接着开个新 session\n继续顶上。一整天盯着刷屏的信息流，到了下午四点左右脑壳就开始发胀。他的动手能力很强，摸索也走在很多人前面，不仅把遇到的问题摸得清清楚楚，还自己拉出了整套归因和排查清单。连这样的高手都会陷进去，说明这个问题太典型了。\n为了解决这个问题，他先把大家能想到的常规手段全试了一遍。先做上下文瘦身，清理\nAGENTS.md 和 CLAUDE.md，删掉模型升级后残留的旧 prompt，卸掉平时用不上的\nMCP 和 skills。我们在\nThin\nHarness, Fat Skills\n里详细聊过这套思路。接着他又搭了一套编排工具，让主 agent 通过 tmux\n同时调度多个 session。即便做到这个地步，主 agent\n的上下文依然迅速见底，到头来还是得靠人工频繁新开会话去接力。讨论的完整记录在\n这里\n，Superlinear\nAcademy 会员可以直接看当时的对话。\n读到这里你可能会问：大家都在为 context 发愁，凭什么说它只是表象？其实\ncontext window 本质上是一笔预算。agent\n每读一个文件、每试跑一次、每撞一次墙，以及我们每次插手纠偏并重新注入背景和状态，都在消耗这笔预算。消耗速度有多快，取决于每一轮探索有多长。如果\nagent\n目标明确、能看清自己的运行结果、能拿到即时反馈，单轮探索就会很短，很快就能收敛，窗口也就填得慢；要是缺了这三样，它在每一轮里都会四处绕路，窗口转眼就见底。所以窗口填满的速度，只是任务管理好坏的仪表盘读数，本身并不是病根。证据就在这位朋友的经历里：反复开新\nsession，无非是把仪表盘一次次拨回零刻度，只要 agent\n还在原地打转，读数依然会飞快飙升，归零仪表盘并没有改变花钱的根源。\n所以真正的解法，既不在于把 1M\n窗口继续做大，也不在于更频繁地重开会话，关键是要减少无谓的消耗。清理\nprompt\n和精简上下文确实有效，但解决的只是最后一英里的收尾工作。如果不去解决前面的管理问题，agent\n还在频繁绕路、到处试探、接连碰壁，逼得人不得不一遍遍插手纠偏。上下文塞满只是最后冒出来的症状，根子全在更前置的三项管理动作上：让模型去做静态预测、任务目标没有锁死、模型自己看不到运行结果。我们一个一个过。\n上下文维护是最后一英里的收尾动作，管理动作才是第一步\n你以为是 context\n问题，其实是管理问题\n大家习惯把力气花在上下文维护上，这种直觉特别好理解。窗口确实会填满，顺手清理一下\nprompt、做做压缩或者开个新\nsession，往往立马就能让卡顿的体感好转。但这些动作只管得了一时。重开和清理只是把消耗的读数抹平，只要干活和花钱的方式没变，跑不了多久上下文照样会迅速见底。想把无谓的消耗真正降下来，关键得换个视角，看看我们平时是怎么给它派活的。\n想理顺这套逻辑，有个直观的参照：把 agent\n当成团队里新来的工程师。平时你希望老板怎么给你交待任务，你就怎么给 agent\n提要求。靠谱的交接从不会只扔下一句你把这个搞定就甩手不管，总要讲清楚交付什么、边界在哪、怎么才算做完。给\nagent 分配工作，道理完全相通。\n接回开头的预算框架来看，静态预测、目标没锁、结果不可见这三个管理缺口，正是无谓花钱的三个地方。让\nagent\n静态预测，它拿不到及时反馈，只能读更多代码到处硬猜，搜索空间怎么也缩不小；目标没锁，它每轮都要重新琢磨你到底要什么；它看不到自己的运行结果，遇到问题只能跑来问你，人就成了反馈回路。管住这三样，就是在直接缩短每一轮探索的长度。这位朋友在\ncontext 侧做的两个实验，恰恰把症结逼了出来。他给 agent 写 prompt\n时手打了五条背景，其中四条一字不差就躺在他自己的 wiki 里，这套 wiki\n是他搭的 observation agent\n每天自动沉淀出来的。管理动作他一样没落下，可他拿真实 prompt 去查，发现主\nagent 翻不出 wiki 里的东西，每次还是得事无巨细重新交代一遍；前面讲到的\ntmux 编排实验也是同样的结果，主 agent\n的窗口照样迅速见底。做了管理和让管理起作用之间，差的不是模型，是把回路闭上这一环。这一环还是管理动作，补不上它，人还是得跟在后面操心。\n反过来，只要管理动作到位，效果就大不一样。他在项目做到一半停下来，重新定义了\ngoal 和验证方式，之后 agent\n回头自己去写测试，自主性明显提了上来，这一步的细节我们后面会展开。我们自己也有过一样的经历：前段时间做一个复杂的社区后台，前期探索非常\noverwhelming，跟 AI\n对话只会发现更多问题，花了好几天才把设计定型；设计一定型，下面就简单了，设一个明确的\ngoal 让 AI\n自己跑，两三天就做出来了。这些虽然都是真实的案例观察，没有做严格的受控实验，但方向是一致的：发生改变的都是管理动作，模型还是原来的模型。\n在沉淀 context\n这件事上，这位朋友下的功夫其实很深，手头同时跑着两套系统。一套是他自己搭建的\nobservation agent，每天自动抓取 session 里的技术细节，沉淀出了 18 页\nwiki 和 1418 行 index。他在采集端做得非常扎实，可惜主 agent\n平时从不去查，路由上少了一点拨。另一套是 harness 自带的\nmemory，按工作目录各自切片，机器上 22 个 store\n各管各的，跨仓的知识没有安放的去处；后来尝试把工作区设到父目录统一管理，结果父目录的\nstore\n几乎是空的。后来他主动调整策略，把核心知识收拢到自己的代码仓库里，只把\nharness 里的记忆作为检索指针。这套方案我们在\ncontext\ninfrastructure\n开源仓库里放出了公开版本，AI Builders 的 Module 2 和\nModule 3\n也梳理过私有上下文的组织方式与人机分工边界。如果想看团队场景下的做法，可以参考\n团队中共享\nAI skills 的原则与方法\n。打理上下文属于打基础的工作，但要想摆脱\nbabysit，关键还要靠更前面的管理动作。\n一句话核心判断：babysit 的根源在管理流程，不在模型能力；做好 context\n维护只是打扫战场，解决不了源头问题。\n别让它静态预测，给它动态反馈\n很多团队的云原生环境和 CI/CD\n流水线里，都藏着大量只有踩过才知道的暗坑。这位朋友最开始把代码库全量开放给\nagent，代码都在那儿，按理它光看现有配置就能把潜在问题全扫出来。大家刚开始用的时候往往也是这种第一反应，但这其实默认了模型拥有超常的静态推演能力。\n真人排查这种故障，通常也要靠反复提交构建、看报错日志、对照源码，一点点把坑踩明白。AI\n的学习路径也是一样的，同样需要经历撞墙、拿到反馈、分析归因，才能建立起靠谱的认知。只让它干看代码就凭空猜出各种异常场景，往往超出了模型的能力范围。退一步说，哪怕未来模型推理能力更强了，这种硬猜的方式我们也不推荐。我们写代码都有体会：干瞪着屏幕找\nbug，远不如挂上调试器、跑个测试用例把问题逼出来轻松。只要有条件做动态验证，就别让\nagent 闷头做纯静态预测。\n更接地气的做法，是顺着具体任务帮它搭起正向反馈。先让 AI 去读历史的\nCI/CD\n失败日志，对照源码把每次出错的原因弄明白，再把踩坑记录、背后机理和解法沉淀成文档。落到实际操作上，有两个容易掉坑的地方，需要搭配对应的管理手段。\n第一个坎是它容易把规范抛在脑后。文档写好之后，主 agent\n转头可能就忘了看。这时候需要通过静态注入或者交互提示把它拉回来。如果用\nClaude Code，可以在根目录的 CLAUDE.md 里加一条规则，提醒它排查 CI/CD\n问题时先看指定目录的避坑文档；或者在每次布置任务时，顺手带上一行提示，让它对着现成文件展开排查。\n第二个坎是上下文容易塞爆。面对几百条构建日志，单个 agent\n很容易在海量信息里迷失，跟狗熊掰棒子似的，看到后面就把前面的东西丢了。更可靠的办法是开并发子任务，让每个\nsub-agent 分工精读比如 10 个 job，把提炼出的经验写成简报，最后再由主\nagent 统一汇总。Claude Code 的 dynamic workflow\n就很适合干这个，能自动编排调用链路，让多个 sub-agent\n各自提炼再汇总结果。\n教训从撞墙到日志到文档逐级蒸馏，主代理只读汇总结果\n这跟现实中带实习生完全是一个道理。带新人联调流水线，除了给看代码，你还会给他配上测试工具；让他把踩过的坑写成工作手册；平时时不时提醒一句，让他按规范执行；如果手头活实在太多，就安排秘书团分头处理，或者写个脚本跑批处理，帮他把脑子腾出来。\n一句话核心判断：agent 搞不定没有测试过的暗坑；给它动态反馈并沉淀\nSOP，远比直接甩给它一堆权限管用得多。\n你自己都没想清楚，它猜什么\n很多时候活干不完，问题出在需求边界没划清楚。要是你自己都不知道最终要什么，agent\n就只能在那瞎猜。这就像产品经理甩过来一份粗糙的需求，中途天天推倒重来，开发团队不仅干得难受，效率也会直接垮掉。\n有人可能会犯嘀咕：如果每一步都要人先想得一清二楚，还要 AI\n干什么？其实 agent\n不光能跑腿写代码，还能帮我们理清架构思路。拿这位朋友把黑客松原型迁移到\nKubernetes 集群的经历来说，整个协作大致分成了三步。\n第一步，让 agent\n摸清现有代码，并给它相应权限去真实调用服务。它可以通过 Slack API\n或者浏览器自动化来模拟用户操作，直接在真实环境里跑通逻辑。这一步的目标是产出两份文档：一份定义行为的\nPRD，一份决定设计的 RFC。AI\n写出来的文档往往又臭又长，硬着头皮通读太耗精力。你可以明确要求它以低认知负荷的形式汇报，直接列出核心结论、潜在风险和需要你拍板的关键项。甚至可以让它顺手生成一个带图表和卡片的轻量网页，直观呈现系统状态。每个人习惯的信息密度不一样，让\nagent 配合你的阅读习惯，本来就是它的强项。\n第二步，拿着前面理出的文档做定向沟通。你可以从一句明确的目标开始：把这个黑客松原型改造成生产级服务并部署上线。接着跟\nagent\n一起讨论取舍，砍掉哪些多余功能、保留哪些核心逻辑、加上哪些安全边界，再把这些讨论落成具体的技术决策。你甚至可以把喜欢的汇报格式写成一份固定文档，以后直接让\nagent 照着做。cognitive bandwidth\n是你最稀缺的资源，没必要逼自己去啃冗长晦涩的文字，多让工具来适应你的节奏。\n第三步，定死最终的验收标准。要是只停留在前两步，整个流程依然是个开环：agent\n说自己做完了，你还得四处核对排查，反倒成了给它跑腿的人。拉起闭环的关键，在于把成功状态定义得清清楚楚：哪些功能不可妥协，哪些坏味道坚决不能有。抓住核心链路并覆盖关键场景，只要这些硬指标全跑通，你就有八九成把握东西能用。把标准定死之后，agent\n就能在你睡觉时全天候自主试错，靠密集的报错反馈迅速收敛问题。\n第二轮讨论还逼出了一个关键细节：临时做的可视化网页和正式文档到底是什么关系。AI\n生成的图表网页只是个临时视图，用来帮你快速看懂和拍板；真正可靠的单一事实来源，依然是那份严谨的\nMarkdown 文档，讨论中敲定的修改必须同步写回文档里。\n还有一个更关键的管理习惯：手里要有一份简明扼要的需求底稿。AI\n写出的长篇大论通常没人逐行细看，里面塞满了各种想当然的默认配置。如果不把这些没验证过的细节清理掉，agent\n后面写代码就会不断给自己加戏，加进一堆多余的限制，代码不知不觉就跑偏了。这位朋友在项目做到一半时，主动停下来重新对齐目标，把原先臃肿模糊的说明收拢成两层清晰的目标。很多项目之所以烂尾，就是因为没人愿意停下来重新校准方向。我们需要亲自审定一份极简文档，只写死不可碰触的底线原则，给后面的实现划好红线。\n这跟当主管带团队是一样的。管理者不用去啃下属写的每一页草稿，下属负责把关键信息提炼清楚来汇报，主管负责权衡取舍、把控安全底线、纠正方向偏差，搭起一套不用时刻盯梢也能自己跑顺的闭环机制。\n一句话核心判断：目标悬而未决时，agent 的每一次偏航都在消耗你的\ncontext；一份亲自审定的极简需求，胜过十轮发散的头脑风暴。\n它看不到自己的结果，就永远在开环\n高效协作的核心在于杠杆：花 5% 的精力拿到 100% 想要的结果。这 5%\n真正花在刀刃上的动作，就是让干活的人清楚知道进展顺不顺利、有没有做对。定好交付边界很重要，但还有个前提同样不能少：给了验收标准之后，agent\n手里有没有工具去验证自己的活干得怎么样。\n要是 agent 连看 CI/CD\n日志的权限都没有，就拿不到详细的报错堆栈。这时候哪怕你催它把构建跑通，它对着红红绿绿的状态图标也摸不着头脑，没办法自己顺着线索去改错。\n开环里人沦为瓶颈，闭环里人只做验收\n所以在动手之前，先要把路上的绊脚石扫清，算清楚模型自己验证时需要哪些权限和接口。要是出于安全考虑不能直接给线上环境，可以搭一个高度仿真的沙箱给它折腾。给\nagent\n一个安全又真实的操作空间，让它能凭着客观指标看懂任务状态，拿到详细的报错信息来对齐差距。\n在推进项目时，这位朋友也碰到了几处必须人工介入的卡点：代码合并要别人审批、数据库权限要找专人开通、GitHub\nApp 得手动安装、Slack bot 的 token 要存进\n1Password。他在项目做到一半时敏锐地抓住了这些阻碍，把目标和检验手段理顺，列出了一份专门由人工操作的待办清单，把这些环节单独隔离出来。很多人直到项目做完都没意识到这一层。把自动化和人工干预的分工界限划清楚，省去了假装全自动带来的脱节，agent\n的自主闭环才能顺畅运转起来。\n一句话核心判断：验收标准给出了目标，结果可见性带来了自检能力；没有及时的反馈通道，人就只能沦为到处跑腿的检查员。\nAI 放大杠杆，也放大负担\n整个项目最终花了 2\n周时间顺利上线，全程都是抽开会的缝隙，外加一个晚上的加班搞定的。面对高密度的信息吞吐，这位朋友坦言脑子确实累得不行，甚至一度怀疑是不是用\nAI 反倒加重了负担。\n其实这种心智消耗在以前自己写代码时也一样存在。需求推导、架构取舍、边界验证，这些费脑子的事一件也少不了，只是以前开发周期拉得很长，时间把思考压力给摊薄了。现在\nAI\n既能当工程师又能当架构师，还能兼职秘书，把整个开发周期压缩了一大截。它成倍放大了产出效率，也把高密度的思考负荷一下子堆到了面前。能不能适应并驾驭这种高频协作的节奏，正是\nAI 人才竞争的一个方向。\n如果放到团队层面看，搭沙箱机制是个特别务实的切入点。现在转型 AI\nnative\n是个近似政治正确的说法，每个老板都想要，但很多时候面对的是脏活累活，卡在组织架构的改变上。给\nagent\n搭一套好用的运行环境和安全沙箱，是纯粹的工程技术活。它不用动组织架构，也不用改现有的绩效分配，做起来阻力小，又能实实在在地解决问题。具体怎么落地，可以根据各个团队的情况因地制宜。\n回到最开始的问题：怎样才能让 agent\n真正独立干活，把我们从没完没了的盯梢里解脱出来？关键就在这三件事：提供动态测试环境，让它通过报错把踩坑经验沉淀成工作手册；把交付边界界定清楚，用一份亲自过目的人工极简需求把好关；打通运行结果的可见性，让开环的人工核对变成闭环的自主校验。这套思路跟带初级工程师完全相通。当敲代码的基础能力越来越普及，怎么把任务交代清楚、怎么划定边界、怎么做好验收，反倒成了拉开身位最重要的真本事。\n一句话核心判断：摆脱没完没了的盯梢，关键在于把自己从一线执行者转变为出题和定规矩的人，别总想着换个更聪明的模型来解决问题。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/babysit-agents-management-not-context-20260826.html",
-      "content_chars": 6685,
-      "content_sha256": "587746998b3b2ac69698aecb50ab8d0b64f0de64e4191041c5edcf45f1669cd4",
-      "content_fetched_at": "2026-08-27T00:38:02.624056+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:fff2fd0a62220b21",
-      "kind": "publish",
-      "text": "yage-share published: 用过就要说：加州律考 AI 出题立法，人审不豁免",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-25T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/ab1651-bar-exam-ai-disclosure-20260825.html",
-      "title": "用过就要说：加州律考 AI 出题立法，人审不豁免",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "治理与合规\n个人决策\n2025 年 2\n月的加州律考：23 道没人报告的 AI 考题\n如果你在 2025 年 2\n月参加加州律师考试，会遇到一场大混乱。这是加州律考几十年来首次尝试线下与远程混合交付，结果\n开考即崩溃\n：考生被踢出答题系统、界面卡顿报错，试题里甚至夹杂着错别字和逻辑问题。这场事故的导火索是一笔财务缺口。加州律师考试由\nState Bar of California\n主办，它是加州最高法院下属的行政机构，每年开考两次。以往加州和美国多数州一样，多选题采购全美统考机构\nNCBE，即 National Conference of Bar Examiners，的 MBE 多选题联考。2024\n年，State Bar 出现\n2200\n万美元的基金赤字\n，砍掉 NCBE 多选题合同，花 825 万美元雇 Kaplan\n出题，Meazure Learning 负责考试执行。\n除了系统故障，随后浮出水面的考题来源引发了更大的公信力危机。State Bar\n事后披露的清单显示，整场考试 171 道计分多选题中，100 道采购自 Kaplan，48\n道抽取自针对非正规法学院学生的一年级法考，俗称 baby bar，其余 23 道则由\nACS Ventures 动用 AI 直接生成。ACS Ventures 是 State Bar\n雇佣的心理测量服务商，职责是利用统计学方法评估试卷信度并划定及格线。一个本该独立把关考题质量的裁判角色，却把用\nAI 生成的 23 道题塞进了正式考卷，且事前\n没有向考试委员会、最高法院或公众做过任何报告\n。\n这直接违背了委托合同的约定。Kaplan 与 State Bar\n的协议白纸黑字写明，生成式 AI 的参与度应当保持\nde\nminimis\n，也就是尽可能低，AI\n工具只能用于增强既有人类作品的有限部分。\n4\n月 State Bar 向加州最高法院提交的文件\n进一步证实，ACS 拿到 AI\n生成的草稿后，只做了初步的格式与体例调整，既没有校对法律内容的准确性，也没有排查偏见或评估是否适合测试入门阶段的律师。尽管\nState Bar\n坚称所有题目最终都经过内容验证小组和学科专家的审查，合并多选题信度高于\n0.80 的心理测量目标，并否认存在利益冲突，但加州参议院司法委员会依然在\n立法分析报告\n中将这次考试定性为\nunmitigated\ndisaster，即彻底的灾难，提案人办公室也明确指出多道考题在呈现给考生之前没有经过执业律师的实质审阅。\n这场风波以密集的补救和诉讼收尾。State Bar 安排了约\n85\n名受影响考生在 3 月补考\n；复查发现 431\n名未通过考生的作答笔记存在系统导出缺陷，随后直接改判其中 8\n人合格通过；加州最高法院紧急介入，裁定 2025 年 7\n月的考试全部回归线下并恢复采购 NCBE 题库；考生针对 Meazure\n发起的集体诉讼在\n2026\n年 8 月达成和解\n。\nAB 1651 是 2025 年 2\n月加州律考事故的直接立法后果\nAB 1651\n到底说了什么：人审不豁免，也没有罚则\n面对这场考试公信力危机，加州立法机构选择出台一部披露法案，没有下达技术禁令。\nAB\n1651\n编入加州 2026 年法规汇编 Chapter 116，由众议员 Diane Dixon\n提出，\n2026\n年 8 月 22 日获州长签署\n，在加州《商业与职业法典》中新增 § 6060.15\n条款，定于 2028 年 1 月 1\n日正式施行。整个立法过程未遇任何正式反对，加州众议院最终以 72 比 0\n全票通过。\n法案的核心逻辑建立在四个紧密咬合的条款上。在定义端，§ 6060.15(a)(2)\n将 AI 生成内容界定为由生成式 AI\n全部或部分生成的视觉与文本内容，部分生成也算，没有设定任何比例门槛。在适用范围上，§\n6060.15(b) 与 (c) 将披露对象划定为两类资产：一类是 State Bar\n自主开发或明确指令开发的所有考题、实务技能测试、标准答案与评分细则；另一类是\nState Bar\n编制、背书、发布或分发的官方备考材料，涵盖样题、范文、复习大纲和解析。在披露形式上，§\n6060.15(e) 要求正式考试的 AI 披露必须提前 60 天挂在 State Bar\n官网上，备考材料则必须在封面直接印制披露声明。整部法案最核心的规定集中在\n§ 6060.15(d)，法条原文只有一句话：\nSubdivisions (b) and (c) apply regardless of whether the artificial\nintelligence-generated content is revised or reviewed by a natural\nperson.\n这条规则确立了一个清晰的原则：\n无论 AI\n生成内容后续是否经过自然人的修改或审核，披露义务都适用\n。换句话说，人类专家的校对和重写无法洗掉素材原初的\nAI 来源标记。\n与此同时，这部法律的制度边界同样保持克制。整部法案没有设置罚款等处罚条款，没有建立专门的行政执行机制，也没有赋予考生私人诉权。在法案起草的审议过程中，其覆盖范围还做过一次\n收窄\n：State Bar\n曾向委员会表达担忧，认为自己无从获知外部承包商（例如此前 Kaplan 交付的\n100 道题）在内部作业时是否动用了 AI\n工具，若将这部分内容也纳入强制披露将难以执行；提案人据此接受修正，将法案限定在\nState Bar 主导开发的材料之内。\nAB 1651 还承接了一部前导立法。早在 2025 年 10 月 6 日签署的\nSB\n253\n法案中，加州就曾原则性要求考试委员会，只要出题或评分环节动用了\nAI，就要提供通知，但通知的主体、时间窗口和具体形式都没有写清楚。AB 1651\n补齐了这些操作细节：明确了官网和封面等公开载体，锁定了考前 60\n天的交付节点，将监管延伸到备考材料，并加入了人审不豁免的核心准则。\n同一个行业的两套账：执业端人审免责，考试端人审不洗来源\n同一行业里，人审在执业端吸收责任、在考试端洗不掉来源\n把视线从准入考试转向律师的日常执业，同一个行业在对待 AI\n时运行着截然不同的规则。在执业端，律师使用 AI\n工具无需向客户或法庭主动披露。美国律师协会在 2024 年 7 月 29 日发布的\nFormal\nOpinion 512\n确立了这一基准：律师可以借助生成式 AI\n辅助工作，前提是对输出内容进行独立核验并保留专业判断。整份伦理指引要求律师为最终提交的文书承担完全责任，没有施加任何关于使用\nAI 的常规披露义务。\n司法层面的惩戒案例印证了这种责任归属机制。在纽约南区联邦法院审理的\nMata\nv. Avianca\n案中，代理律师在提交给法庭的答辩状中引用了 6 个由 ChatGPT\n虚构的判例，主审法官 Castel 依据联邦民事诉讼规则 Rule 11 对其处以 5000\n美元制裁。法官在裁定中指出，诉讼规则要求的合理调查义务不能转包给技术工具，律师未做核验便签字提交构成过错。法庭惩戒的是未履行核验职责，使用\nAI\n工具本身并不受追究。人类律师的签字确认，完成了对工具输出的责任吸收。\n将两端的规则并列，反差清晰可见。在日常执业中，行业奉行使用、核验、负责的逻辑，人类专业人员的把关免除了披露义务；在准入考试中，加州\nAB 1651 明确只要生成题目动用了 AI\n就必须事前公示，人类专家的修改和审查无法洗掉原初的来源标记。同一个专业领域，在日常生产与准入把关两端切割出了走向相反的问责路径。\n准不准用，和用了要不要说\n观察各行业应对 AI\n的治理规则，不能把它们压进一条单向递增的严格度阶梯。全面禁用和强制披露回答的是两套独立的问题：第一把尺子衡量准不准用，第二把尺子衡量用了要不要说。本文使用的\nT0 到 T4\n档位标签，只是梳理机制逻辑的参照坐标，不属于任何官方分类，也不构成单一维度的严格度排序。\n禁用和强制披露分属两把尺子：左轴准不准用，右轴用了要不要说\n第一把尺子是准不准用。处在\nT0（承诺不用）\n的机构要求产出主体出具书面保证，确认全程未接触 AI 工具。例如\nASME\n期刊\n要求投稿作者确认 AI\n未参与原创学术内容的开发；中国软件著作权登记自 2026 年 3 月 15\n日起要求申请人手写抄录未使用 AI 的承诺，失实则列入失信名单。处在\nT1（全面禁用）\n的机构在制度上直接排除 AI\n介入。全美统考机构 NCBE 在\n2025\n年夏刊主席信\n中声明，现行律考与 NextGen UBE\n的正式考题开发及评分均不使用 AI；\nCFA\nInstitute\n也写明，不会使用 AI\n独立生成认证内容、评卷或做出高利害认证决策。\n第二把尺子是用了要不要说，只在允许使用 AI 的前提下才展开。处在\nT2（使用加负责、不披露）\n的是当代专业执业的主流模式：可以用\nAI，但必须以人类专业判断审查并承担全部责任，通常无需对外披露。律师行业已由\nABA Formal Opinion 512 定调；\n北美精算师协会\n也指出，精算师未经核验不能拿模型结论推卸责任，执业责任锁在持证人员身上，并不向客户设定通用的\nAI 披露义务。\nT3（使用加条件披露）\n允许使用\nAI，只在特定条件触发说明，且普遍设有人审豁免。加州\nAB\n3030\n规定，生成式 AI\n生成的涉患者临床沟通须附免责声明，但内容经过持证医疗人员阅读审核后，披露要求便自动免除。\n欧盟《人工智能法案》第\n50 条第 4\n款\n对公共利益文本同样规定，经过人工审核或编辑控制且有主体承担编辑责任，即可免除披露。\n第二把尺子的另一端是\nT4（使用加强制披露、人审不豁免）\n：用过就要交代，人类审核抹不掉这项义务。学术出版界自\n2023 年起多落在这里。国际医学期刊编辑委员会\nICMJE\n要求作者投稿时披露 AI 辅助技术的使用；\nICLR\n明确任何大语言模型的使用均须披露；多数学术规范对基础语言润色予以豁免，\nACM\n在 2026\n年 5 月调整后，写作辅助不再强制披露。法定对照里，中国\n《人工智能生成合成内容标识办法》\n自\n2025 年 9 月 1 日起施行，全文未设人工审核免责条款；加州\nAB\n2355\n要求含有 AI 生成内容的政治广告必须标注。\n把加州 AB 1651\n放进这两把尺子里，位置就清楚了。资格认证考试空间里，NCBE 与 CFA\n走第一把尺子下的 T1，在出题与评分流程中排除 AI；\n美国医师执照考试\n、注册会计师考试、项目管理专业人士认证与注册护士执照考试均无法定\nAI 出题披露要求。加州 AB 1651 走第二把尺子下的 T4：允许使用\nAI，但只要律协主导使用就必须公开披露，后续专家审核无法免除。它不是全球第一个\nT4，学术出版 2023 年已先行；它是资格认证考试空间里的第一个法定\nT4，并且在 T4\n内部比学术主流更紧，既没有微量使用豁免，也没有基础语言文字润色免责。\n写内部 AI 政策：先分清\nGate 和 Practice\n给技术团队起草内部 AI\n政策时，最容易出现的偏差是试图用单一规则覆盖所有工作流。理顺政策的第一步，是把工作流区分为日常业务生产\nPractice 与准入认证关卡 Gate。\nPractice 占了工程师大部分常规时间：在 Pull Request 里用 Copilot 或\nCursor 补全代码、起草内部\nRFC、总结工单，或迭代具体功能。这里核心是交付物质量和明确的责任人，对应\nT2：可以用 AI，但必须人工核验，由你对合入的结果负责，和 ABA Formal\nOpinion 512 对律师日常执业的界定同构。这类工作流不必给每个文件盖上 AI\n声明章。\nGate 是组织对外部或对内部做认证的节点：对外发布 Launch Notes、准备\nSOC 2\n审计材料、发布带评测数字的模型卡片、写代表官方立场的技术博客、招聘用的\ntake-home、晋升材料。这里材料来源和机构公信力是核心，事后人工审阅抹不掉生成印记。最常见的失误是把\nPractice 的直觉套到 Gate 上，以为复核过就可以不提 AI。这正是加州 AB 1651\n在律考出题端否掉的路径。\nGate 流程必须先选一把尺子：T1 禁用，这份认证材料里不用 AI，像 NCBE 与\nCFA 在高利害认证里的做法；或 T4\n允许用但必须声明，且人工核验不免除披露。若选了\nT4，政策只需再拧两个旋钮。触发门槛：全量使用都声明，还是仅实质角色才触发，拼写语法工具是否豁免。人审效果：审核后可免披露，如加州\nAB 3030 或欧盟人工智能法案第 50 条第 4\n款；还是核验后仍须保持来源透明，如加州 AB 1651 或中国内容标识办法。\n起草或修订团队的 AI 政策时，先把交付物盘点一遍：大多数常规研发划进\nPractice，放手使用、合并者负责；直接关系到外部背书和内部认证的资产单独划进\nGate，按需配置 T1 或\nT4。分清这两套问责逻辑，日常工程推得动，对外承诺也站得住。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/ab1651-bar-exam-ai-disclosure-20260825.html",
-      "content_chars": 5404,
-      "content_sha256": "91b88731aca086094cd09c8d682adfc2bf698ea5fc555aeb8f4fb36189568d00",
-      "content_fetched_at": "2026-08-27T00:38:02.812914+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:8e10e0aa9ff27012",
-      "kind": "publish",
-      "text": "forti-ir published: Vulnerability in OpenSSL library",
-      "actor": "forti-ir",
-      "actor_url": "https://fortiguard.fortinet.com/rss/ir.xml",
-      "created_at": "2022-04-01T00:00:00-07:00",
-      "html_url": "https://fortiguard.fortinet.com/psirt/FG-IR-22-059",
-      "title": "Vulnerability in OpenSSL library",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "CVSSv3 Score:\n7.5\nA security advisory was released affecting the version of OpenSSL library used in some Fortinet products:CVE-2022-0778:The BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. Internally this function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Since certificate parsing happens prior to verification of the certificate signature, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters.Thus vulnerable situations include:TLS clients consuming server certificatesTLS servers consuming client certificatesHosting providers taking certificates or private keys from customersCertificate authorities parsing certification requests from subscribersAnything else which parses ASN.1 elliptic curve parametersAlso any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue.In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However any operation which requires the public key from the certificate will trigger the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature.This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022.Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc).\nRevised on 2026-08-27 00:00:00",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://fortiguard.fortinet.com/psirt/FG-IR-22-059",
-      "content_chars": 2074,
-      "content_sha256": "e25117c239b1688ee1f995296187c3078148bd32b46c53d0e2defe374bfcdc22",
-      "content_fetched_at": "2026-08-27T00:41:42.117023+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "FortiGuard IR Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-08-27",
+  "collect_window": {
+    "start": "2022-04-01T07:00:00+00:00",
+    "end": "2026-08-27T00:37:10.787573+00:00",
+    "hours": 38609
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "33027437280",
+    "commit": "a502415"
+  },
+  "stats": {
+    "total": 8,
     "by_kind": {
       "publish": 8
     },
@@ -225,9 +31,653 @@
       "yage-share": 3,
       "forti-ir": 1
     },
+    "failed_lists": [
+      "lorenzomeacci"
+    ],
+    "sources_ok": 50,
+    "sources_failed": [
+      {
+        "id": "lorenzomeacci",
+        "error": "html_fetch:[Errno 101] Network is unreachable"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 9,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 15,
+      "calls": 15,
+      "prompt_tokens": 18575,
+      "completion_tokens": 7976,
+      "total_tokens": 26551,
+      "prompt_cache_hit_tokens": 11648,
+      "prompt_cache_miss_tokens": 6927
+    },
     "by_content_status": {
       "failed": 1,
       "ok": 7
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:6151aa44942637fe",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "Il2cpp Dumper Frida",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/757918-il2cpp-dumper-frida.html",
+      "text": "unknowncheats-ac published: Il2cpp Dumper Frida",
+      "at": "2026-08-27T00:37:10.787573+00:00",
+      "external_id": "a:6151aa44942637fe",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/757918-il2cpp-dumper-frida.html",
+      "title": "Il2cpp Dumper Frida",
+      "content": "unknowncheats-ac published: Il2cpp Dumper Frida",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/757918-il2cpp-dumper-frida.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-27T00:37:54.534271+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-27T00:37:10.787573+00:00",
+      "collected_at": "2026-08-27T00:37:10.787573+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/757918-il2cpp-dumper-frida.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "Il2cpp Dumper Frida",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/757918-il2cpp-dumper-frida.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:6fc85020aad36d8b",
+      "who": "safebreach-blog",
+      "who_url": "https://www.safebreach.com/blog/",
+      "action": "publish",
+      "target": "Thought LeadershipAug 25 , 2026The EU AI Act’s August 2026 Deadline: What Actually Changed—and What Didn’tRead More",
+      "target_url": "https://www.safebreach.com/blog/blog/eu-ai-act-august-2026-deadline-cisos/",
+      "text": "safebreach-blog published: Thought LeadershipAug 25 , 2026The EU AI Act’s August 2026 Deadline: What Actually Changed—and What Didn’tRead More",
+      "at": "2026-08-27T00:37:10.787573+00:00",
+      "external_id": "a:6fc85020aad36d8b",
+      "url": "https://www.safebreach.com/blog/blog/eu-ai-act-august-2026-deadline-cisos/",
+      "title": "Thought LeadershipAug 25 , 2026The EU AI Act’s August 2026 Deadline: What Actually Changed—and What Didn’tRead More",
+      "content": "Aug 25, 2026\nThe EU AI Act’s August 2026 Deadline: What Actually Changed—and What Didn’t\nRecent amendments pushed the bulk of the high-risk AI obligations back more than a year. The transparency rules and GPAI enforcement machinery are still landing on schedule. Here’s five things security leaders need to do now.\nSummary\nThe EU AI Act is binding law, not guidance, with penalties up to €35 million or 7% of global annual turnover.\nNew amendments pushed the bulk of the high-risk AI obligations (Articles 9–15) from August 2, 2026, to December 2, 2027.\nNot delayed: Article 50 transparency rules (AI disclosure, synthetic content labeling) and the end of the GPAI enforcement grace period both still landed August 2, 2026.\n“High-risk” covers Annex III use cases—biometrics, hiring, credit scoring, law enforcement, and more—and applies to any company whose AI affects people in the EU, regardless of where it’s headquartered.\nArticle 15 requires proof of resilience against attack classes drawn from MITRE ATLAS and the OWASP LLM Top 10; continuous adversarial testing, not one-time assessment, is how CISOs generate that evidence.\nAuthor:\nAdrian Culley, Offensive Security Expert & Senior Sales Engineer\nThe\nEU AI Act\n, formally Regulation (EU) 2024/1689, applies a risk-based regulatory framework to artificial intelligence systems, in much the same way the\nGDPR\napplied a risk-based framework to data. The underlying logic: some AI systems create genuine risks to safety and fundamental rights, and those risks need to be managed, evidenced, and audited—not just declared.\nWhat sets it apart from prior AI governance efforts is that it’s binding law with penalties attached, not a set of voluntary principles. The penalty structure has three tiers.\nThe top tier, covering prohibited AI practices—the things banned outright—carries fines of up to €35 million or 7% of global annual turnover, whichever is higher. That 7% ceiling is notably steeper than GDPR’s 4%.\nThe second tier, for violations of the high-risk AI obligations, is up to €15 million or 3% of turnover.\nThe third tier, for providing misleading information to regulators, is up to €7.5 million or 1%.\nFor context, a company with €10 billion in global revenue is looking at up to €300 million in potential exposure at the second tier alone.\nWhat Landed on August 2, 2026 (and What Just Moved)\nThe Act entered into force on August 1, 2024, and its obligations have been phasing in ever since—which has led some organizations to assume nothing is actually enforceable yet. That’s not the case. Several obligations have already been live for over a year:\nFebruary 2, 2025:\nThe ban on prohibited AI practices took effect, along with AI literacy requirements. Prohibited practices include social scoring, manipulative AI, workplace emotion recognition, and biometric categorization based on sensitive characteristics like race or sexual orientation. Any organization still running these has been in violation for well over a year.\nAugust 2, 2025:\nGeneral-purpose AI (GPAI) model obligations took effect—documentation, transparency, and copyright requirements for foundation models placed on the EU market from that date forward. This covers the large language models (LLMs) underpinning most enterprise AI deployments. Models already on the market before August 2025 have a grace period running to August 2027. None of this has been affected by recent amendments.\nAugust 2, 2026, was originally set to be the date the bulk of the high-risk AI obligations (Articles 9–15) and the Article 50 transparency obligations both landed. That has changed. Amendments that recently cleared the European Parliament and Council—finalized but not yet formally published in the Official Journal at the time of writing—defer the bulk of the high-risk obligations for standalone Annex III systems to December 2, 2027. The amendments are now published and already in force.\nWhat has not moved is Article 50. If an AI system interacts with humans, it still must disclose that it is AI unless that would already be obvious to a reasonably attentive person. Synthetic audio, image, video, or text still requires machine-readable labeling. Deployers using emotion recognition or biometric categorization still have to notify the people exposed to it. Deepfakes still require disclosure, with narrow carve-outs for evidently artistic or satirical work. Separately, August 2, 2026, also marks the end of the AI Office’s supervisory grace period for GPAI models—meaning the Commission’s power to actually fine a foundation model provider becomes operative that day, not merely theoretical.\nHigh-risk AI embedded in already-regulated products under Annex I (medical devices, aviation, vehicles, industrial machinery) has its own timeline: August 2, 2028, on the same condition that the amendments are published.\nKey Dates at a Glance\nDate\nWhat Happens\nAugust 1, 2024\nEU AI Act enters into force\nFebruary 2, 2025\nProhibited practices ban and AI literacy requirements take effect\nAugust 2, 2025\nGPAI model obligations take effect (documentation, transparency, copyright); systemic-risk GPAI adversarial testing and incident reporting also binding\nAugust 2, 2026\nArticle 50 transparency obligations take effect; AI Office’s GPAI supervisory grace period ends\nDecember 2, 2027\nBulk of high-risk obligations (Articles 9–15) for Annex III systems take effect; GPAI grace period for pre-August-2025 models ends August 2027\nAugust 2, 2028\nHigh-risk AI obligations for AI embedded in Annex I regulated products take effect\nIs Your Organization “High-Risk” Under the AI Act?\nThere are two routes into high-risk classification. The first: your AI is a safety-critical component of a product already regulated under EU product safety law—medical devices, aviation equipment, vehicles, industrial machinery—where the product requires third-party conformity assessment. If your AI goes into those products, it’s automatically high-risk.\nThe second, broader route is Annex III: a specific catalog of AI use cases the regulation treats as inherently high-risk regardless of what product they sit inside. Annex III covers:\nBiometric identification and categorization systems\nAI safety components in critical infrastructure such as energy, water, transport, and financial infrastructure\nEducational and vocational training decisions, including admissions and qualifications\nEmployment decisions, including recruitment, performance evaluation, promotion, task allocation, and worker monitoring\nCredit scoring and insurance risk assessment\nLaw enforcement applications such as risk assessment of individuals, predictive policing, and emotional state detection\nMigration and asylum decisions\nAdministration of justice\nIf your organization uses AI in any of those domains, you’re high-risk and the full compliance burden applies once the relevant deadline arrives.\nCrucially, the Act is extraterritorial. If you’re placing AI systems on the EU market—meaning EU-based deployers use your system—or if your AI’s outputs affect people in the EU, you’re in scope, regardless of where your company is headquartered. A US-based HR software vendor whose product is used by a German company to screen job applicants is subject to the full Annex III high-risk obligations. The European Commission has been explicit that this is by design.\nThe Cybersecurity-Specific Obligations: Articles 9 Through 15\nThis is where the real operational work sits, and it’s worth understanding even with the extra runway to December 2027—recalibrating the timeline is not the same as shelving the work.\nArticle 9\nestablishes a continuous risk management obligation, not a one-time assessment. Organizations need a documented risk management system spanning the entire lifecycle—design, development, deployment, and post-market monitoring. It has to identify foreseeable risks to health, safety, and fundamental rights, estimate and evaluate those risks, implement mitigation measures, and loop production feedback back into the risk evaluation. That last requirement is what kills the “assess once, deploy, forget” model. Residual risks have to be confirmed as acceptable and reconfirmed as the system evolves.\nArticle 11\nsets the documentation burden. Technical documentation has to be drawn up before the system goes to market and maintained throughout its lifecycle, sufficient for a regulator to assess compliance. For providers—organizations that build or place the system on the market—this is a substantial upfront investment. For deployers using someone else’s high-risk system, the obligations are lighter but still include verifying the system is used within the provider’s instructions, monitoring performance, reporting incidents, and applying appropriate technical controls. A deployer that puts its own brand on a system or makes substantial modifications effectively becomes a provider, with the fuller set of obligations that entails.\nArticle 12\nrequires high-risk AI systems to automatically log events during operation, for the purposes of auditability, post-incident analysis, regulatory investigation, and evidence that human oversight was exercised. Logs have to be retained for the appropriate period and accessible to deployers and competent authorities.\nArticle 14\nis the human oversight requirement: systems must be designed so humans can monitor, understand, intervene in, and where necessary override or shut down the system. This isn’t just a governance checkbox—it has architectural implications for how the system is built.\nArticle 15\nis the one worth sitting with. It’s the accuracy, robustness, and cybersecurity requirement, and paragraph 5 gets specific: high-risk AI systems must include technical measures to prevent, detect, respond to, resolve, and control attacks targeting the training data set (data poisoning), pre-trained components used in training (model poisoning), inputs designed to cause the model to make a mistake (adversarial examples, model evasion), and confidentiality attacks that expose model flaws.\nNotably, these categories closely track the threat taxonomy MITRE ATLAS and\nOWASP’s LLM Top 10\nhave cataloged for years, even though the Act’s text doesn’t cite either framework by name. It’s not a soft obligation to “consider” AI security—it’s a mandate to have technical measures against named attack classes and to be able to evidence those measures to a regulator. That changes the compliance question from “have we thought about AI security?” to “can we prove our AI system is resilient against these specific attacks?” And this requirement doesn’t disappear because the deadline moved: it arrives in December 2027 for Annex III systems, at the same substantive bar.\nThis extends further for GPAI models assessed as presenting systemic risk—a tier determined by the computational power used for training, which captures the major frontier models. Those providers have additional obligations, including documented adversarial testing (red-teaming and attack simulation against the model itself) to identify and mitigate systemic risks, and mandatory reporting of serious incidents—death, serious injury, significant disruption of critical infrastructure, significant property damage, or infringement of fundamental rights—to the AI Office and national authorities without undue delay. This tier has been binding since August 2025 and is completely untouched by the recent amendments.\nWhere the AI Act Overlaps With DORA and NIS2\nThe intersection between these regimes is real, and most organizations haven’t mapped it yet. If a financial entity operating under\nDORA\nhas an AI system that qualifies as high-risk under the AI Act, that system is almost certainly also an ICT asset under DORA. That creates three overlapping sets of obligations at once: DORA’s ICT risk management and threat-led penetration testing requirements,\nNIS2’s\nrisk management and incident reporting requirements (for essential or important entities), and the AI Act’s Articles 9–15. A single AI incident can trigger reporting obligations under all three frameworks simultaneously, with different timelines and different regulatory addresses.\nTake an AI-powered fraud detection system deployed by a European bank. It’s simultaneously an ICT asset under DORA, a system operated by an essential entity under NIS2, and very likely an Annex III high-risk AI system under the AI Act—because credit and financial risk assessment sits directly on the Annex III list. All three regimes apply at once. Organizations treating each regulation as a separate compliance project, with a separate team and a separate testing cycle, are the ones in trouble. Organizations running one unified validation program are in far better shape.\nWhy Continuous Validation Is the Compliance Mechanism, Not Just a Best Practice\nMost compliance frameworks treat testing as a point-in-time activity: an annual pen test, a report, filed until next year. The AI Act explicitly doesn’t work that way. Article 9’s continuous risk management requirement means ongoing testing as the system changes, as new risks emerge, or as the threat landscape shifts. The Article 15 obligations—resilience against adversarial examples, data poisoning, and model evasion—aren’t satisfied by checking a box once. They require demonstrating that technical controls hold over time.\nThis is where\nAdversarial Exposure Validation (AEV)\nbecomes directly relevant to AI Act compliance, not as a stretch but as the literal mechanism. Organizations already running continuous adversarial testing against their AI systems—running adversarial inputs, attempting model evasion, testing data pipeline integrity, exercising detection and response—are generating exactly the kind of logged, timestamped validation evidence that Article 15 asks for. That’s not a compliance exercise bolted onto security operations; it’s an integrated program where the output serves as both an operational signal and compliance evidence.\nThe efficiency case is straightforward: one validation discipline, one evidence store, three sets of regulatory obligations satisfied. The reporting destinations differ—DORA incidents go to financial supervisors, NIS2 incidents go to the national cybersecurity authority, AI Act incidents go to the AI Office or national AI authority—but the underlying testing and validation practice that demonstrates compliance with all three is the same activity. “We believe our AI is robust” is not an answer a national supervisory authority’s auditor will accept. A logged record of what was tested, when, and what happened is.\nFive Things CISOs Should Do Immediately\nComplete your AI inventory and risk classification now.\nIdentify every AI system you operate or deploy, whether any fall into Annex III categories or the regulated-products route, and—just as importantly—whether any trigger Article 50’s transparency duties, since that obligation still lands on schedule regardless of the high-risk delay.\nGet Article 50 disclosures and labeling built and tested now.\nThis means chatbot notices at the right point in the interaction, machine-readable marking on synthetic audio, image, video, or text that survives your actual publication workflow (not just a demo), notices for any emotion recognition or biometric categorization system, and deepfake disclosure. If you placed a content-generating system on the market before August 2, check whether it qualifies for the narrow watermarking grace period running to December 2—but don’t assume every Article 50 duty gets that cushion, because most don’t.\nStart the high-risk documentation audit now, even with the extended runway.\nArticles 11 and 12 require documentation—technical design and validation records, automatic event logging, evidence of the risk management process—that most organizations don’t already have in shape. The deadline moved to December 2027, which is sixteen extra months of runway, not a reason to stop. Treating that time as cancellation rather than runway just means doing the same work in a much bigger hurry in 2027.\nChase down your GPAI model provider’s Article 53 documentation now.\nIf a foundation model is integrated into a high-risk AI system, Article 53 creates a pass-through obligation: the model provider must give downstream providers/integrators the documentation they need, and  must obtain and retain it. This obligation is entirely unaffected by the amendments. If your provider doesn’t have an AI Act Article 53 compliance package ready, that’s a vendor risk conversation worth having immediately—the date the AI Office’s fining power over those providers switches on.\nBuild or review your adversarial testing program, split into two tracks.\nFor GPAI systemic-risk models, this is already a live, binding obligation with real enforcement that arrived on August 2—if your organization builds or fine-tunes a model anywhere near that threshold, the work needs to be demonstrable now. For Annex III high-risk systems, Article 15 names data poisoning, model evasion, adversarial examples, and confidentiality attacks as the threat classes requiring technical measures, with a compliance deadline of December 2027. Start the pilot now rather than waiting: pick your highest-risk AI system, run a structured adversarial test against it, and document the methodology and outcomes. That’s your first compliance artifact under Article 15, and it’s worth having whether the clock reads two weeks or two years.\nWhat’s Coming in Part Two\nThis piece covers what the EU AI Act requires, how the recent amendments reshaped the August 2026 deadline, and what a CISO’s near-term action list looks like. In Part Two, coming soon, I’ll zoom out from the mechanics to the bigger picture: how the Act’s risk-based approach compares with other global AI governance efforts, and what it signals about the direction AI regulation is heading next. Stay tuned.\nTo see how the\nSafeBreach CTEM Platform\ncan help you prepare for these regulations by validating your readiness, quantifying your exposure, and proving your resilience continuously,\nschedule a personalized demo\ntoday.\nAbout the Author\nAdrian Culley\nis Head of Engineering, EMEA for SafeBreach. He has over 35 years of computer security experience, particularly specialising in security operations, artificial intelligence, offensive security, threat intelligence, and malware — in short, cyber resilience. He is a core member of the OWASP Large Language Model Top Ten risks working group.\nHe is a graduate of the Information Security Group at Royal Holloway, University of London, and an occasional visiting lecturer there. Adrian was previously a Detective with Scotland Yard, working around the world with their Special Operations Directorate, and latterly served with the Computer Crime Unit there. He has also worked directly for the UK Central Government in a global role. He worked for Palo Alto Networks for five years as a Consulting Engineer and Head of Industry 4.0. Previously, he has also worked for PwC, Trellix, Cybereason, Guidance Software, AccessData, and Damballa. Adrian has a strong background in digital forensics and has worked with government, NGO, military, intelligence, law enforcement, and commercial clients around the world.\nFrequently Asked Questions\nWhat is the EU AI Act and when does it take effect?\nThe EU AI Act (Regulation (EU) 2024/1689) is a binding EU law that applies a risk-based regulatory framework to artificial intelligence systems, similar to how the GDPR regulates data. It entered into force on August 1, 2024, with obligations phasing in over several years: prohibited practices and AI literacy requirements since February 2025, GPAI model obligations since August 2025, transparency obligations from August 2026, and the bulk of high-risk obligations from December 2027.\nWhat changed in the EU AI Act’s August 2026 deadline?\nAmendments that recently cleared the European Parliament and Council deferred the bulk of the high-risk AI obligations (Articles 9–15) for most Annex III systems from August 2, 2026 to December 2, 2027. The Article 50 transparency obligations were not delayed and took effect August 2, 2026, as did the end of the AI Office’s supervisory grace period for GPAI model providers.\nWhich AI systems are considered “high-risk” under the EU AI Act?\nAn AI system is high-risk if it’s a safety-critical component of a product already regulated under EU product safety law (medical devices, aviation, vehicles, industrial machinery), or if it falls under one of the Annex III use cases: biometric identification, critical infrastructure, education and employment decisions, credit scoring, law enforcement, migration and asylum, and administration of justice.\nDoes the EU AI Act apply to companies outside the EU?\nYes. The Act is extraterritorial. Any organization placing AI systems on the EU market, or whose AI outputs affect people in the EU, is in scope regardless of where the company is headquartered.\nWhat are the penalties for non-compliance with the EU AI Act?\nPenalties are tiered: up to €35 million or 7% of global annual turnover (whichever is higher) for prohibited AI practices, up to €15 million or 3% for violations of high-risk AI obligations, and up to €7.5 million or 1% for providing misleading information to regulators.\nWhat cybersecurity requirements does the EU AI Act impose on high-risk AI systems?\nArticle 15 requires high-risk AI systems to demonstrate accuracy, robustness, and cybersecurity, including technical measures against data poisoning, model poisoning, adversarial examples, model evasion, and confidentiality attacks—attack categories drawn from the MITRE ATLAS framework and the OWASP Top 10 for LLM Applications. Continuous adversarial testing, rather than one-time assessment, is the practical way to generate the evidence these articles require.\nYou Might Also Be Interested In\nBlog\nThe Adversary Got an AI Upgrade—Is Your Security Program Ready to Compete?\nRead More\nReport\nAI & the Vulnerability Lifecycle Infographic\nRead More\nPodcast\nVideos\nPodcast: OpenAI’s Agent Hacked Hugging Face: The First Autonomous AI Breach\nListen Now\nGet the latest\nresearch and news",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.safebreach.com/blog/blog/eu-ai-act-august-2026-deadline-cisos/",
+      "content_chars": 22174,
+      "content_sha256": "63ca66886fb825a0120ff6df1cdab2675430548d8ba794feaf022e5f7459cc54",
+      "content_fetched_at": "2026-08-27T00:40:09.703222+00:00",
+      "author": "safebreach-blog",
+      "author_name": "SafeBreach Blog",
+      "author_url": "https://www.safebreach.com/blog/",
+      "published_at": "2026-08-27T00:37:10.787573+00:00",
+      "collected_at": "2026-08-27T00:37:10.787573+00:00",
+      "tags": [
+        "kind:publish",
+        "src:safebreach-blog",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.safebreach.com/blog/",
+        "https://www.safebreach.com/blog/blog/eu-ai-act-august-2026-deadline-cisos/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "safebreach-blog",
+          "url": "https://www.safebreach.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "safebreach-blog",
+          "name": "SafeBreach Blog",
+          "home_url": "https://www.safebreach.com/blog/"
+        },
+        "article": {
+          "title": "Thought LeadershipAug 25 , 2026The EU AI Act’s August 2026 Deadline: What Actually Changed—and What Didn’tRead More",
+          "url": "https://www.safebreach.com/blog/blog/eu-ai-act-august-2026-deadline-cisos/",
+          "content_sha256": "63ca66886fb825a0120ff6df1cdab2675430548d8ba794feaf022e5f7459cc54"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:537292b2e4e9e3f1",
+      "who": "bhis-blog",
+      "who_url": "https://www.blackhillsinfosec.com/blog/",
+      "action": "publish",
+      "target": "Read article",
+      "target_url": "https://www.blackhillsinfosec.com/ai-in-soc/",
+      "text": "bhis-blog published: Read article",
+      "at": "2026-08-27T00:37:10.787573+00:00",
+      "external_id": "a:537292b2e4e9e3f1",
+      "url": "https://www.blackhillsinfosec.com/ai-in-soc/",
+      "title": "Read article",
+      "content": "This article was originally published in the InfoSec Survival Guide: Blue Book — SOC Analysts. Read it free online\nHERE\n, or grab it on the\nSpearphish General Store\n(free digital download or a $1.25 physical copy, your call).\nAs AI becomes increasingly utilized throughout the security space, it's important to consider how it should be used most effectively. We've all seen companies adding AI into every offering and function they perform, often as much as possible.\nIn security operations, this creates a divide between two types of companies:\nCompanies that rely primarily on AI to do the work\nCompanies that enable their operators to become higher performers through the use of AI\nBoth types address a clear problem: volume. Anyone who has worked in a SOC knows that alert volume results in burnout, limits the number of customers you can support, and takes time away from more important tasks. Using AI to accelerate triage of high-volume, lower-complexity alerts is a practical and effective strategy. It frees analysts to focus on the ambiguous cases that require human judgment. With the right context and data, AI can meaningfully assist in distinguishing malicious from benign activity — but \"most of the time\" isn't good enough when a miss means a breach. AI augments the analyst; it doesn't replace their judgment.\nThat said, keeping a human in the loop is critical for the fringe cases: AI hallucination, highly complex technical investigations, and even situations where attackers attempt to fool the models with injection or evasion techniques.\nLet's talk about some ways you can be the second type of company: the one that enables operators rather than replaces them.\nAI for Triage Enhancement\nUtilizing AI for enhancement of the triage process is something all security operation centers should be doing right now. While AI may occasionally be wrong or may hallucinate, anyone not taking advantage of it to work across the huge amount of data that SOCs process will fall behind their competitors.\nI'm not suggesting that an AI model should be constantly closing alerts. Instead, consider this: Could an AI elevate alerts that would otherwise not have been investigated?\nAll SOCs process swathes of low-fidelity or low-severity alerts that are usually suppressed, deduplicated, or closed out through automation. What if you could use an AI model to review these alerts that would've been closed anyway and elevate those requiring human response to higher priorities? The worst-case scenario—a false negative—isn't applicable here. These alerts wouldn't have received much attention anyway. In the ideal scenario, you could intelligently review alerts your analysts wouldn't have looked at otherwise, escalating truly concerning activity for a human to look at.\nAI for Quality Assurance\nAnother clear use case for AI in SOCs is quality assurance. Many QA checks on investigations are random, but what if you could curate a set of prompts that tasks AI with looking for common mistakes within your investigations and notifies a human to review them?\nThe AI could highlight the causes for concern, providing a starting point for the human analyst. It could even offer suggestions to both the reviewer and the analyst, making note of possible improvements. The higher quality the QA prompts, the better the feedback.\nAI for Validation\nSimilar to the first use case mentioned, AI could validate analyst investigations and look for logical gaps or potential blind spots. Effectively, it could be used to provide top cover for analysts, giving them more space to triage quicker without chasing down every lead, knowing that the model (ideally trained on past cases!) is fact-checking and logically validating their investigation, freeing them to confidently triage without second-guessing themselves.\nHuman Augmentation\nWhile AI excels at handling repetitive high-volume tasks, human expertise remains essential for complex investigations, fringe cases, and maintaining accountability. Rather than viewing AI as a cost-cutting tool to reduce headcount (or to take on many more customers with the same headcount), think of it as an investment that multiplies the effectiveness of your existing team. By strategically deploying AI to handle or fact-check routine work, you free your analysts to focus on the sophisticated threats that truly require human judgment and critical thinking.\nIf you take one thing from this article, I want it to be this:\nUsing AI to augment your operators may not show the same immediate \"return\" as replacing them, but, over time, it will increase your service quality tenfold.\nExplore the Infosec Survival Guide and more… for FREE!\nGet instant access to every issue of the Infosec Survival Guide, as well as our self-published infosec zine PROMPT#, and exclusive Darknet Diaries comics — all available at no cost.\nCHECK OUT ALL ISSUES HERE!\n← Back to blog",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.blackhillsinfosec.com/ai-in-soc/",
+      "content_chars": 4894,
+      "content_sha256": "f82e0409991a1c71f9190e34b95b865d3318b737496d02ba9a0b2d6dc5262f21",
+      "content_fetched_at": "2026-08-27T00:40:51.476265+00:00",
+      "author": "bhis-blog",
+      "author_name": "Black Hills Information Security Blog",
+      "author_url": "https://www.blackhillsinfosec.com/blog/",
+      "published_at": "2026-08-27T00:37:10.787573+00:00",
+      "collected_at": "2026-08-27T00:37:10.787573+00:00",
+      "tags": [
+        "kind:publish",
+        "src:bhis-blog",
+        "via:llm",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.blackhillsinfosec.com/blog/",
+        "https://www.blackhillsinfosec.com/ai-in-soc/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "bhis-blog",
+          "url": "https://www.blackhillsinfosec.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "bhis-blog",
+          "name": "Black Hills Information Security Blog",
+          "home_url": "https://www.blackhillsinfosec.com/blog/"
+        },
+        "article": {
+          "title": "Read article",
+          "url": "https://www.blackhillsinfosec.com/ai-in-soc/",
+          "content_sha256": "f82e0409991a1c71f9190e34b95b865d3318b737496d02ba9a0b2d6dc5262f21"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "rss",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:264f04af52cfcbe4",
+      "who": "cisco-advisory",
+      "who_url": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml",
+      "action": "publish",
+      "target": "Cisco Advance Notification for Publication of September 2, 2026, Security Advisories",
+      "target_url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-f2SiMFxl?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Advance+Notification+for+Publication+of+September+2%2C+2026%2C+Security+Advisories%26vs_k%3D1",
+      "text": "cisco-advisory published: Cisco Advance Notification for Publication of September 2, 2026, Security Advisories",
+      "at": "2026-08-26T16:00:00+00:00",
+      "external_id": "a:264f04af52cfcbe4",
+      "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-f2SiMFxl?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Advance+Notification+for+Publication+of+September+2%2C+2026%2C+Security+Advisories%26vs_k%3D1",
+      "title": "Cisco Advance Notification for Publication of September 2, 2026, Security Advisories",
+      "content": "Cisco Security Advisory\nCisco Advance Notification for Publication of September 2, 2026, Security Advisories\nInformational\nAdvisory ID:\ncisco-sa-notice-f2SiMFxl\nFirst Published:\n2026 August 26 16:00 GMT\nVersion 1.0:\nInterim\nWorkarounds:\nNo workarounds available\nDownload CSAF\nEmail\nSummary\nOn September 2, 2026, the Cisco Product Security Incident Response Team (PSIRT) will publish advisories to disclose security vulnerability information along with fixed software releases for the following Cisco products:\nDesk Phone 9800, 7800 and 8800, and 8875 Series Software\nIOS XR Software (security hardening release)\nNexus 9000 Series Switches Silicon One\nSecure Email\nTo fully remediate vulnerabilities to be disclosed on September 2, 2026, Cisco strongly recommends that customers upgrade to the fixed software indicated in the advisories.\nFor more information about changes in Cisco PSIRT vulnerability disclosure, see\nCisco's Transition to a Risk-Based Vulnerability Disclosure Model\n.\nDetails\nUnder the Cisco risk-based disclosure process, hardening releases and other security advisories are scheduled to publish on the first and third Wednesday of each month. To help customers prepare, we provide this seven-day advance notice of upcoming security vulnerability disclosures. However, this schedule is not a final commitment of releases. If updates are delayed or unforeseen changes arise, specific products may be removed and rescheduled. Products may also be added when releases are ready ahead of schedule. The latest status is available in the Revision History section of this advance notice.\nCisco Security Vulnerability Policy\nTo learn about Cisco security vulnerability disclosure policies and publications, see the\nSecurity Vulnerability Policy\n. This document also contains instructions for obtaining fixed software and receiving security vulnerability information from Cisco.\nFor additional information on Cisco's vulnerability management, disclosure cadence, and software patching strategy, see\nCisco's Transition to a Risk-Based Vulnerability Disclosure Model\n.\nSubscribe to Cisco Security Notifications\nSubscribe\nRelated to This Advisory\nURL\nhttps://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-f2SiMFxl\nRevision History\nVersion\nDescription\nSection\nStatus\nDate\n1.0\nInitial public release.\n-\nInterim\n2026-AUG-26\nShow Less\nLegal Disclaimer\nSOFTWARE DOWNLOADS AND TECHNICAL SUPPORT\nThe\nCisco Support and Downloads\npage on Cisco.com provides information about licensing and downloads. This page can also display customer device support coverage for customers who use the My Devices tool. Please note that customers may download only software that was procured from Cisco directly or through a Cisco authorized reseller or partner and for which the license is still valid.\nCustomers who purchase directly from Cisco but do not hold a Cisco service contract and customers who make purchases through third-party vendors but are unsuccessful in obtaining fixed software through their point of sale should obtain upgrades by contacting the\nCisco Technical Assistance Center (TAC)\n. Customers should have the product serial number available and be prepared to provide the URL of this advisory as evidence of entitlement to a free upgrade.\nWhen\nconsidering software upgrades\n, customers are advised to regularly consult\nthe advisories\nfor the relevant Cisco products to determine exposure and a complete upgrade solution. In all cases, customers should ensure that the devices to be upgraded contain sufficient memory and confirm that current hardware and software configurations will continue to be supported properly by the new release. If the information is not clear, customers are advised to contact the\nCisco Technical Assistance Center (TAC)\nor their contracted maintenance providers.\nLEGAL DISCLAIMER DETAILS\nCISCO DOES NOT MAKE ANY EXPRESS OR IMPLIED GUARANTEES OR WARRANTIES OF ANY KIND, INCLUDING THE WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR USE. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, CISCO DOES NOT GUARANTEE THE ACCURACY OR COMPLETENESS OF THIS INFORMATION. THIS DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS. YOUR USE OF THE INFORMATION ON THE DOCUMENT OR MATERIALS LINKED FROM THE DOCUMENT IS AT YOUR OWN RISK. CISCO RESERVES THE RIGHT TO CHANGE OR UPDATE THIS DOCUMENT AT ANY TIME.\nCopies or summaries of the information contained in this Security Advisory may lack important information or contain factual errors. Customers are advised to visit the\nCisco Security Advisories\npage for the most recent version of this Security Advisory. The Cisco Product Security Incident Response Team (PSIRT) assesses only the affected and fixed release information that is documented in this advisory. See the\nCisco Security Vulnerability Policy\nfor more information.\nFeedback\nLeave additional feedback\nCisco Security Vulnerability Policy\nTo learn about Cisco security vulnerability disclosure policies and publications, see the\nSecurity Vulnerability Policy\n. This document also contains instructions for obtaining fixed software and receiving security vulnerability information from Cisco.\nFor additional information on Cisco's vulnerability management, disclosure cadence, and software patching strategy, see\nCisco's Transition to a Risk-Based Vulnerability Disclosure Model\n.\nSubscribe to Cisco Security Notifications\nSubscribe\nRelated to This Advisory",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http_llm_blocks",
+      "content_source_url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-f2SiMFxl?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Advance+Notification+for+Publication+of+September+2%2C+2026%2C+Security+Advisories%26vs_k%3D1",
+      "content_chars": 5427,
+      "content_sha256": "661a3b98b130e7ebf0d911c3580975e96da316077844d600d8e30f732bd57017",
+      "content_fetched_at": "2026-08-27T00:41:40.434713+00:00",
+      "author": "cisco-advisory",
+      "author_name": "Cisco Security Advisory",
+      "author_url": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml",
+      "published_at": "2026-08-26T16:00:00+00:00",
+      "collected_at": "2026-08-27T00:37:10.787573+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cisco-advisory",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml",
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-f2SiMFxl?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Advance+Notification+for+Publication+of+September+2%2C+2026%2C+Security+Advisories%26vs_k%3D1"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cisco-advisory",
+          "url": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cisco-advisory",
+          "name": "Cisco Security Advisory",
+          "home_url": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml"
+        },
+        "article": {
+          "title": "Cisco Advance Notification for Publication of September 2, 2026, Security Advisories",
+          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-f2SiMFxl?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Advance+Notification+for+Publication+of+September+2%2C+2026%2C+Security+Advisories%26vs_k%3D1",
+          "content_sha256": "661a3b98b130e7ebf0d911c3580975e96da316077844d600d8e30f732bd57017"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http_llm_blocks"
+      }
+    },
+    {
+      "id": "a:0f70c7a06c95efe3",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "手机散热器上的 30W，是它吃掉的电，不是它搬走的热",
+      "target_url": "https://yage.ai/share/tec-phone-cooler-30w-20260826.html",
+      "text": "yage-share published: 手机散热器上的 30W，是它吃掉的电，不是它搬走的热",
+      "at": "2026-08-26T00:00:00+00:00",
+      "external_id": "a:0f70c7a06c95efe3",
+      "url": "https://yage.ai/share/tec-phone-cooler-30w-20260826.html",
+      "title": "手机散热器上的 30W，是它吃掉的电，不是它搬走的热",
+      "content": "个人决策\n科研与技术前沿\n在海外安卓模拟器社区，一位玩家用红魔 10 手机运行大型 PC\n模拟器，芯片温度直接冲到了 87\n度。他特意买来磁吸散热器，通电后冷面摸上去冰凉刺骨，可运行游戏时，芯片温度毫无变化。他在\nReddit\n讨论帖\n里写下困惑：“It gets really cold, and sure, it makes the\nglass on the back of my phone cooler, but when I play the games the\ntemperatures stay the exact same with No drop at all.”\n最终他选择退货。社区热门回复调侃手机散热器是玩家买过的最大智商税，还有人在评论区吹嘘自己的散热器能结出冰块，引来围观者一句\nWtf。\n另一组公开测试呈现出完全不同的情况。\n新浪众测的横评\n记录了一台裸机小米 14 连续运行安兔兔压力测试的过程：裸机背面最高温冲到\n59\n度，第二轮测试时，手机直接提示温度过高并强行关闭程序。装上磁吸半导体散热背夹后，手机背面温度稳定在\n43 到 46\n度，压力测试顺利跑完，黑鲨散热器辅助下的跑分成绩比另外两家竞品高出约 6\n万分。这两组对立的数据都是真实的。差异不在于硬件真假，在于具体工况，以及冷量有没有真正送到发热的芯片上。\n你花 199 元买回来的小米磁吸散热背夹，盒子上标着峰值功率 30W。这个 30W\n是它从充电头抽走的电功率，并不代表它能从手机搬走 30W 的热量。\n黑鲨的官方通稿\n把这两个指标分得更清楚：黑鲨 5 Neo 散热背夹支持 15W\n满血供电功率，实际等效制冷量达\n7W。同一家厂商在同一份通稿里把两个数字分开写，带满血修饰的是输入功率\n15W。在\n京东的半导体制冷器类目\n里，在售商品达\n32 万件，头部链接积累了超过 20\n万条评价。买的人越多，参数误解就越普遍。这篇文章帮你弄清楚这些瓦数背后的实际情况、什么时候该掏钱、真正的工程代价在哪里。这是一次弄懂设备原理的梳理，不为产品站台，也不全盘否定：在特定极限场景下它确实管用，对多数日常使用则没必要。\n风扇做不到的唯一一件事：低于室温\n很多玩家挑散热背夹，愿意多付四成到一倍溢价。公开价格样本中，普通风扇散热夹约\n38 元，小米 30W 磁吸散热背夹约 199\n元。在海外市场，同品牌带制冷片款式比纯风扇版贵出 40% 到\n100%，例如黑鲨常规风扇款 FunCooler 5 在\n海外平台\n售价约\n35 美元，带制冷片的 MagCooler 5 Pro 在\n亚马逊平台\n标价达 49.99\n美元。带来这笔差价的关键，是传统风扇存在物理上限：它最多只能把物体表面吹到周围环境温度。身处\n35 度的盛夏无空调房间，风扇转速拉到极限，吹出来的风也是 35\n度，手机外壳不可能低于 35 度。\n行业内常把半导体制冷片称为 TEC，有时也叫 Peltier\n芯片。接通直流电后，它能把热量从一端强行搬到另一端，让贴着手机的冷面温度跌破周围空气温度。\n新浪众测的横评\n在 28 度室温下通电测试 1\n分钟，红魔、黑鲨、飞智三款散热器的冷面温度分别降到 4.4 度、负 4.1 度和\n2.4 度，热侧金属鳍片升温到 48 到 52 度；通电 5\n分钟后，黑鲨冷面最低达到负 4.7 度。\n天文摄影论坛的\nDIY 对照\n也记录了类似差距：加装纯风扇只降温 2.5\n度，换上制冷片后降温达到 15 度。在元器件零售渠道，一片标准的 40x40 毫米\nTEC1-12706\n制冷晶片\n挂牌价格约 20 元，封装进成品背夹后就卖出了几倍价格。\n制造低于周围环境温度的冷面，是重度玩家购买半导体散热器的关键理由。\n知乎高赞回答\n指出：散热的极限是周围环境温度，制冷却能把温度压低到环境温度以下。这种能力针对的主要是严苛场景：高温房间、长时间重度游戏、长时间户外直播，或者高强度电竞对战。如果是坐在凉爽的空调房里日常刷视频或玩轻度游戏，38\n元的常规风扇就已经够用。\n既然半导体制冷能把温度降到零下，手机为什么不直接做进机身？截至写作时，市场上没有走量智能手机内置\nTEC 制冷片。以主打性能释放的\n红魔 11 Pro\n官方页\n为例，机身内部搭载了主动液冷回路、13116\n平方毫米、把热量摊到整个背面的金属片与 24000\n转微型风扇，官方称这是全球首款量产液冷手机。手机内部散热只需把芯片温度控制在安全区间，内部金属片配合外壳散热就已足够。低于室温属于额外需求，把制冷片塞进密封机身所带来的耗电、热端排热与结露代价，在整机权衡中得不偿失。\n盒子上的 30W 是电费单\n半导体散热器工作时，热端散热片要散掉的总热量，等于从冷端搬走的热量加上制冷片自己消耗的电。\nAnalog\nDevices 的技术文章\n给出过明确的工程计算：制冷片从目标端吸走 25\n瓦热量，器件自身还会额外产生 50 瓦热量，热端散热片必须具备散掉 75\n瓦总热量的能力。\n这也解释了为什么散热背夹的热端风扇，吹出的风比手机本身还要烫得多。高负载运行的智能手机，芯片会持续发热。文中的黑鲨与小米背夹分别标注\n15 瓦和 30\n瓦输入功率，这些输入电功率最终都要由背夹热端排出。热端风扇不仅要吹走手机传来的热量，还要把背夹自己耗电产生的热量一起排入空气。\n盒子上的 30W\n是散热器从充电头吃掉的电，它能从手机真正搬走的热只有 10 到 15\n瓦\n市面上各类产品在标注功率时普遍存在混淆。\n黑鲨\n5 Neo 的官方通稿\n明确写道：产品支持 15W\n满血输入功率，实际等效制冷量达 7W，两者比值约 46%。标称\n一加 45W\n液冷散热器\n的产品，45W 指的是 USB-PD 输入供电；极客圈子里\nDIY 的 50W\n散热器\n同样需要 15V/3A 也就是 45W 以上充电头激活最高挡。在\n华强北的论坛帖\n的\nXperia 1 散热背夹选购语境中，有用户二手转述，部分几十元白牌散热器标称\n20W 实测取电不足 8W。在海外电商平台上，黑鲨 20W 款在\n亚马逊产品页\n甚至打出降温 95 华氏度也就是约 53 摄氏度的夸张话术，脱离了实际。\n部分\n选购指南类文章\n声称制冷功率直接决定降温能力，认为玩重度游戏至少需要 25W\n以上功率。这类说法把从插座吃进去的电，误当成了从手机抽走的热。平时选购时有一条粗算办法：把包装盒上标的输入功率除以二到三，作为真实搬热能力的心理预期。黑鲨\n15W 输入对应 7W 制冷量，比值约 2 倍；制冷片厂商的数据里，冷 10\n瓦热要消耗 50 瓦电，比值到 5 倍。一台标称 30W 输入的散热背夹，按 10 到\n15 瓦的搬热能力去设想它的降温效果，比按 30W 想更接近实际。\n为什么冷面冰手，CPU 不冷\n那位退货玩家遇到的困惑，很多人初次接触这类产品时都会遇到：散热器冷板摸上去明明像冰块一样凉，手机内部的芯片温度怎么降不下来？原因在于制冷背夹的导冷板只能降低紧密贴合的那一小块后盖区域，发热芯片深藏在机身内部，中间隔着导热硅脂、手机内部那片把热量摊到整个背面的金属片、金属中框以及后盖玻璃。\n热量从芯片传递到外部空气，必须穿过一整条漫长的通道：从芯片硅片出发，依次经过内部导热胶、手机内部把热量摊开的金属片、手机后盖、导热硅胶垫、散热器冷板、制冷片本身，最后到达热端散热鳍片与风扇吹出的气流。在这条热量要走的路线上，任何一个接触面贴得不紧，冷板的低温就很难传导到深层的芯片。\n一篇实测文\n测试一款 49.8 元白牌散热器时指出，冷板和手机中框之间夹着 0.3 到 0.5\n毫米的微小空隙，对热量来说像一道保温层，有实测认为这道缝隙贡献了整条热路将近一半的阻力（该数据来自网络测评，仅供参考）。权威研究同样说明了界面贴合与内部传热的重要性：\nQualcomm\n和 Stanford 的手机热管理论文\n显示内部热量扩散直接影响表面温度；而在\nSamsung\n的固态制冷冰箱项目\n中，固态接触面的传热效率也是主要工程挑战。\n热量要穿过背板、缝隙、制冷片才能到风扇，冷板和手机中框之间贴不紧，冷就传不到芯片\n外挂散热器在什么情况下才能真正发挥作用？通常需要满足两个条件：第一，手机触发了自我保护机制，芯片太烫就主动降速来防止过热，也就是通常说的降频；第二，散热器冷板与机身背面形成了平整紧密的贴合。新浪众测横评的数据展示了这一点：裸机小米\n14 在持续高负荷下背面升至 59\n度，触发过热保护中断测试；装上散热背夹后，热量顺畅导出，背面温度稳定在\n43 到 46 度，测试顺利跑完，跑分提升约 6 万分。\n2025 年\nCommunications Materials 的论文\n记录了一组更显著的对比：研究人员把集成微通道水冷的 TEC\n紧密贴合在手机背部，高强度测试中成功把手机最高表面温度从 49 度压制到 33\n度，降幅近 16\n度。虽然这项实验采用的是实验室级集成水冷循环而非消费级风冷背夹，但它清楚表明了传热界面的紧密贴合与热端排热设计，对最终降温表现有多大影响。\n社区里有人吐槽散热器是智商税，评测里又确实能测出跑分提升，这两种现象并不矛盾。分歧的核心在于具体工况，也就是手机是否真的达到了发热降频的临界点；热量传递是否顺畅，比如是否带着厚手机壳、贴合是否平整紧密；以及测量位置的区别。冷板温度、后盖红外测温、电池传感器读数与系统核心报告的芯片温度，代表的是不同位置的状态。冷板冰手只说明散热器局部在制冷，持续高负载下芯片温度降低与帧率稳定，才代表获得了真正的散热收益。\n电流越大，越不划算\n半导体制冷片还有一个反直觉的特性：并不是通的电越多，制冷效果就越好。它的净制冷能力由三件事同时决定：第一是通电后冷片把热量从一端搬到另一端的能力，这部分随电流增加大致线性上升；第二是电流穿过材料自己生出来的热，这部分随着电流平方快速飙升；第三是冷热两端拉开温差后，热量自发从热端倒流回冷端。在较低电流区间增加供电，搬运热量的能力占主导，制冷效果会变好；一旦电流超过某个平衡点，材料自己产生的热量增长得太快，继续加大电流不仅不能让冷端更凉，反而会让整个器件因为自己发热而越来越烫。\n可以这样理解：同一块半导体材料同时扮演着三个角色。它既是搬运热量的热泵，也是热量回流的通道，还是通电发热的电热丝。要搬运更多热量就得加大电流；电流流过晶体材料，必然产生随电流平方成倍增长的热量；冷端和热端连在一起，热端积聚的热量又会沿着材料倒灌回冷端。可以把它类比成一辆漏油的油罐车：多派车出动，初期运油量随着车辆增加而上升；但道路拥堵和车辆自身损耗增长得更快。超过某个平衡点，再增派车辆反而让实际送达的油量停滞甚至下降，沿途排出的废热却成倍增加。\n元件厂商的测试数据也是这个走向。\n这家厂商的技术文档\n指出：在特定温差条件下，冷端实现 10 瓦制冷量需要消耗 50\n瓦电功率；每花一度电搬走最多热量的高效工作区间，落在最大极限电流的 30%\n附近。\n关于热电制冷的技术概览\n也说明：能搬运最多热量的电流点，与每花一度电搬走最多热量的电流点，在曲线上落在不同的位置。\n部分厂商在包装盒上标出大瓦数峰值功率，是在效率更差的高电流曲线段上选了个位置。在电商平台上，同款散热背夹常常分为结冰款与普通风冷版销售。这两款产品在核心物料上往往没有本质差异，买家买到的只是设备在工作曲线上设定的挡位不同：结冰款把工作电流推入高功耗区间，让冷面在没贴手机空载时结出薄霜，代价是热端排出更多废热、散热背夹自己消耗更多电。\n同款散热器的结冰款和风冷版只差在效率曲线上的位置，结冰款把电流推到高功耗区间，热端更烫\n可结冰是卖点，结露是这个卖点的代价\n让冷板降到零度以下甚至结冰，长期是各大厂商吸引眼球的宣传卖点。电商详情页上常能看到可结冰标语，黑鲨官方也曾打出过至低降至零下\n7 度、至高降温 32\n度的话术。制造低于周围环境温度的冷面是半导体散热器的优势，但水汽结露也是追求超低温时不可避免的代价：冷面温度越低，就越接近空气的露点；冷面温度一旦跌破环境露点，空气中的水蒸气就会在冷板表面凝聚成小水珠。\n直觉上容易以为只有温度降到零度才会结出水来，物理上的露点温度往往比零度高得多。夏天从冰箱里拿出一瓶冰镇可乐，放在桌上没几分钟，塑料瓶外壁就会挂满水珠，这就是空气遇冷结露。根据\n热电制冷应用资料\n的测算，在日常室内环境中，如果室温保持在\n25 度、相对湿度为 60%，对应的空气露点大约在 17\n度。换句话说，散热器的冷板温度只要低于 17\n度，哪怕距离零度结冰还很远，周围空气中的水汽就会在冷面上凝结成水滴。\n在实际使用中，散热器表面出现冷凝水是确定会发生的现象。\nReddit\n用户的社区讨论\n提到，自己在几部手机上使用半导体背夹时接触面都出现过明显水珠，有些型号的出风口甚至会吹出微小水汽；\n一位维修师傅在帖子里转述\n自己修过多部主板生锈氧化的手机，机主反映平时长期带着散热背夹打游戏，手机此前从没掉进过水里；\n一个 B\n站维修视频的标题\n也提到散热器产生冷凝水导致 iPad\n进液。需要说明的是，来自社区与维修师傅的案例属于二手转述或视频标题层面的经验反馈，冷凝水渗入手机内部导致硬件损坏的具体概率目前尚无定论。反方的看法也有事实依据：\n知乎回答\n指出，只要手机本身的密封完好，正常使用散热背夹不会直接导致内部硬件进水损坏。\n对普通用户来说，更有实用价值的是了解水汽结露在什么条件下容易发生。在开着空调的房间里玩\n20\n分钟游戏，温差较小，结露的风险很低；如果在潮湿闷热的房间里开着最大功率连续高负载玩两小时以上，冷凝水就容易在手机后盖与散热器的夹缝处聚集。在\n社区讨论\n中有玩家指出：手机并不是真空密封的，内部空气会与外界交换，日常防泼溅不等于内部能免疫水汽结露。厂商对这个问题同样清楚：\n一项中国专利\n明确写道，制冷温度过低时，屏幕会因为散热器长期工作与手机发热在正面形成结露，影响触控操作；\n小米\n30W 背夹\n配备了冷面控温与热面温度追踪算法，新浪众测横评指出智能温控的作用正是为了避免急剧降温产生冷凝水。\n日常使用中有一套简单易行的防结露操作：留意房间的温度与湿度，心里估算一下露点，尽量让散热器的冷面温度保持在露点以上\n2 到 3\n度。如果散热器自带实时温度数显，可以根据环境变化调整挡位；如果散热器没有数显温控，在闷热潮湿的天气里，尽量避免长时间盲目开启最高制冷挡位。\n什么时候买，参数怎么看\n弄懂了背后的物理逻辑后，买不买的决定可以简化成一张清晰的对照表。如果你的使用场景是室温\n30\n度以上的高温闷热环境、连续两小时以上的高负载大型游戏、长时间不间断直播，或者高强度电竞训练：在这些严苛条件下，半导体散热背夹能有效帮手机稳住处理器频率。如果平时大多坐在凉爽的空调房里，只是玩玩轻中度游戏或刷刷视频：售价约\n38\n元的传统风扇夹就已经足够完成机身表面的热量吹拂。相比传统风扇，半导体散热器高出四成到一倍的溢价，买到的就是制造低于周围环境温度冷面这项能力。如果你平时的使用环境用不上把温度压到室温以下，多花这笔钱就换不来什么实际体验。\n挑选具体型号时，可以穿透营销宣传去看真实的参数。第一步是在商品详情页的规格表里寻找等效制冷量或实际制冷量这些指标。如果厂商没有明确标出实际制冷量，就不能仅凭外包装上的输入供电功率推算真实的制冷能力区间。愿意把\n15W 输入功率与 7W\n等效制冷量同时公开标注出来的厂商，在参数透明度上更加坦诚。\n成熟的半导体散热器会在电控上做几层保护，用买家语言读：冷面温度往下走时，功率自动跟着降，小米\n30W\n背夹的冷面控温算法就是干这个的；热面温度有算法持续追踪，积热过高时降功率或关机；冷面温度贴着测温探头闭环调节，而不是不管温度如何始终满功率运行。如果商品页只写了智能温控却没说明控什么，购买前可以向客服询问它的具体温控依据。\n回到最初关于智商税的争论：半导体散热器的作用不在于保护手机健康，它的价值是在高温高热工况下推迟芯片降速、维持稳定的性能输出。如果手机负载很轻并未触发降速保护，装上散热器能让后盖摸起来冰凉，游戏帧率却不会提高；只有在芯片面临过热降速、而且散热器冷板平整贴合机身导热路径的前提下，它才能发挥延缓降频的效果。这个小工具划不划算，取决于你是否需要低于室温这项能力。\n读完这篇文章，你可以带走一项通用的审视习惯：以后在任何电子设备上看到醒目的瓦特数字时，先在心里问一句，这究竟是它吃进去的电功率，还是它实际输出的工作功率。这个分辨习惯不仅适用于手机散热器，对于家用空调、除湿机以及各类充电设备同样适用。手机散热背夹只是把输入功率与实际输出能力的差距，直接摆在了大家面前。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/tec-phone-cooler-30w-20260826.html",
+      "content_chars": 6847,
+      "content_sha256": "aa11f00ca7387ffc8c94fb340c20c5c0ed8856497c79c10e6277cf455a093ee7",
+      "content_fetched_at": "2026-08-27T00:38:02.411083+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-26T00:00:00+00:00",
+      "collected_at": "2026-08-27T00:37:10.787573+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/tec-phone-cooler-30w-20260826.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "手机散热器上的 30W，是它吃掉的电，不是它搬走的热",
+          "url": "https://yage.ai/share/tec-phone-cooler-30w-20260826.html",
+          "content_sha256": "aa11f00ca7387ffc8c94fb340c20c5c0ed8856497c79c10e6277cf455a093ee7"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:8b22fff59ec0e997",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "为什么你停不下来 babysit agents：不是 context 的问题，是管理的问题",
+      "target_url": "https://yage.ai/share/babysit-agents-management-not-context-20260826.html",
+      "text": "yage-share published: 为什么你停不下来 babysit agents：不是 context 的问题，是管理的问题",
+      "at": "2026-08-26T00:00:00+00:00",
+      "external_id": "a:8b22fff59ec0e997",
+      "url": "https://yage.ai/share/babysit-agents-management-not-context-20260826.html",
+      "title": "为什么你停不下来 babysit agents：不是 context 的问题，是管理的问题",
+      "content": "AI 编程\nAI Agent\n检索与知识系统\n社区里有位朋友，既要带团队又要写核心代码。每天日程排满了各种会议，只能在开会的缝隙里抓紧写上几行。前阵子他跟我们聊起近况，说自己没法把整个项目交给\nagents，大半精力全花在 babysit agents 上面。1M 的 context window\n跑不了多久就超出 30%-40% 的最佳区间，只能反复让 agent\n总结没做完的任务，接着开个新 session\n继续顶上。一整天盯着刷屏的信息流，到了下午四点左右脑壳就开始发胀。他的动手能力很强，摸索也走在很多人前面，不仅把遇到的问题摸得清清楚楚，还自己拉出了整套归因和排查清单。连这样的高手都会陷进去，说明这个问题太典型了。\n为了解决这个问题，他先把大家能想到的常规手段全试了一遍。先做上下文瘦身，清理\nAGENTS.md 和 CLAUDE.md，删掉模型升级后残留的旧 prompt，卸掉平时用不上的\nMCP 和 skills。我们在\nThin\nHarness, Fat Skills\n里详细聊过这套思路。接着他又搭了一套编排工具，让主 agent 通过 tmux\n同时调度多个 session。即便做到这个地步，主 agent\n的上下文依然迅速见底，到头来还是得靠人工频繁新开会话去接力。讨论的完整记录在\n这里\n，Superlinear\nAcademy 会员可以直接看当时的对话。\n读到这里你可能会问：大家都在为 context 发愁，凭什么说它只是表象？其实\ncontext window 本质上是一笔预算。agent\n每读一个文件、每试跑一次、每撞一次墙，以及我们每次插手纠偏并重新注入背景和状态，都在消耗这笔预算。消耗速度有多快，取决于每一轮探索有多长。如果\nagent\n目标明确、能看清自己的运行结果、能拿到即时反馈，单轮探索就会很短，很快就能收敛，窗口也就填得慢；要是缺了这三样，它在每一轮里都会四处绕路，窗口转眼就见底。所以窗口填满的速度，只是任务管理好坏的仪表盘读数，本身并不是病根。证据就在这位朋友的经历里：反复开新\nsession，无非是把仪表盘一次次拨回零刻度，只要 agent\n还在原地打转，读数依然会飞快飙升，归零仪表盘并没有改变花钱的根源。\n所以真正的解法，既不在于把 1M\n窗口继续做大，也不在于更频繁地重开会话，关键是要减少无谓的消耗。清理\nprompt\n和精简上下文确实有效，但解决的只是最后一英里的收尾工作。如果不去解决前面的管理问题，agent\n还在频繁绕路、到处试探、接连碰壁，逼得人不得不一遍遍插手纠偏。上下文塞满只是最后冒出来的症状，根子全在更前置的三项管理动作上：让模型去做静态预测、任务目标没有锁死、模型自己看不到运行结果。我们一个一个过。\n上下文维护是最后一英里的收尾动作，管理动作才是第一步\n你以为是 context\n问题，其实是管理问题\n大家习惯把力气花在上下文维护上，这种直觉特别好理解。窗口确实会填满，顺手清理一下\nprompt、做做压缩或者开个新\nsession，往往立马就能让卡顿的体感好转。但这些动作只管得了一时。重开和清理只是把消耗的读数抹平，只要干活和花钱的方式没变，跑不了多久上下文照样会迅速见底。想把无谓的消耗真正降下来，关键得换个视角，看看我们平时是怎么给它派活的。\n想理顺这套逻辑，有个直观的参照：把 agent\n当成团队里新来的工程师。平时你希望老板怎么给你交待任务，你就怎么给 agent\n提要求。靠谱的交接从不会只扔下一句你把这个搞定就甩手不管，总要讲清楚交付什么、边界在哪、怎么才算做完。给\nagent 分配工作，道理完全相通。\n接回开头的预算框架来看，静态预测、目标没锁、结果不可见这三个管理缺口，正是无谓花钱的三个地方。让\nagent\n静态预测，它拿不到及时反馈，只能读更多代码到处硬猜，搜索空间怎么也缩不小；目标没锁，它每轮都要重新琢磨你到底要什么；它看不到自己的运行结果，遇到问题只能跑来问你，人就成了反馈回路。管住这三样，就是在直接缩短每一轮探索的长度。这位朋友在\ncontext 侧做的两个实验，恰恰把症结逼了出来。他给 agent 写 prompt\n时手打了五条背景，其中四条一字不差就躺在他自己的 wiki 里，这套 wiki\n是他搭的 observation agent\n每天自动沉淀出来的。管理动作他一样没落下，可他拿真实 prompt 去查，发现主\nagent 翻不出 wiki 里的东西，每次还是得事无巨细重新交代一遍；前面讲到的\ntmux 编排实验也是同样的结果，主 agent\n的窗口照样迅速见底。做了管理和让管理起作用之间，差的不是模型，是把回路闭上这一环。这一环还是管理动作，补不上它，人还是得跟在后面操心。\n反过来，只要管理动作到位，效果就大不一样。他在项目做到一半停下来，重新定义了\ngoal 和验证方式，之后 agent\n回头自己去写测试，自主性明显提了上来，这一步的细节我们后面会展开。我们自己也有过一样的经历：前段时间做一个复杂的社区后台，前期探索非常\noverwhelming，跟 AI\n对话只会发现更多问题，花了好几天才把设计定型；设计一定型，下面就简单了，设一个明确的\ngoal 让 AI\n自己跑，两三天就做出来了。这些虽然都是真实的案例观察，没有做严格的受控实验，但方向是一致的：发生改变的都是管理动作，模型还是原来的模型。\n在沉淀 context\n这件事上，这位朋友下的功夫其实很深，手头同时跑着两套系统。一套是他自己搭建的\nobservation agent，每天自动抓取 session 里的技术细节，沉淀出了 18 页\nwiki 和 1418 行 index。他在采集端做得非常扎实，可惜主 agent\n平时从不去查，路由上少了一点拨。另一套是 harness 自带的\nmemory，按工作目录各自切片，机器上 22 个 store\n各管各的，跨仓的知识没有安放的去处；后来尝试把工作区设到父目录统一管理，结果父目录的\nstore\n几乎是空的。后来他主动调整策略，把核心知识收拢到自己的代码仓库里，只把\nharness 里的记忆作为检索指针。这套方案我们在\ncontext\ninfrastructure\n开源仓库里放出了公开版本，AI Builders 的 Module 2 和\nModule 3\n也梳理过私有上下文的组织方式与人机分工边界。如果想看团队场景下的做法，可以参考\n团队中共享\nAI skills 的原则与方法\n。打理上下文属于打基础的工作，但要想摆脱\nbabysit，关键还要靠更前面的管理动作。\n一句话核心判断：babysit 的根源在管理流程，不在模型能力；做好 context\n维护只是打扫战场，解决不了源头问题。\n别让它静态预测，给它动态反馈\n很多团队的云原生环境和 CI/CD\n流水线里，都藏着大量只有踩过才知道的暗坑。这位朋友最开始把代码库全量开放给\nagent，代码都在那儿，按理它光看现有配置就能把潜在问题全扫出来。大家刚开始用的时候往往也是这种第一反应，但这其实默认了模型拥有超常的静态推演能力。\n真人排查这种故障，通常也要靠反复提交构建、看报错日志、对照源码，一点点把坑踩明白。AI\n的学习路径也是一样的，同样需要经历撞墙、拿到反馈、分析归因，才能建立起靠谱的认知。只让它干看代码就凭空猜出各种异常场景，往往超出了模型的能力范围。退一步说，哪怕未来模型推理能力更强了，这种硬猜的方式我们也不推荐。我们写代码都有体会：干瞪着屏幕找\nbug，远不如挂上调试器、跑个测试用例把问题逼出来轻松。只要有条件做动态验证，就别让\nagent 闷头做纯静态预测。\n更接地气的做法，是顺着具体任务帮它搭起正向反馈。先让 AI 去读历史的\nCI/CD\n失败日志，对照源码把每次出错的原因弄明白，再把踩坑记录、背后机理和解法沉淀成文档。落到实际操作上，有两个容易掉坑的地方，需要搭配对应的管理手段。\n第一个坎是它容易把规范抛在脑后。文档写好之后，主 agent\n转头可能就忘了看。这时候需要通过静态注入或者交互提示把它拉回来。如果用\nClaude Code，可以在根目录的 CLAUDE.md 里加一条规则，提醒它排查 CI/CD\n问题时先看指定目录的避坑文档；或者在每次布置任务时，顺手带上一行提示，让它对着现成文件展开排查。\n第二个坎是上下文容易塞爆。面对几百条构建日志，单个 agent\n很容易在海量信息里迷失，跟狗熊掰棒子似的，看到后面就把前面的东西丢了。更可靠的办法是开并发子任务，让每个\nsub-agent 分工精读比如 10 个 job，把提炼出的经验写成简报，最后再由主\nagent 统一汇总。Claude Code 的 dynamic workflow\n就很适合干这个，能自动编排调用链路，让多个 sub-agent\n各自提炼再汇总结果。\n教训从撞墙到日志到文档逐级蒸馏，主代理只读汇总结果\n这跟现实中带实习生完全是一个道理。带新人联调流水线，除了给看代码，你还会给他配上测试工具；让他把踩过的坑写成工作手册；平时时不时提醒一句，让他按规范执行；如果手头活实在太多，就安排秘书团分头处理，或者写个脚本跑批处理，帮他把脑子腾出来。\n一句话核心判断：agent 搞不定没有测试过的暗坑；给它动态反馈并沉淀\nSOP，远比直接甩给它一堆权限管用得多。\n你自己都没想清楚，它猜什么\n很多时候活干不完，问题出在需求边界没划清楚。要是你自己都不知道最终要什么，agent\n就只能在那瞎猜。这就像产品经理甩过来一份粗糙的需求，中途天天推倒重来，开发团队不仅干得难受，效率也会直接垮掉。\n有人可能会犯嘀咕：如果每一步都要人先想得一清二楚，还要 AI\n干什么？其实 agent\n不光能跑腿写代码，还能帮我们理清架构思路。拿这位朋友把黑客松原型迁移到\nKubernetes 集群的经历来说，整个协作大致分成了三步。\n第一步，让 agent\n摸清现有代码，并给它相应权限去真实调用服务。它可以通过 Slack API\n或者浏览器自动化来模拟用户操作，直接在真实环境里跑通逻辑。这一步的目标是产出两份文档：一份定义行为的\nPRD，一份决定设计的 RFC。AI\n写出来的文档往往又臭又长，硬着头皮通读太耗精力。你可以明确要求它以低认知负荷的形式汇报，直接列出核心结论、潜在风险和需要你拍板的关键项。甚至可以让它顺手生成一个带图表和卡片的轻量网页，直观呈现系统状态。每个人习惯的信息密度不一样，让\nagent 配合你的阅读习惯，本来就是它的强项。\n第二步，拿着前面理出的文档做定向沟通。你可以从一句明确的目标开始：把这个黑客松原型改造成生产级服务并部署上线。接着跟\nagent\n一起讨论取舍，砍掉哪些多余功能、保留哪些核心逻辑、加上哪些安全边界，再把这些讨论落成具体的技术决策。你甚至可以把喜欢的汇报格式写成一份固定文档，以后直接让\nagent 照着做。cognitive bandwidth\n是你最稀缺的资源，没必要逼自己去啃冗长晦涩的文字，多让工具来适应你的节奏。\n第三步，定死最终的验收标准。要是只停留在前两步，整个流程依然是个开环：agent\n说自己做完了，你还得四处核对排查，反倒成了给它跑腿的人。拉起闭环的关键，在于把成功状态定义得清清楚楚：哪些功能不可妥协，哪些坏味道坚决不能有。抓住核心链路并覆盖关键场景，只要这些硬指标全跑通，你就有八九成把握东西能用。把标准定死之后，agent\n就能在你睡觉时全天候自主试错，靠密集的报错反馈迅速收敛问题。\n第二轮讨论还逼出了一个关键细节：临时做的可视化网页和正式文档到底是什么关系。AI\n生成的图表网页只是个临时视图，用来帮你快速看懂和拍板；真正可靠的单一事实来源，依然是那份严谨的\nMarkdown 文档，讨论中敲定的修改必须同步写回文档里。\n还有一个更关键的管理习惯：手里要有一份简明扼要的需求底稿。AI\n写出的长篇大论通常没人逐行细看，里面塞满了各种想当然的默认配置。如果不把这些没验证过的细节清理掉，agent\n后面写代码就会不断给自己加戏，加进一堆多余的限制，代码不知不觉就跑偏了。这位朋友在项目做到一半时，主动停下来重新对齐目标，把原先臃肿模糊的说明收拢成两层清晰的目标。很多项目之所以烂尾，就是因为没人愿意停下来重新校准方向。我们需要亲自审定一份极简文档，只写死不可碰触的底线原则，给后面的实现划好红线。\n这跟当主管带团队是一样的。管理者不用去啃下属写的每一页草稿，下属负责把关键信息提炼清楚来汇报，主管负责权衡取舍、把控安全底线、纠正方向偏差，搭起一套不用时刻盯梢也能自己跑顺的闭环机制。\n一句话核心判断：目标悬而未决时，agent 的每一次偏航都在消耗你的\ncontext；一份亲自审定的极简需求，胜过十轮发散的头脑风暴。\n它看不到自己的结果，就永远在开环\n高效协作的核心在于杠杆：花 5% 的精力拿到 100% 想要的结果。这 5%\n真正花在刀刃上的动作，就是让干活的人清楚知道进展顺不顺利、有没有做对。定好交付边界很重要，但还有个前提同样不能少：给了验收标准之后，agent\n手里有没有工具去验证自己的活干得怎么样。\n要是 agent 连看 CI/CD\n日志的权限都没有，就拿不到详细的报错堆栈。这时候哪怕你催它把构建跑通，它对着红红绿绿的状态图标也摸不着头脑，没办法自己顺着线索去改错。\n开环里人沦为瓶颈，闭环里人只做验收\n所以在动手之前，先要把路上的绊脚石扫清，算清楚模型自己验证时需要哪些权限和接口。要是出于安全考虑不能直接给线上环境，可以搭一个高度仿真的沙箱给它折腾。给\nagent\n一个安全又真实的操作空间，让它能凭着客观指标看懂任务状态，拿到详细的报错信息来对齐差距。\n在推进项目时，这位朋友也碰到了几处必须人工介入的卡点：代码合并要别人审批、数据库权限要找专人开通、GitHub\nApp 得手动安装、Slack bot 的 token 要存进\n1Password。他在项目做到一半时敏锐地抓住了这些阻碍，把目标和检验手段理顺，列出了一份专门由人工操作的待办清单，把这些环节单独隔离出来。很多人直到项目做完都没意识到这一层。把自动化和人工干预的分工界限划清楚，省去了假装全自动带来的脱节，agent\n的自主闭环才能顺畅运转起来。\n一句话核心判断：验收标准给出了目标，结果可见性带来了自检能力；没有及时的反馈通道，人就只能沦为到处跑腿的检查员。\nAI 放大杠杆，也放大负担\n整个项目最终花了 2\n周时间顺利上线，全程都是抽开会的缝隙，外加一个晚上的加班搞定的。面对高密度的信息吞吐，这位朋友坦言脑子确实累得不行，甚至一度怀疑是不是用\nAI 反倒加重了负担。\n其实这种心智消耗在以前自己写代码时也一样存在。需求推导、架构取舍、边界验证，这些费脑子的事一件也少不了，只是以前开发周期拉得很长，时间把思考压力给摊薄了。现在\nAI\n既能当工程师又能当架构师，还能兼职秘书，把整个开发周期压缩了一大截。它成倍放大了产出效率，也把高密度的思考负荷一下子堆到了面前。能不能适应并驾驭这种高频协作的节奏，正是\nAI 人才竞争的一个方向。\n如果放到团队层面看，搭沙箱机制是个特别务实的切入点。现在转型 AI\nnative\n是个近似政治正确的说法，每个老板都想要，但很多时候面对的是脏活累活，卡在组织架构的改变上。给\nagent\n搭一套好用的运行环境和安全沙箱，是纯粹的工程技术活。它不用动组织架构，也不用改现有的绩效分配，做起来阻力小，又能实实在在地解决问题。具体怎么落地，可以根据各个团队的情况因地制宜。\n回到最开始的问题：怎样才能让 agent\n真正独立干活，把我们从没完没了的盯梢里解脱出来？关键就在这三件事：提供动态测试环境，让它通过报错把踩坑经验沉淀成工作手册；把交付边界界定清楚，用一份亲自过目的人工极简需求把好关；打通运行结果的可见性，让开环的人工核对变成闭环的自主校验。这套思路跟带初级工程师完全相通。当敲代码的基础能力越来越普及，怎么把任务交代清楚、怎么划定边界、怎么做好验收，反倒成了拉开身位最重要的真本事。\n一句话核心判断：摆脱没完没了的盯梢，关键在于把自己从一线执行者转变为出题和定规矩的人，别总想着换个更聪明的模型来解决问题。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/babysit-agents-management-not-context-20260826.html",
+      "content_chars": 6685,
+      "content_sha256": "587746998b3b2ac69698aecb50ab8d0b64f0de64e4191041c5edcf45f1669cd4",
+      "content_fetched_at": "2026-08-27T00:38:02.624056+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-26T00:00:00+00:00",
+      "collected_at": "2026-08-27T00:37:10.787573+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/babysit-agents-management-not-context-20260826.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "为什么你停不下来 babysit agents：不是 context 的问题，是管理的问题",
+          "url": "https://yage.ai/share/babysit-agents-management-not-context-20260826.html",
+          "content_sha256": "587746998b3b2ac69698aecb50ab8d0b64f0de64e4191041c5edcf45f1669cd4"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:fff2fd0a62220b21",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "用过就要说：加州律考 AI 出题立法，人审不豁免",
+      "target_url": "https://yage.ai/share/ab1651-bar-exam-ai-disclosure-20260825.html",
+      "text": "yage-share published: 用过就要说：加州律考 AI 出题立法，人审不豁免",
+      "at": "2026-08-25T00:00:00+00:00",
+      "external_id": "a:fff2fd0a62220b21",
+      "url": "https://yage.ai/share/ab1651-bar-exam-ai-disclosure-20260825.html",
+      "title": "用过就要说：加州律考 AI 出题立法，人审不豁免",
+      "content": "治理与合规\n个人决策\n2025 年 2\n月的加州律考：23 道没人报告的 AI 考题\n如果你在 2025 年 2\n月参加加州律师考试，会遇到一场大混乱。这是加州律考几十年来首次尝试线下与远程混合交付，结果\n开考即崩溃\n：考生被踢出答题系统、界面卡顿报错，试题里甚至夹杂着错别字和逻辑问题。这场事故的导火索是一笔财务缺口。加州律师考试由\nState Bar of California\n主办，它是加州最高法院下属的行政机构，每年开考两次。以往加州和美国多数州一样，多选题采购全美统考机构\nNCBE，即 National Conference of Bar Examiners，的 MBE 多选题联考。2024\n年，State Bar 出现\n2200\n万美元的基金赤字\n，砍掉 NCBE 多选题合同，花 825 万美元雇 Kaplan\n出题，Meazure Learning 负责考试执行。\n除了系统故障，随后浮出水面的考题来源引发了更大的公信力危机。State Bar\n事后披露的清单显示，整场考试 171 道计分多选题中，100 道采购自 Kaplan，48\n道抽取自针对非正规法学院学生的一年级法考，俗称 baby bar，其余 23 道则由\nACS Ventures 动用 AI 直接生成。ACS Ventures 是 State Bar\n雇佣的心理测量服务商，职责是利用统计学方法评估试卷信度并划定及格线。一个本该独立把关考题质量的裁判角色，却把用\nAI 生成的 23 道题塞进了正式考卷，且事前\n没有向考试委员会、最高法院或公众做过任何报告\n。\n这直接违背了委托合同的约定。Kaplan 与 State Bar\n的协议白纸黑字写明，生成式 AI 的参与度应当保持\nde\nminimis\n，也就是尽可能低，AI\n工具只能用于增强既有人类作品的有限部分。\n4\n月 State Bar 向加州最高法院提交的文件\n进一步证实，ACS 拿到 AI\n生成的草稿后，只做了初步的格式与体例调整，既没有校对法律内容的准确性，也没有排查偏见或评估是否适合测试入门阶段的律师。尽管\nState Bar\n坚称所有题目最终都经过内容验证小组和学科专家的审查，合并多选题信度高于\n0.80 的心理测量目标，并否认存在利益冲突，但加州参议院司法委员会依然在\n立法分析报告\n中将这次考试定性为\nunmitigated\ndisaster，即彻底的灾难，提案人办公室也明确指出多道考题在呈现给考生之前没有经过执业律师的实质审阅。\n这场风波以密集的补救和诉讼收尾。State Bar 安排了约\n85\n名受影响考生在 3 月补考\n；复查发现 431\n名未通过考生的作答笔记存在系统导出缺陷，随后直接改判其中 8\n人合格通过；加州最高法院紧急介入，裁定 2025 年 7\n月的考试全部回归线下并恢复采购 NCBE 题库；考生针对 Meazure\n发起的集体诉讼在\n2026\n年 8 月达成和解\n。\nAB 1651 是 2025 年 2\n月加州律考事故的直接立法后果\nAB 1651\n到底说了什么：人审不豁免，也没有罚则\n面对这场考试公信力危机，加州立法机构选择出台一部披露法案，没有下达技术禁令。\nAB\n1651\n编入加州 2026 年法规汇编 Chapter 116，由众议员 Diane Dixon\n提出，\n2026\n年 8 月 22 日获州长签署\n，在加州《商业与职业法典》中新增 § 6060.15\n条款，定于 2028 年 1 月 1\n日正式施行。整个立法过程未遇任何正式反对，加州众议院最终以 72 比 0\n全票通过。\n法案的核心逻辑建立在四个紧密咬合的条款上。在定义端，§ 6060.15(a)(2)\n将 AI 生成内容界定为由生成式 AI\n全部或部分生成的视觉与文本内容，部分生成也算，没有设定任何比例门槛。在适用范围上，§\n6060.15(b) 与 (c) 将披露对象划定为两类资产：一类是 State Bar\n自主开发或明确指令开发的所有考题、实务技能测试、标准答案与评分细则；另一类是\nState Bar\n编制、背书、发布或分发的官方备考材料，涵盖样题、范文、复习大纲和解析。在披露形式上，§\n6060.15(e) 要求正式考试的 AI 披露必须提前 60 天挂在 State Bar\n官网上，备考材料则必须在封面直接印制披露声明。整部法案最核心的规定集中在\n§ 6060.15(d)，法条原文只有一句话：\nSubdivisions (b) and (c) apply regardless of whether the artificial\nintelligence-generated content is revised or reviewed by a natural\nperson.\n这条规则确立了一个清晰的原则：\n无论 AI\n生成内容后续是否经过自然人的修改或审核，披露义务都适用\n。换句话说，人类专家的校对和重写无法洗掉素材原初的\nAI 来源标记。\n与此同时，这部法律的制度边界同样保持克制。整部法案没有设置罚款等处罚条款，没有建立专门的行政执行机制，也没有赋予考生私人诉权。在法案起草的审议过程中，其覆盖范围还做过一次\n收窄\n：State Bar\n曾向委员会表达担忧，认为自己无从获知外部承包商（例如此前 Kaplan 交付的\n100 道题）在内部作业时是否动用了 AI\n工具，若将这部分内容也纳入强制披露将难以执行；提案人据此接受修正，将法案限定在\nState Bar 主导开发的材料之内。\nAB 1651 还承接了一部前导立法。早在 2025 年 10 月 6 日签署的\nSB\n253\n法案中，加州就曾原则性要求考试委员会，只要出题或评分环节动用了\nAI，就要提供通知，但通知的主体、时间窗口和具体形式都没有写清楚。AB 1651\n补齐了这些操作细节：明确了官网和封面等公开载体，锁定了考前 60\n天的交付节点，将监管延伸到备考材料，并加入了人审不豁免的核心准则。\n同一个行业的两套账：执业端人审免责，考试端人审不洗来源\n同一行业里，人审在执业端吸收责任、在考试端洗不掉来源\n把视线从准入考试转向律师的日常执业，同一个行业在对待 AI\n时运行着截然不同的规则。在执业端，律师使用 AI\n工具无需向客户或法庭主动披露。美国律师协会在 2024 年 7 月 29 日发布的\nFormal\nOpinion 512\n确立了这一基准：律师可以借助生成式 AI\n辅助工作，前提是对输出内容进行独立核验并保留专业判断。整份伦理指引要求律师为最终提交的文书承担完全责任，没有施加任何关于使用\nAI 的常规披露义务。\n司法层面的惩戒案例印证了这种责任归属机制。在纽约南区联邦法院审理的\nMata\nv. Avianca\n案中，代理律师在提交给法庭的答辩状中引用了 6 个由 ChatGPT\n虚构的判例，主审法官 Castel 依据联邦民事诉讼规则 Rule 11 对其处以 5000\n美元制裁。法官在裁定中指出，诉讼规则要求的合理调查义务不能转包给技术工具，律师未做核验便签字提交构成过错。法庭惩戒的是未履行核验职责，使用\nAI\n工具本身并不受追究。人类律师的签字确认，完成了对工具输出的责任吸收。\n将两端的规则并列，反差清晰可见。在日常执业中，行业奉行使用、核验、负责的逻辑，人类专业人员的把关免除了披露义务；在准入考试中，加州\nAB 1651 明确只要生成题目动用了 AI\n就必须事前公示，人类专家的修改和审查无法洗掉原初的来源标记。同一个专业领域，在日常生产与准入把关两端切割出了走向相反的问责路径。\n准不准用，和用了要不要说\n观察各行业应对 AI\n的治理规则，不能把它们压进一条单向递增的严格度阶梯。全面禁用和强制披露回答的是两套独立的问题：第一把尺子衡量准不准用，第二把尺子衡量用了要不要说。本文使用的\nT0 到 T4\n档位标签，只是梳理机制逻辑的参照坐标，不属于任何官方分类，也不构成单一维度的严格度排序。\n禁用和强制披露分属两把尺子：左轴准不准用，右轴用了要不要说\n第一把尺子是准不准用。处在\nT0（承诺不用）\n的机构要求产出主体出具书面保证，确认全程未接触 AI 工具。例如\nASME\n期刊\n要求投稿作者确认 AI\n未参与原创学术内容的开发；中国软件著作权登记自 2026 年 3 月 15\n日起要求申请人手写抄录未使用 AI 的承诺，失实则列入失信名单。处在\nT1（全面禁用）\n的机构在制度上直接排除 AI\n介入。全美统考机构 NCBE 在\n2025\n年夏刊主席信\n中声明，现行律考与 NextGen UBE\n的正式考题开发及评分均不使用 AI；\nCFA\nInstitute\n也写明，不会使用 AI\n独立生成认证内容、评卷或做出高利害认证决策。\n第二把尺子是用了要不要说，只在允许使用 AI 的前提下才展开。处在\nT2（使用加负责、不披露）\n的是当代专业执业的主流模式：可以用\nAI，但必须以人类专业判断审查并承担全部责任，通常无需对外披露。律师行业已由\nABA Formal Opinion 512 定调；\n北美精算师协会\n也指出，精算师未经核验不能拿模型结论推卸责任，执业责任锁在持证人员身上，并不向客户设定通用的\nAI 披露义务。\nT3（使用加条件披露）\n允许使用\nAI，只在特定条件触发说明，且普遍设有人审豁免。加州\nAB\n3030\n规定，生成式 AI\n生成的涉患者临床沟通须附免责声明，但内容经过持证医疗人员阅读审核后，披露要求便自动免除。\n欧盟《人工智能法案》第\n50 条第 4\n款\n对公共利益文本同样规定，经过人工审核或编辑控制且有主体承担编辑责任，即可免除披露。\n第二把尺子的另一端是\nT4（使用加强制披露、人审不豁免）\n：用过就要交代，人类审核抹不掉这项义务。学术出版界自\n2023 年起多落在这里。国际医学期刊编辑委员会\nICMJE\n要求作者投稿时披露 AI 辅助技术的使用；\nICLR\n明确任何大语言模型的使用均须披露；多数学术规范对基础语言润色予以豁免，\nACM\n在 2026\n年 5 月调整后，写作辅助不再强制披露。法定对照里，中国\n《人工智能生成合成内容标识办法》\n自\n2025 年 9 月 1 日起施行，全文未设人工审核免责条款；加州\nAB\n2355\n要求含有 AI 生成内容的政治广告必须标注。\n把加州 AB 1651\n放进这两把尺子里，位置就清楚了。资格认证考试空间里，NCBE 与 CFA\n走第一把尺子下的 T1，在出题与评分流程中排除 AI；\n美国医师执照考试\n、注册会计师考试、项目管理专业人士认证与注册护士执照考试均无法定\nAI 出题披露要求。加州 AB 1651 走第二把尺子下的 T4：允许使用\nAI，但只要律协主导使用就必须公开披露，后续专家审核无法免除。它不是全球第一个\nT4，学术出版 2023 年已先行；它是资格认证考试空间里的第一个法定\nT4，并且在 T4\n内部比学术主流更紧，既没有微量使用豁免，也没有基础语言文字润色免责。\n写内部 AI 政策：先分清\nGate 和 Practice\n给技术团队起草内部 AI\n政策时，最容易出现的偏差是试图用单一规则覆盖所有工作流。理顺政策的第一步，是把工作流区分为日常业务生产\nPractice 与准入认证关卡 Gate。\nPractice 占了工程师大部分常规时间：在 Pull Request 里用 Copilot 或\nCursor 补全代码、起草内部\nRFC、总结工单，或迭代具体功能。这里核心是交付物质量和明确的责任人，对应\nT2：可以用 AI，但必须人工核验，由你对合入的结果负责，和 ABA Formal\nOpinion 512 对律师日常执业的界定同构。这类工作流不必给每个文件盖上 AI\n声明章。\nGate 是组织对外部或对内部做认证的节点：对外发布 Launch Notes、准备\nSOC 2\n审计材料、发布带评测数字的模型卡片、写代表官方立场的技术博客、招聘用的\ntake-home、晋升材料。这里材料来源和机构公信力是核心，事后人工审阅抹不掉生成印记。最常见的失误是把\nPractice 的直觉套到 Gate 上，以为复核过就可以不提 AI。这正是加州 AB 1651\n在律考出题端否掉的路径。\nGate 流程必须先选一把尺子：T1 禁用，这份认证材料里不用 AI，像 NCBE 与\nCFA 在高利害认证里的做法；或 T4\n允许用但必须声明，且人工核验不免除披露。若选了\nT4，政策只需再拧两个旋钮。触发门槛：全量使用都声明，还是仅实质角色才触发，拼写语法工具是否豁免。人审效果：审核后可免披露，如加州\nAB 3030 或欧盟人工智能法案第 50 条第 4\n款；还是核验后仍须保持来源透明，如加州 AB 1651 或中国内容标识办法。\n起草或修订团队的 AI 政策时，先把交付物盘点一遍：大多数常规研发划进\nPractice，放手使用、合并者负责；直接关系到外部背书和内部认证的资产单独划进\nGate，按需配置 T1 或\nT4。分清这两套问责逻辑，日常工程推得动，对外承诺也站得住。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/ab1651-bar-exam-ai-disclosure-20260825.html",
+      "content_chars": 5404,
+      "content_sha256": "91b88731aca086094cd09c8d682adfc2bf698ea5fc555aeb8f4fb36189568d00",
+      "content_fetched_at": "2026-08-27T00:38:02.812914+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-25T00:00:00+00:00",
+      "collected_at": "2026-08-27T00:37:10.787573+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/ab1651-bar-exam-ai-disclosure-20260825.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "用过就要说：加州律考 AI 出题立法，人审不豁免",
+          "url": "https://yage.ai/share/ab1651-bar-exam-ai-disclosure-20260825.html",
+          "content_sha256": "91b88731aca086094cd09c8d682adfc2bf698ea5fc555aeb8f4fb36189568d00"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:8e10e0aa9ff27012",
+      "who": "forti-ir",
+      "who_url": "https://fortiguard.fortinet.com/rss/ir.xml",
+      "action": "publish",
+      "target": "Vulnerability in OpenSSL library",
+      "target_url": "https://fortiguard.fortinet.com/psirt/FG-IR-22-059",
+      "text": "forti-ir published: Vulnerability in OpenSSL library",
+      "at": "2022-04-01T07:00:00+00:00",
+      "external_id": "a:8e10e0aa9ff27012",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-22-059",
+      "title": "Vulnerability in OpenSSL library",
+      "content": "CVSSv3 Score:\n7.5\nA security advisory was released affecting the version of OpenSSL library used in some Fortinet products:CVE-2022-0778:The BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. Internally this function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Since certificate parsing happens prior to verification of the certificate signature, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters.Thus vulnerable situations include:TLS clients consuming server certificatesTLS servers consuming client certificatesHosting providers taking certificates or private keys from customersCertificate authorities parsing certification requests from subscribersAnything else which parses ASN.1 elliptic curve parametersAlso any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue.In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However any operation which requires the public key from the certificate will trigger the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature.This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022.Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc).\nRevised on 2026-08-27 00:00:00",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://fortiguard.fortinet.com/psirt/FG-IR-22-059",
+      "content_chars": 2074,
+      "content_sha256": "e25117c239b1688ee1f995296187c3078148bd32b46c53d0e2defe374bfcdc22",
+      "content_fetched_at": "2026-08-27T00:41:42.117023+00:00",
+      "author": "forti-ir",
+      "author_name": "FortiGuard IR Advisories",
+      "author_url": "https://fortiguard.fortinet.com/rss/ir.xml",
+      "published_at": "2022-04-01T07:00:00+00:00",
+      "collected_at": "2026-08-27T00:37:10.787573+00:00",
+      "tags": [
+        "kind:publish",
+        "src:forti-ir",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://fortiguard.fortinet.com/rss/ir.xml",
+        "https://fortiguard.fortinet.com/psirt/FG-IR-22-059"
+      ],
+      "refs": {
+        "actor": {
+          "login": "forti-ir",
+          "url": "https://fortiguard.fortinet.com/rss/ir.xml"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "forti-ir",
+          "name": "FortiGuard IR Advisories",
+          "home_url": "https://fortiguard.fortinet.com/rss/ir.xml"
+        },
+        "article": {
+          "title": "Vulnerability in OpenSSL library",
+          "url": "https://fortiguard.fortinet.com/psirt/FG-IR-22-059",
+          "content_sha256": "e25117c239b1688ee1f995296187c3078148bd32b46c53d0e2defe374bfcdc22"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    }
+  ]
 }
