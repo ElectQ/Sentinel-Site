@@ -4,64 +4,134 @@
   "collect_date": "2026-08-28",
   "collect_window": {
     "start": "2026-08-25T01:00:00+00:00",
-    "end": "2026-08-28T01:45:08.828573+00:00",
-    "hours": 72
+    "end": "2026-08-28T05:05:00+00:00",
+    "hours": 76
   },
   "producer": {
     "name": "sentinel-site",
     "version": "0.1.0",
-    "run_id": "33133802395",
-    "commit": "2bf4178"
+    "run_id": "33143964390",
+    "commit": "e4b16d9"
   },
   "stats": {
-    "total": 10,
+    "total": 12,
     "by_kind": {
-      "publish": 10
+      "publish": 12
     },
     "by_via": {
-      "browser_llm": 5,
-      "rss": 5
+      "rss": 7,
+      "browser_llm": 5
     },
     "by_source": {
+      "denizhalil-blogs": 2,
       "unknowncheats-ac": 3,
       "safebreach-blog": 2,
-      "denizhalil-blogs": 1,
       "paloalto-advisory": 1,
-      "yage-share": 2,
+      "yage-share": 3,
       "cocomelonc": 1
     },
-    "failed_lists": [
-      "redsiege-blog"
-    ],
-    "sources_ok": 50,
-    "sources_failed": [
-      {
-        "id": "redsiege-blog",
-        "error": "no_candidates"
-      }
-    ],
+    "failed_lists": [],
+    "sources_ok": 51,
+    "sources_failed": [],
     "baselines": 0,
     "via_sources": {
       "llm": 11,
-      "browser_llm": 8,
+      "browser_llm": 9,
       "rss": 31
     },
     "llm_usage": {
       "model": "deepseek-v4-flash",
       "requests": 14,
       "calls": 14,
-      "prompt_tokens": 16373,
-      "completion_tokens": 5320,
-      "total_tokens": 21693,
-      "prompt_cache_hit_tokens": 10752,
-      "prompt_cache_miss_tokens": 5621
+      "prompt_tokens": 15150,
+      "completion_tokens": 1964,
+      "total_tokens": 17114,
+      "prompt_cache_hit_tokens": 13056,
+      "prompt_cache_miss_tokens": 2094
     },
     "by_content_status": {
-      "failed": 3,
-      "ok": 7
+      "ok": 9,
+      "failed": 3
     }
   },
   "items": [
+    {
+      "id": "a:791463f590943e2f",
+      "who": "denizhalil-blogs",
+      "who_url": "https://denizhalil.com/blogs/",
+      "action": "publish",
+      "target": "Hiding Your Servers From Shodan Browsers And Creating Firewall Rules",
+      "target_url": "https://denizhalil.com/2026/08/28/hide-servers-from-shodan-firewall-rules/",
+      "text": "denizhalil-blogs published: Hiding Your Servers From Shodan Browsers And Creating Firewall Rules",
+      "at": "2026-08-28T05:05:00+00:00",
+      "external_id": "a:791463f590943e2f",
+      "url": "https://denizhalil.com/2026/08/28/hide-servers-from-shodan-firewall-rules/",
+      "title": "Hiding Your Servers From Shodan Browsers And Creating Firewall Rules",
+      "content": "Introduction\nIn the modern cybersecurity landscape, maintaining server privacy and minimizing the exposed attack surface is paramount. Shodan is often described as the “world’s first search engine for Internet-connected devices.” Unlike traditional web search engines such as Google or Bing that index website content and URLs, Shodan actively scans the global IPv4 and IPv6 address space to index open ports, services, banners, control systems, and connected hardware. While Shodan serves as a vital tool for security researchers and administrators to audit their own external perimeter, it is equally accessible to malicious actors. Threat actors continuously query Shodan to identify unpatched servers, exposed management interfaces, default credentials, and vulnerable service banners without generating a single packet to the target server. This guide explores the technical mechanisms to hide your infrastructure from automated scanners and build robust firewall filtering rules using\niptables\nand\nufw\n.\nLearning Objectives\nBy completing this technical guide, you will master the following security skills:\nAnalyze Scanning Mechanics:\nUnderstand how automated scanners like Shodan discover services through banner grabbing, SYN probing, and SSL certificate parsing.\nImplement Firewall Filtering:\nConstruct and deploy strict packet-filtering rules using Linux\niptables\nand\nufw\nto block known scanner IP ranges.\nMinimize Attack Surface:\nApply service hardening techniques, such as disabling verbose server tokens, altering standard ports, and using rate-limiting.\nDeploy Advanced Obfuscation:\nSet up automated scanning countermeasures, IP drop automation, and port-knocking defense mechanisms.\nWhy should we hide our servers from Shodan browsers?\nIn contemporary cloud and enterprise environments, exposing server infrastructure directly to public search indexes poses a severe, systemic security risk. Automated search engines like Shodan systematically map the internet by probing IP addresses 24/7, creating an easily queryable blueprint of your organization’s digital footprint. When server details—such as running services, open ports, operational software versions, and cryptographic certificates—are publicly cataloged, threat actors no longer need to perform noisy, detectable network scans to locate high-value targets. Furthermore, the threat landscape operates at machine speed. As soon as a fresh security flaw or Zero-Day exploit is publicly disclosed, malicious groups construct specialized search queries targeting specific software banners indexed within Shodan. By leveraging this centralized database, attackers can rapidly compile a global hit list of vulnerable systems within minutes of a vulnerability’s publication. Protecting your servers from being indexed is essentially a race against automated exploitation script execution.\nUltimately, hiding your infrastructure enforces the core principle of defense-in-depth and operational privacy. Securing your perimeter against automated indexers significantly reduces your attack surface, mitigates unauthorized access attempts on administrative portals, and strips attackers of their most effective passive intelligence gathering platform. Obfuscating your servers ensures that your infrastructure remains invisible to mass exploitation sweeps and opportunistic cyber threats.\nElimination of Passive Reconnaissance:\nAttackers perform passive reconnaissance by querying Shodan’s database rather than your infrastructure directly. Because this lookup touches Shodan’s data, your Intrusion Detection Systems (IDS) and Security Information and Event Management (SIEM) solutions register zero alerts. Concealing your servers forces attackers to execute active direct scans, instantly triggering your security monitoring tools and firewall defenses.\nPrevention of Zero-Day & Rapid Exploitation:\nWhen critical vulnerabilities are disclosed, exploit scripts are immediately paired with targeted Shodan queries (e.g., filtering for specific Apache, Nginx, or OpenSSH banner strings). If your server banner is publicly indexed, your systems become immediate automated targets before your team has time to evaluate, test, and apply software patches.\nProtection of Management & Administrative Interfaces:\nUnintentional or legacy exposure of critical management interfaces—such as SSH (port 22), RDP (port 3389), database engines, or hardware-level IPMI/iLO interfaces—serves as a primary initial access vector for ransomware operators. Obfuscating these services ensures they are shielded from mass credential stuffing and automated brute-force attacks.\nMitigation of Targeted DDoS & Botnet Probing:\nAutomated botnet operators continuously harvest target lists from Shodan to recruit vulnerable nodes (such as exposed Elasticsearch, Redis, or Memcached instances for reflection/amplification attacks). Shielding these ports prevents your infrastructure from being co-opted into malicious bot networks or targeted in large-scale Distributed Denial of Service (DDoS) campaigns.\nHow Shodan Scanners Detect Servers\nTo effectively defend server infrastructure against Shodan, security administrators must thoroughly understand its underlying discovery and scanning methodology. Shodan does not rely on traditional web crawlers or domain-name indexing; instead, it operates a globally distributed fleet of scanner nodes located across various hosting providers and IP ranges. These crawlers execute continuous, asynchronous port sweeps across the entire public IPv4 space—and expanding sections of IPv6—to identify active hosts and exposed network services. The discovery process begins with broad port probing using highly optimized TCP/UDP packets designed to solicit immediate responses from target IP addresses. When a port is identified as open, Shodan’s scanning engine initiates a full protocol handshake to interact directly with the listening service. Rather than simply noting port availability, the crawler queries the application layer to collect raw data, configurations, and metadata provided by the host during standard connection initialization.\nIn addition to raw network banner grabbing, Shodan leverages advanced cryptographic scraping and protocol-specific payload delivery to map complex infrastructures. By capturing TLS/SSL certificates, domain names, and specialized industrial or cloud protocols (such as Modbus, MQTT, or SNMP), Shodan builds a deep contextual profile for each host. This multi-layered detection strategy enables Shodan to correlate isolated IP addresses with internal domain hostnames, hardware vendors, and specific software builds without needing prior authorization or DNS records.\nFull IPv4 Range Probing & SYN Scanning:\nShodan’s distributed crawlers continuously send rapid TCP and UDP SYN packets across the entire public IP spectrum, probing standard and non-standard ports ranging from 1 to 65535. This low-level packet interaction measures port responsiveness to determine whether a target port status is open, closed, or filtered by perimeter security devices.\nService Banner Grabbing & Protocol Interrogation:\nOnce an open port is detected, the crawler completes a full TCP handshake and issues specific protocol greetings or HTTP GET requests. The service responds by transmitting its application banner, exposing software identifiers, exact version numbers, operating system builds, and enabled modules (e.g.,\nHTTP/1.1 200 OK Server: nginx/1.18.0\nor\nSSH-2.0-OpenSSH_8.2p1\n).\nTLS/SSL Certificate Scraping & Domain Correlation:\nFor encrypted services, Shodan executes a TLS handshake to extract the complete public SSL certificate chain. By parsing metadata fields such as Common Names (CN) and Subject Alternative Names (SAN), the crawler correlates IP addresses with domain hostnames, subdomains, and internal naming schemes—even when direct web access is restricted or hidden behind custom host headers.\nProtocol-Specific Payload Queries & Device Profiling:\nShodan transmits tailored application-layer payloads targeting specialized protocols including HTTP, SNMP, RTSP, Redis, and MQTT. Analyzing the structured responses allows Shodan to index precise hardware device models, embedded firmware versions, geographical coordinates, default administrative settings, and system configuration leaks.,\nBlocking Shodan Scans with a Firewall (iptables / ufw)\n1. UFW (Uncomplicated Firewall) Implementation\nBlock known Shodan crawler IP subnets directly using UFW rules:\n# Block specific known Shodan scanner IP blocks\nsudo ufw deny from 185.220.101.0/24 to any comment 'Block Shodan Scanner Subnet'\nsudo ufw deny from 198.20.69.0/24 to any comment 'Block Shodan Scanner Subnet'\nsudo ufw deny from 209.126.110.0/24 to any comment 'Block Shodan Scanner Subnet'\n# Enable UFW logging and reload rules\nsudo ufw logging on\nsudo ufw reload\n2. Direct iptables Rules and Rate Limiting\nDeploy low-level\niptables\ndrop rules to silently discard incoming SYN packets from scanning subnets and apply rate-limiting:\n# Drop connections from known scanner subnets silently (No ICMP reply)\nsudo iptables -A INPUT -s 185.220.101.0/24 -j DROP\nsudo iptables -A INPUT -s 198.20.69.0/24 -j DROP\n# Rate-limit new incoming TCP SYN connections to mitigate port scanning\nsudo iptables -A INPUT -p tcp --syn -m conntrack --ctstate NEW -m limit --limit 2/s --limit-burst 4 -j ACCEPT\nsudo iptables -A INPUT -p tcp --syn -m conntrack --ctstate NEW -j DROP\n# Save iptables configuration\nsudo iptables-save | sudo tee /etc/iptables/rules.v4\n3. Banner Obfuscation & Service Hardening\nPrevent Shodan from collecting specific service versions by suppressing server tokens in web servers:\n# For Nginx (/etc/nginx/nginx.conf)\nserver_tokens off;\n# For Apache (/etc/apache2/conf-enabled/security.conf)\nServerTokens Prod\nServerSignature Off\nConclusion\nAchieving complete isolation from automated internet search engines like\nShodan\nis a fundamental pillar of modern defense-in-depth security architecture. As automated scanners continuously harvest network telemetry across the global IP space, relying on security through obscurity is no longer a viable strategy. Security administrators must proactively minimize public exposure by establishing strict perimeter controls, eliminating unneeded public services, and treating every public IP address as an actively targeted entry point. Building a resilient defense requires a combination of technical controls, including strict iptables and ufw packet filtering, rate limiting, and banner obfuscation. Suppressing application server tokens, shifting management portals to non-standard ports, and encapsulating sensitive services behind encrypted VPN tunnels or reverse proxies effectively strips Shodan’s ability to map software builds and system configurations. These proactive steps ensure that automated sweeps yield no meaningful reconnaissance data to potential adversaries. Ultimately, denying Shodan access to your server infrastructure shifts the operational advantage back to your security team. By stripping threat actors of passive intelligence gathering platforms, you force them to perform direct, active network probing—which immediately triggers intrusion detection systems, log monitors, and automated firewall countermeasures. Implementing these multi-layered defense techniques ensures your critical systems remain hidden, secure, and resilient against mass automated cyber attacks.\nHiding Your Servers From Shodan Browsers And Creating Firewall Rules\nDownload\nBuilding a Port Scanner Tool in C++\nShodan: A Search Engine for Beginner Hackers\nPrivacyNet: Anonymization Tool to Safeguard Your Privacy\nPort Scanning with Scapy: A Comprehensive Guide to Scapy\nCritical Infrastructure Discovery with Shodan Dorks: A Comprehensive Overview\nThe post\nHiding Your Servers From Shodan Browsers And Creating Firewall Rules\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://denizhalil.com/2026/08/28/hide-servers-from-shodan-firewall-rules/",
+      "content_chars": 11941,
+      "content_sha256": "f1dc6d2b426813433bbafb301366517c41bfdbd15fe92a402e7ffd436506404c",
+      "content_fetched_at": "2026-08-28T05:11:36.983300+00:00",
+      "author": "denizhalil-blogs",
+      "author_name": "DenizHalil Blogs",
+      "author_url": "https://denizhalil.com/blogs/",
+      "published_at": "2026-08-28T05:05:00+00:00",
+      "collected_at": "2026-08-28T05:10:43.348100+00:00",
+      "tags": [
+        "kind:publish",
+        "src:denizhalil-blogs",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://denizhalil.com/blogs/",
+        "https://denizhalil.com/2026/08/28/hide-servers-from-shodan-firewall-rules/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "denizhalil-blogs",
+          "url": "https://denizhalil.com/blogs/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "denizhalil-blogs",
+          "name": "DenizHalil Blogs",
+          "home_url": "https://denizhalil.com/blogs/"
+        },
+        "article": {
+          "title": "Hiding Your Servers From Shodan Browsers And Creating Firewall Rules",
+          "url": "https://denizhalil.com/2026/08/28/hide-servers-from-shodan-firewall-rules/",
+          "content_sha256": "f1dc6d2b426813433bbafb301366517c41bfdbd15fe92a402e7ffd436506404c"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
     {
       "id": "a:d5592d587dc9e606",
       "who": "unknowncheats-ac",
@@ -86,7 +156,7 @@
       "author_name": "UnknownCheats Anti-Cheat",
       "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
       "published_at": "2026-08-28T01:45:08.828573+00:00",
-      "collected_at": "2026-08-28T01:45:08.828573+00:00",
+      "collected_at": "2026-08-28T05:10:43.348100+00:00",
       "tags": [
         "kind:publish",
         "src:unknowncheats-ac",
@@ -163,7 +233,7 @@
       "author_name": "UnknownCheats Anti-Cheat",
       "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
       "published_at": "2026-08-28T01:45:08.828573+00:00",
-      "collected_at": "2026-08-28T01:45:08.828573+00:00",
+      "collected_at": "2026-08-28T05:10:43.348100+00:00",
       "tags": [
         "kind:publish",
         "src:unknowncheats-ac",
@@ -240,7 +310,7 @@
       "author_name": "UnknownCheats Anti-Cheat",
       "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
       "published_at": "2026-08-28T01:45:08.828573+00:00",
-      "collected_at": "2026-08-28T01:45:08.828573+00:00",
+      "collected_at": "2026-08-28T05:10:43.348100+00:00",
       "tags": [
         "kind:publish",
         "src:unknowncheats-ac",
@@ -317,7 +387,7 @@
       "author_name": "SafeBreach Blog",
       "author_url": "https://www.safebreach.com/blog/",
       "published_at": "2026-08-28T01:45:08.828573+00:00",
-      "collected_at": "2026-08-28T01:45:08.828573+00:00",
+      "collected_at": "2026-08-28T05:10:43.348100+00:00",
       "tags": [
         "kind:publish",
         "src:safebreach-blog",
@@ -394,7 +464,7 @@
       "author_name": "SafeBreach Blog",
       "author_url": "https://www.safebreach.com/blog/",
       "published_at": "2026-08-28T01:45:08.828573+00:00",
-      "collected_at": "2026-08-28T01:45:08.828573+00:00",
+      "collected_at": "2026-08-28T05:10:43.348100+00:00",
       "tags": [
         "kind:publish",
         "src:safebreach-blog",
@@ -471,7 +541,7 @@
       "author_name": "DenizHalil Blogs",
       "author_url": "https://denizhalil.com/blogs/",
       "published_at": "2026-08-27T05:00:00+00:00",
-      "collected_at": "2026-08-28T01:45:08.828573+00:00",
+      "collected_at": "2026-08-28T05:10:43.348100+00:00",
       "tags": [
         "kind:publish",
         "src:denizhalil-blogs",
@@ -548,7 +618,7 @@
       "author_name": "Palo Alto Networks Security Advisories",
       "author_url": "https://security.paloaltonetworks.com/",
       "published_at": "2026-08-27T01:00:00+00:00",
-      "collected_at": "2026-08-28T01:45:08.828573+00:00",
+      "collected_at": "2026-08-28T05:10:43.348100+00:00",
       "tags": [
         "kind:publish",
         "src:paloalto-advisory",
@@ -625,7 +695,7 @@
       "author_name": "yage.ai share (Deep News)",
       "author_url": "https://yage.ai/share/",
       "published_at": "2026-08-27T00:00:00+00:00",
-      "collected_at": "2026-08-28T01:45:08.828573+00:00",
+      "collected_at": "2026-08-28T05:10:43.348100+00:00",
       "tags": [
         "kind:publish",
         "src:yage-share",
@@ -679,6 +749,83 @@
       }
     },
     {
+      "id": "a:8e3ac78780c6ccac",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Grok Bot 泄露：为什么 agent 的 system prompt 必须冻结",
+      "target_url": "https://yage.ai/share/grok-bot-context-engineering-20260827.html",
+      "text": "yage-share published: Grok Bot 泄露：为什么 agent 的 system prompt 必须冻结",
+      "at": "2026-08-27T00:00:00+00:00",
+      "external_id": "a:8e3ac78780c6ccac",
+      "url": "https://yage.ai/share/grok-bot-context-engineering-20260827.html",
+      "title": "Grok Bot 泄露：为什么 agent 的 system prompt 必须冻结",
+      "content": "AI Agent\n推理与性能\n2026 年 8 月，社区把 Grok Bot 0.18.0 逆向出来，源码公开，发布在\nGitHub\n。Grok\nBot 是 Anysphere，也就是 Cursor 的公司，做的桌面 agent 产品。\n上篇\n用这个代码库拆了能力层，工具怎么按需扩展、为什么\nCursor 只给模型一部分工具的完整定义。这篇拆 context 层：system prompt\n怎么组装、怎么保持稳定、装不下时怎么办。同一个泄露，两个切面。\n这是一个罕见的机会：能看到一个生产级 harness\n的真实内部编排代码，不是博客声明。\n过完源码，它的设计原则和领域里的 best practice\n对得上。对得上有两种可能：巧合，或者模仿。怎么分辨？拿相隔一年的 Manus\n对照。Manus 团队 2025 年 7 月发表过一篇\nContext\nEngineering\n，讲他们怎么管理 agent 的\ncontext。两个团队独立设计，如果收敛到同一条约束，这条约束大概率是底层逼出来的，不是谁的风格偏好。\n被冻住的 system prompt\n把 memory、当前状态这类动态内容放进 system\nprompt，每轮重新渲染，相邻两轮的字符串就不同。Grok Bot\n的设计选择了另一条路。\nFrozenMemorySnapshot\n里存着两个字段：渲染好的字符串\nrender\n，和一个整数\ncompactionEpoch\n。\nresolveFrozenMemoryPrompt\n每次调用时先检查缓存：如果缓存存在、且缓存里的 epoch 等于当前\nepoch，就直接返回\nrender\n，不调用\nrenderLive\n，也不重新查 memory。只有首轮、或 compaction\n发生使 epoch 递增时，才会重新 recall + 渲染，并把新的\nrender\n和新的 epoch 写入缓存。\nagent profile 用同一套机制。\nAgentProfilePromptSnapshot\n同样以\ncompactionEpoch\n作为冻结键，identity\n发生变化时，profile 段保留原文，只在后面追加一段 update\n文本，把变更叠加进去。\n结果是：在同一个 epoch 内，无论对话进行了多少轮，system prompt 的\nmemory 段和 profile 段的字节内容都保持不变。只有 context compaction\n发生、epoch 递增时，prompt 才会重新生成。\n为什么 Cursor 要费劲把 prompt\n冻住？每轮重拼不是更能反映当前状态吗？\n因为 prompt 是 cache 前缀，位于模型看到的 token\n流最前面，每变一次，整个前缀的 KV cache 就失效。这是成本，不是洁癖。\n前缀一变的成本\n模型每处理一个 token 会算出它的 key 和\nvalue，后面生成时注意力读前面所有 token 的\nKV，算过的能复用。跨请求还有一层：如果这次开头一段 token\n和上次完全相同，这段的 KV 直接复用，按缓存价计费，比原价便宜 10\n倍。Claude Sonnet 的 cached input token 是 0.30 美元每百万\ntoken，uncached 是 3.00，\nAnthropic\n的缓存文档\n里有这个定价和失效规则。\nagent 运行时 input 和 output token 的比例大约是 100:1，每一步 context\n在增长，输出却只是短短的 function call，成本大头在\ninput。在这个比例下，前缀稳不稳直接决定运行成本。\n自回归模型的性质决定了：前缀里任何一个 token 变了，从那个 token\n往后的 KV cache 全部失效。第 p 个 token 变了，第 p 个的 key 和 value\n变，第 p+1 个读到不同的第 p 个也跟着变，一路传下去，缓存只能用到第 p-1\n个。system prompt\n在最前面，它一变，等于整个前缀每一轮都重算，付的是原价。\n前缀失效：system prompt 在 token\n流最前面，变一个 token 往后的 KV cache 全失效，价格从缓存价 0.30\n回到原价 3.00\nManus 那篇 Context Engineering 里给了一个具体的反例：有人在 system\nprompt 开头放一个精确到秒的时间戳，让模型知道现在几点，cache\n命中率随之归零，每一轮都从头重算。为了知道现在几点，付了全部 input\n的原价。\n这条经济学还推出两条配套约束：context 要 append-only，不修改历史\naction 和 observation；序列化要确定性，很多语言序列化 JSON 对象时 key\n顺序不稳定，会悄悄破坏\ncache。这两条都是前缀一变全失效的直接推论，上篇那条约束（序列化的工具面必须稳）也是。工具\nschema 在 tools 参数里，provider 把它序列化在 context\n最前面，动一次全失效。上篇展开了 Manus 的 Mask Don’t Remove 和 Grok Bot\n的 hint + meta-dispatch 怎么各自解决这个约束。有了这条经济学做地基，Grok\nBot 在生产代码里实现了三条具体纪律，每条都有 Manus\n的独立因果做对照。\n该稳定时稳定：冻结到\ncompaction 边界\n第一条纪律是把动态前缀冻结到 compaction 边界。Grok Bot 借助\nresolveFrozenMemoryPrompt\n检查\ncompactionEpoch\n，保证同一 epoch 内 memory\n段字节级稳定，不随每轮对话变化。\nAgentProfilePromptSnapshot\n是同样的结构，\nannouncedIdentity\n变化时 profile 段追加一段\nupdate 文本。把 system prompt 当成 cacheable prefix 来管，只允许它在\ncompaction 边界变化，这是一等设计约束，不是实现细节。没做冻结的\nharness，动态内容一变，整个前缀的 cache 就失效，成本直接翻到原价。\nManus 在 2025 年 7 月那篇里给了同一条因果，原话是 “Keep your prompt\nprefix stable”。Grok Bot 在 2026 年 8 月的生产代码里用 compaction epoch\n冻结独立实现了它。两个团队、相隔一年、同一个解法，说明这条约束是底层压出来的，不是谁的设计偏好。\n冻结有个代价：prompt 不再实时反映最新状态。memory 变了，prompt\n还是旧的，直到下一次\ncompaction。这会不会让模型基于过时的信息做决策？\n该变时变：运行时状态注入\n冻结的是该稳定的部分，不是所有部分。\ngetMcpDiscoveryStatusSection\n把这个区分做出来：如果本轮 MCP discovery 因为后端失败，prompt\n里会注入一个\n<mcp_status>\n块，内容是：\n你的 MCP 工具暂时不可用：本轮从后端发现用户的 MCP\n连接器失败了。这不代表用户没有 MCP\n连接器，不要声称没有或某个连接器缺失；如果用户需要 MCP 工具，告诉他们\nMCP 暂时不可用、稍后重试。\n这是一个运行时 guard，不是静态指令。prompt\n反映的不只是产品策略，还有这一轮发生了什么。\n和冻结不矛盾。冻结的是前缀里稳定的部分，动态注入的是必须反映当前状态的部分。失效边界的意义正在于区分这两类：哪些内容可以冻结，哪些内容必须每轮更新。\n失效边界的意义在于区分两类内容：system\nprompt 字节级冻结只允许在 compaction 边界变化，mcp_status\n每轮注入反映本轮发生了什么\nManus 那篇里隐含同一原则：context\n内容要反映当前状态，但反映的方式是外置到文件系统，不是每轮重拼。Grok Bot\n选择了更轻量的运行时注入。这条纪律目前只有 Grok Bot 一个实现，Manus\n是原则层面的对照，不算独立收敛。\nprompt 能反映当前状态了，但 context\n本身会不断膨胀。网页内容、工具返回的大 JSON，都会把 context\n撑大。装不下时怎么办？\n装不下时外置：文件系统\nGetMcpTools\n的结果如果超过\n12KB，\nFILE_OUTPUT_THRESHOLD_BYTES = 12_000\n，Grok Bot\n就把内容写到 box 上的\nagent-tools/\n目录，返回文件路径让模型去 Read。context 里只留路径，不留内容。\n更关键的是校验：\ncheckMcpToolDefinitionRead\n用\nhasReadPath\n追踪模型是否真的读过那个 schema\n文件，没读过就拒绝调用。读过没有是一个可验证状态，不是模型的自我声明。\n外置文件系统：超过 12KB 的完整内容写进\nagent-tools/ 文件，context 里只留一条路径，hasReadPath\n校验模型真的读过\nManus 给了同一个机制的原则：文件系统是终极 context，“unlimited in\nsize, persistent by nature, and directly operable by the agent\nitself”。压缩策略 “always designed to be restorable”：网页内容可以从\ncontext 丢掉，只要保住 URL；文档内容可以省略，只要 path 还在\nsandbox。为什么压缩必须可恢复？Manus 的解释是，agent\n要基于全部先前状态预测下一步，你无法可靠地预知哪条 observation\n十步后变关键，任何不可逆的压缩都携带风险。\n这个机制上篇从能力层提过一句：GetMcpTools 结果超过 12KB\n写到文件、只留路径。本篇从 context\n容量管理和可恢复压缩的角度展开它。同一个机制，两个切面。\n这条纪律也有独立收敛：Manus 给了原则，文件系统等于终极\ncontext，压缩必须可恢复；Grok Bot 给了实现，12KB 阈值加\nhasReadPath\n校验。两个团队、相隔一年、同一套外置纪律。\nGrok Bot 三条纪律（稳定、追加、外置）都有对照证据。Manus\n那篇里还有三条，Grok Bot 源码里没有直接体现，属于同一套 context\n工程纪律，但目前只有 Manus 一条证据链。\nManus 的三个补充机制\nManus 处理复杂任务时会建一个\ntodo.md，不断重写、逐项打勾。这是刻意操纵注意力，不是可爱行为。一个典型任务平均\n50 次 tool call，长循环里模型容易漂移、忘了全局目标。通过不断重写 todo\n列表，Manus 把全局目标复述到 context 尾部，推入模型的近期注意力，对抗\nlost-in-the-middle 和 goal misalignment。用自然语言把注意力 bias\n到任务目标上，不需要架构改动。\nagent 会犯错，这是现实，不是\nbug。多步任务里，失败是循环的一部分，不是例外。常见冲动是清理\ntrace、重试、重置状态，但擦除失败等于移除证据，没有证据模型无法适应。把错误留在\ncontext 里，模型看到失败的 action 和 stack trace\n会隐式更新信念，降低重复同样错误的概率。Manus 认为 error recovery 是\nagentic 行为最清晰的指标之一，却在多数 benchmark 里代表性不足。\n模型是优秀的模仿者，会模仿 context 里的行为 pattern。如果 context\n里充满相似的 action-observation 对，模型会跟随那个\npattern，即使它已不再最优。Manus 的例子：批量 review 20 份简历，agent\n陷入节奏，机械地重复相似动作，导致 drift、overgeneralization，有时\nhallucination。解法是注入结构化变异：不同序列化模板、换措辞、顺序和格式的小噪音。context\n越均匀，agent 越脆。\n这三条目前只有 Manus 一条证据链，Grok Bot\n源码里没有直接体现，标注为未独立验证。\n把 prompt 和 context\n当一等工程对象，不是配置字符串。一套六条纪律：\n维度\n该怎么做\n因果\n独立收敛证据\n稳定\n前缀冻结到 compaction 边界\nKV cache 10x\nManus 因果 + Grok Bot compaction epoch 冻结\n追加\nappend-only，序列化确定性\n前缀一变全失效\nManus 因果 + Grok Bot 不重拼\n外置\n大 artifact spill 到文件系统，可恢复压缩\ncontext 容量 + 不可逆压缩有风险\nManus 原则 + Grok Bot 12KB spill + hasReadPath\n复述\n目标复述到 context 尾部\n对抗 lost-in-the-middle\nManus recitation\n保留\n错误留在 context\n模型靠证据隐式更新信念\nManus keep-wrong-stuff-in\n变异\n序列化注入结构化变异\n对抗 few-shot 模式化\nManus don’t-get-few-shotted\n前三条（稳定、追加、外置）两个团队独立收敛，是承重的。后三条（复述、保留、变异）目前只有\nManus 一条证据链，未独立验证。\n给写 harness 的人一个收尾：把 system prompt\n当成需要显式管理失效边界的工程对象。什么该稳定、什么只追加、什么外置、什么复述、什么保留、什么变异，每条都有因果，不是风格偏好。两个独立产品收敛到同一套纪律，这套纪律就是判断该不该抄的依据。\n系列文章\n同一个泄露，两个切面：\nGrok\nBot 泄露：Cursor\n为什么只给模型一部分工具的完整定义\n：能力层，模型能调用什么、怎么按需扩展\nGrok\nBot 泄露：为什么 agent 的 system prompt 必须冻结\n：context\n层，模型看到什么、prompt 怎么管理",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/grok-bot-context-engineering-20260827.html",
+      "content_chars": 5985,
+      "content_sha256": "bc5711f3dbd2f53138fa216ecc5708026dae98bf9121a68f70f6c6e13a2fc0d8",
+      "content_fetched_at": "2026-08-28T05:11:19.458708+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-27T00:00:00+00:00",
+      "collected_at": "2026-08-28T05:10:43.348100+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/grok-bot-context-engineering-20260827.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Grok Bot 泄露：为什么 agent 的 system prompt 必须冻结",
+          "url": "https://yage.ai/share/grok-bot-context-engineering-20260827.html",
+          "content_sha256": "bc5711f3dbd2f53138fa216ecc5708026dae98bf9121a68f70f6c6e13a2fc0d8"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
       "id": "a:4af806b38b667976",
       "who": "yage-share",
       "who_url": "https://yage.ai/share/",
@@ -702,7 +849,7 @@
       "author_name": "yage.ai share (Deep News)",
       "author_url": "https://yage.ai/share/",
       "published_at": "2026-08-26T00:00:00+00:00",
-      "collected_at": "2026-08-28T01:45:08.828573+00:00",
+      "collected_at": "2026-08-28T05:10:43.348100+00:00",
       "tags": [
         "kind:publish",
         "src:yage-share",
@@ -779,7 +926,7 @@
       "author_name": "cocomelonc",
       "author_url": "https://cocomelonc.github.io/",
       "published_at": "2026-08-25T01:00:00+00:00",
-      "collected_at": "2026-08-28T01:45:08.828573+00:00",
+      "collected_at": "2026-08-28T05:10:43.348100+00:00",
       "tags": [
         "kind:publish",
         "src:cocomelonc",
