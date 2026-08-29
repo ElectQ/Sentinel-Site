@@ -1,164 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-08-29",
-  "generated_at": "2026-08-29T03:11:47.358550+00:00",
-  "item_count": 6,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:611b116d91c87ddc",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4784553.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-29T03:07:21.351311+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4784553.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-29T03:08:07.080749+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:9d59381c8bce36d8",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: Miscrits Reverse Engineering",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-29T03:07:21.351311+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769531-miscrits-reverse-engineering.html",
-      "title": "Miscrits Reverse Engineering",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769531-miscrits-reverse-engineering.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-29T03:08:18.130419+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:9d56e06df21249d1",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor-post4784112.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-29T03:07:21.351311+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor-post4784112.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-29T03:08:29.279805+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:ef3bebb71e2af373",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: A simple driver with skCrypt",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-08-29T03:07:21.351311+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt.html",
-      "title": "A simple driver with skCrypt",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-08-29T03:08:40.323607+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:d3d8647b4ca1aea1",
-      "kind": "publish",
-      "text": "yage-share published: 域模型的第三条路：一个 175 年公司的 $40M 答案",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-28T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/domain-model-third-path-20260828.html",
-      "title": "域模型的第三条路：一个 175 年公司的 $40M 答案",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "产业与竞争\n中国科技生态\n2026 年 8 月 24 日，Thomson Reuters 发布了自研大模型\nThomson\n1.0\n。这家拥有 175\n年历史的专业信息出版商，没有从零训练通用底座去正面竞争\nOpenAI。他们的核心资产集中在 Westlaw 判例法数据库、Practical Law 与\nCheckpoint 税务库这类专有语料。Thomson 1.0\n作为多模型栈里的一层，接入既有的法律产品 CoCounsel\nLegal，在自报的领域评测中超过了若干主流闭源模型。\n这笔投入背后的账本展现了清晰的结构。Thomson Reuters 自述两年累计投入\n4000\n万美元，包含引进人才与并购研究团队的全部支出。底座选用了阿里巴巴的开放权重模型\nQwen3.6-35B-A3B。据 Thomson Reuters\n自述，团队注入专有语料做持续预训练，实际用量还不足内容资产总量的\n10%；随后由数百名法律与税务专家参与微调、偏好对齐与评测。整个训练消耗\n35,207 个 B200 GPU 小时，折合纯算力成本大概在 10 万到 20\n万美元之间。\n自报的评测数据显示，Thomson 1.0 法律域均分为 75.2，高出底座\nQwen3.6-35B-A3B 的 72.7，也高出 Gemma 4-31B 的 70.5 与 Anthropic Haiku\n4.5 的 67.7。Thomson Reuters\n把小版本向学术与非商业场景开放了权重，完整版由内部完全掌控。技术报告标题定为\nContinual Learning of Frontier Models for\nSovereignAI，强调团队搭建的是一套持续学习管线，训练模型只是管线的第一步。\n这两件事放在一起，把一个行业问题直接推到了台前。一家拥有海量行业专有数据的传统公司，靠开放基座加上私有工程，能不能真正跑通自己的模型路线？这是难以复制的孤例，还是代表着垂直领域的一种通用解法？要想看清这条路径的逻辑，需要先回到三年前那场方向相反的尝试。\n三年前，同一种公司，相反的结果\n2023 年 3 月，金融信息巨头 Bloomberg 发布了 BloombergGPT\n论文。当时团队动用 50B 参数规模，喂入来自 Bloomberg Terminal 的 363B\ntoken\n私有金融数据，从零开始训练底座。在那个阶段，垂直巨头的普遍做法是自建底座：私有数据无法直接输入外部商业接口，开源底座能力尚弱，从零预训练成了唯一的出路。\n这个耗资巨大的项目最终迎来了意料之外的结局。Bloomberg\n终端产品全球负责人 Wayne Barlow 在\n接受\nMarket & Alt Data Insight 采访\n时，给出了坦率的回应：\n“BloombergGPT was a research model and is actually not used at all in\nany of our products. Our products are built on a combination of models.\nWe have some commercial models, some open-weight LLMs, some smaller,\ncustom language models that we build ourselves.”\nBloomberg 现在的 AI 产品 ASKB 在 2026 年初开启测试，覆盖 375,000\n名终端用户里的约三分之一。其底层演变为混合路由方案，由通用商业接口、开源权重模型与自研轻量小模型共同协作支撑。承载全公司期待的\n50B 大模型停留在研究阶段，没有进入实际生产线。\n两家拥有深厚数据资产的行业巨头，在前后相隔三年的时间点上，得出了相反的业务结果。Bloomberg\n投入高昂预算，消耗 363B token\n私有语料从零起步，最终未能落地到任何实际产品；据 Thomson Reuters\n自述，其投入 4000 万美元，仅调用不到 10%\n的专有内容在开放底座上做后期注入，便在自报的领域评测中超过了顶级通用模型。\n同一种数据富集公司，2023 年从零训练 50B\n模型未用于产品，2026 年 4000 万美元在开放底座上后训练并在域内打赢\nfrontier\n我原先以为这种分野源于数据清洗难度或团队执行力，后来把 RAG\n和模型权重的分工想清楚，才意识到问题的根源在架构选择。2023\n年行业普遍把通用模型加 RAG 和专有模型训练看作二选一的竞争路线。Bloomberg\n面对这个选择时把赌注全押在了权重层，试图把海量金融事实强行训进 50B\n模型里。在 2023\n年，这种做法有其合理性，因为当时通用模型的金融理解能力不足，RAG\n技术也还在早期摸索阶段。\n但把护城河完全押在权重层，很快就会遭遇开放模型的冲击。开放底座的能力一旦追平，单纯把领域数据训进权重的先发优势就会迅速蒸发，缺乏私有数据飞轮、评测闭环与行业分发的模型自然无法在生产中立足。Thomson\nReuters 在 2026 年走通的做法给出了新的答案：开放底座负责通用推理，RAG\n承载动态事实，私有数据飞轮专门做评测与行为对齐。同样的问题在三年后有了完全不同的解法，权重层退成了可以随时替换的基础零件。\n为什么是现在\n从 2023 年到 2026\n年，整个技术栈有三个核心维度发生了明显变化。底座能力、后训练工具链与资本门槛的位移，共同重塑了行业的基本盘。\n第一个变化在于开放底座的能力跨越了可用门槛。2023\n年市场上缺乏高水准开放权重底座，垂直公司打造定制智能只能从头预训练。到了\n2026 年，Qwen 3.8 Flash Next 以及 GLM 5.3 Flash\n这类开放模型在领域理解上紧咬前沿水平。根据 Artificial Analysis\n的测评，GLM-5.2 获得 51 分，拥有 2.8T 参数的 Kimi K3 达到 57\n分，与顶级闭源底座仅差 3 分。\n与此同时，算力租赁与接口调用的价格出现大幅下跌。2023 年 3 月 GPT-4\n发布初期，百万输入 token 调用成本约 30 美元；到了 2025\n年底，同等能力模型的调用价格降至 0.30 美元附近，整体降幅接近 100\n倍。租用通用能力的边际成本大幅下降，耗费巨资从零预训练通用基座失去了财务合理性。\n第二个变化是后训练工具链的成熟与标准化。全参数异步强化学习、基于企业价值观清单的偏好对齐算法，以及将领域专家评测体系转化为连续优化信号的方法，在\n2023 年尚处于实验室拼凑阶段。到了 2026\n年，这套方法论演变为高度完备的基础设施，允许垂直团队在开放底座上快速叠加高密度的专业判断。\n第三个变化来自前沿通用基座在经济学层面的彻底变化。通用大模型的预训练演变成了普通产品公司无法涉足的重工业军备竞赛。根据华尔街日报在\n2026 年 4 月获取的机密财务数据，并在 SaaS 行业观察\n报道\n中披露的信息，仅\nOpenAI 与 Anthropic 两家公司，2026 年在模型训练与运营上的合计支出就逼近\n650 亿美元。\nOpenAI 在 2026 年 4 月完成了 1220 亿美元的融资，投后估值 8520\n亿美元，月营收 20 亿美元。即便如此，其 2028 年单年算力预算预计高达 1210\n亿美元、亏损 850 亿美元，盈亏平衡点推迟到了 2030 年之后。2024 年训练\nGPT-4 的花费约 7800 万至 1 亿美元，到了 2026\n年，前沿基座单次预训练预算膨胀至 100 亿到 500\n亿美元。目前没有任何一家前沿实验室能够维持健康的独立利润表。\n前沿军备竞赛的竞争主体也在转变为万亿级航母。2026 年 2 月，SpaceX\n以全股票交易收购了研发 Grok 的 xAI，合并后实体估值 1.25 万亿美元；SpaceX\n随后于 6 月在纳斯达克完成\nIPO\n，发行价每股\n135 美元募资约 750 亿美元，首日市值突破 2 万亿美元。NVIDIA 同时位列\nOpenAI、Anthropic 与 xAI 融资轮次的最大股东。OpenAI\n最新一轮融资条款甚至规定，其中 350\n亿美元的到账以公司达成通用人工智能或完成上市为前置条件。\n相比之下，垂直领域的定向后训练总预算只需数千万美元，纯算力消耗压缩至数十万美元。两者的资本体量与风险属性已经不在同一个数量级上。\nHarvey 的三段式\n如果说 Thomson Reuters 提供了一个静态的企业蓝本，那么法律 AI 独角兽\nHarvey\n则展现了极具代表性的动态演进轨迹。这家专注于律师专业工作流的公司，在过去三年里经历了两次关键技术重构。\n第一阶段在 2023 年至 2024 年。Harvey 早期深度绑定\nOpenAI，基于美国判例法对闭源模型做微调。第三方案例研究显示，参与测试的执业律师在\n97%\n的测试场景下更倾向于选择该定制模型。随着后续通用前沿基座的升级，通用模型能力迅速追平了微调成果，Harvey\n果断废弃自研微调模型，转向以通用接口为核心的多模型路由方案。\n第二阶段的突破在 2026 年 6 月。Harvey 转向与 Applied Compute 合作，在\nAC2 算力平台上针对开放权重的 GLM 5.3 Flash\n实施全参数、全异步强化学习。Harvey 在其\n官方博客\n中复盘了这次实验，选择\nGLM 5.3 Flash 的核心原因，是它在候选开放模型中拥有最扎实的初始基线。\n实验产出了自报的突破性评测数据：在法律专业标准评测中，基准通过率从\n0.853 提升至 0.913，全项达标率从 0.059 提升至\n0.126。其专业评分刷新行业纪录，正面超越了 OpenAI 的 GPT-5.5 xhigh 与\nAnthropic 旗舰模型 Opus 4.8\nMax。这是行业首次通过垂直后训练在专业基准上击败同期的顶级闭源模型。Harvey\n在官方技术复盘中，用两段论述揭示了后训练的核心规律。第一段指出：\n“post-training, harness optimization, and grader design cannot be\ntreated as separate problems”\n随后他们给出了进一步的总结：\n“the model only learns as well as the environment allows”\n这两句话把优化的焦点拉回到了评测环境本身。打分器与测试集的质量，直接划定了模型最终能够达到的能力天花板。如果评测环境本身无法提供高区分度的打分信号，再多的算力投入也无法拉开差距。\n把视野放宽到法律、金融与医疗领域的 12\n家代表性企业，行业探索呈现出层次分明的分布格局。清晰走通这一路径的有 2\n到 3 家，包括 Thomson Reuters、Harvey 第二代方案，以及 12 个月内估值暴涨\n12 倍的医疗 AI 企业 Abridge；处于混合过渡状态的有 3 家，如 Bloomberg\n转向小模型与商业接口协同、C3 AI 的 Narwhal，以及 Salesforce 的 xLAM\n框架；坚持纯租用外部接口的有 2 家，包括金融智能平台 AlphaSense 以及\nThomson Reuters 的老对手 LexisNexis；遭遇挫折或收缩战略的则有 3\n家，包括彻底放弃生产部署的 BloombergGPT、第一代 Harvey\n微调模型，以及宣告退役的 Databricks DBRX。\n梳理这 12\n家企业的得失可以看清一条分水岭。受挫的企业往往把训练模型视为技术身份和终极目标，要么陷入从零预训练的泥潭，要么依赖公开语料进行粗浅微调；成功的团队则把自研模型定位为优化产品成本、调用延迟与控制权的工程手段，始终将其嵌入由通用前沿模型兜底的复合系统之中。\n真正稀缺的是什么\nThomson Reuters 自述投入的 4000 万美元总预算中，纯算力开销仅占 10\n万到 20\n万美元。这个悬殊的比例清晰标定了垂直后训练的真实重心：基础算力已经成为高度标准化、可以通过资本随时采购的公共商品。真正消耗数千万美元且无法从市场上直接买到的，是\n175\n年积累下的专有内容资产（涵盖判例法、实务指南与税务数据）、数百位资深领域专家的精细标注与深度参与，以及一套具备高区分度的专业评测体系。\n把 RAG\n框架与后训练放在同一个系统里审视，两者的分工边界便变得非常清晰。通用模型加\nRAG\n与专有模型后训练其实是同一个混合架构里互补的两个平面，分别负责不同的层次。事实这层是动态的、可引用、可删除、可回滚的，最适合留在模型外部，靠\nRAG\n和外部知识库来承载；行为与专业判断这层是稳定的、高频的、可评分的，才需要通过中后训练写进权重。\n这种分工直接指出了稀缺资源到底沉淀在哪里。权重层本身已经被开源底座商品化，单纯把事实塞进权重既昂贵又难以维护。真正稀缺的资产，一方面是权重层承载不了的动态事实与知识索引，另一方面是能够持续对行为进行评分的私有数据飞轮与评测体系。决定系统上限的，正是在外部管理事实与在内部打磨行为的能力。\n这种变化在应用层的演进中同样得到了印证。2023\n年主流团队习惯准备数百条问答数据微调一个小模型来适配特定任务，如今普通开发者全面转向上下文学习与智能体工作流，微调不再是日常开发的主选项。相反，在拥有深厚数据资产的平台企业侧，针对开放底座的持续中后训练正在形成巨大推力，推动\nThomson Reuters 与 Harvey\n在各自自报的专业评测中取得了超越通用闭源模型的效果。\n后训练栈的传导链：开放底座可购买，私有数据与评测体系买不到，最终沉淀为域内产品的成本与控制\n在看到这套路径潜力的同时，技术报告中披露的负面信号同样需要认真对待。Thomson\nReuters\n自述的数据显示，在经历密集的法律领域持续注入后，模型的通用能力出现了可测量的回退。在数学推理基准\nAIME 上，得分从底座的 93.3 下滑到 90.0；命令行环境评测 Terminal-Bench 从\n45.2 跌至 40.5；编程测试得分也从 39.8 回落至\n37.4。所谓在领域注入中完全避免遗忘的设想，在真实测试中并不成立。\n这种能力的权衡恰恰解释了为什么 Thomson Reuters 必须在 CoCounsel\n产品中坚持多模型共存的架构设计。垂直自研模型负责攻坚高价值的专业逻辑，通用前沿模型在通用推理与开放任务中提供托底保障。专业后训练伴随着明确的通用性能代价，架构上的多层对冲是必须保留的工程防线。\n正在收窄的前提\n垂直公司能够走出第三条路，建立在一个关键假设之上：开源社区能够持续提供高质量、无附加商业限制的顶级底座模型。然而在\n2026 年，这一前提正在发生实质性的收窄。\n2026 年 7 月，月之暗面发布了\nKimi\nK3\n，采用 Modified MIT 协议，明确规定月活跃用户超过 1\n亿或年营业收入超过 2000\n万美元的商业产品必须单独签署授权协议。紧接着，正如行业媒体在\n阿里巴巴关闭\nQwen Code 免费层的报道\n中所记录的那样，MiniMax\n也将其许可模式调整为包含年收入 2000\n万美元限制的社区商业授权。与此同时，阿里巴巴也开始针对 Qwen\n系列的大规模商业客户推行收入分成机制。\n国内开源厂商的商业策略正在集体转向。曾经以宽松开源换取开发者生态的阶段逐步落幕，通过控制开放权重实现商业变现成为主流诉求，纯粹无保留的宽松协议窗口正在加速关闭。DeepSeek\n在 7 月底以标准 MIT 协议发布了 V4-Flash\n模型权重，成为目前为数不多的纯开源通道，而其旗舰 V4-Pro\n权重的最终分发方式仍存在诸多相互矛盾的行业报道。\n回顾 Thomson Reuters 选择 Qwen、Harvey 押注 GLM\n的决策背景，第三方团队在引入开放底座时，必须将开源协议审查置于工程立项的前置位置。如果未来的顶级开放模型普遍附带商业门槛或分成要求，整个垂直后训练路径的财务模型都需要重新计算。\n三条路线，一个决策规则\n综合 2026\n年的技术与商业现实，企业在模型策略上面对三条清晰的演进路径。不同体量与数据储备的公司，需要匹配完全不同的要素组合。\n第一条路径是从零自研前沿基座。这条路要求 100 亿至 500\n亿美元的超大资本规模，承担脱离独立利润表的亏损压力，其门槛包含千亿级的外部融资承诺、长达数年的高强度算力采购合同，以及吉瓦级的能源供应，玩家已经收缩为与资本巨头深度捆绑的前沿实验室。第二条路径是纯粹租用通用商业接口。在这套逻辑下，模型退化为运行时的即插即用组件，产品价值完全沉淀在应用编排、交互设计与工作流集成中，这是绝大多数普通软件公司的理智选择。第三条路径则是投入数千万美元，在优质开放底座上构建私有化中后训练能力，专属服务于拥有高价值数据资产的行业巨头。\n三条路线的层级位置：自训 frontier 在 100\n亿至 500 亿美元量级且无独立利润表，第三条路在 4000\n万美元量级服务数据富集域公司，纯租则把价值留在编排层\n面对这三条路径，企业的判断框架其实很明确。对于坐拥海量独家专有数据、具备行业顶尖评测能力、深耕高价值低容错场景的垂直企业，第三条路提供了强有力的战略防御杠杆。但在启动之前，团队需要对照三项刚性前提自我审视：第一，是否具备可自动迭代的持续学习管线，保证每次上游基座更新时能够快速重新训练；第二，内部的评测标准是否足够硬核，能够直接作为强化学习的优化信号；第三，是否确立了多模型混合路线，由通用前沿模型在复杂长尾任务中提供兜底。对于缺乏私有数据沉淀的常规软件团队，盲目追求后训练只会重蹈早期微调的覆辙。\n未来的演进节奏取决于两个关键风向标。一个是开源厂商在底座权重许可上的收紧节奏，它将决定第三条路的基石是否能够长期保持稳固；另一个是通用前沿模型在专业垂直场景下的渗透速度，一旦通用基座在法律或金融领域的推理能力再度实现代际跃升，垂直后训练带来的相对优势窗口就会面临新的挤压。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/domain-model-third-path-20260828.html",
-      "content_chars": 7493,
-      "content_sha256": "8c09d10f58f4c07ece3b3673a745617289149bb1d2b04d98061b0054399426c3",
-      "content_fetched_at": "2026-08-29T03:08:46.163631+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:74e4bb97efe9e393",
-      "kind": "publish",
-      "text": "yage-share published: 从屏幕前的人到云端的进程：MCP 默认调用者的两年转向",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-08-28T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/mcp-agent-identity-caller-shift-20260828.html",
-      "title": "从屏幕前的人到云端的进程：MCP 默认调用者的两年转向",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n信任与治理\n2026 年 8 月 22 日，MCP 维护者发布\n新路线图\n，把\nagent identity 列为五个优先级之一。路线图写道：\n「如今 MCP\n的授权体系以人在浏览器里点击审批为核心。这对交互式客户端运作良好，但越来越多的调用方是作为云端工作负载运行的智能体：它们自带身份，代表不在线的用户行动，或者把更窄的权限委托给子智能体。我们希望\nMCP\n服务端能拥有一种标准化的方式来识别并信任这些智能体身份，这种方式基于既有标准构建，而不是依赖粘贴的\nAPI key 和长命 token。」\n这段话点出了调用者的转变：从屏幕前的人，变成云端自带身份的进程。最初的\nMCP\n凭简单发家，零门槛写脚本就能跑；如今引入了企业身份层复杂度。智能体需要无人值守，授权审批却卡在浏览器，促成这次转向。纵观时间线，MCP\n授权机制一直从人工审批向机器身份迁移，2026-08-22\n路线图把这条演进主线确立为官方方向。\n为什么云端 agent\n必须自己拿到授权\n回答这个问题有两个角度。第一个角度是生产力杠杆。人管 AI\n像带团队。打个比方，投入 5% 精力拿到 100% 产出，就是 20\n倍杠杆。要维持足够大的杠杆，AI\n必须有足够能动性独立工作，中间不能步步停下来等人，自主获取授权特别重要。Addy\nOsmani 在《\nLong-running\nAgents\n》中指出，生产 agent\n跑起来后人不在屏幕前，编码、扫描或监控能跑数小时到数周，有些挂在事件流或数据表上处理审核、异常或分流。Teradata\n对\n自主\nagent\n的界定也是自行选工具、排动作、恢复错误并推进任务，无需人在环。聊天窗口循环撑不起无人值守运转。\n换个角度看，很多场景本不需要人介入。比如在线客服这类\nagent，面对用户请求，背后没人坐在屏幕前等审批。MCP\n协议里有专门的机制把人带回来：工具执行到一半，可以暂停下来请人做决定，我们之前专门分析过\n这套把人带回来的设计\n。可这类场景要的是全自动闭环，把审批卡在浏览器，等于给后台\nagent 配一名全程在线的监督员，直接抵消代理价值。\n无论放大生产力杠杆还是场景本不需要人，云端 agent\n都必须自己拿到授权。早期阻碍在于：Anthropic 于 2024-11 发布 MCP 时仅支持\nstdio\n传输与单进程通信，无会话与授权框架，预设屏幕前坐着开发者点审批。工具调用类似本地函数，零门槛让\nMCP 迅速流行，却无法支撑无人值守的云端进程。\n为移走阻碍，协议分四环补齐授权能力：第一环支持远程调用，\n2025-03-26\n变更清单\n引入基于 OAuth 2.1 的授权框架 PR #133，以 Streamable HTTP\n取代 HTTP+SSE 支持远程部署 PR #206；第二环是机器自主凭证，2025-11-25\n一周年发布帖\n引入扩展\nSEP-1046 与\nSEP-990，支持机器对机器凭据与企业策略控制，机器首次出示凭据自主获取\ntoken；第三环是平台背书身份，2025-12-05 工作负载身份联合提案 WIF 开启即\nPR\n1933\n（SEP-1933），由平台签发短命且可密码学校验的\nJWT；第四环是窄权限委托，2026-05-21 IETF OAuth 工作组草案\ndraft-ietf-oauth-identity-assertion-authz-grant\n更新至第四版，凭据委托开始有了草案级的标准形状。2026-08-22\n路线图正式把这条线确立为官方方向。\n每推进一步，都在引入当初刻意回避的复杂度。最初写脚本起个 server\n就能调，没有授权与会话，简单正是它发家的原因。如今为让云端 agent\n自主调用，协议正在一步步把企业身份层的复杂机制叠加进来。\n默认调用者从本机的人换成带身份的进程：左边是人和浏览器，右边是云进程和\ntoken\n路线图铺了什么\n新路线图的目标在于：协议需要一种标准方式识别并信任 agent\n身份，摆脱对粘贴 API key 和长命 token 的依赖。长命 token\n像一把用很久的钥匙，丢了影响面大；短命凭证有效期短、到期自动换新、丢了很快作废。零信任默认谁都不信，每次访问都要出示可验证的身份证明，不因为身处内网就直接放行。所谓\nworkload\nidentity，就是平台给每个跑在机器上的程序发一张短期、自动换新的电子身份证，程序用它证明自己是谁。Kubernetes\n与\nSPIFFE\n与 SPIRE\n这类平台本来就在做这件事。\nRed\nHat 关于 AI agent 零信任的分析\n指出，agent\n零信任与人的零信任不同：难点在于用户的身份要从浏览器一路传到\nagent、再传到 agent 调用的下游服务，中间不能断。按照权限交集原则，agent\n只能收窄用户权限，不能扩大权限。\n第一个问题：一个跑在云平台上的程序，怎么向 MCP\n服务端证明自己是谁？平台本来就会给它发一张短期电子身份证 JWT，WIF\n机制就是让 MCP 服务端直接校验这张卡，程序不用单独注册一个 OAuth\n客户端。该机制对应 WIF 提案\nPR\n1933\n即 SEP-1933，由 IETF WIMSE 工作组联合主席 Pieter Kasselman 于\n2025-12-05 开启，截至 2026-08-25 处于 Draft 状态。作者在 2025-12-17\n回应自研质疑时表示这里没有任何自研成分，完全是 RFC 7523 加上 OpenID\nConnect Discovery；维护者规划的推进路径包括合规测试、TypeScript SDK 实现\nPR #2572 与扩展评审。\n第二个问题：用户已经登录了公司账号，一个应用想替用户去用 MCP\n工具，怎么办？应用拿着用户的单点登录身份，向企业 IdP 申领一枚专用\ntoken，直接去 MCP\n服务端换取访问权限，全程不需要弹出浏览器窗口让用户点击同意。该机制对应\nIETF 草案\ndraft-ietf-oauth-identity-assertion-authz-grant\n，2026-05-21\n更新至 v4，简称 ID-JAG。MCP 对应的\nEnterprise-Managed\nAuthorization 扩展\n维护者自述已\nstable，文档明确要求不要将用户重定向到授权端点；草案也规定同一枚 ID-JAG\n禁止在下游跳复用。企业 IdP 在签发前评估策略，权限撤销在 IdP\n侧一次生效。\n第三个问题：token 遭到窃取怎么办？DPoP 机制把 token\n和调用方持有的私钥绑在一起，即使拿到\ntoken，没有私钥也无法使用，服务端同时能识别重放攻击。该机制在 2023\n年定稿为标准\nRFC\n9449\n，MCP 侧落地提案 SEP-1932 截至 2026-07-02 处于合规测试阶段。\n这些机制建立在 2026-07-28 规范底座上：协议删除了握手与会话头 SEP-2575\n与 SEP-2567，引入自包含\n_meta\n，完成了无状态底座与基础授权加固，详见\n变更清单\n。底座已经发布，上层进程身份体系仍在施工。\n代价：简单性，和两个刚加的能力\n这次转向不是免费的，MCP 付了两笔代价。\n第一笔代价，是协议变厚了，存量实现都得改。以前协议依靠会话维系状态，服务端记得客户端是谁、之前调用过什么；去状态之后，服务端不再保留会话记忆，每个请求都必须自包含，把协议版本、客户端身份、能力范围以及要调用的工具名称一次性带齐。请求里的字段和校验规则随之变多，原有接入\nMCP 的项目需要按新规则适配。技术细节上，协议删除了握手与会话头 SEP-2575\n与 SEP-2567，在请求中强制增加\nMcp-Method\n与\nMcp-Name\n头 SEP-2243，列表返回增加\nttlMs\n与\ncacheScope\n字段 SEP-2549，响应体引入\nresultType\n，同时弃用动态客户端注册 DCR 转向 CIMD 即 PR\n#2858，并淘汰 HTTP+SSE 传输 SEP-2596。MCP\n不再是调完工具就走的轻量协议。\n第二笔代价更直接：MCP 砍掉了两项刚加的能力。第一项是\nSampling，它让服务端借用客户端的模型干活：服务端发起采样请求，客户端的模型生成回复、调用服务端提供的工具，服务端一轮轮驱动这个循环；该能力于\n2025-11 加入规范 SEP-1577，8 个月后的 2026-07-28 规范将其列入弃用清单\nSEP-2577 并留出至少 12 个月过渡窗口。第二项是\nRoots，它允许客户端把本地的文件和目录共享给服务端，服务于一个人坐在电脑前的单机交互；Roots\n同样在本次修订中弃用。砍掉它们，等于表明 MCP\n的重心不再覆盖写脚本的个人开发者场景。\n砍掉这两项能力，确立了协议的边界，我们之前写过 MCP 2026 在\n协议层划定边界这条主线\n：MCP\n专注于工具层与身份层，拒绝接管 agent\n运行时，把推理循环留给客户端框架。MCP 靠写个脚本、起个 server\n就能调的零门槛发家；如今为了让云端 agent\n自主运转，每加一层企业身份机制，都在叠加当初刻意回避的复杂度。与此同时，OpenAI\n走向了相反的方向，我们之前对比过\n这两条路线\n：OpenAI\n的 Responses API 把推理状态、会话历史与托管工具都收进自己的服务端，把\nagent 的核心循环直接托管在厂商云上。MCP\n押注中立的工具与身份底座，自身不做运行时；OpenAI\n押注连同运行时一起做。这是两套不同的技术路线在不同层次押注。\nMCP\n换来的与付出的：左边是水平扩展、网关路由与集中身份，右边是迁移成本、复杂度与砍掉的能力\n关口在谁手里，对你意味着什么\n每次访问都经过签发方：客户端到身份提供方\ntoken 端点，再到 MCP server 授权服务器，最后到 MCP server\n你贴在自己项目 .env 里的那把 API\nkey，签发方随时能吊销它、限制它的额度、查看它的调用记录。签发方之所以有这个权力，是因为所有请求都带着这把钥匙经过对方的系统。这个所有请求都必须经过的点就是关口，我们之前专门分析过\n关口这个概念\n。\n这次转向把关口挪到了签发 token\n的一方手里。发身份证的机构，现在同时管着谁能用、怎么收回，每一次委托也落在它手里。在\nID-JAG 流程里，应用发起的请求必须先经过企业 IdP\n评估策略，通过后才能换取访问权限。在 WIF 流程里，MCP\n服务端信任的是云平台签发的身份，直接校验平台给出的短命\nJWT。公有云平台与企业 IdP\n这两类实体，正是早期写脚本的个人开发者从来不用打交道的对象。在谁能审批、谁能撤销、谁看得到委托这件事上，签发方确实占住了关口，这个判断完全成立。\n这轮演进跟你有什么关系，取决于你在链路里的位置。如果你写 MCP\nserver，server 一旦离开本机、部署到远程，就得接上已发布的 OAuth 2.1\n授权框架与 issuer 校验，这部分现在就能做。客户是企业、要求走自己的 SSO\n时，可以接维护者自述已 stable 的 Enterprise-Managed Authorization\n扩展。WIF 还在 Draft，别提前写校验代码。\n如果你写 agent 应用、让 agent 去调 MCP 工具，agent\n要无人值守跑，浏览器审批这条路就不通了。现在能用的是 2025-11-25\n版引入的机器对机器凭据，让 agent 自己出示凭据换 token；ID-JAG 还是 IETF\n草案，等它离开草案再接。\n如果你只是用现成的 agent 产品调工具，不用改任何东西，client\n会处理。要留意的是，这套体系正在淘汰往 .env 里贴一把长命 API key\n的习惯，新写的脚本别再这么干。判断这条路走没走通有一个明确标准：如果未来两到三个规范周期内\nWIF 与 DPoP 依然停在草案阶段，主流服务端依然在透传用户凭证而非 workload\n身份，默认调用者换成云端进程的判断即告失效。\n这种转向在社区引发了讨论。\nHN\n上关于新路线图的讨论\n拿到 269\n分，过度设计批评占了较多篇幅，一条高赞评论写道：「在初版发布阶段搞一套定制的新协议，是\nMCP 做过更愚蠢的事情之一」。REST 搭配 skills.md 阵营态度直接，AWS\nBuilder Center 发文打出标题：\nAgent\nskills and CLI tools: ditch the MCP overhead\n。Cloudflare 的\ncode mode\n为模型提供代码执行工具，宣称「用 1000 个 token 给智能体提供完整\nAPI」，在文档中标注为 experimental。MCP\n押注做中立的工具与身份底座，服务无人值守的生产\nagent，自身不做运行时。这个赌注是否成立，是一个开放问题。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/mcp-agent-identity-caller-shift-20260828.html",
-      "content_chars": 5360,
-      "content_sha256": "3711ef44bf17e72287a793bb5ccdf552f1108028096a3597fe2d3e7bb422adb3",
-      "content_fetched_at": "2026-08-29T03:08:46.338297+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-08-29",
+  "collect_window": {
+    "start": "2026-08-28T00:00:00+00:00",
+    "end": "2026-08-29T03:07:21.351311+00:00",
+    "hours": 27
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "33230600343",
+    "commit": "9f0ee11"
+  },
+  "stats": {
+    "total": 6,
     "by_kind": {
       "publish": 6
     },
@@ -170,9 +26,504 @@
       "unknowncheats-ac": 4,
       "yage-share": 2
     },
+    "failed_lists": [
+      "lorenzomeacci",
+      "denizhalil-blogs"
+    ],
+    "sources_ok": 49,
+    "sources_failed": [
+      {
+        "id": "lorenzomeacci",
+        "error": "html_fetch:[Errno 101] Network is unreachable"
+      },
+      {
+        "id": "denizhalil-blogs",
+        "error": "no_candidates"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 9,
+      "rss": 30
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 14,
+      "calls": 14,
+      "prompt_tokens": 15650,
+      "completion_tokens": 3085,
+      "total_tokens": 18735,
+      "prompt_cache_hit_tokens": 13568,
+      "prompt_cache_miss_tokens": 2082
+    },
     "by_content_status": {
       "failed": 4,
       "ok": 2
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:611b116d91c87ddc",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4784553.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4784553.html",
+      "at": "2026-08-29T03:07:21.351311+00:00",
+      "external_id": "a:611b116d91c87ddc",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4784553.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4784553.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-29T03:08:07.080749+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-29T03:07:21.351311+00:00",
+      "collected_at": "2026-08-29T03:07:21.351311+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4784553.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:9d59381c8bce36d8",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "Miscrits Reverse Engineering",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769531-miscrits-reverse-engineering.html",
+      "text": "unknowncheats-ac published: Miscrits Reverse Engineering",
+      "at": "2026-08-29T03:07:21.351311+00:00",
+      "external_id": "a:9d59381c8bce36d8",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769531-miscrits-reverse-engineering.html",
+      "title": "Miscrits Reverse Engineering",
+      "content": "unknowncheats-ac published: Miscrits Reverse Engineering",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769531-miscrits-reverse-engineering.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-29T03:08:18.130419+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-29T03:07:21.351311+00:00",
+      "collected_at": "2026-08-29T03:07:21.351311+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/769531-miscrits-reverse-engineering.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "Miscrits Reverse Engineering",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769531-miscrits-reverse-engineering.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:9d56e06df21249d1",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor-post4784112.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor-post4784112.html",
+      "at": "2026-08-29T03:07:21.351311+00:00",
+      "external_id": "a:9d56e06df21249d1",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor-post4784112.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor-post4784112.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-29T03:08:29.279805+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-29T03:07:21.351311+00:00",
+      "collected_at": "2026-08-29T03:07:21.351311+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor-post4784112.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767585-dma-memory-editor.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:ef3bebb71e2af373",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "A simple driver with skCrypt",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt.html",
+      "text": "unknowncheats-ac published: A simple driver with skCrypt",
+      "at": "2026-08-29T03:07:21.351311+00:00",
+      "external_id": "a:ef3bebb71e2af373",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt.html",
+      "title": "A simple driver with skCrypt",
+      "content": "unknowncheats-ac published: A simple driver with skCrypt",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-08-29T03:08:40.323607+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-08-29T03:07:21.351311+00:00",
+      "collected_at": "2026-08-29T03:07:21.351311+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "A simple driver with skCrypt",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:d3d8647b4ca1aea1",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "域模型的第三条路：一个 175 年公司的 $40M 答案",
+      "target_url": "https://yage.ai/share/domain-model-third-path-20260828.html",
+      "text": "yage-share published: 域模型的第三条路：一个 175 年公司的 $40M 答案",
+      "at": "2026-08-28T00:00:00+00:00",
+      "external_id": "a:d3d8647b4ca1aea1",
+      "url": "https://yage.ai/share/domain-model-third-path-20260828.html",
+      "title": "域模型的第三条路：一个 175 年公司的 $40M 答案",
+      "content": "产业与竞争\n中国科技生态\n2026 年 8 月 24 日，Thomson Reuters 发布了自研大模型\nThomson\n1.0\n。这家拥有 175\n年历史的专业信息出版商，没有从零训练通用底座去正面竞争\nOpenAI。他们的核心资产集中在 Westlaw 判例法数据库、Practical Law 与\nCheckpoint 税务库这类专有语料。Thomson 1.0\n作为多模型栈里的一层，接入既有的法律产品 CoCounsel\nLegal，在自报的领域评测中超过了若干主流闭源模型。\n这笔投入背后的账本展现了清晰的结构。Thomson Reuters 自述两年累计投入\n4000\n万美元，包含引进人才与并购研究团队的全部支出。底座选用了阿里巴巴的开放权重模型\nQwen3.6-35B-A3B。据 Thomson Reuters\n自述，团队注入专有语料做持续预训练，实际用量还不足内容资产总量的\n10%；随后由数百名法律与税务专家参与微调、偏好对齐与评测。整个训练消耗\n35,207 个 B200 GPU 小时，折合纯算力成本大概在 10 万到 20\n万美元之间。\n自报的评测数据显示，Thomson 1.0 法律域均分为 75.2，高出底座\nQwen3.6-35B-A3B 的 72.7，也高出 Gemma 4-31B 的 70.5 与 Anthropic Haiku\n4.5 的 67.7。Thomson Reuters\n把小版本向学术与非商业场景开放了权重，完整版由内部完全掌控。技术报告标题定为\nContinual Learning of Frontier Models for\nSovereignAI，强调团队搭建的是一套持续学习管线，训练模型只是管线的第一步。\n这两件事放在一起，把一个行业问题直接推到了台前。一家拥有海量行业专有数据的传统公司，靠开放基座加上私有工程，能不能真正跑通自己的模型路线？这是难以复制的孤例，还是代表着垂直领域的一种通用解法？要想看清这条路径的逻辑，需要先回到三年前那场方向相反的尝试。\n三年前，同一种公司，相反的结果\n2023 年 3 月，金融信息巨头 Bloomberg 发布了 BloombergGPT\n论文。当时团队动用 50B 参数规模，喂入来自 Bloomberg Terminal 的 363B\ntoken\n私有金融数据，从零开始训练底座。在那个阶段，垂直巨头的普遍做法是自建底座：私有数据无法直接输入外部商业接口，开源底座能力尚弱，从零预训练成了唯一的出路。\n这个耗资巨大的项目最终迎来了意料之外的结局。Bloomberg\n终端产品全球负责人 Wayne Barlow 在\n接受\nMarket & Alt Data Insight 采访\n时，给出了坦率的回应：\n“BloombergGPT was a research model and is actually not used at all in\nany of our products. Our products are built on a combination of models.\nWe have some commercial models, some open-weight LLMs, some smaller,\ncustom language models that we build ourselves.”\nBloomberg 现在的 AI 产品 ASKB 在 2026 年初开启测试，覆盖 375,000\n名终端用户里的约三分之一。其底层演变为混合路由方案，由通用商业接口、开源权重模型与自研轻量小模型共同协作支撑。承载全公司期待的\n50B 大模型停留在研究阶段，没有进入实际生产线。\n两家拥有深厚数据资产的行业巨头，在前后相隔三年的时间点上，得出了相反的业务结果。Bloomberg\n投入高昂预算，消耗 363B token\n私有语料从零起步，最终未能落地到任何实际产品；据 Thomson Reuters\n自述，其投入 4000 万美元，仅调用不到 10%\n的专有内容在开放底座上做后期注入，便在自报的领域评测中超过了顶级通用模型。\n同一种数据富集公司，2023 年从零训练 50B\n模型未用于产品，2026 年 4000 万美元在开放底座上后训练并在域内打赢\nfrontier\n我原先以为这种分野源于数据清洗难度或团队执行力，后来把 RAG\n和模型权重的分工想清楚，才意识到问题的根源在架构选择。2023\n年行业普遍把通用模型加 RAG 和专有模型训练看作二选一的竞争路线。Bloomberg\n面对这个选择时把赌注全押在了权重层，试图把海量金融事实强行训进 50B\n模型里。在 2023\n年，这种做法有其合理性，因为当时通用模型的金融理解能力不足，RAG\n技术也还在早期摸索阶段。\n但把护城河完全押在权重层，很快就会遭遇开放模型的冲击。开放底座的能力一旦追平，单纯把领域数据训进权重的先发优势就会迅速蒸发，缺乏私有数据飞轮、评测闭环与行业分发的模型自然无法在生产中立足。Thomson\nReuters 在 2026 年走通的做法给出了新的答案：开放底座负责通用推理，RAG\n承载动态事实，私有数据飞轮专门做评测与行为对齐。同样的问题在三年后有了完全不同的解法，权重层退成了可以随时替换的基础零件。\n为什么是现在\n从 2023 年到 2026\n年，整个技术栈有三个核心维度发生了明显变化。底座能力、后训练工具链与资本门槛的位移，共同重塑了行业的基本盘。\n第一个变化在于开放底座的能力跨越了可用门槛。2023\n年市场上缺乏高水准开放权重底座，垂直公司打造定制智能只能从头预训练。到了\n2026 年，Qwen 3.8 Flash Next 以及 GLM 5.3 Flash\n这类开放模型在领域理解上紧咬前沿水平。根据 Artificial Analysis\n的测评，GLM-5.2 获得 51 分，拥有 2.8T 参数的 Kimi K3 达到 57\n分，与顶级闭源底座仅差 3 分。\n与此同时，算力租赁与接口调用的价格出现大幅下跌。2023 年 3 月 GPT-4\n发布初期，百万输入 token 调用成本约 30 美元；到了 2025\n年底，同等能力模型的调用价格降至 0.30 美元附近，整体降幅接近 100\n倍。租用通用能力的边际成本大幅下降，耗费巨资从零预训练通用基座失去了财务合理性。\n第二个变化是后训练工具链的成熟与标准化。全参数异步强化学习、基于企业价值观清单的偏好对齐算法，以及将领域专家评测体系转化为连续优化信号的方法，在\n2023 年尚处于实验室拼凑阶段。到了 2026\n年，这套方法论演变为高度完备的基础设施，允许垂直团队在开放底座上快速叠加高密度的专业判断。\n第三个变化来自前沿通用基座在经济学层面的彻底变化。通用大模型的预训练演变成了普通产品公司无法涉足的重工业军备竞赛。根据华尔街日报在\n2026 年 4 月获取的机密财务数据，并在 SaaS 行业观察\n报道\n中披露的信息，仅\nOpenAI 与 Anthropic 两家公司，2026 年在模型训练与运营上的合计支出就逼近\n650 亿美元。\nOpenAI 在 2026 年 4 月完成了 1220 亿美元的融资，投后估值 8520\n亿美元，月营收 20 亿美元。即便如此，其 2028 年单年算力预算预计高达 1210\n亿美元、亏损 850 亿美元，盈亏平衡点推迟到了 2030 年之后。2024 年训练\nGPT-4 的花费约 7800 万至 1 亿美元，到了 2026\n年，前沿基座单次预训练预算膨胀至 100 亿到 500\n亿美元。目前没有任何一家前沿实验室能够维持健康的独立利润表。\n前沿军备竞赛的竞争主体也在转变为万亿级航母。2026 年 2 月，SpaceX\n以全股票交易收购了研发 Grok 的 xAI，合并后实体估值 1.25 万亿美元；SpaceX\n随后于 6 月在纳斯达克完成\nIPO\n，发行价每股\n135 美元募资约 750 亿美元，首日市值突破 2 万亿美元。NVIDIA 同时位列\nOpenAI、Anthropic 与 xAI 融资轮次的最大股东。OpenAI\n最新一轮融资条款甚至规定，其中 350\n亿美元的到账以公司达成通用人工智能或完成上市为前置条件。\n相比之下，垂直领域的定向后训练总预算只需数千万美元，纯算力消耗压缩至数十万美元。两者的资本体量与风险属性已经不在同一个数量级上。\nHarvey 的三段式\n如果说 Thomson Reuters 提供了一个静态的企业蓝本，那么法律 AI 独角兽\nHarvey\n则展现了极具代表性的动态演进轨迹。这家专注于律师专业工作流的公司，在过去三年里经历了两次关键技术重构。\n第一阶段在 2023 年至 2024 年。Harvey 早期深度绑定\nOpenAI，基于美国判例法对闭源模型做微调。第三方案例研究显示，参与测试的执业律师在\n97%\n的测试场景下更倾向于选择该定制模型。随着后续通用前沿基座的升级，通用模型能力迅速追平了微调成果，Harvey\n果断废弃自研微调模型，转向以通用接口为核心的多模型路由方案。\n第二阶段的突破在 2026 年 6 月。Harvey 转向与 Applied Compute 合作，在\nAC2 算力平台上针对开放权重的 GLM 5.3 Flash\n实施全参数、全异步强化学习。Harvey 在其\n官方博客\n中复盘了这次实验，选择\nGLM 5.3 Flash 的核心原因，是它在候选开放模型中拥有最扎实的初始基线。\n实验产出了自报的突破性评测数据：在法律专业标准评测中，基准通过率从\n0.853 提升至 0.913，全项达标率从 0.059 提升至\n0.126。其专业评分刷新行业纪录，正面超越了 OpenAI 的 GPT-5.5 xhigh 与\nAnthropic 旗舰模型 Opus 4.8\nMax。这是行业首次通过垂直后训练在专业基准上击败同期的顶级闭源模型。Harvey\n在官方技术复盘中，用两段论述揭示了后训练的核心规律。第一段指出：\n“post-training, harness optimization, and grader design cannot be\ntreated as separate problems”\n随后他们给出了进一步的总结：\n“the model only learns as well as the environment allows”\n这两句话把优化的焦点拉回到了评测环境本身。打分器与测试集的质量，直接划定了模型最终能够达到的能力天花板。如果评测环境本身无法提供高区分度的打分信号，再多的算力投入也无法拉开差距。\n把视野放宽到法律、金融与医疗领域的 12\n家代表性企业，行业探索呈现出层次分明的分布格局。清晰走通这一路径的有 2\n到 3 家，包括 Thomson Reuters、Harvey 第二代方案，以及 12 个月内估值暴涨\n12 倍的医疗 AI 企业 Abridge；处于混合过渡状态的有 3 家，如 Bloomberg\n转向小模型与商业接口协同、C3 AI 的 Narwhal，以及 Salesforce 的 xLAM\n框架；坚持纯租用外部接口的有 2 家，包括金融智能平台 AlphaSense 以及\nThomson Reuters 的老对手 LexisNexis；遭遇挫折或收缩战略的则有 3\n家，包括彻底放弃生产部署的 BloombergGPT、第一代 Harvey\n微调模型，以及宣告退役的 Databricks DBRX。\n梳理这 12\n家企业的得失可以看清一条分水岭。受挫的企业往往把训练模型视为技术身份和终极目标，要么陷入从零预训练的泥潭，要么依赖公开语料进行粗浅微调；成功的团队则把自研模型定位为优化产品成本、调用延迟与控制权的工程手段，始终将其嵌入由通用前沿模型兜底的复合系统之中。\n真正稀缺的是什么\nThomson Reuters 自述投入的 4000 万美元总预算中，纯算力开销仅占 10\n万到 20\n万美元。这个悬殊的比例清晰标定了垂直后训练的真实重心：基础算力已经成为高度标准化、可以通过资本随时采购的公共商品。真正消耗数千万美元且无法从市场上直接买到的，是\n175\n年积累下的专有内容资产（涵盖判例法、实务指南与税务数据）、数百位资深领域专家的精细标注与深度参与，以及一套具备高区分度的专业评测体系。\n把 RAG\n框架与后训练放在同一个系统里审视，两者的分工边界便变得非常清晰。通用模型加\nRAG\n与专有模型后训练其实是同一个混合架构里互补的两个平面，分别负责不同的层次。事实这层是动态的、可引用、可删除、可回滚的，最适合留在模型外部，靠\nRAG\n和外部知识库来承载；行为与专业判断这层是稳定的、高频的、可评分的，才需要通过中后训练写进权重。\n这种分工直接指出了稀缺资源到底沉淀在哪里。权重层本身已经被开源底座商品化，单纯把事实塞进权重既昂贵又难以维护。真正稀缺的资产，一方面是权重层承载不了的动态事实与知识索引，另一方面是能够持续对行为进行评分的私有数据飞轮与评测体系。决定系统上限的，正是在外部管理事实与在内部打磨行为的能力。\n这种变化在应用层的演进中同样得到了印证。2023\n年主流团队习惯准备数百条问答数据微调一个小模型来适配特定任务，如今普通开发者全面转向上下文学习与智能体工作流，微调不再是日常开发的主选项。相反，在拥有深厚数据资产的平台企业侧，针对开放底座的持续中后训练正在形成巨大推力，推动\nThomson Reuters 与 Harvey\n在各自自报的专业评测中取得了超越通用闭源模型的效果。\n后训练栈的传导链：开放底座可购买，私有数据与评测体系买不到，最终沉淀为域内产品的成本与控制\n在看到这套路径潜力的同时，技术报告中披露的负面信号同样需要认真对待。Thomson\nReuters\n自述的数据显示，在经历密集的法律领域持续注入后，模型的通用能力出现了可测量的回退。在数学推理基准\nAIME 上，得分从底座的 93.3 下滑到 90.0；命令行环境评测 Terminal-Bench 从\n45.2 跌至 40.5；编程测试得分也从 39.8 回落至\n37.4。所谓在领域注入中完全避免遗忘的设想，在真实测试中并不成立。\n这种能力的权衡恰恰解释了为什么 Thomson Reuters 必须在 CoCounsel\n产品中坚持多模型共存的架构设计。垂直自研模型负责攻坚高价值的专业逻辑，通用前沿模型在通用推理与开放任务中提供托底保障。专业后训练伴随着明确的通用性能代价，架构上的多层对冲是必须保留的工程防线。\n正在收窄的前提\n垂直公司能够走出第三条路，建立在一个关键假设之上：开源社区能够持续提供高质量、无附加商业限制的顶级底座模型。然而在\n2026 年，这一前提正在发生实质性的收窄。\n2026 年 7 月，月之暗面发布了\nKimi\nK3\n，采用 Modified MIT 协议，明确规定月活跃用户超过 1\n亿或年营业收入超过 2000\n万美元的商业产品必须单独签署授权协议。紧接着，正如行业媒体在\n阿里巴巴关闭\nQwen Code 免费层的报道\n中所记录的那样，MiniMax\n也将其许可模式调整为包含年收入 2000\n万美元限制的社区商业授权。与此同时，阿里巴巴也开始针对 Qwen\n系列的大规模商业客户推行收入分成机制。\n国内开源厂商的商业策略正在集体转向。曾经以宽松开源换取开发者生态的阶段逐步落幕，通过控制开放权重实现商业变现成为主流诉求，纯粹无保留的宽松协议窗口正在加速关闭。DeepSeek\n在 7 月底以标准 MIT 协议发布了 V4-Flash\n模型权重，成为目前为数不多的纯开源通道，而其旗舰 V4-Pro\n权重的最终分发方式仍存在诸多相互矛盾的行业报道。\n回顾 Thomson Reuters 选择 Qwen、Harvey 押注 GLM\n的决策背景，第三方团队在引入开放底座时，必须将开源协议审查置于工程立项的前置位置。如果未来的顶级开放模型普遍附带商业门槛或分成要求，整个垂直后训练路径的财务模型都需要重新计算。\n三条路线，一个决策规则\n综合 2026\n年的技术与商业现实，企业在模型策略上面对三条清晰的演进路径。不同体量与数据储备的公司，需要匹配完全不同的要素组合。\n第一条路径是从零自研前沿基座。这条路要求 100 亿至 500\n亿美元的超大资本规模，承担脱离独立利润表的亏损压力，其门槛包含千亿级的外部融资承诺、长达数年的高强度算力采购合同，以及吉瓦级的能源供应，玩家已经收缩为与资本巨头深度捆绑的前沿实验室。第二条路径是纯粹租用通用商业接口。在这套逻辑下，模型退化为运行时的即插即用组件，产品价值完全沉淀在应用编排、交互设计与工作流集成中，这是绝大多数普通软件公司的理智选择。第三条路径则是投入数千万美元，在优质开放底座上构建私有化中后训练能力，专属服务于拥有高价值数据资产的行业巨头。\n三条路线的层级位置：自训 frontier 在 100\n亿至 500 亿美元量级且无独立利润表，第三条路在 4000\n万美元量级服务数据富集域公司，纯租则把价值留在编排层\n面对这三条路径，企业的判断框架其实很明确。对于坐拥海量独家专有数据、具备行业顶尖评测能力、深耕高价值低容错场景的垂直企业，第三条路提供了强有力的战略防御杠杆。但在启动之前，团队需要对照三项刚性前提自我审视：第一，是否具备可自动迭代的持续学习管线，保证每次上游基座更新时能够快速重新训练；第二，内部的评测标准是否足够硬核，能够直接作为强化学习的优化信号；第三，是否确立了多模型混合路线，由通用前沿模型在复杂长尾任务中提供兜底。对于缺乏私有数据沉淀的常规软件团队，盲目追求后训练只会重蹈早期微调的覆辙。\n未来的演进节奏取决于两个关键风向标。一个是开源厂商在底座权重许可上的收紧节奏，它将决定第三条路的基石是否能够长期保持稳固；另一个是通用前沿模型在专业垂直场景下的渗透速度，一旦通用基座在法律或金融领域的推理能力再度实现代际跃升，垂直后训练带来的相对优势窗口就会面临新的挤压。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/domain-model-third-path-20260828.html",
+      "content_chars": 7493,
+      "content_sha256": "8c09d10f58f4c07ece3b3673a745617289149bb1d2b04d98061b0054399426c3",
+      "content_fetched_at": "2026-08-29T03:08:46.163631+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-28T00:00:00+00:00",
+      "collected_at": "2026-08-29T03:07:21.351311+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/domain-model-third-path-20260828.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "域模型的第三条路：一个 175 年公司的 $40M 答案",
+          "url": "https://yage.ai/share/domain-model-third-path-20260828.html",
+          "content_sha256": "8c09d10f58f4c07ece3b3673a745617289149bb1d2b04d98061b0054399426c3"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:74e4bb97efe9e393",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "从屏幕前的人到云端的进程：MCP 默认调用者的两年转向",
+      "target_url": "https://yage.ai/share/mcp-agent-identity-caller-shift-20260828.html",
+      "text": "yage-share published: 从屏幕前的人到云端的进程：MCP 默认调用者的两年转向",
+      "at": "2026-08-28T00:00:00+00:00",
+      "external_id": "a:74e4bb97efe9e393",
+      "url": "https://yage.ai/share/mcp-agent-identity-caller-shift-20260828.html",
+      "title": "从屏幕前的人到云端的进程：MCP 默认调用者的两年转向",
+      "content": "AI Agent\n信任与治理\n2026 年 8 月 22 日，MCP 维护者发布\n新路线图\n，把\nagent identity 列为五个优先级之一。路线图写道：\n「如今 MCP\n的授权体系以人在浏览器里点击审批为核心。这对交互式客户端运作良好，但越来越多的调用方是作为云端工作负载运行的智能体：它们自带身份，代表不在线的用户行动，或者把更窄的权限委托给子智能体。我们希望\nMCP\n服务端能拥有一种标准化的方式来识别并信任这些智能体身份，这种方式基于既有标准构建，而不是依赖粘贴的\nAPI key 和长命 token。」\n这段话点出了调用者的转变：从屏幕前的人，变成云端自带身份的进程。最初的\nMCP\n凭简单发家，零门槛写脚本就能跑；如今引入了企业身份层复杂度。智能体需要无人值守，授权审批却卡在浏览器，促成这次转向。纵观时间线，MCP\n授权机制一直从人工审批向机器身份迁移，2026-08-22\n路线图把这条演进主线确立为官方方向。\n为什么云端 agent\n必须自己拿到授权\n回答这个问题有两个角度。第一个角度是生产力杠杆。人管 AI\n像带团队。打个比方，投入 5% 精力拿到 100% 产出，就是 20\n倍杠杆。要维持足够大的杠杆，AI\n必须有足够能动性独立工作，中间不能步步停下来等人，自主获取授权特别重要。Addy\nOsmani 在《\nLong-running\nAgents\n》中指出，生产 agent\n跑起来后人不在屏幕前，编码、扫描或监控能跑数小时到数周，有些挂在事件流或数据表上处理审核、异常或分流。Teradata\n对\n自主\nagent\n的界定也是自行选工具、排动作、恢复错误并推进任务，无需人在环。聊天窗口循环撑不起无人值守运转。\n换个角度看，很多场景本不需要人介入。比如在线客服这类\nagent，面对用户请求，背后没人坐在屏幕前等审批。MCP\n协议里有专门的机制把人带回来：工具执行到一半，可以暂停下来请人做决定，我们之前专门分析过\n这套把人带回来的设计\n。可这类场景要的是全自动闭环，把审批卡在浏览器，等于给后台\nagent 配一名全程在线的监督员，直接抵消代理价值。\n无论放大生产力杠杆还是场景本不需要人，云端 agent\n都必须自己拿到授权。早期阻碍在于：Anthropic 于 2024-11 发布 MCP 时仅支持\nstdio\n传输与单进程通信，无会话与授权框架，预设屏幕前坐着开发者点审批。工具调用类似本地函数，零门槛让\nMCP 迅速流行，却无法支撑无人值守的云端进程。\n为移走阻碍，协议分四环补齐授权能力：第一环支持远程调用，\n2025-03-26\n变更清单\n引入基于 OAuth 2.1 的授权框架 PR #133，以 Streamable HTTP\n取代 HTTP+SSE 支持远程部署 PR #206；第二环是机器自主凭证，2025-11-25\n一周年发布帖\n引入扩展\nSEP-1046 与\nSEP-990，支持机器对机器凭据与企业策略控制，机器首次出示凭据自主获取\ntoken；第三环是平台背书身份，2025-12-05 工作负载身份联合提案 WIF 开启即\nPR\n1933\n（SEP-1933），由平台签发短命且可密码学校验的\nJWT；第四环是窄权限委托，2026-05-21 IETF OAuth 工作组草案\ndraft-ietf-oauth-identity-assertion-authz-grant\n更新至第四版，凭据委托开始有了草案级的标准形状。2026-08-22\n路线图正式把这条线确立为官方方向。\n每推进一步，都在引入当初刻意回避的复杂度。最初写脚本起个 server\n就能调，没有授权与会话，简单正是它发家的原因。如今为让云端 agent\n自主调用，协议正在一步步把企业身份层的复杂机制叠加进来。\n默认调用者从本机的人换成带身份的进程：左边是人和浏览器，右边是云进程和\ntoken\n路线图铺了什么\n新路线图的目标在于：协议需要一种标准方式识别并信任 agent\n身份，摆脱对粘贴 API key 和长命 token 的依赖。长命 token\n像一把用很久的钥匙，丢了影响面大；短命凭证有效期短、到期自动换新、丢了很快作废。零信任默认谁都不信，每次访问都要出示可验证的身份证明，不因为身处内网就直接放行。所谓\nworkload\nidentity，就是平台给每个跑在机器上的程序发一张短期、自动换新的电子身份证，程序用它证明自己是谁。Kubernetes\n与\nSPIFFE\n与 SPIRE\n这类平台本来就在做这件事。\nRed\nHat 关于 AI agent 零信任的分析\n指出，agent\n零信任与人的零信任不同：难点在于用户的身份要从浏览器一路传到\nagent、再传到 agent 调用的下游服务，中间不能断。按照权限交集原则，agent\n只能收窄用户权限，不能扩大权限。\n第一个问题：一个跑在云平台上的程序，怎么向 MCP\n服务端证明自己是谁？平台本来就会给它发一张短期电子身份证 JWT，WIF\n机制就是让 MCP 服务端直接校验这张卡，程序不用单独注册一个 OAuth\n客户端。该机制对应 WIF 提案\nPR\n1933\n即 SEP-1933，由 IETF WIMSE 工作组联合主席 Pieter Kasselman 于\n2025-12-05 开启，截至 2026-08-25 处于 Draft 状态。作者在 2025-12-17\n回应自研质疑时表示这里没有任何自研成分，完全是 RFC 7523 加上 OpenID\nConnect Discovery；维护者规划的推进路径包括合规测试、TypeScript SDK 实现\nPR #2572 与扩展评审。\n第二个问题：用户已经登录了公司账号，一个应用想替用户去用 MCP\n工具，怎么办？应用拿着用户的单点登录身份，向企业 IdP 申领一枚专用\ntoken，直接去 MCP\n服务端换取访问权限，全程不需要弹出浏览器窗口让用户点击同意。该机制对应\nIETF 草案\ndraft-ietf-oauth-identity-assertion-authz-grant\n，2026-05-21\n更新至 v4，简称 ID-JAG。MCP 对应的\nEnterprise-Managed\nAuthorization 扩展\n维护者自述已\nstable，文档明确要求不要将用户重定向到授权端点；草案也规定同一枚 ID-JAG\n禁止在下游跳复用。企业 IdP 在签发前评估策略，权限撤销在 IdP\n侧一次生效。\n第三个问题：token 遭到窃取怎么办？DPoP 机制把 token\n和调用方持有的私钥绑在一起，即使拿到\ntoken，没有私钥也无法使用，服务端同时能识别重放攻击。该机制在 2023\n年定稿为标准\nRFC\n9449\n，MCP 侧落地提案 SEP-1932 截至 2026-07-02 处于合规测试阶段。\n这些机制建立在 2026-07-28 规范底座上：协议删除了握手与会话头 SEP-2575\n与 SEP-2567，引入自包含\n_meta\n，完成了无状态底座与基础授权加固，详见\n变更清单\n。底座已经发布，上层进程身份体系仍在施工。\n代价：简单性，和两个刚加的能力\n这次转向不是免费的，MCP 付了两笔代价。\n第一笔代价，是协议变厚了，存量实现都得改。以前协议依靠会话维系状态，服务端记得客户端是谁、之前调用过什么；去状态之后，服务端不再保留会话记忆，每个请求都必须自包含，把协议版本、客户端身份、能力范围以及要调用的工具名称一次性带齐。请求里的字段和校验规则随之变多，原有接入\nMCP 的项目需要按新规则适配。技术细节上，协议删除了握手与会话头 SEP-2575\n与 SEP-2567，在请求中强制增加\nMcp-Method\n与\nMcp-Name\n头 SEP-2243，列表返回增加\nttlMs\n与\ncacheScope\n字段 SEP-2549，响应体引入\nresultType\n，同时弃用动态客户端注册 DCR 转向 CIMD 即 PR\n#2858，并淘汰 HTTP+SSE 传输 SEP-2596。MCP\n不再是调完工具就走的轻量协议。\n第二笔代价更直接：MCP 砍掉了两项刚加的能力。第一项是\nSampling，它让服务端借用客户端的模型干活：服务端发起采样请求，客户端的模型生成回复、调用服务端提供的工具，服务端一轮轮驱动这个循环；该能力于\n2025-11 加入规范 SEP-1577，8 个月后的 2026-07-28 规范将其列入弃用清单\nSEP-2577 并留出至少 12 个月过渡窗口。第二项是\nRoots，它允许客户端把本地的文件和目录共享给服务端，服务于一个人坐在电脑前的单机交互；Roots\n同样在本次修订中弃用。砍掉它们，等于表明 MCP\n的重心不再覆盖写脚本的个人开发者场景。\n砍掉这两项能力，确立了协议的边界，我们之前写过 MCP 2026 在\n协议层划定边界这条主线\n：MCP\n专注于工具层与身份层，拒绝接管 agent\n运行时，把推理循环留给客户端框架。MCP 靠写个脚本、起个 server\n就能调的零门槛发家；如今为了让云端 agent\n自主运转，每加一层企业身份机制，都在叠加当初刻意回避的复杂度。与此同时，OpenAI\n走向了相反的方向，我们之前对比过\n这两条路线\n：OpenAI\n的 Responses API 把推理状态、会话历史与托管工具都收进自己的服务端，把\nagent 的核心循环直接托管在厂商云上。MCP\n押注中立的工具与身份底座，自身不做运行时；OpenAI\n押注连同运行时一起做。这是两套不同的技术路线在不同层次押注。\nMCP\n换来的与付出的：左边是水平扩展、网关路由与集中身份，右边是迁移成本、复杂度与砍掉的能力\n关口在谁手里，对你意味着什么\n每次访问都经过签发方：客户端到身份提供方\ntoken 端点，再到 MCP server 授权服务器，最后到 MCP server\n你贴在自己项目 .env 里的那把 API\nkey，签发方随时能吊销它、限制它的额度、查看它的调用记录。签发方之所以有这个权力，是因为所有请求都带着这把钥匙经过对方的系统。这个所有请求都必须经过的点就是关口，我们之前专门分析过\n关口这个概念\n。\n这次转向把关口挪到了签发 token\n的一方手里。发身份证的机构，现在同时管着谁能用、怎么收回，每一次委托也落在它手里。在\nID-JAG 流程里，应用发起的请求必须先经过企业 IdP\n评估策略，通过后才能换取访问权限。在 WIF 流程里，MCP\n服务端信任的是云平台签发的身份，直接校验平台给出的短命\nJWT。公有云平台与企业 IdP\n这两类实体，正是早期写脚本的个人开发者从来不用打交道的对象。在谁能审批、谁能撤销、谁看得到委托这件事上，签发方确实占住了关口，这个判断完全成立。\n这轮演进跟你有什么关系，取决于你在链路里的位置。如果你写 MCP\nserver，server 一旦离开本机、部署到远程，就得接上已发布的 OAuth 2.1\n授权框架与 issuer 校验，这部分现在就能做。客户是企业、要求走自己的 SSO\n时，可以接维护者自述已 stable 的 Enterprise-Managed Authorization\n扩展。WIF 还在 Draft，别提前写校验代码。\n如果你写 agent 应用、让 agent 去调 MCP 工具，agent\n要无人值守跑，浏览器审批这条路就不通了。现在能用的是 2025-11-25\n版引入的机器对机器凭据，让 agent 自己出示凭据换 token；ID-JAG 还是 IETF\n草案，等它离开草案再接。\n如果你只是用现成的 agent 产品调工具，不用改任何东西，client\n会处理。要留意的是，这套体系正在淘汰往 .env 里贴一把长命 API key\n的习惯，新写的脚本别再这么干。判断这条路走没走通有一个明确标准：如果未来两到三个规范周期内\nWIF 与 DPoP 依然停在草案阶段，主流服务端依然在透传用户凭证而非 workload\n身份，默认调用者换成云端进程的判断即告失效。\n这种转向在社区引发了讨论。\nHN\n上关于新路线图的讨论\n拿到 269\n分，过度设计批评占了较多篇幅，一条高赞评论写道：「在初版发布阶段搞一套定制的新协议，是\nMCP 做过更愚蠢的事情之一」。REST 搭配 skills.md 阵营态度直接，AWS\nBuilder Center 发文打出标题：\nAgent\nskills and CLI tools: ditch the MCP overhead\n。Cloudflare 的\ncode mode\n为模型提供代码执行工具，宣称「用 1000 个 token 给智能体提供完整\nAPI」，在文档中标注为 experimental。MCP\n押注做中立的工具与身份底座，服务无人值守的生产\nagent，自身不做运行时。这个赌注是否成立，是一个开放问题。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/mcp-agent-identity-caller-shift-20260828.html",
+      "content_chars": 5360,
+      "content_sha256": "3711ef44bf17e72287a793bb5ccdf552f1108028096a3597fe2d3e7bb422adb3",
+      "content_fetched_at": "2026-08-29T03:08:46.338297+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-08-28T00:00:00+00:00",
+      "collected_at": "2026-08-29T03:07:21.351311+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/mcp-agent-identity-caller-shift-20260828.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "从屏幕前的人到云端的进程：MCP 默认调用者的两年转向",
+          "url": "https://yage.ai/share/mcp-agent-identity-caller-shift-20260828.html",
+          "content_sha256": "3711ef44bf17e72287a793bb5ccdf552f1108028096a3597fe2d3e7bb422adb3"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
