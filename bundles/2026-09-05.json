@@ -1,89 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-09-05",
-  "generated_at": "2026-09-04T22:59:22.197971+00:00",
-  "item_count": 3,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:a3a88efaab1b860b",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys-post4790645.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-04T22:57:13.971697+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys-post4790645.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-04T22:57:57.431032+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "ok",
-      "url_corrected": true
-    },
-    {
-      "id": "a:61e76ad07cc9e664",
-      "kind": "publish",
-      "text": "yage-share published: 把模型搬回自己家之前，先算三本账",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-04T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/open-model-selfhost-decision-20260904.html",
-      "title": "把模型搬回自己家之前，先算三本账",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "推理与性能\n产业与竞争\n一个在 GPU 云厂商负责开发者生态的工程师，家里装了一套 GPU\n机架跑开源权重模型。他公开坦白这套硬件不省钱，电费可能翻倍，他自己说不再试图用经济收益辩护，回报全在磨练个人技能。这个人叫\nZach Mueller，供职于 Lambda。他和评测专家 Hamel Husain 对谈，原话是：“it\nis training and sharpening my skills. I don’t even try and justify it\nanymore.”（\nHow To\nUse Open Models Effectively\n）\n为什么要在开头提起他的坦白？围绕开源模型要不要自行部署，行业里充斥着极端声音。基准评测追平闭源，一边在欢呼；另一边则断言本地部署是无底洞。两边各执一词，很少有人把决策本身讲清楚。一个以销售\nGPU\n云为本职的人亲口推翻自托管省钱的假设，比单纯的分数榜单更能说明：这笔账远比直觉复杂。\n另一个广为流传的结论也需要重新审视。开源权重研究者 xjdr\n在七月给出过一个判断：“with proper UX, current open weights models are\ngood enough for 90% of queries from 90% of people”（\n推文原文\n）。许多人把这句话简化成开源模型能覆盖九成场景，却丢掉了原话里的时间前提\ncurrent。这是 2026\n年的快照，不是永恒的结论。我自己日常同时使用商业前沿接口与开源权重模型，两边都用下来，愈发体会到这始终是一个需要逐项计算的账本问题。\n可行性已经解决，但能跑不等于该跑\n2026 年上半年的真实数据，已经给开源模型行不行的问题画上了句号。在\nOpenRouter 上，DeepSeek 的周度 token 份额从一月的 9% 涨到六月的\n18%，五月中旬起持续占据全平台第一大模型提供商席位。六月，中国团队的模型合计占据\n46.4% 的平台调用份额，超越了美系模型的 35.7%（\nOpenRouter\n数据\n）。在要求严苛的代码生成领域，MiniMax M2.5 在 SWE-bench Verified\n评测中取得 80.2% 的通过率，与 Claude Opus 4.6 的 80.8% 基本持平（\n选型指南\n）。\n单机运行门槛降得很快。一张 16GB 显存的消费级显卡，跑 4-bit\n量化后显存减半的 27B\n模型，就能带动一个日常智能体。这个智能体可以检索网页、调用接口、阅读文档，还能打理收件箱。Hamel\n在视频说明里给出了直观提炼：一张 600 美元的显卡，就能把一个像模像样的 AI\n智能体顺畅跑起来。\n技术层面能跑通任务，与在生产环境里稳定交付结果，属于两套不同的工程现实。工具外壳这一层如今已不是瓶颈：Claude\nCode 用环境变量就能把模型指到任意 API，OpenCode\n这类开源外壳天然支持，主流外壳在 95%\n的日常任务上高度重合、基本可互换，挑一个顺手的直接用就行。Zach\n提醒过真正的坑在别处：把开源模型塞进闭源外壳的后端就指望等效输出，多半达不到应有水平，因为这些外壳是围绕自家模型调校的。所以\n90/90\n的准确读法是：权重免费，外壳随便挑一个现成的就能跑；真正难解的账在钱和利用率上，下面展开。\n另一项针对企业生产系统的成本分析给出了对照。分析认为商业 API 更适合\n95%\n的实际生产工作负载，因为把外壳研发工时、显卡闲置损耗与运维开销合并折算后，按量计费的云端接口依然明显更划算（\n成本分析\n）。九成任务适配潜力与九成五生产负载适用判断并不矛盾。这两个数字揭示了同一现实的两面：开源模型确实能解决多数常规任务，但绝大多数线上生产系统依然会留在云端接口上。做出最终抉择的依据，全看团队眼前的三本账。\n三本账：钱、数据、能力\n三本账：钱上云端 API\n赢，数据和能力上自建部署赢\n决定是否自建，核心是算清楚三本账：资金成本、数据与能力。权衡好三项的比重，才谈得上真实的开销与收益。\n第一本账是资金成本。单纯对比各家 API\n单价，开源托管接口普遍比一线闭源大模型便宜 60% 到 90%。DeepSeek V4 Flash\n的输入单价为每百万 token 0.14 美元，而 GPT-5.5 为 5.00 美元（\n报道\n）。若只在云端接口之间横向比对，开源托管接口确实便宜许多。\n但自建是另一笔账。它的总体开销往往达到纯硬件账单的三到五倍，预算每月\n5,000 美元算力的团队，实际月度总支出会涨到 25,000 美元（\n成本核算\n）。其中利用率是关键变量：利用率越低，均摊到每个\ntoken\n的成本越高。租用算力时机制最直接，机器按小时固定计费，空转也照扣；自持\nGPU\n则复杂得多，电费随负载起伏、空载时相当低，但硬件折旧与运维工时是固定摊下来的，利用率一低，这部分固定投入就摊不薄。\n而利用率这一项，天生和交互体验打架。GPU\n省钱的唯一办法是把更多请求塞进同一批计算，一批里的请求越多，单位成本越低，可每个请求要排队等别人的请求算完。有人在\nH100 上实测过 Llama 70B：并发从 1 拉到 100，吞吐涨了 20 倍，首 token\n延迟从 45 毫秒涨到 740 毫秒（\n实测数据\n）。想省钱就得把利用率拉满，利用率拉满，人等第一个字的时间就变长；想让人用着爽就得扩容压低利用率，利用率降下来，钱就省不掉了。这是自建推理的自相矛盾之处：它不贵在硬件，贵在利用率和交互延迟互相打架，一边压另一边就涨。后台批处理任务可以等，把利用率拉到最满没问题；凡是要人盯着的\nagentic 推理，这个环就解不开。学术侧给过同样的结论：prefill 和 decoding\n两类计算挤在同一批 GPU\n上互相拖累，要么牺牲一边的延迟，要么为两者都达标而超额采购算力（\nDistServe 论文\n）。\n这笔账算下来谁赢？把固定硬件投入和按量调用费用放在一起算，两张 H100\n搭建的私有部署，每月实际请求吞吐要达到约 20 亿\ntoken，才能打平中等价位的云端 API（\n盈亏平衡计算\n）。这个吞吐规模远超大多数开发者与中小团队的日常需求。在常规业务场景下，直接按量调\nAPI 更省钱；唯有用量巨大且请求平稳，自建才可能带来财务上的节约。\n第二本账关乎数据安全。行业统计显示，31%\n的企业决策者将安全合规与数据隐私列为模型选型的第一考量，本地部署推理的市场份额也从\n2023 年的 12% 涨到 55%（\n部署统计\n）。数据发往外部云端，就会纳入第三方的存储策略。欧洲监管机构曾明确警示，外部接口处理数据删除诉求时，是否做到物理层面的清除，缺乏可验证的保证。Zach\n在对谈中提醒，如果使用第三方聚合网关，请求可能会流向不同司法管辖区的未知节点。不过商务合同与技术协议能缓解合规顾虑。OpenAI\n与 Anthropic\n如今均提供成熟的企业级合规认证，允许签署面向高敏感业务的合规补充协议，并做出零数据保留承诺（\nOpenAI\n企业隐私\n）。如果团队的核心诉求侧重于合规审计，商业协议往往就能达成目标，无需在机房搭建物理显卡。\n第三本账是团队能力的沉淀，回报体现在技能上。开源模型允许团队针对垂直业务做参数微调。Hamel\n记录的 Honeycomb 与 ReChat\n案例证明，垂直微调的小模型在特定任务上能够战胜通用大模型（\n微调案例\n），单次\nLoRA 微调算力门槛最低仅需三百美元。Zach 对此尤为坦率：他在家中部署的 GPU\n机架在财务上无法收回成本，但整个过程让他掌握了从驱动、推理框架到显存调度的整套实战经验。财务账本上的折旧明细记不下技术人员的成长，但这笔投入会变成团队长期的实操能力。\n三档选项：从一张 16GB\n卡到 frontier API\n三档选项：租\ntoken、租硬件、拥有硬件，控制力递增\n算清三本账的权重，落地选项可以排成一条由浅入深的谱系。根据对底层算力控制力度的不同，一共分为三档：租用\ntoken、租用算力硬件、自购持有硬件。\n第一档是租用\ntoken，直接按需调用现成的云端接口，维护负担最轻。这一档包含闭源前沿商业接口与托管开源模型接口两种形态，后者的调用单价通常便宜\n60% 到\n90%。这一档容易忽略的隐性成本出现在上下文缓存环节。例如编程辅助这类高频重载场景，应用每次都要传递约两万字符的长上下文。如果未能命中预先计算的缓存，每次交互都必须从头传输并计算整份上下文。Zach\n强调，缓存一旦频繁失效，调用开销就会迅速失控。如果通过聚合路由转发请求，还要注意请求流向未知管辖区服务商的潜在合规风险。\n第二档是租用算力硬件，在云端租用配备 GPU\n的虚拟机并部署开源模型，由团队自主掌控推理服务。Zach\n为这一档给出了务实的验证逻辑：先租用两到三周的临时竞价算力实例，把开源模型部署上线，完整记录实际工作流产生的真实\ntoken 吞吐量。他用原话总结了这套路径：“track your token usage and see if\nyou’re actually using it like you hoped you would. And if you are, okay,\neither do more long-term commitments or go out and buy hardware…\nOtherwise, it’s a toy and it’s a very expensive\ntoy.”（先租后买，用真实用量说话。）挑选租用机型时，优先选择单卡显存最大的规格，租硬件的时间里速度就是钱，前沿开源模型也都在针对最新硬件做优化。\n第三档是自购物理硬件并在本地长期持有。以单张 RTX 4090\n显卡为例，把硬件折旧与电力消耗算在一起，全口径持有成本约为每月 104\n美元（\n成本分析\n）。如果团队每月稳定产生\n800 万 token 的推理需求，这套本地硬件的持有开销就能追平调用 GPT-4o\n级别商业接口的费用。这一档的硬性上限在于显存容量与模型参数规模的匹配度。模型参数越大，所需的物理卡数与硬件预算就成倍增加。量化技术能够在显存减半的同时保持大模型推理质量几乎无损，然而小模型经过量化压缩后，在基准测试中的平均得分可能会明显下跌近十分（\n量化研究\n）。Zach\n本人就处于这一档，他深知这套方案更接近技能投资，无法指望它在短期内缩减财务支出。\n七个信号，两到三周验证\n把三本账与三档方案落到实际决策中，不用看复杂的流程图。观察以下七个具体信号，就能找准团队当前的落脚点。\n数据合规强度是第一个刚性信号。法规或商业合同一旦要求数据物理隔绝在私有网络内部，选项就会直接推向第二档租用硬件或第三档自购硬件，除非云端接口的零数据保留协议能通过法务合规审查。任务复杂度是第二个信号。处理结构化信息提取、接口调用、长文档总结等常规任务，开源模型足以胜任；若是涉及长流程自主编程、复杂多模态推理等前沿场景，顶尖闭源模型依然维持着数个月的技术代差（\n差距分析\n）。\n业务调用规模与平稳度是第三个信号。只有长期持续且平稳的高并发请求，才能摊薄底层硬件的固定折旧；如果是偶尔波动的轻量负载，停留在按量接口最为划算。生成速率要求是第四个信号。每秒\n20 个 token 的吞吐速率足够应对后台离线任务，每秒 50 个 token\n能够顺畅匹配人类工程师的实时交互节奏，而每秒 100 个 token\n以上的高速率，主要服务于多智能体高并发协作场景。\n团队专职运维人手是第五个信号。如果技术团队缺乏熟悉显卡驱动、推理框架与集群调优的专职工程师，直接租用现成\nAPI 是最稳妥的决策。开源许可协议是第六个信号。MiniMax 发布\nM2.7，将授权条款调整为非商用许可，并要求衍生产品必须明确标注模型来源（\n条款讨论\n），单纯依靠开源免费假设搭建的业务模式，随时可能遭遇协议变动的冲击。最后一个信号是请求的形态。交互式的\nagentic\n推理要求低延迟，天然压低利用率，让省钱变难；后台批处理不在乎等待，能把利用率拉满，是自建推理唯一如鱼得水的形态。工具外壳这一层反倒不用焦虑：主流编码外壳在\n95% 的日常任务上早已高度重合，基本可以互换（\n我们\n6\n月的对比结论\n），挑一个顺手的现成外壳就是零成本起点。安全也挂在这一档：本地部署的模型默认不带开箱即用的安全拦截规则，所有输入输出的安全护栏都需要技术人员亲手接入与配置（\n安全分析\n）。\n具体的验证动作可以分两步走。硬件上，按照 Zach\n的建议，先租两到三周测试真实用量；软件上，遵循 Hamel\n的方法：无论是替换模型架构还是引入路由调度，都必须通过系统化评测指标量化延迟与成本的真实变化，拒绝主观猜测。Hamel\n的原话是：“measure its effect on latency and cost with evals rather than\nguessing”（\n笔记\n）。先用低成本租赁摸清真实负载，再用严密评测数据指导后续扩容，比直接拍脑袋采购硬件稳妥得多。\n回到开头那位在 GPU 云厂商任职的工程师。Zach\n没有给出一劳永逸的标准答案，因为不同团队面临的业务边界各不相同。他留下了一套切实可行的两到三周验证流程，以及对自建账本最真实的洞察：“Otherwise,\nit’s a toy and it’s a very expensive toy”。按 xjdr 那句带有 proper UX 与\ncurrent\n限定的判断，开源模型能够解决九成的日常需求，外壳是其中最容易解的一环。真正决定成败的，是你的请求形态能不能容忍一个利用率拉满的集群：能，自建才有得算；不能，这笔账天生算不平。团队究竟该不该把模型搬回自己家，无需听信宏大的阵营宣传。租用两到三周云端机器，记录下真实的\ntoken 消耗与系统延迟，账本上的数字自然会给出答案。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/open-model-selfhost-decision-20260904.html",
-      "content_chars": 5736,
-      "content_sha256": "b16d8dac3ee87416bd1e0690c7ff652afba3e4943cde434b7eb7bd12d3efbcf2",
-      "content_fetched_at": "2026-09-04T22:58:03.808861+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:6520d524dda437a5",
-      "kind": "publish",
-      "text": "yage-share published: 智能体 token 用量过线人类、OpenAI 自研芯片跑分出炉、GitHub 发布文档压缩原型",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-03T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/caching-discount-three-ledgers-20260903.html",
-      "title": "智能体 token 用量过线人类、OpenAI 自研芯片跑分出炉、GitHub 发布文档压缩原型",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n推理与性能\n智能体\ntoken 用量过线人类、OpenAI 自研芯片跑分出炉、GitHub\n发布文档压缩原型\n先看上周 AI 行业的三条新闻。OpenRouter\n平台公布了一组数据，智能体消耗的 token\n数量超过了人类，差距还在拉大。接着 OpenAI 放出了自研推理芯片 Jalapeño\n的首批跑分，部分指标跑赢了 Nvidia 现役产品。另外 GitHub 前瞻团队发布了\nKnowledge Compressor\n原型工具，可以把智能体反复阅读的文档压短一半。这三件事各自带着数字上的坑，我们挨个说。顺带一提，这三笔账里都有一个关键角色。模型服务商对重复读取的上下文会给个折扣价，这套机制叫\nprompt caching，我们先放一放。\n三份不同的账连向同一枚打折硬币：名义数字都因缓存折扣而失真\n智能体 token\n用量达人类 5.2 倍，实际账单约 2 倍\n8 月中旬 OpenRouter 平台数据负责人 Peter Walker\n给了一组统计数据。2026 年 2 月 6 日是人类 token\n消耗量最后一次赢过智能体。截至 8 月 10\n日的七天平均数据显示，智能体每周跑掉 7.3 万亿 token，人类每周用掉 1.4\n万亿 token。按这两个数字算，智能体的名义用量达到了人类的 5.2\n倍。过去半年里智能体用量涨了 14 倍，人类只涨了 2.8 倍。这组数据传遍了\nThe Decoder 和 a16z 等五个独立转述链，各家引用的数字都对得上。\n这组多方核对一致的数据构成了判断近期\ntoken 经济的基准\n。\n这 5.2 倍的用量其实有两个口径。按 Walker 自己给的 total token usage\n来看，智能体用量里差不多 70% 是缓存读取；a16z 周报转述时换了 token burn\n口径，占比在 85% 以上。两个口径统计的不是同一种量，分别是约 70% 和 85%\n以上。a16z 也点出，智能体多出来的那些用量基本都是缓存 token\n贡献的。模型服务商对缓存的收费一般要低很多。按这个缓存占比加上缓存约一折计价粗算，智能体给人类打出的实际账单倍数在\n2\n倍上下。这个估算没有实测兜底，最终落在哪，还得看两边实际的缓存占比和具体的折扣费率。\n用这组平台数据还得卡死两条外推边界。第一，这只是 OpenRouter\n一家的数据。平台厂商自己说他们的流量只占全球推理量的 1% 左右，每周大概\n28 万亿 token。这里的用户多是开发者，模型也偏向 token\n效率偏低的开放权重。他们区分人类和智能体靠的是七个行为信号加权估计，权重没公开，别人没法复现。再加上八月份碰上假期，人类用量也会跟着往下走。更夸张的是单点集中，Hermes\nAgent 这个单一应用一周就烧了 1.5 万亿 token，快赶上其他 49\n个追踪应用的加总了，差不多占了智能体总流量的两成。\n第二，这个数字有系统性高估的倾向。转述案例里经常看到智能体去下载无关文件或者搜一堆没用的东西，更典型的是掉进重试风暴：第一次失败就该停手，它却一遍遍地重来，token\n就这么滚上去了，干的活并没有变多。另外平台整体的缓存命中率确实高，但个别应用还是会遇到缓存失效，比如\nhermes-agent 的 20957\n号问题。这些坑连同动态提示词和缓存写入的单独计费，都在一点点吃掉账面上的省钱效应。\nGitHub\n压缩原型：官方称 2,000 次复用回本，中位预期 5,000 次以上\nGitHub 前瞻团队研究员 Alex Gorischek 8 月 24 日发了个原型工具叫\nKnowledge\nCompressor。这东西能把智能体反复读的知识文档自动压短。在官方示例里，合成文本从\n996 个 token 压到了 480 个\ntoken。它的做法是先自动生成二十四道问答题，然后闭卷筛选加迭代压缩。有个强制见红机制要求至少一道题答错，接着进入失败回流和最小恢复环节，直到全绿收工。\n官方博文中描述了这套验收流程\n。官方给算了一笔经济账，压缩一次花\n2 美元，每次未缓存读取省 0.001 美元，同一份文档复用 2,000\n次左右能回本。官方在脚注里认了回本门槛会受定价和缓存影响，但没给出具体数字。\n这笔回本账有个错位。官方算账时把每次读取都当成未缓存的全价计费，可文档在多轮交互里反复加载，这正好是缓存命中的优势场景。把缓存折扣算进去，工具的经济收益就有点波动了。官方隐含的单价是每百万\ntoken 1.94 美元，Sol 的牌价则是 4 到 5\n美元。大头还是在缓存价格上，主流厂商的定价差得很多。OpenAI 和 Anthropic\n的缓存读取按原价一折计，Gemini 按二五折计，DeepSeek\n只收百分之二。一项实测数据表明，长会话缓存能省下 78% 到 81%\n的成本。如果按 50% 缓存命中率算，回本大概要 3,640 次。按 90%\n命中率算，回本大概要 10,500 次。要是全缓存的情况，回本门槛直接顶到\n20,000 次。那 2,000 次只是全价情况下的乐观估计，诚实的回本区间落在 2,000\n到 20,000 次之间，中位预期在 5,000 次以上。\n我们再往 10K token 长度的文档推算一下。单做压缩就要花 20 美元，加上\n240 题跑全新上下文的验证环节还得花 25 美元，跑一次起步成本就是 45\n美元。这个原型现在没开源，外部复现和社区反馈都没做到官方演示的理想状态。另外拿问答指标来验证压缩效果也藏着坑，连接性知识丢了在指标上也看不出来。这个工具剩下的不可替代价值，只有上下文容量这一项。而且这个回本门槛还要求文档几乎不能改，每次还得把全文读进上下文。海量的业务文档在生命周期里，很难做到\n5,000 次以上的无修改读取。\nOpenAI\n自研芯片跑分领先，但真实负载测试缺席\nOpenAI 8 月 25 日交出了自研推理芯片 Jalapeño 的首批成绩。在 8,000\ntoken 读入、1,000 token 产出的固定长度单轮测试中，他们用了 GPT-OSS\n120B、DeepSeek R1 670B 还有开放权重的 Kimi K2.5 三款模型。对标 Nvidia 的\nGB200 和 GB300 芯片，Jalapeño 的每瓦吞吐达到 1.5 到 1.9\n倍，端到端延迟快了 1.7 到 3.6 倍。\n这组由厂商单方面提供的数字说明了新硬件的纸面性能\n。第三方评测机构\nSemiAnalysis\n在实验室现场抽检了一部分推理轮次，没有跑全套测试。现有的批评未质疑造假，都认可是真的领先，转而指出测试口径有缺失。\nSemiAnalysis\n更喜欢用模拟长上下文和多轮对话真实智能体负载的评测口径，比如\nAgentX。在这个负载场景里，有个关键变量是重复读取相同的长篇前置上下文，也就是重前缀缓存。这次给出的所有成绩里，未见\nAgentX 成绩。评测机构提了一句，在 8k/1k\n固定长度打靶里跑得好的框架，到了真实的 AgentX 测试里表现经常不太行。\n单一的固定长度最优未必能代表复杂的智能体工作负载具有同等表现\n。\n技术社区 Hacker News 补充了两条不对称的测试口径批评。先是拿来参照的\nNvidia Rubin 成绩算上了投机解码技术 speculative decoding，Jalapeño\n这边没用。再是 Jalapeño 现在还只是工程样品，2026 年底只有极小规模，要到\n2027 年才开始放量，Rubin 可是已经实际出货了。而且这次直接对比的对象是\nGB200 和 GB300，Rubin\n没进直接测试环节，单用户解码场景对真实业务的代表性也比较弱。换到\nper-total-cost 口径看，媒体 wallstengine 转述的观点是，Jalapeño 和 Rubin\n水平差不多。仔细盘这第三本账，它和前面两本结构很像。8k/1k\n固定长度测试测不出真实智能体负载，因为真实负载里占比最大的活儿，正好是享受折扣的重复内容读取。在这本账里，折扣读取直接让真实评测口径缺席了。\n平台账单里名义与实际失衡，压缩工具的回本门槛一路抬升，芯片评测的真实负载成了移动靶\n三件事放在一起看\n三条新闻来自三个不挨着的发布方，看的时候各有一个要避开的坑。引用\nOpenRouter 的用量数字，得记住大头都是打折的缓存读取，名义上是 5.2\n倍，折算下来实际账单粗算约 2\n倍。听压缩工具的省钱故事，先去核实它的回本账是按全价算还是按折扣价算。看芯片跑分，要留意打靶成绩和真实负载成绩现在是两码事。这些事背后其实都牵着\nprompt caching 这个变量，我们六月那篇\nKV\nCache 文章\n聊过它的杠杆。这里不展开，大家心里有数就行。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/caching-discount-three-ledgers-20260903.html",
-      "content_chars": 3641,
-      "content_sha256": "211a0deb3bd35248f1873099eccd8b427f25bbb2cfa60beb48f4c56a7b98e066",
-      "content_fetched_at": "2026-09-04T22:58:03.920132+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-09-05",
+  "collect_window": {
+    "start": "2026-09-03T00:00:00+00:00",
+    "end": "2026-09-04T22:57:13.971697+00:00",
+    "hours": 46
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "33927600039",
+    "commit": "b9d2b7b"
+  },
+  "stats": {
+    "total": 3,
     "by_kind": {
       "publish": 3
     },
@@ -95,9 +26,268 @@
       "unknowncheats-ac": 1,
       "yage-share": 2
     },
+    "failed_lists": [
+      "redsiege-blog"
+    ],
+    "sources_ok": 50,
+    "sources_failed": [
+      {
+        "id": "redsiege-blog",
+        "error": "no_candidates"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 8,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 13,
+      "calls": 13,
+      "prompt_tokens": 14181,
+      "completion_tokens": 2423,
+      "total_tokens": 16604,
+      "prompt_cache_hit_tokens": 11008,
+      "prompt_cache_miss_tokens": 3173
+    },
     "by_content_status": {
       "failed": 1,
       "ok": 2
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:a3a88efaab1b860b",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys-post4790645.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys-post4790645.html",
+      "at": "2026-09-04T22:57:13.971697+00:00",
+      "external_id": "a:a3a88efaab1b860b",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys-post4790645.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys-post4790645.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-04T22:57:57.431032+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-04T22:57:13.971697+00:00",
+      "collected_at": "2026-09-04T22:57:13.971697+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys-post4790645.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/770346-dma-cheat-causes-keyboard-keys.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:61e76ad07cc9e664",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "把模型搬回自己家之前，先算三本账",
+      "target_url": "https://yage.ai/share/open-model-selfhost-decision-20260904.html",
+      "text": "yage-share published: 把模型搬回自己家之前，先算三本账",
+      "at": "2026-09-04T00:00:00+00:00",
+      "external_id": "a:61e76ad07cc9e664",
+      "url": "https://yage.ai/share/open-model-selfhost-decision-20260904.html",
+      "title": "把模型搬回自己家之前，先算三本账",
+      "content": "推理与性能\n产业与竞争\n一个在 GPU 云厂商负责开发者生态的工程师，家里装了一套 GPU\n机架跑开源权重模型。他公开坦白这套硬件不省钱，电费可能翻倍，他自己说不再试图用经济收益辩护，回报全在磨练个人技能。这个人叫\nZach Mueller，供职于 Lambda。他和评测专家 Hamel Husain 对谈，原话是：“it\nis training and sharpening my skills. I don’t even try and justify it\nanymore.”（\nHow To\nUse Open Models Effectively\n）\n为什么要在开头提起他的坦白？围绕开源模型要不要自行部署，行业里充斥着极端声音。基准评测追平闭源，一边在欢呼；另一边则断言本地部署是无底洞。两边各执一词，很少有人把决策本身讲清楚。一个以销售\nGPU\n云为本职的人亲口推翻自托管省钱的假设，比单纯的分数榜单更能说明：这笔账远比直觉复杂。\n另一个广为流传的结论也需要重新审视。开源权重研究者 xjdr\n在七月给出过一个判断：“with proper UX, current open weights models are\ngood enough for 90% of queries from 90% of people”（\n推文原文\n）。许多人把这句话简化成开源模型能覆盖九成场景，却丢掉了原话里的时间前提\ncurrent。这是 2026\n年的快照，不是永恒的结论。我自己日常同时使用商业前沿接口与开源权重模型，两边都用下来，愈发体会到这始终是一个需要逐项计算的账本问题。\n可行性已经解决，但能跑不等于该跑\n2026 年上半年的真实数据，已经给开源模型行不行的问题画上了句号。在\nOpenRouter 上，DeepSeek 的周度 token 份额从一月的 9% 涨到六月的\n18%，五月中旬起持续占据全平台第一大模型提供商席位。六月，中国团队的模型合计占据\n46.4% 的平台调用份额，超越了美系模型的 35.7%（\nOpenRouter\n数据\n）。在要求严苛的代码生成领域，MiniMax M2.5 在 SWE-bench Verified\n评测中取得 80.2% 的通过率，与 Claude Opus 4.6 的 80.8% 基本持平（\n选型指南\n）。\n单机运行门槛降得很快。一张 16GB 显存的消费级显卡，跑 4-bit\n量化后显存减半的 27B\n模型，就能带动一个日常智能体。这个智能体可以检索网页、调用接口、阅读文档，还能打理收件箱。Hamel\n在视频说明里给出了直观提炼：一张 600 美元的显卡，就能把一个像模像样的 AI\n智能体顺畅跑起来。\n技术层面能跑通任务，与在生产环境里稳定交付结果，属于两套不同的工程现实。工具外壳这一层如今已不是瓶颈：Claude\nCode 用环境变量就能把模型指到任意 API，OpenCode\n这类开源外壳天然支持，主流外壳在 95%\n的日常任务上高度重合、基本可互换，挑一个顺手的直接用就行。Zach\n提醒过真正的坑在别处：把开源模型塞进闭源外壳的后端就指望等效输出，多半达不到应有水平，因为这些外壳是围绕自家模型调校的。所以\n90/90\n的准确读法是：权重免费，外壳随便挑一个现成的就能跑；真正难解的账在钱和利用率上，下面展开。\n另一项针对企业生产系统的成本分析给出了对照。分析认为商业 API 更适合\n95%\n的实际生产工作负载，因为把外壳研发工时、显卡闲置损耗与运维开销合并折算后，按量计费的云端接口依然明显更划算（\n成本分析\n）。九成任务适配潜力与九成五生产负载适用判断并不矛盾。这两个数字揭示了同一现实的两面：开源模型确实能解决多数常规任务，但绝大多数线上生产系统依然会留在云端接口上。做出最终抉择的依据，全看团队眼前的三本账。\n三本账：钱、数据、能力\n三本账：钱上云端 API\n赢，数据和能力上自建部署赢\n决定是否自建，核心是算清楚三本账：资金成本、数据与能力。权衡好三项的比重，才谈得上真实的开销与收益。\n第一本账是资金成本。单纯对比各家 API\n单价，开源托管接口普遍比一线闭源大模型便宜 60% 到 90%。DeepSeek V4 Flash\n的输入单价为每百万 token 0.14 美元，而 GPT-5.5 为 5.00 美元（\n报道\n）。若只在云端接口之间横向比对，开源托管接口确实便宜许多。\n但自建是另一笔账。它的总体开销往往达到纯硬件账单的三到五倍，预算每月\n5,000 美元算力的团队，实际月度总支出会涨到 25,000 美元（\n成本核算\n）。其中利用率是关键变量：利用率越低，均摊到每个\ntoken\n的成本越高。租用算力时机制最直接，机器按小时固定计费，空转也照扣；自持\nGPU\n则复杂得多，电费随负载起伏、空载时相当低，但硬件折旧与运维工时是固定摊下来的，利用率一低，这部分固定投入就摊不薄。\n而利用率这一项，天生和交互体验打架。GPU\n省钱的唯一办法是把更多请求塞进同一批计算，一批里的请求越多，单位成本越低，可每个请求要排队等别人的请求算完。有人在\nH100 上实测过 Llama 70B：并发从 1 拉到 100，吞吐涨了 20 倍，首 token\n延迟从 45 毫秒涨到 740 毫秒（\n实测数据\n）。想省钱就得把利用率拉满，利用率拉满，人等第一个字的时间就变长；想让人用着爽就得扩容压低利用率，利用率降下来，钱就省不掉了。这是自建推理的自相矛盾之处：它不贵在硬件，贵在利用率和交互延迟互相打架，一边压另一边就涨。后台批处理任务可以等，把利用率拉到最满没问题；凡是要人盯着的\nagentic 推理，这个环就解不开。学术侧给过同样的结论：prefill 和 decoding\n两类计算挤在同一批 GPU\n上互相拖累，要么牺牲一边的延迟，要么为两者都达标而超额采购算力（\nDistServe 论文\n）。\n这笔账算下来谁赢？把固定硬件投入和按量调用费用放在一起算，两张 H100\n搭建的私有部署，每月实际请求吞吐要达到约 20 亿\ntoken，才能打平中等价位的云端 API（\n盈亏平衡计算\n）。这个吞吐规模远超大多数开发者与中小团队的日常需求。在常规业务场景下，直接按量调\nAPI 更省钱；唯有用量巨大且请求平稳，自建才可能带来财务上的节约。\n第二本账关乎数据安全。行业统计显示，31%\n的企业决策者将安全合规与数据隐私列为模型选型的第一考量，本地部署推理的市场份额也从\n2023 年的 12% 涨到 55%（\n部署统计\n）。数据发往外部云端，就会纳入第三方的存储策略。欧洲监管机构曾明确警示，外部接口处理数据删除诉求时，是否做到物理层面的清除，缺乏可验证的保证。Zach\n在对谈中提醒，如果使用第三方聚合网关，请求可能会流向不同司法管辖区的未知节点。不过商务合同与技术协议能缓解合规顾虑。OpenAI\n与 Anthropic\n如今均提供成熟的企业级合规认证，允许签署面向高敏感业务的合规补充协议，并做出零数据保留承诺（\nOpenAI\n企业隐私\n）。如果团队的核心诉求侧重于合规审计，商业协议往往就能达成目标，无需在机房搭建物理显卡。\n第三本账是团队能力的沉淀，回报体现在技能上。开源模型允许团队针对垂直业务做参数微调。Hamel\n记录的 Honeycomb 与 ReChat\n案例证明，垂直微调的小模型在特定任务上能够战胜通用大模型（\n微调案例\n），单次\nLoRA 微调算力门槛最低仅需三百美元。Zach 对此尤为坦率：他在家中部署的 GPU\n机架在财务上无法收回成本，但整个过程让他掌握了从驱动、推理框架到显存调度的整套实战经验。财务账本上的折旧明细记不下技术人员的成长，但这笔投入会变成团队长期的实操能力。\n三档选项：从一张 16GB\n卡到 frontier API\n三档选项：租\ntoken、租硬件、拥有硬件，控制力递增\n算清三本账的权重，落地选项可以排成一条由浅入深的谱系。根据对底层算力控制力度的不同，一共分为三档：租用\ntoken、租用算力硬件、自购持有硬件。\n第一档是租用\ntoken，直接按需调用现成的云端接口，维护负担最轻。这一档包含闭源前沿商业接口与托管开源模型接口两种形态，后者的调用单价通常便宜\n60% 到\n90%。这一档容易忽略的隐性成本出现在上下文缓存环节。例如编程辅助这类高频重载场景，应用每次都要传递约两万字符的长上下文。如果未能命中预先计算的缓存，每次交互都必须从头传输并计算整份上下文。Zach\n强调，缓存一旦频繁失效，调用开销就会迅速失控。如果通过聚合路由转发请求，还要注意请求流向未知管辖区服务商的潜在合规风险。\n第二档是租用算力硬件，在云端租用配备 GPU\n的虚拟机并部署开源模型，由团队自主掌控推理服务。Zach\n为这一档给出了务实的验证逻辑：先租用两到三周的临时竞价算力实例，把开源模型部署上线，完整记录实际工作流产生的真实\ntoken 吞吐量。他用原话总结了这套路径：“track your token usage and see if\nyou’re actually using it like you hoped you would. And if you are, okay,\neither do more long-term commitments or go out and buy hardware…\nOtherwise, it’s a toy and it’s a very expensive\ntoy.”（先租后买，用真实用量说话。）挑选租用机型时，优先选择单卡显存最大的规格，租硬件的时间里速度就是钱，前沿开源模型也都在针对最新硬件做优化。\n第三档是自购物理硬件并在本地长期持有。以单张 RTX 4090\n显卡为例，把硬件折旧与电力消耗算在一起，全口径持有成本约为每月 104\n美元（\n成本分析\n）。如果团队每月稳定产生\n800 万 token 的推理需求，这套本地硬件的持有开销就能追平调用 GPT-4o\n级别商业接口的费用。这一档的硬性上限在于显存容量与模型参数规模的匹配度。模型参数越大，所需的物理卡数与硬件预算就成倍增加。量化技术能够在显存减半的同时保持大模型推理质量几乎无损，然而小模型经过量化压缩后，在基准测试中的平均得分可能会明显下跌近十分（\n量化研究\n）。Zach\n本人就处于这一档，他深知这套方案更接近技能投资，无法指望它在短期内缩减财务支出。\n七个信号，两到三周验证\n把三本账与三档方案落到实际决策中，不用看复杂的流程图。观察以下七个具体信号，就能找准团队当前的落脚点。\n数据合规强度是第一个刚性信号。法规或商业合同一旦要求数据物理隔绝在私有网络内部，选项就会直接推向第二档租用硬件或第三档自购硬件，除非云端接口的零数据保留协议能通过法务合规审查。任务复杂度是第二个信号。处理结构化信息提取、接口调用、长文档总结等常规任务，开源模型足以胜任；若是涉及长流程自主编程、复杂多模态推理等前沿场景，顶尖闭源模型依然维持着数个月的技术代差（\n差距分析\n）。\n业务调用规模与平稳度是第三个信号。只有长期持续且平稳的高并发请求，才能摊薄底层硬件的固定折旧；如果是偶尔波动的轻量负载，停留在按量接口最为划算。生成速率要求是第四个信号。每秒\n20 个 token 的吞吐速率足够应对后台离线任务，每秒 50 个 token\n能够顺畅匹配人类工程师的实时交互节奏，而每秒 100 个 token\n以上的高速率，主要服务于多智能体高并发协作场景。\n团队专职运维人手是第五个信号。如果技术团队缺乏熟悉显卡驱动、推理框架与集群调优的专职工程师，直接租用现成\nAPI 是最稳妥的决策。开源许可协议是第六个信号。MiniMax 发布\nM2.7，将授权条款调整为非商用许可，并要求衍生产品必须明确标注模型来源（\n条款讨论\n），单纯依靠开源免费假设搭建的业务模式，随时可能遭遇协议变动的冲击。最后一个信号是请求的形态。交互式的\nagentic\n推理要求低延迟，天然压低利用率，让省钱变难；后台批处理不在乎等待，能把利用率拉满，是自建推理唯一如鱼得水的形态。工具外壳这一层反倒不用焦虑：主流编码外壳在\n95% 的日常任务上早已高度重合，基本可以互换（\n我们\n6\n月的对比结论\n），挑一个顺手的现成外壳就是零成本起点。安全也挂在这一档：本地部署的模型默认不带开箱即用的安全拦截规则，所有输入输出的安全护栏都需要技术人员亲手接入与配置（\n安全分析\n）。\n具体的验证动作可以分两步走。硬件上，按照 Zach\n的建议，先租两到三周测试真实用量；软件上，遵循 Hamel\n的方法：无论是替换模型架构还是引入路由调度，都必须通过系统化评测指标量化延迟与成本的真实变化，拒绝主观猜测。Hamel\n的原话是：“measure its effect on latency and cost with evals rather than\nguessing”（\n笔记\n）。先用低成本租赁摸清真实负载，再用严密评测数据指导后续扩容，比直接拍脑袋采购硬件稳妥得多。\n回到开头那位在 GPU 云厂商任职的工程师。Zach\n没有给出一劳永逸的标准答案，因为不同团队面临的业务边界各不相同。他留下了一套切实可行的两到三周验证流程，以及对自建账本最真实的洞察：“Otherwise,\nit’s a toy and it’s a very expensive toy”。按 xjdr 那句带有 proper UX 与\ncurrent\n限定的判断，开源模型能够解决九成的日常需求，外壳是其中最容易解的一环。真正决定成败的，是你的请求形态能不能容忍一个利用率拉满的集群：能，自建才有得算；不能，这笔账天生算不平。团队究竟该不该把模型搬回自己家，无需听信宏大的阵营宣传。租用两到三周云端机器，记录下真实的\ntoken 消耗与系统延迟，账本上的数字自然会给出答案。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/open-model-selfhost-decision-20260904.html",
+      "content_chars": 5736,
+      "content_sha256": "b16d8dac3ee87416bd1e0690c7ff652afba3e4943cde434b7eb7bd12d3efbcf2",
+      "content_fetched_at": "2026-09-04T22:58:03.808861+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-04T00:00:00+00:00",
+      "collected_at": "2026-09-04T22:57:13.971697+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/open-model-selfhost-decision-20260904.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "把模型搬回自己家之前，先算三本账",
+          "url": "https://yage.ai/share/open-model-selfhost-decision-20260904.html",
+          "content_sha256": "b16d8dac3ee87416bd1e0690c7ff652afba3e4943cde434b7eb7bd12d3efbcf2"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:6520d524dda437a5",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "智能体 token 用量过线人类、OpenAI 自研芯片跑分出炉、GitHub 发布文档压缩原型",
+      "target_url": "https://yage.ai/share/caching-discount-three-ledgers-20260903.html",
+      "text": "yage-share published: 智能体 token 用量过线人类、OpenAI 自研芯片跑分出炉、GitHub 发布文档压缩原型",
+      "at": "2026-09-03T00:00:00+00:00",
+      "external_id": "a:6520d524dda437a5",
+      "url": "https://yage.ai/share/caching-discount-three-ledgers-20260903.html",
+      "title": "智能体 token 用量过线人类、OpenAI 自研芯片跑分出炉、GitHub 发布文档压缩原型",
+      "content": "AI Agent\n推理与性能\n智能体\ntoken 用量过线人类、OpenAI 自研芯片跑分出炉、GitHub\n发布文档压缩原型\n先看上周 AI 行业的三条新闻。OpenRouter\n平台公布了一组数据，智能体消耗的 token\n数量超过了人类，差距还在拉大。接着 OpenAI 放出了自研推理芯片 Jalapeño\n的首批跑分，部分指标跑赢了 Nvidia 现役产品。另外 GitHub 前瞻团队发布了\nKnowledge Compressor\n原型工具，可以把智能体反复阅读的文档压短一半。这三件事各自带着数字上的坑，我们挨个说。顺带一提，这三笔账里都有一个关键角色。模型服务商对重复读取的上下文会给个折扣价，这套机制叫\nprompt caching，我们先放一放。\n三份不同的账连向同一枚打折硬币：名义数字都因缓存折扣而失真\n智能体 token\n用量达人类 5.2 倍，实际账单约 2 倍\n8 月中旬 OpenRouter 平台数据负责人 Peter Walker\n给了一组统计数据。2026 年 2 月 6 日是人类 token\n消耗量最后一次赢过智能体。截至 8 月 10\n日的七天平均数据显示，智能体每周跑掉 7.3 万亿 token，人类每周用掉 1.4\n万亿 token。按这两个数字算，智能体的名义用量达到了人类的 5.2\n倍。过去半年里智能体用量涨了 14 倍，人类只涨了 2.8 倍。这组数据传遍了\nThe Decoder 和 a16z 等五个独立转述链，各家引用的数字都对得上。\n这组多方核对一致的数据构成了判断近期\ntoken 经济的基准\n。\n这 5.2 倍的用量其实有两个口径。按 Walker 自己给的 total token usage\n来看，智能体用量里差不多 70% 是缓存读取；a16z 周报转述时换了 token burn\n口径，占比在 85% 以上。两个口径统计的不是同一种量，分别是约 70% 和 85%\n以上。a16z 也点出，智能体多出来的那些用量基本都是缓存 token\n贡献的。模型服务商对缓存的收费一般要低很多。按这个缓存占比加上缓存约一折计价粗算，智能体给人类打出的实际账单倍数在\n2\n倍上下。这个估算没有实测兜底，最终落在哪，还得看两边实际的缓存占比和具体的折扣费率。\n用这组平台数据还得卡死两条外推边界。第一，这只是 OpenRouter\n一家的数据。平台厂商自己说他们的流量只占全球推理量的 1% 左右，每周大概\n28 万亿 token。这里的用户多是开发者，模型也偏向 token\n效率偏低的开放权重。他们区分人类和智能体靠的是七个行为信号加权估计，权重没公开，别人没法复现。再加上八月份碰上假期，人类用量也会跟着往下走。更夸张的是单点集中，Hermes\nAgent 这个单一应用一周就烧了 1.5 万亿 token，快赶上其他 49\n个追踪应用的加总了，差不多占了智能体总流量的两成。\n第二，这个数字有系统性高估的倾向。转述案例里经常看到智能体去下载无关文件或者搜一堆没用的东西，更典型的是掉进重试风暴：第一次失败就该停手，它却一遍遍地重来，token\n就这么滚上去了，干的活并没有变多。另外平台整体的缓存命中率确实高，但个别应用还是会遇到缓存失效，比如\nhermes-agent 的 20957\n号问题。这些坑连同动态提示词和缓存写入的单独计费，都在一点点吃掉账面上的省钱效应。\nGitHub\n压缩原型：官方称 2,000 次复用回本，中位预期 5,000 次以上\nGitHub 前瞻团队研究员 Alex Gorischek 8 月 24 日发了个原型工具叫\nKnowledge\nCompressor。这东西能把智能体反复读的知识文档自动压短。在官方示例里，合成文本从\n996 个 token 压到了 480 个\ntoken。它的做法是先自动生成二十四道问答题，然后闭卷筛选加迭代压缩。有个强制见红机制要求至少一道题答错，接着进入失败回流和最小恢复环节，直到全绿收工。\n官方博文中描述了这套验收流程\n。官方给算了一笔经济账，压缩一次花\n2 美元，每次未缓存读取省 0.001 美元，同一份文档复用 2,000\n次左右能回本。官方在脚注里认了回本门槛会受定价和缓存影响，但没给出具体数字。\n这笔回本账有个错位。官方算账时把每次读取都当成未缓存的全价计费，可文档在多轮交互里反复加载，这正好是缓存命中的优势场景。把缓存折扣算进去，工具的经济收益就有点波动了。官方隐含的单价是每百万\ntoken 1.94 美元，Sol 的牌价则是 4 到 5\n美元。大头还是在缓存价格上，主流厂商的定价差得很多。OpenAI 和 Anthropic\n的缓存读取按原价一折计，Gemini 按二五折计，DeepSeek\n只收百分之二。一项实测数据表明，长会话缓存能省下 78% 到 81%\n的成本。如果按 50% 缓存命中率算，回本大概要 3,640 次。按 90%\n命中率算，回本大概要 10,500 次。要是全缓存的情况，回本门槛直接顶到\n20,000 次。那 2,000 次只是全价情况下的乐观估计，诚实的回本区间落在 2,000\n到 20,000 次之间，中位预期在 5,000 次以上。\n我们再往 10K token 长度的文档推算一下。单做压缩就要花 20 美元，加上\n240 题跑全新上下文的验证环节还得花 25 美元，跑一次起步成本就是 45\n美元。这个原型现在没开源，外部复现和社区反馈都没做到官方演示的理想状态。另外拿问答指标来验证压缩效果也藏着坑，连接性知识丢了在指标上也看不出来。这个工具剩下的不可替代价值，只有上下文容量这一项。而且这个回本门槛还要求文档几乎不能改，每次还得把全文读进上下文。海量的业务文档在生命周期里，很难做到\n5,000 次以上的无修改读取。\nOpenAI\n自研芯片跑分领先，但真实负载测试缺席\nOpenAI 8 月 25 日交出了自研推理芯片 Jalapeño 的首批成绩。在 8,000\ntoken 读入、1,000 token 产出的固定长度单轮测试中，他们用了 GPT-OSS\n120B、DeepSeek R1 670B 还有开放权重的 Kimi K2.5 三款模型。对标 Nvidia 的\nGB200 和 GB300 芯片，Jalapeño 的每瓦吞吐达到 1.5 到 1.9\n倍，端到端延迟快了 1.7 到 3.6 倍。\n这组由厂商单方面提供的数字说明了新硬件的纸面性能\n。第三方评测机构\nSemiAnalysis\n在实验室现场抽检了一部分推理轮次，没有跑全套测试。现有的批评未质疑造假，都认可是真的领先，转而指出测试口径有缺失。\nSemiAnalysis\n更喜欢用模拟长上下文和多轮对话真实智能体负载的评测口径，比如\nAgentX。在这个负载场景里，有个关键变量是重复读取相同的长篇前置上下文，也就是重前缀缓存。这次给出的所有成绩里，未见\nAgentX 成绩。评测机构提了一句，在 8k/1k\n固定长度打靶里跑得好的框架，到了真实的 AgentX 测试里表现经常不太行。\n单一的固定长度最优未必能代表复杂的智能体工作负载具有同等表现\n。\n技术社区 Hacker News 补充了两条不对称的测试口径批评。先是拿来参照的\nNvidia Rubin 成绩算上了投机解码技术 speculative decoding，Jalapeño\n这边没用。再是 Jalapeño 现在还只是工程样品，2026 年底只有极小规模，要到\n2027 年才开始放量，Rubin 可是已经实际出货了。而且这次直接对比的对象是\nGB200 和 GB300，Rubin\n没进直接测试环节，单用户解码场景对真实业务的代表性也比较弱。换到\nper-total-cost 口径看，媒体 wallstengine 转述的观点是，Jalapeño 和 Rubin\n水平差不多。仔细盘这第三本账，它和前面两本结构很像。8k/1k\n固定长度测试测不出真实智能体负载，因为真实负载里占比最大的活儿，正好是享受折扣的重复内容读取。在这本账里，折扣读取直接让真实评测口径缺席了。\n平台账单里名义与实际失衡，压缩工具的回本门槛一路抬升，芯片评测的真实负载成了移动靶\n三件事放在一起看\n三条新闻来自三个不挨着的发布方，看的时候各有一个要避开的坑。引用\nOpenRouter 的用量数字，得记住大头都是打折的缓存读取，名义上是 5.2\n倍，折算下来实际账单粗算约 2\n倍。听压缩工具的省钱故事，先去核实它的回本账是按全价算还是按折扣价算。看芯片跑分，要留意打靶成绩和真实负载成绩现在是两码事。这些事背后其实都牵着\nprompt caching 这个变量，我们六月那篇\nKV\nCache 文章\n聊过它的杠杆。这里不展开，大家心里有数就行。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/caching-discount-three-ledgers-20260903.html",
+      "content_chars": 3641,
+      "content_sha256": "211a0deb3bd35248f1873099eccd8b427f25bbb2cfa60beb48f4c56a7b98e066",
+      "content_fetched_at": "2026-09-04T22:58:03.920132+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-03T00:00:00+00:00",
+      "collected_at": "2026-09-04T22:57:13.971697+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/caching-discount-three-ledgers-20260903.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "智能体 token 用量过线人类、OpenAI 自研芯片跑分出炉、GitHub 发布文档压缩原型",
+          "url": "https://yage.ai/share/caching-discount-three-ledgers-20260903.html",
+          "content_sha256": "211a0deb3bd35248f1873099eccd8b427f25bbb2cfa60beb48f4c56a7b98e066"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
