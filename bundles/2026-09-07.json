@@ -1,139 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-09-07",
-  "generated_at": "2026-09-06T22:52:08.273900+00:00",
-  "item_count": 5,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:0e22db6013ac12ad",
-      "kind": "publish",
-      "text": "zusda published: 从零开始的LLM 12. 压缩算法 (RMT 和 RCC)",
-      "actor": "zusda",
-      "actor_url": "https://zusda.github.io/",
-      "created_at": "2026-09-06T22:50:14.041694+00:00",
-      "html_url": "https://zusda.github.io/2026/09/04/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-12/",
-      "title": "从零开始的LLM 12. 压缩算法 (RMT 和 RCC)",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "前言\n本文将介绍 token压缩技术的原理。\n• Recurrent Memory Transformer (RMT)\n• Recurrent Context Compression (RCC)\n经过前面的学习，我们已经系统地完成了大语言模型（LLM）的基础部分，主要参考了以下资料：\n《动手学深度学习》\n《蘑菇书》\n《Happy-LLM》\n《Hello-Agents》\n《all-in-rag》\n到这里，可以认为已经具备了继续深入学习 Agent 的基础能力。\n接下来的内容将不再像之前那样按照固定课程循序渐进，而是更多围绕当前\nAgent 领域的研究方向展开。学习内容既会涉及工程实践（如各种 Agent\n框架、工作流、记忆系统等），也会涉及算法与模型层面的探索（如多模态、持续学习等）。\nGenerative Agents\nLetta\nA-MEM\nVoyager\n这条路线主要围绕\nAgent 的持续学习（Continual\nLearning）\n展开，也是我目前最感兴趣的方向：\n如何让一个\nAgent\n在长期运行过程中不断积累经验、提升能力，而不是每次都从零开始。\n目前来看，大致有两种思路：\n不修改模型本身。\n仅通过\nPrompt、记忆系统（Memory）、RAG、工具调用等机制，使 Agent\n能够不断积累知识和经验，实现能力的持续增长。\n修改模型本身。\n基于 Agent\n长期运行过程中积累的对话、笔记和总结等数据，在合适的时机对模型进行持续训练（Continual\nFine-tuning），使模型真正将这些经验内化，而不仅仅依赖外部记忆。\n由于这一阶段更多是阅读论文、分析开源项目、验证实验以及整理个人理解，而不是单纯跟着教程学习，因此资料收集、实验和整理都会比之前花费更多时间。\n1. 前景提要\n为什么要学压缩技术呢，主要是我在开发《杀戮尖塔》游戏agent的时候遇到了问题。\n我希望使智能体能够自主理解游戏规则并完成通关。目前已实现游戏交互的\nPython 脚本（在游戏内开启 Web 服务，通过 REST API\n获取状态并执行动作，例如\nGET /state\n获取当前状态，\nPOST /doAction\n执行指令）。在逐步构建智能体的过程中，遇到诸多挑战，因此重新规划了阶段性方案：\n第一阶段\n：基础智能体（基于 React 的 LLM +\n短期/长期记忆），已完成并保存，作为无附加功能的基线。\n后续多智能体协作流程\n：\n交互智能体\n：接收用户输入，与游戏进行交互。\n观察智能体\n：分析交互记录（用户输入、工具调用及结果），提取基础事实（如\"打击造成\n6 点伤害\"\"对易伤目标造成 9 点伤害\"\"易伤增伤\n50%\"等），并存储至临时文件。\n整合智能体\n：梳理临时文件中的信息，合并整理到最终知识库。\n内化智能体\n：基于知识库分类生成训练数据，并通过蒸馏将知识融入基础智能体。\n然而，实践中暴露出关键问题：\n2.\n观察智能体会重复提取相同的知识\n（例如每次战斗状态均会分析出\"打击造成\n6 点伤害\"），导致大量冗余信息。\n若每次从记忆或 RAG\n中检索已有知识并放入提示词，既不可扩展又占用大量上下文；\n若生成后再过滤，则效率低下且浪费 Token。\n这里引出一个问题：\n智能体是否能自主\"记住\"已记录的事实？\n答案是否定的——LLM\n在推理时是无状态的，每次调用完全独立，不具备持久记忆能力。所谓的记忆仅依赖于提示词中的显式上下文，无法内化于模型参数中。\n因此，关于记忆的问题，我认为不可能依赖外部结构解决，必须重新审视 LLM\n本身。\n在此之前，我曾设想过一种方案：在每次查询（Query）前面添加若干个固定位置的向量作为\"记忆槽\"，将历史对话内容通过编码器（Encoder）模型压缩成紧凑的向量表示，塞入这些记忆槽中（之所以选择\nEncoder 而非 Decoder，是因为 Decoder 模型的压缩能力集中在最后一个 Token\n上，承载量实在太小，难以容纳完整的对话信息）。\n后来，我又想到了蒸馏的方法——这个思路一开始是我自己独立提出的，后续进一步调查时发现已有类似工作。蒸馏能够将知识内化到模型参数中，听起来能从根本上解决问题，因此我暂时搁置了压缩记忆槽的设想，转而尝试通过蒸馏实现知识内化。\n但实践下来，蒸馏遇到了新的瓶颈：知识本身具有完整的陈述结构，可以基于此构造训练数据集进行内化；然而\"记忆\"本质上仅仅是对发生过的事实的\"记得\"，它缺乏明确的结构化表达，极其难以构造合理的训练数据集。因此，我重新评估后认为，最初考虑的压缩算法反而更契合记忆任务的需求。\n基于上述思考，我目前正在重新系统性地研究\n循环记忆变换器（Recurrent\nMemory Transformer, RMT）\n和\n循环上下文压缩（Recurrent\nContext Compression, RCC）\n等相关技术，探索如何在 LLM\n推理过程中以紧凑、可更新的方式集成长期记忆。\n2. Recurrent Memory\nTransformer (RMT)\n2.1 原理\n这个方法并不会改变 Transformer\n模型结构本身。只对输出和输入部分进行修改。\n首先看论文中的流程图\n首先，RMT会将一段长的token切分成多个块，命名为segment。在每个segment前后添加数个token，作为memory使用（即图中的read和write部分）\n我们举例说明，\n假设存在 token ： [A] [B] [C] ... [Z] 在一个segment中。\n在 原token序列的前后方添加上memory token，组成完整的input：[MEM1]\n[MEM2] [A] [B] [C] ... [Z] [MEM3] [MEM4]\n[MEM1] [MEM2] 和 [MEM3] [MEM4] 分别代表图中的read 和\nwrite部分，这里我仅用两个token表示。\n普通词token通过embedding变成向量，然后进入LLM的transformer进行计算。\n但是input中的read和write部分，一开始就是一个可学习的向量参数（\nnn.Parameter(torch.randn(num_mem_tokens, hidden_dim)\n）。因此实际拼接是在都变成向量后进行的。\n在同一次前向传播（处理一整条长序列的所有segment）中：\n第一个segment的input，read部分和write部分都使用这套可学习参数\n当前的值\n（不是随机初始化——随机初始化只发生在模型刚创建、还没开始训练的那一刻；训练过程中的每一步用的都是截至目前已经学到的参数值）。\n从第二个segment开始，read部分的输入被替换为上一个segment计算完成后、write位置产生的输出（即压缩后的记忆内容）；而write部分的输入，每个segment都仍然使用同一份可学习参数（在本次forward全程中，这份参数没有被更新，所以每个segment看到的write输入值都相同）。\n整条序列的\n所有segment跑完后\n，把loss加总，统一执行一次反向传播（BPTT），梯度沿着\"write输出→下一个segment\nread输入\"这条链条跨越多个segment传播回去。此时，\nread参数（主要从segment1获得梯度）、write参数（从所有segment累积梯度）、以及Transformer本体权重，会在这次反向传播后被一起更新\n，用于下一次训练迭代。\n虽然从第二个segment开始，read位置的\n输入值\n被替换成了上一个segment\nwrite位置的\n输出\n，但第一个segment的read部分仍然用的是那份可学习的\"初始read参数\"，因此read的向量会从segment1的loss里拿到梯度并被更新。\ninput 在经过 Transformer\n模型的计算后，在每个位置生成对应的输出，[MEM3] [MEM4]\n所在位置的输出结果，则是该segment信息内容的压缩。\n在计算组装下一个segment的input时，将此时输出的write部分内容放在本次input的read部分位置，作为压缩的上下文内容读入。本次input中的write部分依然仅作为占位符进行初始化。\n2.2 训练\n假设序列被划分为两个 Segment：\n1\n2\nSegment 1: a b c d\nSegment 2: e f g h\n不切分 Segment 时\n标准 next-token prediction 是：\n1\n2\n3\n4\n5\n6\n7\na → b\nb → c\nc → d\nd → e\ne → f\nf → g\ng → h\n所以：\n1\n2\n3\n4\nd 的输出 → 预测 e\ne 的输出 → 预测 f\nf 的输出 → 预测 g\ng 的输出 → 预测 h\n切分成 Segment 后\n对于 Segment 1：\n1\n[a b c d]\n模型仍然按照自回归方式计算：\n1\n2\n3\n4\na → b\nb → c\nc → d\nd → e\n这里需要特别注意：\n虽然\ne\n位于 Segment\n2，但\ne\n作为\nd\n的下一个 token，仍然可以由 Segment 1 最后位置\nd\n的输出进行预测。\n即\nd → e\n的 loss 仍然属于 Segment 1 这一侧的计算。\n对于 Segment 2 ：\nRMT 会将 Segment 1 产生的 memory 传递给下一段：\n1\n[MEM1'] [MEM2'] [e f g h]\n此时需要注意，\ne\n已经作为 Segment 1 中\nd\n的预测目标被计算过了\n。\n即从 [MEM1'] [MEM2'] [e] 开始预测 f,g,h\n因此，Segment 2 中真正继续计算的 next-token prediction 是：\n1\n2\n3\ne → f\nf → g\ng → h\nSegment 切分本身不会改变 next-token prediction\n的逻辑。只是把序列分块处理；跨 segment 的预测关系仍然存在，而 RMT 用\nmemory 来携带跨 segment 的信息。\n核心结论\nSegment 切分本身\n不会改变 next-token prediction\n的目标关系\n：\n1\na → b → c → d → e → f → g → h\n切分后只是将这个连续序列分成多个块进行计算。\nRMT 的作用是通过 memory 将前一个 Segment 的上下文信息传递到后一个\nSegment，使后一个 Segment 在处理\ne f g h\n时仍然能够利用前一个 Segment 的信息。\nRMT 不能直接拿一个很长的文本开始训练。\n根本原因在于\n训练稳定性和 Memory 利用的有效性\n。\n训练不稳定\n：如果一开始就让模型处理多个\nSegment，模型不仅难以学会有效利用\nMemory，训练过程还可能无法收敛。消融实验表明：不使用课程学习、直接在最大\nSegment\n数上训练时，模型既难以学会任务，也无法很好地泛化到其他长度。\n梯度传播困难\n：RMT 依赖 BPTT 沿着 Memory token 跨\nSegment 反向传播梯度。Segment 数越多，BPTT\n展开越深，梯度传播链路越长，因此越容易出现梯度消失或梯度爆炸的问题。\n因此，原始 RMT 采用了\n课程学习（Curriculum\nLearning）\n：\nStep 1\n：先从 1 个 Segment 的简单任务开始训练；\nStep 2\n：模型掌握后，逐步增加 Segment 数量；\nStep 3\n：训练后期混合不同数量的\nSegment，提升模型对不同长度的泛化能力。\n这种方法虽然有效，但\n训练流程更复杂，且计算成本较高\n。\n3. Recurrent Context\nCompression (RCC)\n3.1 原理\nRCC 通过 encoder-decoder\n架构，把长文本压缩成一组更短的向量表示，从而在有限存储空间内扩展 LLM\n的有效上下文长度。\nEncoder 部分：将 Segment\n压缩为状态向量\nEncoder 可以基于 Transformer，也可以采用类似 Mamba 的 RNN\n结构。其核心思路是：将长文本切分成固定长度的 Segment，并将每个 Segment\n压缩成一组状态向量。\n压缩率（compression\nrate）\n表示一个压缩向量最多概括多少个 token。\n例如，压缩率设为\n4\n，表示每 4 个 token 压缩成 1\n个压缩向量，因此 Segment 长度也设为 4。\n假设 segment1 包含这 4 个 token：\n1\nt1, t2, t3, t4\n经过 RCC encoder（假设 3 层）逐层计算，得到每层的输出：\n1\n2\n3\nc1_1, c1_2, c1_3, c1_4 （第1层输出）\nc2_1, c2_2, c2_3, c2_4 （第2层输出）\nc3_1, c3_2, c3_3, c3_4 （第3层输出）\n从每层输出中取\n位置为压缩率整数倍的那个向量\n，也就是\n每个\nsegment 的最后一个位置\n（这里压缩率为4，所以取第4个位置）。\n因此每层取第4个位置的输出，拼接成该 segment 的压缩向量列表：\n1\nC_segment1 = [ c1_4, c2_4, c3_4 ]\n之所以选择 Segment 的最后一个位置，是因为 Encoder\n采用因果（causal）结构，每个位置只能看到当前位置及之前的\ntoken。\n只有最后一个位置看到了整个 Segment\n的全部内容，因此它的隐藏状态才能代表整段信息。\n这里的encoder指的是拥有encoder功能的一个模块，即将多个token压缩成更少的token，具体实现可以使用decoder\ntransformer模型等其他模型。\nDecoder 部分：解压 / 生成\nDecoder 的作用是将这些压缩信息注入\nLLM，使模型在生成时能够利用原始长文本中的信息。\n首先，将 prompt 全部转换为 token 向量：\n1\ne1, e2, ..., en\nC_segment1\n中的每个向量，先经过一个线性层，将维度映射到与\ne\n相同：\n1\nC_segment1_linear = [ ^c1_4, ^c2_4, ^c3_4 ]\n假设 decoder 同样只有 3 层：\n第一层\n输入：将\n^c1_4\n拼接\n在 token\n序列前面\n1\n[ ^c1_4 | e1, e2, ..., en ]\n输出\n1\n[ h1 | o1_1, o1_2, ..., o1_n ]\n第二层\n压缩向量对应位置的输出，通过\n残差连接\n与下一层压缩向量相加（注意：只有压缩信息对应的位置做这个更新，真实\ntoken 部分的输出原样传递）\n1\nh1_new = h1 + ^c2_4\n输入\n1\n[ h1_new | o1_1, o1_2, ..., o1_n ]\n输出\n1\n[ h2 | o2_1, o2_2, ..., o2_n ]\n第三层\n同样地：\n1\nh2_new = h2 + ^c3_4\n输入\n1\n[ h2_new | o2_1, o2_2, ..., o2_n ]\n输出\n1\n[ h3 | o3_1, o3_2, ..., o3_n ]\n若压缩向量的层数与 decoder\n层数不一致，论文中说明可用简单的规则映射（复制或取平均）来对齐。\n举例：压缩向量层数 ≠\ndecoder层数时的映射规则\n假设 encoder 提取出的压缩向量有\n3层\n：\n[c1, c2, c3]\n情况一：decoder层数 > 压缩向量层数（用复制）\ndecoder 有\n6层\n，需要把3个压缩向量\"摊\"到6层上，用\n复制\n的方式，每个压缩向量重复用两次：\n1\n2\n3\n4\n5\n6\ndecoder第1层 ← c1\ndecoder第2层 ← c1 （复制）\ndecoder第3层 ← c2\ndecoder第4层 ← c2 （复制）\ndecoder第5层 ← c3\ndecoder第6层 ← c3 （复制）\n情况二：decoder层数 < 压缩向量层数（用平均）\ndecoder 只有\n1层\n，但压缩向量有3层，此时把3层向量\n取平均\n，合并成1个向量给这一层用：\n1\ndecoder第1层 ← (c1 + c2 + c3) / 3\n如果是decoder\n2层、压缩向量6层这种不能整除的情况，通常也是按顺序分组后组内取平均（比如6层分成2组，每组3层取平均，分别给decoder的第1、2层）。\n多个 segment 的情况\n当输入包含多个 Segment 时，Decoder 的每一层都会将\n所有 Segment\n对应该层的压缩向量并列拼接\n，再接上真实的 token embedding。\n例如，假设有\nSegment 1\n和\nSegment 2\n，则\nDecoder 第一层的输入为：\n1\n[^c1_4(seg1), ^c1_4(seg2) | e1, e2, ..., en]\n后续各层的结构相同，只需将压缩向量替换为对应层的输出：\n1\n2\n3\n4\n5\n6\n7\n8\n第 1 层：\n[^c1_4(seg1), ^c1_4(seg2) | e1, ..., en]\n第 2 层：\n[^c2_4(seg1), ^c2_4(seg2) | e1, ..., en]\n第 3 层：\n[^c3_4(seg1), ^c3_4(seg2) | e1, ..., en]\n因此，\n每个 Decoder 层都会同时接收所有 Segment\n在该层产生的压缩向量\n，并将它们与真实 token 一起输入\nDecoder。\n自回归生成\n生成时的整体流程分为两个阶段：\n第一阶段：历史内容压缩（encoder）\n之前的对话历史，提前经过 encoder 处理，按 segment\n切分并逐层压缩，得到对应的一组压缩向量\n^c_layer(seg1), ^c_layer(seg2), ...\n。这一步和当前 prompt\n无关，是提前准备好的历史信息摘要。\n第二阶段：拼接压缩向量 +\nprompt，进行生成（decoder）\n当前用户输入的 prompt，转换成正常的 token embedding\ne1, e2, ..., en\n，\n不经过压缩\n。\ndecoder 按照之前描述的流程，把 encoder 准备好的\n^c_layer(seg)\n放在每一层输入的前面，接上 prompt 的\ntoken：\n1\n[ ^c_layer(seg1), ^c_layer(seg2), ... | e1, e2, ..., en ]\n在 prompt token 之后，decoder 按标准自回归 next-token prediction\n的方式，逐步生成下一个词、再把新生成的词接到序列末尾、继续预测下一个词，如此循环，直到生成结束。\nRCC 的本质：扩展而非无限压缩\nRCC 与 RMT 的核心区别之一在于：\nRMT 通过 Memory 在 Segment\n之间递归传递信息，理论上可以持续处理任意长度的序列；而 RCC\n并没有彻底消除 Decoder 的上下文长度限制。\nRCC 的本质是\n扩展 Decoder\n能够利用的有效上下文长度\n，而不是无限扩大上下文窗口。\n这一点可以从论文给出的公式看出：\nRCC 理论最大上下文长度 = Encoder 压缩率 × Decoder\n上下文窗口长度\n也就是说，Decoder\n本身的上下文窗口仍然是有限的。区别在于，原本一个位置只能容纳一个原始\ntoken，而经过压缩后，一个位置可以表示多个原始 token。\n因此，\n压缩率越高，同样大小的 Decoder\n窗口能够覆盖的原始文本越长\n。但这种扩展本质上仍然是一个乘法关系；当输入超过理论最大长度后，RCC\n依然无法继续利用更早的上下文。\n同时，压缩率与信息保真度之间存在明显的\ntrade-off\n：\n压缩率越高 → 每个压缩向量需要概括的 token 越多 → 信息密度越高\n→ 信息损失也越大。\n论文实验中，即使在\n32 倍压缩率\n下，文本重建任务的\nBLEU-4 仍接近 0.95，说明 RCC\n在较高压缩率下依然能够较好地保留信息。但这并不意味着压缩率越高越好；继续提高压缩率后，单个压缩向量需要承载的信息越来越多，重建和利用这些信息时的失真也会更加明显。\n因此，RCC 更准确的定位是：\n通过可控的信息损失，换取更长的有效上下文。\n它是在\n上下文长度与信息保真度之间进行权衡\n，而不是像\nRMT 那样通过跨 Segment 的递归 Memory\n机制，从架构层面绕开固定上下文窗口的限制。\n4. 总结\nRMT\nRMT 在架构层面可以通过 Memory 在 Segment\n之间递归传递信息，因此\n理论上可以持续处理任意长度的序列\n，不受固定的总序列长度限制。但实际使用中仍存在几个重要限制：\nMemory 容量有限\n：每个时刻能够保留多少信息，取决于\nMemory token 的数量。Memory token 越多，能够承载的信息越多，但每个\nSegment 的计算量也会相应增加。由于 Memory token 的读写开销只发生在当前\nSegment，因此这部分开销不会随着序列长度累积，而是每处理一个 Segment\n都固定增加。\n训练成本高、流程复杂\n：RMT\n通常需要通过课程学习逐步增加 Segment 数量，同时依赖 BPTT（反向传播） 跨\nSegment 传播梯度。当 BPTT\n展开深度过大时，容易出现梯度不稳定，导致模型能够有效利用的跨 Segment\n记忆深度存在实际瓶颈。\n迁移性较差\n：Memory\n机制需要针对具体模型进行训练。因此训练完成后，通常难以直接迁移到另一个模型（例如更大的模型），往往需要重新进行训练，训练成本较高。\nRCC\nRCC 虽然名称中也包含\nRecurrent\n，但其核心思路与 RMT\n不同。它本质上是\n通过压缩将 LLM\n原本的上下文窗口等比例扩展\n，而不是从架构层面消除上下文长度限制：\n长度上限依然存在\n：理论最大上下文长度 =\n压缩率 × Decoder\n上下文窗口长度\n。因此超过这个上限后，RCC\n依然无法继续利用更早的上下文。\n压缩率与保真度存在权衡\n：压缩率越高，单个压缩向量需要概括的原始\ntoken 越多，信息损失也越大，保真度随之下降。论文中 32\n倍压缩率下文本重建任务的 BLEU-4 已接近\n0.95，说明较高压缩率下仍能保持较好的效果，但也说明\n压缩率并非越高越好\n。\n核心思想\n：本质上是\n用可控的信息损失，换取更长的有效上下文\n。\n适用场景差异\n从设计动机来看，两者更适合不同类型的场景：\nRMT\n更适合\n流式、持续增长的序列处理\n。例如对话历史不断增加时，可以逐段处理并通过\nMemory 持续传递信息，不需要提前知道最终序列长度。\nRCC\n更偏向\n预处理式压缩\n。可以提前将较长的历史内容压缩，再与当前\nPrompt 一起输入\nDecoder，更适合\n历史内容相对固定、需要基于完整历史进行一次性生成\n的场景。\n简单来说：\nRMT：通过递归 Memory 持续处理更长的序列。\nRCC：通过压缩让有限的 Context Window\n容纳更多原始内容。\n额外资料：\n方法\nGitHub 仓库\n定位 / 特点\nRMT\nbooydar/recurrent-memory-transformer\n官方实现，包含基准测试，参考价值较高\nRMT\nlucidrains/recurrent-memory-transformer-pytorch\n社区常用的 PyTorch 实现，使用较为方便（391 Stars）\nRCC\nWUHU-G/RCC_Transformer\n官方实现，提供最高\n32× 压缩率\n的模型",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://zusda.github.io/2026/09/04/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-12/",
-      "content_chars": 9836,
-      "content_sha256": "53ed503457c1114f8f21c7fa3460e7311f2113d8e045f6ae9c5a44e973fd7733",
-      "content_fetched_at": "2026-09-06T22:50:59.779758+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "zusda",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:1395ddf1ac25ae93",
-      "kind": "publish",
-      "text": "yage-ai published: GPT-6 Astra 3D建模能力的一些实验：爆炸视图，绑骨动捕，和视频生成",
-      "actor": "yage-ai",
-      "actor_url": "https://yage.ai/",
-      "created_at": "2026-09-06T05:00:00+00:00",
-      "html_url": "https://yage.ai/gpt-6-astra-3d-modeling.html",
-      "title": "GPT-6 Astra 3D建模能力的一些实验：爆炸视图，绑骨动捕，和视频生成",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "GPT-6 Astra 发布之后，网上出现了很多惊艳的 demo。我看了之后深受启发，也因此做了一些有意思的小实验，想探索一下在这种新的 3D 建模的能力的支持下，我们到底能发掘出怎样有意思的应用场景。\n我做的第一个小实验是让它做一个相对简单的建模，具体地说，让它去做东方Project里面博丽神社的模型。工具上我选用的是Blender这个建模工具。我用的prompt也贴在下面。这个是在餐厅里面对着语音识别说的，可以看到有很多错误。但现在AI都可以很轻松地理解背后的含义。\n嗯，我们去试试看哦，就是首先用 Blender 建一个伯利神社，就是东方project 里面的伯利明神社。你得先上网调研一下，它这个神社大概要长什么样，有哪些基本元素，然后你用 Blender 就把它建一下，然后渲渲出一个环视的动画\n这里面我并没有给它一个参考图像，而是让它自己上网调研。在工作了半小时左右，它给出了下面的模型。注意这是一个真实的3D模型，下面只是一个视角的渲染图。\n我觉得这个质量还是相当惊艳的。虽然可以看见里面有很多近似，比如每棵树的面数都比较低，但是整体的风格和布置都是蛮可爱和符合角色身份的。\n在解决了建模本身之后，基于这个我们能做哪些很酷的事情呢？由于我平时比较喜欢看方猫的视频，里面的爆炸视图特别厉害，所以我又给了GPT一个相对详细的prompt，让它来生成一个爆炸视图的视频。也就是先展示这个神社内部有什么结构，然后把它组装起来，最后在沙盘上把树木和石头也加进来，形成一个展示。在几十分钟之后，GPT也非常优秀地完成了这个任务。下面是结果。\n在完成了这件事情之后，我对它的信心大增。考虑到AI写代码的能力已经非常厉害了，下一步我就让它把这个场景移植到浏览器里，加入第一人称渲染和碰撞检测，让用户在这个场景里可以自由探索和行走。它也非常顺利地完成了这个任务。一个有意思的地方是，在写代码的时候，它似乎是有点不耐烦，直接调用了Grok来写，它自己进行视觉验证。我不知道这是偶然现象还是训练的结果，但最终在时间和质量上取得了比较好的平衡。我们也把结果部署到了网站上，大家感兴趣的话可以\n在这里\n玩一玩。里面有三个Tab，分别可以在虚拟世界里面行走，观察整个沙盘，以及查看上面的爆炸视图。\n我也尝试了让它做其他类型的建模。感觉人物上的建模还是有比较大的改进空间的。出来的形象和原作一般相去甚远。GPT擅长的主要是建筑和场景。对于人物，不是说绝对做不了，就是需要花很多的精力去微操。也许这个问题可以在下一个版本的模型中改进。\n在做完了这样的尝试之后，我又在想有没有可能把它推向更复杂的应用。于是我又尝试了两个场景。第一个是动作捕捉。看B站直播的小伙伴可能知道有一位东西叫VTuber。它指的是一种特殊的直播形式。主播在整个过程中不会真人出镜，而是面向摄像头，通过电脑端运行的动作捕捉算法来驱动屏幕上的虚拟形象和观众进行互动。这是一个蛮大的市场，也牵扯到一个非常复杂的技术链条。\n一般来说，主播需要先和某些公司签约，由公司为他定制一套三维模型，然后对这个模型进行所谓的骨骼绑定。也就是像人类一样，给这个模型特定的位置埋设关节。通过改变这些关节的位置就可以让模型做出逼真自然的动作。在绑骨之后，就可以结合动捕算法来驱动。具体来说需要对摄像头捕捉到的主播的真人画像进行视觉分析，找到人类的关节位置，再经过一些算法去对动作进行适配，从而让虚拟形象做出和真人一样的动作。\n即使不深究里面的技术细节，整个流程也是高度复杂的链条，每一个环节都有一定技术门槛。一般来说，会由不同的人员进行分工。有的负责立绘，有的负责建模/绑骨，有的负责动捕。整个公司再把成品进行交付。为了看AI能不能完整走完整个链条，我让 AI首先针对可达鸭做了一个三维模型，在这个基础上进行绑骨，然后又写了一个浏览器 Web App，进行动作捕捉和模型渲染。当我在浏览器里做出什么动作的时候，屏幕中的可达鸭会跟着我做出一样的动作。大家感兴趣的话可以\n在这里\n试试。它非常顺利地完成了整个流程。我录了一段截屏，效果如下所示。\n我感觉质量还是挺好的。当然它和真正的人工精雕细琢出来的结果还是有差距，但是考虑到交付的时间和成本比人力的公司好了一两个数量级，我觉得已经蛮惊艳了。在后期加入更多优化以后，可能会更好。\n我验证的第二个场景是基于3D建模的AI视频生成。比如我们可以用一两句话就给娃生成一段一两分钟的科普视频。这里用的例子是瓷器烧制的过程。我给了一个相对详细的prompt，让GPT首先调研瓷器烧制的流程是什么样子，然后思考怎么分镜、怎么配旁白、怎么建模。\nAI首先进行了调研和分镜，有了分镜之后对相关的形象进行blender建模和关键帧的绘制。这些出来的中间结果保证了成片的物理和形象都是正确合理的。在此之上，它调用了一个挺一般的视频生成模型，我这里用的是Grok Imagine，因为可以嫖SuperGrok的订阅，不用额外花钱。大约过了几小时以后，它生成出来了一个带音效、带旁白的科普视频。如下所示。\n考虑到现在AI视频的市场和技术都已经相对成熟，我的这个工作流是没办法和商业工作流竞争的。但是一个很有意思的地方是，它探索了一条道路，把高质量的Blender建模渲染和AI视频生成结合了起来，这个可能可以让视频里面形象和物理上的一致性更好。\n在整个过程中，我反复被GPT-6 Astra三维建模的能力惊艳。其实以前我也折腾过这几个东西，包括用OpenSCAD和Blender去建模，但是都还很坎坷。现在同样的场景用GPT-6 Astro，很快很顺利就搞出来了。当然也不是说我们无脑给Prompt就可以拿到很棒的结果。里面有一些思路，尤其是让 AI 能够自我迭代的思路，还有Blender 方面细节的经验教训还是很重要的。我把这些经验教训和方法论都总结了一下，写成了一个 Skill，大家直接用这个 Skill 就可以 reproduce 类似的结果。它已经开源在\nGitHub\n上，希望对大家有用。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://yage.ai/gpt-6-astra-3d-modeling.html",
-      "content_chars": 2478,
-      "content_sha256": "c6450af43e584465ac487a7a591b71dc26ab75ac53f68ef59a2a23da35578068",
-      "content_fetched_at": "2026-09-06T22:50:50.399637+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:862f87e4b85bf191",
-      "kind": "publish",
-      "text": "yage-ai published: Exploring GPT-6 Astra's 3D Modeling: Exploded Views, Rigging, Motion Capture, and Video Generation",
-      "actor": "yage-ai",
-      "actor_url": "https://yage.ai/",
-      "created_at": "2026-09-06T04:00:00+00:00",
-      "html_url": "https://yage.ai/gpt-6-astra-3d-modeling-en.html",
-      "title": "Exploring GPT-6 Astra's 3D Modeling: Exploded Views, Rigging, Motion Capture, and Video Generation",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Following the release of GPT-6 Astra, plenty of stunning demos started popping up online. Inspired by what I saw, I decided to run a few hands-on experiments to see what compelling use cases this new 3D modeling capability genuinely unlocks.\nFor my first experiment, I started with a relatively straightforward modeling task: recreating the Hakurei Shrine from Touhou Project in Blender. Here is the exact prompt I used. I dictated it via speech-to-text while sitting in a restaurant, so you will notice several transcription errors. Fortunately, modern AI parses the underlying intent without breaking a sweat:\n嗯，我们去试试看哦，就是首先用 Blender 建一个伯利神社，就是东方project 里面的伯利明神社。你得先上网调研一下，它这个神社大概要长什么样，有哪些基本元素，然后你用 Blender 就把它建一下，然后渲渲出一个环视的动画\nI did not provide any reference imagery—I simply asked the model to research the shrine online on its own. After roughly half an hour of autonomous work, it generated the model below. Keep in mind that this is a fully realized 3D asset; the image below is just a render from a single perspective.\nThe output was genuinely impressive. While there are obvious geometric approximations—such as the noticeably low-poly trees—the overall aesthetic, layout, and atmosphere feel charming and faithful to the source material.\nWith the basic 3D model in place, what cool things could we build on top of it? I am a big fan of a YouTuber whose exploded-view videos are amazing, so I gave GPT a more detailed prompt to generate an exploded-view animation. The plan was to reveal the shrine's internal structural components first, assemble them step by step, and finally populate the diorama base with trees and rocks for a complete showcase. A few dozen minutes later, GPT delivered an excellent result. Here is the video:\nThat success gave me a serious confidence boost. Given how capable AI has become at coding, my next step was to port the scene into the browser with first-person rendering and collision detection, letting visitors explore and walk through the space freely. The model executed the migration smoothly. An amusing detail along the way: while writing code, the model seemed almost impatient—it called out to Grok to write the code while handling visual verification itself. Whether that was an emergent quirk or deliberate training, the division of labor struck an effective balance between speed and quality. We deployed the result live; if you are interested, you can play with it\nhere\n. It features three tabs: exploring the virtual scene in first-person, inspecting the entire diorama, and viewing the exploded assembly.\nI also tested other categories of 3D modeling. Character modeling, in particular, still leaves plenty of room for improvement, as generated figures tend to stray considerably from the original designs. GPT clearly shines when working on architecture and environmental scenes. Characters are not impossible, but getting them right requires an exhausting amount of manual micro-management. Hopefully, future model iterations will address this gap.\nWith those initial tests completed, I wondered whether we could push this workflow into more demanding applications. That led to two further experiments. The first was real-time motion capture. Anyone familiar with modern live-streaming has likely run into VTubers—streamers who interact with their audience through digital avatars driven by motion capture instead of appearing on camera in person. It is a massive market backed by an intricate technical pipeline.\nTypically, a streamer signs with an agency that commissions a custom 3D model, followed by rigging—embedding virtual bones and joints into the mesh so it can articulate naturally like a human body. Once rigged, motion capture algorithms take over: computer vision analyzes live video from the streamer's webcam, identifies skeletal joint positions, and retargets those movements onto the virtual avatar in real time.\nEven without diving into technical minutiae, this workflow is inherently complex, with steep technical hurdles across every phase. Tasks are usually split across specialized roles—concept illustrators, 3D modelers, riggers, and MoCap engineers—before the studio delivers a finished package. To test whether AI could handle this entire chain end-to-end, I had it create a 3D model of Psyduck, rig its skeleton, and build a browser-based web app for real-time motion capture and rendering. Whenever I move in front of my webcam, the on-screen Psyduck mirrors my movements. If you want to try it out, you can test it\nhere\n. The model pulled off the entire workflow remarkably well. Here is a screen recording of the result:\nThe quality turned out solid. Naturally, it lacks the hand-crafted polish of an experienced human team, but when you consider that delivery time and production costs dropped by one or two orders of magnitude, it is genuinely remarkable. With further refinements, the results could be even better.\nThe second scenario I explored was using 3D modeling to drive AI video generation—for instance, turning a sentence or two of prompt into a one- or two-minute educational clip for kids. For this test, I used the porcelain firing process as an example. I gave GPT a detailed prompt asking it to research how porcelain is fired, outline a storyboard, draft narration, and build the required 3D models.\nThe AI began with research and storyboard planning, then created the corresponding models in Blender and set up keyframes. These structured 3D intermediate assets ensured that physical interactions and visual forms remained coherent throughout the scene. On top of that foundation, it fed the renders into a fairly standard video generation model—I used Grok Imagine here without paying extra, since it's included with my existing SuperGrok subscription. A few hours later, it produced a complete educational video with sound effects and narration. Here is the result:\nGiven how mature commercial AI video tools have become, this experimental pipeline cannot compete directly with commercial production suites. What makes it interesting, though, is how it charts a path combining grounded Blender modeling and rendering with generative AI video, achieving significantly better visual and physical consistency across shots.\nThroughout this process, I was repeatedly blown away by GPT-6 Astra's 3D modeling prowess. In the past, whenever I experimented with OpenSCAD or Blender for programmatic modeling, the experience was filled with friction. With GPT-6 Astra, those same workflows came together quickly and smoothly. That does not mean blindly tossing prompts at the model will produce great results. The underlying methodology—especially structuring autonomous self-iteration loops and managing Blender-specific nuances—remains essential. I compiled these practical lessons and methodologies into a reusable Skill so anyone can reproduce similar outcomes. It is open-sourced on\nGitHub\n, and I hope you find it useful.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://yage.ai/gpt-6-astra-3d-modeling-en.html",
-      "content_chars": 6926,
-      "content_sha256": "4333273dc506f2a8efe89f0cd10a9719c5e1ab31907d0b13370a4748f128959b",
-      "content_fetched_at": "2026-09-06T22:50:50.400284+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:652ca90f8d8909a4",
-      "kind": "publish",
-      "text": "yage-share published: tok/s 是 agentic 场景里最会骗人的性能数字",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-06T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/toks-deceptive-agentic-20260906.html",
-      "title": "tok/s 是 agentic 场景里最会骗人的性能数字",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "推理与性能\nAI Agent\n日常跑 agentic coding\n工作流，我习惯在十几个模型和多个供应商之间来回切。今年在本地跑起来的\nQwen 3.8 27B\n带来了实在的体验变化，它是我用到的第一个真正跨过智能门槛的小模型。放在本地工作站上跑，响应敏捷，不怎么撞墙，边际使用成本几乎只有电费，一个\nsession 能稳稳当当跑上几个小时。\n跑顺之后，我产生了一个技术上的疑问。如果把一个已经足够聪明的小模型，推理速度推到目前云端能买到的物理上限，体验到底会变好多少？会有质变吗？为了验证这个想法，我接入了\nCerebras 托管的同款 27B 权重（它的芯片为什么这么快，\n我之前单独写过一篇\n）。厂商官方宣称能跑到每秒\n1500 token 上下，对比我本地实测的每秒 102 token，纸面上有近 15\n倍的速度代际差。我按平时干活的习惯，直接把它接入了自己的真实写代码工作流。\n实测下来，速度确实快了 3\n倍多。但这个速度增长也带来了别的问题：context window\n更小、限流触发得更频繁、价格高了几十倍。整个会话只撑了三分钟就停了，账单还扣掉了\n1.57 美元。\n快，但没你以为的那么快\n先说速度本身。厂商宣称的每秒 1500\ntoken，在宣传页面上看着很高。但坐在终端前肉眼等每一轮输出，我体感上感受不到\n15 倍的速度飞跃，实际只有 3 倍多。\n差这么多，是因为整个行业报 tok/s 都用短\ncontext。行业里常见的基准大多在 1K 到 4K\n的短上下文下跑，测的只是纯解码阶段的吐字速度。这里有个容易忽略的点：不管是\nprefill 还是 decode，吞吐量都是 context 长度的函数，输入的 prompt\n越长，它就跑得越慢。在真实的多轮开发任务里，我实际等的是算上输入预填充在内的整段端到端耗时。\n在我自己的 agentic 负载里，各模型的 P50 context 落在 50K 到\n120K，部分长 context 的会话会冲到 200K\n甚至更高，单轮输入的上下文往往是单次输出 token 的 100 到 600\n倍。比如我自己实测 gpt-5.6-sol 达到 412 倍，ollama-cloud/glm-5.2 达到\n631 倍，本地跑的 Qwen 27B 也有 227\n倍。这是我在自身工作流里实测出来的分布，不代表行业平均水平。在比例悬殊到这个地步的情况下，预填充耗时是端到端等待里实打实的一块，对\nCerebras 甚至占到中位时长的 55%。\n我看的指标是实际有效吞吐，也就是你肉眼等每一轮输出的真实速度。预填充算进去，工具执行时间剔出去，取中位数\nP50。下面是我工作站上连续 30 天记录到的主口径数据，n\n是样本数（通过过滤的生成次数，不是会话数）：\n模型\nP50 tok/s\nn\nP10\nP90\nP50 context\nmax context\nCerebras Qwen 27B\n357.4\n28\n185.5\n767.6\n54,357\n99,152\n本地 Qwen 27B\n101.7\n11,108\n11.7\n156.5\n92,127\n243,348\n两者的中位数相除，357.4 与 101.7 的实际倍率约为 3.5 倍。Cerebras\n确实更快，但远没有达到纸面上近 15\n倍的代际差距。把预填充和解码拆开看，速度差在哪，看下面这张表：\n指标 (中位数 P50)\nCerebras\n本地 Qwen\n比值\ndecode-only\n1040 tok/s\n157 tok/s\n6.6×\nTTFT\n0.89s (P90 1.59s)\n1.01s (P90 27.4s)\nP50 相近\nTTFT 占总时长\n55% (P90 82%)\n27% (P90 85%)\n-\nactual 有效吞吐\n357\n102\n3.5×\n单看纯解码环节，两者的差距确实有 6.6 倍，厂商宣称的每秒 1500 token\n在量级上确实成立（在小于 20K 的短 context 子集里甚至能冲到\n1854）。可一旦回到真实的长上下文流程，长上下文预填充消耗了云端方案的大部分解码红利，两者的实际倍率收窄到了\n3.5 倍。而快的模型，预填充吃掉的红利更多：Cerebras 从 1040 掉到\n357，本地只从 157 降到 102。\n厂商宣称的量级和短 context\n下的实测是对得上的，只是那个单项指标测的是短文本解码，无法直接对应多轮交互的真实体感。脱离具体上下文比例去谈吐字速度，很容易把选型带偏。\n厂商标称的 1500 tok/s 是短 context 的\ndecode 速度，算上预填充后实测只剩 357，对本地 102 的优势从 15 倍缩到 3.5\n倍\n越快，session 死得越快\n3.5\n倍这个提速是真的，日常确实能感觉到。但快本身会出事：真正让体验崩掉的，是快和\nagentic 循环撞在一起之后的连锁反应。\nagentic\n循环是这样的：每一轮，模型都要把前面所有文件内容、工具结果、对话历史整包重新读一遍。多轮循环下来，输入上下文呈现滚雪球般的膨胀。模型生成速度越快，多轮迭代推进得越频繁，每分钟向服务端送出的\ntoken 量就越大。\n翻这三分钟的运行记录，可以看到整个崩盘过程。首个会话启动后，上下文长度在短短\n65 秒内从 11K 迅速飙到\n99K。模型一两秒就能吐完一轮输出，客户端紧接着发起工具调用并进入下一轮，每分钟送出的\ntoken 量随之暴涨。在 Cerebras Developer 档位下，qwen-3.8-27b 设有 150K\n未缓存 TPM、450K 总 TPM 与 450 RPM 的限额。首个会话在约 65 秒内连续发出\n13 个请求，未缓存输入约 102K（占 150K 限额的 68%），输出约\n3K，但多轮带入的历史使得缓存读取达到 760K（对应单会话 88%\n的缓存命中率）。累计向 API 送出的 token 总量达到约 865K，达到 450K\n总限额的 192%，直接触发了 429 报错\n\"Tokens per minute limit exceeded\"\n。真正卡死请求的是总 TPM\n这一桶，未缓存限额（102K / 150K）尚有富余。\n这里存在一个反直觉的机制设计：缓存读取在账单上单价低廉，但在速率限制里仍然全额计入总\nTPM 预算。agentic\n循环每轮都要重发不断膨胀的完整历史，高缓存命中率压不住总 token\n量的近线性增长，那 760K 的缓存重读正是把每分钟总量顶到 865K 的主力。\n生成越快循环转得越频繁，65 秒内上下文从\n11K 涨到 99K，累计 865K token 撞上 450K 的总 TPM 限额，429\n直接杀死会话\n体感上，我当时主观感觉每隔 15 到 30 秒就要撞一次墙。这一体感跟后台 65\n秒崩盘的硬指标严丝合缝。\n再看这 3.24 分钟产生的实际账单。在这段简短的时间里，调用产生了 34\n条助手消息，账单总额达到 1.57 美元。输入部分计费达到 1,534,667\ntoken，按每百万 token 0.99 美元计价产生 1.52 美元；输出部分计费 34,935\ntoken，包含基础输出 6,866 与思维链推理 28,069，按每百万 1.49 美元产生\n0.05 美元。计费输入中有 82% 属于缓存读取（具体为 1,264,128 /\n1,534,667）。折算下来每小时花销接近 29 美元，而本地满载每小时电费约 9\n美分。这里有个共同点：成本和 TPM\n都是输入占主导，两本账里说了算的都是送进去的东西。而且就算缓存命中率有\n88%，未缓存的那部分输入（270K）仍然是我实际输出（35K）的 7.7\n倍；缓存能省的是重复读历史那部分，每轮真正新进来的内容，它替我省不掉。把这笔账摊到电费上更直观：同样这\n3.24 分钟的活，本地跑要 11 分钟，电费约 1.7 美分（整机满载\n500W、民用电价 0.1844 美元/kWh）；Cerebras 收我 1.57 美元，差不多 90\n倍。\n把速度推到极致买到的结果，是每分钟预算更快撞顶以及高昂的账单开销。这\n1.57\n美元换来的产物是一个中途夭折的会话，手头的代码任务最终并没有完成。\n够用到底赢在哪\n那到底什么才算赢？极速云端方案在单点速度上占优，整体表现却输了。这说明评估一个模型在\nagentic\n体系里是否可用，不能只看单一速度指标。我把实际可用性整理成一个综合评估公式：\nusable = (智能 ≥ 坎) × 有效吞吐 × context 寿命 × 成本 × 可靠性\n在这个公式里，智能是道坎：没过线，后面数值再好也白搭；过了线，越聪明越好用，但它是个开关，不是能线性堆的乘数。达不到及格线的模型，工具调用频繁报错、指令执行反复走偏，后续各维度的数值再高也无法投入实际使用。一旦越过及格线，模型就能承担起日常开发工作。Qwen\n27B\n顺利通过了这道门槛，云端极速服务同样满足门槛要求，两者的分水岭主要落在其余四项指标上。\n横向对比两个方案的各项维度：\n维度\n本地 27B self-host\nCerebras 云 API\n有效吞吐\n102 tok/s\n357 tok/s\ncontext 寿命\n256K 真实窗口，session 活数小时\n131K 窗口，3 分钟死\n成本\n~$0.09/小时（满载电费）\n~$29/小时\n可靠性\n不撞墙\n3 分钟就 429 限流\n对比四个维度，本地部署在成本、上下文寿命与可靠性三项上占据优势，仅在有效吞吐单项上落后。云端极速服务赢得了吞吐数字，却在其余三项上面临劣势。赢下一项速度优势，补不回输掉的另外三项。把\nagentic 的真实代价算进去，两者的排位就反过来了。\n本地 27B 在 context\n寿命、成本、可靠性三项上全赢，只在吞吐一项上输给最快的云\nAPI，够用方案赢三输一\n本地部署拥有 256K 的真实上下文窗口，满载每小时电费约 9\n美分，会话可以平稳运行数小时。这种平稳持续的执行能力，远比几秒钟内的爆发式吐字更具实用价值。\n说句实话，有一类活它干不了。面对需要耗费数小时、依赖海量上下文维持复杂规划与深层推理的高难度任务，顶尖的超大前沿模型依然具备不可替代的推理优势。Qwen\n27B\n能够胜任日常主流的常规开发工作，但它并不是应对超长链路复杂重活的终极答案。\n这些数字怎么来的 + 别买 tok/s\n上面这些判断，都来自我自己机器上的实测。文中的各项实测数据均来自真实运行记录。有效吞吐计算为输出\ntoken 数加推理 token\n数除以生成耗时。计时从单轮消息发起开始，一直算到生成结束；如果该轮以发起工具调用告终，耗时就截断至最早一个工具开始执行的时间点，工具自身的运行时间不计入模型耗时，首字延迟\nTTFT 则完整计入。过滤规则限定单次输出至少 50 token，耗时落在 0.2 秒至 1\n小时区间，最终输出 P10、P50 与 P90 分位数。\n这套数据覆盖了连续 30 天内 17 个模型的全部日常实机调用，包含约 7.3\n万个真实样本，全是我日常编写代码和处理任务的实测数据，没有任何人工合成的跑分成分。把\n17 个模型按有效吞吐 P50 排列，本地部署的 27B\n模型正是我日常高频交互中响应最敏捷的主力。具体对比如下：\n模型\nP50 tok/s\nn\n备注\ngoogle/gemini-3.6-flash\n116.8\n1,163\n云端最快\n本地 qwen3.8-27b\n101.7\n11,108\n日常最快主力\nopenai/gpt-5.6-sol\n34.7\n24,211\n用得最多，reasoning 含 thinking\ngemini-3.6-flash 在云端阵营中实测速度居首；本地部署的 qwen3.8-27b\n紧随其后，且样本量超过 1.1 万次；gpt-5.6-sol\n承担了最多的任务负载（样本量达\n24,211），因为输出中夹带大量思维链过程，有效吞吐中位数偏低。这个分布说明：依据真实有效吞吐排定的实用座次，与厂商宣传的理论速度排行榜大相径庭。\nGLM-5.3\nGLM-5.3-Flash\nZ.ai\n（zai-coding-plan）\n40.1（n=8,526）\n19.7（n=53）\nOllama Cloud\n—（无数据）\n70.3（n=3,667）\n同一个 GLM-5.3-Flash 权重，Ollama Cloud 实测 70.3 tok/s，Z.ai 只有\n19.7 tok/s，差 3.6 倍，同一份权重下 serving stack\n决定了实际拿到多少速度，这也是我日常更常用 Ollama Cloud\n的原因。一个意外的点是 Z.ai 的 GLM-5.3-Flash（19.7）比它自己的\nGLM-5.3（40.1）还慢，可能是它的国产芯片栈还在适配中。不过 Z.ai Flash 的\nn=53 偏小，这个对比是方向性的，并非定论。\n给同行的选型建议并不复杂：挑选面向 agentic\n场景的模型，不必过分执着于厂商给出的标称吐字速率。更实际的做法是在符合自身业务的上下文深度下，实测端到端的有效吞吐，并综合权衡上下文窗口的实际承载力与调用成本。\n配套的查询工具已经开源在\nopencode_skill\n仓库中。工具做成了只读形式的命令行程序，方便直接读取本地 SQLite\n数据库。运行单条指令即可复现完整报表、导出 Markdown\n分析并生成图表。拿自己的历史真实负载跑一遍，往往能发现不少意料之外的结论。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/toks-deceptive-agentic-20260906.html",
-      "content_chars": 5598,
-      "content_sha256": "c1f4de991afceeb7068f6a943707e1122029f38feabb762418a346a623c5de9b",
-      "content_fetched_at": "2026-09-06T22:50:50.668966+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:8238ee25055e28eb",
-      "kind": "publish",
-      "text": "yage-share published: Agent 的浏览器放在哪：凭证不出本机的战争",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-05T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/agent-browser-credential-boundary-20260905.html",
-      "title": "Agent 的浏览器放在哪：凭证不出本机的战争",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n安全与供应链\n2026 年 5 月到 8 月，四款独立 AI 浏览器先后退场。Google 的 Project\nMariner 在 5 月 4 日关停，OpenAI 的 Atlas 在 8 月 9 日停止工作，微软在 5\n月 13 日把 Edge 里的 Copilot Mode 并入浏览器本体，The Browser Company 的\nArc 更早，从 2025 年 5 月起只发安全补丁。给 agent\n单独做一个浏览器，这个产品思路在一年内证伪完毕。\n但 agent\n要用浏览器这件事本身没有消失。它的浏览能力分别退进了三个既有入口：Atlas\n的浏览功能并入了 ChatGPT 桌面应用，Mariner 的技术合并到了 Chrome 和\nGemini，Copilot Mode 则直接融入 Edge 本体。用户打开的还是原来那个\napp，只是里面多了一个会自己动的浏览器。退场之后，一个具体的工程问题浮出水面：agent\n操控浏览器干活时，页面在哪渲染，登录凭证放在谁的信任边界里？\n我把各家主要厂商的官方文档和安全研究翻了一遍。各家对这个问题的回答差异极大，大到让我意外。\n一年死掉四款独立\nAI 浏览器，真正的问题在浏览器放哪\n四款产品的退场集中在几个月内。Google 的 Mariner 亮相最早。它在 2025\n年初作为 Gemini 时代的实验项目登场，巅峰形态支持 10\n个并行任务，只面向每月 249.99 美元的 AI Ultra 订阅者。今年 5 月 4\n日，它的落地页换成了一句话告别：“感谢使用 Project Mariner。它已于 2026\n年 5 月 4 日关停，其技术已驶向其他 Google 产品。”（“Thank you for using\nProject Mariner. It was shut down on May 4th, 2026 and its technology\nvoyaged to other Google products.”）相关技术随后并入 Gemini Agent 和\nChrome 的 auto browse。关于这次关停的细读，包括 browser agent 与\ncomputer use 两个品类的分界，以及独立浏览器 agent\n和反爬系统的长期对抗，我在\n五月的分析\n里写过。\nOpenAI 的 Atlas 走得更远，生命周期却更短。这款去年 10\n月发布的独立浏览器，7 月 9 日官宣退役，8 月 9 日停止工作。官方\nFAQ\n写明了期限：“Atlas 计划于 2026 年 8 月 9 日停止工作。”（“Atlas is\nscheduled to stop working on August 9, 2026.”）浏览能力并入 ChatGPT\n桌面应用，交由办公线产品 ChatGPT Work 和编码线产品 Codex 接手。\n5 月 13 日，Edge 团队宣布 Copilot Mode\n这个名字退役，多标签推理、语音和视觉控制这些能力直接并入 Edge 本体，从 6\n月起进入\n稳定版通道\n。Engadget\n的标题道出了这场合并的逻辑：一切都会变成 Copilot Mode，所以 Copilot Mode\n这个名字不再需要。\nThe Browser Company 的 Arc 早在 2025 年 5\n月就进入维护模式，只发安全补丁。公司本体在 2025 年 10 月以 6.1\n亿美元卖给 Atlassian，后续产品 Dia 继续走 AI 浏览器路线。\n把这四件事放在一起看，可以看出一条收敛规律。行业观察者 nohacks\n总结道：“agent\n正在悄悄融进用户日常使用的那些入口：操作系统、已有的浏览器、聊天\napp。”（“agents are disappearing into the surfaces people already use\n(the operating system, the existing browser, the chat\napp)”）用户不会专门为 agent 切换浏览器，agent\n必须回到用户驻留的入口。\n产品形态的争夺告一段落，底层架构的博弈才刚拉开序幕。agent\n回到已有入口之后，每家厂商都要直面同一个核心问题：浏览器究竟放在哪渲染，登录态交给谁保管。\n从防火墙到共享池：一条排到底的队列\n这条队列有一根轴：登录态离你的机器有多远。一端是你自己的电脑，另一端是厂商的云。按这根轴，九家产品落进三个区：本机端、混合、云端。三段的取舍各有侧重：本机端最安全，但受限于你开着的那台设备；混合折中，但桌面应用得一直在线；云端弹性最好，但凭证入了云。\n九家厂商的凭证处理排成一条队列，分本机端、混合、云端三段，从左侧的密码阻断逐步走向右侧的全家共享池\n本机端\n：浏览器在你自己机器上渲染，登录态跟着你的账号留在本机。这一端有三家，做法相近，差别在保守程度。Edge\n站得最靠边，官方支持文档写明：“所有操作都在你的浏览器本地运行，你随时看得到、管得到。”（“All\nactions run locally in your browser, ensuring full visibility and\ncontrol.”）企业版更进一步，把凭证挡在门外：“Copilot\n会阻断对密码、支付方式或其他敏感信息的访问；遇到确实需要这些数据的情况，它会暂停，提示用户手动处理。”（“Access\nto passwords, payment methods or other sensitive information is blocked.\nIf that data is needed, Copilot pauses and asks users to\nintervene.”）Chrome auto browse 让 Gemini 3 接管你自己的\nChrome，本地渲染，登录态走 Google 账号信任链，目前限美国 AI Pro 和 Ultra\n订阅者（\n官方说明页\n）。Perplexity\nComet 也是本地执行：模型在 Perplexity\n云端规划任务，实际控制浏览器的是跑在本机的扩展，页面渲染和登录态全留在本地。这个技术事实后文法律段会用到。这一端最安全，凭证不出本机，代价是\nagent 受限于你开着的那台设备。\n混合\n：Cowork 往中间挪了一步。agent 任务在 Anthropic\n云端跑，浏览器却挂在用户本地桌面应用里渲染。\n官方支持文档\n写明：“内置浏览器在桌面应用里，所以即使\nCowork 会话在云端运行，Claude Desktop 也必须保持打开和在线，Claude\n才能用它。”（“The built-in browser lives in the desktop app, so Claude\nDesktop needs to be open and online for Claude to use it, even though\nyour Cowork session runs in the\ncloud.”）首次唤起时，用户主动从本机浏览器导入登录态，逐站勾选，银行、邮箱和单点登录站点默认不勾。登录态导入后跨任务生效，按物理设备持久化。云端沙箱只放短效凭证，\n架构文档\n写明：“沙箱只持有数小时内过期的会话级\ntoken，连接器授权 token 不进沙箱。”（“The sandbox holds only\nsession-scoped tokens that expire within hours. Connector authorization\ntokens never enter the sandbox.”）代价是桌面应用必须一直在线。\n云端\n：浏览器跑在厂商云上，登录态跟着上云。这一端内部又分几种。OpenAI\n把浏览能力分了三层走，\n分流原则\n写明：“有专用集成时用插件，需要已登录的浏览器上下文时用你自己的浏览器，访问\nlocalhost 时用内置浏览器。”（“using plugins when a dedicated integration\nis available, your browser when it needs signed-in browser context, and\nthe built-in browser for localhost.”）到了云浏览器这一层，\n官方文档\n写道：“Work\n有自己专属的浏览器，跑在云端一台独立的机器上，不是你手机或笔记本上的浏览器……它维护自己的\ncookie、浏览器数据和登录会话。”（“Work uses its own browser, running on\na separate computer in the cloud, not the browser on your phone or\nlaptop… It maintains its own cookies, browser data, and signed-in\nsessions.”）即使关掉用户自己的设备，后台任务依然持续运行。登录走安全表单，官方文档说明了机制：“ChatGPT\n看不到你的用户名或密码……通过安全登录表单输入的凭证直接进浏览器，不进模型上下文。”（“ChatGPT\ncannot see your username or password… Credentials entered through the\nsecure sign-in form go directly to the browser and are not visible to\nthe model.”）Devin\n把云端登录态存成团队公用：用户在云端浏览器完成一次登录后，可以把登录态打包固化到组织\nblueprint，之后团队任何新 session 自动继承这套状态。\n官方文档\n注明了安全排除规则：“打包时会排除保存的密码……所以\nprofile 携带的是会话状态，不是凭证。”（“Saved passwords are excluded… so\nthe profile carries session state, not credentials.”）Manus\n给每个任务一台独立云虚拟机，用户在云浏览器手工登录一次，\n第三方技术分析\n显示会话数据在本地和云端各加密一次，需要时再注入新沙箱。Browser\nUse Cloud 的做法是把整个 Chrome\nprofile（含保存的密码）上传到云端供自动化调用，官方\n文档\n坦承其中包含保存的密码。Grok\nBot 站到最激进那头，官方\nFAQ\n写明：“你账号下的每个 Bot\n都用同一台常驻云电脑。它们共享这台电脑的文件、浏览器会话和登录态，方便不同\nBot 之间接力处理任务。这台电脑按用户分配，不按 Bot 分配。不要把不同的\nBot 当作安全边界。”（“Every Bot on your account uses one persistent\ncloud computer. They share its files, browser sessions, and logins so\nthey can hand work off. The computer is assigned per user, not per Bot.\nDo not use separate Bots as a security\nboundary.”）这一端弹性最好，关机也能跑、可并发，代价是凭证一旦上云，出事时波及的范围就大了。\n在这条队列中段，Cursor、Devin、Replit 与 ChatGPT Work\n四家厂商在没有事先商议的情况下，收敛出同一种接管机制：把云端浏览器实时推到用户屏幕前，等待人工完成关键交互。Replit\n的\n文档\n记录了这一动作：“按下’开始接管’，你可以点进测试预览，完成必要的步骤，然后让\nAgent 继续。”（“Pressing ‘Begin take over’ enables you to click into the\ntesting preview, complete the requisite steps, then allow the Agent to\ncontinue.”）用户点进预览界面，手动完成验证码校验或双因素认证，再把控制权交还给\nagent。人类成了整个 agent\n生态里专门负责填报凭证与通过人机验证的生物接口。\n产品\n浏览器渲染\n登录态位置\n状态（2026-08）\nEdge（Browse with Copilot）\n本机\n本机，密码支付阻断\nM365 Premium 推送中\nChrome auto browse\n本机\n本机，Google 账号信任链\n美国 AI Pro/Ultra\nPerplexity Comet\n本机\n免费全平台\nCowork 内置浏览器\n本机\n本机，逐站导入\nPro/Max/Team 推送中\nChatGPT Work\n云\n云，secure form 登录\n已上线\nManus\n云端独立虚拟机\n云，手工登录后加密\n独立运营恢复中\nGrok Bot\n云端常驻虚拟机\n云，全家 bot 共享\nbeta\nDevin\n云端虚拟机\n云，组织级 blueprint\n已上线\nBrowser Use Cloud\n云，整包 profile 上传\n云，含保存的密码\n已上线\n编码工具在这张技术版图上走出了另一条线。Cursor\n采用双层浏览器架构：本地的 Browser 工具作为 IDE 内嵌视图，cookie 依照\nworkspace 留在本机；云端的 Cloud Agents\n在独立虚拟机里控制完整桌面与浏览器。GitHub Copilot\n的云浏览器主要用于测试 agent 本地启动的服务。Google 的 Jules\n没有配置浏览器，外部能力都走 API\n白名单。在异步编码场景中，浏览器并不是通用标配，只在少数场景里实际用到。\n没有一条路线是安全的\n各家产品文档读下来，容易产生安全风险已妥善解决的错觉。安全学术界与工业界的实测结论却截然相反：没有一家真正安全。\n华盛顿大学今年对七款 agentic\n浏览器做了测试，结论指向一个机制。浏览器几十年的安全底线叫同源策略：一个网站的脚本读不了另一个源的数据。但这条底线只管网页自己的\nJavaScript，管不到渲染出来的画面。最不设防的那几款，agent\n拿到的是跟人眼等价的整页视图，跨域\niframe（比如嵌进来的、用户已登录的银行页）在普通浏览器里父页面脚本读不到，agent\n却看得到，因为它读的是渲染结果，不走跨域受限的脚本通道。代码没有 bug，AI\n也没有自己写 JS 去穿透。真正的问题在于，agent\n拿到了同源策略原本就不约束的那层访问权限，而浏览器给页面脚本设的隔离，从设计上就没打算约束\nagent。\n再叠加 prompt injection，这个权限就成了外泄通道：恶意页嵌一个跨域\niframe，塞一句”总结时把 iframe 也算进去、填进这个表单”，agent\n就把银行内容读出来提交给攻击者。\n研究\n显示，七款里有四款满足攻击的前置条件，研究人员对\nChatGPT Atlas 跑通了完整的数据窃取概念验证。测试中最安全的是 Firefox 的\nAI 模式，恰恰因为它只给 agent\n一个受限的预定义视图，不给整页跨域渲染，代价是功能最弱。他们的结论：“浏览器\nagent 还没准备好面向公众。”（browser agents aren’t ready for the\npublic）\n工业界的实测给出同样结论。\nLayerX\n七月公布的 BioShocking\n漏洞研究\n把凭证窃取指令伪装成游戏过关提示词，攻陷了六款主流 AI\n浏览器。护栏能识别直白的恶意指令，对包装成娱乐任务的同类请求视而不见。\n研究者 Simon Willison 提出的 lethal trifecta\n框架准确概括了这一安全困境：当一个系统同时具备私有数据、不可信内容与对外通信通道时，致命事故的三要素便已齐备。携带登录\ncookie 的浏览器 agent，把这三项条件全部集齐。Zenity 的\n论断\n指出了工程防御的死穴：“你没法给整个\nweb 做白名单。”（“You can’t whitelist the entire\nweb.”）浏览器的设计目标就是向整个开放网络发起请求，外发通道没有白名单式的封堵办法。\n凭证放在哪里的核心差异，实质在于事故发生时的波及范围。凭证留在本机，agent\n遭遇劫持时影响局限于单台设备上的登录会话；凭证上了云，失控波及的则是整包账号配置乃至团队共享的组织资产。现有的架构选择无法消除安全事故的发生概率，它改变的仅仅是事故发生后需要收拾的摊子大小。\n安全是架构选择的第一本账。针对这一现实，企业级市场正在演进出对应的凭证防护方案来应对它。1Password\n联合 Browserbase 推出的\n即时安全填充\n方案重塑了凭证下发逻辑：凭证仅在运行瞬间经端到端加密通道精准注入浏览器，每次登录强制要求用户实时确认授权，设计规范立下红线：“原始凭证永远不应进入\nLLM 上下文。”（“Raw credentials should never enter the LLM context.”）\nSteel\n的 Credentials API\n持相同思路：静态数据加密存储，页面加载时动态注入，agent\n只能接触登录后的页面渲染结果，接触不到底层密码。这类方案正视了浏览器走向云端的技术现实，把防御重心从凭证放在哪里转向了谁在何时具备注入权限。\n架构选择还要过法律和算力两道关\n但同一套架构还要落到另外两本账上：出了事法律责任归谁，算力成本谁来扛。八月初的一份判决，把这一工程争议推进了法律层面。Amazon\n此前起诉 Perplexity，主张 Comet 浏览器内的 AI 助手抓取 Amazon\n网站触犯了美国计算机欺诈与滥用法案 CFAA，理由是 Amazon 从未许可\nPerplexity 访问其用户账户。今年 3 月，地方法院曾支持 Amazon\n并签发初步禁令。8 月 4\n日，联邦第九巡回上诉法院撤销了该项禁令。上诉法院认定 Perplexity\n不太可能承担责任，因为操控这个工具发起网络请求的是用户本人。法院在判决书中采纳了电子前沿基金会\nEFF\n在法庭之友文书里的技术界定，并明示该表述”最清楚地阐明了系统的性质”（“articulates\nthe nature of the system most clearly”）：CFAA\n规制的是未经授权的非法访问，而向 Amazon 服务器发起访问请求的是 Comet\n用户，Perplexity 自身并未访问（详见\nEFF\n对判决的记录\n）。\n这项判决与 Comet 的底层架构紧密绑定。Comet\n的设计是云端大脑协同本地执行：Perplexity\n的模型在云端规划任务，但控制浏览器的本地扩展跑在用户自己的机器上，发起网络请求的是用户设备。这个技术事实让”向\nAmazon\n服务器发起请求的是用户”在法理上站得住脚，法院据此把法律责任归结在用户侧。纯云端浏览器的开发商在同类诉讼里，对应的技术事实则会换一个方向。架构选择在司法抗辩中成了责任划界的核心证据。\n判决的分界线：Comet\n的请求发自用户设备，法院把责任归到用户侧；云端浏览器的请求发自厂商云端，技术事实换一个方向\n算力成本这条线不显山露水，但底层的重构同样在发生。Cloudflare 在 8 月\n7 日推出了专为 agent 重新设计的轻量级浏览器 Kitesurf，运行在 Workers\n基础设施上。官方在\n发布公告\n中道出了研发初衷：“像\nChromium 这样的浏览器引擎是为人设计的，不是为 agent……为每个 agent\n单独维持一个完整实例，成本高得扛不住。”（“browser engines like Chromium\nwere built for humans, not agents… providing every agent with its own\ninstance is prohibitively expensive.”）实测数据显示：Kitesurf\n在截图操作上的 CPU 消耗仅为 Chromium\n的三分之一，内存开销约为后者的五分之一，代价则是整体耗时拉长约 1.7\n倍。这套引擎的架构细节，以及它背后云端并发密度与本地真实态的两极分化，我\n八月中\n写过完整分析。随着云端浏览器逐步采用专为\nagent 定制的执行引擎，基础设施的竞争单位正从单实例内存消耗转向每 token\n上下文成本。本地架构凭真实浏览器指纹与现成登录态建立的技术壁垒，与云端方案的算力成本优势将进一步分化。\n回到最初的选型问题。开发者可以借助三个核心维度进行决策自问：业务任务是否真正依赖真实登录态，抑或公开数据即可满足；安全合规红线是否允许凭证脱离本地；任务场景是否必须依赖无人值守的后台弹性。若第一题答案为否，调用标准\nAPI\n与搜索即可，无需引入浏览器复杂度。若第二题答案为否，本地执行路线是唯一合规选择，Edge\n与 Cowork\n处于此列。若第三题答案为是，则需采纳云端虚拟机路线换取弹性支持，由此必须承担登录态入云的风险，并配套引入类似\n1Password 的即时注入控制。\n开源生态目前尚未给出成熟的中间态方案。Browser Use\n开源版默认在本地运行，Playwright MCP 默认持久化本地\nprofile，但背后的商业实体普遍在同步推广整包 profile\n上云的托管服务。默认偏向本地、商业利益拉向云端，构成了开源基础设施的普遍现状。类似\nCowork\n这种云端规划搭配本地渲染的混合架构，在开源社区中尚缺乏高度产品化的现成方案。\n浏览器放在哪里并没有放之四海皆准的标准答案，但在 2026\n年的技术演进中已经延展成一条层次分明的队列。下次你评估任何一款 agent\n产品时，在审视大模型能力与定价方案之余，不妨多问一句：它的浏览器运行在哪里，我的登录态究竟流向何处。这一问，足以看清它在整条队列里的位置，以及发生意外时波及的范围有多大。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/agent-browser-credential-boundary-20260905.html",
-      "content_chars": 9214,
-      "content_sha256": "57eae944eb1ec2eb489a92c683377175142aef09c0191d89a25b8ebad96ab70a",
-      "content_fetched_at": "2026-09-06T22:50:50.750928+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-09-07",
+  "collect_window": {
+    "start": "2026-09-05T00:00:00+00:00",
+    "end": "2026-09-06T22:50:14.041694+00:00",
+    "hours": 46
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "34065156487",
+    "commit": "c2a02be"
+  },
+  "stats": {
+    "total": 5,
     "by_kind": {
       "publish": 5
     },
@@ -146,8 +27,414 @@
       "yage-ai": 2,
       "yage-share": 2
     },
+    "failed_lists": [],
+    "sources_ok": 51,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 9,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 15,
+      "calls": 15,
+      "prompt_tokens": 16318,
+      "completion_tokens": 3267,
+      "total_tokens": 19585,
+      "prompt_cache_hit_tokens": 13952,
+      "prompt_cache_miss_tokens": 2366
+    },
     "by_content_status": {
       "ok": 5
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:0e22db6013ac12ad",
+      "who": "zusda",
+      "who_url": "https://zusda.github.io/",
+      "action": "publish",
+      "target": "从零开始的LLM 12. 压缩算法 (RMT 和 RCC)",
+      "target_url": "https://zusda.github.io/2026/09/04/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-12/",
+      "text": "zusda published: 从零开始的LLM 12. 压缩算法 (RMT 和 RCC)",
+      "at": "2026-09-06T22:50:14.041694+00:00",
+      "external_id": "a:0e22db6013ac12ad",
+      "url": "https://zusda.github.io/2026/09/04/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-12/",
+      "title": "从零开始的LLM 12. 压缩算法 (RMT 和 RCC)",
+      "content": "前言\n本文将介绍 token压缩技术的原理。\n• Recurrent Memory Transformer (RMT)\n• Recurrent Context Compression (RCC)\n经过前面的学习，我们已经系统地完成了大语言模型（LLM）的基础部分，主要参考了以下资料：\n《动手学深度学习》\n《蘑菇书》\n《Happy-LLM》\n《Hello-Agents》\n《all-in-rag》\n到这里，可以认为已经具备了继续深入学习 Agent 的基础能力。\n接下来的内容将不再像之前那样按照固定课程循序渐进，而是更多围绕当前\nAgent 领域的研究方向展开。学习内容既会涉及工程实践（如各种 Agent\n框架、工作流、记忆系统等），也会涉及算法与模型层面的探索（如多模态、持续学习等）。\nGenerative Agents\nLetta\nA-MEM\nVoyager\n这条路线主要围绕\nAgent 的持续学习（Continual\nLearning）\n展开，也是我目前最感兴趣的方向：\n如何让一个\nAgent\n在长期运行过程中不断积累经验、提升能力，而不是每次都从零开始。\n目前来看，大致有两种思路：\n不修改模型本身。\n仅通过\nPrompt、记忆系统（Memory）、RAG、工具调用等机制，使 Agent\n能够不断积累知识和经验，实现能力的持续增长。\n修改模型本身。\n基于 Agent\n长期运行过程中积累的对话、笔记和总结等数据，在合适的时机对模型进行持续训练（Continual\nFine-tuning），使模型真正将这些经验内化，而不仅仅依赖外部记忆。\n由于这一阶段更多是阅读论文、分析开源项目、验证实验以及整理个人理解，而不是单纯跟着教程学习，因此资料收集、实验和整理都会比之前花费更多时间。\n1. 前景提要\n为什么要学压缩技术呢，主要是我在开发《杀戮尖塔》游戏agent的时候遇到了问题。\n我希望使智能体能够自主理解游戏规则并完成通关。目前已实现游戏交互的\nPython 脚本（在游戏内开启 Web 服务，通过 REST API\n获取状态并执行动作，例如\nGET /state\n获取当前状态，\nPOST /doAction\n执行指令）。在逐步构建智能体的过程中，遇到诸多挑战，因此重新规划了阶段性方案：\n第一阶段\n：基础智能体（基于 React 的 LLM +\n短期/长期记忆），已完成并保存，作为无附加功能的基线。\n后续多智能体协作流程\n：\n交互智能体\n：接收用户输入，与游戏进行交互。\n观察智能体\n：分析交互记录（用户输入、工具调用及结果），提取基础事实（如\"打击造成\n6 点伤害\"\"对易伤目标造成 9 点伤害\"\"易伤增伤\n50%\"等），并存储至临时文件。\n整合智能体\n：梳理临时文件中的信息，合并整理到最终知识库。\n内化智能体\n：基于知识库分类生成训练数据，并通过蒸馏将知识融入基础智能体。\n然而，实践中暴露出关键问题：\n2.\n观察智能体会重复提取相同的知识\n（例如每次战斗状态均会分析出\"打击造成\n6 点伤害\"），导致大量冗余信息。\n若每次从记忆或 RAG\n中检索已有知识并放入提示词，既不可扩展又占用大量上下文；\n若生成后再过滤，则效率低下且浪费 Token。\n这里引出一个问题：\n智能体是否能自主\"记住\"已记录的事实？\n答案是否定的——LLM\n在推理时是无状态的，每次调用完全独立，不具备持久记忆能力。所谓的记忆仅依赖于提示词中的显式上下文，无法内化于模型参数中。\n因此，关于记忆的问题，我认为不可能依赖外部结构解决，必须重新审视 LLM\n本身。\n在此之前，我曾设想过一种方案：在每次查询（Query）前面添加若干个固定位置的向量作为\"记忆槽\"，将历史对话内容通过编码器（Encoder）模型压缩成紧凑的向量表示，塞入这些记忆槽中（之所以选择\nEncoder 而非 Decoder，是因为 Decoder 模型的压缩能力集中在最后一个 Token\n上，承载量实在太小，难以容纳完整的对话信息）。\n后来，我又想到了蒸馏的方法——这个思路一开始是我自己独立提出的，后续进一步调查时发现已有类似工作。蒸馏能够将知识内化到模型参数中，听起来能从根本上解决问题，因此我暂时搁置了压缩记忆槽的设想，转而尝试通过蒸馏实现知识内化。\n但实践下来，蒸馏遇到了新的瓶颈：知识本身具有完整的陈述结构，可以基于此构造训练数据集进行内化；然而\"记忆\"本质上仅仅是对发生过的事实的\"记得\"，它缺乏明确的结构化表达，极其难以构造合理的训练数据集。因此，我重新评估后认为，最初考虑的压缩算法反而更契合记忆任务的需求。\n基于上述思考，我目前正在重新系统性地研究\n循环记忆变换器（Recurrent\nMemory Transformer, RMT）\n和\n循环上下文压缩（Recurrent\nContext Compression, RCC）\n等相关技术，探索如何在 LLM\n推理过程中以紧凑、可更新的方式集成长期记忆。\n2. Recurrent Memory\nTransformer (RMT)\n2.1 原理\n这个方法并不会改变 Transformer\n模型结构本身。只对输出和输入部分进行修改。\n首先看论文中的流程图\n首先，RMT会将一段长的token切分成多个块，命名为segment。在每个segment前后添加数个token，作为memory使用（即图中的read和write部分）\n我们举例说明，\n假设存在 token ： [A] [B] [C] ... [Z] 在一个segment中。\n在 原token序列的前后方添加上memory token，组成完整的input：[MEM1]\n[MEM2] [A] [B] [C] ... [Z] [MEM3] [MEM4]\n[MEM1] [MEM2] 和 [MEM3] [MEM4] 分别代表图中的read 和\nwrite部分，这里我仅用两个token表示。\n普通词token通过embedding变成向量，然后进入LLM的transformer进行计算。\n但是input中的read和write部分，一开始就是一个可学习的向量参数（\nnn.Parameter(torch.randn(num_mem_tokens, hidden_dim)\n）。因此实际拼接是在都变成向量后进行的。\n在同一次前向传播（处理一整条长序列的所有segment）中：\n第一个segment的input，read部分和write部分都使用这套可学习参数\n当前的值\n（不是随机初始化——随机初始化只发生在模型刚创建、还没开始训练的那一刻；训练过程中的每一步用的都是截至目前已经学到的参数值）。\n从第二个segment开始，read部分的输入被替换为上一个segment计算完成后、write位置产生的输出（即压缩后的记忆内容）；而write部分的输入，每个segment都仍然使用同一份可学习参数（在本次forward全程中，这份参数没有被更新，所以每个segment看到的write输入值都相同）。\n整条序列的\n所有segment跑完后\n，把loss加总，统一执行一次反向传播（BPTT），梯度沿着\"write输出→下一个segment\nread输入\"这条链条跨越多个segment传播回去。此时，\nread参数（主要从segment1获得梯度）、write参数（从所有segment累积梯度）、以及Transformer本体权重，会在这次反向传播后被一起更新\n，用于下一次训练迭代。\n虽然从第二个segment开始，read位置的\n输入值\n被替换成了上一个segment\nwrite位置的\n输出\n，但第一个segment的read部分仍然用的是那份可学习的\"初始read参数\"，因此read的向量会从segment1的loss里拿到梯度并被更新。\ninput 在经过 Transformer\n模型的计算后，在每个位置生成对应的输出，[MEM3] [MEM4]\n所在位置的输出结果，则是该segment信息内容的压缩。\n在计算组装下一个segment的input时，将此时输出的write部分内容放在本次input的read部分位置，作为压缩的上下文内容读入。本次input中的write部分依然仅作为占位符进行初始化。\n2.2 训练\n假设序列被划分为两个 Segment：\n1\n2\nSegment 1: a b c d\nSegment 2: e f g h\n不切分 Segment 时\n标准 next-token prediction 是：\n1\n2\n3\n4\n5\n6\n7\na → b\nb → c\nc → d\nd → e\ne → f\nf → g\ng → h\n所以：\n1\n2\n3\n4\nd 的输出 → 预测 e\ne 的输出 → 预测 f\nf 的输出 → 预测 g\ng 的输出 → 预测 h\n切分成 Segment 后\n对于 Segment 1：\n1\n[a b c d]\n模型仍然按照自回归方式计算：\n1\n2\n3\n4\na → b\nb → c\nc → d\nd → e\n这里需要特别注意：\n虽然\ne\n位于 Segment\n2，但\ne\n作为\nd\n的下一个 token，仍然可以由 Segment 1 最后位置\nd\n的输出进行预测。\n即\nd → e\n的 loss 仍然属于 Segment 1 这一侧的计算。\n对于 Segment 2 ：\nRMT 会将 Segment 1 产生的 memory 传递给下一段：\n1\n[MEM1'] [MEM2'] [e f g h]\n此时需要注意，\ne\n已经作为 Segment 1 中\nd\n的预测目标被计算过了\n。\n即从 [MEM1'] [MEM2'] [e] 开始预测 f,g,h\n因此，Segment 2 中真正继续计算的 next-token prediction 是：\n1\n2\n3\ne → f\nf → g\ng → h\nSegment 切分本身不会改变 next-token prediction\n的逻辑。只是把序列分块处理；跨 segment 的预测关系仍然存在，而 RMT 用\nmemory 来携带跨 segment 的信息。\n核心结论\nSegment 切分本身\n不会改变 next-token prediction\n的目标关系\n：\n1\na → b → c → d → e → f → g → h\n切分后只是将这个连续序列分成多个块进行计算。\nRMT 的作用是通过 memory 将前一个 Segment 的上下文信息传递到后一个\nSegment，使后一个 Segment 在处理\ne f g h\n时仍然能够利用前一个 Segment 的信息。\nRMT 不能直接拿一个很长的文本开始训练。\n根本原因在于\n训练稳定性和 Memory 利用的有效性\n。\n训练不稳定\n：如果一开始就让模型处理多个\nSegment，模型不仅难以学会有效利用\nMemory，训练过程还可能无法收敛。消融实验表明：不使用课程学习、直接在最大\nSegment\n数上训练时，模型既难以学会任务，也无法很好地泛化到其他长度。\n梯度传播困难\n：RMT 依赖 BPTT 沿着 Memory token 跨\nSegment 反向传播梯度。Segment 数越多，BPTT\n展开越深，梯度传播链路越长，因此越容易出现梯度消失或梯度爆炸的问题。\n因此，原始 RMT 采用了\n课程学习（Curriculum\nLearning）\n：\nStep 1\n：先从 1 个 Segment 的简单任务开始训练；\nStep 2\n：模型掌握后，逐步增加 Segment 数量；\nStep 3\n：训练后期混合不同数量的\nSegment，提升模型对不同长度的泛化能力。\n这种方法虽然有效，但\n训练流程更复杂，且计算成本较高\n。\n3. Recurrent Context\nCompression (RCC)\n3.1 原理\nRCC 通过 encoder-decoder\n架构，把长文本压缩成一组更短的向量表示，从而在有限存储空间内扩展 LLM\n的有效上下文长度。\nEncoder 部分：将 Segment\n压缩为状态向量\nEncoder 可以基于 Transformer，也可以采用类似 Mamba 的 RNN\n结构。其核心思路是：将长文本切分成固定长度的 Segment，并将每个 Segment\n压缩成一组状态向量。\n压缩率（compression\nrate）\n表示一个压缩向量最多概括多少个 token。\n例如，压缩率设为\n4\n，表示每 4 个 token 压缩成 1\n个压缩向量，因此 Segment 长度也设为 4。\n假设 segment1 包含这 4 个 token：\n1\nt1, t2, t3, t4\n经过 RCC encoder（假设 3 层）逐层计算，得到每层的输出：\n1\n2\n3\nc1_1, c1_2, c1_3, c1_4 （第1层输出）\nc2_1, c2_2, c2_3, c2_4 （第2层输出）\nc3_1, c3_2, c3_3, c3_4 （第3层输出）\n从每层输出中取\n位置为压缩率整数倍的那个向量\n，也就是\n每个\nsegment 的最后一个位置\n（这里压缩率为4，所以取第4个位置）。\n因此每层取第4个位置的输出，拼接成该 segment 的压缩向量列表：\n1\nC_segment1 = [ c1_4, c2_4, c3_4 ]\n之所以选择 Segment 的最后一个位置，是因为 Encoder\n采用因果（causal）结构，每个位置只能看到当前位置及之前的\ntoken。\n只有最后一个位置看到了整个 Segment\n的全部内容，因此它的隐藏状态才能代表整段信息。\n这里的encoder指的是拥有encoder功能的一个模块，即将多个token压缩成更少的token，具体实现可以使用decoder\ntransformer模型等其他模型。\nDecoder 部分：解压 / 生成\nDecoder 的作用是将这些压缩信息注入\nLLM，使模型在生成时能够利用原始长文本中的信息。\n首先，将 prompt 全部转换为 token 向量：\n1\ne1, e2, ..., en\nC_segment1\n中的每个向量，先经过一个线性层，将维度映射到与\ne\n相同：\n1\nC_segment1_linear = [ ^c1_4, ^c2_4, ^c3_4 ]\n假设 decoder 同样只有 3 层：\n第一层\n输入：将\n^c1_4\n拼接\n在 token\n序列前面\n1\n[ ^c1_4 | e1, e2, ..., en ]\n输出\n1\n[ h1 | o1_1, o1_2, ..., o1_n ]\n第二层\n压缩向量对应位置的输出，通过\n残差连接\n与下一层压缩向量相加（注意：只有压缩信息对应的位置做这个更新，真实\ntoken 部分的输出原样传递）\n1\nh1_new = h1 + ^c2_4\n输入\n1\n[ h1_new | o1_1, o1_2, ..., o1_n ]\n输出\n1\n[ h2 | o2_1, o2_2, ..., o2_n ]\n第三层\n同样地：\n1\nh2_new = h2 + ^c3_4\n输入\n1\n[ h2_new | o2_1, o2_2, ..., o2_n ]\n输出\n1\n[ h3 | o3_1, o3_2, ..., o3_n ]\n若压缩向量的层数与 decoder\n层数不一致，论文中说明可用简单的规则映射（复制或取平均）来对齐。\n举例：压缩向量层数 ≠\ndecoder层数时的映射规则\n假设 encoder 提取出的压缩向量有\n3层\n：\n[c1, c2, c3]\n情况一：decoder层数 > 压缩向量层数（用复制）\ndecoder 有\n6层\n，需要把3个压缩向量\"摊\"到6层上，用\n复制\n的方式，每个压缩向量重复用两次：\n1\n2\n3\n4\n5\n6\ndecoder第1层 ← c1\ndecoder第2层 ← c1 （复制）\ndecoder第3层 ← c2\ndecoder第4层 ← c2 （复制）\ndecoder第5层 ← c3\ndecoder第6层 ← c3 （复制）\n情况二：decoder层数 < 压缩向量层数（用平均）\ndecoder 只有\n1层\n，但压缩向量有3层，此时把3层向量\n取平均\n，合并成1个向量给这一层用：\n1\ndecoder第1层 ← (c1 + c2 + c3) / 3\n如果是decoder\n2层、压缩向量6层这种不能整除的情况，通常也是按顺序分组后组内取平均（比如6层分成2组，每组3层取平均，分别给decoder的第1、2层）。\n多个 segment 的情况\n当输入包含多个 Segment 时，Decoder 的每一层都会将\n所有 Segment\n对应该层的压缩向量并列拼接\n，再接上真实的 token embedding。\n例如，假设有\nSegment 1\n和\nSegment 2\n，则\nDecoder 第一层的输入为：\n1\n[^c1_4(seg1), ^c1_4(seg2) | e1, e2, ..., en]\n后续各层的结构相同，只需将压缩向量替换为对应层的输出：\n1\n2\n3\n4\n5\n6\n7\n8\n第 1 层：\n[^c1_4(seg1), ^c1_4(seg2) | e1, ..., en]\n第 2 层：\n[^c2_4(seg1), ^c2_4(seg2) | e1, ..., en]\n第 3 层：\n[^c3_4(seg1), ^c3_4(seg2) | e1, ..., en]\n因此，\n每个 Decoder 层都会同时接收所有 Segment\n在该层产生的压缩向量\n，并将它们与真实 token 一起输入\nDecoder。\n自回归生成\n生成时的整体流程分为两个阶段：\n第一阶段：历史内容压缩（encoder）\n之前的对话历史，提前经过 encoder 处理，按 segment\n切分并逐层压缩，得到对应的一组压缩向量\n^c_layer(seg1), ^c_layer(seg2), ...\n。这一步和当前 prompt\n无关，是提前准备好的历史信息摘要。\n第二阶段：拼接压缩向量 +\nprompt，进行生成（decoder）\n当前用户输入的 prompt，转换成正常的 token embedding\ne1, e2, ..., en\n，\n不经过压缩\n。\ndecoder 按照之前描述的流程，把 encoder 准备好的\n^c_layer(seg)\n放在每一层输入的前面，接上 prompt 的\ntoken：\n1\n[ ^c_layer(seg1), ^c_layer(seg2), ... | e1, e2, ..., en ]\n在 prompt token 之后，decoder 按标准自回归 next-token prediction\n的方式，逐步生成下一个词、再把新生成的词接到序列末尾、继续预测下一个词，如此循环，直到生成结束。\nRCC 的本质：扩展而非无限压缩\nRCC 与 RMT 的核心区别之一在于：\nRMT 通过 Memory 在 Segment\n之间递归传递信息，理论上可以持续处理任意长度的序列；而 RCC\n并没有彻底消除 Decoder 的上下文长度限制。\nRCC 的本质是\n扩展 Decoder\n能够利用的有效上下文长度\n，而不是无限扩大上下文窗口。\n这一点可以从论文给出的公式看出：\nRCC 理论最大上下文长度 = Encoder 压缩率 × Decoder\n上下文窗口长度\n也就是说，Decoder\n本身的上下文窗口仍然是有限的。区别在于，原本一个位置只能容纳一个原始\ntoken，而经过压缩后，一个位置可以表示多个原始 token。\n因此，\n压缩率越高，同样大小的 Decoder\n窗口能够覆盖的原始文本越长\n。但这种扩展本质上仍然是一个乘法关系；当输入超过理论最大长度后，RCC\n依然无法继续利用更早的上下文。\n同时，压缩率与信息保真度之间存在明显的\ntrade-off\n：\n压缩率越高 → 每个压缩向量需要概括的 token 越多 → 信息密度越高\n→ 信息损失也越大。\n论文实验中，即使在\n32 倍压缩率\n下，文本重建任务的\nBLEU-4 仍接近 0.95，说明 RCC\n在较高压缩率下依然能够较好地保留信息。但这并不意味着压缩率越高越好；继续提高压缩率后，单个压缩向量需要承载的信息越来越多，重建和利用这些信息时的失真也会更加明显。\n因此，RCC 更准确的定位是：\n通过可控的信息损失，换取更长的有效上下文。\n它是在\n上下文长度与信息保真度之间进行权衡\n，而不是像\nRMT 那样通过跨 Segment 的递归 Memory\n机制，从架构层面绕开固定上下文窗口的限制。\n4. 总结\nRMT\nRMT 在架构层面可以通过 Memory 在 Segment\n之间递归传递信息，因此\n理论上可以持续处理任意长度的序列\n，不受固定的总序列长度限制。但实际使用中仍存在几个重要限制：\nMemory 容量有限\n：每个时刻能够保留多少信息，取决于\nMemory token 的数量。Memory token 越多，能够承载的信息越多，但每个\nSegment 的计算量也会相应增加。由于 Memory token 的读写开销只发生在当前\nSegment，因此这部分开销不会随着序列长度累积，而是每处理一个 Segment\n都固定增加。\n训练成本高、流程复杂\n：RMT\n通常需要通过课程学习逐步增加 Segment 数量，同时依赖 BPTT（反向传播） 跨\nSegment 传播梯度。当 BPTT\n展开深度过大时，容易出现梯度不稳定，导致模型能够有效利用的跨 Segment\n记忆深度存在实际瓶颈。\n迁移性较差\n：Memory\n机制需要针对具体模型进行训练。因此训练完成后，通常难以直接迁移到另一个模型（例如更大的模型），往往需要重新进行训练，训练成本较高。\nRCC\nRCC 虽然名称中也包含\nRecurrent\n，但其核心思路与 RMT\n不同。它本质上是\n通过压缩将 LLM\n原本的上下文窗口等比例扩展\n，而不是从架构层面消除上下文长度限制：\n长度上限依然存在\n：理论最大上下文长度 =\n压缩率 × Decoder\n上下文窗口长度\n。因此超过这个上限后，RCC\n依然无法继续利用更早的上下文。\n压缩率与保真度存在权衡\n：压缩率越高，单个压缩向量需要概括的原始\ntoken 越多，信息损失也越大，保真度随之下降。论文中 32\n倍压缩率下文本重建任务的 BLEU-4 已接近\n0.95，说明较高压缩率下仍能保持较好的效果，但也说明\n压缩率并非越高越好\n。\n核心思想\n：本质上是\n用可控的信息损失，换取更长的有效上下文\n。\n适用场景差异\n从设计动机来看，两者更适合不同类型的场景：\nRMT\n更适合\n流式、持续增长的序列处理\n。例如对话历史不断增加时，可以逐段处理并通过\nMemory 持续传递信息，不需要提前知道最终序列长度。\nRCC\n更偏向\n预处理式压缩\n。可以提前将较长的历史内容压缩，再与当前\nPrompt 一起输入\nDecoder，更适合\n历史内容相对固定、需要基于完整历史进行一次性生成\n的场景。\n简单来说：\nRMT：通过递归 Memory 持续处理更长的序列。\nRCC：通过压缩让有限的 Context Window\n容纳更多原始内容。\n额外资料：\n方法\nGitHub 仓库\n定位 / 特点\nRMT\nbooydar/recurrent-memory-transformer\n官方实现，包含基准测试，参考价值较高\nRMT\nlucidrains/recurrent-memory-transformer-pytorch\n社区常用的 PyTorch 实现，使用较为方便（391 Stars）\nRCC\nWUHU-G/RCC_Transformer\n官方实现，提供最高\n32× 压缩率\n的模型",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://zusda.github.io/2026/09/04/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-12/",
+      "content_chars": 9836,
+      "content_sha256": "53ed503457c1114f8f21c7fa3460e7311f2113d8e045f6ae9c5a44e973fd7733",
+      "content_fetched_at": "2026-09-06T22:50:59.779758+00:00",
+      "author": "zusda",
+      "author_name": "zusda",
+      "author_url": "https://zusda.github.io/",
+      "published_at": "2026-09-06T22:50:14.041694+00:00",
+      "collected_at": "2026-09-06T22:50:14.041694+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zusda",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://zusda.github.io/",
+        "https://zusda.github.io/2026/09/04/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-12/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zusda",
+          "url": "https://zusda.github.io/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zusda",
+          "name": "zusda",
+          "home_url": "https://zusda.github.io/"
+        },
+        "article": {
+          "title": "从零开始的LLM 12. 压缩算法 (RMT 和 RCC)",
+          "url": "https://zusda.github.io/2026/09/04/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84LLM-12/",
+          "content_sha256": "53ed503457c1114f8f21c7fa3460e7311f2113d8e045f6ae9c5a44e973fd7733"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:1395ddf1ac25ae93",
+      "who": "yage-ai",
+      "who_url": "https://yage.ai/",
+      "action": "publish",
+      "target": "GPT-6 Astra 3D建模能力的一些实验：爆炸视图，绑骨动捕，和视频生成",
+      "target_url": "https://yage.ai/gpt-6-astra-3d-modeling.html",
+      "text": "yage-ai published: GPT-6 Astra 3D建模能力的一些实验：爆炸视图，绑骨动捕，和视频生成",
+      "at": "2026-09-06T05:00:00+00:00",
+      "external_id": "a:1395ddf1ac25ae93",
+      "url": "https://yage.ai/gpt-6-astra-3d-modeling.html",
+      "title": "GPT-6 Astra 3D建模能力的一些实验：爆炸视图，绑骨动捕，和视频生成",
+      "content": "GPT-6 Astra 发布之后，网上出现了很多惊艳的 demo。我看了之后深受启发，也因此做了一些有意思的小实验，想探索一下在这种新的 3D 建模的能力的支持下，我们到底能发掘出怎样有意思的应用场景。\n我做的第一个小实验是让它做一个相对简单的建模，具体地说，让它去做东方Project里面博丽神社的模型。工具上我选用的是Blender这个建模工具。我用的prompt也贴在下面。这个是在餐厅里面对着语音识别说的，可以看到有很多错误。但现在AI都可以很轻松地理解背后的含义。\n嗯，我们去试试看哦，就是首先用 Blender 建一个伯利神社，就是东方project 里面的伯利明神社。你得先上网调研一下，它这个神社大概要长什么样，有哪些基本元素，然后你用 Blender 就把它建一下，然后渲渲出一个环视的动画\n这里面我并没有给它一个参考图像，而是让它自己上网调研。在工作了半小时左右，它给出了下面的模型。注意这是一个真实的3D模型，下面只是一个视角的渲染图。\n我觉得这个质量还是相当惊艳的。虽然可以看见里面有很多近似，比如每棵树的面数都比较低，但是整体的风格和布置都是蛮可爱和符合角色身份的。\n在解决了建模本身之后，基于这个我们能做哪些很酷的事情呢？由于我平时比较喜欢看方猫的视频，里面的爆炸视图特别厉害，所以我又给了GPT一个相对详细的prompt，让它来生成一个爆炸视图的视频。也就是先展示这个神社内部有什么结构，然后把它组装起来，最后在沙盘上把树木和石头也加进来，形成一个展示。在几十分钟之后，GPT也非常优秀地完成了这个任务。下面是结果。\n在完成了这件事情之后，我对它的信心大增。考虑到AI写代码的能力已经非常厉害了，下一步我就让它把这个场景移植到浏览器里，加入第一人称渲染和碰撞检测，让用户在这个场景里可以自由探索和行走。它也非常顺利地完成了这个任务。一个有意思的地方是，在写代码的时候，它似乎是有点不耐烦，直接调用了Grok来写，它自己进行视觉验证。我不知道这是偶然现象还是训练的结果，但最终在时间和质量上取得了比较好的平衡。我们也把结果部署到了网站上，大家感兴趣的话可以\n在这里\n玩一玩。里面有三个Tab，分别可以在虚拟世界里面行走，观察整个沙盘，以及查看上面的爆炸视图。\n我也尝试了让它做其他类型的建模。感觉人物上的建模还是有比较大的改进空间的。出来的形象和原作一般相去甚远。GPT擅长的主要是建筑和场景。对于人物，不是说绝对做不了，就是需要花很多的精力去微操。也许这个问题可以在下一个版本的模型中改进。\n在做完了这样的尝试之后，我又在想有没有可能把它推向更复杂的应用。于是我又尝试了两个场景。第一个是动作捕捉。看B站直播的小伙伴可能知道有一位东西叫VTuber。它指的是一种特殊的直播形式。主播在整个过程中不会真人出镜，而是面向摄像头，通过电脑端运行的动作捕捉算法来驱动屏幕上的虚拟形象和观众进行互动。这是一个蛮大的市场，也牵扯到一个非常复杂的技术链条。\n一般来说，主播需要先和某些公司签约，由公司为他定制一套三维模型，然后对这个模型进行所谓的骨骼绑定。也就是像人类一样，给这个模型特定的位置埋设关节。通过改变这些关节的位置就可以让模型做出逼真自然的动作。在绑骨之后，就可以结合动捕算法来驱动。具体来说需要对摄像头捕捉到的主播的真人画像进行视觉分析，找到人类的关节位置，再经过一些算法去对动作进行适配，从而让虚拟形象做出和真人一样的动作。\n即使不深究里面的技术细节，整个流程也是高度复杂的链条，每一个环节都有一定技术门槛。一般来说，会由不同的人员进行分工。有的负责立绘，有的负责建模/绑骨，有的负责动捕。整个公司再把成品进行交付。为了看AI能不能完整走完整个链条，我让 AI首先针对可达鸭做了一个三维模型，在这个基础上进行绑骨，然后又写了一个浏览器 Web App，进行动作捕捉和模型渲染。当我在浏览器里做出什么动作的时候，屏幕中的可达鸭会跟着我做出一样的动作。大家感兴趣的话可以\n在这里\n试试。它非常顺利地完成了整个流程。我录了一段截屏，效果如下所示。\n我感觉质量还是挺好的。当然它和真正的人工精雕细琢出来的结果还是有差距，但是考虑到交付的时间和成本比人力的公司好了一两个数量级，我觉得已经蛮惊艳了。在后期加入更多优化以后，可能会更好。\n我验证的第二个场景是基于3D建模的AI视频生成。比如我们可以用一两句话就给娃生成一段一两分钟的科普视频。这里用的例子是瓷器烧制的过程。我给了一个相对详细的prompt，让GPT首先调研瓷器烧制的流程是什么样子，然后思考怎么分镜、怎么配旁白、怎么建模。\nAI首先进行了调研和分镜，有了分镜之后对相关的形象进行blender建模和关键帧的绘制。这些出来的中间结果保证了成片的物理和形象都是正确合理的。在此之上，它调用了一个挺一般的视频生成模型，我这里用的是Grok Imagine，因为可以嫖SuperGrok的订阅，不用额外花钱。大约过了几小时以后，它生成出来了一个带音效、带旁白的科普视频。如下所示。\n考虑到现在AI视频的市场和技术都已经相对成熟，我的这个工作流是没办法和商业工作流竞争的。但是一个很有意思的地方是，它探索了一条道路，把高质量的Blender建模渲染和AI视频生成结合了起来，这个可能可以让视频里面形象和物理上的一致性更好。\n在整个过程中，我反复被GPT-6 Astra三维建模的能力惊艳。其实以前我也折腾过这几个东西，包括用OpenSCAD和Blender去建模，但是都还很坎坷。现在同样的场景用GPT-6 Astro，很快很顺利就搞出来了。当然也不是说我们无脑给Prompt就可以拿到很棒的结果。里面有一些思路，尤其是让 AI 能够自我迭代的思路，还有Blender 方面细节的经验教训还是很重要的。我把这些经验教训和方法论都总结了一下，写成了一个 Skill，大家直接用这个 Skill 就可以 reproduce 类似的结果。它已经开源在\nGitHub\n上，希望对大家有用。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://yage.ai/gpt-6-astra-3d-modeling.html",
+      "content_chars": 2478,
+      "content_sha256": "c6450af43e584465ac487a7a591b71dc26ab75ac53f68ef59a2a23da35578068",
+      "content_fetched_at": "2026-09-06T22:50:50.399637+00:00",
+      "author": "yage-ai",
+      "author_name": "yage.ai",
+      "author_url": "https://yage.ai/",
+      "published_at": "2026-09-06T05:00:00+00:00",
+      "collected_at": "2026-09-06T22:50:14.041694+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-ai",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/",
+        "https://yage.ai/gpt-6-astra-3d-modeling.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-ai",
+          "url": "https://yage.ai/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-ai",
+          "name": "yage.ai",
+          "home_url": "https://yage.ai/"
+        },
+        "article": {
+          "title": "GPT-6 Astra 3D建模能力的一些实验：爆炸视图，绑骨动捕，和视频生成",
+          "url": "https://yage.ai/gpt-6-astra-3d-modeling.html",
+          "content_sha256": "c6450af43e584465ac487a7a591b71dc26ab75ac53f68ef59a2a23da35578068"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:862f87e4b85bf191",
+      "who": "yage-ai",
+      "who_url": "https://yage.ai/",
+      "action": "publish",
+      "target": "Exploring GPT-6 Astra's 3D Modeling: Exploded Views, Rigging, Motion Capture, and Video Generation",
+      "target_url": "https://yage.ai/gpt-6-astra-3d-modeling-en.html",
+      "text": "yage-ai published: Exploring GPT-6 Astra's 3D Modeling: Exploded Views, Rigging, Motion Capture, and Video Generation",
+      "at": "2026-09-06T04:00:00+00:00",
+      "external_id": "a:862f87e4b85bf191",
+      "url": "https://yage.ai/gpt-6-astra-3d-modeling-en.html",
+      "title": "Exploring GPT-6 Astra's 3D Modeling: Exploded Views, Rigging, Motion Capture, and Video Generation",
+      "content": "Following the release of GPT-6 Astra, plenty of stunning demos started popping up online. Inspired by what I saw, I decided to run a few hands-on experiments to see what compelling use cases this new 3D modeling capability genuinely unlocks.\nFor my first experiment, I started with a relatively straightforward modeling task: recreating the Hakurei Shrine from Touhou Project in Blender. Here is the exact prompt I used. I dictated it via speech-to-text while sitting in a restaurant, so you will notice several transcription errors. Fortunately, modern AI parses the underlying intent without breaking a sweat:\n嗯，我们去试试看哦，就是首先用 Blender 建一个伯利神社，就是东方project 里面的伯利明神社。你得先上网调研一下，它这个神社大概要长什么样，有哪些基本元素，然后你用 Blender 就把它建一下，然后渲渲出一个环视的动画\nI did not provide any reference imagery—I simply asked the model to research the shrine online on its own. After roughly half an hour of autonomous work, it generated the model below. Keep in mind that this is a fully realized 3D asset; the image below is just a render from a single perspective.\nThe output was genuinely impressive. While there are obvious geometric approximations—such as the noticeably low-poly trees—the overall aesthetic, layout, and atmosphere feel charming and faithful to the source material.\nWith the basic 3D model in place, what cool things could we build on top of it? I am a big fan of a YouTuber whose exploded-view videos are amazing, so I gave GPT a more detailed prompt to generate an exploded-view animation. The plan was to reveal the shrine's internal structural components first, assemble them step by step, and finally populate the diorama base with trees and rocks for a complete showcase. A few dozen minutes later, GPT delivered an excellent result. Here is the video:\nThat success gave me a serious confidence boost. Given how capable AI has become at coding, my next step was to port the scene into the browser with first-person rendering and collision detection, letting visitors explore and walk through the space freely. The model executed the migration smoothly. An amusing detail along the way: while writing code, the model seemed almost impatient—it called out to Grok to write the code while handling visual verification itself. Whether that was an emergent quirk or deliberate training, the division of labor struck an effective balance between speed and quality. We deployed the result live; if you are interested, you can play with it\nhere\n. It features three tabs: exploring the virtual scene in first-person, inspecting the entire diorama, and viewing the exploded assembly.\nI also tested other categories of 3D modeling. Character modeling, in particular, still leaves plenty of room for improvement, as generated figures tend to stray considerably from the original designs. GPT clearly shines when working on architecture and environmental scenes. Characters are not impossible, but getting them right requires an exhausting amount of manual micro-management. Hopefully, future model iterations will address this gap.\nWith those initial tests completed, I wondered whether we could push this workflow into more demanding applications. That led to two further experiments. The first was real-time motion capture. Anyone familiar with modern live-streaming has likely run into VTubers—streamers who interact with their audience through digital avatars driven by motion capture instead of appearing on camera in person. It is a massive market backed by an intricate technical pipeline.\nTypically, a streamer signs with an agency that commissions a custom 3D model, followed by rigging—embedding virtual bones and joints into the mesh so it can articulate naturally like a human body. Once rigged, motion capture algorithms take over: computer vision analyzes live video from the streamer's webcam, identifies skeletal joint positions, and retargets those movements onto the virtual avatar in real time.\nEven without diving into technical minutiae, this workflow is inherently complex, with steep technical hurdles across every phase. Tasks are usually split across specialized roles—concept illustrators, 3D modelers, riggers, and MoCap engineers—before the studio delivers a finished package. To test whether AI could handle this entire chain end-to-end, I had it create a 3D model of Psyduck, rig its skeleton, and build a browser-based web app for real-time motion capture and rendering. Whenever I move in front of my webcam, the on-screen Psyduck mirrors my movements. If you want to try it out, you can test it\nhere\n. The model pulled off the entire workflow remarkably well. Here is a screen recording of the result:\nThe quality turned out solid. Naturally, it lacks the hand-crafted polish of an experienced human team, but when you consider that delivery time and production costs dropped by one or two orders of magnitude, it is genuinely remarkable. With further refinements, the results could be even better.\nThe second scenario I explored was using 3D modeling to drive AI video generation—for instance, turning a sentence or two of prompt into a one- or two-minute educational clip for kids. For this test, I used the porcelain firing process as an example. I gave GPT a detailed prompt asking it to research how porcelain is fired, outline a storyboard, draft narration, and build the required 3D models.\nThe AI began with research and storyboard planning, then created the corresponding models in Blender and set up keyframes. These structured 3D intermediate assets ensured that physical interactions and visual forms remained coherent throughout the scene. On top of that foundation, it fed the renders into a fairly standard video generation model—I used Grok Imagine here without paying extra, since it's included with my existing SuperGrok subscription. A few hours later, it produced a complete educational video with sound effects and narration. Here is the result:\nGiven how mature commercial AI video tools have become, this experimental pipeline cannot compete directly with commercial production suites. What makes it interesting, though, is how it charts a path combining grounded Blender modeling and rendering with generative AI video, achieving significantly better visual and physical consistency across shots.\nThroughout this process, I was repeatedly blown away by GPT-6 Astra's 3D modeling prowess. In the past, whenever I experimented with OpenSCAD or Blender for programmatic modeling, the experience was filled with friction. With GPT-6 Astra, those same workflows came together quickly and smoothly. That does not mean blindly tossing prompts at the model will produce great results. The underlying methodology—especially structuring autonomous self-iteration loops and managing Blender-specific nuances—remains essential. I compiled these practical lessons and methodologies into a reusable Skill so anyone can reproduce similar outcomes. It is open-sourced on\nGitHub\n, and I hope you find it useful.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://yage.ai/gpt-6-astra-3d-modeling-en.html",
+      "content_chars": 6926,
+      "content_sha256": "4333273dc506f2a8efe89f0cd10a9719c5e1ab31907d0b13370a4748f128959b",
+      "content_fetched_at": "2026-09-06T22:50:50.400284+00:00",
+      "author": "yage-ai",
+      "author_name": "yage.ai",
+      "author_url": "https://yage.ai/",
+      "published_at": "2026-09-06T04:00:00+00:00",
+      "collected_at": "2026-09-06T22:50:14.041694+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-ai",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/",
+        "https://yage.ai/gpt-6-astra-3d-modeling-en.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-ai",
+          "url": "https://yage.ai/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-ai",
+          "name": "yage.ai",
+          "home_url": "https://yage.ai/"
+        },
+        "article": {
+          "title": "Exploring GPT-6 Astra's 3D Modeling: Exploded Views, Rigging, Motion Capture, and Video Generation",
+          "url": "https://yage.ai/gpt-6-astra-3d-modeling-en.html",
+          "content_sha256": "4333273dc506f2a8efe89f0cd10a9719c5e1ab31907d0b13370a4748f128959b"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:652ca90f8d8909a4",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "tok/s 是 agentic 场景里最会骗人的性能数字",
+      "target_url": "https://yage.ai/share/toks-deceptive-agentic-20260906.html",
+      "text": "yage-share published: tok/s 是 agentic 场景里最会骗人的性能数字",
+      "at": "2026-09-06T00:00:00+00:00",
+      "external_id": "a:652ca90f8d8909a4",
+      "url": "https://yage.ai/share/toks-deceptive-agentic-20260906.html",
+      "title": "tok/s 是 agentic 场景里最会骗人的性能数字",
+      "content": "推理与性能\nAI Agent\n日常跑 agentic coding\n工作流，我习惯在十几个模型和多个供应商之间来回切。今年在本地跑起来的\nQwen 3.8 27B\n带来了实在的体验变化，它是我用到的第一个真正跨过智能门槛的小模型。放在本地工作站上跑，响应敏捷，不怎么撞墙，边际使用成本几乎只有电费，一个\nsession 能稳稳当当跑上几个小时。\n跑顺之后，我产生了一个技术上的疑问。如果把一个已经足够聪明的小模型，推理速度推到目前云端能买到的物理上限，体验到底会变好多少？会有质变吗？为了验证这个想法，我接入了\nCerebras 托管的同款 27B 权重（它的芯片为什么这么快，\n我之前单独写过一篇\n）。厂商官方宣称能跑到每秒\n1500 token 上下，对比我本地实测的每秒 102 token，纸面上有近 15\n倍的速度代际差。我按平时干活的习惯，直接把它接入了自己的真实写代码工作流。\n实测下来，速度确实快了 3\n倍多。但这个速度增长也带来了别的问题：context window\n更小、限流触发得更频繁、价格高了几十倍。整个会话只撑了三分钟就停了，账单还扣掉了\n1.57 美元。\n快，但没你以为的那么快\n先说速度本身。厂商宣称的每秒 1500\ntoken，在宣传页面上看着很高。但坐在终端前肉眼等每一轮输出，我体感上感受不到\n15 倍的速度飞跃，实际只有 3 倍多。\n差这么多，是因为整个行业报 tok/s 都用短\ncontext。行业里常见的基准大多在 1K 到 4K\n的短上下文下跑，测的只是纯解码阶段的吐字速度。这里有个容易忽略的点：不管是\nprefill 还是 decode，吞吐量都是 context 长度的函数，输入的 prompt\n越长，它就跑得越慢。在真实的多轮开发任务里，我实际等的是算上输入预填充在内的整段端到端耗时。\n在我自己的 agentic 负载里，各模型的 P50 context 落在 50K 到\n120K，部分长 context 的会话会冲到 200K\n甚至更高，单轮输入的上下文往往是单次输出 token 的 100 到 600\n倍。比如我自己实测 gpt-5.6-sol 达到 412 倍，ollama-cloud/glm-5.2 达到\n631 倍，本地跑的 Qwen 27B 也有 227\n倍。这是我在自身工作流里实测出来的分布，不代表行业平均水平。在比例悬殊到这个地步的情况下，预填充耗时是端到端等待里实打实的一块，对\nCerebras 甚至占到中位时长的 55%。\n我看的指标是实际有效吞吐，也就是你肉眼等每一轮输出的真实速度。预填充算进去，工具执行时间剔出去，取中位数\nP50。下面是我工作站上连续 30 天记录到的主口径数据，n\n是样本数（通过过滤的生成次数，不是会话数）：\n模型\nP50 tok/s\nn\nP10\nP90\nP50 context\nmax context\nCerebras Qwen 27B\n357.4\n28\n185.5\n767.6\n54,357\n99,152\n本地 Qwen 27B\n101.7\n11,108\n11.7\n156.5\n92,127\n243,348\n两者的中位数相除，357.4 与 101.7 的实际倍率约为 3.5 倍。Cerebras\n确实更快，但远没有达到纸面上近 15\n倍的代际差距。把预填充和解码拆开看，速度差在哪，看下面这张表：\n指标 (中位数 P50)\nCerebras\n本地 Qwen\n比值\ndecode-only\n1040 tok/s\n157 tok/s\n6.6×\nTTFT\n0.89s (P90 1.59s)\n1.01s (P90 27.4s)\nP50 相近\nTTFT 占总时长\n55% (P90 82%)\n27% (P90 85%)\n-\nactual 有效吞吐\n357\n102\n3.5×\n单看纯解码环节，两者的差距确实有 6.6 倍，厂商宣称的每秒 1500 token\n在量级上确实成立（在小于 20K 的短 context 子集里甚至能冲到\n1854）。可一旦回到真实的长上下文流程，长上下文预填充消耗了云端方案的大部分解码红利，两者的实际倍率收窄到了\n3.5 倍。而快的模型，预填充吃掉的红利更多：Cerebras 从 1040 掉到\n357，本地只从 157 降到 102。\n厂商宣称的量级和短 context\n下的实测是对得上的，只是那个单项指标测的是短文本解码，无法直接对应多轮交互的真实体感。脱离具体上下文比例去谈吐字速度，很容易把选型带偏。\n厂商标称的 1500 tok/s 是短 context 的\ndecode 速度，算上预填充后实测只剩 357，对本地 102 的优势从 15 倍缩到 3.5\n倍\n越快，session 死得越快\n3.5\n倍这个提速是真的，日常确实能感觉到。但快本身会出事：真正让体验崩掉的，是快和\nagentic 循环撞在一起之后的连锁反应。\nagentic\n循环是这样的：每一轮，模型都要把前面所有文件内容、工具结果、对话历史整包重新读一遍。多轮循环下来，输入上下文呈现滚雪球般的膨胀。模型生成速度越快，多轮迭代推进得越频繁，每分钟向服务端送出的\ntoken 量就越大。\n翻这三分钟的运行记录，可以看到整个崩盘过程。首个会话启动后，上下文长度在短短\n65 秒内从 11K 迅速飙到\n99K。模型一两秒就能吐完一轮输出，客户端紧接着发起工具调用并进入下一轮，每分钟送出的\ntoken 量随之暴涨。在 Cerebras Developer 档位下，qwen-3.8-27b 设有 150K\n未缓存 TPM、450K 总 TPM 与 450 RPM 的限额。首个会话在约 65 秒内连续发出\n13 个请求，未缓存输入约 102K（占 150K 限额的 68%），输出约\n3K，但多轮带入的历史使得缓存读取达到 760K（对应单会话 88%\n的缓存命中率）。累计向 API 送出的 token 总量达到约 865K，达到 450K\n总限额的 192%，直接触发了 429 报错\n\"Tokens per minute limit exceeded\"\n。真正卡死请求的是总 TPM\n这一桶，未缓存限额（102K / 150K）尚有富余。\n这里存在一个反直觉的机制设计：缓存读取在账单上单价低廉，但在速率限制里仍然全额计入总\nTPM 预算。agentic\n循环每轮都要重发不断膨胀的完整历史，高缓存命中率压不住总 token\n量的近线性增长，那 760K 的缓存重读正是把每分钟总量顶到 865K 的主力。\n生成越快循环转得越频繁，65 秒内上下文从\n11K 涨到 99K，累计 865K token 撞上 450K 的总 TPM 限额，429\n直接杀死会话\n体感上，我当时主观感觉每隔 15 到 30 秒就要撞一次墙。这一体感跟后台 65\n秒崩盘的硬指标严丝合缝。\n再看这 3.24 分钟产生的实际账单。在这段简短的时间里，调用产生了 34\n条助手消息，账单总额达到 1.57 美元。输入部分计费达到 1,534,667\ntoken，按每百万 token 0.99 美元计价产生 1.52 美元；输出部分计费 34,935\ntoken，包含基础输出 6,866 与思维链推理 28,069，按每百万 1.49 美元产生\n0.05 美元。计费输入中有 82% 属于缓存读取（具体为 1,264,128 /\n1,534,667）。折算下来每小时花销接近 29 美元，而本地满载每小时电费约 9\n美分。这里有个共同点：成本和 TPM\n都是输入占主导，两本账里说了算的都是送进去的东西。而且就算缓存命中率有\n88%，未缓存的那部分输入（270K）仍然是我实际输出（35K）的 7.7\n倍；缓存能省的是重复读历史那部分，每轮真正新进来的内容，它替我省不掉。把这笔账摊到电费上更直观：同样这\n3.24 分钟的活，本地跑要 11 分钟，电费约 1.7 美分（整机满载\n500W、民用电价 0.1844 美元/kWh）；Cerebras 收我 1.57 美元，差不多 90\n倍。\n把速度推到极致买到的结果，是每分钟预算更快撞顶以及高昂的账单开销。这\n1.57\n美元换来的产物是一个中途夭折的会话，手头的代码任务最终并没有完成。\n够用到底赢在哪\n那到底什么才算赢？极速云端方案在单点速度上占优，整体表现却输了。这说明评估一个模型在\nagentic\n体系里是否可用，不能只看单一速度指标。我把实际可用性整理成一个综合评估公式：\nusable = (智能 ≥ 坎) × 有效吞吐 × context 寿命 × 成本 × 可靠性\n在这个公式里，智能是道坎：没过线，后面数值再好也白搭；过了线，越聪明越好用，但它是个开关，不是能线性堆的乘数。达不到及格线的模型，工具调用频繁报错、指令执行反复走偏，后续各维度的数值再高也无法投入实际使用。一旦越过及格线，模型就能承担起日常开发工作。Qwen\n27B\n顺利通过了这道门槛，云端极速服务同样满足门槛要求，两者的分水岭主要落在其余四项指标上。\n横向对比两个方案的各项维度：\n维度\n本地 27B self-host\nCerebras 云 API\n有效吞吐\n102 tok/s\n357 tok/s\ncontext 寿命\n256K 真实窗口，session 活数小时\n131K 窗口，3 分钟死\n成本\n~$0.09/小时（满载电费）\n~$29/小时\n可靠性\n不撞墙\n3 分钟就 429 限流\n对比四个维度，本地部署在成本、上下文寿命与可靠性三项上占据优势，仅在有效吞吐单项上落后。云端极速服务赢得了吞吐数字，却在其余三项上面临劣势。赢下一项速度优势，补不回输掉的另外三项。把\nagentic 的真实代价算进去，两者的排位就反过来了。\n本地 27B 在 context\n寿命、成本、可靠性三项上全赢，只在吞吐一项上输给最快的云\nAPI，够用方案赢三输一\n本地部署拥有 256K 的真实上下文窗口，满载每小时电费约 9\n美分，会话可以平稳运行数小时。这种平稳持续的执行能力，远比几秒钟内的爆发式吐字更具实用价值。\n说句实话，有一类活它干不了。面对需要耗费数小时、依赖海量上下文维持复杂规划与深层推理的高难度任务，顶尖的超大前沿模型依然具备不可替代的推理优势。Qwen\n27B\n能够胜任日常主流的常规开发工作，但它并不是应对超长链路复杂重活的终极答案。\n这些数字怎么来的 + 别买 tok/s\n上面这些判断，都来自我自己机器上的实测。文中的各项实测数据均来自真实运行记录。有效吞吐计算为输出\ntoken 数加推理 token\n数除以生成耗时。计时从单轮消息发起开始，一直算到生成结束；如果该轮以发起工具调用告终，耗时就截断至最早一个工具开始执行的时间点，工具自身的运行时间不计入模型耗时，首字延迟\nTTFT 则完整计入。过滤规则限定单次输出至少 50 token，耗时落在 0.2 秒至 1\n小时区间，最终输出 P10、P50 与 P90 分位数。\n这套数据覆盖了连续 30 天内 17 个模型的全部日常实机调用，包含约 7.3\n万个真实样本，全是我日常编写代码和处理任务的实测数据，没有任何人工合成的跑分成分。把\n17 个模型按有效吞吐 P50 排列，本地部署的 27B\n模型正是我日常高频交互中响应最敏捷的主力。具体对比如下：\n模型\nP50 tok/s\nn\n备注\ngoogle/gemini-3.6-flash\n116.8\n1,163\n云端最快\n本地 qwen3.8-27b\n101.7\n11,108\n日常最快主力\nopenai/gpt-5.6-sol\n34.7\n24,211\n用得最多，reasoning 含 thinking\ngemini-3.6-flash 在云端阵营中实测速度居首；本地部署的 qwen3.8-27b\n紧随其后，且样本量超过 1.1 万次；gpt-5.6-sol\n承担了最多的任务负载（样本量达\n24,211），因为输出中夹带大量思维链过程，有效吞吐中位数偏低。这个分布说明：依据真实有效吞吐排定的实用座次，与厂商宣传的理论速度排行榜大相径庭。\nGLM-5.3\nGLM-5.3-Flash\nZ.ai\n（zai-coding-plan）\n40.1（n=8,526）\n19.7（n=53）\nOllama Cloud\n—（无数据）\n70.3（n=3,667）\n同一个 GLM-5.3-Flash 权重，Ollama Cloud 实测 70.3 tok/s，Z.ai 只有\n19.7 tok/s，差 3.6 倍，同一份权重下 serving stack\n决定了实际拿到多少速度，这也是我日常更常用 Ollama Cloud\n的原因。一个意外的点是 Z.ai 的 GLM-5.3-Flash（19.7）比它自己的\nGLM-5.3（40.1）还慢，可能是它的国产芯片栈还在适配中。不过 Z.ai Flash 的\nn=53 偏小，这个对比是方向性的，并非定论。\n给同行的选型建议并不复杂：挑选面向 agentic\n场景的模型，不必过分执着于厂商给出的标称吐字速率。更实际的做法是在符合自身业务的上下文深度下，实测端到端的有效吞吐，并综合权衡上下文窗口的实际承载力与调用成本。\n配套的查询工具已经开源在\nopencode_skill\n仓库中。工具做成了只读形式的命令行程序，方便直接读取本地 SQLite\n数据库。运行单条指令即可复现完整报表、导出 Markdown\n分析并生成图表。拿自己的历史真实负载跑一遍，往往能发现不少意料之外的结论。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/toks-deceptive-agentic-20260906.html",
+      "content_chars": 5598,
+      "content_sha256": "c1f4de991afceeb7068f6a943707e1122029f38feabb762418a346a623c5de9b",
+      "content_fetched_at": "2026-09-06T22:50:50.668966+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-06T00:00:00+00:00",
+      "collected_at": "2026-09-06T22:50:14.041694+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/toks-deceptive-agentic-20260906.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "tok/s 是 agentic 场景里最会骗人的性能数字",
+          "url": "https://yage.ai/share/toks-deceptive-agentic-20260906.html",
+          "content_sha256": "c1f4de991afceeb7068f6a943707e1122029f38feabb762418a346a623c5de9b"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:8238ee25055e28eb",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Agent 的浏览器放在哪：凭证不出本机的战争",
+      "target_url": "https://yage.ai/share/agent-browser-credential-boundary-20260905.html",
+      "text": "yage-share published: Agent 的浏览器放在哪：凭证不出本机的战争",
+      "at": "2026-09-05T00:00:00+00:00",
+      "external_id": "a:8238ee25055e28eb",
+      "url": "https://yage.ai/share/agent-browser-credential-boundary-20260905.html",
+      "title": "Agent 的浏览器放在哪：凭证不出本机的战争",
+      "content": "AI Agent\n安全与供应链\n2026 年 5 月到 8 月，四款独立 AI 浏览器先后退场。Google 的 Project\nMariner 在 5 月 4 日关停，OpenAI 的 Atlas 在 8 月 9 日停止工作，微软在 5\n月 13 日把 Edge 里的 Copilot Mode 并入浏览器本体，The Browser Company 的\nArc 更早，从 2025 年 5 月起只发安全补丁。给 agent\n单独做一个浏览器，这个产品思路在一年内证伪完毕。\n但 agent\n要用浏览器这件事本身没有消失。它的浏览能力分别退进了三个既有入口：Atlas\n的浏览功能并入了 ChatGPT 桌面应用，Mariner 的技术合并到了 Chrome 和\nGemini，Copilot Mode 则直接融入 Edge 本体。用户打开的还是原来那个\napp，只是里面多了一个会自己动的浏览器。退场之后，一个具体的工程问题浮出水面：agent\n操控浏览器干活时，页面在哪渲染，登录凭证放在谁的信任边界里？\n我把各家主要厂商的官方文档和安全研究翻了一遍。各家对这个问题的回答差异极大，大到让我意外。\n一年死掉四款独立\nAI 浏览器，真正的问题在浏览器放哪\n四款产品的退场集中在几个月内。Google 的 Mariner 亮相最早。它在 2025\n年初作为 Gemini 时代的实验项目登场，巅峰形态支持 10\n个并行任务，只面向每月 249.99 美元的 AI Ultra 订阅者。今年 5 月 4\n日，它的落地页换成了一句话告别：“感谢使用 Project Mariner。它已于 2026\n年 5 月 4 日关停，其技术已驶向其他 Google 产品。”（“Thank you for using\nProject Mariner. It was shut down on May 4th, 2026 and its technology\nvoyaged to other Google products.”）相关技术随后并入 Gemini Agent 和\nChrome 的 auto browse。关于这次关停的细读，包括 browser agent 与\ncomputer use 两个品类的分界，以及独立浏览器 agent\n和反爬系统的长期对抗，我在\n五月的分析\n里写过。\nOpenAI 的 Atlas 走得更远，生命周期却更短。这款去年 10\n月发布的独立浏览器，7 月 9 日官宣退役，8 月 9 日停止工作。官方\nFAQ\n写明了期限：“Atlas 计划于 2026 年 8 月 9 日停止工作。”（“Atlas is\nscheduled to stop working on August 9, 2026.”）浏览能力并入 ChatGPT\n桌面应用，交由办公线产品 ChatGPT Work 和编码线产品 Codex 接手。\n5 月 13 日，Edge 团队宣布 Copilot Mode\n这个名字退役，多标签推理、语音和视觉控制这些能力直接并入 Edge 本体，从 6\n月起进入\n稳定版通道\n。Engadget\n的标题道出了这场合并的逻辑：一切都会变成 Copilot Mode，所以 Copilot Mode\n这个名字不再需要。\nThe Browser Company 的 Arc 早在 2025 年 5\n月就进入维护模式，只发安全补丁。公司本体在 2025 年 10 月以 6.1\n亿美元卖给 Atlassian，后续产品 Dia 继续走 AI 浏览器路线。\n把这四件事放在一起看，可以看出一条收敛规律。行业观察者 nohacks\n总结道：“agent\n正在悄悄融进用户日常使用的那些入口：操作系统、已有的浏览器、聊天\napp。”（“agents are disappearing into the surfaces people already use\n(the operating system, the existing browser, the chat\napp)”）用户不会专门为 agent 切换浏览器，agent\n必须回到用户驻留的入口。\n产品形态的争夺告一段落，底层架构的博弈才刚拉开序幕。agent\n回到已有入口之后，每家厂商都要直面同一个核心问题：浏览器究竟放在哪渲染，登录态交给谁保管。\n从防火墙到共享池：一条排到底的队列\n这条队列有一根轴：登录态离你的机器有多远。一端是你自己的电脑，另一端是厂商的云。按这根轴，九家产品落进三个区：本机端、混合、云端。三段的取舍各有侧重：本机端最安全，但受限于你开着的那台设备；混合折中，但桌面应用得一直在线；云端弹性最好，但凭证入了云。\n九家厂商的凭证处理排成一条队列，分本机端、混合、云端三段，从左侧的密码阻断逐步走向右侧的全家共享池\n本机端\n：浏览器在你自己机器上渲染，登录态跟着你的账号留在本机。这一端有三家，做法相近，差别在保守程度。Edge\n站得最靠边，官方支持文档写明：“所有操作都在你的浏览器本地运行，你随时看得到、管得到。”（“All\nactions run locally in your browser, ensuring full visibility and\ncontrol.”）企业版更进一步，把凭证挡在门外：“Copilot\n会阻断对密码、支付方式或其他敏感信息的访问；遇到确实需要这些数据的情况，它会暂停，提示用户手动处理。”（“Access\nto passwords, payment methods or other sensitive information is blocked.\nIf that data is needed, Copilot pauses and asks users to\nintervene.”）Chrome auto browse 让 Gemini 3 接管你自己的\nChrome，本地渲染，登录态走 Google 账号信任链，目前限美国 AI Pro 和 Ultra\n订阅者（\n官方说明页\n）。Perplexity\nComet 也是本地执行：模型在 Perplexity\n云端规划任务，实际控制浏览器的是跑在本机的扩展，页面渲染和登录态全留在本地。这个技术事实后文法律段会用到。这一端最安全，凭证不出本机，代价是\nagent 受限于你开着的那台设备。\n混合\n：Cowork 往中间挪了一步。agent 任务在 Anthropic\n云端跑，浏览器却挂在用户本地桌面应用里渲染。\n官方支持文档\n写明：“内置浏览器在桌面应用里，所以即使\nCowork 会话在云端运行，Claude Desktop 也必须保持打开和在线，Claude\n才能用它。”（“The built-in browser lives in the desktop app, so Claude\nDesktop needs to be open and online for Claude to use it, even though\nyour Cowork session runs in the\ncloud.”）首次唤起时，用户主动从本机浏览器导入登录态，逐站勾选，银行、邮箱和单点登录站点默认不勾。登录态导入后跨任务生效，按物理设备持久化。云端沙箱只放短效凭证，\n架构文档\n写明：“沙箱只持有数小时内过期的会话级\ntoken，连接器授权 token 不进沙箱。”（“The sandbox holds only\nsession-scoped tokens that expire within hours. Connector authorization\ntokens never enter the sandbox.”）代价是桌面应用必须一直在线。\n云端\n：浏览器跑在厂商云上，登录态跟着上云。这一端内部又分几种。OpenAI\n把浏览能力分了三层走，\n分流原则\n写明：“有专用集成时用插件，需要已登录的浏览器上下文时用你自己的浏览器，访问\nlocalhost 时用内置浏览器。”（“using plugins when a dedicated integration\nis available, your browser when it needs signed-in browser context, and\nthe built-in browser for localhost.”）到了云浏览器这一层，\n官方文档\n写道：“Work\n有自己专属的浏览器，跑在云端一台独立的机器上，不是你手机或笔记本上的浏览器……它维护自己的\ncookie、浏览器数据和登录会话。”（“Work uses its own browser, running on\na separate computer in the cloud, not the browser on your phone or\nlaptop… It maintains its own cookies, browser data, and signed-in\nsessions.”）即使关掉用户自己的设备，后台任务依然持续运行。登录走安全表单，官方文档说明了机制：“ChatGPT\n看不到你的用户名或密码……通过安全登录表单输入的凭证直接进浏览器，不进模型上下文。”（“ChatGPT\ncannot see your username or password… Credentials entered through the\nsecure sign-in form go directly to the browser and are not visible to\nthe model.”）Devin\n把云端登录态存成团队公用：用户在云端浏览器完成一次登录后，可以把登录态打包固化到组织\nblueprint，之后团队任何新 session 自动继承这套状态。\n官方文档\n注明了安全排除规则：“打包时会排除保存的密码……所以\nprofile 携带的是会话状态，不是凭证。”（“Saved passwords are excluded… so\nthe profile carries session state, not credentials.”）Manus\n给每个任务一台独立云虚拟机，用户在云浏览器手工登录一次，\n第三方技术分析\n显示会话数据在本地和云端各加密一次，需要时再注入新沙箱。Browser\nUse Cloud 的做法是把整个 Chrome\nprofile（含保存的密码）上传到云端供自动化调用，官方\n文档\n坦承其中包含保存的密码。Grok\nBot 站到最激进那头，官方\nFAQ\n写明：“你账号下的每个 Bot\n都用同一台常驻云电脑。它们共享这台电脑的文件、浏览器会话和登录态，方便不同\nBot 之间接力处理任务。这台电脑按用户分配，不按 Bot 分配。不要把不同的\nBot 当作安全边界。”（“Every Bot on your account uses one persistent\ncloud computer. They share its files, browser sessions, and logins so\nthey can hand work off. The computer is assigned per user, not per Bot.\nDo not use separate Bots as a security\nboundary.”）这一端弹性最好，关机也能跑、可并发，代价是凭证一旦上云，出事时波及的范围就大了。\n在这条队列中段，Cursor、Devin、Replit 与 ChatGPT Work\n四家厂商在没有事先商议的情况下，收敛出同一种接管机制：把云端浏览器实时推到用户屏幕前，等待人工完成关键交互。Replit\n的\n文档\n记录了这一动作：“按下’开始接管’，你可以点进测试预览，完成必要的步骤，然后让\nAgent 继续。”（“Pressing ‘Begin take over’ enables you to click into the\ntesting preview, complete the requisite steps, then allow the Agent to\ncontinue.”）用户点进预览界面，手动完成验证码校验或双因素认证，再把控制权交还给\nagent。人类成了整个 agent\n生态里专门负责填报凭证与通过人机验证的生物接口。\n产品\n浏览器渲染\n登录态位置\n状态（2026-08）\nEdge（Browse with Copilot）\n本机\n本机，密码支付阻断\nM365 Premium 推送中\nChrome auto browse\n本机\n本机，Google 账号信任链\n美国 AI Pro/Ultra\nPerplexity Comet\n本机\n免费全平台\nCowork 内置浏览器\n本机\n本机，逐站导入\nPro/Max/Team 推送中\nChatGPT Work\n云\n云，secure form 登录\n已上线\nManus\n云端独立虚拟机\n云，手工登录后加密\n独立运营恢复中\nGrok Bot\n云端常驻虚拟机\n云，全家 bot 共享\nbeta\nDevin\n云端虚拟机\n云，组织级 blueprint\n已上线\nBrowser Use Cloud\n云，整包 profile 上传\n云，含保存的密码\n已上线\n编码工具在这张技术版图上走出了另一条线。Cursor\n采用双层浏览器架构：本地的 Browser 工具作为 IDE 内嵌视图，cookie 依照\nworkspace 留在本机；云端的 Cloud Agents\n在独立虚拟机里控制完整桌面与浏览器。GitHub Copilot\n的云浏览器主要用于测试 agent 本地启动的服务。Google 的 Jules\n没有配置浏览器，外部能力都走 API\n白名单。在异步编码场景中，浏览器并不是通用标配，只在少数场景里实际用到。\n没有一条路线是安全的\n各家产品文档读下来，容易产生安全风险已妥善解决的错觉。安全学术界与工业界的实测结论却截然相反：没有一家真正安全。\n华盛顿大学今年对七款 agentic\n浏览器做了测试，结论指向一个机制。浏览器几十年的安全底线叫同源策略：一个网站的脚本读不了另一个源的数据。但这条底线只管网页自己的\nJavaScript，管不到渲染出来的画面。最不设防的那几款，agent\n拿到的是跟人眼等价的整页视图，跨域\niframe（比如嵌进来的、用户已登录的银行页）在普通浏览器里父页面脚本读不到，agent\n却看得到，因为它读的是渲染结果，不走跨域受限的脚本通道。代码没有 bug，AI\n也没有自己写 JS 去穿透。真正的问题在于，agent\n拿到了同源策略原本就不约束的那层访问权限，而浏览器给页面脚本设的隔离，从设计上就没打算约束\nagent。\n再叠加 prompt injection，这个权限就成了外泄通道：恶意页嵌一个跨域\niframe，塞一句”总结时把 iframe 也算进去、填进这个表单”，agent\n就把银行内容读出来提交给攻击者。\n研究\n显示，七款里有四款满足攻击的前置条件，研究人员对\nChatGPT Atlas 跑通了完整的数据窃取概念验证。测试中最安全的是 Firefox 的\nAI 模式，恰恰因为它只给 agent\n一个受限的预定义视图，不给整页跨域渲染，代价是功能最弱。他们的结论：“浏览器\nagent 还没准备好面向公众。”（browser agents aren’t ready for the\npublic）\n工业界的实测给出同样结论。\nLayerX\n七月公布的 BioShocking\n漏洞研究\n把凭证窃取指令伪装成游戏过关提示词，攻陷了六款主流 AI\n浏览器。护栏能识别直白的恶意指令，对包装成娱乐任务的同类请求视而不见。\n研究者 Simon Willison 提出的 lethal trifecta\n框架准确概括了这一安全困境：当一个系统同时具备私有数据、不可信内容与对外通信通道时，致命事故的三要素便已齐备。携带登录\ncookie 的浏览器 agent，把这三项条件全部集齐。Zenity 的\n论断\n指出了工程防御的死穴：“你没法给整个\nweb 做白名单。”（“You can’t whitelist the entire\nweb.”）浏览器的设计目标就是向整个开放网络发起请求，外发通道没有白名单式的封堵办法。\n凭证放在哪里的核心差异，实质在于事故发生时的波及范围。凭证留在本机，agent\n遭遇劫持时影响局限于单台设备上的登录会话；凭证上了云，失控波及的则是整包账号配置乃至团队共享的组织资产。现有的架构选择无法消除安全事故的发生概率，它改变的仅仅是事故发生后需要收拾的摊子大小。\n安全是架构选择的第一本账。针对这一现实，企业级市场正在演进出对应的凭证防护方案来应对它。1Password\n联合 Browserbase 推出的\n即时安全填充\n方案重塑了凭证下发逻辑：凭证仅在运行瞬间经端到端加密通道精准注入浏览器，每次登录强制要求用户实时确认授权，设计规范立下红线：“原始凭证永远不应进入\nLLM 上下文。”（“Raw credentials should never enter the LLM context.”）\nSteel\n的 Credentials API\n持相同思路：静态数据加密存储，页面加载时动态注入，agent\n只能接触登录后的页面渲染结果，接触不到底层密码。这类方案正视了浏览器走向云端的技术现实，把防御重心从凭证放在哪里转向了谁在何时具备注入权限。\n架构选择还要过法律和算力两道关\n但同一套架构还要落到另外两本账上：出了事法律责任归谁，算力成本谁来扛。八月初的一份判决，把这一工程争议推进了法律层面。Amazon\n此前起诉 Perplexity，主张 Comet 浏览器内的 AI 助手抓取 Amazon\n网站触犯了美国计算机欺诈与滥用法案 CFAA，理由是 Amazon 从未许可\nPerplexity 访问其用户账户。今年 3 月，地方法院曾支持 Amazon\n并签发初步禁令。8 月 4\n日，联邦第九巡回上诉法院撤销了该项禁令。上诉法院认定 Perplexity\n不太可能承担责任，因为操控这个工具发起网络请求的是用户本人。法院在判决书中采纳了电子前沿基金会\nEFF\n在法庭之友文书里的技术界定，并明示该表述”最清楚地阐明了系统的性质”（“articulates\nthe nature of the system most clearly”）：CFAA\n规制的是未经授权的非法访问，而向 Amazon 服务器发起访问请求的是 Comet\n用户，Perplexity 自身并未访问（详见\nEFF\n对判决的记录\n）。\n这项判决与 Comet 的底层架构紧密绑定。Comet\n的设计是云端大脑协同本地执行：Perplexity\n的模型在云端规划任务，但控制浏览器的本地扩展跑在用户自己的机器上，发起网络请求的是用户设备。这个技术事实让”向\nAmazon\n服务器发起请求的是用户”在法理上站得住脚，法院据此把法律责任归结在用户侧。纯云端浏览器的开发商在同类诉讼里，对应的技术事实则会换一个方向。架构选择在司法抗辩中成了责任划界的核心证据。\n判决的分界线：Comet\n的请求发自用户设备，法院把责任归到用户侧；云端浏览器的请求发自厂商云端，技术事实换一个方向\n算力成本这条线不显山露水，但底层的重构同样在发生。Cloudflare 在 8 月\n7 日推出了专为 agent 重新设计的轻量级浏览器 Kitesurf，运行在 Workers\n基础设施上。官方在\n发布公告\n中道出了研发初衷：“像\nChromium 这样的浏览器引擎是为人设计的，不是为 agent……为每个 agent\n单独维持一个完整实例，成本高得扛不住。”（“browser engines like Chromium\nwere built for humans, not agents… providing every agent with its own\ninstance is prohibitively expensive.”）实测数据显示：Kitesurf\n在截图操作上的 CPU 消耗仅为 Chromium\n的三分之一，内存开销约为后者的五分之一，代价则是整体耗时拉长约 1.7\n倍。这套引擎的架构细节，以及它背后云端并发密度与本地真实态的两极分化，我\n八月中\n写过完整分析。随着云端浏览器逐步采用专为\nagent 定制的执行引擎，基础设施的竞争单位正从单实例内存消耗转向每 token\n上下文成本。本地架构凭真实浏览器指纹与现成登录态建立的技术壁垒，与云端方案的算力成本优势将进一步分化。\n回到最初的选型问题。开发者可以借助三个核心维度进行决策自问：业务任务是否真正依赖真实登录态，抑或公开数据即可满足；安全合规红线是否允许凭证脱离本地；任务场景是否必须依赖无人值守的后台弹性。若第一题答案为否，调用标准\nAPI\n与搜索即可，无需引入浏览器复杂度。若第二题答案为否，本地执行路线是唯一合规选择，Edge\n与 Cowork\n处于此列。若第三题答案为是，则需采纳云端虚拟机路线换取弹性支持，由此必须承担登录态入云的风险，并配套引入类似\n1Password 的即时注入控制。\n开源生态目前尚未给出成熟的中间态方案。Browser Use\n开源版默认在本地运行，Playwright MCP 默认持久化本地\nprofile，但背后的商业实体普遍在同步推广整包 profile\n上云的托管服务。默认偏向本地、商业利益拉向云端，构成了开源基础设施的普遍现状。类似\nCowork\n这种云端规划搭配本地渲染的混合架构，在开源社区中尚缺乏高度产品化的现成方案。\n浏览器放在哪里并没有放之四海皆准的标准答案，但在 2026\n年的技术演进中已经延展成一条层次分明的队列。下次你评估任何一款 agent\n产品时，在审视大模型能力与定价方案之余，不妨多问一句：它的浏览器运行在哪里，我的登录态究竟流向何处。这一问，足以看清它在整条队列里的位置，以及发生意外时波及的范围有多大。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/agent-browser-credential-boundary-20260905.html",
+      "content_chars": 9214,
+      "content_sha256": "57eae944eb1ec2eb489a92c683377175142aef09c0191d89a25b8ebad96ab70a",
+      "content_fetched_at": "2026-09-06T22:50:50.750928+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-05T00:00:00+00:00",
+      "collected_at": "2026-09-06T22:50:14.041694+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/agent-browser-credential-boundary-20260905.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Agent 的浏览器放在哪：凭证不出本机的战争",
+          "url": "https://yage.ai/share/agent-browser-credential-boundary-20260905.html",
+          "content_sha256": "57eae944eb1ec2eb489a92c683377175142aef09c0191d89a25b8ebad96ab70a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
