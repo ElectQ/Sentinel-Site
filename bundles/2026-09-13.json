@@ -1,164 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-09-13",
-  "generated_at": "2026-09-12T22:58:16.879530+00:00",
-  "item_count": 6,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:825df944b5ebf08f",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-12T22:55:37.318430+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-12T22:56:33.894888+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:f98c01a96cb60a8a",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: C++ or C#?",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-12T22:55:37.318430+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c.html",
-      "title": "C++ or C#?",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-12T22:56:45.025847+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:acebefcc3212e892",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-12T22:55:37.318430+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-12T22:56:56.088644+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:d48c2d3a1cf43e8f",
-      "kind": "publish",
-      "text": "denizhalil-blogs published: Vulnerability Analysis: CVE-2026-86426 LibreNMS <= 26.7.0 – Unauthenticated API Access",
-      "actor": "denizhalil-blogs",
-      "actor_url": "https://denizhalil.com/blogs/",
-      "created_at": "2026-09-12T13:08:24+00:00",
-      "html_url": "https://denizhalil.com/2026/09/12/cve-2026-86426-librenms-unauthenticated-api-access/",
-      "title": "Vulnerability Analysis: CVE-2026-86426 LibreNMS <= 26.7.0 – Unauthenticated API Access",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Introduction\nCVE-2026-86426 represents a critical authentication bypass vulnerability affecting LibreNMS network monitoring installations running version\n26.7.0\nor earlier. Publicly disclosed and addressed in late 2026, the vulnerability received a severe CVSS v4.0 rating of\n9.2 (Critical)\ndue to its low attack complexity and high impact. The underlying flaw resides within the API authentication middleware, which fails to strictly enforce parameter types during input processing. As a result, an unauthenticated remote attacker can completely bypass standard token authentication mechanisms, hijack valid session permissions, and silently access internal system APIs. In high-privilege scenarios, this access quickly escalates to Remote Code Execution (RCE), giving attackers full control over the underlying host.\nLearning Objectives\nIdentify the conditions that lead to type confusion vulnerabilities in REST APIs processing JSON payloads.\nUnderstand how loose type comparison rules in MySQL databases interact with application-level validation to cause authentication bypasses.\nAnalyze the escalation path from an unauthenticated API request to administrative privileges and Remote Code Execution.\nApply proper patching and mitigation strategies to protect network monitoring software against authentication bypass vectors.\nWhat is LibreNMS <= 26.7.0 – Unauthenticated API Access CVE-2026-86426\nLibreNMS relies on secure API tokens to authenticate REST API requests sent to its management interfaces. In vulnerable installations running version\n26.7.0 or earlier\n, a critical logic flaw exists in the application’s authentication middleware (\nApiTokenGuard\n). This middleware fails to sanitize or strictly cast user-supplied input types when processing API token parameters sent via structured JSON payloads, exposing the authentication routine to severe type confusion. The core vulnerability emerges from the interaction between Laravel’s request parser and MySQL’s implicit type conversion rules. When an incoming JSON body contains an integer instead of an expected string token, the application forwards the numeric value directly into the database query builder. MySQL attempts to compare this integer with string-formatted hash values stored in the database, resulting in automatic type coercion that drastically reduces the entropy required to achieve a valid match.\nConsequently, an unauthenticated attacker does not need to guess or steal complex, high-entropy API key strings to gain access. By systematically supplying small integer values (ranging from\n0\nthrough\n9\n), an attacker can force the database to evaluate a valid token match, granting them immediate access under the context of an existing user or administrator account.\nStrict Type Failure:\nThe application accepts non-string data types (integers/arrays) within JSON parameters without validating them against expected string formats.\nDatabase Coercion Exploitation:\nMySQL’s automatic casting rule truncates stored hash strings into numeric integers during comparisons, enabling loose equality matches.\nMinimal Attack Complexity:\nAn attacker only needs to send up to 10 lightweight HTTP requests (testing single digits\n0–9\n) to bypass the API authentication layer entirely.\nFull Session Hijacking:\nSuccessful authentication grants the attacker all permissions attached to the matched token, opening pathways to internal network telemetry and server takeover.\nTechnical Detail: How the Vulnerability Works\nThe technical driver behind CVE-2026-86426 lies within LibreNMS’s\nApiTokenGuard\nauthentication mechanism and how Laravel’s request pipeline handles JSON-formatted body parameters. LibreNMS accepts API authentication tokens through multiple input channels, including HTTP headers, URL query parameters, and POST request body parameters. When an incoming request uses\nContent-Type: application/json\n, Laravel parses the payload into PHP native types without converting integer literals to strings. Consequently, sending\n{\"api_token\": 0}\ninjects an integer primitive (\n0\n) directly into the authentication handler rather than the expected high-entropy alphanumeric string. Because\nApiTokenGuard\nforwards this unvalidated input straight into the database query builder, the resulting SQL query attempts a direct comparison between the integer parameter and the string-based\ntoken_hash\ncolumn in the database. In standard relational operations, strict type integrity prevents mismatched data comparisons; however, MySQL performs implicit type conversion whenever an integer is compared against a string field. Under MySQL’s coercion rules, any text string beginning with a non-numeric character (such as\n\"a3f1...\"\nor\n\"e8b2...\"\n) evaluates numerically to\n0\n. Similarly, a hash string starting with a digit (such as\n\"5d9c...\"\n) evaluates directly to that leading digit (\n5\n).\nThis loose coercion mechanism creates a critical authentication bypass surface through brute-force reduction. Instead of cracking a 64-character hash, an attacker only needs to test single-digit integers from\n0\nto\n9\nto successfully trigger a match against existing active tokens in the database. Once matched, the authentication layer yields a valid user session context. If the matched token belongs to an administrative account, the attacker can leverage native administrative capabilities—such as custom PHP blocks within LibreNMS alert templates (\n@php ... @endphp\n)—to instantly gain arbitrary code execution on the underlying server.\nPayload Type Preservation:\nJSON endpoints preserve raw data types, allowing numeric primitives to bypass string-oriented sanitation filters in the application layer.\nImplicit SQL Coercion:\nMySQL casts stored string hashes to integer values during comparison operations, causing non-numeric starting characters to evaluate as\n0\n.\nReduced Entropy Space:\nThe required brute-force search space shrinks from\n16\n64\npossible hash combinations to just 10 single-digit integer requests (\n0\nthrough\n9\n).\nPost-Authentication RCE:\nAdministrative API access allows direct modification of system alert templates, enabling native command execution through embedded template directives.\ncurl -i -s -k -X POST \"http://target.local/api/v0/system\" \\\n-H \"Content-Type: application/json\" \\\n-d '{\"api_token\": 0}'\nHTTP/1.1 200 OK\nDate: Sat, 12 Sep 2026 11:20:00 GMT\nServer: Apache/2.4.52 (Ubuntu)\nContent-Type: application/json\n{\n\"status\": \"ok\",\n\"system\": {\n\"version\": \"26.7.0\",\n\"db_schema\": \"1025\",\n\"php_ver\": \"8.2.10\",\n\"python_ver\": \"3.10.12\",\n\"mysql_ver\": \"10.11.2-MariaDB\",\n\"rrdtool_ver\": \"1.7.2\",\n\"netsnmp_ver\": \"5.9.1\"\n},\n\"authenticated_as\": \"admin_user\"\n}\nRemediation & Mitigation\nAddressing CVE-2026-86426 requires an immediate, prioritized response to eliminate the underlying type confusion vulnerability within the authentication pipeline. The definitive resolution is to update the LibreNMS software to version\n26.8.0\nor later. The patch introduces strict parameter type checking within the\nApiTokenGuard\nmiddleware, ensuring that incoming\napi_token\nvalues are explicitly validated as strings before being processed by the database query builder. This prevents non-string JSON data types from triggering MySQL’s implicit coercion rules during token lookup operations. For organizations unable to deploy the official patch immediately, defense-in-depth measures should be applied at the network and application monitoring layers to reduce potential exposure. Restricting API access to trusted administrative IP segments significantly reduces the reach of unauthenticated attackers. Additionally, active monitoring of web server access logs and API tokens can assist incident response teams in identifying preliminary probe attempts, verifying system integrity, and revoking potentially compromised credentials.\nApply Security Update:\nUpgrade LibreNMS installations to version\n26.8.0+\nimmediately to enforce strict string input validation across all REST API endpoints.\nRestrict API Network Exposure:\nDeploy strict firewall rules, WAF policies, or internal VPN access controls to limit\n/api/v0/\nendpoint access exclusively to authorized management hosts.\nAudit Web Server Logs:\nSearch HTTP request logs for POST or GET payloads directed at API endpoints that contain integer values or array types within the\napi_token\nparameter.\nRotate API Tokens:\nRevoke and re-issue all existing administrative API keys if log auditing reveals suspicious single-digit integer probes (\n0–9\n) targeting the API interface.\nConclusion\nCVE-2026-86426\nserves as a stark reminder of how subtle interactions between web application frameworks and relational database type systems can completely undermine critical security boundaries. Type confusion vulnerabilities of this nature highlight that security mechanisms must validate not only the presence and format of user input, but also its exact data type. When high-level web frameworks pass unvalidated JSON data primitives directly into database query builders, implicit engine behavior can easily transform low-complexity inputs into full authentication bypasses. ecause LibreNMS acts as a central telemetry and management hub across complex infrastructure environments, a compromise of its API interface yields extensive operational reach. Exposure of device configurations, internal IP maps, and SNMP credentials places the entire surrounding network at risk of lateral movement and administrative takeover. Consequently, leaving vulnerable LibreNMS deployments exposed to unauthenticated networks poses a direct threat to enterprise infrastructure security. Organizations maintaining vulnerable instances running version 26.7.0 or earlier must prioritize immediate isolation and remediation. Applying the\n26.8.0+\npatch, auditing historical access logs, and enforcing strict network segmentation around monitoring interfaces are essential steps to neutralize this threat and maintain a resilient security posture.\nLearning Basic Data Types in Python\nWeb Directory and File Scanner by Gobuster\nThe Importance of MySQL in Linux for Web Penetration Testing\nVulnerability Analysis: CVE-2026-72898 Metabase – Unauthenticated SQL Injection\nVulnerability Analysis CVE-2026-55040 Microsoft SharePoint JWT Token Authentication Bypass\nThe post\nVulnerability Analysis: CVE-2026-86426 LibreNMS <= 26.7.0 – Unauthenticated API Access\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://denizhalil.com/2026/09/12/cve-2026-86426-librenms-unauthenticated-api-access/",
-      "content_chars": 10431,
-      "content_sha256": "ef0c493ec8b670f65a0999a0d946873c780a138722ae415de3189cd9337fee29",
-      "content_fetched_at": "2026-09-12T22:57:23.272407+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "DenizHalil Blogs",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:201a16a23aae4e68",
-      "kind": "publish",
-      "text": "yage-share published: Anthropic 指控 30 万次请求被静默转发，被带走的是真实生产数据",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-12T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/router-input-as-product-20260915.html",
-      "title": "Anthropic 指控 30 万次请求被静默转发，被带走的是真实生产数据",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "安全与供应链\n你以为在用 Kimi\n平时在终端里配个国内模型的接口，或者在网页里贴一段业务代码，大家默认请求都在服务商自己的机房里跑。光标在屏幕上一行行吐字，看着一切正常，背后可能刚刚绕了大半个地球。服务端把你的提示词原封不动转给境外的顶级模型，等对方生成完毕，再套上国内模型的外壳递回给你。\n聊这事不是要拉踩哪家厂商，更不是帮谁打广告，通报点名的公司都没回应，归因也只有\nAnthropic\n单方说法，谁在干这件事眼下说不死。整条链路从官方接口到灰色中转，其实都存在同一种风险，发进去的内容随时可能流向未知的第三方。别把大模型当树洞，公司里的东西想到什么就往里扔。要么认真研究清楚服务的条款和链路，要么干脆直连官方或自建网关，这两条路都比以为有合同就没事靠谱，后面的章节会具体讲怎么应对。\nAnthropic 在九月发了一份\n技术调查\n，把这种私下转发的隐秘通道摆到了明处。一家国内团队在短短十天内，把大概\n30 万次用户请求直接转给境外闭源模型，绝大部分流向了 Claude\n的旗舰版本。他们为此动用了 5380 个虚假账号做中转，Anthropic\n也不知道这些客户是否被告知过，远端服务器一直在归档他们截到的对话内容。\n不过报告原文写的其实是关联运营者，通报里点到的公司也都没公开回应，到底是大模型实验室官方在做，还是中转站在偷偷卖号、盗号或者自建假服，眼下只有\nAnthropic 的单方说法。报告在安全章节里还记录了一个叫 GTG-50021\n的黑产团伙，专门兜售打折 Claude\n账号，买家拿到的是假货，流量悄悄转给其他模型，工具还会顺手偷走买家的\nAnthropic 凭证转手再卖。你以为在用 A 实际在跑 B\n这件事，实验室、黑产和中转站都可能在干，用户从体验上没法区分。\n很多人以为充值订阅买了会员就能防住泄露，现实恰恰相反。你真金白银掏了服务费，手头的真实业务数据却顺着这条暗道，成了别人训练自家模型的免费养料。拿顶级模型的回答去训练自己的模型，行话叫蒸馏，你的日常输入在别人眼里就是现成的蒸馏跳板。\n你以为的直连与实际的静默转发管道：屏幕上的回答与真实服务的模型不是同一个\n看这份海外报告，大家得先留个心眼。报告是 Anthropic\n发的，被抽走能力的也是它，后台日志只有它自己看得到，里面的统计数字从没经过第三方核实。况且通报里提到的几家国内团队一直都在公开论文并开源模型权重，Anthropic\n自己也在报告里写了限定语，比如在小米那个案例里说明没有迹象表明美国用户的数字暴露了。\n退一步讲，就算把报告里的数字打个对折，这套链路暴露出来的问题也足够吓人。大家以为的安全直连，其实早已在没有任何提醒的情况下，在境外的公共管道里裸奔了一圈。\n泄露的具体是什么\n大家很容易以为，顺手流进转发管道的顶多是些公开常识或无伤大雅的闲聊。官方报告披露的细节却表明，通道里流淌着密密麻麻的生产数据。这并不是黑客攻破内网偷走的信息，全由一线员工在日常工作里自己输进对话框。\n报告里列出了好几个具体的真实样本。一家跨国药企的工作人员为了测算项目，把胡志明市、吉隆坡、曼谷与卢布尔雅那的四国基建预算表贴进提示词，还顺手注明周四评审前清理好模型。这批详细的财务测算经由第三方路由转发，就这么留在了对端服务器上。\n技术人员泄露的往往更加要命。有人让开发工具写脚本，随手将活跃的\nTelegram 机器人密钥、飞书应用凭证与 Notion\n知识库集成密钥塞进上下文，这些生效中的凭证随即流向外部网络。还有某市公安局的技术人员核查轨迹，直接把公民身份证号输入对话框比对行踪与警务记录，原本该严加保护的内部信息脱离了安全范围。\n官方通报里记录到，受影响的终端用户达到数百人，涉及十余种语言。官方详细统计了外部模型抓取了多少次交互，却始终没有公布普通用户数据泄露的总体规模估算。蒸馏了多少次有精准数字，用户到底泄露了多少数据却没人知道，两边受到的关注度截然不同。\n除了官方调查，还有一份引发热议的外部爆料。独立研究者 Shou\n宣称从中间商手里买到了 6TB 的数据包，里面装有大量 SSH 密钥、企业\nVPN、云平台密钥和 GitLab\n令牌。这属于尚未经第三方核验的单源说法，不管这批数据的卖家是中转站运营者自己还是别的什么人，这个市场都存在，前面提到的假服案例也说明买卖双方都可能不是你以为的那个角色。但今年四月的\n学术测量\n早就证实了中转隐患：在测试的\n428 个中转服务中，有 17\n个触发了安全监控探针。中间节点能够明文查看输入内容，从来就是经过确认的事实。\ninput 的三本账\n大家发给中转服务的每段提示词，在背后都连着好几个变现渠道。很多人以为花钱买到的是模型生成的回答，你的输入内容在下游其实跑通了三条赚钱路径，分别流向黑客犯罪、模型训练和公开的数据倒卖。\n第一种是直接落入黑产手中。四月发表的学术研究在观测中转服务时，从 440\n个会话里截获了 99 组系统鉴权凭据，涉及约 13GB\n明文流量。恶意攻击者顺着输入管道批量扫描密钥，转头就拿去当成攻破外部服务器的现成工具。\n第二种需求来自急着提升能力的大模型厂商，Anthropic\n测算发现各家非授权蒸馏总量超过 1.8 亿次，Alibaba 占 1.51 亿次，Moonshot\n约 2300 万次，DeepSeek 也有 1210 万次。为了筛选高价值数据，DeepSeek\n接收请求时还会检测工具特征代码，专门把带有 Claude Code 或 OpenCode\n标记的请求送给推理模型。编程智能体包含密集的推演和工具调用，正是训练代码模型稀缺的燃料，天天写代码的程序员不知不觉成了重点收割对象。\n第三种做法更直接，把用户的对话当成现成商品转卖。Anthropic\n官方调查明确记录了中转站的倒卖模式：服务运营者把交互记录存下来卖给第三方，商汤等团队搭建自身流程，就采购过数据商收集来的用户对话。每日经济新闻早在五月份的调查报道里，就揭露过中转站倒卖用户数据的产业链，比海外官方报告早了四个月指出这一行业现实。\n同一条传输链路，同一批由用户敲进去的内容，全都在没有经过大家同意的情况下，顺畅跑通了三条变现通道。你在屏幕这端为每次调用付一点\ntoken 费用，网络那端却已经把你的业务数据结算了三次。\n合同没挡住，防御也不覆盖\n得知数据在外面乱跑，许多人的第一反应是去翻服务协议，觉得签了合同总能当护身符。但对照各家条款来看，现实情况比大家想的松散得多。纸面约定非但没能挡住数据的私下流转，反而给后续的数据处理留下了宽泛借口。\n深度求索在\n条款\n中写明，会把输入数据用于训练算法模型，并且明确覆盖了接口服务。月之暗面在\n开发者协议\n中也规定，用户授予平台免费使用权，允许平台把输入输出拿去做服务优化。普通用户在网页端充了会员，在界面里连个关闭训练的开关都找不着，想要退出必须发邮件人工申请，还要等上\n5 至 7 个工作日才能生效。\n退一步讲，即便用户同意拿数据去改进服务，大家的常识也是帮自家模型做优化。悄悄把付费用户的提示词转发给竞品模型拿来做蒸馏，这种做法怎么看都说不过去。月之暗面的\n服务文档\n写着，未经同意、法律要求或实现产品功能所必需这几个情况之外，不会向第三方共享、出售或提供对话内容，如果私下转发与转售属实，那便是连自家白纸黑字的承诺都没能守住。\n既然合同靠不住，厂商推出来的技术防护同样顾不上普通用户，重心全在保全自己的资产。Anthropic\n给自家 Fable 5.1 加的思维链保护，当前只对新 API\n账号生效，挡的是别人抽取它的推理过程；讨论已久的响应签名至今没有上线时间表，主要校验的也是返回内容有没有遭篡改。学术论文早就把话挑明了，凭据在发往中间节点那一刻就已暴露在请求路径上，下游签名对输入端的防护起不到实际作用。\n合同没能挡住私下流转，技术手段只护返回不护输入，大家在客户端里更是什么都察觉不到。制度约束、技术防线和用户的知情权同时落空，发出去的每一句话，其实都落在了没有防护的真空地带。\n三层防线全景：合同覆盖内部优化，防御护住响应路径，用户输入层零防护\n现在怎么办\n看清这套链路的底细之后，咱们日常写代码、调模型必须建立起切实的防范意识。核心原则只有一条：只要不是自己能够掌控的独立通道，发出去的每一段提示词，都应当按照公开发布的标准来对待，包括那些自以为受到商业合同保护的内容。\n接入任何第三方服务之前，大家可以先弄清三个最实在的问题：谁有权限完整读取这趟请求，读到数据后在中间节点保存多久，以及留存下来的交互记录最终能卖给谁。这三个问题直接决定了你的输入数据暴露在多大的风险之下。\n落到具体的工程实践上，三条日常纪律足以避开大部分麻烦： -\n涉及核心业务与高价值凭据的文本，不走非自有通道。 -\n企业采购接口时，选用具备不参与训练与禁止第三方共享承诺的商业版本，优先匹配提供零数据保留选项的供应商，国内大厂定制版也有部分给出了不入训练池的承诺。\n-\n若对中间层链路存有疑虑，关键业务应当绕开代理直连官方原生接口，或者在私有基础设施上自建网关。\n那份标价出售且体积达到 6TB\n的数据集合，正是这片安全真空开出的真实市场报价。国内财经媒体早在四个月前就指出了中转站倒卖用户资产的产业生态，它脱胎于日常的技术交互，已经在真实的商业网络中运转了半年之久。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/router-input-as-product-20260915.html",
-      "content_chars": 3833,
-      "content_sha256": "ecc733db28ac2fe1472bfc125f9aa0afe41cf7ca24cd2471f5f47e647f251624",
-      "content_fetched_at": "2026-09-12T22:57:02.316178+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:3a7956e21efd12cc",
-      "kind": "publish",
-      "text": "yage-share published: 本周四条 AI 新闻：司法部站队 fair use、DeepSeek 押注昇腾、OpenClaw 转向团队、员工对 AI 情绪转冷",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-11T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/ai-news-digest-20260914.html",
-      "title": "本周四条 AI 新闻：司法部站队 fair use、DeepSeek 押注昇腾、OpenClaw 转向团队、员工对 AI 情绪转冷",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "产业与竞争\n治理与合规\nAI Agent\n这周有几条新闻值得单独拿出来说。这四条没有统一主题，但都触碰到了 AI\n行业此刻最真实的张力：训练数据到底算不算侵权、国产芯片能不能撑起推理规模、开源\nAgent 能否变成团队基础设施、以及被 AI\n波及的员工到底怎么想。四条各自成立，下面分开讲。\n美国司法部正式站队：用版权作品训练\nAI 属于 fair use\n美国司法部在 AI 版权纠纷里明确表了态。9 月 1\n日，它向纽约南区联邦法院提交了一份\nStatement\nof Interest（利益陈述书）\n，在合并审理的 OpenAI 版权诉讼（In re\nOpenAI，MDL No. 25-md-3143，主审法官 Sidney H.\nStein）中主张，把受版权保护的作品用于训练大模型不构成侵权，属于\ntransformative fair use。案件覆盖纽约时报 2023 年底对 OpenAI\n与微软的起诉，以及并入同一程序的所有出版方与作者诉讼。\n先把定性说清楚：这是一份依据 28 U.S.C. § 517\n提交的政府法律立场文件，不是立法，也不是裁决，对法院没有约束力，Stein\n法官可以采信也可以无视。它之所以重要，是因为行政分支正式把赌注押在了 AI\n行业一边，这会成为后续所有同类诉讼和国会立法讨论的参照。\n司法部的核心论证分三层。第一，把训练和输出拆开看：训练阶段整本书被复制但从未公开，输出阶段”often\nif not always lack substantial\nsimilarity”（经常（若非总是）与原作缺乏实质性相似），因此应分开用 fair\nuse 分析。第二，训练是”extraordinarily transformative”，援引\nGoogle\nBooks 案\n和 Google v. Oracle\n的先例，并指出训练不会产出替代原作的文本，市场影响因子同样倾向 fair\nuse。第三是政策与国安框架，原文这样写：让美国发展强大 AI\n产业变得困难的法律规则”threaten national security and give a competitive\nadvantage to foreign\nadversaries”（会威胁国家安全，并给不受此类约束的国外对手以竞争优势）。\n司法部主张把训练阶段与输出阶段分开分析：训练阶段整本复制但从不公开，输出阶段与原作缺乏实质性相似\n司法部还直接攻击了自家版权局。它在陈述书中称，前版权登记官 Shira\nPerlmutter 在 2025 年 5 月报告中拒绝给 AI 训练开 blanket fair\nuse，其判断”does not warrant\ndeference”（不值得遵从）、分析”threadbare”（单薄）。Perlmutter\n在报告发布后不久被特朗普政府解职，目前正在挑战解职。司法部这份陈述书明确回避了一个问题：它不讨论训练盗版材料是否算\nfair use。这意味着 Anthropic 今年 7 月获批的 $1.5B 和解（覆盖约 48\n万本从盗版书库下载的图书）所指向的盗版语料合法性，仍悬而未决。\n纽约时报立即拒绝。\n《Politico》记录\n其发言人\nGraham James 的回应：政府站队”a handful of trillion-dollar AI\ncompanies”（一小撮万亿美元 AI 公司），损害”countless American creators\nwhose work they\nstole”（作品被窃取的无数创作者）。到目前为止，仍没有任何上诉法院对 AI\n训练 fair use 做出实质裁决，第一个巡回法院的判决才会真正定调。\nDeepSeek\n计划部署 16 万颗华为昇腾芯片，但只做推理\n据\nBloomberg\n9 月 4 日报道\n（基于匿名知情人士），DeepSeek 计划在其内蒙古乌兰察布约\n1 GW 规模的数据中心部署至少 16 万颗华为下一代昇腾 950DT\n芯片。这是目前已知最大的昇腾单一集群，规模接近 xAI Colossus 一期（约 20\n万 GPU）的 80%。\n先给足限定：这是 Bloomberg 单一信源，DeepSeek\n与华为双方至今都未回应或官宣，Reuters、FT、财新也还没有第二家一线信源跟进。因此它是一份”计划”，不是既成事实。TechTimes\n按市场价每颗约 ¥111,000 推算订单面值约 ¥177.6 亿（约\n$2.64B），但这是推算价，不是合同披露价。\n最关键的事实是用途：这批芯片\n只用于推理，不用于训练\n。DeepSeek\n训练下一代模型仍依赖英伟达硬件。彭博此前的报道指出，DeepSeek\n在昇腾上的训练尝试多次失败后已切回英伟达。按这一计划，国内芯片将承担商业变现层（API\n推理），但核心研发层（训练）的依赖没有改变。这正好呼应 DeepSeek\n创始人梁文锋在 2026 年 7 月一份泄露的投资者电话里的评估：“four Huawei\nGPUs equal one Nvidia GPU, and it’s two years behind”（4 颗华为 GPU 等效\n1 颗英伟达 GPU，落后两年，\nHello\nChina Tech 收录的泄露电话记录\n）。\nDeepSeek\n的国产替代只覆盖推理层：推理用昇腾 950DT，训练仍依赖英伟达\n交付是硬约束。昇腾 950DT 采用华为自研的 144GB HiZQ 2.0\nHBM，而高端存储短缺让华为今年的 950DT\n产量被限制在”几十万颗量级的低端”，还要平衡其他客户。彭博据此称，完成这笔订单可能需要一年以上，部分产能希望\n2027 年底或 2028 年初投运。国产 HBM 的爬坡速度（长鑫 CXMT 的 HBM3E\n目前仍是 risk production）直接决定华为能否按时交付。另外，DeepSeek\n同期正在洽谈数十亿美元融资以扩充基础设施。\nOpenClaw\n2.0：从个人助理转向团队 Agent OS\n开源 Agent 平台 OpenClaw 发布了 2.0 版本（即 v2026.8.1，\n官方 blog\n+\nGitHub\nrelease\n）。这是项目史上最大单次发布：16,000+ PR、933 名贡献者（其中\n569 人是首次贡献）；据第三方统计，它约占项目历史全部合并 PR 的一半。9\n月初实测仓库约 389k stars。\n三个 headline 特性。一是简化安装：onboarding 会检测已有的\nChatGPT/Claude 订阅、API key 和本地模型，先验证连通性再保存，甚至能导入\nClaude Code、Codex、Hermes 的记忆。二是重写的浏览器 Control\nUI，性能有提升。三是 multiplayer，即 shared cloud sessions，支持\nview/suggest/contribute\n三级权限分级。官方称这源于团队自举需求：他们自己开发 2.0\n时想拉同事进同一个工作会话，发现 OpenClaw 之前做不到。\n这条消息的重点在定位转变，不在功能本身：2.0 把 OpenClaw 从”个人 AI\n助理”推向”团队协作基础设施”。伴随而来的是权限与信任问题。项目在\nv2026.9.2\n（9\n月发布的\nfast-follow）的升级说明里直接给出警告：当相关设置被省略时，“agents with\nsession tools can now read and search other agents’ conversations,\nincluding other users’ transcripts”（带会话工具的 agent\n现在可以读取并搜索其他 agent\n的对话，包括其他用户的记录），要求管理员设置显式可见性和 agent\n限制，互不信任的用户需要独立 Gateway。这坐实了 The Register\n等第三方对共享会话权限边界的质疑：多人共享一个带\nshell、邮箱和浏览器权限的\nagent，一次误操作的爆炸半径远大于单人使用。\n社区反应同样值得留意。升级路径仍然半生不熟，r/openclaw 里一边倒建议\nclean install 而非 upgrade，v2026.9.2\n发布后仍有用户报告升级卡死。此外许可证仍存疑：GitHub API 返回\nNOASSERTION，而多数媒体写的是 MIT。\n员工对 AI\n的情绪在雇主评价里转向负面\n雇主评价数据给出了一组直观的信号。Glassdoor 经济研究团队 8 月 27\n日发布报告\n《How\nworkers feel about AI in\n2026》\n，分析了美国全职与兼职雇员的雇主评价。核心数字：AI 提及量 2026\n年 5 月同比上升 240%；提及 AI 的评价中，正面比例从 2019 年的 81% 降到\n2026 年的 43%，负面占 53%。\nGlassdoor 数据显示员工对 AI 的正面情绪从\n2019 年的 81% 降到 2026 年的 43%，且提及 AI\n为负面者提到裁员的概率是基准的 6 倍\n情绪和裁员、倦怠高度相关。在”cons”里提到 AI\n的雇员，提及裁员的可能性是基准的 6.0 倍，提及倦怠或职业不安全感是 3.7\n倍；25% 在 cons 提 AI 的评价同时提到裁员。职业分化很极端：保险理赔员对\nAI 的负面率达 98%，作家、记者、会计、客服、设计师、IT\n也高度负面；反之公司领导层最正面（67% 的 AI 提及落在\npros）。科技行业提及 AI 的频率是基准的 3.6 倍，但没有一个行业的 AI\n评价是整体正面的，最正面的法律行业也只有 50%。\n需要说明方法：这份报告不是问卷调查，而是评价文本分析。被标记为 AI\n提及的标准是文本含 AI、LLM(s)、GPT(s)、Artificial Intelligence 或 OpenAI\n等独立词，按”pros/cons”分区判断正负，是描述性相关而非因果结论。\n它和”裁员后回聘”的叙事正好形成互补。匹兹堡大学教授 Mark Ma 等在\nThe\nConversation 的研究\n（基于数百万条 Glassdoor 评价与约 10,000\n份财报电话记录）提出机制解释：AI\n驱动的裁员和由此产生的职业不安全感正在”actively destroying the very\nconditions needed for AI to make workers more efficient”（主动破坏让 AI\n提升效率所需的条件），而管理层在财报电话中的乐观言论与实际生产力无关。对做\nAI\n产品的人来说，这份数据提醒的是：工具被采用的速度，受制于使用它的人对它的恐惧，而不只是工具本身的效果。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/ai-news-digest-20260914.html",
-      "content_chars": 4493,
-      "content_sha256": "06090528a61b9a8d709fda54abf0538ae0d4e1928050d5c0c68f1eccee9b77b7",
-      "content_fetched_at": "2026-09-12T22:57:02.411918+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-09-13",
+  "collect_window": {
+    "start": "2026-09-11T00:00:00+00:00",
+    "end": "2026-09-12T22:55:37.318430+00:00",
+    "hours": 46
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "34724038170",
+    "commit": "41f56e4"
+  },
+  "stats": {
+    "total": 6,
     "by_kind": {
       "publish": 6
     },
@@ -171,9 +27,492 @@
       "denizhalil-blogs": 1,
       "yage-share": 2
     },
+    "failed_lists": [],
+    "sources_ok": 51,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 9,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 14,
+      "calls": 14,
+      "prompt_tokens": 14727,
+      "completion_tokens": 5278,
+      "total_tokens": 20005,
+      "prompt_cache_hit_tokens": 9853,
+      "prompt_cache_miss_tokens": 4874
+    },
     "by_content_status": {
       "failed": 3,
       "ok": 3
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:825df944b5ebf08f",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html",
+      "at": "2026-09-12T22:55:37.318430+00:00",
+      "external_id": "a:825df944b5ebf08f",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-12T22:56:33.894888+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-12T22:55:37.318430+00:00",
+      "collected_at": "2026-09-12T22:55:37.318430+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4797573.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:f98c01a96cb60a8a",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "C++ or C#?",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c.html",
+      "text": "unknowncheats-ac published: C++ or C#?",
+      "at": "2026-09-12T22:55:37.318430+00:00",
+      "external_id": "a:f98c01a96cb60a8a",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c.html",
+      "title": "C++ or C#?",
+      "content": "unknowncheats-ac published: C++ or C#?",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-12T22:56:45.025847+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-12T22:55:37.318430+00:00",
+      "collected_at": "2026-09-12T22:55:37.318430+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "C++ or C#?",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:acebefcc3212e892",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html",
+      "at": "2026-09-12T22:55:37.318430+00:00",
+      "external_id": "a:acebefcc3212e892",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-12T22:56:56.088644+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-12T22:55:37.318430+00:00",
+      "collected_at": "2026-09-12T22:55:37.318430+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769443-simple-driver-skcrypt-post4797527.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:d48c2d3a1cf43e8f",
+      "who": "denizhalil-blogs",
+      "who_url": "https://denizhalil.com/blogs/",
+      "action": "publish",
+      "target": "Vulnerability Analysis: CVE-2026-86426 LibreNMS <= 26.7.0 – Unauthenticated API Access",
+      "target_url": "https://denizhalil.com/2026/09/12/cve-2026-86426-librenms-unauthenticated-api-access/",
+      "text": "denizhalil-blogs published: Vulnerability Analysis: CVE-2026-86426 LibreNMS <= 26.7.0 – Unauthenticated API Access",
+      "at": "2026-09-12T13:08:24+00:00",
+      "external_id": "a:d48c2d3a1cf43e8f",
+      "url": "https://denizhalil.com/2026/09/12/cve-2026-86426-librenms-unauthenticated-api-access/",
+      "title": "Vulnerability Analysis: CVE-2026-86426 LibreNMS <= 26.7.0 – Unauthenticated API Access",
+      "content": "Introduction\nCVE-2026-86426 represents a critical authentication bypass vulnerability affecting LibreNMS network monitoring installations running version\n26.7.0\nor earlier. Publicly disclosed and addressed in late 2026, the vulnerability received a severe CVSS v4.0 rating of\n9.2 (Critical)\ndue to its low attack complexity and high impact. The underlying flaw resides within the API authentication middleware, which fails to strictly enforce parameter types during input processing. As a result, an unauthenticated remote attacker can completely bypass standard token authentication mechanisms, hijack valid session permissions, and silently access internal system APIs. In high-privilege scenarios, this access quickly escalates to Remote Code Execution (RCE), giving attackers full control over the underlying host.\nLearning Objectives\nIdentify the conditions that lead to type confusion vulnerabilities in REST APIs processing JSON payloads.\nUnderstand how loose type comparison rules in MySQL databases interact with application-level validation to cause authentication bypasses.\nAnalyze the escalation path from an unauthenticated API request to administrative privileges and Remote Code Execution.\nApply proper patching and mitigation strategies to protect network monitoring software against authentication bypass vectors.\nWhat is LibreNMS <= 26.7.0 – Unauthenticated API Access CVE-2026-86426\nLibreNMS relies on secure API tokens to authenticate REST API requests sent to its management interfaces. In vulnerable installations running version\n26.7.0 or earlier\n, a critical logic flaw exists in the application’s authentication middleware (\nApiTokenGuard\n). This middleware fails to sanitize or strictly cast user-supplied input types when processing API token parameters sent via structured JSON payloads, exposing the authentication routine to severe type confusion. The core vulnerability emerges from the interaction between Laravel’s request parser and MySQL’s implicit type conversion rules. When an incoming JSON body contains an integer instead of an expected string token, the application forwards the numeric value directly into the database query builder. MySQL attempts to compare this integer with string-formatted hash values stored in the database, resulting in automatic type coercion that drastically reduces the entropy required to achieve a valid match.\nConsequently, an unauthenticated attacker does not need to guess or steal complex, high-entropy API key strings to gain access. By systematically supplying small integer values (ranging from\n0\nthrough\n9\n), an attacker can force the database to evaluate a valid token match, granting them immediate access under the context of an existing user or administrator account.\nStrict Type Failure:\nThe application accepts non-string data types (integers/arrays) within JSON parameters without validating them against expected string formats.\nDatabase Coercion Exploitation:\nMySQL’s automatic casting rule truncates stored hash strings into numeric integers during comparisons, enabling loose equality matches.\nMinimal Attack Complexity:\nAn attacker only needs to send up to 10 lightweight HTTP requests (testing single digits\n0–9\n) to bypass the API authentication layer entirely.\nFull Session Hijacking:\nSuccessful authentication grants the attacker all permissions attached to the matched token, opening pathways to internal network telemetry and server takeover.\nTechnical Detail: How the Vulnerability Works\nThe technical driver behind CVE-2026-86426 lies within LibreNMS’s\nApiTokenGuard\nauthentication mechanism and how Laravel’s request pipeline handles JSON-formatted body parameters. LibreNMS accepts API authentication tokens through multiple input channels, including HTTP headers, URL query parameters, and POST request body parameters. When an incoming request uses\nContent-Type: application/json\n, Laravel parses the payload into PHP native types without converting integer literals to strings. Consequently, sending\n{\"api_token\": 0}\ninjects an integer primitive (\n0\n) directly into the authentication handler rather than the expected high-entropy alphanumeric string. Because\nApiTokenGuard\nforwards this unvalidated input straight into the database query builder, the resulting SQL query attempts a direct comparison between the integer parameter and the string-based\ntoken_hash\ncolumn in the database. In standard relational operations, strict type integrity prevents mismatched data comparisons; however, MySQL performs implicit type conversion whenever an integer is compared against a string field. Under MySQL’s coercion rules, any text string beginning with a non-numeric character (such as\n\"a3f1...\"\nor\n\"e8b2...\"\n) evaluates numerically to\n0\n. Similarly, a hash string starting with a digit (such as\n\"5d9c...\"\n) evaluates directly to that leading digit (\n5\n).\nThis loose coercion mechanism creates a critical authentication bypass surface through brute-force reduction. Instead of cracking a 64-character hash, an attacker only needs to test single-digit integers from\n0\nto\n9\nto successfully trigger a match against existing active tokens in the database. Once matched, the authentication layer yields a valid user session context. If the matched token belongs to an administrative account, the attacker can leverage native administrative capabilities—such as custom PHP blocks within LibreNMS alert templates (\n@php ... @endphp\n)—to instantly gain arbitrary code execution on the underlying server.\nPayload Type Preservation:\nJSON endpoints preserve raw data types, allowing numeric primitives to bypass string-oriented sanitation filters in the application layer.\nImplicit SQL Coercion:\nMySQL casts stored string hashes to integer values during comparison operations, causing non-numeric starting characters to evaluate as\n0\n.\nReduced Entropy Space:\nThe required brute-force search space shrinks from\n16\n64\npossible hash combinations to just 10 single-digit integer requests (\n0\nthrough\n9\n).\nPost-Authentication RCE:\nAdministrative API access allows direct modification of system alert templates, enabling native command execution through embedded template directives.\ncurl -i -s -k -X POST \"http://target.local/api/v0/system\" \\\n-H \"Content-Type: application/json\" \\\n-d '{\"api_token\": 0}'\nHTTP/1.1 200 OK\nDate: Sat, 12 Sep 2026 11:20:00 GMT\nServer: Apache/2.4.52 (Ubuntu)\nContent-Type: application/json\n{\n\"status\": \"ok\",\n\"system\": {\n\"version\": \"26.7.0\",\n\"db_schema\": \"1025\",\n\"php_ver\": \"8.2.10\",\n\"python_ver\": \"3.10.12\",\n\"mysql_ver\": \"10.11.2-MariaDB\",\n\"rrdtool_ver\": \"1.7.2\",\n\"netsnmp_ver\": \"5.9.1\"\n},\n\"authenticated_as\": \"admin_user\"\n}\nRemediation & Mitigation\nAddressing CVE-2026-86426 requires an immediate, prioritized response to eliminate the underlying type confusion vulnerability within the authentication pipeline. The definitive resolution is to update the LibreNMS software to version\n26.8.0\nor later. The patch introduces strict parameter type checking within the\nApiTokenGuard\nmiddleware, ensuring that incoming\napi_token\nvalues are explicitly validated as strings before being processed by the database query builder. This prevents non-string JSON data types from triggering MySQL’s implicit coercion rules during token lookup operations. For organizations unable to deploy the official patch immediately, defense-in-depth measures should be applied at the network and application monitoring layers to reduce potential exposure. Restricting API access to trusted administrative IP segments significantly reduces the reach of unauthenticated attackers. Additionally, active monitoring of web server access logs and API tokens can assist incident response teams in identifying preliminary probe attempts, verifying system integrity, and revoking potentially compromised credentials.\nApply Security Update:\nUpgrade LibreNMS installations to version\n26.8.0+\nimmediately to enforce strict string input validation across all REST API endpoints.\nRestrict API Network Exposure:\nDeploy strict firewall rules, WAF policies, or internal VPN access controls to limit\n/api/v0/\nendpoint access exclusively to authorized management hosts.\nAudit Web Server Logs:\nSearch HTTP request logs for POST or GET payloads directed at API endpoints that contain integer values or array types within the\napi_token\nparameter.\nRotate API Tokens:\nRevoke and re-issue all existing administrative API keys if log auditing reveals suspicious single-digit integer probes (\n0–9\n) targeting the API interface.\nConclusion\nCVE-2026-86426\nserves as a stark reminder of how subtle interactions between web application frameworks and relational database type systems can completely undermine critical security boundaries. Type confusion vulnerabilities of this nature highlight that security mechanisms must validate not only the presence and format of user input, but also its exact data type. When high-level web frameworks pass unvalidated JSON data primitives directly into database query builders, implicit engine behavior can easily transform low-complexity inputs into full authentication bypasses. ecause LibreNMS acts as a central telemetry and management hub across complex infrastructure environments, a compromise of its API interface yields extensive operational reach. Exposure of device configurations, internal IP maps, and SNMP credentials places the entire surrounding network at risk of lateral movement and administrative takeover. Consequently, leaving vulnerable LibreNMS deployments exposed to unauthenticated networks poses a direct threat to enterprise infrastructure security. Organizations maintaining vulnerable instances running version 26.7.0 or earlier must prioritize immediate isolation and remediation. Applying the\n26.8.0+\npatch, auditing historical access logs, and enforcing strict network segmentation around monitoring interfaces are essential steps to neutralize this threat and maintain a resilient security posture.\nLearning Basic Data Types in Python\nWeb Directory and File Scanner by Gobuster\nThe Importance of MySQL in Linux for Web Penetration Testing\nVulnerability Analysis: CVE-2026-72898 Metabase – Unauthenticated SQL Injection\nVulnerability Analysis CVE-2026-55040 Microsoft SharePoint JWT Token Authentication Bypass\nThe post\nVulnerability Analysis: CVE-2026-86426 LibreNMS <= 26.7.0 – Unauthenticated API Access\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://denizhalil.com/2026/09/12/cve-2026-86426-librenms-unauthenticated-api-access/",
+      "content_chars": 10431,
+      "content_sha256": "ef0c493ec8b670f65a0999a0d946873c780a138722ae415de3189cd9337fee29",
+      "content_fetched_at": "2026-09-12T22:57:23.272407+00:00",
+      "author": "denizhalil-blogs",
+      "author_name": "DenizHalil Blogs",
+      "author_url": "https://denizhalil.com/blogs/",
+      "published_at": "2026-09-12T13:08:24+00:00",
+      "collected_at": "2026-09-12T22:55:37.318430+00:00",
+      "tags": [
+        "kind:publish",
+        "src:denizhalil-blogs",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://denizhalil.com/blogs/",
+        "https://denizhalil.com/2026/09/12/cve-2026-86426-librenms-unauthenticated-api-access/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "denizhalil-blogs",
+          "url": "https://denizhalil.com/blogs/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "denizhalil-blogs",
+          "name": "DenizHalil Blogs",
+          "home_url": "https://denizhalil.com/blogs/"
+        },
+        "article": {
+          "title": "Vulnerability Analysis: CVE-2026-86426 LibreNMS <= 26.7.0 – Unauthenticated API Access",
+          "url": "https://denizhalil.com/2026/09/12/cve-2026-86426-librenms-unauthenticated-api-access/",
+          "content_sha256": "ef0c493ec8b670f65a0999a0d946873c780a138722ae415de3189cd9337fee29"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:201a16a23aae4e68",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Anthropic 指控 30 万次请求被静默转发，被带走的是真实生产数据",
+      "target_url": "https://yage.ai/share/router-input-as-product-20260915.html",
+      "text": "yage-share published: Anthropic 指控 30 万次请求被静默转发，被带走的是真实生产数据",
+      "at": "2026-09-12T00:00:00+00:00",
+      "external_id": "a:201a16a23aae4e68",
+      "url": "https://yage.ai/share/router-input-as-product-20260915.html",
+      "title": "Anthropic 指控 30 万次请求被静默转发，被带走的是真实生产数据",
+      "content": "安全与供应链\n你以为在用 Kimi\n平时在终端里配个国内模型的接口，或者在网页里贴一段业务代码，大家默认请求都在服务商自己的机房里跑。光标在屏幕上一行行吐字，看着一切正常，背后可能刚刚绕了大半个地球。服务端把你的提示词原封不动转给境外的顶级模型，等对方生成完毕，再套上国内模型的外壳递回给你。\n聊这事不是要拉踩哪家厂商，更不是帮谁打广告，通报点名的公司都没回应，归因也只有\nAnthropic\n单方说法，谁在干这件事眼下说不死。整条链路从官方接口到灰色中转，其实都存在同一种风险，发进去的内容随时可能流向未知的第三方。别把大模型当树洞，公司里的东西想到什么就往里扔。要么认真研究清楚服务的条款和链路，要么干脆直连官方或自建网关，这两条路都比以为有合同就没事靠谱，后面的章节会具体讲怎么应对。\nAnthropic 在九月发了一份\n技术调查\n，把这种私下转发的隐秘通道摆到了明处。一家国内团队在短短十天内，把大概\n30 万次用户请求直接转给境外闭源模型，绝大部分流向了 Claude\n的旗舰版本。他们为此动用了 5380 个虚假账号做中转，Anthropic\n也不知道这些客户是否被告知过，远端服务器一直在归档他们截到的对话内容。\n不过报告原文写的其实是关联运营者，通报里点到的公司也都没公开回应，到底是大模型实验室官方在做，还是中转站在偷偷卖号、盗号或者自建假服，眼下只有\nAnthropic 的单方说法。报告在安全章节里还记录了一个叫 GTG-50021\n的黑产团伙，专门兜售打折 Claude\n账号，买家拿到的是假货，流量悄悄转给其他模型，工具还会顺手偷走买家的\nAnthropic 凭证转手再卖。你以为在用 A 实际在跑 B\n这件事，实验室、黑产和中转站都可能在干，用户从体验上没法区分。\n很多人以为充值订阅买了会员就能防住泄露，现实恰恰相反。你真金白银掏了服务费，手头的真实业务数据却顺着这条暗道，成了别人训练自家模型的免费养料。拿顶级模型的回答去训练自己的模型，行话叫蒸馏，你的日常输入在别人眼里就是现成的蒸馏跳板。\n你以为的直连与实际的静默转发管道：屏幕上的回答与真实服务的模型不是同一个\n看这份海外报告，大家得先留个心眼。报告是 Anthropic\n发的，被抽走能力的也是它，后台日志只有它自己看得到，里面的统计数字从没经过第三方核实。况且通报里提到的几家国内团队一直都在公开论文并开源模型权重，Anthropic\n自己也在报告里写了限定语，比如在小米那个案例里说明没有迹象表明美国用户的数字暴露了。\n退一步讲，就算把报告里的数字打个对折，这套链路暴露出来的问题也足够吓人。大家以为的安全直连，其实早已在没有任何提醒的情况下，在境外的公共管道里裸奔了一圈。\n泄露的具体是什么\n大家很容易以为，顺手流进转发管道的顶多是些公开常识或无伤大雅的闲聊。官方报告披露的细节却表明，通道里流淌着密密麻麻的生产数据。这并不是黑客攻破内网偷走的信息，全由一线员工在日常工作里自己输进对话框。\n报告里列出了好几个具体的真实样本。一家跨国药企的工作人员为了测算项目，把胡志明市、吉隆坡、曼谷与卢布尔雅那的四国基建预算表贴进提示词，还顺手注明周四评审前清理好模型。这批详细的财务测算经由第三方路由转发，就这么留在了对端服务器上。\n技术人员泄露的往往更加要命。有人让开发工具写脚本，随手将活跃的\nTelegram 机器人密钥、飞书应用凭证与 Notion\n知识库集成密钥塞进上下文，这些生效中的凭证随即流向外部网络。还有某市公安局的技术人员核查轨迹，直接把公民身份证号输入对话框比对行踪与警务记录，原本该严加保护的内部信息脱离了安全范围。\n官方通报里记录到，受影响的终端用户达到数百人，涉及十余种语言。官方详细统计了外部模型抓取了多少次交互，却始终没有公布普通用户数据泄露的总体规模估算。蒸馏了多少次有精准数字，用户到底泄露了多少数据却没人知道，两边受到的关注度截然不同。\n除了官方调查，还有一份引发热议的外部爆料。独立研究者 Shou\n宣称从中间商手里买到了 6TB 的数据包，里面装有大量 SSH 密钥、企业\nVPN、云平台密钥和 GitLab\n令牌。这属于尚未经第三方核验的单源说法，不管这批数据的卖家是中转站运营者自己还是别的什么人，这个市场都存在，前面提到的假服案例也说明买卖双方都可能不是你以为的那个角色。但今年四月的\n学术测量\n早就证实了中转隐患：在测试的\n428 个中转服务中，有 17\n个触发了安全监控探针。中间节点能够明文查看输入内容，从来就是经过确认的事实。\ninput 的三本账\n大家发给中转服务的每段提示词，在背后都连着好几个变现渠道。很多人以为花钱买到的是模型生成的回答，你的输入内容在下游其实跑通了三条赚钱路径，分别流向黑客犯罪、模型训练和公开的数据倒卖。\n第一种是直接落入黑产手中。四月发表的学术研究在观测中转服务时，从 440\n个会话里截获了 99 组系统鉴权凭据，涉及约 13GB\n明文流量。恶意攻击者顺着输入管道批量扫描密钥，转头就拿去当成攻破外部服务器的现成工具。\n第二种需求来自急着提升能力的大模型厂商，Anthropic\n测算发现各家非授权蒸馏总量超过 1.8 亿次，Alibaba 占 1.51 亿次，Moonshot\n约 2300 万次，DeepSeek 也有 1210 万次。为了筛选高价值数据，DeepSeek\n接收请求时还会检测工具特征代码，专门把带有 Claude Code 或 OpenCode\n标记的请求送给推理模型。编程智能体包含密集的推演和工具调用，正是训练代码模型稀缺的燃料，天天写代码的程序员不知不觉成了重点收割对象。\n第三种做法更直接，把用户的对话当成现成商品转卖。Anthropic\n官方调查明确记录了中转站的倒卖模式：服务运营者把交互记录存下来卖给第三方，商汤等团队搭建自身流程，就采购过数据商收集来的用户对话。每日经济新闻早在五月份的调查报道里，就揭露过中转站倒卖用户数据的产业链，比海外官方报告早了四个月指出这一行业现实。\n同一条传输链路，同一批由用户敲进去的内容，全都在没有经过大家同意的情况下，顺畅跑通了三条变现通道。你在屏幕这端为每次调用付一点\ntoken 费用，网络那端却已经把你的业务数据结算了三次。\n合同没挡住，防御也不覆盖\n得知数据在外面乱跑，许多人的第一反应是去翻服务协议，觉得签了合同总能当护身符。但对照各家条款来看，现实情况比大家想的松散得多。纸面约定非但没能挡住数据的私下流转，反而给后续的数据处理留下了宽泛借口。\n深度求索在\n条款\n中写明，会把输入数据用于训练算法模型，并且明确覆盖了接口服务。月之暗面在\n开发者协议\n中也规定，用户授予平台免费使用权，允许平台把输入输出拿去做服务优化。普通用户在网页端充了会员，在界面里连个关闭训练的开关都找不着，想要退出必须发邮件人工申请，还要等上\n5 至 7 个工作日才能生效。\n退一步讲，即便用户同意拿数据去改进服务，大家的常识也是帮自家模型做优化。悄悄把付费用户的提示词转发给竞品模型拿来做蒸馏，这种做法怎么看都说不过去。月之暗面的\n服务文档\n写着，未经同意、法律要求或实现产品功能所必需这几个情况之外，不会向第三方共享、出售或提供对话内容，如果私下转发与转售属实，那便是连自家白纸黑字的承诺都没能守住。\n既然合同靠不住，厂商推出来的技术防护同样顾不上普通用户，重心全在保全自己的资产。Anthropic\n给自家 Fable 5.1 加的思维链保护，当前只对新 API\n账号生效，挡的是别人抽取它的推理过程；讨论已久的响应签名至今没有上线时间表，主要校验的也是返回内容有没有遭篡改。学术论文早就把话挑明了，凭据在发往中间节点那一刻就已暴露在请求路径上，下游签名对输入端的防护起不到实际作用。\n合同没能挡住私下流转，技术手段只护返回不护输入，大家在客户端里更是什么都察觉不到。制度约束、技术防线和用户的知情权同时落空，发出去的每一句话，其实都落在了没有防护的真空地带。\n三层防线全景：合同覆盖内部优化，防御护住响应路径，用户输入层零防护\n现在怎么办\n看清这套链路的底细之后，咱们日常写代码、调模型必须建立起切实的防范意识。核心原则只有一条：只要不是自己能够掌控的独立通道，发出去的每一段提示词，都应当按照公开发布的标准来对待，包括那些自以为受到商业合同保护的内容。\n接入任何第三方服务之前，大家可以先弄清三个最实在的问题：谁有权限完整读取这趟请求，读到数据后在中间节点保存多久，以及留存下来的交互记录最终能卖给谁。这三个问题直接决定了你的输入数据暴露在多大的风险之下。\n落到具体的工程实践上，三条日常纪律足以避开大部分麻烦： -\n涉及核心业务与高价值凭据的文本，不走非自有通道。 -\n企业采购接口时，选用具备不参与训练与禁止第三方共享承诺的商业版本，优先匹配提供零数据保留选项的供应商，国内大厂定制版也有部分给出了不入训练池的承诺。\n-\n若对中间层链路存有疑虑，关键业务应当绕开代理直连官方原生接口，或者在私有基础设施上自建网关。\n那份标价出售且体积达到 6TB\n的数据集合，正是这片安全真空开出的真实市场报价。国内财经媒体早在四个月前就指出了中转站倒卖用户资产的产业生态，它脱胎于日常的技术交互，已经在真实的商业网络中运转了半年之久。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/router-input-as-product-20260915.html",
+      "content_chars": 3833,
+      "content_sha256": "ecc733db28ac2fe1472bfc125f9aa0afe41cf7ca24cd2471f5f47e647f251624",
+      "content_fetched_at": "2026-09-12T22:57:02.316178+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-12T00:00:00+00:00",
+      "collected_at": "2026-09-12T22:55:37.318430+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/router-input-as-product-20260915.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Anthropic 指控 30 万次请求被静默转发，被带走的是真实生产数据",
+          "url": "https://yage.ai/share/router-input-as-product-20260915.html",
+          "content_sha256": "ecc733db28ac2fe1472bfc125f9aa0afe41cf7ca24cd2471f5f47e647f251624"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:3a7956e21efd12cc",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "本周四条 AI 新闻：司法部站队 fair use、DeepSeek 押注昇腾、OpenClaw 转向团队、员工对 AI 情绪转冷",
+      "target_url": "https://yage.ai/share/ai-news-digest-20260914.html",
+      "text": "yage-share published: 本周四条 AI 新闻：司法部站队 fair use、DeepSeek 押注昇腾、OpenClaw 转向团队、员工对 AI 情绪转冷",
+      "at": "2026-09-11T00:00:00+00:00",
+      "external_id": "a:3a7956e21efd12cc",
+      "url": "https://yage.ai/share/ai-news-digest-20260914.html",
+      "title": "本周四条 AI 新闻：司法部站队 fair use、DeepSeek 押注昇腾、OpenClaw 转向团队、员工对 AI 情绪转冷",
+      "content": "产业与竞争\n治理与合规\nAI Agent\n这周有几条新闻值得单独拿出来说。这四条没有统一主题，但都触碰到了 AI\n行业此刻最真实的张力：训练数据到底算不算侵权、国产芯片能不能撑起推理规模、开源\nAgent 能否变成团队基础设施、以及被 AI\n波及的员工到底怎么想。四条各自成立，下面分开讲。\n美国司法部正式站队：用版权作品训练\nAI 属于 fair use\n美国司法部在 AI 版权纠纷里明确表了态。9 月 1\n日，它向纽约南区联邦法院提交了一份\nStatement\nof Interest（利益陈述书）\n，在合并审理的 OpenAI 版权诉讼（In re\nOpenAI，MDL No. 25-md-3143，主审法官 Sidney H.\nStein）中主张，把受版权保护的作品用于训练大模型不构成侵权，属于\ntransformative fair use。案件覆盖纽约时报 2023 年底对 OpenAI\n与微软的起诉，以及并入同一程序的所有出版方与作者诉讼。\n先把定性说清楚：这是一份依据 28 U.S.C. § 517\n提交的政府法律立场文件，不是立法，也不是裁决，对法院没有约束力，Stein\n法官可以采信也可以无视。它之所以重要，是因为行政分支正式把赌注押在了 AI\n行业一边，这会成为后续所有同类诉讼和国会立法讨论的参照。\n司法部的核心论证分三层。第一，把训练和输出拆开看：训练阶段整本书被复制但从未公开，输出阶段”often\nif not always lack substantial\nsimilarity”（经常（若非总是）与原作缺乏实质性相似），因此应分开用 fair\nuse 分析。第二，训练是”extraordinarily transformative”，援引\nGoogle\nBooks 案\n和 Google v. Oracle\n的先例，并指出训练不会产出替代原作的文本，市场影响因子同样倾向 fair\nuse。第三是政策与国安框架，原文这样写：让美国发展强大 AI\n产业变得困难的法律规则”threaten national security and give a competitive\nadvantage to foreign\nadversaries”（会威胁国家安全，并给不受此类约束的国外对手以竞争优势）。\n司法部主张把训练阶段与输出阶段分开分析：训练阶段整本复制但从不公开，输出阶段与原作缺乏实质性相似\n司法部还直接攻击了自家版权局。它在陈述书中称，前版权登记官 Shira\nPerlmutter 在 2025 年 5 月报告中拒绝给 AI 训练开 blanket fair\nuse，其判断”does not warrant\ndeference”（不值得遵从）、分析”threadbare”（单薄）。Perlmutter\n在报告发布后不久被特朗普政府解职，目前正在挑战解职。司法部这份陈述书明确回避了一个问题：它不讨论训练盗版材料是否算\nfair use。这意味着 Anthropic 今年 7 月获批的 $1.5B 和解（覆盖约 48\n万本从盗版书库下载的图书）所指向的盗版语料合法性，仍悬而未决。\n纽约时报立即拒绝。\n《Politico》记录\n其发言人\nGraham James 的回应：政府站队”a handful of trillion-dollar AI\ncompanies”（一小撮万亿美元 AI 公司），损害”countless American creators\nwhose work they\nstole”（作品被窃取的无数创作者）。到目前为止，仍没有任何上诉法院对 AI\n训练 fair use 做出实质裁决，第一个巡回法院的判决才会真正定调。\nDeepSeek\n计划部署 16 万颗华为昇腾芯片，但只做推理\n据\nBloomberg\n9 月 4 日报道\n（基于匿名知情人士），DeepSeek 计划在其内蒙古乌兰察布约\n1 GW 规模的数据中心部署至少 16 万颗华为下一代昇腾 950DT\n芯片。这是目前已知最大的昇腾单一集群，规模接近 xAI Colossus 一期（约 20\n万 GPU）的 80%。\n先给足限定：这是 Bloomberg 单一信源，DeepSeek\n与华为双方至今都未回应或官宣，Reuters、FT、财新也还没有第二家一线信源跟进。因此它是一份”计划”，不是既成事实。TechTimes\n按市场价每颗约 ¥111,000 推算订单面值约 ¥177.6 亿（约\n$2.64B），但这是推算价，不是合同披露价。\n最关键的事实是用途：这批芯片\n只用于推理，不用于训练\n。DeepSeek\n训练下一代模型仍依赖英伟达硬件。彭博此前的报道指出，DeepSeek\n在昇腾上的训练尝试多次失败后已切回英伟达。按这一计划，国内芯片将承担商业变现层（API\n推理），但核心研发层（训练）的依赖没有改变。这正好呼应 DeepSeek\n创始人梁文锋在 2026 年 7 月一份泄露的投资者电话里的评估：“four Huawei\nGPUs equal one Nvidia GPU, and it’s two years behind”（4 颗华为 GPU 等效\n1 颗英伟达 GPU，落后两年，\nHello\nChina Tech 收录的泄露电话记录\n）。\nDeepSeek\n的国产替代只覆盖推理层：推理用昇腾 950DT，训练仍依赖英伟达\n交付是硬约束。昇腾 950DT 采用华为自研的 144GB HiZQ 2.0\nHBM，而高端存储短缺让华为今年的 950DT\n产量被限制在”几十万颗量级的低端”，还要平衡其他客户。彭博据此称，完成这笔订单可能需要一年以上，部分产能希望\n2027 年底或 2028 年初投运。国产 HBM 的爬坡速度（长鑫 CXMT 的 HBM3E\n目前仍是 risk production）直接决定华为能否按时交付。另外，DeepSeek\n同期正在洽谈数十亿美元融资以扩充基础设施。\nOpenClaw\n2.0：从个人助理转向团队 Agent OS\n开源 Agent 平台 OpenClaw 发布了 2.0 版本（即 v2026.8.1，\n官方 blog\n+\nGitHub\nrelease\n）。这是项目史上最大单次发布：16,000+ PR、933 名贡献者（其中\n569 人是首次贡献）；据第三方统计，它约占项目历史全部合并 PR 的一半。9\n月初实测仓库约 389k stars。\n三个 headline 特性。一是简化安装：onboarding 会检测已有的\nChatGPT/Claude 订阅、API key 和本地模型，先验证连通性再保存，甚至能导入\nClaude Code、Codex、Hermes 的记忆。二是重写的浏览器 Control\nUI，性能有提升。三是 multiplayer，即 shared cloud sessions，支持\nview/suggest/contribute\n三级权限分级。官方称这源于团队自举需求：他们自己开发 2.0\n时想拉同事进同一个工作会话，发现 OpenClaw 之前做不到。\n这条消息的重点在定位转变，不在功能本身：2.0 把 OpenClaw 从”个人 AI\n助理”推向”团队协作基础设施”。伴随而来的是权限与信任问题。项目在\nv2026.9.2\n（9\n月发布的\nfast-follow）的升级说明里直接给出警告：当相关设置被省略时，“agents with\nsession tools can now read and search other agents’ conversations,\nincluding other users’ transcripts”（带会话工具的 agent\n现在可以读取并搜索其他 agent\n的对话，包括其他用户的记录），要求管理员设置显式可见性和 agent\n限制，互不信任的用户需要独立 Gateway。这坐实了 The Register\n等第三方对共享会话权限边界的质疑：多人共享一个带\nshell、邮箱和浏览器权限的\nagent，一次误操作的爆炸半径远大于单人使用。\n社区反应同样值得留意。升级路径仍然半生不熟，r/openclaw 里一边倒建议\nclean install 而非 upgrade，v2026.9.2\n发布后仍有用户报告升级卡死。此外许可证仍存疑：GitHub API 返回\nNOASSERTION，而多数媒体写的是 MIT。\n员工对 AI\n的情绪在雇主评价里转向负面\n雇主评价数据给出了一组直观的信号。Glassdoor 经济研究团队 8 月 27\n日发布报告\n《How\nworkers feel about AI in\n2026》\n，分析了美国全职与兼职雇员的雇主评价。核心数字：AI 提及量 2026\n年 5 月同比上升 240%；提及 AI 的评价中，正面比例从 2019 年的 81% 降到\n2026 年的 43%，负面占 53%。\nGlassdoor 数据显示员工对 AI 的正面情绪从\n2019 年的 81% 降到 2026 年的 43%，且提及 AI\n为负面者提到裁员的概率是基准的 6 倍\n情绪和裁员、倦怠高度相关。在”cons”里提到 AI\n的雇员，提及裁员的可能性是基准的 6.0 倍，提及倦怠或职业不安全感是 3.7\n倍；25% 在 cons 提 AI 的评价同时提到裁员。职业分化很极端：保险理赔员对\nAI 的负面率达 98%，作家、记者、会计、客服、设计师、IT\n也高度负面；反之公司领导层最正面（67% 的 AI 提及落在\npros）。科技行业提及 AI 的频率是基准的 3.6 倍，但没有一个行业的 AI\n评价是整体正面的，最正面的法律行业也只有 50%。\n需要说明方法：这份报告不是问卷调查，而是评价文本分析。被标记为 AI\n提及的标准是文本含 AI、LLM(s)、GPT(s)、Artificial Intelligence 或 OpenAI\n等独立词，按”pros/cons”分区判断正负，是描述性相关而非因果结论。\n它和”裁员后回聘”的叙事正好形成互补。匹兹堡大学教授 Mark Ma 等在\nThe\nConversation 的研究\n（基于数百万条 Glassdoor 评价与约 10,000\n份财报电话记录）提出机制解释：AI\n驱动的裁员和由此产生的职业不安全感正在”actively destroying the very\nconditions needed for AI to make workers more efficient”（主动破坏让 AI\n提升效率所需的条件），而管理层在财报电话中的乐观言论与实际生产力无关。对做\nAI\n产品的人来说，这份数据提醒的是：工具被采用的速度，受制于使用它的人对它的恐惧，而不只是工具本身的效果。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/ai-news-digest-20260914.html",
+      "content_chars": 4493,
+      "content_sha256": "06090528a61b9a8d709fda54abf0538ae0d4e1928050d5c0c68f1eccee9b77b7",
+      "content_fetched_at": "2026-09-12T22:57:02.411918+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-11T00:00:00+00:00",
+      "collected_at": "2026-09-12T22:55:37.318430+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/ai-news-digest-20260914.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "本周四条 AI 新闻：司法部站队 fair use、DeepSeek 押注昇腾、OpenClaw 转向团队、员工对 AI 情绪转冷",
+          "url": "https://yage.ai/share/ai-news-digest-20260914.html",
+          "content_sha256": "06090528a61b9a8d709fda54abf0538ae0d4e1928050d5c0c68f1eccee9b77b7"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
