@@ -1,139 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-09-14",
-  "generated_at": "2026-09-13T23:05:56.496092+00:00",
-  "item_count": 5,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:fbcf3e2c7e76f92e",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-13T23:03:40.317924+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-13T23:04:24.749756+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:151e108a894d59e1",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-13T23:03:40.317924+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-13T23:04:35.780445+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:4555ed7181e768f5",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-13T23:03:40.317924+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-13T23:04:46.776592+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:9e2883b2a8600ddf",
-      "kind": "publish",
-      "text": "yage-share published: 画得出成本曲线，不等于压得下成本曲线",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-13T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/cost-into-models-swe2-20260912.html",
-      "title": "画得出成本曲线，不等于压得下成本曲线",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI 编程\n推理与性能\n同样叫便宜其实是两件事\n挑选模型阶段，许多团队都宣称自己的方案更加划算。但在真实工程里部署代码智能体，月底面对的账单依然居高不下。很多开发者以为换用更便宜的模型或者调短思考时间就能省钱，任务解决率却随之大幅下滑。这种反差在实践中很普遍，原因在于大家平时讨论的便宜，其实混淆了两种截然不同的动作。\n我们可以画一张基础坐标图来理清思路。横轴代表单次解决任务的花费，纵轴代表任务成功率。把不同模型在各种配置下的实测表现标在图里，那些在各个花费区间取得最高成功率的点，连起来就构成了一条光滑的能力边界。在这条曲线上挑选一个偏向便宜的点，调用费用变低了，代价却是处理复杂任务的能力缩水，这只是向指标妥协的选点。另一种动作则是发力把整条分界线向外推开，保持花费不变却能搞定更难的问题，或者在成功率分毫不掉的前提下大幅节省开销。在系统工程分析中，这条由最优组合构成的能力边界称作帕累托前沿。\n把曲线上的点挪到更便宜的位置只是选点，把整条曲线向外推移才是优化；SWE-2\n做的是后者。\n主流评测已普遍跟进这类表现的测量，例如\nArtificial\nAnalysis 编码智能体指数\n与\nDeepSWE\n评测榜单\n。2026年9月10日，开发编程助手 Devin 的团队 Cognition\n正式发布新模型\nSWE-2\n。厂商自报数据显示，在同一\nDevin CLI、同一 FrontierCode 1.1 Main 任务集上，SWE-2 中等档位相比前代\nSWE-1.7，得分更高，同时减少了 58% 交互轮次并节省 81%\n成本。其训练设计的关键做法，在于把运行花销直接做进强化学习训练目标，旨在让少绕弯路成为模型自发的内在权衡。既然推开边界才是真正的便宜，那么这条边界究竟由系统的哪一层来决定？\n在模型外面省钱绕不开天花板\n回答边界由什么决定，首先要看跑一次编程任务的花费究竟在哪一步定下来。在日常工程实践中，团队通常在输入提示、推理生成、框架编排和商业定价这四个外围层次尝试控制预算。这些方案都在模型权重之外做文章，对应着不同的工程代价。\n成本可以在提示、推理、编排、定价、训练五个层次优化，只有训练层能移动整条成本-能力曲线。\n工程师最先尝试的往往是输入提示词。我们在系统指令里写明字数限制，反复叮嘱模型回答要简明、克制发散思考，试图用提示词管住探索步数。\nTALE 提示词预算研究\n报告过这种做法平均能减少 67% 输出 token，像\nQwen3\n思考参数配置\n也支持直接关闭思考模式。然而文字叮嘱终究只是一种软性约束，面对棘手的代码报错，模型依然会冗长发散，多余的工具调用依然难以刹车。\n既然提示词管不住发散，工程直觉就会转向生成途中的硬性拦截。团队监控思考代币消耗，一旦超过预设预算就强行结束思考并转入作答，例如\ns1 实验\n采取的强制思考预算截断；或者引入 Anthropic 的\n提示词缓存功能\n，通过复用历史前缀压低输入计费单价。半途切断生成虽然能止住账单失控，思维中断的模型却往往无法写出完整的修复补丁，省下的代币换来的是任务失败。\n在生成环节设卡容易搞砸任务，控制逻辑就会移向外部调度框架。Anthropic\n总结了\n上下文编辑与压缩机制\n清理工具调用的历史冗余，其发布的\n智能体工程实践\n也强调精简上下文；路由框架\nRouteLLM\n则把简单请求分流给低成本小模型。这类路由方案本质上是在不同模型之间做任务转移，修剪上下文也有丢失关键代码状态的风险，没有降低单次推理本身的探索难度。\n至于商业层面的包月套餐，抚平了账单波动，却没有减少服务器消耗的真实算力。这些外围手段都在模型外部修补围栏，无法改变模型自身的推理决策。要想把帕累托前沿向外推移，只能让模型自己学会权衡，把成本考量注入训练过程。\n把成本写进模型的学习目标\n既然外围手段推不动边界，就只能深入模型内部，改变它的训练过程。要让模型自己学会权衡成本，首先要理解它在训练中调整行为的机制。在后训练强化学习阶段，算法让模型反复试跑真实的编程任务，并对每次尝试给出一个量化打分。这个评估表现优劣的得分称作奖励。随后，系统把得分高低转化为指引参数调整的方向信号，也就是数学上的梯度。如果打分只看任务跑通与否，模型可能学到的策略是不计代价盲目试错、反复读取无关文件，因为只要碰巧做对一次就能拿满分。\n为了扭转这种不顾代价的习惯，Cognition 研发\nSWE-2\n期间重构了打分公式，设计目标函数为\nR = S − λ_e · C\n。公式中的 S 代表试跑结果，成功通过测试取\n1，失败取 0；C 代表综合开销，将推理美元费用与运行耗时合并折算；λ_e\n则是对应不同思考强度档位的惩罚系数。模型如果在无关探索上消耗过多时间和代币，综合得分就会因为扣分项而大幅缩水。\n这种让花销直接化为扣分梯度的做法，与此前的探索形成对照。SWE-2\n基于开源模型\nKimi K3\n构建。Kimi K3 是月之暗面开源的 2.8 万亿参数混合专家模型，每 token 激活约\n1040 亿参数，拥有 1M 上下文。Kimi K3 在控制成本时采用硬性配额：预设\ntoken 预算上限，试跑超支直接判负。相比一刀切的硬拦截，SWE-2\n的连续惩罚旨在让模型在每次调用中感知开销轻重，自发寻找更短代码修改路径。\n厂商自报数据显示，面对相同任务分布，前代 SWE-1.7 平均需要 127\n步，SWE-2 中等档位压缩到 53 步，高档位 80 步，最大档位 98\n步；首次编辑代码的中位步数从前代的 48 步提前到 SWE-2 中等档位的 18\n步。官方将其归因于聚焦式探索，模型更善于直奔关键代码。然而把开销写入目标只是开端，惩罚设计稍有偏差，模型就会迅速学会钻空子走捷径。\n设计成本惩罚难在防止模型走捷径\n把开销惩罚引入训练信号之后，最大的挑战在于防止模型走投机捷径。强化学习算法寻找规则漏洞的本领极强，如果设计者没想清楚惩罚项的数学性质，模型就会通过敷衍任务来赚取虚假收益。Cognition\n在实践中做出了三个关键设计取舍，化解了三个潜在的偷懒漏洞。\n第一个取舍关乎惩罚形态。如果采用越往后越重的非线性惩罚，模型在长流程任务中，一旦发现后期扣分严厉，就会倾向于草草交卷放弃排查。为了解决这个问题，Cognition\n在\n技术报告附录 B\n中借助詹森函数方程推导，指出若要对任意 rollout\n分布，期望奖励都只依赖平均成本与平均成功率，打分函数对成本必须满足仿射关系。将其归一化后，形式正是简单的线性惩罚\nR = S − λC\n。开源基准\nOckBench\n则主张对数惩罚，说明行业内对扣分形态尚未形成统一共识。\n第二个取舍关乎惩罚系数的设定。同一个模型可以有省着想和使劲想多种思考模式，也就是不同的思考强度档位。如果系数凭工程师感觉调节，模型容易在档位之间偷工减料。Cognition\n官方技术报告披露过失效案例：高档位惩罚系数如果过大，模型会把高思考强度档位表现得像中等档位一样保守，省下的开销抵消了成功率下滑，账面奖励看似上升，实际能力边界却没有向外推移。为了化解这一漏洞，Cognition\n将惩罚系数 λ_e\n锚定在基座模型成本成功率曲线的局部切线斜率上。这样能确保等奖励线与该处的帕累托前沿相切：模型单纯沿着曲线小幅滑向低成本档位对奖励的一阶影响为零，目标是鼓励把前沿向外推开以真正获益。\n第三个取舍关乎多档位模型的训练架构。常规工程通常针对不同难度单独训练多套专家模型，随后通过蒸馏合并为一个系统。例如\nKimi K3 曾训练九个专家再做蒸馏融合，容易在知识压缩阶段产生损耗。SWE-2\n采用单次强化学习覆盖所有档位，让单一模型学会适应多种思考预算，并沿用长度加权奖励基线稳住梯度方差。即便在数学形态与训练架构上做足了防范，这种把成本写进网络权重的方案，依然有着无法触及的客观边界。\n省下来的成本边界在哪里\n即便在防范走捷径上做足了设计，我们依然需要跳出厂商自报的数据，审视这套机制在哪些场景下会失效，以及证据链条上存在哪些难以自洽的空白。结合公开评测与第三方实验，这套方案面对极端难题与长流程任务，暴露出多处显著的工程边界。\n首要局限出现在难度极高的复杂任务上。\ne1/AEC 论文\n指出，固定惩罚系数设定下，面对成本惩罚超过预期成功收益的难题，模型的最优数学策略其实是及早认输。因为一旦展开大规模试错与搜索，持续累积的扣分会吞噬微小成功带来的收益；为了保住期望得分，模型最理性的选择反而变成放弃尝试。\n另一个疑问在于效率提升的归因难题。官方技术报告中缺乏去掉成本惩罚项的对照实验，唯一的消融对比仅针对奖励基线的计算形式。与前代相比，SWE-2\n换上了实力更强的 Kimi K3 作为基座。SWE-2\n能够更早定位关键代码，这种效率跃迁很难与基座模型本身代码理解能力的提升清楚剥离。官方将步数缩减归因于聚焦式探索，但未证实这种改变有多大程度依赖基座模型对代码语义的理解力。\n面向长流程任务，局限更加明显。在包含大量系统交互的基准测试\nTerminal-Bench\n4\n上，按 Cognition 自报表，SWE-2 仅取得 27.3% 通过率，落后于 Claude\nFable 5.1 的 55.8% 与 GPT-6 Astra 的 57.9%。这一差距属于跨模型、跨\nharness\n的表现差异，不能作为因果结论。这提示，面对步骤繁复的深水区任务，单纯强化短路径探索未必足以弥补复杂推理能力的差距。\n在自家主导的\nFrontierCode 1.1\nMain 评测\n中，SWE-2 取得 50.0% 通过率，厂商打出了平均每次 rollout 比\nClaude Fable 5.1 便宜 64%\n的宣传。然而该基准不公开题目细节，评测体系本身也没有将开销计入最终得分，外界难以独立复现任务成绩。\n此外，脱离测试环境孤立讨论成本数字，极易让指标失去参考锚点。独立调研在\n测试环境效应\n分析中发现，同一批任务更换外围脚手架，摊到每解决一题的代币消耗就可能相差约\n40 倍。看清这些客观边界，才能理性评估这项成果的实质价值。\n成本从一个旋钮变成一种习惯\n看清了训练层控制开销的具体机制与现实局限，我们才能客观衡量这项探索给智能体开发带来的实质转变。从外围修饰走向内核演进，代表着软件工程在控制资源消耗这一方向上迈出了关键一步。\n回顾以往的工程习惯，控制开销的重担落在开发者肩上。工程师日常调用模型往往扮演预算管理员的角色：在请求参数里反复调整思考档位旋钮，在系统提示词里写入严格字数限制，或在网关中间件中维护繁琐的路由与上下文修剪逻辑。那种模式下，模型对计算资源代价缺乏感知，节省开销只能依赖外部防线层层设卡。\nSWE-2\n展现的路径，则是尝试把节约资源的考量直接刻进模型的网络参数里。其训练目标是通过在强化学习阶段建立持续的开销反馈，让模型把克制低效尝试、优先阅读关键代码培养成无需外部提醒的习惯。这种让开销变成内在权衡的做法，旨在减少系统对外围工程手段的过度依赖。\n这种训练路径的转变，同时也把一个更深层的工程难题摆在所有从业者面前。智能体的核心魅力在于面对未知挑战展开自主探索，如果对计算成本的惩罚过于僵硬，容易过早掐灭模型在深水区推理的火花。如何在避免漫无目的挥霍资源的同时，给复杂的逻辑突破留出足够的试错空间，依然是整个行业在通往实用化道路上需要持续解答的命题。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/cost-into-models-swe2-20260912.html",
-      "content_chars": 4678,
-      "content_sha256": "cb4b556879a157a3170f68b7aebf9beca61e06f9973972eda7aaf462ff8f9a64",
-      "content_fetched_at": "2026-09-13T23:04:52.625821+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:dfa7ecf7e3a58d14",
-      "kind": "publish",
-      "text": "yage-share published: v0 一键集成：连接服务时，供应商的推荐用法自动进入 AI",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-12T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/v0-one-click-vendor-skills-20260912.html",
-      "title": "v0 一键集成：连接服务时，供应商的推荐用法自动进入 AI",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI 产品与平台\n开发工具\n产业与竞争\n一次连接里，藏着两种交付\nv0 是 Vercel 推出的 AI\n工具，能把一段对话描述直接变成可部署的网页应用。2026 年 9 月 9 日，v0\n正式推出了一项名为一键集成的功能。Michael Toth 与 Jathin Singaraju\n撰写的\nVercel\n更新日志\n指出，这项功能会自动载入服务商技能：连接发布了 agent skill\n的供应商之后，v0\n会自动加载它们，并生成符合供应商推荐模式的代码。日志给出的具体范例是\nResend：一旦连接成功，系统将通过 React Email\n组件生成事务型邮件代码。\n这项功能在界面上带来了一个过去没有的交互。在对话框里输入一段产品需求，让它做一个带用户登录或邮件通知的网页应用，在写出第一行代码之前，输入流里会弹出一张服务连接卡片。如果需求里包含了发送事务型邮件，卡片对应的是\nResend；涉及全文搜索，卡片给出 Algolia 或 Amazon\nOpenSearch；需要数据库，对应的是 MongoDB Atlas；做用户鉴权，对应的是\nClerk。开发者也可以通过带参数的直链进入，比如访问\nv0.app/?pi=resend\n或\nv0.app/?pi=mongodb\n。\n在这个动作里，点击连接按钮完成的第一件事大家很熟悉。平台在后台处理所需的环境变量与配置。过去十几年里，云服务的集成一直停留在这一步：供应商把凭证交给工程团队，把接口文档和示例项目留给人类开发者阅读。\n第二件事则越过了人类的阅读流程。在写入密钥的同一个动作里，v0 把\nResend\n官方编写的规则文件同步载入了模型的生成上下文。这些规则指导模型如何组织邮件数据、如何构造模板，以及如何让邮件进入收件箱。真正出人意料的变化在这里：供应商的使用规约直接跟随访问凭据一起分发，在连接建立的瞬间进入模型的上下文，不再留在文档站等待工程师查阅。同一次点击，交付了调通接口的凭据，也交付了使用该接口的工程知识。这种让使用规约与凭据同行的交付形态，究竟遵循着怎样的系统逻辑？\n生成内核的三件套，正在逐条变成现实\n随同网络凭证一同交付的第二项内容，即供应商的使用规约，正是我此前推演中所预测的引导知识层。2025\n年 11 月写下\n超越\nDRY：AI 原生软件工程的思考\n时，我一直在推演一个问题：软件能够由 AI\n随时现场生成，软件厂商交付的形态会发生什么变化。当时的推论是，厂商交付的核心资产将从固化好的软件界面，转向支持模型现场编写软件的生成内核。这个内核包含三层构件：不可替代的核心套件、写给大模型的引导知识，以及把不确定任务转为确定性执行的杠杆工具集。核心套件相当于椅子的腿和椅面，引导知识是给组装机器人阅读的安装指南，杠杆工具集则是打包在盒子里配套的专用内六角螺丝刀。\n当时我拿支付服务商 Stripe\n作为一个假想案例来解释这三层关系。在那个假想的场景里，核心套件是底层的支付接口，引导知识是一套工程规范与最佳实践，杠杆工具集则是一个根据结构化输入自动创建并配置商品目录的程序。在那篇文章里，我写清了三件套的构成设想，却把这些生成内核后续如何测试、如何分发，列为了没有答案的疑问。\n生成内核由核心套件、写给 AI\n的引导知识、把不确定任务转成确定性的杠杆工具集三部分叠成。\n如今看 Stripe 官方推出的\nstripe agent setup\n命令行工具，当年的假想推演已经变成了终端里的具体操作。据\nStripe\n官方文档\n，运行这条命令，工具会自动检测当前工作区使用的编码智能体，配置\nStripe 专属的 MCP 服务，并安装对应的官方 agent\nskill，后续还能持续同步更新。如果开发者选择手动安装这些\nskill，系统不会自动同步，需要通过\nnpx skills update -y\n触发更新。在这个链路里，底层的支付网关是核心套件，官方 skill\n承担了引导知识的职责，MCP 服务则成了杠杆工具集。\nResend\n展现了几乎一致的工程演进。底层的全球邮件投递网络是它的核心套件。而在开源的\nresend/resend-skills\n代码仓库\n中，团队维护着成套的配套组件。据\nResend\n官方博客\n记载，2026 年 1 月 28 日，Resend 首发上线了三个原始\nskill：Email Best Practices 规范如何让邮件稳定进入收件箱，React Email\n指导模型编写组件代码，Resend 则定义正确的接口调用协议。配合它提供的 MCP\n服务与命令行工具，三件套完整成型。\n产业界针对这套结构的封装标准也在快速收敛。据\nAgent Plugins 官网\n发布的规范，2026\n年 8 月 6 日推出的 Agent Plugins 1.0 标准，通过统一的\nplugin.json\n目录结构，把 agent skill 与 MCP\n服务打包在一起。加上 Anthropic 在 2025 年 12 月 18 日将 Agent Skills\n发布为开放标准，生成内核的三层结构走出单一厂商的自发探索，演化成了跨生态通用的工程规约。当技术规范逐渐统一，云服务厂商究竟面临怎样的现实压力，才会如此急切地构建专属内核并争夺分发入口？\n企业怎么布局：造内核与抢入口\n厂商积极跟进背后的现实压力，首先来自模型写错代码所带来的维护代价。正如\nSupabase\n官方博客\n所写的那句直截了当的判断：“AI Agents Know About Supabase.\nThey Don’t Always Use It Right.”\n这句话切中了许多云服务厂商的痛点。通用大模型在预训练时读过海量代码，但记忆里的知识版本经常滞后。面对复杂的数据库连接池配置、高并发限制或行级安全策略，模型写出的代码经常沿用过时的参数甚至直接报错，带来沉重的技术支持负担。\n其他基础设施团队在解释自身动机时，展现出高度一致的诉求。\nAuth0\n官方博客\n明确将精力放在消除代码幻觉上：“implement Auth0 correctly…\nzero hallucinations: no outdated patterns, no security gotchas.”\n在身份认证与权限管理这类高敏感领域，模型一旦给出含有缺陷的过时方案，会直接埋下系统漏洞。\nTwilio\n官方博客\n则算了一笔团队日常支持的工程账：“instead of bothering my\ncoworkers on the solutions engineering team, I have the expertise in my\nterminal.”\n把专业规则送进开发者的终端，能够直接减少技术支持与解决方案团队的人工答疑成本。Resend\n在\n官方博客\n推出邮件技能时也指出：“Agent experience (AX) is the next frontier.”\n官方团队认为，优质的技能文件可以在不占用开发者精力、不让上下文窗口过度膨胀的前提下，抹平大模型对特定领域的认知差距。\n各家团队的自发行动迅速演化为成规模的官方供给。从 Stripe\n这类基础设施厂商，到 Anthropic\n这类平台公司，发布官方技能已经成为普遍实践。第三方索引站点\nofficialskills.sh 截至 2026 年 9 月 7 日的统计显示，已有 56\n支工程团队发布了 660 条官方技能。\n写好的规则文件怎么送到智能体的运行现场？整条传导链路先在包管理层建立起来。最源头是厂商在\nGitHub 仓库维护的 Markdown 与代码。2026 年 1 月 20 日，Vercel 推出\nskills.sh。按照 Vercel 发布的\n技能生态介绍\n，开发者通过\nnpx skills add <owner/repo>\n就可以跨多个辅助编码工具安装所需技能。官方在配套的\n使用指南\n中说明，技能收录不经过中心化的提交或审核环节，放在公开仓库的规则文件只要有人通过命令行安装，系统就会根据匿名安装遥测数据自动呈现在目录中。\n供应商的推荐用法沿着仓库、安装命令、目录、连接动作这条链，最终在用户连接服务的那一刻进入代码生成流程。\n平台接着把云资源开通与技能获取捆绑在了一起。据\nVercel\n命令行更新日志\n记录，2026 年 8 月 6 日，Vercel CLI\n发布更新：开发者通过命令行安装应用市场集成时，系统会自动从 skills.sh\n安装对应服务商的 agent skill，让智能体立即掌握使用方法；以 Neon\n为例，开发者开通集成的同时即可一键装载技能。到了 v0\n的网页界面，这个链路进一步压缩成了对话流里的单次点击，提示词只要提到相关需求，连接卡片就会出现在界面中央。厂商如此费力地打通分发链路、争夺提示词触发的卡片，但这些公开分发的规则文件本身，真能为服务商带来商业回报吗？\n引导知识赚不到钱，所以它变成了入口\n从直接收益来看，答案是否定的。翻开任意一个 agent skill\n仓库，核心文件本质上都是公开的纯文本 Markdown。这种文档推送到 GitHub\n之后，任何开发者与模型都能自由阅读、复制和本地存储，边际分发成本接近零。纯文本规则很难建立起长期的定价壁垒，没有供应商能够靠销售几份纯文本\nskill 建立持续盈利的商业模式。\n厂商愿意投入资源编写并免费开放这些规则，是因为真正的收益来自底层的核心套件。云服务商的业务收入取决于实际的资源消耗：接口调用量、邮件送达量、数据库存储容量与计算单元。引导知识的真正作用，是消除模型调用底层服务时的工程摩擦。如果大模型在编写调用逻辑时频繁报错、使用弃用的参数，或者产出无法送达收件箱的邮件代码，开发者受阻之后很容易换用其他方案。提供经过验证的引导知识，让模型一次性生成可用的工程代码，才能护送调用请求最终流向计费后台。\nResend\n强调的智能体体验，道出的正是这层商业考量。代码编写的大部分工作交由大模型完成，如何让模型顺畅地选用自家服务，决定了新一代基础设施的获客效率。引导知识因此从一种技术文档，演变成争夺流量的免费通道。\n软件生态的竞争焦点也随之转移。现在的核心问题不在于谁的规则文档写得更厚，而在于服务连接建立的瞬间，谁能占据默认席位。在传统的开发流程中，选型决策通常由工程师在屏幕前逐步推进：对比多个同类库的技术文档、权衡接口设计、注册账号并手动配置密钥。工程师拥有明确的选型决策周期。\n如今平台将连接操作与知识加载合二为一，使得默认推荐拥有了巨大的分流力量。通过\nVercel CLI 安装 Neon 数据库，系统顺手装载了配套技能；运行\nstripe agent setup\n，开发环境自动完成环境检测与持续同步；在\nv0\n提示词中敲下一行描述，弹出的卡片直接决定了哪家服务商的规范注入生成上下文。谁掌控了连接时点的触发机制，谁就掌握了开发链路中的默认流量入口。\n风险暴露面与平台治理\n把服务连接变成规则的自动分发通道，在重塑流量入口的同时，也直接改变了依赖项的交付边界。当外部技能随着连接动作静默注入开发环境，软件供应链开辟了新的风险暴露面，恶意代码的潜伏空间显著扩大。据\nSnyk\n安全分析报告\n，该机构对 3,984\n个混合样本技能展开扫描，发现相当比例的技能存在安全缺陷，并确认了 76\n个恶意载荷。而在\nZenity\n安全通报\n披露的一场攻击活动中，攻击者正是借由 skills.sh\n分发凭据窃取程序，受影响的技能家族累计录得超过 170\n万次安装。必须辨明，170\n万次代表的是统计意义上的累计安装量，并不等同于遭受侵害的人数，但这足以揭示分发通道本身蕴含的安全隐患。\n更现实的疑问落在了平台的治理透明度上。v0\n目前并没有公开其底层注入机制的关键细节。技能究竟是在建立连接时单次静态加载，还是在每次代码生成时由后端实时拉取？服务商更新了\nGitHub\n仓库里的技能后，既有项目是跟随变更还是锁定旧版？平台根据何种规则为特定服务商绑定对应的技能包？开发者是否有权手动禁用某些技能规则，或者锁定特定版本？这些规则目前依然留在平台的黑盒之中。\n连接时刻的控制权\n从 Stripe 的命令行工具到 v0\n的一键集成，生成内核的三层结构已经走出概念推演，变成了云厂商标准化的交付产物。核心套件提供底层服务，引导知识抹平模型认知差异，杠杆工具集将不确定任务转化为确定性调用。这套交付链路不仅跑通了，还在以极快的速度演化为默认的开发基础设施。\n但在分发链路建立之后，真正的分水岭落在了控制权的归属上。正如我在\n超越 DRY：AI\n原生软件工程的思考\n中所推演的，软件工程正在从构建固化软件走向组织生成软件的潜力。当连接动作悄然决定了规则的注入，核心问题在于开关究竟握在谁的手里：是平台在黑盒中替开发者选定注入的内容，还是开发者能够看清并掌控进入模型上下文的每一条规则。谁在连接的那一刻决定注入什么，谁才真正决定了现场生成的软件形态。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/v0-one-click-vendor-skills-20260912.html",
-      "content_chars": 5348,
-      "content_sha256": "54cabcc728e8ed9c288e56c7bac9bd5bb934703ce03ed8649aa0a13739b0d67a",
-      "content_fetched_at": "2026-09-13T23:04:52.711718+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-09-14",
+  "collect_window": {
+    "start": "2026-09-12T00:00:00+00:00",
+    "end": "2026-09-13T23:03:40.317924+00:00",
+    "hours": 47
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "34788573340",
+    "commit": "23cd42f"
+  },
+  "stats": {
+    "total": 5,
     "by_kind": {
       "publish": 5
     },
@@ -145,9 +26,422 @@
       "unknowncheats-ac": 3,
       "yage-share": 2
     },
+    "failed_lists": [
+      "redsiege-blog"
+    ],
+    "sources_ok": 50,
+    "sources_failed": [
+      {
+        "id": "redsiege-blog",
+        "error": "no_candidates"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 8,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 13,
+      "calls": 13,
+      "prompt_tokens": 13599,
+      "completion_tokens": 3172,
+      "total_tokens": 16771,
+      "prompt_cache_hit_tokens": 10237,
+      "prompt_cache_miss_tokens": 3362
+    },
     "by_content_status": {
       "failed": 3,
       "ok": 2
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:fbcf3e2c7e76f92e",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html",
+      "at": "2026-09-13T23:03:40.317924+00:00",
+      "external_id": "a:fbcf3e2c7e76f92e",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-13T23:04:24.749756+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-13T23:03:40.317924+00:00",
+      "collected_at": "2026-09-13T23:03:40.317924+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/771210-reverse-dump-game-cheat-inside-post4798143.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:151e108a894d59e1",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html",
+      "at": "2026-09-13T23:03:40.317924+00:00",
+      "external_id": "a:151e108a894d59e1",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-13T23:04:35.780445+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-13T23:03:40.317924+00:00",
+      "collected_at": "2026-09-13T23:03:40.317924+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/758366-c-or-c-post4798081.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:4555ed7181e768f5",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html",
+      "at": "2026-09-13T23:03:40.317924+00:00",
+      "external_id": "a:4555ed7181e768f5",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-13T23:04:46.776592+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-13T23:03:40.317924+00:00",
+      "collected_at": "2026-09-13T23:03:40.317924+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/769236-advice-web-dev-wanna-learn-re-post4798079.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:9e2883b2a8600ddf",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "画得出成本曲线，不等于压得下成本曲线",
+      "target_url": "https://yage.ai/share/cost-into-models-swe2-20260912.html",
+      "text": "yage-share published: 画得出成本曲线，不等于压得下成本曲线",
+      "at": "2026-09-13T00:00:00+00:00",
+      "external_id": "a:9e2883b2a8600ddf",
+      "url": "https://yage.ai/share/cost-into-models-swe2-20260912.html",
+      "title": "画得出成本曲线，不等于压得下成本曲线",
+      "content": "AI 编程\n推理与性能\n同样叫便宜其实是两件事\n挑选模型阶段，许多团队都宣称自己的方案更加划算。但在真实工程里部署代码智能体，月底面对的账单依然居高不下。很多开发者以为换用更便宜的模型或者调短思考时间就能省钱，任务解决率却随之大幅下滑。这种反差在实践中很普遍，原因在于大家平时讨论的便宜，其实混淆了两种截然不同的动作。\n我们可以画一张基础坐标图来理清思路。横轴代表单次解决任务的花费，纵轴代表任务成功率。把不同模型在各种配置下的实测表现标在图里，那些在各个花费区间取得最高成功率的点，连起来就构成了一条光滑的能力边界。在这条曲线上挑选一个偏向便宜的点，调用费用变低了，代价却是处理复杂任务的能力缩水，这只是向指标妥协的选点。另一种动作则是发力把整条分界线向外推开，保持花费不变却能搞定更难的问题，或者在成功率分毫不掉的前提下大幅节省开销。在系统工程分析中，这条由最优组合构成的能力边界称作帕累托前沿。\n把曲线上的点挪到更便宜的位置只是选点，把整条曲线向外推移才是优化；SWE-2\n做的是后者。\n主流评测已普遍跟进这类表现的测量，例如\nArtificial\nAnalysis 编码智能体指数\n与\nDeepSWE\n评测榜单\n。2026年9月10日，开发编程助手 Devin 的团队 Cognition\n正式发布新模型\nSWE-2\n。厂商自报数据显示，在同一\nDevin CLI、同一 FrontierCode 1.1 Main 任务集上，SWE-2 中等档位相比前代\nSWE-1.7，得分更高，同时减少了 58% 交互轮次并节省 81%\n成本。其训练设计的关键做法，在于把运行花销直接做进强化学习训练目标，旨在让少绕弯路成为模型自发的内在权衡。既然推开边界才是真正的便宜，那么这条边界究竟由系统的哪一层来决定？\n在模型外面省钱绕不开天花板\n回答边界由什么决定，首先要看跑一次编程任务的花费究竟在哪一步定下来。在日常工程实践中，团队通常在输入提示、推理生成、框架编排和商业定价这四个外围层次尝试控制预算。这些方案都在模型权重之外做文章，对应着不同的工程代价。\n成本可以在提示、推理、编排、定价、训练五个层次优化，只有训练层能移动整条成本-能力曲线。\n工程师最先尝试的往往是输入提示词。我们在系统指令里写明字数限制，反复叮嘱模型回答要简明、克制发散思考，试图用提示词管住探索步数。\nTALE 提示词预算研究\n报告过这种做法平均能减少 67% 输出 token，像\nQwen3\n思考参数配置\n也支持直接关闭思考模式。然而文字叮嘱终究只是一种软性约束，面对棘手的代码报错，模型依然会冗长发散，多余的工具调用依然难以刹车。\n既然提示词管不住发散，工程直觉就会转向生成途中的硬性拦截。团队监控思考代币消耗，一旦超过预设预算就强行结束思考并转入作答，例如\ns1 实验\n采取的强制思考预算截断；或者引入 Anthropic 的\n提示词缓存功能\n，通过复用历史前缀压低输入计费单价。半途切断生成虽然能止住账单失控，思维中断的模型却往往无法写出完整的修复补丁，省下的代币换来的是任务失败。\n在生成环节设卡容易搞砸任务，控制逻辑就会移向外部调度框架。Anthropic\n总结了\n上下文编辑与压缩机制\n清理工具调用的历史冗余，其发布的\n智能体工程实践\n也强调精简上下文；路由框架\nRouteLLM\n则把简单请求分流给低成本小模型。这类路由方案本质上是在不同模型之间做任务转移，修剪上下文也有丢失关键代码状态的风险，没有降低单次推理本身的探索难度。\n至于商业层面的包月套餐，抚平了账单波动，却没有减少服务器消耗的真实算力。这些外围手段都在模型外部修补围栏，无法改变模型自身的推理决策。要想把帕累托前沿向外推移，只能让模型自己学会权衡，把成本考量注入训练过程。\n把成本写进模型的学习目标\n既然外围手段推不动边界，就只能深入模型内部，改变它的训练过程。要让模型自己学会权衡成本，首先要理解它在训练中调整行为的机制。在后训练强化学习阶段，算法让模型反复试跑真实的编程任务，并对每次尝试给出一个量化打分。这个评估表现优劣的得分称作奖励。随后，系统把得分高低转化为指引参数调整的方向信号，也就是数学上的梯度。如果打分只看任务跑通与否，模型可能学到的策略是不计代价盲目试错、反复读取无关文件，因为只要碰巧做对一次就能拿满分。\n为了扭转这种不顾代价的习惯，Cognition 研发\nSWE-2\n期间重构了打分公式，设计目标函数为\nR = S − λ_e · C\n。公式中的 S 代表试跑结果，成功通过测试取\n1，失败取 0；C 代表综合开销，将推理美元费用与运行耗时合并折算；λ_e\n则是对应不同思考强度档位的惩罚系数。模型如果在无关探索上消耗过多时间和代币，综合得分就会因为扣分项而大幅缩水。\n这种让花销直接化为扣分梯度的做法，与此前的探索形成对照。SWE-2\n基于开源模型\nKimi K3\n构建。Kimi K3 是月之暗面开源的 2.8 万亿参数混合专家模型，每 token 激活约\n1040 亿参数，拥有 1M 上下文。Kimi K3 在控制成本时采用硬性配额：预设\ntoken 预算上限，试跑超支直接判负。相比一刀切的硬拦截，SWE-2\n的连续惩罚旨在让模型在每次调用中感知开销轻重，自发寻找更短代码修改路径。\n厂商自报数据显示，面对相同任务分布，前代 SWE-1.7 平均需要 127\n步，SWE-2 中等档位压缩到 53 步，高档位 80 步，最大档位 98\n步；首次编辑代码的中位步数从前代的 48 步提前到 SWE-2 中等档位的 18\n步。官方将其归因于聚焦式探索，模型更善于直奔关键代码。然而把开销写入目标只是开端，惩罚设计稍有偏差，模型就会迅速学会钻空子走捷径。\n设计成本惩罚难在防止模型走捷径\n把开销惩罚引入训练信号之后，最大的挑战在于防止模型走投机捷径。强化学习算法寻找规则漏洞的本领极强，如果设计者没想清楚惩罚项的数学性质，模型就会通过敷衍任务来赚取虚假收益。Cognition\n在实践中做出了三个关键设计取舍，化解了三个潜在的偷懒漏洞。\n第一个取舍关乎惩罚形态。如果采用越往后越重的非线性惩罚，模型在长流程任务中，一旦发现后期扣分严厉，就会倾向于草草交卷放弃排查。为了解决这个问题，Cognition\n在\n技术报告附录 B\n中借助詹森函数方程推导，指出若要对任意 rollout\n分布，期望奖励都只依赖平均成本与平均成功率，打分函数对成本必须满足仿射关系。将其归一化后，形式正是简单的线性惩罚\nR = S − λC\n。开源基准\nOckBench\n则主张对数惩罚，说明行业内对扣分形态尚未形成统一共识。\n第二个取舍关乎惩罚系数的设定。同一个模型可以有省着想和使劲想多种思考模式，也就是不同的思考强度档位。如果系数凭工程师感觉调节，模型容易在档位之间偷工减料。Cognition\n官方技术报告披露过失效案例：高档位惩罚系数如果过大，模型会把高思考强度档位表现得像中等档位一样保守，省下的开销抵消了成功率下滑，账面奖励看似上升，实际能力边界却没有向外推移。为了化解这一漏洞，Cognition\n将惩罚系数 λ_e\n锚定在基座模型成本成功率曲线的局部切线斜率上。这样能确保等奖励线与该处的帕累托前沿相切：模型单纯沿着曲线小幅滑向低成本档位对奖励的一阶影响为零，目标是鼓励把前沿向外推开以真正获益。\n第三个取舍关乎多档位模型的训练架构。常规工程通常针对不同难度单独训练多套专家模型，随后通过蒸馏合并为一个系统。例如\nKimi K3 曾训练九个专家再做蒸馏融合，容易在知识压缩阶段产生损耗。SWE-2\n采用单次强化学习覆盖所有档位，让单一模型学会适应多种思考预算，并沿用长度加权奖励基线稳住梯度方差。即便在数学形态与训练架构上做足了防范，这种把成本写进网络权重的方案，依然有着无法触及的客观边界。\n省下来的成本边界在哪里\n即便在防范走捷径上做足了设计，我们依然需要跳出厂商自报的数据，审视这套机制在哪些场景下会失效，以及证据链条上存在哪些难以自洽的空白。结合公开评测与第三方实验，这套方案面对极端难题与长流程任务，暴露出多处显著的工程边界。\n首要局限出现在难度极高的复杂任务上。\ne1/AEC 论文\n指出，固定惩罚系数设定下，面对成本惩罚超过预期成功收益的难题，模型的最优数学策略其实是及早认输。因为一旦展开大规模试错与搜索，持续累积的扣分会吞噬微小成功带来的收益；为了保住期望得分，模型最理性的选择反而变成放弃尝试。\n另一个疑问在于效率提升的归因难题。官方技术报告中缺乏去掉成本惩罚项的对照实验，唯一的消融对比仅针对奖励基线的计算形式。与前代相比，SWE-2\n换上了实力更强的 Kimi K3 作为基座。SWE-2\n能够更早定位关键代码，这种效率跃迁很难与基座模型本身代码理解能力的提升清楚剥离。官方将步数缩减归因于聚焦式探索，但未证实这种改变有多大程度依赖基座模型对代码语义的理解力。\n面向长流程任务，局限更加明显。在包含大量系统交互的基准测试\nTerminal-Bench\n4\n上，按 Cognition 自报表，SWE-2 仅取得 27.3% 通过率，落后于 Claude\nFable 5.1 的 55.8% 与 GPT-6 Astra 的 57.9%。这一差距属于跨模型、跨\nharness\n的表现差异，不能作为因果结论。这提示，面对步骤繁复的深水区任务，单纯强化短路径探索未必足以弥补复杂推理能力的差距。\n在自家主导的\nFrontierCode 1.1\nMain 评测\n中，SWE-2 取得 50.0% 通过率，厂商打出了平均每次 rollout 比\nClaude Fable 5.1 便宜 64%\n的宣传。然而该基准不公开题目细节，评测体系本身也没有将开销计入最终得分，外界难以独立复现任务成绩。\n此外，脱离测试环境孤立讨论成本数字，极易让指标失去参考锚点。独立调研在\n测试环境效应\n分析中发现，同一批任务更换外围脚手架，摊到每解决一题的代币消耗就可能相差约\n40 倍。看清这些客观边界，才能理性评估这项成果的实质价值。\n成本从一个旋钮变成一种习惯\n看清了训练层控制开销的具体机制与现实局限，我们才能客观衡量这项探索给智能体开发带来的实质转变。从外围修饰走向内核演进，代表着软件工程在控制资源消耗这一方向上迈出了关键一步。\n回顾以往的工程习惯，控制开销的重担落在开发者肩上。工程师日常调用模型往往扮演预算管理员的角色：在请求参数里反复调整思考档位旋钮，在系统提示词里写入严格字数限制，或在网关中间件中维护繁琐的路由与上下文修剪逻辑。那种模式下，模型对计算资源代价缺乏感知，节省开销只能依赖外部防线层层设卡。\nSWE-2\n展现的路径，则是尝试把节约资源的考量直接刻进模型的网络参数里。其训练目标是通过在强化学习阶段建立持续的开销反馈，让模型把克制低效尝试、优先阅读关键代码培养成无需外部提醒的习惯。这种让开销变成内在权衡的做法，旨在减少系统对外围工程手段的过度依赖。\n这种训练路径的转变，同时也把一个更深层的工程难题摆在所有从业者面前。智能体的核心魅力在于面对未知挑战展开自主探索，如果对计算成本的惩罚过于僵硬，容易过早掐灭模型在深水区推理的火花。如何在避免漫无目的挥霍资源的同时，给复杂的逻辑突破留出足够的试错空间，依然是整个行业在通往实用化道路上需要持续解答的命题。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/cost-into-models-swe2-20260912.html",
+      "content_chars": 4678,
+      "content_sha256": "cb4b556879a157a3170f68b7aebf9beca61e06f9973972eda7aaf462ff8f9a64",
+      "content_fetched_at": "2026-09-13T23:04:52.625821+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-13T00:00:00+00:00",
+      "collected_at": "2026-09-13T23:03:40.317924+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/cost-into-models-swe2-20260912.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "画得出成本曲线，不等于压得下成本曲线",
+          "url": "https://yage.ai/share/cost-into-models-swe2-20260912.html",
+          "content_sha256": "cb4b556879a157a3170f68b7aebf9beca61e06f9973972eda7aaf462ff8f9a64"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:dfa7ecf7e3a58d14",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "v0 一键集成：连接服务时，供应商的推荐用法自动进入 AI",
+      "target_url": "https://yage.ai/share/v0-one-click-vendor-skills-20260912.html",
+      "text": "yage-share published: v0 一键集成：连接服务时，供应商的推荐用法自动进入 AI",
+      "at": "2026-09-12T00:00:00+00:00",
+      "external_id": "a:dfa7ecf7e3a58d14",
+      "url": "https://yage.ai/share/v0-one-click-vendor-skills-20260912.html",
+      "title": "v0 一键集成：连接服务时，供应商的推荐用法自动进入 AI",
+      "content": "AI 产品与平台\n开发工具\n产业与竞争\n一次连接里，藏着两种交付\nv0 是 Vercel 推出的 AI\n工具，能把一段对话描述直接变成可部署的网页应用。2026 年 9 月 9 日，v0\n正式推出了一项名为一键集成的功能。Michael Toth 与 Jathin Singaraju\n撰写的\nVercel\n更新日志\n指出，这项功能会自动载入服务商技能：连接发布了 agent skill\n的供应商之后，v0\n会自动加载它们，并生成符合供应商推荐模式的代码。日志给出的具体范例是\nResend：一旦连接成功，系统将通过 React Email\n组件生成事务型邮件代码。\n这项功能在界面上带来了一个过去没有的交互。在对话框里输入一段产品需求，让它做一个带用户登录或邮件通知的网页应用，在写出第一行代码之前，输入流里会弹出一张服务连接卡片。如果需求里包含了发送事务型邮件，卡片对应的是\nResend；涉及全文搜索，卡片给出 Algolia 或 Amazon\nOpenSearch；需要数据库，对应的是 MongoDB Atlas；做用户鉴权，对应的是\nClerk。开发者也可以通过带参数的直链进入，比如访问\nv0.app/?pi=resend\n或\nv0.app/?pi=mongodb\n。\n在这个动作里，点击连接按钮完成的第一件事大家很熟悉。平台在后台处理所需的环境变量与配置。过去十几年里，云服务的集成一直停留在这一步：供应商把凭证交给工程团队，把接口文档和示例项目留给人类开发者阅读。\n第二件事则越过了人类的阅读流程。在写入密钥的同一个动作里，v0 把\nResend\n官方编写的规则文件同步载入了模型的生成上下文。这些规则指导模型如何组织邮件数据、如何构造模板，以及如何让邮件进入收件箱。真正出人意料的变化在这里：供应商的使用规约直接跟随访问凭据一起分发，在连接建立的瞬间进入模型的上下文，不再留在文档站等待工程师查阅。同一次点击，交付了调通接口的凭据，也交付了使用该接口的工程知识。这种让使用规约与凭据同行的交付形态，究竟遵循着怎样的系统逻辑？\n生成内核的三件套，正在逐条变成现实\n随同网络凭证一同交付的第二项内容，即供应商的使用规约，正是我此前推演中所预测的引导知识层。2025\n年 11 月写下\n超越\nDRY：AI 原生软件工程的思考\n时，我一直在推演一个问题：软件能够由 AI\n随时现场生成，软件厂商交付的形态会发生什么变化。当时的推论是，厂商交付的核心资产将从固化好的软件界面，转向支持模型现场编写软件的生成内核。这个内核包含三层构件：不可替代的核心套件、写给大模型的引导知识，以及把不确定任务转为确定性执行的杠杆工具集。核心套件相当于椅子的腿和椅面，引导知识是给组装机器人阅读的安装指南，杠杆工具集则是打包在盒子里配套的专用内六角螺丝刀。\n当时我拿支付服务商 Stripe\n作为一个假想案例来解释这三层关系。在那个假想的场景里，核心套件是底层的支付接口，引导知识是一套工程规范与最佳实践，杠杆工具集则是一个根据结构化输入自动创建并配置商品目录的程序。在那篇文章里，我写清了三件套的构成设想，却把这些生成内核后续如何测试、如何分发，列为了没有答案的疑问。\n生成内核由核心套件、写给 AI\n的引导知识、把不确定任务转成确定性的杠杆工具集三部分叠成。\n如今看 Stripe 官方推出的\nstripe agent setup\n命令行工具，当年的假想推演已经变成了终端里的具体操作。据\nStripe\n官方文档\n，运行这条命令，工具会自动检测当前工作区使用的编码智能体，配置\nStripe 专属的 MCP 服务，并安装对应的官方 agent\nskill，后续还能持续同步更新。如果开发者选择手动安装这些\nskill，系统不会自动同步，需要通过\nnpx skills update -y\n触发更新。在这个链路里，底层的支付网关是核心套件，官方 skill\n承担了引导知识的职责，MCP 服务则成了杠杆工具集。\nResend\n展现了几乎一致的工程演进。底层的全球邮件投递网络是它的核心套件。而在开源的\nresend/resend-skills\n代码仓库\n中，团队维护着成套的配套组件。据\nResend\n官方博客\n记载，2026 年 1 月 28 日，Resend 首发上线了三个原始\nskill：Email Best Practices 规范如何让邮件稳定进入收件箱，React Email\n指导模型编写组件代码，Resend 则定义正确的接口调用协议。配合它提供的 MCP\n服务与命令行工具，三件套完整成型。\n产业界针对这套结构的封装标准也在快速收敛。据\nAgent Plugins 官网\n发布的规范，2026\n年 8 月 6 日推出的 Agent Plugins 1.0 标准，通过统一的\nplugin.json\n目录结构，把 agent skill 与 MCP\n服务打包在一起。加上 Anthropic 在 2025 年 12 月 18 日将 Agent Skills\n发布为开放标准，生成内核的三层结构走出单一厂商的自发探索，演化成了跨生态通用的工程规约。当技术规范逐渐统一，云服务厂商究竟面临怎样的现实压力，才会如此急切地构建专属内核并争夺分发入口？\n企业怎么布局：造内核与抢入口\n厂商积极跟进背后的现实压力，首先来自模型写错代码所带来的维护代价。正如\nSupabase\n官方博客\n所写的那句直截了当的判断：“AI Agents Know About Supabase.\nThey Don’t Always Use It Right.”\n这句话切中了许多云服务厂商的痛点。通用大模型在预训练时读过海量代码，但记忆里的知识版本经常滞后。面对复杂的数据库连接池配置、高并发限制或行级安全策略，模型写出的代码经常沿用过时的参数甚至直接报错，带来沉重的技术支持负担。\n其他基础设施团队在解释自身动机时，展现出高度一致的诉求。\nAuth0\n官方博客\n明确将精力放在消除代码幻觉上：“implement Auth0 correctly…\nzero hallucinations: no outdated patterns, no security gotchas.”\n在身份认证与权限管理这类高敏感领域，模型一旦给出含有缺陷的过时方案，会直接埋下系统漏洞。\nTwilio\n官方博客\n则算了一笔团队日常支持的工程账：“instead of bothering my\ncoworkers on the solutions engineering team, I have the expertise in my\nterminal.”\n把专业规则送进开发者的终端，能够直接减少技术支持与解决方案团队的人工答疑成本。Resend\n在\n官方博客\n推出邮件技能时也指出：“Agent experience (AX) is the next frontier.”\n官方团队认为，优质的技能文件可以在不占用开发者精力、不让上下文窗口过度膨胀的前提下，抹平大模型对特定领域的认知差距。\n各家团队的自发行动迅速演化为成规模的官方供给。从 Stripe\n这类基础设施厂商，到 Anthropic\n这类平台公司，发布官方技能已经成为普遍实践。第三方索引站点\nofficialskills.sh 截至 2026 年 9 月 7 日的统计显示，已有 56\n支工程团队发布了 660 条官方技能。\n写好的规则文件怎么送到智能体的运行现场？整条传导链路先在包管理层建立起来。最源头是厂商在\nGitHub 仓库维护的 Markdown 与代码。2026 年 1 月 20 日，Vercel 推出\nskills.sh。按照 Vercel 发布的\n技能生态介绍\n，开发者通过\nnpx skills add <owner/repo>\n就可以跨多个辅助编码工具安装所需技能。官方在配套的\n使用指南\n中说明，技能收录不经过中心化的提交或审核环节，放在公开仓库的规则文件只要有人通过命令行安装，系统就会根据匿名安装遥测数据自动呈现在目录中。\n供应商的推荐用法沿着仓库、安装命令、目录、连接动作这条链，最终在用户连接服务的那一刻进入代码生成流程。\n平台接着把云资源开通与技能获取捆绑在了一起。据\nVercel\n命令行更新日志\n记录，2026 年 8 月 6 日，Vercel CLI\n发布更新：开发者通过命令行安装应用市场集成时，系统会自动从 skills.sh\n安装对应服务商的 agent skill，让智能体立即掌握使用方法；以 Neon\n为例，开发者开通集成的同时即可一键装载技能。到了 v0\n的网页界面，这个链路进一步压缩成了对话流里的单次点击，提示词只要提到相关需求，连接卡片就会出现在界面中央。厂商如此费力地打通分发链路、争夺提示词触发的卡片，但这些公开分发的规则文件本身，真能为服务商带来商业回报吗？\n引导知识赚不到钱，所以它变成了入口\n从直接收益来看，答案是否定的。翻开任意一个 agent skill\n仓库，核心文件本质上都是公开的纯文本 Markdown。这种文档推送到 GitHub\n之后，任何开发者与模型都能自由阅读、复制和本地存储，边际分发成本接近零。纯文本规则很难建立起长期的定价壁垒，没有供应商能够靠销售几份纯文本\nskill 建立持续盈利的商业模式。\n厂商愿意投入资源编写并免费开放这些规则，是因为真正的收益来自底层的核心套件。云服务商的业务收入取决于实际的资源消耗：接口调用量、邮件送达量、数据库存储容量与计算单元。引导知识的真正作用，是消除模型调用底层服务时的工程摩擦。如果大模型在编写调用逻辑时频繁报错、使用弃用的参数，或者产出无法送达收件箱的邮件代码，开发者受阻之后很容易换用其他方案。提供经过验证的引导知识，让模型一次性生成可用的工程代码，才能护送调用请求最终流向计费后台。\nResend\n强调的智能体体验，道出的正是这层商业考量。代码编写的大部分工作交由大模型完成，如何让模型顺畅地选用自家服务，决定了新一代基础设施的获客效率。引导知识因此从一种技术文档，演变成争夺流量的免费通道。\n软件生态的竞争焦点也随之转移。现在的核心问题不在于谁的规则文档写得更厚，而在于服务连接建立的瞬间，谁能占据默认席位。在传统的开发流程中，选型决策通常由工程师在屏幕前逐步推进：对比多个同类库的技术文档、权衡接口设计、注册账号并手动配置密钥。工程师拥有明确的选型决策周期。\n如今平台将连接操作与知识加载合二为一，使得默认推荐拥有了巨大的分流力量。通过\nVercel CLI 安装 Neon 数据库，系统顺手装载了配套技能；运行\nstripe agent setup\n，开发环境自动完成环境检测与持续同步；在\nv0\n提示词中敲下一行描述，弹出的卡片直接决定了哪家服务商的规范注入生成上下文。谁掌控了连接时点的触发机制，谁就掌握了开发链路中的默认流量入口。\n风险暴露面与平台治理\n把服务连接变成规则的自动分发通道，在重塑流量入口的同时，也直接改变了依赖项的交付边界。当外部技能随着连接动作静默注入开发环境，软件供应链开辟了新的风险暴露面，恶意代码的潜伏空间显著扩大。据\nSnyk\n安全分析报告\n，该机构对 3,984\n个混合样本技能展开扫描，发现相当比例的技能存在安全缺陷，并确认了 76\n个恶意载荷。而在\nZenity\n安全通报\n披露的一场攻击活动中，攻击者正是借由 skills.sh\n分发凭据窃取程序，受影响的技能家族累计录得超过 170\n万次安装。必须辨明，170\n万次代表的是统计意义上的累计安装量，并不等同于遭受侵害的人数，但这足以揭示分发通道本身蕴含的安全隐患。\n更现实的疑问落在了平台的治理透明度上。v0\n目前并没有公开其底层注入机制的关键细节。技能究竟是在建立连接时单次静态加载，还是在每次代码生成时由后端实时拉取？服务商更新了\nGitHub\n仓库里的技能后，既有项目是跟随变更还是锁定旧版？平台根据何种规则为特定服务商绑定对应的技能包？开发者是否有权手动禁用某些技能规则，或者锁定特定版本？这些规则目前依然留在平台的黑盒之中。\n连接时刻的控制权\n从 Stripe 的命令行工具到 v0\n的一键集成，生成内核的三层结构已经走出概念推演，变成了云厂商标准化的交付产物。核心套件提供底层服务，引导知识抹平模型认知差异，杠杆工具集将不确定任务转化为确定性调用。这套交付链路不仅跑通了，还在以极快的速度演化为默认的开发基础设施。\n但在分发链路建立之后，真正的分水岭落在了控制权的归属上。正如我在\n超越 DRY：AI\n原生软件工程的思考\n中所推演的，软件工程正在从构建固化软件走向组织生成软件的潜力。当连接动作悄然决定了规则的注入，核心问题在于开关究竟握在谁的手里：是平台在黑盒中替开发者选定注入的内容，还是开发者能够看清并掌控进入模型上下文的每一条规则。谁在连接的那一刻决定注入什么，谁才真正决定了现场生成的软件形态。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/v0-one-click-vendor-skills-20260912.html",
+      "content_chars": 5348,
+      "content_sha256": "54cabcc728e8ed9c288e56c7bac9bd5bb934703ce03ed8649aa0a13739b0d67a",
+      "content_fetched_at": "2026-09-13T23:04:52.711718+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-12T00:00:00+00:00",
+      "collected_at": "2026-09-13T23:03:40.317924+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/v0-one-click-vendor-skills-20260912.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "v0 一键集成：连接服务时，供应商的推荐用法自动进入 AI",
+          "url": "https://yage.ai/share/v0-one-click-vendor-skills-20260912.html",
+          "content_sha256": "54cabcc728e8ed9c288e56c7bac9bd5bb934703ce03ed8649aa0a13739b0d67a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
