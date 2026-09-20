@@ -1,114 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-09-21",
-  "generated_at": "2026-09-20T23:10:11.457678+00:00",
-  "item_count": 4,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:fd3ef4fa5effb65f",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: How to Make Ghidra Significantly Faster",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-20T23:07:51.235778+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster.html",
-      "title": "How to Make Ghidra Significantly Faster",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-20T23:08:32.011009+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:3a4ea38100c73b78",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: UE5CEDumper",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-20T23:07:51.235778+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/760545-ue5cedumper.html",
-      "title": "UE5CEDumper",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/760545-ue5cedumper.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-20T23:08:42.921589+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:421b3b8dafc3ffc1",
-      "kind": "publish",
-      "text": "yage-share published: 这一周，AI 工程工具的四件实事",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-20T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/ai-news-weekly-boundaries-20260920.html",
-      "title": "这一周，AI 工程工具的四件实事",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "// 教学示意代码：消费概率分布的业务分流\nif\n(result\n.\ndepartment\n.\nconfidence\n<\n0.3\n) {\n// 置信度过低，模型无法明确判断意图，转人工分诊\nreturn\nrouteToHumanAgent\n(ticket)\n;\n}\n// 置信度达标，主意图派单给得分最高的团队\nassignTicketToTeam\n(ticket\n,\nresult\n.\ndepartment\n.\nchoice\n)\n;\n// 分配给 technical\nif\n(result\n.\ndepartment\n.\nprobabilities\n.\nbilling\n>\n0.15\n) {\n// 次高选项概率显著，反映了用户关于支付账户失败的陈述，抄送计费团队作为关注人\nccTicketToTeam\n(ticket\n,\n\"billing\"\n)\n;\n}\n// 教学示意代码：模型编写的 PTC 程序一次性完成批量查询\nconst\nkeywords\n=\n[\n'auth'\n,\n'session'\n,\n'token'\n,\n'crypto'\n,\n'permission'\n]\n;\nconst\nsummary\n:\nRecord\n<\nstring\n,\nnumber\n>\n=\n{}\n;\nfor\n(\nconst\nkeyword\nof\nkeywords) {\nconst\nmatches\n=\nawait\ntools\n.\nsearch\n({ query\n:\nkeyword\n,\nlimit\n:\n10\n})\n;\nsummary[keyword]\n=\nmatches\n.\nlength\n;\n}\nreturn\nsummary\n;",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http_llm_blocks",
-      "content_source_url": "https://yage.ai/share/ai-news-weekly-boundaries-20260920.html",
-      "content_chars": 703,
-      "content_sha256": "33eb7d2afad74f84bd821bdbf57ba56b901ab234ccc4de8ec1004ce00ba2dbe8",
-      "content_fetched_at": "2026-09-20T23:09:06.648633+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:4bae2b7a6c8a921d",
-      "kind": "publish",
-      "text": "yage-share published: CI 的第二层红利：重写变便宜之后，补丁不再回本",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-19T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/ci-rewrite-cheaper-than-patching-20260919.html",
-      "title": "CI 的第二层红利：重写变便宜之后，补丁不再回本",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI 编程\n开发工具\nAnthropic\n的持续集成流水线旁边，跑着一个不起眼的小服务，专门帮自动化构建记测试账，并在每次提交代码时挑出该跑的用例。在过去六个月里，Anthropic\n这套服务的任务量猛增了 25\n倍，工程师接连打了三次补丁，每次换来的平稳时间都比上一轮更短。最后团队派出一名工程师花了三周推倒重写，而作者估计一年前做同样的事情要耗费一个季度。先打补丁、以后再重写的老节奏，在成本的构成改变之后不再回本。\n出事的是记测试账的那个服务\n上面讲到的这些，都来自一篇复盘：2026 年 9 月 14 日，Anthropic 工程师\nSachin Malhotra\n发了篇复盘\n，讲这套记账服务从开始扛不住、连打补丁，到最后重写的经过。初读我以为又是一篇讲\nAI 让 CI\n更忙、验证更重要的老话，读到后面才发现，主角不在持续集成流水线本身。出问题的是旁边这个记账的服务。\n这套服务由两个部件组成。一个部件负责记账，把每次 CI\n跑完的结果存下来；另一个部件负责查表，开发者打开 PR\n时，它去翻以往的运行记录，决定这次挑选哪些测试执行。筛选过程遵循确定性规则，主要依据两条信息：每个测试过去跑得怎么样，以及它跟这次改动的代码包关联有多紧密。团队不需要每个\nPR 都把全套测试从头跑到尾。业内做类似筛选的做法并不罕见，比如\nMeta 2019\n年就部署过同类选择\n。这套机制没有依赖代码覆盖率，也没有引入机器学习分类模型。\n旧版设计把这两个部件塞进同一个单例进程。按顺序整理测试历史必须依靠单一写入方，这个约束直接堵死了向外加机器扩容的可能。任务密度升到每秒多个之后，记账的部件处理速度跟不上，落后二十分钟就会积压数万条测试结果没有入账。持续集成流水线本身没有中断，生产环境也没有流入未经测试的代码，麻烦出在账本落后上。\n挑测试的那个部件拿着过期账本做选择，两头都在浪费算力。系统会选中已知容易失败或者不稳定的测试，白白耗费计算资源。新写出来的测试进不了执行池，留下回归隐患。坏合入也要隔更久才能暴露，引来多名工程师无效排查。人类工程师遇到无关报警还能自行甄别，依赖测试循环做自检修改的\nagent 却只能拿着报错反复尝试，过期账本带来的打扰格外突出。\n压力来自几处。测试总数扩大到 10 倍，工程师名义人数只略微增加。Claude\n倾向于提交粒度更细的小\nPR，推高了触发频次。自动化任务在夜间和周末抬高了活动底线，白天依然保留人类集中审批的突发高峰。到\n2026 年 5 月，合入生产的代码行中可归因于 Claude 的比例超过\n80%，脚注注明归因管道存在缺口，未归因部分包含自动生成代码等非人工产物。面对频繁跳出的告警，团队当时并没有把重写提上日程。\n补丁买到的时间在缩短\n2025 年 10\n月，这套记账服务开始吃紧，连续两天触发报警。当时没人主动认领这块设施，负责持续集成的团队手头有优先级更高的工作。工程师采取常规处置，把宿主机的计算核心数翻倍，换来大约\n70 天的平稳运行。\n到了 2026 年 2 月，机器资源再次见底。团队借助 Claude\n生成的代码按代码包分片，把原本全仓库单一写入改为按包并行写入。这次修补换来大约\n29 天的喘息时间。\n进入 2026 年 3\n月，内存压力全面爆发，服务进程几乎每天下午都顶到内存上限。排查只找到四个\nbug，换用内存分配器没有效果，大家又不敢对高负荷单例做实时内存画像。团队只能退守到每日定时重启，买到的安全时间缩短到不足一天。每日重启让排队越滚越大，账本滞后一小时以上的情况反复出现，大量测试数据无法及时录入。\n三次修补维持运转的时间依次是 70 天、29\n天和不足一天，每次换来的寿命都大幅缩水。这是指数增长下的算术现实：只要输入端增速不减，任何按固定倍数追加容量的临时手段，买到的平稳周数必然持续收缩。\n三次补丁买到的存活时间逐次收缩：70 天、29\n天、不足一天\n输入端的压力来自代码产出的剧增。Anthropic 的\n自递归改进报告\n提到，2026 年二季度典型工程师日均合入代码行数达到 2024 年的 8\n倍。那页的脚注还说明，代码行数衡量的是数量而非质量，几乎肯定夸大了真实增益。即便存在数量与质量的差距，代码涌入加快的事实依然确凿。在最终切换之前，监控图上多数日期存在积压，未处理事件峰值逐周抬升。每日重启再也稳不住暴涨的事件流，账本延迟持续放大，打补丁走到了尽头。\n重写变便宜了\n面对失效的每日重启，工程团队终于下决心重写这套服务。一名工程师只用了三周就完成重构，作者对照估计，一年前类似规模的工作接近一个季度。需要说明的是，这属于作者个人的反事实估计，并没有设立平行的对照组。\n新设计的核心做法是解除状态耦合。团队把录入运行结果与维护历史记录分开：任意节点都能接收测试结果，追加写进外部流水账，处理完毕立即释放内存。处理节点由此变成无状态，流量高峰时可以直接横向增加机器实例。另一个独立的轻量进程每隔几秒聚合一次外部流水账，汇总成供挑测试的部件快速查询的历史账本。\n这次重写体现出技术门槛的大幅走低。智能工具协助编写了分片逻辑并寻找运行参数，新设计所需的存储容量与工作节点数量，很大程度上由\nClaude 自主推导完成。推倒重来的成本明显变低。\n技术造价下降的同时，团队习惯依然顽固。作者开启了一个长期会话，让\nClaude 盯住排队积压，并在积压走高时发出提醒。Claude\n在几个月里反复建议直接重写，团队依然一次次选择打补丁应付。从 2025 年 10\n月最初报警到新系统上线，在组织惯性面前拖了将近半年。\n两个价格交叉，最优决策就变了\n面对频频报警的基础设施，工程团队到底该继续修补，还是停下手头工作重新写一套？大家时刻都在两难之间权衡。过去工程师习惯把重写往后推，因为重写要几个月工期，而扩容服务器或者加几段分支逻辑要省事得多。但现在重写要付的成本从一季度掉到三周，继续补买到的时间从\n70 天掉到不足一天，两个价格朝相反方向走。\n重写要付的成本\n继续补的隐性成本\n过去需要耗费整季人力，现在压缩至单人三周交付。辅助工具接管了编码与参数调优，实施门槛明显走低。\n过去单次扩容能买到两月有余，现在补丁买到的有效周数持续收缩。系统频繁告警重启，反复修补的维护消耗越来越高。\n借助代码生成与推演，推倒重来的直接投入持续下降，一次性改造即可换取长效收益。\n面对指数级膨胀的提交量，固定倍数的修补手段迅速失效。积压的数据风险会反噬研发节奏，最终仍然躲不开重构。\n两条成本曲线的交叉点发生了左移。重写的成本向下走，维持旧系统的隐性代价向上走，交汇的那一刻，就是重写比继续修补更划算的拐点。这个拐点明显提前了。重写这件事，不能再等到服务撑不住了才动手。\n重写成本下移、继续补的隐性成本上移，两条曲线的交叉点向左移动\n作者坦言，换大机器、并行切分、定时重启这些招数并不稀奇。关键洞见在于两件事凑到了一起：补丁换来的安全时间大幅缩水，而重写需要的开销同样显著下降。\n这直接引申出两项新决策。推迟重写的门槛必须调低。一旦发现补丁有效期的衰减在加快，就应当尽早启动重构，不在低效的缝补里耗费精力。初始方案的容量预估必须更新。作者建议假设系统两个季度内会承受\n25 倍负荷，初始版本应当按 10 到 20 倍流量留出扩展余地。\n这也是此前讨论过的第二层红利。第一层是写代码更快更省力，属于直接收益。第二层是成本的构成改变之后，关于何时凑合、何时重写的平衡点发生位移。新方案没有跳出传统系统设计常识，变动的是决策天平两端的砝码。\n哪些能带走，哪些别带走\n面对这份复盘，普通团队需要区分哪些经验可以直接吸收，哪些做法不必跟风。很多总结源于通用系统设计原则，并不绑定在自动化编码集群上。可以吸收的经验，主要体现在三条不依赖自动化工具链的系统信号上。\n第一条信号看单点隐患。单进程独占可变状态是明确的扩展隐患。旧版把记录与选择绑定在同一个实例里，请求密度一旦拉升，排队积压直接堵死向外加机器的途径。把状态移到进程外面、让工作节点保持无状态，属于经典常识。\n第二条信号看收支对账。进出任务数量平衡是最便宜也最灵敏的运行指标。只要入口接收的构建任务与完成记录对不上账，不需要复杂的链路追踪，就能断定内部账本已经落后。\n第三条信号看补丁寿命衰减。连续扩容换来的平稳时间如果持续收缩，就是启动重写清晰的信号。走到这个阶段，继续修补只会白白消耗精力。\n有些做法则不应当盲目套用。没有密集自动化编码负载的中小团队，不必照搬外部流水账与分片消费者这套体系。按代码包运行测试、保持轻量单体配合规律维护，依然符合实际需要。\n六个月 25\n倍的任务增速是特定团队在特定阶段的遭遇，不能当作所有团队的常态。工具带来的真正变动在于两个价格的相对走势，不在于具体的负荷数字。脱离了高压代码流入的场景，盲目拔高分布式复杂度，只会换来多余的运维负担。\n我们不知道什么\n评估这份记录，必须区分确凿事实与无法交叉验证的推断。这是来自单一公司、围绕单一配套服务的个案，行业里目前缺乏第二组公开对照。\n关键数据带有明确限定。六个月 25\n倍增长没有细项分解，各项诱因的具体占比未知。代码产出提升 8\n倍的口径自认局限，行数只衡量数量而非质量，几乎肯定夸大了真实效率。代码归因超过\n80% 的统计存在缺口，未归因数据里夹杂着脚本等非人工产物。\n工程对比包含主观成分。重构周期从一季度缩短至三周属于反事实估计，缺少平行对照。新设计让积压走平，作者承认运行费用高于旧方案，却没有披露具体金额。复盘全文没有提供缺陷率和线上故障数据。监控曲线走平仅代表排队恢复可持续，推导不出验证总成本下降，更无法证明代码质量得到改善。\n提速与降价两种效应混合发力，公开材料无法将两者清晰剥离，不能把倍数机械相乘得出普遍结论。逐项列出边界在于界定事实的有效范围。面对这类案例，我更倾向于把注意力留在能够复核的价格变动上面，不去延展未经验证的推断。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/ci-rewrite-cheaper-than-patching-20260919.html",
-      "content_chars": 4076,
-      "content_sha256": "6c1b3aaeda1acb7b27b3b08a2756df0cb6e61a94b9ce8067cef1a42a37063a3b",
-      "content_fetched_at": "2026-09-20T23:09:07.061845+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-09-21",
+  "collect_window": {
+    "start": "2026-09-19T00:00:00+00:00",
+    "end": "2026-09-20T23:07:51.235778+00:00",
+    "hours": 47
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "35543713034",
+    "commit": "e5c13d5"
+  },
+  "stats": {
+    "total": 4,
     "by_kind": {
       "publish": 4
     },
@@ -120,9 +26,345 @@
       "unknowncheats-ac": 2,
       "yage-share": 2
     },
+    "failed_lists": [
+      "redsiege-blog"
+    ],
+    "sources_ok": 50,
+    "sources_failed": [
+      {
+        "id": "redsiege-blog",
+        "error": "no_candidates"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 8,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 14,
+      "calls": 14,
+      "prompt_tokens": 14501,
+      "completion_tokens": 6544,
+      "total_tokens": 21045,
+      "prompt_cache_hit_tokens": 10109,
+      "prompt_cache_miss_tokens": 4392
+    },
     "by_content_status": {
       "failed": 2,
       "ok": 2
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:fd3ef4fa5effb65f",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "How to Make Ghidra Significantly Faster",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster.html",
+      "text": "unknowncheats-ac published: How to Make Ghidra Significantly Faster",
+      "at": "2026-09-20T23:07:51.235778+00:00",
+      "external_id": "a:fd3ef4fa5effb65f",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster.html",
+      "title": "How to Make Ghidra Significantly Faster",
+      "content": "unknowncheats-ac published: How to Make Ghidra Significantly Faster",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-20T23:08:32.011009+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-20T23:07:51.235778+00:00",
+      "collected_at": "2026-09-20T23:07:51.235778+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "How to Make Ghidra Significantly Faster",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:3a4ea38100c73b78",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "UE5CEDumper",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/760545-ue5cedumper.html",
+      "text": "unknowncheats-ac published: UE5CEDumper",
+      "at": "2026-09-20T23:07:51.235778+00:00",
+      "external_id": "a:3a4ea38100c73b78",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/760545-ue5cedumper.html",
+      "title": "UE5CEDumper",
+      "content": "unknowncheats-ac published: UE5CEDumper",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/760545-ue5cedumper.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-20T23:08:42.921589+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-20T23:07:51.235778+00:00",
+      "collected_at": "2026-09-20T23:07:51.235778+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/760545-ue5cedumper.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "UE5CEDumper",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/760545-ue5cedumper.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:421b3b8dafc3ffc1",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "这一周，AI 工程工具的四件实事",
+      "target_url": "https://yage.ai/share/ai-news-weekly-boundaries-20260920.html",
+      "text": "yage-share published: 这一周，AI 工程工具的四件实事",
+      "at": "2026-09-20T00:00:00+00:00",
+      "external_id": "a:421b3b8dafc3ffc1",
+      "url": "https://yage.ai/share/ai-news-weekly-boundaries-20260920.html",
+      "title": "这一周，AI 工程工具的四件实事",
+      "content": "// 教学示意代码：消费概率分布的业务分流\nif\n(result\n.\ndepartment\n.\nconfidence\n<\n0.3\n) {\n// 置信度过低，模型无法明确判断意图，转人工分诊\nreturn\nrouteToHumanAgent\n(ticket)\n;\n}\n// 置信度达标，主意图派单给得分最高的团队\nassignTicketToTeam\n(ticket\n,\nresult\n.\ndepartment\n.\nchoice\n)\n;\n// 分配给 technical\nif\n(result\n.\ndepartment\n.\nprobabilities\n.\nbilling\n>\n0.15\n) {\n// 次高选项概率显著，反映了用户关于支付账户失败的陈述，抄送计费团队作为关注人\nccTicketToTeam\n(ticket\n,\n\"billing\"\n)\n;\n}\n// 教学示意代码：模型编写的 PTC 程序一次性完成批量查询\nconst\nkeywords\n=\n[\n'auth'\n,\n'session'\n,\n'token'\n,\n'crypto'\n,\n'permission'\n]\n;\nconst\nsummary\n:\nRecord\n<\nstring\n,\nnumber\n>\n=\n{}\n;\nfor\n(\nconst\nkeyword\nof\nkeywords) {\nconst\nmatches\n=\nawait\ntools\n.\nsearch\n({ query\n:\nkeyword\n,\nlimit\n:\n10\n})\n;\nsummary[keyword]\n=\nmatches\n.\nlength\n;\n}\nreturn\nsummary\n;",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http_llm_blocks",
+      "content_source_url": "https://yage.ai/share/ai-news-weekly-boundaries-20260920.html",
+      "content_chars": 703,
+      "content_sha256": "33eb7d2afad74f84bd821bdbf57ba56b901ab234ccc4de8ec1004ce00ba2dbe8",
+      "content_fetched_at": "2026-09-20T23:09:06.648633+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-20T00:00:00+00:00",
+      "collected_at": "2026-09-20T23:07:51.235778+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/ai-news-weekly-boundaries-20260920.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "这一周，AI 工程工具的四件实事",
+          "url": "https://yage.ai/share/ai-news-weekly-boundaries-20260920.html",
+          "content_sha256": "33eb7d2afad74f84bd821bdbf57ba56b901ab234ccc4de8ec1004ce00ba2dbe8"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http_llm_blocks"
+      }
+    },
+    {
+      "id": "a:4bae2b7a6c8a921d",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "CI 的第二层红利：重写变便宜之后，补丁不再回本",
+      "target_url": "https://yage.ai/share/ci-rewrite-cheaper-than-patching-20260919.html",
+      "text": "yage-share published: CI 的第二层红利：重写变便宜之后，补丁不再回本",
+      "at": "2026-09-19T00:00:00+00:00",
+      "external_id": "a:4bae2b7a6c8a921d",
+      "url": "https://yage.ai/share/ci-rewrite-cheaper-than-patching-20260919.html",
+      "title": "CI 的第二层红利：重写变便宜之后，补丁不再回本",
+      "content": "AI 编程\n开发工具\nAnthropic\n的持续集成流水线旁边，跑着一个不起眼的小服务，专门帮自动化构建记测试账，并在每次提交代码时挑出该跑的用例。在过去六个月里，Anthropic\n这套服务的任务量猛增了 25\n倍，工程师接连打了三次补丁，每次换来的平稳时间都比上一轮更短。最后团队派出一名工程师花了三周推倒重写，而作者估计一年前做同样的事情要耗费一个季度。先打补丁、以后再重写的老节奏，在成本的构成改变之后不再回本。\n出事的是记测试账的那个服务\n上面讲到的这些，都来自一篇复盘：2026 年 9 月 14 日，Anthropic 工程师\nSachin Malhotra\n发了篇复盘\n，讲这套记账服务从开始扛不住、连打补丁，到最后重写的经过。初读我以为又是一篇讲\nAI 让 CI\n更忙、验证更重要的老话，读到后面才发现，主角不在持续集成流水线本身。出问题的是旁边这个记账的服务。\n这套服务由两个部件组成。一个部件负责记账，把每次 CI\n跑完的结果存下来；另一个部件负责查表，开发者打开 PR\n时，它去翻以往的运行记录，决定这次挑选哪些测试执行。筛选过程遵循确定性规则，主要依据两条信息：每个测试过去跑得怎么样，以及它跟这次改动的代码包关联有多紧密。团队不需要每个\nPR 都把全套测试从头跑到尾。业内做类似筛选的做法并不罕见，比如\nMeta 2019\n年就部署过同类选择\n。这套机制没有依赖代码覆盖率，也没有引入机器学习分类模型。\n旧版设计把这两个部件塞进同一个单例进程。按顺序整理测试历史必须依靠单一写入方，这个约束直接堵死了向外加机器扩容的可能。任务密度升到每秒多个之后，记账的部件处理速度跟不上，落后二十分钟就会积压数万条测试结果没有入账。持续集成流水线本身没有中断，生产环境也没有流入未经测试的代码，麻烦出在账本落后上。\n挑测试的那个部件拿着过期账本做选择，两头都在浪费算力。系统会选中已知容易失败或者不稳定的测试，白白耗费计算资源。新写出来的测试进不了执行池，留下回归隐患。坏合入也要隔更久才能暴露，引来多名工程师无效排查。人类工程师遇到无关报警还能自行甄别，依赖测试循环做自检修改的\nagent 却只能拿着报错反复尝试，过期账本带来的打扰格外突出。\n压力来自几处。测试总数扩大到 10 倍，工程师名义人数只略微增加。Claude\n倾向于提交粒度更细的小\nPR，推高了触发频次。自动化任务在夜间和周末抬高了活动底线，白天依然保留人类集中审批的突发高峰。到\n2026 年 5 月，合入生产的代码行中可归因于 Claude 的比例超过\n80%，脚注注明归因管道存在缺口，未归因部分包含自动生成代码等非人工产物。面对频繁跳出的告警，团队当时并没有把重写提上日程。\n补丁买到的时间在缩短\n2025 年 10\n月，这套记账服务开始吃紧，连续两天触发报警。当时没人主动认领这块设施，负责持续集成的团队手头有优先级更高的工作。工程师采取常规处置，把宿主机的计算核心数翻倍，换来大约\n70 天的平稳运行。\n到了 2026 年 2 月，机器资源再次见底。团队借助 Claude\n生成的代码按代码包分片，把原本全仓库单一写入改为按包并行写入。这次修补换来大约\n29 天的喘息时间。\n进入 2026 年 3\n月，内存压力全面爆发，服务进程几乎每天下午都顶到内存上限。排查只找到四个\nbug，换用内存分配器没有效果，大家又不敢对高负荷单例做实时内存画像。团队只能退守到每日定时重启，买到的安全时间缩短到不足一天。每日重启让排队越滚越大，账本滞后一小时以上的情况反复出现，大量测试数据无法及时录入。\n三次修补维持运转的时间依次是 70 天、29\n天和不足一天，每次换来的寿命都大幅缩水。这是指数增长下的算术现实：只要输入端增速不减，任何按固定倍数追加容量的临时手段，买到的平稳周数必然持续收缩。\n三次补丁买到的存活时间逐次收缩：70 天、29\n天、不足一天\n输入端的压力来自代码产出的剧增。Anthropic 的\n自递归改进报告\n提到，2026 年二季度典型工程师日均合入代码行数达到 2024 年的 8\n倍。那页的脚注还说明，代码行数衡量的是数量而非质量，几乎肯定夸大了真实增益。即便存在数量与质量的差距，代码涌入加快的事实依然确凿。在最终切换之前，监控图上多数日期存在积压，未处理事件峰值逐周抬升。每日重启再也稳不住暴涨的事件流，账本延迟持续放大，打补丁走到了尽头。\n重写变便宜了\n面对失效的每日重启，工程团队终于下决心重写这套服务。一名工程师只用了三周就完成重构，作者对照估计，一年前类似规模的工作接近一个季度。需要说明的是，这属于作者个人的反事实估计，并没有设立平行的对照组。\n新设计的核心做法是解除状态耦合。团队把录入运行结果与维护历史记录分开：任意节点都能接收测试结果，追加写进外部流水账，处理完毕立即释放内存。处理节点由此变成无状态，流量高峰时可以直接横向增加机器实例。另一个独立的轻量进程每隔几秒聚合一次外部流水账，汇总成供挑测试的部件快速查询的历史账本。\n这次重写体现出技术门槛的大幅走低。智能工具协助编写了分片逻辑并寻找运行参数，新设计所需的存储容量与工作节点数量，很大程度上由\nClaude 自主推导完成。推倒重来的成本明显变低。\n技术造价下降的同时，团队习惯依然顽固。作者开启了一个长期会话，让\nClaude 盯住排队积压，并在积压走高时发出提醒。Claude\n在几个月里反复建议直接重写，团队依然一次次选择打补丁应付。从 2025 年 10\n月最初报警到新系统上线，在组织惯性面前拖了将近半年。\n两个价格交叉，最优决策就变了\n面对频频报警的基础设施，工程团队到底该继续修补，还是停下手头工作重新写一套？大家时刻都在两难之间权衡。过去工程师习惯把重写往后推，因为重写要几个月工期，而扩容服务器或者加几段分支逻辑要省事得多。但现在重写要付的成本从一季度掉到三周，继续补买到的时间从\n70 天掉到不足一天，两个价格朝相反方向走。\n重写要付的成本\n继续补的隐性成本\n过去需要耗费整季人力，现在压缩至单人三周交付。辅助工具接管了编码与参数调优，实施门槛明显走低。\n过去单次扩容能买到两月有余，现在补丁买到的有效周数持续收缩。系统频繁告警重启，反复修补的维护消耗越来越高。\n借助代码生成与推演，推倒重来的直接投入持续下降，一次性改造即可换取长效收益。\n面对指数级膨胀的提交量，固定倍数的修补手段迅速失效。积压的数据风险会反噬研发节奏，最终仍然躲不开重构。\n两条成本曲线的交叉点发生了左移。重写的成本向下走，维持旧系统的隐性代价向上走，交汇的那一刻，就是重写比继续修补更划算的拐点。这个拐点明显提前了。重写这件事，不能再等到服务撑不住了才动手。\n重写成本下移、继续补的隐性成本上移，两条曲线的交叉点向左移动\n作者坦言，换大机器、并行切分、定时重启这些招数并不稀奇。关键洞见在于两件事凑到了一起：补丁换来的安全时间大幅缩水，而重写需要的开销同样显著下降。\n这直接引申出两项新决策。推迟重写的门槛必须调低。一旦发现补丁有效期的衰减在加快，就应当尽早启动重构，不在低效的缝补里耗费精力。初始方案的容量预估必须更新。作者建议假设系统两个季度内会承受\n25 倍负荷，初始版本应当按 10 到 20 倍流量留出扩展余地。\n这也是此前讨论过的第二层红利。第一层是写代码更快更省力，属于直接收益。第二层是成本的构成改变之后，关于何时凑合、何时重写的平衡点发生位移。新方案没有跳出传统系统设计常识，变动的是决策天平两端的砝码。\n哪些能带走，哪些别带走\n面对这份复盘，普通团队需要区分哪些经验可以直接吸收，哪些做法不必跟风。很多总结源于通用系统设计原则，并不绑定在自动化编码集群上。可以吸收的经验，主要体现在三条不依赖自动化工具链的系统信号上。\n第一条信号看单点隐患。单进程独占可变状态是明确的扩展隐患。旧版把记录与选择绑定在同一个实例里，请求密度一旦拉升，排队积压直接堵死向外加机器的途径。把状态移到进程外面、让工作节点保持无状态，属于经典常识。\n第二条信号看收支对账。进出任务数量平衡是最便宜也最灵敏的运行指标。只要入口接收的构建任务与完成记录对不上账，不需要复杂的链路追踪，就能断定内部账本已经落后。\n第三条信号看补丁寿命衰减。连续扩容换来的平稳时间如果持续收缩，就是启动重写清晰的信号。走到这个阶段，继续修补只会白白消耗精力。\n有些做法则不应当盲目套用。没有密集自动化编码负载的中小团队，不必照搬外部流水账与分片消费者这套体系。按代码包运行测试、保持轻量单体配合规律维护，依然符合实际需要。\n六个月 25\n倍的任务增速是特定团队在特定阶段的遭遇，不能当作所有团队的常态。工具带来的真正变动在于两个价格的相对走势，不在于具体的负荷数字。脱离了高压代码流入的场景，盲目拔高分布式复杂度，只会换来多余的运维负担。\n我们不知道什么\n评估这份记录，必须区分确凿事实与无法交叉验证的推断。这是来自单一公司、围绕单一配套服务的个案，行业里目前缺乏第二组公开对照。\n关键数据带有明确限定。六个月 25\n倍增长没有细项分解，各项诱因的具体占比未知。代码产出提升 8\n倍的口径自认局限，行数只衡量数量而非质量，几乎肯定夸大了真实效率。代码归因超过\n80% 的统计存在缺口，未归因数据里夹杂着脚本等非人工产物。\n工程对比包含主观成分。重构周期从一季度缩短至三周属于反事实估计，缺少平行对照。新设计让积压走平，作者承认运行费用高于旧方案，却没有披露具体金额。复盘全文没有提供缺陷率和线上故障数据。监控曲线走平仅代表排队恢复可持续，推导不出验证总成本下降，更无法证明代码质量得到改善。\n提速与降价两种效应混合发力，公开材料无法将两者清晰剥离，不能把倍数机械相乘得出普遍结论。逐项列出边界在于界定事实的有效范围。面对这类案例，我更倾向于把注意力留在能够复核的价格变动上面，不去延展未经验证的推断。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/ci-rewrite-cheaper-than-patching-20260919.html",
+      "content_chars": 4076,
+      "content_sha256": "6c1b3aaeda1acb7b27b3b08a2756df0cb6e61a94b9ce8067cef1a42a37063a3b",
+      "content_fetched_at": "2026-09-20T23:09:07.061845+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-19T00:00:00+00:00",
+      "collected_at": "2026-09-20T23:07:51.235778+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/ci-rewrite-cheaper-than-patching-20260919.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "CI 的第二层红利：重写变便宜之后，补丁不再回本",
+          "url": "https://yage.ai/share/ci-rewrite-cheaper-than-patching-20260919.html",
+          "content_sha256": "6c1b3aaeda1acb7b27b3b08a2756df0cb6e61a94b9ce8067cef1a42a37063a3b"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
