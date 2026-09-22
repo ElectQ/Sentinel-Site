@@ -1,139 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-09-23",
-  "generated_at": "2026-09-22T23:35:45.739274+00:00",
-  "item_count": 5,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:c84e0e53e619957e",
-      "kind": "publish",
-      "text": "zdi-advisories published: ZDI-26-719",
-      "actor": "zdi-advisories",
-      "actor_url": "https://www.zerodayinitiative.com/advisories/published/",
-      "created_at": "2026-09-22T23:33:05.524187+00:00",
-      "html_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-719/",
-      "title": "ZDI-26-719",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Cisco ThousandEyes Virtual Appliance DHCP Client Command Injection Remote Code Execution Vulnerability\nSeptember 22nd, 2026\nZDI-26-719\nZDI-CAN-31647\nCVE ID\nCVE-2026-20350\nCVSS Score\n7.2\nAV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H\nAffected Vendors\nCisco\nAffected Products\nThousandEyes\nVulnerability Details\nThis vulnerability allows remote attackers to execute arbitrary code on affected installations of Cisco ThousandEyes Virtual Appliance. Authentication is required to exploit this vulnerability.\nThe specific flaw exists within the processing of DHCP client configuration data. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root.\nAdditional Details\nCisco has issued an update to correct this vulnerability. More details can be found at:\nhttps://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-teva-os-command-W4GAO6jp\nDisclosure Timeline\n2026-06-04\n- Vulnerability reported to vendor\n2026-09-22\n- Coordinated public release of advisory\n2026-09-22\n- Advisory Updated\nCredit\nAndy Niu of TrendAI Research\nBack to Advisories",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-719/",
-      "content_chars": 1200,
-      "content_sha256": "eaf67c7b1eaa217ac637123838f9acbb3955d6874e583f918f02532de6e809bc",
-      "content_fetched_at": "2026-09-22T23:33:12.615473+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Zero Day Initiative Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:67c6a6d95b46dda9",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: R6 Tech",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-22T23:33:05.524187+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773253-r6-tech.html",
-      "title": "R6 Tech",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773253-r6-tech.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-22T23:34:16.633828+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:52aa6a3caddceb95",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-22T23:33:05.524187+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-22T23:34:27.630157+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:ae6a5c2e7f1f14c2",
-      "kind": "publish",
-      "text": "cymulate-blog published: Inside the Agentic Cyber Defense Engineering Architecture: How it WorksRead More",
-      "actor": "cymulate-blog",
-      "actor_url": "https://cymulate.com/blog/",
-      "created_at": "2026-09-22T23:33:05.524187+00:00",
-      "html_url": "https://cymulate.com/blog/agentic-cyber-defense-architecture/",
-      "title": "Inside the Agentic Cyber Defense Engineering Architecture: How it WorksRead More",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Inside the Agentic Cyber Defense Engineering Architecture: How it Works\nBy:\nAmanda Kegley\nSeptember 22, 2026\nAgentic cyber defense engineering requires more than adding AI to isolated security tasks. It requires an\nagentic cyber defense engineering architecture\nthat can understand the environment, coordinate specialized security work, and act across the security stack without requiring teams to manually design and manage every workflow.\nThis architecture brings together three operational components:\nSpecialized security agents\nproviding the security expertise\nGoverned routines\ndefining the work to be completed, when it should run and when agents and skills are required\nTwo-way security integrations\nconnecting the system to the threat intelligence, controls, telemetry and workflows needed to turn decisions into action\nTogether, these components move cyber defense from periodic, manually coordinated activity to a continuous system that can detect and respond as threats, controls and environments change.\nKey takeaways\nAgents automate specialized security work.\nEach agent performs activities traditionally handled by security architects, red teams, validation teams, detection engineers and security operations analysts.\nRoutines make recurring work repeatable.\nThey define the objective, triggers, agents, data sources, actions, guardrails and outputs for work that runs on a schedule, in response to an event or on demand.\nTwo-way integrations close the loop.\nAgents pull context and evidence from security tools, then push approved indicators, detection rules and workflow updates back into the tools where teams operate.\nA governed control plane keeps it safe.\nShared context, scoped permissions, full audit trails and configurable approval gates keep every autonomous action visible, authorized and reversible.\nHow the architecture works\nThe architecture follows a simple pattern:\nTrigger → Routine → Specialized agents → Integrated action → Measured outcome → Next trigger\nIt first starts with a trigger. A trigger may be an emerging threat, a newly published vulnerability, a completed assessment, a detection rule change or a closed mitigation task. The defense control plane launches the appropriate routine, coordinates the required agents and maintains shared context as work progresses.\nAgents use integrations to collect evidence, execute validation and take governed action and only involve humans for decisions or approvals. The outcome updates the organization’s current posture and can initiate the next routine. This is what makes the architecture event-driven: it automatically advances based on changing conditions and results rather than waiting for teams to coordinate the next step.\nThe control plane: shared context, permissions, audit trails and approvals\nEvery trigger, routine and agent action in this architecture runs through a single control plane. It is what keeps a system of autonomous agents governed rather than unpredictable, and it does that through three mechanisms.\nShared context.\nThe control plane maintains persistent, shared state across the entire loop, so every agent that picks up a routine sees the same picture: what triggered the work, what earlier agents found, what has already been tried and what the environment looks like right now. Agents build on each other’s work instead of rediscovering it.\nAudit trails.\nEvery trigger, decision, agent action and integration call is logged in sequence. Security and compliance teams can reconstruct exactly why a routine ran, what evidence it used, what it changed and who or what approved it.\nApprovals.\nHigh-risk or irreversible actions, such as creating new attack scenarios or pushing a new detection rule into production or closing out a mitigation, are routed through configurable approval points.\nTogether, these capabilities enable organizations to complete their security operations effectively and efficiently at the speed required in the post-Mythos era.\nSpecialized agents perform the security work\nThe architecture uses agents designed to execute distinct security activities traditionally done by security analysts. They share context and coordinate through the control plane rather than operating as isolated assistants. The value does not come from any single agent. It comes from how agents pass context, evidence and actions to one another as work moves across the closed loop.\nAgent\nResponsibility\nThreat Profiler\nMonitors threat intelligence and environmental context to determine which threats, vulnerabilities and attacker behaviors are relevant.\nRed Teamer\nConverts relevant threats into realistic attack scenarios and drafts new scenarios when suitable validation content does not exist.\nValidation Operator\nConfigures test points, integrations, pre-requisites and safety controls, then executes attack assessments without disrupting operations.\nValidation Analyst\nCorrelates attack activity with prevention and detection telemetry to identify control failures, security gaps and coverage drift.\nPosture Strategist\nScores findings by demonstrated risk, identifies priorities and translates technical evidence into security and business context.\nDefense Optimizer\nGenerates approved improvements, including indicators and vendor-specific detection rules, and deploys them through integrated controls.\nControls\nExposures\nSkills\nThreat Intel\nITSM\nWWW\nThreat Profiler\nDefense Optimizer\nPosture Strategist\nValidation Analyst\nValidation Operator\nRed\nTeamer\nSquad\nGoal & Objective\nAgents\nSkills\nControls\nActions\nSquad\nGoal & Objective\nAgents\nSkills\nControls\nActions\nSquad\nGoal & Objective\nAgents\nSkills\nControls\nActions\nThe value does not come from any single agent. It comes from how agents pass context, evidence and actions to one another as work moves across the closed loop.\nSample routines for security operations\nA routine is a governed workflow that agents execute. It is defined once and can run on a schedule, in response to an event se(i.e., trigger) or on demand. Customers can start with pre-built routines or describe their own objective in plain language to create a custom routine for review.\nEach routine defines the required triggers, agents, integrations, decisions, approval points and outputs. Below are common routines that automate adversarial exposure validation, prioritization and mitigation activities.\nEmerging threat and CERT tracking\nDesigned for security architects, this daily routine collects third-party threat intel and CERT advisories, analyzes relevance to the environment, maps attack scenarios and prepares tailored assessments.\nDaily assessment analysis\nThis SecOps routine analyzes assessments completed during the previous 24 hours, summarizes prevention and detection results, analyzes failures, monitors for drift and recommends next steps.\nCVE exploitability and KEV awareness\nDesigned for vulnerability management teams, this routine monitors for new CVEs affecting the technology stack and changes in KEVs. CVEs with existing attack scenarios executes attack validation and calculates risk. When there are no existing scenarios, the Red Teamer agent creates a scenario for review.\nMitigation Tracking and Revalidation\nThis routine runs daily to monitor open mitigation tasks and compares against customer-defined SLAs, escalating, as needed. When a mitigation task is closed, the original assessment automatically re-runs for verification. If the mitigation was not successful, a mitigation task opens with supporting evidence.\nWeekly resilience snapshot\nBuilt for CISOs, this routine aggregates seven days of assessments and outcomes into a resilience score with a trend analysis and the top mitigation priorities. It produces an executive-ready report with plain-language interpretation of what changed, why the score moved and where leadership should focus.\nDetection coverage and drift\nFor detection engineers, this routine responds to changes in detection rules. It compares changed rules with the last-known-good baseline and uses the Red Teamer agent to identify validation scenarios for new rules. When a detection rule stops firing, human review is required.\nDaily focus list\nThis routine gives SecOps managers a ranked list of the actions that matter most that day to prioritize their work.\nThese are common agentic cyber defense engineering routines. Users can create their own routines with agents to speed up other security activities and improve defenses.\nIntegrations turn decisions into coordinated cyber defense action\nAgents and routines cannot close the loop without access to both exposure validation data and the customer’s security ecosystem. Integrations into security technologies are essential. These security tools span across endpoint, identity, network and cloud environments, including EDR, SIEM and ticketing systems. The system must also integrate with customer-selected threat feeds, KEV catalogs, asset discovery and vulnerability management tools.\nThese integrations must operate in both directions. Agents pull asset context, findings, alerts, detections, rule changes, task status and validation evidence into the control plane. They also push approved actions back into the environment, including indicators of compromise to controls to improve prevention, vendor-specific rules to improve detection, and task or status updates for ticketing and vulnerability management systems.\nComprehensive two-way integrations are essential to an agentic cyber defense engineering solution. Agentic cyber defense engineering is not a chatbot layered over security data. It is a governed system in which specialized agents autonomously execute repeatable routines across the entire integrated security ecosystem. This allows security practitioners to focus on novel threats, complex investigations and consequential risk decisions while the architecture continuously advances routine cyber defense validation and engineering work.\nPut the architecture to work\nTo explore the complete operating model,\ndownload the Agentic Cyber Defense Engineering E-book\n. To see Cymulate agentic cyber defense engineering in action with Cowork and Vero AI,\nschedule a demo\n.\nComing next in the series\nThis is the third blog in a series all about agentic cyber defense engineering. You can read the previous blogs here:\nAgentic Cyber Defense Engineering: 6 Requirements and 3 Foundations\nAgentic Cyber Defense Engineering: A New Model for AI-Powered Cyber Defense\nStay tuned for the next blog to\ndiscover common use cases that will continuously adapt to threats and the environment, validate and improve defenses.\nUntil then, download the\nAgentic Cyber Defense Engineering E-book\nfor a deeper look at the operating model and how it can help organizations strengthen threat resilience at machine speed.\nDownload the E-book\nReady to explore how agentic cyber defense engineering can transform your security program?\nBook a live demo\nAmanda Kegley\nAmanda Kegley has over 15 years of experience in cybersecurity. With her in-depth knowledge of security needs in today’s dynamic threat landscape, she successfully innovates and markets new cybersecurity capabilities.\nMore about Author\nTable of Contents\nHow the architecture works\nThe control plane: shared context, permissions, audit trails and approvals\nSpecialized agents perform the security work\nSample routines for security operations\nIntegrations turn decisions into coordinated cyber defense action\nPut the architecture to work\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nFeatured Resources\nView More Resources\nblog\nAgentic Cyber Defense Engineering Model: 6 Requirements and 3 Foundations\nLearn the six requirements and three foundations of an agentic cyber defense framework built to improve security faster.\nRead More\nData Sheet\nCymulate Cowork\nUse AI agents and automated routines to validate exposures and streamline cyber defense engineering.\nRead More\nData Sheet\nCymulate Vero AI\nCymulate Vero AI delivers secure, domain-specific cybersecurity AI with private infrastructure and zero customer data training.\nRead More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://cymulate.com/blog/agentic-cyber-defense-architecture/",
-      "content_chars": 12323,
-      "content_sha256": "1d70c95bf3b5998b8cbb580a63daa92dc4261710e9086b5e0890669a4072f8e3",
-      "content_fetched_at": "2026-09-22T23:35:23.827589+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Cymulate Blog",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:38c6d9298affff66",
-      "kind": "publish",
-      "text": "yage-share published: iOS 27 开发者指南：把 App 接进 Siri，在 App 里调用模型",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-19T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/ios27-siri-app-intents-foundation-models-20260919.html",
-      "title": "iOS 27 开发者指南：把 App 接进 Siri，在 App 里调用模型",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n开发工具\nAI 产品与平台\n在 iOS 27 里把 AI\n能力接进应用，摆在面前的是两条方向相反的路。如果想让 Siri\n在系统层面调用应用里的功能，走 App\nIntents；如果想在应用内部调模型做长文总结、票据提取或者视觉看图，走\nFoundation Models。如果之前写过 function calling 或者接过\nMCP，这两套接口的角色并不陌生：一套把应用做成工具供外部模型调用，另一套让应用充当调用方去向模型发请求。\n这两条路在系统里各有各的跑道。开发者无法把 Siri\n的推理引擎替换成自建模型，应用之间也无法跨沙盒直接读取对方的数据。系统架构把这些边界钉得很严，两套接口分别解决各自方向上的工程需求。\n两套接口方向相反：App Intents 里你的 App\n是供模型调用的工具，Foundation Models 里你的 App\n是调用模型的一方\n把你的 App 做成 Siri\n能调用的工具\n用户对着手机说「嘿\nSiri，把购物清单里的牛奶删掉」，这句话最终会在应用里触发一个具体函数，参数精准对应到牛奶这条记录。中间的语音识别、意图推断、实体抽取和参数组装都由系统处理。开发者只需要提前声明清楚两件事：应用支持执行什么动作，动作需要操作什么数据（\nApp Intents\n文档\n）。\n应用能执行的动作映射为\nAppIntent\n。比如删除清单项就是一个\nAppIntent\n，代码里明确写出它接收哪些输入、触发时运行哪段逻辑。拿\nMCP 来对照，这就像 MCP server 里定义的 tool，只是写成了 Swift\n原生代码，在编译期就已经确定下来。\n动作所操作的数据则映射为\nAppEntity\n。工具参数往往指向特定对象，比如删除具体的哪一条待办、播放哪一首歌曲。\nAppEntity\n会给应用内的数据模型加上系统能认出的唯一标识和若干属性，让用户嘴里说的牛奶能准确对上数据库里的主键。这不需要推翻现有的数据表重新设计，只要给系统补齐一套描述协议。\n每个应用都有自己的一套命名习惯，系统不可能去死记硬背每个团队自造的词汇。Apple\n的解法是划出 12\n个通用领域，涵盖音频、日历、邮件、信息、地图、照片、提醒事项等（\n完整列表\n），并为每个领域提前定好了标准动作与数据模板。开发音乐应用时，只要套上音频领域的模板，Siri\n自然知道播放、暂停和歌单是什么意思。这相当于官方按分类预置好了工具命名空间，省去了各家自行定义\nschema 的成本。\n接入这些领域时规则很明确。邮件、信息、时钟这三个领域必须整套接入，不支持挑选个别动作（\n官方规则\n）。如果业务场景落在这\n12 个领域之外，应用就拿不到 Siri\n的自然语言理解能力，只能退回到固定短语唤醒，要求用户念出字字相符的指令口令。动手写代码前，先对照自己的核心场景落不落在这些模板里。\n除了把动作注册给系统，还得让 Siri 随时搜得到应用里的数据，这依赖\nSpotlight 索引。用户让 Siri 调出上个月的某份会议纪要，Siri 会去查\nSpotlight 索引；应用如果没有把这条记录写进去，Siri\n就找不到内容。系统还有两条补充通道：一条会在后台自动记录用户在界面里的高频操作习惯，另一条允许应用在特定时机主动通知系统当前某条内容处于活跃状态，详细运行机制可以参考\nsession\n345\n。\n写代码时还会碰到几个运行时规则。用户看着屏幕说「打开第三个」，Siri\n要看懂屏幕上的所指对象，前提是开发者在界面元素上标注了对应的实体属性（\nsession\n343\n）。Intent 的同步执行时间默认卡在 30\n秒以内，视频导出或者大文件转码这类长耗时任务，必须接入专门的长任务接口，并持续向系统推送进度，否则遇到超时或系统资源吃紧，系统会叫停任务（\nLongRunningIntent\n）。过去沿用多年的\nSiriKit 在 iOS 27 里已经废弃，App Intents 成了系统唯一的接入通道（\nSiriKit\n）。\n邮件、日历这类热门领域，往往有好几个应用同时注册了相同的操作模板，同一个动作背后站着好几个竞争者。用户下达模糊指令时，调度权在系统编排层，由\nSiri 与 Shortcuts 统一分发，第三方应用之间没有互相调用的通道。WWDC26 lab\nsession\n8011\n原话提到，“There’s no API for a third-party app to invoke\nanother app’s intents directly”，Siri 与 Shortcuts\n就是编排者。系统判断拿不准时，会弹出列表让用户手动选；应用自身解析参数遇到歧义，也可以主动抛出\nneedsDisambiguationError\n，列出候选结果让用户点击确认。\n官方没有公开平局仲裁的具体算分机制，唯一明确提到的加分项是交互捐赠。用户平时在应用里点得越频繁，Siri\n做出推断时就越偏向这个应用，\nsession\n343\n原话提到：“Siri might infer the right app to use for that\ncontact”。用 MCP 的视角来看，多个 server 注册了相同名字的\ntool，中间网关如何做意图路由在 iOS\n上是个黑盒。光把动作注册进系统只是完成声明，并不保证 Siri\n每次都会调用；开发者唯一的抓手，就是让用户在真实生活里高频用起来，靠真实交互记录建立调度优势。\n你的应用调用模型\n另一类需求的方向正好反过来：这次由应用自己主动调用模型。例如长篇文档摘要、从票据照片中识别金额和日期、或者在应用内通过自然语言检索内容，这类需求对应的是\nFoundation Models（\n框架文档\n）。\n这套框架的核心交互围绕会话\nLanguageModelSession\n展开。代码里初始化一个会话，递入提示词和可选的图片附件，就能异步取回推理结果。底层模型支持三种来源，对外暴露出统一的调用协议，换模型只需要改动一行配置：\n来源\n特点\n成本\nApple 端侧模型\n跑在手机上，离线可用，iOS 27 里重建过，支持图片输入\n免费，无限制\nApple 云端 (PCC)\n上下文 32K，能力更强\n每天有额度；要申请权限，只对首年下载低于 200 万的开发者免费（\n说明\n）\n你自己的模型\n实现同一个协议打包进来，Anthropic 和 Google 都发了官方包（\nsession\n339\n）\n按各家的 API 计费\n端侧模型不需要申请任何开发者权限，导入模块就能直接调用（\nentitlement\n列表\n）。在 macOS 27 上，Apple 还附带了命令行工具\nfm\n，不用编译整个项目，就能在终端里直接向模型发请求调试提示词。\n初始化\nLanguageModelSession\n时如果不显式指定模型参数，系统默认加载的就是端侧模型\nSystemLanguageModel.default\n。多份开发者社区的实测记录都验证了这一默认行为（参见\nCreate\nwith Swift\n与\nArtem\nNovichkov\n的记录\n）。三种模型来源遵循同一套会话协议，后续想要切换模型，只需要调整构造函数的参数。\n在会话里选什么模型，只影响应用自己的内部逻辑，影响不到系统的\nSiri。这也是区分两套体系的关键：在 Foundation Models\n里，应用充当调用方，可以自行挑选合适的模型提供方；而在 App Intents\n那一侧，应用退回到工具位置，静待系统发起调用。\n处理具体业务数据时，结构化输出能省去很多麻烦。以往让模型提取字段，往往需要写复杂的正则表达式去解析非结构化文本，现在给\nSwift 结构体加上\n@Generable\n属性宏，模型就会直接生成符合这个类型定义的数据结构，字段类型一旦对不上，在生成环节就会直接报错阻断。\n遇到需要动态查询数据的场景，应用可以向会话注册函数，让模型在推理过程中发起工具调用。比如本地存着私有数据库，注册一个查询函数后，模型发现当前上下文缺少必要信息，就会暂停输出并调用这个函数，拿到返回结果后再继续向下推导。这样就省去了把全量数据预先塞进提示词的开销，系统甚至直接内置了文字识别和条形码识别两个现成的\nTool（\nsession\n241\n）。\n做不到的：agent\n这个角色不在你手上\n有些设想从技术上看很自然，但翻遍公开文档也找不到入口。在 iOS\n的架构设计里，应用可以充当供系统调用的工具，也可以做调用模型的客户端，但系统级\nagent 这个全局协调者的角色始终留在 Apple 自己手里。\n能力边界：公开可用的能力、架构上没有接口的能力、官方规则明确禁止的能力\n许多人首先会想能不能让 Siri 换用自己的模型。公开 SDK\n没有任何注册接口允许开发者把外部模型挂载成 Siri\n的推理引擎，替换模型的自由度只存在于应用自身的局部会话里。这容易让人产生误解：在日本市场，系统确实支持把\niPhone\n侧边按键设置成启动第三方语音应用，但这只是系统级的快速启动快捷方式，和\nSiri 的推理层没有任何关系（\n说明\n）。\n另一个常见的念头是让应用跨界去读其他应用的数据，比如记账软件直接向银行软件读取近期流水。在\niOS 上，应用之间没有互相调用的通道，所有跨应用的动作都必须由 Siri\n居中编排，各个应用的本地数据处于相互隔离的沙盒里（\nsession\n8011\n）。记账软件想越过系统拿到外部数据，在底层走不通。\n即便通过 App Intents\n接收到了系统分发过来的用户数据，开发者协议也明令禁止将这些信息上传或转存到设备之外（\nDPLA\n）。与此配合的还有两条审核红线：应用在运行时不能动态下载并执行改变自身功能特性的代码（\n审核指南\n2.5.2\n）；如果确实要把用户数据发送给第三方 AI\n接口，必须在事前明确向用户提示并获得同意。\nApple 把 agent\n调度权锁在自己手里，在面向欧盟的公开声明里说明了缘由：如果向外界开放全局控制接口，就相当于允许任意虚拟助手获取用户的私有数据，并能操控其他应用（\n原声明\n）。在开放的\nMCP 生态里，无论是工具端 server 还是编排端 client 都向开发者敞开；但在\niOS 的世界里，编排者的位置只有 Apple 自己能坐。\n时间会花在哪\n把基础接口写通其实花不了多少时间。官方日历演示项目用三个 Swift\n结构体就能在真机上跑通全套流程（\nsession\n344\n）；在调用模型那一侧，几行代码就能完成会话声明并拿到返回。真正消耗工程时间的地方，集中在排查运行时静默失败和应对模型的不稳定性上。\n接入 Siri\n最大的时间黑洞是排查静默失败。这套系统有大量运行时隐性规则，Swift\n编译器只检查语法类型，到了运行时如果违反了这些规则，控制台既不崩溃也不报错，表现出来的现象只是\nSiri\n对应用没有任何反应。一位反复踩过这类坑的开发者把它压缩成一句话：「Pass\nthe compiler and fail one of those, and you get silence.」（\n来源\n）。\n排查这类问题之所以费劲，是因为踩坑场景几乎全在控制台视野之外。比如在\nIntent\n里声明必须前台执行，用户却在锁屏界面唤起语音；触发短语定义得过窄，稍微换个说法就无法匹配；业务数据更新之后，忘记同步通知\nSpotlight\n刷新索引；或者在更新接口里没有区分字段是传了空值还是原本就没有传参，导致已有数据意外丢失。由于控制台看不到任何堆栈线索，每次排查都只能拿着检查清单一项项比对。\n在 Foundation Models\n这一侧，时间主要花在与模型的不确定性磨合。端侧模型的上下文窗口只有 4096\ntoken，系统提示词、工具函数定义、历史对话以及生成的输出必须在这个小空间里共享额度，Apple\n官方建议单次请求挂载的工具函数不要超过 5 个（\n管理窗口\n）。端侧小模型偶尔会出现漏调用工具或凭空编造数值的情况，这类故障在代码层面同样不抛出异常：前几次测试好好的，下一次就因为走偏了分支而给出错误结果，排查时很容易让人误以为是本地数据出了差错。Apple\n为此专门提供了评测框架，日常开发必须依赖标注数据集做系统性的质量回归，单靠人工随机提问很难守住稳定性底线（\nsession\n241\n）。\n排期推进时，可以按照场景把工作拆开。如果重点是获取 Siri\n的语音入口分发，先确认核心功能能不能对应上 12\n个领域模板；能套进去就尽早补齐动作和实体声明，把数据写入\nSpotlight，并预留充足的精力重点测试锁屏状态和索引同步。如果目的是在应用内部增强业务处理能力，优先从离线免费的端侧模型切入，将单次调用的工具数量控制在\n3 个以内，用\n@Generable\n守住输入输出契约。两套路径彼此独立，可以分头演进。至于替换系统语音助手或跨应用拉取数据，目前并没有公开接口，留待后续版本观察即可。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/ios27-siri-app-intents-foundation-models-20260919.html",
-      "content_chars": 5353,
-      "content_sha256": "3a962b9021c97ee6b37ebbf6d0b5a28955a2b986675bbde9addd32c099b5ad2a",
-      "content_fetched_at": "2026-09-22T23:34:33.708808+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-09-23",
+  "collect_window": {
+    "start": "2026-09-19T00:00:00+00:00",
+    "end": "2026-09-22T23:33:05.524187+00:00",
+    "hours": 95
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "35797946508",
+    "commit": "38f79c6"
+  },
+  "stats": {
+    "total": 5,
     "by_kind": {
       "publish": 5
     },
@@ -148,9 +29,415 @@
       "cymulate-blog": 1,
       "yage-share": 1
     },
+    "failed_lists": [],
+    "sources_ok": 51,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 9,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 14,
+      "calls": 14,
+      "prompt_tokens": 14952,
+      "completion_tokens": 10118,
+      "total_tokens": 25070,
+      "prompt_cache_hit_tokens": 9341,
+      "prompt_cache_miss_tokens": 5611
+    },
     "by_content_status": {
       "ok": 3,
       "failed": 2
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:c84e0e53e619957e",
+      "who": "zdi-advisories",
+      "who_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "action": "publish",
+      "target": "ZDI-26-719",
+      "target_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-719/",
+      "text": "zdi-advisories published: ZDI-26-719",
+      "at": "2026-09-22T23:33:05.524187+00:00",
+      "external_id": "a:c84e0e53e619957e",
+      "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-719/",
+      "title": "ZDI-26-719",
+      "content": "Cisco ThousandEyes Virtual Appliance DHCP Client Command Injection Remote Code Execution Vulnerability\nSeptember 22nd, 2026\nZDI-26-719\nZDI-CAN-31647\nCVE ID\nCVE-2026-20350\nCVSS Score\n7.2\nAV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H\nAffected Vendors\nCisco\nAffected Products\nThousandEyes\nVulnerability Details\nThis vulnerability allows remote attackers to execute arbitrary code on affected installations of Cisco ThousandEyes Virtual Appliance. Authentication is required to exploit this vulnerability.\nThe specific flaw exists within the processing of DHCP client configuration data. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root.\nAdditional Details\nCisco has issued an update to correct this vulnerability. More details can be found at:\nhttps://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-teva-os-command-W4GAO6jp\nDisclosure Timeline\n2026-06-04\n- Vulnerability reported to vendor\n2026-09-22\n- Coordinated public release of advisory\n2026-09-22\n- Advisory Updated\nCredit\nAndy Niu of TrendAI Research\nBack to Advisories",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.zerodayinitiative.com/advisories/ZDI-26-719/",
+      "content_chars": 1200,
+      "content_sha256": "eaf67c7b1eaa217ac637123838f9acbb3955d6874e583f918f02532de6e809bc",
+      "content_fetched_at": "2026-09-22T23:33:12.615473+00:00",
+      "author": "zdi-advisories",
+      "author_name": "Zero Day Initiative Advisories",
+      "author_url": "https://www.zerodayinitiative.com/advisories/published/",
+      "published_at": "2026-09-22T23:33:05.524187+00:00",
+      "collected_at": "2026-09-22T23:33:05.524187+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zdi-advisories",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.zerodayinitiative.com/advisories/published/",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-719/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zdi-advisories",
+          "url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zdi-advisories",
+          "name": "Zero Day Initiative Advisories",
+          "home_url": "https://www.zerodayinitiative.com/advisories/published/"
+        },
+        "article": {
+          "title": "ZDI-26-719",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-719/",
+          "content_sha256": "eaf67c7b1eaa217ac637123838f9acbb3955d6874e583f918f02532de6e809bc"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:67c6a6d95b46dda9",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "R6 Tech",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773253-r6-tech.html",
+      "text": "unknowncheats-ac published: R6 Tech",
+      "at": "2026-09-22T23:33:05.524187+00:00",
+      "external_id": "a:67c6a6d95b46dda9",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773253-r6-tech.html",
+      "title": "R6 Tech",
+      "content": "unknowncheats-ac published: R6 Tech",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773253-r6-tech.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-22T23:34:16.633828+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-22T23:33:05.524187+00:00",
+      "collected_at": "2026-09-22T23:33:05.524187+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/773253-r6-tech.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "R6 Tech",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773253-r6-tech.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:52aa6a3caddceb95",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html",
+      "at": "2026-09-22T23:33:05.524187+00:00",
+      "external_id": "a:52aa6a3caddceb95",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-22T23:34:27.630157+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-22T23:33:05.524187+00:00",
+      "collected_at": "2026-09-22T23:33:05.524187+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/772985-ghidra-significantly-faster-post4806405.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:ae6a5c2e7f1f14c2",
+      "who": "cymulate-blog",
+      "who_url": "https://cymulate.com/blog/",
+      "action": "publish",
+      "target": "Inside the Agentic Cyber Defense Engineering Architecture: How it WorksRead More",
+      "target_url": "https://cymulate.com/blog/agentic-cyber-defense-architecture/",
+      "text": "cymulate-blog published: Inside the Agentic Cyber Defense Engineering Architecture: How it WorksRead More",
+      "at": "2026-09-22T23:33:05.524187+00:00",
+      "external_id": "a:ae6a5c2e7f1f14c2",
+      "url": "https://cymulate.com/blog/agentic-cyber-defense-architecture/",
+      "title": "Inside the Agentic Cyber Defense Engineering Architecture: How it WorksRead More",
+      "content": "Inside the Agentic Cyber Defense Engineering Architecture: How it Works\nBy:\nAmanda Kegley\nSeptember 22, 2026\nAgentic cyber defense engineering requires more than adding AI to isolated security tasks. It requires an\nagentic cyber defense engineering architecture\nthat can understand the environment, coordinate specialized security work, and act across the security stack without requiring teams to manually design and manage every workflow.\nThis architecture brings together three operational components:\nSpecialized security agents\nproviding the security expertise\nGoverned routines\ndefining the work to be completed, when it should run and when agents and skills are required\nTwo-way security integrations\nconnecting the system to the threat intelligence, controls, telemetry and workflows needed to turn decisions into action\nTogether, these components move cyber defense from periodic, manually coordinated activity to a continuous system that can detect and respond as threats, controls and environments change.\nKey takeaways\nAgents automate specialized security work.\nEach agent performs activities traditionally handled by security architects, red teams, validation teams, detection engineers and security operations analysts.\nRoutines make recurring work repeatable.\nThey define the objective, triggers, agents, data sources, actions, guardrails and outputs for work that runs on a schedule, in response to an event or on demand.\nTwo-way integrations close the loop.\nAgents pull context and evidence from security tools, then push approved indicators, detection rules and workflow updates back into the tools where teams operate.\nA governed control plane keeps it safe.\nShared context, scoped permissions, full audit trails and configurable approval gates keep every autonomous action visible, authorized and reversible.\nHow the architecture works\nThe architecture follows a simple pattern:\nTrigger → Routine → Specialized agents → Integrated action → Measured outcome → Next trigger\nIt first starts with a trigger. A trigger may be an emerging threat, a newly published vulnerability, a completed assessment, a detection rule change or a closed mitigation task. The defense control plane launches the appropriate routine, coordinates the required agents and maintains shared context as work progresses.\nAgents use integrations to collect evidence, execute validation and take governed action and only involve humans for decisions or approvals. The outcome updates the organization’s current posture and can initiate the next routine. This is what makes the architecture event-driven: it automatically advances based on changing conditions and results rather than waiting for teams to coordinate the next step.\nThe control plane: shared context, permissions, audit trails and approvals\nEvery trigger, routine and agent action in this architecture runs through a single control plane. It is what keeps a system of autonomous agents governed rather than unpredictable, and it does that through three mechanisms.\nShared context.\nThe control plane maintains persistent, shared state across the entire loop, so every agent that picks up a routine sees the same picture: what triggered the work, what earlier agents found, what has already been tried and what the environment looks like right now. Agents build on each other’s work instead of rediscovering it.\nAudit trails.\nEvery trigger, decision, agent action and integration call is logged in sequence. Security and compliance teams can reconstruct exactly why a routine ran, what evidence it used, what it changed and who or what approved it.\nApprovals.\nHigh-risk or irreversible actions, such as creating new attack scenarios or pushing a new detection rule into production or closing out a mitigation, are routed through configurable approval points.\nTogether, these capabilities enable organizations to complete their security operations effectively and efficiently at the speed required in the post-Mythos era.\nSpecialized agents perform the security work\nThe architecture uses agents designed to execute distinct security activities traditionally done by security analysts. They share context and coordinate through the control plane rather than operating as isolated assistants. The value does not come from any single agent. It comes from how agents pass context, evidence and actions to one another as work moves across the closed loop.\nAgent\nResponsibility\nThreat Profiler\nMonitors threat intelligence and environmental context to determine which threats, vulnerabilities and attacker behaviors are relevant.\nRed Teamer\nConverts relevant threats into realistic attack scenarios and drafts new scenarios when suitable validation content does not exist.\nValidation Operator\nConfigures test points, integrations, pre-requisites and safety controls, then executes attack assessments without disrupting operations.\nValidation Analyst\nCorrelates attack activity with prevention and detection telemetry to identify control failures, security gaps and coverage drift.\nPosture Strategist\nScores findings by demonstrated risk, identifies priorities and translates technical evidence into security and business context.\nDefense Optimizer\nGenerates approved improvements, including indicators and vendor-specific detection rules, and deploys them through integrated controls.\nControls\nExposures\nSkills\nThreat Intel\nITSM\nWWW\nThreat Profiler\nDefense Optimizer\nPosture Strategist\nValidation Analyst\nValidation Operator\nRed\nTeamer\nSquad\nGoal & Objective\nAgents\nSkills\nControls\nActions\nSquad\nGoal & Objective\nAgents\nSkills\nControls\nActions\nSquad\nGoal & Objective\nAgents\nSkills\nControls\nActions\nThe value does not come from any single agent. It comes from how agents pass context, evidence and actions to one another as work moves across the closed loop.\nSample routines for security operations\nA routine is a governed workflow that agents execute. It is defined once and can run on a schedule, in response to an event se(i.e., trigger) or on demand. Customers can start with pre-built routines or describe their own objective in plain language to create a custom routine for review.\nEach routine defines the required triggers, agents, integrations, decisions, approval points and outputs. Below are common routines that automate adversarial exposure validation, prioritization and mitigation activities.\nEmerging threat and CERT tracking\nDesigned for security architects, this daily routine collects third-party threat intel and CERT advisories, analyzes relevance to the environment, maps attack scenarios and prepares tailored assessments.\nDaily assessment analysis\nThis SecOps routine analyzes assessments completed during the previous 24 hours, summarizes prevention and detection results, analyzes failures, monitors for drift and recommends next steps.\nCVE exploitability and KEV awareness\nDesigned for vulnerability management teams, this routine monitors for new CVEs affecting the technology stack and changes in KEVs. CVEs with existing attack scenarios executes attack validation and calculates risk. When there are no existing scenarios, the Red Teamer agent creates a scenario for review.\nMitigation Tracking and Revalidation\nThis routine runs daily to monitor open mitigation tasks and compares against customer-defined SLAs, escalating, as needed. When a mitigation task is closed, the original assessment automatically re-runs for verification. If the mitigation was not successful, a mitigation task opens with supporting evidence.\nWeekly resilience snapshot\nBuilt for CISOs, this routine aggregates seven days of assessments and outcomes into a resilience score with a trend analysis and the top mitigation priorities. It produces an executive-ready report with plain-language interpretation of what changed, why the score moved and where leadership should focus.\nDetection coverage and drift\nFor detection engineers, this routine responds to changes in detection rules. It compares changed rules with the last-known-good baseline and uses the Red Teamer agent to identify validation scenarios for new rules. When a detection rule stops firing, human review is required.\nDaily focus list\nThis routine gives SecOps managers a ranked list of the actions that matter most that day to prioritize their work.\nThese are common agentic cyber defense engineering routines. Users can create their own routines with agents to speed up other security activities and improve defenses.\nIntegrations turn decisions into coordinated cyber defense action\nAgents and routines cannot close the loop without access to both exposure validation data and the customer’s security ecosystem. Integrations into security technologies are essential. These security tools span across endpoint, identity, network and cloud environments, including EDR, SIEM and ticketing systems. The system must also integrate with customer-selected threat feeds, KEV catalogs, asset discovery and vulnerability management tools.\nThese integrations must operate in both directions. Agents pull asset context, findings, alerts, detections, rule changes, task status and validation evidence into the control plane. They also push approved actions back into the environment, including indicators of compromise to controls to improve prevention, vendor-specific rules to improve detection, and task or status updates for ticketing and vulnerability management systems.\nComprehensive two-way integrations are essential to an agentic cyber defense engineering solution. Agentic cyber defense engineering is not a chatbot layered over security data. It is a governed system in which specialized agents autonomously execute repeatable routines across the entire integrated security ecosystem. This allows security practitioners to focus on novel threats, complex investigations and consequential risk decisions while the architecture continuously advances routine cyber defense validation and engineering work.\nPut the architecture to work\nTo explore the complete operating model,\ndownload the Agentic Cyber Defense Engineering E-book\n. To see Cymulate agentic cyber defense engineering in action with Cowork and Vero AI,\nschedule a demo\n.\nComing next in the series\nThis is the third blog in a series all about agentic cyber defense engineering. You can read the previous blogs here:\nAgentic Cyber Defense Engineering: 6 Requirements and 3 Foundations\nAgentic Cyber Defense Engineering: A New Model for AI-Powered Cyber Defense\nStay tuned for the next blog to\ndiscover common use cases that will continuously adapt to threats and the environment, validate and improve defenses.\nUntil then, download the\nAgentic Cyber Defense Engineering E-book\nfor a deeper look at the operating model and how it can help organizations strengthen threat resilience at machine speed.\nDownload the E-book\nReady to explore how agentic cyber defense engineering can transform your security program?\nBook a live demo\nAmanda Kegley\nAmanda Kegley has over 15 years of experience in cybersecurity. With her in-depth knowledge of security needs in today’s dynamic threat landscape, she successfully innovates and markets new cybersecurity capabilities.\nMore about Author\nTable of Contents\nHow the architecture works\nThe control plane: shared context, permissions, audit trails and approvals\nSpecialized agents perform the security work\nSample routines for security operations\nIntegrations turn decisions into coordinated cyber defense action\nPut the architecture to work\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nFeatured Resources\nView More Resources\nblog\nAgentic Cyber Defense Engineering Model: 6 Requirements and 3 Foundations\nLearn the six requirements and three foundations of an agentic cyber defense framework built to improve security faster.\nRead More\nData Sheet\nCymulate Cowork\nUse AI agents and automated routines to validate exposures and streamline cyber defense engineering.\nRead More\nData Sheet\nCymulate Vero AI\nCymulate Vero AI delivers secure, domain-specific cybersecurity AI with private infrastructure and zero customer data training.\nRead More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://cymulate.com/blog/agentic-cyber-defense-architecture/",
+      "content_chars": 12323,
+      "content_sha256": "1d70c95bf3b5998b8cbb580a63daa92dc4261710e9086b5e0890669a4072f8e3",
+      "content_fetched_at": "2026-09-22T23:35:23.827589+00:00",
+      "author": "cymulate-blog",
+      "author_name": "Cymulate Blog",
+      "author_url": "https://cymulate.com/blog/",
+      "published_at": "2026-09-22T23:33:05.524187+00:00",
+      "collected_at": "2026-09-22T23:33:05.524187+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cymulate-blog",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://cymulate.com/blog/",
+        "https://cymulate.com/blog/agentic-cyber-defense-architecture/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cymulate-blog",
+          "url": "https://cymulate.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cymulate-blog",
+          "name": "Cymulate Blog",
+          "home_url": "https://cymulate.com/blog/"
+        },
+        "article": {
+          "title": "Inside the Agentic Cyber Defense Engineering Architecture: How it WorksRead More",
+          "url": "https://cymulate.com/blog/agentic-cyber-defense-architecture/",
+          "content_sha256": "1d70c95bf3b5998b8cbb580a63daa92dc4261710e9086b5e0890669a4072f8e3"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:38c6d9298affff66",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "iOS 27 开发者指南：把 App 接进 Siri，在 App 里调用模型",
+      "target_url": "https://yage.ai/share/ios27-siri-app-intents-foundation-models-20260919.html",
+      "text": "yage-share published: iOS 27 开发者指南：把 App 接进 Siri，在 App 里调用模型",
+      "at": "2026-09-19T00:00:00+00:00",
+      "external_id": "a:38c6d9298affff66",
+      "url": "https://yage.ai/share/ios27-siri-app-intents-foundation-models-20260919.html",
+      "title": "iOS 27 开发者指南：把 App 接进 Siri，在 App 里调用模型",
+      "content": "AI Agent\n开发工具\nAI 产品与平台\n在 iOS 27 里把 AI\n能力接进应用，摆在面前的是两条方向相反的路。如果想让 Siri\n在系统层面调用应用里的功能，走 App\nIntents；如果想在应用内部调模型做长文总结、票据提取或者视觉看图，走\nFoundation Models。如果之前写过 function calling 或者接过\nMCP，这两套接口的角色并不陌生：一套把应用做成工具供外部模型调用，另一套让应用充当调用方去向模型发请求。\n这两条路在系统里各有各的跑道。开发者无法把 Siri\n的推理引擎替换成自建模型，应用之间也无法跨沙盒直接读取对方的数据。系统架构把这些边界钉得很严，两套接口分别解决各自方向上的工程需求。\n两套接口方向相反：App Intents 里你的 App\n是供模型调用的工具，Foundation Models 里你的 App\n是调用模型的一方\n把你的 App 做成 Siri\n能调用的工具\n用户对着手机说「嘿\nSiri，把购物清单里的牛奶删掉」，这句话最终会在应用里触发一个具体函数，参数精准对应到牛奶这条记录。中间的语音识别、意图推断、实体抽取和参数组装都由系统处理。开发者只需要提前声明清楚两件事：应用支持执行什么动作，动作需要操作什么数据（\nApp Intents\n文档\n）。\n应用能执行的动作映射为\nAppIntent\n。比如删除清单项就是一个\nAppIntent\n，代码里明确写出它接收哪些输入、触发时运行哪段逻辑。拿\nMCP 来对照，这就像 MCP server 里定义的 tool，只是写成了 Swift\n原生代码，在编译期就已经确定下来。\n动作所操作的数据则映射为\nAppEntity\n。工具参数往往指向特定对象，比如删除具体的哪一条待办、播放哪一首歌曲。\nAppEntity\n会给应用内的数据模型加上系统能认出的唯一标识和若干属性，让用户嘴里说的牛奶能准确对上数据库里的主键。这不需要推翻现有的数据表重新设计，只要给系统补齐一套描述协议。\n每个应用都有自己的一套命名习惯，系统不可能去死记硬背每个团队自造的词汇。Apple\n的解法是划出 12\n个通用领域，涵盖音频、日历、邮件、信息、地图、照片、提醒事项等（\n完整列表\n），并为每个领域提前定好了标准动作与数据模板。开发音乐应用时，只要套上音频领域的模板，Siri\n自然知道播放、暂停和歌单是什么意思。这相当于官方按分类预置好了工具命名空间，省去了各家自行定义\nschema 的成本。\n接入这些领域时规则很明确。邮件、信息、时钟这三个领域必须整套接入，不支持挑选个别动作（\n官方规则\n）。如果业务场景落在这\n12 个领域之外，应用就拿不到 Siri\n的自然语言理解能力，只能退回到固定短语唤醒，要求用户念出字字相符的指令口令。动手写代码前，先对照自己的核心场景落不落在这些模板里。\n除了把动作注册给系统，还得让 Siri 随时搜得到应用里的数据，这依赖\nSpotlight 索引。用户让 Siri 调出上个月的某份会议纪要，Siri 会去查\nSpotlight 索引；应用如果没有把这条记录写进去，Siri\n就找不到内容。系统还有两条补充通道：一条会在后台自动记录用户在界面里的高频操作习惯，另一条允许应用在特定时机主动通知系统当前某条内容处于活跃状态，详细运行机制可以参考\nsession\n345\n。\n写代码时还会碰到几个运行时规则。用户看着屏幕说「打开第三个」，Siri\n要看懂屏幕上的所指对象，前提是开发者在界面元素上标注了对应的实体属性（\nsession\n343\n）。Intent 的同步执行时间默认卡在 30\n秒以内，视频导出或者大文件转码这类长耗时任务，必须接入专门的长任务接口，并持续向系统推送进度，否则遇到超时或系统资源吃紧，系统会叫停任务（\nLongRunningIntent\n）。过去沿用多年的\nSiriKit 在 iOS 27 里已经废弃，App Intents 成了系统唯一的接入通道（\nSiriKit\n）。\n邮件、日历这类热门领域，往往有好几个应用同时注册了相同的操作模板，同一个动作背后站着好几个竞争者。用户下达模糊指令时，调度权在系统编排层，由\nSiri 与 Shortcuts 统一分发，第三方应用之间没有互相调用的通道。WWDC26 lab\nsession\n8011\n原话提到，“There’s no API for a third-party app to invoke\nanother app’s intents directly”，Siri 与 Shortcuts\n就是编排者。系统判断拿不准时，会弹出列表让用户手动选；应用自身解析参数遇到歧义，也可以主动抛出\nneedsDisambiguationError\n，列出候选结果让用户点击确认。\n官方没有公开平局仲裁的具体算分机制，唯一明确提到的加分项是交互捐赠。用户平时在应用里点得越频繁，Siri\n做出推断时就越偏向这个应用，\nsession\n343\n原话提到：“Siri might infer the right app to use for that\ncontact”。用 MCP 的视角来看，多个 server 注册了相同名字的\ntool，中间网关如何做意图路由在 iOS\n上是个黑盒。光把动作注册进系统只是完成声明，并不保证 Siri\n每次都会调用；开发者唯一的抓手，就是让用户在真实生活里高频用起来，靠真实交互记录建立调度优势。\n你的应用调用模型\n另一类需求的方向正好反过来：这次由应用自己主动调用模型。例如长篇文档摘要、从票据照片中识别金额和日期、或者在应用内通过自然语言检索内容，这类需求对应的是\nFoundation Models（\n框架文档\n）。\n这套框架的核心交互围绕会话\nLanguageModelSession\n展开。代码里初始化一个会话，递入提示词和可选的图片附件，就能异步取回推理结果。底层模型支持三种来源，对外暴露出统一的调用协议，换模型只需要改动一行配置：\n来源\n特点\n成本\nApple 端侧模型\n跑在手机上，离线可用，iOS 27 里重建过，支持图片输入\n免费，无限制\nApple 云端 (PCC)\n上下文 32K，能力更强\n每天有额度；要申请权限，只对首年下载低于 200 万的开发者免费（\n说明\n）\n你自己的模型\n实现同一个协议打包进来，Anthropic 和 Google 都发了官方包（\nsession\n339\n）\n按各家的 API 计费\n端侧模型不需要申请任何开发者权限，导入模块就能直接调用（\nentitlement\n列表\n）。在 macOS 27 上，Apple 还附带了命令行工具\nfm\n，不用编译整个项目，就能在终端里直接向模型发请求调试提示词。\n初始化\nLanguageModelSession\n时如果不显式指定模型参数，系统默认加载的就是端侧模型\nSystemLanguageModel.default\n。多份开发者社区的实测记录都验证了这一默认行为（参见\nCreate\nwith Swift\n与\nArtem\nNovichkov\n的记录\n）。三种模型来源遵循同一套会话协议，后续想要切换模型，只需要调整构造函数的参数。\n在会话里选什么模型，只影响应用自己的内部逻辑，影响不到系统的\nSiri。这也是区分两套体系的关键：在 Foundation Models\n里，应用充当调用方，可以自行挑选合适的模型提供方；而在 App Intents\n那一侧，应用退回到工具位置，静待系统发起调用。\n处理具体业务数据时，结构化输出能省去很多麻烦。以往让模型提取字段，往往需要写复杂的正则表达式去解析非结构化文本，现在给\nSwift 结构体加上\n@Generable\n属性宏，模型就会直接生成符合这个类型定义的数据结构，字段类型一旦对不上，在生成环节就会直接报错阻断。\n遇到需要动态查询数据的场景，应用可以向会话注册函数，让模型在推理过程中发起工具调用。比如本地存着私有数据库，注册一个查询函数后，模型发现当前上下文缺少必要信息，就会暂停输出并调用这个函数，拿到返回结果后再继续向下推导。这样就省去了把全量数据预先塞进提示词的开销，系统甚至直接内置了文字识别和条形码识别两个现成的\nTool（\nsession\n241\n）。\n做不到的：agent\n这个角色不在你手上\n有些设想从技术上看很自然，但翻遍公开文档也找不到入口。在 iOS\n的架构设计里，应用可以充当供系统调用的工具，也可以做调用模型的客户端，但系统级\nagent 这个全局协调者的角色始终留在 Apple 自己手里。\n能力边界：公开可用的能力、架构上没有接口的能力、官方规则明确禁止的能力\n许多人首先会想能不能让 Siri 换用自己的模型。公开 SDK\n没有任何注册接口允许开发者把外部模型挂载成 Siri\n的推理引擎，替换模型的自由度只存在于应用自身的局部会话里。这容易让人产生误解：在日本市场，系统确实支持把\niPhone\n侧边按键设置成启动第三方语音应用，但这只是系统级的快速启动快捷方式，和\nSiri 的推理层没有任何关系（\n说明\n）。\n另一个常见的念头是让应用跨界去读其他应用的数据，比如记账软件直接向银行软件读取近期流水。在\niOS 上，应用之间没有互相调用的通道，所有跨应用的动作都必须由 Siri\n居中编排，各个应用的本地数据处于相互隔离的沙盒里（\nsession\n8011\n）。记账软件想越过系统拿到外部数据，在底层走不通。\n即便通过 App Intents\n接收到了系统分发过来的用户数据，开发者协议也明令禁止将这些信息上传或转存到设备之外（\nDPLA\n）。与此配合的还有两条审核红线：应用在运行时不能动态下载并执行改变自身功能特性的代码（\n审核指南\n2.5.2\n）；如果确实要把用户数据发送给第三方 AI\n接口，必须在事前明确向用户提示并获得同意。\nApple 把 agent\n调度权锁在自己手里，在面向欧盟的公开声明里说明了缘由：如果向外界开放全局控制接口，就相当于允许任意虚拟助手获取用户的私有数据，并能操控其他应用（\n原声明\n）。在开放的\nMCP 生态里，无论是工具端 server 还是编排端 client 都向开发者敞开；但在\niOS 的世界里，编排者的位置只有 Apple 自己能坐。\n时间会花在哪\n把基础接口写通其实花不了多少时间。官方日历演示项目用三个 Swift\n结构体就能在真机上跑通全套流程（\nsession\n344\n）；在调用模型那一侧，几行代码就能完成会话声明并拿到返回。真正消耗工程时间的地方，集中在排查运行时静默失败和应对模型的不稳定性上。\n接入 Siri\n最大的时间黑洞是排查静默失败。这套系统有大量运行时隐性规则，Swift\n编译器只检查语法类型，到了运行时如果违反了这些规则，控制台既不崩溃也不报错，表现出来的现象只是\nSiri\n对应用没有任何反应。一位反复踩过这类坑的开发者把它压缩成一句话：「Pass\nthe compiler and fail one of those, and you get silence.」（\n来源\n）。\n排查这类问题之所以费劲，是因为踩坑场景几乎全在控制台视野之外。比如在\nIntent\n里声明必须前台执行，用户却在锁屏界面唤起语音；触发短语定义得过窄，稍微换个说法就无法匹配；业务数据更新之后，忘记同步通知\nSpotlight\n刷新索引；或者在更新接口里没有区分字段是传了空值还是原本就没有传参，导致已有数据意外丢失。由于控制台看不到任何堆栈线索，每次排查都只能拿着检查清单一项项比对。\n在 Foundation Models\n这一侧，时间主要花在与模型的不确定性磨合。端侧模型的上下文窗口只有 4096\ntoken，系统提示词、工具函数定义、历史对话以及生成的输出必须在这个小空间里共享额度，Apple\n官方建议单次请求挂载的工具函数不要超过 5 个（\n管理窗口\n）。端侧小模型偶尔会出现漏调用工具或凭空编造数值的情况，这类故障在代码层面同样不抛出异常：前几次测试好好的，下一次就因为走偏了分支而给出错误结果，排查时很容易让人误以为是本地数据出了差错。Apple\n为此专门提供了评测框架，日常开发必须依赖标注数据集做系统性的质量回归，单靠人工随机提问很难守住稳定性底线（\nsession\n241\n）。\n排期推进时，可以按照场景把工作拆开。如果重点是获取 Siri\n的语音入口分发，先确认核心功能能不能对应上 12\n个领域模板；能套进去就尽早补齐动作和实体声明，把数据写入\nSpotlight，并预留充足的精力重点测试锁屏状态和索引同步。如果目的是在应用内部增强业务处理能力，优先从离线免费的端侧模型切入，将单次调用的工具数量控制在\n3 个以内，用\n@Generable\n守住输入输出契约。两套路径彼此独立，可以分头演进。至于替换系统语音助手或跨应用拉取数据，目前并没有公开接口，留待后续版本观察即可。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/ios27-siri-app-intents-foundation-models-20260919.html",
+      "content_chars": 5353,
+      "content_sha256": "3a962b9021c97ee6b37ebbf6d0b5a28955a2b986675bbde9addd32c099b5ad2a",
+      "content_fetched_at": "2026-09-22T23:34:33.708808+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-19T00:00:00+00:00",
+      "collected_at": "2026-09-22T23:33:05.524187+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/ios27-siri-app-intents-foundation-models-20260919.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "iOS 27 开发者指南：把 App 接进 Siri，在 App 里调用模型",
+          "url": "https://yage.ai/share/ios27-siri-app-intents-foundation-models-20260919.html",
+          "content_sha256": "3a962b9021c97ee6b37ebbf6d0b5a28955a2b986675bbde9addd32c099b5ad2a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
