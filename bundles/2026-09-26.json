@@ -1,164 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-09-26",
-  "generated_at": "2026-09-25T23:57:00.223272+00:00",
-  "item_count": 6,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:e5629f7b8f63cf61",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: WHQL Driver Cert",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-25T23:54:59.553055+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773812-whql-driver-cert.html",
-      "title": "WHQL Driver Cert",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773812-whql-driver-cert.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-25T23:55:38.069159+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:57218a28105153ae",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: Best IDA Pro plugins for RE & Game Hacking",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-25T23:54:59.553055+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773763-ida-pro-plugins-re-game-hacking.html",
-      "title": "Best IDA Pro plugins for RE & Game Hacking",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773763-ida-pro-plugins-re-game-hacking.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-25T23:55:49.021333+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:bb33022fbf63b95e",
-      "kind": "publish",
-      "text": "yage-share published: 三条旧授权，两天，走到 OpenAI 内部仓库",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-25T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/three-old-authorizations-openai-breach-20260925.html",
-      "title": "三条旧授权，两天，走到 OpenAI 内部仓库",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "安全与供应链\nAI Agent\nHarsh Jaiswal、Mohan Pedhapati 和 Rahul Maini 组成的安全研究团队叫\nHacktron，日常业务围绕自动化安全测试展开，技术博客页脚留着商业咨询入口。2026\n年 7 月 23 日，这三名研究者把目光投向 OpenAI 的官方技术社区\ncommunity.openai.com，开始审阅那里的图片上传接口。\n论坛面向公众开放，注册用户发帖可以上传本地图片。社区运行着开源论坛系统\nDiscourse。Discourse 接到用户传来的图片文件后，拉起命令行工具\nImageMagick 做格式转换，由 ImageMagick 调用底层开源 C 语言库 libheif\n解析数据流。一条未经严格内存隔离的处理路径就此铺开：浏览器送上来的外部输入，直通底层\nC 语言解析器的内存空间。\n研究者顺着这条路径步步推进。7 月 24\n日，他们把大语言模型拉进流程，尝试生成导致内存崩溃的利用代码。到了 7 月\n25\n日凌晨，测试人员已经在论坛所在的服务器环境中拿到了远程代码执行能力，掌握了论坛的管理后台权限。\n拿下论坛管理权限通常只意味着一个边缘站点的失守。这处论坛的身份验证没有走独立用户表，直接挂在\nOpenAI\n的单点登录系统上。顺着系统同步的信任会话，研究团队无需目标员工配合，接管了一名内部工程师的\nChatGPT 和 Codex 账户。这名工程师此前按照日常开发流程，把个人 GitHub\n账号授权绑定给了代码助手 Codex。\n拿到有效会话后，测试团队借助 Codex 在核心代码仓库 openai/openai\n内部创建了一个分支，并提交了一条拉取请求。根据\nHacktron 官方博文\n的自述说明，提交拉取请求只是为了给出确凿的权限证据：\nTo demonstrate impact without actually accessing any internal\ncode\nThe\nHacker News\n随后核实了这一测试动作的边界：\nIt did not read any source code, merge or ship anything, or touch\ncustomer data\n测试过程没有读取内部源码，没有合并或发布代码改动，也没有触碰客户数据。依照\nOpenAI 要求，公开披露脱敏隐藏了包含具体代码路径的拉取请求链接。\n7 月 25 日 08:00 至 10:00 UTC，研究团队通过 Bugcrowd\n漏洞披露渠道提交报告，并在协调世界时 15:30 停止测试。提交报告约 14\n小时后，OpenAI 在当晚 22:49 UTC 确认完成技术修复。从 7 月 23\n日审阅接口到 7 月 25 日在内部仓库建分支，整个过程耗时不足 72\n小时。虽然技术渗透发生在 7 月下旬，公开报道直到 9 月中旬才出现：Hacktron\n于 9 月 13 日发文，华尔街日报于 9 月 18\n日凌晨刊出独家报道，多家行业媒体跟进转述。\n这次测试没有造成代码泄露，但在系统的工程拓扑上画出了一条实线：一个外围公开论坛的图片处理接口，跨越层层信任传递，连通了核心代码仓库的写入端点。三条互不关联的既有授权，拼出了一条直通核心资产的完整通道。\n一个外围论坛的图片解析缺陷，顺着全公司共用的统一登录体系，接到员工早已授予编程助手的仓库写入权限，三层既有授权串联成一条通往内部核心仓库的完整通路。\n每一层都不是新的\n从公网图片输入到内部核心仓库，整条链路上的技术组件与授权设定，全是在生产环境中运行已久的既有配置。\n链路前端是图片解析。诱发异常的源头，在开源 C 库 libheif\n处理图像覆盖层计算的代码缺陷里。早在 2025 年 5 月 5 日，上游就在提交\n85e21ad44eba931314337300a2376b8d28f085ae\n中调整了相关计算逻辑，提交说明没有附带任何安全提示。一年后的 2026 年 5\n月 19 日，项目发布\nlibheif\nv1.22.0\n，更新日志列出包括 CVE-2026-32882 在内的多处修复。\n上游修补后，补丁在下游 Linux 发行版中落地缓慢。Debian 社区在 2026 年\n8 月 8 日发布安全通报\nDSA-6417-1\n，在稳定版\ntrixie 分支修复了 12 个 CVE 漏洞，但在运行于生产服务器的 bookworm\n旧稳定版中至今没有回迁，官方追踪面板长期保持开放。libheif 维护团队直到 8\n月下旬至 9 月初，才连续推出 v1.23.2、v1.23.3 与 v1.23.4\n等版本推进修补。\nDiscourse 官方收到测试人员通过 HackerOne\n提交的报告后响应迅速：周六接报，周日回复，周一拿出修复方案。2026 年 7 月\n27 日，代码提交\na07188016987de1613c961277e2e928aaa7c37ec\n引入 Linux 的 Landlock 机制对图片处理子进程实施沙箱隔离。7 月 28\n日，Discourse 发布官方安全通告\nGHSA-vhm9-85gw-x335\n，定级为\n8.8 分高危风险。\n越过图片解析入口，后续推进依靠身份认证系统的信任传递。社区论坛的登录接入集中式单点登录系统。研究团队指出，这种跨域接管并非\nDiscourse\n专有缺陷，任何接入这套单点登录体系的外围服务一旦失守，都会产生相同后果。论坛在这场测试中只是一个外围端点。OpenAI\n的核心修复也落在这处：收紧社区论坛登录凭证的作用域，批量撤销受影响的凭证与活动会话。发言人\nDrew Pusateri 接受华尔街日报采访时证实了这项整改，\nThe\nStraits Times\n具名引述。\n链路最后一环是开发者给辅助工具配置的连接授权。一名内部工程师此前出于日常工作需要，把个人\nGitHub 账号授权绑定给代码助手\nCodex。该配置符合常规业务需求，操作过程没有任何越权，却最终划定了整场测试能够触达的影响力上限。测试人员接管单点登录凭证后，直接继承了该账户在外部代码平台的全部写入能力。\n输入端是存在已知缺陷的图像解析依赖，中间是宽泛信任外部站点的身份集成架构，顶端是工程师正常配置的代码工具授权。三处设定单独看都是常见工程状态，在特定拓扑中咬合在了一起。下游稳定版系统挂起的修复清单，让外围服务的内存缺陷持续暴露在公网输入面前。\nAI 改变了什么，没改变什么\n9\n月中旬媒体集中报道这起事件，多数标题把焦点放在模型攻破防线上。最初跟踪这起事件，我的第一反应也是大语言模型在漏洞挖掘上取得了突破。对照研究团队公开的完整记录与技术细节逐项核实后，我发现自己的归因出现了偏差。\n整场测试的核心推进由人类研究者把控。人类专家挑选攻击面，梳理跨域信任链条，在真实服务上验证利用脚本，并通过合规渠道披露问题。语言模型承担的工作，是在人类定位出内存缺陷之后，编写对应的利用代码，并针对运行环境微调内存布局。Hacktron\n在技术复盘中给出了明确界定：\nThis was not completly autonomous hacking, and skilled human guidance\nremained important\n测试并非完全自主推进，人类专家的方向引导贯穿始终。\n研究团队在博文中反复强调模型版本升级带来的效率跃迁，把突破归功于新模型的推理能力。仔细核对研究者的操作流水，这种能力跃迁背后混杂着多重外部因素。\n关键的前提来自人工建立的先验上下文。7 月 24 日使用 Claude Opus 4.8\n期间，研究者投入大量时间完成了漏洞根因定位，在关闭内存地址随机化保护的环境里跑通了原型脚本，摸清了内存结构偏移与调试环境。等到模型接手任务，人类已经把崩溃现场与内存偏移整理就绪，省去了盲目试错的过程。\n发布窗口的巧合同样提供了客观助力。7 月 24 日晚间，Anthropic 正式发布\nClaude Opus\n5\n。研究团队在官方发布数小时后便接入新模型，这也是排查受阻后主动引入的技术变量。\n测试任务的人工降维也是关键一环。拿到 Opus 5\n后，研究者没有直接去打线上目标，他们把二进制程序搬到本地 ARM64 架构的\nMac 电脑上重现环境，用大约 3\n小时产出适配本地架构的可用脚本，随后才将验证通过的逻辑迁移到云端运行的\nx86-64 架构与 jemalloc 内存分配器配置上。\n安全护栏的绕过同样依赖专门的工程设计。模型内置的安全机制会拒绝针对远程生产环境编写利用脚本。为了驱动模型持续工作，研究团队搭建了代理网络，把自有云端服务器伪装成夺旗对抗靶场，绕开模型的审查提示，驱动模型执行多轮自动调试与修改。\n在纯粹的网络对抗基准测试中，Opus 5 的表现并未拉开代际差距。根据\nAnthropic 官方随模型发布的系统技术报告数据，Opus 5\n在漏洞利用基准测试中的得分，显著落后于专用模型：\nfar behind that of Mythos 5\n在 Anthropic 现有的模型序列中，有一款名为 Mythos 5\n的模型，官方评估显示其网络对抗能力突出，仅面向少数经过严格资质审核的机构定向开放。\nThe\nStraits Times\n引述单方信源披露，Hacktron 团队在测试全程没有接触过\nMythos 5。\n研究团队在其后续开展的\nHEIF\nHeist\n衍生项目中，还提到测试了\nGPT-5.6 Sol\n等其他厂商模型，声称能在几天内实现自动化探测。这套结论跨越了不同的技术架构与业务环境，缺乏对照基准。\n利用算法辅助寻找软件缺陷早有先例。谷歌 Project Zero 团队在 2024 年 10\n月公开的 Big Sleep 项目，展示了\n自动化发现真实开源软件\nSQLite 零日漏洞\n的系统方法；安全平台\nXBOW\n也在漏洞众测榜单上凭借约 1060\n次经过人工复核的自动化提交取得靠前排名。相比这些行业实践，Hacktron\n团队展示出的增量，是在人类专家明确漏洞根因并搭建好调试环境的前提下，借助语言模型加快了针对复杂加固环境的内存利用代码编写。\n关于测试开销与防御感知的宣称，必须严格限定在自述范围之内。按照\nHacktron 团队的事后陈述，在历时两个月的 HEIF Heist\n研究项目中，三名研究者协同推进，整体消耗的 API 调用 token 费用不足 3000\n美元，对每个新目标的适配耗时约 1 至 2 天，纯自动化模式下通常在 1 至 3\n天内跑出有效代码执行结果。研究者同时宣称，测试期间发送的数千张畸形图片导致多家受测平台频繁崩溃，除了大型电商企业\nShopify\n之外没有其他厂商察觉到异常。这组数据纯属研究团队的单方陈述，团队没有公开调用账单，也无法查阅受测企业的内部入侵检测日志，而\nShopify 官方自始至终没有对这项测试发表过公开回应。\n模型并没有自主发现系统深层的未知缺陷，它的真实作用体现在压缩人工逆向调试的耗时上。资深安全工程师原本要在实验室里花费数天对齐的内存布局，辅助工具把这项工作压缩到了几个小时之内。\nconnector 是失陷后果的上限\n深入复盘整起事件，我的关注点逐渐从前台的模型能力移到了后台的权限连接上。对于每天配置多\nagent\n系统、把开发助手连上代码仓库与凭证系统的团队来说，这起事件暴露出的机制可以用一句话说清：外围系统或认证凭据一旦失守，破坏能够蔓延到什么范围，取决于我们授予\nconnector 的实际权限，与攻击者的技术水准关系不大。\n这名内部员工当初绑定的 Codex\n连接如果只拥有代码仓库的只读权限，或者把范围严格限定在某个边缘实验项目里，测试人员即便接管了会话，能做出的动作也会止步于仓库之外。真实情况是，Codex\n拿到了全局代码仓库的写入能力。一旦单点登录凭证失守，外围服务的缺口就顺着这条预设通道，直接通向核心代码库。\n系统层面的应对动作随之清晰。团队需要排查身份拓扑中的信任传导，系统性梳理各类边缘服务，确认高权限的核心系统是否会无条件信任并接纳这些低安全等级服务签发的身份凭证。OpenAI\n在事发后迅速收紧社区论坛登录凭证的作用范围，正是切断信任由外向内单向渗透的通路。\n与身份拓扑并行的，是对各类自动化工具实际生效权限的审计，不能仅在配置清单里记录工具的存在。每次给开发环境或智能体绑定\nGitHub、云服务密钥或通讯接口，都需要追问一个具体问题：假定这个外部服务明天失守，攻击者拿着现成凭据在内部系统究竟能够调用哪些接口、读取哪些数据？把写入权限收紧为只读，把组织层面的通配授权收窄为具体项目的单独授权，能直接压低潜在失陷能够触达的破坏上限。\n面对这种风险，防御容易走向过度设计。这起事件给出的启示，并不意味着要求工程师退回纯手工时代，或者在开发环境外部堆叠繁复的沙箱机制与通信中继。繁重冗长的隔离机制往往只会拖慢开发节奏，促使员工私下寻找绕过限制的捷径。在依赖组件的维护观念上，过去那种冷门陈旧库无关紧要的想法也需要更新：大语言模型把复杂内存漏洞的利用成本压缩下来之后，以往许多团队认为攻击门槛太高的底层处理库，如今同样暴露在低成本攻击的射程里，依靠攻击成本高昂来维持的安全假设已经失效。\nHacktron 的渗透测试与 2026 年 8 月业内讨论的 Anthropic\n评测事故机理不同。在业内称为 Irregular\n事件的评测失误中，评测环境由于运维配置疏漏直接连通了公网，导致自主运行的模型触碰到真实外部企业的网络资产，到达登录页面后自行停下，属于沙箱网络隔离缺失引发的自动化越界。而在\nOpenAI\n这次事件中，全程由人类研究人员规划路径、在生产系统验证假设并提交披露，模型充当的是编码调试的辅助工具。\n评估自动化工具的安全风险，与其层层叠加防护外壳，不如把各种外部凭证的实际权限收紧到任务所需的最小范围。\n自动化组件大幅提升了工程生产力，但技术团队赋予这些工具的凭证常常跨越信任层级，在内部系统留下了长期有效的写入通道。\n还有一个边界需要转述这件事的人记住：OpenAI 后来支付了 6500\n美元漏洞奖励，但按照 Hacktron\n转录的官方评审反馈，这笔钱只覆盖单点登录系统侧的发现，论坛本身被明文排除在赏金计划之外；研究团队在提交报告后仍完成了员工账户接管与内部拉取请求，这段操作处于授权状态不明的灰色地带。对单个漏洞的奖励不构成对全链条测试的事后追认。账户失陷能走多远，上限始终是你授予\nconnector 的权限。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/three-old-authorizations-openai-breach-20260925.html",
-      "content_chars": 5996,
-      "content_sha256": "bdc6b19449d300fe4846950732b3d7203c1269466c0eada388be4b3d51c98df2",
-      "content_fetched_at": "2026-09-25T23:55:55.972152+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:2f20da381f68d03b",
-      "kind": "publish",
-      "text": "yage-share published: Qwen-Image-2.1：版本号断裂背后的双线策略，与一个模型接住三件事的野心",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-24T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/qwen-image-21-two-track-strategy-20260924.html",
-      "title": "Qwen-Image-2.1：版本号断裂背后的双线策略，与一个模型接住三件事的野心",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI 产品与平台\n产业与竞争\n中国科技生态\n平常如果打算用 AI\n做一张能直接上版的设计素材，手头往往要在两三个软件之间来回倒腾：先在生图工具里跑出画面，再拖进抠图工具把底色去掉，最后还要丢进编辑器修改局部的招牌字样。2026\n年 9 月 20 日，Qwen 团队正式上线了新一代图像生成模型\nQwen-Image-2.1\n并开源了模型权重，它最直接的主张就是把这三项操作收进同一个模型里：负责画面生成的核心部分有\n7B\n参数量，外加一个解析提示词的视觉语言编码器和一个专门处理透明通道的自编码器。但只要扫一眼发布记录，更让人好奇的反而是它的版本号：团队在\n2026 年 2 月推出了 2.0，7 月发布了 3.0，到了 9 月却反常地跳回了\n2.1。\n这个反向跳跃的数字，最可能的解释是一家团队在 2026\n年开始同时经营两条产品线：闭源商业接口在云端往前跑，开源研究分支在本地继续演进。官方没有说明过这层意图，但发布形态的差异摆在那里。这次伴随权重放出的专有研究许可，也把开放权重阵营如何在社区生态与商业防护之间划定界线，平实地摆到了台面上。\n一次发布，三个工具的工作收进一个模型\n2026 年 9 月 20 日发布的 Qwen-Image-2.1，视觉生成部分采用了 7B\n参数量的单流扩散变换器作为骨干网络。输入端搭配 Qwen3-VL\n解析多模态提示词，输出端则接入了一个 64\n通道的自编码器，专门负责透明通道的编解码。这套架构组合直接改变了本地制图时各道工序的流转方式。\n要理解自编码器带来的变化，得先看一下数字图像的通道机制。平时接触到的普通彩色照片，依靠红、绿、蓝三个基本颜色分量合成画面。如果想让画面的特定区域呈现半透明过渡，或者直接露出镂空的透明底色，像素点就需要增加专门记录不透明度的第四个通道。以往要做一张透明底素材，常见做法是先生成普通图片，再把示意图里那种灰白棋盘格背景单独抠掉；这多出来的一步既费事，遇到毛发这类细碎边缘还容易出瑕疵。\n图形学将红绿蓝三色与透明通道的组合统称为\nRGBA，其中专门记录透明度数值的分量叫做 alpha 通道。Qwen-Image-2.1\n把透明通道融入了底层自编码器的表达空间。扩散网络生成像素颜色的同时，同步输出对应的透明度数值，导出的\nPNG\n自带透明背景，省去了外置抠图软件二次处理的步骤；社区实测者反馈其透明边缘具备可用度。\n在托管于\nGitHub\n代码仓库\n的统一管线 QwenImage21Pipeline\n中，开发者用同一套调用脚本就能处理三种常见的作图需求。在默认 40\n步推理的基准配置下，官方展示了具体的运行示例。第一项是基础文生图，输入提示词\nA neon shop sign that reads \"QWEN IMAGE 2.1\", rainy night, reflections on wet pavement\n，演示雨夜路面积水反光与霓虹招牌文字的渲染效果；第二项是局部编辑任务，输入提示词\nChange the background to a sunset beach\n，把原图背景替换成了夕阳海滩；第三项是透明生成任务，使用提示词\nThis is an RGBA image with transparency. A cute cartoon dragon sticker. The image has alpha channel and the background is transparent.\n，单次运行就能直接输出一张背景镂空的卡通小龙贴纸\nPNG 文件。\n这套统一接口在编辑能力上也做了一并收拢。输入端除了支持单张原图，还允许传入最多\n10\n张参考图以维系多主体一致性。针对画面局部修改的需求，接口开放了三种区域标注方式，分别是\ncircle 圆形框选、painted annotation 涂抹画笔以及 separate mask\n独立掩码。借助这套机制，既可以把普通照片中的主体抽离成透明图层，也可以在维持透明属性的前提下对主体做进一步的局部修改。出图规格上模型原生支持\n2K 分辨率，并预设了从方图到竖屏的 7\n档常用宽高比。为了辅助长难提示词，官方还配套发布了基于 Qwen3.5-VL 9B\n微调的改写模型 PE-T2I 与 PE-I2I，建议先优化提示词再送进主干管线。\n文生图、局部编辑与透明素材三条输出线收进同一条管线，由单个模型统一承接。\n这条产品线从哪来：一条在\n2026 年分叉的时间线\n要理清 2.1 这个反常的版本命名，目光需要回到 2025 年 8\n月。从最初上线到 2026\n年秋季，这条产品线在十三个月的时间里完成了八次节点演进，展示了这支团队怎样一边在开源社区里迭代，一边划出专门的商业服务线。\n发布时间\n模型名称\n核心特征与技术规格\n许可协议\n技术报告\n2025-08-04\nQwen-Image 初代\n20B MMDiT 架构，主打复杂文字渲染与编辑，自建 ChineseWord\n基准，CVTG-2K 英文评测\nApache 2.0\narXiv:2508.02324\n2025-08-18\nQwen-Image-Edit\n指令驱动式图像编辑，支持中英文双语图内文字增删改\nApache 2.0\n基于初代架构\n2025-09-22\nEdit-2509\n引入多图输入（1 至 3 张），增强人物身份与主体一致性\nApache 2.0\ninvideo\n汇总\n2025-12-23\nEdit-2511\n多图编辑一致性提升，支持多视角生成与空间几何推理\nApache 2.0\n模型卡更新\n2025-12-31\nQwen-Image-2512\n文生图分支收尾版本，沿用初代 20B 骨干架构\nApache 2.0\n社区多源一致\n2026-02-10\nQwen-Image-2.0\n轻量化架构，主打原生 2K、专业排版与统一生成编辑\n未公开权重\n官方发布技术报告\n2026-07-21\nQwen-Image-3.0\n4.5K 长指令支持，报纸 PDF 级复杂排版，仅提供闭源商业 API\n闭源商业\n无技术报告\n2026-09-20\nQwen-Image-2.1\n7B 单流 DiT，内置 RGBA VAE，统一文字、编辑与透明生成，开源权重\nResearch License\n无\n演进时间线上 3.0 走向闭源且未披露技术报告，2.1\n回归开源路线但收紧了许可协议。\n从这张时间表里可以看到显眼的版本号断裂：团队在 2026 年 2 月发布了\n2.0，7 月发布了 3.0，到了 9 月却回过头发布了\n2.1。官方从未公开解释过这套命名逻辑。将产品线在 2026\n年划分为闭源商业接口与开源研究分支两条平行路线，是基于发布形态差异所做的推断。\n沿着这个推断视角，2026 年 7 月上线的 3.0\n代表了云端闭源产品线的确立。这个版本只通过商业 API\n开放调用，官方并未提供权重文件下载，同时也打破了初代与 2.0\n伴随发布日同步公开技术报告的既往做法，至今没有披露技术报告。3.0\n的技术侧重点放在长达 4.5K token\n的上下文解析、报纸与杂志级密集图文排版，以及复杂软件界面的生成上。\n9 月面世的 2.1 则回到了开源这条线上。本地工作流工具 ComfyUI 在其\n官方博客\n中指出，2.1 运行在优化后的 7B MMDiT 之上，与 2.0 处于同一技术层级。在\n第三方对比分析\n中也能看到功能层面的分流：3.0 Pro 的接口文档只开放 1 至 3\n张参考图输入，没有公开基于掩码的编辑工作流，而 2.1\n在本地代码中开放了最多 10\n张参考图与三种掩码标注方式。两套方案面向的使用场景和交付目标不同，推进路线自然分成了两条线。\n它的同行是谁\n要对 Qwen-Image-2.1\n形成务实的判断，需要把它放到当下开放权重图像模型的坐标系里审视。在支持本地部署的模型中，另外两个受到广泛讨论的项目是\nZ-Image Turbo 与 FLUX.2，二者的技术取向与功能边界各有侧重。\nZ-Image Turbo 采用 6B 参数量的蒸馏架构，以宽松的 Apache 2.0\n协议发布。该模型用蒸馏换取生成速度，整体设计偏向写实的人像摄影质感，但在公开的产品与技术文档中\n明确不支持图内文字渲染\n。如果应用场景需要在海报或插画中排布特定文字，使用者必须在外部借助其他设计软件或排版模型补全。\n另一边的 FLUX.2 拥有成熟的局部图像编辑能力 Kontext\n分支，但模型原生并不具备透明通道的生成逻辑。在许可与分发策略上，FLUX.2\n做了分级切分：轻量化的 klein 4B 版本沿用 Apache 2.0，功能完整的 Dev\n版本则限制商业用途，其\n商业 API\n的调用单价在每百万像素 0.003 到 0.08 美元之间\n。至于图内文字渲染，\n社区单人测试反馈\n曾记录旧版 2512\n在排布长难词时表现更好，但这一观察来自单人测试，缺乏统一基准的持续印证。\n放眼云端闭源模型阵营，GPT Image 系列、Gemini 图像能力以及 Qwen 自家的\n3.0\nAPI，都在各自的官方宣传中给出了极高完成度的排版与合成样张。在公开材料里，这几家没有可互相对照的基准成绩，各自只提供自己口径的宣称，目前无法给出权威的跨模型量化对比。\n把这些同行放在一起看，Qwen-Image-2.1\n并没有去争夺单项画质的最高分，而是把实用的几项功能收在了一起。在目前的开放权重阵营里，它是唯一一个把图内文字渲染、原生透明通道输出与多图局部编辑同时装进同一个开源权重模型的方案。\n边界：许可、运行与质量\n代码仓库页面虽然在多处提及开源字样，但决定模型实际使用权限的是随代码分发的正式法律文件。Qwen-Image-2.1\n放弃了前代 2511 与 2512 所使用的 Apache 2.0 协议，转而采用专有的 Qwen\nResearch License Agreement。协议第 1 条第 (i)\n款逐字规定：\nNon-Commercial\n仅指\nfor research or evaluation purposes only\n；协议第 2 条第 (a)\n款明确限制：\nFOR NON-COMMERCIAL PURPOSES ONLY\n；第 2 条第 (b)\n款进一步注明，任何涉及商业化的部署必须单独发邮件至\n[email protected]\n取得独立授权。\n在\nReddit\n社区讨论\n中，许多长期跟踪该系列的开发者将这一许可条款视为开源立场的倒退。换一个角度看这次收紧，也可以理解成一种折中：权重继续向公众开放，供研究和评测使用，把商业部署留作需要另行洽谈的授权。社区的失望是真实的，但要求一个团队永远免费开放商用，本身也不是行业通例。\n前代模型适用的 Apache 2.0 允许商用，2.1\n的专有研究许可则要求商业部署另行申请授权。\n在硬件开销与部署门槛上，官方文档并未给出显存配置对照表，目前的运行指标多来自社区开发者的实测。模型完整权重的下载体积约为\n33GB。在轻量化推理工具 stable-diffusion.cpp 上，社区开发者 peri-cl 采用\nQ8 量化后实测整体显存占用约\n15.6GB，并确认了第一时间的运行支持；社区也同步上线了对应的 GGUF\n格式量化版本\nAbiray/Qwen-Image-2.1-GGUF\n，把运行门槛进一步压向消费级配置。出图耗时方面，搭配\nDDR5 内存的笔记本 CPU 生成单张 512×512 图像约需 3 分钟；一位 Reddit\n实测者在 5070 与 5080 这一档桌面 GPU 上、以 25\n步推理生成一张百万像素图像，耗时约 25\n秒。图像编辑任务由于需要编码参考图像特征，参考图数量增加会带来更长的推理延迟。\n围绕该模型的工程适配生态在上线当天迅速铺开。开源库 diffusers\n在发布当天开放了支持 PR #14804；工作流工具 ComfyUI\n推出了官方节点模板；推理加速框架 SGLang 提交了支持 PR #39983；LightX2V\n也跟进完成了适配，而社区测试确认 llama.cpp\n目前阶段暂不支持图像输出。在硬件层面上，FlagOS 宣称已在 8\n款芯片平台上完成了与官方实现的推理精度对齐，不过该结论目前属于厂商单方宣称，公开渠道尚未出现独立的第三方复验报告。\n关于成图质量，社区早期测试给出了分化的反馈。\nReddit\n用户 listopalafoto 测试后\n认为其编辑能力树立了新的开源标准，多图参考下人物的一致性表现稳定，输出的透明\nPNG 边缘具备较好的可用度。然而实测者 cgs019283\n指出，在常见构图下生成的部分画面带有合成感与偏黄颗粒，该测试者推测这可能是训练语料中混入了特定风格图片所致，这一成因属于测试者的个人主观推断；同时面对知名公众人物或版权角色，模型往往只能生成泛化面孔。\n在 Hacker News\n社区讨论中，开发者对官方演示用例里的一组聚会合照展开了细节核对，发现画面中的知名演员\nShelley Long 出现了面孔特征泛化，无法精确维持人物的原貌，详见\nHN\n讨论记录\n。这一案例说明官方演示中的多图一致性属于厂商选例展示效果，并不构成无条件的普遍性能保证。目前行业内尚无独立学术机构对该模型的生成成功率或画质缺陷进行系统性量化统计，海外科技媒体\nthe-decoder\n在报道\n时同样采用了 claims to beat\n即宣称超越的审慎表述。而在透明图层方面，公开材料中对 alpha\n边缘质量也缺乏独立客观测量。\n文字渲染：这块长板的证据变化\n文字生成一直是 Qwen 图像模型建立辨识度的核心能力。2025 年 8 月初代\nQwen-Image 亮相时，研发团队在其\n技术报告\n与\n博客\n中搭建了一套完整的证据链条。除了采用检验长英文字符排布的 CVTG-2K\n基准，团队还专门自建了收录大量复杂汉字的 ChineseWord\n评测集，以此填补中文排版测试的空白。在当时公布的技术指标中，初代模型在\nLongText-Bench、ChineseWord 与 TextCraft\n等测试集上均取得了突出的评测数据，并展示了对联、牌匾等复杂汉字长文本的渲染实测。\n到了\nQwen-Image-2.1，官方披露文字能力的方式出现了显著转变。在最新的模型文档中，关于排版能力的陈述缩减为一句简短的\nImproved\ntypography。官方未披露新的字符准确率实测数据，也未提供支持语言种类的完整清单，科技分析博客\nkie.ai\n也独立指出了这一证据维度的精简。当前社区流传的渲染对比，多数引用自旧版\n2512 与 FLUX.2 的历史测试，并非针对 2.1 进行的严格对照。\n对于考虑将 Qwen-Image-2.1\n应用于海报宣发、电商主图或招牌设计等文字敏感业务的工程团队，不能简单将初代技术报告的成绩套用到当前版本上。在进入生产链路前，务实的做法是梳理一批贴近自身业务的典型提示词，覆盖中英文混排、差异化字号以及多行密集排版，在本地环境中搭建对照基线，检验文字生成的拼写准确率与成字率。\n后续评估这套模型的演进走势，可以从三个观察维度跟进。其一是云端商业线的技术下放，3.0\n所具备的超长指令解析与期刊级图文排版能力，后续是否会以某种方式裁剪集成进开源研究模型；其二是许可协议的变动可能，团队是否会根据开发者诉求补充商用授权层级；其三则是围绕原生透明生成的评测基准，社区是否会出现针对边缘半透明羽化细节与抠图精度的客观测量方案。\n对于眼下没有私有化部署图像模型需求的技术团队，Qwen-Image-2.1\n的推出依然提供了一个近距离观察多模态架构演进的样本。它展示了生成模型试图把以往松散的多步修图管线收归一体的工程努力，也记录着开源团队在活跃社区生态与守住商业防线之间的实际平衡。\n本帖中的所有图像均由 Qwen-Image-2.1 生成。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/qwen-image-21-two-track-strategy-20260924.html",
-      "content_chars": 6574,
-      "content_sha256": "d52859c4154846e970d09c6eaa17e698526d04fb534d70f571e187c0d29d7014",
-      "content_fetched_at": "2026-09-25T23:55:56.210900+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:95222558486487b2",
-      "kind": "publish",
-      "text": "yage-share published: AI 参与科研的稳妥姿势：让 Claude 去优化科学软件本身",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-24T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/ai-biomolecular-optimization-20260924.html",
-      "title": "AI 参与科研的稳妥姿势：让 Claude 去优化科学软件本身",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "科研与技术前沿\nAI Agent\n推理与性能\n如果让大语言模型参与前沿科学，很多人期待它直接提出革命性的新假说，或者在实验室里发现奇迹药物。现实中更有把握的一条路，其实接地气得多：先去帮科学家把他们天天运行、却又慢又耗资源的计算软件重新修整一遍。Anthropic\n在 9 月 17 日发布的\n技术报告\n与开源代码，记录的就是这样一次尝试。\n这项工作的分工很有意思。两位熟悉生物建模、但缺乏推理加速与底层内核开发经验的技术人员，带着\nClaude 在不到四周的时间内改造了 36 个软件包，覆盖 30\n多个开源生物分子模型。所有改动直接运行在原有模型权重之上，团队没有重新训练新模型，36\n个软件包与 30\n多个模型的数量差异主要来自部分模型的多套独立实现与参数版本。技术报告正文和数据分析同样由\nClaude 在人类监督下起草完成。\n把通用大模型放进科研一线，暂时不必急于替科学家做核心科学裁决，先挽起袖子，把研究人员日常依赖的计算软件做一次扎实的技术装修。从实际效果看，这种务实的工程路线绕开了科学幻觉的直接风险，也让现有的科研计算工具实实在在地跑得更快、更省资源。\nAI\n参与科研的两条路径：替科学家做科学判断风险高，优化科学家依赖的工具收益确定\n科研软件卡住的不只是生物学家\n在计算生物学的日常研发管线里，研究人员的算力开销主要压在两类基础任务上。一类是蛋白质结构预测，程序接收氨基酸或核苷酸序列，推算三维空间里的原子坐标并评估局部置信度。另一类是蛋白质设计，算法以疾病靶标表面为起点，生成能够紧密贴合的全新序列，常见形态为\n50 到 120\n个残基组成的小蛋白结合体，再通过重折叠预测检验结合构型。这两类任务不仅耗时长，而且动辄挤爆高端计算卡的运行显存。\n主流模型为什么跑得这么慢？我们可以把一个蛋白质分子想象成一串折叠在三维空间里的珠子。为了弄清楚这串珠子最终会叠成什么形状，以\nAlphaFold3、OpenFold3 和 Boltz-2\n为代表的主流架构，必须反复推算每一对珠子之间的空间相对位置。仅作示意，假设一条链上有\n1,000\n颗珠子，不计方向与自身配对，两两配对就有大约五十万个组合。模型会给每一对珠子写下一张关系卡，记录它们之间的距离和朝向。\n麻烦出在这些关系卡的校验过程。算法要核对珠子 1 和珠子 2\n的关系卡写得对不对，不能只孤立观察这两颗珠子，还必须把分子链上的珠子\n3、珠子 4\n直到最后一颗珠子逐一拉进来，检查三颗珠子构成的几何三角形是否符合物理和几何规律。更新每一对珠子的关系卡，都要拉上整个体系的所有其他珠子核对一轮。分子链条每增加一颗珠子，两两配对的关系卡多出一整圈，每张卡需要拉来交叉校对的其他珠子也多出一个。\n这种成倍互相牵扯的几何三角形校验，在计算生物学文献里称为三角注意力和三角乘法。这些成对计算的计算量随着分子体系的尺寸呈三次方上升。体系内的残基规模翻上一倍，消耗的计算时间与显存开销会飙升到约\n8 倍；体系规模扩大到三倍，资源开销会暴涨到约 27\n倍。现代结构预测模型的大部分运行时间与显存开销，正是耗费在这些关系卡的交叉推演上。\n以往解决这类工程瓶颈，往往需要经验丰富的底层系统工程师花费数周时间对单个模型手工调优，写出的底层代码还难以直接迁移到其他模型。虽然芯片厂商推出过专用算子库\ncuEquivariance\n和\nBioNeMo\n推理运行时，但学术界散落着几十个各自迭代的开源模型仓库，专家的手工定制很难覆盖整个工具生态，许多优秀的科研软件因此长期停留在未经优化的原生状态。\nClaude 动手改了什么\n面对三十多个结构各异的模型代码库，改造策略分成了底层硬件算子和上层模型工程两个层面。底层\nGPU\n内核本质上是把许多细碎小运算合并成少数高吞吐大操作的底层程序。以往的代码习惯把复杂的三角几何运算拆分成几十道零散的数学指令，导致中间数据在显存与计算核心之间来回搬运，浪费了大量带宽。团队让\nClaude 编写了一套名为 FlashPairformer 的定制 GPU\n内核，把这些零散步骤整合成吞吐饱满的连续流式操作，压低显存读写延迟。在单独测试里三角注意力相对\ncuEquivariance 的几何平均提速为 2.7 至 2.9\n倍，这种微基准虽然不等于完整模型的提速，但为上层优化清空了底层路障。\n更繁重的工程量落在 36\n个软件包的代码重构上。注意，它改动的是代码的执行路径与显存调度，没有改动工具推导科学结论的计算公式。Claude\n做的事情是系统性清理软件运行中的机械内耗。最典型的动作包括两项：一项是缓存此前重复计算的中间结果，避免程序做无用功；另一项是借助\nCUDA 图技术把重复的 GPU 操作录制下来批量重放，消除了 Python\n解释器在每个小步骤上的调度开销。代码还顺带折叠了恒定死分支，让高频张量长驻显存减少主机与设备间的数据拷贝，并引入异步管道加载数据。面对超大复合物，程序会对庞大的中间张量做分块处理，或者在单台多卡环境下把成对表征按行切分到不同显卡协同计算。\n在传统的性能优化里，底层工程师经常替用户牺牲少许精度来换取速度。这次的工作把精度与资源的决定权交还给了科研人员，设计出四档运行模式。使用者可以根据任务场景切换档位：off\n模式直接关闭优化，保持原始状态；exact\n模式保证输出数值与原始模型逐位一致；fast\n模式允许输出落在原模型自身的随机波动区间内，换取更显著的推理速度；big\n模式则专门开启内存分块与多卡切分，避免处理大分子时显存溢出报错。\n这套工程体系还引入了一项明确的拒绝契约。如果运行环境、硬件配置或模型架构无法满足某个档位要求，程序会直接打印\nNOT ACTIVE 提示并以状态码 3\n退出，不会静默回退到未加速的慢速代码。全部改造代码已经整理在\n开源代码仓库\n中，原始上游代码保留在\nstock 目录，优化包放在 opt 目录，底层共享统一的 opt_core\n运行时。整套项目作为静态参考实现发布，Anthropic 自有代码采用 Apache-2.0\n协议，上游 stock\n代码保留各自许可，团队明确声明后续不接收社区代码提交也不做持续维护。\nClaude\n改写的三层：把三角几何运算合并成快速 GPU\n内核，再配合逐模型缓存与分块，让模型更快更省显存\n快了多少，代价是什么\n要客观评价这次代码改造的提速效果，首先需要弄清楚参照基准。速度与显存基准测试统一在英伟达\nH100 80GB 计算卡上完成。评测团队选取的 default\n基线并非出厂默认设置，而是懂行用户在同款显卡上调优出来的最快正确配置，提前开启了可选融合算子并吃满批处理吞吐。提速倍数直接与熟练工程师调优后的高效基准对比，排除了未调优出厂配置带来的虚高水分。\n在这套严格的基准线上，结构预测子集的三种优化模式拉出了清晰的提速阶梯，以下均为几何平均。保持输出逐位一致的\nexact 模式平均提速 1.6 倍；允许微小误差换取速度的 fast 模式平均提速 4.1\n倍，各模型的加速幅度分布在 2.3 倍至 6.4\n倍之间，这种微小数值漂移落在原模型自身的随机波动范围之内；最省显存的 big\n模式即使背负着数据分块的开销，依然取得了平均 3.4\n倍的加速。官方公告提到的接近 2\n倍输出一致提速，对应的是涵盖三十多个模型的全局平均表现，在计算繁重的结构预测子集上，严格逐位一致的提速实际就是\n1.6 倍。\n追求极速需要付出显存代价。exact 模式与 fast\n模式为了争夺峰值计算吞吐，显存占用最多会飙升到原有基准的 3\n倍多。如果手头计算卡的硬件显存吃紧，使用者就需要切换到最省内存的 big\n模式，依靠分块计算来规避显存溢出风险。\n计算跑得更快，输出质量有没有受损？科研人员通过及格线指标来检验预测构型的精度。在蛋白质结构预测领域，学者们常用\nDockQ 分数衡量预测模型与实验测定结构的贴合程度，并将 0.23\n当作预测合格的及格线。评测数据显示，预测结果跟实验解析的结构比对，可接受比例在优化前后都停在\n54% 到 55%\n这个水平。几种优化模式相比基线的置信区间都包含零，说明大盘整体精度保持平稳，没有发生系统性滑坡。\n当然，报告附录里还有逐模型的评测细节，少数模型在个别档位下仍有微小的局部精度波动。此外，报告没有对比同期\nColabFold 新加的社区加速内核。\n跑得完和预测对是两件事\n任何软件工程优化都有其能力边界。这份技术报告保持了相当清醒的学术分寸，用两组对照实验划清了计算工程的可达性与科学预测的有效性之间的界限。\n第一道界限出现在超大分子复合物的结构预测中。生物物理计算使用生物\ntoken\n统计物理实体规模：氨基酸残基算一个，核苷酸算一个，小分子配体和离子按非氢原子逐一计数。这一单位反映分子体系的实际几何单元，与大语言模型切分文本词元的\ntoken 没有数学换算关系。在单台 8 卡服务器上，big 模式成功预测了包含超过\n10,000 个生物 token 的超大复合体，最大的测试样本达到 10,761 个\ntoken，结构相似度 TM 分数在 0.92 到 0.997 之间。作为对照，\nAlphaFold3\n论文\n发表时展示的核糖体案例规模为 7,663 个\ntoken，而模型在训练阶段采样的尺寸上限仅为 768 个 token。\n算力跑得通并不代表科学推断成立。面对包含约 31,000 到 70,320\n残基的完整病毒衣壳与超大蛋白质区室，单台服务器的 7\n次极限推理虽然顺利跑完，但输出的三维结构全都塌缩成致密小球，直径只有真实构型的四分之一左右，已打分的三个体系\nTM 分数跌落到 0.08 到 0.14。\n读者难免产生疑问：这种塌缩是否来自加速优化，甚至是有损压缩引入的数值误差？现有证据都指向相反的方向。面对上万\ntoken 的复合体系，同一个 big 模式预测出的构型高度精准，TM 分数最高达到\n0.997；尺度推向数万残基，才出现跌落到 0.08 到 0.14\n的塌缩结果。唯一的变量是输入规模离训练分布有多远，而不是换没换优化模式。当然，报告没有跑未优化模型在同尺寸的对照，这个归因停留在合理推断的级别。技术报告在讨论中写道：big\n模式扩展了程序能够计算的体系规模，但没有扩展模型学到的知识。\n真正的分水岭在模型自身的认知边界。AlphaFold3\n在训练阶段切分的最大采样片段只有 768 个\ntoken，而发生塌缩的衣壳体系，按残基数计达到了训练片段的约 40 到 90\n倍。优化代码直接运行在原有权重之上，模型学到的空间几何规律只在见过的尺度内成立。脱离了这个范围，面对海量原子的相对约束，模型输出的构型在局部或许自洽，在全局物理上却走向了错误的折叠。报告作者推测，这反映了模型在超大体系上的泛化失败，也说明训练片段的尺寸是模型学到的边界，跟优化代码没有关系。\n换成保证逐位一致的 exact\n模式，塌缩是否就会消失？在常规分布内，允许细微数值差异的 fast\n模式与原始模型在大盘精度上统计一致，优化带来的折损微乎其微。而在超大体系面前，报告也给了一条反证：极限测试里有一部分样本省略了循环步骤，报告承认这可能影响结果，但其中一个样本开启完整循环并引入实验模板，结构照样塌缩。流程简化可能推了一把，但显然撑不住全部解释。\n更实际的制约在于硬件显存。保证逐位一致的 exact\n模式更加耗费显存，峰值占用有时会达到原有基准的 3\n倍多。面对数万残基的结构，现有单机只有依赖 big\n模式的分块与多卡切分才能装入显存，exact\n模式在这一尺度下无法启动。认为换回 exact\n模式就能避开塌缩，既没有经过实测验证，目前在单节点上也无法验证。技术报告同样没有针对未优化的原始模型做同等尺寸的跨节点对照。关于塌缩的归因，目前依然停留在合理推论上。\n第二道界限出现在蛋白质生成设计任务中。Anthropic 此前在\n8\n月蛋白设计报告\n中曾组织过单靶点算力上限达约 2,500 H100 GPU\n小时的多智能体战役。在新一轮对照实验里，流程得到了大幅简化，单个 Claude\n实例通过命令行直接驱动优化后的模型，在单张 H200 显卡上连续运行 24\n小时。新旧方案在算力预算上相差约 100 倍，两轮战役的实际墙钟运行时间都是\n24\n小时。在新方案支持下，三款模型的候选分子中位得分经跨靶点平均后分别达到\n0.785（Opus 5）、0.781（Mythos 5.1）和 0.739（Mythos 5），对照旧方案的\n0.749 水平，其中 Mythos 5 的 0.739\n略微低于旧战役的中位数；最高分经跨靶点平均后分别达到 0.833、0.825 和\n0.813，前两者优于旧战役的 0.817，Mythos 5 的 0.813 则略低于旧战役。\n这里用来评估结合界面的打分指标名为 ipSAE，它是一个介于 0 到 1\n之间的计算置信度评分，仅代表算法模型对空间结合构型的把握程度，并不等于生化试管里的湿实验成功率。新流程设计出来的所有全新蛋白质分子，目前均未经过真实的物理实验检验。报告正文对此保持了清醒的归因纪律，写明设计结果未分离优化模型与简化协议的贡献；并且针对有无加速工具的对比组补充强调，有无可加速对照的性能差异不可仅归因于加速模型本身。\n大体系预测的两个指标：计算跑完是工程能力，预测结构正确是科学能力，前者不保证后者\n为什么这条路径靠谱\n从整个项目的推进逻辑来看，它给技术社区提供了一个高确定性、低风险的人工智能落地范式。在我看来，这项探索真正有启发性的地方，在于清晰划定了工程重构与科学发现的权责分界，胜过单纯去罗列几个惊艳的提速数字。\n在真实的自然科学前沿，验证全新假说的物理代价相当高昂。一个缺乏实证依据的分子构想，往往需要实验室耗费数月时间采购试剂、培养细胞并开展繁琐的生化检测，算法一旦产生科学层面的幻觉，就会造成巨大的科研资源浪费。优化科学软件则遵循不同的风险逻辑。这项工作改动的是代码的执行路径与显存调度，并没有改动工具推导科学结论的计算公式。\n软件工程拥有测试套件与数值基准作为安全兜底。代码改动完成之后，团队通过单元测试核验逻辑正确性，通过逐位比对排查数值漂移，再通过上千个模型与靶点配对的大规模测试校对整体精度分布。一旦模型产生代码幻觉或改动破坏了数值约束，自动化断言会当场报错拦截，多数技术差错在开发阶段就能得到暴露与修正。\n这套实践同时也重塑了科研软件的维护成本结构。学术界沉淀了大量构想精巧的开源计算模型，但受限于人力资源，论文发表后往往缺乏长期的底层工程维护。如果单纯依靠高薪的底层硬件专家逐个手工调优，整个科研生态很难承受高昂的时间与资金成本。两位生物建模从业者带着通用模型在四周内翻修\n30\n多个工具，证明大语言模型能够胜任高素质的代码重构助手，把原本属于少数专家的昂贵优化工作，转变成低边际成本的规模化工程。\n计算工具的提速固然降低了研发开销，但计算通畅始终无法直接等同于科学突破。为了进一步检验这些计算分子的实际生物活性，Anthropic\n已经联合生物技术机构发起了一场\n蛋白设计比赛\n，针对五个前沿生物学难题，计划对社区提交的超过\n5,000\n个计算设计分子进行湿实验合成与物理活性检测。在真实的生化反应数据出炉之前，保持审慎客观依然是严谨的同行态度。把通用模型放进由严密测试套件把关的工程跑道，让它专注于分担繁复的软件翻新事务，这或许正是现阶段让人工智能服务科学探索最稳妥、也最扎实的一条路径。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/ai-biomolecular-optimization-20260924.html",
-      "content_chars": 6361,
-      "content_sha256": "d80ef3ff581d57f4f4be322a242116e6f47e25088b8afab98b3bac84d983858a",
-      "content_fetched_at": "2026-09-25T23:55:56.420055+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:2662c651ba2f130e",
-      "kind": "publish",
-      "text": "cocomelonc published: Malware analysis: part 12. Section entropy from scratch in pure C: a tiny packed/encrypted detector.",
-      "actor": "cocomelonc",
-      "actor_url": "https://cocomelonc.github.io/",
-      "created_at": "2026-09-23T02:00:00+00:00",
-      "html_url": "https://cocomelonc.github.io/malware/2026/09/23/malware-analysis-12.html",
-      "title": "Malware analysis: part 12. Section entropy from scratch in pure C: a tiny packed/encrypted detector.",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "﷽\nHello, cybersecurity enthusiasts and white hackers!\nIn\npart 6\nwe first met Shannon entropy, and in\npart 11\nwe built a whole mini-GPT to detect packing by\nperplexity\n. Both were Python and, in the GPT case, a GPU. In this post we go in the exact opposite direction: the smallest, most portable blue team triage tool I could think of -\nsection entropy in pure C\n, one file, zero dependencies (only\nlibc\n+\nlibm\n), that compiles in a single line and runs on both\nPE\nand\nELF\n.\nThe idea is that you can drop this on any incident-response box - a stripped Linux server, a rescue shell, a customer laptop - compile it in one command and instantly see which section of a suspicious binary looks packed or encrypted. No\npip\n, no venv, no cloud API. I called it\npe-kitten\nand the tool itself is\nmeow.c\n.\nthe idea\nA binary file is just a sequence of bytes. Compression and encryption both do the same thing to those bytes: they make them look like\nuniform random noise\n. Legitimate code and data are highly structured - opcodes repeat, strings cluster, padding is full of zeros - so their byte distribution is far from uniform. That difference is exactly what entropy measures.\nThe right granularity is\nper section\n, not per file. A packer leaves a very recognizable footprint: a small low-entropy loader stub plus one section whose entropy is pushed close to the theoretical maximum (the compressed/encrypted body). Averaged over the whole file this can hide; looked at section by section it screams.\nThis is conceptually the “dumb” cousin of the perplexity detector from\npart 11\n: perplexity models the\norder\nof bytes, entropy only counts their\nfrequencies\n. But entropy is \\(O(n)\\), needs no model, no training and no dependencies - which is precisely what you want for a first-pass triage tool that has to run anywhere.\nthe math\nThe\nShannon entropy\nof a section, measured over its 256 possible byte values, in bits per byte:\n\\[H = -\\sum_{i=0}^{255} p_i \\log_2 p_i, \\qquad p_i = \\frac{\\mathrm{count}_i}{N}\\]\nwhere \\(N\\) is the section size in bytes and \\(\\mathrm{count}_i\\) is how many times byte value \\(i\\) appears. \\(H\\) ranges from\n0\n(a section of one repeated byte) to\n8\n(all 256 values equally likely - perfectly random). Encryption and good compression drive \\(H\\) toward\n8\n, which is the whole reason packed samples stand out.\nHow high is “suspicious”? We do not have to guess. Lyda & Hamrock measured the average section entropy across large corpora of real files:\ncontent\nmean \\(H\\) (bits/byte)\nplain text\n4.35\nnative executable\n5.10\npacked\n6.80\nencrypted\n7.17\nSo\nmeow\nuses two thresholds: below\n6.0\nis green (normal),\n6.0 - 7.0\nis yellow (elevated - typical of dense native\n.text\n), and\n>= 7.0\nis red -\nlikely packed or encrypted\n.\npractical example\nLet’s build\nmeow.c\npiece by piece. The heart of the tool is the entropy function - a 256-bucket histogram and the sum above:\n/* shannon entropy of a byte buffer, in bits/byte (0..8).\n* h = -sum_i p_i * log2(p_i), p_i = count_i / n (shannon, 1948). */\nstatic\ndouble\nentropy\n(\nconst\nuint8_t\n*\ndata\n,\nuint64_t\nn\n)\n{\nif\n(\n!\nn\n)\nreturn\n0\n.\n0\n;\nuint64_t\nhist\n[\n256\n]\n=\n{\n0\n};\nfor\n(\nuint64_t\ni\n=\n0\n;\ni\n<\nn\n;\ni\n++\n)\nhist\n[\ndata\n[\ni\n]]\n++\n;\ndouble\nh\n=\n0\n.\n0\n;\nfor\n(\nint\ni\n=\n0\n;\ni\n<\n256\n;\ni\n++\n)\n{\nif\n(\n!\nhist\n[\ni\n])\ncontinue\n;\ndouble\np\n=\n(\ndouble\n)\nhist\n[\ni\n]\n/\n(\ndouble\n)\nn\n;\nh\n-=\np\n*\nlog2\n(\np\n);\n}\nreturn\nh\n;\n}\nThat is the whole math. Everything else is just locating the section bytes in the file. We support both formats and detect them by magic in\nmain\n:\nif\n(\nfsize\n>=\n2\n&&\nbuf\n[\n0\n]\n==\n'M'\n&&\nbuf\n[\n1\n]\n==\n'Z'\n)\nrc\n=\nanalyze_pe\n(\nbuf\n,\nfsize\n);\nelse\nif\n(\nfsize\n>=\n5\n&&\n!\nmemcmp\n(\nbuf\n,\n\"\n\\x7f\n\"\n\"ELF\"\n,\n4\n))\nrc\n=\nanalyze_elf\n(\nbuf\n,\nfsize\n);\nFor\nPE\nwe walk exactly the offsets from\npart 10\n: the DOS header points to the NT headers via\ne_lfanew\nat\n0x3C\n, then we read\nNumberOfSections\nand skip the optional header by its declared size to land on the 40-byte section headers. Each header gives us\nSizeOfRawData\nand\nPointerToRawData\n- the slice we feed to\nentropy()\n:\nuint32_t\ne_lfanew\n=\nrd32\n(\nbuf\n+\n0x3C\n);\nconst\nuint8_t\n*\ncoff\n=\nbuf\n+\ne_lfanew\n+\n4\n;\n/* skip \"PE\\0\\0\" */\nuint16_t\nnsec\n=\nrd16\n(\ncoff\n+\n2\n);\n/* NumberOfSections */\nuint16_t\noptsz\n=\nrd16\n(\ncoff\n+\n16\n);\n/* SizeOfOptionalHeader */\nconst\nuint8_t\n*\nsect\n=\ncoff\n+\n20\n+\noptsz\n;\n/* section table start */\nfor\n(\nuint16_t\ni\n=\n0\n;\ni\n<\nnsec\n;\ni\n++\n)\n{\nconst\nuint8_t\n*\nsh\n=\nsect\n+\n(\nuint64_t\n)\ni\n*\n40\n;\nchar\nname\n[\n9\n];\nmemcpy\n(\nname\n,\nsh\n,\n8\n);\nname\n[\n8\n]\n=\n0\n;\nuint32_t\nrawsz\n=\nrd32\n(\nsh\n+\n16\n);\n/* SizeOfRawData */\nuint32_t\nrawptr\n=\nrd32\n(\nsh\n+\n20\n);\n/* PointerToRawData */\ndouble\nh\n=\n0\n.\n0\n;\nif\n(\nrawsz\n&&\n(\nuint64_t\n)\nrawptr\n+\nrawsz\n<=\nfsize\n)\nh\n=\nentropy\n(\nbuf\n+\nrawptr\n,\nrawsz\n);\nprint_section\n(\nname\n,\nrawsz\n,\nh\n);\n}\nFor\nELF64\nit is the same story with different field names:\ne_shoff\ngives the section-header table,\ne_shstrndx\ntells us which section holds the name strings (\n.shstrtab\n), and each 64-byte header carries\nsh_offset\nand\nsh_size\n. We skip\nSHT_NOBITS\n(\n.bss\nhas no bytes on disk):\nuint64_t\nshoff\n=\nrd64\n(\nbuf\n+\n0x28\n);\nuint16_t\nshentsize\n=\nrd16\n(\nbuf\n+\n0x3A\n);\nuint16_t\nshnum\n=\nrd16\n(\nbuf\n+\n0x3C\n);\nuint16_t\nshstrndx\n=\nrd16\n(\nbuf\n+\n0x3E\n);\nconst\nuint8_t\n*\nstrsh\n=\nbuf\n+\nshoff\n+\n(\nuint64_t\n)\nshstrndx\n*\nshentsize\n;\nuint64_t\nstroff\n=\nrd64\n(\nstrsh\n+\n0x18\n);\n/* .shstrtab file offset */\nfor\n(\nuint16_t\ni\n=\n0\n;\ni\n<\nshnum\n;\ni\n++\n)\n{\nconst\nuint8_t\n*\nsh\n=\nbuf\n+\nshoff\n+\n(\nuint64_t\n)\ni\n*\nshentsize\n;\nuint32_t\nsh_name\n=\nrd32\n(\nsh\n+\n0\n);\nuint32_t\nsh_type\n=\nrd32\n(\nsh\n+\n4\n);\nuint64_t\nsh_off\n=\nrd64\n(\nsh\n+\n0x18\n);\nuint64_t\nsh_size\n=\nrd64\n(\nsh\n+\n0x20\n);\nif\n(\nsh_type\n==\n8\n/* SHT_NOBITS */\n||\nsh_size\n==\n0\n)\ncontinue\n;\nconst\nchar\n*\nname\n=\n(\nconst\nchar\n*\n)(\nbuf\n+\nstroff\n+\nsh_name\n);\ndouble\nh\n=\n(\nsh_off\n+\nsh_size\n<=\nfsize\n)\n?\nentropy\n(\nbuf\n+\nsh_off\n,\nsh_size\n)\n:\n0\n.\n0\n;\nprint_section\n(\nname\n,\nsh_size\n,\nh\n);\n}\nFinally the pretty part -\nprint_section\ndraws a colored ASCII bar whose length is \\(H/8\\) of the width, and tags anything over the thresholds:\nstatic\nvoid\nprint_section\n(\nconst\nchar\n*\nname\n,\nuint64_t\nsize\n,\ndouble\nh\n)\n{\nconst\nint\nW\n=\n32\n;\nint\nfill\n=\n(\nint\n)(\nh\n/\n8\n.\n0\n*\nW\n+\n0\n.\n5\n);\nconst\nchar\n*\ncol\n=\nent_color\n(\nh\n);\n/* green / yellow / red */\nprintf\n(\n\" \"\nC_CYN\n\"%-16.16s\"\nC_RST\n\" %10llu %s%5.3f\"\nC_RST\n\" %s\"\n,\nname\n,\n(\nunsigned\nlong\n)\nsize\n,\ncol\n,\nh\n,\ncol\n);\nfor\n(\nint\ni\n=\n0\n;\ni\n<\nW\n;\ni\n++\n)\nputchar\n(\ni\n<\nfill\n?\n'#'\n:\n' '\n);\nprintf\n(\nC_RST\n);\nif\n(\nh\n>=\nENT_HIGH\n)\nprintf\n(\n\" \"\nC_RED\nC_BLD\n\"packed/encrypted?\"\nC_RST\n);\nelse\nif\n(\nh\n>=\nENT_ELEVATED\n)\nprintf\n(\n\" \"\nC_YEL\n\"high\"\nC_RST\n);\nputchar\n(\n'\\n'\n);\n}\nThe full\nmeow.c\n(with bounds checks and the file loader) is about 230 lines:\n/* pe-kitten / meow.c - tiny pe/elf section entropy analyzer\n* author: cocomelonc\n*\n* reads a pe (mz) or elf binary, walks its section table by the exact\n* on-disk offsets, and reports the shannon entropy of each section's raw\n* bytes with an ascii color bar. high entropy flags likely packed or\n* encrypted content (lyda & hamrock, ieee s&p 2007).\n*\n* deps: libc + libm only.\n* build: gcc -O2 -Wall -Wextra -std=c11 -o meow meow.c -lm\n* usage: ./meow <file>\n*/\n#include\n<stdint.h>\n#include\n<stdio.h>\n#include\n<stdlib.h>\n#include\n<string.h>\n#include\n<math.h>\n/* ---- ansi colors (plain vt100) ---------------------------------------- */\n#define C_RST \"\\x1b[0m\"\n#define C_DIM \"\\x1b[2m\"\n#define C_BLD \"\\x1b[1m\"\n#define C_GRN \"\\x1b[32m\"\n#define C_YEL \"\\x1b[33m\"\n#define C_RED \"\\x1b[31m\"\n#define C_CYN \"\\x1b[36m\"\n/* lyda & hamrock 2007 measured mean entropies (bits/byte):\n* plain text 4.35, native exe 5.10, packed 6.80, encrypted 7.17.\n* we use 6.0 / 7.0 as the elevated / high thresholds. */\n#define ENT_HIGH 7.0\n#define ENT_ELEVATED 6.0\n/* alignment-safe little-endian reads (x86 target). */\nstatic\nuint16_t\nrd16\n(\nconst\nuint8_t\n*\np\n)\n{\nreturn\n(\nuint16_t\n)(\np\n[\n0\n]\n|\n(\np\n[\n1\n]\n<<\n8\n));\n}\nstatic\nuint32_t\nrd32\n(\nconst\nuint8_t\n*\np\n)\n{\nuint32_t\nv\n;\nmemcpy\n(\n&\nv\n,\np\n,\n4\n);\nreturn\nv\n;\n}\nstatic\nuint64_t\nrd64\n(\nconst\nuint8_t\n*\np\n)\n{\nuint64_t\nv\n;\nmemcpy\n(\n&\nv\n,\np\n,\n8\n);\nreturn\nv\n;\n}\n/* shannon entropy of a byte buffer, in bits/byte (0..8).\n* h = -sum_i p_i * log2(p_i), p_i = count_i / n (shannon, 1948). */\nstatic\ndouble\nentropy\n(\nconst\nuint8_t\n*\ndata\n,\nuint64_t\nn\n)\n{\nif\n(\n!\nn\n)\nreturn\n0.0\n;\nuint64_t\nhist\n[\n256\n]\n=\n{\n0\n};\nfor\n(\nuint64_t\ni\n=\n0\n;\ni\n<\nn\n;\ni\n++\n)\nhist\n[\ndata\n[\ni\n]]\n++\n;\ndouble\nh\n=\n0.0\n;\nfor\n(\nint\ni\n=\n0\n;\ni\n<\n256\n;\ni\n++\n)\n{\nif\n(\n!\nhist\n[\ni\n])\ncontinue\n;\ndouble\np\n=\n(\ndouble\n)\nhist\n[\ni\n]\n/\n(\ndouble\n)\nn\n;\nh\n-=\np\n*\nlog2\n(\np\n);\n}\nreturn\nh\n;\n}\n/* pick a color for an entropy value. */\nstatic\nconst\nchar\n*\nent_color\n(\ndouble\nh\n)\n{\nif\n(\nh\n>=\nENT_HIGH\n)\nreturn\nC_RED\n;\nif\n(\nh\n>=\nENT_ELEVATED\n)\nreturn\nC_YEL\n;\nreturn\nC_GRN\n;\n}\n/* one section row: name, size, entropy value + colored bar + verdict. */\nstatic\nvoid\nprint_section\n(\nconst\nchar\n*\nname\n,\nuint64_t\nsize\n,\ndouble\nh\n)\n{\nconst\nint\nW\n=\n32\n;\nint\nfill\n=\n(\nint\n)(\nh\n/\n8.0\n*\nW\n+\n0.5\n);\nconst\nchar\n*\ncol\n=\nent_color\n(\nh\n);\nprintf\n(\n\" \"\nC_CYN\n\"%-16.16s\"\nC_RST\n\" %10llu %s%5.3f\"\nC_RST\n\" %s\"\n,\nname\n,\n(\nunsigned\nlong\n)\nsize\n,\ncol\n,\nh\n,\ncol\n);\nfor\n(\nint\ni\n=\n0\n;\ni\n<\nW\n;\ni\n++\n)\nputchar\n(\ni\n<\nfill\n?\n'#'\n:\n' '\n);\nprintf\n(\nC_RST\n);\nif\n(\nh\n>=\nENT_HIGH\n)\nprintf\n(\n\" \"\nC_RED\nC_BLD\n\"packed/encrypted?\"\nC_RST\n);\nelse\nif\n(\nh\n>=\nENT_ELEVATED\n)\nprintf\n(\n\" \"\nC_YEL\n\"high\"\nC_RST\n);\nputchar\n(\n'\\n'\n);\n}\n/* running max entropy across sections, for the final verdict. */\nstatic\ndouble\ng_max_ent\n=\n0.0\n;\nstatic\nvoid\naccount\n(\ndouble\nh\n)\n{\nif\n(\nh\n>\ng_max_ent\n)\ng_max_ent\n=\nh\n;\n}\n/* ---- pe ---------------------------------------------------------------- */\nstatic\nint\nanalyze_pe\n(\nconst\nuint8_t\n*\nbuf\n,\nuint64_t\nfsize\n)\n{\nif\n(\nfsize\n<\n0x40\n)\nreturn\n1\n;\nuint32_t\ne_lfanew\n=\nrd32\n(\nbuf\n+\n0x3C\n);\nif\n((\nuint64_t\n)\ne_lfanew\n+\n24\n>\nfsize\n||\nmemcmp\n(\nbuf\n+\ne_lfanew\n,\n\"PE\n\\0\\0\n\"\n,\n4\n))\n{\nfprintf\n(\nstderr\n,\n\"meow: not a valid pe (bad NT signature)\n\\n\n\"\n);\nreturn\n1\n;\n}\nconst\nuint8_t\n*\ncoff\n=\nbuf\n+\ne_lfanew\n+\n4\n;\nuint16_t\nnsec\n=\nrd16\n(\ncoff\n+\n2\n);\nuint16_t\noptsz\n=\nrd16\n(\ncoff\n+\n16\n);\nconst\nuint8_t\n*\nsect\n=\ncoff\n+\n20\n+\noptsz\n;\n/* section table start */\nprintf\n(\nC_BLD\n\"PE\"\nC_RST\n\" image, %u section%s\n\\n\\n\n\"\n,\nnsec\n,\nnsec\n==\n1\n?\n\"\"\n:\n\"s\"\n);\nprintf\n(\n\" \"\nC_DIM\n\"%-16s %10s %5s %-32s\"\nC_RST\n\"\n\\n\n\"\n,\n\"name\"\n,\n\"raw size\"\n,\n\"H\"\n,\n\"entropy (bits/byte)\"\n);\nfor\n(\nuint16_t\ni\n=\n0\n;\ni\n<\nnsec\n;\ni\n++\n)\n{\nconst\nuint8_t\n*\nsh\n=\nsect\n+\n(\nuint64_t\n)\ni\n*\n40\n;\nif\n((\nuint64_t\n)(\nsh\n+\n40\n-\nbuf\n)\n>\nfsize\n)\nbreak\n;\nchar\nname\n[\n9\n];\nmemcpy\n(\nname\n,\nsh\n,\n8\n);\nname\n[\n8\n]\n=\n0\n;\nuint32_t\nrawsz\n=\nrd32\n(\nsh\n+\n16\n);\nuint32_t\nrawptr\n=\nrd32\n(\nsh\n+\n20\n);\ndouble\nh\n=\n0.0\n;\nif\n(\nrawsz\n&&\n(\nuint64_t\n)\nrawptr\n+\nrawsz\n<=\nfsize\n)\nh\n=\nentropy\n(\nbuf\n+\nrawptr\n,\nrawsz\n);\naccount\n(\nh\n);\nprint_section\n(\nname\n,\nrawsz\n,\nh\n);\n}\nreturn\n0\n;\n}\n/* ---- elf (64-bit little-endian) --------------------------------------- */\nstatic\nint\nanalyze_elf\n(\nconst\nuint8_t\n*\nbuf\n,\nuint64_t\nfsize\n)\n{\nif\n(\nbuf\n[\n4\n]\n!=\n2\n/* ELFCLASS64 */\n||\nbuf\n[\n5\n]\n!=\n1\n/* ELFDATA2LSB */\n)\n{\nfprintf\n(\nstderr\n,\n\"meow: only elf64 little-endian supported for now\n\\n\n\"\n);\nreturn\n1\n;\n}\nuint64_t\nshoff\n=\nrd64\n(\nbuf\n+\n0x28\n);\nuint16_t\nshentsize\n=\nrd16\n(\nbuf\n+\n0x3A\n);\nuint16_t\nshnum\n=\nrd16\n(\nbuf\n+\n0x3C\n);\nuint16_t\nshstrndx\n=\nrd16\n(\nbuf\n+\n0x3E\n);\nif\n(\nshoff\n+\n(\nuint64_t\n)\nshnum\n*\nshentsize\n>\nfsize\n)\n{\nfprintf\n(\nstderr\n,\n\"meow: elf section table out of range\n\\n\n\"\n);\nreturn\n1\n;\n}\n/* .shstrtab: string table holding section names. */\nconst\nuint8_t\n*\nstrsh\n=\nbuf\n+\nshoff\n+\n(\nuint64_t\n)\nshstrndx\n*\nshentsize\n;\nuint64_t\nstroff\n=\nrd64\n(\nstrsh\n+\n0x18\n);\nprintf\n(\nC_BLD\n\"ELF64\"\nC_RST\n\" image, %u section%s\n\\n\\n\n\"\n,\nshnum\n,\nshnum\n==\n1\n?\n\"\"\n:\n\"s\"\n);\nprintf\n(\n\" \"\nC_DIM\n\"%-16s %10s %5s %-32s\"\nC_RST\n\"\n\\n\n\"\n,\n\"name\"\n,\n\"size\"\n,\n\"H\"\n,\n\"entropy (bits/byte)\"\n);\nfor\n(\nuint16_t\ni\n=\n0\n;\ni\n<\nshnum\n;\ni\n++\n)\n{\nconst\nuint8_t\n*\nsh\n=\nbuf\n+\nshoff\n+\n(\nuint64_t\n)\ni\n*\nshentsize\n;\nuint32_t\nsh_name\n=\nrd32\n(\nsh\n+\n0\n);\nuint32_t\nsh_type\n=\nrd32\n(\nsh\n+\n4\n);\nuint64_t\nsh_off\n=\nrd64\n(\nsh\n+\n0x18\n);\nuint64_t\nsh_size\n=\nrd64\n(\nsh\n+\n0x20\n);\nif\n(\nsh_type\n==\n8\n/* SHT_NOBITS (.bss) */\n||\nsh_size\n==\n0\n)\ncontinue\n;\nconst\nchar\n*\nname\n=\n(\nconst\nchar\n*\n)(\nbuf\n+\nstroff\n+\nsh_name\n);\ndouble\nh\n=\n0.0\n;\nif\n(\nsh_off\n+\nsh_size\n<=\nfsize\n)\nh\n=\nentropy\n(\nbuf\n+\nsh_off\n,\nsh_size\n);\naccount\n(\nh\n);\nprint_section\n(\nname\n,\nsh_size\n,\nh\n);\n}\nreturn\n0\n;\n}\n/* slurp a whole file into a malloc'd buffer. */\nstatic\nuint8_t\n*\nread_file\n(\nconst\nchar\n*\npath\n,\nuint64_t\n*\nout\n)\n{\nFILE\n*\nf\n=\nfopen\n(\npath\n,\n\"rb\"\n);\nif\n(\n!\nf\n)\n{\nperror\n(\npath\n);\nreturn\nNULL\n;\n}\nfseek\n(\nf\n,\n0\n,\nSEEK_END\n);\nlong\nsz\n=\nftell\n(\nf\n);\nfseek\n(\nf\n,\n0\n,\nSEEK_SET\n);\nif\n(\nsz\n<=\n0\n)\n{\nfclose\n(\nf\n);\nfprintf\n(\nstderr\n,\n\"%s: empty\n\\n\n\"\n,\npath\n);\nreturn\nNULL\n;\n}\nuint8_t\n*\nbuf\n=\nmalloc\n((\nsize_t\n)\nsz\n);\nsize_t\ngot\n=\nbuf\n?\nfread\n(\nbuf\n,\n1\n,\n(\nsize_t\n)\nsz\n,\nf\n)\n:\n0\n;\nfclose\n(\nf\n);\nif\n(\n!\nbuf\n||\ngot\n!=\n(\nsize_t\n)\nsz\n)\n{\nfree\n(\nbuf\n);\nreturn\nNULL\n;\n}\n*\nout\n=\n(\nuint64_t\n)\nsz\n;\nreturn\nbuf\n;\n}\nint\nmain\n(\nint\nargc\n,\nchar\n**\nargv\n)\n{\nif\n(\nargc\n!=\n2\n)\n{\nfprintf\n(\nstderr\n,\n\"pe-kitten / meow (author: cocomelonc)\n\\n\n\"\n\"usage: %s <pe-or-elf-file>\n\\n\n\"\n,\nargv\n[\n0\n]);\nreturn\n2\n;\n}\nuint64_t\nfsize\n=\n0\n;\nuint8_t\n*\nbuf\n=\nread_file\n(\nargv\n[\n1\n],\n&\nfsize\n);\nif\n(\n!\nbuf\n)\nreturn\n1\n;\nprintf\n(\nC_BLD\n\"meow\"\nC_RST\n\" :: %s (%llu bytes)\n\\n\nwhole-file H = %s%.3f\"\nC_RST\n\" bits/byte\n\\n\\n\n\"\n,\nargv\n[\n1\n],\n(\nunsigned\nlong\n)\nfsize\n,\nent_color\n(\nentropy\n(\nbuf\n,\nfsize\n)),\nentropy\n(\nbuf\n,\nfsize\n));\nint\nrc\n;\nif\n(\nfsize\n>=\n2\n&&\nbuf\n[\n0\n]\n==\n'M'\n&&\nbuf\n[\n1\n]\n==\n'Z'\n)\nrc\n=\nanalyze_pe\n(\nbuf\n,\nfsize\n);\nelse\nif\n(\nfsize\n>=\n5\n&&\n!\nmemcmp\n(\nbuf\n,\n\"\n\\x7f\n\"\n\"ELF\"\n,\n4\n))\nrc\n=\nanalyze_elf\n(\nbuf\n,\nfsize\n);\nelse\n{\nfprintf\n(\nstderr\n,\n\"meow: unknown format (need MZ/pe or\n\\\\\nx7fELF)\n\\n\n\"\n);\nrc\n=\n1\n;\n}\nif\n(\nrc\n==\n0\n)\n{\nprintf\n(\n\"\n\\n\nverdict: max section H = %s%.3f\"\nC_RST\n\" -> %s\n\\n\n\"\n,\nent_color\n(\ng_max_ent\n),\ng_max_ent\n,\ng_max_ent\n>=\nENT_HIGH\n?\nC_RED\nC_BLD\n\"likely packed/encrypted\"\nC_RST\n\" (lyda & hamrock 2007 threshold ~7.0)\"\n:\nC_GRN\n\"no packed/encrypted section detected\"\nC_RST\n);\n}\nfree\n(\nbuf\n);\nreturn\nrc\n;\n}\ndemo\nFirst of all, for compilation we need any Linux box with a C compiler:\ngcc\n-O2\n-Wall\n-Wextra\n-std\n=\nc11\n-o\nmeow meow.c\n-lm\nThat is the entire toolchain.\n-lm\nis only there for\nlog2()\n. The same source builds with\nclang\nor with\nmingw\nif you want a Windows binary.\nLet’s point it at a known-good ELF first -\n/bin/ls\n:\n./meow /bin/ls\nEverything is green except\n.text\n, which sits around\n6.3\nand is tagged\nhigh\n- completely normal for dense compiled x86 code, and a good reminder that “elevated” is not the same as “malicious”. The verdict line reports the maximum section entropy and concludes no packed section was found.\nNow a real PE. I used one of the Ghostpack binaries lying around,\nRubeus.exe\n:\n./meow Rubeus.exe\nThree sections -\n.text\n,\n.rsrc\n,\n.reloc\n- all comfortably below the packed threshold. This is an ordinary (unpacked) .NET assembly, and\nmeow\nsays so.\ndemo 2\nTo see the red path we need something actually packed. No UPX on the box? We can fake a packer honestly in two commands: take a clean\nmingw\n-built\nhello.exe\n, find its\n.text\nfile offset with\nobjdump\n, and overwrite that section with random bytes - exactly what a crypter’s body looks like:\ncp\nhello.exe packed.exe\nread\nOFF SZ < <\n(\nobjdump\n-h\npacked.exe |\nawk\n'$2==\".text\"{print strtonum(\"0x\"$6), strtonum(\"0x\"$3)}'\n)\ndd\nif\n=\n/dev/urandom\nof\n=\npacked.exe\nbs\n=\n1\nseek\n=\n$OFF\ncount\n=\n$SZ\nconv\n=\nnotrunc\nstatus\n=\nnone\n./meow packed.exe\nThe clean\n.text\nmeasured\n5.744\n(green/\nhigh\n); after randomization the same section jumps to\n7.997\n, the bar goes full red, and the verdict flips to\nlikely packed/encrypted\n:\nThat is the entire detector - a histogram, one logarithm sum, and two thresholds from a 2007 paper.\nsummary\ncomponent\nwhat it does\nentropy()\n(12 lines)\nshannon \\(H\\) of a byte buffer,\n0..8\nbits/byte\nanalyze_pe()\nwalk DOS/NT headers -> section table by exact offsets\nanalyze_elf()\nwalk ELF64 section headers, names from\n.shstrtab\nprint_section()\ncolored ascii bar + green/yellow/red thresholds\nverdict\nmax section \\(H\\) vs the Lyda & Hamrock ~7.0 line\nA few honest limitations, because entropy is a blunt instrument. It flags\nunusual\nbytes, so legitimately compressed resources - icons, embedded installers, zipped payloads inside\n.rsrc\n- will also look “packed”. An attacker can also game the\naverage\nby padding a section with low-entropy filler around a small encrypted blob, which is why per-section and even sliding-window analysis beats a single file-level number. And entropy cannot tell\nencrypted\nfrom merely\ncompressed\n- both are near-uniform. As always, one signal is never a verdict: combine it with section context, the import table, and known-packer YARA rules.\nIn the next part we will fix the biggest of these gaps by adding a\nchi-square uniformity test\non top of entropy - it separates encrypted data (which passes a randomness test) from compressed data (which usually does not), still in pure C and still in one tiny file.\nI hope this post with practical examples is useful for malware researchers, reverse engineers and everyone interested in blue team skills like threat hunting.\nMalware analysis part 6: Shannon entropy\nMalware analysis part 10: Practical PE parsing\nMalware analysis part 11: mini-GPT for binary analysis\nC. E. Shannon - A Mathematical Theory of Communication (1948)\nR. Lyda, J. Hamrock - Using Entropy Analysis to Find Encrypted and Packed Malware (IEEE S&P, 2007)\nMicrosoft PE Format specification\nsource code in github\nThis is a practical case for educational purposes only.\nThanks for your time happy hacking and good bye!\nPS. All drawings and screenshots are mine",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://cocomelonc.github.io/malware/2026/09/23/malware-analysis-12.html",
-      "content_chars": 17432,
-      "content_sha256": "05f6d5fdaf329efc075fb1608b41f1dea1adc9676afd064103f4afc7076c1202",
-      "content_fetched_at": "2026-09-25T23:55:55.005267+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "cocomelonc",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-09-26",
+  "collect_window": {
+    "start": "2026-09-23T02:00:00+00:00",
+    "end": "2026-09-25T23:54:59.553055+00:00",
+    "hours": 69
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "36202828398",
+    "commit": "e32adcf"
+  },
+  "stats": {
+    "total": 6,
     "by_kind": {
       "publish": 6
     },
@@ -171,9 +27,499 @@
       "yage-share": 3,
       "cocomelonc": 1
     },
+    "failed_lists": [
+      "redsiege-blog"
+    ],
+    "sources_ok": 50,
+    "sources_failed": [
+      {
+        "id": "redsiege-blog",
+        "error": "no_candidates"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 8,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 13,
+      "calls": 13,
+      "prompt_tokens": 13826,
+      "completion_tokens": 2508,
+      "total_tokens": 16334,
+      "prompt_cache_hit_tokens": 9853,
+      "prompt_cache_miss_tokens": 3973
+    },
     "by_content_status": {
       "failed": 2,
       "ok": 4
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:e5629f7b8f63cf61",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "WHQL Driver Cert",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773812-whql-driver-cert.html",
+      "text": "unknowncheats-ac published: WHQL Driver Cert",
+      "at": "2026-09-25T23:54:59.553055+00:00",
+      "external_id": "a:e5629f7b8f63cf61",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773812-whql-driver-cert.html",
+      "title": "WHQL Driver Cert",
+      "content": "unknowncheats-ac published: WHQL Driver Cert",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773812-whql-driver-cert.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-25T23:55:38.069159+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-25T23:54:59.553055+00:00",
+      "collected_at": "2026-09-25T23:54:59.553055+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/773812-whql-driver-cert.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "WHQL Driver Cert",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773812-whql-driver-cert.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:57218a28105153ae",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "Best IDA Pro plugins for RE & Game Hacking",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773763-ida-pro-plugins-re-game-hacking.html",
+      "text": "unknowncheats-ac published: Best IDA Pro plugins for RE & Game Hacking",
+      "at": "2026-09-25T23:54:59.553055+00:00",
+      "external_id": "a:57218a28105153ae",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773763-ida-pro-plugins-re-game-hacking.html",
+      "title": "Best IDA Pro plugins for RE & Game Hacking",
+      "content": "unknowncheats-ac published: Best IDA Pro plugins for RE & Game Hacking",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773763-ida-pro-plugins-re-game-hacking.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-25T23:55:49.021333+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-25T23:54:59.553055+00:00",
+      "collected_at": "2026-09-25T23:54:59.553055+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/773763-ida-pro-plugins-re-game-hacking.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "Best IDA Pro plugins for RE & Game Hacking",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773763-ida-pro-plugins-re-game-hacking.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:bb33022fbf63b95e",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "三条旧授权，两天，走到 OpenAI 内部仓库",
+      "target_url": "https://yage.ai/share/three-old-authorizations-openai-breach-20260925.html",
+      "text": "yage-share published: 三条旧授权，两天，走到 OpenAI 内部仓库",
+      "at": "2026-09-25T00:00:00+00:00",
+      "external_id": "a:bb33022fbf63b95e",
+      "url": "https://yage.ai/share/three-old-authorizations-openai-breach-20260925.html",
+      "title": "三条旧授权，两天，走到 OpenAI 内部仓库",
+      "content": "安全与供应链\nAI Agent\nHarsh Jaiswal、Mohan Pedhapati 和 Rahul Maini 组成的安全研究团队叫\nHacktron，日常业务围绕自动化安全测试展开，技术博客页脚留着商业咨询入口。2026\n年 7 月 23 日，这三名研究者把目光投向 OpenAI 的官方技术社区\ncommunity.openai.com，开始审阅那里的图片上传接口。\n论坛面向公众开放，注册用户发帖可以上传本地图片。社区运行着开源论坛系统\nDiscourse。Discourse 接到用户传来的图片文件后，拉起命令行工具\nImageMagick 做格式转换，由 ImageMagick 调用底层开源 C 语言库 libheif\n解析数据流。一条未经严格内存隔离的处理路径就此铺开：浏览器送上来的外部输入，直通底层\nC 语言解析器的内存空间。\n研究者顺着这条路径步步推进。7 月 24\n日，他们把大语言模型拉进流程，尝试生成导致内存崩溃的利用代码。到了 7 月\n25\n日凌晨，测试人员已经在论坛所在的服务器环境中拿到了远程代码执行能力，掌握了论坛的管理后台权限。\n拿下论坛管理权限通常只意味着一个边缘站点的失守。这处论坛的身份验证没有走独立用户表，直接挂在\nOpenAI\n的单点登录系统上。顺着系统同步的信任会话，研究团队无需目标员工配合，接管了一名内部工程师的\nChatGPT 和 Codex 账户。这名工程师此前按照日常开发流程，把个人 GitHub\n账号授权绑定给了代码助手 Codex。\n拿到有效会话后，测试团队借助 Codex 在核心代码仓库 openai/openai\n内部创建了一个分支，并提交了一条拉取请求。根据\nHacktron 官方博文\n的自述说明，提交拉取请求只是为了给出确凿的权限证据：\nTo demonstrate impact without actually accessing any internal\ncode\nThe\nHacker News\n随后核实了这一测试动作的边界：\nIt did not read any source code, merge or ship anything, or touch\ncustomer data\n测试过程没有读取内部源码，没有合并或发布代码改动，也没有触碰客户数据。依照\nOpenAI 要求，公开披露脱敏隐藏了包含具体代码路径的拉取请求链接。\n7 月 25 日 08:00 至 10:00 UTC，研究团队通过 Bugcrowd\n漏洞披露渠道提交报告，并在协调世界时 15:30 停止测试。提交报告约 14\n小时后，OpenAI 在当晚 22:49 UTC 确认完成技术修复。从 7 月 23\n日审阅接口到 7 月 25 日在内部仓库建分支，整个过程耗时不足 72\n小时。虽然技术渗透发生在 7 月下旬，公开报道直到 9 月中旬才出现：Hacktron\n于 9 月 13 日发文，华尔街日报于 9 月 18\n日凌晨刊出独家报道，多家行业媒体跟进转述。\n这次测试没有造成代码泄露，但在系统的工程拓扑上画出了一条实线：一个外围公开论坛的图片处理接口，跨越层层信任传递，连通了核心代码仓库的写入端点。三条互不关联的既有授权，拼出了一条直通核心资产的完整通道。\n一个外围论坛的图片解析缺陷，顺着全公司共用的统一登录体系，接到员工早已授予编程助手的仓库写入权限，三层既有授权串联成一条通往内部核心仓库的完整通路。\n每一层都不是新的\n从公网图片输入到内部核心仓库，整条链路上的技术组件与授权设定，全是在生产环境中运行已久的既有配置。\n链路前端是图片解析。诱发异常的源头，在开源 C 库 libheif\n处理图像覆盖层计算的代码缺陷里。早在 2025 年 5 月 5 日，上游就在提交\n85e21ad44eba931314337300a2376b8d28f085ae\n中调整了相关计算逻辑，提交说明没有附带任何安全提示。一年后的 2026 年 5\n月 19 日，项目发布\nlibheif\nv1.22.0\n，更新日志列出包括 CVE-2026-32882 在内的多处修复。\n上游修补后，补丁在下游 Linux 发行版中落地缓慢。Debian 社区在 2026 年\n8 月 8 日发布安全通报\nDSA-6417-1\n，在稳定版\ntrixie 分支修复了 12 个 CVE 漏洞，但在运行于生产服务器的 bookworm\n旧稳定版中至今没有回迁，官方追踪面板长期保持开放。libheif 维护团队直到 8\n月下旬至 9 月初，才连续推出 v1.23.2、v1.23.3 与 v1.23.4\n等版本推进修补。\nDiscourse 官方收到测试人员通过 HackerOne\n提交的报告后响应迅速：周六接报，周日回复，周一拿出修复方案。2026 年 7 月\n27 日，代码提交\na07188016987de1613c961277e2e928aaa7c37ec\n引入 Linux 的 Landlock 机制对图片处理子进程实施沙箱隔离。7 月 28\n日，Discourse 发布官方安全通告\nGHSA-vhm9-85gw-x335\n，定级为\n8.8 分高危风险。\n越过图片解析入口，后续推进依靠身份认证系统的信任传递。社区论坛的登录接入集中式单点登录系统。研究团队指出，这种跨域接管并非\nDiscourse\n专有缺陷，任何接入这套单点登录体系的外围服务一旦失守，都会产生相同后果。论坛在这场测试中只是一个外围端点。OpenAI\n的核心修复也落在这处：收紧社区论坛登录凭证的作用域，批量撤销受影响的凭证与活动会话。发言人\nDrew Pusateri 接受华尔街日报采访时证实了这项整改，\nThe\nStraits Times\n具名引述。\n链路最后一环是开发者给辅助工具配置的连接授权。一名内部工程师此前出于日常工作需要，把个人\nGitHub 账号授权绑定给代码助手\nCodex。该配置符合常规业务需求，操作过程没有任何越权，却最终划定了整场测试能够触达的影响力上限。测试人员接管单点登录凭证后，直接继承了该账户在外部代码平台的全部写入能力。\n输入端是存在已知缺陷的图像解析依赖，中间是宽泛信任外部站点的身份集成架构，顶端是工程师正常配置的代码工具授权。三处设定单独看都是常见工程状态，在特定拓扑中咬合在了一起。下游稳定版系统挂起的修复清单，让外围服务的内存缺陷持续暴露在公网输入面前。\nAI 改变了什么，没改变什么\n9\n月中旬媒体集中报道这起事件，多数标题把焦点放在模型攻破防线上。最初跟踪这起事件，我的第一反应也是大语言模型在漏洞挖掘上取得了突破。对照研究团队公开的完整记录与技术细节逐项核实后，我发现自己的归因出现了偏差。\n整场测试的核心推进由人类研究者把控。人类专家挑选攻击面，梳理跨域信任链条，在真实服务上验证利用脚本，并通过合规渠道披露问题。语言模型承担的工作，是在人类定位出内存缺陷之后，编写对应的利用代码，并针对运行环境微调内存布局。Hacktron\n在技术复盘中给出了明确界定：\nThis was not completly autonomous hacking, and skilled human guidance\nremained important\n测试并非完全自主推进，人类专家的方向引导贯穿始终。\n研究团队在博文中反复强调模型版本升级带来的效率跃迁，把突破归功于新模型的推理能力。仔细核对研究者的操作流水，这种能力跃迁背后混杂着多重外部因素。\n关键的前提来自人工建立的先验上下文。7 月 24 日使用 Claude Opus 4.8\n期间，研究者投入大量时间完成了漏洞根因定位，在关闭内存地址随机化保护的环境里跑通了原型脚本，摸清了内存结构偏移与调试环境。等到模型接手任务，人类已经把崩溃现场与内存偏移整理就绪，省去了盲目试错的过程。\n发布窗口的巧合同样提供了客观助力。7 月 24 日晚间，Anthropic 正式发布\nClaude Opus\n5\n。研究团队在官方发布数小时后便接入新模型，这也是排查受阻后主动引入的技术变量。\n测试任务的人工降维也是关键一环。拿到 Opus 5\n后，研究者没有直接去打线上目标，他们把二进制程序搬到本地 ARM64 架构的\nMac 电脑上重现环境，用大约 3\n小时产出适配本地架构的可用脚本，随后才将验证通过的逻辑迁移到云端运行的\nx86-64 架构与 jemalloc 内存分配器配置上。\n安全护栏的绕过同样依赖专门的工程设计。模型内置的安全机制会拒绝针对远程生产环境编写利用脚本。为了驱动模型持续工作，研究团队搭建了代理网络，把自有云端服务器伪装成夺旗对抗靶场，绕开模型的审查提示，驱动模型执行多轮自动调试与修改。\n在纯粹的网络对抗基准测试中，Opus 5 的表现并未拉开代际差距。根据\nAnthropic 官方随模型发布的系统技术报告数据，Opus 5\n在漏洞利用基准测试中的得分，显著落后于专用模型：\nfar behind that of Mythos 5\n在 Anthropic 现有的模型序列中，有一款名为 Mythos 5\n的模型，官方评估显示其网络对抗能力突出，仅面向少数经过严格资质审核的机构定向开放。\nThe\nStraits Times\n引述单方信源披露，Hacktron 团队在测试全程没有接触过\nMythos 5。\n研究团队在其后续开展的\nHEIF\nHeist\n衍生项目中，还提到测试了\nGPT-5.6 Sol\n等其他厂商模型，声称能在几天内实现自动化探测。这套结论跨越了不同的技术架构与业务环境，缺乏对照基准。\n利用算法辅助寻找软件缺陷早有先例。谷歌 Project Zero 团队在 2024 年 10\n月公开的 Big Sleep 项目，展示了\n自动化发现真实开源软件\nSQLite 零日漏洞\n的系统方法；安全平台\nXBOW\n也在漏洞众测榜单上凭借约 1060\n次经过人工复核的自动化提交取得靠前排名。相比这些行业实践，Hacktron\n团队展示出的增量，是在人类专家明确漏洞根因并搭建好调试环境的前提下，借助语言模型加快了针对复杂加固环境的内存利用代码编写。\n关于测试开销与防御感知的宣称，必须严格限定在自述范围之内。按照\nHacktron 团队的事后陈述，在历时两个月的 HEIF Heist\n研究项目中，三名研究者协同推进，整体消耗的 API 调用 token 费用不足 3000\n美元，对每个新目标的适配耗时约 1 至 2 天，纯自动化模式下通常在 1 至 3\n天内跑出有效代码执行结果。研究者同时宣称，测试期间发送的数千张畸形图片导致多家受测平台频繁崩溃，除了大型电商企业\nShopify\n之外没有其他厂商察觉到异常。这组数据纯属研究团队的单方陈述，团队没有公开调用账单，也无法查阅受测企业的内部入侵检测日志，而\nShopify 官方自始至终没有对这项测试发表过公开回应。\n模型并没有自主发现系统深层的未知缺陷，它的真实作用体现在压缩人工逆向调试的耗时上。资深安全工程师原本要在实验室里花费数天对齐的内存布局，辅助工具把这项工作压缩到了几个小时之内。\nconnector 是失陷后果的上限\n深入复盘整起事件，我的关注点逐渐从前台的模型能力移到了后台的权限连接上。对于每天配置多\nagent\n系统、把开发助手连上代码仓库与凭证系统的团队来说，这起事件暴露出的机制可以用一句话说清：外围系统或认证凭据一旦失守，破坏能够蔓延到什么范围，取决于我们授予\nconnector 的实际权限，与攻击者的技术水准关系不大。\n这名内部员工当初绑定的 Codex\n连接如果只拥有代码仓库的只读权限，或者把范围严格限定在某个边缘实验项目里，测试人员即便接管了会话，能做出的动作也会止步于仓库之外。真实情况是，Codex\n拿到了全局代码仓库的写入能力。一旦单点登录凭证失守，外围服务的缺口就顺着这条预设通道，直接通向核心代码库。\n系统层面的应对动作随之清晰。团队需要排查身份拓扑中的信任传导，系统性梳理各类边缘服务，确认高权限的核心系统是否会无条件信任并接纳这些低安全等级服务签发的身份凭证。OpenAI\n在事发后迅速收紧社区论坛登录凭证的作用范围，正是切断信任由外向内单向渗透的通路。\n与身份拓扑并行的，是对各类自动化工具实际生效权限的审计，不能仅在配置清单里记录工具的存在。每次给开发环境或智能体绑定\nGitHub、云服务密钥或通讯接口，都需要追问一个具体问题：假定这个外部服务明天失守，攻击者拿着现成凭据在内部系统究竟能够调用哪些接口、读取哪些数据？把写入权限收紧为只读，把组织层面的通配授权收窄为具体项目的单独授权，能直接压低潜在失陷能够触达的破坏上限。\n面对这种风险，防御容易走向过度设计。这起事件给出的启示，并不意味着要求工程师退回纯手工时代，或者在开发环境外部堆叠繁复的沙箱机制与通信中继。繁重冗长的隔离机制往往只会拖慢开发节奏，促使员工私下寻找绕过限制的捷径。在依赖组件的维护观念上，过去那种冷门陈旧库无关紧要的想法也需要更新：大语言模型把复杂内存漏洞的利用成本压缩下来之后，以往许多团队认为攻击门槛太高的底层处理库，如今同样暴露在低成本攻击的射程里，依靠攻击成本高昂来维持的安全假设已经失效。\nHacktron 的渗透测试与 2026 年 8 月业内讨论的 Anthropic\n评测事故机理不同。在业内称为 Irregular\n事件的评测失误中，评测环境由于运维配置疏漏直接连通了公网，导致自主运行的模型触碰到真实外部企业的网络资产，到达登录页面后自行停下，属于沙箱网络隔离缺失引发的自动化越界。而在\nOpenAI\n这次事件中，全程由人类研究人员规划路径、在生产系统验证假设并提交披露，模型充当的是编码调试的辅助工具。\n评估自动化工具的安全风险，与其层层叠加防护外壳，不如把各种外部凭证的实际权限收紧到任务所需的最小范围。\n自动化组件大幅提升了工程生产力，但技术团队赋予这些工具的凭证常常跨越信任层级，在内部系统留下了长期有效的写入通道。\n还有一个边界需要转述这件事的人记住：OpenAI 后来支付了 6500\n美元漏洞奖励，但按照 Hacktron\n转录的官方评审反馈，这笔钱只覆盖单点登录系统侧的发现，论坛本身被明文排除在赏金计划之外；研究团队在提交报告后仍完成了员工账户接管与内部拉取请求，这段操作处于授权状态不明的灰色地带。对单个漏洞的奖励不构成对全链条测试的事后追认。账户失陷能走多远，上限始终是你授予\nconnector 的权限。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/three-old-authorizations-openai-breach-20260925.html",
+      "content_chars": 5996,
+      "content_sha256": "bdc6b19449d300fe4846950732b3d7203c1269466c0eada388be4b3d51c98df2",
+      "content_fetched_at": "2026-09-25T23:55:55.972152+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-25T00:00:00+00:00",
+      "collected_at": "2026-09-25T23:54:59.553055+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/three-old-authorizations-openai-breach-20260925.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "三条旧授权，两天，走到 OpenAI 内部仓库",
+          "url": "https://yage.ai/share/three-old-authorizations-openai-breach-20260925.html",
+          "content_sha256": "bdc6b19449d300fe4846950732b3d7203c1269466c0eada388be4b3d51c98df2"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:2f20da381f68d03b",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Qwen-Image-2.1：版本号断裂背后的双线策略，与一个模型接住三件事的野心",
+      "target_url": "https://yage.ai/share/qwen-image-21-two-track-strategy-20260924.html",
+      "text": "yage-share published: Qwen-Image-2.1：版本号断裂背后的双线策略，与一个模型接住三件事的野心",
+      "at": "2026-09-24T00:00:00+00:00",
+      "external_id": "a:2f20da381f68d03b",
+      "url": "https://yage.ai/share/qwen-image-21-two-track-strategy-20260924.html",
+      "title": "Qwen-Image-2.1：版本号断裂背后的双线策略，与一个模型接住三件事的野心",
+      "content": "AI 产品与平台\n产业与竞争\n中国科技生态\n平常如果打算用 AI\n做一张能直接上版的设计素材，手头往往要在两三个软件之间来回倒腾：先在生图工具里跑出画面，再拖进抠图工具把底色去掉，最后还要丢进编辑器修改局部的招牌字样。2026\n年 9 月 20 日，Qwen 团队正式上线了新一代图像生成模型\nQwen-Image-2.1\n并开源了模型权重，它最直接的主张就是把这三项操作收进同一个模型里：负责画面生成的核心部分有\n7B\n参数量，外加一个解析提示词的视觉语言编码器和一个专门处理透明通道的自编码器。但只要扫一眼发布记录，更让人好奇的反而是它的版本号：团队在\n2026 年 2 月推出了 2.0，7 月发布了 3.0，到了 9 月却反常地跳回了\n2.1。\n这个反向跳跃的数字，最可能的解释是一家团队在 2026\n年开始同时经营两条产品线：闭源商业接口在云端往前跑，开源研究分支在本地继续演进。官方没有说明过这层意图，但发布形态的差异摆在那里。这次伴随权重放出的专有研究许可，也把开放权重阵营如何在社区生态与商业防护之间划定界线，平实地摆到了台面上。\n一次发布，三个工具的工作收进一个模型\n2026 年 9 月 20 日发布的 Qwen-Image-2.1，视觉生成部分采用了 7B\n参数量的单流扩散变换器作为骨干网络。输入端搭配 Qwen3-VL\n解析多模态提示词，输出端则接入了一个 64\n通道的自编码器，专门负责透明通道的编解码。这套架构组合直接改变了本地制图时各道工序的流转方式。\n要理解自编码器带来的变化，得先看一下数字图像的通道机制。平时接触到的普通彩色照片，依靠红、绿、蓝三个基本颜色分量合成画面。如果想让画面的特定区域呈现半透明过渡，或者直接露出镂空的透明底色，像素点就需要增加专门记录不透明度的第四个通道。以往要做一张透明底素材，常见做法是先生成普通图片，再把示意图里那种灰白棋盘格背景单独抠掉；这多出来的一步既费事，遇到毛发这类细碎边缘还容易出瑕疵。\n图形学将红绿蓝三色与透明通道的组合统称为\nRGBA，其中专门记录透明度数值的分量叫做 alpha 通道。Qwen-Image-2.1\n把透明通道融入了底层自编码器的表达空间。扩散网络生成像素颜色的同时，同步输出对应的透明度数值，导出的\nPNG\n自带透明背景，省去了外置抠图软件二次处理的步骤；社区实测者反馈其透明边缘具备可用度。\n在托管于\nGitHub\n代码仓库\n的统一管线 QwenImage21Pipeline\n中，开发者用同一套调用脚本就能处理三种常见的作图需求。在默认 40\n步推理的基准配置下，官方展示了具体的运行示例。第一项是基础文生图，输入提示词\nA neon shop sign that reads \"QWEN IMAGE 2.1\", rainy night, reflections on wet pavement\n，演示雨夜路面积水反光与霓虹招牌文字的渲染效果；第二项是局部编辑任务，输入提示词\nChange the background to a sunset beach\n，把原图背景替换成了夕阳海滩；第三项是透明生成任务，使用提示词\nThis is an RGBA image with transparency. A cute cartoon dragon sticker. The image has alpha channel and the background is transparent.\n，单次运行就能直接输出一张背景镂空的卡通小龙贴纸\nPNG 文件。\n这套统一接口在编辑能力上也做了一并收拢。输入端除了支持单张原图，还允许传入最多\n10\n张参考图以维系多主体一致性。针对画面局部修改的需求，接口开放了三种区域标注方式，分别是\ncircle 圆形框选、painted annotation 涂抹画笔以及 separate mask\n独立掩码。借助这套机制，既可以把普通照片中的主体抽离成透明图层，也可以在维持透明属性的前提下对主体做进一步的局部修改。出图规格上模型原生支持\n2K 分辨率，并预设了从方图到竖屏的 7\n档常用宽高比。为了辅助长难提示词，官方还配套发布了基于 Qwen3.5-VL 9B\n微调的改写模型 PE-T2I 与 PE-I2I，建议先优化提示词再送进主干管线。\n文生图、局部编辑与透明素材三条输出线收进同一条管线，由单个模型统一承接。\n这条产品线从哪来：一条在\n2026 年分叉的时间线\n要理清 2.1 这个反常的版本命名，目光需要回到 2025 年 8\n月。从最初上线到 2026\n年秋季，这条产品线在十三个月的时间里完成了八次节点演进，展示了这支团队怎样一边在开源社区里迭代，一边划出专门的商业服务线。\n发布时间\n模型名称\n核心特征与技术规格\n许可协议\n技术报告\n2025-08-04\nQwen-Image 初代\n20B MMDiT 架构，主打复杂文字渲染与编辑，自建 ChineseWord\n基准，CVTG-2K 英文评测\nApache 2.0\narXiv:2508.02324\n2025-08-18\nQwen-Image-Edit\n指令驱动式图像编辑，支持中英文双语图内文字增删改\nApache 2.0\n基于初代架构\n2025-09-22\nEdit-2509\n引入多图输入（1 至 3 张），增强人物身份与主体一致性\nApache 2.0\ninvideo\n汇总\n2025-12-23\nEdit-2511\n多图编辑一致性提升，支持多视角生成与空间几何推理\nApache 2.0\n模型卡更新\n2025-12-31\nQwen-Image-2512\n文生图分支收尾版本，沿用初代 20B 骨干架构\nApache 2.0\n社区多源一致\n2026-02-10\nQwen-Image-2.0\n轻量化架构，主打原生 2K、专业排版与统一生成编辑\n未公开权重\n官方发布技术报告\n2026-07-21\nQwen-Image-3.0\n4.5K 长指令支持，报纸 PDF 级复杂排版，仅提供闭源商业 API\n闭源商业\n无技术报告\n2026-09-20\nQwen-Image-2.1\n7B 单流 DiT，内置 RGBA VAE，统一文字、编辑与透明生成，开源权重\nResearch License\n无\n演进时间线上 3.0 走向闭源且未披露技术报告，2.1\n回归开源路线但收紧了许可协议。\n从这张时间表里可以看到显眼的版本号断裂：团队在 2026 年 2 月发布了\n2.0，7 月发布了 3.0，到了 9 月却回过头发布了\n2.1。官方从未公开解释过这套命名逻辑。将产品线在 2026\n年划分为闭源商业接口与开源研究分支两条平行路线，是基于发布形态差异所做的推断。\n沿着这个推断视角，2026 年 7 月上线的 3.0\n代表了云端闭源产品线的确立。这个版本只通过商业 API\n开放调用，官方并未提供权重文件下载，同时也打破了初代与 2.0\n伴随发布日同步公开技术报告的既往做法，至今没有披露技术报告。3.0\n的技术侧重点放在长达 4.5K token\n的上下文解析、报纸与杂志级密集图文排版，以及复杂软件界面的生成上。\n9 月面世的 2.1 则回到了开源这条线上。本地工作流工具 ComfyUI 在其\n官方博客\n中指出，2.1 运行在优化后的 7B MMDiT 之上，与 2.0 处于同一技术层级。在\n第三方对比分析\n中也能看到功能层面的分流：3.0 Pro 的接口文档只开放 1 至 3\n张参考图输入，没有公开基于掩码的编辑工作流，而 2.1\n在本地代码中开放了最多 10\n张参考图与三种掩码标注方式。两套方案面向的使用场景和交付目标不同，推进路线自然分成了两条线。\n它的同行是谁\n要对 Qwen-Image-2.1\n形成务实的判断，需要把它放到当下开放权重图像模型的坐标系里审视。在支持本地部署的模型中，另外两个受到广泛讨论的项目是\nZ-Image Turbo 与 FLUX.2，二者的技术取向与功能边界各有侧重。\nZ-Image Turbo 采用 6B 参数量的蒸馏架构，以宽松的 Apache 2.0\n协议发布。该模型用蒸馏换取生成速度，整体设计偏向写实的人像摄影质感，但在公开的产品与技术文档中\n明确不支持图内文字渲染\n。如果应用场景需要在海报或插画中排布特定文字，使用者必须在外部借助其他设计软件或排版模型补全。\n另一边的 FLUX.2 拥有成熟的局部图像编辑能力 Kontext\n分支，但模型原生并不具备透明通道的生成逻辑。在许可与分发策略上，FLUX.2\n做了分级切分：轻量化的 klein 4B 版本沿用 Apache 2.0，功能完整的 Dev\n版本则限制商业用途，其\n商业 API\n的调用单价在每百万像素 0.003 到 0.08 美元之间\n。至于图内文字渲染，\n社区单人测试反馈\n曾记录旧版 2512\n在排布长难词时表现更好，但这一观察来自单人测试，缺乏统一基准的持续印证。\n放眼云端闭源模型阵营，GPT Image 系列、Gemini 图像能力以及 Qwen 自家的\n3.0\nAPI，都在各自的官方宣传中给出了极高完成度的排版与合成样张。在公开材料里，这几家没有可互相对照的基准成绩，各自只提供自己口径的宣称，目前无法给出权威的跨模型量化对比。\n把这些同行放在一起看，Qwen-Image-2.1\n并没有去争夺单项画质的最高分，而是把实用的几项功能收在了一起。在目前的开放权重阵营里，它是唯一一个把图内文字渲染、原生透明通道输出与多图局部编辑同时装进同一个开源权重模型的方案。\n边界：许可、运行与质量\n代码仓库页面虽然在多处提及开源字样，但决定模型实际使用权限的是随代码分发的正式法律文件。Qwen-Image-2.1\n放弃了前代 2511 与 2512 所使用的 Apache 2.0 协议，转而采用专有的 Qwen\nResearch License Agreement。协议第 1 条第 (i)\n款逐字规定：\nNon-Commercial\n仅指\nfor research or evaluation purposes only\n；协议第 2 条第 (a)\n款明确限制：\nFOR NON-COMMERCIAL PURPOSES ONLY\n；第 2 条第 (b)\n款进一步注明，任何涉及商业化的部署必须单独发邮件至\n[email protected]\n取得独立授权。\n在\nReddit\n社区讨论\n中，许多长期跟踪该系列的开发者将这一许可条款视为开源立场的倒退。换一个角度看这次收紧，也可以理解成一种折中：权重继续向公众开放，供研究和评测使用，把商业部署留作需要另行洽谈的授权。社区的失望是真实的，但要求一个团队永远免费开放商用，本身也不是行业通例。\n前代模型适用的 Apache 2.0 允许商用，2.1\n的专有研究许可则要求商业部署另行申请授权。\n在硬件开销与部署门槛上，官方文档并未给出显存配置对照表，目前的运行指标多来自社区开发者的实测。模型完整权重的下载体积约为\n33GB。在轻量化推理工具 stable-diffusion.cpp 上，社区开发者 peri-cl 采用\nQ8 量化后实测整体显存占用约\n15.6GB，并确认了第一时间的运行支持；社区也同步上线了对应的 GGUF\n格式量化版本\nAbiray/Qwen-Image-2.1-GGUF\n，把运行门槛进一步压向消费级配置。出图耗时方面，搭配\nDDR5 内存的笔记本 CPU 生成单张 512×512 图像约需 3 分钟；一位 Reddit\n实测者在 5070 与 5080 这一档桌面 GPU 上、以 25\n步推理生成一张百万像素图像，耗时约 25\n秒。图像编辑任务由于需要编码参考图像特征，参考图数量增加会带来更长的推理延迟。\n围绕该模型的工程适配生态在上线当天迅速铺开。开源库 diffusers\n在发布当天开放了支持 PR #14804；工作流工具 ComfyUI\n推出了官方节点模板；推理加速框架 SGLang 提交了支持 PR #39983；LightX2V\n也跟进完成了适配，而社区测试确认 llama.cpp\n目前阶段暂不支持图像输出。在硬件层面上，FlagOS 宣称已在 8\n款芯片平台上完成了与官方实现的推理精度对齐，不过该结论目前属于厂商单方宣称，公开渠道尚未出现独立的第三方复验报告。\n关于成图质量，社区早期测试给出了分化的反馈。\nReddit\n用户 listopalafoto 测试后\n认为其编辑能力树立了新的开源标准，多图参考下人物的一致性表现稳定，输出的透明\nPNG 边缘具备较好的可用度。然而实测者 cgs019283\n指出，在常见构图下生成的部分画面带有合成感与偏黄颗粒，该测试者推测这可能是训练语料中混入了特定风格图片所致，这一成因属于测试者的个人主观推断；同时面对知名公众人物或版权角色，模型往往只能生成泛化面孔。\n在 Hacker News\n社区讨论中，开发者对官方演示用例里的一组聚会合照展开了细节核对，发现画面中的知名演员\nShelley Long 出现了面孔特征泛化，无法精确维持人物的原貌，详见\nHN\n讨论记录\n。这一案例说明官方演示中的多图一致性属于厂商选例展示效果，并不构成无条件的普遍性能保证。目前行业内尚无独立学术机构对该模型的生成成功率或画质缺陷进行系统性量化统计，海外科技媒体\nthe-decoder\n在报道\n时同样采用了 claims to beat\n即宣称超越的审慎表述。而在透明图层方面，公开材料中对 alpha\n边缘质量也缺乏独立客观测量。\n文字渲染：这块长板的证据变化\n文字生成一直是 Qwen 图像模型建立辨识度的核心能力。2025 年 8 月初代\nQwen-Image 亮相时，研发团队在其\n技术报告\n与\n博客\n中搭建了一套完整的证据链条。除了采用检验长英文字符排布的 CVTG-2K\n基准，团队还专门自建了收录大量复杂汉字的 ChineseWord\n评测集，以此填补中文排版测试的空白。在当时公布的技术指标中，初代模型在\nLongText-Bench、ChineseWord 与 TextCraft\n等测试集上均取得了突出的评测数据，并展示了对联、牌匾等复杂汉字长文本的渲染实测。\n到了\nQwen-Image-2.1，官方披露文字能力的方式出现了显著转变。在最新的模型文档中，关于排版能力的陈述缩减为一句简短的\nImproved\ntypography。官方未披露新的字符准确率实测数据，也未提供支持语言种类的完整清单，科技分析博客\nkie.ai\n也独立指出了这一证据维度的精简。当前社区流传的渲染对比，多数引用自旧版\n2512 与 FLUX.2 的历史测试，并非针对 2.1 进行的严格对照。\n对于考虑将 Qwen-Image-2.1\n应用于海报宣发、电商主图或招牌设计等文字敏感业务的工程团队，不能简单将初代技术报告的成绩套用到当前版本上。在进入生产链路前，务实的做法是梳理一批贴近自身业务的典型提示词，覆盖中英文混排、差异化字号以及多行密集排版，在本地环境中搭建对照基线，检验文字生成的拼写准确率与成字率。\n后续评估这套模型的演进走势，可以从三个观察维度跟进。其一是云端商业线的技术下放，3.0\n所具备的超长指令解析与期刊级图文排版能力，后续是否会以某种方式裁剪集成进开源研究模型；其二是许可协议的变动可能，团队是否会根据开发者诉求补充商用授权层级；其三则是围绕原生透明生成的评测基准，社区是否会出现针对边缘半透明羽化细节与抠图精度的客观测量方案。\n对于眼下没有私有化部署图像模型需求的技术团队，Qwen-Image-2.1\n的推出依然提供了一个近距离观察多模态架构演进的样本。它展示了生成模型试图把以往松散的多步修图管线收归一体的工程努力，也记录着开源团队在活跃社区生态与守住商业防线之间的实际平衡。\n本帖中的所有图像均由 Qwen-Image-2.1 生成。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/qwen-image-21-two-track-strategy-20260924.html",
+      "content_chars": 6574,
+      "content_sha256": "d52859c4154846e970d09c6eaa17e698526d04fb534d70f571e187c0d29d7014",
+      "content_fetched_at": "2026-09-25T23:55:56.210900+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-24T00:00:00+00:00",
+      "collected_at": "2026-09-25T23:54:59.553055+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/qwen-image-21-two-track-strategy-20260924.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Qwen-Image-2.1：版本号断裂背后的双线策略，与一个模型接住三件事的野心",
+          "url": "https://yage.ai/share/qwen-image-21-two-track-strategy-20260924.html",
+          "content_sha256": "d52859c4154846e970d09c6eaa17e698526d04fb534d70f571e187c0d29d7014"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:95222558486487b2",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "AI 参与科研的稳妥姿势：让 Claude 去优化科学软件本身",
+      "target_url": "https://yage.ai/share/ai-biomolecular-optimization-20260924.html",
+      "text": "yage-share published: AI 参与科研的稳妥姿势：让 Claude 去优化科学软件本身",
+      "at": "2026-09-24T00:00:00+00:00",
+      "external_id": "a:95222558486487b2",
+      "url": "https://yage.ai/share/ai-biomolecular-optimization-20260924.html",
+      "title": "AI 参与科研的稳妥姿势：让 Claude 去优化科学软件本身",
+      "content": "科研与技术前沿\nAI Agent\n推理与性能\n如果让大语言模型参与前沿科学，很多人期待它直接提出革命性的新假说，或者在实验室里发现奇迹药物。现实中更有把握的一条路，其实接地气得多：先去帮科学家把他们天天运行、却又慢又耗资源的计算软件重新修整一遍。Anthropic\n在 9 月 17 日发布的\n技术报告\n与开源代码，记录的就是这样一次尝试。\n这项工作的分工很有意思。两位熟悉生物建模、但缺乏推理加速与底层内核开发经验的技术人员，带着\nClaude 在不到四周的时间内改造了 36 个软件包，覆盖 30\n多个开源生物分子模型。所有改动直接运行在原有模型权重之上，团队没有重新训练新模型，36\n个软件包与 30\n多个模型的数量差异主要来自部分模型的多套独立实现与参数版本。技术报告正文和数据分析同样由\nClaude 在人类监督下起草完成。\n把通用大模型放进科研一线，暂时不必急于替科学家做核心科学裁决，先挽起袖子，把研究人员日常依赖的计算软件做一次扎实的技术装修。从实际效果看，这种务实的工程路线绕开了科学幻觉的直接风险，也让现有的科研计算工具实实在在地跑得更快、更省资源。\nAI\n参与科研的两条路径：替科学家做科学判断风险高，优化科学家依赖的工具收益确定\n科研软件卡住的不只是生物学家\n在计算生物学的日常研发管线里，研究人员的算力开销主要压在两类基础任务上。一类是蛋白质结构预测，程序接收氨基酸或核苷酸序列，推算三维空间里的原子坐标并评估局部置信度。另一类是蛋白质设计，算法以疾病靶标表面为起点，生成能够紧密贴合的全新序列，常见形态为\n50 到 120\n个残基组成的小蛋白结合体，再通过重折叠预测检验结合构型。这两类任务不仅耗时长，而且动辄挤爆高端计算卡的运行显存。\n主流模型为什么跑得这么慢？我们可以把一个蛋白质分子想象成一串折叠在三维空间里的珠子。为了弄清楚这串珠子最终会叠成什么形状，以\nAlphaFold3、OpenFold3 和 Boltz-2\n为代表的主流架构，必须反复推算每一对珠子之间的空间相对位置。仅作示意，假设一条链上有\n1,000\n颗珠子，不计方向与自身配对，两两配对就有大约五十万个组合。模型会给每一对珠子写下一张关系卡，记录它们之间的距离和朝向。\n麻烦出在这些关系卡的校验过程。算法要核对珠子 1 和珠子 2\n的关系卡写得对不对，不能只孤立观察这两颗珠子，还必须把分子链上的珠子\n3、珠子 4\n直到最后一颗珠子逐一拉进来，检查三颗珠子构成的几何三角形是否符合物理和几何规律。更新每一对珠子的关系卡，都要拉上整个体系的所有其他珠子核对一轮。分子链条每增加一颗珠子，两两配对的关系卡多出一整圈，每张卡需要拉来交叉校对的其他珠子也多出一个。\n这种成倍互相牵扯的几何三角形校验，在计算生物学文献里称为三角注意力和三角乘法。这些成对计算的计算量随着分子体系的尺寸呈三次方上升。体系内的残基规模翻上一倍，消耗的计算时间与显存开销会飙升到约\n8 倍；体系规模扩大到三倍，资源开销会暴涨到约 27\n倍。现代结构预测模型的大部分运行时间与显存开销，正是耗费在这些关系卡的交叉推演上。\n以往解决这类工程瓶颈，往往需要经验丰富的底层系统工程师花费数周时间对单个模型手工调优，写出的底层代码还难以直接迁移到其他模型。虽然芯片厂商推出过专用算子库\ncuEquivariance\n和\nBioNeMo\n推理运行时，但学术界散落着几十个各自迭代的开源模型仓库，专家的手工定制很难覆盖整个工具生态，许多优秀的科研软件因此长期停留在未经优化的原生状态。\nClaude 动手改了什么\n面对三十多个结构各异的模型代码库，改造策略分成了底层硬件算子和上层模型工程两个层面。底层\nGPU\n内核本质上是把许多细碎小运算合并成少数高吞吐大操作的底层程序。以往的代码习惯把复杂的三角几何运算拆分成几十道零散的数学指令，导致中间数据在显存与计算核心之间来回搬运，浪费了大量带宽。团队让\nClaude 编写了一套名为 FlashPairformer 的定制 GPU\n内核，把这些零散步骤整合成吞吐饱满的连续流式操作，压低显存读写延迟。在单独测试里三角注意力相对\ncuEquivariance 的几何平均提速为 2.7 至 2.9\n倍，这种微基准虽然不等于完整模型的提速，但为上层优化清空了底层路障。\n更繁重的工程量落在 36\n个软件包的代码重构上。注意，它改动的是代码的执行路径与显存调度，没有改动工具推导科学结论的计算公式。Claude\n做的事情是系统性清理软件运行中的机械内耗。最典型的动作包括两项：一项是缓存此前重复计算的中间结果，避免程序做无用功；另一项是借助\nCUDA 图技术把重复的 GPU 操作录制下来批量重放，消除了 Python\n解释器在每个小步骤上的调度开销。代码还顺带折叠了恒定死分支，让高频张量长驻显存减少主机与设备间的数据拷贝，并引入异步管道加载数据。面对超大复合物，程序会对庞大的中间张量做分块处理，或者在单台多卡环境下把成对表征按行切分到不同显卡协同计算。\n在传统的性能优化里，底层工程师经常替用户牺牲少许精度来换取速度。这次的工作把精度与资源的决定权交还给了科研人员，设计出四档运行模式。使用者可以根据任务场景切换档位：off\n模式直接关闭优化，保持原始状态；exact\n模式保证输出数值与原始模型逐位一致；fast\n模式允许输出落在原模型自身的随机波动区间内，换取更显著的推理速度；big\n模式则专门开启内存分块与多卡切分，避免处理大分子时显存溢出报错。\n这套工程体系还引入了一项明确的拒绝契约。如果运行环境、硬件配置或模型架构无法满足某个档位要求，程序会直接打印\nNOT ACTIVE 提示并以状态码 3\n退出，不会静默回退到未加速的慢速代码。全部改造代码已经整理在\n开源代码仓库\n中，原始上游代码保留在\nstock 目录，优化包放在 opt 目录，底层共享统一的 opt_core\n运行时。整套项目作为静态参考实现发布，Anthropic 自有代码采用 Apache-2.0\n协议，上游 stock\n代码保留各自许可，团队明确声明后续不接收社区代码提交也不做持续维护。\nClaude\n改写的三层：把三角几何运算合并成快速 GPU\n内核，再配合逐模型缓存与分块，让模型更快更省显存\n快了多少，代价是什么\n要客观评价这次代码改造的提速效果，首先需要弄清楚参照基准。速度与显存基准测试统一在英伟达\nH100 80GB 计算卡上完成。评测团队选取的 default\n基线并非出厂默认设置，而是懂行用户在同款显卡上调优出来的最快正确配置，提前开启了可选融合算子并吃满批处理吞吐。提速倍数直接与熟练工程师调优后的高效基准对比，排除了未调优出厂配置带来的虚高水分。\n在这套严格的基准线上，结构预测子集的三种优化模式拉出了清晰的提速阶梯，以下均为几何平均。保持输出逐位一致的\nexact 模式平均提速 1.6 倍；允许微小误差换取速度的 fast 模式平均提速 4.1\n倍，各模型的加速幅度分布在 2.3 倍至 6.4\n倍之间，这种微小数值漂移落在原模型自身的随机波动范围之内；最省显存的 big\n模式即使背负着数据分块的开销，依然取得了平均 3.4\n倍的加速。官方公告提到的接近 2\n倍输出一致提速，对应的是涵盖三十多个模型的全局平均表现，在计算繁重的结构预测子集上，严格逐位一致的提速实际就是\n1.6 倍。\n追求极速需要付出显存代价。exact 模式与 fast\n模式为了争夺峰值计算吞吐，显存占用最多会飙升到原有基准的 3\n倍多。如果手头计算卡的硬件显存吃紧，使用者就需要切换到最省内存的 big\n模式，依靠分块计算来规避显存溢出风险。\n计算跑得更快，输出质量有没有受损？科研人员通过及格线指标来检验预测构型的精度。在蛋白质结构预测领域，学者们常用\nDockQ 分数衡量预测模型与实验测定结构的贴合程度，并将 0.23\n当作预测合格的及格线。评测数据显示，预测结果跟实验解析的结构比对，可接受比例在优化前后都停在\n54% 到 55%\n这个水平。几种优化模式相比基线的置信区间都包含零，说明大盘整体精度保持平稳，没有发生系统性滑坡。\n当然，报告附录里还有逐模型的评测细节，少数模型在个别档位下仍有微小的局部精度波动。此外，报告没有对比同期\nColabFold 新加的社区加速内核。\n跑得完和预测对是两件事\n任何软件工程优化都有其能力边界。这份技术报告保持了相当清醒的学术分寸，用两组对照实验划清了计算工程的可达性与科学预测的有效性之间的界限。\n第一道界限出现在超大分子复合物的结构预测中。生物物理计算使用生物\ntoken\n统计物理实体规模：氨基酸残基算一个，核苷酸算一个，小分子配体和离子按非氢原子逐一计数。这一单位反映分子体系的实际几何单元，与大语言模型切分文本词元的\ntoken 没有数学换算关系。在单台 8 卡服务器上，big 模式成功预测了包含超过\n10,000 个生物 token 的超大复合体，最大的测试样本达到 10,761 个\ntoken，结构相似度 TM 分数在 0.92 到 0.997 之间。作为对照，\nAlphaFold3\n论文\n发表时展示的核糖体案例规模为 7,663 个\ntoken，而模型在训练阶段采样的尺寸上限仅为 768 个 token。\n算力跑得通并不代表科学推断成立。面对包含约 31,000 到 70,320\n残基的完整病毒衣壳与超大蛋白质区室，单台服务器的 7\n次极限推理虽然顺利跑完，但输出的三维结构全都塌缩成致密小球，直径只有真实构型的四分之一左右，已打分的三个体系\nTM 分数跌落到 0.08 到 0.14。\n读者难免产生疑问：这种塌缩是否来自加速优化，甚至是有损压缩引入的数值误差？现有证据都指向相反的方向。面对上万\ntoken 的复合体系，同一个 big 模式预测出的构型高度精准，TM 分数最高达到\n0.997；尺度推向数万残基，才出现跌落到 0.08 到 0.14\n的塌缩结果。唯一的变量是输入规模离训练分布有多远，而不是换没换优化模式。当然，报告没有跑未优化模型在同尺寸的对照，这个归因停留在合理推断的级别。技术报告在讨论中写道：big\n模式扩展了程序能够计算的体系规模，但没有扩展模型学到的知识。\n真正的分水岭在模型自身的认知边界。AlphaFold3\n在训练阶段切分的最大采样片段只有 768 个\ntoken，而发生塌缩的衣壳体系，按残基数计达到了训练片段的约 40 到 90\n倍。优化代码直接运行在原有权重之上，模型学到的空间几何规律只在见过的尺度内成立。脱离了这个范围，面对海量原子的相对约束，模型输出的构型在局部或许自洽，在全局物理上却走向了错误的折叠。报告作者推测，这反映了模型在超大体系上的泛化失败，也说明训练片段的尺寸是模型学到的边界，跟优化代码没有关系。\n换成保证逐位一致的 exact\n模式，塌缩是否就会消失？在常规分布内，允许细微数值差异的 fast\n模式与原始模型在大盘精度上统计一致，优化带来的折损微乎其微。而在超大体系面前，报告也给了一条反证：极限测试里有一部分样本省略了循环步骤，报告承认这可能影响结果，但其中一个样本开启完整循环并引入实验模板，结构照样塌缩。流程简化可能推了一把，但显然撑不住全部解释。\n更实际的制约在于硬件显存。保证逐位一致的 exact\n模式更加耗费显存，峰值占用有时会达到原有基准的 3\n倍多。面对数万残基的结构，现有单机只有依赖 big\n模式的分块与多卡切分才能装入显存，exact\n模式在这一尺度下无法启动。认为换回 exact\n模式就能避开塌缩，既没有经过实测验证，目前在单节点上也无法验证。技术报告同样没有针对未优化的原始模型做同等尺寸的跨节点对照。关于塌缩的归因，目前依然停留在合理推论上。\n第二道界限出现在蛋白质生成设计任务中。Anthropic 此前在\n8\n月蛋白设计报告\n中曾组织过单靶点算力上限达约 2,500 H100 GPU\n小时的多智能体战役。在新一轮对照实验里，流程得到了大幅简化，单个 Claude\n实例通过命令行直接驱动优化后的模型，在单张 H200 显卡上连续运行 24\n小时。新旧方案在算力预算上相差约 100 倍，两轮战役的实际墙钟运行时间都是\n24\n小时。在新方案支持下，三款模型的候选分子中位得分经跨靶点平均后分别达到\n0.785（Opus 5）、0.781（Mythos 5.1）和 0.739（Mythos 5），对照旧方案的\n0.749 水平，其中 Mythos 5 的 0.739\n略微低于旧战役的中位数；最高分经跨靶点平均后分别达到 0.833、0.825 和\n0.813，前两者优于旧战役的 0.817，Mythos 5 的 0.813 则略低于旧战役。\n这里用来评估结合界面的打分指标名为 ipSAE，它是一个介于 0 到 1\n之间的计算置信度评分，仅代表算法模型对空间结合构型的把握程度，并不等于生化试管里的湿实验成功率。新流程设计出来的所有全新蛋白质分子，目前均未经过真实的物理实验检验。报告正文对此保持了清醒的归因纪律，写明设计结果未分离优化模型与简化协议的贡献；并且针对有无加速工具的对比组补充强调，有无可加速对照的性能差异不可仅归因于加速模型本身。\n大体系预测的两个指标：计算跑完是工程能力，预测结构正确是科学能力，前者不保证后者\n为什么这条路径靠谱\n从整个项目的推进逻辑来看，它给技术社区提供了一个高确定性、低风险的人工智能落地范式。在我看来，这项探索真正有启发性的地方，在于清晰划定了工程重构与科学发现的权责分界，胜过单纯去罗列几个惊艳的提速数字。\n在真实的自然科学前沿，验证全新假说的物理代价相当高昂。一个缺乏实证依据的分子构想，往往需要实验室耗费数月时间采购试剂、培养细胞并开展繁琐的生化检测，算法一旦产生科学层面的幻觉，就会造成巨大的科研资源浪费。优化科学软件则遵循不同的风险逻辑。这项工作改动的是代码的执行路径与显存调度，并没有改动工具推导科学结论的计算公式。\n软件工程拥有测试套件与数值基准作为安全兜底。代码改动完成之后，团队通过单元测试核验逻辑正确性，通过逐位比对排查数值漂移，再通过上千个模型与靶点配对的大规模测试校对整体精度分布。一旦模型产生代码幻觉或改动破坏了数值约束，自动化断言会当场报错拦截，多数技术差错在开发阶段就能得到暴露与修正。\n这套实践同时也重塑了科研软件的维护成本结构。学术界沉淀了大量构想精巧的开源计算模型，但受限于人力资源，论文发表后往往缺乏长期的底层工程维护。如果单纯依靠高薪的底层硬件专家逐个手工调优，整个科研生态很难承受高昂的时间与资金成本。两位生物建模从业者带着通用模型在四周内翻修\n30\n多个工具，证明大语言模型能够胜任高素质的代码重构助手，把原本属于少数专家的昂贵优化工作，转变成低边际成本的规模化工程。\n计算工具的提速固然降低了研发开销，但计算通畅始终无法直接等同于科学突破。为了进一步检验这些计算分子的实际生物活性，Anthropic\n已经联合生物技术机构发起了一场\n蛋白设计比赛\n，针对五个前沿生物学难题，计划对社区提交的超过\n5,000\n个计算设计分子进行湿实验合成与物理活性检测。在真实的生化反应数据出炉之前，保持审慎客观依然是严谨的同行态度。把通用模型放进由严密测试套件把关的工程跑道，让它专注于分担繁复的软件翻新事务，这或许正是现阶段让人工智能服务科学探索最稳妥、也最扎实的一条路径。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/ai-biomolecular-optimization-20260924.html",
+      "content_chars": 6361,
+      "content_sha256": "d80ef3ff581d57f4f4be322a242116e6f47e25088b8afab98b3bac84d983858a",
+      "content_fetched_at": "2026-09-25T23:55:56.420055+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-24T00:00:00+00:00",
+      "collected_at": "2026-09-25T23:54:59.553055+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/ai-biomolecular-optimization-20260924.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "AI 参与科研的稳妥姿势：让 Claude 去优化科学软件本身",
+          "url": "https://yage.ai/share/ai-biomolecular-optimization-20260924.html",
+          "content_sha256": "d80ef3ff581d57f4f4be322a242116e6f47e25088b8afab98b3bac84d983858a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:2662c651ba2f130e",
+      "who": "cocomelonc",
+      "who_url": "https://cocomelonc.github.io/",
+      "action": "publish",
+      "target": "Malware analysis: part 12. Section entropy from scratch in pure C: a tiny packed/encrypted detector.",
+      "target_url": "https://cocomelonc.github.io/malware/2026/09/23/malware-analysis-12.html",
+      "text": "cocomelonc published: Malware analysis: part 12. Section entropy from scratch in pure C: a tiny packed/encrypted detector.",
+      "at": "2026-09-23T02:00:00+00:00",
+      "external_id": "a:2662c651ba2f130e",
+      "url": "https://cocomelonc.github.io/malware/2026/09/23/malware-analysis-12.html",
+      "title": "Malware analysis: part 12. Section entropy from scratch in pure C: a tiny packed/encrypted detector.",
+      "content": "﷽\nHello, cybersecurity enthusiasts and white hackers!\nIn\npart 6\nwe first met Shannon entropy, and in\npart 11\nwe built a whole mini-GPT to detect packing by\nperplexity\n. Both were Python and, in the GPT case, a GPU. In this post we go in the exact opposite direction: the smallest, most portable blue team triage tool I could think of -\nsection entropy in pure C\n, one file, zero dependencies (only\nlibc\n+\nlibm\n), that compiles in a single line and runs on both\nPE\nand\nELF\n.\nThe idea is that you can drop this on any incident-response box - a stripped Linux server, a rescue shell, a customer laptop - compile it in one command and instantly see which section of a suspicious binary looks packed or encrypted. No\npip\n, no venv, no cloud API. I called it\npe-kitten\nand the tool itself is\nmeow.c\n.\nthe idea\nA binary file is just a sequence of bytes. Compression and encryption both do the same thing to those bytes: they make them look like\nuniform random noise\n. Legitimate code and data are highly structured - opcodes repeat, strings cluster, padding is full of zeros - so their byte distribution is far from uniform. That difference is exactly what entropy measures.\nThe right granularity is\nper section\n, not per file. A packer leaves a very recognizable footprint: a small low-entropy loader stub plus one section whose entropy is pushed close to the theoretical maximum (the compressed/encrypted body). Averaged over the whole file this can hide; looked at section by section it screams.\nThis is conceptually the “dumb” cousin of the perplexity detector from\npart 11\n: perplexity models the\norder\nof bytes, entropy only counts their\nfrequencies\n. But entropy is \\(O(n)\\), needs no model, no training and no dependencies - which is precisely what you want for a first-pass triage tool that has to run anywhere.\nthe math\nThe\nShannon entropy\nof a section, measured over its 256 possible byte values, in bits per byte:\n\\[H = -\\sum_{i=0}^{255} p_i \\log_2 p_i, \\qquad p_i = \\frac{\\mathrm{count}_i}{N}\\]\nwhere \\(N\\) is the section size in bytes and \\(\\mathrm{count}_i\\) is how many times byte value \\(i\\) appears. \\(H\\) ranges from\n0\n(a section of one repeated byte) to\n8\n(all 256 values equally likely - perfectly random). Encryption and good compression drive \\(H\\) toward\n8\n, which is the whole reason packed samples stand out.\nHow high is “suspicious”? We do not have to guess. Lyda & Hamrock measured the average section entropy across large corpora of real files:\ncontent\nmean \\(H\\) (bits/byte)\nplain text\n4.35\nnative executable\n5.10\npacked\n6.80\nencrypted\n7.17\nSo\nmeow\nuses two thresholds: below\n6.0\nis green (normal),\n6.0 - 7.0\nis yellow (elevated - typical of dense native\n.text\n), and\n>= 7.0\nis red -\nlikely packed or encrypted\n.\npractical example\nLet’s build\nmeow.c\npiece by piece. The heart of the tool is the entropy function - a 256-bucket histogram and the sum above:\n/* shannon entropy of a byte buffer, in bits/byte (0..8).\n* h = -sum_i p_i * log2(p_i), p_i = count_i / n (shannon, 1948). */\nstatic\ndouble\nentropy\n(\nconst\nuint8_t\n*\ndata\n,\nuint64_t\nn\n)\n{\nif\n(\n!\nn\n)\nreturn\n0\n.\n0\n;\nuint64_t\nhist\n[\n256\n]\n=\n{\n0\n};\nfor\n(\nuint64_t\ni\n=\n0\n;\ni\n<\nn\n;\ni\n++\n)\nhist\n[\ndata\n[\ni\n]]\n++\n;\ndouble\nh\n=\n0\n.\n0\n;\nfor\n(\nint\ni\n=\n0\n;\ni\n<\n256\n;\ni\n++\n)\n{\nif\n(\n!\nhist\n[\ni\n])\ncontinue\n;\ndouble\np\n=\n(\ndouble\n)\nhist\n[\ni\n]\n/\n(\ndouble\n)\nn\n;\nh\n-=\np\n*\nlog2\n(\np\n);\n}\nreturn\nh\n;\n}\nThat is the whole math. Everything else is just locating the section bytes in the file. We support both formats and detect them by magic in\nmain\n:\nif\n(\nfsize\n>=\n2\n&&\nbuf\n[\n0\n]\n==\n'M'\n&&\nbuf\n[\n1\n]\n==\n'Z'\n)\nrc\n=\nanalyze_pe\n(\nbuf\n,\nfsize\n);\nelse\nif\n(\nfsize\n>=\n5\n&&\n!\nmemcmp\n(\nbuf\n,\n\"\n\\x7f\n\"\n\"ELF\"\n,\n4\n))\nrc\n=\nanalyze_elf\n(\nbuf\n,\nfsize\n);\nFor\nPE\nwe walk exactly the offsets from\npart 10\n: the DOS header points to the NT headers via\ne_lfanew\nat\n0x3C\n, then we read\nNumberOfSections\nand skip the optional header by its declared size to land on the 40-byte section headers. Each header gives us\nSizeOfRawData\nand\nPointerToRawData\n- the slice we feed to\nentropy()\n:\nuint32_t\ne_lfanew\n=\nrd32\n(\nbuf\n+\n0x3C\n);\nconst\nuint8_t\n*\ncoff\n=\nbuf\n+\ne_lfanew\n+\n4\n;\n/* skip \"PE\\0\\0\" */\nuint16_t\nnsec\n=\nrd16\n(\ncoff\n+\n2\n);\n/* NumberOfSections */\nuint16_t\noptsz\n=\nrd16\n(\ncoff\n+\n16\n);\n/* SizeOfOptionalHeader */\nconst\nuint8_t\n*\nsect\n=\ncoff\n+\n20\n+\noptsz\n;\n/* section table start */\nfor\n(\nuint16_t\ni\n=\n0\n;\ni\n<\nnsec\n;\ni\n++\n)\n{\nconst\nuint8_t\n*\nsh\n=\nsect\n+\n(\nuint64_t\n)\ni\n*\n40\n;\nchar\nname\n[\n9\n];\nmemcpy\n(\nname\n,\nsh\n,\n8\n);\nname\n[\n8\n]\n=\n0\n;\nuint32_t\nrawsz\n=\nrd32\n(\nsh\n+\n16\n);\n/* SizeOfRawData */\nuint32_t\nrawptr\n=\nrd32\n(\nsh\n+\n20\n);\n/* PointerToRawData */\ndouble\nh\n=\n0\n.\n0\n;\nif\n(\nrawsz\n&&\n(\nuint64_t\n)\nrawptr\n+\nrawsz\n<=\nfsize\n)\nh\n=\nentropy\n(\nbuf\n+\nrawptr\n,\nrawsz\n);\nprint_section\n(\nname\n,\nrawsz\n,\nh\n);\n}\nFor\nELF64\nit is the same story with different field names:\ne_shoff\ngives the section-header table,\ne_shstrndx\ntells us which section holds the name strings (\n.shstrtab\n), and each 64-byte header carries\nsh_offset\nand\nsh_size\n. We skip\nSHT_NOBITS\n(\n.bss\nhas no bytes on disk):\nuint64_t\nshoff\n=\nrd64\n(\nbuf\n+\n0x28\n);\nuint16_t\nshentsize\n=\nrd16\n(\nbuf\n+\n0x3A\n);\nuint16_t\nshnum\n=\nrd16\n(\nbuf\n+\n0x3C\n);\nuint16_t\nshstrndx\n=\nrd16\n(\nbuf\n+\n0x3E\n);\nconst\nuint8_t\n*\nstrsh\n=\nbuf\n+\nshoff\n+\n(\nuint64_t\n)\nshstrndx\n*\nshentsize\n;\nuint64_t\nstroff\n=\nrd64\n(\nstrsh\n+\n0x18\n);\n/* .shstrtab file offset */\nfor\n(\nuint16_t\ni\n=\n0\n;\ni\n<\nshnum\n;\ni\n++\n)\n{\nconst\nuint8_t\n*\nsh\n=\nbuf\n+\nshoff\n+\n(\nuint64_t\n)\ni\n*\nshentsize\n;\nuint32_t\nsh_name\n=\nrd32\n(\nsh\n+\n0\n);\nuint32_t\nsh_type\n=\nrd32\n(\nsh\n+\n4\n);\nuint64_t\nsh_off\n=\nrd64\n(\nsh\n+\n0x18\n);\nuint64_t\nsh_size\n=\nrd64\n(\nsh\n+\n0x20\n);\nif\n(\nsh_type\n==\n8\n/* SHT_NOBITS */\n||\nsh_size\n==\n0\n)\ncontinue\n;\nconst\nchar\n*\nname\n=\n(\nconst\nchar\n*\n)(\nbuf\n+\nstroff\n+\nsh_name\n);\ndouble\nh\n=\n(\nsh_off\n+\nsh_size\n<=\nfsize\n)\n?\nentropy\n(\nbuf\n+\nsh_off\n,\nsh_size\n)\n:\n0\n.\n0\n;\nprint_section\n(\nname\n,\nsh_size\n,\nh\n);\n}\nFinally the pretty part -\nprint_section\ndraws a colored ASCII bar whose length is \\(H/8\\) of the width, and tags anything over the thresholds:\nstatic\nvoid\nprint_section\n(\nconst\nchar\n*\nname\n,\nuint64_t\nsize\n,\ndouble\nh\n)\n{\nconst\nint\nW\n=\n32\n;\nint\nfill\n=\n(\nint\n)(\nh\n/\n8\n.\n0\n*\nW\n+\n0\n.\n5\n);\nconst\nchar\n*\ncol\n=\nent_color\n(\nh\n);\n/* green / yellow / red */\nprintf\n(\n\" \"\nC_CYN\n\"%-16.16s\"\nC_RST\n\" %10llu %s%5.3f\"\nC_RST\n\" %s\"\n,\nname\n,\n(\nunsigned\nlong\n)\nsize\n,\ncol\n,\nh\n,\ncol\n);\nfor\n(\nint\ni\n=\n0\n;\ni\n<\nW\n;\ni\n++\n)\nputchar\n(\ni\n<\nfill\n?\n'#'\n:\n' '\n);\nprintf\n(\nC_RST\n);\nif\n(\nh\n>=\nENT_HIGH\n)\nprintf\n(\n\" \"\nC_RED\nC_BLD\n\"packed/encrypted?\"\nC_RST\n);\nelse\nif\n(\nh\n>=\nENT_ELEVATED\n)\nprintf\n(\n\" \"\nC_YEL\n\"high\"\nC_RST\n);\nputchar\n(\n'\\n'\n);\n}\nThe full\nmeow.c\n(with bounds checks and the file loader) is about 230 lines:\n/* pe-kitten / meow.c - tiny pe/elf section entropy analyzer\n* author: cocomelonc\n*\n* reads a pe (mz) or elf binary, walks its section table by the exact\n* on-disk offsets, and reports the shannon entropy of each section's raw\n* bytes with an ascii color bar. high entropy flags likely packed or\n* encrypted content (lyda & hamrock, ieee s&p 2007).\n*\n* deps: libc + libm only.\n* build: gcc -O2 -Wall -Wextra -std=c11 -o meow meow.c -lm\n* usage: ./meow <file>\n*/\n#include\n<stdint.h>\n#include\n<stdio.h>\n#include\n<stdlib.h>\n#include\n<string.h>\n#include\n<math.h>\n/* ---- ansi colors (plain vt100) ---------------------------------------- */\n#define C_RST \"\\x1b[0m\"\n#define C_DIM \"\\x1b[2m\"\n#define C_BLD \"\\x1b[1m\"\n#define C_GRN \"\\x1b[32m\"\n#define C_YEL \"\\x1b[33m\"\n#define C_RED \"\\x1b[31m\"\n#define C_CYN \"\\x1b[36m\"\n/* lyda & hamrock 2007 measured mean entropies (bits/byte):\n* plain text 4.35, native exe 5.10, packed 6.80, encrypted 7.17.\n* we use 6.0 / 7.0 as the elevated / high thresholds. */\n#define ENT_HIGH 7.0\n#define ENT_ELEVATED 6.0\n/* alignment-safe little-endian reads (x86 target). */\nstatic\nuint16_t\nrd16\n(\nconst\nuint8_t\n*\np\n)\n{\nreturn\n(\nuint16_t\n)(\np\n[\n0\n]\n|\n(\np\n[\n1\n]\n<<\n8\n));\n}\nstatic\nuint32_t\nrd32\n(\nconst\nuint8_t\n*\np\n)\n{\nuint32_t\nv\n;\nmemcpy\n(\n&\nv\n,\np\n,\n4\n);\nreturn\nv\n;\n}\nstatic\nuint64_t\nrd64\n(\nconst\nuint8_t\n*\np\n)\n{\nuint64_t\nv\n;\nmemcpy\n(\n&\nv\n,\np\n,\n8\n);\nreturn\nv\n;\n}\n/* shannon entropy of a byte buffer, in bits/byte (0..8).\n* h = -sum_i p_i * log2(p_i), p_i = count_i / n (shannon, 1948). */\nstatic\ndouble\nentropy\n(\nconst\nuint8_t\n*\ndata\n,\nuint64_t\nn\n)\n{\nif\n(\n!\nn\n)\nreturn\n0.0\n;\nuint64_t\nhist\n[\n256\n]\n=\n{\n0\n};\nfor\n(\nuint64_t\ni\n=\n0\n;\ni\n<\nn\n;\ni\n++\n)\nhist\n[\ndata\n[\ni\n]]\n++\n;\ndouble\nh\n=\n0.0\n;\nfor\n(\nint\ni\n=\n0\n;\ni\n<\n256\n;\ni\n++\n)\n{\nif\n(\n!\nhist\n[\ni\n])\ncontinue\n;\ndouble\np\n=\n(\ndouble\n)\nhist\n[\ni\n]\n/\n(\ndouble\n)\nn\n;\nh\n-=\np\n*\nlog2\n(\np\n);\n}\nreturn\nh\n;\n}\n/* pick a color for an entropy value. */\nstatic\nconst\nchar\n*\nent_color\n(\ndouble\nh\n)\n{\nif\n(\nh\n>=\nENT_HIGH\n)\nreturn\nC_RED\n;\nif\n(\nh\n>=\nENT_ELEVATED\n)\nreturn\nC_YEL\n;\nreturn\nC_GRN\n;\n}\n/* one section row: name, size, entropy value + colored bar + verdict. */\nstatic\nvoid\nprint_section\n(\nconst\nchar\n*\nname\n,\nuint64_t\nsize\n,\ndouble\nh\n)\n{\nconst\nint\nW\n=\n32\n;\nint\nfill\n=\n(\nint\n)(\nh\n/\n8.0\n*\nW\n+\n0.5\n);\nconst\nchar\n*\ncol\n=\nent_color\n(\nh\n);\nprintf\n(\n\" \"\nC_CYN\n\"%-16.16s\"\nC_RST\n\" %10llu %s%5.3f\"\nC_RST\n\" %s\"\n,\nname\n,\n(\nunsigned\nlong\n)\nsize\n,\ncol\n,\nh\n,\ncol\n);\nfor\n(\nint\ni\n=\n0\n;\ni\n<\nW\n;\ni\n++\n)\nputchar\n(\ni\n<\nfill\n?\n'#'\n:\n' '\n);\nprintf\n(\nC_RST\n);\nif\n(\nh\n>=\nENT_HIGH\n)\nprintf\n(\n\" \"\nC_RED\nC_BLD\n\"packed/encrypted?\"\nC_RST\n);\nelse\nif\n(\nh\n>=\nENT_ELEVATED\n)\nprintf\n(\n\" \"\nC_YEL\n\"high\"\nC_RST\n);\nputchar\n(\n'\\n'\n);\n}\n/* running max entropy across sections, for the final verdict. */\nstatic\ndouble\ng_max_ent\n=\n0.0\n;\nstatic\nvoid\naccount\n(\ndouble\nh\n)\n{\nif\n(\nh\n>\ng_max_ent\n)\ng_max_ent\n=\nh\n;\n}\n/* ---- pe ---------------------------------------------------------------- */\nstatic\nint\nanalyze_pe\n(\nconst\nuint8_t\n*\nbuf\n,\nuint64_t\nfsize\n)\n{\nif\n(\nfsize\n<\n0x40\n)\nreturn\n1\n;\nuint32_t\ne_lfanew\n=\nrd32\n(\nbuf\n+\n0x3C\n);\nif\n((\nuint64_t\n)\ne_lfanew\n+\n24\n>\nfsize\n||\nmemcmp\n(\nbuf\n+\ne_lfanew\n,\n\"PE\n\\0\\0\n\"\n,\n4\n))\n{\nfprintf\n(\nstderr\n,\n\"meow: not a valid pe (bad NT signature)\n\\n\n\"\n);\nreturn\n1\n;\n}\nconst\nuint8_t\n*\ncoff\n=\nbuf\n+\ne_lfanew\n+\n4\n;\nuint16_t\nnsec\n=\nrd16\n(\ncoff\n+\n2\n);\nuint16_t\noptsz\n=\nrd16\n(\ncoff\n+\n16\n);\nconst\nuint8_t\n*\nsect\n=\ncoff\n+\n20\n+\noptsz\n;\n/* section table start */\nprintf\n(\nC_BLD\n\"PE\"\nC_RST\n\" image, %u section%s\n\\n\\n\n\"\n,\nnsec\n,\nnsec\n==\n1\n?\n\"\"\n:\n\"s\"\n);\nprintf\n(\n\" \"\nC_DIM\n\"%-16s %10s %5s %-32s\"\nC_RST\n\"\n\\n\n\"\n,\n\"name\"\n,\n\"raw size\"\n,\n\"H\"\n,\n\"entropy (bits/byte)\"\n);\nfor\n(\nuint16_t\ni\n=\n0\n;\ni\n<\nnsec\n;\ni\n++\n)\n{\nconst\nuint8_t\n*\nsh\n=\nsect\n+\n(\nuint64_t\n)\ni\n*\n40\n;\nif\n((\nuint64_t\n)(\nsh\n+\n40\n-\nbuf\n)\n>\nfsize\n)\nbreak\n;\nchar\nname\n[\n9\n];\nmemcpy\n(\nname\n,\nsh\n,\n8\n);\nname\n[\n8\n]\n=\n0\n;\nuint32_t\nrawsz\n=\nrd32\n(\nsh\n+\n16\n);\nuint32_t\nrawptr\n=\nrd32\n(\nsh\n+\n20\n);\ndouble\nh\n=\n0.0\n;\nif\n(\nrawsz\n&&\n(\nuint64_t\n)\nrawptr\n+\nrawsz\n<=\nfsize\n)\nh\n=\nentropy\n(\nbuf\n+\nrawptr\n,\nrawsz\n);\naccount\n(\nh\n);\nprint_section\n(\nname\n,\nrawsz\n,\nh\n);\n}\nreturn\n0\n;\n}\n/* ---- elf (64-bit little-endian) --------------------------------------- */\nstatic\nint\nanalyze_elf\n(\nconst\nuint8_t\n*\nbuf\n,\nuint64_t\nfsize\n)\n{\nif\n(\nbuf\n[\n4\n]\n!=\n2\n/* ELFCLASS64 */\n||\nbuf\n[\n5\n]\n!=\n1\n/* ELFDATA2LSB */\n)\n{\nfprintf\n(\nstderr\n,\n\"meow: only elf64 little-endian supported for now\n\\n\n\"\n);\nreturn\n1\n;\n}\nuint64_t\nshoff\n=\nrd64\n(\nbuf\n+\n0x28\n);\nuint16_t\nshentsize\n=\nrd16\n(\nbuf\n+\n0x3A\n);\nuint16_t\nshnum\n=\nrd16\n(\nbuf\n+\n0x3C\n);\nuint16_t\nshstrndx\n=\nrd16\n(\nbuf\n+\n0x3E\n);\nif\n(\nshoff\n+\n(\nuint64_t\n)\nshnum\n*\nshentsize\n>\nfsize\n)\n{\nfprintf\n(\nstderr\n,\n\"meow: elf section table out of range\n\\n\n\"\n);\nreturn\n1\n;\n}\n/* .shstrtab: string table holding section names. */\nconst\nuint8_t\n*\nstrsh\n=\nbuf\n+\nshoff\n+\n(\nuint64_t\n)\nshstrndx\n*\nshentsize\n;\nuint64_t\nstroff\n=\nrd64\n(\nstrsh\n+\n0x18\n);\nprintf\n(\nC_BLD\n\"ELF64\"\nC_RST\n\" image, %u section%s\n\\n\\n\n\"\n,\nshnum\n,\nshnum\n==\n1\n?\n\"\"\n:\n\"s\"\n);\nprintf\n(\n\" \"\nC_DIM\n\"%-16s %10s %5s %-32s\"\nC_RST\n\"\n\\n\n\"\n,\n\"name\"\n,\n\"size\"\n,\n\"H\"\n,\n\"entropy (bits/byte)\"\n);\nfor\n(\nuint16_t\ni\n=\n0\n;\ni\n<\nshnum\n;\ni\n++\n)\n{\nconst\nuint8_t\n*\nsh\n=\nbuf\n+\nshoff\n+\n(\nuint64_t\n)\ni\n*\nshentsize\n;\nuint32_t\nsh_name\n=\nrd32\n(\nsh\n+\n0\n);\nuint32_t\nsh_type\n=\nrd32\n(\nsh\n+\n4\n);\nuint64_t\nsh_off\n=\nrd64\n(\nsh\n+\n0x18\n);\nuint64_t\nsh_size\n=\nrd64\n(\nsh\n+\n0x20\n);\nif\n(\nsh_type\n==\n8\n/* SHT_NOBITS (.bss) */\n||\nsh_size\n==\n0\n)\ncontinue\n;\nconst\nchar\n*\nname\n=\n(\nconst\nchar\n*\n)(\nbuf\n+\nstroff\n+\nsh_name\n);\ndouble\nh\n=\n0.0\n;\nif\n(\nsh_off\n+\nsh_size\n<=\nfsize\n)\nh\n=\nentropy\n(\nbuf\n+\nsh_off\n,\nsh_size\n);\naccount\n(\nh\n);\nprint_section\n(\nname\n,\nsh_size\n,\nh\n);\n}\nreturn\n0\n;\n}\n/* slurp a whole file into a malloc'd buffer. */\nstatic\nuint8_t\n*\nread_file\n(\nconst\nchar\n*\npath\n,\nuint64_t\n*\nout\n)\n{\nFILE\n*\nf\n=\nfopen\n(\npath\n,\n\"rb\"\n);\nif\n(\n!\nf\n)\n{\nperror\n(\npath\n);\nreturn\nNULL\n;\n}\nfseek\n(\nf\n,\n0\n,\nSEEK_END\n);\nlong\nsz\n=\nftell\n(\nf\n);\nfseek\n(\nf\n,\n0\n,\nSEEK_SET\n);\nif\n(\nsz\n<=\n0\n)\n{\nfclose\n(\nf\n);\nfprintf\n(\nstderr\n,\n\"%s: empty\n\\n\n\"\n,\npath\n);\nreturn\nNULL\n;\n}\nuint8_t\n*\nbuf\n=\nmalloc\n((\nsize_t\n)\nsz\n);\nsize_t\ngot\n=\nbuf\n?\nfread\n(\nbuf\n,\n1\n,\n(\nsize_t\n)\nsz\n,\nf\n)\n:\n0\n;\nfclose\n(\nf\n);\nif\n(\n!\nbuf\n||\ngot\n!=\n(\nsize_t\n)\nsz\n)\n{\nfree\n(\nbuf\n);\nreturn\nNULL\n;\n}\n*\nout\n=\n(\nuint64_t\n)\nsz\n;\nreturn\nbuf\n;\n}\nint\nmain\n(\nint\nargc\n,\nchar\n**\nargv\n)\n{\nif\n(\nargc\n!=\n2\n)\n{\nfprintf\n(\nstderr\n,\n\"pe-kitten / meow (author: cocomelonc)\n\\n\n\"\n\"usage: %s <pe-or-elf-file>\n\\n\n\"\n,\nargv\n[\n0\n]);\nreturn\n2\n;\n}\nuint64_t\nfsize\n=\n0\n;\nuint8_t\n*\nbuf\n=\nread_file\n(\nargv\n[\n1\n],\n&\nfsize\n);\nif\n(\n!\nbuf\n)\nreturn\n1\n;\nprintf\n(\nC_BLD\n\"meow\"\nC_RST\n\" :: %s (%llu bytes)\n\\n\nwhole-file H = %s%.3f\"\nC_RST\n\" bits/byte\n\\n\\n\n\"\n,\nargv\n[\n1\n],\n(\nunsigned\nlong\n)\nfsize\n,\nent_color\n(\nentropy\n(\nbuf\n,\nfsize\n)),\nentropy\n(\nbuf\n,\nfsize\n));\nint\nrc\n;\nif\n(\nfsize\n>=\n2\n&&\nbuf\n[\n0\n]\n==\n'M'\n&&\nbuf\n[\n1\n]\n==\n'Z'\n)\nrc\n=\nanalyze_pe\n(\nbuf\n,\nfsize\n);\nelse\nif\n(\nfsize\n>=\n5\n&&\n!\nmemcmp\n(\nbuf\n,\n\"\n\\x7f\n\"\n\"ELF\"\n,\n4\n))\nrc\n=\nanalyze_elf\n(\nbuf\n,\nfsize\n);\nelse\n{\nfprintf\n(\nstderr\n,\n\"meow: unknown format (need MZ/pe or\n\\\\\nx7fELF)\n\\n\n\"\n);\nrc\n=\n1\n;\n}\nif\n(\nrc\n==\n0\n)\n{\nprintf\n(\n\"\n\\n\nverdict: max section H = %s%.3f\"\nC_RST\n\" -> %s\n\\n\n\"\n,\nent_color\n(\ng_max_ent\n),\ng_max_ent\n,\ng_max_ent\n>=\nENT_HIGH\n?\nC_RED\nC_BLD\n\"likely packed/encrypted\"\nC_RST\n\" (lyda & hamrock 2007 threshold ~7.0)\"\n:\nC_GRN\n\"no packed/encrypted section detected\"\nC_RST\n);\n}\nfree\n(\nbuf\n);\nreturn\nrc\n;\n}\ndemo\nFirst of all, for compilation we need any Linux box with a C compiler:\ngcc\n-O2\n-Wall\n-Wextra\n-std\n=\nc11\n-o\nmeow meow.c\n-lm\nThat is the entire toolchain.\n-lm\nis only there for\nlog2()\n. The same source builds with\nclang\nor with\nmingw\nif you want a Windows binary.\nLet’s point it at a known-good ELF first -\n/bin/ls\n:\n./meow /bin/ls\nEverything is green except\n.text\n, which sits around\n6.3\nand is tagged\nhigh\n- completely normal for dense compiled x86 code, and a good reminder that “elevated” is not the same as “malicious”. The verdict line reports the maximum section entropy and concludes no packed section was found.\nNow a real PE. I used one of the Ghostpack binaries lying around,\nRubeus.exe\n:\n./meow Rubeus.exe\nThree sections -\n.text\n,\n.rsrc\n,\n.reloc\n- all comfortably below the packed threshold. This is an ordinary (unpacked) .NET assembly, and\nmeow\nsays so.\ndemo 2\nTo see the red path we need something actually packed. No UPX on the box? We can fake a packer honestly in two commands: take a clean\nmingw\n-built\nhello.exe\n, find its\n.text\nfile offset with\nobjdump\n, and overwrite that section with random bytes - exactly what a crypter’s body looks like:\ncp\nhello.exe packed.exe\nread\nOFF SZ < <\n(\nobjdump\n-h\npacked.exe |\nawk\n'$2==\".text\"{print strtonum(\"0x\"$6), strtonum(\"0x\"$3)}'\n)\ndd\nif\n=\n/dev/urandom\nof\n=\npacked.exe\nbs\n=\n1\nseek\n=\n$OFF\ncount\n=\n$SZ\nconv\n=\nnotrunc\nstatus\n=\nnone\n./meow packed.exe\nThe clean\n.text\nmeasured\n5.744\n(green/\nhigh\n); after randomization the same section jumps to\n7.997\n, the bar goes full red, and the verdict flips to\nlikely packed/encrypted\n:\nThat is the entire detector - a histogram, one logarithm sum, and two thresholds from a 2007 paper.\nsummary\ncomponent\nwhat it does\nentropy()\n(12 lines)\nshannon \\(H\\) of a byte buffer,\n0..8\nbits/byte\nanalyze_pe()\nwalk DOS/NT headers -> section table by exact offsets\nanalyze_elf()\nwalk ELF64 section headers, names from\n.shstrtab\nprint_section()\ncolored ascii bar + green/yellow/red thresholds\nverdict\nmax section \\(H\\) vs the Lyda & Hamrock ~7.0 line\nA few honest limitations, because entropy is a blunt instrument. It flags\nunusual\nbytes, so legitimately compressed resources - icons, embedded installers, zipped payloads inside\n.rsrc\n- will also look “packed”. An attacker can also game the\naverage\nby padding a section with low-entropy filler around a small encrypted blob, which is why per-section and even sliding-window analysis beats a single file-level number. And entropy cannot tell\nencrypted\nfrom merely\ncompressed\n- both are near-uniform. As always, one signal is never a verdict: combine it with section context, the import table, and known-packer YARA rules.\nIn the next part we will fix the biggest of these gaps by adding a\nchi-square uniformity test\non top of entropy - it separates encrypted data (which passes a randomness test) from compressed data (which usually does not), still in pure C and still in one tiny file.\nI hope this post with practical examples is useful for malware researchers, reverse engineers and everyone interested in blue team skills like threat hunting.\nMalware analysis part 6: Shannon entropy\nMalware analysis part 10: Practical PE parsing\nMalware analysis part 11: mini-GPT for binary analysis\nC. E. Shannon - A Mathematical Theory of Communication (1948)\nR. Lyda, J. Hamrock - Using Entropy Analysis to Find Encrypted and Packed Malware (IEEE S&P, 2007)\nMicrosoft PE Format specification\nsource code in github\nThis is a practical case for educational purposes only.\nThanks for your time happy hacking and good bye!\nPS. All drawings and screenshots are mine",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://cocomelonc.github.io/malware/2026/09/23/malware-analysis-12.html",
+      "content_chars": 17432,
+      "content_sha256": "05f6d5fdaf329efc075fb1608b41f1dea1adc9676afd064103f4afc7076c1202",
+      "content_fetched_at": "2026-09-25T23:55:55.005267+00:00",
+      "author": "cocomelonc",
+      "author_name": "cocomelonc",
+      "author_url": "https://cocomelonc.github.io/",
+      "published_at": "2026-09-23T02:00:00+00:00",
+      "collected_at": "2026-09-25T23:54:59.553055+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cocomelonc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://cocomelonc.github.io/",
+        "https://cocomelonc.github.io/malware/2026/09/23/malware-analysis-12.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cocomelonc",
+          "url": "https://cocomelonc.github.io/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cocomelonc",
+          "name": "cocomelonc",
+          "home_url": "https://cocomelonc.github.io/"
+        },
+        "article": {
+          "title": "Malware analysis: part 12. Section entropy from scratch in pure C: a tiny packed/encrypted detector.",
+          "url": "https://cocomelonc.github.io/malware/2026/09/23/malware-analysis-12.html",
+          "content_sha256": "05f6d5fdaf329efc075fb1608b41f1dea1adc9676afd064103f4afc7076c1202"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    }
+  ]
 }
