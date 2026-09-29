@@ -344,6 +344,10 @@
   "denizhalil-blogs:a:3dc4265d2a40cddf": {
     "bundle_date": "2026-07-31"
   },
+  "denizhalil-blogs:a:40c3b54eee9b3796": {
+    "bundle_date": "2026-09-29",
+    "emitted_at": "2026-09-29T07:55:52.149597+00:00"
+  },
   "denizhalil-blogs:a:40ecebc586a283ae": {
     "bundle_date": "2026-08-11"
   },
@@ -1336,6 +1340,10 @@
   },
   "yage-share:a:6c614e32a1f78bbc": {
     "bundle_date": "2026-09-22"
+  },
+  "yage-share:a:6e1245a1d1020ea2": {
+    "bundle_date": "2026-09-29",
+    "emitted_at": "2026-09-29T07:55:52.149597+00:00"
   },
   "yage-share:a:6e317ee9b8381abd": {
     "bundle_date": "2026-08-09"
