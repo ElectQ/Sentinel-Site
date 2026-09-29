@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import os
+import time
 from typing import Any
 from urllib.parse import urlparse
 
@@ -78,7 +79,18 @@ def get(
     if timeout is not None:
         kw["timeout"] = timeout
     with client(**kw) as c:
-        return c.get(url, headers=headers)
+        for attempt in range(3):
+            try:
+                response = c.get(url, headers=headers)
+            except (httpx.TimeoutException, httpx.TransportError):
+                if attempt == 2:
+                    raise
+                time.sleep(1 << attempt)
+                continue
+            if response.status_code not in {429, 500, 502, 503, 504} or attempt == 2:
+                return response
+            time.sleep(1 << attempt)
+    raise RuntimeError("http_retry_exhausted")
 
 
 def probe(url: str, timeout: float = 8.0, *, ssl_verify: bool | None = None) -> tuple[str, int | None, str]:

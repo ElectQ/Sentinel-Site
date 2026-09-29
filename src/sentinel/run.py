@@ -18,6 +18,7 @@ def main() -> int:
     llm.reset_usage()
     sources = load_enabled()
     st = state_mod.load_sources()
+    st["emitted"] = state_mod.load_emitted()
     now = datetime.now(timezone.utc)
     now_iso = now.isoformat()
     bj = bundle_mod.beijing_date(now)
@@ -65,7 +66,6 @@ def main() -> int:
 
     # archive only emitted new articles (baseline updates state only)
     articles_mod.archive(emitted, when=now)
-    state_mod.save_sources(st)
 
     # For feed/bundle: use this run's emitted items (also re-readable from archive)
     day_articles = list(emitted)
@@ -96,6 +96,15 @@ def main() -> int:
     )
     print(f"bundle: {bpath} items={feed['item_count']} failed={len(failed)}")
     print(f"llm_usage: {llm.usage_snapshot()}")
+
+    for article in emitted:
+        key = f"{article['source_id']}:{article['external_id']}"
+        st["emitted"][key] = {
+            "bundle_date": bj,
+            "emitted_at": now_iso,
+        }
+    state_mod.save_sources(st)
+    state_mod.save_emitted(st["emitted"])
 
     articles_mod.shutdown()
 

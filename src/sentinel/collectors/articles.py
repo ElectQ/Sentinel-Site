@@ -43,6 +43,7 @@ def collect_one(
     now = collected_at or datetime.now(timezone.utc).isoformat()
     sst = _source_state(st, source.id)
     seen: dict[str, Any] = sst.setdefault("seen", {})
+    emitted = st.get("emitted", {})
     candidate_state: dict[str, Any] = sst.setdefault("candidates", {})
     candidates_were_initialized = bool(sst.get("candidates_initialized"))
     is_baseline = not bool(
@@ -294,6 +295,10 @@ def collect_one(
             if n["url"] not in seen
             and not bool((candidate_state.get(n["url"]) or {}).get("baseline"))
         ]
+    new_articles = [
+        n for n in new_articles
+        if f"{source.id}:{n['external_id']}" not in emitted
+    ]
     emit = [] if is_baseline else list(new_articles)
     if not is_baseline and emit:
         emit = maybe_probe_new(emit)

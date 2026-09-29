@@ -445,3 +445,20 @@ sources:
     collect_mode: rss
     tags: [blog, lab]
     enabled: true
+
+  - id: openai-research
+    name: OpenAI Research
+    home_url: https://openai.com/zh-Hans-CN/research/index/
+    collect_mode: browser_llm
+    tags: [research, vendor, ai]
+    enabled: true
+    browser_fallback: true
+    access_status: browser_required
+    notes: "Research index is protected from ordinary HTTP requests; use Playwright + LLM"
+
+  - id: anthropic-research
+    name: Anthropic Research
+    home_url: https://www.anthropic.com/research
+    collect_mode: html_llm
+    tags: [research, vendor, ai]
+    enabled: true
