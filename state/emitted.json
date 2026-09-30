@@ -5,6 +5,10 @@
   "aff-wg:a:7a4aed98a60c206a": {
     "bundle_date": "2026-07-17"
   },
+  "anthropic-research:a:80e4ef842b12917f": {
+    "bundle_date": "2026-09-30",
+    "emitted_at": "2026-09-30T00:16:27.541665+00:00"
+  },
   "bhis-blog:a:24cc5af97d38ae6e": {
     "bundle_date": "2026-08-20"
   },
@@ -299,6 +303,10 @@
   "cymulate-blog:a:67a256105e343caa": {
     "bundle_date": "2026-08-12"
   },
+  "cymulate-blog:a:726033a757489fcb": {
+    "bundle_date": "2026-09-30",
+    "emitted_at": "2026-09-30T00:16:27.541665+00:00"
+  },
   "cymulate-blog:a:78f67c7e4e475fe6": {
     "bundle_date": "2026-08-21"
   },
@@ -549,6 +557,22 @@
   "mixbytes-blog:a:ff6812c111ba9f07": {
     "bundle_date": "2026-08-20"
   },
+  "openai-research:a:05f718f91005aa4d": {
+    "bundle_date": "2026-09-30",
+    "emitted_at": "2026-09-30T00:16:27.541665+00:00"
+  },
+  "openai-research:a:6cee14e882426586": {
+    "bundle_date": "2026-09-30",
+    "emitted_at": "2026-09-30T00:16:27.541665+00:00"
+  },
+  "openai-research:a:787fde03d4dfa447": {
+    "bundle_date": "2026-09-30",
+    "emitted_at": "2026-09-30T00:16:27.541665+00:00"
+  },
+  "openai-research:a:8ff0437b1e3b01f7": {
+    "bundle_date": "2026-09-30",
+    "emitted_at": "2026-09-30T00:16:27.541665+00:00"
+  },
   "outflank-blog:a:11b1d8e5d05c6d8b": {
     "bundle_date": "2026-09-03"
   },
@@ -717,6 +741,10 @@
   "sandflysecurity-blog:a:145386d3d57010db": {
     "bundle_date": "2026-09-29"
   },
+  "sandflysecurity-blog:a:180da5a8deb045af": {
+    "bundle_date": "2026-09-30",
+    "emitted_at": "2026-09-30T00:16:27.541665+00:00"
+  },
   "sandflysecurity-blog:a:1cd7a514344162ce": {
     "bundle_date": "2026-07-16"
   },
@@ -740,6 +768,10 @@
   },
   "sandflysecurity-blog:a:e11836c3610d57b6": {
     "bundle_date": "2026-09-29"
+  },
+  "sandflysecurity-blog:a:e23a49faa4887d9a": {
+    "bundle_date": "2026-09-30",
+    "emitted_at": "2026-09-30T00:16:27.541665+00:00"
   },
   "sandflysecurity-blog:a:e46fd545e3d09097": {
     "bundle_date": "2026-07-15"
@@ -809,6 +841,10 @@
   },
   "unknowncheats-ac:a:29f7df7da07e7189": {
     "bundle_date": "2026-08-13"
+  },
+  "unknowncheats-ac:a:2d23b3edbe4902b8": {
+    "bundle_date": "2026-09-30",
+    "emitted_at": "2026-09-30T00:16:27.541665+00:00"
   },
   "unknowncheats-ac:a:38e7abfd710f8007": {
     "bundle_date": "2026-09-11"
@@ -963,6 +999,10 @@
   "unknowncheats-ac:a:bb1b8280f5a4cefe": {
     "bundle_date": "2026-08-09"
   },
+  "unknowncheats-ac:a:bd5b469d26717bc3": {
+    "bundle_date": "2026-09-30",
+    "emitted_at": "2026-09-30T00:16:27.541665+00:00"
+  },
   "unknowncheats-ac:a:bec4b75109f94d48": {
     "bundle_date": "2026-07-21"
   },
@@ -1049,6 +1089,10 @@
   },
   "watchtowr-labs:a:1572cfbc8e686593": {
     "bundle_date": "2026-09-24"
+  },
+  "watchtowr-labs:a:9500df075a9b45c2": {
+    "bundle_date": "2026-09-30",
+    "emitted_at": "2026-09-30T00:16:27.541665+00:00"
   },
   "watchtowr-labs:a:c030311d199a5803": {
     "bundle_date": "2026-08-15"
@@ -1217,6 +1261,10 @@
   },
   "yage-share:a:3c4ae00bad95f300": {
     "bundle_date": "2026-08-15"
+  },
+  "yage-share:a:3c81dd891da55543": {
+    "bundle_date": "2026-09-30",
+    "emitted_at": "2026-09-30T00:16:27.541665+00:00"
   },
   "yage-share:a:421b3b8dafc3ffc1": {
     "bundle_date": "2026-09-21"
@@ -1656,6 +1704,10 @@
   },
   "yage-share:a:fe9bc180355b9657": {
     "bundle_date": "2026-09-15"
+  },
+  "yage-share:a:fefdaeb037a130c8": {
+    "bundle_date": "2026-09-30",
+    "emitted_at": "2026-09-30T00:16:27.541665+00:00"
   },
   "yage-share:a:ff423a1c61a46955": {
     "bundle_date": "2026-07-20"
