@@ -9,6 +9,10 @@
     "bundle_date": "2026-09-30",
     "emitted_at": "2026-09-30T00:16:27.541665+00:00"
   },
+  "anthropic-research:a:fb6067b5bbd7a750": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
   "bhis-blog:a:24cc5af97d38ae6e": {
     "bundle_date": "2026-08-20"
   },
@@ -17,6 +21,10 @@
   },
   "bhis-blog:a:6c2ef70950702024": {
     "bundle_date": "2026-09-17"
+  },
+  "bhis-blog:a:7f9ce995660cfc91": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
   "bhis-blog:a:9a8cea9ba6dfc2af": {
     "bundle_date": "2026-09-24"
@@ -86,6 +94,10 @@
   },
   "cisco-advisory:a:1fd77c67340c929c": {
     "bundle_date": "2026-09-17"
+  },
+  "cisco-advisory:a:21a70b25348e1428": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
   "cisco-advisory:a:264f04af52cfcbe4": {
     "bundle_date": "2026-08-27"
@@ -161,6 +173,10 @@
   },
   "cisco-advisory:a:7069cf88629fe4bb": {
     "bundle_date": "2026-09-17"
+  },
+  "cisco-advisory:a:728430d5bf4cb765": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
   "cisco-advisory:a:76d6f788a2d7591f": {
     "bundle_date": "2026-08-06"
@@ -513,16 +529,56 @@
     "bundle_date": "2026-07-20"
   },
   "ibm-xforce:a:0ea2e71763c11538": {
-    "bundle_date": "2026-08-21"
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
   "ibm-xforce:a:34148c90fb94f389": {
-    "bundle_date": "2026-09-03"
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
   "ibm-xforce:a:3a994f7c1d91bbd7": {
-    "bundle_date": "2026-07-30"
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
+  "ibm-xforce:a:4abeb4fceb228786": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
+  "ibm-xforce:a:4bab9e85aa8bf99a": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
   "ibm-xforce:a:597ab752ca2df867": {
-    "bundle_date": "2026-07-30"
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
+  "ibm-xforce:a:63540e915e0b6408": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
+  "ibm-xforce:a:734c1cff8e96c24d": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
+  "ibm-xforce:a:795607e55402b17a": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
+  "ibm-xforce:a:81da2a86f5e581e6": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
+  "ibm-xforce:a:9ffed670b0a4f6ee": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
+  "ibm-xforce:a:b2f1aa6fc2e7c20e": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
+  "ibm-xforce:a:d814edff3834e1c9": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
   "idov31-posts:a:1a3c239953d250ba": {
     "bundle_date": "2026-08-12"
@@ -572,6 +628,10 @@
   "openai-research:a:8ff0437b1e3b01f7": {
     "bundle_date": "2026-09-30",
     "emitted_at": "2026-09-30T00:16:27.541665+00:00"
+  },
+  "outflank-blog:a:0b325184cbb44a09": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
   "outflank-blog:a:11b1d8e5d05c6d8b": {
     "bundle_date": "2026-09-03"
@@ -879,6 +939,10 @@
   "unknowncheats-ac:a:57218a28105153ae": {
     "bundle_date": "2026-09-26"
   },
+  "unknowncheats-ac:a:575a83df5252b49c": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
   "unknowncheats-ac:a:58507f1f2734e537": {
     "bundle_date": "2026-09-15"
   },
@@ -1018,6 +1082,10 @@
   "unknowncheats-ac:a:d15df2290a330108": {
     "bundle_date": "2026-08-01"
   },
+  "unknowncheats-ac:a:d316f9eea74768f4": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
   "unknowncheats-ac:a:d3f518f745847a97": {
     "bundle_date": "2026-09-25"
   },
@@ -1069,6 +1137,10 @@
   "unknowncheats-ac:a:f291a3ebb3ff3311": {
     "bundle_date": "2026-08-24"
   },
+  "unknowncheats-ac:a:f3a1a60d4a95a358": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
   "unknowncheats-ac:a:f470a42764512efe": {
     "bundle_date": "2026-09-22"
   },
@@ -1099,6 +1171,10 @@
   },
   "watchtowr-labs:a:cb8ce7babd6edd26": {
     "bundle_date": "2026-09-29"
+  },
+  "whiteknightlabs-blog:a:3faf0c82f2ec22aa": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
   "whiteknightlabs-blog:a:d80ee1271ae64ae4": {
     "bundle_date": "2026-08-18"
@@ -1627,6 +1703,10 @@
   "yage-share:a:d3efec6be570d152": {
     "bundle_date": "2026-07-16"
   },
+  "yage-share:a:d470653879f43e77": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
   "yage-share:a:d5735b7a286f2fa8": {
     "bundle_date": "2026-08-16"
   },
@@ -1641,6 +1721,10 @@
   },
   "yage-share:a:ddbf3f77af80d291": {
     "bundle_date": "2026-07-28"
+  },
+  "yage-share:a:de8d042c4392b723": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
   "yage-share:a:decd0af00a797567": {
     "bundle_date": "2026-08-08"
@@ -2564,6 +2648,10 @@
   "zdi-advisories:a:cb1a2ca416ae4cf5": {
     "bundle_date": "2026-07-30"
   },
+  "zdi-advisories:a:ccef9c76d056a734": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
   "zdi-advisories:a:d0b7c4791f1e4c47": {
     "bundle_date": "2026-07-30"
   },
@@ -2584,6 +2672,10 @@
   },
   "zdi-advisories:a:d3b72168b1ba67a0": {
     "bundle_date": "2026-09-09"
+  },
+  "zdi-advisories:a:d3cb8ac04ae3cdaa": {
+    "bundle_date": "2026-10-01",
+    "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
   "zdi-advisories:a:d426fe7fd38c4449": {
     "bundle_date": "2026-09-11"
