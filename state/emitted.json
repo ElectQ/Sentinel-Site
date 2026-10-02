@@ -5,6 +5,10 @@
   "aff-wg:a:7a4aed98a60c206a": {
     "bundle_date": "2026-07-17"
   },
+  "anthropic-research:a:1eadfb1cd5ee2dc4": {
+    "bundle_date": "2026-10-02",
+    "emitted_at": "2026-10-02T00:37:52.602014+00:00"
+  },
   "anthropic-research:a:80e4ef842b12917f": {
     "bundle_date": "2026-09-30",
     "emitted_at": "2026-09-30T00:16:27.541665+00:00"
@@ -313,6 +317,10 @@
   "cymulate-blog:a:34b02ddbfc58595b": {
     "bundle_date": "2026-07-31"
   },
+  "cymulate-blog:a:527314d0284cc4a4": {
+    "bundle_date": "2026-10-02",
+    "emitted_at": "2026-10-02T00:37:52.602014+00:00"
+  },
   "cymulate-blog:a:57462b97167d4838": {
     "bundle_date": "2026-09-11"
   },
@@ -358,6 +366,10 @@
   },
   "denizhalil-blogs:a:1c8626e3b55aafaa": {
     "bundle_date": "2026-08-19"
+  },
+  "denizhalil-blogs:a:30ee2b18b5f5a060": {
+    "bundle_date": "2026-10-02",
+    "emitted_at": "2026-10-02T00:37:52.602014+00:00"
   },
   "denizhalil-blogs:a:3d288de51634d1e1": {
     "bundle_date": "2026-08-14"
@@ -500,6 +512,10 @@
   },
   "forti-ir:a:e7a30c73f5950f7d": {
     "bundle_date": "2026-09-09"
+  },
+  "forti-ir:a:ef6806b661d2f483": {
+    "bundle_date": "2026-10-02",
+    "emitted_at": "2026-10-02T00:37:52.602014+00:00"
   },
   "forti-ir:a:f560a583b5d9e8c7": {
     "bundle_date": "2026-09-09"
@@ -725,6 +741,10 @@
   },
   "redsiege-blog:a:5e16c620e5ac8ffe": {
     "bundle_date": "2026-08-14"
+  },
+  "redsiege-blog:a:902134a052785816": {
+    "bundle_date": "2026-10-02",
+    "emitted_at": "2026-10-02T00:37:52.602014+00:00"
   },
   "redsiege-blog:a:a902d8067ec85054": {
     "bundle_date": "2026-09-04"
@@ -1027,6 +1047,10 @@
   "unknowncheats-ac:a:9d59381c8bce36d8": {
     "bundle_date": "2026-08-30"
   },
+  "unknowncheats-ac:a:9ed4b8aa155373f0": {
+    "bundle_date": "2026-10-02",
+    "emitted_at": "2026-10-02T00:37:52.602014+00:00"
+  },
   "unknowncheats-ac:a:9f787da89709b422": {
     "bundle_date": "2026-07-15"
   },
@@ -1072,6 +1096,10 @@
   },
   "unknowncheats-ac:a:bffdf197aff89dc5": {
     "bundle_date": "2026-08-04"
+  },
+  "unknowncheats-ac:a:c61ae532f3c06ab7": {
+    "bundle_date": "2026-10-02",
+    "emitted_at": "2026-10-02T00:37:52.602014+00:00"
   },
   "unknowncheats-ac:a:c6dd3dbdb1270f02": {
     "bundle_date": "2026-09-27"
@@ -1314,6 +1342,10 @@
   "yage-share:a:30e2b85c6d94be96": {
     "bundle_date": "2026-08-20"
   },
+  "yage-share:a:33c60e6644e868ff": {
+    "bundle_date": "2026-10-02",
+    "emitted_at": "2026-10-02T00:37:52.602014+00:00"
+  },
   "yage-share:a:35bfc39588c9e0dd": {
     "bundle_date": "2026-08-12"
   },
@@ -1407,6 +1439,10 @@
   },
   "yage-share:a:5be18113548a39fc": {
     "bundle_date": "2026-08-16"
+  },
+  "yage-share:a:5cb08317a6b84358": {
+    "bundle_date": "2026-10-02",
+    "emitted_at": "2026-10-02T00:37:52.602014+00:00"
   },
   "yage-share:a:5d9c9f2b072263f3": {
     "bundle_date": "2026-07-25"
@@ -2578,6 +2614,10 @@
   },
   "zdi-advisories:a:bdad056d4738658b": {
     "bundle_date": "2026-09-11"
+  },
+  "zdi-advisories:a:bf9aab407e24e11a": {
+    "bundle_date": "2026-10-02",
+    "emitted_at": "2026-10-02T00:37:52.602014+00:00"
   },
   "zdi-advisories:a:c03fc3ae5dd335d5": {
     "bundle_date": "2026-08-13"
