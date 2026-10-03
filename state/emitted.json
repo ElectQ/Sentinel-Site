@@ -272,6 +272,10 @@
   "cisco-advisory:a:f8b6fca76cb3288e": {
     "bundle_date": "2026-09-17"
   },
+  "cocomelonc:a:030e841ed15c27af": {
+    "bundle_date": "2026-10-03",
+    "emitted_at": "2026-10-03T00:20:07.925518+00:00"
+  },
   "cocomelonc:a:1f023579f72aa636": {
     "bundle_date": "2026-09-03"
   },
@@ -742,6 +746,10 @@
   "redsiege-blog:a:5e16c620e5ac8ffe": {
     "bundle_date": "2026-08-14"
   },
+  "redsiege-blog:a:6ebbec3400980b19": {
+    "bundle_date": "2026-10-03",
+    "emitted_at": "2026-10-03T00:20:07.925518+00:00"
+  },
   "redsiege-blog:a:902134a052785816": {
     "bundle_date": "2026-10-02",
     "emitted_at": "2026-10-02T00:37:52.602014+00:00"
@@ -836,6 +844,10 @@
   },
   "sandflysecurity-blog:a:5ec233d8a5f8a8b8": {
     "bundle_date": "2026-09-29"
+  },
+  "sandflysecurity-blog:a:750a246a7b6af590": {
+    "bundle_date": "2026-10-03",
+    "emitted_at": "2026-10-03T00:20:07.925518+00:00"
   },
   "sandflysecurity-blog:a:7f67095b988ddd2c": {
     "bundle_date": "2026-07-25"
@@ -1419,6 +1431,10 @@
   "yage-share:a:4ebbb1d8f81bebf7": {
     "bundle_date": "2026-09-29"
   },
+  "yage-share:a:4ed8e9a378b3fe0f": {
+    "bundle_date": "2026-10-03",
+    "emitted_at": "2026-10-03T00:20:07.925518+00:00"
+  },
   "yage-share:a:50c937e7f3f64d97": {
     "bundle_date": "2026-08-23"
   },
@@ -1800,6 +1816,10 @@
   },
   "yage-share:a:ed51b6fdf9780d9c": {
     "bundle_date": "2026-08-14"
+  },
+  "yage-share:a:ee99effb46d4a55a": {
+    "bundle_date": "2026-10-03",
+    "emitted_at": "2026-10-03T00:20:07.925518+00:00"
   },
   "yage-share:a:efc541cda7af8249": {
     "bundle_date": "2026-09-20"
