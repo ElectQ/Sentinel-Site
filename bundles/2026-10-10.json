@@ -1,164 +1,20 @@
 {
   "schema_version": 1,
-  "date": "2026-10-10",
-  "generated_at": "2026-10-10T00:41:52.258037+00:00",
-  "item_count": 6,
-  "kinds_included": [
-    "publish"
-  ],
-  "items": [
-    {
-      "id": "a:362faae203d577e2",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4825508.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-10-10T00:39:58.428209+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4825508.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4825508.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "Please enable cookies.\nSorry, you have been blocked\nYou are unable to access\nunknowncheats.me\nWhy have I been blocked?\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\nWhat can I do to resolve this?\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\nCloudflare Ray ID:\na48192efaabdf60b\n•\nYour IP:\nClick to reveal\n132.196.62.181\n•\nPerformance & security by\nCloudflare",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "browser",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4825508.html",
-      "content_chars": 727,
-      "content_sha256": "63d45bb7a45a6fe44467ee30a09c2b067d8defbb09b838960bece1752069a2f4",
-      "content_fetched_at": "2026-10-10T00:40:33.074964+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:bd555d0b4cb6d7e2",
-      "kind": "publish",
-      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/775105-help-dev-cheats-post4825162.html",
-      "actor": "unknowncheats-ac",
-      "actor_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
-      "created_at": "2026-10-10T00:39:58.428209+00:00",
-      "html_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/775105-help-dev-cheats-post4825162.html",
-      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/775105-help-dev-cheats-post4825162.html",
-      "via": "browser_llm",
-      "collect_mode": "browser_llm",
-      "content": "Please enable cookies.\nSorry, you have been blocked\nYou are unable to access\nunknowncheats.me\nWhy have I been blocked?\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\nWhat can I do to resolve this?\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\nCloudflare Ray ID:\na48193074836f60b\n•\nYour IP:\nClick to reveal\n132.196.62.181\n•\nPerformance & security by\nCloudflare",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "browser",
-      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/775105-help-dev-cheats-post4825162.html",
-      "content_chars": 727,
-      "content_sha256": "ed44b26c3240112a60977e0886122ae259b76acc98a88d5250116405e5e88d37",
-      "content_fetched_at": "2026-10-10T00:40:36.476950+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "UnknownCheats Anti-Cheat",
-      "fetch_status": "blocked",
-      "url_corrected": false
-    },
-    {
-      "id": "a:a842dc410cb55f4f",
-      "kind": "publish",
-      "text": "anthropic-research published: Oct 9, 2026AlignmentInvestigating unintended model actions in our evaluations and internal use",
-      "actor": "anthropic-research",
-      "actor_url": "https://www.anthropic.com/research",
-      "created_at": "2026-10-10T00:39:58.428209+00:00",
-      "html_url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
-      "title": "Oct 9, 2026AlignmentInvestigating unintended model actions in our evaluations and internal use",
-      "via": "llm",
-      "collect_mode": "html_llm",
-      "content": "Alignment\nInvestigating unintended model actions in our evaluations and internal use\nOct 9, 2026\nThis report describes examples of unintended model actions we’ve observed during evaluations and internal use of Claude. It is part of our effort to publish more frequent standalone reports on model behavior and alignment beyond our system cards, which we publish with each model release, and our risk reports, which we publish every three to six months as part of our Responsible Scaling Policy. We believe it’s important to be transparent about what we see our models do during testing and use.\nThe behaviors can be grouped into four categories:\nClaude exploiting a basic flaw in software to run commands on a server;\nClaude submitting a sensitive form on a real website when it should not have;\nClaude working around a restriction to reach data that was gated by a token or a fee; and\nClaude using URL shortening services to get around limits in its fetch tool.\nWe have chosen not to name the organizations involved in the examples below to avoid exposing vulnerabilities in their systems, and at their request. For this reason, we also provide less detail about each case than we otherwise would. Some of the cases described below involved websites run by U.S. government agencies at the federal, state, and local levels. We have briefed the White House on these cases and notified each agency involved.\nThe cases we’ve identified to date in these categories had minimal real-world impact. We consider these behaviors to be significantly less severe from an alignment and security perspective than the cybersecurity incidents we reported on\nJuly 30\nand\nSeptember 9\n. They resemble behaviors that we’ve described in our system cards since\nClaude Mythos Preview\n. Most are forms of\npersistence\n, in which Claude, when it cannot complete a task as given, works around a restriction instead of stopping.\nAlthough the impact of these behaviors was minimal and we had already turned off live internet access for some high-risk and cybersecurity evaluations, we have now decided to expand that to include all our internal evaluations until we have confirmed that our security and monitoring measures (described in the remediation section of this post) reliably catch behaviors like these. Below, we also discuss alignment considerations and give more detail on how we’re modifying training to reduce the likelihood of further misbehavior.\nWe identified most of these cases through a review of transcripts that we began in July. Our review first focused on our cybersecurity evaluations—tests where a model is deliberately asked to probe or attack a test system, and where internet access is meant to be disabled. We have since extended our scanning to encompass a much wider range of instances where Claude could have reached the internet, including tests where internet access is deliberately enabled so Claude can be evaluated on real-world tasks. We began by looking for incidents of similar severity to the cybersecurity incidents we reported this summer; we have not found any to date. We then broadened the search to lower-severity cases, where a model interacted with real websites or systems in ways we didn’t intend.\nWe are also now scanning a much larger pool of lower-risk transcripts, as well as our use of Claude within Anthropic and in reinforcement learning (RL) environments where Claude has access to the internet. As this work continues, we plan to report new instances of unintended behaviors. All cases reported here involved Claude interacting with the outside world; to our knowledge, none of them involved customer data or Anthropic’s own internal systems.\nIn this post, we explain why we run evaluations, which are where most of these cases occurred; describe each behavior in more detail; and offer a preliminary view of what the behaviors suggest about Claude’s alignment and how we’re mitigating them.\nWhy and how we run evaluations\nThe behaviors described in this post are not specific to evaluations, but many of the cases we’ve identified to date occurred during evaluation runs. We continually test models on a wide range of tasks prior to releasing them. We use many different evaluations (standardized sets of tasks, scored the same way each time), each of which helps to paint a picture of Claude’s skills in a particular area. Many of the evaluations we use are public; they are written by outside researchers and can be run by any developer, allowing us to compare capabilities across models. Other evaluations we build in-house.\nBecause language models are non-deterministic—that is, their responses always involve some element of randomness, and they may carry out the same task slightly differently each time—we have Claude complete each evaluation task hundreds or thousands of times (each attempt is called a run). Testing so many times allows us to understand how a model typically performs, and also to catch rare cases where a model does something we don’t expect. What we learn from evaluations shapes decisions across Anthropic, including how we train models, what safeguards we build around them, and when we release them.\nEvaluations are also where a model’s behavioral issues are sometimes first revealed. Models learn much of what they can do through RL, in which they attempt a task within a specific environment many times over and are rewarded when they succeed. However, training environments are imperfect. If training rewards something we didn’t intend—such as finding loopholes or working around a restriction—the model learns that the workaround pays off and may then apply it elsewhere. This is known as reward hacking. While we have processes in place to identify and filter out reward hacking during training, evaluations are a critical mechanism for understanding a model’s behavioral propensities in different contexts and on different sets of tasks than those we have in training.\nSome tasks—such as searching the web for hard-to-find information—are difficult to realistically simulate in an environment without internet access. Running them with access has been standard practice within the industry: public web search benchmarks are run on the live internet by default, and running them the same way allows us to compare our models with other models. Most of the cases in this report occurred during such evaluations.\nOverview of behaviors\nBelow, we describe four categories of behavior in which Claude acted on real websites and systems in ways we did not intend, each of which involved an organization or person outside Anthropic.\nExploiting a basic flaw in software to run commands on a server\nWhen Claude could not complete an evaluation task directly, either because its own tools were deliberately limited or because an outside service it needed was unavailable, it used other tools hosted on a third party’s site to achieve its goal. In some circumstances, it did this by exploiting basic flaws in that site’s software, using SQL or command injection (a way of sending input that the site mistakenly runs as instructions).\nFor example, one evaluation asked Claude Mythos Preview to run a scientific analysis. The public tool it needed to perform that analysis was hosted by a university; when the model sought to access to it, the tool returned an error. Looking for another way to complete the task, Claude explored the tool’s website, found a script on the university’s server that would return any file it was asked for, and used it to copy files from the server, including the script’s own code. In that code Claude found the injection flaw that let it run commands on the server, and used it to run the calculation.\nIn another instance, the data Claude Mythos 5 needed was free, but Claude could not access it without accepting a data use agreement, which it did not have the tools to do. Claude used applications hosted on the website to load the page and accept the agreement on its behalf.\nWe saw this behavior on DeepSearchQA and BrowseComp (both public web research evaluations), on LABBench2 (a public biology research benchmark), and during internal evaluations.\nSubmitting a form it should not have\nWe saw instances where Claude submitted an online form when it shouldn’t have. Generally, this occurred when an evaluation’s instructions were ambiguous, or when a misconfiguration within the environment prevented Claude from working with dummy forms.\nFor example, in a case which happened multiple times on the same evaluation, an unreleased, non-frontier research model was meant to fill out a practice copy of a government form. When the copy failed to load or the model closed it by mistake, the model instead navigated to the website where the real form is normally hosted and submitted the form there.\nIn another evaluation, Claude Haiku 4.5 was instructed to complete a form up until the final submission stage, but to stop before actually submitting. Several times Claude mistakenly submitted the form instead, expecting there to be an additional confirmation page. In these instances, the model’s chain-of-thought stated that it was demonstrating the process, not submitting a real request.\nIn a third example of this behavior, Claude Haiku 4.5 had been tasked with generating and performing example tasks on randomly selected webpages. In one run, the model landed on a page referencing an unsolved homicide; that page contained a tip form run by a police department. Claude was instructed never to log in, create accounts, enter personal data, make purchases, or submit anything destructive, but the instructions did not rule out form submissions. Claude filled out the form with the following: “I may have information regarding this case. I recall seeing someone matching the description in the area around [the street named on the page] during that time period. Please contact me if this information is relevant.” (The website did not include a description of the perpetrator.) The model left the name and contact fields empty, which the form allowed, and submitted it. The submission was flagged as spam and was never forwarded for investigation.\nWe saw this behavior on OSWorld (a public computer use evaluation), on Odysseys (a long-horizon task evaluation), and during internal usage.\nWorking around restrictions to reach gated data\nClaude sometimes worked around a restriction to reach data to which it did not have access. Generally, this occurred when a server refused Claude’s request, or when the data was offered only for a fee.\nFor example, in an evaluation that asked Claude Mythos 5 to identify a location shown in a photo, it attempted to access a local government’s property map to triangulate its guesses. Claude could read webpage text, but the evaluation limited its ability to click through them as a person would. Instead, it read the settings file the site sends to browsers, found working access tokens, and used them to send requests directly to the server behind the map to access the data.\nIn another example of this behavior, an Anthropic researcher used Claude Mythos 5 on a statistics project that required it to pull public data that was available from a state agency for a fee. Instead, Claude learned from an archived copy of the agency’s website that its public dashboard issues an access token to any visitor. It requested one and used it to query the database without paying the fee.\nIn both examples, Claude obtained data already available to the public but only for a fee.\nWe saw this behavior on Humanity’s Last Exam, an evaluation of expert-level academic questions, and during internal usage.\nUsing URL shortening services\nSome of our fetch tools, which let Claude read webpages, limit the length of the URLs Claude can request. This is to prevent Claude from using long URLs to take certain unwanted actions, such as SQL or command injections (part of a URL is text passed to a site’s server, and a long one has room to carry such instructions). We saw several models, including Claude Opus 5 and Claude Mythos 5, get around this limitation by using free URL shortening services. We first identified this behavior internally, but as we were writing this post, an operator of the da.gd URL shortening service let us know that they had also found Claude using their website for this purpose. We thank the operator for sharing these details.\nRemediation\nWe’ve taken several preventive measures. Some of the public evaluations we no longer run; others we have moved to their offline versions, or rebuilt them so that their tasks do not reach live websites. We’ve also made broader changes. We have updated the guardrails on some of our internet access tools, such as the web fetch tool, to heavily restrict what the model can do with them. And, as part of our ongoing\nagent security and monitoring efforts\n, we have built tooling to automatically detect and block the kinds of behaviors described above. This tooling now runs on most of our evaluations and on internal agentic use of frontier models. When we tested it against the cases described in this post, it blocked all of them.\nAs we described in our August 31\npost\n, we are also continuing to fix or remove training environments that reward Claude for working around tool restrictions or other blockers, so that they do not incentivize these behaviors or permit reward hacking.\nWe’re also taking other steps to prevent unintended agentic actions within Anthropic, and to catch them if they occur. These include migrating internal agents to centrally managed infrastructure with strong containment, minimizing internet access for internal agents and training processes, and monitoring far more of what agents do through techniques like\nsafety classifiers\nand\nhierarchical summarization\n. These measures are now part of our security team’s detection and response procedures so that we can respond to and contain undesired behavior quickly. We expect to publish more on these approaches, and to build them directly into our products.\nDiscussion and alignment takeaways\nWhile we have not completed a full alignment assessment of these cases, we consider them to be less severe than the cybersecurity incidents from this summer. We explain why below, and share the general lessons we’ve drawn from them.\nAlignment context\nAs we establish a regular public reporting process for behaviors like these, we also want to situate them in terms of their severity. This remains challenging: judging the extent of an alignment failure often depends on what the model was trying to do, and a model’s own account of its reasoning is not necessarily reliable evidence of its beliefs or reasons for action, as we discussed in our September 9\nalignment assessment\n. As models grow more capable, they can interact with the world in more sophisticated ways, which makes more complex failures possible. For example, the biased reasoning we described in that assessment was not new, but it led to more serious consequences in a setting where models could capably act on real systems for hours at a time. An alignment severity framework built around today’s failures could become outdated quickly, given how fast AI capabilities are advancing.\nNonetheless, we found two alignment dimensions useful for examining the cases in this post: overreach, or how far the model went beyond what its task intended, and dishonesty, or whether it gave a misleading account of its actions or intentions. On overreach, we consider these cases to be substantially less concerning than the incidents we reported this summer, in which Claude gained access to real third-party systems for hours during cybersecurity evaluations. In the cases we report here, in contrast, Claude bypassed access controls to reach gated but publicly available data, or exploited software flaws and ran commands on servers (mainly to reach non-sensitive data).\nOn dishonesty, the comparison is more mixed. In one case, tasked with generating example interactions with websites, Claude submitted an invented tip through a police department’s online form. From the transcript, Claude appears to have only been producing example content for the task, rather than trying to mislead anyone to achieve a goal. In the most serious\nincident from this summer,\nby contrast, Claude’s misleading reasoning was sustained over hours and supported its continued attack. Still, judging dishonesty with confidence typically requires a deeper assessment than we have done here, such as replaying transcripts with modifications to test what drove the model’s behavior, so our view of these cases may change with further analysis.\nLessons and next steps\nNone of the behaviors we’ve described here are new and they do not change our overall view of Claude’s alignment. In many of the cases where we observed these behaviors, Claude had been given tasks that were ambiguous or impossible to complete. We and others have observed that when models are given impossible-to-complete tasks, they will pursue unintended and sometimes misaligned strategies to achieve their goals.\nIt is possible that some of these failures could have been avoided if the evaluation questions had more clearly stated what was in and out of scope for the exercise, including the targets, permitted actions, and network boundaries (i.e., what the model should and shouldn’t access). However, Claude encounters ambiguous and impossible tasks every day in real use, and, indeed, several of the cases we observed occurred during regular agentic use of Claude.\nBehavioral and alignment training is the main technique we have at our disposal to improve Claude’s judgment and ability to handle ambiguous situations with care. Historically, we have been more focused on teaching models to respect boundaries and be appropriately cautious in coding environments. We are now expanding these environments to applications like search and computer use, which were involved in the cases described here. However, alignment training is not yet sufficient or fully robust on its own, at least in the short term, so we also rely on defense-in-depth approaches, including the classifiers and safeguards described above.\nWe plan to keep reporting concerning behaviors as our scan and analysis continue. We hope these reports help other developers check for similar behaviors in their own models, since many of the evaluations involved are public and widely used. While these cases had minimal impact, we do not want to diminish the findings, because the same behaviors could do far more harm as models become more powerful. The larger the role models play in society, the more the public deserves to know how they behave.\nNote: The tip form example described above involved the Philadelphia Police Department who self-disclosed today via their press release. We shared this finding with the department on October 8 as soon as our technical review was complete.\nRelated content\nThe missing map of the sky\nBrice Ménard, an astrophysicist at Johns Hopkins University and a researcher at Anthropic, explains how he worked with Claude Science to produce the first complete map of the sky in UV light.\nRead more\nLaunching an opt-in vulnerability-finding service for open-source software\nWe’re making available OSS Scanner, an opt-in vulnerability scanner for the open-source ecosystem that’s informed by our experience using Claude to find vulnerabilities during Project Glasswing.\nRead more\nClaude-shaped science\nGuest author Prof. Matthew Schwartz describes what happened when he stopped fighting Claude and allowed Claude to find “Claude-shaped” problems: ones best suited to the capabilities of the current generation of LLM tools. This led him to build BootLoops, a toolkit for exact calculations in quantitative science, which he has been applying across scientific fields alongside experts.\nRead more",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
-      "content_chars": 19857,
-      "content_sha256": "5e95efdf9e2bc22b668511d6d6fa7fcb59518d52f97085347ca85cca6060d7b7",
-      "content_fetched_at": "2026-10-10T00:41:52.253509+00:00",
-      "content_error": "",
-      "time_precision": "daily_window",
-      "source_name": "Anthropic Research",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:cb35de36512f22d0",
-      "kind": "publish",
-      "text": "watchtowr-labs published: Death By A Thousand PaperCuts (PaperCut Pre-Auth RCE Chain and Patch Bypasses WT-2026-0141-0144/CVE-2026-82077/CVE-2026-82078/CVE-2026-81578)",
-      "actor": "watchtowr-labs",
-      "actor_url": "https://labs.watchtowr.com/",
-      "created_at": "2026-10-09T17:31:14+00:00",
-      "html_url": "https://labs.watchtowr.com/death-by-a-thousand-papercuts-papercut-pre-auth-rce-chain-and-patch-bypasses-wt-2026-0141-0144-cve-2026-82077-cve-2026-82078-cve-2026-81578/",
-      "title": "Death By A Thousand PaperCuts (PaperCut Pre-Auth RCE Chain and Patch Bypasses WT-2026-0141-0144/CVE-2026-82077/CVE-2026-82078/CVE-2026-81578)",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "Before we begin, yes - it's confusing. There are more vulnerabilities with watchTowr IDs in this blog post than there are CVE IDs (assigned by PaperCut), due to PaperCut bundling vulnerabilities and then patch bypasses for those same vulnerabilities into singular CVE IDs.\nPaper! It still exists.\nWe have to admit it - so much is happening right now (F1, GTA6, breakfast) that we barely have time to lovingly tease our most favoritest vendors.\nOn Thursday, 27 August 2026, PaperCut published an\nadvisory\nclaiming that a mysterious vulnerability was being exploited in-the-wild, leading to system compromise.\nThe watchTowr Intel team has documented the in-the-wild exploitation that our global honeypot network, Attacker Eye, captured\nhere\n.\nTo add insult to injury, when PaperCut released their advisory, they did so without a patch. Unlike other vendors that struggle to communicate at all, PaperCut provided IOCs in the form of log snippets related to exploitation and temporary mitigations, enabling their customers to take action.\nThat said, much of the information remained unclear.\nHow many vulnerabilities were exploited in this chain?\nDid any of them require authentication?\nWere the attackers exploiting post-authentication vulnerabilities?\nWhich components were vulnerable?\nAs mere mortals, we knew absolutely nothing at this point. A familiar feeling.\nPaperCut is\nno stranger\nto the exploitation of vulnerabilities in the wild. They've had their fair share of ransomware gang attention and, of course, live to tell the tale with their CISA KEV trophy.\nWhat is PaperCut?\nFor those unaware, PaperCut is print management software that helps organizations monitor, control, and secure printing across their networks. Its core features include print quotas, secure release printing (a job is released only after the user logs in at the printer), cost tracking, and detailed reporting. Together, these cut printing costs, reduce paper waste, and prevent unauthorized use.\nIt is widely used by schools, universities, healthcare providers, government agencies, law firms, and businesses of all sizes. That mix makes it an attractive target for APTs and ransomware gangs, as proven by several vulnerabilities previously exploited in the wild (such as CVE-2023-27351 and CVE-2023-27350).\nTL;DR Timeline\nThere was a lot happening between 27 August and 1 September, so let us give you the full timeline, including some spoilers.\nAuthor's note: even though CVEs were assigned after two rounds of patches, we use the CVE numbers from the beginning of this timeline. This is to avoid confusion between vulnerabilities.\n27 August 2026\nPaperCut publishes\nan advisory\nconcerning a vulnerability being exploited in the wild targeting 26.0.3. Advisory comes with no patch - exploited vulnerabilities are still not patched.\nAt this time, no CVEs were assigned, and only IOCs were published (no vulnerability details, no patch was available).\nWith no details about the vulnerabilities or their count, we started working blindly from the IOCs to reproduce them. We had no patch available, thus we had to discover the 0-day vulnerabilities from scratch.\nUsing the unpatched PaperCut version, we found the Post-Auth RCE vulnerability (later identified as CVE-2026-82078), which matched the ITW IOCs shared by PaperCut.\nHowever, we did not yet know how to exploit this vulnerability without authentication.\nPaperCut releases a patch (26.0.4 for PaperCut NG). At this point, we can finally perform patch diffing, which may help us find a way to exploit the Post-Auth RCE without authentication.\nWe analyzed the code changes in 26.0.4, enabling us to confirm that we had correctly reproduced CVE-2026-82078 (Post-Auth RCE) and to identify and reproduce CVE-2026-81578 (Authentication Bypass), the full in-the-wild exploitation chain.\nHowever, during this process, we identified a way to bypass the patch for CVE-2026-82078 (Post-Auth RCE)\nThis was reported to PaperCut and tracked internally as WT-2026-0141.\n28 August 2026\nWe realized we’d identified a mechanism to bypass the patch for CVE-2026-81578 (Authentication Bypass vulnerability)\nThis was reported to PaperCut and tracked internally as WT-2026-0142.\nThis meant we now had a full Pre-Auth RCE chain again (working against the (at the time) newest version, 26.0.4), by combining :\nWT-2026-0141 - Post-Auth RCE vulnerability.\nWT-2026-0142 - Authentication Bypass vulnerability.\nRapidly, PaperCut released another patch - publicly known as\n26.0.4-PO build 76508,\nwhich contained fixes for:\nWT-2026-0141 - Post-Auth RCE vulnerability.\nWT-2026-0142 - Authentication Bypass vulnerability.\nOnce again, we found ourselves analyzing\n26.0.4-PO build 76508\nand identified a mechanism to bypass the fix for WT-2026-0142, the Authentication Bypass.\nThis was reported to PaperCut and tracked internally as WT-2026-0143.\n31 August 2026\nLike a dog with a bone, we then stumbled upon a completely new Post-Auth RCE vulnerability while analyzing the\n26.0.4-PO build 76508.\nThis was reported to PaperCut and tracked internally as WT-2026-0144 (now known as CVE-2026-82077).\nThis meant we now had a full Pre-Auth RCE chain again, by combining :\nWT-2026-0143 Authentication Bypass vulnerability and\nWT-2026-0144 (CVE-2026-82077) Post-Auth RCE vulnerability.\n1 September 2026\nPaperCut releases a new patch,\n26.0.4-PO build 76530.\nPatch contains a fix for: WT-2026-0143 (Authentication Bypass)\n10 September 2026\nPaperCut releases a new patch,\n26.0.5\nPatch contains a fix for: WT-2026-0144/CVE-2026-82077 (Post-Auth RCE)\nCovered In PaperCuts\nSo to summarize - tl;dr there are a lot of vulnerabilities. Let’s summarise below:\nExploited In The Wild (Version 26.0.3)\nYeeted across the internet:\nCVE-2026-81578 (Authentication Bypass)\nCVE-2026-82078 (Post-Auth RCE)\nThen….. it continued.\nFirst Patch (Version 26.0.4)\nVulnerabilities discovered by watchTowr while analyzing patches:\nWT-2026-0141 (no CVE assigned)\nA bypass of CVE-2026-82078 (Post-Auth RCE) patch.\nWT-2026-0142 (no CVE assigned)\nA bypass of CVE-2026-81578 (Authentication Bypass) patch.\nSecond Patch (\nVersion 26.0.4-PO build 76508)\nVulnerabilities discovered by watchTowr while analyzing patches:\nWT-2026-0143 (no CVE assigned)\nA bypass of WT-2026-0142 (Authentication Bypass) patch.\nCVE-2026-82077 / WT-2026-0144\nA completely new Post-Auth RCE was discovered, finalizing the chain with WT-2026-0143 Authentication Bypass.\nWe know what you're going to say already - “watchTowr, are you insane? There's already an analysis published. Why would you rewrite already existing analysis?”\nAs you can see from the above, dear reader, it has been a saga. So today, we are going to be walking through vulnerabilities identified in version 26.0.4-PO build 76508 (and briefly mentioned above):\nWT-2026-0143: Authentication Bypass vulnerability (which received no CVE assignment).\nWT-2026-0144 (CVE-2026-82077) Post-Auth RCE vulnerability.\nWhy these two? For these reasons below.\nThey’re super cool.\nThey enable a full unauthenticated RCE chain on Papercut 26.0.4-PO build 76508\nThey haven’t been documented yet (hopefully this also makes us cool)\nWT-2026-0143 and WT-2026-0144 (CVE-2026-82077) are new and shiny\nBypassing the Patch (26.0.4-PO build 76508) to the Authentication Bypass Bypass\nTl;dr this is about WT-2026-0143, which is a bypass of the patch of the bypass for CVE-2026-81579.\nWe assume you have probably already read, reviewed and memorised\nan analysis of the Authentication Bypass\n(CVE-2026-81578 ) that was exploited in-the-wild and identified in version 26.0.3.\nYou may also have seen technical analysis of the first bypasses, which affected 26.0.4, the first patch released by PaperCut.\nEditor: This is patch hell and honestly I can barely keep up.\nIf not, sorry - you can Google for it. “Me too” content receives strong disapproval from our furry friends, who are already upset that we are considering replacing them with an LLM.\nLong story short: PaperCut uses the Apache Tapestry 3 framework to handle web pages. PaperCut also has multiple pages implemented as Java classes, each with its own set of permissions.\nWe define the page or form to visit using the Tapestry\nservice\nparameter.\nThe issue was that PaperCut did not foresee a situation where you:\nDefine an unauthenticated page (like\nLogonMessage\n) in the\nservice\nparameter, which becomes the root page.\nThen define another page and its form to invoke, which requires authentication.\nThe result? An unauthenticated attacker can reach the forms of authenticated pages.\nThis behavior can be exploited through a single request using the\nservice\nparameter, like this:\nservice=direct/1/LogonMessage/ConfigEditor/quickFindForm\nWhy? How? Magic.\nThis particular strain of magic, though, is Apache Tapestry magic, which is more than happy to invoke the root page and the subsequent pages defined within the\nservice\n. We first reach\nLogonMessage\n, then jump into the\nConfigEditor\npage and its\nquickFindForm\nform.\nWait, is there no authorization implemented in PaperCut? Well, there is. Authorization is implemented in the\nBasePaperCutPage.pageValidate\nmethod, which is extended by multiple pages (like\nLogonMessage\n). However, the code only checks authorization for the root page, so\nLogonMessage\nin our case, this page does not require authentication. Again, the possibility of defining multiple pages within a single\nservice\nparameter was not included in the authorization logic.\nWait, we think we have seen something like this.\nThis gave us flashbacks to our\nSolarWinds Web Help Desk research\n. If you recall, or unfortunately are still upset about wasting the time to read our blog post, you'll remember that we found multiple Authentication Bypasses because SolarWinds WHD used a WebObjects framework that has been obsolete since we were 10 years old.\nThose bypasses were extremely hard to find because nobody younger than 50 really knows how those frameworks work.\nAnd everybody over 50 who knows said frameworks hates them so much that they would rather deploy a leading SSLVPN solution.\nToday, we face a similar situation. Apache Tapestry 3, which has been obsolete for roughly 20 years, is not well known among security researchers.\nAnd apparently the developers that use it don't really know it either.\nThe Latest Authentication Bypass (WT-2026-0143) for 26.0.4-PO build 76508 Patch\n“God, shut up watchTowr” - yes, OK.\nWe’ve now explained at least the base behavior behind CVE-2026-81578. In PaperCut patch 1 season 1 (26.0.4), a temporary protection was implemented to block certain attack vectors.\nFor instance:\nAn additional recursive page permission check was implemented in\nBasePaperCutPage.pageValidate\n, so bypassing with the\nLogonMessage\npage was no longer possible.\nIt turned out you could use the\nHome\npage, which does not extend\nBasePaperCutPage\n, to bypass the patch again.\nSo the next patch added manual authorization checks to forms belonging to sensitive pages, like\nConfigEditor\n(which was exploited in the wild, by the way).\nStill, without a global authorization check implemented for all pages, it is hard to keep track and manually verify every page in the codebase.\nAnd that is how we realized it was still possible to abuse the Setup Wizard forms, since they had been completely ignored in the patches delivered up to that point.\nAs you can imagine, PaperCut has an initial setup procedure:\nAs you can see, there are several subpages, such as\nCreate Account\nor\nChoose Organization Type\n.\nAfter the initial product setup, PaperCut sets\nsystem.setup-completed\nto\nY\n.\nWhy does this matter? Every setup subpage (like\nSetupAdmin\n) extends\nBaseSetupPage\n, which implements the following authorization method:\npublic void pageValidate(PageEvent event) {\nWebUtils.ensureCompatibleBrowserForAdmin(event.getRequestCycle().getRequestContext().getRequest());\nif (this.getConfigManager().getBoolean(\"system.setup-completed\")) {\nWebUtils.redirectToPage(event.getRequestCycle().getPage(\"Home\"));\n}\nIf\nsystem.setup-completed\nreturns\ntrue\n, we get redirected and the setup pages are not triggered. And here comes our authentication bypass.\nImagine that you want to access one of the setup pages (\nSetupAdmin\n), after the setup had already been completed.\nYou might think you could do this, you could do this with the\nservice\nparameter set to\ndirect/1/SetupAdmin/$Form\n. However, this wouldn’t work, as the code would invoke the\nBaseSetupPage.pageValidate\n(presented above, used by SetupAdmin), and would thus redirect us back to\nHome\n, instead of executing the setup form.\nHowever, we can navigate directly to every stage of the Setup Wizard form by accessing it through the\nHome\npage, even though the product has already been deployed.\nWhy? Let’s walk through it step by step:\nYou invoke a sample setup page through the\nHome\npage (via the service parameter), like this:\n/app?service=direct/1/Home/SetupAdmin/$Form\n(we want to reach\nSetupAdmin\npre-auth, via\nHome\n).\nThe framework will therefore try to invoke\nHome.pageValidate\nto verify your privileges, but will skip the\nSetupAdmin.pageValidate\nmethod (it won’t get called).\nHome\ncan be accessed pre-auth, thus an unauthenticated attacker is not getting blocked, and they successfully reach the\nSetupAdmin\npage.\nSetup pages\npageValidate\nmethod will never be called (thanks to the bypass), so the\nsystem.setup-completed\nvalue is irrelevant for the attacker.\nIf you wish to reset the admin’s password using the setup process, you need to go through it step by step. It means you need to invoke each setup page using the authentication bypass. The full process consists of four requests:\nPOST /app?service=direct/1/Home/SetupAdmin/$Form\n- Change the admin's password here.\nPOST /app?service=direct/1/Home/SetupOrgType/$Form\n- Set the organization type here.\nPOST /app?service=direct/1/Home/SetupUserSource/$Form\n- Pick user synchronization sources here (we chose to perform no synchronization in our PoC).\nPOST /app?service=direct/1/Home/SetupVerify/$Form\n- Confirm that the setup is completed here.\nVoila. You have forced the execution of a “fresh fresh” product setup and successfully modified the admin user password, concluding our explanation of the Authentication Bypass (WT-2026-0143 ) that worked against version 26.0.4-PO build 76508.\nJust for fun, let’s show this working within our Detection Artifact Generator:\nSo, what next? We want more (RCE, we want RCE).\nPost-Auth RCE: WT-2026-0144 (CVE-2026-82077)\nNow, as you've seen above, we've demonstrated that WT-2026-0143 can be used to bypass authentication and modify the admin password on the latest version (at the time) of PaperCut: version 26.0.4-PO build 76508.\nNow, post-patch, the original in-the-wild exploited post-auth RCE vulnerability was effectively “completely removed” with changes made to the\nsecurity.properties\n. file. If you recall, that vulnerability was based on controlling the JDBC connection URL and triggering arbitrary connections, and was blocked through the\nsecurity.properties\nconfig file.\nWith one route blocked, and a lot of remaining functionality to poke - we thought it was worth looking for a new route.\nAfter some time, our eyes settled on the\nScan to Fax\nfunctionality. Why? Because this functionality ultimately leads to the execution of OS commands, making it a no-brainer to investigate.\nWith the proper definition of job services, an attacker can reach the\nbiz.papercut.pcng.service.scan.FaxProviderManagerImpl.sendFaxJob\nmethod, and the input argument of type\nScanFaxJob\nis fully attacker-controlled.\npublic void sendFaxJob(ScanFaxJob job) throws RuntimeException, InterruptedException { // [1]\nlogger.debug(\"Sending fax job {} to provider {}\", job.getFaxJob(), job.getProviderConnector());\nFaxJob faxJob = job.getFaxJob();\nString jobStr;\ntry {\njobStr = this.convertFaxJobToJSON(faxJob);\n} catch (IOException var12) {\nlogger.error(\"Unable to convert fax job {} to JSON file\", job.getFaxJob());\nthrow new IllegalArgumentException(\"Unable to convert fax job to JSON file\");\n}\nPath jobFile = this.createStringJsonFile(jobStr, \"papercut-scan-fax-job\");\nif (jobFile == null) {\nthrow new IllegalArgumentException(\"Unable to create fax job file\");\n} else {\nPath settingsFile = this.createStringJsonFile(job.getProviderSettingsJson(), \"papercut-scan-fax-settings\");\nif (settingsFile == null) {\nthis.deleteTmpFile(jobFile);\nthrow new IllegalArgumentException(\"Unable to create fax settings file\");\n} else {\nString template = this.configManager.getString(\"system.scan.fax.send.command-args\"); // [2]\nString testOptions = this.configManager.getString(\"system.scan.fax.test.options\");\nlogger.debug(\"Using the following fax connector template: '{}'\", template);\nlogger.debug(\"Using job contents of: {}\", jobStr);\nString[] cmdArray = (String[])Arrays.stream(template.split(\"\\\\s+\")).map((str) -> str.replace(\"%job%\", this.quote(jobFile.toAbsolutePath().toString())).replace(\"%settings%\", this.quote(settingsFile.toAbsolutePath().toString())).replace(\"%test-options%\", testOptions)).toArray((x$0) -> new String[x$0]); // [3]\ntry {\nthis.runCommand(job.getProviderConnector(), cmdArray, this.configManager.getIntegerWithDefault(\"system.scan.fax.send.timeout-secs\", 30)); // [4]\n} finally {\nif (!testOptions.contains(\"-o keeptmp=Y\")) {\nthis.deleteTmpFile(jobFile);\nthis.deleteTmpFile(settingsFile);\n}\nAt\n[1]\n, the\nsendFaxJob\nmethod is defined with the attacker-controlled\nScanFaxJob\nobject.\nAt\n[2]\n, the code extracts the\nsystem.scan.fax.send.command-args\nsetting and stores it as the\ntemplate\noption.\nAt\n[3]\n, the code creates the\ncmdArray\n, which is based on the\ntemplate\n.\nAt\n[4]\n,\nrunCommand\nis executed, and the first argument is the attacker-controlled value from\njob.getProviderConnector\n.\nLooking at the code snippet below, we can see the implementation of\nScanFaxJob\n:\npublic class ScanFaxJob {\nFaxJob faxJob;\nString providerConnector;\nString providerSettingsJson;\npublic ScanFaxJob(String providerConnector, String providerSettingsJson, FaxJob faxJob) {\nthis.providerConnector = providerConnector;\nthis.providerSettingsJson = providerSettingsJson;\nthis.faxJob = faxJob;\n}\npublic FaxJob getFaxJob() {\nreturn this.faxJob;\n}\npublic String getProviderSettingsJson() {\nreturn this.providerSettingsJson;\n}\npublic String getProviderConnector() {\nreturn this.providerConnector;\n}\nThe\nproviderConnector\nmember is not verified at any point, giving us more hope…\nLet's have a look at\nrunCommand\n:\nprivate String runCommand(String connector, String[] cmdArray, final int timeOutSecs) throws RuntimeException, InterruptedException {\nStringBuffer stdout = new StringBuffer();\nStringBuffer stderr = new StringBuffer();\nint exitCode = this.runCommandBuffers(connector, cmdArray, timeOutSecs, stdout, stderr); // [1]\nif (exitCode != 0) {\nthrow new RuntimeException(\"Fax connector failed: \" + cmdArray[0]);\n} else {\nreturn stdout.toString();\n}\nAt\n[1]\n, it calls\nrunCommandBuffers\n:\nprivate int runCommandBuffers(String connector, String[] cmdArray, final int timeOutSecs, StringBuffer stdout, StringBuffer stderr) throws InterruptedException, RuntimeException {\nif (stdout == null) {\nstdout = new StringBuffer();\n}\nif (stderr == null) {\nstderr = new StringBuffer();\n}\ncmdArray = (String[])ObjectArrays.concat(this.getAbsoluteBinaryPath(connector), cmdArray); // [1]\nString cmdLine = String.join(System.lineSeparator(), cmdArray);\nlogger.debug(\"Using the fax connector with an adjusted path \\\"{}\\\"\", cmdLine);\ntry {\nint exitCode = ProcessUtils.execAndGetOutput(cmdArray, (boolean[])null, stdout, stderr, timeOutSecs); // [2]\n//...\n}\n[1]\n, it creates a new\ncmdArray\n, but the attacker-controlled\nconnector\nis passed through\ngetAbsoluteBinaryPath\nfirst.\nAt\n[2]\n, it executes the command using\nProcessUtils.execAndGetOutput\n.\nThe final part of the puzzle is found within\ngetAbsoluteBinaryPath\n:\nprivate String getAbsoluteBinaryPath(final String commandName) {\nString var10000 = this.getFaxConnectorDirPath(); // [1]\nString path = var10000 + File.separator + commandName; // [2]\nlogger.debug(\"Getting absolute path: {}\", path);\nif (Files.isExecutable(Paths.get(path))) {\nreturn path;\n} else {\npath = path + \".exe\";\nif (Files.isExecutable(Paths.get(path))) {\nreturn path;\n} else {\nlogger.error(\"Could fax connector not be executable: {}\", commandName);\nthrow new RuntimeException(path + \" is not executable\");\n}\nAt\n[1]\n, it extracts the directory for the fax connector.\nAt\n[2]\n, it appends our connector string to this directory with no validation. Of course, the validation is not performed here either, so we are dealing with a\nRelative Path Traversal\n.\nTo sum up, the attacker can:\nCreate a new\nScanFaxJob\nwhere the\nproviderConnector\nis set to, for example,\n../../../../../../../../../../../../../Windows/System32/cmd\n. One can do this with the following HTTP request:\nPOST /app HTTP/1.1\nHost: target:9191\nOrigin: <http://target:9191>\nCookie: org.apache.tapestry.locale=en; JSESSIONID=cookie\nContent-Length: 6853\nContent-Type: application/x-www-form-urlencoded\nscanActionType=FAX&label=test&faxProviderModel=..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5CWindows%5CSystem32%5Ccmd&...removedforreadability...\nModify the\nsystem.scan.fax.send.command-args\nconfig parameter to, for example,\n/c whoami\n(through the Config Editor page):\nTrigger a new scan to fax job.\nProfit.\nAnd there we have it - a new Post-Auth RCE (CVE-2026-82077 / WT-2026-0144), allowing us to finalize the entire chain to RCE, with our Authentication Bypass (WT-2026-0143).\nFull Chain\nTying it all together (WT-2026-0143 + WT-2026-0144/CVE-2026-82077), we can finally pop a shell against PaperCut NG 26.0.4-PO build 76508.\nDetection Artefact Generator\nAs always, we are sharing our Detection Artefact Generator so you can determine your own susceptibility and inform remediation in your own environments.\nWhile the DAG does not execute the full chain, it determines exposure to the Authentication Bypass vulnerabilities we’ve discussed above.\nIt can be found on our GitHub\nhere\n.",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "rss",
-      "content_source_url": "https://labs.watchtowr.com/death-by-a-thousand-papercuts-papercut-pre-auth-rce-chain-and-patch-bypasses-wt-2026-0141-0144-cve-2026-82077-cve-2026-82078-cve-2026-81578/",
-      "content_chars": 21913,
-      "content_sha256": "001c7d1990dcece11d629fd5dc7b1f3db8c76e37344773dc293d42670132da85",
-      "content_fetched_at": "2026-10-10T00:41:45.374168+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "watchTowr Labs",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:9832ae134cd12832",
-      "kind": "publish",
-      "text": "yage-share published: 给 Agent 选搜索 API：Firecrawl 和 Tavily 的差别到底在哪里",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-10-09T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/agent-search-api-firecrawl-tavily-20261009.html",
-      "title": "给 Agent 选搜索 API：Firecrawl 和 Tavily 的差别到底在哪里",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\n开发工具\n检索与知识系统\n给 Agent 配一个搜索 API\n如果想让手里的 AI Agent\n回答今天刚发生的事，或者查阅特定领域的实时资料，光靠模型自带的训练数据肯定不够。要让\nAgent 具备实时的信息获取能力，通常的做法是给它接一个搜索\nAPI。它的工作是：把 Agent\n给出的查询词发出去，去网上检索相关网页，抓取正文并清洗，再整理成结构整齐的内容喂回给模型。\n在这条路线上，Firecrawl 和 Tavily\n是目前比较主流的两个选择。两家都按调用量收费，计量单位叫\ncredit（中文常称作积分，口语里也简称点）；很多人第一次看到它们，下意识会去翻定价表，算算每次请求或者每个积分对应几分钱，觉得哪家单价更低就选哪家。\n我最初也是这么想的。但在真实环境里把它们接进系统、跑了一批实际任务之后，最终账单给我的反馈却完全打破了这种预想。给\nAgent\n选搜索工具，实际花销远不止看单价这么简单；同样的查询任务，两家最后结算出来的账单可能差得很远。\n同一个查询，积分消耗能差 61\n倍\n直到我做了一次针对社交媒体的端到端测试，同样的查询，Firecrawl 扣了\n122 个点，Tavily 只扣了 2\n个点，整整差了六十多倍。后来我把生产环境的大批真实调用放进两家的规则里重算，结果又拐了个弯：在以常规网页为主的日常流量里，Firecrawl\n换算成钱反而更省。单次消耗差几十倍、平均下来反而更省，造成这种反差的根本原因，在于两笔钱买到的东西其实并不相同。\n当时查的是一个发在 x.com 上的产品发布推文。Firecrawl 命中推文后直接走\nGrok，每条推文算 30 个点，光这一项就占了大头。\n高溢价换来的是能直接落库的结构化字段。Firecrawl 用 Grok\n直接拿到了发帖作者、发布时间戳、点赞与转发互动量，以及完整的回帖楼层，页面里没有多余的杂质。Tavily\n只花了 2\n点积分，拿回来的是抓取到的原始网页文本。它也拿到了推文正文与回复，没有彻底栽在登录墙上，但大半结果是空页面（列表页或他人主页），有内容的文本还混着登录与注册界面的导航噪声。单看单价根本算不清账，两家服务的计费逻辑处在完全不同的维度上，一个积分在两边代表的工程交付物截然不同。\n两家不是同一种计价方式\n选择困难症的根源是两家的计费模型完全不在一个频道上：Tavily\n按请求次数收费，Firecrawl\n按返回的内容逐页计价。这种底层设计差异决定了它们对同一抓取任务的报价完全不同。\nTavily\n只认请求类型：不管是基础搜索还是高级搜索，按预置操作扣固定点数，网页抽取也是按批打包计费。哪怕抓回来的是一篇短博客、一份上百页的研报，还是一条推文，扣费只看发了什么操作，和内容形态无关。\n相比之下，Firecrawl 是内容驱动的逐页计费。\nFirecrawl\n计费文档\n显示它的起步门槛很低，搜索只按结果数量收取少许基础积分。但一旦接口返回了文档，就会按抓到的形态逐页累加费用：常规网页按页计费，哪怕撞上\n403、404 这类错误页，只要接口返回了文档就算进账单；遇到长篇 PDF\n会按页加收，处理 X/Twitter 内容走 Grok\n更是单条收取高额溢价，部分大模型解析选项还会继续累加点数。\n计费维度\nTavily 机制\nFirecrawl 机制\n计费核心\n按发起的 API 操作类型扣费\n基础调用费叠加返回内容逐页计费\n搜索调用\n基础搜索 1 点，高级搜索固定 2 点\n每 10 个搜索结果收取 2 点基础积分\n网页抽取\n每 5 个成功网页扣除 1 至 2 点\n返回文档每页扣除 1 点积分\n长篇 PDF\n不加价，计入常规搜索或抽取配额\n每页在基础费用上额外加收 1 点\nX/Twitter 内容\n不加价，返回包含页面噪声的原始文本\n经由 Grok 提取结构化字段，单条计 30 点\n两家搜索 API 的两种计费模型：Tavily\n像一张固定票价的地铁通票，按发出的请求收费；Firecrawl\n像按盘称重的自助餐厅，按返回内容的形态逐页加价。\n相比之下，Tavily\n更像一张固定票价的地铁通票，刷卡进站之后不论拎几重行李都不会加收额外费用；Firecrawl\n则像按盘算钱的自助餐厅，入门费很低，但盘子里每夹一块肉都会单独上秤。如果直接用\nTavily 的积分单价去乘 Firecrawl\n的调用量，从算式建立的那一刻起就已经失真了。\nFirecrawl\n的隐性成本藏在内容类型里\n按内容点菜的时候，长文档和社交媒体是吃掉 Firecrawl\n积分的两大杀手锏。很多开发者在估算成本时只盯着基础搜索，却忘了这两类内容才是真正吞掉调用量的主力军。\n首先是多页PDF。Firecrawl对PDF解析完全按页数收费。我之前测试过\nVisa支付网络的商户争议处理规范\n，Firecrawl返回了两份PDF，其中一份长达67页，加上基础费用，单次查询扣了将近80点积分。同样的查询扔给Tavily，只花了固定的2点，而且同样完整返回了长文档文本。\n如果你经常抓取行业白皮书、财报或学术文献，每篇动辄几十页甚至上百页。在\nFirecrawl\n里拉取几篇完整研报，花掉的积分可能比你做一百次普通网页搜索还多。\n社交媒体是另一个成本高峰。Firecrawl 在处理 x.com 内容时必须使用\nGrok，未启用结构化 JSON 抽取时，每条请求固定 30 个积分，启用则为\n34。因此，只要搜索结果里命中若干相关推文，单次调用的积分就会迅速冲到上百点。\n这种高溢价购买的是清洗工时。Grok\n返回的结果直接剥离了网页杂质，省去写正则表达式、剔除登录浮层、对抗反爬虫这类工作，喂给下游大模型时占用的上下文窗口也更小。Tavily\n单次只需固定低点数，但拿回来的原始文本混着大量界面文字，下游管道得自己过滤和重试。如果系统本身已经有了完善的本地文档解析和社交媒体清洗逻辑，为\nFirecrawl 的逐页解析与 Grok\n字段付费，等于重复购买清洗能力；如果希望抓回来的数据直接组装进大模型上下文，这笔溢价买到的则是更短的开发链路。\n真实负载交叉回放：平均跑下来谁更划算\n单次的极限测试可以展示二者的边界，但评估月度预算要回到混合负载的真实调用。我调取了截至\n2026 年 10 月 3\n日过去一周生产环境的真实记录，把双方的实际任务互换计费规则交叉测算。这批负载横跨常规\nHTML\n网页、社交媒体推文和技术文档。结果呈现出明确的方向：日常网页为主的负载里，Firecrawl\n换算成钱更省；长文档和社交动态的占比一旦上去，Tavily\n会反超。把两组真实流量放到对方平台重算，账单走向直观反映了这种差异：\n负载来源\n实际任务量\n原平台实际账单\n交叉换算到对方平台账单\nFirecrawl 生产流量\n406 次搜索，342 次抽取（搜索结果 90% 以上为普通网页）\n10,129 点积分（折合 Standard 档 $8.41 / Scale 档 $6.07）\n折算 Tavily 为 1,508 点积分（折合 Bootstrap 档 $10.05 / Growth 档\n$7.54）\nTavily 生产流量\n121 次搜索，36 次抽取\n282 点积分（折合 Bootstrap 档 $1.88 / Growth 档 $1.41）\n折算 Firecrawl 为 1,284 点积分（折合 Standard 档 $1.07 / Scale 档\n$0.77）\n表中 Firecrawl 按年付套餐单价折算；Tavily 流量换算到 Firecrawl\n时，PDF 按每份 30 页估算。在这批以普通网页为主的任务里，Firecrawl\n换算成钱比 Tavily 便宜 16% 到 20%。\n但在 Tavily 接的那些任务里，即使调用量小，折合成 Firecrawl\n的积分也会成倍增多。一旦长文档或社交动态的占比足够高，Firecrawl\n每页、每条的附加费就会盖过它的低价优势。所以到底谁更省钱，完全看业务管线抓取的文档类型。\n按照内容形态与清洗容忍度做选型\n在理解实际计费规则后，选型主要看两点：一是每天抓取的内容类型，二是下游对数据质量的敏感度。单纯比价并不准确，要结合业务场景。\n优先选用 Firecrawl 的场景： 1.\n抓取对象主要是标准网页，尤其是大规模抓取文章、博客和技术文档。在这种情况下，基础低价版本可以发挥最大价值。\n2. 需要频繁抓取社交媒体，且下游系统不愿意额外投入开发抓取规则。此时用\nGrok\n可直接获取作者、互动量、整理好的回帖楼层，能省下清洗流程和清洗提示词的开销。\n优先选用 Tavily 的场景： 1. 抓取对象经常是几十页、几百页的长\nPDF、论文或政府财报。Tavily\n的固定价格能完全抹平长文档带来的页数膨胀，避免一次查询扣掉几十上百点积分的极端账单。\n2.\n对社交媒体仅做粗粒度热度扫描和线索监控，下游管线有基础的文本过滤能力，可以容忍抓取结果中夹杂登录界面和空页面。\n选型决策时，必须把下游大模型消耗的 Token\n数量和清洗管道的运维时间一并计入。只看 API\n账单的数字常常会漏掉这些隐蔽且昂贵的工程成本。\n按内容构成选搜索\nAPI：负载以普通网页为主时选 Firecrawl，长文档与社交动态占比高时选\nTavily。\n账单能不能自解释，也是选型的一部分\n按量计费的 API，账单不仅要算得准，还要看得懂。Firecrawl\n的单次扣费恰好能在本地完全复现：照官方文档搭一个计费规则模型，把本地日志里数百次搜索和抽取调用逐条验算，算出的积分和每条记录里返回的消耗完全吻合。底层的单次扣费是确定的。\n文中所有事实都来自 2026 年 10 月的实测，依据是 Firecrawl 与\nTavily\n的官方计费文档\n，以及本地工作区里数千个近期调用日志，计费推演与对比都可在日志中复现。一个外部\nAPI\n的总账如果在控制台里无法自圆其说，即便它在价格表上看起来便宜，系统上线之前也必须在本地把请求日志记录焊死，并为对不齐的账目预留额外的工程防御预算。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/agent-search-api-firecrawl-tavily-20261009.html",
-      "content_chars": 4158,
-      "content_sha256": "9ba1fc1c9587948c1ce7040b9c1cc310e327bf4074cb617eb9091adf3abea392",
-      "content_fetched_at": "2026-10-10T00:40:39.936957+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    },
-    {
-      "id": "a:b932e7b095cdba24",
-      "kind": "publish",
-      "text": "yage-share published: AI 帮你写软件，也帮你用软件：平台在抢的两个入口",
-      "actor": "yage-share",
-      "actor_url": "https://yage.ai/share/",
-      "created_at": "2026-10-08T00:00:00+00:00",
-      "html_url": "https://yage.ai/share/supabase-turso-agent-two-entrances-20261008.html",
-      "title": "AI 帮你写软件，也帮你用软件：平台在抢的两个入口",
-      "via": "rss",
-      "collect_mode": "rss",
-      "content": "AI Agent\nAI 编程\n产业与竞争\n手机里的个人助理在学习打开常用的应用，用账号帮用户干一些日常事务。与此同时，另一端的程序在帮助工程师写代码、构建网站、将网站部署到服务器。这两个看似AI的工作，其所需的系统支持和安全需求却是截然不同的。\n两种 AI，两个入口\n工程师的 AI 在写代码、建表、跑测试；普通人的 AI\n在登录一个现成的应用，帮他看通知、勾掉待办。\n一边是写代码的 AI\n在折腾临时代码仓库和临时沙盒，握着开发者的管理员账号，代码出问题有人帮忙回滚，输入的是企业级的代码规范；另一边是用软件的\nAI\n在直连真实的在线生产数据库，里面装着用户的钱和隐私，用的是普通用户的个人账号，搞砸了用户自己背锅，平时也只会说几句自然语言。存的数据不同、权限不同、出事的责任不同、交互的语言也不同，从第一天起，两条线就各走各的路。\n图1：做软件的 AI 与用软件的\nAI\n2026 年 10 月 2 日，云端后台服务平台 Supabase\n在同一天做了两件大事，分别对应这两个趋势。在生产端，\nSupabase\n官方收购公告\n宣布正在收购轻量级数据库公司 Turso，\nTurso\n官方收购公告\n也宣布整个团队加入 Supabase，创始人 Glauber Costa\n担任平台的智能体服务负责人。在消费端，Supabase\n发布了一套新接口，让开发者可以给自己的终端用户开一个专门的通道，让用户自己的个人\nAI 能够通过已有的账号登录进他的应用。\n在\n官方融资通稿\n中，Supabase 还披露了由 GIC 领投的 1.5 亿美元新融资。这 1.5 亿美元是\nSupabase 拿到的扩张资金，而收购 Turso\n具体花了多少钱，双方都没有公开。目前科技媒体对这件事的独立跟进并不多，\nSiliconANGLE\n收购报道\n算是少数进入主流资讯流的独立报道。抛开公关通稿里的漂亮话，这两件事真正瞄准的，其实是\nAI 建软件和用软件两个阶段各自的底层入口。\n建软件的入口：数据库变得像文件一样\n工程师用 AI\n写应用时，第一个现实阻力是拉起数据库的成本。传统开发里，一个团队往往只维持几个常驻数据库。但\nAI\n编程工具一出现，频繁拉取分支做实验、跑沙盒测试，每个并发任务都想有一个干净独立的数据库环境。要是每次测试都冷启动一个数据库服务器，初始化时间就能打乱人的节奏，长期维持一大堆闲置环境也不划算。\n根据\nSupabase\n官方收购公告\n和融资通稿里自报的数据，他们的平台每周启动的数据库数量超过一百万个，其中每月新创建的数据库中有\n70% 来自智能程序或 AI\n工具。这些都是厂商提供的数据，并没有透露这些数据库运行了多长时间，或者承载了多大规模的负载，谁也没法据此判断多数数据库是不是用完即弃，但这种高频开库的趋势无疑迫使底层存储重新思考设计假设。\nTurso\n摸索的核心路线是把数据库做得像普通文件一样轻巧。它用轻量单文件存储引擎\nSQLite\n做底座，配多数据库架构，免了常驻服务器的开销。一台机器可管数百万个独立数据库文件，需要时载入内存，闲置则自动挂起冻结。官方团队说，新建一个数据库应该像新建一个文件那样顺手，正好接住\nAI 写代码时随建随用的节奏。\n这个技术目前仍然有明显的工程成熟度边界。Turso\n前后尝试了两种引擎。老的基于 C 语言的分支引擎 libSQL\n早就没有新版本发布，但官方文档仍称它由 Turso 维护。基于 Rust\n重写的新引擎 Turso Database，到\nGitHub\n发布记录\n里最新稳定版也才 0.8.1，还是 0.x 阶段。它 2026\n年宣布的新一代云服务，也还没见官方说普遍可用。（\n内测公告\n）\n在收购公告中，Turso\n声称会给开发者留一条清晰的路来升级到生产环境。但回头看看 Supabase\n现有的官方迁移工具库，它虽然支持多种流行的数据库系统，却并没有任何自动化工具可以把轻量级的\nSQLite 数据库轻松、自动地迁移到生产级别的 Postgres\n上，甚至没有任何相关文档。所谓的无缝升级，目前仍然是空中楼阁。\n到这里，Supabase 为什么要收购\nTurso，其实已经能讲清一半了。它的主战场在\nPostgres，是一种常驻的正式数据库，并不适合这种一个任务一个库、动辄几百万个的场景。收购\nTurso，相当于把轻量、海量这一半补进了自己的产品。这只是故事的一半，另一半是这笔交易在平台竞争里卡的是哪个位置，放到一两节以后再讲。\n用软件的入口：你自己的\nAI 用你的账号进应用\n软件搭好能用了，下一场仗是在用户自己的 AI\n怎么才能安全连进来。早期的接入方式主要面向开发者，Supabase 的\n官方开发工具指南\n就提醒过，这个服务是给开发者看的，别拿去给客户或普通用户用。开发者密钥通常带着较高的数据库权限，把它交给一个程序，等于把这份操作权交了出去。\nSupabase 在\nSelect 2026\n会议回顾\n中提出了一种新的接口。根据\n自带智能体开发文档\n，应用可以向终端用户开放一个专用的工具接口。当用户通过现有登录流程进行一次身份认证后，他的个人\nAI 就可以连接到你的应用。此后，AI\n每次读取或写入数据时，都会带上该用户的个人身份信息。\n一个典型例子是团队用的待办应用：用户调用 AI 帮忙整理工作时，AI\n可以查看该用户自己的待办事项、勾选已完成的任务、或创建新的日程提醒。只要应用的行级安全策略限定了这个用户只能碰自己的数据，它就看不到其他成员的私人笔记，也改不了团队层级的账单设置。\n这背后是一个简单的无服务器云函数。它在入口就检查登录状态，并且过滤掉管理员的特殊凭据。根据\n官方令牌安全指南\n，它的职责只是确认身份，数据访问边界则交给数据库的行级安全策略去防守。行级安全策略是在数据表的每一行上做准入检查，只有符合条件的用户才能查看或修改这一行。它能守住数据隔离的底线，但包办不了所有风险，眼下至少有两个关键盲区。\n第一个盲区在于，它只管数据库里的数据增删改查，对跳出数据库的外部业务动作却没有保护。在实际的软件里，工具调用经常带有外部副作用，比如向客户发送邮件、向支付网关申请退款或调用物流接口发货。底层的行级检查只判断写入表格是否合规，对于动作在外部系统造成的不可逆后果，它既拦不住，也撤不回。\n第二个盲区，是它在逻辑推演的假设场景里，攻击者完全不需要打破行级安全策略，就能把跨用户的数据泄露出去。比如恶意用户在大家共享的文档里埋下隐藏提示词，正常用户的AI助手跑去总结文档，受到这段指令操纵，自动调取该用户有权查看的个人私密资料，当作摘要写回所有人可见的公开共享区。整个链条里每次读写都挑不出毛病，完全符合该用户的行级安全规则，秘密数据却在规则许可之内流转到了外部。\n此前有一些第三方工具由于使用共享的客户端标识和多层代理设计，出现过凭据冒用的问题。而\nSupabase\n走的是第一方设计，用自己的鉴权服务处理凭证，没有双层代理，属于不同的系统形态。不过身份令牌在整个生命周期中怎么流转、何时过期，还是需要开发者自己审计。\n平台争的不是技术，是入口\n图2：平台的两个入口与两条岔路\n几个月前我写 Turso\n时，还把它当成一个会长期独立存在的玩家，从技术路线的角度画过一张竞争图：单文件的本地数据库、云端的无服务器数据库、边缘计算的运行时，三者各自竞争，比拼的是查询延迟和并发吞吐量。\n但这种画法都假设每条路线会自己走下去。10\n月初这笔收购打破了这个前提。基础软件的竞争单位，从单项技术路线转向了平台对分散能力的整合与对多层入口的掌控。\n头部的玩家都在加速推动整合。Supabase 以前守着大型关系型数据库\nPostgres，现在宣布收购 Turso，补齐了面向 AI\n编程工具的高频轻量存储入口。大数据分析平台 Databricks 在\n收购 Neon\n的官方博客\n里记录了收编云端无服务器 Postgres 的过程；随后又根据\n行业报道关于\nElectric 收购记录\n把做本地同步的 Electric 并入 Neon 团队，将云端\nPostgres 与沙箱内的轻量 Postgres 捏在了一起。与此同时，Cloudflare\n把边缘运行时与轻量 SQLite\n存储深度绑定，并在近期打通了向主流关系型数据库的数据通道。\n这些整合背后，其实对应着两种不同的架构方向。一种方向是升级漏斗：平台在生产端给\nAI 编程工具一个免费或者廉价的轻量单文件数据库，AI\n工具高频创建临时环境；等到原型应用扩大之后，再把数据往客单价更高的大型数据库里迁。这种商业闭环很吃跨引擎的自动化数据迁移工具，目前\nSupabase\n还没拿出对应的迁移工具。第二种走向是长期分工模式。核心业务数据和共享资产长期存放在集中式主数据库中，轻量单文件数据库作为常态化伴生组件，为每个并发\nAI 任务提供独立干净的临时空间，两者长期并存并各司其职。\n软件架构师在评估这样的平台时，应该向厂商直接询问一个关键问题：这个轻量数据库到底是可以长期低成本独立运行的基础组件，还是一块获客跳板？如果平台确实支持平滑升级，它是否真的交付了自动化工具来实现这一过程？\n你该带走什么\n第一，选数据库别从功能出发，先想清楚你要隔离的最小单位是什么、同时要有几个。一个应用一个库，功能齐全的常驻数据库最省心；可一旦单位缩到一个智能体、一个任务一个库、数量上百万，同一种数据库就贵到用不起。单位变了，需要的引擎也变了。Supabase\n收购 Turso，就是在为这个新单位补上它原来缺的那一半。\n第二，在选型前先厘清 AI 在业务中的具体角色。做软件的 AI 和用软件的 AI\n面对着完全不同的存储寿命、权限来源和安全防线。前者需要快速拉起与销毁，后者需要绑定用户个人身份并建立细粒度隔离规则。混淆两边的基础设施，迟早会在成本与安全上埋下隐患。\n第三，听到跨引擎整合的宣传，先看它到底是大小数据库长期协作的混合架构，还是从低到高的升级套餐。如果有升级需求，就让厂商拿出自动化迁移工具，而不是空口承诺。\n第四，面对平台公布的规模数字，主动区分接口调用频次和真实业务沉淀。数以百万计的建库记录反映的是创建活跃度，不能等同于存续的生产环境。把业务交给用户端\nAI\n时，行级安全策略仅能守住数据读写底线，必须在数据库之外单独建立针对外部操作的频率限制、审批拦截和紧急撤销装置。\n应用向终端用户自带的个人 AI\n开放接口，标志着人机交互模式迈出了关键一步。在广泛采纳这一架构前，真正的开发者接入比例和覆盖外部副作用的动作级权限控制体系，才是最需要持续观察的硬指标。",
-      "content_format": "text/plain",
-      "content_status": "ok",
-      "content_via": "http",
-      "content_source_url": "https://yage.ai/share/supabase-turso-agent-two-entrances-20261008.html",
-      "content_chars": 4356,
-      "content_sha256": "9c385c515b2355d98672c282dc850c4592d0f11662f9f0e5bb01966c44e78d11",
-      "content_fetched_at": "2026-10-10T00:40:40.073900+00:00",
-      "content_error": "",
-      "time_precision": "exact",
-      "source_name": "yage.ai share (Deep News)",
-      "fetch_status": "ok",
-      "url_corrected": false
-    }
-  ],
-  "summary": {
+  "source_id": "blog_watch",
+  "collect_date": "2026-10-10",
+  "collect_window": {
+    "start": "2026-10-08T00:00:00+00:00",
+    "end": "2026-10-10T00:39:58.428209+00:00",
+    "hours": 48
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "38010005065",
+    "commit": "5ea5dfd"
+  },
+  "stats": {
+    "total": 6,
     "by_kind": {
       "publish": 6
     },
@@ -173,8 +29,491 @@
       "watchtowr-labs": 1,
       "yage-share": 2
     },
+    "failed_lists": [],
+    "sources_ok": 53,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 11,
+      "browser_llm": 11,
+      "rss": 31
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 17,
+      "calls": 17,
+      "prompt_tokens": 17297,
+      "completion_tokens": 2778,
+      "total_tokens": 20075,
+      "prompt_cache_hit_tokens": 10624,
+      "prompt_cache_miss_tokens": 6673
+    },
     "by_content_status": {
       "ok": 6
     }
-  }
+  },
+  "items": [
+    {
+      "id": "a:362faae203d577e2",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4825508.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4825508.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4825508.html",
+      "at": "2026-10-10T00:39:58.428209+00:00",
+      "external_id": "a:362faae203d577e2",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4825508.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4825508.html",
+      "content": "Please enable cookies.\nSorry, you have been blocked\nYou are unable to access\nunknowncheats.me\nWhy have I been blocked?\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\nWhat can I do to resolve this?\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\nCloudflare Ray ID:\na48192efaabdf60b\n•\nYour IP:\nClick to reveal\n132.196.62.181\n•\nPerformance & security by\nCloudflare",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4825508.html",
+      "content_chars": 727,
+      "content_sha256": "63d45bb7a45a6fe44467ee30a09c2b067d8defbb09b838960bece1752069a2f4",
+      "content_fetched_at": "2026-10-10T00:40:33.074964+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-10-10T00:39:58.428209+00:00",
+      "collected_at": "2026-10-10T00:39:58.428209+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4825508.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4825508.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4825508.html",
+          "content_sha256": "63d45bb7a45a6fe44467ee30a09c2b067d8defbb09b838960bece1752069a2f4"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:bd555d0b4cb6d7e2",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/775105-help-dev-cheats-post4825162.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/775105-help-dev-cheats-post4825162.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/775105-help-dev-cheats-post4825162.html",
+      "at": "2026-10-10T00:39:58.428209+00:00",
+      "external_id": "a:bd555d0b4cb6d7e2",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/775105-help-dev-cheats-post4825162.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/775105-help-dev-cheats-post4825162.html",
+      "content": "Please enable cookies.\nSorry, you have been blocked\nYou are unable to access\nunknowncheats.me\nWhy have I been blocked?\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\nWhat can I do to resolve this?\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\nCloudflare Ray ID:\na48193074836f60b\n•\nYour IP:\nClick to reveal\n132.196.62.181\n•\nPerformance & security by\nCloudflare",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/775105-help-dev-cheats-post4825162.html",
+      "content_chars": 727,
+      "content_sha256": "ed44b26c3240112a60977e0886122ae259b76acc98a88d5250116405e5e88d37",
+      "content_fetched_at": "2026-10-10T00:40:36.476950+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-10-10T00:39:58.428209+00:00",
+      "collected_at": "2026-10-10T00:39:58.428209+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/775105-help-dev-cheats-post4825162.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/775105-help-dev-cheats-post4825162.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/775105-help-dev-cheats-post4825162.html",
+          "content_sha256": "ed44b26c3240112a60977e0886122ae259b76acc98a88d5250116405e5e88d37"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:a842dc410cb55f4f",
+      "who": "anthropic-research",
+      "who_url": "https://www.anthropic.com/research",
+      "action": "publish",
+      "target": "Oct 9, 2026AlignmentInvestigating unintended model actions in our evaluations and internal use",
+      "target_url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+      "text": "anthropic-research published: Oct 9, 2026AlignmentInvestigating unintended model actions in our evaluations and internal use",
+      "at": "2026-10-10T00:39:58.428209+00:00",
+      "external_id": "a:a842dc410cb55f4f",
+      "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+      "title": "Oct 9, 2026AlignmentInvestigating unintended model actions in our evaluations and internal use",
+      "content": "Alignment\nInvestigating unintended model actions in our evaluations and internal use\nOct 9, 2026\nThis report describes examples of unintended model actions we’ve observed during evaluations and internal use of Claude. It is part of our effort to publish more frequent standalone reports on model behavior and alignment beyond our system cards, which we publish with each model release, and our risk reports, which we publish every three to six months as part of our Responsible Scaling Policy. We believe it’s important to be transparent about what we see our models do during testing and use.\nThe behaviors can be grouped into four categories:\nClaude exploiting a basic flaw in software to run commands on a server;\nClaude submitting a sensitive form on a real website when it should not have;\nClaude working around a restriction to reach data that was gated by a token or a fee; and\nClaude using URL shortening services to get around limits in its fetch tool.\nWe have chosen not to name the organizations involved in the examples below to avoid exposing vulnerabilities in their systems, and at their request. For this reason, we also provide less detail about each case than we otherwise would. Some of the cases described below involved websites run by U.S. government agencies at the federal, state, and local levels. We have briefed the White House on these cases and notified each agency involved.\nThe cases we’ve identified to date in these categories had minimal real-world impact. We consider these behaviors to be significantly less severe from an alignment and security perspective than the cybersecurity incidents we reported on\nJuly 30\nand\nSeptember 9\n. They resemble behaviors that we’ve described in our system cards since\nClaude Mythos Preview\n. Most are forms of\npersistence\n, in which Claude, when it cannot complete a task as given, works around a restriction instead of stopping.\nAlthough the impact of these behaviors was minimal and we had already turned off live internet access for some high-risk and cybersecurity evaluations, we have now decided to expand that to include all our internal evaluations until we have confirmed that our security and monitoring measures (described in the remediation section of this post) reliably catch behaviors like these. Below, we also discuss alignment considerations and give more detail on how we’re modifying training to reduce the likelihood of further misbehavior.\nWe identified most of these cases through a review of transcripts that we began in July. Our review first focused on our cybersecurity evaluations—tests where a model is deliberately asked to probe or attack a test system, and where internet access is meant to be disabled. We have since extended our scanning to encompass a much wider range of instances where Claude could have reached the internet, including tests where internet access is deliberately enabled so Claude can be evaluated on real-world tasks. We began by looking for incidents of similar severity to the cybersecurity incidents we reported this summer; we have not found any to date. We then broadened the search to lower-severity cases, where a model interacted with real websites or systems in ways we didn’t intend.\nWe are also now scanning a much larger pool of lower-risk transcripts, as well as our use of Claude within Anthropic and in reinforcement learning (RL) environments where Claude has access to the internet. As this work continues, we plan to report new instances of unintended behaviors. All cases reported here involved Claude interacting with the outside world; to our knowledge, none of them involved customer data or Anthropic’s own internal systems.\nIn this post, we explain why we run evaluations, which are where most of these cases occurred; describe each behavior in more detail; and offer a preliminary view of what the behaviors suggest about Claude’s alignment and how we’re mitigating them.\nWhy and how we run evaluations\nThe behaviors described in this post are not specific to evaluations, but many of the cases we’ve identified to date occurred during evaluation runs. We continually test models on a wide range of tasks prior to releasing them. We use many different evaluations (standardized sets of tasks, scored the same way each time), each of which helps to paint a picture of Claude’s skills in a particular area. Many of the evaluations we use are public; they are written by outside researchers and can be run by any developer, allowing us to compare capabilities across models. Other evaluations we build in-house.\nBecause language models are non-deterministic—that is, their responses always involve some element of randomness, and they may carry out the same task slightly differently each time—we have Claude complete each evaluation task hundreds or thousands of times (each attempt is called a run). Testing so many times allows us to understand how a model typically performs, and also to catch rare cases where a model does something we don’t expect. What we learn from evaluations shapes decisions across Anthropic, including how we train models, what safeguards we build around them, and when we release them.\nEvaluations are also where a model’s behavioral issues are sometimes first revealed. Models learn much of what they can do through RL, in which they attempt a task within a specific environment many times over and are rewarded when they succeed. However, training environments are imperfect. If training rewards something we didn’t intend—such as finding loopholes or working around a restriction—the model learns that the workaround pays off and may then apply it elsewhere. This is known as reward hacking. While we have processes in place to identify and filter out reward hacking during training, evaluations are a critical mechanism for understanding a model’s behavioral propensities in different contexts and on different sets of tasks than those we have in training.\nSome tasks—such as searching the web for hard-to-find information—are difficult to realistically simulate in an environment without internet access. Running them with access has been standard practice within the industry: public web search benchmarks are run on the live internet by default, and running them the same way allows us to compare our models with other models. Most of the cases in this report occurred during such evaluations.\nOverview of behaviors\nBelow, we describe four categories of behavior in which Claude acted on real websites and systems in ways we did not intend, each of which involved an organization or person outside Anthropic.\nExploiting a basic flaw in software to run commands on a server\nWhen Claude could not complete an evaluation task directly, either because its own tools were deliberately limited or because an outside service it needed was unavailable, it used other tools hosted on a third party’s site to achieve its goal. In some circumstances, it did this by exploiting basic flaws in that site’s software, using SQL or command injection (a way of sending input that the site mistakenly runs as instructions).\nFor example, one evaluation asked Claude Mythos Preview to run a scientific analysis. The public tool it needed to perform that analysis was hosted by a university; when the model sought to access to it, the tool returned an error. Looking for another way to complete the task, Claude explored the tool’s website, found a script on the university’s server that would return any file it was asked for, and used it to copy files from the server, including the script’s own code. In that code Claude found the injection flaw that let it run commands on the server, and used it to run the calculation.\nIn another instance, the data Claude Mythos 5 needed was free, but Claude could not access it without accepting a data use agreement, which it did not have the tools to do. Claude used applications hosted on the website to load the page and accept the agreement on its behalf.\nWe saw this behavior on DeepSearchQA and BrowseComp (both public web research evaluations), on LABBench2 (a public biology research benchmark), and during internal evaluations.\nSubmitting a form it should not have\nWe saw instances where Claude submitted an online form when it shouldn’t have. Generally, this occurred when an evaluation’s instructions were ambiguous, or when a misconfiguration within the environment prevented Claude from working with dummy forms.\nFor example, in a case which happened multiple times on the same evaluation, an unreleased, non-frontier research model was meant to fill out a practice copy of a government form. When the copy failed to load or the model closed it by mistake, the model instead navigated to the website where the real form is normally hosted and submitted the form there.\nIn another evaluation, Claude Haiku 4.5 was instructed to complete a form up until the final submission stage, but to stop before actually submitting. Several times Claude mistakenly submitted the form instead, expecting there to be an additional confirmation page. In these instances, the model’s chain-of-thought stated that it was demonstrating the process, not submitting a real request.\nIn a third example of this behavior, Claude Haiku 4.5 had been tasked with generating and performing example tasks on randomly selected webpages. In one run, the model landed on a page referencing an unsolved homicide; that page contained a tip form run by a police department. Claude was instructed never to log in, create accounts, enter personal data, make purchases, or submit anything destructive, but the instructions did not rule out form submissions. Claude filled out the form with the following: “I may have information regarding this case. I recall seeing someone matching the description in the area around [the street named on the page] during that time period. Please contact me if this information is relevant.” (The website did not include a description of the perpetrator.) The model left the name and contact fields empty, which the form allowed, and submitted it. The submission was flagged as spam and was never forwarded for investigation.\nWe saw this behavior on OSWorld (a public computer use evaluation), on Odysseys (a long-horizon task evaluation), and during internal usage.\nWorking around restrictions to reach gated data\nClaude sometimes worked around a restriction to reach data to which it did not have access. Generally, this occurred when a server refused Claude’s request, or when the data was offered only for a fee.\nFor example, in an evaluation that asked Claude Mythos 5 to identify a location shown in a photo, it attempted to access a local government’s property map to triangulate its guesses. Claude could read webpage text, but the evaluation limited its ability to click through them as a person would. Instead, it read the settings file the site sends to browsers, found working access tokens, and used them to send requests directly to the server behind the map to access the data.\nIn another example of this behavior, an Anthropic researcher used Claude Mythos 5 on a statistics project that required it to pull public data that was available from a state agency for a fee. Instead, Claude learned from an archived copy of the agency’s website that its public dashboard issues an access token to any visitor. It requested one and used it to query the database without paying the fee.\nIn both examples, Claude obtained data already available to the public but only for a fee.\nWe saw this behavior on Humanity’s Last Exam, an evaluation of expert-level academic questions, and during internal usage.\nUsing URL shortening services\nSome of our fetch tools, which let Claude read webpages, limit the length of the URLs Claude can request. This is to prevent Claude from using long URLs to take certain unwanted actions, such as SQL or command injections (part of a URL is text passed to a site’s server, and a long one has room to carry such instructions). We saw several models, including Claude Opus 5 and Claude Mythos 5, get around this limitation by using free URL shortening services. We first identified this behavior internally, but as we were writing this post, an operator of the da.gd URL shortening service let us know that they had also found Claude using their website for this purpose. We thank the operator for sharing these details.\nRemediation\nWe’ve taken several preventive measures. Some of the public evaluations we no longer run; others we have moved to their offline versions, or rebuilt them so that their tasks do not reach live websites. We’ve also made broader changes. We have updated the guardrails on some of our internet access tools, such as the web fetch tool, to heavily restrict what the model can do with them. And, as part of our ongoing\nagent security and monitoring efforts\n, we have built tooling to automatically detect and block the kinds of behaviors described above. This tooling now runs on most of our evaluations and on internal agentic use of frontier models. When we tested it against the cases described in this post, it blocked all of them.\nAs we described in our August 31\npost\n, we are also continuing to fix or remove training environments that reward Claude for working around tool restrictions or other blockers, so that they do not incentivize these behaviors or permit reward hacking.\nWe’re also taking other steps to prevent unintended agentic actions within Anthropic, and to catch them if they occur. These include migrating internal agents to centrally managed infrastructure with strong containment, minimizing internet access for internal agents and training processes, and monitoring far more of what agents do through techniques like\nsafety classifiers\nand\nhierarchical summarization\n. These measures are now part of our security team’s detection and response procedures so that we can respond to and contain undesired behavior quickly. We expect to publish more on these approaches, and to build them directly into our products.\nDiscussion and alignment takeaways\nWhile we have not completed a full alignment assessment of these cases, we consider them to be less severe than the cybersecurity incidents from this summer. We explain why below, and share the general lessons we’ve drawn from them.\nAlignment context\nAs we establish a regular public reporting process for behaviors like these, we also want to situate them in terms of their severity. This remains challenging: judging the extent of an alignment failure often depends on what the model was trying to do, and a model’s own account of its reasoning is not necessarily reliable evidence of its beliefs or reasons for action, as we discussed in our September 9\nalignment assessment\n. As models grow more capable, they can interact with the world in more sophisticated ways, which makes more complex failures possible. For example, the biased reasoning we described in that assessment was not new, but it led to more serious consequences in a setting where models could capably act on real systems for hours at a time. An alignment severity framework built around today’s failures could become outdated quickly, given how fast AI capabilities are advancing.\nNonetheless, we found two alignment dimensions useful for examining the cases in this post: overreach, or how far the model went beyond what its task intended, and dishonesty, or whether it gave a misleading account of its actions or intentions. On overreach, we consider these cases to be substantially less concerning than the incidents we reported this summer, in which Claude gained access to real third-party systems for hours during cybersecurity evaluations. In the cases we report here, in contrast, Claude bypassed access controls to reach gated but publicly available data, or exploited software flaws and ran commands on servers (mainly to reach non-sensitive data).\nOn dishonesty, the comparison is more mixed. In one case, tasked with generating example interactions with websites, Claude submitted an invented tip through a police department’s online form. From the transcript, Claude appears to have only been producing example content for the task, rather than trying to mislead anyone to achieve a goal. In the most serious\nincident from this summer,\nby contrast, Claude’s misleading reasoning was sustained over hours and supported its continued attack. Still, judging dishonesty with confidence typically requires a deeper assessment than we have done here, such as replaying transcripts with modifications to test what drove the model’s behavior, so our view of these cases may change with further analysis.\nLessons and next steps\nNone of the behaviors we’ve described here are new and they do not change our overall view of Claude’s alignment. In many of the cases where we observed these behaviors, Claude had been given tasks that were ambiguous or impossible to complete. We and others have observed that when models are given impossible-to-complete tasks, they will pursue unintended and sometimes misaligned strategies to achieve their goals.\nIt is possible that some of these failures could have been avoided if the evaluation questions had more clearly stated what was in and out of scope for the exercise, including the targets, permitted actions, and network boundaries (i.e., what the model should and shouldn’t access). However, Claude encounters ambiguous and impossible tasks every day in real use, and, indeed, several of the cases we observed occurred during regular agentic use of Claude.\nBehavioral and alignment training is the main technique we have at our disposal to improve Claude’s judgment and ability to handle ambiguous situations with care. Historically, we have been more focused on teaching models to respect boundaries and be appropriately cautious in coding environments. We are now expanding these environments to applications like search and computer use, which were involved in the cases described here. However, alignment training is not yet sufficient or fully robust on its own, at least in the short term, so we also rely on defense-in-depth approaches, including the classifiers and safeguards described above.\nWe plan to keep reporting concerning behaviors as our scan and analysis continue. We hope these reports help other developers check for similar behaviors in their own models, since many of the evaluations involved are public and widely used. While these cases had minimal impact, we do not want to diminish the findings, because the same behaviors could do far more harm as models become more powerful. The larger the role models play in society, the more the public deserves to know how they behave.\nNote: The tip form example described above involved the Philadelphia Police Department who self-disclosed today via their press release. We shared this finding with the department on October 8 as soon as our technical review was complete.\nRelated content\nThe missing map of the sky\nBrice Ménard, an astrophysicist at Johns Hopkins University and a researcher at Anthropic, explains how he worked with Claude Science to produce the first complete map of the sky in UV light.\nRead more\nLaunching an opt-in vulnerability-finding service for open-source software\nWe’re making available OSS Scanner, an opt-in vulnerability scanner for the open-source ecosystem that’s informed by our experience using Claude to find vulnerabilities during Project Glasswing.\nRead more\nClaude-shaped science\nGuest author Prof. Matthew Schwartz describes what happened when he stopped fighting Claude and allowed Claude to find “Claude-shaped” problems: ones best suited to the capabilities of the current generation of LLM tools. This led him to build BootLoops, a toolkit for exact calculations in quantitative science, which he has been applying across scientific fields alongside experts.\nRead more",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+      "content_chars": 19857,
+      "content_sha256": "5e95efdf9e2bc22b668511d6d6fa7fcb59518d52f97085347ca85cca6060d7b7",
+      "content_fetched_at": "2026-10-10T00:41:52.253509+00:00",
+      "author": "anthropic-research",
+      "author_name": "Anthropic Research",
+      "author_url": "https://www.anthropic.com/research",
+      "published_at": "2026-10-10T00:39:58.428209+00:00",
+      "collected_at": "2026-10-10T00:39:58.428209+00:00",
+      "tags": [
+        "kind:publish",
+        "src:anthropic-research",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.anthropic.com/research",
+        "https://www.anthropic.com/research/investigating-unintended-model-actions"
+      ],
+      "refs": {
+        "actor": {
+          "login": "anthropic-research",
+          "url": "https://www.anthropic.com/research"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "anthropic-research",
+          "name": "Anthropic Research",
+          "home_url": "https://www.anthropic.com/research"
+        },
+        "article": {
+          "title": "Oct 9, 2026AlignmentInvestigating unintended model actions in our evaluations and internal use",
+          "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+          "content_sha256": "5e95efdf9e2bc22b668511d6d6fa7fcb59518d52f97085347ca85cca6060d7b7"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:cb35de36512f22d0",
+      "who": "watchtowr-labs",
+      "who_url": "https://labs.watchtowr.com/",
+      "action": "publish",
+      "target": "Death By A Thousand PaperCuts (PaperCut Pre-Auth RCE Chain and Patch Bypasses WT-2026-0141-0144/CVE-2026-82077/CVE-2026-82078/CVE-2026-81578)",
+      "target_url": "https://labs.watchtowr.com/death-by-a-thousand-papercuts-papercut-pre-auth-rce-chain-and-patch-bypasses-wt-2026-0141-0144-cve-2026-82077-cve-2026-82078-cve-2026-81578/",
+      "text": "watchtowr-labs published: Death By A Thousand PaperCuts (PaperCut Pre-Auth RCE Chain and Patch Bypasses WT-2026-0141-0144/CVE-2026-82077/CVE-2026-82078/CVE-2026-81578)",
+      "at": "2026-10-09T17:31:14+00:00",
+      "external_id": "a:cb35de36512f22d0",
+      "url": "https://labs.watchtowr.com/death-by-a-thousand-papercuts-papercut-pre-auth-rce-chain-and-patch-bypasses-wt-2026-0141-0144-cve-2026-82077-cve-2026-82078-cve-2026-81578/",
+      "title": "Death By A Thousand PaperCuts (PaperCut Pre-Auth RCE Chain and Patch Bypasses WT-2026-0141-0144/CVE-2026-82077/CVE-2026-82078/CVE-2026-81578)",
+      "content": "Before we begin, yes - it's confusing. There are more vulnerabilities with watchTowr IDs in this blog post than there are CVE IDs (assigned by PaperCut), due to PaperCut bundling vulnerabilities and then patch bypasses for those same vulnerabilities into singular CVE IDs.\nPaper! It still exists.\nWe have to admit it - so much is happening right now (F1, GTA6, breakfast) that we barely have time to lovingly tease our most favoritest vendors.\nOn Thursday, 27 August 2026, PaperCut published an\nadvisory\nclaiming that a mysterious vulnerability was being exploited in-the-wild, leading to system compromise.\nThe watchTowr Intel team has documented the in-the-wild exploitation that our global honeypot network, Attacker Eye, captured\nhere\n.\nTo add insult to injury, when PaperCut released their advisory, they did so without a patch. Unlike other vendors that struggle to communicate at all, PaperCut provided IOCs in the form of log snippets related to exploitation and temporary mitigations, enabling their customers to take action.\nThat said, much of the information remained unclear.\nHow many vulnerabilities were exploited in this chain?\nDid any of them require authentication?\nWere the attackers exploiting post-authentication vulnerabilities?\nWhich components were vulnerable?\nAs mere mortals, we knew absolutely nothing at this point. A familiar feeling.\nPaperCut is\nno stranger\nto the exploitation of vulnerabilities in the wild. They've had their fair share of ransomware gang attention and, of course, live to tell the tale with their CISA KEV trophy.\nWhat is PaperCut?\nFor those unaware, PaperCut is print management software that helps organizations monitor, control, and secure printing across their networks. Its core features include print quotas, secure release printing (a job is released only after the user logs in at the printer), cost tracking, and detailed reporting. Together, these cut printing costs, reduce paper waste, and prevent unauthorized use.\nIt is widely used by schools, universities, healthcare providers, government agencies, law firms, and businesses of all sizes. That mix makes it an attractive target for APTs and ransomware gangs, as proven by several vulnerabilities previously exploited in the wild (such as CVE-2023-27351 and CVE-2023-27350).\nTL;DR Timeline\nThere was a lot happening between 27 August and 1 September, so let us give you the full timeline, including some spoilers.\nAuthor's note: even though CVEs were assigned after two rounds of patches, we use the CVE numbers from the beginning of this timeline. This is to avoid confusion between vulnerabilities.\n27 August 2026\nPaperCut publishes\nan advisory\nconcerning a vulnerability being exploited in the wild targeting 26.0.3. Advisory comes with no patch - exploited vulnerabilities are still not patched.\nAt this time, no CVEs were assigned, and only IOCs were published (no vulnerability details, no patch was available).\nWith no details about the vulnerabilities or their count, we started working blindly from the IOCs to reproduce them. We had no patch available, thus we had to discover the 0-day vulnerabilities from scratch.\nUsing the unpatched PaperCut version, we found the Post-Auth RCE vulnerability (later identified as CVE-2026-82078), which matched the ITW IOCs shared by PaperCut.\nHowever, we did not yet know how to exploit this vulnerability without authentication.\nPaperCut releases a patch (26.0.4 for PaperCut NG). At this point, we can finally perform patch diffing, which may help us find a way to exploit the Post-Auth RCE without authentication.\nWe analyzed the code changes in 26.0.4, enabling us to confirm that we had correctly reproduced CVE-2026-82078 (Post-Auth RCE) and to identify and reproduce CVE-2026-81578 (Authentication Bypass), the full in-the-wild exploitation chain.\nHowever, during this process, we identified a way to bypass the patch for CVE-2026-82078 (Post-Auth RCE)\nThis was reported to PaperCut and tracked internally as WT-2026-0141.\n28 August 2026\nWe realized we’d identified a mechanism to bypass the patch for CVE-2026-81578 (Authentication Bypass vulnerability)\nThis was reported to PaperCut and tracked internally as WT-2026-0142.\nThis meant we now had a full Pre-Auth RCE chain again (working against the (at the time) newest version, 26.0.4), by combining :\nWT-2026-0141 - Post-Auth RCE vulnerability.\nWT-2026-0142 - Authentication Bypass vulnerability.\nRapidly, PaperCut released another patch - publicly known as\n26.0.4-PO build 76508,\nwhich contained fixes for:\nWT-2026-0141 - Post-Auth RCE vulnerability.\nWT-2026-0142 - Authentication Bypass vulnerability.\nOnce again, we found ourselves analyzing\n26.0.4-PO build 76508\nand identified a mechanism to bypass the fix for WT-2026-0142, the Authentication Bypass.\nThis was reported to PaperCut and tracked internally as WT-2026-0143.\n31 August 2026\nLike a dog with a bone, we then stumbled upon a completely new Post-Auth RCE vulnerability while analyzing the\n26.0.4-PO build 76508.\nThis was reported to PaperCut and tracked internally as WT-2026-0144 (now known as CVE-2026-82077).\nThis meant we now had a full Pre-Auth RCE chain again, by combining :\nWT-2026-0143 Authentication Bypass vulnerability and\nWT-2026-0144 (CVE-2026-82077) Post-Auth RCE vulnerability.\n1 September 2026\nPaperCut releases a new patch,\n26.0.4-PO build 76530.\nPatch contains a fix for: WT-2026-0143 (Authentication Bypass)\n10 September 2026\nPaperCut releases a new patch,\n26.0.5\nPatch contains a fix for: WT-2026-0144/CVE-2026-82077 (Post-Auth RCE)\nCovered In PaperCuts\nSo to summarize - tl;dr there are a lot of vulnerabilities. Let’s summarise below:\nExploited In The Wild (Version 26.0.3)\nYeeted across the internet:\nCVE-2026-81578 (Authentication Bypass)\nCVE-2026-82078 (Post-Auth RCE)\nThen….. it continued.\nFirst Patch (Version 26.0.4)\nVulnerabilities discovered by watchTowr while analyzing patches:\nWT-2026-0141 (no CVE assigned)\nA bypass of CVE-2026-82078 (Post-Auth RCE) patch.\nWT-2026-0142 (no CVE assigned)\nA bypass of CVE-2026-81578 (Authentication Bypass) patch.\nSecond Patch (\nVersion 26.0.4-PO build 76508)\nVulnerabilities discovered by watchTowr while analyzing patches:\nWT-2026-0143 (no CVE assigned)\nA bypass of WT-2026-0142 (Authentication Bypass) patch.\nCVE-2026-82077 / WT-2026-0144\nA completely new Post-Auth RCE was discovered, finalizing the chain with WT-2026-0143 Authentication Bypass.\nWe know what you're going to say already - “watchTowr, are you insane? There's already an analysis published. Why would you rewrite already existing analysis?”\nAs you can see from the above, dear reader, it has been a saga. So today, we are going to be walking through vulnerabilities identified in version 26.0.4-PO build 76508 (and briefly mentioned above):\nWT-2026-0143: Authentication Bypass vulnerability (which received no CVE assignment).\nWT-2026-0144 (CVE-2026-82077) Post-Auth RCE vulnerability.\nWhy these two? For these reasons below.\nThey’re super cool.\nThey enable a full unauthenticated RCE chain on Papercut 26.0.4-PO build 76508\nThey haven’t been documented yet (hopefully this also makes us cool)\nWT-2026-0143 and WT-2026-0144 (CVE-2026-82077) are new and shiny\nBypassing the Patch (26.0.4-PO build 76508) to the Authentication Bypass Bypass\nTl;dr this is about WT-2026-0143, which is a bypass of the patch of the bypass for CVE-2026-81579.\nWe assume you have probably already read, reviewed and memorised\nan analysis of the Authentication Bypass\n(CVE-2026-81578 ) that was exploited in-the-wild and identified in version 26.0.3.\nYou may also have seen technical analysis of the first bypasses, which affected 26.0.4, the first patch released by PaperCut.\nEditor: This is patch hell and honestly I can barely keep up.\nIf not, sorry - you can Google for it. “Me too” content receives strong disapproval from our furry friends, who are already upset that we are considering replacing them with an LLM.\nLong story short: PaperCut uses the Apache Tapestry 3 framework to handle web pages. PaperCut also has multiple pages implemented as Java classes, each with its own set of permissions.\nWe define the page or form to visit using the Tapestry\nservice\nparameter.\nThe issue was that PaperCut did not foresee a situation where you:\nDefine an unauthenticated page (like\nLogonMessage\n) in the\nservice\nparameter, which becomes the root page.\nThen define another page and its form to invoke, which requires authentication.\nThe result? An unauthenticated attacker can reach the forms of authenticated pages.\nThis behavior can be exploited through a single request using the\nservice\nparameter, like this:\nservice=direct/1/LogonMessage/ConfigEditor/quickFindForm\nWhy? How? Magic.\nThis particular strain of magic, though, is Apache Tapestry magic, which is more than happy to invoke the root page and the subsequent pages defined within the\nservice\n. We first reach\nLogonMessage\n, then jump into the\nConfigEditor\npage and its\nquickFindForm\nform.\nWait, is there no authorization implemented in PaperCut? Well, there is. Authorization is implemented in the\nBasePaperCutPage.pageValidate\nmethod, which is extended by multiple pages (like\nLogonMessage\n). However, the code only checks authorization for the root page, so\nLogonMessage\nin our case, this page does not require authentication. Again, the possibility of defining multiple pages within a single\nservice\nparameter was not included in the authorization logic.\nWait, we think we have seen something like this.\nThis gave us flashbacks to our\nSolarWinds Web Help Desk research\n. If you recall, or unfortunately are still upset about wasting the time to read our blog post, you'll remember that we found multiple Authentication Bypasses because SolarWinds WHD used a WebObjects framework that has been obsolete since we were 10 years old.\nThose bypasses were extremely hard to find because nobody younger than 50 really knows how those frameworks work.\nAnd everybody over 50 who knows said frameworks hates them so much that they would rather deploy a leading SSLVPN solution.\nToday, we face a similar situation. Apache Tapestry 3, which has been obsolete for roughly 20 years, is not well known among security researchers.\nAnd apparently the developers that use it don't really know it either.\nThe Latest Authentication Bypass (WT-2026-0143) for 26.0.4-PO build 76508 Patch\n“God, shut up watchTowr” - yes, OK.\nWe’ve now explained at least the base behavior behind CVE-2026-81578. In PaperCut patch 1 season 1 (26.0.4), a temporary protection was implemented to block certain attack vectors.\nFor instance:\nAn additional recursive page permission check was implemented in\nBasePaperCutPage.pageValidate\n, so bypassing with the\nLogonMessage\npage was no longer possible.\nIt turned out you could use the\nHome\npage, which does not extend\nBasePaperCutPage\n, to bypass the patch again.\nSo the next patch added manual authorization checks to forms belonging to sensitive pages, like\nConfigEditor\n(which was exploited in the wild, by the way).\nStill, without a global authorization check implemented for all pages, it is hard to keep track and manually verify every page in the codebase.\nAnd that is how we realized it was still possible to abuse the Setup Wizard forms, since they had been completely ignored in the patches delivered up to that point.\nAs you can imagine, PaperCut has an initial setup procedure:\nAs you can see, there are several subpages, such as\nCreate Account\nor\nChoose Organization Type\n.\nAfter the initial product setup, PaperCut sets\nsystem.setup-completed\nto\nY\n.\nWhy does this matter? Every setup subpage (like\nSetupAdmin\n) extends\nBaseSetupPage\n, which implements the following authorization method:\npublic void pageValidate(PageEvent event) {\nWebUtils.ensureCompatibleBrowserForAdmin(event.getRequestCycle().getRequestContext().getRequest());\nif (this.getConfigManager().getBoolean(\"system.setup-completed\")) {\nWebUtils.redirectToPage(event.getRequestCycle().getPage(\"Home\"));\n}\nIf\nsystem.setup-completed\nreturns\ntrue\n, we get redirected and the setup pages are not triggered. And here comes our authentication bypass.\nImagine that you want to access one of the setup pages (\nSetupAdmin\n), after the setup had already been completed.\nYou might think you could do this, you could do this with the\nservice\nparameter set to\ndirect/1/SetupAdmin/$Form\n. However, this wouldn’t work, as the code would invoke the\nBaseSetupPage.pageValidate\n(presented above, used by SetupAdmin), and would thus redirect us back to\nHome\n, instead of executing the setup form.\nHowever, we can navigate directly to every stage of the Setup Wizard form by accessing it through the\nHome\npage, even though the product has already been deployed.\nWhy? Let’s walk through it step by step:\nYou invoke a sample setup page through the\nHome\npage (via the service parameter), like this:\n/app?service=direct/1/Home/SetupAdmin/$Form\n(we want to reach\nSetupAdmin\npre-auth, via\nHome\n).\nThe framework will therefore try to invoke\nHome.pageValidate\nto verify your privileges, but will skip the\nSetupAdmin.pageValidate\nmethod (it won’t get called).\nHome\ncan be accessed pre-auth, thus an unauthenticated attacker is not getting blocked, and they successfully reach the\nSetupAdmin\npage.\nSetup pages\npageValidate\nmethod will never be called (thanks to the bypass), so the\nsystem.setup-completed\nvalue is irrelevant for the attacker.\nIf you wish to reset the admin’s password using the setup process, you need to go through it step by step. It means you need to invoke each setup page using the authentication bypass. The full process consists of four requests:\nPOST /app?service=direct/1/Home/SetupAdmin/$Form\n- Change the admin's password here.\nPOST /app?service=direct/1/Home/SetupOrgType/$Form\n- Set the organization type here.\nPOST /app?service=direct/1/Home/SetupUserSource/$Form\n- Pick user synchronization sources here (we chose to perform no synchronization in our PoC).\nPOST /app?service=direct/1/Home/SetupVerify/$Form\n- Confirm that the setup is completed here.\nVoila. You have forced the execution of a “fresh fresh” product setup and successfully modified the admin user password, concluding our explanation of the Authentication Bypass (WT-2026-0143 ) that worked against version 26.0.4-PO build 76508.\nJust for fun, let’s show this working within our Detection Artifact Generator:\nSo, what next? We want more (RCE, we want RCE).\nPost-Auth RCE: WT-2026-0144 (CVE-2026-82077)\nNow, as you've seen above, we've demonstrated that WT-2026-0143 can be used to bypass authentication and modify the admin password on the latest version (at the time) of PaperCut: version 26.0.4-PO build 76508.\nNow, post-patch, the original in-the-wild exploited post-auth RCE vulnerability was effectively “completely removed” with changes made to the\nsecurity.properties\n. file. If you recall, that vulnerability was based on controlling the JDBC connection URL and triggering arbitrary connections, and was blocked through the\nsecurity.properties\nconfig file.\nWith one route blocked, and a lot of remaining functionality to poke - we thought it was worth looking for a new route.\nAfter some time, our eyes settled on the\nScan to Fax\nfunctionality. Why? Because this functionality ultimately leads to the execution of OS commands, making it a no-brainer to investigate.\nWith the proper definition of job services, an attacker can reach the\nbiz.papercut.pcng.service.scan.FaxProviderManagerImpl.sendFaxJob\nmethod, and the input argument of type\nScanFaxJob\nis fully attacker-controlled.\npublic void sendFaxJob(ScanFaxJob job) throws RuntimeException, InterruptedException { // [1]\nlogger.debug(\"Sending fax job {} to provider {}\", job.getFaxJob(), job.getProviderConnector());\nFaxJob faxJob = job.getFaxJob();\nString jobStr;\ntry {\njobStr = this.convertFaxJobToJSON(faxJob);\n} catch (IOException var12) {\nlogger.error(\"Unable to convert fax job {} to JSON file\", job.getFaxJob());\nthrow new IllegalArgumentException(\"Unable to convert fax job to JSON file\");\n}\nPath jobFile = this.createStringJsonFile(jobStr, \"papercut-scan-fax-job\");\nif (jobFile == null) {\nthrow new IllegalArgumentException(\"Unable to create fax job file\");\n} else {\nPath settingsFile = this.createStringJsonFile(job.getProviderSettingsJson(), \"papercut-scan-fax-settings\");\nif (settingsFile == null) {\nthis.deleteTmpFile(jobFile);\nthrow new IllegalArgumentException(\"Unable to create fax settings file\");\n} else {\nString template = this.configManager.getString(\"system.scan.fax.send.command-args\"); // [2]\nString testOptions = this.configManager.getString(\"system.scan.fax.test.options\");\nlogger.debug(\"Using the following fax connector template: '{}'\", template);\nlogger.debug(\"Using job contents of: {}\", jobStr);\nString[] cmdArray = (String[])Arrays.stream(template.split(\"\\\\s+\")).map((str) -> str.replace(\"%job%\", this.quote(jobFile.toAbsolutePath().toString())).replace(\"%settings%\", this.quote(settingsFile.toAbsolutePath().toString())).replace(\"%test-options%\", testOptions)).toArray((x$0) -> new String[x$0]); // [3]\ntry {\nthis.runCommand(job.getProviderConnector(), cmdArray, this.configManager.getIntegerWithDefault(\"system.scan.fax.send.timeout-secs\", 30)); // [4]\n} finally {\nif (!testOptions.contains(\"-o keeptmp=Y\")) {\nthis.deleteTmpFile(jobFile);\nthis.deleteTmpFile(settingsFile);\n}\nAt\n[1]\n, the\nsendFaxJob\nmethod is defined with the attacker-controlled\nScanFaxJob\nobject.\nAt\n[2]\n, the code extracts the\nsystem.scan.fax.send.command-args\nsetting and stores it as the\ntemplate\noption.\nAt\n[3]\n, the code creates the\ncmdArray\n, which is based on the\ntemplate\n.\nAt\n[4]\n,\nrunCommand\nis executed, and the first argument is the attacker-controlled value from\njob.getProviderConnector\n.\nLooking at the code snippet below, we can see the implementation of\nScanFaxJob\n:\npublic class ScanFaxJob {\nFaxJob faxJob;\nString providerConnector;\nString providerSettingsJson;\npublic ScanFaxJob(String providerConnector, String providerSettingsJson, FaxJob faxJob) {\nthis.providerConnector = providerConnector;\nthis.providerSettingsJson = providerSettingsJson;\nthis.faxJob = faxJob;\n}\npublic FaxJob getFaxJob() {\nreturn this.faxJob;\n}\npublic String getProviderSettingsJson() {\nreturn this.providerSettingsJson;\n}\npublic String getProviderConnector() {\nreturn this.providerConnector;\n}\nThe\nproviderConnector\nmember is not verified at any point, giving us more hope…\nLet's have a look at\nrunCommand\n:\nprivate String runCommand(String connector, String[] cmdArray, final int timeOutSecs) throws RuntimeException, InterruptedException {\nStringBuffer stdout = new StringBuffer();\nStringBuffer stderr = new StringBuffer();\nint exitCode = this.runCommandBuffers(connector, cmdArray, timeOutSecs, stdout, stderr); // [1]\nif (exitCode != 0) {\nthrow new RuntimeException(\"Fax connector failed: \" + cmdArray[0]);\n} else {\nreturn stdout.toString();\n}\nAt\n[1]\n, it calls\nrunCommandBuffers\n:\nprivate int runCommandBuffers(String connector, String[] cmdArray, final int timeOutSecs, StringBuffer stdout, StringBuffer stderr) throws InterruptedException, RuntimeException {\nif (stdout == null) {\nstdout = new StringBuffer();\n}\nif (stderr == null) {\nstderr = new StringBuffer();\n}\ncmdArray = (String[])ObjectArrays.concat(this.getAbsoluteBinaryPath(connector), cmdArray); // [1]\nString cmdLine = String.join(System.lineSeparator(), cmdArray);\nlogger.debug(\"Using the fax connector with an adjusted path \\\"{}\\\"\", cmdLine);\ntry {\nint exitCode = ProcessUtils.execAndGetOutput(cmdArray, (boolean[])null, stdout, stderr, timeOutSecs); // [2]\n//...\n}\n[1]\n, it creates a new\ncmdArray\n, but the attacker-controlled\nconnector\nis passed through\ngetAbsoluteBinaryPath\nfirst.\nAt\n[2]\n, it executes the command using\nProcessUtils.execAndGetOutput\n.\nThe final part of the puzzle is found within\ngetAbsoluteBinaryPath\n:\nprivate String getAbsoluteBinaryPath(final String commandName) {\nString var10000 = this.getFaxConnectorDirPath(); // [1]\nString path = var10000 + File.separator + commandName; // [2]\nlogger.debug(\"Getting absolute path: {}\", path);\nif (Files.isExecutable(Paths.get(path))) {\nreturn path;\n} else {\npath = path + \".exe\";\nif (Files.isExecutable(Paths.get(path))) {\nreturn path;\n} else {\nlogger.error(\"Could fax connector not be executable: {}\", commandName);\nthrow new RuntimeException(path + \" is not executable\");\n}\nAt\n[1]\n, it extracts the directory for the fax connector.\nAt\n[2]\n, it appends our connector string to this directory with no validation. Of course, the validation is not performed here either, so we are dealing with a\nRelative Path Traversal\n.\nTo sum up, the attacker can:\nCreate a new\nScanFaxJob\nwhere the\nproviderConnector\nis set to, for example,\n../../../../../../../../../../../../../Windows/System32/cmd\n. One can do this with the following HTTP request:\nPOST /app HTTP/1.1\nHost: target:9191\nOrigin: <http://target:9191>\nCookie: org.apache.tapestry.locale=en; JSESSIONID=cookie\nContent-Length: 6853\nContent-Type: application/x-www-form-urlencoded\nscanActionType=FAX&label=test&faxProviderModel=..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5CWindows%5CSystem32%5Ccmd&...removedforreadability...\nModify the\nsystem.scan.fax.send.command-args\nconfig parameter to, for example,\n/c whoami\n(through the Config Editor page):\nTrigger a new scan to fax job.\nProfit.\nAnd there we have it - a new Post-Auth RCE (CVE-2026-82077 / WT-2026-0144), allowing us to finalize the entire chain to RCE, with our Authentication Bypass (WT-2026-0143).\nFull Chain\nTying it all together (WT-2026-0143 + WT-2026-0144/CVE-2026-82077), we can finally pop a shell against PaperCut NG 26.0.4-PO build 76508.\nDetection Artefact Generator\nAs always, we are sharing our Detection Artefact Generator so you can determine your own susceptibility and inform remediation in your own environments.\nWhile the DAG does not execute the full chain, it determines exposure to the Authentication Bypass vulnerabilities we’ve discussed above.\nIt can be found on our GitHub\nhere\n.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://labs.watchtowr.com/death-by-a-thousand-papercuts-papercut-pre-auth-rce-chain-and-patch-bypasses-wt-2026-0141-0144-cve-2026-82077-cve-2026-82078-cve-2026-81578/",
+      "content_chars": 21913,
+      "content_sha256": "001c7d1990dcece11d629fd5dc7b1f3db8c76e37344773dc293d42670132da85",
+      "content_fetched_at": "2026-10-10T00:41:45.374168+00:00",
+      "author": "watchtowr-labs",
+      "author_name": "watchTowr Labs",
+      "author_url": "https://labs.watchtowr.com/",
+      "published_at": "2026-10-09T17:31:14+00:00",
+      "collected_at": "2026-10-10T00:39:58.428209+00:00",
+      "tags": [
+        "kind:publish",
+        "src:watchtowr-labs",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://labs.watchtowr.com/",
+        "https://labs.watchtowr.com/death-by-a-thousand-papercuts-papercut-pre-auth-rce-chain-and-patch-bypasses-wt-2026-0141-0144-cve-2026-82077-cve-2026-82078-cve-2026-81578/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "watchtowr-labs",
+          "url": "https://labs.watchtowr.com/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "watchtowr-labs",
+          "name": "watchTowr Labs",
+          "home_url": "https://labs.watchtowr.com/"
+        },
+        "article": {
+          "title": "Death By A Thousand PaperCuts (PaperCut Pre-Auth RCE Chain and Patch Bypasses WT-2026-0141-0144/CVE-2026-82077/CVE-2026-82078/CVE-2026-81578)",
+          "url": "https://labs.watchtowr.com/death-by-a-thousand-papercuts-papercut-pre-auth-rce-chain-and-patch-bypasses-wt-2026-0141-0144-cve-2026-82077-cve-2026-82078-cve-2026-81578/",
+          "content_sha256": "001c7d1990dcece11d629fd5dc7b1f3db8c76e37344773dc293d42670132da85"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:9832ae134cd12832",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "给 Agent 选搜索 API：Firecrawl 和 Tavily 的差别到底在哪里",
+      "target_url": "https://yage.ai/share/agent-search-api-firecrawl-tavily-20261009.html",
+      "text": "yage-share published: 给 Agent 选搜索 API：Firecrawl 和 Tavily 的差别到底在哪里",
+      "at": "2026-10-09T00:00:00+00:00",
+      "external_id": "a:9832ae134cd12832",
+      "url": "https://yage.ai/share/agent-search-api-firecrawl-tavily-20261009.html",
+      "title": "给 Agent 选搜索 API：Firecrawl 和 Tavily 的差别到底在哪里",
+      "content": "AI Agent\n开发工具\n检索与知识系统\n给 Agent 配一个搜索 API\n如果想让手里的 AI Agent\n回答今天刚发生的事，或者查阅特定领域的实时资料，光靠模型自带的训练数据肯定不够。要让\nAgent 具备实时的信息获取能力，通常的做法是给它接一个搜索\nAPI。它的工作是：把 Agent\n给出的查询词发出去，去网上检索相关网页，抓取正文并清洗，再整理成结构整齐的内容喂回给模型。\n在这条路线上，Firecrawl 和 Tavily\n是目前比较主流的两个选择。两家都按调用量收费，计量单位叫\ncredit（中文常称作积分，口语里也简称点）；很多人第一次看到它们，下意识会去翻定价表，算算每次请求或者每个积分对应几分钱，觉得哪家单价更低就选哪家。\n我最初也是这么想的。但在真实环境里把它们接进系统、跑了一批实际任务之后，最终账单给我的反馈却完全打破了这种预想。给\nAgent\n选搜索工具，实际花销远不止看单价这么简单；同样的查询任务，两家最后结算出来的账单可能差得很远。\n同一个查询，积分消耗能差 61\n倍\n直到我做了一次针对社交媒体的端到端测试，同样的查询，Firecrawl 扣了\n122 个点，Tavily 只扣了 2\n个点，整整差了六十多倍。后来我把生产环境的大批真实调用放进两家的规则里重算，结果又拐了个弯：在以常规网页为主的日常流量里，Firecrawl\n换算成钱反而更省。单次消耗差几十倍、平均下来反而更省，造成这种反差的根本原因，在于两笔钱买到的东西其实并不相同。\n当时查的是一个发在 x.com 上的产品发布推文。Firecrawl 命中推文后直接走\nGrok，每条推文算 30 个点，光这一项就占了大头。\n高溢价换来的是能直接落库的结构化字段。Firecrawl 用 Grok\n直接拿到了发帖作者、发布时间戳、点赞与转发互动量，以及完整的回帖楼层，页面里没有多余的杂质。Tavily\n只花了 2\n点积分，拿回来的是抓取到的原始网页文本。它也拿到了推文正文与回复，没有彻底栽在登录墙上，但大半结果是空页面（列表页或他人主页），有内容的文本还混着登录与注册界面的导航噪声。单看单价根本算不清账，两家服务的计费逻辑处在完全不同的维度上，一个积分在两边代表的工程交付物截然不同。\n两家不是同一种计价方式\n选择困难症的根源是两家的计费模型完全不在一个频道上：Tavily\n按请求次数收费，Firecrawl\n按返回的内容逐页计价。这种底层设计差异决定了它们对同一抓取任务的报价完全不同。\nTavily\n只认请求类型：不管是基础搜索还是高级搜索，按预置操作扣固定点数，网页抽取也是按批打包计费。哪怕抓回来的是一篇短博客、一份上百页的研报，还是一条推文，扣费只看发了什么操作，和内容形态无关。\n相比之下，Firecrawl 是内容驱动的逐页计费。\nFirecrawl\n计费文档\n显示它的起步门槛很低，搜索只按结果数量收取少许基础积分。但一旦接口返回了文档，就会按抓到的形态逐页累加费用：常规网页按页计费，哪怕撞上\n403、404 这类错误页，只要接口返回了文档就算进账单；遇到长篇 PDF\n会按页加收，处理 X/Twitter 内容走 Grok\n更是单条收取高额溢价，部分大模型解析选项还会继续累加点数。\n计费维度\nTavily 机制\nFirecrawl 机制\n计费核心\n按发起的 API 操作类型扣费\n基础调用费叠加返回内容逐页计费\n搜索调用\n基础搜索 1 点，高级搜索固定 2 点\n每 10 个搜索结果收取 2 点基础积分\n网页抽取\n每 5 个成功网页扣除 1 至 2 点\n返回文档每页扣除 1 点积分\n长篇 PDF\n不加价，计入常规搜索或抽取配额\n每页在基础费用上额外加收 1 点\nX/Twitter 内容\n不加价，返回包含页面噪声的原始文本\n经由 Grok 提取结构化字段，单条计 30 点\n两家搜索 API 的两种计费模型：Tavily\n像一张固定票价的地铁通票，按发出的请求收费；Firecrawl\n像按盘称重的自助餐厅，按返回内容的形态逐页加价。\n相比之下，Tavily\n更像一张固定票价的地铁通票，刷卡进站之后不论拎几重行李都不会加收额外费用；Firecrawl\n则像按盘算钱的自助餐厅，入门费很低，但盘子里每夹一块肉都会单独上秤。如果直接用\nTavily 的积分单价去乘 Firecrawl\n的调用量，从算式建立的那一刻起就已经失真了。\nFirecrawl\n的隐性成本藏在内容类型里\n按内容点菜的时候，长文档和社交媒体是吃掉 Firecrawl\n积分的两大杀手锏。很多开发者在估算成本时只盯着基础搜索，却忘了这两类内容才是真正吞掉调用量的主力军。\n首先是多页PDF。Firecrawl对PDF解析完全按页数收费。我之前测试过\nVisa支付网络的商户争议处理规范\n，Firecrawl返回了两份PDF，其中一份长达67页，加上基础费用，单次查询扣了将近80点积分。同样的查询扔给Tavily，只花了固定的2点，而且同样完整返回了长文档文本。\n如果你经常抓取行业白皮书、财报或学术文献，每篇动辄几十页甚至上百页。在\nFirecrawl\n里拉取几篇完整研报，花掉的积分可能比你做一百次普通网页搜索还多。\n社交媒体是另一个成本高峰。Firecrawl 在处理 x.com 内容时必须使用\nGrok，未启用结构化 JSON 抽取时，每条请求固定 30 个积分，启用则为\n34。因此，只要搜索结果里命中若干相关推文，单次调用的积分就会迅速冲到上百点。\n这种高溢价购买的是清洗工时。Grok\n返回的结果直接剥离了网页杂质，省去写正则表达式、剔除登录浮层、对抗反爬虫这类工作，喂给下游大模型时占用的上下文窗口也更小。Tavily\n单次只需固定低点数，但拿回来的原始文本混着大量界面文字，下游管道得自己过滤和重试。如果系统本身已经有了完善的本地文档解析和社交媒体清洗逻辑，为\nFirecrawl 的逐页解析与 Grok\n字段付费，等于重复购买清洗能力；如果希望抓回来的数据直接组装进大模型上下文，这笔溢价买到的则是更短的开发链路。\n真实负载交叉回放：平均跑下来谁更划算\n单次的极限测试可以展示二者的边界，但评估月度预算要回到混合负载的真实调用。我调取了截至\n2026 年 10 月 3\n日过去一周生产环境的真实记录，把双方的实际任务互换计费规则交叉测算。这批负载横跨常规\nHTML\n网页、社交媒体推文和技术文档。结果呈现出明确的方向：日常网页为主的负载里，Firecrawl\n换算成钱更省；长文档和社交动态的占比一旦上去，Tavily\n会反超。把两组真实流量放到对方平台重算，账单走向直观反映了这种差异：\n负载来源\n实际任务量\n原平台实际账单\n交叉换算到对方平台账单\nFirecrawl 生产流量\n406 次搜索，342 次抽取（搜索结果 90% 以上为普通网页）\n10,129 点积分（折合 Standard 档 $8.41 / Scale 档 $6.07）\n折算 Tavily 为 1,508 点积分（折合 Bootstrap 档 $10.05 / Growth 档\n$7.54）\nTavily 生产流量\n121 次搜索，36 次抽取\n282 点积分（折合 Bootstrap 档 $1.88 / Growth 档 $1.41）\n折算 Firecrawl 为 1,284 点积分（折合 Standard 档 $1.07 / Scale 档\n$0.77）\n表中 Firecrawl 按年付套餐单价折算；Tavily 流量换算到 Firecrawl\n时，PDF 按每份 30 页估算。在这批以普通网页为主的任务里，Firecrawl\n换算成钱比 Tavily 便宜 16% 到 20%。\n但在 Tavily 接的那些任务里，即使调用量小，折合成 Firecrawl\n的积分也会成倍增多。一旦长文档或社交动态的占比足够高，Firecrawl\n每页、每条的附加费就会盖过它的低价优势。所以到底谁更省钱，完全看业务管线抓取的文档类型。\n按照内容形态与清洗容忍度做选型\n在理解实际计费规则后，选型主要看两点：一是每天抓取的内容类型，二是下游对数据质量的敏感度。单纯比价并不准确，要结合业务场景。\n优先选用 Firecrawl 的场景： 1.\n抓取对象主要是标准网页，尤其是大规模抓取文章、博客和技术文档。在这种情况下，基础低价版本可以发挥最大价值。\n2. 需要频繁抓取社交媒体，且下游系统不愿意额外投入开发抓取规则。此时用\nGrok\n可直接获取作者、互动量、整理好的回帖楼层，能省下清洗流程和清洗提示词的开销。\n优先选用 Tavily 的场景： 1. 抓取对象经常是几十页、几百页的长\nPDF、论文或政府财报。Tavily\n的固定价格能完全抹平长文档带来的页数膨胀，避免一次查询扣掉几十上百点积分的极端账单。\n2.\n对社交媒体仅做粗粒度热度扫描和线索监控，下游管线有基础的文本过滤能力，可以容忍抓取结果中夹杂登录界面和空页面。\n选型决策时，必须把下游大模型消耗的 Token\n数量和清洗管道的运维时间一并计入。只看 API\n账单的数字常常会漏掉这些隐蔽且昂贵的工程成本。\n按内容构成选搜索\nAPI：负载以普通网页为主时选 Firecrawl，长文档与社交动态占比高时选\nTavily。\n账单能不能自解释，也是选型的一部分\n按量计费的 API，账单不仅要算得准，还要看得懂。Firecrawl\n的单次扣费恰好能在本地完全复现：照官方文档搭一个计费规则模型，把本地日志里数百次搜索和抽取调用逐条验算，算出的积分和每条记录里返回的消耗完全吻合。底层的单次扣费是确定的。\n文中所有事实都来自 2026 年 10 月的实测，依据是 Firecrawl 与\nTavily\n的官方计费文档\n，以及本地工作区里数千个近期调用日志，计费推演与对比都可在日志中复现。一个外部\nAPI\n的总账如果在控制台里无法自圆其说，即便它在价格表上看起来便宜，系统上线之前也必须在本地把请求日志记录焊死，并为对不齐的账目预留额外的工程防御预算。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/agent-search-api-firecrawl-tavily-20261009.html",
+      "content_chars": 4158,
+      "content_sha256": "9ba1fc1c9587948c1ce7040b9c1cc310e327bf4074cb617eb9091adf3abea392",
+      "content_fetched_at": "2026-10-10T00:40:39.936957+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-09T00:00:00+00:00",
+      "collected_at": "2026-10-10T00:39:58.428209+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/agent-search-api-firecrawl-tavily-20261009.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "给 Agent 选搜索 API：Firecrawl 和 Tavily 的差别到底在哪里",
+          "url": "https://yage.ai/share/agent-search-api-firecrawl-tavily-20261009.html",
+          "content_sha256": "9ba1fc1c9587948c1ce7040b9c1cc310e327bf4074cb617eb9091adf3abea392"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:b932e7b095cdba24",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "AI 帮你写软件，也帮你用软件：平台在抢的两个入口",
+      "target_url": "https://yage.ai/share/supabase-turso-agent-two-entrances-20261008.html",
+      "text": "yage-share published: AI 帮你写软件，也帮你用软件：平台在抢的两个入口",
+      "at": "2026-10-08T00:00:00+00:00",
+      "external_id": "a:b932e7b095cdba24",
+      "url": "https://yage.ai/share/supabase-turso-agent-two-entrances-20261008.html",
+      "title": "AI 帮你写软件，也帮你用软件：平台在抢的两个入口",
+      "content": "AI Agent\nAI 编程\n产业与竞争\n手机里的个人助理在学习打开常用的应用，用账号帮用户干一些日常事务。与此同时，另一端的程序在帮助工程师写代码、构建网站、将网站部署到服务器。这两个看似AI的工作，其所需的系统支持和安全需求却是截然不同的。\n两种 AI，两个入口\n工程师的 AI 在写代码、建表、跑测试；普通人的 AI\n在登录一个现成的应用，帮他看通知、勾掉待办。\n一边是写代码的 AI\n在折腾临时代码仓库和临时沙盒，握着开发者的管理员账号，代码出问题有人帮忙回滚，输入的是企业级的代码规范；另一边是用软件的\nAI\n在直连真实的在线生产数据库，里面装着用户的钱和隐私，用的是普通用户的个人账号，搞砸了用户自己背锅，平时也只会说几句自然语言。存的数据不同、权限不同、出事的责任不同、交互的语言也不同，从第一天起，两条线就各走各的路。\n图1：做软件的 AI 与用软件的\nAI\n2026 年 10 月 2 日，云端后台服务平台 Supabase\n在同一天做了两件大事，分别对应这两个趋势。在生产端，\nSupabase\n官方收购公告\n宣布正在收购轻量级数据库公司 Turso，\nTurso\n官方收购公告\n也宣布整个团队加入 Supabase，创始人 Glauber Costa\n担任平台的智能体服务负责人。在消费端，Supabase\n发布了一套新接口，让开发者可以给自己的终端用户开一个专门的通道，让用户自己的个人\nAI 能够通过已有的账号登录进他的应用。\n在\n官方融资通稿\n中，Supabase 还披露了由 GIC 领投的 1.5 亿美元新融资。这 1.5 亿美元是\nSupabase 拿到的扩张资金，而收购 Turso\n具体花了多少钱，双方都没有公开。目前科技媒体对这件事的独立跟进并不多，\nSiliconANGLE\n收购报道\n算是少数进入主流资讯流的独立报道。抛开公关通稿里的漂亮话，这两件事真正瞄准的，其实是\nAI 建软件和用软件两个阶段各自的底层入口。\n建软件的入口：数据库变得像文件一样\n工程师用 AI\n写应用时，第一个现实阻力是拉起数据库的成本。传统开发里，一个团队往往只维持几个常驻数据库。但\nAI\n编程工具一出现，频繁拉取分支做实验、跑沙盒测试，每个并发任务都想有一个干净独立的数据库环境。要是每次测试都冷启动一个数据库服务器，初始化时间就能打乱人的节奏，长期维持一大堆闲置环境也不划算。\n根据\nSupabase\n官方收购公告\n和融资通稿里自报的数据，他们的平台每周启动的数据库数量超过一百万个，其中每月新创建的数据库中有\n70% 来自智能程序或 AI\n工具。这些都是厂商提供的数据，并没有透露这些数据库运行了多长时间，或者承载了多大规模的负载，谁也没法据此判断多数数据库是不是用完即弃，但这种高频开库的趋势无疑迫使底层存储重新思考设计假设。\nTurso\n摸索的核心路线是把数据库做得像普通文件一样轻巧。它用轻量单文件存储引擎\nSQLite\n做底座，配多数据库架构，免了常驻服务器的开销。一台机器可管数百万个独立数据库文件，需要时载入内存，闲置则自动挂起冻结。官方团队说，新建一个数据库应该像新建一个文件那样顺手，正好接住\nAI 写代码时随建随用的节奏。\n这个技术目前仍然有明显的工程成熟度边界。Turso\n前后尝试了两种引擎。老的基于 C 语言的分支引擎 libSQL\n早就没有新版本发布，但官方文档仍称它由 Turso 维护。基于 Rust\n重写的新引擎 Turso Database，到\nGitHub\n发布记录\n里最新稳定版也才 0.8.1，还是 0.x 阶段。它 2026\n年宣布的新一代云服务，也还没见官方说普遍可用。（\n内测公告\n）\n在收购公告中，Turso\n声称会给开发者留一条清晰的路来升级到生产环境。但回头看看 Supabase\n现有的官方迁移工具库，它虽然支持多种流行的数据库系统，却并没有任何自动化工具可以把轻量级的\nSQLite 数据库轻松、自动地迁移到生产级别的 Postgres\n上，甚至没有任何相关文档。所谓的无缝升级，目前仍然是空中楼阁。\n到这里，Supabase 为什么要收购\nTurso，其实已经能讲清一半了。它的主战场在\nPostgres，是一种常驻的正式数据库，并不适合这种一个任务一个库、动辄几百万个的场景。收购\nTurso，相当于把轻量、海量这一半补进了自己的产品。这只是故事的一半，另一半是这笔交易在平台竞争里卡的是哪个位置，放到一两节以后再讲。\n用软件的入口：你自己的\nAI 用你的账号进应用\n软件搭好能用了，下一场仗是在用户自己的 AI\n怎么才能安全连进来。早期的接入方式主要面向开发者，Supabase 的\n官方开发工具指南\n就提醒过，这个服务是给开发者看的，别拿去给客户或普通用户用。开发者密钥通常带着较高的数据库权限，把它交给一个程序，等于把这份操作权交了出去。\nSupabase 在\nSelect 2026\n会议回顾\n中提出了一种新的接口。根据\n自带智能体开发文档\n，应用可以向终端用户开放一个专用的工具接口。当用户通过现有登录流程进行一次身份认证后，他的个人\nAI 就可以连接到你的应用。此后，AI\n每次读取或写入数据时，都会带上该用户的个人身份信息。\n一个典型例子是团队用的待办应用：用户调用 AI 帮忙整理工作时，AI\n可以查看该用户自己的待办事项、勾选已完成的任务、或创建新的日程提醒。只要应用的行级安全策略限定了这个用户只能碰自己的数据，它就看不到其他成员的私人笔记，也改不了团队层级的账单设置。\n这背后是一个简单的无服务器云函数。它在入口就检查登录状态，并且过滤掉管理员的特殊凭据。根据\n官方令牌安全指南\n，它的职责只是确认身份，数据访问边界则交给数据库的行级安全策略去防守。行级安全策略是在数据表的每一行上做准入检查，只有符合条件的用户才能查看或修改这一行。它能守住数据隔离的底线，但包办不了所有风险，眼下至少有两个关键盲区。\n第一个盲区在于，它只管数据库里的数据增删改查，对跳出数据库的外部业务动作却没有保护。在实际的软件里，工具调用经常带有外部副作用，比如向客户发送邮件、向支付网关申请退款或调用物流接口发货。底层的行级检查只判断写入表格是否合规，对于动作在外部系统造成的不可逆后果，它既拦不住，也撤不回。\n第二个盲区，是它在逻辑推演的假设场景里，攻击者完全不需要打破行级安全策略，就能把跨用户的数据泄露出去。比如恶意用户在大家共享的文档里埋下隐藏提示词，正常用户的AI助手跑去总结文档，受到这段指令操纵，自动调取该用户有权查看的个人私密资料，当作摘要写回所有人可见的公开共享区。整个链条里每次读写都挑不出毛病，完全符合该用户的行级安全规则，秘密数据却在规则许可之内流转到了外部。\n此前有一些第三方工具由于使用共享的客户端标识和多层代理设计，出现过凭据冒用的问题。而\nSupabase\n走的是第一方设计，用自己的鉴权服务处理凭证，没有双层代理，属于不同的系统形态。不过身份令牌在整个生命周期中怎么流转、何时过期，还是需要开发者自己审计。\n平台争的不是技术，是入口\n图2：平台的两个入口与两条岔路\n几个月前我写 Turso\n时，还把它当成一个会长期独立存在的玩家，从技术路线的角度画过一张竞争图：单文件的本地数据库、云端的无服务器数据库、边缘计算的运行时，三者各自竞争，比拼的是查询延迟和并发吞吐量。\n但这种画法都假设每条路线会自己走下去。10\n月初这笔收购打破了这个前提。基础软件的竞争单位，从单项技术路线转向了平台对分散能力的整合与对多层入口的掌控。\n头部的玩家都在加速推动整合。Supabase 以前守着大型关系型数据库\nPostgres，现在宣布收购 Turso，补齐了面向 AI\n编程工具的高频轻量存储入口。大数据分析平台 Databricks 在\n收购 Neon\n的官方博客\n里记录了收编云端无服务器 Postgres 的过程；随后又根据\n行业报道关于\nElectric 收购记录\n把做本地同步的 Electric 并入 Neon 团队，将云端\nPostgres 与沙箱内的轻量 Postgres 捏在了一起。与此同时，Cloudflare\n把边缘运行时与轻量 SQLite\n存储深度绑定，并在近期打通了向主流关系型数据库的数据通道。\n这些整合背后，其实对应着两种不同的架构方向。一种方向是升级漏斗：平台在生产端给\nAI 编程工具一个免费或者廉价的轻量单文件数据库，AI\n工具高频创建临时环境；等到原型应用扩大之后，再把数据往客单价更高的大型数据库里迁。这种商业闭环很吃跨引擎的自动化数据迁移工具，目前\nSupabase\n还没拿出对应的迁移工具。第二种走向是长期分工模式。核心业务数据和共享资产长期存放在集中式主数据库中，轻量单文件数据库作为常态化伴生组件，为每个并发\nAI 任务提供独立干净的临时空间，两者长期并存并各司其职。\n软件架构师在评估这样的平台时，应该向厂商直接询问一个关键问题：这个轻量数据库到底是可以长期低成本独立运行的基础组件，还是一块获客跳板？如果平台确实支持平滑升级，它是否真的交付了自动化工具来实现这一过程？\n你该带走什么\n第一，选数据库别从功能出发，先想清楚你要隔离的最小单位是什么、同时要有几个。一个应用一个库，功能齐全的常驻数据库最省心；可一旦单位缩到一个智能体、一个任务一个库、数量上百万，同一种数据库就贵到用不起。单位变了，需要的引擎也变了。Supabase\n收购 Turso，就是在为这个新单位补上它原来缺的那一半。\n第二，在选型前先厘清 AI 在业务中的具体角色。做软件的 AI 和用软件的 AI\n面对着完全不同的存储寿命、权限来源和安全防线。前者需要快速拉起与销毁，后者需要绑定用户个人身份并建立细粒度隔离规则。混淆两边的基础设施，迟早会在成本与安全上埋下隐患。\n第三，听到跨引擎整合的宣传，先看它到底是大小数据库长期协作的混合架构，还是从低到高的升级套餐。如果有升级需求，就让厂商拿出自动化迁移工具，而不是空口承诺。\n第四，面对平台公布的规模数字，主动区分接口调用频次和真实业务沉淀。数以百万计的建库记录反映的是创建活跃度，不能等同于存续的生产环境。把业务交给用户端\nAI\n时，行级安全策略仅能守住数据读写底线，必须在数据库之外单独建立针对外部操作的频率限制、审批拦截和紧急撤销装置。\n应用向终端用户自带的个人 AI\n开放接口，标志着人机交互模式迈出了关键一步。在广泛采纳这一架构前，真正的开发者接入比例和覆盖外部副作用的动作级权限控制体系，才是最需要持续观察的硬指标。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/supabase-turso-agent-two-entrances-20261008.html",
+      "content_chars": 4356,
+      "content_sha256": "9c385c515b2355d98672c282dc850c4592d0f11662f9f0e5bb01966c44e78d11",
+      "content_fetched_at": "2026-10-10T00:40:40.073900+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "collected_at": "2026-10-10T00:39:58.428209+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/supabase-turso-agent-two-entrances-20261008.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "AI 帮你写软件，也帮你用软件：平台在抢的两个入口",
+          "url": "https://yage.ai/share/supabase-turso-agent-two-entrances-20261008.html",
+          "content_sha256": "9c385c515b2355d98672c282dc850c4592d0f11662f9f0e5bb01966c44e78d11"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
 }
