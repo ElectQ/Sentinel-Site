@@ -401,6 +401,10 @@
   "cymulate-blog:a:34b02ddbfc58595b": {
     "bundle_date": "2026-07-31"
   },
+  "cymulate-blog:a:4f3754f863aec3ed": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
   "cymulate-blog:a:527314d0284cc4a4": {
     "bundle_date": "2026-10-02",
     "emitted_at": "2026-10-02T00:37:52.602014+00:00"
@@ -578,14 +582,30 @@
   "forti-ir:a:3a83a6680e5c39c0": {
     "bundle_date": "2026-09-09"
   },
+  "forti-ir:a:433eee60b66bb594": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
   "forti-ir:a:4cd0bfeb499eac32": {
     "bundle_date": "2026-08-13"
   },
   "forti-ir:a:52f70ab3410eb846": {
     "bundle_date": "2026-09-09"
   },
+  "forti-ir:a:596a8a4b3ee161e2": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
   "forti-ir:a:59809397a966bbc1": {
     "bundle_date": "2026-08-13"
+  },
+  "forti-ir:a:5f82d0dc0823563a": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
+  "forti-ir:a:63638131b2619abf": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
   "forti-ir:a:6859ea208e09829a": {
     "bundle_date": "2026-08-13"
@@ -599,8 +619,16 @@
   "forti-ir:a:8779f6d06354c03b": {
     "bundle_date": "2026-09-09"
   },
+  "forti-ir:a:8bec02c6ad31931f": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
   "forti-ir:a:8e10e0aa9ff27012": {
     "bundle_date": "2026-08-27"
+  },
+  "forti-ir:a:958e60aa00d1a79b": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
   "forti-ir:a:9c8fbc19808d945d": {
     "bundle_date": "2026-09-09"
@@ -611,8 +639,20 @@
   "forti-ir:a:b543611780790cfa": {
     "bundle_date": "2026-09-09"
   },
+  "forti-ir:a:b8d4c50865ed56fb": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
+  "forti-ir:a:dde84aeec5e22ad1": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
   "forti-ir:a:dee640420d76adba": {
     "bundle_date": "2026-08-13"
+  },
+  "forti-ir:a:e449cf8a3019c170": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
   "forti-ir:a:e7a30c73f5950f7d": {
     "bundle_date": "2026-09-09"
@@ -623,6 +663,14 @@
   },
   "forti-ir:a:f560a583b5d9e8c7": {
     "bundle_date": "2026-09-09"
+  },
+  "forti-ir:a:f7543077281f0638": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
+  "forti-ir:a:fe9a368f887d4fba": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
   "fushuling:a:3e71662cc1c871af": {
     "bundle_date": "2026-09-28"
@@ -709,6 +757,10 @@
   },
   "idov31-posts:a:83af989fa3be28a2": {
     "bundle_date": "2026-09-28"
+  },
+  "ivanti-advisory:a:4d742a901777890c": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
   "ivanti-advisory:a:562408c327eeafde": {
     "bundle_date": "2026-08-12"
@@ -886,6 +938,10 @@
   "safebreach-blog:a:2bdc409d41982bb2": {
     "bundle_date": "2026-09-29"
   },
+  "safebreach-blog:a:3239f25a961a39cb": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
   "safebreach-blog:a:35ec4da1702cbdf9": {
     "bundle_date": "2026-07-18"
   },
@@ -904,11 +960,19 @@
   "safebreach-blog:a:66e2eab7f6d68eff": {
     "bundle_date": "2026-08-22"
   },
+  "safebreach-blog:a:6974eafafbbf17d9": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
   "safebreach-blog:a:6ec06842a26afee3": {
     "bundle_date": "2026-08-12"
   },
   "safebreach-blog:a:6fc85020aad36d8b": {
     "bundle_date": "2026-08-27"
+  },
+  "safebreach-blog:a:7b2e045917167b1e": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
   "safebreach-blog:a:99b0e68cc7508cc8": {
     "bundle_date": "2026-08-28"
@@ -939,6 +1003,10 @@
   },
   "safebreach-blog:a:e3cb011c644f9ab5": {
     "bundle_date": "2026-09-22"
+  },
+  "safebreach-blog:a:e84e301f64feb0a2": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
   "sandflysecurity-blog:a:0ed6a77c46760f81": {
     "bundle_date": "2026-09-29"
@@ -1126,6 +1194,10 @@
   "unknowncheats-ac:a:58507f1f2734e537": {
     "bundle_date": "2026-09-15"
   },
+  "unknowncheats-ac:a:5a9f35a1cd94ffeb": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
   "unknowncheats-ac:a:5ca52601105674ca": {
     "bundle_date": "2026-09-01"
   },
@@ -1200,6 +1272,10 @@
   },
   "unknowncheats-ac:a:9492bc42b7dbac78": {
     "bundle_date": "2026-08-26"
+  },
+  "unknowncheats-ac:a:94d3b18bdbb3da08": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
   "unknowncheats-ac:a:973cfcec318dd421": {
     "bundle_date": "2026-07-24"
@@ -1300,6 +1376,10 @@
   "unknowncheats-ac:a:c0debcec99be76c5": {
     "bundle_date": "2026-10-09",
     "emitted_at": "2026-10-09T01:07:22.377915+00:00"
+  },
+  "unknowncheats-ac:a:c4f0a888d31ad23f": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
   "unknowncheats-ac:a:c61ae532f3c06ab7": {
     "bundle_date": "2026-10-02",
@@ -1502,6 +1582,10 @@
   },
   "yage-share:a:178dd9f8d0504c99": {
     "bundle_date": "2026-08-05"
+  },
+  "yage-share:a:19d42e59cd7327d5": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
   "yage-share:a:1a9515dcdf0f53c6": {
     "bundle_date": "2026-08-03"
@@ -2047,6 +2131,10 @@
   "yage-share:a:d9613ba05ce9ac4b": {
     "bundle_date": "2026-08-06"
   },
+  "yage-share:a:da09ca92898b92fe": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
   "yage-share:a:ddbf3f77af80d291": {
     "bundle_date": "2026-07-28"
   },
@@ -2382,6 +2470,10 @@
   "zdi-advisories:a:3fefc0a2ac461bb5": {
     "bundle_date": "2026-08-14"
   },
+  "zdi-advisories:a:40a353c7d566ea80": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
   "zdi-advisories:a:415729f10004724a": {
     "bundle_date": "2026-09-24"
   },
@@ -2450,6 +2542,10 @@
   },
   "zdi-advisories:a:57e1300c17061cc0": {
     "bundle_date": "2026-08-25"
+  },
+  "zdi-advisories:a:58a6f63b8a7d1c93": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
   "zdi-advisories:a:5a4ccb51309c8ab8": {
     "bundle_date": "2026-09-15"
@@ -2562,6 +2658,10 @@
   "zdi-advisories:a:7340e0b524c422e0": {
     "bundle_date": "2026-09-24"
   },
+  "zdi-advisories:a:7373ae00b5587b99": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
   "zdi-advisories:a:73b64558a6547d7f": {
     "bundle_date": "2026-07-30"
   },
@@ -2591,6 +2691,10 @@
   },
   "zdi-advisories:a:7a002d2c7647b965": {
     "bundle_date": "2026-09-11"
+  },
+  "zdi-advisories:a:7a265d40589c7b1a": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
   "zdi-advisories:a:7a2c7ac08b19722c": {
     "bundle_date": "2026-09-24"
@@ -2657,6 +2761,10 @@
   },
   "zdi-advisories:a:86c23444645596bd": {
     "bundle_date": "2026-09-15"
+  },
+  "zdi-advisories:a:870ff49b4fe77eec": {
+    "bundle_date": "2026-10-14",
+    "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
   "zdi-advisories:a:871bc4395381c574": {
     "bundle_date": "2026-07-16"
