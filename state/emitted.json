@@ -42,6 +42,10 @@
   "bhis-blog:a:6c2ef70950702024": {
     "bundle_date": "2026-09-17"
   },
+  "bhis-blog:a:79644c2b5700d1c6": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
   "bhis-blog:a:7f9ce995660cfc91": {
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
@@ -90,6 +94,10 @@
   },
   "cisco-advisory:a:0dc7334bfe1bfbd0": {
     "bundle_date": "2026-09-17"
+  },
+  "cisco-advisory:a:11fa913cc5a31cb7": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
   },
   "cisco-advisory:a:15ffe2b4f77d1f03": {
     "bundle_date": "2026-09-03"
@@ -140,6 +148,10 @@
   },
   "cisco-advisory:a:32c4d84cc3b787e3": {
     "bundle_date": "2026-08-06"
+  },
+  "cisco-advisory:a:330dedec80bd1be5": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
   },
   "cisco-advisory:a:33370bfa47124a20": {
     "bundle_date": "2026-09-17"
@@ -833,6 +845,14 @@
   "paloalto-advisory:a:1afcd9727adf0de0": {
     "bundle_date": "2026-09-10"
   },
+  "paloalto-advisory:a:1cf65875058c7cca": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
+  "paloalto-advisory:a:2ec5379b148e3a38": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
   "paloalto-advisory:a:384163abd5d46b67": {
     "bundle_date": "2026-08-13"
   },
@@ -842,8 +862,24 @@
   "paloalto-advisory:a:4f62d10c92653bd0": {
     "bundle_date": "2026-08-28"
   },
+  "paloalto-advisory:a:62182dce0f3b28b2": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
+  "paloalto-advisory:a:66bd7aa357573a8e": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
+  "paloalto-advisory:a:6bd6cda1f57769fb": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
   "paloalto-advisory:a:733533cc14dde0a8": {
     "bundle_date": "2026-08-13"
+  },
+  "paloalto-advisory:a:7817524cf23d9091": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
   },
   "paloalto-advisory:a:7a96691454d31d5e": {
     "bundle_date": "2026-08-13"
@@ -863,6 +899,22 @@
   "paloalto-advisory:a:a3c36e87a94b475a": {
     "bundle_date": "2026-09-10"
   },
+  "paloalto-advisory:a:ab658e1b88cfcd0b": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
+  "paloalto-advisory:a:b1a3e44cbbf34a02": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
+  "paloalto-advisory:a:b27aeca410b144b4": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
+  "paloalto-advisory:a:b482ad73477457d9": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
   "paloalto-advisory:a:b75facb499f717f0": {
     "bundle_date": "2026-08-13"
   },
@@ -874,6 +926,10 @@
   },
   "paloalto-advisory:a:bdcf6898684691ba": {
     "bundle_date": "2026-09-10"
+  },
+  "paloalto-advisory:a:ce7c6bc6ebe9d2c8": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
   },
   "paloalto-advisory:a:d75f13a5ae8ce101": {
     "bundle_date": "2026-09-10"
@@ -889,6 +945,10 @@
   },
   "paloalto-advisory:a:eb3a16f997dc07b1": {
     "bundle_date": "2026-08-13"
+  },
+  "paloalto-advisory:a:f44356c1205ac2c1": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
   },
   "paloalto-advisory:a:f8934c1a6984c176": {
     "bundle_date": "2026-09-10"
@@ -1068,6 +1128,10 @@
   "sonicwall-advisory:a:7a79cc24b0a75685": {
     "bundle_date": "2026-08-26"
   },
+  "sonicwall-advisory:a:8fa6cb45fde7ec53": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
   "sonicwall-advisory:a:96a11b4350eb1c7a": {
     "bundle_date": "2026-10-07",
     "emitted_at": "2026-10-07T00:32:50.824376+00:00"
@@ -1238,6 +1302,10 @@
   "unknowncheats-ac:a:6cef4475aae70640": {
     "bundle_date": "2026-10-12",
     "emitted_at": "2026-10-12T00:23:47.738738+00:00"
+  },
+  "unknowncheats-ac:a:7265095b620bd53e": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
   },
   "unknowncheats-ac:a:75ee5577ad07220a": {
     "bundle_date": "2026-10-13",
@@ -1689,6 +1757,10 @@
   "yage-share:a:421b3b8dafc3ffc1": {
     "bundle_date": "2026-09-21"
   },
+  "yage-share:a:435afe1314eb8c5b": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
   "yage-share:a:441c18c0339a797b": {
     "bundle_date": "2026-07-22"
   },
@@ -1700,6 +1772,10 @@
   },
   "yage-share:a:44e1143d9774ce95": {
     "bundle_date": "2026-08-19"
+  },
+  "yage-share:a:475a1fa12058ec15": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
   },
   "yage-share:a:47b151d042ac7d7f": {
     "bundle_date": "2026-10-12",
@@ -1836,6 +1912,10 @@
   "yage-share:a:6e1245a1d1020ea2": {
     "bundle_date": "2026-09-29",
     "emitted_at": "2026-09-29T07:55:52.149597+00:00"
+  },
+  "yage-share:a:6e19cd8d11812367": {
+    "bundle_date": "2026-10-15",
+    "emitted_at": "2026-10-14T23:49:05.925042+00:00"
   },
   "yage-share:a:6e317ee9b8381abd": {
     "bundle_date": "2026-08-09"
