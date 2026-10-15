@@ -64,7 +64,9 @@ def collect_one(
         raw_items, err = rss.fetch_and_parse(feed_url)
         if err is None:
             via = "rss"
+            sst["feed_fail_streak"] = 0
         else:
+            sst["feed_fail_streak"] = int(sst.get("feed_fail_streak") or 0) + 1
             feed_url = ""
 
     # remembered resolved feed

@@ -40,6 +40,7 @@ jobs:
           LLM_BASE_URL: https://api.deepseek.com
           LLM_MODEL: deepseek-v4-flash
           REPORT_WEBHOOK_URL: ${{ secrets.REPORT_WEBHOOK_URL }}
+          ALERT_FAIL_STREAK: "3"
           PROBE_NEW_URLS: "1"
           BROWSER_ENABLED: "1"
           BROWSER_AUTO: "1"

@@ -40,6 +40,8 @@ def main() -> int:
         if not result["ok"]:
             failed.append({"id": src.id, "error": result.get("error")})
             print(f"FAIL {src.id}: {result.get('error')}")
+            # Checkpoint failures too, so streaks survive a workflow timeout
+            state_mod.save_sources(st)
             continue
         if prev_streak > 0:
             recovered_sids.append(src.id)
@@ -118,11 +120,22 @@ def main() -> int:
     state_mod.save_emitted(st["emitted"])
 
     report_health(sources, st, failed, emitted, bj, bundle_path=bpath)
-    sync_github_issues(failed, st.get("sources", {}), recovered_sids)
+    sync_github_issues(
+        failed,
+        st.get("sources", {}),
+        recovered_sids,
+        alerts=collect_alerts(sources, st, failed, emitted, artifact_issues),
+    )
 
     articles_mod.shutdown()
 
-    if env_bool("STRICT", False) and failed:
+    # Data contract first: artifacts must exist and parse, or the run fails so
+    # downstream consumers notice. Source-level failures stay green and are
+    # reported via issues/webhook instead.
+    artifact_issues = check_artifacts(bpath)
+    if artifact_issues:
+        for issue in artifact_issues:
+            print(f"ARTIFACT-FATAL {issue}")
         return 1
     return 0
 
@@ -166,28 +179,20 @@ def check_artifacts(bpath: str) -> list[str]:
     return issues
 
 
-def report_health(
+def collect_alerts(
     sources: list[Any],
     st: dict[str, Any],
     failed: list[dict[str, Any]],
     emitted: list[dict[str, Any]],
-    date: str,
-    bundle_path: str = "",
-) -> str:
-    lines = [
-        f"### Sentinel 采集健康简报 ({date})",
-        "",
-        f"- 监控源总数: {len(sources)} | 成功: {len(sources) - len(failed)} | 失败: {len(failed)}",
-        f"- 今日新发布文章: {len(emitted)} 篇",
-        "",
-    ]
-
-    warnings: list[str] = []
+    artifact_issues: list[str] | None = None,
+) -> list[dict[str, str]]:
+    """Unified alert list consumed by both the health report and issue sync."""
+    alerts: list[dict[str, str]] = []
+    now_dt = datetime.now(timezone.utc)
     sources_dict = st.get("sources", {})
 
-    if bundle_path:
-        for issue in check_artifacts(bundle_path):
-            warnings.append(f"- [产物异常] {issue}")
+    for issue in artifact_issues or []:
+        alerts.append({"id": "artifact", "category": "artifact", "detail": issue})
 
     for f in failed:
         sid = f["id"]
@@ -206,31 +211,87 @@ def report_health(
         elif "timeout" in err_lower or "timed out" in err_lower:
             advice = " [建议: 网络超时，请检查目标服务器连通性]"
 
-        warnings.append(
-            f"- [采集失败] {sid} (连续 {streak} 次): {err[:80]}{advice}"
+        alerts.append(
+            {
+                "id": sid,
+                "category": "采集失败",
+                "detail": f"连续 {streak} 次: {err[:120]}{advice}",
+            }
         )
 
     for a in emitted:
         if a.get("content_status") == "failed" and "challenge_blocked" in str(
             a.get("content_error") or ""
         ):
-            warnings.append(
-                f"- [反爬拦截] {a.get('source_id')}: 详情页被验证码/阻断盾拦截，已放弃抓取避免脏数据"
+            alerts.append(
+                {
+                    "id": str(a.get("source_id") or ""),
+                    "category": "反爬拦截",
+                    "detail": "详情页被验证码/阻断盾拦截，已放弃抓取避免脏数据",
+                }
             )
 
-    now_dt = datetime.now(timezone.utc)
     for src in sources:
         sst = sources_dict.get(src.id, {})
+        mode = getattr(src, "collect_mode", "")
+        method = str(sst.get("method") or "")
+
+        # Layer 0 signal: an rss-declared source silently degrading to
+        # browser/LLM collection (slower, costlier, candidate extraction
+        # degraded). Only compare rss declarations; llm modes legitimately
+        # resolve to several transports.
+        if mode == "rss" and method and method != "rss":
+            alerts.append(
+                {
+                    "id": src.id,
+                    "category": "路径退化",
+                    "detail": f"声明 rss，实际走 {method}，请检查 feed 地址",
+                }
+            )
+
         last_new = sst.get("last_new_at")
         if last_new:
             try:
                 days = (now_dt - datetime.fromisoformat(last_new)).days
                 if days >= 45 and sst.get("fail_streak", 0) == 0:
-                    warnings.append(
-                        f"- [长期静默] {src.id}: 连续 {days} 天无新内容，建议人工复查是否源已改版"
+                    alerts.append(
+                        {
+                            "id": src.id,
+                            "category": "长期静默",
+                            "detail": f"连续 {days} 天无新内容，建议人工复查是否源已改版",
+                        }
                     )
             except Exception:
                 pass
+
+    return alerts
+
+
+def report_health(
+    sources: list[Any],
+    st: dict[str, Any],
+    failed: list[dict[str, Any]],
+    emitted: list[dict[str, Any]],
+    date: str,
+    bundle_path: str = "",
+) -> str:
+    lines = [
+        f"### Sentinel 采集健康简报 ({date})",
+        "",
+        f"- 监控源总数: {len(sources)} | 成功: {len(sources) - len(failed)} | 失败: {len(failed)}",
+        f"- 今日新发布文章: {len(emitted)} 篇",
+        "",
+    ]
+
+    artifact_issues = check_artifacts(bundle_path) if bundle_path else []
+    alerts = collect_alerts(sources, st, failed, emitted, artifact_issues)
+
+    warnings: list[str] = []
+    for alert in alerts:
+        if alert["category"] == "artifact":
+            warnings.append(f"- [产物异常] {alert['detail']}")
+        else:
+            warnings.append(f"- [{alert['category']}] {alert['id']}: {alert['detail']}")
 
     if warnings:
         lines.append("#### 异常与策略预警")
@@ -260,6 +321,7 @@ def sync_github_issues(
     failed: list[dict[str, Any]],
     sources_dict: dict[str, Any],
     recovered_sids: list[str],
+    alerts: list[dict[str, str]] | None = None,
 ) -> None:
     token = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
@@ -297,23 +359,31 @@ def sync_github_issues(
 
     streak_threshold = int(os.environ.get("ALERT_FAIL_STREAK", 3))
 
-    for f in failed:
-        sid = f["id"]
-        streak = sources_dict.get(sid, {}).get("fail_streak", 1)
-        if streak >= streak_threshold and sid not in open_by_sid:
-            err = str(f.get("error") or "")
+    # Source-level alerts (采集失败 past threshold, 路径退化, 反爬拦截) become
+    # issues; artifact-level alerts have no single source id and stay in the
+    # health report.
+    alerted_sids: set[str] = set()
+    for alert in alerts or []:
+        sid = alert.get("id") or ""
+        category = alert.get("category") or ""
+        if sid == "artifact" or not sid:
+            continue
+        alerted_sids.add(sid)
+        if category == "采集失败" and _parse_streak(alert.get("detail", "")) < streak_threshold:
+            continue
+        if sid not in open_by_sid:
             body = (
-                f"### 数据源采集连续失败告警\n\n"
+                f"### 数据源健康告警\n\n"
                 f"- **监控源**: `{sid}`\n"
-                f"- **连续失败次数**: {streak} 次\n"
-                f"- **最新错误**: `{err[:300]}`\n\n"
+                f"- **告警类别**: {category}\n"
+                f"- **详情**: {alert.get('detail', '')}\n\n"
                 f"系统自检建议: 请检查该源是否已更换域名、反爬规则升级或 Feed 地址失效。"
             )
             try:
                 httpx.post(
                     api_url,
                     json={
-                        "title": f"[alert] 采集失败: {sid}",
+                        "title": f"[alert] {category}: {sid}",
                         "body": body,
                         "labels": ["sentinel-alert"],
                     },
@@ -324,23 +394,35 @@ def sync_github_issues(
                 pass
 
     for sid in recovered_sids:
-        if sid in open_by_sid:
-            issue_num = open_by_sid[sid]["number"]
-            try:
-                httpx.post(
-                    f"{api_url}/{issue_num}/comments",
-                    json={"body": "该监控源已恢复正常采集，连续失败状态已重置。系统自动关闭此 Issue。"},
-                    headers=headers,
-                    timeout=10.0,
-                )
-                httpx.patch(
-                    f"{api_url}/{issue_num}",
-                    json={"state": "closed"},
-                    headers=headers,
-                    timeout=10.0,
-                )
-            except Exception:
-                pass
+        if sid in alerted_sids:
+            # Still unhealthy today; keep the issue open
+            continue
+        if sid not in open_by_sid:
+            continue
+        issue_num = open_by_sid[sid]["number"]
+        try:
+            httpx.post(
+                f"{api_url}/{issue_num}/comments",
+                json={"body": "该监控源已恢复正常采集，连续失败状态已重置。系统自动关闭此 Issue。"},
+                headers=headers,
+                timeout=10.0,
+            )
+            httpx.patch(
+                f"{api_url}/{issue_num}",
+                json={"state": "closed"},
+                headers=headers,
+                timeout=10.0,
+            )
+        except Exception:
+            pass
+
+
+def _parse_streak(detail: str) -> int:
+    """Extract the streak number from a '连续 N 次' alert detail."""
+    import re
+
+    m = re.search(r"连续 (\d+) 次", detail)
+    return int(m.group(1)) if m else 0
 
 
 def run_standalone_health_check() -> int:
