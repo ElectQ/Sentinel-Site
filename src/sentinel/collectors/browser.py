@@ -48,6 +48,10 @@ def _ensure_browser():
         return _browser
     launch_kwargs: dict[str, Any] = {
         "headless": env_bool("BROWSER_HEADLESS", True),
+        "args": [
+            "--disable-blink-features=AutomationControlled",
+            "--no-sandbox",
+        ],
     }
     executable_path = env_str("BROWSER_EXECUTABLE_PATH")
     if executable_path:
@@ -119,6 +123,14 @@ def _ensure_context(url: str):
         viewport={"width": 1365, "height": 900},
         java_script_enabled=True,
         ignore_https_errors=True,  # MITM / broken chains after proxy
+    )
+    context.add_init_script(
+        """
+        Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+        if (!window.chrome) {
+            window.chrome = { runtime: {} };
+        }
+        """
     )
     _contexts[key] = context
     return context

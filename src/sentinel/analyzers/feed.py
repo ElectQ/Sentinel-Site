@@ -73,7 +73,5 @@ def build(day_articles: list[dict[str, Any]], *, date: str) -> dict[str, Any]:
 
 def write(feed: dict[str, Any]) -> None:
     FEED_DIR.mkdir(parents=True, exist_ok=True)
-    day = feed["date"]
     body = json.dumps(feed, ensure_ascii=False, indent=2) + "\n"
-    (FEED_DIR / f"{day}.json").write_text(body, encoding="utf-8")
     (FEED_DIR / "latest.json").write_text(body, encoding="utf-8")

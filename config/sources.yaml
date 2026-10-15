@@ -108,6 +108,7 @@ sources:
     collect_mode: html_llm
     tags: [blog]
     enabled: true
+    browser_fallback: true
 
   - id: voltatech-blog
     name: VoltaTech Blog
@@ -131,19 +132,13 @@ sources:
     notes: "Posts index; plain HTTP returns 403 in the tested environment, then Playwright + LLM"
 
   - id: aff-wg
-    name: Adversary Fan Fiction Writers Guild
+    name: Adversary Fan Fiction Writers Guild (Tradecraft Garden)
     home_url: https://aff-wg.org/
     rss_url: https://aff-wg.org/feed/
     collect_mode: rss
     tags: [blog, lab]
     enabled: true
-
-  - id: tradecraftgarden
-    name: Tradecraft Garden
-    home_url: https://tradecraftgarden.org/index.html
-    collect_mode: html_llm
-    tags: [project]
-    enabled: true
+    notes: "Raphael Mudge's research blog; publishes all Tradecraft Garden articles"
 
   - id: deadeclipse-blog
     name: Nightmare Eclipse (Blogspot)
@@ -189,7 +184,8 @@ sources:
     rss_url: https://fluxsec.red/rss.xml
     collect_mode: rss
     tags: [blog]
-    enabled: true
+    enabled: false
+    notes: "Disabled: site returns 404 for home and article detail pages"
 
   - id: r136a1
     name: R136a1
@@ -298,7 +294,7 @@ sources:
 
   - id: outflank-blog
     name: Outflank Publications
-    home_url: https://www.outflank.nl/bloG
+    home_url: https://www.outflank.nl/blog/
     collect_mode: browser_llm
     tags: [blog, lab]
     enabled: true
@@ -352,15 +348,11 @@ sources:
   - id: redsiege-blog
     name: Red Siege Blog
     home_url: https://redsiege.com/red-siege-blog/
-    collect_mode: html_llm
+    rss_url: https://redsiege.com/feed/
+    collect_mode: rss
     tags: [blog, lab]
     enabled: true
-    browser_fallback: true
-    access_status: intermittent
-    access_issue: historical_feed_http_403; home page direct HTTP 200 and browser fallback validated
-    access_tested_at: "2026-07-14"
-    access_tested_via: local_proxy_127.0.0.1:7890
-    notes: "Site feed is intermittently 403; use HTML + LLM with Playwright fallback"
+    notes: "WordPress feed at /feed/ with standard headers"
 
   - id: itm4n
     name: itm4n Blog
@@ -462,3 +454,40 @@ sources:
     collect_mode: html_llm
     tags: [research, vendor, ai]
     enabled: true
+
+  - id: matheuzsecurity
+    name: Matheuz Security
+    home_url: https://matheuzsecurity.github.io/hacking/
+    rss_url: https://matheuzsecurity.github.io/hacking/index.xml
+    collect_mode: rss
+    tags: [blog, exploit]
+    enabled: true
+    notes: "Linux kernel rootkits, memory injection and EDR evasion research"
+
+  - id: guysrd
+    name: Guy Shandy
+    home_url: https://guysrd.github.io
+    rss_url: https://guysrd.github.io/feed.xml
+    collect_mode: rss
+    tags: [blog, exploit]
+    enabled: true
+    notes: "Kernel security, UAF and exploit engineering"
+
+  - id: msrc
+    name: Microsoft Security Update Guide
+    home_url: https://msrc.microsoft.com/update-guide
+    rss_url: https://api.msrc.microsoft.com/update-guide/rss
+    collect_mode: rss
+    tags: [vendor, advisory]
+    enabled: true
+    notes: "Microsoft official security updates and CVE advisories"
+
+  - id: innei
+    name: Shiro (Innei)
+    home_url: https://innei.in/posts
+    rss_url: https://innei.in/feed
+    collect_mode: rss
+    tags: [blog, dev]
+    enabled: true
+    notes: "Fullstack and AI-native engineering blog"
+

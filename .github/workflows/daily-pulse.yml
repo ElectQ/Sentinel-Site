@@ -12,6 +12,7 @@ concurrency:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   pulse:
@@ -19,6 +20,8 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - uses: astral-sh/setup-uv@v5
         with:
@@ -32,9 +35,11 @@ jobs:
       - name: Collect and build bundles
         run: uv run python -m sentinel.run
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_BASE_URL: https://api.deepseek.com
           LLM_MODEL: deepseek-v4-flash
+          REPORT_WEBHOOK_URL: ${{ secrets.REPORT_WEBHOOK_URL }}
           PROBE_NEW_URLS: "1"
           BROWSER_ENABLED: "1"
           BROWSER_AUTO: "1"
@@ -46,6 +51,7 @@ jobs:
         run: |
           git config user.name "sentinel-bot"
           git config user.email "sentinel-bot@users.noreply.github.com"
+          git pull --rebase origin main
           git add bundles data state config
           git diff --cached --quiet || git commit -m "pulse: $(date -u +%F) [skip ci]"
           git push

@@ -50,6 +50,18 @@ NOISE_SELECTORS = (
     ".social-share",
     ".related-posts",
 )
+BLOCKED_MARKERS = (
+    "sorry, you have been blocked",
+    "please enable cookies",
+    "attention required! | cloudflare",
+    "just a moment... verify you are human",
+    "cloudflare ray id",
+)
+
+
+def _is_blocked_page(text: str) -> bool:
+    lower = text.lower()
+    return any(marker in lower for marker in BLOCKED_MARKERS)
 
 
 def _jsonld_article_body(tree: HTMLParser) -> str:
@@ -221,6 +233,32 @@ def _apply_content(
     return article
 
 
+def _fetch_msrc_cve(url: str) -> str:
+    m = re.search(r"/(CVE-\d+-\d+)", url)
+    if not m:
+        return ""
+    api_url = f"https://api.msrc.microsoft.com/sug/v2.0/en-US/vulnerability/{m.group(1)}"
+    try:
+        from .. import http_client
+
+        r = http_client.get(api_url, timeout=15.0)
+        if r.status_code != 200:
+            return ""
+        d = r.json()
+        title = d.get("cveTitle") or ""
+        desc_html = d.get("description") or ""
+        desc = extract_text(desc_html) if desc_html else ""
+        cwe = ", ".join(d.get("cweList") or [])
+        parts = [f"# {m.group(1)} - {title}"]
+        if desc:
+            parts.append(desc)
+        if cwe:
+            parts.append(f"CWE: {cwe}")
+        return "\n\n".join(parts)
+    except Exception:
+        return ""
+
+
 def enrich(article: dict[str, Any], source: Source) -> dict[str, Any]:
     """Best-effort content enrichment. Never drops a detected article."""
     article = dict(article)
@@ -241,6 +279,16 @@ def enrich(article: dict[str, Any], source: Source) -> dict[str, Any]:
         )
 
     url = article["url"]
+    if "msrc.microsoft.com/update-guide/vulnerability/CVE-" in url:
+        msrc_text = _fetch_msrc_cve(url)
+        if msrc_text:
+            return _apply_content(
+                article,
+                msrc_text,
+                status="ok",
+                via="api",
+                final_url=url,
+            )
     errors: list[str] = []
     transports = (
         ("browser",)
@@ -264,10 +312,14 @@ def enrich(article: dict[str, Any], source: Source) -> dict[str, Any]:
                     if selected_text:
                         text = selected_text
                         content_via = f"{transport}_llm_blocks"
+                    else:
+                        raise RuntimeError("content_llm_rejected_all_blocks")
                 else:
                     content_via = f"{transport}_body_fallback"
             if len(text) < min_chars:
                 raise RuntimeError(f"content_too_short:{len(text)}")
+            if _is_blocked_page(text):
+                raise RuntimeError("content_challenge_blocked")
             return _apply_content(
                 article,
                 text,

@@ -63,6 +63,32 @@ class ContentExtractionTests(unittest.TestCase):
         self.assertEqual(result["content_via"], "http_llm_blocks")
         self.assertIn("technical analysis", result["content"])
 
+    def test_msrc_cve_api_extraction(self) -> None:
+        source = Source(
+            id="msrc",
+            name="MSRC",
+            home_url="https://msrc.microsoft.com/update-guide",
+            collect_mode="rss",
+        )
+        article = {
+            "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-99999",
+            "title": "Mock Vulnerability",
+        }
+        mock_response = unittest.mock.MagicMock()
+        mock_response.status_code = 200
+        mock_response.json.return_value = {
+            "cveTitle": "Mock Kernel Elevation of Privilege",
+            "description": "<p>A crafted memory corruption vulnerability allows elevation.</p>",
+            "cweList": ["CWE-416: Use After Free"],
+        }
+        with patch("sentinel.http_client.get", return_value=mock_response):
+            result = enrich(article, source)
+
+        self.assertEqual(result["content_status"], "ok")
+        self.assertEqual(result["content_via"], "api")
+        self.assertIn("CVE-2026-99999", result["content"])
+        self.assertIn("CWE-416", result["content"])
+
 
 if __name__ == "__main__":
     unittest.main()

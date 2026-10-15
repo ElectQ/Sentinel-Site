@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -64,6 +65,20 @@ def load_emitted() -> dict[str, Any]:
         emitted = {}
     if not emitted:
         emitted = _bundle_emitted()
+
+    # Backfill baseline items from sources.json so historical items are never re-emitted
+    if SOURCES_FILE.exists():
+        try:
+            sdata = json.loads(SOURCES_FILE.read_text(encoding="utf-8")).get("sources", {})
+            for sid, sval in sdata.items():
+                for url in (sval.get("seen") or {}):
+                    digest = hashlib.sha1(url.encode("utf-8")).hexdigest()[:16]
+                    k = f"{sid}:a:{digest}"
+                    if k not in emitted:
+                        emitted[k] = {"bundle_date": "baseline", "baseline": True}
+        except Exception:
+            pass
+
     return emitted
 
 

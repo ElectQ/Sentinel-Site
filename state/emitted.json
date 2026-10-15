@@ -1,9 +1,89 @@
 {
+  "adsecurity:a:2836f96eb7b5a4e7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "adsecurity:a:5808392fd9b62b8e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "adsecurity:a:5fcf737a26350d6f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "adsecurity:a:6b7d8e045d3c76ad": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "adsecurity:a:90451754d720313b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "adsecurity:a:a2f6baafd7c4377c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "adsecurity:a:aeb4f49c492f50d8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "adsecurity:a:b2830c23fd772c27": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "adsecurity:a:b38bd0f10fa70f28": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "adsecurity:a:df2bdbd2c4d08879": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "aff-wg:a:09935ab462d77787": {
     "bundle_date": "2026-09-22"
   },
+  "aff-wg:a:18e3f169f889ff95": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "aff-wg:a:38c6bdc012b953d0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "aff-wg:a:3a519d86db0862aa": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "aff-wg:a:51c8d60fbe276687": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "aff-wg:a:6bef1f7f8d0e6323": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "aff-wg:a:7a4aed98a60c206a": {
     "bundle_date": "2026-07-17"
+  },
+  "aff-wg:a:9041829a60c147ea": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "aff-wg:a:a9f7b9872d97b6b2": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "aff-wg:a:ccb46278a944cc81": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "aff-wg:a:e54af75abbf878e0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "aff-wg:a:f50683f53f5e3d86": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "anthropic-research:a:1eadfb1cd5ee2dc4": {
     "bundle_date": "2026-10-02",
@@ -33,14 +113,214 @@
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
+  "bhis-blog:a:007f5844deffa89c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:0100d5f5dd8711b5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:02510d0211d8b8ab": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:041c56c04f332d03": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:045a78413f8401cb": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:07bb85465a0e15fc": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:09470a3a4218c7bd": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:0b38782b53cbfd94": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:0c893e4a30bacc8f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:0ebb7a05bb6febf1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:12532caaf795fe04": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:1875c3c73b73e942": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:1c7ab1a8789eb0d7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:22727466b3dcb4b5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:23b46cceceef33ce": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "bhis-blog:a:24cc5af97d38ae6e": {
     "bundle_date": "2026-08-20"
+  },
+  "bhis-blog:a:25c381d5b1a24597": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:2605868a1a04c3c8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:2762e5ab6e859d98": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:2af6ec282000f348": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:2cc3074b7046f7a1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:30e98931df78808c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:321f69b2cec43c87": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:355b79a7289918fc": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:37ef82088ac7861f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:3bbaa6dc36d4db42": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:3c41a5489361159b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:3ec30c048881f70b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:420fc333efe22fdd": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:47bf412778447cab": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:487bc20ee545b69b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:49bc725badb87e15": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:4a249fcd80984e80": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:4a6434ea18f8da51": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:4f6d3db83fd2cf3b": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "bhis-blog:a:537292b2e4e9e3f1": {
     "bundle_date": "2026-08-27"
   },
+  "bhis-blog:a:54941a7f56bd8e6d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:55ebbe982bd2894d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:5639c537be08c9e3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:59cc09ee7bd1c145": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:5ca8b17d6308c5ee": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:5dc12af54f0ade12": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:5dc711f44dfc0fb5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:5fd190ea8704b65b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:603c7083fe50dab7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:610c93b0c0a925a1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:61f329724890f74a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:629a15ddbfbd1186": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "bhis-blog:a:6c2ef70950702024": {
     "bundle_date": "2026-09-17"
+  },
+  "bhis-blog:a:70bd83d81bd7fbfd": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:74003bed81cda1f2": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:7411efdb23bd88d0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:75d17d4a8f66776c": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "bhis-blog:a:79644c2b5700d1c6": {
     "bundle_date": "2026-10-15",
@@ -50,14 +330,126 @@
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
+  "bhis-blog:a:7f9ed3d0b196ed85": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:8172170bd1273190": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:8194571f2b9d5aca": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:85a8a4792c32c919": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:882ac38cb7ea2148": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:8b500bd73566aaed": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:8ee1ad6c3ff75c8e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:93844349d50d34fc": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:94ffda2fecd59089": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:966dc9840c82ce21": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:994dfe423d69d1f3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:995e8f0f7ae79696": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "bhis-blog:a:9a8cea9ba6dfc2af": {
     "bundle_date": "2026-09-24"
+  },
+  "bhis-blog:a:9cef76138a3042fd": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:9e48dbd33de95eb7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:a16b5bec2a1418aa": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:a18911fa96d3a89b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:a2b786439e84aa3f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:a5dd7c270d489222": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "bhis-blog:a:a6fdb26d9e48f92c": {
     "bundle_date": "2026-07-16"
   },
+  "bhis-blog:a:a81ee1e9602b06e8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:a89f08add969882b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:aa715a7ce86b53e0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:ace1bbd9fb629954": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:adf84d4d6825f999": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:af107480c00faef2": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:b0e0232b41831b10": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:b3b5ae76c7831fc1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:b4f1ba67b7b5be20": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "bhis-blog:a:b524a3ce811bc550": {
     "bundle_date": "2026-09-10"
+  },
+  "bhis-blog:a:b5f761defe696659": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "bhis-blog:a:b78f7b5b501e9a4c": {
     "bundle_date": "2026-08-08"
@@ -65,14 +457,142 @@
   "bhis-blog:a:b87e883e16b10492": {
     "bundle_date": "2026-07-23"
   },
+  "bhis-blog:a:bd15cf09d93bc363": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:bdb5478b47492c43": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:bf5d0a1de3f143dc": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "bhis-blog:a:c1571886a3d153ab": {
     "bundle_date": "2026-07-30"
+  },
+  "bhis-blog:a:c15f88e621c2d07a": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "bhis-blog:a:c2b921c5defd3887": {
     "bundle_date": "2026-09-03"
   },
+  "bhis-blog:a:c744d681e4d0eb85": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "bhis-blog:a:d0fa4be6194911ba": {
     "bundle_date": "2026-08-14"
+  },
+  "bhis-blog:a:d56bca63e98ff900": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:d6c007270571bdc2": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:dad2b2466afa08d7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:e11e9b41f7ee45d5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:e281456ebddf95c7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:e3b99f6055f08df0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:eb1527f4f475a9bf": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:eb1e47dd1e075196": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:ebb93755fb634888": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:edd82b61c41c8264": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:f0be22e340f4c3ee": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:f30b6c6e919d2fd4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:f61261b61a0256f8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:faaa1ab53ed8e382": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:fb11e3465d58cdbd": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:fc6b7ee746d502cc": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bhis-blog:a:fdbe85d0364437ed": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bruteratel-blog:a:45af5d0feda67168": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bruteratel-blog:a:4a98d31425748984": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bruteratel-blog:a:4d245ed04acc4b5f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bruteratel-blog:a:4ed7b89bd94f28c8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bruteratel-blog:a:62c57027ab6eecdd": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bruteratel-blog:a:921142f09af03bb1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bruteratel-blog:a:96bd80a1a960810e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bruteratel-blog:a:a685553243de5cfd": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bruteratel-blog:a:d6962902c751093c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "bruteratel-blog:a:dfc837ca9eb7ddb8": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:024ba084d0f05497": {
     "bundle_date": "2026-09-15"
@@ -80,11 +600,23 @@
   "cisco-advisory:a:0267d920aec10461": {
     "bundle_date": "2026-09-17"
   },
+  "cisco-advisory:a:03645fafd611caf0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:06a9c225409d0d5c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:08215e843531ca57": {
     "bundle_date": "2026-09-17"
   },
   "cisco-advisory:a:0878810733334559": {
     "bundle_date": "2026-09-17"
+  },
+  "cisco-advisory:a:08c49d662b7de7fc": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:0cc571fdceb74bf2": {
     "bundle_date": "2026-09-03"
@@ -95,9 +627,21 @@
   "cisco-advisory:a:0dc7334bfe1bfbd0": {
     "bundle_date": "2026-09-17"
   },
+  "cisco-advisory:a:10dacfe19a296d0c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:11fa913cc5a31cb7": {
     "bundle_date": "2026-10-15",
     "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
+  "cisco-advisory:a:12bd7ac3dc6e16f2": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:13b878ed8cab936b": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:15ffe2b4f77d1f03": {
     "bundle_date": "2026-09-03"
@@ -111,17 +655,37 @@
   "cisco-advisory:a:16954312c6e1eaeb": {
     "bundle_date": "2026-09-17"
   },
+  "cisco-advisory:a:17eed7588cd16f7e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:19252c2abfa4fda5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:1946bcb110d6f9fe": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:1a24e6962a0997c4": {
     "bundle_date": "2026-08-06"
   },
   "cisco-advisory:a:1db2d7555dfde648": {
     "bundle_date": "2026-08-12"
   },
+  "cisco-advisory:a:1dfc14e765093e12": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:1f5d8ca4db0804e2": {
     "bundle_date": "2026-09-17"
   },
   "cisco-advisory:a:1fd77c67340c929c": {
     "bundle_date": "2026-09-17"
+  },
+  "cisco-advisory:a:2059869701e87ae3": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:21a70b25348e1428": {
     "bundle_date": "2026-10-01",
@@ -133,12 +697,28 @@
   "cisco-advisory:a:26d3123959923289": {
     "bundle_date": "2026-09-17"
   },
+  "cisco-advisory:a:2700988428bd6bbf": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:2b085331b00a94a4": {
     "bundle_date": "2026-10-08",
     "emitted_at": "2026-10-08T00:53:25.687102+00:00"
   },
+  "cisco-advisory:a:2ba98348488ce92a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:2d3609aaee5a54bd": {
     "bundle_date": "2026-09-17"
+  },
+  "cisco-advisory:a:2fbc562f56ad4c4e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:2fdab79100d651b8": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:30406db5cbfeb730": {
     "bundle_date": "2026-09-17"
@@ -153,8 +733,24 @@
     "bundle_date": "2026-10-15",
     "emitted_at": "2026-10-14T23:49:05.925042+00:00"
   },
+  "cisco-advisory:a:3331a9815f989886": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:33370bfa47124a20": {
     "bundle_date": "2026-09-17"
+  },
+  "cisco-advisory:a:386380b547bdc8f8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:396ff1697f7c335b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:3b1ff3e9caae784a": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:3b2f1490802f470c": {
     "bundle_date": "2026-08-08"
@@ -173,14 +769,34 @@
   "cisco-advisory:a:49265b24ac7b54b2": {
     "bundle_date": "2026-09-17"
   },
+  "cisco-advisory:a:4bec3df2d1477e57": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:4c3c91f5a2e8b22e": {
     "bundle_date": "2026-08-20"
+  },
+  "cisco-advisory:a:4f1dc88b73988b2f": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:4fe39e18127a9c5e": {
     "bundle_date": "2026-08-25"
   },
+  "cisco-advisory:a:509df35c1dab9443": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:5299d77a5cb965db": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:53927aa6a21c2b94": {
     "bundle_date": "2026-09-17"
+  },
+  "cisco-advisory:a:54dff2dcdeca0dbe": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:55245a9a57726860": {
     "bundle_date": "2026-09-17"
@@ -201,6 +817,10 @@
   "cisco-advisory:a:6218864e885c5260": {
     "bundle_date": "2026-09-15"
   },
+  "cisco-advisory:a:6593fbb09f64530f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:665599df76809d4c": {
     "bundle_date": "2026-09-03"
   },
@@ -213,6 +833,10 @@
   },
   "cisco-advisory:a:692ed078310bea13": {
     "bundle_date": "2026-09-17"
+  },
+  "cisco-advisory:a:6b45d5f70a42e16c": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:6cffd8d718f02768": {
     "bundle_date": "2026-09-17"
@@ -230,8 +854,28 @@
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
+  "cisco-advisory:a:7418210cbd1d4367": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:764075e584045b24": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:76d6f788a2d7591f": {
     "bundle_date": "2026-08-06"
+  },
+  "cisco-advisory:a:79c932cc7cbfe0e7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:7a1c163f0f322030": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:7a9cf21bd629b220": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:7ebc88391d712d78": {
     "bundle_date": "2026-09-17"
@@ -249,6 +893,10 @@
   "cisco-advisory:a:8954d53d59bc4966": {
     "bundle_date": "2026-08-01"
   },
+  "cisco-advisory:a:8b5c08836b644aa9": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:8ebb27b760bbc25e": {
     "bundle_date": "2026-08-06"
   },
@@ -258,6 +906,10 @@
   "cisco-advisory:a:91f71cb291948d1b": {
     "bundle_date": "2026-08-06"
   },
+  "cisco-advisory:a:97f62f0ad0d9073e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:98321fc18b358df3": {
     "bundle_date": "2026-10-08",
     "emitted_at": "2026-10-08T00:53:25.687102+00:00"
@@ -265,11 +917,23 @@
   "cisco-advisory:a:9990db31e2c31f95": {
     "bundle_date": "2026-07-30"
   },
+  "cisco-advisory:a:9e2798b0d10ec931": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:9fc1150bc0d6fbfb": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:a3a89af9cc70109d": {
     "bundle_date": "2026-09-17"
   },
   "cisco-advisory:a:a473ed236c4bd346": {
     "bundle_date": "2026-09-17"
+  },
+  "cisco-advisory:a:a8922357a767411e": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:b1e9f274fee84261": {
     "bundle_date": "2026-08-06"
@@ -277,9 +941,25 @@
   "cisco-advisory:a:b35333eea35e4b7e": {
     "bundle_date": "2026-07-30"
   },
+  "cisco-advisory:a:b63579db2f13616b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:b829f1ce1b4573bb": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:b9200e3fd2cafea9": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:bb15758744e1dec7": {
     "bundle_date": "2026-10-08",
     "emitted_at": "2026-10-08T00:53:25.687102+00:00"
+  },
+  "cisco-advisory:a:bb3219e10a145967": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:bcdb3b64b8bc17f1": {
     "bundle_date": "2026-10-08",
@@ -291,9 +971,17 @@
   "cisco-advisory:a:c24a380f215ce563": {
     "bundle_date": "2026-09-09"
   },
+  "cisco-advisory:a:c32609f527e431f3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:c54112595ed1c915": {
     "bundle_date": "2026-10-08",
     "emitted_at": "2026-10-08T00:53:25.687102+00:00"
+  },
+  "cisco-advisory:a:c7cf58fcf8c892ac": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:cc0ac2437e45015b": {
     "bundle_date": "2026-08-06"
@@ -301,6 +989,14 @@
   "cisco-advisory:a:ce1f5a1f40a55247": {
     "bundle_date": "2026-10-08",
     "emitted_at": "2026-10-08T00:53:25.687102+00:00"
+  },
+  "cisco-advisory:a:ce2c00cafc242d62": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:cfe1c5d73bbd658b": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:d3033e339e9b8017": {
     "bundle_date": "2026-08-06"
@@ -316,6 +1012,10 @@
   "cisco-advisory:a:d5d3c4050d1e8530": {
     "bundle_date": "2026-09-17"
   },
+  "cisco-advisory:a:d610ae62967db317": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:db9872206e4f3b64": {
     "bundle_date": "2026-08-06"
   },
@@ -328,8 +1028,20 @@
   "cisco-advisory:a:e25acf817d5c7155": {
     "bundle_date": "2026-08-20"
   },
+  "cisco-advisory:a:e28e135c6849defa": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:e4a48761040c1e56": {
     "bundle_date": "2026-09-17"
+  },
+  "cisco-advisory:a:e4cb90266db29f9f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:e7363897b7df9329": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cisco-advisory:a:ebb6e6a91033847d": {
     "bundle_date": "2026-08-20"
@@ -344,6 +1056,10 @@
   "cisco-advisory:a:f04e0b0783716be7": {
     "bundle_date": "2026-09-17"
   },
+  "cisco-advisory:a:f0fea24891a051a5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cisco-advisory:a:f4410e6373e1bafb": {
     "bundle_date": "2026-09-17"
   },
@@ -356,9 +1072,17 @@
   "cisco-advisory:a:f8b6fca76cb3288e": {
     "bundle_date": "2026-09-17"
   },
+  "cisco-advisory:a:f9454683dca2f375": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cocomelonc:a:030e841ed15c27af": {
     "bundle_date": "2026-10-03",
     "emitted_at": "2026-10-03T00:20:07.925518+00:00"
+  },
+  "cocomelonc:a:168ee4360a000829": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cocomelonc:a:1f023579f72aa636": {
     "bundle_date": "2026-09-03"
@@ -372,6 +1096,10 @@
   "cocomelonc:a:496646cf5c22213a": {
     "bundle_date": "2026-07-26"
   },
+  "cocomelonc:a:59d1e377927a59f1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cocomelonc:a:62aa0b43aa75544a": {
     "bundle_date": "2026-08-02"
   },
@@ -382,24 +1110,76 @@
     "bundle_date": "2026-10-13",
     "emitted_at": "2026-10-13T02:29:46.214752+00:00"
   },
+  "cocomelonc:a:8d88840ef375964c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cocomelonc:a:92d8fcd02d79ed26": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cocomelonc:a:92fc316a3845fdd3": {
     "bundle_date": "2026-08-28"
+  },
+  "cocomelonc:a:9d2ad0053083709f": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cocomelonc:a:9d98cc3e66c0d88c": {
     "bundle_date": "2026-09-16"
   },
+  "cocomelonc:a:9ffb972e9dbe980a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cocomelonc:a:a9b46ea21bd7c81b": {
     "bundle_date": "2026-08-25"
   },
+  "cocomelonc:a:be07013af357a293": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cocomelonc:a:cb6518eeec8a8907": {
     "bundle_date": "2026-07-30"
+  },
+  "cocomelonc:a:cd144b2a37c5b047": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cocomelonc:a:d3335543d7fbd982": {
     "bundle_date": "2026-10-09",
     "emitted_at": "2026-10-09T01:07:22.377915+00:00"
   },
+  "cocomelonc:a:e5bb9eb1fb89d237": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "cocomelonc:a:f149adbb9a6b63b4": {
     "bundle_date": "2026-09-09"
+  },
+  "cocomelonc:a:f807fe3bc3df49ad": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cognisys-labs:a:39a86cf1fd28d0b3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cognisys-labs:a:8f4b3fe81ff98535": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cognisys-labs:a:a1d4c71755fdfca7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cognisys-labs:a:cd1d93793bd9926d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "cognisys-labs:a:ed69e1ae3417d6d0": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "cymulate-blog:a:030612091e20c0cb": {
     "bundle_date": "2026-09-25"
@@ -457,6 +1237,102 @@
   "cymulate-blog:a:df29e022ebc1776e": {
     "bundle_date": "2026-07-29"
   },
+  "deadeclipse-blog:a:074666730c7886b2": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:099212afe732a97c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:0fc083850223db68": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:25552b4660d88b1a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:2c4082572fd4d18f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:34368be39e210126": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:513a1c249b0d1fab": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:51912546d938a205": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:59740219d1d9c29b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:5eeed835dcbd0de3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:6589c1898036df92": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:6ce4a546a1a45d1a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:72024a9a479c2f0f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:7220c3a19cace974": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:a53ef3a15008297c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:a846b1dd48b8f8d7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:b355ae58a03d6cdf": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:c5a47a755b235ccc": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:df1294aad02dbd64": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:f16c2bbc313aca39": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:f9f84c4dd297aab1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:fad2555fda4f5597": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:fc92e301e397e539": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "deadeclipse-blog:a:fcd47523ac1472d6": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "denizhalil-blogs:a:017c74ccd4c8e201": {
     "bundle_date": "2026-09-17"
   },
@@ -472,12 +1348,24 @@
   "denizhalil-blogs:a:0b82c2b812883e7c": {
     "bundle_date": "2026-09-19"
   },
+  "denizhalil-blogs:a:1be058405644280b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "denizhalil-blogs:a:1c8626e3b55aafaa": {
     "bundle_date": "2026-08-19"
+  },
+  "denizhalil-blogs:a:23faef7a3f9754b9": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "denizhalil-blogs:a:30ee2b18b5f5a060": {
     "bundle_date": "2026-10-02",
     "emitted_at": "2026-10-02T00:37:52.602014+00:00"
+  },
+  "denizhalil-blogs:a:3adc42569d1d0bfe": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "denizhalil-blogs:a:3d288de51634d1e1": {
     "bundle_date": "2026-08-14"
@@ -498,6 +1386,10 @@
   "denizhalil-blogs:a:412819e4bd2a1db0": {
     "bundle_date": "2026-08-18"
   },
+  "denizhalil-blogs:a:45a7eea83f8329d4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "denizhalil-blogs:a:504399989c73d6aa": {
     "bundle_date": "2026-09-09"
   },
@@ -507,8 +1399,20 @@
   "denizhalil-blogs:a:66ca2ed673272384": {
     "bundle_date": "2026-08-09"
   },
+  "denizhalil-blogs:a:66d6af584c39d878": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "denizhalil-blogs:a:6a6e946f1f671e28": {
     "bundle_date": "2026-07-18"
+  },
+  "denizhalil-blogs:a:6afa38dd8e63e6c3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "denizhalil-blogs:a:6df0af63bee60283": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "denizhalil-blogs:a:791463f590943e2f": {
     "bundle_date": "2026-08-28"
@@ -541,6 +1445,14 @@
   "denizhalil-blogs:a:aef7d4fcccf38bf8": {
     "bundle_date": "2026-07-22"
   },
+  "denizhalil-blogs:a:af2e26eac7e7e4f8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "denizhalil-blogs:a:cc7df1334d4ac0bd": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "denizhalil-blogs:a:cfb32bcf86b2f309": {
     "bundle_date": "2026-09-04"
   },
@@ -567,14 +1479,226 @@
   "denizhalil-blogs:a:edc9d57d6bcc44f2": {
     "bundle_date": "2026-07-23"
   },
+  "denizhalil-blogs:a:f0a98036bb0de99f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "denizhalil-blogs:a:f408456df8990faa": {
     "bundle_date": "2026-09-16"
   },
   "denizhalil-blogs:a:f9e2f2cc2f807af4": {
     "bundle_date": "2026-09-02"
   },
+  "fluxsec:a:09e8e1f007c014da": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:123cf91737b3bcb2": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:15eee73023eaaec6": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:1d154c373b8cf7cc": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:25b74b5cc2e35422": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:27304837b17fb7db": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:29cb6d1e04af050a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:2de75847c9f62a5d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:3177416e0c7f362d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:3295951a6a8fad22": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:36cad02900505ed5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:371ea63c436f02dd": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:44094b45efba8282": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:47d0b6ab19d156b4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:4b4aa9c28cbf8f49": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:4c6c7d86df533229": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:731eb619837fb4d1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:73637b80f0c2e77a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:781acd6ea6b4d164": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:7b55fce86309cb7d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:7fbdcbdb67016a67": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:89374c389829c530": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "fluxsec:a:896461264c2010e4": {
     "bundle_date": "2026-07-27"
+  },
+  "fluxsec:a:8af8628cc4ae2a27": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:8d14380e6f24dabf": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:8d23d8725553cb9c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:97168b929fb78470": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:9ace4d1739b2acc4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:9c6632d82b38f345": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:9e846c9714ec5b88": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:a0ded1d6e09cff9f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:a0f724d9e949af66": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:a1ca0f73aeec0ea2": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:a3c1a44b11ddb96e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:adae2885fc076aeb": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:b1fd3212490c50d3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:b486f030579c768b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:b63896764deb9526": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:bdfa26ab27259ced": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:c4a079acec4209f7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:cbede120bac2785f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:cc96098da75c0a0c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:d164a7e80c6b6c52": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:ddb9527e05a4bfe1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:e2c413485248d91a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:e4e7c42df7b0e2b5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:f0f10fe15a25c8de": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:f4c938c5e02546d6": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:f57b9592a0901bf1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:f58b13333e3ee47a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:f8f147f44c65a454": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:fc0aa485b1981b56": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "fluxsec:a:fcc2c0cf55d04ddb": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "forti-ir:a:00fb13bdfe3be49c": {
     "bundle_date": "2026-08-13"
@@ -582,17 +1706,73 @@
   "forti-ir:a:03bada0805ed526f": {
     "bundle_date": "2026-08-13"
   },
+  "forti-ir:a:083b9e859226f358": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "forti-ir:a:08c0ccb76cdf42ad": {
     "bundle_date": "2026-09-09"
+  },
+  "forti-ir:a:0c7dd41da335ff17": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:111fc8018b175711": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "forti-ir:a:143d93deba700cfd": {
     "bundle_date": "2026-08-13"
   },
+  "forti-ir:a:20dd77919a4b3299": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:213a561a3eecfbf3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:273cc12f415debb9": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:2863c971c12b685a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:2b382e54861873b9": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:2b5ae3e4de41f71b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:2c65a811fa5f8f8e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:2d7a848227b5643c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "forti-ir:a:32327bfd906fb4c6": {
     "bundle_date": "2026-09-09"
   },
+  "forti-ir:a:3a46584addbc874c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "forti-ir:a:3a83a6680e5c39c0": {
     "bundle_date": "2026-09-09"
+  },
+  "forti-ir:a:3b31685969a380ba": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:3f51e4b6475c3c56": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "forti-ir:a:433eee60b66bb594": {
     "bundle_date": "2026-10-14",
@@ -600,6 +1780,10 @@
   },
   "forti-ir:a:4cd0bfeb499eac32": {
     "bundle_date": "2026-08-13"
+  },
+  "forti-ir:a:51ce732d6a610966": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "forti-ir:a:52f70ab3410eb846": {
     "bundle_date": "2026-09-09"
@@ -611,6 +1795,14 @@
   "forti-ir:a:59809397a966bbc1": {
     "bundle_date": "2026-08-13"
   },
+  "forti-ir:a:5a18e45da83d4759": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:5deeda02453a98bf": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "forti-ir:a:5f82d0dc0823563a": {
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
@@ -619,14 +1811,46 @@
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
+  "forti-ir:a:659296350810614a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "forti-ir:a:6859ea208e09829a": {
     "bundle_date": "2026-08-13"
+  },
+  "forti-ir:a:68a9337842e23e13": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "forti-ir:a:6ba0c0c71078ae68": {
     "bundle_date": "2026-09-09"
   },
   "forti-ir:a:6d01ce6dc8f7e77a": {
     "bundle_date": "2026-08-13"
+  },
+  "forti-ir:a:6d752eceea9f66fd": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:6dec45b97843a22d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:6e1c74eb8d1dffc8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:8346253cb84bc00c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:853d3253e0b19167": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:868eff713d77fb10": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "forti-ir:a:8779f6d06354c03b": {
     "bundle_date": "2026-09-09"
@@ -635,6 +1859,10 @@
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
+  "forti-ir:a:8dc45b17c7e6a0b3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "forti-ir:a:8e10e0aa9ff27012": {
     "bundle_date": "2026-08-27"
   },
@@ -642,11 +1870,43 @@
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
+  "forti-ir:a:96ccf62880481a85": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:98212f59c30fb019": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:99fe24f7d10e74d6": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "forti-ir:a:9c8fbc19808d945d": {
     "bundle_date": "2026-09-09"
   },
+  "forti-ir:a:9d3bc6cc2b682ed2": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:a3680400a0b7cd79": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:a7626ad8af651796": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:a9e472d081272591": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "forti-ir:a:aa6516e1f7791f51": {
     "bundle_date": "2026-09-09"
+  },
+  "forti-ir:a:ade4a84acfbda6aa": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "forti-ir:a:b543611780790cfa": {
     "bundle_date": "2026-09-09"
@@ -654,6 +1914,42 @@
   "forti-ir:a:b8d4c50865ed56fb": {
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
+  "forti-ir:a:b91328892c5e86fc": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:b99fd19233fecb58": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:bbcb4b1cab9a97dc": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:bc66c1035a102244": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:c3820d7cb42332c0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:c61094b4eeea5b65": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:cd11fd03adb0bb19": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:d5536791a3349f60": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:dc718d6d0933ae13": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "forti-ir:a:dde84aeec5e22ad1": {
     "bundle_date": "2026-10-14",
@@ -666,12 +1962,28 @@
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
+  "forti-ir:a:e5e3be92e25b79b4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "forti-ir:a:e7a30c73f5950f7d": {
     "bundle_date": "2026-09-09"
+  },
+  "forti-ir:a:e94f27ac05ed62ab": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "forti-ir:a:ef6806b661d2f483": {
     "bundle_date": "2026-10-02",
     "emitted_at": "2026-10-02T00:37:52.602014+00:00"
+  },
+  "forti-ir:a:f54abf7474e1c796": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:f5594e184ee15620": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "forti-ir:a:f560a583b5d9e8c7": {
     "bundle_date": "2026-09-09"
@@ -680,12 +1992,40 @@
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
+  "forti-ir:a:f7968a12117193e8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "forti-ir:a:fe9a368f887d4fba": {
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
+  "forti-ir:a:fededea5024374e9": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "forti-ir:a:ff58108059d69f49": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "fushuling:a:3e71662cc1c871af": {
     "bundle_date": "2026-09-28"
+  },
+  "g3tsyst3m:a:01276ca3701e1b45": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "g3tsyst3m:a:127261cdad352896": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "g3tsyst3m:a:4ec41924da722b39": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "g3tsyst3m:a:64f191ff214cd772": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "g3tsyst3m:a:75440f3f4ffa3b58": {
     "bundle_date": "2026-10-05",
@@ -694,23 +2034,187 @@
   "g3tsyst3m:a:855207b48a092e51": {
     "bundle_date": "2026-08-31"
   },
+  "g3tsyst3m:a:978fc9adf473ed44": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "g3tsyst3m:a:a3e0b68432771eb7": {
     "bundle_date": "2026-07-23"
+  },
+  "g3tsyst3m:a:b60d2c7a46af4fe5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "g3tsyst3m:a:c3e25c1cbbd5a5e5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "g3tsyst3m:a:d89baba99b1bc40e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "g3tsyst3m:a:ef8406f84c4d6980": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "g3tsyst3m:a:f86e4f15b92227d4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "guysrd:a:3a0e03ea88f448dc": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "guysrd:a:688b0205bd1a9b0e": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "guysrd:a:9a2b0b9af9e2c5c7": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "guysrd:a:a1a533b6e4d9851d": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "hacktron-blog:a:01b907bc1418af61": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:042160668f174e30": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:077c211b151b144b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:0ec54408fede7d01": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:0ee86d89ffb42605": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:14b07c3df28c7c54": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:1909eaf2bd1a5fa2": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:20a0dc09ea14ea18": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "hacktron-blog:a:33a761d51543b545": {
     "bundle_date": "2026-07-15"
   },
+  "hacktron-blog:a:36a3891cfcd9cd20": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "hacktron-blog:a:39b208522bb559fd": {
     "bundle_date": "2026-09-19"
   },
+  "hacktron-blog:a:4101b224720f1383": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:41c88c290b1d149a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:4529464760298958": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:4ab8f1dd07c4adae": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:7f3aabd6004d359a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:88e0e09cc264bcfe": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:8c135190686eabca": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:8c8f5d0823996081": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:96dc43a8002cb857": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:9a15ff5cbf6f1d21": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:9b2c4cb47e935513": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:9bf0bd2469013bc2": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "hacktron-blog:a:9f4f0b0f375a3fe8": {
     "bundle_date": "2026-07-16"
+  },
+  "hacktron-blog:a:a14c1c4249b2089f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:a58f36cbf12d1ab8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:c63835278ca04b9f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:cf980c0ad5467983": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:cfe31655764e045e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:d3bf2daf86672a16": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:d4c55c8578aee698": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "hacktron-blog:a:d6b82eb7be0cf2c3": {
     "bundle_date": "2026-07-24"
   },
   "hacktron-blog:a:f5251899bc82af02": {
     "bundle_date": "2026-07-20"
+  },
+  "hacktron-blog:a:fab46bb814f4894c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "hacktron-blog:a:ffd94df6edb50c53": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "ibm-xforce:a:0ea2e71763c11538": {
     "bundle_date": "2026-10-01",
@@ -770,6 +2274,96 @@
   "idov31-posts:a:83af989fa3be28a2": {
     "bundle_date": "2026-09-28"
   },
+  "innei:a:01fe1377e0bbc7e8": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "innei:a:5e72a8cae2418bb2": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "innei:a:64c5e1809b449cab": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "innei:a:8d029416a9572e74": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "innei:a:9f8495f51e53bf94": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "innei:a:b5c8a64a29413aa3": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "innei:a:c3d99c0dc6299fd5": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "innei:a:e6905fe41e05089d": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "innei:a:e9f10febdd79e62d": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "innei:a:ec7c5fe02d07d142": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "itm4n:a:30102ec376c6fdfe": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "itm4n:a:5702cfb37c85be56": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "itm4n:a:854a2d03e9672414": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "itm4n:a:c2801dc76522e074": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "itm4n:a:f555dab3372e0466": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:035ade3b11e25df3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:1825e93d0275cdbf": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:1db2bda6dc8062b8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:21aead93fe6024e1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:46ea7d2b97778856": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "ivanti-advisory:a:4d742a901777890c": {
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
@@ -777,8 +2371,64 @@
   "ivanti-advisory:a:562408c327eeafde": {
     "bundle_date": "2026-08-12"
   },
+  "ivanti-advisory:a:5cc78f764a70bf55": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:605b663e3cc20424": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:6ba85bfd506d52f6": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:6df741529d6ccb74": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:78c5a4cd209ebec4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:7fb6c72b89fd3013": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:a4d6cbaa40f01b6e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:a636b1f7fbbc6f00": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:aeff19c2af68d0af": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "ivanti-advisory:a:baa9a344b6a79457": {
     "bundle_date": "2026-09-09"
+  },
+  "ivanti-advisory:a:c8da9bade2e0c89c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:cb9d36c3fc528a54": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:d52ed32bc5c20f5c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:de1cb80c4b1add30": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "ivanti-advisory:a:e9027e54d4fd33e6": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "lolbas:a:35ab9b0f2fe6d7e5": {
     "bundle_date": "2026-08-01"
@@ -795,11 +2445,650 @@
   "lorenzomeacci:a:dc61dd4e9d162a62": {
     "bundle_date": "2026-07-16"
   },
+  "matheuzsecurity:a:26db33f54a2e3393": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:27562455ba049db4": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:524739df92a2a829": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:63f0f7050ac6a218": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:71597be061164965": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:7e9066dafd998d00": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:81d0684a74bc7b80": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:a0bd2dcaa51333fd": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:c60bbbca72f88a51": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:c7a949a44019af12": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:cd600c9f412d6278": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:d0c24c8a8a415d5e": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:d1dce7ff48678480": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:f17c23398d209f2f": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:f42b73ad470d0e63": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "matheuzsecurity:a:f56eb835c7727806": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "mist-security:a:04241c7531f7f224": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "mist-security:a:088b5171d1c23336": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "mist-security:a:0b6d2f31293122b9": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "mist-security:a:65027e7135172c1f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "mist-security:a:71a4067e6ddcdc69": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "mist-security:a:96babb53434ebcfd": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "mist-security:a:d76ec0337f78708f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "mist-security:a:e4b01be66b3e94ca": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "mist-security:a:efee4146fec9353f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "mist-security:a:f4df9dcad9bcb243": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "mixbytes-blog:a:17d85dc005f37db9": {
     "bundle_date": "2026-08-20"
   },
   "mixbytes-blog:a:ff6812c111ba9f07": {
     "bundle_date": "2026-08-20"
+  },
+  "msrc:a:0086bf1766b0aa27": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:0209e62b0e65c169": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:0304a3b786736407": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:069860000b6b3b94": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:09a6d549a9b3fa4b": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:09bf38112cfd6c1f": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:0afe679009648434": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:0de455e7a41b28c4": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:113ed8d030c8df8f": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:11d49b71ecd832cf": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:12138642b6e24179": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:128f965277c60e3b": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:1683c2d21580cc90": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:16c6cd11b57b78fc": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:19c4acef03c9fa9c": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:2094ca9485e17345": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:22b8c1191c9e3b28": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:2542200423629adc": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:2954cadfd6505057": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:298d9c48954dd7f6": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:2eb552493356c036": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:3000b88c55eb7093": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:30df879deacb7820": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:328cd664eb596c6e": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:3429acace8efd7eb": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:39a21d266d85b37e": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:39ea9746fadda158": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:3dadec439325e0ff": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:3edc44922cb52169": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:47527eb4cc36024d": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:4d9cd78219f1b766": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:4fa4c39357dd69cc": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:4ff52e2272fcd143": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:57cff853c6d7a14b": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:59dddf0906358b34": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:5b2d06ba1cd5d752": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:5d128c68608dc5e2": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:5e6d468cfb1ae8dc": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:5fb0ffe9fee1baf8": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:650466ee52fb5686": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:655712fbb6b3cebf": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:69508a3976e8e849": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:6958ef73c0005dd7": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:6cacae023d7d198e": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:6da29c3d1fe44817": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:6fb4f01f0b633c1a": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:71ef755531fe0ce7": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:7307137ae2169527": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:749621e2cdd4d644": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:7ac0cecfc30f2e03": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:7b4d88684d3718f4": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:8187aad1ea093fcd": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:81921ebea2b16f95": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:81d537176882febe": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:82760dd8a75ba324": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:87815837778b12e5": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:905472152d324fed": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:920029d24d63ae2d": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:9265b8833582fd09": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:94fb8c01be28d431": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:9599609bf65bb616": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:a397a8fc2cced920": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:a5820c88699d0c5c": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:a8dd85a60f810992": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:a9b217b26a8f99e8": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:a9f008b1843913d7": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:abbf34c7c4449f34": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:abd69defe12b1cca": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:b0c41256098cf9b9": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:b29fd75077bb88d4": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:b4269918af09a184": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:bbdb48cf934fb02c": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:c0453f11ea8bc30d": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:c2d857b970153f85": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:c3eca959d18e4565": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:c4cbfbc153d7a1dd": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:c898716022b8f08f": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:c991a1b77fe74bc9": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:cb4c822a8471805b": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:cf0c20c9d5ab7b04": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:d154e31962744138": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:d2f9b477c20b486c": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:d36288ec79e19a32": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:d601a1a808b51ff5": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:d8da14924701f4c3": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:de6e3bae3237c91e": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:dfe7f08c70afa613": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:e0f43f6d01529d3f": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:eb765edd24192c40": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:eb97677b5b28cf13": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:ec62c8908ed08028": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:ed565257c5639f9a": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:f018dee5c6bf1817": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:f22b2fec8c3aff14": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:f362322f1fc25a23": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:f4ba056da0eb0c6f": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:faef7de7c1feba28": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:fddfe9f03fe1d167": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:fefc7fefa1e48415": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "naksyn-posts:a:055feb6189fe29bf": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "naksyn-posts:a:229be37d88f82c00": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "naksyn-posts:a:25828b64ef476885": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "naksyn-posts:a:8ca8d51ea89ee104": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "naksyn-posts:a:936ea7edd1365fd2": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "naksyn-posts:a:aa5e77d5c7e475d9": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "openai-research:a:05f718f91005aa4d": {
     "bundle_date": "2026-09-30",
@@ -829,6 +3118,30 @@
     "bundle_date": "2026-10-07",
     "emitted_at": "2026-10-07T00:32:50.824376+00:00"
   },
+  "otterpwn:a:28143303bb765b6b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "otterpwn:a:2c9546c6efd16cad": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "otterpwn:a:2e555c92e60746df": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "otterpwn:a:69a7118eda531aef": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "otterpwn:a:99347da9b50cf9c8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "otterpwn:a:b6c505b9dde20fba": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "outflank-blog:a:0b325184cbb44a09": {
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
@@ -841,6 +3154,18 @@
   },
   "outflank-blog:a:eec7761353ae4fdb": {
     "bundle_date": "2026-08-25"
+  },
+  "paloalto-advisory:a:17324282f1cc3ad6": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "paloalto-advisory:a:192bbf64693b818f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "paloalto-advisory:a:1a15575f89f0e3a2": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "paloalto-advisory:a:1afcd9727adf0de0": {
     "bundle_date": "2026-09-10"
@@ -859,12 +3184,20 @@
   "paloalto-advisory:a:3d5f002dc1e5d682": {
     "bundle_date": "2026-09-10"
   },
+  "paloalto-advisory:a:42a1de1601ef15e8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "paloalto-advisory:a:4f62d10c92653bd0": {
     "bundle_date": "2026-08-28"
   },
   "paloalto-advisory:a:62182dce0f3b28b2": {
     "bundle_date": "2026-10-15",
     "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
+  "paloalto-advisory:a:62d1c956f824b3aa": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "paloalto-advisory:a:66bd7aa357573a8e": {
     "bundle_date": "2026-10-15",
@@ -877,12 +3210,24 @@
   "paloalto-advisory:a:733533cc14dde0a8": {
     "bundle_date": "2026-08-13"
   },
+  "paloalto-advisory:a:7629309ab86c8fed": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "paloalto-advisory:a:7817524cf23d9091": {
     "bundle_date": "2026-10-15",
     "emitted_at": "2026-10-14T23:49:05.925042+00:00"
   },
   "paloalto-advisory:a:7a96691454d31d5e": {
     "bundle_date": "2026-08-13"
+  },
+  "paloalto-advisory:a:7da015e5b6517e7f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "paloalto-advisory:a:7f50a59051ffaf02": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "paloalto-advisory:a:815bf950eac001ad": {
     "bundle_date": "2026-09-10"
@@ -893,11 +3238,35 @@
   "paloalto-advisory:a:855d1bde45cde4f7": {
     "bundle_date": "2026-09-10"
   },
+  "paloalto-advisory:a:8dd6169a686d4580": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "paloalto-advisory:a:8e91b8c537c423ac": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "paloalto-advisory:a:949fb0f1d27d58a9": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "paloalto-advisory:a:95037461bedd6278": {
     "bundle_date": "2026-07-29"
   },
+  "paloalto-advisory:a:97150421f612fe98": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "paloalto-advisory:a:9dae81c1efbe1339": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "paloalto-advisory:a:a3c36e87a94b475a": {
     "bundle_date": "2026-09-10"
+  },
+  "paloalto-advisory:a:a45cee8c6f64e379": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "paloalto-advisory:a:ab658e1b88cfcd0b": {
     "bundle_date": "2026-10-15",
@@ -915,8 +3284,16 @@
     "bundle_date": "2026-10-15",
     "emitted_at": "2026-10-14T23:49:05.925042+00:00"
   },
+  "paloalto-advisory:a:b6b58391aa4cb4c2": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "paloalto-advisory:a:b75facb499f717f0": {
     "bundle_date": "2026-08-13"
+  },
+  "paloalto-advisory:a:b7dd593ee90be45f": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "paloalto-advisory:a:ba7b1b70b6a685dd": {
     "bundle_date": "2026-08-13"
@@ -927,9 +3304,21 @@
   "paloalto-advisory:a:bdcf6898684691ba": {
     "bundle_date": "2026-09-10"
   },
+  "paloalto-advisory:a:c5cb7f99fccee9f6": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "paloalto-advisory:a:ce30269bbd74e8d8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "paloalto-advisory:a:ce7c6bc6ebe9d2c8": {
     "bundle_date": "2026-10-15",
     "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
+  "paloalto-advisory:a:d4c73840bb36fb2d": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "paloalto-advisory:a:d75f13a5ae8ce101": {
     "bundle_date": "2026-09-10"
@@ -943,6 +3332,14 @@
   "paloalto-advisory:a:df668b326952f122": {
     "bundle_date": "2026-08-13"
   },
+  "paloalto-advisory:a:e5c8882b5f553485": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "paloalto-advisory:a:e8584c218837af5b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "paloalto-advisory:a:eb3a16f997dc07b1": {
     "bundle_date": "2026-08-13"
   },
@@ -950,8 +3347,20 @@
     "bundle_date": "2026-10-15",
     "emitted_at": "2026-10-14T23:49:05.925042+00:00"
   },
+  "paloalto-advisory:a:f57556eea4c42a1c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "paloalto-advisory:a:f6a9856ff85cbf42": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "paloalto-advisory:a:f8934c1a6984c176": {
     "bundle_date": "2026-09-10"
+  },
+  "paloalto-advisory:a:fa3b17ecfbd5d98f": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "paloalto-advisory:a:fa6ed2d546d73779": {
     "bundle_date": "2026-08-13"
@@ -959,20 +3368,195 @@
   "paloalto-advisory:a:fc47b5360e5f05f5": {
     "bundle_date": "2026-08-13"
   },
+  "paloalto-advisory:a:fe7a44edc1d0271b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "r136a1:a:29f929cf634fb27c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "r136a1:a:2ca4d75ae2650526": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "r136a1:a:84723af6f05f6ccd": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "r136a1:a:91ee9520e8a0f57e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "r136a1:a:a373eb90939252d4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "r136a1:a:b77de9ef7862378d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "r136a1:a:c15e14397282f5ef": {
     "bundle_date": "2026-08-25"
+  },
+  "r136a1:a:c88e07d145479e32": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "r136a1:a:d2019772f565f018": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "r136a1:a:d5fd1e484a465aec": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "rastamouse:a:00fdf5e4f92c93db": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "rastamouse:a:19b11987a3d01c56": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "rastamouse:a:283159a0cc7fd0a1": {
     "bundle_date": "2026-07-29"
   },
+  "rastamouse:a:4097c2a595091b70": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "rastamouse:a:45e2de0673deef27": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "rastamouse:a:4946e98b1f12ab40": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "rastamouse:a:4d2dca0da1e19c48": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "rastamouse:a:53069de69ccb3ef8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "rastamouse:a:535eb2f5cf201768": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "rastamouse:a:73457e04368c353c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "rastamouse:a:81c50bac057b08ab": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "rastamouse:a:b392ae8fc6ae198d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "rastamouse:a:d58139501f6d7304": {
     "bundle_date": "2026-07-18"
+  },
+  "rastamouse:a:e82dc3c0c194a036": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "rastamouse:a:e8ae9fd53136e93c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "rastamouse:a:ecbb245358125f71": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "rastamouse:a:f79d5bb29b84ade3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:06dfb01177905107": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:09e83a01c8d85e16": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:0d8e3016e71733fb": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:0f831fcbf34766b4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:4a4db134f188b7d4": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "redheadsec:a:637b26656a4bdc90": {
     "bundle_date": "2026-08-03"
   },
+  "redheadsec:a:650236fd5db1ce79": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:6a14320e7618ce46": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:6dbb6a76487e5818": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:7b6200ab41310624": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:8fed991a9cd07c4d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:b39c21a88d69bf0c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:def16019c1e600ee": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:ec92023e6e120be7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:f6dac26c7399ab2f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redheadsec:a:f9fd0c6795b579c0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "redsiege-blog:a:34290b11525da35c": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T00:00:00+00:00"
+  },
+  "redsiege-blog:a:407f2b8122b8f704": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T00:00:00+00:00"
+  },
   "redsiege-blog:a:5e16c620e5ac8ffe": {
     "bundle_date": "2026-08-14"
+  },
+  "redsiege-blog:a:68fdabcf7a6ed334": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T00:00:00+00:00"
   },
   "redsiege-blog:a:6ebbec3400980b19": {
     "bundle_date": "2026-10-03",
@@ -988,6 +3572,21 @@
   "redsiege-blog:a:b84c8679ad0b0fb0": {
     "bundle_date": "2026-10-06",
     "emitted_at": "2026-10-06T01:42:44.317029+00:00"
+  },
+  "redsiege-blog:a:f1fdd00d8417102f": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T00:00:00+00:00"
+  },
+  "redsiege-blog:a:faffc9fdb56dc382": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T00:00:00+00:00"
+  },
+  "redsiege-blog:a:feaa20cef24bb346": {
+    "baseline": true,
+    "bundle_date": "baseline",
+    "emitted_at": "2026-10-15T00:00:00+00:00"
   },
   "safebreach-blog:a:0aaaa2450e2b8bb8": {
     "bundle_date": "2026-08-04"
@@ -1068,11 +3667,19 @@
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
+  "sandflysecurity-blog:a:0a93ba91aa3e9510": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "sandflysecurity-blog:a:0ed6a77c46760f81": {
     "bundle_date": "2026-09-29"
   },
   "sandflysecurity-blog:a:130c9bd5d44aecb4": {
     "bundle_date": "2026-09-29"
+  },
+  "sandflysecurity-blog:a:13dd76792c587308": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "sandflysecurity-blog:a:145386d3d57010db": {
     "bundle_date": "2026-09-29"
@@ -1090,21 +3697,81 @@
   "sandflysecurity-blog:a:389d7ec51f257360": {
     "bundle_date": "2026-09-29"
   },
+  "sandflysecurity-blog:a:421bace52c6d34e5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sandflysecurity-blog:a:4d121f72e54a8942": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "sandflysecurity-blog:a:5ec233d8a5f8a8b8": {
     "bundle_date": "2026-09-29"
+  },
+  "sandflysecurity-blog:a:64f7a637136c31ef": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "sandflysecurity-blog:a:750a246a7b6af590": {
     "bundle_date": "2026-10-03",
     "emitted_at": "2026-10-03T00:20:07.925518+00:00"
   },
+  "sandflysecurity-blog:a:7c215a13f6147c36": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sandflysecurity-blog:a:7c8bc976a68e5dc4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "sandflysecurity-blog:a:7f67095b988ddd2c": {
     "bundle_date": "2026-07-25"
+  },
+  "sandflysecurity-blog:a:817e6cc3d23f083b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sandflysecurity-blog:a:823186d869fb6a90": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sandflysecurity-blog:a:853e80b582803c66": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sandflysecurity-blog:a:9787a11e8f91bc9c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sandflysecurity-blog:a:a3e824087e2002fe": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sandflysecurity-blog:a:ae9e3290d066566d": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "sandflysecurity-blog:a:af7b3c1e59bd6fe8": {
     "bundle_date": "2026-09-29"
   },
+  "sandflysecurity-blog:a:b1b9e3f2acc35985": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "sandflysecurity-blog:a:b2e705eb38d593b1": {
     "bundle_date": "2026-09-29"
+  },
+  "sandflysecurity-blog:a:bdba86ab5b5ea405": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sandflysecurity-blog:a:c46de4f768aec083": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sandflysecurity-blog:a:ca68d9b66ed36cfd": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "sandflysecurity-blog:a:e11836c3610d57b6": {
     "bundle_date": "2026-09-29"
@@ -1116,37 +3783,509 @@
   "sandflysecurity-blog:a:e46fd545e3d09097": {
     "bundle_date": "2026-07-15"
   },
+  "sandflysecurity-blog:a:e503dd75c336cc06": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sandflysecurity-blog:a:e5b2ef40912b95b7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sandflysecurity-blog:a:e8f171ba974ad019": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:01af8a1d99a17739": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:02f0e9a711f2e848": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:05814d6675675a43": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:0667645e25f91c9b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:09fe81103b4d47e5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:0a98d84f07700684": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:0c8b7637bcd6cdf9": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:0eb5d4b1b2fb2294": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:1036f28a93124aac": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:132fe3f820128481": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:15ba4e13107a7fde": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:185571e0b6b4b14c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:18b617607722fa9e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:190e4159825fce43": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:1b6d43fe990e570f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:20469af4dee9eb44": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:21f891abe15a422e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:25a2f791e2154767": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:25d2d07bd1bc43a1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:275d2507d9cdef48": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:2bd1eaf65e886e32": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:2cdf57b76a62fff9": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:30c2027d99addbff": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:30c611d62d8c62c8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "sonicwall-advisory:a:33a7245337f88b9f": {
     "bundle_date": "2026-08-06"
   },
   "sonicwall-advisory:a:36228de7829cc21d": {
     "bundle_date": "2026-08-12"
   },
+  "sonicwall-advisory:a:395127bf8ddda775": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:3a395e1f99aa6e47": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:3f04577079ad7cd8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:490b8fcfec86f6b4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:4a6662a0fc8628e3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:4c56c50a89d73b90": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:4ed35e351f5558cc": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:50e2eff150b53b43": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:588fa89fc04fbce6": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:5944d0586abb1195": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:59648e3bccbb594e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:606f7dc6b91cd88f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "sonicwall-advisory:a:64a2b72150cf7076": {
     "bundle_date": "2026-08-12"
   },
+  "sonicwall-advisory:a:66737c7c53fc2322": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:684f245ce109c91b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:6ca098ba2b0383e5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:6e30a79a6b8d9cf6": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:6eff002549e9c8c0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:6fac525d70387625": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:6fd4e632b9c3cc61": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:748f033c8fbcf62e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:7a05f1113004c92c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "sonicwall-advisory:a:7a79cc24b0a75685": {
     "bundle_date": "2026-08-26"
+  },
+  "sonicwall-advisory:a:7b1166fbdee5b755": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:7cecb8f287fa7299": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:7e7b464fc2a7ec61": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:800ea5a028e01559": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:810830f4247513f0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:8197c7e90696071e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:81a29fc81159015d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:827033167820015c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:85542e7725dfb55a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:871f62441c85d031": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:8b6e2761ab57a442": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:8b9eeb66c08efddc": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "sonicwall-advisory:a:8fa6cb45fde7ec53": {
     "bundle_date": "2026-10-15",
     "emitted_at": "2026-10-14T23:49:05.925042+00:00"
   },
+  "sonicwall-advisory:a:93854302deb00a85": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:947dcd86298a99ae": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "sonicwall-advisory:a:96a11b4350eb1c7a": {
     "bundle_date": "2026-10-07",
     "emitted_at": "2026-10-07T00:32:50.824376+00:00"
   },
+  "sonicwall-advisory:a:96d4d68dfb033176": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:9915e0e39ca08048": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:9956af3b8c946414": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:9fd44981b6413248": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:a04612dd6cb7de37": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:a77167110f160f66": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "sonicwall-advisory:a:a83592efc2db616d": {
     "bundle_date": "2026-08-08"
+  },
+  "sonicwall-advisory:a:aa2fc462a06f5de8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:aa4e7db2bcf37dfa": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "sonicwall-advisory:a:ac5c8ca23caa902e": {
     "bundle_date": "2026-09-02"
   },
+  "sonicwall-advisory:a:ad0ea2e4b07959b4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:b02de90e90cebdee": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:b53397e178e7cb3e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:ba6d1a04934b9622": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:bb20c526346954e4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:bc97f04c29c18709": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:c037f53cb12e7ae3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:c08aeb9037016977": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:c1118855eab96c7e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:c29d58043fffd6b0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:c2ffc89cf86b5030": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:c51588dc2b3f4bf5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:cbaa551bae958df7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:ccda014f4ac9784e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:ce5660fc953778f4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:e222a4b5bd7e3486": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:e54662e29c398559": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:e68432ab526488ca": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "sonicwall-advisory:a:e7fa28f37e212106": {
     "bundle_date": "2026-09-04"
   },
+  "sonicwall-advisory:a:e9d6aa07b1b93c78": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:ebadb11c4d192a15": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:ec33e9a0cce3fc13": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:ec95e5841c0ef889": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:ef1a9f2d3b262415": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:f197c112645582b3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:f46203df58a1cc0f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:f5bf67e8586c2505": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:f71ec8daef5c328e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:f729c88b30600926": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:f97b6f6292ab9438": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:fd3313d21bba2045": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:fdfb5f0440a7ea98": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:fe240b64a52f4748": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sonicwall-advisory:a:ff87b015bdef0888": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:00353855e2b532fb": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:063514f286ad0ad7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:16430e49a76f74e7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:42acf34ff0016efe": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:43746b70dbfd2e6b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:484332db3cc79179": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:787ba374d80198e3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:811432cba12fff89": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "sud0ru:a:86fff8de645557ef": {
     "bundle_date": "2026-08-24"
+  },
+  "sud0ru:a:955f20ab06511e62": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:a9503c715d69d3ea": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:bc7325dc10ba48af": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:ca90428cce5f30d1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:d5bcce0105e29009": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:e566d98b4a4cd9d4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "sud0ru:a:ef09d04a8a750f6f": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "unknowncheats-ac:a:0078ca80073d316e": {
     "bundle_date": "2026-08-15"
@@ -1539,19 +4678,127 @@
   "unknowncheats-ac:a:fd3ef4fa5effb65f": {
     "bundle_date": "2026-09-21"
   },
+  "voltatech-blog:a:0c5c091d8fc496aa": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "voltatech-blog:a:1122d7bc74e30394": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "voltatech-blog:a:123ac3865f0b6bfc": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "voltatech-blog:a:1738db72b8f1f410": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "voltatech-blog:a:27f9f1fb76a69286": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "voltatech-blog:a:2b9db3c59641cc66": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "voltatech-blog:a:4a6918ce7a65e974": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "voltatech-blog:a:6b318b024effe914": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "voltatech-blog:a:71646b6ff17c02c4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "voltatech-blog:a:7ba35372251df480": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "voltatech-blog:a:91f5a64cf98029bf": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "voltatech-blog:a:d07904d6948c6c22": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "voltatech-blog:a:d3cc98747fc8b7dc": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "voltatech-blog:a:fa3fbc9f39570baf": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "watchtowr-labs:a:0d46526f733bfcef": {
     "bundle_date": "2026-10-07",
     "emitted_at": "2026-10-07T00:32:50.824376+00:00"
   },
+  "watchtowr-labs:a:0f635b841fd7ca28": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "watchtowr-labs:a:1572cfbc8e686593": {
     "bundle_date": "2026-09-24"
+  },
+  "watchtowr-labs:a:2b7352fc235caa79": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "watchtowr-labs:a:4cb02bd8a6c62d99": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "watchtowr-labs:a:4e63a3bc5b2c8ed3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "watchtowr-labs:a:67114ad22bf7c88c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "watchtowr-labs:a:75d02899387c1a5f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "watchtowr-labs:a:892cc8ea298160be": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "watchtowr-labs:a:8b019fa9695eddea": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "watchtowr-labs:a:9500df075a9b45c2": {
     "bundle_date": "2026-09-30",
     "emitted_at": "2026-09-30T00:16:27.541665+00:00"
   },
+  "watchtowr-labs:a:a87887de0fe62558": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "watchtowr-labs:a:b1f8c189922ad99d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "watchtowr-labs:a:b577802c68fd64b5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "watchtowr-labs:a:b782f35797f57674": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "watchtowr-labs:a:c030311d199a5803": {
     "bundle_date": "2026-08-15"
+  },
+  "watchtowr-labs:a:c54ea2e1916fd0aa": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "watchtowr-labs:a:cb35de36512f22d0": {
     "bundle_date": "2026-10-10",
@@ -1560,48 +4807,220 @@
   "watchtowr-labs:a:cb8ce7babd6edd26": {
     "bundle_date": "2026-09-29"
   },
+  "watchtowr-labs:a:de4a72c9415bc5e3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "watchtowr-labs:a:e27911d64587eace": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "whiteknightlabs-blog:a:0726ee26228e9388": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "whiteknightlabs-blog:a:1a512a9264f6e0d3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "whiteknightlabs-blog:a:3faf0c82f2ec22aa": {
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
+  "whiteknightlabs-blog:a:439e5526d25a62ed": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "whiteknightlabs-blog:a:8f5de6eeb15fc2c7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "whiteknightlabs-blog:a:98f344fdc437c4c8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "whiteknightlabs-blog:a:b42a31f19c8f2528": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "whiteknightlabs-blog:a:c0c11d10efc0eb37": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "whiteknightlabs-blog:a:c14ea746fd3ad19c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "whiteknightlabs-blog:a:c3aaf68e10ebf776": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "whiteknightlabs-blog:a:d80ee1271ae64ae4": {
     "bundle_date": "2026-08-18"
+  },
+  "whiteknightlabs-blog:a:ff6b34989a1c0bfa": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xlab-qianxin:a:0b51c2fb7dfae172": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xlab-qianxin:a:16350ec0daa934d3": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xlab-qianxin:a:2850549deafbb918": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xlab-qianxin:a:611c79cfcbacc945": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xlab-qianxin:a:69c65cd9a4068af7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xlab-qianxin:a:7f12d072d553af4d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xlab-qianxin:a:8709013639ad3296": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "xlab-qianxin:a:93daa3a5fb5ed124": {
     "bundle_date": "2026-07-26"
   },
+  "xlab-qianxin:a:969542d1c510455e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xlab-qianxin:a:99ac827f1dc73992": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xlab-qianxin:a:ab5d49941bfc3572": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "xlab-qianxin:a:b0f01c3d1b3c14be": {
     "bundle_date": "2026-07-18"
+  },
+  "xlab-qianxin:a:b823ffa1748d817c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xlab-qianxin:a:bf5fe6422cd55988": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "xlab-qianxin:a:d61bf7a46cd9fc5a": {
     "bundle_date": "2026-07-30"
   },
+  "xlab-qianxin:a:e07384edb50c2a7c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xlab-qianxin:a:f397d5d00b03d648": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xlab-qianxin:a:fdfb3cd219bc3788": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "xlab-qianxin:a:fe20a0282f07557a": {
     "bundle_date": "2026-07-18"
+  },
+  "xpnsec-blog:a:37d701f21787530e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xpnsec-blog:a:422c67c9d945d1b8": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "xpnsec-blog:a:4d94c61fdd78c0a9": {
     "bundle_date": "2026-07-31"
   },
+  "xpnsec-blog:a:617d9b6a5188cefa": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "xpnsec-blog:a:be961530760f06c7": {
     "bundle_date": "2026-07-31"
+  },
+  "xpnsec-blog:a:cf9b3f810e311a5b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "xpnsec-blog:a:f6f4d56169fd41bd": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-ai:a:114a9476a03486cd": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-ai:a:1395ddf1ac25ae93": {
     "bundle_date": "2026-09-07"
   },
+  "yage-ai:a:24b18fd550349d88": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-ai:a:289d025b1ab3e3f8": {
     "bundle_date": "2026-08-03"
+  },
+  "yage-ai:a:3f3a2ed43b36d1f0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-ai:a:42f4f2429b2a3be5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-ai:a:668b51a0f76e102a": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-ai:a:85d81d51170a4f2d": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-ai:a:862f87e4b85bf191": {
     "bundle_date": "2026-09-07"
   },
+  "yage-ai:a:95b0b38f6e5cefc6": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-ai:a:b500bf33f475e9f1": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-ai:a:c1a5cae350fe98b0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-ai:a:cfbd6020e10ae7f6": {
     "bundle_date": "2026-08-03"
+  },
+  "yage-ai:a:e9fe8a18a5d70d7d": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:00638c9e67faa791": {
     "bundle_date": "2026-08-19"
   },
   "yage-share:a:00b61c71a1633f7e": {
     "bundle_date": "2026-08-01"
+  },
+  "yage-share:a:00ecc893796fd3fe": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:01404a1ba770cb06": {
     "bundle_date": "2026-09-01"
@@ -1611,6 +5030,10 @@
   },
   "yage-share:a:02b299ddd5644c57": {
     "bundle_date": "2026-08-26"
+  },
+  "yage-share:a:0364a964f86dfd2f": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:05d0285cba94b278": {
     "bundle_date": "2026-08-21"
@@ -1639,6 +5062,10 @@
   "yage-share:a:10f0f7e705484e00": {
     "bundle_date": "2026-07-19"
   },
+  "yage-share:a:11760911a51597de": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:11db302d30e8a360": {
     "bundle_date": "2026-07-30"
   },
@@ -1661,11 +5088,19 @@
   "yage-share:a:1bf1b08366e324e0": {
     "bundle_date": "2026-07-17"
   },
+  "yage-share:a:1d3a4125daa3f670": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:1def605f5260229d": {
     "bundle_date": "2026-07-29"
   },
   "yage-share:a:1df61c5fdb386b3c": {
     "bundle_date": "2026-08-20"
+  },
+  "yage-share:a:1e6429bf1d79f2f5": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:1f15123fa2619728": {
     "bundle_date": "2026-07-26"
@@ -1675,6 +5110,10 @@
   },
   "yage-share:a:2027f89e6d2ed147": {
     "bundle_date": "2026-07-16"
+  },
+  "yage-share:a:24904ff56127449b": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:24b5c7b597c50d73": {
     "bundle_date": "2026-08-09"
@@ -1757,6 +5196,14 @@
   "yage-share:a:421b3b8dafc3ffc1": {
     "bundle_date": "2026-09-21"
   },
+  "yage-share:a:42f182b6b5708305": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-share:a:42f8a2312c0fad5f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:435afe1314eb8c5b": {
     "bundle_date": "2026-10-15",
     "emitted_at": "2026-10-14T23:49:05.925042+00:00"
@@ -1772,6 +5219,14 @@
   },
   "yage-share:a:44e1143d9774ce95": {
     "bundle_date": "2026-08-19"
+  },
+  "yage-share:a:455d656fab5dcff0": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-share:a:45889c84d6aa0ccc": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:475a1fa12058ec15": {
     "bundle_date": "2026-10-15",
@@ -1791,6 +5246,10 @@
   "yage-share:a:4978f7f7c1a14874": {
     "bundle_date": "2026-09-04"
   },
+  "yage-share:a:4981f42cc08ed759": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:4ad668e198c5cfab": {
     "bundle_date": "2026-07-20"
   },
@@ -1806,6 +5265,10 @@
   "yage-share:a:4cb50fa04b4a5344": {
     "bundle_date": "2026-07-27"
   },
+  "yage-share:a:4ddb668402f37629": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:4e623012b4445937": {
     "bundle_date": "2026-09-18"
   },
@@ -1819,12 +5282,32 @@
     "bundle_date": "2026-10-03",
     "emitted_at": "2026-10-03T00:20:07.925518+00:00"
   },
+  "yage-share:a:4f58551d9ca53660": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-share:a:504b3db21bafec3f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:50c937e7f3f64d97": {
     "bundle_date": "2026-08-23"
   },
   "yage-share:a:5188a6cdd86d5fb3": {
     "bundle_date": "2026-10-11",
     "emitted_at": "2026-10-11T00:10:31.821042+00:00"
+  },
+  "yage-share:a:524d52cacdabb0f8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-share:a:52c0e6882fa96043": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-share:a:5471d6efe7038a93": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:5499d44dfae1b714": {
     "bundle_date": "2026-08-31"
@@ -1875,6 +5358,10 @@
   "yage-share:a:654f62a5f39a602c": {
     "bundle_date": "2026-08-17"
   },
+  "yage-share:a:676659e9747c6e6f": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:680184851fbec979": {
     "bundle_date": "2026-08-07"
   },
@@ -1883,6 +5370,10 @@
   },
   "yage-share:a:68795ac402d87d96": {
     "bundle_date": "2026-09-04"
+  },
+  "yage-share:a:68e267eed9eb367b": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:6952dccd75990ad1": {
     "bundle_date": "2026-08-14"
@@ -1929,8 +5420,20 @@
   "yage-share:a:7342be04f396b6f4": {
     "bundle_date": "2026-07-24"
   },
+  "yage-share:a:735cdca0f693c50c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-share:a:73f2f9fa52bf33c6": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:74e4bb97efe9e393": {
     "bundle_date": "2026-08-30"
+  },
+  "yage-share:a:754a4061f799a263": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:7781a639e9c3c9a4": {
     "bundle_date": "2026-08-04"
@@ -1978,6 +5481,10 @@
   "yage-share:a:8be56cbb4e899f9e": {
     "bundle_date": "2026-07-16"
   },
+  "yage-share:a:8c83b190a5639a46": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:8cb1873e603bdeb4": {
     "bundle_date": "2026-07-17"
   },
@@ -1991,6 +5498,10 @@
   },
   "yage-share:a:8e3ac78780c6ccac": {
     "bundle_date": "2026-08-28"
+  },
+  "yage-share:a:8eb8b818834e577a": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:9028f01bdfa4c7e1": {
     "bundle_date": "2026-07-23"
@@ -2015,12 +5526,20 @@
   "yage-share:a:95222558486487b2": {
     "bundle_date": "2026-09-26"
   },
+  "yage-share:a:955521eac76dad7d": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:96566e84cc3742bc": {
     "bundle_date": "2026-07-21"
   },
   "yage-share:a:9832ae134cd12832": {
     "bundle_date": "2026-10-10",
     "emitted_at": "2026-10-10T00:39:58.428209+00:00"
+  },
+  "yage-share:a:98b81f47254d0bce": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:98efbe14f3606129": {
     "bundle_date": "2026-07-24"
@@ -2033,6 +5552,10 @@
   },
   "yage-share:a:9995b080216d0741": {
     "bundle_date": "2026-09-02"
+  },
+  "yage-share:a:99f01e2d97e3aac8": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:99f755a0465ac20c": {
     "bundle_date": "2026-10-05",
@@ -2086,6 +5609,14 @@
   "yage-share:a:ae1f7145caed9fe1": {
     "bundle_date": "2026-08-17"
   },
+  "yage-share:a:ae3aaf728c2a4e02": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-share:a:af2da94ac2b0431c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:b16c8c0391bd4f3e": {
     "bundle_date": "2026-07-31"
   },
@@ -2101,12 +5632,28 @@
   "yage-share:a:b415b45503912d46": {
     "bundle_date": "2026-07-31"
   },
+  "yage-share:a:b5d27dfa4f62af88": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:b5d9cba668a200c7": {
     "bundle_date": "2026-08-14"
+  },
+  "yage-share:a:b7370d0eb23bf8c4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-share:a:b7fe501050cf1d2d": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:b932e7b095cdba24": {
     "bundle_date": "2026-10-10",
     "emitted_at": "2026-10-10T00:39:58.428209+00:00"
+  },
+  "yage-share:a:b94a9f0089c5aef1": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:ba0259d46a216ce8": {
     "bundle_date": "2026-08-05"
@@ -2129,6 +5676,10 @@
   },
   "yage-share:a:bf8f0180727c9110": {
     "bundle_date": "2026-08-22"
+  },
+  "yage-share:a:c13c55cc92a67305": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:c1df14f32eebd7a7": {
     "bundle_date": "2026-09-15"
@@ -2170,14 +5721,34 @@
   "yage-share:a:c9d7ff6558f9a466": {
     "bundle_date": "2026-08-10"
   },
+  "yage-share:a:c9ec6195658a810e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:cb12cef88b251ecb": {
     "bundle_date": "2026-08-02"
+  },
+  "yage-share:a:cb76558a5119c7be": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-share:a:cb767c7228e4d6f4": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-share:a:cd20616f8b9fa106": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:cf545b6e3ebdcd3b": {
     "bundle_date": "2026-07-29"
   },
   "yage-share:a:cf5c4edae9606090": {
     "bundle_date": "2026-08-17"
+  },
+  "yage-share:a:d15428b43c2144ca": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:d200243eb7d824eb": {
     "bundle_date": "2026-08-06"
@@ -2195,11 +5766,27 @@
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
+  "yage-share:a:d556081d338d590c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:d5735b7a286f2fa8": {
     "bundle_date": "2026-08-16"
   },
   "yage-share:a:d5cd2eba019bce0a": {
     "bundle_date": "2026-08-11"
+  },
+  "yage-share:a:d6b292c43462b914": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-share:a:d7022d17cce1282e": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "yage-share:a:d74befe897bae667": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:d78c95969e2a4a1a": {
     "bundle_date": "2026-10-06",
@@ -2215,8 +5802,16 @@
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
+  "yage-share:a:db9d6b969e8e9665": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:ddbf3f77af80d291": {
     "bundle_date": "2026-07-28"
+  },
+  "yage-share:a:de27b8536df4f2b2": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:de8d042c4392b723": {
     "bundle_date": "2026-10-01",
@@ -2227,6 +5822,10 @@
   },
   "yage-share:a:dfa7ecf7e3a58d14": {
     "bundle_date": "2026-09-14"
+  },
+  "yage-share:a:e00dab11a3a67e2a": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:e382da9417493bc7": {
     "bundle_date": "2026-08-12"
@@ -2248,6 +5847,10 @@
   },
   "yage-share:a:e7e3723d4fd12880": {
     "bundle_date": "2026-09-18"
+  },
+  "yage-share:a:e828c467a8c9bec7": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:e89a8e9fbae29241": {
     "bundle_date": "2026-07-22"
@@ -2278,8 +5881,16 @@
   "yage-share:a:f06b6123f405455c": {
     "bundle_date": "2026-08-23"
   },
+  "yage-share:a:f18fea106ee488b9": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "yage-share:a:f2da2f1fbc44105e": {
     "bundle_date": "2026-07-22"
+  },
+  "yage-share:a:f3ca00ee7b630f09": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:f4dc6b682b7cdb94": {
     "bundle_date": "2026-10-08",
@@ -2287,6 +5898,10 @@
   },
   "yage-share:a:f6c12abf6a219b57": {
     "bundle_date": "2026-08-22"
+  },
+  "yage-share:a:f84e57f8a65a682c": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "yage-share:a:fc37f45075f7eccd": {
     "bundle_date": "2026-08-14"
@@ -2307,11 +5922,39 @@
   "yage-share:a:fff2fd0a62220b21": {
     "bundle_date": "2026-08-27"
   },
+  "z3bra:a:3d3bbe73fedf25a5": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "z3bra:a:407deb13d17449e8": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "z3bra:a:81ab7d95f979e78e": {
     "bundle_date": "2026-09-16"
   },
+  "z3bra:a:c8fb1d2a06112181": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "z3bra:a:ead5a4a32e51f566": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "z3bra:a:ecd8548dbdcf6315": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "z3bra:a:f3c3fa0b1a6807fb": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
   "z3bra:a:f94e955a1e432f66": {
     "bundle_date": "2026-09-29"
+  },
+  "z3bra:a:fa2bb2744f71609a": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "zdi-advisories:a:006e8ee1895c05e9": {
     "bundle_date": "2026-08-14"
@@ -3379,6 +7022,46 @@
   },
   "zdi-advisories:a:ffb10d3f5394194e": {
     "bundle_date": "2026-08-13"
+  },
+  "zgao:a:1a759438bb6dd364": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "zgao:a:1dadab4e30b356ff": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "zgao:a:476742232cc4fc02": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "zgao:a:9e8fdf609a029365": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "zgao:a:a1b9cdd3cf6c280c": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "zgao:a:aabbe064266fe19b": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "zgao:a:bf039e875949edd9": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "zgao:a:c7ee684d6eb4e1ba": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "zgao:a:c8a4d8af6111f5b7": {
+    "baseline": true,
+    "bundle_date": "baseline"
+  },
+  "zgao:a:f28b2e35ed3f638d": {
+    "baseline": true,
+    "bundle_date": "baseline"
   },
   "zusda:a:0481ff46f665dba1": {
     "bundle_date": "2026-07-27"

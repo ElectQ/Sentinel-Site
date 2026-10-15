@@ -121,6 +121,8 @@ def collect_one(
             # landing pages into articles. Heuristic fallback is opt-in for
             # diagnostics only.
             if not env_bool("ALLOW_HEURISTIC_FALLBACK", False):
+                sst["fail_streak"] = int(sst.get("fail_streak") or 0) + 1
+                sst["last_error"] = str(err)[:300]
                 return {
                     "ok": False,
                     "via": "",
@@ -178,22 +180,28 @@ def collect_one(
                             )
                             err = None
                         else:
+                            err_msg = f"{err}; heuristic:{herr}; browser:{berr}; browser_h:{bherr}"
+                            sst["fail_streak"] = int(sst.get("fail_streak") or 0) + 1
+                            sst["last_error"] = str(err_msg)[:300]
                             return {
                                 "ok": False,
                                 "via": "",
                                 "new_articles": [],
                                 "all_normalized": [],
-                                "error": f"{err}; heuristic:{herr}; browser:{berr}; browser_h:{bherr}",
+                                "error": err_msg,
                                 "baseline": is_baseline,
                                 "source_id": source.id,
                             }
                 else:
+                    err_msg = f"{err}; heuristic:{herr}; browser_fallback_disabled"
+                    sst["fail_streak"] = int(sst.get("fail_streak") or 0) + 1
+                    sst["last_error"] = str(err_msg)[:300]
                     return {
                         "ok": False,
                         "via": "",
                         "new_articles": [],
                         "all_normalized": [],
-                        "error": f"{err}; heuristic:{herr}; browser_fallback_disabled",
+                        "error": err_msg,
                         "baseline": is_baseline,
                         "source_id": source.id,
                     }
@@ -300,7 +308,16 @@ def collect_one(
         if f"{source.id}:{n['external_id']}" not in emitted
     ]
     emit = [] if is_baseline else list(new_articles)
-    if not is_baseline and emit:
+    if is_baseline:
+        for n in normalized:
+            k = f"{source.id}:{n['external_id']}"
+            if k not in emitted:
+                emitted[k] = {
+                    "bundle_date": "baseline",
+                    "emitted_at": now,
+                    "baseline": True,
+                }
+    elif emit:
         emit = maybe_probe_new(emit)
         emit = [content.enrich(article, source) for article in emit]
 
@@ -336,7 +353,11 @@ def collect_one(
 
     sst["method"] = via
     sst["last_ok_at"] = now
+    sst["fail_streak"] = 0
+    sst["last_error"] = ""
     sst["baseline_initialized"] = True
+    if is_baseline or emit:
+        sst["last_new_at"] = now
     if feed_url and via == "rss":
         sst["resolved_feed_url"] = feed_url
 

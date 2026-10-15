@@ -6019,6 +6019,40 @@
         }
       }
     },
+    "guysrd": {
+      "baseline_initialized": true,
+      "candidates": {},
+      "candidates_initialized": false,
+      "fail_streak": 0,
+      "feed_fail_streak": 0,
+      "last_error": "",
+      "last_new_at": "2026-10-15T09:33:08.885118+00:00",
+      "last_ok_at": "2026-10-15T09:33:08.885118+00:00",
+      "method": "rss",
+      "resolved_feed_url": "https://guysrd.github.io/feed.xml",
+      "seen": {
+        "https://guysrd.github.io/epoll-uaf": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-05-10T00:00:00+00:00",
+          "title": "The epoll uaf"
+        },
+        "https://guysrd.github.io/epoll-uaf-agent": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-07-13T00:00:00+00:00",
+          "title": "I handed the epoll UAF to an agent"
+        },
+        "https://guysrd.github.io/futex-read-once": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-06-04T00:00:00+00:00",
+          "title": "The futex READ_ONCE"
+        },
+        "https://guysrd.github.io/rtmutex": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-06-13T00:00:00+00:00",
+          "title": "futex: remove_waiter stack uaf"
+        }
+      }
+    },
     "hacktron-blog": {
       "baseline_initialized": true,
       "candidates": {},
@@ -6875,6 +6909,70 @@
           "first_seen": "2026-09-27T23:43:35.427894+00:00",
           "published_at": "",
           "title": "28 Sept 2026Paint It Blue: Reversing Win32k's CallbacksA reverse-engineering tour of modern Win32k architecture, x64 syscall dispatch, GUI-thread conversion, and the session-aware callbacks behind GDI"
+        }
+      }
+    },
+    "innei": {
+      "baseline_initialized": true,
+      "candidates": {},
+      "candidates_initialized": false,
+      "fail_streak": 0,
+      "feed_fail_streak": 0,
+      "last_error": "",
+      "last_new_at": "2026-10-15T09:33:08.885118+00:00",
+      "last_ok_at": "2026-10-15T09:33:08.885118+00:00",
+      "method": "rss",
+      "resolved_feed_url": "https://innei.in/feed",
+      "seen": {
+        "https://innei.in/notes/218": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-08-04T18:17:14+00:00",
+          "title": "在人间，各自流转"
+        },
+        "https://innei.in/notes/219": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-08-24T18:29:47+00:00",
+          "title": "午夜备忘：关于爱、自由与未来"
+        },
+        "https://innei.in/notes/220": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-05T18:51:29+00:00",
+          "title": "雨のち晴れ"
+        },
+        "https://innei.in/posts/tech/ai-native-ios-e2e-verification": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-09T17:39:44+00:00",
+          "title": "我的 AI Native iOS 开发验证工作流"
+        },
+        "https://innei.in/posts/tech/css-to-stylex-migration": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-08-30T08:45:43+00:00",
+          "title": "从纯 CSS 到 StyleX：AI 加持下的一万行 CSS 迁移实践"
+        },
+        "https://innei.in/posts/tech/electron-ota-updater": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-09-29T15:24:21+00:00",
+          "title": "把 Electron 更新做快：我在 OTA 上的几次推倒重来"
+        },
+        "https://innei.in/posts/tech/lody-ios-prototype-to-product": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-09-12T19:11:45+00:00",
+          "title": "一天原型，一周成品：开发 Lody iOS 实况"
+        },
+        "https://innei.in/posts/tinkering/ai-era-dev-workflow-review-and-verify": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-08-16T16:32:40+00:00",
+          "title": "AI 时代我的开发工作流：从踩坑复盘到多项目并行验证"
+        },
+        "https://innei.in/posts/tinkering/steins-gate-mv-with-claude-code": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-09-30T11:20:26+00:00",
+          "title": "用 Claude Code、Codex 和 Remotion 做一支《命运石之门》MV"
+        },
+        "https://innei.in/posts/tinkering/uikitcore-reverse-engineering-report": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-08-23T13:48:33+00:00",
+          "title": "UIKitCore 逆向分析报告"
         }
       }
     },
@@ -7741,6 +7839,100 @@
         }
       }
     },
+    "matheuzsecurity": {
+      "baseline_initialized": true,
+      "candidates": {},
+      "candidates_initialized": false,
+      "fail_streak": 0,
+      "feed_fail_streak": 0,
+      "last_error": "",
+      "last_new_at": "2026-10-15T09:33:08.885118+00:00",
+      "last_ok_at": "2026-10-15T09:33:08.885118+00:00",
+      "method": "rss",
+      "resolved_feed_url": "https://matheuzsecurity.github.io/hacking/index.xml",
+      "seen": {
+        "https://matheuzsecurity.github.io/hacking/a-simple-way-to-detect-and-remove-kovid-lkm-rootkit/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2024-08-26T10:29:01-04:00",
+          "title": "A simple way to detect and remove LKM rootkit KoviD (Outdated)"
+        },
+        "https://matheuzsecurity.github.io/hacking/bpf-map-poisoning-edr-evasion/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-07-06T00:00:00-03:00",
+          "title": "BPF Map Poisoning: Attacking Falco from the Inside"
+        },
+        "https://matheuzsecurity.github.io/hacking/bypass-userland-hooks/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2025-05-14T19:42:06-04:00",
+          "title": "Bypassing LD_PRELOAD Rootkits Is Easy"
+        },
+        "https://matheuzsecurity.github.io/hacking/bypassing-elastic/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2025-10-30T14:15:09-04:00",
+          "title": "Evading Elastic Security: Linux Rootkit Detection Bypass"
+        },
+        "https://matheuzsecurity.github.io/hacking/ebpf-security-tools-hacking/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-02-09T15:25:08+00:00",
+          "title": "Breaking eBPF Security: How Kernel Rootkits Blind Observability Tools"
+        },
+        "https://matheuzsecurity.github.io/hacking/elastic-trusted-pid-bypass/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-08-31T00:00:00-03:00",
+          "title": "Singularity Rootkit: Evading Elastic Defend Module Load Detection"
+        },
+        "https://matheuzsecurity.github.io/hacking/evading-linux-edrs-with-io-uring/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2025-07-04T10:35:09-04:00",
+          "title": "Red Team Tactics: Evading EDR on Linux with io_uring"
+        },
+        "https://matheuzsecurity.github.io/hacking/fileless-loader-bypassing-elastic-memfd/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-09-06T00:00:00-04:00",
+          "title": "Fileless ELF Execution via O_TMPFILE"
+        },
+        "https://matheuzsecurity.github.io/hacking/ftrace-rootkit/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2024-12-26T21:46:23-03:00",
+          "title": "Detecting rootkits based on ftrace hooking."
+        },
+        "https://matheuzsecurity.github.io/hacking/gcc/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2025-04-13T13:14:56-04:00",
+          "title": "ElfDoor-gcc"
+        },
+        "https://matheuzsecurity.github.io/hacking/ioctl-secrets/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2025-11-09T12:25:18-05:00",
+          "title": "Ioctl Secrets Writeup"
+        },
+        "https://matheuzsecurity.github.io/hacking/ldpreload-rootkit/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2024-11-26T20:06:42-08:00",
+          "title": "How detect a LD_PRELOAD rootkit and hide from ldd & /proc"
+        },
+        "https://matheuzsecurity.github.io/hacking/linux-kernel-keyring-fileless-exec/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-09-09T00:00:00-04:00",
+          "title": "Fileless ELF Execution via Kernel Keyring"
+        },
+        "https://matheuzsecurity.github.io/hacking/linux-threat-hunting-persistence/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2024-02-16T00:00:29-03:00",
+          "title": "Linux Threat Hunting Persistence"
+        },
+        "https://matheuzsecurity.github.io/hacking/trendmicro-bmhook-tmhook-reload-bypass/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-06-03T00:00:00-04:00",
+          "title": "Trend Micro Deep Security Agent Research: Forcing bmhook/tmhook Reloads to Open a Protection Bypass Window"
+        },
+        "https://matheuzsecurity.github.io/hacking/using-io-uring-to-break-linux-rootkits-hooks/": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2025-06-21T16:33:03-04:00",
+          "title": "breaking ld_preload rootkit hooks"
+        }
+      }
+    },
     "mist-security": {
       "baseline_initialized": true,
       "candidates": {},
@@ -8419,6 +8611,515 @@
           "first_seen": "2026-08-19T21:31:31.992338+00:00",
           "published_at": "",
           "title": "ResearchAug 19, 2026This article maps where DeFi money actually leaves: not the smart contract, but the Web2 layer around it, ranking real risk from 2025–2026 incidents and what auditors and protocols"
+        }
+      }
+    },
+    "msrc": {
+      "baseline_initialized": true,
+      "candidates": {},
+      "candidates_initialized": false,
+      "fail_streak": 0,
+      "feed_fail_streak": 0,
+      "last_error": "",
+      "last_new_at": "2026-10-15T09:33:08.885118+00:00",
+      "last_ok_at": "2026-10-15T09:33:08.885118+00:00",
+      "method": "rss",
+      "resolved_feed_url": "https://api.msrc.microsoft.com/update-guide/rss",
+      "seen": {
+        "https://msrc.microsoft.com/update-guide/vulnerability/ADV260001": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "ADV260001 ADV260001 Hardening changes for ReFS volumes on removable media"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102188": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-102188 Windows Storage Port Driver Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102227": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102227 Windows Resilient File System (ReFS) Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102229": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102229 Visual Studio Code Information Disclosure Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102231": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102231 Visual Studio Code Security Feature Bypass Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102232": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102232 Visual Studio Code Security Feature Bypass Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102233": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102233 Visual Studio Code Security Feature Bypass Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102234": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102234 Visual Studio Code Security Feature Bypass Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102235": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102235 Visual Studio Code Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102238": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102238 Visual Studio Code Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102849": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102849 Microsoft Office Access Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102850": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102850 Microsoft Office Access Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102855": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102855 Microsoft Office Visio Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102856": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102856 Microsoft Office Visio Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102857": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102857 Microsoft Office Visio Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102858": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102858 Microsoft Office OneNote Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102859": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102859 Microsoft Office SharePoint Spoofing Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102860": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102860 Microsoft Office SharePoint Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102861": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102861 Microsoft Office SharePoint Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102862": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102862 Microsoft Office SharePoint Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102863": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102863 Microsoft Office SharePoint Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102864": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102864 Microsoft Office SharePoint Spoofing Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102865": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102865 Microsoft Office SharePoint Information Disclosure Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102866": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102866 Microsoft Office SharePoint Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102867": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-102867 Microsoft Office Word Information Disclosure Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-103572": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-103572 Visual Studio Tools for Applications and SQL Server Management Studio Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105591": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105591 Microsoft Office Access Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105592": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105592 Microsoft Office Access Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105593": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105593 Microsoft Office Access Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105595": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105595 Microsoft Office Access Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105596": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105596 Microsoft Office Access Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105597": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105597 Microsoft Office Access Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105598": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105598 Microsoft Office Access Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105599": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105599 Microsoft Office PowerPoint Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105713": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105713 Microsoft Office SharePoint Spoofing Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105714": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105714 Microsoft Office Access Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105715": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105715 Microsoft Office Word Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105716": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105716 Microsoft Office Access Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105717": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105717 Microsoft Office Access Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105718": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105718 Microsoft Excel Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105719": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105719 Microsoft SharePoint Server Information Disclosure Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105720": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105720 Microsoft Office SharePoint Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105722": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105722 Windows Broadcast DVR User Service Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105723": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105723 Windows Distributed File System (DFS) Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105725": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105725 Windows Security App Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105726": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105726 Microsoft Defender Information Disclosure Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105727": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105727 Microsoft Dynamics 365 Business Central Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105728": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105728 Dynamics Business Central Information Disclosure Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105731": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105731 Microsoft Office Graphics Component Information Disclosure Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105732": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105732 SysInternals Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105733": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-105733 Windows Hyper-V Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108398": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-108398 .NET Framework Security Feature Bypass Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108399": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-108399 Windows Hyper-V Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108400": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-108400 HEVC Video Extensions Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108457": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-108457 Microsoft Windows PDF Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108458": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-108458 Remote Desktop Client Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108460": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-108460 Windows Message Queuing Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108461": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-108461 Windows Broadcast DVR User Service Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108462": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-108462 Windows Kernel Information Disclosure Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108464": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-108464 Software Protection Platform (SPP) Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108465": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-108465 Windows Update Delivery Optimization Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108466": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-108466 Windows Kernel Denial of Service Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108467": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-108467 Microsoft PostScript Printer Driver Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108468": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-108468 Windows Installer Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32176": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-32176 SQL Server Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49785": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-49785 UEFI Secure Boot Security Feature Bypass Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61931": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-61931 Windows Perception Simulation Service Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62688": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-62688 Windows MIDI Service Module Elevation of Privileges Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62697": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-62697 Windows Push Notifications Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62755": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-62755 Windows DHCP Client Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68825": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-68825 Windows Bind Filter Driver Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69334": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-69334 Windows Volume Manager Extension Driver Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69351": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-69351 Windows Universal Plug and Play (UPnP) Device Host Information Disclosure Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69363": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-69363 Windows Error Reporting Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69366": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-69366 Windows Kernel Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69370": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-69370 Visual Studio Code Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69620": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-69620 Windows DHCP Server Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69639": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-69639 Windows libarchive Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69676": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-69676 Windows Kerberos Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69763": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-69763 Windows Storage Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69898": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-69898 Windows Kernel Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70095": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-70095 Windows iSCSI Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70098": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-70098 Visual Studio Code Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70235": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-70235 Windows Event Tracing Spoofing Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70245": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-70245 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70566": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-70566 Windows Schannel Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70584": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-70584 Windows Core Messaging Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72937": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-72937 Windows Storage Port Driver Information Disclosure Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72968": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-72968 Windows Program Compatibility Assistant Service Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77499": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-77499 Windows DHCP Server Denial of Service Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81352": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-81352 Web Media Extensions Remote Code Execution Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83943": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-83943 Azure API Center Information Disclosure Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84019": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-84019 Windows Advanced Rasterization Platform Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85868": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-85868 Windows Common Log File System Driver Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85870": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-14T07:00:00-07:00",
+          "title": "CVE-2026-85870 Windows Common Log File System Driver Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-94506": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-94506 Microsoft Office Access Information Disclosure Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96183": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-96183 Windows Health and Optimized Experiences Service Information Disclosure Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96956": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-96956 SQL Server Elevation of Privilege Vulnerability"
+        },
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97800": {
+          "first_seen": "2026-10-15T09:33:08.885118+00:00",
+          "published_at": "2026-10-13T07:00:00-07:00",
+          "title": "CVE-2026-97800 Windows Mobile Broadband Elevation of Privilege Vulnerability"
         }
       }
     },
@@ -10246,6 +10947,31 @@
           "published_at": "",
           "title": "Kerberoasting, Microsoft, and a Senator"
         },
+        "https://redsiege.com/blog/2026/03/idn-homograph-attacks-more-steps-same-deception/": {
+          "first_seen": "2026-10-15T00:00:00+00:00",
+          "published_at": "2026-03-12T12:10:02+00:00",
+          "title": "IDN Homograph Attacks: More Steps, Same Deception"
+        },
+        "https://redsiege.com/blog/2026/04/tool-eyewitness/": {
+          "first_seen": "2026-10-15T00:00:00+00:00",
+          "published_at": "2026-04-09T14:02:31+00:00",
+          "title": "Tool – EyeWitness"
+        },
+        "https://redsiege.com/blog/2026/04/when-all-else-fails-powershell-reflective-assembly-loading/": {
+          "first_seen": "2026-10-15T00:00:00+00:00",
+          "published_at": "2026-04-09T14:04:04+00:00",
+          "title": "When All Else Fails: PowerShell Reflective Assembly Loading"
+        },
+        "https://redsiege.com/blog/2026/06/tool-edd/": {
+          "first_seen": "2026-10-15T00:00:00+00:00",
+          "published_at": "2026-06-11T12:40:04+00:00",
+          "title": "Enumerate Domain Data (EDD): Powerview’s .NET Cousin"
+        },
+        "https://redsiege.com/blog/2026/07/improving-your-simple-windows-domain-for-offensive-testing-elastic-defend-edr/": {
+          "first_seen": "2026-10-15T00:00:00+00:00",
+          "published_at": "2026-07-07T13:40:54+00:00",
+          "title": "Improving Your Simple Windows Domain for Offensive Testing: Elastic Defend EDR"
+        },
         "https://redsiege.com/blog/2026/08/improving-your-simple-windows-domain-for-offensive-testing-sysmon/": {
           "content_fetched_at": "2026-08-13T22:02:38.470197+00:00",
           "content_sha256": "5148d56cff80380e70eb513859847ab63c96e9051d4c969aadf5f0b9d446f904",
@@ -10261,6 +10987,11 @@
           "first_seen": "2026-09-03T23:10:48.209141+00:00",
           "published_at": "",
           "title": "Improving Your Simple Windows Domain for Offensive Testing: Installing MS SQL Server Express on Windows Server 2022 Server Core Edition"
+        },
+        "https://redsiege.com/blog/2026/09/red-siege-at-wild-west-hackin-fest-deadwood-2026-what-to-expect/": {
+          "first_seen": "2026-10-15T00:00:00+00:00",
+          "published_at": "2026-09-24T18:18:45+00:00",
+          "title": "Red Siege at Wild West Hackin’ Fest Deadwood 2026: What to Expect"
         },
         "https://redsiege.com/blog/2026/10/this-is-not-the-access-policy-youre-looking-for/": {
           "content_fetched_at": "2026-10-02T00:39:56.856815+00:00",
@@ -12117,45 +12848,6 @@
           "last_seen": "2026-10-14T23:49:05.925042+00:00",
           "selected": false,
           "title": "Readme"
-        }
-      },
-      "candidates_initialized": true,
-      "feed_fail_streak": 0,
-      "last_ok_at": "2026-10-14T23:49:05.925042+00:00",
-      "method": "llm",
-      "resolved_feed_url": "",
-      "seen": {}
-    },
-    "tradecraftgarden": {
-      "baseline_initialized": true,
-      "candidates": {
-        "https://tradecraftgarden.org/crystalpalace.html": {
-          "baseline": true,
-          "first_seen": "2026-07-14T06:56:05.027413+00:00",
-          "last_seen": "2026-10-14T23:49:05.925042+00:00",
-          "selected": false,
-          "title": "Crystal Palace"
-        },
-        "https://tradecraftgarden.org/references.html": {
-          "baseline": true,
-          "first_seen": "2026-07-14T06:56:05.027413+00:00",
-          "last_seen": "2026-10-14T23:49:05.925042+00:00",
-          "selected": false,
-          "title": "Pavilion"
-        },
-        "https://tradecraftgarden.org/tradecraft.html": {
-          "baseline": true,
-          "first_seen": "2026-07-14T06:56:05.027413+00:00",
-          "last_seen": "2026-10-14T23:49:05.925042+00:00",
-          "selected": false,
-          "title": "The Garden"
-        },
-        "https://tradecraftgarden.org/videos.html": {
-          "baseline": true,
-          "first_seen": "2026-07-14T06:56:05.027413+00:00",
-          "last_seen": "2026-10-14T23:49:05.925042+00:00",
-          "selected": false,
-          "title": "Amphitheatre"
         }
       },
       "candidates_initialized": true,

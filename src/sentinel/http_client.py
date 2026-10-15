@@ -13,7 +13,7 @@ from .util import env_str
 
 DEFAULT_UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15"
 )
 DEFAULT_TIMEOUT = float(os.environ.get("HTTP_TIMEOUT", "45"))
 
