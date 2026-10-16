@@ -32,6 +32,13 @@ jobs:
       - name: Verify preinstalled Google Chrome
         run: /usr/bin/google-chrome --version
 
+      - name: Start egress proxy
+        env:
+          MIHOMO_CONFIG_B64: ${{ secrets.MIHOMO_CONFIG_B64 }}
+        run: |
+          chmod +x scripts/up_proxy.sh
+          ./scripts/up_proxy.sh
+
       - name: Collect and build bundles
         run: uv run python -m sentinel.run
         env:
@@ -47,6 +54,10 @@ jobs:
           BROWSER_HEADLESS: "1"
           BROWSER_EXECUTABLE_PATH: /usr/bin/google-chrome
           ALLOW_HEURISTIC_FALLBACK: "0"
+          HTTPS_PROXY: http://127.0.0.1:7890
+          HTTP_PROXY: http://127.0.0.1:7890
+          NO_PROXY: localhost,127.0.0.1,api.deepseek.com
+          no_proxy: localhost,127.0.0.1,api.deepseek.com
 
       - name: Commit data
         run: |
