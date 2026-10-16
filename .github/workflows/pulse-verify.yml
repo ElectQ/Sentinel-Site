@@ -1,0 +1,67 @@
+name: pulse-verify
+
+# Single-source verification in the real GitHub environment.
+# Called by the ops agent before opening a fix PR:
+#   gh workflow run pulse-verify.yml -f source_id=<id> -f ref=<agent branch>
+# Evidence = the "OK <source_id>" log line; failing source ⇒ red run.
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_id:
+        description: Source id to verify
+        required: true
+        type: string
+      ref:
+        description: Branch to verify (defaults to the dispatch ref)
+        required: false
+        default: ""
+        type: string
+
+concurrency:
+  group: pulse-verify-${{ inputs.source_id }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.ref }}
+          fetch-depth: 1
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - run: uv sync --frozen --no-dev
+
+      - name: Verify preinstalled Google Chrome
+        run: /usr/bin/google-chrome --version
+
+      - name: Start egress proxy
+        env:
+          MIHOMO_CONFIG_B64: ${{ secrets.MIHOMO_CONFIG_B64 }}
+        run: |
+          chmod +x scripts/up_proxy.sh
+          ./scripts/up_proxy.sh
+
+      - name: Verify source
+        run: uv run python -m sentinel.sources check ${{ inputs.source_id }}
+        env:
+          HTTPS_PROXY: http://127.0.0.1:7890
+          HTTP_PROXY: http://127.0.0.1:7890
+          NO_PROXY: localhost,127.0.0.1,api.deepseek.com
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: https://api.deepseek.com
+          LLM_MODEL: deepseek-v4-flash
+          BROWSER_ENABLED: "1"
+          BROWSER_AUTO: "1"
+          BROWSER_HEADLESS: "1"
+          BROWSER_EXECUTABLE_PATH: /usr/bin/google-chrome
+          ALLOW_HEURISTIC_FALLBACK: "0"
