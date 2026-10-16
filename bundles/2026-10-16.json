@@ -10,8 +10,8 @@
   "producer": {
     "name": "sentinel-site",
     "version": "0.1.0",
-    "run_id": "38841129863",
-    "commit": "218d671"
+    "run_id": "38841962810",
+    "commit": "ecd573c"
   },
   "stats": {
     "total": 127,
@@ -34,40 +34,30 @@
       "yage-share": 3
     },
     "failed_lists": [
-      "cobaltstrike-blog",
-      "outflank-blog",
-      "openai-research"
+      "redheadsec"
     ],
-    "sources_ok": 52,
+    "sources_ok": 54,
     "sources_failed": [
       {
-        "id": "cobaltstrike-blog",
-        "error": "forced_browser; browser:cf_challenge_unresolved status=403"
-      },
-      {
-        "id": "outflank-blog",
-        "error": "forced_browser; browser:cf_challenge_unresolved status=403"
-      },
-      {
-        "id": "openai-research",
-        "error": "forced_browser; browser:cf_challenge_unresolved status=403"
+        "id": "redheadsec",
+        "error": "html_fetch:The read operation timed out; browser:Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://redheadsec.tech/\", waiting until \"domcontentloaded\"\n"
       }
     ],
     "baselines": 0,
     "via_sources": {
       "llm": 10,
-      "browser_llm": 7,
-      "rss": 35
+      "browser_llm": 10,
+      "rss": 34
     },
     "llm_usage": {
       "model": "deepseek-v4-flash",
-      "requests": 9,
-      "calls": 9,
-      "prompt_tokens": 9067,
-      "completion_tokens": 1315,
-      "total_tokens": 10382,
-      "prompt_cache_hit_tokens": 6528,
-      "prompt_cache_miss_tokens": 2539
+      "requests": 11,
+      "calls": 11,
+      "prompt_tokens": 11165,
+      "completion_tokens": 1278,
+      "total_tokens": 12443,
+      "prompt_cache_hit_tokens": 8960,
+      "prompt_cache_miss_tokens": 2205
     },
     "by_content_status": {
       "ok": 124,
@@ -99,7 +89,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -176,7 +166,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -253,7 +243,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -330,7 +320,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -407,7 +397,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -484,7 +474,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -561,7 +551,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -638,7 +628,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -715,7 +705,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -792,7 +782,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -869,7 +859,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -946,7 +936,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -1023,7 +1013,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -1100,7 +1090,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -1177,7 +1167,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -1254,7 +1244,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -1331,7 +1321,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -1408,7 +1398,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -1485,7 +1475,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -1562,7 +1552,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -1639,7 +1629,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -1716,7 +1706,7 @@
       "author_name": "Zero Day Initiative Advisories",
       "author_url": "https://www.zerodayinitiative.com/advisories/published/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:zdi-advisories",
@@ -1793,7 +1783,7 @@
       "author_name": "IBM Security Intelligence X-Force",
       "author_url": "https://www.ibm.com/think/x-force",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:ibm-xforce",
@@ -1870,7 +1860,7 @@
       "author_name": "UnknownCheats Anti-Cheat",
       "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:unknowncheats-ac",
@@ -1947,7 +1937,7 @@
       "author_name": "UnknownCheats Anti-Cheat",
       "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:unknowncheats-ac",
@@ -2024,7 +2014,7 @@
       "author_name": "Cymulate Blog",
       "author_url": "https://cymulate.com/blog/",
       "published_at": "2026-10-16T01:17:18.454347+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:cymulate-blog",
@@ -2101,7 +2091,7 @@
       "author_name": "Palo Alto Networks Security Advisories",
       "author_url": "https://security.paloaltonetworks.com/",
       "published_at": "2026-10-15T18:30:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:paloalto-advisory",
@@ -2178,7 +2168,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -2255,7 +2245,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -2332,7 +2322,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -2409,7 +2399,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -2486,7 +2476,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -2563,7 +2553,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -2640,7 +2630,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -2717,7 +2707,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -2794,7 +2784,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -2871,7 +2861,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -2948,7 +2938,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -3025,7 +3015,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -3102,7 +3092,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -3179,7 +3169,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -3256,7 +3246,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -3333,7 +3323,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -3410,7 +3400,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -3487,7 +3477,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -3564,7 +3554,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -3641,7 +3631,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -3718,7 +3708,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -3795,7 +3785,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -3872,7 +3862,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -3949,7 +3939,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -4026,7 +4016,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -4103,7 +4093,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -4180,7 +4170,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -4257,7 +4247,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -4334,7 +4324,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -4411,7 +4401,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -4488,7 +4478,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -4565,7 +4555,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -4642,7 +4632,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -4719,7 +4709,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -4796,7 +4786,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -4873,7 +4863,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -4950,7 +4940,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -5027,7 +5017,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -5104,7 +5094,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -5181,7 +5171,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -5258,7 +5248,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -5335,7 +5325,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -5412,7 +5402,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -5489,7 +5479,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -5566,7 +5556,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -5643,7 +5633,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -5720,7 +5710,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -5797,7 +5787,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -5874,7 +5864,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -5951,7 +5941,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -6028,7 +6018,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -6105,7 +6095,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -6182,7 +6172,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -6259,7 +6249,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -6336,7 +6326,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -6413,7 +6403,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -6490,7 +6480,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -6567,7 +6557,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -6644,7 +6634,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -6721,7 +6711,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -6798,7 +6788,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -6875,7 +6865,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -6952,7 +6942,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -7029,7 +7019,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -7106,7 +7096,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -7183,7 +7173,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -7260,7 +7250,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -7337,7 +7327,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -7414,7 +7404,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -7491,7 +7481,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -7568,7 +7558,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -7645,7 +7635,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -7722,7 +7712,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -7799,7 +7789,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -7876,7 +7866,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -7953,7 +7943,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -8030,7 +8020,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -8107,7 +8097,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -8184,7 +8174,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -8261,7 +8251,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -8338,7 +8328,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -8415,7 +8405,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -8492,7 +8482,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -8569,7 +8559,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -8646,7 +8636,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -8723,7 +8713,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -8800,7 +8790,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -8877,7 +8867,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -8954,7 +8944,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -9031,7 +9021,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -9108,7 +9098,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -9185,7 +9175,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -9262,7 +9252,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -9339,7 +9329,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -9416,7 +9406,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -9493,7 +9483,7 @@
       "author_name": "Microsoft Security Update Guide",
       "author_url": "https://msrc.microsoft.com/update-guide",
       "published_at": "2026-10-15T14:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:msrc",
@@ -9570,7 +9560,7 @@
       "author_name": "DenizHalil Blogs",
       "author_url": "https://denizhalil.com/blogs/",
       "published_at": "2026-10-15T05:34:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:denizhalil-blogs",
@@ -9647,7 +9637,7 @@
       "author_name": "yage.ai share (Deep News)",
       "author_url": "https://yage.ai/share/",
       "published_at": "2026-10-15T00:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:yage-share",
@@ -9724,7 +9714,7 @@
       "author_name": "yage.ai share (Deep News)",
       "author_url": "https://yage.ai/share/",
       "published_at": "2026-10-15T00:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:yage-share",
@@ -9801,7 +9791,7 @@
       "author_name": "yage.ai share (Deep News)",
       "author_url": "https://yage.ai/share/",
       "published_at": "2026-10-14T00:00:00+00:00",
-      "collected_at": "2026-10-16T02:34:55.340428+00:00",
+      "collected_at": "2026-10-16T02:44:33.385860+00:00",
       "tags": [
         "kind:publish",
         "src:yage-share",
