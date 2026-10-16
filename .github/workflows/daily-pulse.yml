@@ -58,6 +58,24 @@ jobs:
           HTTP_PROXY: http://127.0.0.1:7890
           NO_PROXY: localhost,127.0.0.1,api.deepseek.com
 
+      - name: Notify Feishu
+        if: always()
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
+        run: |
+          TITLE="daily-pulse $(date -u +%F)"
+          if [ -f bundles/$(TZ=Asia/Shanghai date -u +%F).json ]; then
+            BUNDLE=bundles/$(TZ=Asia/Shanghai date -u +%F).json
+            ITEMS=$(python3 -c "import json;d=json.load(open('$BUNDLE'));print(d['stats']['total'])")
+            OKCNT=$(python3 -c "import json;d=json.load(open('$BUNDLE'));print(d['stats']['sources_ok'])")
+            FAILED=$(python3 -c "import json;d=json.load(open('$BUNDLE'));f=d['stats'].get('sources_failed',[]);print(', '.join(x['id'] for x in f) if f else 'none')")
+            BODY="采集完成: ${ITEMS} 条 / ${OKCNT} 源成功\n失败源: ${FAILED}\n[运行详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+          else
+            BODY="bundle 未生成，请查看日志\n[运行详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+          fi
+          python3 scripts/notify.py report "$TITLE" "$BODY"
+
       - name: Commit data
         run: |
           git config user.name "sentinel-bot"

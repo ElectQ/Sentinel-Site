@@ -65,3 +65,15 @@ jobs:
           BROWSER_HEADLESS: "1"
           BROWSER_EXECUTABLE_PATH: /usr/bin/google-chrome
           ALLOW_HEURISTIC_FALLBACK: "0"
+
+      - name: Notify Feishu
+        if: always()
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
+        run: |-
+          if [ ${{ job.status }} = success ]; then
+            python3 scripts/notify.py approval "pulse-verify: ${{ inputs.source_id }} 通过" "单源取证完成，可在PR中引用本运行\n[运行详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          else
+            python3 scripts/notify.py alert "pulse-verify: ${{ inputs.source_id }} 失败" "单源取证未通过，修复未完成\n[运行详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+          fi
