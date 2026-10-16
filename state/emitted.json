@@ -1184,6 +1184,10 @@
   "cymulate-blog:a:030612091e20c0cb": {
     "bundle_date": "2026-09-25"
   },
+  "cymulate-blog:a:0a0eb669ba88d319": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "cymulate-blog:a:1ef5659a597cb790": {
     "bundle_date": "2026-09-18"
   },
@@ -1478,6 +1482,10 @@
   },
   "denizhalil-blogs:a:edc9d57d6bcc44f2": {
     "bundle_date": "2026-07-23"
+  },
+  "denizhalil-blogs:a:efcb96f46f91998b": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "denizhalil-blogs:a:f0a98036bb0de99f": {
     "baseline": true,
@@ -2220,6 +2228,10 @@
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
+  "ibm-xforce:a:2c81cea3f07263df": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "ibm-xforce:a:34148c90fb94f389": {
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
@@ -2586,10 +2598,22 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:0409f393535d83c6": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:05ccb93c71ad1d59": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:069860000b6b3b94": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:08434711d82c3dc9": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:09a6d549a9b3fa4b": {
     "baseline": true,
@@ -2606,10 +2630,18 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:0d7c8cfe75896882": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:0de455e7a41b28c4": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:0de867fc357d3c56": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:113ed8d030c8df8f": {
     "baseline": true,
@@ -2631,6 +2663,10 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:13fbdf3ae1ffd504": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:1683c2d21580cc90": {
     "baseline": true,
     "bundle_date": "baseline",
@@ -2641,15 +2677,31 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:1903c583fef8a5ea": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:19c4acef03c9fa9c": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:1c3f304a6a2fd6aa": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:1d54618ef3689a96": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:2094ca9485e17345": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:21bc710a0cfd1433": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:22b8c1191c9e3b28": {
     "baseline": true,
@@ -2661,6 +2713,18 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:266731a552192c19": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:281592630b77b25e": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:292476c92fa6fe5d": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:2954cadfd6505057": {
     "baseline": true,
     "bundle_date": "baseline",
@@ -2671,10 +2735,22 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:2d7235f09724591b": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:2eb552493356c036": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:2f5c82d91bd11cbf": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:2fc4513266bc825f": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:3000b88c55eb7093": {
     "baseline": true,
@@ -2691,10 +2767,26 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:3410ea1169ba574e": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:3429acace8efd7eb": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:34dcee7234d7b5c3": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:380157bb81f2eff3": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:385f119c706947a6": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:39a21d266d85b37e": {
     "baseline": true,
@@ -2706,25 +2798,61 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:3c2187477dd2e6a7": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:3c5c2a6989ba9607": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:3dadec439325e0ff": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:3ed03af8870b0a58": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:3edc44922cb52169": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:46768a9d2a8236ea": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:47527eb4cc36024d": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:48788f91fe5eec95": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:49ffa42e47129ab4": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:4c3af756de836727": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:4c5ae6ba95610372": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:4d9cd78219f1b766": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:4dc262c9f7d8db4b": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:4fa4c39357dd69cc": {
     "baseline": true,
@@ -2736,10 +2864,18 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:537e2df433cad469": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:57cff853c6d7a14b": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:581ff0c47fa61da7": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:59dddf0906358b34": {
     "baseline": true,
@@ -2751,6 +2887,10 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:5cedc11be921ebcf": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:5d128c68608dc5e2": {
     "baseline": true,
     "bundle_date": "baseline",
@@ -2761,10 +2901,26 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:5f6a6bc584f04f45": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:5fb0ffe9fee1baf8": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:6192439749fcd70e": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:61dbe4073cc31dd3": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:6475051857140780": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:650466ee52fb5686": {
     "baseline": true,
@@ -2775,6 +2931,10 @@
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:68c8da4e7c97f581": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:69508a3976e8e849": {
     "baseline": true,
@@ -2801,6 +2961,14 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:70bcc62da6d359bb": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:71bcdf6c185ef8f2": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:71ef755531fe0ce7": {
     "baseline": true,
     "bundle_date": "baseline",
@@ -2816,15 +2984,31 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:76851e1f6c420a4c": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:76b20d495fb9c12a": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:7ac0cecfc30f2e03": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:7ae1f997bee0d670": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:7b4d88684d3718f4": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:7dbc47c86c4e6a89": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:8187aad1ea093fcd": {
     "baseline": true,
@@ -2846,10 +3030,22 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:846491eb7b0d1049": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:87815837778b12e5": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:880026273c0db78e": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:8951113fc44b3536": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:905472152d324fed": {
     "baseline": true,
@@ -2866,6 +3062,10 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:9339216391f18f68": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:94fb8c01be28d431": {
     "baseline": true,
     "bundle_date": "baseline",
@@ -2875,6 +3075,26 @@
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:988ea8ecd82105ae": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:9b1b205d13783e7c": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:9dd5f3926b1e540c": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:9f56e73c0cde313f": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:9f58f97c2869b868": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:a397a8fc2cced920": {
     "baseline": true,
@@ -2926,15 +3146,51 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:b4921a9e8857caf3": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:b4c5b0cf9929c450": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:b58de4008c777694": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:b75254379f9b2b7a": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:ba34234d0822177e": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:bbdb48cf934fb02c": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:bc2098691c7573b1": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:bd07da9662b32804": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:bf4fc3833fc5f267": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:c0453f11ea8bc30d": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:c083dd98c75d534a": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:c2d857b970153f85": {
     "baseline": true,
@@ -2946,10 +3202,26 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:c47be5b3cd952b66": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:c4ae233b328487f7": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:c4cbfbc153d7a1dd": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:c50e03f53a5125a1": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:c5c1f9d29e42928f": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:c898716022b8f08f": {
     "baseline": true,
@@ -2961,10 +3233,30 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:ca74583714737288": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:cb4c822a8471805b": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:cd54fe5ab5327e2f": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:cd944911bb2a13a8": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:ce62194ad567d928": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:ce8f9d22111cd1e7": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:cf0c20c9d5ab7b04": {
     "baseline": true,
@@ -2986,15 +3278,43 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:d3c6b7ccc3580bbd": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:d3e562c95c0b3022": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:d434ede7023ebe08": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:d4670b30fac67ad3": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:d5fde5d46d8f9e7f": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:d601a1a808b51ff5": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:d8a980ecd17aa9f4": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:d8da14924701f4c3": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:da1b923781f43963": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:de6e3bae3237c91e": {
     "baseline": true,
@@ -3006,10 +3326,42 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:e02313ded4d71c2e": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:e0f43f6d01529d3f": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:e17984d40695f852": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:e1b4415ab3b6f355": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:e371c96320e09a00": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:e3a6d8a4cec71823": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:e72d5c760107ac68": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:e738b79a9e9ee571": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:e7d95acc21279445": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:eb765edd24192c40": {
     "baseline": true,
@@ -3031,6 +3383,10 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:eec4b8f9b3fd3f49": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:f018dee5c6bf1817": {
     "baseline": true,
     "bundle_date": "baseline",
@@ -3046,20 +3402,60 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:f3abe6f7d6f67a5f": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:f4ba056da0eb0c6f": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:f4d679f0fbd39e7d": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:f53e70f68be55842": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:f9ce4a8ba9d37d81": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:fae6f88814c06b18": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:faef7de7c1feba28": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:fb40119db8c89c63": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:fca0dca96ac65433": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:fd03f61ba5498531": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:fd5c289a8fa29400": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "msrc:a:fddfe9f03fe1d167": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:fe3e82d658d43dde": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "msrc:a:fefc7fefa1e48415": {
     "baseline": true,
@@ -3237,6 +3633,10 @@
   },
   "paloalto-advisory:a:855d1bde45cde4f7": {
     "bundle_date": "2026-09-10"
+  },
+  "paloalto-advisory:a:8c33cbdc2e47b46d": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "paloalto-advisory:a:8dd6169a686d4580": {
     "baseline": true,
@@ -4293,6 +4693,10 @@
   "unknowncheats-ac:a:0613871b949ea581": {
     "bundle_date": "2026-07-16"
   },
+  "unknowncheats-ac:a:077a5a2d1e49dba7": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "unknowncheats-ac:a:090cfb89edc59168": {
     "bundle_date": "2026-10-12",
     "emitted_at": "2026-10-12T00:23:47.738738+00:00"
@@ -4458,6 +4862,10 @@
   },
   "unknowncheats-ac:a:80be1f6a6462ae93": {
     "bundle_date": "2026-07-17"
+  },
+  "unknowncheats-ac:a:82318b30c7dc65c3": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "unknowncheats-ac:a:825df944b5ebf08f": {
     "bundle_date": "2026-09-13"
@@ -5312,6 +5720,10 @@
   "yage-share:a:5499d44dfae1b714": {
     "bundle_date": "2026-08-31"
   },
+  "yage-share:a:55ca6d986c31ae82": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "yage-share:a:565eac6a11df7011": {
     "bundle_date": "2026-08-07"
   },
@@ -5336,6 +5748,10 @@
   },
   "yage-share:a:5efe7ee3472e5f21": {
     "bundle_date": "2026-08-20"
+  },
+  "yage-share:a:607bea0ece41cf0f": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "yage-share:a:609f67d8d7ad7d6e": {
     "bundle_date": "2026-09-17"
@@ -5885,6 +6301,10 @@
     "baseline": true,
     "bundle_date": "baseline"
   },
+  "yage-share:a:f1dcad61af20d55d": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "yage-share:a:f2da2f1fbc44105e": {
     "bundle_date": "2026-07-22"
   },
@@ -6043,6 +6463,10 @@
   "zdi-advisories:a:128a9cef7ef81236": {
     "bundle_date": "2026-08-14"
   },
+  "zdi-advisories:a:12a512c625e1ca9d": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "zdi-advisories:a:12a948a9b86ba9bc": {
     "bundle_date": "2026-09-10"
   },
@@ -6085,6 +6509,10 @@
   "zdi-advisories:a:1aeadf99a5ab7f27": {
     "bundle_date": "2026-09-10"
   },
+  "zdi-advisories:a:1b62a14f73e87255": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "zdi-advisories:a:1b7aa9ca38edf959": {
     "bundle_date": "2026-09-10"
   },
@@ -6094,11 +6522,19 @@
   "zdi-advisories:a:1c205e12cc31ef6f": {
     "bundle_date": "2026-07-30"
   },
+  "zdi-advisories:a:1da4fd52df26606f": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "zdi-advisories:a:1e0de05c9662e815": {
     "bundle_date": "2026-07-16"
   },
   "zdi-advisories:a:2066980bdd33f20e": {
     "bundle_date": "2026-07-31"
+  },
+  "zdi-advisories:a:2160f41beb6f6336": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "zdi-advisories:a:23760cb66631867a": {
     "bundle_date": "2026-09-11"
@@ -6151,11 +6587,19 @@
   "zdi-advisories:a:2e53d6b9341b0bab": {
     "bundle_date": "2026-08-13"
   },
+  "zdi-advisories:a:30a57319beeb00a5": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "zdi-advisories:a:3195051f08290ea1": {
     "bundle_date": "2026-08-13"
   },
   "zdi-advisories:a:31972adb23b5743d": {
     "bundle_date": "2026-07-31"
+  },
+  "zdi-advisories:a:32957bd99a3d171b": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "zdi-advisories:a:3362a87d4565ce62": {
     "bundle_date": "2026-07-30"
@@ -6200,6 +6644,10 @@
   "zdi-advisories:a:415729f10004724a": {
     "bundle_date": "2026-09-24"
   },
+  "zdi-advisories:a:41e90711ddb3bed8": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "zdi-advisories:a:4217b3fc1e6dea28": {
     "bundle_date": "2026-08-25"
   },
@@ -6209,11 +6657,19 @@
   "zdi-advisories:a:43224a50ef5c5df9": {
     "bundle_date": "2026-07-31"
   },
+  "zdi-advisories:a:434c2d2b6aa82278": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "zdi-advisories:a:43f21c54ed40b901": {
     "bundle_date": "2026-07-16"
   },
   "zdi-advisories:a:446876174543b240": {
     "bundle_date": "2026-08-14"
+  },
+  "zdi-advisories:a:44ae63af6bba5a59": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "zdi-advisories:a:44b8ff71f4fa01f4": {
     "bundle_date": "2026-07-30"
@@ -6282,6 +6738,14 @@
   "zdi-advisories:a:5b82d93e16cf803c": {
     "bundle_date": "2026-09-15"
   },
+  "zdi-advisories:a:5c4640525b8d038c": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "zdi-advisories:a:5d3a97bd95be62a8": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "zdi-advisories:a:5de8ff13f53d7b49": {
     "bundle_date": "2026-08-13"
   },
@@ -6318,8 +6782,16 @@
   "zdi-advisories:a:64d7b94c259ca0de": {
     "bundle_date": "2026-07-30"
   },
+  "zdi-advisories:a:659651688fe80e54": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "zdi-advisories:a:65d2067d11b60c2c": {
     "bundle_date": "2026-09-10"
+  },
+  "zdi-advisories:a:6931265f27123a7b": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "zdi-advisories:a:6a8e1c532801244f": {
     "bundle_date": "2026-07-16"
@@ -6431,6 +6903,10 @@
   "zdi-advisories:a:7e30c2494eb2ce78": {
     "bundle_date": "2026-07-16"
   },
+  "zdi-advisories:a:7e4815ffe19bef4b": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "zdi-advisories:a:7e6a85e93ab01bd4": {
     "bundle_date": "2026-09-11"
   },
@@ -6464,14 +6940,26 @@
   "zdi-advisories:a:8271569be1cb02aa": {
     "bundle_date": "2026-08-25"
   },
+  "zdi-advisories:a:82b60d030b0f39b0": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "zdi-advisories:a:836e25b4e3fdd4d3": {
     "bundle_date": "2026-07-31"
   },
   "zdi-advisories:a:83d407ea5f4bb244": {
     "bundle_date": "2026-08-13"
   },
+  "zdi-advisories:a:8455b6470d87fcab": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "zdi-advisories:a:84834d804cb8b1af": {
     "bundle_date": "2026-09-24"
+  },
+  "zdi-advisories:a:84f0728ce1e3b307": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "zdi-advisories:a:85bbeee0c7f8e203": {
     "bundle_date": "2026-08-14"
@@ -6648,6 +7136,10 @@
   "zdi-advisories:a:a75157b721d40ccb": {
     "bundle_date": "2026-08-25"
   },
+  "zdi-advisories:a:a76679c7ced714c3": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "zdi-advisories:a:a7d4ac47d18aca9c": {
     "bundle_date": "2026-07-30"
   },
@@ -6713,6 +7205,10 @@
   },
   "zdi-advisories:a:b40ad3a76bbb53ea": {
     "bundle_date": "2026-07-30"
+  },
+  "zdi-advisories:a:b4123999f2f30580": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "zdi-advisories:a:b63a948d7bbc073d": {
     "bundle_date": "2026-09-17"
@@ -6879,6 +7375,14 @@
   "zdi-advisories:a:d9dc55b4f7809b2c": {
     "bundle_date": "2026-09-11"
   },
+  "zdi-advisories:a:d9e2477051fd3155": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "zdi-advisories:a:da3d09323a91f9ce": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
   "zdi-advisories:a:da4c4c17526a9239": {
     "bundle_date": "2026-07-31"
   },
@@ -6929,6 +7433,10 @@
   },
   "zdi-advisories:a:e7772d9f158d5f9d": {
     "bundle_date": "2026-08-26"
+  },
+  "zdi-advisories:a:e81f022fa2c66e78": {
+    "bundle_date": "2026-10-16",
+    "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "zdi-advisories:a:e8ea637a2480b7ed": {
     "bundle_date": "2026-08-13"
