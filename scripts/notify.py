@@ -6,7 +6,15 @@ Usage:
   python3 notify.py approval "title" "body" "evidence_url"
   python3 notify.py alert "title" "body"
 
-Reads FEISHU_WEBHOOK (and optional FEISHU_SECRET) from
+Title is rendered as "[<repo>] <kind-header> · <title>" where <repo>
+defaults to "Sentinel-Site" (override with FEISHU_REPO_PREFIX).
+
+Message format v1:
+  header: [Sentinel-Site] 📋 日报 · <title>
+  body:   markdown, trailing footer with source + run link when given
+  footer: via FEISHU_FOOTER (plain text) and FEISHU_RUN_URL (link)
+
+Reads FEISHU_WEBHOOK (required), FEISHU_SECRET (optional) from
 ~/.config/sentinel/feishu.env or the environment. Stdlib only.
 """
 
@@ -25,7 +33,8 @@ from pathlib import Path
 ENV_FILE = Path.home() / ".config" / "sentinel" / "feishu.env"
 
 COLOR = {"report": "green", "approval": "blue", "alert": "red"}
-HEADER = {"report": "📋 运行报告", "approval": "✅ 待批准", "alert": "🚨 告警"}
+HEADER = {"report": "📋 日报", "approval": "✅ PR 批准", "alert": "🚨 告警", "weekly": "📊 周报"}
+COLOR["weekly"] = "turquoise"
 
 
 def load_env() -> None:
@@ -45,13 +54,24 @@ def sign(secret: str, timestamp: int) -> str:
     return base64.b64encode(digest).decode("utf-8")
 
 
-def post(card_title: str, color: str, md: str) -> None:
+def post(kind: str, title: str, md: str) -> None:
     webhook = os.environ["FEISHU_WEBHOOK"]
+    prefix = os.environ.get("FEISHU_REPO_PREFIX", "Sentinel-Site")
+    full_title = f"[{prefix}] {HEADER[kind]} · {title}"
+    footer_src = os.environ.get("FEISHU_FOOTER")
+    footer_url = os.environ.get("FEISHU_RUN_URL")
+    if footer_src or footer_url:
+        bits = []
+        if footer_src:
+            bits.append(f"来源: {footer_src}")
+        if footer_url:
+            bits.append(f"[运行详情]({footer_url})")
+        md += "\n" + " · ".join(bits)
     payload: dict = {
         "msg_type": "interactive",
         "card": {
-            "header": {"title": {"tag": "plain_text", "content": card_title},
-                       "template": color},
+            "header": {"title": {"tag": "plain_text", "content": full_title},
+                       "template": COLOR[kind]},
             "elements": [{"tag": "div",
                           "text": {"tag": "lark_md", "content": md}}],
         },
@@ -79,10 +99,9 @@ def main() -> int:
         print(__doc__)
         return 2
     kind, title, body = args[0], args[1], args[2]
-    md = f"**{title}**\n{body}"
     if kind == "approval" and len(args) >= 4:
-        md += f"\n证据: {args[3]}"
-    post(f"{HEADER[kind]} {title}", COLOR[kind], md)
+        body += f"\n证据: {args[3]}"
+    post(kind, title, body)
     return 0
 
 

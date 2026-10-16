@@ -71,9 +71,11 @@ jobs:
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
           FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
+          FEISHU_FOOTER: pulse-verify
+          FEISHU_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |-
-          if [ ${{ job.status }} = success ]; then
-            python3 scripts/notify.py approval "pulse-verify: ${{ inputs.source_id }} 通过" "单源取证完成，可在PR中引用本运行\n[运行详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          if [ "${{ job.status }}" = "success" ]; then
+            python3 scripts/notify.py approval "${{ inputs.source_id }} 取证通过" "**修复验证**: 单源实跑通过，可以合并\n回复 **Y** 批准 / **N** 驳回（执行由 ops 托管）"
           else
-            python3 scripts/notify.py alert "pulse-verify: ${{ inputs.source_id }} 失败" "单源取证未通过，修复未完成\n[运行详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+            python3 scripts/notify.py alert "${{ inputs.source_id }} 取证失败" "**修复验证**: 单源实跑未通过，PR 不可合并，需继续排查"
           fi

@@ -63,16 +63,21 @@ jobs:
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
           FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
+          FEISHU_FOOTER: daily-pulse
+          FEISHU_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          TITLE="daily-pulse $(date -u +%F)"
-          if [ -f bundles/$(TZ=Asia/Shanghai date -u +%F).json ]; then
-            BUNDLE=bundles/$(TZ=Asia/Shanghai date -u +%F).json
+          DATE=$(TZ=Asia/Shanghai date -u +%F)
+          TITLE="日报 · $DATE"
+          if [ -f "bundles/$DATE.json" ]; then
+            BUNDLE="bundles/$DATE.json"
             ITEMS=$(python3 -c "import json;d=json.load(open('$BUNDLE'));print(d['stats']['total'])")
             OKCNT=$(python3 -c "import json;d=json.load(open('$BUNDLE'));print(d['stats']['sources_ok'])")
-            FAILED=$(python3 -c "import json;d=json.load(open('$BUNDLE'));f=d['stats'].get('sources_failed',[]);print(', '.join(x['id'] for x in f) if f else 'none')")
-            BODY="采集完成: ${ITEMS} 条 / ${OKCNT} 源成功\n失败源: ${FAILED}\n[运行详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+            FAILED=$(python3 -c "import json;d=json.load(open('$BUNDLE'));f=d['stats'].get('sources_failed',[]);print(', '.join(x['id'] for x in f) if f else '无')")
+            OPENED=$(gh issue list --label sentinel-alert --state open --json number,title --jq 'length')
+            BODY="**采集结果**: ${ITEMS} 条 / ${OKCNT} 源成功\n**失败源**: ${FAILED}\n**待处理告警 issue**: ${OPENED} 个"
           else
-            BODY="bundle 未生成，请查看日志\n[运行详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+            BODY="**bundle 未生成**，请查看日志排查"
           fi
           python3 scripts/notify.py report "$TITLE" "$BODY"
 
