@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-10-16",
-  "generated_at": "2026-10-16T02:57:05.679205+00:00",
-  "item_count": 127,
+  "generated_at": "2026-10-16T04:16:21.491863+00:00",
+  "item_count": 128,
   "kinds_included": [
     "publish"
   ],
@@ -3158,6 +3158,31 @@
       "url_corrected": false
     },
     {
+      "id": "a:c2f198ea55c1f023",
+      "kind": "publish",
+      "text": "yage-share published: 在 DJI Mic Mini 之上：录音还有另一个世界",
+      "actor": "yage-share",
+      "actor_url": "https://yage.ai/share/",
+      "created_at": "2026-10-15T00:00:00+00:00",
+      "html_url": "https://yage.ai/share/beyond-dji-mic-mini-20261015.html",
+      "title": "在 DJI Mic Mini 之上：录音还有另一个世界",
+      "via": "rss",
+      "collect_mode": "rss",
+      "content": "从消费级无线麦往上，介绍为后期采样声音的物理与器材：距离、房间、指向性、立体声与格式。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/beyond-dji-mic-mini-20261015.html",
+      "content_chars": 43,
+      "content_sha256": "bedcddcf061850046c9cef4a2a277c1624735133551ed0f4c24a2f9effd8a2de",
+      "content_fetched_at": "2026-10-16T04:05:10.363776+00:00",
+      "content_error": "http:RuntimeError:content_llm_rejected_all_blocks",
+      "time_precision": "exact",
+      "source_name": "yage.ai share (Deep News)",
+      "fetch_status": "ok",
+      "url_corrected": false
+    },
+    {
       "id": "a:55ca6d986c31ae82",
       "kind": "publish",
       "text": "yage-share published: AI 开始写 agent 的执行层：Rust 的胜出理由，和它的三个漏洞",
@@ -3185,12 +3210,12 @@
   ],
   "summary": {
     "by_kind": {
-      "publish": 127
+      "publish": 128
     },
     "by_via": {
       "llm": 23,
       "browser_llm": 3,
-      "rss": 101
+      "rss": 102
     },
     "by_source": {
       "zdi-advisories": 22,
@@ -3200,11 +3225,11 @@
       "paloalto-advisory": 1,
       "msrc": 96,
       "denizhalil-blogs": 1,
-      "yage-share": 3
+      "yage-share": 4
     },
     "by_content_status": {
       "ok": 124,
-      "partial": 3
+      "partial": 4
     }
   }
 }
