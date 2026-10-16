@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 import unittest
 from unittest.mock import MagicMock, patch
 from sentinel.run import (
@@ -59,13 +58,19 @@ class HealthCheckTests(unittest.TestCase):
         # Existing open issue for 'bad-blog'
         mock_get.return_value = MagicMock(
             status_code=200,
-            json=lambda: [{"number": 10, "title": "[alert] 采集失败: bad-blog"}],
+            json=lambda: [{
+                "number": 10,
+                "title": "[alert] 路径退化: bad-blog",
+                "state": "open",
+            }],
         )
-        failed = [{"id": "bad-blog", "error": "timeout"}]
-        sources_dict = {"bad-blog": {"fail_streak": 5}}
+        alerts = [
+            {"id": "bad-blog", "category": "路径退化", "detail": "RSS fell back to browser"},
+            {"id": "bad-blog", "category": "反爬拦截", "detail": "challenge blocked"},
+        ]
 
-        sync_github_issues(failed, sources_dict, recovered_sids=[])
-        # Since 'bad-blog' already has an open issue, post should NOT be called to create an issue
+        sync_github_issues([], {}, recovered_sids=[], alerts=alerts)
+        # One existing open issue for the source covers all alert categories.
         mock_post.assert_not_called()
 
     @patch.dict("os.environ", {"GITHUB_TOKEN": "mock-token", "GITHUB_REPOSITORY": "test/repo"})
@@ -77,7 +82,7 @@ class HealthCheckTests(unittest.TestCase):
     ) -> None:
         mock_get.return_value = MagicMock(
             status_code=200,
-            json=lambda: [{"number": 42, "title": "[alert] 采集失败: recovered-blog"}],
+            json=lambda: [{"number": 42, "title": "[alert] 采集失败: recovered-blog", "state": "open"}],
         )
         sync_github_issues(failed=[], sources_dict={}, recovered_sids=["recovered-blog"])
         # Should post closing comment and patch issue to closed
@@ -111,6 +116,18 @@ class HealthCheckTests(unittest.TestCase):
     @patch.dict("os.environ", {"GITHUB_TOKEN": "mock-token", "GITHUB_REPOSITORY": "test/repo"})
     @patch("httpx.get")
     @patch("httpx.post")
+    def test_sync_access_block_creates_issue_on_first_occurrence(
+        self, mock_post: MagicMock, mock_get: MagicMock
+    ) -> None:
+        mock_get.return_value = MagicMock(status_code=200, json=lambda: [])
+        alert = [{"id": "blocked", "category": "访问受限", "detail": "403 Cloudflare ban"}]
+        sync_github_issues([], {}, [], alerts=alert)
+        mock_post.assert_called_once()
+        self.assertEqual(mock_post.call_args.kwargs["json"]["title"], "[alert] 访问受限: blocked")
+
+    @patch.dict("os.environ", {"GITHUB_TOKEN": "mock-token", "GITHUB_REPOSITORY": "test/repo"})
+    @patch("httpx.get")
+    @patch("httpx.post")
     def test_sync_issues_artifact_alert_skipped(self, mock_post: MagicMock, mock_get: MagicMock) -> None:
         mock_get.return_value = MagicMock(status_code=200, json=lambda: [])
         alerts = [{"id": "artifact", "category": "artifact", "detail": "bundle 缺失"}]
@@ -127,11 +144,29 @@ class HealthCheckTests(unittest.TestCase):
         # Recovered source is still alerting via another category: keep issue open
         mock_get.return_value = MagicMock(
             status_code=200,
-            json=lambda: [{"number": 7, "title": "[alert] 采集失败: still-bad"}],
+            json=lambda: [{"number": 7, "title": "[alert] 采集失败: still-bad", "state": "open"}],
         )
         alerts = [{"id": "still-bad", "category": "路径退化", "detail": "声明 rss，实际走 llm"}]
         sync_github_issues([], {}, recovered_sids=["still-bad"], alerts=alerts)
         mock_patch.assert_not_called()
+
+    @patch.dict("os.environ", {"GITHUB_TOKEN": "mock-token", "GITHUB_REPOSITORY": "test/repo"})
+    @patch("httpx.get")
+    @patch("httpx.post")
+    @patch("httpx.patch")
+    def test_sync_reopens_closed_issue_instead_of_creating_duplicate(
+        self, mock_patch: MagicMock, mock_post: MagicMock, mock_get: MagicMock
+    ) -> None:
+        mock_get.return_value = MagicMock(
+            status_code=200,
+            json=lambda: [{"number": 11, "title": "[alert] 路径退化: recurring", "state": "closed"}],
+        )
+        alerts = [{"id": "recurring", "category": "路径退化", "detail": "RSS still degraded"}]
+        sync_github_issues([], {}, [], alerts=alerts)
+        mock_patch.assert_called_once()
+        self.assertEqual(mock_patch.call_args.kwargs["json"], {"state": "open"})
+        mock_post.assert_called_once()
+        self.assertTrue(mock_post.call_args.args[0].endswith("/issues/11/comments"))
 
 
 if __name__ == "__main__":

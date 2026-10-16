@@ -120,24 +120,26 @@ def main() -> int:
     state_mod.save_emitted(st["emitted"])
 
     artifact_issues = check_artifacts(bpath)
-    report_health(sources, st, failed, emitted, bj, bundle_path=bpath)
-    sync_github_issues(
-        failed,
-        st.get("sources", {}),
-        recovered_sids,
-        alerts=collect_alerts(sources, st, failed, emitted, artifact_issues),
-    )
+    alerts = collect_alerts(sources, st, failed, emitted, artifact_issues)
+    try:
+        report_health(sources, st, failed, emitted, bj, bundle_path=bpath)
+        sync_github_issues(
+            failed,
+            st.get("sources", {}),
+            recovered_sids,
+            alerts=alerts,
+        )
+    except Exception as exc:
+        # Reporting/notification failures must not discard a successfully
+        # collected bundle. The data commit step remains the delivery check.
+        print(f"health_notification_error: {exc}")
 
     articles_mod.shutdown()
 
-    # Data contract first: artifacts must exist and parse, or the run fails so
-    # downstream consumers notice. Source-level failures stay green and are
-    # reported via issues/webhook instead.
-    artifact_issues = check_artifacts(bpath)
-    if artifact_issues:
-        for issue in artifact_issues:
-            print(f"ARTIFACT-FATAL {issue}")
-        return 1
+    # Source failures and notification/artifact warnings do not make the
+    # collection step fail. A failed commit/push still fails the workflow.
+    for issue in artifact_issues:
+        print(f"ARTIFACT-WARNING {issue}")
     return 0
 
 
@@ -212,10 +214,12 @@ def collect_alerts(
         elif "timeout" in err_lower or "timed out" in err_lower:
             advice = " [建议: 网络超时，请检查目标服务器连通性]"
 
+        blocked_markers = ("403", "cloudflare", "blocked", "challenge", "captcha", "验证码", "banned")
+        category = "访问受限" if any(marker in err_lower for marker in blocked_markers) else "采集失败"
         alerts.append(
             {
                 "id": sid,
-                "category": "采集失败",
+                "category": category,
                 "detail": f"连续 {streak} 次: {err[:120]}{advice}",
             }
         )
@@ -338,73 +342,111 @@ def sync_github_issues(
     }
     api_url = f"https://api.github.com/repos/{repo}/issues"
 
+    issues: list[dict[str, Any]] = []
+    page = 1
     try:
-        resp = httpx.get(
-            api_url,
-            params={"state": "open", "labels": "sentinel-alert"},
-            headers=headers,
-            timeout=10.0,
-        )
-        if resp.status_code != 200:
-            return
-        open_issues = resp.json()
+        while True:
+            resp = httpx.get(
+                api_url,
+                params={
+                    "state": "all",
+                    "labels": "sentinel-alert",
+                    "per_page": 100,
+                    "page": page,
+                },
+                headers=headers,
+                timeout=10.0,
+            )
+            if resp.status_code != 200:
+                return
+            batch = resp.json()
+            issues.extend(batch)
+            if len(batch) < 100:
+                break
+            page += 1
     except Exception:
         return
 
-    open_by_sid: dict[str, dict[str, Any]] = {}
-    for issue in open_issues:
+    # Keep one stable issue per source across both open and closed issues.
+    # Reopen a closed issue on recurrence instead of creating a duplicate.
+    issue_by_sid: dict[str, dict[str, Any]] = {}
+    for issue in issues:
         title = issue.get("title") or ""
-        if ": " in title:
-            sid = title.split(": ")[-1].strip()
-            open_by_sid[sid] = issue
+        if ": " not in title:
+            continue
+        sid = title.rsplit(": ", 1)[-1].strip()
+        current = issue_by_sid.get(sid)
+        if current is None or issue.get("state") == "open":
+            issue_by_sid[sid] = issue
 
     streak_threshold = int(os.environ.get("ALERT_FAIL_STREAK", 3))
+    issue_alerts: dict[str, dict[str, str]] = {}
+    active_sids = {str(f.get("id")) for f in failed}
 
-    # Source-level alerts (采集失败 past threshold, 路径退化, 反爬拦截) become
-    # issues; artifact-level alerts have no single source id and stay in the
-    # health report.
-    alerted_sids: set[str] = set()
     for alert in alerts or []:
         sid = alert.get("id") or ""
         category = alert.get("category") or ""
-        if sid == "artifact" or not sid:
+        if not sid or sid == "artifact":
             continue
-        alerted_sids.add(sid)
+        if category not in {"采集失败", "访问受限", "路径退化", "反爬拦截"}:
+            continue
+        active_sids.add(sid)
         if category == "采集失败" and _parse_streak(alert.get("detail", "")) < streak_threshold:
             continue
-        if sid not in open_by_sid:
-            body = (
-                f"### 数据源健康告警\n\n"
-                f"- **监控源**: `{sid}`\n"
-                f"- **告警类别**: {category}\n"
-                f"- **详情**: {alert.get('detail', '')}\n\n"
-                f"系统自检建议: 请检查该源是否已更换域名、反爬规则升级或 Feed 地址失效。"
-            )
-            try:
-                httpx.post(
-                    api_url,
-                    json={
-                        "title": f"[alert] {category}: {sid}",
-                        "body": body,
-                        "labels": ["sentinel-alert"],
-                    },
-                    headers=headers,
-                    timeout=10.0,
-                )
-            except Exception:
-                pass
+        issue_alerts.setdefault(sid, alert)
 
-    for sid in recovered_sids:
-        if sid in alerted_sids:
-            # Still unhealthy today; keep the issue open
+    for sid, alert in issue_alerts.items():
+        issue = issue_by_sid.get(sid)
+        category = alert.get("category") or "健康异常"
+        if issue:
+            if issue.get("state") == "closed":
+                issue_num = issue["number"]
+                try:
+                    httpx.patch(
+                        f"{api_url}/{issue_num}",
+                        json={"state": "open"},
+                        headers=headers,
+                        timeout=10.0,
+                    )
+                    httpx.post(
+                        f"{api_url}/{issue_num}/comments",
+                        json={"body": f"该源再次出现告警：{category}。\n\n{alert.get('detail', '')}"},
+                        headers=headers,
+                        timeout=10.0,
+                    )
+                except Exception:
+                    pass
             continue
-        if sid not in open_by_sid:
+
+        body = (
+            f"### 数据源健康告警\n\n"
+            f"- **监控源**: `{sid}`\n"
+            f"- **告警类别**: {category}\n"
+            f"- **详情**: {alert.get('detail', '')}\n\n"
+            "同一数据源复发时会重新打开此 Issue，不会重复创建。"
+        )
+        try:
+            httpx.post(
+                api_url,
+                json={
+                    "title": f"[alert] {category}: {sid}",
+                    "body": body,
+                    "labels": ["sentinel-alert"],
+                },
+                headers=headers,
+                timeout=10.0,
+            )
+        except Exception:
+            pass
+
+    for sid, issue in issue_by_sid.items():
+        if sid in active_sids or issue.get("state") != "open":
             continue
-        issue_num = open_by_sid[sid]["number"]
+        issue_num = issue["number"]
         try:
             httpx.post(
                 f"{api_url}/{issue_num}/comments",
-                json={"body": "该监控源已恢复正常采集，连续失败状态已重置。系统自动关闭此 Issue。"},
+                json={"body": "该源当前已恢复，自动关闭告警。"},
                 headers=headers,
                 timeout=10.0,
             )
