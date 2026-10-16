@@ -68,7 +68,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           DATE=$(TZ=Asia/Shanghai date -u +%F)
-          TITLE="日报 · $DATE"
+          TITLE="$DATE"
           if [ -f "bundles/$DATE.json" ]; then
             BUNDLE="bundles/$DATE.json"
             ITEMS=$(python3 -c "import json;d=json.load(open('$BUNDLE'));print(d['stats']['total'])")

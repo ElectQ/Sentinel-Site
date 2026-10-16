@@ -52,6 +52,7 @@ jobs:
           ./scripts/up_proxy.sh
 
       - name: Verify source
+        id: verify
         run: uv run python -m sentinel.sources check ${{ inputs.source_id }}
         env:
           HTTPS_PROXY: http://127.0.0.1:7890
@@ -75,7 +76,9 @@ jobs:
           FEISHU_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |-
           if [ "${{ job.status }}" = "success" ]; then
-            python3 scripts/notify.py approval "${{ inputs.source_id }} 取证通过" "**修复验证**: 单源实跑通过，可以合并\n回复 **Y** 批准 / **N** 驳回（执行由 ops 托管）"
+            OUT=$(uv run python -m sentinel.sources check ${{ inputs.source_id }} 2>&1 || true)
+            DETAIL=$(echo "$OUT" | grep -E 'mode=|rss:|candidates:|selected:' | head -2 | sed 's/^/  /' | tr '\n' '\n')
+            python3 scripts/notify.py approval "${{ inputs.source_id }} 取证通过" "**修复验证**: 单源实跑通过，可以合并\n\**采集详情**:\n$DETAIL\n回复 **Y** 批准 / **N** 驳回（执行由 ops 托管）"
           else
             python3 scripts/notify.py alert "${{ inputs.source_id }} 取证失败" "**修复验证**: 单源实跑未通过，PR 不可合并，需继续排查"
           fi
