@@ -55,6 +55,7 @@ def collect_one(
     via = ""
     err: str | None = None
     feed_url = ""
+    feed_errors: list[str] = []
 
     # L1: configured rss
     use_feed = source.collect_mode in {"auto", "rss"}
@@ -66,7 +67,7 @@ def collect_one(
             via = "rss"
             sst["feed_fail_streak"] = 0
         else:
-            sst["feed_fail_streak"] = int(sst.get("feed_fail_streak") or 0) + 1
+            feed_errors.append(f"configured:{err}")
             feed_url = ""
 
     # remembered resolved feed
@@ -77,9 +78,7 @@ def collect_one(
             via = "rss"
             sst["feed_fail_streak"] = 0
         else:
-            sst["feed_fail_streak"] = int(sst.get("feed_fail_streak") or 0) + 1
-            if sst["feed_fail_streak"] >= env_int("FEED_FAIL_STREAK", 3):
-                sst["resolved_feed_url"] = ""
+            feed_errors.append(f"resolved:{err}")
             feed_url = ""
             err = None
 
@@ -94,7 +93,18 @@ def collect_one(
                 sst["resolved_feed_url"] = found
                 sst["feed_fail_streak"] = 0
             else:
+                feed_errors.append(f"discovered:{err}")
                 err = None
+
+    if use_feed:
+        if via == "rss":
+            sst["feed_fail_streak"] = 0
+            sst["feed_last_error"] = ""
+        elif feed_errors:
+            sst["feed_fail_streak"] = int(sst.get("feed_fail_streak") or 0) + 1
+            sst["feed_last_error"] = "; ".join(feed_errors)[:300]
+            if sst["feed_fail_streak"] >= env_int("FEED_FAIL_STREAK", 3):
+                sst["resolved_feed_url"] = ""
 
     # L3: plain HTTP HTML + LLM (or heuristic)
     if not via:

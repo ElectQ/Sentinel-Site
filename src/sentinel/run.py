@@ -241,16 +241,13 @@ def collect_alerts(
         mode = getattr(src, "collect_mode", "")
         method = str(sst.get("method") or "")
 
-        # Layer 0 signal: an rss-declared source silently degrading to
-        # browser/LLM collection (slower, costlier, candidate extraction
-        # degraded). Only compare rss declarations; llm modes legitimately
-        # resolve to several transports.
         if mode == "rss" and method and method != "rss":
+            feed_error = str(sst.get("feed_last_error") or "未保存 Feed 失败原因")
             alerts.append(
                 {
                     "id": src.id,
                     "category": "路径退化",
-                    "detail": f"声明 rss，实际走 {method}，请检查 feed 地址",
+                    "detail": f"声明 rss，实际走 {method}；RSS 连续失败 {sst.get('feed_fail_streak', 0)} 次：{feed_error}",
                 }
             )
 
