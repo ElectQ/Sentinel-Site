@@ -119,6 +119,7 @@ def main() -> int:
     state_mod.save_sources(st)
     state_mod.save_emitted(st["emitted"])
 
+    artifact_issues = check_artifacts(bpath)
     report_health(sources, st, failed, emitted, bj, bundle_path=bpath)
     sync_github_issues(
         failed,
