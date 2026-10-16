@@ -58,12 +58,12 @@ The current inventory is maintained in [`config/sources.yaml`](config/sources.ya
 | `lorenzomeacci` | Lorenzo Meacci | [home](https://lorenzomeacci.com/) | `html_llm` |
 | `voltatech-blog` | VoltaTech Blog | [home](https://voltatech.in/blog/) · [feed](https://voltatech.in/feed_rss_created.xml) | `rss` |
 | `xreous` | Xreous | [home](https://xreous.io/posts/) | `browser_llm` |
-| `aff-wg` | Adversary Fan Fiction Writers Guild (Tradecraft Garden) | [home](https://aff-wg.org/) · [feed](https://aff-wg.org/feed/) | `rss` |
+| `aff-wg` | Adversary Fan Fiction Writers Guild (Tradecraft Garden) | [home](https://aff-wg.org/) · [feed](https://aff-wg.org/feed/) | `browser_llm` |
 | `deadeclipse-blog` | Nightmare Eclipse (Blogspot) | [home](https://deadeclipse666.blogspot.com/) · [feed](https://deadeclipse666.blogspot.com/feeds/posts/default?alt=rss) | `rss` |
 | `zusda` | zusda | [home](https://zusda.github.io/) | `html_llm` |
 | `sud0ru` | Sud0Ru | [home](https://sud0ru.ghost.io/) · [feed](https://sud0ru.ghost.io/rss/) | `rss` |
 | `fushuling` | fushuling | [home](https://fushuling.com/) | `html_llm` |
-| `otterpwn` | OtterPwn Blog | [home](https://blog.otterpwn.com/) · [feed](https://blog.otterpwn.com/index.xml) | `rss` |
+| `otterpwn` | OtterPwn Blog | [home](https://blog.otterpwn.com/) · [feed](https://blog.otterpwn.com/index.xml) | `browser_llm` |
 | `fluxsec` | FluxSec *(disabled)* | [home](https://fluxsec.red/) · [feed](https://fluxsec.red/rss.xml) | `rss` |
 | `r136a1` | R136a1 | [home](https://r136a1.dev/) · [feed](https://r136a1.dev/feed.xml) | `rss` |
 | `denizhalil-blogs` | DenizHalil Blogs | [home](https://denizhalil.com/blogs/) · [feed](https://denizhalil.com/feed/) | `rss` |
@@ -81,7 +81,7 @@ The current inventory is maintained in [`config/sources.yaml`](config/sources.ya
 | `g3tsyst3m` | G3tSyst3m Infosec Blog | [home](https://g3tsyst3m.com/) · [feed](https://g3tsyst3m.com/feed.xml) | `rss` |
 | `z3bra` | Z3bra | [home](https://z3bra.cat/) · [feed](https://z3bra.cat/index.xml) | `rss` |
 | `cymulate-blog` | Cymulate Blog | [home](https://cymulate.com/blog/) | `html_llm` |
-| `xpnsec-blog` | XPN InfoSec Blog | [home](https://blog.xpnsec.com/) · [feed](https://blog.xpnsec.com/rss.xml) | `rss` |
+| `xpnsec-blog` | XPN InfoSec Blog | [home](https://blog.xpnsec.com/) · [feed](https://blog.xpnsec.com/rss.xml) | `browser_llm` |
 | `zgao` | Zgao Blog | [home](https://zgao.top/) · [feed](https://zgao.top/feed/) | `rss` |
 | `redsiege-blog` | Red Siege Blog | [home](https://redsiege.com/red-siege-blog/) · [feed](https://redsiege.com/feed/) | `rss` |
 | `itm4n` | itm4n Blog | [home](https://itm4n.github.io/) · [feed](https://itm4n.github.io/feed.xml) | `rss` |

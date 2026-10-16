@@ -135,10 +135,11 @@ sources:
     name: Adversary Fan Fiction Writers Guild (Tradecraft Garden)
     home_url: https://aff-wg.org/
     rss_url: https://aff-wg.org/feed/
-    collect_mode: rss
+    collect_mode: browser_llm
+    browser_fallback: true
     tags: [blog, lab]
     enabled: true
-    notes: "Raphael Mudge's research blog; publishes all Tradecraft Garden articles"
+    notes: "GitHub Actions RSS requests return 403; browser collection works"
 
   - id: deadeclipse-blog
     name: Nightmare Eclipse (Blogspot)
@@ -174,9 +175,11 @@ sources:
     name: OtterPwn Blog
     home_url: https://blog.otterpwn.com/
     rss_url: https://blog.otterpwn.com/index.xml
-    collect_mode: rss
+    collect_mode: browser_llm
+    browser_fallback: true
     tags: [blog]
     enabled: true
+    notes: "GitHub Actions RSS requests return 403; browser collection works"
 
   - id: fluxsec
     name: FluxSec
@@ -333,9 +336,11 @@ sources:
     name: XPN InfoSec Blog
     home_url: https://blog.xpnsec.com/
     rss_url: https://blog.xpnsec.com/rss.xml
-    collect_mode: rss
+    collect_mode: browser_llm
+    browser_fallback: true
     tags: [blog]
     enabled: true
+    notes: "GitHub Actions RSS requests return 403; browser collection works"
 
   - id: zgao
     name: Zgao Blog
