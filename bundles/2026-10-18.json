@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "source_id": "blog_watch",
+  "collect_date": "2026-10-18",
+  "collect_window": {
+    "start": "2026-10-16T00:00:00+00:00",
+    "end": "2026-10-17T22:59:20.412804+00:00",
+    "hours": 46
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "39077225934",
+    "commit": "d769c9c"
+  },
+  "stats": {
+    "total": 3,
+    "by_kind": {
+      "publish": 3
+    },
+    "by_via": {
+      "browser_llm": 1,
+      "rss": 2
+    },
+    "by_source": {
+      "unknowncheats-ac": 1,
+      "yage-share": 2
+    },
+    "failed_lists": [],
+    "sources_ok": 55,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 10,
+      "rss": 35
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 11,
+      "calls": 11,
+      "prompt_tokens": 11722,
+      "completion_tokens": 1892,
+      "total_tokens": 13614,
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 10442
+    },
+    "by_content_status": {
+      "ok": 1,
+      "partial": 2
+    }
+  },
+  "items": [
+    {
+      "id": "a:3155cf51e0cc44c8",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "Why is Scylla still the go-to dumper instead of PE-sieve for reversing?",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing.html",
+      "text": "unknowncheats-ac published: Why is Scylla still the go-to dumper instead of PE-sieve for reversing?",
+      "at": "2026-10-17T22:59:20.412804+00:00",
+      "external_id": "a:3155cf51e0cc44c8",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing.html",
+      "title": "Why is Scylla still the go-to dumper instead of PE-sieve for reversing?",
+      "content": "Hey everyone,\nI've noticed that across almost every tutorial and thread regarding dumping packed/protected binaries for static analysis (IDA / Ghidra), people consistently recommend using Scylla (usually via x64dbg).\nAt the same time, tools like PE-sieve exist, which can dump and automatically unmap the PE (/dmode 2) without even attaching a debugger or having to deal with basic anti-debugging checks.\nIs the widespread use of Scylla mainly just tradition/habit because most older stickied guides were written around it, or does Scylla actually have distinct technical advantages over PE-sieve when it comes to:\nResolving and rebuilding heavily obfuscated or redirected Import Address Tables (IAT)?\nHandling specific packers/protectors (e.g., custom stubs, manual entry point alignment)?\nPrecision control over search/IAT recreation ranges compared to automated heuristics?\nWould love to hear your experiences on which workflow produces cleaner, more reliable dumps for IDA in practice.\nThanks!",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing.html",
+      "content_chars": 997,
+      "content_sha256": "8d242ff5b74031b36e445c3db76743b423d63c16532452e8296f3fac59102a74",
+      "content_fetched_at": "2026-10-17T22:59:46.182466+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-10-17T22:59:20.412804+00:00",
+      "collected_at": "2026-10-17T22:59:20.412804+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "Why is Scylla still the go-to dumper instead of PE-sieve for reversing?",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing.html",
+          "content_sha256": "8d242ff5b74031b36e445c3db76743b423d63c16532452e8296f3fac59102a74"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:f5f56d43cf161793",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "一周三件事：REA 把逆向工程交给 agent、智谱发布法律模型 GLM-Legal、Cloudflare 把 agent 基础设施做成原语",
+      "target_url": "https://yage.ai/share/rea-glm-legal-cloudflare-20261017.html",
+      "text": "yage-share published: 一周三件事：REA 把逆向工程交给 agent、智谱发布法律模型 GLM-Legal、Cloudflare 把 agent 基础设施做成原语",
+      "at": "2026-10-17T00:00:00+00:00",
+      "external_id": "a:f5f56d43cf161793",
+      "url": "https://yage.ai/share/rea-glm-legal-cloudflare-20261017.html",
+      "title": "一周三件事：REA 把逆向工程交给 agent、智谱发布法律模型 GLM-Legal、Cloudflare 把 agent 基础设施做成原语",
+      "content": "过去一周 AI agent 领域的三件具体事：REA 把传统逆向工具接进代码助手、智谱发布法律模型 GLM-Legal、Cloudflare 把 agent 的取词与运行做成平台原语。三条都给出具体动作、关键数字与各自的边界。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/rea-glm-legal-cloudflare-20261017.html",
+      "content_chars": 113,
+      "content_sha256": "81ab315e194b344d92c33bb58518c0c0da86b6b70e564ac73dc34e0c1300cb22",
+      "content_fetched_at": "2026-10-17T22:59:50.626092+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-17T00:00:00+00:00",
+      "collected_at": "2026-10-17T22:59:20.412804+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/rea-glm-legal-cloudflare-20261017.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "一周三件事：REA 把逆向工程交给 agent、智谱发布法律模型 GLM-Legal、Cloudflare 把 agent 基础设施做成原语",
+          "url": "https://yage.ai/share/rea-glm-legal-cloudflare-20261017.html",
+          "content_sha256": "81ab315e194b344d92c33bb58518c0c0da86b6b70e564ac73dc34e0c1300cb22"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    },
+    {
+      "id": "a:05790e5779ea9d04",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "Google SynthID 详解：为什么文字边写边打，图片却要等画完再补？",
+      "target_url": "https://yage.ai/share/google-synthid-text-image-watermark-20261016.html",
+      "text": "yage-share published: Google SynthID 详解：为什么文字边写边打，图片却要等画完再补？",
+      "at": "2026-10-16T00:00:00+00:00",
+      "external_id": "a:05790e5779ea9d04",
+      "url": "https://yage.ai/share/google-synthid-text-image-watermark-20261016.html",
+      "title": "Google SynthID 详解：为什么文字边写边打，图片却要等画完再补？",
+      "content": "同一套 Google SynthID，为什么文字水印在模型生成文字的过程中就顺手做了，图片水印却要等整张图画完再补上？这篇文章用大白话讲清两篇论文背后的工程取舍，以及为什么验证端成了新的主战场。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/google-synthid-text-image-watermark-20261016.html",
+      "content_chars": 97,
+      "content_sha256": "0ef3786e4bc24bc6ef70c11d0ff1a2d43bfe9f543692f4e00fdf907bc7bb2e5c",
+      "content_fetched_at": "2026-10-17T22:59:51.170176+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-16T00:00:00+00:00",
+      "collected_at": "2026-10-17T22:59:20.412804+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/google-synthid-text-image-watermark-20261016.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "Google SynthID 详解：为什么文字边写边打，图片却要等画完再补？",
+          "url": "https://yage.ai/share/google-synthid-text-image-watermark-20261016.html",
+          "content_sha256": "0ef3786e4bc24bc6ef70c11d0ff1a2d43bfe9f543692f4e00fdf907bc7bb2e5c"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    }
+  ]
+}
