@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "source_id": "blog_watch",
+  "collect_date": "2026-10-19",
+  "collect_window": {
+    "start": "2026-10-17T00:00:00+00:00",
+    "end": "2026-10-18T22:56:47.047657+00:00",
+    "hours": 46
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "39174396197",
+    "commit": "069fa3d"
+  },
+  "stats": {
+    "total": 4,
+    "by_kind": {
+      "publish": 4
+    },
+    "by_via": {
+      "browser_llm": 2,
+      "rss": 2
+    },
+    "by_source": {
+      "unknowncheats-ac": 2,
+      "yage-share": 2
+    },
+    "failed_lists": [
+      "redheadsec",
+      "cobaltstrike-blog"
+    ],
+    "sources_ok": 53,
+    "sources_failed": [
+      {
+        "id": "redheadsec",
+        "error": "html_fetch:http_500"
+      },
+      {
+        "id": "cobaltstrike-blog",
+        "error": "forced_browser; browser:cf_challenge_unresolved status=403"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 9,
+      "rss": 34
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 12,
+      "calls": 12,
+      "prompt_tokens": 12279,
+      "completion_tokens": 1923,
+      "total_tokens": 14202,
+      "prompt_cache_hit_tokens": 7424,
+      "prompt_cache_miss_tokens": 4855
+    },
+    "by_content_status": {
+      "failed": 1,
+      "ok": 1,
+      "partial": 2
+    }
+  },
+  "items": [
+    {
+      "id": "a:30a82ca1867498e4",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "Reverse-engineering workbench",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench.html",
+      "text": "unknowncheats-ac published: Reverse-engineering workbench",
+      "at": "2026-10-18T22:56:47.047657+00:00",
+      "external_id": "a:30a82ca1867498e4",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench.html",
+      "title": "Reverse-engineering workbench",
+      "content": "unknowncheats-ac published: Reverse-engineering workbench",
+      "content_format": "text/plain",
+      "content_status": "failed",
+      "content_via": "",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench.html",
+      "content_chars": 0,
+      "content_sha256": "",
+      "content_fetched_at": "2026-10-18T22:57:19.729351+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-10-18T22:56:47.047657+00:00",
+      "collected_at": "2026-10-18T22:56:47.047657+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "Reverse-engineering workbench",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench.html",
+          "content_sha256": ""
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "failed",
+        "content_via": ""
+      }
+    },
+    {
+      "id": "a:ef947c872c720752",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing-post4834496.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing-post4834496.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing-post4834496.html",
+      "at": "2026-10-18T22:56:47.047657+00:00",
+      "external_id": "a:ef947c872c720752",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing-post4834496.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing-post4834496.html",
+      "content": "Hey everyone,\nI've noticed that across almost every tutorial and thread regarding dumping packed/protected binaries for static analysis (IDA / Ghidra), people consistently recommend using Scylla (usually via x64dbg).\nAt the same time, tools like PE-sieve exist, which can dump and automatically unmap the PE (/dmode 2) without even attaching a debugger or having to deal with basic anti-debugging checks.\nIs the widespread use of Scylla mainly just tradition/habit because most older stickied guides were written around it, or does Scylla actually have distinct technical advantages over PE-sieve when it comes to:\nResolving and rebuilding heavily obfuscated or redirected Import Address Tables (IAT)?\nHandling specific packers/protectors (e.g., custom stubs, manual entry point alignment)?\nPrecision control over search/IAT recreation ranges compared to automated heuristics?\nWould love to hear your experiences on which workflow produces cleaner, more reliable dumps for IDA in practice.\nThanks!",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing.html#post4834496",
+      "content_chars": 997,
+      "content_sha256": "8d242ff5b74031b36e445c3db76743b423d63c16532452e8296f3fac59102a74",
+      "content_fetched_at": "2026-10-18T22:57:22.886362+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-10-18T22:56:47.047657+00:00",
+      "collected_at": "2026-10-18T22:56:47.047657+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing-post4834496.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing-post4834496.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777280-scylla-dumper-instead-pe-sieve-reversing-post4834496.html",
+          "content_sha256": "8d242ff5b74031b36e445c3db76743b423d63c16532452e8296f3fac59102a74"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:9910b171d3aea4c0",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "你手上的设备，哪些已经被破解了",
+      "target_url": "https://yage.ai/share/which-devices-have-been-cracked-20261018.html",
+      "text": "yage-share published: 你手上的设备，哪些已经被破解了",
+      "at": "2026-10-18T00:00:00+00:00",
+      "external_id": "a:9910b171d3aea4c0",
+      "url": "https://yage.ai/share/which-devices-have-been-cracked-20261018.html",
+      "title": "你手上的设备，哪些已经被破解了",
+      "content": "尼康相机、大疆无人机、游戏机、手机、扫地机、汽车——网上到处是「XX 被破解了」的消息。逐个核实之后，给出一张按设备对号的破解版图：哪些真破了、破到什么程度、能解锁什么、代价是什么，外加一套自己判断真假的三个问题。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/which-devices-have-been-cracked-20261018.html",
+      "content_chars": 107,
+      "content_sha256": "68c6ec24d387358c69dff5f6de931b36942e3a8c4707c67672513cd30063f5ff",
+      "content_fetched_at": "2026-10-18T22:57:44.741997+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-18T00:00:00+00:00",
+      "collected_at": "2026-10-18T22:56:47.047657+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/which-devices-have-been-cracked-20261018.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "你手上的设备，哪些已经被破解了",
+          "url": "https://yage.ai/share/which-devices-have-been-cracked-20261018.html",
+          "content_sha256": "68c6ec24d387358c69dff5f6de931b36942e3a8c4707c67672513cd30063f5ff"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    },
+    {
+      "id": "a:4e3432b75dfdb600",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "别再相信大厂的 ZDR 承诺：一次 API 调用里，你的 Prompt 到底在哪被记下来了",
+      "target_url": "https://yage.ai/share/zdr-promise-vs-architecture-20261017.html",
+      "text": "yage-share published: 别再相信大厂的 ZDR 承诺：一次 API 调用里，你的 Prompt 到底在哪被记下来了",
+      "at": "2026-10-17T00:00:00+00:00",
+      "external_id": "a:4e3432b75dfdb600",
+      "url": "https://yage.ai/share/zdr-promise-vs-architecture-20261017.html",
+      "title": "别再相信大厂的 ZDR 承诺：一次 API 调用里，你的 Prompt 到底在哪被记下来了",
+      "content": "厂商写的 ZDR 承诺是真的，但它只保证请求处理完不落盘；数据在别处照样被留存、审查或依法调取。这篇把一次 API 调用的真实链路拆开，讲清你能验证的只有架构，以及上生产前该问的五个问题。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/zdr-promise-vs-architecture-20261017.html",
+      "content_chars": 94,
+      "content_sha256": "5a3d2cf49044dc9d7f47ce0bc9eda7035699311a7fe469b0970b07f576492343",
+      "content_fetched_at": "2026-10-18T22:57:45.355592+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-17T00:00:00+00:00",
+      "collected_at": "2026-10-18T22:56:47.047657+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/zdr-promise-vs-architecture-20261017.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "别再相信大厂的 ZDR 承诺：一次 API 调用里，你的 Prompt 到底在哪被记下来了",
+          "url": "https://yage.ai/share/zdr-promise-vs-architecture-20261017.html",
+          "content_sha256": "5a3d2cf49044dc9d7f47ce0bc9eda7035699311a7fe469b0970b07f576492343"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    }
+  ]
+}
