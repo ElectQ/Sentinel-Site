@@ -1,0 +1,1677 @@
+{
+  "schema_version": 1,
+  "source_id": "blog_watch",
+  "collect_date": "2026-10-21",
+  "collect_window": {
+    "start": "2026-10-18T00:00:00+00:00",
+    "end": "2026-10-20T23:44:37.431569+00:00",
+    "hours": 71
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "39516958114",
+    "commit": "72a4054"
+  },
+  "stats": {
+    "total": 21,
+    "by_kind": {
+      "publish": 21
+    },
+    "by_via": {
+      "browser_llm": 5,
+      "llm": 4,
+      "rss": 12
+    },
+    "by_source": {
+      "unknowncheats-ac": 3,
+      "cymulate-blog": 1,
+      "openai-research": 2,
+      "anthropic-research": 3,
+      "msrc": 8,
+      "yage-share": 4
+    },
+    "failed_lists": [],
+    "sources_ok": 55,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 10,
+      "rss": 35
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 12,
+      "calls": 12,
+      "prompt_tokens": 12971,
+      "completion_tokens": 1830,
+      "total_tokens": 14801,
+      "prompt_cache_hit_tokens": 7424,
+      "prompt_cache_miss_tokens": 5547
+    },
+    "by_content_status": {
+      "ok": 17,
+      "partial": 4
+    }
+  },
+  "items": [
+    {
+      "id": "a:e3291890d80a8b35",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "Setup IDA for kernel debugging",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777720-setup-ida-kernel-debugging.html",
+      "text": "unknowncheats-ac published: Setup IDA for kernel debugging",
+      "at": "2026-10-20T23:44:37.431569+00:00",
+      "external_id": "a:e3291890d80a8b35",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777720-setup-ida-kernel-debugging.html",
+      "title": "Setup IDA for kernel debugging",
+      "content": "Hey guys! I need help, as the title says.\nI'm trying to configure IDA Pro to debug the Windows kernel.\nI have 2 VMs running.\nVM A the debuggee, has the following configuration:\nA named pipe on .\\\\pipe\\com_2, as server, other end is VM\nbcdedit:\ndebugtype=Serial\ndebugport=2\nbaudrate=115200\ndebug=Yes\nVM B the debugger, has the following configuration:\nA named pipe on .\\\\pipe\\com_2, as client, other end is VM\nApplication:\nC:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x86\\windbg.exe\nWindbg debugger with connection string:\ncom\nort=\\\\.\\pipe\\com_2,baud=115200,pipe,reconnect\nNow when I try to start it I get the following error message:\nCould not initialize WinDbg engine <C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x86\\> with error:\n%1 is not a valid Win32 application. (000000C1).\nPlease make sure you have the latest Debugging Tools from Microsoft.\nAny help is welcome. Feel free to ask for anything else. Many thanks in advance",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777720-setup-ida-kernel-debugging.html",
+      "content_chars": 938,
+      "content_sha256": "093137c4affa7f5eba3f0951e90a1122c37d67aa6d07cf1bc2bd7ee59681c12d",
+      "content_fetched_at": "2026-10-20T23:45:07.436132+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-10-20T23:44:37.431569+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/777720-setup-ida-kernel-debugging.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "Setup IDA for kernel debugging",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777720-setup-ida-kernel-debugging.html",
+          "content_sha256": "093137c4affa7f5eba3f0951e90a1122c37d67aa6d07cf1bc2bd7ee59681c12d"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:8f17f098e3ef8c5a",
+      "who": "cymulate-blog",
+      "who_url": "https://cymulate.com/blog/",
+      "action": "publish",
+      "target": "MITRE ATT&CK Protection Strategies: Building the Model TogetherRead More",
+      "target_url": "https://cymulate.com/blog/mitre-attack-protection-strategies/",
+      "text": "cymulate-blog published: MITRE ATT&CK Protection Strategies: Building the Model TogetherRead More",
+      "at": "2026-10-20T23:44:37.431569+00:00",
+      "external_id": "a:8f17f098e3ef8c5a",
+      "url": "https://cymulate.com/blog/mitre-attack-protection-strategies/",
+      "title": "MITRE ATT&CK Protection Strategies: Building the Model TogetherRead More",
+      "content": "MITRE ATT&CK Protection Strategies: Building the Model Together\nBy:\nAmanda Kegley\nOctober 20, 2026\nFor years, the cybersecurity community has used\nMITRE ATT&CK®\nto understand how adversaries operate and how to respond.\nATT&CK mitigations\ndescribe the security concepts and classes of technology that can keep a technique from succeeding, such as privileged account management or execution prevention.\nDetection Strategies,\nlaunched in the ATT&CK v18 (October 2025),\ngave detection engineers a structured way to map telemetry and analytics to adversary behavior, answering the question: how do I know the adversary did this?\nToday’s ATT&CK mitigations tell organizations what category of control to consider. They do not tell you what to configure, where to enforce it or how to prove it keeps working.\nMITRE is now addressing this by asking the in-depth security control prevention questions:\nWhat has to be true in the environment for this adversary behavior to fail\n(prevented outcome), and\nWhat allows it to succeed\n(not prevented outcome)?\nWhat is unprecedented and encouraging is that MITRE is asking the community to help shape ATT&CK protection strategies before release. If you own preventative controls, this is your chance to\ninfluence how the industry defines “protected” and “not protected”\nfor specific security control configuration mitigations.\nKey Takeaways\nProtection is getting its own ATT&CK model.\nMITRE is building out protection strategies in the ATT&CK framework to define what must be true for adversary behavior to fail and succeed, planned for release in 2027.\nPractitioners can shape the working model now before it is final.\nMITRE wants feedback now from security practitioners to stress test this new model that runs preventative controls, security architecture, identity, endpoint and countermeasure engineering.\nFully aligned the vision for the Cymulate Platform.\nThis new model for protection strategies is aligned with our vision for the Cymulate Platform: agentic cyber defense engineering with a closed loop that continuously proves, prioritizes and adapts. Protection strategies give that loop a sharper prevention side, with specific, actionable mitigation for missed preventions.\nPrevention finally gets its own playbook\nThe 2025 release of MITRE ATT&CK Detection Strategies defined the telemetry and analytics needed to identify the behavior and answer the question:\n“How do I know the behavior happened?”\nProtection strategies will define the conditions and controls that must be in place for the behavior to fail and will answer the question: “\nHow do I make sure this behavior fails (a prevented outcome) and keeps failing?”\nPrevention is rarely a one-line mitigation. Telling a team to “enable credential protection” or “restrict macros” isn’t enough. Real prevention depends on the platform and behavior. It also depends on where and how a control is actually enforced and how broadly it is enforced across the systems that need it. The right mitigation for a given technique can look very different depending on the operating system and the technologies in your environment.\nI remember this well from my years conducting threat-based cybersecurity assessments of government enterprise architectures and developing a zero-trust assessment model for the federal government. It was often difficult to turn guidance into action when a single ATT&CK technique had five or more recommended mitigations mapped to it, such as\nAntivirus/Antimalware\n,\nSoftware Configuration,\nExecution Prevention\n,\nAccount Use Policies\n. How many of those mitigations were needed, and how would we know they were implemented correctly? Don’t get me wrong, those are the right mitigation categories, but the guidance was vague for a security analyst to act on. They didn’t say what to configure, on which platform or how to confirm the control was working and hadn’t drifted over time.\nThat experience taught me a lesson that still holds:\nDeployed is not the same as enforced, and\nEnforced does not automatically guarantee secure.\nA prevention control can be implemented, but not enforced on every system that needs it. It can also be enforced, but misconfigured, or quietly weakened by an exclusion, an update or even an attacker maliciously disabling it. These protection strategies tackle the first two gaps by defining exactly what to configure, how to verify it and how to detect drift. Closing the third gap, proving the control actually stops the behavior, requires adversarial exposure validation, formerly referred to as\nbreach and attack simulation\n(BAS). This is where Cymulate fits in.\nWhat are MITRE ATT&CK protection strategies?\nMITRE recently announced the new protection strategies model in a\nLinkedIn post\n. This model will define protection strategies with specific security control configurations needed for an adversary technique to fail. Each strategy covers individual operating systems and explains what to configure, how to verify the control is enforced and how to detect drift over time.\nInstead of waiting for a finished release planned for 2027, MITRE has shared working versions of four protection strategies and has invited the community to help stress-test them before they’re finalized. This is an exciting opportunity that the security community does not want to miss.\nInitial Access\nSpearphishing Attachment Execution\nCredential Access\nOS Credential Dumping\nPersistence\nAccount Manipulation\nImpact\nData Encrypted for Impact\nLet’s take a closer look at this model. At a high level, for each protection strategy, MITRE is defining the following for each operating system and security control:\nSecurity control framework: description, implementation, mitigation, verification and drift monitoring\nDescription\nWhat the security control is\nImplementation\nHow to deploy and configure it\nMitigation\nThe ATT&CK mitigation it maps to\nVerification\nHow to prove it works\nDrift Monitoring\nHow to detect when it changes\nProtection strategy example: T1566.001 spearphishing attachment (PRT-0001)\nLet’s take the Spearphishing Attachment protection strategy as an example and break it down to further understand their model and the outcomes it is designed to produce.\nThe draft Protection Strategy for T1566.001 Spearphishing Attachment is PRT-0001. MITRE documents three operating systems, each with its own protection requirement statement and three associated security control configurations. Let’s take the Windows OS as an example and look at one of the security control configurations.\nWindows Protection Requirement\n“Windows ensures that no executable or macro-enabled attachment reaches a user’s endpoint without passing\nisolation-environment detonation\nthrough\ndocument execution control\n.”\nBelow is a table with the security control information that each configuration includes, using one Windows example.\nSecurity control fields, their purpose, and an example using Microsoft Defender for Office 365\nControl\nPurpose\nExample: Microsoft Defender for Office 365\nName\nThe product or feature that enforces the protection\nMicrosoft Defender for Office 365 Safe Attachments\nImplementation\nHow to configure it: policies, registry keys, rules, licensing\nSafe Attachments policies set to\nBlock\nor\nDynamic Delivery\n. Inbound attachments detonate in a cloud sandbox; Safe Links rewrites and validates URLs; high-risk MIME types such as .ps1 are blocked at mail flow rule.\nAssociated Mitigation\nThe ATT&CK mitigation category the control maps to\nM1049\nAntivirus / Antimalware\nEnforcement Point\nThe exact setting whose state shows whether the control is on\nSafeAttachmentPolicy.Action\nExchange Online policy\nState Verification\nThe command or check that confirms it is enforcing\nGet-SafeAttachmentPolicy | Select Name, Action, Enable\nDrift Detection\nThe change that means the control has weakened or been turned off\nSafeAttachmentPolicy.Action\nchanged to\nAllow\n, or policy disabled\nThe example above focused on one of the three Windows security control configurations. The figure below highlights the complexity and level of detail required for each security control configuration for one protection strategy. To ensure necessary threat resilience, it doesn’t stop at deploying the control; an organization must verify that it is enforced everywhere it should be and monitor for drift so it is not weakened over time.\nMITRE wants to hear from defenders\nMITRE is looking for feedback from the community to stress test this protection strategy model with the shared working examples. They asked to hear from people who work in:\nPreventative controls and countermeasure engineering\nSecurity architecture\nPlatform security\nIdentity\nEndpoint\nSecurity practitioners know the gap between a control that is \"deployed\" and a control that actually blocks. They know which settings silently revert after an agent update, which exclusions creep into EDR policies and which identity hardening steps break business workflows.  They also understand the challenges in verifying compliance across their enterprise. That operational reality is exactly what will make protection strategies useful instead of theoretical.\nFeedback MITRE is asking for\nQuestions for the Cybersecurity Community\nWhere does the enforcement logic break?\nWhat can be bypassed?\nWhat doesn’t survive a real enterprise environment?\nWhat are we missing?\nThey also shared a\nlink to join their Slack community\nto provide inputs and stay up to date. If you own preventative controls, it is worth joining.\nHow this is aligned to the vision for the Cymulate Platform\nThis new model for protection strategies in the ATT&CK framework is aligned with our vision for the\nCymulate Platform\nto deliver agentic cyber defense engineering. We see exposure validation as an operational engineering capability, not a periodic audit. The goal is a continuous and automated loop where controls are tested against real attacker behavior, gaps are found and automatically closed with precise guidance, and then the fix is verified.\nProve, prioritize and adapt\n. Protection strategies give that loop a sharper prevention side.\nThe Cymulate Platform has the industry’s largest library with more than 115,000 attack scenarios, Each attack scenario is mapped to MITRE ATT&CK techniques and their associated mitigations. When a scenario runs and a control fails to block it, analysts don’t get a generic label like “Execution Prevention.” They get remediation guidance tied to that specific missed prevention, so they know what to change and where.\nThis connects the abstract and the operational. A failed test isn’t just a red mark on a heat map. It points to a technique, the mitigation that should have stopped it and the steps to close the gap. Security teams can then re-run the same scenario to confirm the fix holds and keep testing to catch drift over time.\nCymulate stays aligned with every MITRE ATT&CK update, ensuring scenario mappings and mitigation guidance keep pace as the framework evolves. As protection strategies mature, these more detailed, platform-specific mitigations can be displayed directly in the platform and become part of the agentic cyber defense engineering closed loop. Security analysts will see exactly how a prevention control should be enforced for their operating systems and technologies, see the mitigation in action alongside the test results that show whether it’s working.\nSo what is the result? Prevention becomes something teams and AI agents can engineer, measure and maintain, just like detection. Instead of a list of vague mitigations, security teams get a specific and actionable path to validate from a missed attack to a fix and continuous proof that the fix works.\nShare your feedback and discover Cymulate\nATT&CK protection strategies will shape how the industry defines, measures and reports prevention for years to come. This model will be stronger if it reflects how controls behave in real environments, including where they fail and how they drift. It will also align naturally with agentic cyber defense engineering, where specific security control configurations are both what gets validated and what gets fixed.\nIf you work in preventative controls, security architecture, platform security, identity, endpoint or countermeasure engineering, share your feedback with MITRE through their\ncall for input\n.\nReady to see your prevention and detection coverage across ATT&CK?\nRequest a Cymulate demo\nto validate your controls and get the specific mitigations to close the gaps.  See how\nCymulate Cowork\ndelivers agentic cyber defense engineering.\nAmanda Kegley\nAmanda Kegley has over 15 years of experience in cybersecurity. With her in-depth knowledge of security needs in today’s dynamic threat landscape, she successfully innovates and markets new cybersecurity capabilities.\nMore about Author\nTable of Contents\nPrevention finally gets its own playbook\nWhat are MITRE ATT&CK protection strategies?\nProtection strategy example: T1566.001 spearphishing attachment (PRT-0001)\nMITRE wants to hear from defenders\nQuestions for the Cybersecurity Community\nHow this is aligned to the vision for the Cymulate Platform\nShare your feedback and discover Cymulate\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nFeatured Resources\nView More Resources\nPage\nCowork\nLearn about cyber defense engineering with agentic workflows that reduce manual effort, scale expert execution, and accelerate defense adaptation.\nRead More\nDemo\nCymulate Cowork Demo\nDiscover how Cymulate orchestrates intelligent agents to continuously prove, prioritize and adapt with automated defense engineering.\nLearn More\nE-book\nAgentic Cyber Defense Engineering\nRead about the six stages of agentic cyber defense engineering and how they work together to continuously strengthen cyber defenses.\nLearn More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://cymulate.com/blog/mitre-attack-protection-strategies/",
+      "content_chars": 14049,
+      "content_sha256": "8ddd4339ec2d9b8248d3a48e48802ebaf10a41bdf32f34d40ced81bb9e1e3a64",
+      "content_fetched_at": "2026-10-20T23:46:10.248735+00:00",
+      "author": "cymulate-blog",
+      "author_name": "Cymulate Blog",
+      "author_url": "https://cymulate.com/blog/",
+      "published_at": "2026-10-20T23:44:37.431569+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cymulate-blog",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://cymulate.com/blog/",
+        "https://cymulate.com/blog/mitre-attack-protection-strategies/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cymulate-blog",
+          "url": "https://cymulate.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cymulate-blog",
+          "name": "Cymulate Blog",
+          "home_url": "https://cymulate.com/blog/"
+        },
+        "article": {
+          "title": "MITRE ATT&CK Protection Strategies: Building the Model TogetherRead More",
+          "url": "https://cymulate.com/blog/mitre-attack-protection-strategies/",
+          "content_sha256": "8ddd4339ec2d9b8248d3a48e48802ebaf10a41bdf32f34d40ced81bb9e1e3a64"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:6f3c4f58f2d1191e",
+      "who": "openai-research",
+      "who_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "action": "publish",
+      "target": "提升低资源编程语言的编程能力了解 OpenAI 如何提升 ChatGPT 在低资源编程语言上的能力，以及针对软件工程、SQLite 和 COBOL 迁移推出的新评测。",
+      "target_url": "https://openai.com/zh-Hans-CN/index/low-resource-programming-languages/",
+      "text": "openai-research published: 提升低资源编程语言的编程能力了解 OpenAI 如何提升 ChatGPT 在低资源编程语言上的能力，以及针对软件工程、SQLite 和 COBOL 迁移推出的新评测。",
+      "at": "2026-10-20T23:44:37.431569+00:00",
+      "external_id": "a:6f3c4f58f2d1191e",
+      "url": "https://openai.com/zh-Hans-CN/index/low-resource-programming-languages/",
+      "title": "提升低资源编程语言的编程能力了解 OpenAI 如何提升 ChatGPT 在低资源编程语言上的能力，以及针对软件工程、SQLite 和 COBOL 迁移推出的新评测。",
+      "content": "提升低资源编程语言的编程能力 | OpenAI\n2026年10月19日\n刊发\n研究\n[ COBOL ]\n[ OCaml]\n[ Fortran]\n[ Visual Basic ]\n提升低资源编程语言的编程能力\n聆听文章\n8:59\n分享\n我们的模型取得了最新进展，在使用 COBOL、Fortran 和 Visual Basic 等低资源编程语言构建和迁移软件方面，能力进一步增强。与 Python 和 JavaScript 等语言相比，这些语言可供模型学习的代码和文档较少，却支撑着世界各地的关键基础设施和基本服务。COBOL\n支撑着\n⁠\n（在新窗口中打开）\n超过 40% 的网上银行系统、80% 的线下信用卡交易和 95% 的 ATM 交易，而 Fortran 则用于\n天气预报\n⁠\n（在新窗口中打开）\n和\n核反应堆安全分析\n⁠\n（在新窗口中打开）\n。提升 AI 使用这些语言的能力，有望帮助团队维护基本服务所依赖的软件，并推动其现代化改造。\n这项工作的方向来自开发者和企业客户的反馈：他们告诉我们，编程模型在处理这些语言时往往力不从心。维护这些软件并进行现代化改造可能困难重重：文档可能不完整，最初的开发者可能已经离职，而重要的业务规则可能只存在于代码之中。无论是修复缺陷还是迁移到另一种语言，团队都需要确保系统所依赖的程序行为保持不变。\n为了衡量进展，我们开发了两项评测。MultiLangBench 测试模型能否分别使用 20 种不同的编程语言，从零构建兼容 SQLite 的数据库引擎。我们的 COBOL 迁移评测则测试模型能否在保持程序行为不变的前提下，将现有程序迁移到另一种语言。这两项评测共同考察两种互补的技能：构建新软件，以及保留现有软件的功能与行为。\n我们的最新模型在这两项评测中均取得了显著进步，以更低的成本实现了大幅提升的准确率。\n在 MultiLangBench 上，GPT‑6 Astra 在 20 种编程语言中的平均测试通过率达到 87.4%，高于 GPT‑5.6 Sol 的 26.8%，且在每种受测语言上都有提升。GPT‑6 Luna 的表现也优于 GPT‑5.6 Sol，通过率达到 40.3%，估算的 API 成本降低了约 78%。\n在我们的 COBOL 迁移评测中，GPT‑6.1 Sol 在低推理强度下的准确率达到 86.6%，而 GPT‑5.6 Sol 仅为 5.4%；同时，成本降低了 39%。在更高的推理强度下，准确率达到 97.9%，几乎触及该评测的上限。\n这些结果共同表明，我们的模型处理多种编程语言的能力正在显著提升，同时成本效益也在不断改善。\n1. 从零构建 SQLite（MultiLangBench）\nMultiLangBench 要求模型使用指定的编程语言构建兼容 SQLite 的数据库引擎。模型必须组织代码库、管理状态、处理错误，并在保留现有功能的同时添加新功能。\n为了比较不同语言的实现，我们使用数据库文件作为通用接口。待测程序接收一个初始数据库和一条 SQL 查询，然后生成修改后的数据库。我们使用 SQLite 的参考实现，检查生成的数据库是否包含预期内容。这样，无论引擎是用哪种语言构建的，我们都可以使用相同的测试。\n我们将 SQLite 现有测试套件中的测试改编为这一形式。这项评测衡量模型在一次长时间编程会话中能够构建多少可正常运行的功能，并同时报告测试通过率和 API 成本。\n在最高推理强度下，GPT‑6 Astra 在这 20 种语言中的平均测试通过率达到 87.4%，高于 GPT‑5.6 Sol 的 26.8%。所有受测语言的表现均有提升，包括 COBOL（从 10.9% 升至 72.1%）、OCaml（从 25.6% 升至 85.8%）、Fortran（从 21.4% 升至 83.5%）和 Visual Basic（从 27.5% 升至 89.4%）。Astra 在 20 种语言中的 19 种上得分超过 83%；COBOL 仍是最具挑战性的语言，得分为 72%。\nGPT‑6 Luna 提供了成本更低的选择，并且在每种受测语言上的表现也都优于 GPT‑5.6 Sol。在最高推理强度下，其平均测试通过率达到 40.3%。提升包括 COBOL（从 10.9% 升至 17.1%）、OCaml（从 25.6% 升至 34.1%）、Fortran（从 21.4% 升至 31.4%）和 Visual Basic（从 27.5% 升至 41.6%）。在取得这些提升的同时，每个样本的估算平均 API 成本为 0.77 美元，而 GPT‑5.6 Sol 为 3.48 美元，降低了约 78%。\n平均测试通过率\n各语言的 SQLite 测试通过率\n两个模型均采用最高推理强度。\nGPT-6 Astra\nGPT-5.6 Sol\nSQLite 测试通过率 — C\nAPI 成本\n输出 token 数\nAPI 成本\n输出 token 数\nGPT-6 Astra\nGPT-6.1 Sol\nGPT-6 Luna\nGPT-5.6 Sol\n我们将在\nGitHub\n⁠\n（在新窗口中打开）\n上发布 MultiLangBench 的评测配置和测试套件，以及各语言的结果。开发者可以查看评测的具体内容，了解模型在自己所用语言上的表现，并找出与自身工作密切相关的能力差距。\n2. 迁移 COBOL 代码库\n我们的第二项评测要求模型将 COBOL 程序迁移到 C++、Java、Kotlin、Python 或 Rust，同时保持每个程序的功能与行为不变。\n要成功完成迁移，模型既要理解程序的业务逻辑，也要理解 COBOL 特有的语言行为。COBOL 程序通常用于处理金融交易和业务记录，其中的舍入规则、记录缺失时的处理方式等细节都体现了业务需求。例如，COBOL 的定点运算会丢弃多余的小数位，除非明确要求进行舍入。如果重写后的程序改为对这些数值进行舍入，即使运行时没有报错，也可能产生不同的财务结果。\n为了检验这些行为是否得到保留，我们使用隐藏测试来评测模型，要求可观察到的输出逐字节完全一致。只有通过全部测试，才视为迁移成功。这类保持程序行为不变的能力，有助于团队维护老旧系统并推动其现代化改造。不过，将其应用于生产软件时，仍需专家审查，并根据系统的业务规则和依赖关系开展测试。\n在这项评测中，GPT‑6.1 Sol 在低推理强度下的准确率达到 86.6%，而相同设置下 GPT‑5.6 Sol 的准确率仅为 5.4%；前者的 API 成本仅为后者的 61%。在更高的推理强度下，准确率达到 97.9%，接近该评测的上限。这些评测结果表明，我们正在实现更准确、成本更低的代码迁移，帮助团队对业务所依赖的软件进行现代化改造。\n提升企业软件开发能力\n这些评测与开发者和企业客户的直接反馈相结合，帮助我们了解模型在哪些方面取得了进步，以及还存在哪些不足。\n我们的目标是帮助模型在更多语言中运用软件工程技能：理解不熟悉的代码仓库、规划变更、使用构建工具、运行测试，以及调试并排除故障。\n你可以通过 API 试用我们的最新模型，让它们处理你所在团队所用语言的编程任务。你对模型表现良好的方面、遇到的困难，以及我们下一步应重点关注哪些语言或工作流程的反馈，将帮助我们改进模型的训练和评测方式，更好地支持你所依赖的软件。\n软件与工程\nGPT\n学习范式\n2026 年\n作者\nOpenAI\n继续阅读\n查看全部\nRosalind 学术计划正式启动\n研究\n2026年10月15日\n分享 AI 在数学领域的进展\n研究\n2026年10月6日\n携手 Ironclad，提升计算机使用能力\n刊发\n2026年10月6日",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://openai.com/zh-Hans-CN/index/low-resource-programming-languages/",
+      "content_chars": 3174,
+      "content_sha256": "61fb2266a0665443ee96ac00fba5f08ddd08cac62aaa856ab43e9f6798690c9a",
+      "content_fetched_at": "2026-10-20T23:46:28.060233+00:00",
+      "author": "openai-research",
+      "author_name": "OpenAI Research",
+      "author_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "published_at": "2026-10-20T23:44:37.431569+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:openai-research",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://openai.com/zh-Hans-CN/research/index/",
+        "https://openai.com/zh-Hans-CN/index/low-resource-programming-languages/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "openai-research",
+          "url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "openai-research",
+          "name": "OpenAI Research",
+          "home_url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "article": {
+          "title": "提升低资源编程语言的编程能力了解 OpenAI 如何提升 ChatGPT 在低资源编程语言上的能力，以及针对软件工程、SQLite 和 COBOL 迁移推出的新评测。",
+          "url": "https://openai.com/zh-Hans-CN/index/low-resource-programming-languages/",
+          "content_sha256": "61fb2266a0665443ee96ac00fba5f08ddd08cac62aaa856ab43e9f6798690c9a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:c021c28354e5e9fa",
+      "who": "anthropic-research",
+      "who_url": "https://www.anthropic.com/research",
+      "action": "publish",
+      "target": "How Claude designed protein binders against scorpion neurotoxins",
+      "target_url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "text": "anthropic-research published: How Claude designed protein binders against scorpion neurotoxins",
+      "at": "2026-10-20T23:44:37.431569+00:00",
+      "external_id": "a:c021c28354e5e9fa",
+      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "title": "How Claude designed protein binders against scorpion neurotoxins",
+      "content": "Summary:\nAs part of our work experimenting with how Claude can help accelerate drug discovery, we asked an internal research model to design\nminibinders\n(small proteins that attach tightly to a target) against scorpion neurotoxins. Claude worked from our prompt and four follow-ups, which we developed in collaboration with the financial investment research firm Citrini Research. Teams at Adaptyv Bio and Twist Bioscience experimentally tested 211 designs for binding. Of these, 17 met our criteria. We’re releasing all 211 designs and their data as a resource for the field.\nIn August, we showed\nhow Claude designed protein minibinders\nafter being given a single prompt. A month before we released those results, a team from\nCitrini Research\nhad approached us with an interesting question: could Claude (and AI drug discovery more generally) enable a group of motivated nonexperts to tackle a genuine problem in human health? Members of our life science research team set out to answer this, first by brainstorming problems with Claude. We landed on asking for Claude’s help designing novel protein binders against scorpion neurotoxins, with the hope that they could one day be used to develop a scorpion antivenom.\nScorpions sting 1.2 million people or more every year, resulting in more than 3,250 deaths, mostly among children in parts of the world with limited access to medical care. New treatments are expensive to make, and are also unlikely to earn back the cost of developing them. With so little investment, scorpion envenomation has been\ndescribed as\na neglected tropical disease.\nWe started by giving Claude the same prompt we’d used in our earlier protein-binder study, after modifying it with Citrini.\n1\nOver the next 64 hours, an internal research model, operating within Claude Science, worked mainly autonomously, although we directed its work with four follow-ups. Under our supervision, Claude analyzed the research data, generated the figures, and drafted the final report.\nClaude’s design campaign produced 17 protein binders that each bind to one of four scorpion neurotoxins that are known to be dangerous to humans. Throughout the process, Claude generated 318,484 protein designs and selected 180 of them for testing. Our team added 31 more, with Claude’s help. Our partners at Adaptyv Bio and Twist Bioscience, two contract research organizations (CROs), lab-tested all 211 designs to see if they would bind to the toxins they were designed against, and 17 designs met our criteria for a binder. We have not confirmed whether these binders neutralize scorpion venom in a cellular environment, so we do not claim to have produced an antivenom.\nWe sent Claude’s work to two outside experts, Susana Vázquez Torres and Timothy P. Jenkins, who said they felt this work was a promising first step. If AI can now design credible binders against several hard-to-target toxins in days and they can be confirmed in the lab within weeks, this could, in theory, speed up discovery for envenomation and other neglected diseases. The challenge, as always, is turning those binders into safe, affordable, and widely accessible drugs.\nWe share more detail in our\ntechnical report\n, and are making\nall 211 designs and their data available\n.\nDesigning a binder against almost any target no longer seems unrealistic. We can now obtain very tight binders remarkably quickly, and binding itself is no longer the main bottleneck. For venomous animals such as snakes and scorpions, whose bites and stings kill or seriously injure large numbers of people, particularly in underserved regions, the real impact will come from tackling the parts of the therapeutic pipeline that go beyond binding. The challenge is to use these extraordinary tools to develop molecules that can become real drugs, ones that are safe, affordable, and widely accessible.\nSusana Vázquez Torres\n, Postdoctoral Researcher, Structural Biology Programme, Spanish National Cancer Research Centre (CNIO), Madrid, Spain.\nDesigning\nde novo\nbinders against five toxins from four species of scorpions\nScorpion venom contains multiple protein neurotoxins. The neurotoxins that are most likely to harm or kill humans attach to\nsodium channels\n, large proteins embedded in the membranes of nerve cells that allow them to fire. When sodium channels are disrupted, nerves fire at the wrong time—this releases large amounts of stress chemicals, like adrenaline. In severe cases, this can cause heart failure and excess fluid buildup in the lungs, occasionally resulting in death.\nThere are some antivenoms available for scorpion stings. They’re generally made using the antibodies of immunized animals, a process that can take months. Venom is milked from thousands of scorpions and used to immunize horses; scientists then purify the resulting antibodies from the horses’ blood. Traditional antivenoms can work when given early, but they’re usually effective for only a small number of neurotoxins. They’re also expensive to produce, and in many regions are costly or in short supply.\nDe novo\ndesign offers a potential solution. A binder is a molecule that attaches tightly to a specific target; antibodies are one natural example. In principle, a binder that targets the part of a neurotoxin that latches onto sodium channels could stop the toxin from reaching the channel. In\nde novo\ndesign, protein binders are generated from scratch against a specific target. These binders are designed computationally and can be optimized for druglike properties such as potency and stability, which could make them easier to supply in regions where stings most often occur.\nOur approach was inspired by\nan earlier effort\nthat designed\nde novo\nproteins that neutralized snake neurotoxins and protected mice. To our knowledge, no\nde novo\n-designed binders against scorpion neurotoxins have been described.\nFor this campaign, we chose to target five scorpion-venom neurotoxins across four regions: Mexico (Cn2), Brazil (Ts1), North Africa (AaH I and AaH II), and the Middle East (LqhIII). We also chose to aim the designs at each toxin’s channel-binding site. Claude picked the toxin structures to use for design by searching the Protein Data Bank (PDB) as well as the AlphaFold database (AFDB). For each toxin, it selected five\nhotspots\n, specific amino acid positions on the toxin that its binder designs were meant to latch onto.\nWe were primarily wondering if Claude could design binders against\nindividual\ntoxins. But we were also curious if Claude could design binders that targeted\nmultiple\ntoxins. There’s a practical reason for trying to design multitoxin binders, namely that it would reduce the number of molecules needed for a universal antivenom cocktail—which would be the most cost-effective and regionally neutral treatment. We selected these five scorpion toxins (Cn2, Ts1, AaH I, AaH II, and LqhIII) as a challenging test of multitoxin design: they share one fold for the overall shape of the protein, but any two are only 26% to 62% identical in their amino acid sequences.\nTo see how far Claude could go, we asked it to design four kinds of binders: binders against each of the five toxins individually; binders that targeted the β-family toxins Ts1 and Cn2; binders that targeted the α-family toxins AaH II, AaH I, and LqhIII; and binders that targeted all five toxins simultaneously.\nDesigning credible binders against five toxins in parallel, in a matter of days, is a great showcase of the AI-driven paradigm shift we are seeing in therapeutic discovery. This is especially true for neglected diseases such as animal envenomings, which have been largely starved of innovation due to low commercial incentives. Being able to agentically tackle the uniquely broad target space across animal toxins provides a significant speed-up in discovery, and brings realistic therapeutic solutions much closer.\nTimothy P. Jenkins\n, Associate Professor, Technical University of Denmark.\nClaude ran the design campaign with considerable autonomy\nOur initial prompt defined the neurotoxin targets, the protein design and folding tools, and the rules for novelty, scoring, and filtering. Beyond choosing the structures and amino acid hotspots, Claude also set the quality thresholds a design had to clear, decided how much to lean on each available design tool, and developed the strategies for designing binders against multiple toxins.\nUltimately, Claude used 12 design tools to generate 318,484 designs, filtering out any that resembled a toxin or a known protein. Claude co-folded and screened 553,052 design-toxin pairs, predicting each pair’s structure as one complex. Sixty-four hours after we gave Claude our initial prompt, it produced its final list of 180 designs. The campaign used on the order of 10,000 GPU hours.\n2\nClaude worked autonomously for 24 hours following our first prompt. Its results encouraged us to prompt Claude to continue its campaign and look for better designs. Our follow-up prompts were mainly focused on directing Claude to design a multitoxin binder. Claude selected most of the 180 designs—including our strongest binder (Cn2-B1)—only after our third follow-up. At our request, Claude sent the protein sequences to Twist Bioscience (in emails indicating they were written by Claude), which produced the proteins in order to see how well they would bind to the toxins. We later worked with Claude to add another 31 designs, increasing the total to 211 designs: 60 designs against a single toxin (12 per toxin), 30 designs against the two β-family toxins, 30 designs against the three α-family toxins, and 91 designs against all five toxins.\nOf the 211 designs our teams assessed, 17 met our criteria for a binder, each against a single toxin. None of the designs made against multiple toxins met our criteria for more than one. (Beyond being limited by its current capabilities, there could be many explanations for why Claude struggled with this, including our prompting, the limitations of available design tools, and even the biological feasibility of multitoxin design.) Seven designs were binders against Cn2, four against AaH II, four against AaH I, and two against LqhIII. Among the 60 single-toxin designs, 11 were binders (18%). This rate is consistent with typical protein design campaigns, including our previous work.\nTesting Claude's designs in the lab\nAfter completing the campaign, we sent the designs to Adaptyv Bio and Twist Bioscience to test them for binding. Each group produced the designs in their labs, but in different formats. Adaptyv Bio expressed them in a\ncell-free system\n, which uses protein-making machinery extracted from bacteria rather than living cells. Twist Bioscience expressed the designs in mammalian cells (in this case, human kidney cells) as fusions to\nFc\n, the stem of an antibody. These are complementary ways to measure the underlying binding process, and we combined them in order to improve confidence in our results.\nBoth labs measured binding by\nsurface plasmon resonance\n(SPR), in which a toxin flows over the design while the SPR instrument tracks in real time how quickly a toxin binds to and detaches from it. The resulting trace, called a sensorgram, produces a measurement known as the\ndissociation constant\n(KD), which is a measurement for binding strength (or\naffinity\n). The lower the KD, the tighter the binding.\nWhen it came to evaluating the resulting designs, we set out strict criteria for labeling a design a binder against a toxin. The design needed to be a\nhit\nat both labs\n3\n—that is, it needed to show evidence of binding against that toxin in every replicate, and every KD needed to be 1 µM or tighter. We also required that the design show no signal against CLEC12A, an unrelated human protein used to measure off-target binding or “stickiness.”\nClaude’s Cn2 binders likely bind the same site as a toxin-neutralizing antibody\nAntibodies and nanobodies remain the standard for\nde novo\ndesigns to beat. Three such molecules have reported affinities (KD) below 1 nM (nanomolar) against Cn2 or AaH II, and they have been shown to protect mice from scorpion toxins.\nOur two strongest binders, which we call Cn2-B1 and Cn2-B2, target Cn2, a neurotoxin from the Mexican scorpion\nCentruroides noxius\n. They each bound Cn2 tightly at both Adaptyv Bio and Twist Bioscience, with affinities (KD) in the single-digit nanomolar range.\nOne way to find out whether two molecules (e.g., an antibody and a miniprotein) bind the same site on a target is with a\ncompetition experiment,\nwhich tests whether both binders can attach to the target at the same time\n.\nIf the presence of one molecule reduces the other molecule’s binding, then they likely compete for the same binding site.\nOur competition experiments suggest our Cn2 binders each attach on or near the same\nepitope\n(binding site) as an antibody called LR, which\nhas been reported to neutralize Cn2\nin mice. LR’s binding site covers the part of Cn2 that attaches to the sodium channel and causes nerves to misfire. We have not tested our strongest binders, Cn2-B1 and Cn2-B2, in a cellular environment or in live animals, but the fact that they compete with LR suggests that they will likely neutralize Cn2.\nA binder is only the first step to developing an antivenom\nOur results show binding only against\nrecombinant\ntoxins, which are grown in the lab from each toxin’s gene rather than purified from venom. The two biggest limitations of this study are that we didn’t test any design for neutralization\nin vitro\n(against cells grown in the lab) or for efficacy\nin vivo\n(in living animals, such as mice).\nIf we were to advance one design toward a therapy, Cn2-B1 would be one of our strongest candidates. First, though, we would need to confirm the design also binds toxin purified from venom. We would then assess it for function\nin vitro\nwith patch-clamp recordings (which can measure the electrical current passing through sodium channels) to see whether it stops the toxin from acting on the channel. Then, we would need to test the binder in mice to see whether it actually protects them. Beyond neutralizing the toxin, a treatment must also be safe, stable, affordable, and available where stings occur. Reaching patients will also take cooperation from clinicians, funders, and policymakers.\nWe are releasing\nall 211 designs and their binding data\nso that other researchers can build on our work. We hope this demonstration of Claude’s capabilities, along with the data we are releasing, will help accelerate further research into antivenom design.\nFurther reading\nThe following resources provide further technical depth and more detailed information about the results described above:\nTechnical report\n;\nData release:\nall 211 designs, their predicted structures and scores, and experimental data\n;\nOur previous posts on\nprotein design\nand\nuplifting biomolecular modeling\n.\nFootnotes\n01\nCitrini has written an\narticle on our collaboration, here\n.\n02\nWe realize this is much more than most researchers have access to. Separately, we have\nmade these models about 4x faster on average\n, and shown that a simplified prompt using a single agent and a single GPU over 24 hours reaches comparable\nin silico\nscores.\n03\nLqhIII was assessed only by Adaptyv Bio.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "content_chars": 15268,
+      "content_sha256": "5807bcdf83ea005ac9407fe1189c89caf2209b5181b10b43c45a7d25669c2cac",
+      "content_fetched_at": "2026-10-20T23:46:30.597118+00:00",
+      "author": "anthropic-research",
+      "author_name": "Anthropic Research",
+      "author_url": "https://www.anthropic.com/research",
+      "published_at": "2026-10-20T23:44:37.431569+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:anthropic-research",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.anthropic.com/research",
+        "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
+      ],
+      "refs": {
+        "actor": {
+          "login": "anthropic-research",
+          "url": "https://www.anthropic.com/research"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "anthropic-research",
+          "name": "Anthropic Research",
+          "home_url": "https://www.anthropic.com/research"
+        },
+        "article": {
+          "title": "How Claude designed protein binders against scorpion neurotoxins",
+          "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+          "content_sha256": "5807bcdf83ea005ac9407fe1189c89caf2209b5181b10b43c45a7d25669c2cac"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:26049a43c6a936ee",
+      "who": "anthropic-research",
+      "who_url": "https://www.anthropic.com/research",
+      "action": "publish",
+      "target": "Redesigning source control at Anthropic",
+      "target_url": "https://www.anthropic.com/research/redesigning-source-control",
+      "text": "anthropic-research published: Redesigning source control at Anthropic",
+      "at": "2026-10-20T23:44:37.431569+00:00",
+      "external_id": "a:26049a43c6a936ee",
+      "url": "https://www.anthropic.com/research/redesigning-source-control",
+      "title": "Redesigning source control at Anthropic",
+      "content": "Updated October 15 to include more detail on the projects that pioneered many of the techniques we use in Scion.\nAt Anthropic, coding is no longer the bottleneck to building systems or doing research. Claude is able to autonomously iterate on research loops, micro-optimize complex programs, and build new services from the ground up at a speed and scale we haven’t seen before. The bottleneck, now, is all of the developer infrastructure built for human scale: source control, builds, and CI.\nIn May 2026, Anthropic averaged around 2,500 code changes merged per day; as of September, we merged over 30,000 per day. We don’t expect this rate of growth to slow down anytime soon; the latent demand for merging code is practically infinite, and every bottleneck we remove immediately leads to a further increase in the amount of code we produce.\nChanges merged to our monorepo per day, from January to September 2026.\nIn order to support this growth, we built Scion, an in-house version control system, and fully migrated our monorepo from git in five months. We also built and shipped a code review surface (called Antique), code search, a rich source control IAM system, novel ways of managing and landing large amounts of reviewed code, and more, all in that same time period. In this post, we’ll focus on how we built Scion specifically. It makes for an interesting case study: Claude’s ability to write code was both what put us in this situation in the first place\nand\nhow we were able to quickly build a high-quality, scalable system to deal with it.\nGrowing our monorepo\nBefore we explore what we built, we should acknowledge how unusual our workload is. Unsurprisingly, Anthropic uses Claude to write software far more than almost any other company, so we’re often the first to see where tools built for human scale start to strain. Source control is just one example of this. While we don’t expect many organizations to have these problems in the very near term, we suspect it won’t be too long before others who use AI coding tools experience these same pressure points, which is why we wanted to share what we built and what we learned.\nGit is a decentralized system: every clone is a complete, self-contained repository that can compute diffs, read history and blame, and check out any revision while fully offline. For the vast majority of repositories, this is the right design, and it’s a large part of why git became the standard.\nAs our monorepo grows, it increasingly doesn’t fit that design space. The history of our main branch alone is almost 100 GB, and a\ncompressed\nworking copy is over 25 GB. We perform on the order of 25 million code checkouts per day for CI, before counting developer environments, agent sandboxes, and research jobs. Fetched naively, that would be over 600 PB of git traffic per day.\nGit offers tools for working with a slice of a repository, such as shallow clones, sparse checkouts, and promisor remotes. Beyond these, there are standard workarounds for large monorepos, like internal git mirrors and repository snapshots (seeds) kept in blob storage. We’ve used all of them—at our peak, we operated several hundred internal git mirrors to deal with the load. This bought us time, but they became harder to operate as our merge rate increased. Seeds fell further from the tip of main between refreshes, and it took more and more care to keep operations that depend on history, like diff and blame, working on partial clones.\nThe typical setup for scaling git checkouts.\nTaking a step back, we noticed that, like most companies, we were using git as a centralized system with one authoritative copy, but nearly all of our clients were agents and jobs that are online by definition. The properties that make git excellent for distributed, offline work were actively undermining our ability to scale as the repo grew. So we asked ourselves: if we designed source control with the fact that agents are always online in mind from the start, what would it look like?\nPrinciples for agent-scale source control\nWith agentic coding, many common assumptions about how software is developed are evolving. We embraced these changes when building Scion, which allowed us to take a fundamentally different approach than git on several core principles. Source control for huge monorepos has prior art, notably Google’s\nPiper\nand Meta’s\nSapling\n,\n2\nso we were able to build Scion with their hard-won lessons in mind. Our principles are:\nClients are always online.\nGit assumes that clients work offline and need a complete copy of the repository. Since nearly all of our clients are agents and jobs, we designed Scion’s client and protocols around a server that is always reachable, and have clients fetch data when they need it.\nClient-server asymmetry.\nIn git, every client is capable of being a full-fledged server. In Scion, the server answers questions about file history and blame, creates commits, performs merges and rebases, and so on. The client maintains a bounded local object cache, lays out the working copy files on disk, monitors for filesystem changes, and gives users an ergonomic way to work with the server. It can compute very little on its own but, in exchange, it requires much less data locally.\nA comprehensive source control service can power many novel applications.\nWith git, a CI job or tool that needs to ask a question about the repository, such as who last changed a line or how two commits are related, has to maintain a local copy of the repo or hope that vendor-specific APIs provide the answer. With Scion, all of the source control queries the client uses are also exposed via API, so in many cases jobs don’t need a local repository at all. Many internal tools, such as our automated bisect and revert pipelines, wouldn’t be practical at scale without this cheap, programmatic access to source control.\nEverything must be horizontally scalable.\nAt our peak, we ran several hundred git mirrors, which significantly strained capacity and no longer scaled once the repo outgrew the mirrors’ disks or memory limits. In Scion, the repository’s data is distributed, and every component is independently scalable; there is no fully materialized copy of the repo anywhere, even on the server. There is no equivalent of packfiles (git’s compressed bundles of objects), so no repository maintenance is needed.\nCommits must be cheap, incremental, and lock-free.\nIn git, you commit locally and then push to share your work. In Scion, every commit, rebase, or merge happens on the server, so there’s nothing to push, but each of those operations needs to be fast. The cost of creating a commit and updating its downstream data structures has to scale with the size of the change, not the overall size of the repo, or the server can’t keep up. The development lifecycle in Scion discourages refs (pointers to commits, such as branches and tags), except for the main ref or release branches, because\nglobal\nstate that every server has to agree on is a looming scaling problem.\nThe working copy is optional, and sparse by design.\nBecause our monorepo is so large, and because we check out code tens of millions of times a day for CI, we wanted to avoid checkouts whenever we could. With Scion, a CI job that needs the diff between a commit and its merge base, for example, can ask the server for it. The same goes for writes: many write workloads can also skip the checkout and function entirely via API. Scion’s protocol is centered around sparse checkouts, which only contain the directories the client asks for, and virtualized checkouts, which materialize files on demand, so when a job does need files on disk, the client only pays for what it actually reads.\nHow Scion works\nIt’s helpful to understand how these principles came together in practice when building Scion. These insights can apply to other source control systems or, more broadly, to other stages of the software development lifecycle.\nData structures\nIn Scion, the unit of work is a “changeset,” an entry in a write-ahead log. A changeset stores most of what you’d expect from a commit in git. But where a git commit stores a pointer to the tree, a changeset stores a list of the files that changed relative to its first parent,\n1\nalong with content-addressed pointers to the compressed file contents in blob storage. Changesets are created server-side and are available everywhere, instantly.\nThe shape of a changeset in Scion.\nThis structure lets us accept changesets with very high throughput because there are no packfiles to accept, no locking or cross-server coordination, and no refs to move around. Scion does technically support refs, but since neither creating nor fetching commits involves them, moving one is a compare-and-swap on a single Spanner row that happens separately from creating changesets.\nA changeset records only what’s changed, so on its own, it can’t quickly answer questions like who last edited a line or which commits affected a file. To answer those, Scion builds additional data structures from the changesets, including dedicated structures for file blame and path history and skip lists for the commit graph. We call everything that isn’t directly part of the changeset “derived data,” and we compute it all through one generic mechanism. Each type of derived data is defined recursively, so its value for a changeset is computed from its values for that changeset’s parents.\nThis mechanism has three benefits. First, we can easily add a new type of derived data when a new data structure would make some operation faster. Second, for each type, we can choose whether to compute it eagerly or defer the work, so we avoid materializing data we don’t need. And third, because the client never sees the internals of these data structures, we can optimize them without changing the client. We’ve added new types of derived data many times as the system has grown, such as new indices for performing copy detection or path-based file search.\nScaling Scion\nA small fleet of Scion servers provides source control APIs for any operation a client needs, such as getting changesets, computing diffs, finding merge bases, and fetching blobs. All source control data is content-addressed, so a piece of data never changes once it’s stored, and any server can cache it without checking with the others. As a result, the servers are horizontally scalable and require little coordination. They are essentially large caches that can also compute derived data on the fly and write the results back to Spanner.\nScion’s many consumers no longer need to maintain local repositories of their own. Fetching and maintaining the repository used to be a significant maintenance burden for CI jobs or tools that needed to ask source control questions, particularly about commit ancestry and blame. Early in the migration, before we had our own client, repo format, or protocols, Scion only answered these “metadata” queries. Fetching file contents and materializing working copies are far more data-intensive operations, and they needed a design of their own.\nScion’s scn client deviates from git’s fetch protocols in several important ways and, as a result, lends itself to a highly scalable architecture that requires significantly less CPU than git servers. Scion’s negotiation doesn’t tell the server what the client already has; instead, it operates exclusively on trees and blobs the client wants. Starting from a root tree, the client checks its local store for missing trees and requests them recursively, then repeats the process for blobs. Every request is for a specific object that never changes, so any cache can answer it, and the architecture closely resembles traditional tiered caches. The process is also efficient and resumable, because there is no single multi-gigabyte packfile response. Sparse and even virtualized checkouts don’t need special support, because the client simply doesn’t ask for trees it doesn’t want.\nIn the fleet, the client talks over a socket to a daemon, scion-daemon, that stores objects for the whole node. Most of our nodes need access to the monorepo, and jobs on the same node reuse most of the same objects. Each daemon starts from a periodically refreshed snapshot, then talks only to the tree and blob cache servers in its region, called scion-cache. These cache servers stream objects directly from memory, in the disk format that the daemon will consume, so they don’t need to spend time computing the client’s missing objects or performing delta compression. When a cache is missing an object, it asks the authoritative scion-servers, which read from Spanner or cloud storage as needed.\nThe scion-daemon, scion-cache, and scion-server all respond to identical RPCs for this protocol, so the client doesn’t need to know the cache topology. Any tier could theoretically talk to any other, but we strictly enforce the tiering to isolate failure domains. We want to avoid a situation where a failure in a regional scion-cache overwhelms the upstream scion-servers and brings down the entire system.\nScion’s checkout architecture.\nEach tier of this system maintains a cache hit rate of over 99% and does not require long-lived state, so it’s easy to scale up if needed. Our Scion infrastructure footprint is now 200x smaller than our previous git mirroring infrastructure in terms of CPU and memory requirements. CI and research jobs check out code two orders of magnitude faster (in seconds rather than minutes), which frees up a sizable amount of capacity across the fleet; CI alone realized a 25% CPU capacity win. Neither clients nor caches need to perform repository maintenance, which simplifies the lifecycle management of our jobs.\nWhat we learned building Scion\nWe started building Scion around the same time as\nClaude Mythos Preview\nand\nClaude Tag\nbecame available internally. Both of these releases simultaneously amplified the need for Scion\nand meaningfully accelerated how quickly we could build it.\nHere’s a particularly striking example. Earlier in the year, we had largely handwritten the first version of the git-to-Scion ingestion pipeline as a prototype. We thought it was good—until we got our hands on an early internal snapshot of Claude Mythos Preview. We asked it to rewrite the whole thing, and with no further instructions, it produced a version that consumed 20x less memory and was 4x faster, while preserving all of the implicit invariants around ingestion ordering and data structures.\nMerged changes to the Scion and Antique codebases per week, from January to September 2026.\nWhat we learned building and operating Scion offers some interesting lessons for what building agent-scale software could look like.\nRapid development with a small team will become more common.\nA team of seven people built both Scion\nand\nAntique (our code review tool, which we could easily write a whole other blog post about), not to mention half a dozen related systems, and fully migrated to them in five months. We did all this while the volume of code merged per day increased by 10x. In the past, developing and deploying a source control system like this would have taken a company years of iterative migration, with many more engineers. We think this sort of fast, nimble migration will become more common in the future.\nEngineers are no less valuable, but their work is changing.\nAll of the engineers who worked on this system would now rate Claude as better at\nwriting\ncode than them. But our engineers still supplied the invaluable understanding of the high-level inter-system components and the design-level tradeoffs, making informed choices around the problems we wanted to solve and the scale we knew we needed to achieve. Very often, we found that the role of the engineers was to tell Claude “no.” Agents will sometimes violate core system constraints to satisfy a pattern that should never have been allowed in the first place. This was particularly common in our migration. For example, there were multiple systems that tried to brute force looking up when a change merged to main by linearly reading the commit log instead of asking our code review tool. Anthropic also makes extensive use of adversarial review, and, while this is incredibly effective in many ways, it can also be myopic, so skilled engineers needed to steer Claude away from over-engineering parts of the system in response to hypothetical concerns. For example, one such review was overly defensive about trusting another internal service, which resulted in Claude adding excessive validation and complexity. Our team members still review every change request for the system, but they now examine the\nintent\nof the change as opposed to reading every line of code.\nWe were able to substantially improve optimization and quality.\nBy virtue of Claude’s ability to write immense amounts of code much faster than we could ourselves, Scion is among the most well-tested and well-defended codebases we have ever worked on. Even on our tight timeline, we were able to build hermetic simulations of every non-trivial infrastructure and source control interaction we’ve ever encountered, as well as fuzzing and sophisticated rate limiting. Claude also casually found significant optimizations—for example, an algorithmic optimization to ancestry queries that missed one of our indexes—that would have taken an expert days or weeks of analysis and tuning… and then did it all again the next day.\nObserved performance improvements on native Scion repos.\nWe laid the groundwork for new forms of monorepo security.\nManaging safety, security, and compliance in a massive monorepo is as important as managing the size and scale. We built Scion with these in mind from the start. It supports rich access control on repositories, as well as the ability to apply permissions to individual directories in order to protect the most sensitive code without losing the benefits of a monorepo. Furthermore, the code review tooling we built can express complex semantic constraints on approvals, which lets us differentiate simple things like comment-only changes from sensitive logical changes, so that human reviewers can focus on the most consequential changes.\nA new level of operational excellence is possible.\nOur team uses Claude Tag heavily, which has helped us monitor each component of the system. For example, we created Slack channels where we tasked Claude with being obsessively focused on the health of a single component. We call these Claudes “superfans.” We have a scion-daemon superfan, a scion-cache superfan, an Antique merge queue superfan, and so on. They have access to our telemetry and logs, and act like an experienced engineer who has nothing better to do than to refresh charts and look for anything strange. We also have traditional alerts for all of our systems, but our superfans can detect subtle and novel issues that make these alerts seem one-dimensional by comparison.\nWe’re completely rethinking our priors.\nThis project prompted us to take a very hard look at other workflows designed for human scale. A proper merge queue, for example, doesn’t make much sense at agent scale. What does CI even mean when hundreds or even thousands of changes can merge while tests are running? We haven’t been able to effectively replicate the industry standard of a global repository lock on the merge queue, so instead, we’ve invested in post-merge and pre-deploy automated testing. This does mean that concurrent changes can conflict, but Claude can typically fix these conflicts faster than humans can even identify them.\nContributing to the wider ecosystem\nWe see Scion as just one part of the answer to the scaling concerns that increasingly capable AI agents have raised. We’re sharing these details as an example of how teams can tackle similar challenges, though we don’t expect our solution, or our considerations, to suit every case.\nScion is by no means a suitable replacement for git for general use. The concepts we’ve outlined here really only make sense for truly enormous monorepos, with either tens of thousands of engineers or swarms of agents prolifically writing code. Plus, Anthropic is unique in that our ability to spend tokens for internal use far exceeds what any other business would realistically want to spend. We do this both to address our own software development needs, and to test Claude’s capabilities.\nPractically speaking, it’s difficult to offer Scion in a form that would be broadly useful to other organizations. It diverges significantly from git, meaning companies would need to migrate every piece of the development lifecycle, and it requires its own code review, code search, and CI. Our internal versions of these components are highly bespoke, so they would be difficult for other organizations to adopt, and we worry that attempting to build a public version that tries to please everyone wouldn’t actually be very useful.\nHowever, we anticipate that this class of problems will become more commonplace over the next six to 12 months, and it would be an inefficient use of engineering resources for every company using git to face similar challenges alone. Given that, we think the most impactful\nthing we can do is to share our thinking, so that other developers can apply some of the most successful parts of Scion to git without departing from the overall model. A git server doesn’t have to work the same way as a git client does; novel server architectures exist that provide significant scaling improvements. Git platforms can provide comprehensive server-side RPCs like Scion, perhaps even in a standardized way across forges that the git client can learn to talk to. The negotiation protocol doesn’t have to look exactly like it does today, either, and the various sparse and shallow features in git can be made to compose well.\nLastly, we want to acknowledge that the git community has spent nearly two decades scaling the platform for millions of developers. Our contribution is far narrower: sharing our early view into how agentic software development interacts with these systems, so that we can partner with GitHub, GitLab, and the OSS community to support the changing needs of developers. We’re all in it together as the software development lifecycle intersects with the AI exponential.\nFootnotes\n01\nStoring changed files relative to the first parent of a merge is a stylistic choice; in practice, we’ve found that people only care about history or blame for commits on the main line in trunk-based development in a monorepo.\n02\nSpecifically, the server component of Sapling,\nMononoke\n. It pioneered many of the techniques we use in Scion, in particular the\nBonsai\ndata model.\nAuthors & Acknowledgments\nAcknowledgements\nWritten by Nick G. and the source control team: S.G., R.K., Dan C., Garrett H., Ben L., Colin M., Joe P. We’re grateful to Vilas J. and Sergiu D. for supporting the source control team on this ambitious journey and Amir O. for early contributions to Antique.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.anthropic.com/research/redesigning-source-control",
+      "content_chars": 23020,
+      "content_sha256": "7fa7fc9ab915f7b826242a62cdbecec19855bdb9d46472b95b318b611e96a599",
+      "content_fetched_at": "2026-10-20T23:46:30.886691+00:00",
+      "author": "anthropic-research",
+      "author_name": "Anthropic Research",
+      "author_url": "https://www.anthropic.com/research",
+      "published_at": "2026-10-20T23:44:37.431569+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:anthropic-research",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.anthropic.com/research",
+        "https://www.anthropic.com/research/redesigning-source-control"
+      ],
+      "refs": {
+        "actor": {
+          "login": "anthropic-research",
+          "url": "https://www.anthropic.com/research"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "anthropic-research",
+          "name": "Anthropic Research",
+          "home_url": "https://www.anthropic.com/research"
+        },
+        "article": {
+          "title": "Redesigning source control at Anthropic",
+          "url": "https://www.anthropic.com/research/redesigning-source-control",
+          "content_sha256": "7fa7fc9ab915f7b826242a62cdbecec19855bdb9d46472b95b318b611e96a599"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:952c54fa1fd4c68f",
+      "who": "anthropic-research",
+      "who_url": "https://www.anthropic.com/research",
+      "action": "publish",
+      "target": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "target_url": "https://www.anthropic.com/research/claude-discovers-novel-enzyme-system",
+      "text": "anthropic-research published: Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "at": "2026-10-20T23:44:37.431569+00:00",
+      "external_id": "a:952c54fa1fd4c68f",
+      "url": "https://www.anthropic.com/research/claude-discovers-novel-enzyme-system",
+      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "content": "Chapter\n01\n:\nAbout our lab\nWe’re introducing a new life sciences research group and laboratory at Anthropic. Our focus is on fundamental biology research using Claude: exploring datasets of DNA to identify uncharacterized protein families, generating hypotheses at scale, and testing them through experiments in the lab. This post introduces the team behind this work and shares early results in which Claude discovered a novel enzyme system with properties reminiscent of CRISPR, with only high-level direction from our scientists.\nMany discoveries that have revolutionized biology and medicine started with a scientist noticing something odd in the staggering diversity of molecular machines found in nature. Restriction enzymes\n,\nproteins that cut DNA at specific short sequences\n,\nwere found in bacterial immune systems, where they destroy the DNA of invading viruses. Researchers realized they could use these enzymes to cut DNA at chosen places and splice genes from one organism into another, which launched the biotechnology industry. Taq polymerase, an enzyme that copies DNA at high temperatures, was identified in a bacterium in a Yellowstone hot spring. It became the basis for PCR, the DNA-copying method used in much of modern diagnostics. CRISPR was first noticed as an unusual repeat sequence in the DNA of certain bacteria, and is now the foundation of gene editing-based medicines.\nIn the spring of 2026, we formed a research group to see whether general AI models can systematize and\naccelerate such discoveries\n. We believe that this acceleration will come from establishing a new way of doing biology research, in which agents collaborate with humans in every step of the process. Developing this new way of working required that we build our own lab and a single team working on everything from training Claude in biology to running experiments in the lab.\nToday, we’re sharing early results from one of our first research programs, in which Claude autonomously discovered a novel enzyme system that is associated with an array of DNA repeats, a pattern reminiscent of CRISPR. Although we don’t yet know its function, the system that Claude discovered has a set of characteristics that have only ever been found together in a handful of other systems, all of which are programmable and perform operations like cutting, copying, and pasting DNA. Beyond CRISPR, which has already transformed science and medicine, several other such systems are now in development as promising tools.\nThe system that Claude found is based on a reverse transcriptase (RT), enzymes that copy RNA into DNA. While this underlying RT, found in a jumbo phage, had been identified in previous studies, Claude appears to be the first to notice the system’s defining features—an associated array of non-coding DNA sequences and an additional accessory protein of unknown function.\nAfter reviewing the pre-print, Feng Zhang, one of the pioneers of CRISPR genome editing and a professor at MIT and the Broad Institute, said:\nThis is an exciting example of how AI agents can contribute to biological discovery. The identification of RNA-repeat arrays associated with reverse transcriptases is genuinely intriguing and merits further investigation. I hope this work encourages more scientists to explore how AI can support their research.\nWe gave Claude a prompt to search through a massive database of DNA sequences for interesting new examples of RTs. Our involvement was limited to the initial prompt and the lab work, while Claude agents combed through the database, investigated the distinct RT families, and used their own judgment to identify interesting candidates. After 21 hours spent searching this data by roughly 950 agents using 210 million tokens, one of the agents spotted something remarkable: a repeating pattern of DNA sequences that occurs next to the gene for an odd-looking RT. After further analysis and testing in our lab, we recognized that this pattern marked a previously uncharacterized enzyme system found in bacteriophages (the viruses that infect bacteria) that we call array-associated reverse transcriptases (ART).\nOur work to understand the primary function of ARTs is ongoing. However, we think it is important to share such findings early, both to demonstrate Claude’s capabilities and to give the broader community insight into what we’re working on. We have released a pre-print (\nhere\n) that discusses this in more detail.\nAbout our lab\nWe are a team of scientists who have spent our careers exploring unusual proteins, and specialize in using computational approaches to systematically read DNA, interpret its evolution, and pick out biological systems for further characterization. Our research prior to joining Anthropic has helped to better understand the\nevolution\nand\nregulation\nof CRISPR systems, discover new\nenzymes\nfor next-generation\ncell and gene therapies\n, and build\ntools\nfor accelerating the identification of anomalies in DNA, such as human pathogenic variants. We are part of Anthropic’s life sciences organization, alongside teams whose work includes drug discovery, and training Claude in biology and chemistry.\nOur lab, located in the Bay Area, looks like a typical molecular biology lab. We do research that involves only the lower levels of the biosafety risk level (BSL-1 and BSL-2) and we do not handle pathogens that can infect humans. All of the lab work is performed by human scientists. Although we’ve experimented with using AI to accelerate lab work with initiatives like the\nModel Hardware Standard\n, this approach is less conducive to the sort of ad hoc workflows that are involved in our molecular biology research.\nHow we work\nMany of our workflows involve having Claude search through the vast collection of DNA sequences associated with proteins without a known function. One typical pattern begins with a survey of a given protein family. Claude reads the relevant literature and reproduces the established results from public data to check its methods. It then searches for family members or genomic neighbors that fit no described system, and writes a short, human-readable report for each candidate that proposes a function and describes the evidence supporting its claims. In follow-up analyses, Claude critically evaluates the evidence—typically most candidates are eliminated at this stage. A survey may end with a single candidate worth testing, or with none.\nWhen a candidate survives our review, we test it in the laboratory, expressing the protein in standard laboratory strains and characterizing it biochemically and structurally, with Claude helping to interpret the data. We do our work in\nClaude Science\nand\nClaude Code\n, the same tools available to any scientist, and sometimes with a harness of our own that coordinates many Claude sessions running in parallel.\nBecause Claude produces hypotheses so prolifically, the hypotheses themselves have become an object of study for us. With hundreds to thousands of candidate reports from a single campaign, we have been asking what distinguishes the proposals we judge worth testing from those we set aside. What we learn goes back into the instructions we give Claude and teaches it to mimic our own scientific taste.\nClaude finds ART\nIn the past few years, researchers have discovered many more reverse transcriptases (RTs), most of them in bacteria, where they act as part of the immune system. Nearly all RT families were found by genomic analysis, or genome mining, which requires researchers to search sequence databases for genes that no one has characterized, notice the unusual ones, and work out what they do.\nClaude agents gathered over 200,000 RTs, picked out 3,500 new candidate systems, and narrowed those to the 20 most compelling candidates that they analyzed to produce human-readable reports. For an expert scientist, this type of analysis can take weeks to months of work.\nDuring the course of its research, Claude noticed an unusual RT family and decided to examine it in greater detail. While combing through the raw DNA sequence near the RT, the agent exclaimed: “[The DNA next to the RT] is spectacular: I can see by eye a tandem repeat array … that's a CRISPR-like … repeat array?!”\nThe raw DNA Claude was reading when it detected a repeat pattern that no one had noticed\nIt then proceeded much as a human scientist would when faced with a potential discovery. It counted the repeats and measured their spacing, compared the layout with the known RT systems, and searched the literature for any previous report of the pattern. After a thorough analysis it was convinced that it had found a new biological system, and filed a report for human review.\nThe system it found, ART, is found mainly in bacteriophages and consists of three parts: the RT, a partner gene beside it, and a long array of evenly spaced DNA repeat sequences. The repeat layout resembles a CRISPR array, which holds a bank of different RNA sequences that make CRISPR-Cas systems programmable biotechnological tools. Our first experiments show that the ART array is also expressed as a set of distinct short RNAs, suggesting that something analogous may be at play for this system.\nFurther experiments are underway to determine how ART works, and we are sharing these early findings to show the community that Claude can autonomously detect anomalies and drive analyses to initiate biological discoveries.\nYou can find more detail in our technical report (\nhere\n).\nWork with us\nWe hope this work demonstrates the value of AI-driven hypothesis generation to the wider scientific community, and we would like to work with other scientists to extend this approach to a broad range of problems, in genomics and in other fields. If you have a proposal for a research question, we would like to hear from you.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.anthropic.com/research/claude-discovers-novel-enzyme-system",
+      "content_chars": 9823,
+      "content_sha256": "e4794abe90b9c626d011c289afb7ad90f987713bcadf20b66f3867950e8755ff",
+      "content_fetched_at": "2026-10-20T23:46:31.175210+00:00",
+      "author": "anthropic-research",
+      "author_name": "Anthropic Research",
+      "author_url": "https://www.anthropic.com/research",
+      "published_at": "2026-10-20T23:44:37.431569+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:anthropic-research",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.anthropic.com/research",
+        "https://www.anthropic.com/research/claude-discovers-novel-enzyme-system"
+      ],
+      "refs": {
+        "actor": {
+          "login": "anthropic-research",
+          "url": "https://www.anthropic.com/research"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "anthropic-research",
+          "name": "Anthropic Research",
+          "home_url": "https://www.anthropic.com/research"
+        },
+        "article": {
+          "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "url": "https://www.anthropic.com/research/claude-discovers-novel-enzyme-system",
+          "content_sha256": "e4794abe90b9c626d011c289afb7ad90f987713bcadf20b66f3867950e8755ff"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:a2333d9cc8189a38",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-96913 Windows Kernel Elevation of Privilege Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96913",
+      "text": "msrc published: CVE-2026-96913 Windows Kernel Elevation of Privilege Vulnerability",
+      "at": "2026-10-20T14:00:00+00:00",
+      "external_id": "a:a2333d9cc8189a38",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96913",
+      "title": "CVE-2026-96913 Windows Kernel Elevation of Privilege Vulnerability",
+      "content": "# CVE-2026-96913 - Windows Kernel Elevation of Privilege Vulnerability\n\nHeap-based buffer overflow in Windows Kernel allows an authorized attacker to elevate privileges locally.\n\nCWE: CWE-122: Heap-based Buffer Overflow",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96913",
+      "content_chars": 219,
+      "content_sha256": "afa55024b85e1ed40ebc971a8ebdd81fed984de6b224c5e981e02314466fe161",
+      "content_fetched_at": "2026-10-20T23:46:37.254600+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-20T14:00:00+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96913"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-96913 Windows Kernel Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96913",
+          "content_sha256": "afa55024b85e1ed40ebc971a8ebdd81fed984de6b224c5e981e02314466fe161"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:7003b4db8f4ad8af",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-70074 Windows DNS Information Disclosure Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70074",
+      "text": "msrc published: CVE-2026-70074 Windows DNS Information Disclosure Vulnerability",
+      "at": "2026-10-20T14:00:00+00:00",
+      "external_id": "a:7003b4db8f4ad8af",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70074",
+      "title": "CVE-2026-70074 Windows DNS Information Disclosure Vulnerability",
+      "content": "# CVE-2026-70074 - Windows DNS Information Disclosure Vulnerability\n\nOut-of-bounds read in Windows DNS allows an authorized attacker to disclose information locally.\n\nCWE: CWE-125: Out-of-bounds Read",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70074",
+      "content_chars": 199,
+      "content_sha256": "2e91c2360a1de42a1006be8dbe949f4de2b0e99a37e15b765f751855096415db",
+      "content_fetched_at": "2026-10-20T23:46:38.977099+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-20T14:00:00+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70074"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-70074 Windows DNS Information Disclosure Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70074",
+          "content_sha256": "2e91c2360a1de42a1006be8dbe949f4de2b0e99a37e15b765f751855096415db"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:cae5b2606a5bb7fd",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-83839 Windows Hyper-V Elevation of Privilege Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83839",
+      "text": "msrc published: CVE-2026-83839 Windows Hyper-V Elevation of Privilege Vulnerability",
+      "at": "2026-10-20T14:00:00+00:00",
+      "external_id": "a:cae5b2606a5bb7fd",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83839",
+      "title": "CVE-2026-83839 Windows Hyper-V Elevation of Privilege Vulnerability",
+      "content": "# CVE-2026-83839 - Windows Hyper-V Elevation of Privilege Vulnerability\n\nTime-of-check time-of-use (toctou) race condition in Windows Hyper-V allows an authorized attacker to elevate privileges locally.\n\nCWE: CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83839",
+      "content_chars": 267,
+      "content_sha256": "d8c9d1f4b4d532df12a6355aa971cb402a4c22b1ae3f14a0d9c9905b52ddd601",
+      "content_fetched_at": "2026-10-20T23:46:39.414794+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-20T14:00:00+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83839"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-83839 Windows Hyper-V Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83839",
+          "content_sha256": "d8c9d1f4b4d532df12a6355aa971cb402a4c22b1ae3f14a0d9c9905b52ddd601"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:8049bf8d18ea4f3a",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-83782 Windows Shell Remote Code Execution Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83782",
+      "text": "msrc published: CVE-2026-83782 Windows Shell Remote Code Execution Vulnerability",
+      "at": "2026-10-20T14:00:00+00:00",
+      "external_id": "a:8049bf8d18ea4f3a",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83782",
+      "title": "CVE-2026-83782 Windows Shell Remote Code Execution Vulnerability",
+      "content": "# CVE-2026-83782 - Windows Shell Remote Code Execution Vulnerability\n\nHeap-based buffer overflow in Windows Shell allows an unauthorized attacker to execute code over a network.\n\nCWE: CWE-122: Heap-based Buffer Overflow",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83782",
+      "content_chars": 219,
+      "content_sha256": "60955721ca7b3b7c6c3acc2c8d1765db2a75b7a87b8b123deae438971d31a4ef",
+      "content_fetched_at": "2026-10-20T23:46:40.050938+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-20T14:00:00+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83782"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-83782 Windows Shell Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83782",
+          "content_sha256": "60955721ca7b3b7c6c3acc2c8d1765db2a75b7a87b8b123deae438971d31a4ef"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:a3bcf22c3d6c7372",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-102204 Windows Subsystem for Linux Elevation of Privilege Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102204",
+      "text": "msrc published: CVE-2026-102204 Windows Subsystem for Linux Elevation of Privilege Vulnerability",
+      "at": "2026-10-20T14:00:00+00:00",
+      "external_id": "a:a3bcf22c3d6c7372",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102204",
+      "title": "CVE-2026-102204 Windows Subsystem for Linux Elevation of Privilege Vulnerability",
+      "content": "# CVE-2026-102204 - Windows Subsystem for Linux Elevation of Privilege Vulnerability\n\nImproper link resolution before file access ('link following') in Windows Subsystem for Linux allows an authorized attacker to elevate privileges locally.\n\nCWE: CWE-59: Improper Link Resolution Before File Access ('Link Following')",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102204",
+      "content_chars": 317,
+      "content_sha256": "1ee271254681cfa5cb620946af600928a0a8021cea1bf769772f8ad619808929",
+      "content_fetched_at": "2026-10-20T23:46:40.676984+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-20T14:00:00+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102204"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-102204 Windows Subsystem for Linux Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102204",
+          "content_sha256": "1ee271254681cfa5cb620946af600928a0a8021cea1bf769772f8ad619808929"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:2cf18a11ab63341b",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-70337 Microsoft PowerShell Remote Code Execution Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70337",
+      "text": "msrc published: CVE-2026-70337 Microsoft PowerShell Remote Code Execution Vulnerability",
+      "at": "2026-10-20T14:00:00+00:00",
+      "external_id": "a:2cf18a11ab63341b",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70337",
+      "title": "CVE-2026-70337 Microsoft PowerShell Remote Code Execution Vulnerability",
+      "content": "# CVE-2026-70337 - Microsoft PowerShell Remote Code Execution Vulnerability\n\nRelative path traversal in Microsoft PowerShell Core allows an unauthorized attacker to execute code over a network.\n\nCWE: CWE-23: Relative Path Traversal",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70337",
+      "content_chars": 231,
+      "content_sha256": "e6761105b6a1c40ae89c6936f2d9090b63200f7567d0f2e6a163547d712a9760",
+      "content_fetched_at": "2026-10-20T23:46:41.309121+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-20T14:00:00+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70337"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-70337 Microsoft PowerShell Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70337",
+          "content_sha256": "e6761105b6a1c40ae89c6936f2d9090b63200f7567d0f2e6a163547d712a9760"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:9cd1aed286a105bf",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-62913 Microsoft Exchange Server Remote Code Execution Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62913",
+      "text": "msrc published: CVE-2026-62913 Microsoft Exchange Server Remote Code Execution Vulnerability",
+      "at": "2026-10-20T14:00:00+00:00",
+      "external_id": "a:9cd1aed286a105bf",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62913",
+      "title": "CVE-2026-62913 Microsoft Exchange Server Remote Code Execution Vulnerability",
+      "content": "# CVE-2026-62913 - Microsoft Exchange Server Remote Code Execution Vulnerability\n\nHeap-based buffer overflow in Microsoft Exchange Server allows an authorized attacker to execute code over a network.\n\nCWE: CWE-122: Heap-based Buffer Overflow",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62913",
+      "content_chars": 241,
+      "content_sha256": "333668c46ff58f8628623d46e51a2d637d109b0cddedb0953fe0197c84650976",
+      "content_fetched_at": "2026-10-20T23:46:41.754766+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-20T14:00:00+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62913"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-62913 Microsoft Exchange Server Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62913",
+          "content_sha256": "333668c46ff58f8628623d46e51a2d637d109b0cddedb0953fe0197c84650976"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:c5cfb9a0cb5d5333",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench-post4836111.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench-post4836111.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench-post4836111.html",
+      "at": "2026-10-20T00:11:35.710908+00:00",
+      "external_id": "a:c5cfb9a0cb5d5333",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench-post4836111.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench-post4836111.html",
+      "content": "File Approved\nSHA256:\ne25de578a3cda4cb661123f5c6436720079cd40501bb158186a4b658bf4992d8 - Reverse-engineering workbench for trainers and mods.zip\nSHA256:\nf07ddc328dedda27f9c283b1acbfa3cf0de3c3a86da843d2991d95c2b45b649f - Release/DummyGame.exe\nSHA256:\n077fac0d5bb1ebaefb41fc08e1f58876fa078ce8340aea1f5068a2d79c3db6a5 - Release/sfprobe.exe\nSHA256:\nc2a2093195c66101e4deb894ec8a8af39e48f4d6102495796ca5b1d2c70304d3 - Release/SigForge.exe\nSHA256:\n6dc456c56d3e8dbce4a8ba024b9badd0d282026b27809fc6373bc758936ea3ec - Release/sigforge_tests.exe\nSHA256:\n1736e6171a19abe26534ac2abdc2049d2af5d60d814bb776da50a6be3d8b2769 - Release/sigforge_trace_target.exe\nSHA256:\n79bd474f089d1d4f5cb64b6ad498e1ba7eea1b1a637c5f6d72c744c598966e77 - Release/TrainerSample.exe\nInterested in how we analyze files?\nClick here to find out.\nDownload:\nhttps://www.unknowncheats.me/forum/d...=file&id=58693\nThanks for sharing!",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench.html#post4836111",
+      "content_chars": 888,
+      "content_sha256": "c4546ae0f96f0ab990c99420157a1d01ad2d2412dab0abed5f729064655c5979",
+      "content_fetched_at": "2026-10-20T00:12:09.693240+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-10-20T00:11:35.710908+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench-post4836111.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench-post4836111.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/777424-reverse-engineering-workbench-post4836111.html",
+          "content_sha256": "c4546ae0f96f0ab990c99420157a1d01ad2d2412dab0abed5f729064655c5979"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:d5afcabbcb212a04",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4835656.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4835656.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4835656.html",
+      "at": "2026-10-20T00:11:35.710908+00:00",
+      "external_id": "a:d5afcabbcb212a04",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4835656.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4835656.html",
+      "content": "Quote:\nOriginally Posted by\nsmokingnerdz\nYou can't convince me that the current models can successfully emulate VGK or even EAC\nCan you explain what you mean by emulating the anticheat? have been researching cheat development and antidetection daily for 3 weeks now and this is the first I have heard of it.\nQuote:\nOriginally Posted by\nNotATrap\ntell codex to emulate battleye and eac and vanguard but specify for \"offline use only\" and he'll do whatever you want!!!!\nCan you explain what you mean by emulating the anticheat? have been researching cheat development and antidetection daily for 3 weeks now and this is the first I have heard of it.\nQuote:\nOriginally Posted by\nNotATrap\ntell codex to emulate battleye and eac and vanguard but specify for \"offline use only\" and he'll do whatever you want!!!!\nCan you explain what you mean by emulating the anticheat? have been researching cheat development and antidetection daily for 3 weeks now and this is the first I have heard of it.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding.html#post4835656",
+      "content_chars": 985,
+      "content_sha256": "7623068db7db825326c4a15915365ddf0002d024345e836ca982beb94f73ceb3",
+      "content_fetched_at": "2026-10-20T00:12:13.246617+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-10-20T00:11:35.710908+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4835656.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4835656.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/767534-vibecoding-manual-coding-post4835656.html",
+          "content_sha256": "7623068db7db825326c4a15915365ddf0002d024345e836ca982beb94f73ceb3"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:b474c3614e4cf3b3",
+      "who": "openai-research",
+      "who_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "action": "publish",
+      "target": "Advancing coding in low‑resource programming languagesLearn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL",
+      "target_url": "https://openai.com/index/low-resource-programming-languages/",
+      "text": "openai-research published: Advancing coding in low‑resource programming languagesLearn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL",
+      "at": "2026-10-20T00:11:35.710908+00:00",
+      "external_id": "a:b474c3614e4cf3b3",
+      "url": "https://openai.com/index/low-resource-programming-languages/",
+      "title": "Advancing coding in low‑resource programming languagesLearn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL",
+      "content": "Advancing coding in low‑resource programming languages | OpenAI\nOctober 19, 2026\nPublication\nResearch\n[ COBOL ]\n[ OCaml]\n[ Fortran]\n[ Visual Basic ]\nAdvancing coding in low‑resource programming languages\nListen to article\n7:25\nShare\nOur latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic. These languages have less code and documentation available for models to learn from than languages like Python and JavaScript, yet support critical infrastructure and essential services around the world. COBOL\nsupports\n⁠\n(opens in a new window)\nmore than 40% of online banking systems, 80% of in-person credit card transactions and 95% of ATM transactions, while Fortran is used in\nweather forecasting\n⁠\n(opens in a new window)\nand\nnuclear reactor safety analysis\n⁠\n(opens in a new window)\n. Improving AI’s ability to work in these languages could help teams maintain and modernize the software that essential services depend on.\nThis work is guided by feedback from developers and enterprise customers who have told us that coding models often struggle with these languages. Maintaining and modernizing this software can be difficult: documentation may be incomplete, original developers may have left the company, and important business rules may only exist in code. Whether teams are fixing bugs or migrating to another language, they need to preserve the behavior their systems depend on.\nTo measure progress, we developed two evaluations. MultiLangBench tests whether a model can build a SQLite-compatible database engine from scratch across 20 different programming languages. Our COBOL migration evaluation tests whether a model can migrate existing programs to another language while preserving their behavior. Together, they test two complementary skills: building new software and preserving what existing software does.\nOur latest models show substantial improvements across both evaluations, delivering much higher accuracy at lower cost.\nOn MultiLangBench, GPT‑6 Astra achieves an average test pass rate of 87.4% across 20 programming languages, up from 26.8% for GPT‑5.6 Sol, with improvements in every language tested. GPT‑6 Luna also outperforms GPT‑5.6 Sol, reaching 40.3% at approximately 78% lower estimated API cost.\nOn our COBOL migration evaluation, GPT‑6.1 Sol achieves 86.6% accuracy at low reasoning effort, compared with just 5.4% for GPT‑5.6 Sol, while costing 39% less. At higher reasoning effort, accuracy reaches 97.9%, nearly saturating the evaluation.\nTogether, these results show that our models are becoming significantly better at working with a wide range of programming languages, while also becoming more cost-efficient.\n1. Building SQLite from scratch (MultiLangBench)\nMultiLangBench asks a model to build a SQLite-compatible database engine in a specified programming language. The model must organize a codebase, manage state, handle errors, and add new features while preserving existing functionality.\nTo compare implementations across languages, we use database files as a shared interface. The candidate program receives an initial database and a SQL query, then produces a modified database. We use the reference SQLite implementation to check whether the resulting database has the expected contents. This lets us apply the same tests regardless of the language used to build the engine.\nWe adapted tests from SQLite’s existing test suite to this format. The evaluation measures how much working functionality a model can build over an extended coding session, reporting both test pass rate and API cost.\nAt maximum reasoning effort, GPT‑6 Astra achieves an average test pass rate of 87.4% across the 20 languages, up from 26.8% for GPT‑5.6 Sol. Improvements extend to every language tested, including COBOL (10.9% to 72.1%), OCaml (25.6% to 85.8%), Fortran (21.4% to 83.5%), and Visual Basic (27.5% to 89.4%). Astra scores above 83% in 19 of the 20 languages, with COBOL remaining the hardest at 72%.\nGPT‑6 Luna offers a lower-cost option that also improves on GPT‑5.6 Sol in every language tested. At maximum reasoning effort, it reaches an average test pass rate of 40.3%. Gains include COBOL (10.9% to 17.1%), OCaml (25.6% to 34.1%), Fortran (21.4% to 31.4%), and Visual Basic (27.5% to 41.6%). These improvements come at an estimated average API cost of $0.77 per sample, compared with $3.48 for GPT‑5.6 Sol, approximately 78% lower.\nAverage test pass rate\nSQLite test pass rate by language\nBoth models at maximum reasoning effort.\nGPT-6 Astra\nGPT-5.6 Sol\nSQLite test pass rate — C\nAPI cost\nOutput tokens\nAPI cost\nOutput tokens\nGPT-6 Astra\nGPT-6.1 Sol\nGPT-6 Luna\nGPT-5.6 Sol\nWe are releasing the MultiLangBench evaluation setup and test suite on\nGitHub\n⁠\n(opens in a new window)\n, along with results for each language. Developers can inspect what the evaluation tests, review performance in the languages they use, and identify gaps that matter for their own work.\n2. Migrating a COBOL codebase\nOur second evaluation asks models to migrate COBOL programs to C++, Java, Kotlin, Python, or Rust while preserving what each program does.\nSuccessful migration requires understanding both the program’s business logic and COBOL’s specific language behavior. COBOL programs often process financial transactions and business records, where details such as rounding rules and missing-record handling reflect business requirements. For example, COBOL’s fixed-point arithmetic discards excess decimal digits unless rounding is explicitly requested. A rewrite that rounds those values instead can run without errors while producing different financial results.\nTo test whether these behaviors are preserved, we evaluate our models on hidden tests that require byte-for-byte parity on observable outputs. A migration is considered successful only if all tests pass. Behavior-preserving capabilities like these are useful for teams maintaining and modernizing older systems, though applying it to production software still requires expert review and testing against the system’s business rules and dependencies.\nOn this evaluation, GPT‑6.1 Sol achieves 86.6% accuracy at low reasoning effort, compared with GPT‑5.6 Sol’s 5.4% at the same setting at just 61% of the API cost. At higher reasoning effort, accuracy reaches 97.9%, bringing the evaluation close to saturation. These evaluation results demonstrate progress toward more accurate, affordable code migration for teams modernizing the software their businesses depend on.\nAdvancing capabilities for enterprise software\nThese evaluations, alongside direct feedback from developers and enterprise customers, help us see where our models are improving and where they still fall short.\nOur goal is to help models apply software engineering skills across more languages: understanding unfamiliar repositories, planning changes, using build tools, running tests, and debugging failures.\nYou can try our latest models through the API on coding tasks in the languages your team uses. Your feedback on what works, where the models struggle, and which languages or workflows we should focus on next helps shape how we train and evaluate models to better support the software you depend on.\nSoftware & Engineering\nGPT\nLearning Paradigms\n2026\nAuthor\nOpenAI\nKeep reading\nView all\nIntroducing the Rosalind Academic Plan\nResearch\nOct 15, 2026\nSharing AI progress in mathematics\nResearch\nOct 6, 2026\nAdvancing computer use with Ironclad\nPublication\nOct 6, 2026",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://openai.com/index/low-resource-programming-languages/",
+      "content_chars": 7542,
+      "content_sha256": "fca56e44b5a39c7d59a56801f5f0ac96cbba5cded7e2dd0112a7048a1c1a190d",
+      "content_fetched_at": "2026-10-20T00:13:43.935437+00:00",
+      "author": "openai-research",
+      "author_name": "OpenAI Research",
+      "author_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "published_at": "2026-10-20T00:11:35.710908+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:openai-research",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://openai.com/zh-Hans-CN/research/index/",
+        "https://openai.com/index/low-resource-programming-languages/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "openai-research",
+          "url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "openai-research",
+          "name": "OpenAI Research",
+          "home_url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "article": {
+          "title": "Advancing coding in low‑resource programming languagesLearn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL",
+          "url": "https://openai.com/index/low-resource-programming-languages/",
+          "content_sha256": "fca56e44b5a39c7d59a56801f5f0ac96cbba5cded7e2dd0112a7048a1c1a190d"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:f36d7fd2d798e36e",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "开放模型算起了每任务账单：为什么更省 Token 的模型反而更贵？",
+      "target_url": "https://yage.ai/share/open-models-cost-per-task-20261020.html",
+      "text": "yage-share published: 开放模型算起了每任务账单：为什么更省 Token 的模型反而更贵？",
+      "at": "2026-10-20T00:00:00+00:00",
+      "external_id": "a:f36d7fd2d798e36e",
+      "url": "https://yage.ai/share/open-models-cost-per-task-20261020.html",
+      "title": "开放模型算起了每任务账单：为什么更省 Token 的模型反而更贵？",
+      "content": "2026 年 10 月发布的 Beam、DeepSeek V4.1 Flash、Nemotron 3.5 Super VL 与 Muse Spark Open 将性价比叙事转向每任务账单（Cost per Task）。本文拆解单价与输出长度的架构取舍，以及自建显存摊销与 Agent 重试率两笔生产硬账。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/open-models-cost-per-task-20261020.html",
+      "content_chars": 152,
+      "content_sha256": "a42db84c5989c909c18866bd6585ec4e1e350258cd1beb20b7c9ff88f6d4025b",
+      "content_fetched_at": "2026-10-20T23:45:12.091451+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/open-models-cost-per-task-20261020.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "开放模型算起了每任务账单：为什么更省 Token 的模型反而更贵？",
+          "url": "https://yage.ai/share/open-models-cost-per-task-20261020.html",
+          "content_sha256": "a42db84c5989c909c18866bd6585ec4e1e350258cd1beb20b7c9ff88f6d4025b"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    },
+    {
+      "id": "a:b1e34d2641276f80",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-80092 Microsoft Identity Web Elevation of Privilege Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80092",
+      "text": "msrc published: CVE-2026-80092 Microsoft Identity Web Elevation of Privilege Vulnerability",
+      "at": "2026-10-19T14:00:00+00:00",
+      "external_id": "a:b1e34d2641276f80",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80092",
+      "title": "CVE-2026-80092 Microsoft Identity Web Elevation of Privilege Vulnerability",
+      "content": "# CVE-2026-80092 - Microsoft Identity Web Elevation of Privilege Vulnerability\n\nAuthentication bypass by assumed-immutable data in Microsoft Identity Web allows an authorized attacker to elevate privileges over a network.\n\nCWE: CWE-302: Authentication Bypass by Assumed-Immutable Data",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80092",
+      "content_chars": 284,
+      "content_sha256": "4a2029045e4c95d101114315262dd02d95d89dc615805a95eb402493569a8692",
+      "content_fetched_at": "2026-10-20T00:13:50.281629+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-19T14:00:00+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80092"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-80092 Microsoft Identity Web Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80092",
+          "content_sha256": "4a2029045e4c95d101114315262dd02d95d89dc615805a95eb402493569a8692"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:aebe9f47e43ff581",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "掏钱上班、电视盒里的大模型、和一个卖不掉自己的 AI 陪聊公司",
+      "target_url": "https://yage.ai/share/ai-news-briefing-20261019.html",
+      "text": "yage-share published: 掏钱上班、电视盒里的大模型、和一个卖不掉自己的 AI 陪聊公司",
+      "at": "2026-10-19T00:00:00+00:00",
+      "external_id": "a:aebe9f47e43ff581",
+      "url": "https://yage.ai/share/ai-news-briefing-20261019.html",
+      "title": "掏钱上班、电视盒里的大模型、和一个卖不掉自己的 AI 陪聊公司",
+      "content": "本期三条：员工自费买 AI 办公、数据泄了谁负责；15 台 55 美元的旧电视盒合跑起一个 26B 模型；Character.ai 破产，迪士尼拿走了什么、留下了什么。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/ai-news-briefing-20261019.html",
+      "content_chars": 84,
+      "content_sha256": "fd33349465741214b5f5d46eeae014a0dd98d7be70dc0bc541cb88b215b7bdb8",
+      "content_fetched_at": "2026-10-20T00:12:19.828540+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-19T00:00:00+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/ai-news-briefing-20261019.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "掏钱上班、电视盒里的大模型、和一个卖不掉自己的 AI 陪聊公司",
+          "url": "https://yage.ai/share/ai-news-briefing-20261019.html",
+          "content_sha256": "fd33349465741214b5f5d46eeae014a0dd98d7be70dc0bc541cb88b215b7bdb8"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    },
+    {
+      "id": "a:0b2d08471f3ce200",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "当 AI 写得比人读得快，Code Review 还剩什么？",
+      "target_url": "https://yage.ai/share/ai-code-review-attention-bottleneck-20261019.html",
+      "text": "yage-share published: 当 AI 写得比人读得快，Code Review 还剩什么？",
+      "at": "2026-10-19T00:00:00+00:00",
+      "external_id": "a:0b2d08471f3ce200",
+      "url": "https://yage.ai/share/ai-code-review-attention-bottleneck-20261019.html",
+      "title": "当 AI 写得比人读得快，Code Review 还剩什么？",
+      "content": "当编码 Agent 让写代码的边际成本归零，PR 流转与工程师的注意力成为交付系统中最昂贵的瓶颈。Anthropic 将代码评审分流为三道工序，用责任门禁代替形式主义。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/ai-code-review-attention-bottleneck-20261019.html",
+      "content_chars": 84,
+      "content_sha256": "d9066b9e6f27ec75ac64e9b803020c429d80f4966c9caa40de0176a59d160245",
+      "content_fetched_at": "2026-10-20T23:45:12.646441+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-19T00:00:00+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/ai-code-review-attention-bottleneck-20261019.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "当 AI 写得比人读得快，Code Review 还剩什么？",
+          "url": "https://yage.ai/share/ai-code-review-attention-bottleneck-20261019.html",
+          "content_sha256": "d9066b9e6f27ec75ac64e9b803020c429d80f4966c9caa40de0176a59d160245"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    },
+    {
+      "id": "a:a26369873d4c84d3",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "为 agent 重造地基：Anthropic 的 CI 与 Scion，哪些判断能复用、哪些不必照搬",
+      "target_url": "https://yage.ai/share/anthropic-scion-agent-scale-infra-20261018.html",
+      "text": "yage-share published: 为 agent 重造地基：Anthropic 的 CI 与 Scion，哪些判断能复用、哪些不必照搬",
+      "at": "2026-10-18T00:00:00+00:00",
+      "external_id": "a:a26369873d4c84d3",
+      "url": "https://yage.ai/share/anthropic-scion-agent-scale-infra-20261018.html",
+      "title": "为 agent 重造地基：Anthropic 的 CI 与 Scion，哪些判断能复用、哪些不必照搬",
+      "content": "Anthropic 用 Claude 写代码，四个月里每天合入主干的改动从 2,500 次涨到 30,000 次以上，把按人类规模设计的开发基建整垮了。这篇文章拆解他们如何用 5 个月、7 个人重写版本控制系统 Scion，以及哪些判断别的团队能直接复用、哪些只是 Anthropic 自己的仗。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/anthropic-scion-agent-scale-infra-20261018.html",
+      "content_chars": 148,
+      "content_sha256": "9f8904aed1f3173e207111ca360b549408bedf3d5ca48bcb2a53e370c882f240",
+      "content_fetched_at": "2026-10-20T00:12:20.591276+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-18T00:00:00+00:00",
+      "collected_at": "2026-10-20T23:44:37.431569+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/anthropic-scion-agent-scale-infra-20261018.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "为 agent 重造地基：Anthropic 的 CI 与 Scion，哪些判断能复用、哪些不必照搬",
+          "url": "https://yage.ai/share/anthropic-scion-agent-scale-infra-20261018.html",
+          "content_sha256": "9f8904aed1f3173e207111ca360b549408bedf3d5ca48bcb2a53e370c882f240"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    }
+  ]
+}

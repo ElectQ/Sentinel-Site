@@ -93,6 +93,10 @@
     "bundle_date": "2026-10-02",
     "emitted_at": "2026-10-02T00:37:52.602014+00:00"
   },
+  "anthropic-research:a:26049a43c6a936ee": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
+  },
   "anthropic-research:a:7a6a342eb9583796": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -101,6 +105,10 @@
     "bundle_date": "2026-09-30",
     "emitted_at": "2026-09-30T00:16:27.541665+00:00"
   },
+  "anthropic-research:a:952c54fa1fd4c68f": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
+  },
   "anthropic-research:a:a842dc410cb55f4f": {
     "bundle_date": "2026-10-10",
     "emitted_at": "2026-10-10T00:39:58.428209+00:00"
@@ -108,6 +116,10 @@
   "anthropic-research:a:b407e87d584347be": {
     "bundle_date": "2026-10-13",
     "emitted_at": "2026-10-13T02:29:46.214752+00:00"
+  },
+  "anthropic-research:a:c021c28354e5e9fa": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
   },
   "anthropic-research:a:e6bb69f517c664dd": {
     "bundle_date": "2026-10-13",
@@ -1225,6 +1237,10 @@
   },
   "cymulate-blog:a:78f67c7e4e475fe6": {
     "bundle_date": "2026-08-21"
+  },
+  "cymulate-blog:a:8f17f098e3ef8c5a": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
   },
   "cymulate-blog:a:a71377f72462595f": {
     "bundle_date": "2026-10-07",
@@ -2795,6 +2811,10 @@
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
   },
+  "msrc:a:2cf18a11ab63341b": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
+  },
   "msrc:a:2d6ca26c75c100c3": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -3129,6 +3149,10 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:7003b4db8f4ad8af": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
+  },
   "msrc:a:70bc99da67697e4f": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -3189,6 +3213,10 @@
   "msrc:a:7dbc47c86c4e6a89": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:8049bf8d18ea4f3a": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
   },
   "msrc:a:8187aad1ea093fcd": {
     "baseline": true,
@@ -3328,6 +3356,10 @@
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
   },
+  "msrc:a:9cd1aed286a105bf": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
+  },
   "msrc:a:9dd5f3926b1e540c": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
@@ -3344,10 +3376,18 @@
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
+  "msrc:a:a2333d9cc8189a38": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
+  },
   "msrc:a:a397a8fc2cced920": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:a3bcf22c3d6c7372": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
   },
   "msrc:a:a504bc444ef366c8": {
     "bundle_date": "2026-10-17",
@@ -3572,6 +3612,10 @@
   "msrc:a:ca74583714737288": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:cae5b2606a5bb7fd": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
   },
   "msrc:a:cb4c822a8471805b": {
     "baseline": true,
@@ -3905,6 +3949,10 @@
   "openai-research:a:6e2c593ea404da1b": {
     "bundle_date": "2026-10-07",
     "emitted_at": "2026-10-07T00:32:50.824376+00:00"
+  },
+  "openai-research:a:6f3c4f58f2d1191e": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
   },
   "openai-research:a:787fde03d4dfa447": {
     "bundle_date": "2026-09-30",
@@ -5465,6 +5513,10 @@
   "unknowncheats-ac:a:e314411385c93251": {
     "bundle_date": "2026-08-19"
   },
+  "unknowncheats-ac:a:e3291890d80a8b35": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
+  },
   "unknowncheats-ac:a:e3cd89b416562e6d": {
     "bundle_date": "2026-08-18"
   },
@@ -5893,6 +5945,10 @@
   },
   "yage-share:a:0a55efc6fe96ccde": {
     "bundle_date": "2026-09-03"
+  },
+  "yage-share:a:0b2d08471f3ce200": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
   },
   "yage-share:a:0d6227c7ecd8b570": {
     "bundle_date": "2026-08-31"
@@ -6771,6 +6827,10 @@
   },
   "yage-share:a:f2da2f1fbc44105e": {
     "bundle_date": "2026-07-22"
+  },
+  "yage-share:a:f36d7fd2d798e36e": {
+    "bundle_date": "2026-10-21",
+    "emitted_at": "2026-10-20T23:44:37.431569+00:00"
   },
   "yage-share:a:f3ca00ee7b630f09": {
     "baseline": true,
