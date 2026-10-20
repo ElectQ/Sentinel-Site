@@ -3424,6 +3424,10 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:b1e34d2641276f80": {
+    "bundle_date": "2026-10-20",
+    "emitted_at": "2026-10-20T00:11:35.710908+00:00"
+  },
   "msrc:a:b26ea73579444d92": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -3913,6 +3917,10 @@
   "openai-research:a:b0363c6deea56393": {
     "bundle_date": "2026-10-07",
     "emitted_at": "2026-10-07T00:32:50.824376+00:00"
+  },
+  "openai-research:a:b474c3614e4cf3b3": {
+    "bundle_date": "2026-10-20",
+    "emitted_at": "2026-10-20T00:11:35.710908+00:00"
   },
   "otterpwn:a:28143303bb765b6b": {
     "baseline": true,
@@ -5408,6 +5416,10 @@
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
+  "unknowncheats-ac:a:c5cfb9a0cb5d5333": {
+    "bundle_date": "2026-10-20",
+    "emitted_at": "2026-10-20T00:11:35.710908+00:00"
+  },
   "unknowncheats-ac:a:c61ae532f3c06ab7": {
     "bundle_date": "2026-10-02",
     "emitted_at": "2026-10-02T00:37:52.602014+00:00"
@@ -5430,6 +5442,10 @@
   },
   "unknowncheats-ac:a:d5592d587dc9e606": {
     "bundle_date": "2026-08-28"
+  },
+  "unknowncheats-ac:a:d5afcabbcb212a04": {
+    "bundle_date": "2026-10-20",
+    "emitted_at": "2026-10-20T00:11:35.710908+00:00"
   },
   "unknowncheats-ac:a:d754a3e127ce9abe": {
     "bundle_date": "2026-09-11"
@@ -6435,6 +6451,10 @@
   "yage-share:a:a1e5ff4858d6103d": {
     "bundle_date": "2026-08-18"
   },
+  "yage-share:a:a26369873d4c84d3": {
+    "bundle_date": "2026-10-20",
+    "emitted_at": "2026-10-20T00:11:35.710908+00:00"
+  },
   "yage-share:a:a39b71a17fe38ab4": {
     "bundle_date": "2026-07-28"
   },
@@ -6456,6 +6476,10 @@
   "yage-share:a:ae3aaf728c2a4e02": {
     "baseline": true,
     "bundle_date": "baseline"
+  },
+  "yage-share:a:aebe9f47e43ff581": {
+    "bundle_date": "2026-10-20",
+    "emitted_at": "2026-10-20T00:11:35.710908+00:00"
   },
   "yage-share:a:af2da94ac2b0431c": {
     "baseline": true,
