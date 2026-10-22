@@ -93,6 +93,10 @@
     "bundle_date": "2026-10-22",
     "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
+  "anthropic-research:a:1360bd8eb5a8e67e": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
+  },
   "anthropic-research:a:1eadfb1cd5ee2dc4": {
     "bundle_date": "2026-10-02",
     "emitted_at": "2026-10-02T00:37:52.602014+00:00"
@@ -219,6 +223,10 @@
   "bhis-blog:a:2cc3074b7046f7a1": {
     "baseline": true,
     "bundle_date": "baseline"
+  },
+  "bhis-blog:a:2d6b098984dd2250": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
   },
   "bhis-blog:a:30e98931df78808c": {
     "baseline": true,
@@ -1320,6 +1328,10 @@
   "cymulate-blog:a:af851fdf9952e91e": {
     "bundle_date": "2026-09-04"
   },
+  "cymulate-blog:a:c4af6f09bec33385": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
+  },
   "cymulate-blog:a:cf89b1d3159d3991": {
     "bundle_date": "2026-08-04"
   },
@@ -1332,6 +1344,10 @@
   },
   "cymulate-blog:a:df29e022ebc1776e": {
     "bundle_date": "2026-07-29"
+  },
+  "cymulate-blog:a:ea86b357cba4dce5": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
   },
   "deadeclipse-blog:a:074666730c7886b2": {
     "baseline": true,
@@ -1485,6 +1501,10 @@
   "denizhalil-blogs:a:45a7eea83f8329d4": {
     "baseline": true,
     "bundle_date": "baseline"
+  },
+  "denizhalil-blogs:a:4809865d8e741667": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
   },
   "denizhalil-blogs:a:504399989c73d6aa": {
     "bundle_date": "2026-09-09"
@@ -2312,6 +2332,10 @@
   "hacktron-blog:a:f5251899bc82af02": {
     "bundle_date": "2026-07-20"
   },
+  "hacktron-blog:a:f90cd0c938940999": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
+  },
   "hacktron-blog:a:fab46bb814f4894c": {
     "baseline": true,
     "bundle_date": "baseline"
@@ -3012,6 +3036,10 @@
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
   },
+  "msrc:a:4273c05ff1b7f758": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
+  },
   "msrc:a:43baaf36f340c73b": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -3057,6 +3085,10 @@
   "msrc:a:4da193108a945747": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
+  },
+  "msrc:a:4dbd6628d42d7ad3": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
   },
   "msrc:a:4dc262c9f7d8db4b": {
     "bundle_date": "2026-10-16",
@@ -3210,6 +3242,10 @@
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
   },
+  "msrc:a:6b9aa0664452701f": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
+  },
   "msrc:a:6cacae023d7d198e": {
     "baseline": true,
     "bundle_date": "baseline",
@@ -3289,6 +3325,10 @@
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:7c1ce9da91a85a59": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
   },
   "msrc:a:7dbc47c86c4e6a89": {
     "bundle_date": "2026-10-16",
@@ -3404,6 +3444,10 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:97009cc4e26d28cc": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
+  },
   "msrc:a:9706c41ff6efd84d": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -3490,6 +3534,10 @@
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:a9a8f75e73bb867c": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
   },
   "msrc:a:a9b217b26a8f99e8": {
     "baseline": true,
@@ -3739,6 +3787,10 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:d078ae182673a8dd": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
+  },
   "msrc:a:d154e31962744138": {
     "baseline": true,
     "bundle_date": "baseline",
@@ -3834,6 +3886,10 @@
   "msrc:a:e1b4415ab3b6f355": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:e29c8705d9593d83": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
   },
   "msrc:a:e371c96320e09a00": {
     "bundle_date": "2026-10-16",
@@ -5326,6 +5382,10 @@
   "unknowncheats-ac:a:3a4ea38100c73b78": {
     "bundle_date": "2026-09-21"
   },
+  "unknowncheats-ac:a:3bc8646366b3ca83": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
+  },
   "unknowncheats-ac:a:4555ed7181e768f5": {
     "bundle_date": "2026-09-14"
   },
@@ -6343,6 +6403,10 @@
   "yage-share:a:5be18113548a39fc": {
     "bundle_date": "2026-08-16"
   },
+  "yage-share:a:5bfb31aa36cd49e4": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
+  },
   "yage-share:a:5cb08317a6b84358": {
     "bundle_date": "2026-10-02",
     "emitted_at": "2026-10-02T00:37:52.602014+00:00"
@@ -6556,6 +6620,10 @@
   },
   "yage-share:a:96566e84cc3742bc": {
     "bundle_date": "2026-07-21"
+  },
+  "yage-share:a:96d33a6f3e931bc6": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
   },
   "yage-share:a:9832ae134cd12832": {
     "bundle_date": "2026-10-10",
@@ -8265,5 +8333,9 @@
   },
   "zusda:a:b4a689ad8e7d6d71": {
     "bundle_date": "2026-08-11"
+  },
+  "zusda:a:e1393db4bad20da8": {
+    "bundle_date": "2026-10-23",
+    "emitted_at": "2026-10-22T23:56:04.895191+00:00"
   }
 }

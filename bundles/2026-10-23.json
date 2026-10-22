@@ -1,0 +1,1449 @@
+{
+  "schema_version": 1,
+  "source_id": "blog_watch",
+  "collect_date": "2026-10-23",
+  "collect_window": {
+    "start": "2026-10-21T00:00:00+00:00",
+    "end": "2026-10-22T23:56:04.895191+00:00",
+    "hours": 47
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "39874950141",
+    "commit": "a8ab375"
+  },
+  "stats": {
+    "total": 18,
+    "by_kind": {
+      "publish": 18
+    },
+    "by_via": {
+      "browser_llm": 1,
+      "llm": 4,
+      "rss": 13
+    },
+    "by_source": {
+      "unknowncheats-ac": 1,
+      "zusda": 1,
+      "cymulate-blog": 2,
+      "anthropic-research": 1,
+      "bhis-blog": 1,
+      "msrc": 8,
+      "denizhalil-blogs": 1,
+      "yage-share": 2,
+      "hacktron-blog": 1
+    },
+    "failed_lists": [],
+    "sources_ok": 55,
+    "sources_failed": [],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 10,
+      "rss": 35
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 14,
+      "calls": 14,
+      "prompt_tokens": 15087,
+      "completion_tokens": 2510,
+      "total_tokens": 17597,
+      "prompt_cache_hit_tokens": 7936,
+      "prompt_cache_miss_tokens": 7151
+    },
+    "by_content_status": {
+      "ok": 16,
+      "partial": 2
+    }
+  },
+  "items": [
+    {
+      "id": "a:3bc8646366b3ca83",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4838839.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4838839.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4838839.html",
+      "at": "2026-10-22T23:56:04.895191+00:00",
+      "external_id": "a:3bc8646366b3ca83",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4838839.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4838839.html",
+      "content": "Quote:\nOriginally Posted by\nNieteNr1\nWhat has been working extremely well for me lately:\n- VS Code + Cline as the agent layer (it reads/writes files, runs commands, and iterates on its own output)\n- OpenRouter as the provider, so you can swap models without changing anything else\n- GLM 5.3 Flash through that setup, honestly surprisingly strong for both static analysis reasoning and generating tooling/scripts\n- REA as the binary analysis backend, which drives a headless Ghidra under the hood, so you get function dossiers, pseudocode and call graphs from a real decompiler, and an agent that can actually consume and verify that output\nRegarding safety mechanisms: cant really speak to that, because I simply never hit the wall. GLM 5.3 Flash does every reverse engineering task I throw at it, happy and without any pushback, no matter how it is worded. Disassembly, struct recovery, game memory layouts, cheat related research, all of it just gets done. Maybe other models are pickier, but with this setup the question never really came up\nDang, Maybe i am doing osmething wrong, but i was just letting itself get up to date with my repo, and it didnt wanna touch anything lol. Sonnet 4.6 is the only thing thatd let itself go... thought your setup was going to be really promising. Maybe im seeing something differently?\nhttps://i.8upload.com/image/f836af63...0d/snippet.png",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai.html#post4838839",
+      "content_chars": 1380,
+      "content_sha256": "6e0275e36a951f85867afeb5514b99de77d9ebeb1970e721234d0535fdb8d8fe",
+      "content_fetched_at": "2026-10-22T23:56:33.332999+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-10-22T23:56:04.895191+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4838839.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4838839.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773326-ai-post4838839.html",
+          "content_sha256": "6e0275e36a951f85867afeb5514b99de77d9ebeb1970e721234d0535fdb8d8fe"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:e1393db4bad20da8",
+      "who": "zusda",
+      "who_url": "https://zusda.github.io/",
+      "action": "publish",
+      "target": "ai学术篇 1.模型训练加速",
+      "target_url": "https://zusda.github.io/2026/10/21/ai%E5%AD%A6%E6%9C%AF%E7%AF%87-1-%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E5%8A%A0%E9%80%9F/",
+      "text": "zusda published: ai学术篇 1.模型训练加速",
+      "at": "2026-10-22T23:56:04.895191+00:00",
+      "external_id": "a:e1393db4bad20da8",
+      "url": "https://zusda.github.io/2026/10/21/ai%E5%AD%A6%E6%9C%AF%E7%AF%87-1-%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E5%8A%A0%E9%80%9F/",
+      "title": "ai学术篇 1.模型训练加速",
+      "content": "前言\n本文主要介绍模型训练所涉及的基础知识，以及在此基础上如何提高训练效率、加速模型训练。\n姑且将 AI 系列后续内容分为以下 4 个部分：\n学术篇：\nLLM\n基础知识、模型训练、各类算法的原理与实现等。\n开发篇：\nAgent 框架、各类 AI 应用的开发等。\n运维篇：\nAgent 应用的部署、推理参数测试等。\n杂项：\nAI\n渗透、视频生成、音频生成、超分辨率等其他内容。\n本来打算等 SMT\n训练完成后再写这篇文章，但今天开始训练时，又学到了不少与训练效率相关的知识。为了梳理今天学到的内容，索性一边整理，一边把它们写成博客。\n本篇快写完了，先做个总结。\n总体来说，训练效率优化主要分为两步：首先优化代码执行效率，减少不必要的计算开销；然后在不超出硬件承载能力的前提下，尽可能提高\nBatch Size，充分利用显存和计算资源，从而提升整体训练速度。\n不过，\n调整 Batch Size\n不只是性能优化，也可能改变训练行为\n，进而影响梯度更新、收敛过程和最终结果。因此，在复现他人的源码时，如果目标是尽可能保持原有训练行为，就应优先优化代码执行效率，而不是随意修改\nBatch Size\n等训练参数。（因此，这次复现\n只需优化代码\n执行效率，\n保持原有训练参数不变\n，直接部署到服务器训练即可，之前纠结于调整\nBatch Size 加速训练其实没有必要。）\n1. 基础知识\n1.1 GPU 利用率（GPU\nUtilization）\nGPU 利用率主要衡量 GPU\n在\n一段时间内\n处于活动状态的时间比例。\n例如，\nnvidia-smi\n中的\nutilization.gpu\n表示在最近\n一个采样周期内\n，GPU\n有多少时间在干活（即至少有一个任务正在执行）。\n1.2 显存占用率（Memory Usage）\n显存占用率衡量的是显存资源的使用情况，可以通过以下指标计算：\n1\nmemory.used / memory.total\n其中，\nmemory.used\n表示已使用的显存，\nmemory.total\n表示总显存。\n在每个 batch\n执行相同训练操作的前提下，可以将显存占用率简化理解为：\n一个 batch\n完整训练所需的显存资源与 GPU 总显存的比例\n。\n实际显存占用还可能包含 CUDA\n上下文、缓存分配器预留的显存等额外开销。\n1.3 资源利用率\n计算资源\n主要指 GPU\n内部负责\n执行运算的硬件单元\n，例如\nSM（流式多处理器）及其中的 CUDA Core、Tensor Core 等。\n可以将这些计算单元比作工厂里的工位：计算资源利用率反映的是这些硬件单元在执行任务时的实际繁忙程度。\n如果部分计算单元没有得到充分利用，就意味着 GPU\n仍有潜在的计算能力未被发挥出来。\n怎么判断：\n一般先看功耗：\npower.draw / power.limit\n。\n用\nnvidia-smi\n的\npower.draw\n除以该卡功耗上限（\npower.limit\n），近似反映计算单元被铺满的程度。\n这个方式方便快捷，日常一般就看它\n——功耗高说明计算单元在满负荷运转，功耗低说明大量计算单元闲着。\n要精确看吞吐：steps/s 或 samples/s。\n这是最准确的依据，但\nnvidia-smi\n看不到，需要在训练代码里自己计时统计\n（如每个 step\n记录时间戳，算每秒处理的 batch 数或样本数）。吞吐随 batch\n增大而上涨，涨到不再涨，说明计算资源已吃满。\n2. 训练计算流程原理\n训练过程中，同一个 Batch 内的样本并行计算，而不同 Batch\n的训练步骤通常按顺序执行。\nbatch 内部\n：\n并行计算\n。一个 Batch\n中的样本一起输入\nGPU，由多个计算单元并行处理。若计算任务超过硬件的即时处理能力，就会分批执行。\nbatch 之间\n：\n依次执行\n。\n标准训练流程中，通常需要完成当前 Batch\n的前向传播、反向传播和参数更新，才能开始下一个 Batch 的训练。\n为什么 batch 之间必须串行：\n下一个 batch\n的计算要用更新后的权重，而权重更新要等上一个 batch\n的梯度算完。后一步依赖前一步的结果，无法同时进行。\n显存里同一时刻只有\n一个 batch\n的中间结果，所以显存是复用的：上一个 batch\n的中间结果（各层激活值等）在反向传播算完梯度后不再需要，会被释放或覆盖，下一个\nbatch 的前向再从这块空间重新分配。因此显存占用不随 batch\n数量累积增长，而是稳定在一个 batch 所需的峰值附近。\n3. 资源利用耗时计算原理\n前提\n假设数据无限供应、显存无限，且每个样本处理时间相同，因此同样大小的\nbatch 处理时间相同。\n在这个前提下，GPU 能做到不空等、一直在连续跑；采样时间内 GPU 一直有\nbatch 可处理，利用率达到 100%，此时采样时间内能处理的 batch\n数量达到最大值 M。\n实际中每个 batch 的处理速度并不完全相同，所以利用率 100%\n时采样时间内的 batch 数量对应的指标其实是\n吞吐\n（steps/s\n或 samples/s），需要在训练代码里自己计时统计，\nnvidia-smi\n看不到。这里分析的是加速训练的因素，因此设定每个 batch\n处理速度相同。\n理想模型：一个样本作为一块\n有 b 个计算单元，并行处理 b 个样本（资源 100% 利用），所需时间\nt。\n没吃满阶段（样本数 ≤ b）：\nbatch\n加大，处理时间不变，仍为 t，吞吐随 batch 线性上涨。\n吃满之后（样本数 > b）：\n处理时间 = ⌈样本数 / b⌉\n× t。例如 b+1 个样本需要 2t，因为多出的 1\n个样本要等下一轮计算单元空出来才能处理。\n补充：这里隐含\"每个样本正好占用 1\n个计算单元、且耗时相同\"的假设。若样本耗时不同，波次会出现\"短板效应\"——同一波里\n最慢的样本\n决定该波结束时间，部分计算单元会空转等待。\n现实模型：一个样本被切成多个小块\n一个样本会被切成多个小块。用 N 表示计算单元数（并行处理 N 个小块），s\n表示一波（并行算一次小块）的时间，一个样本被切成 n 个小块。\n一个 batch 的总块数 ≤ N：\n一波算完，耗时 s。\n总块数 > N：\n耗时 = ⌈总块数 / N⌉ × s。\n多加 1 个样本举例：\n假设总块数刚好占满所有计算单元（正好排满整数波），此时多加 1\n个样本，总块数增加 n，多出约 ⌈n / N⌉ 波的时间，每波只有 s。因为 s\n远小于整个 batch 的耗时，所以增量很小，不会像理想模型那样直接变成\n2t，曲线看起来是斜坡。\n对比\n理想模型：\n多 1 个样本，可能多整整一轮，t 变\n2t（阶梯状跳变）。\n现实模型：\n多 1\n个样本，只多几个小波，耗时略增（近似斜坡）。\n补充：两个模型的差异本质是\n并行粒度\n不同。\n理想模型把样本当作不可分割的最小调度单位，资源利用率在\"未满\"与\"满\"之间突变；\n现实模型把样本拆成小块，调度单位更细，能填满计算单元的空隙，因此耗时随\nbatch 增长更平滑。\n实际 GPU 训练介于两者之间：粒度比\"整样本\"细，但受 kernel\n启动开销、同步屏障、尾部效应（最后不足一波的部分）影响，斜坡上仍会有小台阶，不会完全平滑。\n4. GPU\n利用率、显存占用率、资源利用率三者关系举例\n工厂（GPU）\n来了一批\n订单（batch）\n，订单里每个产品提供了一份\n原材料（样本）\n，材料先存进\n仓库（显存）\n；100\n名\n工人（计算单元，如 SM、CUDA\nCore）\n从仓库领材料干活，把每个产品做出来。\n工厂\n= GPU\n一批订单\n= 一个 batch\n订单里的每个产品原材料\n= 一个样本\n仓库\n= 显存\n100 名工人\n= 计算单元（SM、CUDA Core）\n三个指标分别看什么\n指标\n工厂里的对应\n看的是\nGPU 利用率\n工厂\n有多少时间\n在开工（哪怕只开一个工位）\n时间\n显存占用率\n仓库\n被占了多少\n空间\n资源利用率\n多少工位\n真正在干活\n计算单元\n举例\n情况 A：活太少，工位大量闲置\n工厂接到一批订单，但订单里只有 2 个产品，而工厂有 100 个工位。\nGPU 利用率\n：很高（接近\n100%）。因为工厂\n确实在开工\n，采样那一刻有工人在干活。（假设采样时间约等于做一个产品所需的时间，这里只有\n2 个产品、2 个工人同时开工，整个采样窗口内工人一直在干活。）\n资源利用率\n：很低（2/100 = 2%）。只有 2\n个工位在干活，98 个闲着。\n显存占用率\n：很低。订单少，仓库里只放了 2\n份材料。\n这说明：\n利用率高 ≠\n算力吃满\n。工厂开着门、有人在干活，但绝大多数工位是空的。\n情况 B：活很多，但仓库爆了\n订单里塞了 10000 个产品，仓库装不下，直接 OOM 报错（爆仓）。\n显存占用率\n：超过容量上限，OOM。\n这说明：\n显存是硬约束\n。batch\n再大、算力再足，仓库装不下就做不下去，此时该考虑混合精度、梯度检查点等省显存手段。\n情况 C：工位和仓库都够，但原料送不上来（多 batch\n情形）\n工位 100 个、仓库也空着，但送订单的卡车（CPU\n准备数据）太慢，工人干完一单（batch）就得等下一单到达才能干活。\nGPU 利用率\n：忽高忽低、经常掉到\n0（工人在等原料）。（假设干完一单后，要等同样长的时间才能开始下一单，而采样窗口覆盖\"这一单开始到下一单开始\"这一段，则利用率为\n50%。）\n资源利用率\n：忙的时候高，闲的时候低。\n显存占用率\n：不高（仓库没堆满）。\n这说明：\n瓶颈在数据供应（输入侧）\n，不在算力和显存。\n情况 D：工位和仓库都满，活也源源不断\nGPU 利用率\n：稳定 90% 以上。\n资源利用率\n：高（工位铺满）。\n显存占用率\n：高但没爆。\n这才是\n真正满负荷\n的理想状态。\n5. GPU\n利用率低的原因与解决办法\nGPU 利用率没满，\n最常见的原因是输入侧（CPU\n侧）跟不上\n：在采样时间内，GPU 在等 CPU 处理的事情多。CPU\n侧常见的有三种情况：数据准备跟不上、kernel\n提交慢、同步操作打断流水线。\nGPU 利用率没满，\n多数情况下（尤其是单机单卡、中小模型）主因在\nCPU 侧\n：数据准备跟不上、kernel\n提交慢、同步操作打断流水线。因此排查时应\n优先从 CPU\n侧入手\n。\n但大模型、多卡、长序列等场景下，多卡通信、显存带宽、GPU\n内部依赖也可能成为主因，CPU 侧不再是唯一重点。\n5.1 数据准备跟不上\n现象：\nGPU 在等 CPU 提供数据。典型信号是\nutilization.gpu\n忽高忽低、经常掉到 0，而\npower.draw\n也不高。\n解决办法：异步准备数据。\n用后台线程/进程提前把 batch\n准备好、放进队列，让训练函数直接从队列取到 GPU\n上计算，而不是临时现准备。\nPyTorch 中对应\nDataLoader\n的\nnum_workers > 0\n（多进程预取）、\npin_memory=True\n（锁页内存加速\nH2D 拷贝）、\nprefetch_factor\n控制预取批数。\n若\nnum_workers=0\n，数据加载和训练串行，GPU\n必然周期性空等。\n5.2 小模型中 kernel\n多且每个 kernel 计算量不大\n现象：\n有数据可算，但\nCPU 提交 kernel\n的速度跟不上 GPU 执行的速度\n，GPU 算完一个 kernel\n后要等下一个指令。\nkernel 是 GPU 上执行计算的最底层的任务单位。CPU 提交一个 kernel，GPU\n执行一个 kernel。\n模型里每个操作对应一个或几个 kernel。\n每个 kernel 的计算量由参数规模、batch、序列长度共同决定。\nCPU 提交完一个 kernel 后，立即开始准备下一个，不等 GPU 算完。\nGPU 空等的情况：\n若 CPU 提交一个 kernel 需要 20\n微秒，而 GPU 执行它只需 5 微秒，那么 GPU 算完后要再等 15\n微秒才能拿到下一个 kernel。这 15 微秒 GPU\n处于空闲，会被计入未利用的时间，拉低 GPU 利用率。\n解决方法：\n加大 batch。\n让每一步 GPU\n计算所需时间增加，从而摊薄 CPU\n提交开销。这是提高资源利用率\n最直接\n的手段，但它会改变训练行为。\ntorch.compile\n（算子融合）。\n把多个小操作合并成一个大 kernel。比如\"线性层 + 偏置 + 激活\"原本是 3 个\nkernel，合并后只发 1 次，CPU 发指令的次数直接减少。\nnote1:\n算子融合除了减少 CPU 提交次数，还能减少 kernel\n间的显存读写往返（中间结果不落显存），往往同时提升速度和降低显存占用。类似的还有手写融合算子、使用\ntorch.jit.script\n等。\nnote2:\n加大 batch 主要会影响以下训练行为：\n每个 epoch 的更新步数变少\n：数据量不变，batch 乘\nk，步数除以 k。同样 epoch 数下，总共更新的次数少了。\n梯度噪声变小\n：每步梯度更准，但小 batch\n的噪声有时有助于跳出尖锐极小值，所以 batch 过大可能泛化略差。\n最优学习率变了\n：步数少了、梯度更可靠了，原来的学习率偏保守，通常需要按比例调大（如线性缩放规则）。\n显存占用上升\n：batch 变大，每一步 forward\n产生的中间计算结果（激活值）变多，所以每一份 batch 显存占用增加，可能\nOOM。\nBatchNorm 类层的统计量变化\n（如果模型用了）：batch\n统计更稳定，行为会有细微差别。\n5.3 大量同步操作\n同步就是 CPU 停下来，等 GPU 把手上的活全算完，再往下走。\n常见的触发点：\nloss.item()\n、\nprint(tensor)\n、\ntensor.cpu()\n、\n.numpy()\n、每步都调\ntorch.cuda.synchronize()\n。其中\nprint(tensor)\n之所以触发同步，是因为打印/格式化需要具体数值，必须把数据从 GPU 拷回\nCPU。\nCPU 停着等的这段时间，没法发新指令（kernel）；GPU 算完后，要等 CPU\n醒来，处理完触发同步的代码、然后再发下一批指令，这中间 GPU 又闲了。\n完整时间线：\nCPU 发完一批 kernel，遇到同步点（如\nloss.item()\n），CPU\n停下来等 GPU 算完。\nGPU 把队列里的 kernel 全部算完。此时队列空了。\nCPU 被唤醒，拿到结果，处理完同步点后面的代码（比如 print、转成\nPython 数字）。\nCPU 重新开始发下一批 kernel，又要经历一次 kernel 提交的开销\n(准备kernel到发送给GPU的这段时间)。\n在第 2 步结束到第 4 步发出新的 kernel 之间，GPU 是空的。\n所以 GPU 空等的这一段，包含\nCPU\n被唤醒的延迟\n、\n处理同步点后代码的时间\n，以及\n准备发出\nkernel 所需的时间\n。\n日志/打印改为每 N 步一次（如\nif step % 100 == 0\n），loss\n累加用 tensor 在 GPU 上累积、最后统一取一次，避免每步\n.item()\n。真正必须同步的场合（如验证、保存\ncheckpoint）尽量放在 step 边界之外。\n或者只取每第N步的loss记录日志。\n6.\n不同场景下的调优策略\n6.1 加速常用的 4 种方法\n手段\n提什么\n风险\n加速原理\n异步数据提供\nGPU 利用率\n无\n数据加载与 GPU 计算重叠，减少 GPU\n等数据的时间，从而提高 GPU 利用率\n更快的 attention\n速度 + 显存\n低\n分块计算、不物化完整的\"序列长度×序列长度\"attention\n矩阵，减少显存读写和显存占用，序列越长收益越大\n混合精度 AMP\n速度 + 显存\n低\n大部分计算降为 16 位浮点，走 Tensor Core\n加速矩阵运算，同时减少显存占用，使更大 batch 成为可能\ntorch.compile\nkernel 开销 + 显存\n低~中\n算子融合把多个小 kernel 合成一个，减少 CPU\n提交次数和 kernel 间的显存读写往返\n6.2\n场景一：复现已有工作（论文/原项目）\n在已有源代码的基础上，不去修改batch(修改batch会改变原本的训练行为，详细看5.2的note2部分)。\n我们能做的仅有优化内部代码从而加速训练\n添加异步数据提供（减少GPU的数据等待时间）\n添加混合精度 AMP训练\n网络使用更快的 attention\n判断是否适合使用\ntorch.compile\n（判断标准看第7小节）\n在已有源代码的基础上，\n不改 batch\n（batch\n由论文或原项目定，改它可能改变训练行为，见 5.2\n的note2说明），只通过优化内部代码来加速训练：\n异步数据提供\n——减少 GPU 等数据的时间。\n混合精度 AMP\n——加速计算、降低显存。\n更快的 attention\n——模型有 attention 时使用。\n使用\ntorch.compile\n——判断判断是否适合的标准见第 7 节。\n6.3 场景二：自己训练模型\n第一步：写代码时，先把这些手段配上\n不用等发现瓶颈再加，写代码时直接配好，跑起来就是\"已经拉满\"的起点：\n异步数据提供\n。\n混合精度 AMP\n：bf16 优先（通常不用 scaler）；fp16\n必须配\nGradScaler\n。走 Tensor Core 加速计算、降低显存。\n更快的 attention\n（模型有 attention 时）。\ntorch.compile\n：如果模型结构固定、不会频繁修改，且符合使用要求，可以加上。\n配好这些，GPU\n利用率和显存占用基本就是当前代码能做到的较优状态，接下来只需调\nbatch。\n第二步：调 batch\n在\n计算资源\n和\n显存\n这两个约束下增大\nbatch，直到某个条件先达到 90% 左右为止；\n两个条件都未到 90%\n时，继续加 batch\n。谁先到阈值就停在谁那里：\n计算资源先到\n90%\n：停，再加没有明显速度收益。判断信号是\n功耗接近上限\n（\npower.draw / power.limit\n接近 90% 左右即可，阈值本身留有余量，不必精确到顶）。\n显存先到 90% 左右\n：也停，再加有 OOM 风险。\n注意：\n不能超出显存是强制要求\n。超了可能直接\nOOM，也可能触发换页/卸载到主机内存等机制，大幅降低训练效率。\n计算资源先到顶后仍可继续加 batch\n，只是每个 batch\n的处理时间会缓慢增加，速度收益递减。\n一般来说，某个值先到 90%\n时，训练速度就已经接近最大值了\n——因为很难精确计算“在显存范围内，超出多少计算资源还能继续提高整体速度”，所以用\n90% 作为“大致到位”的经验阈值即可，不必追求精确最优点。\n7. 三种加速方法的实现\n训练加速主要可以从三个方面入手：编译模型、优化 Attention\n计算、降低计算精度。它们分别减少模型执行开销、显存读写开销和单次计算成本。\n7.1\ntorch.compile\n：编译模型\n作用： 减少模型运行时的调度开销，并在适当情况下融合多个算子，从而减少\nGPU Kernel 启动次数和中间结果的显存读写。\nPyTorch 默认采用动态图执行方式，模型中的运算通常由 Python\n逐步调度。\ntorch.compile\n会对模型进行编译，生成经过优化的执行代码。\n实现： 在模型初始化后添加一行代码。\n1\n2\n3\n4\n5\n6\n7\n# 初始化模型\nself\n.rnn = RNN().cuda()\nself\n.teacher = Teacher().cuda()\n# 编译模型\nself\n.rnn = torch.\ncompile\n(\nself\n.rnn)\nself\n.teacher = torch.\ncompile\n(\nself\n.teacher)\n主要优化方式：\n算子融合： 将多个可以融合的运算合并执行，减少中间结果的显存读写和\nKernel 启动次数。\n减少调度开销： 降低 Python\n逐个调度运算的开销，尤其适用于包含大量细碎运算的模型。\n编译通常不会改变模型的数学计算目标，但浮点运算顺序可能发生变化，因此结果不一定逐位相同。\n使用时需要注意：\n首次运行会产生编译开销。\n编译可能耗费数十秒甚至更久，具体取决于模型和配置。短任务可能还没来得及获得加速，实验就已经结束。\n输入形状变化可能触发重新编译。 例如 Batch Size\n或序列长度发生变化时，可能需要生成新的编译结果。\n部分代码可能无法完整编译。 动态控制流、不受支持的 Python\n操作等可能导致计算图中断，降低优化效果。\n编译缓存默认位于本机缓存目录，不会自动随项目迁移。更换设备、软件环境或模型代码时，可能需要重新编译或生成新的缓存。\n如何判断是否值得使用？\n与其从各种角度去判断，不如直接从结果上判断是否能用。简单快捷。\n采用 A/B 对比：\n不使用\ntorch.compile\n，运行一段时间，记录稳定后的训练速度。\n使用\ntorch.compile\n，首次编译和预热阶段后，以相同条件记录稳定后的速度。\n对比两者的稳态速度，判断是否有利于加速。\n如果模型结构和输入形状相对固定，且训练时间较长，通常值得尝试；如果加速效果不明显，就没有必要强行使用。\nWindows 中文系统的编码问题\n某些 PyTorch 编译环境在 Windows 中文系统下可能出现\nUnicodeDecodeError\n。原因可能是编译器读取内置模板文件时，使用了与文件内容不匹配的默认编码。\n可以尝试启用 Python UTF-8 模式。\n方法一：在代码最顶部设置，必须早于\nimport torch\n。\n1\n2\n3\n4\nimport\nos\nos.environ[\n\"PYTHONUTF8\"\n] =\n\"1\"\nimport\ntorch\n方法二：如果在 PyCharm\n中运行，可以在运行配置的环境变量中添加：\nPYTHONUTF8=1\n7.2 更快的\nAttention：FlashAttention\n作用\n： 优化 Transformer 中 Attention\n的计算过程，减少显存读写，提高计算速度并降低显存占用。\n普通 Attention 需要生成一个序列长度 ×\n序列长度的注意力分数矩阵，并将中间结果写入显存，再读取出来进行后续计算。序列越长，这部分计算和显存开销通常越大。\nFlashAttention 通过分块计算，利用 GPU\n的高速片上存储处理计算过程，避免将完整的注意力分数矩阵写入显存。\n主要优势：\n更快： 减少中间结果的显存读写。\n更省显存： 不需要显式保存完整的注意力分数矩阵。\n计算精确： 不属于近似 Attention\n算法，但浮点运算顺序不同可能导致微小数值差异。\nPyTorch 中的实现\n1\n2\n3\nimport\ntorch.nn.functional\nas\nF\noutput = F.scaled_dot_product_attention(q, k, v)\nPyTorch 会根据硬件、输入形状和数据类型等条件，自动选择合适的\nAttention 实现，其中可能包括 FlashAttention 内核。\nx-transformers\n中的实现\n如果当前版本支持\nattn_flash\n参数，可以在初始化\nDecoder\n时开启：\n1\n2\n3\n4\n5\n6\n7\n8\nself\n.decoder = Decoder(\ndim=cfg.d_model,\ndepth=cfg.decoder_depth,\nheads=cfg.n_heads,\nrotary_pos_emb=\nTrue\n,\nuse_rmsnorm=\nTrue\n,\nattn_flash=\nTrue\n,\n)\n具体参数名称和底层实现取决于\nx-transformers\n的版本。开启该选项后，也不代表一定会使用 FlashAttention\n内核，实际效果需要测试。\n7.3 混合精度训练：降低计算精度\n作用： 计算密集的算子使用 FP16 或 BF16\n提高计算速度、减少显存占用；对数值精度敏感的运算则根据需要保留\nFP32。\n混合精度并不是将整个模型统一转换为 16\n位，而是让不同运算使用合适的精度。\n实现\n： 使用 PyTorch 的\nautocast\n。\n1\n2\n3\n4\nself\n.amp = torch.amp.autocast(\n\"cuda\"\n,\ndtype=torch.bfloat16,\n)\n1. 混合精度的工作原理\n典型情况下，各部分的精度处理如下：\n模型权重： 如果模型以 FP32 初始化，权重默认仍保持 FP32，不会因为进入\nautocast\n就永久转换成 BF16。\n矩阵乘、卷积等算子： 通常可以使用 BF16 执行，以利用 GPU\n的低精度计算能力。\nSoftmax、LayerNorm、Loss 等运算：\n根据具体算子的精度规则，部分运算会使用 FP32，以提高数值稳定性。\n优化器状态： 如果使用常规 FP32\n模型参数和优化器配置，优化器状态通常也保持 FP32。\n具体使用哪种精度由 PyTorch\n的自动混合精度规则决定，并非所有敏感算子都会无条件使用 FP32。\n2. 训练代码为什么这样排布？\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nmodel = Model().cuda()\nfor\nx, y\nin\nloader:\nwith\nself\n.amp:\nout = model(x.cuda())\nloss = loss_fn(out, y.cuda())\nloss.backward()\noptimizer.step()\noptimizer.zero_grad()\n（1）\nmodel = Model().cuda()\n：初始化模型\n创建模型并将其移动到\nGPU。这里没有指定其他数据类型，因此\n模型参数默认保持\nFP32\n。\n这使得后续可以在 FP32 主参数的基础上，通过\nautocast\n让部分运算使用 BF16。\n（2）\nwith self.amp:\n：开启自动混合精度\n进入\nautocast\n上下文后，范围内的\n运算\n会\n根据 PyTorch\n的精度规则自动选择 BF16 或 FP32\n。\n（3）\nout = model(x.cuda())\n：前向传播\n将输入数据移动到 GPU，并执行模型的前向计算。\n例如，矩阵乘法可能使用 BF16 计算。此时，原本的 FP32\n权重不会被永久修改；对于支持自动转换的运算，PyTorch\n会在计算时使用适当的精度。\n（4）\nloss = loss_fn(out, y.cuda())\n：计算 Loss\n将 Loss 计算放在\nwith\n内，是为了让它也处于自动混合精度的管理范围内。\n例如，使用交叉熵损失时，PyTorch\n的相应实现会根据精度规则选择合适的计算精度，部分计算可能提升到\nFP32，以改善数值稳定性。\n需要注意，把 Loss 放在\nwith\n内，并不意味着它一定使用\nFP32。具体精度取决于所用的 Loss\n算子及其实现。如果放在外面，也不代表一定会用 BF16 计算。\n（5）\nloss.backward()\n：反向传播\n在\nwith\n外执行反向传播即可。反向运算会依据对应前向运算的精度规则执行，不需要再额外包一层\nautocast\n。\n（6）\noptimizer.step()\n：更新模型参数\n优化器根据梯度更新参数。如果模型参数保持\nFP32，\n参数更新就作用于 FP32\n权重\n，有助于保留较小的更新量。\n3. 为什么混合精度能加速？\n提高计算效率： GPU 对 BF16、FP16\n等低精度运算通常具有更高的计算吞吐量。\n减少显存读写： 16 位张量的存储空间通常只有 32 位张量的一半。\n保留必要的数值精度：\n不强制所有运算都使用低精度，而是通过自动精度规则兼顾速度与稳定性。\n其中，BF16 的数值范围接近 FP32，通常比 FP16\n更不容易发生数值溢出或下溢。在支持 BF16 的 GPU 上，可以优先尝试 BF16\n混合精度训练。\n补充图：",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://zusda.github.io/2026/10/21/ai%E5%AD%A6%E6%9C%AF%E7%AF%87-1-%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E5%8A%A0%E9%80%9F/",
+      "content_chars": 11679,
+      "content_sha256": "9bf1bd86a70a3ff0e4878dd6ef077d5bae5e41059d394ae942c7771a41bd80f8",
+      "content_fetched_at": "2026-10-22T23:56:55.576059+00:00",
+      "author": "zusda",
+      "author_name": "zusda",
+      "author_url": "https://zusda.github.io/",
+      "published_at": "2026-10-22T23:56:04.895191+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:zusda",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://zusda.github.io/",
+        "https://zusda.github.io/2026/10/21/ai%E5%AD%A6%E6%9C%AF%E7%AF%87-1-%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E5%8A%A0%E9%80%9F/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "zusda",
+          "url": "https://zusda.github.io/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "zusda",
+          "name": "zusda",
+          "home_url": "https://zusda.github.io/"
+        },
+        "article": {
+          "title": "ai学术篇 1.模型训练加速",
+          "url": "https://zusda.github.io/2026/10/21/ai%E5%AD%A6%E6%9C%AF%E7%AF%87-1-%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E5%8A%A0%E9%80%9F/",
+          "content_sha256": "9bf1bd86a70a3ff0e4878dd6ef077d5bae5e41059d394ae942c7771a41bd80f8"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:ea86b357cba4dce5",
+      "who": "cymulate-blog",
+      "who_url": "https://cymulate.com/blog/",
+      "action": "publish",
+      "target": "Learn More",
+      "target_url": "https://cymulate.com/blog/php2shell-cve-2026-109618-cve-2026-109619/",
+      "text": "cymulate-blog published: Learn More",
+      "at": "2026-10-22T23:56:04.895191+00:00",
+      "external_id": "a:ea86b357cba4dce5",
+      "url": "https://cymulate.com/blog/php2shell-cve-2026-109618-cve-2026-109619/",
+      "title": "Learn More",
+      "content": "PHP2Shell (CVE-2026-109618 and CVE-2026-109619): The PHP Vulnerabilities Security Teams Should Patch Now\nBy:\nCymulate Research Lab\nOctober 22, 2026\nPHP2Shell is a family of memory-safety bugs in PHP, tracked as\nCVE-2026-109618\nand\nCVE-2026-109619\nand rated\nCVSS 9.2\n. The PHP Foundation shipped an emergency fix on October 21, 2026. The flaws allow an unauthenticated attacker to execute code as the PHP web worker or read its process memory, including passwords, tokens, and API keys from other users' requests.\nThe flaws sit in PHP itself, so the exposure reaches beyond any single application such as WordPress, Drupal or Joomla. Wiz Research demonstrated pre-authentication remote code execution against all three, and even a simple PHP application can be exposed on a vulnerable deployment. At least one of the flaws affects PHP versions dating back more than a decade, and PHP powers an estimated 70% of websites.\nBelow, we break down how the flaws work, what to patch and how to test your defenses with the PHP2Shell scenarios we've already added to Cymulate Exposure Validation.\nHow Does the PHP2Shell Exploit Work?\nBoth CVEs involve PHP continuing to use an invalid internal state after a request fails.\nCVE-2026-109618\nconcerns out-of-memory handling that can leave request memory partially initialized before cleanup.\nCVE-2026-109619\nconcerns a request-owned state that can survive into a later request on the same worker. Session upload progress is one confirmed path for the latter flaw, not a universal trigger for both CVEs.\nSome attack paths run before application code, so application-level authentication and logs may miss important evidence. Successful exploitation can disclose PHP worker memory or execute code with the worker's privileges.\nExploitation attempts have already started. ELLIO recorded PHP2Shell traffic on October 21, including requests that tried to deliver a Mirai-variant Linux payload. So far, those observations indicate attempted exploitation and payload delivery, with no confirmed compromise of victims.\nHow to Patch PHP2Shell\nUpdate affected PHP runtimes to\n8.5.12, 8.4.27, 8.3.36 or 8.2.35\n, or install a vendor package with the relevant backported fixes. Restart the PHP workers that serve requests. PHP 8.1 and earlier are no longer supported upstream, although some vendors provide backports. Confirm the status of those installations with the vendor or move to a supported branch.\nIf you cannot update immediately, follow the PHP project's path-specific guidance: controls for out-of-memory handling and request size can reduce exposure to CVE-2026-109618, while disabling session upload progress and restarting workers blocks one confirmed CVE-2026-109619 path. PHP 8.5 has a separate fatal-error-backtrace setting to consider. Web application firewall (WAF) rules and request limits can add protection, but each has coverage limits.\nUpdating PHP is the only complete mitigation.\nVulnerability details\nphp2shell.com\n: Researcher summary and mitigation guide\nWiz Research on PHP2Shell\n: Technical root cause\nCVE-2026-109618\n/\nCVE-2026-109619\n: MITRE\nELLIO Threat Research Lab: PHP2Shell observations and Mirai-variant payload\nPatching resources\nPHP Foundation security release, October 21, 2026\nAWS: Using AWS WAF to apply mitigations for PHP2Shell\nHow to Test Your Defenses Against PHP2Shell With Cymulate\nOur research team tracks new threats as they emerge and turns them into tests you can run right away, so you're ready for PHP2Shell and whatever comes next. Cymulate Exposure Validation includes four PHP2Shell attack-pattern scenarios for testing how controls handle each simulated request or traffic replay:\n1. Web Application Firewall\nCVE-2026-109618 - PHP Upload-Progress Attack Pattern (php2shell)\nCVE-2026-109619 -PHP Fatal-Error-Backtrace Attack Pattern (php2shell)\nThese simulate multipart request patterns associated with the CVEs against protected sites. Compare the WAF verdict and its logs before and after rule tuning. Each result shows how the control handled that specific simulation, so run every scenario that applies to your environment.\n2. Traffic Simulation (Advanced Scenarios, IPS/IDS)\nTraffic Simulation - CVE-2026-109618 - PHP Upload-Progress Attack Pattern (php2shell)\nTraffic Simulation - CVE-2026-109619 - PHP Fatal-Error-Backtrace Attack Pattern (php2shell)\nCymulate threat feed campaigns for traffic simulation.\nThese replay PHP2Shell-associated traffic between Cymulate agents to assess whether intrusion prevention and detection system (IPS/IDS) controls detect or block the replayed packets. A traffic-simulation verdict does not establish whether the destination PHP runtime is exploitable or patched.\nThe four scenarios are rated Critical, mapped to the MITRE ATT&CK® technique T1190 (Exploit Public-Facing Application), and tagged with their corresponding CVEs in the content catalog. Those labels do not, by themselves, establish complete coverage of exploits.\n3. Advanced Scenario: PHP2Shell Scanner (CVE-2026-109618 & CVE-2026-109619)\nEnter one or more target URLs to check the PHP version advertised in HTTP response headers against the fixed releases. The scanner sends no exploit payload. A missing version returns an unknown result. An older advertised version is an exposure signal, not proof of exploitability, because vendor backports and inaccurate or hidden headers can change the answer. Confirm findings against the installed package and vendor advisory.\n4. Threat feed campaign: PHP2Shell Exploitation Attempts Delivering a Mirai-Variant Payload\nCymulate threat feed campaign for PHP2Shell Mirai-variant payload.\nWe published this threat feed campaign based on ELLIO's October 21 observations of PHP2Shell exploitation attempts that carried a loader for a Mirai-variant Linux payload. Use it to test how your endpoint and web gateway controls handle the observed indicators and delivery path.\nTogether, these tests give you a clear view of your PHP2Shell readiness in Cymulate Exposure Validation: the attack-pattern simulations show how your controls respond, the scanner flags servers that may still be exposed and the threat feed campaign tests your defenses against the delivery activity seen in the wild. From there, confirm patch status in your asset and vendor records, close any gaps with tuning or remediation and rerun the same tests to prove your defenses hold.\nWant to know how your controls can handle PHP2Shell?\nBook a demo to see Cymulate in action.\nCymulate Research Lab\nOur highly experienced and diverse researchers are fluent in security intelligence practices, combining expertise in private security, military, and intelligence experience. Continuously examining the cyber-threat landscape, our experts deliver in-depth visibility into today’s threats and the actors behind them.\nMore about Author\nTable of Contents\nHow Does the PHP2Shell Exploit Work?\nHow to Patch PHP2Shell\nVulnerability details\nPatching resources\nHow to Test Your Defenses Against PHP2Shell With Cymulate\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nFeatured Resources\nView More Resources\nSolution Brief\nThreat Validation\nCymulate continuously validates defenses, baselines posture, and strengthens resilience against evolving threats.\nRead More\nCUSTOMERS\nLarge Industrial Company Aligns Threat Validation with Business Goals\nDiscover how a leading industrial manufacturer in the Gulf region enhanced its cybersecurity by adopting Cymulate's platform after NSS Labs'\nRead Case Study\nE-book\nSecurity Validation Essentials\nLearn security validation essentials to uncover gaps, measure risk, and strengthen your overall security posture.\nLearn More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://cymulate.com/blog/php2shell-cve-2026-109618-cve-2026-109619/",
+      "content_chars": 7909,
+      "content_sha256": "94c0fa2c22c7ca75e01a322d97140a1cab6aef32865ad33677c6f537974af7ce",
+      "content_fetched_at": "2026-10-22T23:57:43.969564+00:00",
+      "author": "cymulate-blog",
+      "author_name": "Cymulate Blog",
+      "author_url": "https://cymulate.com/blog/",
+      "published_at": "2026-10-22T23:56:04.895191+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cymulate-blog",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://cymulate.com/blog/",
+        "https://cymulate.com/blog/php2shell-cve-2026-109618-cve-2026-109619/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cymulate-blog",
+          "url": "https://cymulate.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cymulate-blog",
+          "name": "Cymulate Blog",
+          "home_url": "https://cymulate.com/blog/"
+        },
+        "article": {
+          "title": "Learn More",
+          "url": "https://cymulate.com/blog/php2shell-cve-2026-109618-cve-2026-109619/",
+          "content_sha256": "94c0fa2c22c7ca75e01a322d97140a1cab6aef32865ad33677c6f537974af7ce"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:c4af6f09bec33385",
+      "who": "cymulate-blog",
+      "who_url": "https://cymulate.com/blog/",
+      "action": "publish",
+      "target": "CVE-2026-85267: CloudShell WSSnatchRead More",
+      "target_url": "https://cymulate.com/blog/cve-2026-85267-google-cloud-shell-oauth-token-theft/",
+      "text": "cymulate-blog published: CVE-2026-85267: CloudShell WSSnatchRead More",
+      "at": "2026-10-22T23:56:04.895191+00:00",
+      "external_id": "a:c4af6f09bec33385",
+      "url": "https://cymulate.com/blog/cve-2026-85267-google-cloud-shell-oauth-token-theft/",
+      "title": "CVE-2026-85267: CloudShell WSSnatchRead More",
+      "content": "CVE-2026-85267: CloudShell WSSnatch\nBy:\nCymulate Research Lab\nOctober 22, 2026\nHow one-click and zero-click WebSocket attack vectors turned Google Cloud Shell into a tunnel for OAuth token theft.\nElad Beber, Senior Security Researcher\nBen Zamir, Security Researcher\nIlan Kalendarov, Former Security Research Team Lead\nExecutive Summary\nCymulate Research identified a Cross-Site WebSocket Hijacking vulnerability in Google Cloud Shell that allowed a malicious website to steal an active user's OAuth access token through the browser. Tracked as\nCVE-2026-85267\n, the vulnerability received a\nCVSS 4.0 score of 8.7 (High)\nfrom Google Cloud.\nThe attack combined three failures: a cookie sent with cross-site connections, missing WebSocket Origin validation, and a TCP tunnel that exposed an internal token service. Together, they allowed an attacker-controlled page to use the victim's authenticated Cloud Shell session to retrieve a token.\nTwo delivery scenarios were demonstrated:\nOne-click, remote:\nan attacker who knew the victim's Cloud Shell editor hostname could trigger token theft when the victim opened a malicious page.\nZero-click, same network:\nan attacker on the same Layer 2 network could discover the hostname through DNS traffic and deliver the exploit through intercepted HTTP traffic, without an attacker-link click.\nBoth scenarios required an active Cloud Shell session. The stolen token could access Google Cloud resources within the victim's existing permissions and carried Drive and identity scopes, extending the potential impact beyond Cloud Shell. It did not grant permissions the victim did not already have.\nGoogle patched the vulnerability on\n22 July 2026\nand published the CVE on\n20 October 2026\n. No customer action is required. The finding highlights why authenticated WebSocket services must validate both the requesting origin and the internal destinations they expose.\n1. The finding\nGoogle Cloud Shell gives users an authenticated cloud environment directly in the browser. During my research, I found that a malicious website could abuse Cloud Shell’s own WebSocket connection to reach an internal service and steal Cloud Shell’s authorized user token. The token included the broad\ncloud-platform\nOAuth scope and could act with the victim’s existing Google Cloud permissions.\nThe attack could be delivered in two ways:\nOne-click, from anywhere: if the attacker knew the victim’s Cloud Shell hostname, opening a malicious page was enough to trigger the attack.\nZero-click, on the same network: a local-network attacker could learn the hostname from DNS traffic and deliver the exploit through ordinary HTTP traffic, without the victim clicking an attacker-supplied link.\nBoth vectors required an active Cloud Shell session in the victim’s browser.\nOnce the exploit page loaded, three bugs made the token theft possible:\nCross-site authentication cookie: Cloud Shell set its authorization cookie with\nSameSite=None\n, so the browser also sent it with a WebSocket connection opened by a malicious website.\nMissing WebSocket Origin validation: the WebSocket endpoint accepted the attacker’s cross-site connection instead of restricting upgrades to trusted Google origins.\nInternal port exposed through the tunnel: the raw TCP tunnel allowed access to the metadata proxy on port\n900\n, which returned the victim’s OAuth token.\nTogether, these bugs let an untrusted website open an authenticated tunnel through the victim’s browser and reach a token that should only have been available inside the Cloud Shell environment. The one-click and zero-click versions differed only in how the exploit page reached the victim.\n2. WSSnatch at a glance\nThe chain’s verified properties and delivery requirements are summarized below.\nField\nDetails\nAffected product\nGoogle Cloud Shell\nCVE\nCVE-2026-85267\n, published 20 October 2026 ·\nNVD\nSeverity\nCVSS 4.0: 8.7 High, assigned by Google Cloud\nWeakness\nCWE-1385: Missing Origin Validation in WebSockets\nRemediation\nPatched 22 July 2026. No customer action required.\nVulnerability type\nCross-Site WebSocket Hijacking through an unrestricted WebSocket-to-TCP tunnel\nDemonstrated impact\nTheft of the active user’s authorized OAuth access token\nObserved token scopes\ncloud-platform, drive, and identity scopes\nDisclosure status\n: Google Cloud VRP accepted and rewarded the report. The\nofficial CVE record\n, published on 20 October 2026, includes credit for the research and states that the vulnerability was patched on 22 July 2026. Google's\nJuly 28, 2026 release notes\ndescribe the mitigation. The patch date, release-note date, and CVE publication date are separate milestones.\nThe chain had two demonstrated delivery models:\nDimension\nOne-click, remote\nZero-click, same network\nAttacker position\nAnywhere on the internet\nSame Layer 2 network as the victim\nVictim action\nLoads an attacker-controlled page\nNone\nVictim session prerequisite\nActive Cloud Shell session in the browser\nPrior target knowledge\nCloud Shell editor hostname\nNone; hostname learned from observed DNS traffic\nExploitation primitive\nCross-site WebSocket\nNetwork interception followed by the same cross-site WebSocket\nResult\nOAuth token theft\nThe two variants used different delivery paths, but the server-side vulnerability was identical.\n3. How the research started\nI started this research the same way I approach any new challenge: enumerate first and make as few assumptions as possible. From inside the Cloud Shell instance, I mapped the processes, listening ports, network routes, mounts, namespaces, environment variables, and metadata endpoints to understand what was running around my shell.\nThe terminal was running inside a user container on a per-user Container-Optimized OS VM. That VM also hosted several supporting containers, including an orchestrator, a gateway, and a metadata proxy listening on\n127.0.0.1:900\n. The browser reached the environment through a Google-managed editor hostname, with WebSockets used to bridge browser connections to ports inside the container.\n3.1 Two identities behind metadata.google.internal\nThe metadata service was where things became interesting. Querying the same metadata hostname on two different ports returned two different identities:\nPort 80: authorized user-token path\ncurl -sS -H \"Metadata-Flavor: Google\" \\\n\"http://metadata.google.internal:80/computeMetadata/v1/instance/service-accounts/\"\ndefault/\n<my-user-email>/\ncurl\n-\nsS\n-\nH\n\"Metadata-Flavor: Google\"\n\\\n\"http://metadata.google.internal:80/computeMetadata/v1/instance/service-accounts/\"\ndefault\n/\n<\nmy-user-email\n>\n/\nPort 8080: VM infrastructure identity\ncurl -sS -H \"Metadata-Flavor: Google\" \\\n\"http://metadata.google.internal:8080/computeMetadata/v1/instance/service-accounts/\"\ndefault/\nvms-cs-<region-and-pool>@<tenant-project>.iam.gserviceaccount.com/\ncurl\n-\nsS\n-\nH\n\"Metadata-Flavor: Google\"\n\\\n\"http://metadata.google.internal:8080/computeMetadata/v1/instance/service-accounts/\"\ndefault\n/\nvms\n-\ncs\n-<\nregion\n-\nand\n-\npool\n>@<\ntenant\n-\nproject\n>.\niam\n.\ngserviceaccount\n.\ncom\n/\nPort\n80\nwas not reaching the real GCE metadata service directly. A per-pod DNAT rule redirected\n169.254.169.254:80\nto the local metadata proxy on port\n900\n, which injected my authorized user OAuth token. That token carried the broad\ncloud-platform\nscope, along with Google Drive and identity scopes.\nPort\n8080\nfollowed a different path. It passed through to the real GCE metadata server and returned the service-account token belonging to the Cloud Shell VM. In my tests, that infrastructure identity was tightly scoped to\ndevstorage.read_only\n,\nlogging.write\n, and\nmonitoring.write\n.\nThe two metadata paths looked like this:\nThe same metadata hostname resolved to a signed-in user credential on port\n80\nand a separate VM infrastructure credential on port\n8080.\nThe\n:8080\nbehavior was a separate finding, but it helped me understand the architecture: Cloud Shell deliberately placed the user’s OAuth credential behind an in-container proxy, while the VM retained a separate, low-privilege infrastructure identity. For this research, the important target was the user-token proxy on port\n900\n.\n3.2 Switching from the container to the browser\nUp to this point, the enumeration had been entirely backend-focused, from inside the container. I decided to switch perspectives and study the client side: how the browser provisioned the environment, authorized the session, discovered my instance, and finally connected to the terminal and editor. I captured the complete startup flow from\nshell.cloud.google.com\nto the per-session\n*.cloudshell.dev\ndata plane.\n3.3 Mapping the victim-specific Cloud Shell endpoint\nThe next step was understanding how the browser located my environment. Several different names appeared during the session, but they represented different layers of the architecture.\nThe underlying GCE VM had an ephemeral instance name such as\ncloudshell-<random-id>\n. That name and the VM’s IP address changed when the environment was reprovisioned, and neither was used by the browser-facing attack.\nCloud Shell also assigned the environment a logical identity based on my Google account’s numeric GAIA ID:\"\ncs-<GAIA-ID>-default\ncs\n-<\nGAIA\n-\nID\n>-\ndefault\nwas the Cloud Shell environment name. Google then combined this identity with the regional Cloud Shell pool to build the public session hostname:\ncs-<GAIA-ID>-default.<regional-pool>.cloudshell.dev\ncs\n-<\nGAIA\n-\nID\n>-\ndefault\n.<\nregional\n-\npool\n>.\ncloudshell\n.\ndev\nFor example, a session running in the\ncs-europe-west4-bhnf\npool followed this structure:\ncs-<GAIA-ID>-default.cs-europe-west4-bhnf.cloudshell.dev\ncs\n-<\nGAIA\n-\nID\n>-\ndefault\n.\ncs\n-\neurope\n-\nwest4\n-\nbhnf\n.\ncloudshell\n.\ndev\nThe terminal connected to that base hostname, but the editor used a port-prefixed host:\n970-cs-<GAIA-ID>-default.<regional-pool>.cloudshell.dev\n970\n-\ncs\n-<\nGAIA\n-\nID\n>-\ndefault\n.<\nregional\n-\npool\n>.\ncloudshell\n.\ndev\nThis distinction became important for the one-click attack. During the normal startup flow, Cloud Shell called\n/_cloudshell/login\non the\n970-\neditor host and set the\nCloudShellAuthorization\ncookie there. The cookie had no\nDomain\nattribute, so the browser scoped it to that exact hostname.\nAn attacker could not simply target any Cloud Shell URL. The remote exploit needed the victim’s full editor hostname, including both the GAIA ID and the regional pool, and had to open the WebSocket against the same\n970-\nhost:\nwss://970-cs-<GAIA-ID>-default.<regional-pool>.cloudshell.dev/_cloudshell/tcp/900\nwss\n:\n//970-cs-<GAIA-ID>-default.<regional-pool>.cloudshell.dev/_cloudshell/tcp/900\nThat targeting requirement is what separates the remote one-click vector from the same-network zero-click vector. Remotely, the attacker needed to learn or derive the hostname in advance. On the same network, the hostname could be observed directly when the victim’s browser resolved the Cloud Shell domain.\n4. Three trust boundaries that failed\nWhile analyzing the browser’s startup traffic, I saw Cloud Shell mint an environment-bound JWT and send the browser to the\n970-\neditor host:\nGET /_cloudshell/login?token=<environment-JWT>\nHost: 970-cs-<GAIA-ID>-default.<regional-pool>.cloudshell.dev\nGET\n/\n_cloudshell\n/\nlogin\n?\ntoken\n=\n<\nenvironment-JWT\n>\nHost: 970-cs-\n<\nGAIA-ID\n>\n-default.\n<\nregional-pool\n>\n.cloudshell.dev\nThe response stored that JWT in a cookie:\nSet-Cookie: CloudShellAuthorization=\"Bearer <environment-JWT>\";\nPath=/;\nMax-Age=86400;\nHttpOnly;\nSecure;\nSameSite=None\nSet\n-\nCookie\n:\nCloudShellAuthorization\n=\n\"Bearer <environment-JWT>\"\n;\nPath\n=/;\nMax\n-\nAge\n=\n86400\n;\nHttpOnly\n;\nSecure\n;\nSameSite\n=\nNone\nThis cookie carried the browser’s data-plane authorization state for that exact Cloud Shell environment. On later requests and WebSocket upgrades to the same\n970-\nhost, the browser attached it automatically, and the backend validated that the JWT belonged to the requested environment.\nWith the hostname and authentication flow mapped, I looked at what else the editor host exposed. Cloud Shell provided a WebSocket endpoint in this form:\nwss://<editor-host>/_cloudshell/tcp/<port>\nwss\n:\n//<editor-host>/_cloudshell/tcp/<port>\nOnce upgraded, the WebSocket acted as a raw TCP bridge to the selected port inside the user container. Cloud Shell’s web-preview feature explicitly rejected sensitive ports such as\n900\n, but the WebSocket tunnel did not apply the same restriction. That meant a browser connection could potentially reach the metadata proxy and the user OAuth token behind it.\nFrom there, the research became a simple chain of questions: would the browser attach the Cloud Shell authentication cookie cross-site, would the server accept a WebSocket opened by an unrelated website, and could that connection reach port\n900\n? The answer to all three was yes.\n4.1 Bug 1: A cross-site authentication cookie\nHttpOnly\nprevented page JavaScript from reading the cookie value directly, but that did not stop the browser from using it. As\nMDN documents\n,\nHttpOnly\ncookies are still sent with JavaScript-initiated requests, and\nSameSite=None\npermits a cookie to be sent in both same-site and cross-site contexts.\nThis distinction is central to CSWSH: the malicious page does not need to read or steal the session cookie first. It asks the browser to open a connection, and the browser authenticates that connection on the page’s behalf.\nSameSite=None\nmay be necessary for some embedded product flows, so this attribute alone should not be treated as the complete vulnerability. It became exploitable because the server did not independently verify who initiated the WebSocket.\nFigure 1. The original authorized capture showed that the Cloud Shell authorization cookie was eligible for cross-site use and remained valid for 24 hours. Sensitive values and identifiers are redacted.\n4.2 Bug 2: The WebSocket upgrade trusted every Origin\nBrowsers add an\nOrigin\nheader to WebSocket handshakes. Page JavaScript cannot freely replace that header, so the server can use it to distinguish a legitimate application from an attacker-controlled website.\nIn testing, the Cloud Shell TCP endpoint returned\n101 Switching Protocols\nfor:\nOrigin: https://attacker.example\nOrigin: null\nNo Origin header\nOrigin: https://shell.cloud.google.com\nOrigin\n:\nhttps\n:\n//attacker.example\nOrigin\n:\nnull\nNo\nOrigin\nheader\nOrigin\n:\nhttps\n:\n//shell.cloud.google.com\nThere was no effective origin allowlist.\nThis removed the key server-side protection against CSWSH. The endpoint did not distinguish a WebSocket created by Cloud Shell from one created by an unrelated page. OWASP recommends validating every WebSocket handshake against an explicit allowlist and rejecting\nnull\n, missing, wildcard, or substring-matched origins.\nAt this point, an attacker-controlled page could create an authenticated WebSocket connection. The remaining question was what that connection could reach.\nFigure 2. The TCP WebSocket upgraded connections regardless of whether the initiating origin was foreign, null, absent, or legitimate.\n4.3 Bug 3: The tunnel reached the token service on port 900\nCloud Shell’s web preview path rejected access to internal port\n900\n:\nGET https://900-<redacted-editor-host>/\nHTTP/1.1 400 Bad Request\ninvalid port\nGET\nhttps\n:\n//900-<redacted-editor-host>/\nHTTP\n/\n1.1\n400\nBad\nRequest\ninvalid\nport\nThe WebSocket TCP tunnel did not apply the same restriction:\nwss://<redacted-editor-host>/_cloudshell/tcp/900\nwss\n:\n//<redacted-editor-host>/_cloudshell/tcp/900\nAfter the WebSocket upgrade, I sent an ordinary HTTP request as raw bytes:\nGET /computeMetadata/v1/instance/service-accounts/default/token HTTP/1.1\nHost: metadata.google.internal\nMetadata-Flavor: Google\nConnection: close\nGET\n/\ncomputeMetadata\n/\nv1\n/\ninstance\n/\nservice\n-\naccounts\n/\ndefault\n/\ntoken\nHTTP\n/\n1.1\nHost\n:\nmetadata\n.\ngoogle\n.\ninternal\nMetadata\n-\nFlavor\n:\nGoogle\nConnection\n:\nclose\nPort\n900\nexposed the Cloud Shell environment’s metadata proxy.\n{\n\"access_token\": \"ya29.<redacted>\",\n\"expires_in\": 3600,\n\"token_type\": \"Bearer\"\n}\n{\n\"access_token\"\n:\n\"ya29.<redacted>\"\n,\n\"expires_in\"\n:\n3600\n,\n\"token_type\"\n:\n\"Bearer\"\n}\nGoogle’s Compute Engine documentation\ndocuments the same metadata path and the required\nMetadata-Flavor: Google\nheader. A process legitimately running inside a VM can use this endpoint to obtain an access token. The vulnerability was that an untrusted website could reach that inside-only service through an authenticated tunnel.\nThe web preview and raw TCP features had different port policies. One recognized port\n900\nas unsafe; the other exposed it.\nFigure 3. Two routes to the same port enforced different trust policies: web preview blocked port 900, while the raw TCP WebSocket exposed it.\n5. The one-click attack, end to end\nThe remote proof of concept was intentionally small. It served a page that executed the following logic when loaded:\nFigure 4. The WSSnatch one-click attack flow: SameSite=None, missing WebSocket Origin validation, and an unrestricted TCP tunnel combine to expose the victim’s Google OAuth token.\nconst ws = new WebSocket(\n\"wss://<victim-editor-host>/_cloudshell/tcp/900\"\n);\nws.onopen = () => {\nws.send(\n\"GET /computeMetadata/v1/instance/service-accounts/default/token HTTP/1.1\\r\\n\" +\n\"Host: metadata.google.internal\\r\\n\" +\n\"Metadata-Flavor: Google\\r\\n\" +\n\"Connection: close\\r\\n\\r\\n\"\n);\n};\nconst\nws\n=\nnew\nWebSocket\n(\n\"wss://<victim-editor-host>/_cloudshell/tcp/900\"\n);\nws\n.\nonopen\n= ()\n=>\n{\nws\n.\nsend\n(\n\"GET /computeMetadata/v1/instance/service-accounts/default/token HTTP/1.1\n\\r\\n\n\"\n+\n\"Host: metadata.google.internal\n\\r\\n\n\"\n+\n\"Metadata-Flavor: Google\n\\r\\n\n\"\n+\n\"Connection: close\n\\r\\n\\r\\n\n\"\n);\n};\nThe browser added the Cloud Shell cookie to the handshake. The server accepted the attacker’s origin and upgraded the connection. The JavaScript then spoke HTTP through the WebSocket-to-TCP bridge, extracted the redacted\nya29.*\ntoken from the response, and sent the result back to the proof-of-concept collector.\nNo browser extension, local malware, attacker Google account, or direct read access to the victim’s cookies was required.\nThe remote variant did have two important preconditions:\nThe victim needed an active Cloud Shell authentication context in the tested browser.\nThe attacker needed the victim’s editor hostname and needed the victim to load the malicious page.\n6. Turning one-click into same-network zero-click\nThe editor hostname was the main targeting requirement in the remote scenario. I next tested whether a local-network attacker could remove it.\nThe same-network proof of concept combined standard local interception techniques with the same three server-side bugs:\nThe attacker placed themselves in the victim’s network path using ARP poisoning on a shared Layer 2 network.\nWhen the victim opened Cloud Shell, DNS traffic disclosed the victim-specific Cloud Shell hostname and regional pool.\nThe proof of concept disrupted known encrypted-DNS paths to encourage system-DNS fallback in the tested setup.\nIt spoofed a suitable DNS response and injected an HTTP\n302\nredirect into intercepted plain-HTTP traffic, causing the browser to load the exploit page.\nThe exploit page opened the authenticated WebSocket to port\n900\nand recovered the OAuth token.\nFigure 5. The WSSnatch same-network flow: the attacker first enters the network path, learns the victim-specific Cloud Shell hostname, delivers the exploit through an ordinary HTTP request, and chains the three server-side bugs to recover the OAuth token.\nIn the tested environment, delivery could be triggered when the user made a normal plain-HTTP request. The victim did not need to click a link supplied by the attacker or enter any information into an attacker-controlled page after activating Cloud Shell.\n“Zero-click” here refers to the delivery interaction, not an absence of preconditions. The attacker still needed Layer 2 network access, the victim needed an active Cloud Shell session, and the network/browser behavior had to permit the demonstrated interception path.\nThis is realistic on shared networks only where client isolation and related controls do not block ARP-based interception. It should not be generalized to every corporate, hotel, airport, conference, or coffee-shop network.\n7. One stolen token, access far beyond Cloud Shell\nThe recovered token was checked against Google’s token information endpoint. In the authorized test account, it carried:\nhttps://www.googleapis.com/auth/cloud-platform\nhttps://www.googleapis.com/auth/drive\nhttps://www.googleapis.com/auth/userinfo.email\nhttps://www.googleapis.com/auth/userinfo.profile\nopenid\nhttps\n:\n//www.googleapis.com/auth/cloud-platform\nhttps\n:\n//www.googleapis.com/auth/drive\nhttps\n:\n//www.googleapis.com/auth/userinfo.email\nhttps\n:\n//www.googleapis.com/auth/userinfo.profile\nopenid\nThis was not a narrow Cloud Shell session token. The recovered credential carried Google’s global\ncloud-platform\nscope\n, allowing it to call Google Cloud APIs as the victim across services. The scope was Cloud-wide; the specific actions available were the actions authorized by the victim’s IAM permissions. The same token also carried the unrestricted\ndrive\nscope\n, which Google defines as permission to view and manage all of the victim’s Drive files.\nImpact: broad compromise of the victim’s Google Cloud and Google Drive access from one stolen token. An attacker could act across every Google Cloud service permitted by the victim’s IAM roles, view or modify all Drive files, and recover the account’s verified email identity and profile.\nThe demonstrated scope set did not include Gmail permissions or account-recovery controls. The proven impact was Cloud and Drive compromise plus Google account identity exposure, not Gmail mailbox access or password takeover.\nFigure 6. The recovered token included the broad\ncloud-platform\nscope alongside Drive and identity scopes; account identifiers and the token value are excluded.\n8. Why the chain was more than the sum of its parts\nEach issue crossed a different trust boundary:\nCookie policy: the browser was allowed to authenticate a cross-site connection.\nHandshake policy: the WebSocket server accepted an untrusted initiator.\nDestination policy: the tunnel exposed a credential-bearing internal service.\nNo single layer had enough context to make the complete attack obvious. The cookie configuration may have supported an embedding requirement. The WebSocket endpoint may have assumed the cookie proved legitimacy. The tunnel may have assumed only the trusted Cloud Shell frontend could invoke it.\nThat is the deeper failure mode: distributed security assumptions without a single enforced policy.\nThe chain also demonstrates why port-forwarding features require more than network filtering. Once a browser-facing service can carry arbitrary bytes to internal destinations, it becomes a security boundary comparable to SSRF protection, a reverse proxy, and a session-authenticated API at the same time.\n9. Fixing all three trust boundaries\nGoogle's\nrelease notes\ndescribe stricter WebSocket Origin validation and an allowed port list for TCP and SSH tunnels. The\nofficial CVE record\ndates the patch to 22 July 2026 and identifies earlier Cloud Shell deployments as affected. Google states that no customer action is required.\nFixing any one of the three bugs would break the demonstrated chain, but all three should be addressed:\n1.  Validate WebSocket origins: Allow only the exact trusted Cloud Shell origins and reject unknown,\nnull\n, or missing origins.\n2.  Harden browser authentication: Avoid using a cross-site cookie as the only authorization for a sensitive WebSocket. Use a stricter\nSameSite\npolicy where possible or require a short-lived, connection-specific token.\n3.  Restrict tunnel destinations: Apply the same port policy to every proxy and tunnel path. Internal services such as the metadata proxy on port\n900\nmust never be reachable through the browser-facing TCP tunnel.\n10. Disclosure timeline\nDate\nEvent\n24 June 2026\nReport submitted to Google VRP with the complete PoC package and video demonstrations. An automated receipt was received.\n10 July 2026\nGoogle accepted the report and filed an internal bug with the responsible engineering team.\n22 July 2026\nGoogle patched the vulnerability, according to the\nofficial CVE record\n.\n28 July 2026\nGoogle's release notes\ndocument the mitigation for CVE-2026-85267.\n6 August 2026\nGoogle Cloud VRP awarded a bounty and described the submission as “a report of exceptional quality.”\n20 October 2026\nGoogle Cloud published\nCVE-2026-85267\n, gave credit for the research, and assigned CVSS 4.0: 8.7 High and CWE-1385.\nI sincerely appreciate the Google Cloud VRP team’s communication throughout this process. They responded quickly, communicated the status and assessment transparently, and moved the report into remediation without delay. Their openness, professionalism, and recognition of the research made this a remarkably positive disclosure experience.\n11. Conclusion\nCloud Shell’s browser experience crossed several powerful boundaries at once: authenticated web state, a bidirectional socket, arbitrary TCP forwarding, and an internal metadata service. The vulnerability appeared when each layer relied on another layer to decide whether a connection was safe.\nThe final exploit did not break TLS, steal the cookie with XSS, or compromise the Cloud Shell host first. It asked the victim’s browser to use a legitimate product feature from an illegitimate origin, and the system supplied the authentication and network reach needed to reach the token.\nWebSockets require special care because correct user authentication during the initial HTTP request does not automatically make the upgraded connection safe. After the protocol upgrade, the server must still validate the initiating origin and enforce what the socket is authorized to reach. Otherwise, a properly authenticated connection can remain open to control from an untrusted website.\nThat is what made the chain dangerous, and what makes the lesson broadly applicable: browser-accessible tunnels must treat origin, session, and destination as one authorization decision.\nCymulate Research Lab\nOur highly experienced and diverse researchers are fluent in security intelligence practices, combining expertise in private security, military, and intelligence experience. Continuously examining the cyber-threat landscape, our experts deliver in-depth visibility into today’s threats and the actors behind them.\nMore about Author\nTable of Contents\nExecutive Summary\n1. The finding\n2. WSSnatch at a glance\n3. How the research started\n4. Three trust boundaries that failed\n5. The one-click attack, end to end\n6. Turning one-click into same-network zero-click\n7. One stolen token, access far beyond Cloud Shell\n8. Why the chain was more than the sum of its parts\n9. Fixing all three trust boundaries\n10. Disclosure timeline\n11. Conclusion\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nMore from the Cymulate Research Lab\nView More Resources\nblog\nAKS RunCommand Vulnerability Enables Cross-Cluster Privilege Escalation\nA newly disclosed weakness in Azure Kubernetes Service’s RunCommand feature created a path for attackers to intercept a privileged Entra ID access\nRead More\nblog\nWhen Monitored Content Strikes Back: Account Takeover in Microsoft Purview\nCymulate found a stored XSS flaw in Microsoft Purview that exposed reviewer tokens and enabled privileged account takeover.\nRead More\nblog\nCVE-2026-32196:  One-Click RCE via Windows Admin Center Control Flow Hijacking\nOne click on a tampered WAC URL can trigger unauthenticated RCE across Windows Admin Center environments.\nRead More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://cymulate.com/blog/cve-2026-85267-google-cloud-shell-oauth-token-theft/",
+      "content_chars": 27838,
+      "content_sha256": "c7ddd4c037c0f71b22454d3cd3a1e36a5ed609dde6f399f4bc8b5b236d08cce4",
+      "content_fetched_at": "2026-10-22T23:57:44.585048+00:00",
+      "author": "cymulate-blog",
+      "author_name": "Cymulate Blog",
+      "author_url": "https://cymulate.com/blog/",
+      "published_at": "2026-10-22T23:56:04.895191+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cymulate-blog",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://cymulate.com/blog/",
+        "https://cymulate.com/blog/cve-2026-85267-google-cloud-shell-oauth-token-theft/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cymulate-blog",
+          "url": "https://cymulate.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cymulate-blog",
+          "name": "Cymulate Blog",
+          "home_url": "https://cymulate.com/blog/"
+        },
+        "article": {
+          "title": "CVE-2026-85267: CloudShell WSSnatchRead More",
+          "url": "https://cymulate.com/blog/cve-2026-85267-google-cloud-shell-oauth-token-theft/",
+          "content_sha256": "c7ddd4c037c0f71b22454d3cd3a1e36a5ed609dde6f399f4bc8b5b236d08cce4"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:1360bd8eb5a8e67e",
+      "who": "anthropic-research",
+      "who_url": "https://www.anthropic.com/research",
+      "action": "publish",
+      "target": "LLMs are making formal software verification feasible at a much larger scale",
+      "target_url": "https://www.anthropic.com/research/formal-verification",
+      "text": "anthropic-research published: LLMs are making formal software verification feasible at a much larger scale",
+      "at": "2026-10-22T23:56:04.895191+00:00",
+      "external_id": "a:1360bd8eb5a8e67e",
+      "url": "https://www.anthropic.com/research/formal-verification",
+      "title": "LLMs are making formal software verification feasible at a much larger scale",
+      "content": "Chapter\n01\n:\nIntroduction\nKeane Lucas, Aengus Lynch, Luna Tong, Luke Champine, Zygi Straznickas, Dino Distefano, Harshikaa Agrawal\nEvyatar Ben Asher, Ava Howell, Sami Jawhar, Chris Rohlf, Nickolai Zeldovich\nNicholas Carlini, Rajashree Agrawal, Jason Gross\nMost software is riddled with bugs, which AI can now easily\nfind\nand\nexploit\n. The standard defenses against cyberattacks are no longer sufficient: we need ways to prove that code is free of bugs. Formal software verification could provide this guarantee, but it has historically required years of expert effort, making it impractical for most real-world projects. In a collaboration with\nTheorem\n, however, we show this is no longer the case: LLMs can now produce formal proofs at large scale, enabling new software development workflows that include proven security guarantees. Using Claude, we proved security properties at the assembly code level (RISC-V) in over 100 real-world open-source software libraries.\nTo our knowledge, this represents the first large-scale effort to use AI to apply formal verification to production software at the assembly code level.\nWhile writing the proofs, Claude also discovered bugs that had eluded detection for years, despite\ntrillions of test runs\n. As model capabilities continue to improve, we expect formal verification to become an essential part of secure software development.\nIntroduction\nEven mature, heavily tested software contains bugs, and LLMs are\nincreasingly adept\nat finding them. The Linux kernel—one of the most well-tested pieces of software today, deployed on billions of devices worldwide—recently had\nover 1,000 vulnerabilities\ndisclosed. With frontier models becoming more capable of\nchaining seemingly benign bugs\ninto critical exploits, we need techniques that can detect and fix these bugs before they can be exploited in the wild.\nIdeally, such techniques could find and patch\nall bugs,\nand then provide some proof that there are no more to be found.\nFormal verification\nis one way to do this. In formal verification, developers translate their code into a mathematical model, then try to prove that it always follows some defined set of security rules. If they fail to prove this, that means there could be a bug in the code that would violate a rule, and the nature of the failure implies what the bug might be. Repeating this process (after eliminating the cause of failure each time) will ultimately yield proof that the code is devoid of any bug that would violate those rules.\nHowever, formal verification isn’t easy. Proofs can be many times larger than the original code, and writing them requires significant effort and a niche, highly specialized skill set. For instance, it took two person-years to implement the seL4 operating system kernel, but\n20\nperson-years\nto formally verify it\n. Accordingly, formal verification has been practical only in truly mission-critical applications, such as\nAirbus’s avionics code\n.\nBut LLMs are making it far easier. Frontier models can now produce correctness proofs for real-world software fully autonomously. To demonstrate this, we asked Claude to prove useful security properties across 123 open-source libraries, including showing that some of their executable artifacts can\nnever\ncrash under certain conditions. Specifically, Claude proved that these programs will always exit normally without triggering memory-safety errors or failing assertions, for every input less than 64 MB and every modeled Linux operating system (OS) response and memory layout, under certain assumptions (namely that the program runs as a single-threaded static binary with a fixed memory budget on a RISC-V\n1\nCPU using Linux OS). This is still far away from fixing\nall\npossible bugs, but it does get us much closer than before and provides a roadmap toward that end.\nWe’re publishing a\nsubset of these proofs\nso that anyone can verify and reuse them, along with the\nRISC-V and OS semantics\n.\nTheorem\n, our collaborator on this project, is also offering to run the same pipeline for\nother open-source projects\n, and is publishing a\nClaude skill\nto help developers get started with verifying their own code.\nFormal verification is a broad field with many methodologies. Below, we also describe our initial explorations using other formal verification methods to accelerate other security or software development tasks, such as assessing the security of the zlib compression algorithm, proving behavioral equivalence of a Python interpreter written in Rust, and rooting out long-standing bugs in critical software.\nThe road ahead for formal verification is promising. The cost of writing proofs is falling as models become more intelligent. Moreover, as more code is formalized and methods of achieving security guarantees become more standardized, the ability to reuse or modify proofs across codebases will amortize the cost. We encourage all developers to explore formal verification with LLMs—\nespecially\nthose who previously tried it with less capable models and found it didn’t work.\nIn the rest of this post, we cover our formal verification experiments in more detail.\nTurning tests into proofs\nTo prove that a piece of software is correct, we must first state what “correct” even means. Correctness is defined by the\nspecification\n(spec). In some programs, there is a clear way to formally specify the program’s intended behavior. For example, a\nPNG\ndecoder takes a sequence of bytes and (following\nRFC 2083\n) decodes these bytes into the corresponding image. But for most programs, things aren’t so straightforward. What would it mean for a text editor or a web browser to be “correct”? The difficulty of obtaining a comprehensive and unambiguous spec is a significant obstacle to verifying software at a larger scale.\nTo address this for the code in the open-source libraries that we sought to prove, we take the approach of automatically converting their preexisting compilable test suites into a spec by encoding the rule “this test suite always passes,” using a general model of what it means to execute any RISC-V-compiled binary on Linux. Historically, proving such specs was intractable, given the inherent complexity of writing a proof that can encompass and make an argument over all possible behaviors and interactions of tens of thousands of assembly instructions over any input (and the fact that proofs tend to be extremely large as a result). This is where today’s LLMs come in: churning through millions of lines of code in pursuit of a well-defined goal is a task that LLMs are extremely well suited for.\nFor this project, we started with\nfuzz tests\n. In these tests, developers write an\nentry point\n2\ninto their code that takes inputs, such that any input that causes a crash is a bug the authors care about. Then the\nfuzzer,\na testing engine, generates enormous numbers of semirandom and mutated inputs at the entry point to try to find a bug (visualized in Figure 1). The longer a fuzzer runs, the more bugs it can find. But this is inherently a brute-force process, with no guarantee of exercising every possible code path, regardless of how many inputs you try.\nFuzzing works by running huge numbers of generated inputs through one entry point to find the inputs that cause a crash.\nThere are infinite inputs, so the search can never be complete.\nTo find all the bugs that would’ve been surfaced by a fuzz test, we turned the fuzz test into a spec defined over the compiled RISC-V instructions. The spec says that the fuzz test won’t crash for\nany\ninput less than 64 MB.\n3\nIf Claude can prove this spec, the fuzz test on RISC-V becomes superfluous: fuzzing that entry point will never find any bugs.\nWe did this for hundreds of projects in Google’s\nOSS-Fuzz\ninitiative, which provides continuous fuzz testing for qualifying open-source projects. OSS-Fuzz contains thousands of developer-authored entry points that look for broken code properties by crashing (for example, on a failed assertion). OSS-Fuzz automatically instruments C and C++ programs with AddressSanitizer\n4\n(ASan), causing them to crash whenever memory is accessed improperly (which is a\nleading cause of software vulnerabilities\n). Broad-spectrum specifications like memory safety apply to almost all software.\nThe open-source library and its existing fuzz test are compiled to a RISC-V executable. This executable, along with Theorem’s RISC-V and OS formal semantics and the desired no-crash property, mechanically yield a specification the proof must satisfy. Claude writes the proof; the Rocq kernel checks it against the specification. Green marks what’s proven, conditional on the trusted components being correct.\nOver the span of a few weeks,\nClaude successfully patched the bugs it found and then proved that there are no crashes on any input (up to 64 MB) for 239 entry points across 123 different OSS-Fuzz libraries.\nThese proofs operate on the compiled RISC-V instructions (i.e., executable binaries), and they comprise about 180 million lines of Rocq, with a typical proof running to about 600,000 lines to provide security guarantees on binaries with a median length of 18,000 RISC-V instructions. These proofs are built by translating the RISC-V assembly code to a mathematical model using Theorem’s RISC-V instruction and Linux process semantics. This means these proofs currently assume that the program runs as a single-threaded static binary with a fixed memory budget on a RISC-V CPU using Linux OS. Expanding the scope of these proofs is well within reach, as it would involve standardizing semantics for more assembly architectures and other operating system processes. See\nan expert’s take\non the proofs Claude wrote.\nA formal no-crash proof over all inputs rules out all crashes along any path reachable from the entry point.\nWhile iterating on its proof, Claude can also find and fix any remaining reachable crash-producing bug.\nWhile this is an enormous volume of proof code, virtually none of it needs to be manually reviewed. The Rocq proof checker ensures that the spec is correctly satisfied by the proof. As a result, the only artifacts that a developer needs to trust are:\nThe formal models of RISC-V and of Linux processes;\nThe exact theorem statements that were proved;\nThe Rocq proof checker itself.\n5\nThis doesn’t mean these libraries contain no bugs.\nInstead, it means that any\nremaining bugs either are to be found within the artifacts listed above or are outside the scope of Claude’s proof\n. Hardening those still-possibly-buggy trusted components (Rocq, RISC-V, and Linux semantics) is not insignificant, but it’s a far more tractable task than debugging every line of code the scaled-out proofs cover—especially as this approach can secure an arbitrary number of projects without increasing the size of the trusted components.\nWe welcome independent verification of our proofs and encourage refinement of our approach. To that end, we are publishing the trusted components (above) made for this project that are not already public; Claude’s complete Rocq proofs for fuzz tests that did not require patching; and specifications for other fuzz tests we were not able to prove.\nFinding and fixing bugs\nAbove, we showed that you can turn many open-source libraries’ developer-written tests (fuzz tests) into specs that Claude can prove will always pass, sometimes after patching the remaining bugs it found. For this reason, the process of attempting to prove these specs discovered hundreds of bugs.\nLots of bugs showed up during Claude’s attempts to prove hundreds of entry points. To ensure that Claude didn’t have to stop for a human every time this happened, we let Claude fix the bugs it found: it patched the code, which caused the spec to be regenerated with that patched code, and then Claude proceeded to prove that new spec.\n6\nMany of the bugs we found are ones that a fuzzer would be unlikely to ever find. Fuzzers mutate small inputs,\ntypically capped at 1 MB\n, and typically rely on code coverage to guide them toward bugs. While proving an entry point in one library, Claude found a counter underflow in its copy of a decompressor that led to an out-of-bounds write, but only on inputs of around 20 MB that had one rare, specific layout. Other bugs include an out-of-bounds read in an image decoder that needed a 64 MB input and over 2 GB of memory, an out-of-bounds read in another library that needed a particular sequence of calls across two handles to the same file, and a rediscovery of CVE-2026-56132 in libexpat, which needed deeply nested input. Claude also found logic bugs that never crash at all. While proving that one library was memory-safe, for example, it noticed that a feature for restricting which files an application can load isn’t always enforced.\nThe ultimate goal of this project was to achieve a proof that the RISC-V-compiled fuzz tests had no remaining crashes to find. However, bugs like the above show that the process has another benefit, regardless of whether that goal is achieved: even just attempting this process yields real bugs that need to be fixed.\nProving more than memory safety\nProving that a fuzz test has no more crashes to find is more significant than it sounds. It’s common for fuzz tests in real-world code to test for violations of meaningful high-level properties, such as encode-decode roundtripping, idempotence, algebraic laws, differential testing, self-consistency, or equivalence to reference implementations. For example, a fuzz test for the LZO compression algorithm asserts that if you compress an input, then decompress it, the result is the same as the original. If the property does not hold, the program crashes—so proving the test never crashes is equivalent to proving the property itself.\nThis can also occur even when the properties are not directly specified by the developer. For example, in order for Claude to complete its OSS-Fuzz proof for cpp-httplib, it was necessary to rule out the possibility of a stack overflow due to too much recursion in the std::set destructor. This recursion depth is bounded by the maximum depth of a tree, so Claude had to prove (on machine code!) that libc++’s red-black tree rebalancing algorithm is correctly optimized to keep the tree’s depth logarithmically bounded.\nOther formal verification case studies\nFormal verification is an expansive domain. The fuzz-test-to-proof example above is one instance of LLMs making formal verification more widely usable by directly applying proofs to machine code.\nWe’ve also seen success using LLMs with formal verification in other ways. For example, we asked Claude to write a formal spec of\nRFC 1950\n, the technical document that defines the zlib compression file format. Then, we had Claude prove that the zlib implementation in the Linux kernel correctly implements that spec. As with the examples above, Claude proved this property at the binary level, except instead of RISC-V, Claude directly proved the x86-compiled binary using Claude-generated (and heavily tested) formal semantics of the x86 ISA.\n7\nWe then repeated this process for half a dozen other widely used libraries. Along the way, we found some minor (unexploitable) bugs in corner cases, which are in the process of being filed upstream. We draw two conclusions from this exercise: (1) these extremely well-tested codebases are already almost fully correct, and (2) it is possible to prove end-to-end correctness properties about real existing codebases.\nIn another experiment, we asked Claude to develop an interpreter for a large subset of Python in Rust, and to prove (using Verus, a verification tool for Rust) that it adheres to the CPython semantics outlined in an academic paper. We then measured the adherence to CPython’s behavior empirically, running over 1.7 million randomly generated Python programs, finding identical behavior with CPython in 99.95% of tests, with remaining test differences as unsurprising known corner cases.\nWe also found issues in several widely used and critical applications via formal verification attempts of simple security properties. In one of them, we discovered a previously unknown logic bug that had been latent for more than a decade. During an effort to verify a widely used PDF reader, we found as many security bugs in one week as are typically reported in a year.\nSee\nthe Appendix\nfor more details on some of these efforts.\nThis is just the beginning\nOne of the key limitations of LLM-assisted formal verification is that the proofs can take hundreds of millions of tokens to produce. Cost-efficiency is critical if our goal is to make these methods available to the entire software ecosystem. Fortunately, there are compelling reasons to expect efficiency to improve.\nNewer models need fewer tokens\nWe built 36 small verification tasks\nfrom real OSS-Fuzz code\n. Opus 5.5 proves half of them with about 40% fewer tokens than Opus 5. We expect this trend to continue as models are trained on long verification tasks.\nOpus 5.5 finishes proofs faster than earlier models.\nShare of 36 formal verification tasks proved by a single agent at a given token budget. Each task received three independent single-agent attempts at a 5M-token budget, and counts as proven when the first attempt finishes.\nProofs can be reused\nWhen agents work separately, they often end up duplicating a lot of effort. Proofs, like software, are recursively built from smaller proofs—and the smaller the proofs are, the more reusable they tend to be. To measure the impact of this, we let agents copy each other’s proofs as they worked on proving their own targets. When given access to this shared workspace, agents needed 17% fewer tokens than when they worked alone, and some agents even succeeded after previously failing in a solo attempt.\nThe 36 proofs from one shared workspace, in the order they finished.\nAn arc joins any two proofs that share an unchanged file; bars show the tokens spent writing each proof, and black lines show the same task’s average cost for an agent working alone, which was higher in 30 of the 34 completed proofs (agents working alone were not able to complete two of the proofs).\nWe observed the same phenomenon occurring at scale during our OSS-Fuzz proof effort. Most of a proof concerns code that every program contains (particularly initialization of the C runtime and AddressSanitizer), so very different programs can end up with significantly overlapping proofs. Agent teams took advantage of this by copying another team’s finished proof and then adapting it to their own program (Figure 6).\nAgents copied an existing proof and adapted it to each new program.\nEach column represents one program’s complete proof by share of bytes. Blocks are the parts of the proof and each block shows how much was kept identical, lightly edited (same file, size within 2%), edited more, or newly written. The shared parts gained almost no new code.\nThis reusability of proofs is how\nMathlib\n, a shared library of formal mathematics in Lean, grew to nearly\n300,000 theorems\nsubmitted by over 700 contributors: each new proof builds on the existing body of work. We accumulated a similar body of proofs in the course of our OSS-Fuzz effort, some of which we’re including in our release (we are not releasing proofs that may reveal an unpatched bug in the open-source software).\nAs we graduate from these initial experiments, we need a strategy for verifying the enormous body of\nexisting\nsoftware, starting with the most critical dependencies. As we’ve shown, this can be achieved at scale by using generic specs and working at the binary level, sidestepping the need to rewrite entire codebases in another language.\nThis approach also facilitates the reuse of proofs at package-level granularity, which means that each dependency only needs to be verified once. Dependencies follow a power law: proving even a small set of shared libraries makes a huge swath of software feasible to prove. For more details, see\nTheorem’s roadmap\nfor verifying the entirety of the Nix ecosystem, which includes critical infrastructure like glibc, OpenSSL, and cURL.\nLimitations\nIn practice, formal verification can sometimes prove less about the security of the code than we would like.\n“Formally verified” does not mean “bug-free.”\nClaude can write a proof showing that a compiled program’s behavior satisfies the requirements of a formal spec (which is verified by an external proof checker). However, a proof checker can’t tell you whether your spec matches reality. To match reality, the spec must correctly encompass and model everything about the real-world machine that the verified program runs on, including the CPU and operating system. When bugs show up in verified code, it’s because the spec, or the assumed semantics of the machine, differs from reality. Fortunately, this also means we know\nwhere\nto look for remaining bugs, and how to design a system where those still-possibly-buggy gaps are minimized. Below are the ways this applies to our proofs, and ideas for future work that would close those gaps.\nThe real machine does something the model doesn’t describe.\nOur proofs are about single-threaded, static RISC-V binaries linked against musl libc. However, most people run these libraries on x86 or ARM and dynamically link them against glibc. To close this gap, we’d need system models that more closely resemble deployed systems. For example, a step toward this would be generating accurate semantics for x86.\nThe claim may not cover everything we care about.\nWe proved that a crash never triggers for any input under 64 MB on many fuzzing entry points in Google OSS-Fuzz, including ASan crashes. However, ASan doesn’t detect all memory safety bugs, and we didn’t verify all the entry points for each library. Even if we had, the whole library wouldn’t be covered by verifying all entry points (especially if there is dead code). Additionally, real programs might misuse the library, leading to memory corruption in the\ncaller\n. To close that gap, we’d need to specify what callers must do for each public function, and callers would have to strictly adhere to it.\nWe expect that as we learn more about leveraging LLMs for formal methods, and as models continue to improve, these limitations will become tractable, and we’ll be able to verify a much larger percentage of the code we rely upon.\nConclusion\nThe trajectory is clear: formal verification, which was historically practical only for bespoke expert-crafted guarantees in the most safety-critical code, will soon be as practical as fuzzing is today for almost all production software. Just like static types, testing frameworks, and other correctness tooling, verification will mature from “bolted-on” to “built-in,” driven not only by LLMs but also by innovations in language design and development workflows.\nIn today’s world—where LLMs automatically scan for and find increasingly more code vulnerabilities—we must use processes that can\nguarantee\ncode security properties. LLM-scaled formal verification is a promising approach toward securing these guarantees at a scope and scale that were previously unattainable. We encourage others to experiment so we can collectively build a world in which robust software has proliferated very widely and software bugs are a well-understood and quickly addressable rarity.\nRead the full appendix.\nFootnotes\n01\nRISC-V is a processor design, like x86 or ARM, that defines the assembly instructions (the basic commands a chip carries out) that software is compiled into.\n02\nAn entry point is a front door into the code, provided by its authors for testing. Any input to the entry point that causes a crash is a bug the authors care about.\n03\nIncreasing this requires trivial human effort to change the parameter and regenerate the spec, then have Claude reprove the statement.\n04\nAddressSanitizer is a compiler tool that adds checks to a program so that memory errors, such as buffer overflows and use-after-free, are detected and reported the moment they occur at runtime.\n05\nThis technically also means we have to trust the hardware, OS, OCaml compiler that the Rocq proof checker relies on.\n06\nNote this leaves open the door to reward hacking. Reward hacking is when an AI model finds a shortcut that technically meets the goal it was given without doing what was actually intended, like a student who passes an exam by memorizing the answer key instead of learning the material. In this context, Claude could make any theorem provable by rewriting the program into one that trivially never crashes. To discourage this, we penalized any patch and offered extra credit for proving which inputs it changes and how few they are. We also logged and audited the patches for these failure modes.\n07\nWe think that the ability of Claude to—entirely autonomously—generate the formal semantics of an ISA is a separate interesting lesson. While we can not be sure our semantics themselves are perfect, empirically we have found that single-stepping through our semantics can boot an Ubuntu userspace on top of a Linux kernel. Generating these semantics also identified hundreds of mistakes in the official reference documentation, along with a smaller number of bugs in the hardware itself.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://www.anthropic.com/research/formal-verification",
+      "content_chars": 25257,
+      "content_sha256": "32141b07f8ab5660f2fbee482a56a770571358c8e67cec367a5994d81c917813",
+      "content_fetched_at": "2026-10-22T23:58:03.722592+00:00",
+      "author": "anthropic-research",
+      "author_name": "Anthropic Research",
+      "author_url": "https://www.anthropic.com/research",
+      "published_at": "2026-10-22T23:56:04.895191+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:anthropic-research",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.anthropic.com/research",
+        "https://www.anthropic.com/research/formal-verification"
+      ],
+      "refs": {
+        "actor": {
+          "login": "anthropic-research",
+          "url": "https://www.anthropic.com/research"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "anthropic-research",
+          "name": "Anthropic Research",
+          "home_url": "https://www.anthropic.com/research"
+        },
+        "article": {
+          "title": "LLMs are making formal software verification feasible at a much larger scale",
+          "url": "https://www.anthropic.com/research/formal-verification",
+          "content_sha256": "32141b07f8ab5660f2fbee482a56a770571358c8e67cec367a5994d81c917813"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:2d6b098984dd2250",
+      "who": "bhis-blog",
+      "who_url": "https://www.blackhillsinfosec.com/blog/",
+      "action": "publish",
+      "target": "Detection Engineering: Stop Drowning in Alerts and Start Catching Bad Guys",
+      "target_url": "https://www.blackhillsinfosec.com/detection-engineering/",
+      "text": "bhis-blog published: Detection Engineering: Stop Drowning in Alerts and Start Catching Bad Guys",
+      "at": "2026-10-22T20:09:12+00:00",
+      "external_id": "a:2d6b098984dd2250",
+      "url": "https://www.blackhillsinfosec.com/detection-engineering/",
+      "title": "Detection Engineering: Stop Drowning in Alerts and Start Catching Bad Guys",
+      "content": "Detection engineering is both a role and an activity. It’s the discipline of building and maintaining the logic that identifies malicious or risky behavior within your organization. It’s where security analysis meets software engineering, turning raw logs and telemetry into actionable detections that defenders can rely on.\nDetection engineers bridge the gaps between security operations, threat intelligence, and infrastructure. They understand how attackers operate, how defenders respond, and how systems generate the data that supports those detections. A well-built detection can mean the difference between an alert that matters and one that drowns in noise.\nPrecision and Recall: The Balancing Act\nEvery detection faces a trade-off between precision and recall.\nPrecision\nmeasures how much you can trust your alerts: of everything that fired, how much was actually malicious? High precision = fewer false positives = analysts trust the tool.\nRecall\nmeasures how much you’re catching: of everything malicious that happened, how much did you detect? High recall = fewer blind spots = threats don’t slip through.\nDetection engineering lives in the tension between the two: too much precision risks missing subtle threats; too much recall floods analysts with false positives. The goal is calibration through testing, iteration, and feedback.\nCore Components of Detection Engineering\n1. Scoping and Prioritization\nStart with intent. What are you trying to detect, and why? Define the threats, behaviors, or assets that matter most, then align your work with frameworks such as MITRE ATT&CK®. Evaluate risk and value to determine which detections provide the highest impact for the effort required. Prioritize based on business importance and available telemetry.\n2. Data and Telemetry\nGreat detections rely on great data. Keep inventory of your logs. Validate that each contains the data you need. Normalize and enrich your logs so detections remain consistent across tools and environments. Understanding how logs are generated is essential to writing logic that fits your environment.\n3. Detection Logic Development\nThis is where hypothesis meets code. Write queries or rules that detect behaviors, not just static indicators. Combine multiple approaches:\nSignatures for known indicators of compromise (IoCs)\nBehavioral logic for Tactics, Techniques, and Procedures (TTPs) and patterns\nAnomaly models for statistical outliers\n4. Testing and Validation\nUse adversary emulations or frameworks like Atomic Red Team to verify that your detections actually fire and your logging is working. Measure quality through precision, recall, and additional factors like confidence (how certain you are it’s malicious) and criticality (how severe the impact would be).\n5. Deployment and Tuning\nMonitor performance, including trigger frequency, false positive rates, and analyst response time. Detection engineering is iterative and ongoing, not “write once and done.”\n6. Documentation and Knowledge Transfer\nGood detections come with context. Record what the detection looks for, why it matters, what data it uses, and how it was tested. Version control your rules using Git and promote collaboration so analysts, hunters, and engineers can learn from one another. Playbooks and detection libraries ensure institutional knowledge does not disappear when staff change roles.\n7. Metrics and Continuous Improvement\nTrack measurable outcomes such as coverage across ATT&CK® techniques, number of validated detections, false positive rates, and mean time to detect. Regularly retire stale detections, update ones that drift, and automate validation wherever possible. Detection-as-Code practices keep everything maintainable and scalable.\nBuilding the Skillset\nDetection engineering requires a strong foundation in logging, security tooling, and incident response. You should understand when it’s best to detect, when to block, and how to use data sources effectively.\nWhether you’re building your first rule or managing hundreds, the mindset remains the same:\ntest everything, learn constantly, and make each detection better than the last.\nGet Started\nExplore resources like:\ndetectionengineering.net\nand SigmaHQ.\nFollow community leaders like:\nZack Allen (Detection Engineering Weekly) and Haider Dost (Threat Detection Maturity Framework).\nStudy detections and see how others approach logic design at:\nresearch.splunk.com\nRead:\nPractical Threat Detection Engineering.\nFor more resources check out:\nhttps://bit.ly/notlogic",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://www.blackhillsinfosec.com/detection-engineering/",
+      "content_chars": 4512,
+      "content_sha256": "f6989af573b4322bc94af395ea53f98ad6db526deb4b50eecd8921f091f441b4",
+      "content_fetched_at": "2026-10-22T23:57:51.742755+00:00",
+      "author": "bhis-blog",
+      "author_name": "Black Hills Information Security Blog",
+      "author_url": "https://www.blackhillsinfosec.com/blog/",
+      "published_at": "2026-10-22T20:09:12+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:bhis-blog",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.blackhillsinfosec.com/blog/",
+        "https://www.blackhillsinfosec.com/detection-engineering/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "bhis-blog",
+          "url": "https://www.blackhillsinfosec.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "bhis-blog",
+          "name": "Black Hills Information Security Blog",
+          "home_url": "https://www.blackhillsinfosec.com/blog/"
+        },
+        "article": {
+          "title": "Detection Engineering: Stop Drowning in Alerts and Start Catching Bad Guys",
+          "url": "https://www.blackhillsinfosec.com/detection-engineering/",
+          "content_sha256": "f6989af573b4322bc94af395ea53f98ad6db526deb4b50eecd8921f091f441b4"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:7c1ce9da91a85a59",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014",
+      "text": "msrc published: CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
+      "at": "2026-10-22T14:00:00+00:00",
+      "external_id": "a:7c1ce9da91a85a59",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014",
+      "title": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
+      "content": "# CVE-2026-105014 - Azure Pipelines Remote Code Execution Vulnerability\n\nImproper neutralization of special elements used in a command ('command injection') in Azure Pipelines allows an unauthorized attacker to execute code over a network.\n\nCWE: CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014",
+      "content_chars": 337,
+      "content_sha256": "2906b1e9107102edac39a86bbf302aa3f27ae64931a3807af17b60ecb06b6272",
+      "content_fetched_at": "2026-10-22T23:58:10.948404+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-22T14:00:00+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014",
+          "content_sha256": "2906b1e9107102edac39a86bbf302aa3f27ae64931a3807af17b60ecb06b6272"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:d078ae182673a8dd",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456",
+      "text": "msrc published: CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
+      "at": "2026-10-22T14:00:00+00:00",
+      "external_id": "a:d078ae182673a8dd",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456",
+      "title": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
+      "content": "# CVE-2026-108456 - Azure AI Foundry Elevation of Privilege Vulnerability\n\nServer-side request forgery (ssrf) in Azure AI Foundry allows an authorized attacker to elevate privileges over a network.\n\nCWE: CWE-918: Server-Side Request Forgery (SSRF)",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456",
+      "content_chars": 247,
+      "content_sha256": "6701f2bf4a21dd88931f1c07bf2520c0a2d1e3e7db12c4addfcb23efeb0f2269",
+      "content_fetched_at": "2026-10-22T23:58:11.968719+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-22T14:00:00+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456",
+          "content_sha256": "6701f2bf4a21dd88931f1c07bf2520c0a2d1e3e7db12c4addfcb23efeb0f2269"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:6b9aa0664452701f",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-97785 AAD App Proxy Elevation of Privilege Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785",
+      "text": "msrc published: CVE-2026-97785 AAD App Proxy Elevation of Privilege Vulnerability",
+      "at": "2026-10-22T14:00:00+00:00",
+      "external_id": "a:6b9aa0664452701f",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785",
+      "title": "CVE-2026-97785 AAD App Proxy Elevation of Privilege Vulnerability",
+      "content": "# CVE-2026-97785 - AAD App Proxy Elevation of Privilege Vulnerability\n\nImproper authentication in AAD App Proxy allows an unauthorized attacker to elevate privileges over a network.\n\nCWE: CWE-287: Improper Authentication",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785",
+      "content_chars": 220,
+      "content_sha256": "eb76d75a106411339db7ed01c6da3f52e5114de7337e366d6d75502721227bb4",
+      "content_fetched_at": "2026-10-22T23:58:12.441731+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-22T14:00:00+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-97785 AAD App Proxy Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785",
+          "content_sha256": "eb76d75a106411339db7ed01c6da3f52e5114de7337e366d6d75502721227bb4"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:4dbd6628d42d7ad3",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-96185 Microsoft Exchange Online Remote Code Execution Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185",
+      "text": "msrc published: CVE-2026-96185 Microsoft Exchange Online Remote Code Execution Vulnerability",
+      "at": "2026-10-22T14:00:00+00:00",
+      "external_id": "a:4dbd6628d42d7ad3",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185",
+      "title": "CVE-2026-96185 Microsoft Exchange Online Remote Code Execution Vulnerability",
+      "content": "# CVE-2026-96185 - Microsoft Exchange Online Remote Code Execution Vulnerability\n\nStack-based buffer overflow in Microsoft Exchange Online allows an authorized attacker to execute code over a network.\n\nCWE: CWE-121: Stack-based Buffer Overflow",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185",
+      "content_chars": 243,
+      "content_sha256": "835643fd1c3929d5d3a8d75b288e09f924475a3f72d19c3801828bc60ea916ed",
+      "content_fetched_at": "2026-10-22T23:58:12.985114+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-22T14:00:00+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-96185 Microsoft Exchange Online Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185",
+          "content_sha256": "835643fd1c3929d5d3a8d75b288e09f924475a3f72d19c3801828bc60ea916ed"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:4273c05ff1b7f758",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-83938 Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
+      "text": "msrc published: CVE-2026-83938 Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability",
+      "at": "2026-10-22T14:00:00+00:00",
+      "external_id": "a:4273c05ff1b7f758",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
+      "title": "CVE-2026-83938 Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability",
+      "content": "# CVE-2026-83938 - Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability\n\nMissing authentication for critical function in Azure Kubernetes Configuration Service allows an unauthorized attacker to elevate privileges over a network.\n\nCWE: CWE-306: Missing Authentication for Critical Function",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
+      "content_chars": 312,
+      "content_sha256": "dc189920d4d93c7e103fdb35d0ceea4e0c09a6de7436d0b7860e5a3ef126d313",
+      "content_fetched_at": "2026-10-22T23:58:13.360794+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-22T14:00:00+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-83938 Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
+          "content_sha256": "dc189920d4d93c7e103fdb35d0ceea4e0c09a6de7436d0b7860e5a3ef126d313"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:e29c8705d9593d83",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-110063 VM Inspector for Azure Virtual Machines Elevation of Privilege Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
+      "text": "msrc published: CVE-2026-110063 VM Inspector for Azure Virtual Machines Elevation of Privilege Vulnerability",
+      "at": "2026-10-22T14:00:00+00:00",
+      "external_id": "a:e29c8705d9593d83",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
+      "title": "CVE-2026-110063 VM Inspector for Azure Virtual Machines Elevation of Privilege Vulnerability",
+      "content": "# CVE-2026-110063 - VM Inspector for Azure Virtual Machines Elevation of Privilege Vulnerability\n\nImproper link resolution before file access ('link following') in VM Inspector for Azure Virtual Machines allows an unauthorized attacker to elevate privileges over a network.\n\nCWE: CWE-59: Improper Link Resolution Before File Access ('Link Following')",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
+      "content_chars": 350,
+      "content_sha256": "f01385d8b079ef0db906cb361a1aab77c15d8ee3ea2bf80314719ab6f4bb22aa",
+      "content_fetched_at": "2026-10-22T23:58:13.917333+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-22T14:00:00+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-110063 VM Inspector for Azure Virtual Machines Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
+          "content_sha256": "f01385d8b079ef0db906cb361a1aab77c15d8ee3ea2bf80314719ab6f4bb22aa"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:97009cc4e26d28cc",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-96251 Microsoft PowerShell Remote Code Execution Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
+      "text": "msrc published: CVE-2026-96251 Microsoft PowerShell Remote Code Execution Vulnerability",
+      "at": "2026-10-22T14:00:00+00:00",
+      "external_id": "a:97009cc4e26d28cc",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
+      "title": "CVE-2026-96251 Microsoft PowerShell Remote Code Execution Vulnerability",
+      "content": "# CVE-2026-96251 - Microsoft PowerShell Remote Code Execution Vulnerability\n\nReliance on untrusted inputs in a security decision in Microsoft PowerShell allows an unauthorized attacker to execute code over a network.\n\nCWE: CWE-807: Reliance on Untrusted Inputs in a Security Decision",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
+      "content_chars": 283,
+      "content_sha256": "4f0850e681b44233ea391654d06c2263a3b7174774ae255a1cf6ac7e703295cb",
+      "content_fetched_at": "2026-10-22T23:58:14.504230+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-22T14:00:00+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-96251 Microsoft PowerShell Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
+          "content_sha256": "4f0850e681b44233ea391654d06c2263a3b7174774ae255a1cf6ac7e703295cb"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:a9a8f75e73bb867c",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-96303 Microsoft PowerShell Security Feature Bypass Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96303",
+      "text": "msrc published: CVE-2026-96303 Microsoft PowerShell Security Feature Bypass Vulnerability",
+      "at": "2026-10-22T14:00:00+00:00",
+      "external_id": "a:a9a8f75e73bb867c",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96303",
+      "title": "CVE-2026-96303 Microsoft PowerShell Security Feature Bypass Vulnerability",
+      "content": "# CVE-2026-96303 - Microsoft PowerShell Security Feature Bypass Vulnerability\n\nImproperly implemented security check for standard in Microsoft PowerShell allows an unauthorized attacker to bypass a security feature over a network.\n\nCWE: CWE-358: Improperly Implemented Security Check for Standard",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96303",
+      "content_chars": 296,
+      "content_sha256": "9b2d28d1d9793ad6da09d1a3e74ad51d7feccdd277226b93f118d25c8497ec15",
+      "content_fetched_at": "2026-10-22T23:58:15.177189+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-10-22T14:00:00+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96303"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-96303 Microsoft PowerShell Security Feature Bypass Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96303",
+          "content_sha256": "9b2d28d1d9793ad6da09d1a3e74ad51d7feccdd277226b93f118d25c8497ec15"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:4809865d8e741667",
+      "who": "denizhalil-blogs",
+      "who_url": "https://denizhalil.com/blogs/",
+      "action": "publish",
+      "target": "Vulnerability Analysis: CVE-2026-109618 & CVE-2026-109619 Critical Unauthenticated Remote Code Execution in PHP",
+      "target_url": "https://denizhalil.com/2026/10/22/cve-2026-109618-cve-2026-109619-php-rce-analysis/",
+      "text": "denizhalil-blogs published: Vulnerability Analysis: CVE-2026-109618 & CVE-2026-109619 Critical Unauthenticated Remote Code Execution in PHP",
+      "at": "2026-10-22T05:00:00+00:00",
+      "external_id": "a:4809865d8e741667",
+      "url": "https://denizhalil.com/2026/10/22/cve-2026-109618-cve-2026-109619-php-rce-analysis/",
+      "title": "Vulnerability Analysis: CVE-2026-109618 & CVE-2026-109619 Critical Unauthenticated Remote Code Execution in PHP",
+      "content": "Introduction\nCVE-2026-109618 and CVE-2026-109619 represent one of the most critical security emergencies in recent PHP history, threatening millions of active web servers globally. Highlighting the fundamental dangers of memory management flaws within persistent web server worker environments—such as PHP-FPM or Apache\nmod_php\n—these vulnerabilities enable unauthenticated remote attackers to execute arbitrary system commands with the privilege level of the underlying web service. Dubbed\n“PHP2Shell”\nby cybersecurity researchers, the combined exploit chain directly targets low-level fatal error handling routines in the Zend Engine core, turning standard memory exhaustions into total host compromise. Because the vulnerability manifests prior to application-level routing, standard code hardening within web applications fails to provide protection, leaving unpatched web infrastructure completely exposed.\nLearning Objectives\nBy analyzing this security advisory and technical breakdown, you will learn to:\nUnderstand the Root Mechanism:\nIdentify how low-level longjmp-based unwinding disrupts normal variable cleanup and state resetting in the C-based PHP Zend Engine.\nGrasp the Exploit Chain Architecture:\nComprehend how an initial data-leak/memory corruption bug (CVE-2026-109618) combines with a cross-request Use-After-Free bug (CVE-2026-109619) to yield reliable Remote Code Execution.\nAssess Attack Vectors:\nRecognize how common HTTP interfaces (like\nmultipart/form-data\nuploads) can trigger engine-level flaws prior to any application-layer code execution.\nFormulate Defense & Remediation:\nImplement immediate web-server mitigations and long-term patch strategies across both active and End-of-Life (EOL) PHP branches.\nWhat is Critical Unauthenticated Remote Code Execution in PHP (CVE-2026-109618 & CVE-2026-109619)\nBoth vulnerabilities carry a CVSS v3 score of\n9.2 (Critical)\n, reflecting their severity and ease of exposure across default installations. Unlike traditional application-level weaknesses—such as SQL injection, local file inclusion, or insecure deserialization written into custom scripts—these flaws reside deep within the C source code of the PHP engine itself. Consequently, every web application hosted on an unpatched PHP binary is exposed regardless of how securely the application code was written or audited. The underlying issue centers on how the Zend Engine manages worker process state when an out-of-memory (OOM) condition occurs. When a script or request parser exceeds the allocated\nmemory_limit\n, PHP forces an abrupt execution halt using C-level\nlongjmp()\nunwinding. This abrupt jump bypasses standard garbage collection and destructor routines, leaving allocated memory structures in a corrupted or partially initialized state. When persistent worker architectures process subsequent requests, these leftover memory pointers are incorrectly treated as active context.\nBecause this memory corruption occurs during early request parsing—specifically while processing standard HTTP headers, body content, or file upload handlers—an attacker does not require valid credentials, session tokens, or access to specific application endpoints. Simply sending crafted HTTP requests directly to any valid PHP-serviced path triggers the underlying engine routines, making unauthenticated remote exploitation straightforward for persistent worker setups.\nCVSS Score:\n9.2 (Critical) — High impact on confidentiality, integrity, and availability.\nAttack Vector:\nNetwork (Unauthenticated HTTP/HTTPS POST or GET requests).\nCore Vulnerability Mechanics:\nOut-of-memory\nlongjmp()\nexecution bypass combined with cross-request memory reuse.\nAffected Component:\nCore Zend Engine request lifecycle and memory allocator (\nzend_alloc\n).\nTechnical Detail: How the Vulnerability Chain Works\nThe mechanics of this security flaw rely on the architectural design of persistent PHP processes, such as PHP-FPM pools or FastCGI implementations. To minimize performance overhead, these worker processes remain alive after completing an HTTP request, waiting to process the next incoming connection in the same memory address space. When a memory allocation failure occurs during request handling, the engine must safely clean up the current request’s state and reset its internal allocator without terminating the entire worker process. However, the unwinding mechanism triggered by\nlongjmp()\nfails to clean up complex nested data structures properly. When an allocation fails, the control flow jumps directly to the top-level error handler, skipping intermediate cleanup handlers for file upload monitors, global symbol tables, and internal buffers. This creates a desynchronization between the engine’s global tracker state and the actual allocated heap memory blocks managed by\nzend_alloc\n.\nWhen the persistent worker receives a follow-up HTTP request, the engine reinitializes request memory without fully resetting stale global pointers from the previous aborted execution. This architectural flaw allows an attacker to control the contents of freed memory via the first request, and then trick the engine into executing code paths derived from those dangling pointers during the second request.\nPrerequisite Condition:\nA web architecture utilizing persistent worker processes (e.g., PHP-FPM, Apache event MPM with FastCGI).\nInitial State Manipulation:\nForcing memory exhaustion (\nmemory_limit\nboundary hit) during early request payload parsing.\nMemory Address Mapping:\nUtilizing uninitialized buffer reads during process failure to bypass ASLR protections.\nControl Flow Hijacking:\nOverwriting internal function pointer tables (such as\nzend_execute_internal\n) in freed memory structures.\nBelow is a conceptual terminal demonstration showing an administrator inspecting HTTP responses during a diagnostic test against an unpatched PHP worker:\n$ curl -i -s -X POST \"http://target-server.local/index.php\" \\\n-H \"Content-Type: multipart/form-data; boundary=---------------------------109618109619\" \\\n--data-binary \"@large_payload.bin\"\nHTTP/1.1 500 Internal Server Error\nServer: nginx/1.24.0\nDate: Wed, 21 Oct 2026 20:41:00 GMT\nContent-Type: text/html; charset=UTF-8\nConnection: keep-alive\nX-Powered-By: PHP/8.3.35\nFatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 140000000 bytes) in Unknown on line 0\nStep 1: Memory corruption during OOM handling (CVE-2026-109618)\nThe first stage of the vulnerability chain relies on forcing an out-of-memory error during early request initialization. When an HTTP request containing large headers, structured parameters, or upload progress keys is received, the Zend Engine allocates heap memory to track incoming data structures. By crafting a payload that rapidly consumes memory right up to the configured\nmemory_limit\n, the engine fails mid-allocation and immediately invokes the fatal error recovery routine via\nlongjmp()\n. Because\nlongjmp()\nabruptly transfers control back to the main request loop, standard destructors and pointer cleanup routines are skipped. Consequently, internal memory references remain registered in global engine trackers despite their underlying memory blocks being marked as reusable or uninitialized. This structural mismatch leaves valid global pointers referencing corrupted memory locations, laying the groundwork for process memory state leakage.\nStep 2: Use after free across requests (CVE-2026-109619)\nThe second stage occurs when the persistent worker process accepts the subsequent HTTP request from the network. Rather than terminating the corrupted worker process, the web server reuses it to handle new traffic. As the engine initializes the context for the incoming request, it encounters leftover pointers that still reference the memory space freed during the previous request’s OOM failure. During initialization, incoming request data overwrites the freed memory region, allowing an attacker to populate those address locations with controlled payload values. When the Zend Engine attempts to invoke internal execution functions using the stale pointers, it mistakenly reads the newly supplied attacker data as valid function tables or execution contexts. This type confusion allows arbitrary control flow redirection, culminating in unauthenticated system command execution.\nAffected Software & Plugins\nBecause these security flaws reside inside the core Zend Engine runtime,\nall web applications and CMS platforms deployed on unpatched PHP installations are vulnerable\n, regardless of application-level security controls, input validation, or framework-level sanitization.\nPHP 8.5 Branch:\nVersions 8.5.0 through 8.5.11 (Patched in\n8.5.12\n).\nPHP 8.4 Branch:\nVersions 8.4.0 through 8.4.26 (Patched in\n8.4.27\n).\nPHP 8.3 Branch:\nVersions 8.3.0 through 8.3.35 (Patched in\n8.3.36\n).\nPHP 8.2 Branch:\nVersions 8.2.0 through 8.2.34 (Patched in\n8.2.35\n).\nApplications built on popular content management systems and frameworks—including\nWordPress, Drupal, Joomla, Laravel, Symfony, and Magento\n—are instantly exposed if hosted on vulnerable binary versions. Legacy environments running End-of-Life (EOL) versions (such as PHP 7.x or 8.1) do not receive official upstream patches and require operating system distribution backports or immediate upgrading to supported releases.\nConclusion\nCVE-2026-109618 and CVE-2026-109619 highlight the severe implications of memory safety vulnerabilities in underlying server runtimes. When engine-level cleanup routines fail during exceptional error states like OOM conditions, traditional application-layer defenses offer no security margin. Organizations must treat these advisories as high-priority infrastructure threats requiring rapid patch validation and deployment. System administrators and DevOps teams should immediately audit active environments and update PHP packages to patched releases (\n8.2.35+\n,\n8.3.36+\n,\n8.4.27+\n, or\n8.5.12+\n). For infrastructure running EOL branches where immediate upstream upgrades are infeasible, enterprise Linux security backports (such as Red Hat, Ubuntu ESM, or AlmaLinux advisories) must be applied without delay to secure persistent worker processes. In environments where immediate binary replacement is blocked by change freezes, temporary perimeter mitigations should be implemented. Web Application Firewalls (WAFs) and reverse proxies can be configured to inspect and block anomalous upload progress payloads or restrict maximum request body sizes below the PHP\nmemory_limit\nthreshold, preventing malicious requests from reaching vulnerable error-handling code paths.\nThe Ultimate Reverse Shell Cheat Sheet\nWhat is an Advanced Persistent Threat (APT)?\nVulnerability Analysis CVE-2026-87902 WordPress Core – PHP Template Path Traversal\nVulnerability Analysis: CVE-2026-82329 JFrog Artifactory Access Authentication Bypass\nThe Hidden Gateway to Enterprise Networks: Unbound DNS Flaw and the Threat to Global Resolvers\nThe post\nVulnerability Analysis: CVE-2026-109618 & CVE-2026-109619 Critical Unauthenticated Remote Code Execution in PHP\nappeared first on\nDenizHalil - Professional Cybersecurity Consulting and Penetration Testing\n.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://denizhalil.com/2026/10/22/cve-2026-109618-cve-2026-109619-php-rce-analysis/",
+      "content_chars": 11142,
+      "content_sha256": "bb3494ff359cc82df4d81f6f206cae9019044069d2866eb9332a004f94730b15",
+      "content_fetched_at": "2026-10-22T23:57:07.382741+00:00",
+      "author": "denizhalil-blogs",
+      "author_name": "DenizHalil Blogs",
+      "author_url": "https://denizhalil.com/blogs/",
+      "published_at": "2026-10-22T05:00:00+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:denizhalil-blogs",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://denizhalil.com/blogs/",
+        "https://denizhalil.com/2026/10/22/cve-2026-109618-cve-2026-109619-php-rce-analysis/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "denizhalil-blogs",
+          "url": "https://denizhalil.com/blogs/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "denizhalil-blogs",
+          "name": "DenizHalil Blogs",
+          "home_url": "https://denizhalil.com/blogs/"
+        },
+        "article": {
+          "title": "Vulnerability Analysis: CVE-2026-109618 & CVE-2026-109619 Critical Unauthenticated Remote Code Execution in PHP",
+          "url": "https://denizhalil.com/2026/10/22/cve-2026-109618-cve-2026-109619-php-rce-analysis/",
+          "content_sha256": "bb3494ff359cc82df4d81f6f206cae9019044069d2866eb9332a004f94730b15"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:5bfb31aa36cd49e4",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "召回与精度的分工：Agent 内部监控为什么既需要 SAE 也需要 Neuron",
+      "target_url": "https://yage.ai/share/agent-internal-monitoring-sae-neuron-20261022.html",
+      "text": "yage-share published: 召回与精度的分工：Agent 内部监控为什么既需要 SAE 也需要 Neuron",
+      "at": "2026-10-22T00:00:00+00:00",
+      "external_id": "a:5bfb31aa36cd49e4",
+      "url": "https://yage.ai/share/agent-internal-monitoring-sae-neuron-20261022.html",
+      "title": "召回与精度的分工：Agent 内部监控为什么既需要 SAE 也需要 Neuron",
+      "content": "行为审计和思维链都会漏掉冷静的作弊。SAE 擅长无监督发现，neuron 擅长因果验证。对 builder 来说，内部监控不是二选一，而是两层分工。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/agent-internal-monitoring-sae-neuron-20261022.html",
+      "content_chars": 74,
+      "content_sha256": "9431e6631612e56fc9d034ee58f9a5f5ecd048d0e8321a7914982d37ee4afcc9",
+      "content_fetched_at": "2026-10-22T23:56:41.645068+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-22T00:00:00+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/agent-internal-monitoring-sae-neuron-20261022.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "召回与精度的分工：Agent 内部监控为什么既需要 SAE 也需要 Neuron",
+          "url": "https://yage.ai/share/agent-internal-monitoring-sae-neuron-20261022.html",
+          "content_sha256": "9431e6631612e56fc9d034ee58f9a5f5ecd048d0e8321a7914982d37ee4afcc9"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    },
+    {
+      "id": "a:f90cd0c938940999",
+      "who": "hacktron-blog",
+      "who_url": "https://www.hacktron.ai/blog",
+      "action": "publish",
+      "target": "PHP2Shell: Critical PHP RCE (CVE-2026-109618, CVE-2026-109619)",
+      "target_url": "https://www.hacktron.ai/blog/php2shell",
+      "text": "hacktron-blog published: PHP2Shell: Critical PHP RCE (CVE-2026-109618, CVE-2026-109619)",
+      "at": "2026-10-22T00:00:00+00:00",
+      "external_id": "a:f90cd0c938940999",
+      "url": "https://www.hacktron.ai/blog/php2shell",
+      "title": "PHP2Shell: Critical PHP RCE (CVE-2026-109618, CVE-2026-109619)",
+      "content": "Status:\nPatched · Exploitation attempts reported\nSeverity:\nCritical, CVSS v4.0 9.2 (PHP security team)\nOverview\nPHP2Shell is two critical vulnerabilities in PHP, CVE-2026-109618 and CVE-2026-109619, that let an unauthenticated attacker run code on servers that use PHP to handle web requests. PHP released fixes on 21 October 2026. Update to PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35, then restart every PHP worker.\nAm I Affected?\nSupported branches:\nPHP 8.2, 8.3, 8.4 and 8.5 are affected before 8.2.35, 8.3.36, 8.4.27 and 8.5.12 respectively, when serving web requests. PHP 8.6.0 release candidates before RC4 are also affected.\nEnd-of-life branches:\nPHP 8.1 and older no longer get upstream releases. Independent analysis traces the earliest affected code path to PHP 5.4.0; PHP has not stated a full affected range.\nApache with mod_php:\nhighest risk, according to PHP. Remote code execution is confirmed for both CVEs, and for CVE-2026-109618 with default input and memory limits.\nPHP-FPM:\nCVE-2026-109619’s session upload progress path was validated as RCE on a normal dynamic pool. For CVE-2026-109618, source analysis says FPM is susceptible, but no complete exploit has been demonstrated.\nFrankenPHP and LiteSpeed (LSAPI):\nsusceptibility is based on source analysis only. No exploit has been validated, and PHP says this does not make them immune.\nHow to Check\nList every PHP runtime that serves web traffic: main apps, internal tools, legacy apps, and PHP pulled in by container base images or OS packages.\nCheck the version that actually serves requests. The CLI (\nphp -v\n) can be a different build from PHP-FPM or Apache’s mod_php.\nFor distribution packages, compare against your distribution’s advisory. Backported fixes may not change the upstream version number.\nAfter updating, rebuild and redeploy images, restart PHP workers, and confirm the new version is serving requests.\nReview activity from at least 17 October 2026. Look for new or modified PHP files, web shells, unexpected admin users and unusual outbound connections. Also look for unexpected child processes or shell commands launched by PHP or the web server: exploitation does not need to leave a web shell on disk.\nIn request logs, AWS suggests looking for multipart POST requests containing the\nPHP_SESSION_UPLOAD_PROGRESS\nfield.\nWhat to Do\nUpdate PHP to a fixed version.\nIf you use your Linux distribution’s PHP packages, follow its security advisory. PHP says updating is the only complete fix.\nIf you can’t update straight away,\nPHP’s advisories list settings that reduce the risk but don’t remove it. Set them administratively, so no pool, directory or app setting can override them:\nCVE-2026-109618:\nset\nmemory_limit=-1\n; keep\npost_max_size\nconservative and enforce request size at the frontend; lower\nmax_input_nesting_level\nand bound the number of input variables, multipart parts and uploads; block multipart requests at the frontend if your app doesn’t use them. Don’t use\nRLIMIT_AS\nor\nRLIMIT_DATA\n, which can trigger the vulnerable path.\nCVE-2026-109619:\nset\nsession.upload_progress.enabled=0\nand, on PHP 8.5,\nfatal_error_backtraces=0\n. If performance allows, PHP also suggests\npm.max_requests=1\n.\nRestart every PHP worker\nafter updating or changing settings.\nFixed Versions\nBranch\nFixed in\n8.5\n8.5.12\n8.4\n8.4.27\n8.3\n8.3.36\n8.2\n8.2.35\n8.6 (RC)\n8.6.0 RC4\n7.4 to 8.1\nBackports only\n5.4 to 7.3\nNo upstream fix\nPHP 7.4, 8.0 and 8.1:\nno upstream release. PHP published minimal\nsource backports\nfor people who build from source. Distributions and LTS vendors may ship patched packages.\nPHP 5.4 to 7.3:\nend of life. Migrate, or get a backport from a supported vendor.\nTimeline\nDate\nEvent\n2026-10-17\nAWS sees an exploitation attempt in its MadPot honeypots\n2026-10-20\nCVE IDs circulate; PHP posts an\nadvance notice\n2026-10-21\nPHP ships fixes and advisories at 14:00 UTC, a day early\n2026-10-21\nAWS reports PHP2Shell is “broadly exploited in the wild”\nAWS says it is unclear whether the attempts it observed would have succeeded against real systems, and recommends investigating from at least 17 October. As of 22 October, no successful compromise of a real-world victim has been publicly documented.\nTechnical Summary\nCVE-2026-109618, RCE via out-of-memory corruption:\nPHP exits out-of-memory errors with\nlongjmp()\n. If memory runs out while request state is only partly initialised, shutdown can read or branch on invalid memory. An attacker can reach this through request input handling, including multipart parsing.\nCVE-2026-109619, RCE via stale global state:\nrequest-owned data can stay in worker globals after the request’s memory is freed, and a later request on the same worker can use it before normal initialisation. Confirmed early consumers are INI diagnostics and session upload progress. Impact includes use-after-free, memory disclosure and remote code execution with the web worker’s privileges.\nBoth:\nunauthenticated and network-reachable, CVSS v4.0 9.2 (\nAV:N/AC:H/AT:P/PR:N/UI:N\n). Exploit reliability depends on the build, extensions, frontend and memory allocator layout.\nUpdate Log\n22 October 2026:\nInitial publication. Status: patched, exploitation attempts reported. Not listed in CISA’s Known Exploited Vulnerabilities catalog (version 2026.10.21).\nReferences\nPHP advisory GHSA-w8hw-w9fx-j79w (CVE-2026-109618)\nPHP advisory GHSA-6wmf-4rv5-p3rp (CVE-2026-109619)\nPHP security advisory and release announcements, 20–21 October 2026\nAWS: Amazon threat intelligence identifies PHP2Shell exploitation prior to public disclosure\nTenable: PHP2Shell FAQ\n(earliest affected code path, PHP 5.4.0, citing Calif’s analysis)\nCISA Known Exploited Vulnerabilities catalog\nCredits, from PHP’s advisories: reported by sagitzadik-wiz, tomash-areion, lcfr-hax and amyb-oai; fixed by arnaud-lb, iluuu1994, bukka and ndossche.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://www.hacktron.ai/blog/php2shell",
+      "content_chars": 5809,
+      "content_sha256": "760a3eddbb22821629a5f1629b6a7032ab67afc8fa83665f0e8816417dc85cb9",
+      "content_fetched_at": "2026-10-22T23:57:22.646821+00:00",
+      "author": "hacktron-blog",
+      "author_name": "Hacktron AI Blog",
+      "author_url": "https://www.hacktron.ai/blog",
+      "published_at": "2026-10-22T00:00:00+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:hacktron-blog",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.hacktron.ai/blog",
+        "https://www.hacktron.ai/blog/php2shell"
+      ],
+      "refs": {
+        "actor": {
+          "login": "hacktron-blog",
+          "url": "https://www.hacktron.ai/blog"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "hacktron-blog",
+          "name": "Hacktron AI Blog",
+          "home_url": "https://www.hacktron.ai/blog"
+        },
+        "article": {
+          "title": "PHP2Shell: Critical PHP RCE (CVE-2026-109618, CVE-2026-109619)",
+          "url": "https://www.hacktron.ai/blog/php2shell",
+          "content_sha256": "760a3eddbb22821629a5f1629b6a7032ab67afc8fa83665f0e8816417dc85cb9"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:96d33a6f3e931bc6",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "多 agent 不是更聪明，是更贵：它到底买到了什么",
+      "target_url": "https://yage.ai/share/multi-agent-what-it-buys-20261021.html",
+      "text": "yage-share published: 多 agent 不是更聪明，是更贵：它到底买到了什么",
+      "at": "2026-10-21T00:00:00+00:00",
+      "external_id": "a:96d33a6f3e931bc6",
+      "url": "https://yage.ai/share/multi-agent-what-it-buys-20261021.html",
+      "title": "多 agent 不是更聪明，是更贵：它到底买到了什么",
+      "content": "多 agent 的成本是单干的数倍，但它买到的不是更强的智能，而是端到端时间、查漏补缺、搜索多样性和上下文隔离。文章用 Vals、Cohere、微软研究院和 Anthropic 的实测数据，拆开这笔交易的账本。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/multi-agent-what-it-buys-20261021.html",
+      "content_chars": 105,
+      "content_sha256": "fe63e244957ac3b97f01c6bc4b9c3d46d90ae61628b84878f18389a2defac1ed",
+      "content_fetched_at": "2026-10-22T23:56:42.070886+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-21T00:00:00+00:00",
+      "collected_at": "2026-10-22T23:56:04.895191+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/multi-agent-what-it-buys-20261021.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "多 agent 不是更聪明，是更贵：它到底买到了什么",
+          "url": "https://yage.ai/share/multi-agent-what-it-buys-20261021.html",
+          "content_sha256": "fe63e244957ac3b97f01c6bc4b9c3d46d90ae61628b84878f18389a2defac1ed"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    }
+  ]
+}
