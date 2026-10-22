@@ -89,6 +89,10 @@
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
   },
+  "anthropic-research:a:0b2744e224d2a974": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "anthropic-research:a:1eadfb1cd5ee2dc4": {
     "bundle_date": "2026-10-02",
     "emitted_at": "2026-10-02T00:37:52.602014+00:00"
@@ -624,6 +628,10 @@
     "baseline": true,
     "bundle_date": "baseline"
   },
+  "cisco-advisory:a:05dfd1f789276917": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "cisco-advisory:a:06a9c225409d0d5c": {
     "baseline": true,
     "bundle_date": "baseline"
@@ -672,12 +680,20 @@
   "cisco-advisory:a:16464b1119c2508a": {
     "bundle_date": "2026-08-20"
   },
+  "cisco-advisory:a:16493e4e94fcf1c6": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "cisco-advisory:a:16954312c6e1eaeb": {
     "bundle_date": "2026-09-17"
   },
   "cisco-advisory:a:17eed7588cd16f7e": {
     "baseline": true,
     "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:188d9fb495d163e2": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
   "cisco-advisory:a:19252c2abfa4fda5": {
     "baseline": true,
@@ -710,6 +726,14 @@
   "cisco-advisory:a:21a70b25348e1428": {
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
+  "cisco-advisory:a:22ba7688eb99a25a": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
+  "cisco-advisory:a:22c8378dbc76e7f8": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
   "cisco-advisory:a:264f04af52cfcbe4": {
     "bundle_date": "2026-08-27"
@@ -831,6 +855,10 @@
     "bundle_date": "2026-10-08",
     "emitted_at": "2026-10-08T00:53:25.687102+00:00"
   },
+  "cisco-advisory:a:5dd6915ee2e18c00": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "cisco-advisory:a:60488b99348238df": {
     "bundle_date": "2026-09-17"
   },
@@ -863,6 +891,10 @@
   },
   "cisco-advisory:a:6df81ee3ffaea395": {
     "bundle_date": "2026-08-06"
+  },
+  "cisco-advisory:a:6e77d8eac450a175": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
   "cisco-advisory:a:6f03aa2f9e750b6e": {
     "bundle_date": "2026-08-20"
@@ -926,6 +958,10 @@
   "cisco-advisory:a:91f71cb291948d1b": {
     "bundle_date": "2026-08-06"
   },
+  "cisco-advisory:a:954cf9f5d28d70c7": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "cisco-advisory:a:97f62f0ad0d9073e": {
     "baseline": true,
     "bundle_date": "baseline"
@@ -944,6 +980,10 @@
   "cisco-advisory:a:9fc1150bc0d6fbfb": {
     "baseline": true,
     "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:a2c8b215add1e39f": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
   "cisco-advisory:a:a3a89af9cc70109d": {
     "bundle_date": "2026-09-17"
@@ -988,6 +1028,10 @@
   "cisco-advisory:a:bcebe223d3effcba": {
     "bundle_date": "2026-09-17"
   },
+  "cisco-advisory:a:c0403fd65e3b0770": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "cisco-advisory:a:c24a380f215ce563": {
     "bundle_date": "2026-09-09"
   },
@@ -1006,6 +1050,10 @@
   "cisco-advisory:a:cc0ac2437e45015b": {
     "bundle_date": "2026-08-06"
   },
+  "cisco-advisory:a:cdbaff472bef3f2c": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "cisco-advisory:a:ce1f5a1f40a55247": {
     "bundle_date": "2026-10-08",
     "emitted_at": "2026-10-08T00:53:25.687102+00:00"
@@ -1013,6 +1061,10 @@
   "cisco-advisory:a:ce2c00cafc242d62": {
     "baseline": true,
     "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:ce8fce07ed3360d6": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
   "cisco-advisory:a:cfe1c5d73bbd658b": {
     "baseline": true,
@@ -1063,6 +1115,10 @@
     "baseline": true,
     "bundle_date": "baseline"
   },
+  "cisco-advisory:a:e809c252f8b814fe": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "cisco-advisory:a:ebb6e6a91033847d": {
     "bundle_date": "2026-08-20"
   },
@@ -1080,6 +1136,10 @@
     "baseline": true,
     "bundle_date": "baseline"
   },
+  "cisco-advisory:a:f2c54ba356b73e11": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "cisco-advisory:a:f4410e6373e1bafb": {
     "bundle_date": "2026-09-17"
   },
@@ -1096,6 +1156,10 @@
     "baseline": true,
     "bundle_date": "baseline"
   },
+  "cisco-advisory:a:ff986e3a4b7a5e96": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "cocomelonc:a:030e841ed15c27af": {
     "bundle_date": "2026-10-03",
     "emitted_at": "2026-10-03T00:20:07.925518+00:00"
@@ -1109,6 +1173,10 @@
   },
   "cocomelonc:a:1f64803436be0573": {
     "bundle_date": "2026-07-17"
+  },
+  "cocomelonc:a:25a8f3f0e0d48ecc": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
   "cocomelonc:a:2662c651ba2f130e": {
     "bundle_date": "2026-09-26"
@@ -1974,6 +2042,10 @@
   "forti-ir:a:cd11fd03adb0bb19": {
     "baseline": true,
     "bundle_date": "baseline"
+  },
+  "forti-ir:a:d47f67afd7f6cddb": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
   "forti-ir:a:d5536791a3349f60": {
     "baseline": true,
@@ -3038,6 +3110,10 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:5a4ecf9699d25c66": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "msrc:a:5ae7f47fbd7457ea": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -3143,6 +3219,10 @@
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:6e4d169a998c10c8": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
   "msrc:a:6fb4f01f0b633c1a": {
     "baseline": true,
@@ -3506,6 +3586,10 @@
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
+  "msrc:a:b78341cec3359d15": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "msrc:a:b7eafdd8b742d9ae": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -3542,6 +3626,10 @@
   "msrc:a:bd07da9662b32804": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:bde8a8aaa8356c94": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
   "msrc:a:bf4fc3833fc5f267": {
     "bundle_date": "2026-10-16",
@@ -3970,6 +4058,10 @@
     "bundle_date": "2026-10-20",
     "emitted_at": "2026-10-20T00:11:35.710908+00:00"
   },
+  "openai-research:a:e3212a9c9359a209": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "otterpwn:a:28143303bb765b6b": {
     "baseline": true,
     "bundle_date": "baseline"
@@ -4025,6 +4117,10 @@
   "paloalto-advisory:a:1cf65875058c7cca": {
     "bundle_date": "2026-10-15",
     "emitted_at": "2026-10-14T23:49:05.925042+00:00"
+  },
+  "paloalto-advisory:a:2afe7336fd78c429": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
   "paloalto-advisory:a:2ec5379b148e3a38": {
     "bundle_date": "2026-10-15",
@@ -4567,6 +4663,10 @@
   "sandflysecurity-blog:a:64f7a637136c31ef": {
     "baseline": true,
     "bundle_date": "baseline"
+  },
+  "sandflysecurity-blog:a:676c240c9d8a2be1": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
   "sandflysecurity-blog:a:750a246a7b6af590": {
     "bundle_date": "2026-10-03",
@@ -5363,6 +5463,10 @@
   "unknowncheats-ac:a:973cfcec318dd421": {
     "bundle_date": "2026-07-24"
   },
+  "unknowncheats-ac:a:9adae4e34da476fa": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "unknowncheats-ac:a:9b4f2c9eb50d8cd0": {
     "bundle_date": "2026-07-25"
   },
@@ -6037,6 +6141,10 @@
   "yage-share:a:2b145de8b4ba4913": {
     "bundle_date": "2026-08-18"
   },
+  "yage-share:a:2d37ba0731c07439": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
   "yage-share:a:2e50b1a24424c5ce": {
     "bundle_date": "2026-09-24"
   },
@@ -6251,6 +6359,10 @@
   },
   "yage-share:a:609f67d8d7ad7d6e": {
     "bundle_date": "2026-09-17"
+  },
+  "yage-share:a:61e159e120c71be7": {
+    "bundle_date": "2026-10-22",
+    "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
   "yage-share:a:61e76ad07cc9e664": {
     "bundle_date": "2026-09-05"
