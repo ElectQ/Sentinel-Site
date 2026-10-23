@@ -125,6 +125,10 @@
     "bundle_date": "2026-10-13",
     "emitted_at": "2026-10-13T02:29:46.214752+00:00"
   },
+  "anthropic-research:a:bf6986b39fbc3713": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
+  },
   "anthropic-research:a:c021c28354e5e9fa": {
     "bundle_date": "2026-10-21",
     "emitted_at": "2026-10-20T23:44:37.431569+00:00"
@@ -1077,6 +1081,10 @@
   "cisco-advisory:a:cfe1c5d73bbd658b": {
     "baseline": true,
     "bundle_date": "baseline"
+  },
+  "cisco-advisory:a:d291c7256a46aa27": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
   },
   "cisco-advisory:a:d3033e339e9b8017": {
     "bundle_date": "2026-08-06"
@@ -2928,6 +2936,10 @@
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
+  "msrc:a:2f6b0fd5c9b845d5": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
+  },
   "msrc:a:2fc4513266bc825f": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
@@ -3503,6 +3515,10 @@
   "msrc:a:a2333d9cc8189a38": {
     "bundle_date": "2026-10-21",
     "emitted_at": "2026-10-20T23:44:37.431569+00:00"
+  },
+  "msrc:a:a32efdd2fc59a03f": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
   },
   "msrc:a:a397a8fc2cced920": {
     "baseline": true,
@@ -4101,6 +4117,10 @@
   "openai-research:a:787fde03d4dfa447": {
     "bundle_date": "2026-09-30",
     "emitted_at": "2026-09-30T00:16:27.541665+00:00"
+  },
+  "openai-research:a:889ff424a14f0ec8": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
   },
   "openai-research:a:8ff0437b1e3b01f7": {
     "bundle_date": "2026-09-30",
@@ -5392,6 +5412,10 @@
   "unknowncheats-ac:a:46613a78dcbfc319": {
     "bundle_date": "2026-08-14"
   },
+  "unknowncheats-ac:a:4782601f687d3a34": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
+  },
   "unknowncheats-ac:a:4795ada3db3ccc8d": {
     "bundle_date": "2026-10-13",
     "emitted_at": "2026-10-13T02:29:46.214752+00:00"
@@ -6217,6 +6241,10 @@
   "yage-share:a:30e2b85c6d94be96": {
     "bundle_date": "2026-08-20"
   },
+  "yage-share:a:32e3156e4828667a": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
+  },
   "yage-share:a:33c60e6644e868ff": {
     "bundle_date": "2026-10-02",
     "emitted_at": "2026-10-02T00:37:52.602014+00:00"
@@ -6943,6 +6971,10 @@
     "baseline": true,
     "bundle_date": "baseline"
   },
+  "yage-share:a:e14c202b051a2497": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
+  },
   "yage-share:a:e382da9417493bc7": {
     "bundle_date": "2026-08-12"
   },
@@ -7114,6 +7146,10 @@
   "zdi-advisories:a:065cd7c16c3d1ae0": {
     "bundle_date": "2026-08-14"
   },
+  "zdi-advisories:a:067c474dfa6fc7c0": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
+  },
   "zdi-advisories:a:0726cd86720aaca8": {
     "bundle_date": "2026-09-11"
   },
@@ -7155,6 +7191,10 @@
   },
   "zdi-advisories:a:0edd4b31b8688de0": {
     "bundle_date": "2026-08-13"
+  },
+  "zdi-advisories:a:0eff91ed01020be7": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
   },
   "zdi-advisories:a:0fbffa1ba0498860": {
     "bundle_date": "2026-09-15"
@@ -7395,6 +7435,10 @@
   "zdi-advisories:a:4a7bd96a4ad6c3ba": {
     "bundle_date": "2026-09-10"
   },
+  "zdi-advisories:a:4c5368bb0b3dfb7d": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
+  },
   "zdi-advisories:a:4e80efcd4fa07e9c": {
     "bundle_date": "2026-07-31"
   },
@@ -7497,6 +7541,10 @@
   "zdi-advisories:a:659651688fe80e54": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "zdi-advisories:a:65a2e4328c1d3d34": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
   },
   "zdi-advisories:a:65d2067d11b60c2c": {
     "bundle_date": "2026-09-10"
@@ -7806,6 +7854,10 @@
   },
   "zdi-advisories:a:9cca286bc86db6f6": {
     "bundle_date": "2026-09-10"
+  },
+  "zdi-advisories:a:9da8728541f78fa8": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
   },
   "zdi-advisories:a:9dbf21ec5581e09c": {
     "bundle_date": "2026-09-11"
@@ -8330,6 +8382,10 @@
   },
   "zusda:a:803394725071d4a2": {
     "bundle_date": "2026-09-16"
+  },
+  "zusda:a:a7cf7dafa235b049": {
+    "bundle_date": "2026-10-24",
+    "emitted_at": "2026-10-23T23:48:09.592091+00:00"
   },
   "zusda:a:b4a689ad8e7d6d71": {
     "bundle_date": "2026-08-11"
