@@ -1,0 +1,525 @@
+{
+  "schema_version": 1,
+  "source_id": "blog_watch",
+  "collect_date": "2026-10-25",
+  "collect_window": {
+    "start": "2026-10-23T00:00:00+00:00",
+    "end": "2026-10-24T23:02:49.485103+00:00",
+    "hours": 47
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "40141083099",
+    "commit": "bcee42e"
+  },
+  "stats": {
+    "total": 6,
+    "by_kind": {
+      "publish": 6
+    },
+    "by_via": {
+      "browser_llm": 3,
+      "rss": 3
+    },
+    "by_source": {
+      "unknowncheats-ac": 3,
+      "innei": 1,
+      "yage-share": 2
+    },
+    "failed_lists": [
+      "cognisys-labs"
+    ],
+    "sources_ok": 54,
+    "sources_failed": [
+      {
+        "id": "cognisys-labs",
+        "error": "html_fetch:[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'labs.cognisys.group'. (_ssl.c:1000); browser:Page.goto: Download is starting\nCall log:\n  - navigating to \"https://labs.cognisys.group/\", waiting until \"domcontentloaded\"\n"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 10,
+      "rss": 34
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 11,
+      "calls": 11,
+      "prompt_tokens": 11572,
+      "completion_tokens": 1830,
+      "total_tokens": 13402,
+      "prompt_cache_hit_tokens": 6784,
+      "prompt_cache_miss_tokens": 4788
+    },
+    "by_content_status": {
+      "ok": 4,
+      "partial": 2
+    }
+  },
+  "items": [
+    {
+      "id": "a:584fdb5bad35b2ea",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773544-alternative-streamproof-method-nvidia-post4841247.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773544-alternative-streamproof-method-nvidia-post4841247.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/773544-alternative-streamproof-method-nvidia-post4841247.html",
+      "at": "2026-10-24T23:02:49.485103+00:00",
+      "external_id": "a:584fdb5bad35b2ea",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773544-alternative-streamproof-method-nvidia-post4841247.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773544-alternative-streamproof-method-nvidia-post4841247.html",
+      "content": "Quote:\nOriginally Posted by\nX0V\nafter ripping my hair out for a solid 24hrs+ the ideal scenario i decided was to just create a pseudo display that mirrors a monitor & have nvidia capture the pseudo\ni used iddcx to create the pseudo & set your primary display to the pseudo as well just for an ex.\nCode:\nUmdfService\n=\nIddSampleDriver\n,\nIddSampleDriver_Install\nUmdfServiceOrder\n=\nIddSampleDriver\nUmdfKernelModeClientPolicy\n=\nAllowKernelModeClients\n[\nIddSampleDriver_Install\n]\nUmdfLibraryVersion\n=\n$UMDFVERSION$\nServiceBinary\n=%\n12\n%\n\\UMDF\\IddSampleDriver\n.\ndll\nUmdfExtensions\n=\nIddCx0102\nCode:\nhr\n=\ninterop\n->\nCreateForMonitor\n(\nvirt\n.\nmon\n,\nwinrt\n::\nguid_of\n<\nwinrt\n::\nWindows\n::\nGraphics\n::\nCapture\n::\nIGraphicsCaptureItem\n>(),\nwinrt\n::\nput_abi\n(\nitem\n));\nif\n(\nFAILED\n(\nhr\n)\n||\n!\nitem\n)\nFatal\n(\nL\n\"we failed.\"\n,\nhr\n);\nauto\npool\n=\nwgc\n::\nDirect3D11CaptureFramePool\n::\nCreateFreeThreaded\n(\nwinrtDevice\n,\nwinrt\n::\nWindows\n::\nGraphics\n::\nDirectX\n::\nDirectXPixelFormat\n::\nB8G8R8A8UIntNormalized\n,\n2\n,\nitem\n.\nSize\n());\nauto\nsession\n=\npool\n.\nCreateCaptureSession\n(\nitem\n);\nsession\n.\nIsCursorCaptureEnabled\n(\ntrue\n);\nthe purpose is essentially:\ngame frames -> pseudo display -> nvidia captures\noverlay -> physical display -> completely streamproof(different scope essentially)\nand ofc this is assuming that we're talking ab nvidia monitor capture & your overlay is external & not drawn into a swapchain you thats captured lol...\nex: iddcx-objects\nhttps://learn.microsoft.com/en-us/wi.../iddcx-objects\n& ge9's iddSampleDriver\nWont this just confuse windows aswell if setting idd as primary display",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773544-alternative-streamproof-method-nvidia.html#post4841247",
+      "content_chars": 1588,
+      "content_sha256": "29b31ba96cd66321bfdac90932f3acf30f42f9effe0ced8bfa5b64d5d9e37a14",
+      "content_fetched_at": "2026-10-24T23:03:26.054009+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-10-24T23:02:49.485103+00:00",
+      "collected_at": "2026-10-24T23:02:49.485103+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/773544-alternative-streamproof-method-nvidia-post4841247.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773544-alternative-streamproof-method-nvidia-post4841247.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/773544-alternative-streamproof-method-nvidia-post4841247.html",
+          "content_sha256": "29b31ba96cd66321bfdac90932f3acf30f42f9effe0ced8bfa5b64d5d9e37a14"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:bca88aaa1f772e44",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "need help/tutorial how to reverse apk game with NHN AppGuard",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/778442-help-tutorial-reverse-apk-game-nhn-appguard.html",
+      "text": "unknowncheats-ac published: need help/tutorial how to reverse apk game with NHN AppGuard",
+      "at": "2026-10-24T23:02:49.485103+00:00",
+      "external_id": "a:bca88aaa1f772e44",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/778442-help-tutorial-reverse-apk-game-nhn-appguard.html",
+      "title": "need help/tutorial how to reverse apk game with NHN AppGuard",
+      "content": "i'm kinda new with reversing and need a tutorial to reverse asian android game \"Random dice\", because i have a curiosity how to log in to the game without the game itself, how to get resourses from nowhere and etc etc",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/778442-help-tutorial-reverse-apk-game-nhn-appguard.html",
+      "content_chars": 217,
+      "content_sha256": "9cba71cd82fa9a1d2b7f3e4320dea85e6acd1df1e389e47aa9ca4451745ec230",
+      "content_fetched_at": "2026-10-24T23:03:29.069770+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-10-24T23:02:49.485103+00:00",
+      "collected_at": "2026-10-24T23:02:49.485103+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/778442-help-tutorial-reverse-apk-game-nhn-appguard.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "need help/tutorial how to reverse apk game with NHN AppGuard",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/778442-help-tutorial-reverse-apk-game-nhn-appguard.html",
+          "content_sha256": "9cba71cd82fa9a1d2b7f3e4320dea85e6acd1df1e389e47aa9ca4451745ec230"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:7bb297b0a1692407",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/776384-xinjector-v0-1-0-source-dll-injector-post4840524.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/776384-xinjector-v0-1-0-source-dll-injector-post4840524.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/776384-xinjector-v0-1-0-source-dll-injector-post4840524.html",
+      "at": "2026-10-24T23:02:49.485103+00:00",
+      "external_id": "a:7bb297b0a1692407",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/776384-xinjector-v0-1-0-source-dll-injector-post4840524.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/776384-xinjector-v0-1-0-source-dll-injector-post4840524.html",
+      "content": "Xinjector v0.1.0\n— yet another DLL injector\nbeen working on this for a while, figured i'd share it. nothing crazy, just a clean injector with some actually useful features instead of the usual 2005-looking loader\nwhat it does:\nstandard LoadLibrary injection, x86 + x64. arch mismatch? it tells you instead of dying silently\nauto-saves every DLL you inject into a dlls/ folder next to the exe, one-click reuse\ncan call an init export after loading\nauto-inject watcher — type an exe name, it injects when the process shows up\nmemory read/write/pattern scan built into the UI\nwhat it doesn't do:\nno manual map, no hijack, no hiding modules. loads like a normal citizen and that's on purpose, go write your own if you want that stuff\nwon't beat EAC/BE/Vanguard. don't even try, you'll just catch a ban\nneeds:\nwindows 10/11 x64. asks for admin every launch\nApproved:\nhttps://www.unknowncheats.me/forum/d...=file&id=58463\nbug reports with the log output are welcome.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/776384-xinjector-v0-1-0-source-dll-injector.html#post4840524",
+      "content_chars": 960,
+      "content_sha256": "7c61d3eb05de00f16ddac19420db3cf1df79cc17071d30be13f1b6df83de888f",
+      "content_fetched_at": "2026-10-24T23:03:32.352454+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-10-24T23:02:49.485103+00:00",
+      "collected_at": "2026-10-24T23:02:49.485103+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/776384-xinjector-v0-1-0-source-dll-injector-post4840524.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/776384-xinjector-v0-1-0-source-dll-injector-post4840524.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/776384-xinjector-v0-1-0-source-dll-injector-post4840524.html",
+          "content_sha256": "7c61d3eb05de00f16ddac19420db3cf1df79cc17071d30be13f1b6df83de888f"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:8920ef59b3b9441c",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "十月未央",
+      "target_url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "text": "innei published: 十月未央",
+      "at": "2026-10-24T18:16:19+00:00",
+      "external_id": "a:8920ef59b3b9441c",
+      "url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "title": "十月未央",
+      "content": "October Lingers\n秋\n·\n五味杂陈\n5\nreads\ntranslated from Simplified Chinese\n↗\nDictation · Assisted · Title · Assisted\nEnglish\nSynopsis\nopen yohaku ↗\nIt's already been over two weeks since my last recap, so it's time to catch up on what's been happening lately.\nNyatabi Hits the App Store\nLast time, I mentioned running into so many headaches after a trip that I decided to build an app. At the end of my last post, I wrote, \"Musubicho is still in development and not finished yet.\" Less than two weeks later, I renamed it Nyatabi (喵旅) and officially launched it on the App Store. That said, I haven't even been the first one to really test it out in the wild. I'm such a homebody that even though a trip sparked the project, I haven't had the chance to use all its features myself yet. I just love building products—created purely out of passion.\nIt's live on the App Store now, and I put together a decent landing page for it. Feel free to check it out! (Though it's iOS-only for now.)\nNyatabi — your AI travel companion for iPhone\nPlan with Musubi, explore together, split spending fairly and turn your route into memories. Your whole journey, in one local-first iPhone app.\nNyatabi\nBeyond helping you map out trips, it lets an agent handle expense tracking and bill splitting on the go (either by snapping receipts or just telling it what you spent). In group chats, the agent can scout nearby restaurants or pull up your friends' locations. And once the trip wraps up, you can replay your route, generate an auto-edited highlight video, or export a detailed travel footprint report.\nBefore the official release, I shot a 4-part short video series walking through the entire flow: pre-trip planning → snapping receipts to split expenses on the go → settling balances with minimum transfers → everyday roommate bookkeeping. On October 16, I posted a full 2-minute demo.\nAlong the way, I also open-sourced the rounded-line icon set used in Nyatabi at\nicons.nyatabi.app\n.\nEngineering shortcuts vs. engineering rigor: refusing to be a human test runner, I wired up XCUITest across two physical iPhones so agents could handle the entire closed loop of \"implement → verify → fail → fix\" on their own (check out my technical post, \"\nMy AI-Native iOS Development & Verification Workflow\n\", for details).\nIt could be handy whether you're traveling or just going about everyday life: I've always found life-logging footprint apps a bit awkward to use, so I baked my own footprint features right in to track daily routines as well. I don't want to turn this into a full-on product pitch, so I'll stop here. If you're interested, feel free to give it a spin.\nNyatabi: AI Travel Planner App - App Store\nDownload Nyatabi: AI Travel Planner by Moeru AI on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Nyatabi: AI Travel Planner…\nApp Store\nAI in the Trenches\nA Love-Hate Relationship with Claude\nI had a backup Claude alt account that managed to hold out for over two weeks, so I decided to upgrade it. Went from Pro to Max, only to get slapped with an instant ban—no refund, either. I was so anxious that night that I stayed up by myself until 5 a.m. Eventually, I couldn't help setting up yet another account, and that one's somehow still alive.\nOn top of that, my $DRAM shares kept tumbling before I could break even, so those days felt like a brutal double blow from Anthropic and $DRAM. It also got me calculating the real cost of compute inflation: last year, a $20 Claude subscription felt like it could do so much; now, even the $200 Max tier barely scratches the surface. By comparison, Apple's $99/year developer membership is so cheap it's almost moving.\nOpenAI's \"God Tier\" Account and Kimi Falling Flat on Its Face\nThere was a funny little detour along the way. Around the 20th, I noticed a bug in OpenAI: an old 20x subscription was still usable even after downgrading or canceling. I honestly thought I'd struck gold with some chosen \"god-tier\" account. But by day five of freeloading, the bug got patched and my quota went straight to zero.\nThen on the 23rd, I dropped $19 on Kimi, wanting to see how it compared to $20 Claude. I asked it to write a website footer—and before it even finished, barely ten minutes in, I slammed right into a 5-hour rate limit. Might as well just call yourselves QueueShot AI. When it comes to domestic models, everyone should just use DeepSeek—what are the rest of these garbage knockoffs even doing? DeepSeek is the only one that can actually play: no token sales, no bullshit. The API pricing is right there: take it or leave it. The TPS is right there too—DeepSeek 4.1 Flash pushes over 200 TPS, and at those prices, burn through as much as you want.\nUnlike Kimi—their greed this time is honestly shameless: zero compute power, but pulling that classic Lei Jun artificial scarcity playbook and taking users for fools to the extreme.\nRyugi (流儀) — Open-Source Claude Artifacts\nAfter getting jerked around like that, I thought: why not just build my own version of Claude Artifacts? I genuinely love using that feature. For docs, artboard designs, and architecture sketches, it's just so damn good—a product genuinely made with care.\nBut being locked into Claude's proprietary subscription was a dealbreaker. So what choice did I have? Build it myself.\nClaude Artifacts support five types, and the ones I use most are Artboard, Document, and HTML. Sick of taking Anthropic's nonsense, I cobbled together a standalone workbench called \"Ryugi\" (\nryugi.innei.dev\n).\nBuilding this brought an unexpected bonus too: it completely changed my view of Codex's design skills. I used to think Codex was garbage at design, and just on the 10th I had tweeted about how miserable it was trying to write UI with it. But once I plugged it into Ryugi's Artboard workflow, it turned out to be surprisingly solid—I guess I was just using it wrong before. To my surprise, that tweet blew up, racking up 93K impressions and over 700 bookmarks.\nI've been using it for a few days now, putting it through heavy daily use and constantly refining it. The cloud environment is live too, so now it helps me brainstorm, work on designs, hash out architecture docs, and even knock out small feature requests on the side.\nThe experience genuinely captures the vibe of Claude Artifacts now. Hooking this workflow up to other harnesses—like DeepSeek or Codex—makes them dramatically more useful. If you haven't tried it yet, you really should.\nRepository\n· Innei\n75\nryugi\n流儀 — a development workflow for coding agents: brainstorm with mockups, approve a spec, build it under TDD\nTypeScript\nHere are a few UI designs and animations I generated using DeepSeek, Codex, and Grok:\nDocument · 历史回看 · Ryugi\nView “Document · 历史回看” on Ryugi Cloud, an artboard artifact.\nRyugi\n简单模式 · 描述显隐 · Ryugi\nView “简单模式 · 描述显隐” on Ryugi Cloud, an artboard artifact.\nRyugi\nLobeHub · AI Provider 接入 · Ryugi\nView “LobeHub · AI Provider 接入” on Ryugi Cloud, an artboard artifact.\nRyugi\n室内乐与夏日小品 · Nine Pieces · Ryugi\nView “室内乐与夏日小品 · Nine Pieces” on Ryugi Cloud, an HTML artifact.\nRyugi\nLobeHub Bids Farewell to AntD\nOn the work front: I've been here for almost a year now. Back when I first joined, I declared that I was going to ditch AntD once and for all. That turned into a ten-month marathon, but on the 9th of this month, I finally pulled it off—migrating everything over to\n@base_ui\n+\nStyleX\n(meaning\nlobe-ui\nv6).\nLooking back at the numbers, the engineering scale was pretty wild:\nlobe-ui\nrewrote 54 components on top of Base UI, and AntD dependencies in\nlobe-editor\n,\nlobe-charts\n, and\nlobe-icons\nwere completely eliminated.\nThe main repo has over 11,000 TypeScript files. Replacing the underlying component library spanned 28 PRs and touched 3,242 files, with the single largest PR modifying 1,040 files.\nAlong the way, we also migrated our CSS-in-JS setup to StyleX, slashing the original 179 emotion files down to just 3. The most satisfying part was running 5 agents across parallel branches: in three and a half hours, they plowed through 84 commits. We then ran regression tests across 45 routes using 1,000 screenshot comparisons and computed-style diffs, reliably catching 4 regressions.\nGetting rid of AntD paid off right away. Bundle sizes shrank dramatically, and pages feel noticeably snappier. Thinking back, before AI agents existed, a core refactor of this scale would have easily taken an entire team a full quarter of grinding. But with today's models being so capable, I managed to knock out this massive project almost entirely on my own.\nThe Story Ends Here\nThroughout October, blind dates from family and friends were nonstop, but most of the time chatting was pretty draining. Earlier in the month, I tweeted a rant saying some WeChat chats feel like \"an LLM running on a potato server, taking hours of inference just to spit out a few characters, and if you don't send a request, you'll never get a response.\" That tweet unexpectedly racked up over 70,000 views, and predictably enough, I got hit with the \"you're a nice guy\" card in real life soon after.\nBut just a few days later, through another blind date, I unexpectedly met someone I could genuinely click with—something that hadn't happened in a long time.\nI find myself wanting deeper conversations lately—talking about fundamental values, life outlooks, and thoughts on the future. In day-to-day life, finding someone who can actually match that energy is rare. But that night—which also happened to be our last conversation—we talked about so much. Beyond having plenty of shared interests, what hit hardest was a real resonance in who we are deep down. Just knowing someone on that exact same wavelength actually exists was a wonderful, lucky surprise.\nUnfortunately, she felt our personalities were just too similar to be a good match. In the end, we parted ways gracefully, and that was where the story ended.\nTurning My Resume into a Canvas\nAnother project I spent a lot of time on was completely rebuilding my personal resume page for Programmer's Day on October 24, launching it at\nresume.innei.in/lab/\n.\nThe spark was simple: surfing online recently, I saw a few personal sites and resumes that looked amazing, so I wanted to bring my own ideas into the mix and polish up something of my own. A traditional single-page format can't hold very much, so I turned it into a canvas you can freely pan, zoom, and explore—connecting all the projects I've worked on and milestones I've reached over the six or seven years since college into one continuous timeline.\nWorking on this canvas also ended up unlocking some new skills. To give the page some fitting background music, I dove into arranging with realistic virtual instruments, tweaking synthesis, and fine-tuning the details (huge thanks to\n@wibus_wee\nfor walking me through Ozone mastering), and I even built an interactive sheet music display into the canvas.\nCramming a bunch of music arrangement and audio mastering just to build a resume was an unexpected bonus. Once I get around to picking music theory back up properly, I really should build an app for instruments and music theory.\nThanks for reading this far.\nAlso, I recently updated the background on this blog with dynamic nature scenes that change with the seasons and time of day. I even split the effect out into its own standalone preview page (\ninnei.in/dev-demos/backgrounds\n); if you're interested, feel free to click in and play around with it.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "content_chars": 11471,
+      "content_sha256": "e207ae7248432ff179e4190ff004a61e1a5dcd1994a67b6ae6dff32716e287c5",
+      "content_fetched_at": "2026-10-24T23:05:16.197530+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-10-24T18:16:19+00:00",
+      "collected_at": "2026-10-24T23:02:49.485103+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/notes/2026/10/24/2026-10-recap"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "十月未央",
+          "url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+          "content_sha256": "e207ae7248432ff179e4190ff004a61e1a5dcd1994a67b6ae6dff32716e287c5"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:e286c7a4c5a54d3e",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "跟着 Anthropic 学习构建 AI-native 组织",
+      "target_url": "https://yage.ai/share/anthropic-ai-native-organization-20261024.html",
+      "text": "yage-share published: 跟着 Anthropic 学习构建 AI-native 组织",
+      "at": "2026-10-24T00:00:00+00:00",
+      "external_id": "a:e286c7a4c5a54d3e",
+      "url": "https://yage.ai/share/anthropic-ai-native-organization-20261024.html",
+      "title": "跟着 Anthropic 学习构建 AI-native 组织",
+      "content": "Anthropic 的内部就业报告显示，AI 工时已经是人的 6 倍，但交互会话里仍有 80% 的时间在等人。这篇文章从生产、信息、组织和招聘四个环节，拆解一家 AI-native 公司实际怎么运转，以及哪些做法普通团队不能照搬。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/anthropic-ai-native-organization-20261024.html",
+      "content_chars": 115,
+      "content_sha256": "672c0b01873f66e613d9b32ea39a18e1e513ec2f9cc088f2690c616e798ae3a3",
+      "content_fetched_at": "2026-10-24T23:03:39.110849+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-24T00:00:00+00:00",
+      "collected_at": "2026-10-24T23:02:49.485103+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/anthropic-ai-native-organization-20261024.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "跟着 Anthropic 学习构建 AI-native 组织",
+          "url": "https://yage.ai/share/anthropic-ai-native-organization-20261024.html",
+          "content_sha256": "672c0b01873f66e613d9b32ea39a18e1e513ec2f9cc088f2690c616e798ae3a3"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    },
+    {
+      "id": "a:86f99730c8de3d26",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "AI 把产出变快之后：PHP、Muse 与蛋白设计的三个边界",
+      "target_url": "https://yage.ai/share/ai-output-boundaries-php-muse-protein-20261023.html",
+      "text": "yage-share published: AI 把产出变快之后：PHP、Muse 与蛋白设计的三个边界",
+      "at": "2026-10-23T00:00:00+00:00",
+      "external_id": "a:86f99730c8de3d26",
+      "url": "https://yage.ai/share/ai-output-boundaries-php-muse-protein-20261023.html",
+      "title": "AI 把产出变快之后：PHP、Muse 与蛋白设计的三个边界",
+      "content": "同一周的三条新闻：一个被搁置两年的 PHP 缺陷在约两周内被做成可用利用；Meta Muse 的分享链接因标题进入主机名而被 DNS 历史公开；Anthropic 用 64 小时生成 31.8 万个蛋白设计，湿实验只筛出 17 个结合体。三条线卡在不同的承接层。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/ai-output-boundaries-php-muse-protein-20261023.html",
+      "content_chars": 131,
+      "content_sha256": "0dd4788707af413cab6099056a2dccb0f3088ac9e5ba05a0ddfa1cbfcfec8b3d",
+      "content_fetched_at": "2026-10-24T23:03:39.703412+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "collected_at": "2026-10-24T23:02:49.485103+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/ai-output-boundaries-php-muse-protein-20261023.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "AI 把产出变快之后：PHP、Muse 与蛋白设计的三个边界",
+          "url": "https://yage.ai/share/ai-output-boundaries-php-muse-protein-20261023.html",
+          "content_sha256": "0dd4788707af413cab6099056a2dccb0f3088ac9e5ba05a0ddfa1cbfcfec8b3d"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    }
+  ]
+}
