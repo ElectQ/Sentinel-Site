@@ -2430,8 +2430,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:8920ef59b3b9441c": {
-    "bundle_date": "2026-10-25",
-    "emitted_at": "2026-10-24T23:02:49.485103+00:00"
+    "bundle_date": "2026-10-26",
+    "emitted_at": "2026-10-25T23:07:38.549988+00:00"
   },
   "innei:a:8d029416a9572e74": {
     "baseline": true,
@@ -3337,6 +3337,10 @@
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
+  "msrc:a:7b2759881bbdb800": {
+    "bundle_date": "2026-10-26",
+    "emitted_at": "2026-10-25T23:07:38.549988+00:00"
+  },
   "msrc:a:7b4d88684d3718f4": {
     "baseline": true,
     "bundle_date": "baseline",
@@ -3616,6 +3620,10 @@
     "bundle_date": "2026-10-20",
     "emitted_at": "2026-10-20T00:11:35.710908+00:00"
   },
+  "msrc:a:b257a642b3d8faf2": {
+    "bundle_date": "2026-10-26",
+    "emitted_at": "2026-10-25T23:07:38.549988+00:00"
+  },
   "msrc:a:b26ea73579444d92": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -3754,6 +3762,10 @@
   "msrc:a:c5c1f9d29e42928f": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:c84faf9461ad3925": {
+    "bundle_date": "2026-10-26",
+    "emitted_at": "2026-10-25T23:07:38.549988+00:00"
   },
   "msrc:a:c898716022b8f08f": {
     "baseline": true,
@@ -4665,6 +4677,10 @@
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
   },
+  "safebreach-blog:a:7bebcc226c9dc413": {
+    "bundle_date": "2026-10-26",
+    "emitted_at": "2026-10-25T23:07:38.549988+00:00"
+  },
   "safebreach-blog:a:99b0e68cc7508cc8": {
     "bundle_date": "2026-08-28"
   },
@@ -4698,6 +4714,10 @@
   "safebreach-blog:a:e84e301f64feb0a2": {
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
+  },
+  "safebreach-blog:a:ecc662f30a547f7d": {
+    "bundle_date": "2026-10-26",
+    "emitted_at": "2026-10-25T23:07:38.549988+00:00"
   },
   "sandflysecurity-blog:a:0a93ba91aa3e9510": {
     "baseline": true,
@@ -5545,6 +5565,10 @@
   },
   "unknowncheats-ac:a:8ebef4fd70afd360": {
     "bundle_date": "2026-09-06"
+  },
+  "unknowncheats-ac:a:912ba7ac5a40314c": {
+    "bundle_date": "2026-10-26",
+    "emitted_at": "2026-10-25T23:07:38.549988+00:00"
   },
   "unknowncheats-ac:a:92ec5590c4abcf67": {
     "bundle_date": "2026-08-11"
@@ -6659,6 +6683,10 @@
     "bundle_date": "2026-10-07",
     "emitted_at": "2026-10-07T00:32:50.824376+00:00"
   },
+  "yage-share:a:94955eefd601538e": {
+    "bundle_date": "2026-10-26",
+    "emitted_at": "2026-10-25T23:07:38.549988+00:00"
+  },
   "yage-share:a:95222558486487b2": {
     "bundle_date": "2026-09-26"
   },
@@ -6954,6 +6982,10 @@
   },
   "yage-share:a:d84715cb01344b85": {
     "bundle_date": "2026-07-30"
+  },
+  "yage-share:a:d8ced2612810a6db": {
+    "bundle_date": "2026-10-26",
+    "emitted_at": "2026-10-25T23:07:38.549988+00:00"
   },
   "yage-share:a:d9613ba05ce9ac4b": {
     "bundle_date": "2026-08-06"
