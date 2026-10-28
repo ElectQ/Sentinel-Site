@@ -105,6 +105,10 @@
     "bundle_date": "2026-10-21",
     "emitted_at": "2026-10-20T23:44:37.431569+00:00"
   },
+  "anthropic-research:a:543233bf7b252649": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
+  },
   "anthropic-research:a:7a6a342eb9583796": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -144,6 +148,10 @@
   "anthropic-research:a:fb6067b5bbd7a750": {
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
+  "anthropic-research:a:fdf27bf9960b1109": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
   },
   "bhis-blog:a:007f5844deffa89c": {
     "baseline": true,
@@ -779,6 +787,10 @@
   "cisco-advisory:a:30406db5cbfeb730": {
     "bundle_date": "2026-09-17"
   },
+  "cisco-advisory:a:30c191d411411c17": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
+  },
   "cisco-advisory:a:3292d7bac7ab6aa6": {
     "bundle_date": "2026-08-06"
   },
@@ -1330,6 +1342,10 @@
     "bundle_date": "2026-10-21",
     "emitted_at": "2026-10-20T23:44:37.431569+00:00"
   },
+  "cymulate-blog:a:9b856ee61fdc7232": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
+  },
   "cymulate-blog:a:a71377f72462595f": {
     "bundle_date": "2026-10-07",
     "emitted_at": "2026-10-07T00:32:50.824376+00:00"
@@ -1513,6 +1529,10 @@
   "denizhalil-blogs:a:45a7eea83f8329d4": {
     "baseline": true,
     "bundle_date": "baseline"
+  },
+  "denizhalil-blogs:a:4799867993d0480b": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
   },
   "denizhalil-blogs:a:4809865d8e741667": {
     "bundle_date": "2026-10-23",
@@ -2446,8 +2466,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:8920ef59b3b9441c": {
-    "bundle_date": "2026-10-27",
-    "emitted_at": "2026-10-27T00:19:34.149635+00:00"
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
   },
   "innei:a:8d029416a9572e74": {
     "baseline": true,
@@ -2874,6 +2894,10 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:1af31e19a3eaa2be": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
+  },
   "msrc:a:1b9f5a28b3670c35": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -2972,6 +2996,10 @@
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:308133db32acfa74": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
   },
   "msrc:a:30df879deacb7820": {
     "baseline": true,
@@ -3305,6 +3333,10 @@
     "bundle_date": "2026-10-21",
     "emitted_at": "2026-10-20T23:44:37.431569+00:00"
   },
+  "msrc:a:70695a34417f7b7b": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
+  },
   "msrc:a:70bc99da67697e4f": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -3447,6 +3479,10 @@
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
   },
+  "msrc:a:8f4a9c3b9ca962eb": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
+  },
   "msrc:a:8fa0f6b4ac269607": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -3573,6 +3609,10 @@
   "msrc:a:a7236ecad834e622": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
+  },
+  "msrc:a:a801b48fbcd10016": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
   },
   "msrc:a:a8dd85a60f810992": {
     "baseline": true,
@@ -3715,6 +3755,10 @@
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
+  "msrc:a:bca87c74a608ebd7": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
+  },
   "msrc:a:bd040c6cd1a646d0": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -3752,6 +3796,10 @@
   "msrc:a:c35c424b8e04daf7": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
+  },
+  "msrc:a:c39c6037537150b2": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
   },
   "msrc:a:c3eca959d18e4565": {
     "baseline": true,
@@ -3800,6 +3848,10 @@
   "msrc:a:ca74583714737288": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:cab4e60ebb96becb": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
   },
   "msrc:a:cae5b2606a5bb7fd": {
     "bundle_date": "2026-10-21",
@@ -3954,6 +4006,10 @@
   "msrc:a:e1b4415ab3b6f355": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:e20da1a748c10bb4": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
   },
   "msrc:a:e29c8705d9593d83": {
     "bundle_date": "2026-10-23",
@@ -4201,6 +4257,10 @@
   "openai-research:a:e3212a9c9359a209": {
     "bundle_date": "2026-10-22",
     "emitted_at": "2026-10-21T23:57:16.782910+00:00"
+  },
+  "openai-research:a:f429de9252dbe151": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
   },
   "otterpwn:a:28143303bb765b6b": {
     "baseline": true,
@@ -5482,6 +5542,10 @@
     "bundle_date": "2026-10-23",
     "emitted_at": "2026-10-22T23:56:04.895191+00:00"
   },
+  "unknowncheats-ac:a:3e780d2f8fc7dbd8": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
+  },
   "unknowncheats-ac:a:4555ed7181e768f5": {
     "bundle_date": "2026-09-14"
   },
@@ -5564,6 +5628,10 @@
   },
   "unknowncheats-ac:a:6743bf2f6e4a80eb": {
     "bundle_date": "2026-08-16"
+  },
+  "unknowncheats-ac:a:6772d3b86f9e5a6c": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
   },
   "unknowncheats-ac:a:67c6a6d95b46dda9": {
     "bundle_date": "2026-09-23"
@@ -5755,6 +5823,10 @@
   "unknowncheats-ac:a:c6dd3dbdb1270f02": {
     "bundle_date": "2026-09-27"
   },
+  "unknowncheats-ac:a:cc88ceb7826e768d": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
+  },
   "unknowncheats-ac:a:cf8ba7cf0ed004ec": {
     "bundle_date": "2026-08-07"
   },
@@ -5849,6 +5921,10 @@
   },
   "unknowncheats-ac:a:fd3ef4fa5effb65f": {
     "bundle_date": "2026-09-21"
+  },
+  "unknowncheats-ac:a:fe1f2c887716c6b0": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
   },
   "voltatech-blog:a:0c5c091d8fc496aa": {
     "baseline": true,
@@ -6222,6 +6298,10 @@
   },
   "yage-share:a:08d5aa06b91f61a7": {
     "bundle_date": "2026-08-08"
+  },
+  "yage-share:a:097a5d290b84a676": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
   },
   "yage-share:a:0a55efc6fe96ccde": {
     "bundle_date": "2026-09-03"
@@ -6902,6 +6982,10 @@
   "yage-share:a:ba0259d46a216ce8": {
     "bundle_date": "2026-08-05"
   },
+  "yage-share:a:bac4ea5c6d007e61": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
+  },
   "yage-share:a:bb33022fbf63b95e": {
     "bundle_date": "2026-09-26"
   },
@@ -7461,12 +7545,20 @@
   "zdi-advisories:a:31972adb23b5743d": {
     "bundle_date": "2026-07-31"
   },
+  "zdi-advisories:a:31d7c3d737f68dcc": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
+  },
   "zdi-advisories:a:32957bd99a3d171b": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
   "zdi-advisories:a:3362a87d4565ce62": {
     "bundle_date": "2026-07-30"
+  },
+  "zdi-advisories:a:33f949ec0dd64a0e": {
+    "bundle_date": "2026-10-28",
+    "emitted_at": "2026-10-28T00:23:02.466942+00:00"
   },
   "zdi-advisories:a:3417ecaa4b3f9ce9": {
     "bundle_date": "2026-08-25"
