@@ -81,6 +81,10 @@
     "baseline": true,
     "bundle_date": "baseline"
   },
+  "aff-wg:a:e9195e735a5a3f42": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
   "aff-wg:a:f50683f53f5e3d86": {
     "baseline": true,
     "bundle_date": "baseline"
@@ -1225,6 +1229,10 @@
   "cocomelonc:a:2662c651ba2f130e": {
     "bundle_date": "2026-09-26"
   },
+  "cocomelonc:a:3427e383d393de47": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
   "cocomelonc:a:496646cf5c22213a": {
     "bundle_date": "2026-07-26"
   },
@@ -1365,6 +1373,10 @@
   "cymulate-blog:a:a71377f72462595f": {
     "bundle_date": "2026-10-07",
     "emitted_at": "2026-10-07T00:32:50.824376+00:00"
+  },
+  "cymulate-blog:a:ae10f56e15a98be2": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
   },
   "cymulate-blog:a:ae6a5c2e7f1f14c2": {
     "bundle_date": "2026-09-23"
@@ -1605,6 +1617,10 @@
   "denizhalil-blogs:a:a2474422977f9d3a": {
     "bundle_date": "2026-10-09",
     "emitted_at": "2026-10-09T01:07:22.377915+00:00"
+  },
+  "denizhalil-blogs:a:ab4c1c5fbdc26a54": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
   },
   "denizhalil-blogs:a:aef7d4fcccf38bf8": {
     "bundle_date": "2026-07-22"
@@ -2292,6 +2308,10 @@
   "hacktron-blog:a:33a761d51543b545": {
     "bundle_date": "2026-07-15"
   },
+  "hacktron-blog:a:33f208a6008d8ec4": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
   "hacktron-blog:a:36a3891cfcd9cd20": {
     "baseline": true,
     "bundle_date": "baseline"
@@ -2482,8 +2502,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:8920ef59b3b9441c": {
-    "bundle_date": "2026-10-29",
-    "emitted_at": "2026-10-29T00:43:44.334897+00:00"
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
   },
   "innei:a:8d029416a9572e74": {
     "baseline": true,
@@ -4638,6 +4658,10 @@
     "bundle_date": "2026-10-08",
     "emitted_at": "2026-10-08T00:53:25.687102+00:00"
   },
+  "openai-research:a:28ee9168e9f10fda": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
   "openai-research:a:6b76d2eab07b4db9": {
     "bundle_date": "2026-10-29",
     "emitted_at": "2026-10-29T00:43:44.334897+00:00"
@@ -6204,6 +6228,10 @@
   "unknowncheats-ac:a:b842ae686cd5efe2": {
     "bundle_date": "2026-09-09"
   },
+  "unknowncheats-ac:a:b8dfcbea6590a7aa": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
   "unknowncheats-ac:a:bab7a4ada9b14154": {
     "bundle_date": "2026-08-24"
   },
@@ -7139,6 +7167,10 @@
   "yage-share:a:6e317ee9b8381abd": {
     "bundle_date": "2026-08-09"
   },
+  "yage-share:a:6ecc8bf6b6b6e877": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
   "yage-share:a:70046b1ac8f77549": {
     "bundle_date": "2026-08-21"
   },
@@ -7570,6 +7602,10 @@
   "yage-share:a:d9613ba05ce9ac4b": {
     "bundle_date": "2026-08-06"
   },
+  "yage-share:a:d976a83be87edf41": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
   "yage-share:a:da09ca92898b92fe": {
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
@@ -7776,6 +7812,10 @@
   "zdi-advisories:a:03661c09d3c9a085": {
     "bundle_date": "2026-07-30"
   },
+  "zdi-advisories:a:04c524be6e364d39": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
   "zdi-advisories:a:064fc52b950a117a": {
     "bundle_date": "2026-07-30"
   },
@@ -7869,6 +7909,10 @@
   },
   "zdi-advisories:a:154e7119802b008a": {
     "bundle_date": "2026-07-16"
+  },
+  "zdi-advisories:a:15ca6c02b210cace": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
   },
   "zdi-advisories:a:16b3ef45d0fb0db0": {
     "bundle_date": "2026-09-15"
@@ -8033,9 +8077,17 @@
   "zdi-advisories:a:39a3724eb027159f": {
     "bundle_date": "2026-09-24"
   },
+  "zdi-advisories:a:39f79a70f65d3174": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
   "zdi-advisories:a:3a09d8b8bb7f1110": {
     "bundle_date": "2026-10-27",
     "emitted_at": "2026-10-27T00:19:34.149635+00:00"
+  },
+  "zdi-advisories:a:3cb025d972800759": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
   },
   "zdi-advisories:a:3d35e1fcd2807f78": {
     "bundle_date": "2026-10-29",
@@ -8104,6 +8156,10 @@
   },
   "zdi-advisories:a:4606c9b1f3cb187e": {
     "bundle_date": "2026-07-16"
+  },
+  "zdi-advisories:a:4614520d0ddd864d": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
   },
   "zdi-advisories:a:481ffced632283c4": {
     "bundle_date": "2026-09-18"
@@ -8250,6 +8306,10 @@
   },
   "zdi-advisories:a:6b497fba3e567521": {
     "bundle_date": "2026-09-24"
+  },
+  "zdi-advisories:a:6b8c73069827d798": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
   },
   "zdi-advisories:a:6bda000c324109a1": {
     "bundle_date": "2026-10-27",
@@ -8459,6 +8519,10 @@
   "zdi-advisories:a:8650e8cb54c4053d": {
     "bundle_date": "2026-07-16"
   },
+  "zdi-advisories:a:8676d5187a6ca621": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
   "zdi-advisories:a:869ed17d824238d0": {
     "bundle_date": "2026-09-10"
   },
@@ -8532,6 +8596,10 @@
   },
   "zdi-advisories:a:91b66e5768a1dc14": {
     "bundle_date": "2026-09-24"
+  },
+  "zdi-advisories:a:91e5607433c5fe58": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
   },
   "zdi-advisories:a:91f26dc8e3c7ae79": {
     "bundle_date": "2026-07-30"
@@ -8676,6 +8744,10 @@
   },
   "zdi-advisories:a:a861567dab32d32f": {
     "bundle_date": "2026-09-10"
+  },
+  "zdi-advisories:a:a9884862a81dc324": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
   },
   "zdi-advisories:a:a9925e24a7e2f3e5": {
     "bundle_date": "2026-09-15"
@@ -8830,6 +8902,10 @@
   "zdi-advisories:a:c50652c1f83dcd1b": {
     "bundle_date": "2026-09-10"
   },
+  "zdi-advisories:a:c568d487509d062a": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
   "zdi-advisories:a:c6a7a1ccc1a9aaa0": {
     "bundle_date": "2026-07-16"
   },
@@ -8980,6 +9056,10 @@
   "zdi-advisories:a:e216737bb68c118f": {
     "bundle_date": "2026-07-31"
   },
+  "zdi-advisories:a:e3d901f69dc67520": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
   "zdi-advisories:a:e44f50fadc01af0d": {
     "bundle_date": "2026-07-16"
   },
@@ -8988,6 +9068,10 @@
   },
   "zdi-advisories:a:e4920999e62faaf8": {
     "bundle_date": "2026-09-11"
+  },
+  "zdi-advisories:a:e5586215cd85ca47": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
   },
   "zdi-advisories:a:e581df559a6f5db0": {
     "bundle_date": "2026-09-17"
@@ -9101,8 +9185,16 @@
   "zdi-advisories:a:fbc3f0ebe30f023d": {
     "bundle_date": "2026-09-11"
   },
+  "zdi-advisories:a:fbc4980cfacf72be": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
   "zdi-advisories:a:fbfba52906a3bd9e": {
     "bundle_date": "2026-09-11"
+  },
+  "zdi-advisories:a:fc48ef8b554d2e46": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
   },
   "zdi-advisories:a:fc57af9693ff8de8": {
     "bundle_date": "2026-10-27",
@@ -9184,6 +9276,10 @@
   },
   "zusda:a:2eaec37a988d1a3d": {
     "bundle_date": "2026-09-16"
+  },
+  "zusda:a:2f6fc0de27462359": {
+    "bundle_date": "2026-10-30",
+    "emitted_at": "2026-10-30T00:44:40.792458+00:00"
   },
   "zusda:a:71947c8f0b3a7d41": {
     "bundle_date": "2026-10-27",
