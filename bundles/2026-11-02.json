@@ -1,0 +1,448 @@
+{
+  "schema_version": 1,
+  "source_id": "blog_watch",
+  "collect_date": "2026-11-02",
+  "collect_window": {
+    "start": "2026-10-24T18:16:19+00:00",
+    "end": "2026-11-02T00:30:11.011443+00:00",
+    "hours": 198
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "41367445873",
+    "commit": "dc1af35"
+  },
+  "stats": {
+    "total": 5,
+    "by_kind": {
+      "publish": 5
+    },
+    "by_via": {
+      "browser_llm": 2,
+      "rss": 3
+    },
+    "by_source": {
+      "unknowncheats-ac": 2,
+      "yage-share": 2,
+      "innei": 1
+    },
+    "failed_lists": [
+      "cognisys-labs"
+    ],
+    "sources_ok": 54,
+    "sources_failed": [
+      {
+        "id": "cognisys-labs",
+        "error": "html_fetch:[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'labs.cognisys.group'. (_ssl.c:1081); browser:Page.goto: Download is starting\nCall log:\n  - navigating to \"https://labs.cognisys.group/\", waiting until \"domcontentloaded\"\n"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 10,
+      "rss": 34
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 11,
+      "calls": 11,
+      "prompt_tokens": 11627,
+      "completion_tokens": 1538,
+      "total_tokens": 13165,
+      "prompt_cache_hit_tokens": 8062,
+      "prompt_cache_miss_tokens": 3565
+    },
+    "by_content_status": {
+      "ok": 3,
+      "partial": 2
+    }
+  },
+  "items": [
+    {
+      "id": "a:b8dfcbea6590a7aa",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "https://www.unknowncheats.me/forum/general-programming-and-reversing/779167-kozdbg-v1-0-vmprotect-anti-anti-debug-plugin-x64dbg-kernel-driver-required-post4848257.html",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/779167-kozdbg-v1-0-vmprotect-anti-anti-debug-plugin-x64dbg-kernel-driver-required.html",
+      "text": "unknowncheats-ac published: https://www.unknowncheats.me/forum/general-programming-and-reversing/779167-kozdbg-v1-0-vmprotect-anti-anti-debug-plugin-x64dbg-kernel-driver-required-post4848257.html",
+      "at": "2026-11-02T00:30:11.011443+00:00",
+      "external_id": "a:b8dfcbea6590a7aa",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/779167-kozdbg-v1-0-vmprotect-anti-anti-debug-plugin-x64dbg-kernel-driver-required.html",
+      "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/779167-kozdbg-v1-0-vmprotect-anti-anti-debug-plugin-x64dbg-kernel-driver-required-post4848257.html",
+      "content": "After going through the VMProtect anti-debug checks version by version, I put the handling into an x64dbg plugin.\nThis is KozDbg v1.0. It covers the researched versions from VMProtect 3.3.1 to 3.10.1, with a separate profile for each tested version.\nNo kernel driver is required. The plugin runs inside x64dbg and handles the supported user-mode checks and kernel-debugger queries from user mode. Native x64 targets only.\nhttps://www.unknowncheats.me/forum/d...=file&id=59083\nSupported versions\nCode:\nVMProtect\n|\nProfile\n|\nHandling\n----------+---------+-----------------------------------------------\n3.3\n.\n1\n|\n331\n|\nAPI interception\n3.4\n.\n0\n|\n340\n|\nAPI interception\n3.5\n.\n0\n|\n350\n|\nAPI interception\n3.6\n|\n360\n|\nClustered\ndirect syscalls\n3.8\n.\n0\n|\n380\n|\nScattered\ndirect syscalls\n3.9\n.\n4\n|\n394\n|\nScattered\ndirect syscalls\nand\nextended checks\n3.10\n.\n1\n|\n3101\n|\nScattered\ndirect syscalls\nand\nextended checks\nThese are the actual tested versions. The 3.3.x–3.10.x range does not mean every intermediate build was tested.\nKozDbg does not detect the VMProtect version automatically. Select the profile for the version you are working with.\nInstallation\nDownload the release package and extract the three files into the plugins directory next to x64dbg.exe:\nCode:\nplugins\n/\nKozDbg\n.\ndp64\nKozDbg\n.\ndp64\n.\nini\nKozDbg\n.\ndp64\n.\nini\n.\nprofiles\n.\nini\nStart x64dbg. KozDbg should appear under Plugins.\nThe package starts with the 3.3.1 profile and auto-enable turned on. Change the profile before loading a target protected with another version.\nSelecting a profile\nYou can select the version directly from Plugins > KozDbg. There is no need to open the settings window every time.\nLoad the program after selecting the profile. At the system breakpoint, check that KozDbg reports the profile as armed, then press F9. If x64dbg stops at the protected entry point or a TLS entry point, press F9 again.\nIf setup fails, read the error before continuing. Selecting a profile after the program has already performed its checks cannot undo those checks.\nThe settings\nThe settings window exposes the individual options. Hover over the question mark beside a checkbox for a short explanation.\nThe available controls depend on the selected version:\nPEB and debugger API checks.\nRemote debugger, debug object and kernel debugger queries.\nThread hiding, driver names and supported invalid-handle checks.\nTrap-flag exception delivery and saved debug registers.\nInstrumentation callback and remote-breakin protection in later profiles.\nThe TitanHide device check in 3.9.4 and 3.10.1.\nDecoder acceleration for recognized packed layouts.\nThe kernel-debugger option handles the query result seen by the protected program. It does not install a kernel component.\nThe TitanHide option also does not require TitanHide. It handles the device-open check used by those later VMProtect versions.\nAddresses and packed programs\nThe plugin resolves API addresses and syscall numbers in the running process. It does not select targets by filename, hash or a fixed protected-code address.\nOne issue appeared when testing the packed 3.3.1 RiddleGame. Breakpoints at the start of native API stubs changed bytes the protected startup depended on. Moving the interception point past the validated syscall-identification prefix allowed the program to reach its GUI. The older profiles now use that placement too.\nPacking can also make the direct-syscall path slow. A memory guard on a page shared with a busy decoder loop causes a lot of debugger events.\nDecoder acceleration handles recognized layouts using available hardware-breakpoint slots. If it cannot allocate one safely, the memory-guard path remains in use. Startup can be slower in that case.\nDifferent protection settings can produce different layouts, so passing these examples is not a guarantee for every protected executable.\nCustom profiles\nClick Profiles INI in Settings. The file is KozDbg.dp64.ini.profiles.ini, next to the plugin.\nCopy an existing section, give it a unique ID and change its name and options. For example, start from the 331 preset if you want another configuration of the API engine.\nRestart x64dbg after editing profile definitions. Your new profile appears in the menu and settings dropdown.\nThe INI configures the existing handling. It does not contain the entire implementation. Adding a new check requires changing the C++ source and rebuilding the plugin.\nThe full format is documented in PROFILES.md in the source package.\nCommands\nThe same controls are available from the command bar:\nCode:\nkz_settings\nkz_profile\n331\nkz_profile\nMyProfile\nkz_status\nkz_apply applies the current profile while the target is paused. kz_profile off disables the plugin.\nRepeated informational messages are counted instead of printed continuously. kz_status shows the state and counters. Errors still appear; x64dbg's own exception messages are separate.\nUpdating\nClose x64dbg completely before replacing KozDbg.dp64.\nKeep your existing INI files when updating. Replacing them with the defaults would discard your saved settings and custom profiles.\nWhat this tool does\nKozDbg handles the anti-debug checks covered by its profiles. Once startup passes, you continue with normal debugging.\nIt does not unpack the executable, remove virtualization or bypass the program's password check.\nThe source is available under the MIT license.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/779167-kozdbg-v1-0-vmprotect-anti-anti-debug-plugin-x64dbg-kernel-driver-required.html",
+      "content_chars": 5361,
+      "content_sha256": "9a1d158f06cbd0dc05728a7e7162bff48a63337f3a9481f279e8a2ecd2a22d72",
+      "content_fetched_at": "2026-11-02T00:30:52.567380+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-11-02T00:30:11.011443+00:00",
+      "collected_at": "2026-11-02T00:30:11.011443+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/779167-kozdbg-v1-0-vmprotect-anti-anti-debug-plugin-x64dbg-kernel-driver-required.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "https://www.unknowncheats.me/forum/general-programming-and-reversing/779167-kozdbg-v1-0-vmprotect-anti-anti-debug-plugin-x64dbg-kernel-driver-required-post4848257.html",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/779167-kozdbg-v1-0-vmprotect-anti-anti-debug-plugin-x64dbg-kernel-driver-required.html",
+          "content_sha256": "9a1d158f06cbd0dc05728a7e7162bff48a63337f3a9481f279e8a2ecd2a22d72"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:4dcf60cd330fb3c8",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "Unsigned drivers can still be loaded even with DSE enabled",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/779479-unsigned-drivers-loaded-dse-enabled.html",
+      "text": "unknowncheats-ac published: Unsigned drivers can still be loaded even with DSE enabled",
+      "at": "2026-11-02T00:30:11.011443+00:00",
+      "external_id": "a:4dcf60cd330fb3c8",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/779479-unsigned-drivers-loaded-dse-enabled.html",
+      "title": "Unsigned drivers can still be loaded even with DSE enabled",
+      "content": "Use which is a BYOVD with kernel write privileges.\nUsage:\n[COLOR=\"Lime\"]\ndse_load.exe pdb --driver <your_path>\\athpexnt.sys --payload <your_unsigned_driver_path>\nCMD output:\ntext\n=== BYOVD loader ===[*] backend: athpexnt[*] SeDebugPrivilege enabled\n[+] AthDrv loaded\n[+] \\\\.\\ATHpEx / PSKD64 opened\n[+] ntoskrnl : 0xFFFFF8067CC00000 (0x1450000) \\SystemRoot\\system32\\ntoskrnl.exe\n[+] CI.dll : 0xFFFFF8060F080000 (0x11B000) \\SystemRoot\\system32\\CI.dll\nHere, you need to wait for a while to fetch the ci.pdb file for the current computer (symbols differ across machines, so fixed values cannot be used).\nOnce the following content is displayed, it indicates that your driver has been loaded successfully:\ntext[*] CiValidateImageHeader = ci+0x5B790 (from symbol server)\n[+] payload running (DSE left enabled)\nhttps://ibb.co/jZTXvrw5",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/779479-unsigned-drivers-loaded-dse-enabled.html",
+      "content_chars": 827,
+      "content_sha256": "2448d8853c2f9765b88605810e59be44405aa5b3ae9693a5d60123fbc4333924",
+      "content_fetched_at": "2026-11-02T00:30:55.825766+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-11-02T00:30:11.011443+00:00",
+      "collected_at": "2026-11-02T00:30:11.011443+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/779479-unsigned-drivers-loaded-dse-enabled.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "Unsigned drivers can still be loaded even with DSE enabled",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/779479-unsigned-drivers-loaded-dse-enabled.html",
+          "content_sha256": "2448d8853c2f9765b88605810e59be44405aa5b3ae9693a5d60123fbc4333924"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:517990bd1f54310b",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "拆开 Qwen3.8 的参数排查后，那些外呼阿里云的指令只是没洗干净的训练日志",
+      "target_url": "https://yage.ai/share/qwen38-cohere-outbound-training-logs-20261101.html",
+      "text": "yage-share published: 拆开 Qwen3.8 的参数排查后，那些外呼阿里云的指令只是没洗干净的训练日志",
+      "at": "2026-11-01T00:00:00+00:00",
+      "external_id": "a:517990bd1f54310b",
+      "url": "https://yage.ai/share/qwen38-cohere-outbound-training-logs-20261101.html",
+      "title": "拆开 Qwen3.8 的参数排查后，那些外呼阿里云的指令只是没洗干净的训练日志",
+      "content": "Cohere 披露 Qwen3.8-Flash-Next 在沙箱评测中尝试向北京阿里云存储桶发起上传请求。独立研究员通过外部日志比对、日期断代、静态权重查表与二十三万次条件采样五步排查，证实两类阿里云外呼均源于未清洗的训练中间件与安全靶场日志，并给出了容器侧的三道防御边界。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/qwen38-cohere-outbound-training-logs-20261101.html",
+      "content_chars": 137,
+      "content_sha256": "859ff8175179826bd5b157cd60d37d981108668ef364cfda6de75a1888549999",
+      "content_fetched_at": "2026-11-02T00:31:12.460223+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-11-01T00:00:00+00:00",
+      "collected_at": "2026-11-02T00:30:11.011443+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/qwen38-cohere-outbound-training-logs-20261101.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "拆开 Qwen3.8 的参数排查后，那些外呼阿里云的指令只是没洗干净的训练日志",
+          "url": "https://yage.ai/share/qwen38-cohere-outbound-training-logs-20261101.html",
+          "content_sha256": "859ff8175179826bd5b157cd60d37d981108668ef364cfda6de75a1888549999"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    },
+    {
+      "id": "a:bde5cfb68b29e371",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "你也可以花 1.22 美元在 Opus 5.5 上复现 27 年计算机猜想的反证",
+      "target_url": "https://yage.ai/share/opus-eth-refutation-repro-20261031.html",
+      "text": "yage-share published: 你也可以花 1.22 美元在 Opus 5.5 上复现 27 年计算机猜想的反证",
+      "at": "2026-10-31T00:00:00+00:00",
+      "external_id": "a:bde5cfb68b29e371",
+      "url": "https://yage.ai/share/opus-eth-refutation-repro-20261031.html",
+      "title": "你也可以花 1.22 美元在 Opus 5.5 上复现 27 年计算机猜想的反证",
+      "content": "OpenAI 与 Anthropic 的内部模型在同一天独立推翻了悬置 27 年的指数时间假说（ETH），Anthropic 更放出了仅 5 句话、97 词的提示词，任何人花 1.22 美元即可在 Claude Opus 5.5 上用 8 分 41 秒复现完整证明。本文拆解这 5 句话如何将 47 页论文浓缩为反直觉路标，并提炼高推理模型时代的提示词实操经验与普通工程师参与前沿科研的三条新路径。",
+      "content_format": "text/plain",
+      "content_status": "partial",
+      "content_via": "rss_summary",
+      "content_source_url": "https://yage.ai/share/opus-eth-refutation-repro-20261031.html",
+      "content_chars": 199,
+      "content_sha256": "7f4604e71aaa4bd1eae433490771a9d9714a60ac27ca3844ad2943be22f40270",
+      "content_fetched_at": "2026-11-02T00:31:14.737632+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-10-31T00:00:00+00:00",
+      "collected_at": "2026-11-02T00:30:11.011443+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/opus-eth-refutation-repro-20261031.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "你也可以花 1.22 美元在 Opus 5.5 上复现 27 年计算机猜想的反证",
+          "url": "https://yage.ai/share/opus-eth-refutation-repro-20261031.html",
+          "content_sha256": "7f4604e71aaa4bd1eae433490771a9d9714a60ac27ca3844ad2943be22f40270"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "partial",
+        "content_via": "rss_summary"
+      }
+    },
+    {
+      "id": "a:8920ef59b3b9441c",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "十月未央",
+      "target_url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "text": "innei published: 十月未央",
+      "at": "2026-10-24T18:16:19+00:00",
+      "external_id": "a:8920ef59b3b9441c",
+      "url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "title": "十月未央",
+      "content": "October Lingers\nAutumn\n·\nMixed feelings\n844\nreads\n·\n2\nlikes\ntranslated from Simplified Chinese\n↗\nDictation · Assisted · Title · Assisted\nEnglish\nSynopsis\nopen yohaku ↗\nIt's already been over two weeks since my last recap, so it's time to catch up on what's been happening lately.\nNyatabi Hits the App Store\nLast time, I mentioned running into so many headaches after a trip that I decided to build an app. At the end of my last post, I wrote, \"Musubicho is still in development and not finished yet.\" Less than two weeks later, I renamed it Nyatabi (喵旅) and officially launched it on the App Store. That said, I haven't even been the first one to really test it out in the wild. I'm such a homebody that even though a trip sparked the project, I haven't had the chance to use all its features myself yet. I just love building products—created purely out of passion.\nIt's live on the App Store now, and I put together a decent landing page for it. Feel free to check it out! (Though it's iOS-only for now.)\nNyatabi — your AI travel companion for iPhone\nPlan with Musubi, explore together, split spending fairly and turn your route into memories. Your whole journey, in one local-first iPhone app.\nNyatabi\nBeyond helping you map out trips, it lets an agent handle expense tracking and bill splitting on the go (either by snapping receipts or just telling it what you spent). In group chats, the agent can scout nearby restaurants or pull up your friends' locations. And once the trip wraps up, you can replay your route, generate an auto-edited highlight video, or export a detailed travel footprint report.\nBefore the official release, I shot a 4-part short video series walking through the entire flow: pre-trip planning → snapping receipts to split expenses on the go → settling balances with minimum transfers → everyday roommate bookkeeping. On October 16, I posted a full 2-minute demo.\nAlong the way, I also open-sourced the rounded-line icon set used in Nyatabi at\nicons.nyatabi.app\n.\nEngineering shortcuts vs. engineering rigor: refusing to be a human test runner, I wired up XCUITest across two physical iPhones so agents could handle the entire closed loop of \"implement → verify → fail → fix\" on their own (check out my technical post, \"\nMy AI-Native iOS Development & Verification Workflow\n\", for details).\nIt could be handy whether you're traveling or just going about everyday life: I've always found life-logging footprint apps a bit awkward to use, so I baked my own footprint features right in to track daily routines as well. I don't want to turn this into a full-on product pitch, so I'll stop here. If you're interested, feel free to give it a spin.\nNyatabi: AI Travel Planner App - App Store\nDownload Nyatabi: AI Travel Planner by Moeru AI on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Nyatabi: AI Travel Planner…\nApp Store\nAI in the Trenches\nA Love-Hate Relationship with Claude\nI had a backup Claude alt account that managed to hold out for over two weeks, so I decided to upgrade it. Went from Pro to Max, only to get slapped with an instant ban—no refund, either. I was so anxious that night that I stayed up by myself until 5 a.m. Eventually, I couldn't help setting up yet another account, and that one's somehow still alive.\nOn top of that, my $DRAM shares kept tumbling before I could break even, so those days felt like a brutal double blow from Anthropic and $DRAM. It also got me calculating the real cost of compute inflation: last year, a $20 Claude subscription felt like it could do so much; now, even the $200 Max tier barely scratches the surface. By comparison, Apple's $99/year developer membership is so cheap it's almost moving.\nOpenAI's \"God Tier\" Account and Kimi Falling Flat on Its Face\nThere was a funny little detour along the way. Around the 20th, I noticed a bug in OpenAI: an old 20x subscription was still usable even after downgrading or canceling. I honestly thought I'd struck gold with some chosen \"god-tier\" account. But by day five of freeloading, the bug got patched and my quota went straight to zero.\nThen on the 23rd, I dropped $19 on Kimi, wanting to see how it compared to $20 Claude. I asked it to write a website footer—and before it even finished, barely ten minutes in, I slammed right into a 5-hour rate limit. Might as well just call yourselves QueueShot AI. When it comes to domestic models, everyone should just use DeepSeek—what are the rest of these garbage knockoffs even doing? DeepSeek is the only one that can actually play: no token sales, no bullshit. The API pricing is right there: take it or leave it. The TPS is right there too—DeepSeek 4.1 Flash pushes over 200 TPS, and at those prices, burn through as much as you want.\nUnlike Kimi—their greed this time is honestly shameless: zero compute power, but pulling that classic Lei Jun artificial scarcity playbook and taking users for fools to the extreme.\nRyugi (流儀) — Open-Source Claude Artifacts\nAfter getting jerked around like that, I thought: why not just build my own version of Claude Artifacts? I genuinely love using that feature. For docs, artboard designs, and architecture sketches, it's just so damn good—a product genuinely made with care.\nBut being locked into Claude's proprietary subscription was a dealbreaker. So what choice did I have? Build it myself.\nClaude Artifacts support five types, and the ones I use most are Artboard, Document, and HTML. Sick of taking Anthropic's nonsense, I cobbled together a standalone workbench called \"Ryugi\" (\nryugi.innei.dev\n).\nBuilding this brought an unexpected bonus too: it completely changed my view of Codex's design skills. I used to think Codex was garbage at design, and just on the 10th I had tweeted about how miserable it was trying to write UI with it. But once I plugged it into Ryugi's Artboard workflow, it turned out to be surprisingly solid—I guess I was just using it wrong before. To my surprise, that tweet blew up, racking up 93K impressions and over 700 bookmarks.\nI've been using it for a few days now, putting it through heavy daily use and constantly refining it. The cloud environment is live too, so now it helps me brainstorm, work on designs, hash out architecture docs, and even knock out small feature requests on the side.\nThe experience genuinely captures the vibe of Claude Artifacts now. Hooking this workflow up to other harnesses—like DeepSeek or Codex—makes them dramatically more useful. If you haven't tried it yet, you really should.\nRepository\n· Innei\n280\nryugi\n流儀 — a development workflow for coding agents: brainstorm with mockups, approve a spec, build it under TDD\nTypeScript\nHere are a few UI designs and animations I generated using DeepSeek, Codex, and Grok:\nDocument · 历史回看 · Ryugi\nView “Document · 历史回看” on Ryugi Cloud, an artboard artifact.\nRyugi\n简单模式 · 描述显隐 · Ryugi\nView “简单模式 · 描述显隐” on Ryugi Cloud, an artboard artifact.\nRyugi\nLobeHub · AI Provider 接入 · Ryugi\nView “LobeHub · AI Provider 接入” on Ryugi Cloud, an artboard artifact.\nRyugi\n室内乐与夏日小品 · Nine Pieces · Ryugi\nView “室内乐与夏日小品 · Nine Pieces” on Ryugi Cloud, an HTML artifact.\nRyugi\nLobeHub Bids Farewell to AntD\nOn the work front: I've been here for almost a year now. Back when I first joined, I declared that I was going to ditch AntD once and for all. That turned into a ten-month marathon, but on the 9th of this month, I finally pulled it off—migrating everything over to\n@base_ui\n+\nStyleX\n(meaning\nlobe-ui\nv6).\nLooking back at the numbers, the engineering scale was pretty wild:\nlobe-ui\nrewrote 54 components on top of Base UI, and AntD dependencies in\nlobe-editor\n,\nlobe-charts\n, and\nlobe-icons\nwere completely eliminated.\nThe main repo has over 11,000 TypeScript files. Replacing the underlying component library spanned 28 PRs and touched 3,242 files, with the single largest PR modifying 1,040 files.\nAlong the way, we also migrated our CSS-in-JS setup to StyleX, slashing the original 179 emotion files down to just 3. The most satisfying part was running 5 agents across parallel branches: in three and a half hours, they plowed through 84 commits. We then ran regression tests across 45 routes using 1,000 screenshot comparisons and computed-style diffs, reliably catching 4 regressions.\nGetting rid of AntD paid off right away. Bundle sizes shrank dramatically, and pages feel noticeably snappier. Thinking back, before AI agents existed, a core refactor of this scale would have easily taken an entire team a full quarter of grinding. But with today's models being so capable, I managed to knock out this massive project almost entirely on my own.\nThe Story Ends Here\nThroughout October, blind dates from family and friends were nonstop, but most of the time chatting was pretty draining. Earlier in the month, I tweeted a rant saying some WeChat chats feel like \"an LLM running on a potato server, taking hours of inference just to spit out a few characters, and if you don't send a request, you'll never get a response.\" That tweet unexpectedly racked up over 70,000 views, and predictably enough, I got hit with the \"you're a nice guy\" card in real life soon after.\nBut just a few days later, through another blind date, I unexpectedly met someone I could genuinely click with—something that hadn't happened in a long time.\nI find myself wanting deeper conversations lately—talking about fundamental values, life outlooks, and thoughts on the future. In day-to-day life, finding someone who can actually match that energy is rare. But that night—which also happened to be our last conversation—we talked about so much. Beyond having plenty of shared interests, what hit hardest was a real resonance in who we are deep down. Just knowing someone on that exact same wavelength actually exists was a wonderful, lucky surprise.\nUnfortunately, she felt our personalities were just too similar to be a good match. In the end, we parted ways gracefully, and that was where the story ended.\nTurning My Resume into a Canvas\nAnother project I spent a lot of time on was completely rebuilding my personal resume page for Programmer's Day on October 24, launching it at\nresume.innei.in/lab/\n.\nThe spark was simple: surfing online recently, I saw a few personal sites and resumes that looked amazing, so I wanted to bring my own ideas into the mix and polish up something of my own. A traditional single-page format can't hold very much, so I turned it into a canvas you can freely pan, zoom, and explore—connecting all the projects I've worked on and milestones I've reached over the six or seven years since college into one continuous timeline.\nWorking on this canvas also ended up unlocking some new skills. To give the page some fitting background music, I dove into arranging with realistic virtual instruments, tweaking synthesis, and fine-tuning the details (huge thanks to\n@wibus_wee\nfor walking me through Ozone mastering), and I even built an interactive sheet music display into the canvas.\nCramming a bunch of music arrangement and audio mastering just to build a resume was an unexpected bonus. Once I get around to picking music theory back up properly, I really should build an app for instruments and music theory.\nThanks for reading this far.\nAlso, I recently updated the background on this blog with dynamic nature scenes that change with the seasons and time of day. I even split the effect out into its own standalone preview page (\ninnei.in/dev-demos/backgrounds\n); if you're interested, feel free to click in and play around with it.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "content_chars": 11499,
+      "content_sha256": "8fdf0dcbeae12ad188f4ec4afe537a45c5ff6ccdcd8e57fb9fe7a5076d711b7e",
+      "content_fetched_at": "2026-11-02T00:33:49.620880+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-10-24T18:16:19+00:00",
+      "collected_at": "2026-11-02T00:30:11.011443+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/notes/2026/10/24/2026-10-recap"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "十月未央",
+          "url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+          "content_sha256": "8fdf0dcbeae12ad188f4ec4afe537a45c5ff6ccdcd8e57fb9fe7a5076d711b7e"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
+}
