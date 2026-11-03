@@ -1947,6 +1947,10 @@
   "forti-ir:a:32327bfd906fb4c6": {
     "bundle_date": "2026-09-09"
   },
+  "forti-ir:a:38258316d905e2bb": {
+    "bundle_date": "2026-11-03",
+    "emitted_at": "2026-11-03T02:51:26.373186+00:00"
+  },
   "forti-ir:a:3a46584addbc874c": {
     "baseline": true,
     "bundle_date": "baseline"
@@ -2510,8 +2514,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:8920ef59b3b9441c": {
-    "bundle_date": "2026-11-02",
-    "emitted_at": "2026-11-02T00:30:11.011443+00:00"
+    "bundle_date": "2026-11-03",
+    "emitted_at": "2026-11-03T02:51:26.373186+00:00"
   },
   "innei:a:8d029416a9572e74": {
     "baseline": true,
@@ -4882,6 +4886,10 @@
     "bundle_date": "2026-10-30",
     "emitted_at": "2026-10-30T00:44:40.792458+00:00"
   },
+  "openai-research:a:58ed7cdb781d7303": {
+    "bundle_date": "2026-11-03",
+    "emitted_at": "2026-11-03T02:51:26.373186+00:00"
+  },
   "openai-research:a:6b76d2eab07b4db9": {
     "bundle_date": "2026-10-29",
     "emitted_at": "2026-10-29T00:43:44.334897+00:00"
@@ -5453,6 +5461,10 @@
   "safebreach-blog:a:6fc85020aad36d8b": {
     "bundle_date": "2026-08-27"
   },
+  "safebreach-blog:a:701daf341eb3f277": {
+    "bundle_date": "2026-11-03",
+    "emitted_at": "2026-11-03T02:51:26.373186+00:00"
+  },
   "safebreach-blog:a:7b2e045917167b1e": {
     "bundle_date": "2026-10-14",
     "emitted_at": "2026-10-14T00:13:27.625673+00:00"
@@ -5525,6 +5537,10 @@
   },
   "sandflysecurity-blog:a:281f078a23587fab": {
     "bundle_date": "2026-07-18"
+  },
+  "sandflysecurity-blog:a:2a1835e8e6397d6b": {
+    "bundle_date": "2026-11-03",
+    "emitted_at": "2026-11-03T02:51:26.373186+00:00"
   },
   "sandflysecurity-blog:a:389d7ec51f257360": {
     "bundle_date": "2026-09-29"
@@ -6197,6 +6213,10 @@
     "bundle_date": "2026-10-18",
     "emitted_at": "2026-10-17T22:59:20.412804+00:00"
   },
+  "unknowncheats-ac:a:3252fecf56574935": {
+    "bundle_date": "2026-11-03",
+    "emitted_at": "2026-11-03T02:51:26.373186+00:00"
+  },
   "unknowncheats-ac:a:362faae203d577e2": {
     "bundle_date": "2026-10-10",
     "emitted_at": "2026-10-10T00:39:58.428209+00:00"
@@ -6243,8 +6263,8 @@
     "bundle_date": "2026-08-15"
   },
   "unknowncheats-ac:a:4dcf60cd330fb3c8": {
-    "bundle_date": "2026-11-02",
-    "emitted_at": "2026-11-02T00:30:11.011443+00:00"
+    "bundle_date": "2026-11-03",
+    "emitted_at": "2026-11-03T02:51:26.373186+00:00"
   },
   "unknowncheats-ac:a:50cb0da56473e57b": {
     "bundle_date": "2026-08-28"
@@ -7281,6 +7301,10 @@
     "baseline": true,
     "bundle_date": "baseline"
   },
+  "yage-share:a:53e02774cae49d49": {
+    "bundle_date": "2026-11-03",
+    "emitted_at": "2026-11-03T02:51:26.373186+00:00"
+  },
   "yage-share:a:5471d6efe7038a93": {
     "baseline": true,
     "bundle_date": "baseline"
@@ -7998,6 +8022,10 @@
   "yage-share:a:fc37f45075f7eccd": {
     "bundle_date": "2026-08-14"
   },
+  "yage-share:a:fcb910a6e971d0c6": {
+    "bundle_date": "2026-11-03",
+    "emitted_at": "2026-11-03T02:51:26.373186+00:00"
+  },
   "yage-share:a:fcf63ee2f6f2021a": {
     "bundle_date": "2026-07-15"
   },
@@ -8244,6 +8272,10 @@
   },
   "zdi-advisories:a:23e2bb19872ae1c2": {
     "bundle_date": "2026-07-30"
+  },
+  "zdi-advisories:a:26c28839da13dca8": {
+    "bundle_date": "2026-11-03",
+    "emitted_at": "2026-11-03T02:51:26.373186+00:00"
   },
   "zdi-advisories:a:26cd889eb0203548": {
     "bundle_date": "2026-08-13"
@@ -8809,6 +8841,10 @@
   "zdi-advisories:a:89e0d83c5aa81ff5": {
     "bundle_date": "2026-07-16"
   },
+  "zdi-advisories:a:8a382fb0084f2306": {
+    "bundle_date": "2026-11-03",
+    "emitted_at": "2026-11-03T02:51:26.373186+00:00"
+  },
   "zdi-advisories:a:8a3bf9810adf1cb7": {
     "bundle_date": "2026-07-31"
   },
@@ -9235,6 +9271,10 @@
   "zdi-advisories:a:d3cb8ac04ae3cdaa": {
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
+  "zdi-advisories:a:d3d589e23f15f393": {
+    "bundle_date": "2026-11-03",
+    "emitted_at": "2026-11-03T02:51:26.373186+00:00"
   },
   "zdi-advisories:a:d426fe7fd38c4449": {
     "bundle_date": "2026-09-11"
