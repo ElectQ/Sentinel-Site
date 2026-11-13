@@ -2208,6 +2208,10 @@
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
   },
+  "forti-ir:a:71b0c32dec7a1b6e": {
+    "bundle_date": "2026-11-13",
+    "emitted_at": "2026-11-13T01:44:33.596315+00:00"
+  },
   "forti-ir:a:7c9b097279629d28": {
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
@@ -2908,8 +2912,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:0ed9df84a952389a": {
-    "bundle_date": "2026-11-12",
-    "emitted_at": "2026-11-12T02:11:11.674851+00:00"
+    "bundle_date": "2026-11-13",
+    "emitted_at": "2026-11-13T01:44:33.596315+00:00"
   },
   "innei:a:5e72a8cae2418bb2": {
     "baseline": true,
@@ -2922,8 +2926,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:8920ef59b3b9441c": {
-    "bundle_date": "2026-11-12",
-    "emitted_at": "2026-11-12T02:11:11.674851+00:00"
+    "bundle_date": "2026-11-13",
+    "emitted_at": "2026-11-13T01:44:33.596315+00:00"
   },
   "innei:a:8d029416a9572e74": {
     "baseline": true,
@@ -2946,8 +2950,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:c88c6b17f9a6ce94": {
-    "bundle_date": "2026-11-12",
-    "emitted_at": "2026-11-12T02:11:11.674851+00:00"
+    "bundle_date": "2026-11-13",
+    "emitted_at": "2026-11-13T01:44:33.596315+00:00"
   },
   "innei:a:e6905fe41e05089d": {
     "baseline": true,
@@ -8745,6 +8749,10 @@
   "yage-share:a:90ebb408a83d7196": {
     "bundle_date": "2026-07-25"
   },
+  "yage-share:a:912cf89fa7995887": {
+    "bundle_date": "2026-11-13",
+    "emitted_at": "2026-11-13T01:44:33.596315+00:00"
+  },
   "yage-share:a:92333f4211b268fc": {
     "bundle_date": "2026-07-23"
   },
@@ -9245,6 +9253,10 @@
   "yage-share:a:fcb910a6e971d0c6": {
     "bundle_date": "2026-11-03",
     "emitted_at": "2026-11-03T02:51:26.373186+00:00"
+  },
+  "yage-share:a:fcbf774f5d1f43df": {
+    "bundle_date": "2026-11-13",
+    "emitted_at": "2026-11-13T01:44:33.596315+00:00"
   },
   "yage-share:a:fcf63ee2f6f2021a": {
     "bundle_date": "2026-07-15"
