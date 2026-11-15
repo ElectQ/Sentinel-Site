@@ -1733,6 +1733,10 @@
     "bundle_date": "2026-11-10",
     "emitted_at": "2026-11-10T03:22:24.293785+00:00"
   },
+  "denizhalil-blogs:a:b3b5695726e00a3c": {
+    "bundle_date": "2026-11-15",
+    "emitted_at": "2026-11-15T00:56:11.263480+00:00"
+  },
   "denizhalil-blogs:a:cc7df1334d4ac0bd": {
     "baseline": true,
     "bundle_date": "baseline"
@@ -2920,8 +2924,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:0ed9df84a952389a": {
-    "bundle_date": "2026-11-14",
-    "emitted_at": "2026-11-14T01:22:17.802167+00:00"
+    "bundle_date": "2026-11-15",
+    "emitted_at": "2026-11-15T00:56:11.263480+00:00"
   },
   "innei:a:5e72a8cae2418bb2": {
     "baseline": true,
@@ -2934,8 +2938,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:8920ef59b3b9441c": {
-    "bundle_date": "2026-11-14",
-    "emitted_at": "2026-11-14T01:22:17.802167+00:00"
+    "bundle_date": "2026-11-15",
+    "emitted_at": "2026-11-15T00:56:11.263480+00:00"
   },
   "innei:a:8d029416a9572e74": {
     "baseline": true,
@@ -2958,8 +2962,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:c88c6b17f9a6ce94": {
-    "bundle_date": "2026-11-14",
-    "emitted_at": "2026-11-14T01:22:17.802167+00:00"
+    "bundle_date": "2026-11-15",
+    "emitted_at": "2026-11-15T00:56:11.263480+00:00"
   },
   "innei:a:e6905fe41e05089d": {
     "baseline": true,
@@ -8905,6 +8909,10 @@
   "yage-share:a:5efe7ee3472e5f21": {
     "bundle_date": "2026-08-20"
   },
+  "yage-share:a:6034761d966cfe3c": {
+    "bundle_date": "2026-11-15",
+    "emitted_at": "2026-11-15T00:56:11.263480+00:00"
+  },
   "yage-share:a:607bea0ece41cf0f": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
@@ -9279,6 +9287,10 @@
   },
   "yage-share:a:b415b45503912d46": {
     "bundle_date": "2026-07-31"
+  },
+  "yage-share:a:b4da3b6beacd9aec": {
+    "bundle_date": "2026-11-15",
+    "emitted_at": "2026-11-15T00:56:11.263480+00:00"
   },
   "yage-share:a:b5d27dfa4f62af88": {
     "baseline": true,
