@@ -1,0 +1,616 @@
+{
+  "schema_version": 1,
+  "source_id": "blog_watch",
+  "collect_date": "2026-11-16",
+  "collect_window": {
+    "start": "2026-10-24T18:16:19+00:00",
+    "end": "2026-11-16T00:54:09.217912+00:00",
+    "hours": 534
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "43783039555",
+    "commit": "b96f182"
+  },
+  "stats": {
+    "total": 7,
+    "by_kind": {
+      "publish": 7
+    },
+    "by_via": {
+      "llm": 1,
+      "rss": 6
+    },
+    "by_source": {
+      "cymulate-blog": 1,
+      "innei": 4,
+      "yage-share": 2
+    },
+    "failed_lists": [
+      "unknowncheats-ac",
+      "redheadsec",
+      "redsiege-blog",
+      "cognisys-labs"
+    ],
+    "sources_ok": 51,
+    "sources_failed": [
+      {
+        "id": "unknowncheats-ac",
+        "error": "forced_browser; browser:cf_challenge_unresolved status=403"
+      },
+      {
+        "id": "redheadsec",
+        "error": "html_fetch:http_502"
+      },
+      {
+        "id": "redsiege-blog",
+        "error": "no_candidates"
+      },
+      {
+        "id": "cognisys-labs",
+        "error": "html_fetch:[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'labs.cognisys.group'. (_ssl.c:1081); browser:Page.goto: Download is starting\nCall log:\n  - navigating to \"https://labs.cognisys.group/\", waiting until \"domcontentloaded\"\n"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 9,
+      "rss": 32
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 10,
+      "calls": 10,
+      "prompt_tokens": 10143,
+      "completion_tokens": 997,
+      "total_tokens": 11140,
+      "prompt_cache_hit_tokens": 7296,
+      "prompt_cache_miss_tokens": 2847
+    },
+    "by_content_status": {
+      "ok": 7
+    }
+  },
+  "items": [
+    {
+      "id": "a:9ad8c1a7f504e624",
+      "who": "cymulate-blog",
+      "who_url": "https://cymulate.com/blog/",
+      "action": "publish",
+      "target": "Red Team Exercise Guide: How to Automate and Integrate with Blue TeamsRead More",
+      "target_url": "https://cymulate.com/blog/red-team-exercise-guide/",
+      "text": "cymulate-blog published: Red Team Exercise Guide: How to Automate and Integrate with Blue TeamsRead More",
+      "at": "2026-11-16T00:54:09.217912+00:00",
+      "external_id": "a:9ad8c1a7f504e624",
+      "url": "https://cymulate.com/blog/red-team-exercise-guide/",
+      "title": "Red Team Exercise Guide: How to Automate and Integrate with Blue TeamsRead More",
+      "content": "Red Team Exercise Guide: How to Automate and Integrate with Blue Teams\nBy:\nAmanda Kegley\nNovember 15, 2026\nA red team exercise is an authorized, simulated attack in which ethical hackers emulate a real adversary to test how well an organization prevents, detects and responds to a threat. It chains multiple\nred team scenarios\ninto one end-to-end campaign against a defined business objective, evaluating people, processes and technology along the way.\nThe value comes from what defenders learn and improve. The goal is evidence that your security controls interrupt the attack paths that matter most, not a long list of findings. Traditional exercises take months to plan and weeks to run, so most organizations test only a few times a year while attackers and environments change constantly. That creates a risk-to-fix gap: reports arrive weeks after testing, and defenses may change before fixes land. At Cymulate, we close that gap with\nagentic cyber defense engineering\n, and this guide shows where it fits in each phase.\nWhat is a red team exercise?\nA red team exercise tests whether an adversary could achieve an agreed objective within approved boundaries.\nNIST SP 800-53 Rev. 5\ndescribes\nred teaming\nas a “simulated adversarial attempt to compromise organizational missions or business processes.”\nA red team scenario is one attack storyline: one adversary, one objective and a connected chain of techniques, such as a spearphishing email that leads to a persistent foothold. An exercise links several scenarios, moving from that foothold through credential access and lateral movement to a crown-jewel system and data exfiltration. At each stage, it measures whether controls block the technique, whether the security operations center (SOC) detects it and how fast the team responds.\nFurther reading\nRed Team Scenarios: 10 Real-World Attacks to Test Your Defenses\nFrom phishing to AI prompt injection, see how realistic attack scenarios help teams validate and improve security defenses.\nRead More\nFour roles make an exercise work. The red team conducts offensive testing. The blue team monitors, investigates and responds. A white cell may be involved, which is responsible for managing safety and separation of exercise activity from real incidents. An executive sponsor approves the work and funds the fixes.\nRed team exercise vs. penetration test\nA penetration test finds as many technical vulnerabilities as possible in defined targets, openly and in one to two weeks. A red team exercise pursues a business objective covertly over weeks or months and tests how defenders prevent, detect and respond. For more, see\nred teaming vs. penetration testing\n.\nFeature\nPenetration test\nRed team exercise\nPrimary goal\nFind and document as many technical vulnerabilities as possible.\nAchieve a specific objective (e.g., reach the “crown jewels” or dump a database).\nScope\nDefined technical targets (e.g., a specific web app, network or cloud environment).\nBroad, open-ended attack paths across technology, physical security and humans.\nStealth\n“Loud” and transparent; internal IT and security teams usually know it is happening.\nStealthy and covert; designed to evade the blue team (SOC).\nMethods\nActive exploitation of known vulnerabilities, misconfigurations and code flaws.\nAPT emulation, social engineering and evasion tactics.\nDuration\nShort-term (typically 1 to 2 weeks).\nLong-term (several weeks to a few months).\nPrimary deliverable\nA prioritized list of technical vulnerabilities with remediation steps.\nAn attack narrative, detection gaps and a test of incident response readiness.\nCompliance use\nRequired by PCI DSS; commonly used as evidence for SOC 2 and HIPAA.\nBuilt for operational defense testing; mandated as threat-led testing for some financial entities (e.g., DORA TLPT, TIBER-EU, CBEST).\nTypes of red team exercises\nChoose the format based on three factors:\nOperational needs:\nthe question you need answered, such as how far an attacker could move after a merger or cloud migration.\nIndustry and regulations:\nfinancial regimes such as\nDORA threat-led penetration testing (TLPT\n),\nTIBER-EU\nand\nCBEST\ndictate scope, providers and cadence, as an example.\nResources:\nfull-scope exercises need skilled operators and budget, so many teams combine external specialists with automation.\nAdoption follows these factors. In a vendor-run survey of 512 organizations,\n89% of enterprises with 10,000 or more employees and 64% of mid-market firms reported annual red team assessments\n, led by financial services as an example for a highly regulated industry. Formats can be combined; cadences below are planning suggestions.\nType\nStarting point\nBest for\nTypical cadence\nFull-scope, objective-based exercise\nExternal, with no insider knowledge\nEnd-to-end readiness across technology, people and physical security\nAnnual or semiannual\nAssumed breach exercise\nAuthorized internal foothold\nPost-compromise detection, lateral movement and blast radius\nQuarterly or after major changes\nThreat-led adversary emulation\nIntelligence on a named threat group\nThreat-specific coverage; regulatory TLPT\nWhen intelligence changes; at least every three years under DORA\nTargeted red team exercise\nA specific surface, such as cloud identity, social engineering or AI applications\nValidating a new technology or migration\nAfter major changes or launches\nContinuous automated red teaming (CART)\nConfigured assets, agents and integrations\nRepeatable control validation at scale\nContinuous: scheduled and change-triggered\nThe eight phases of a red team exercise\nThese phases of a red team a exercise connects planning to verified fixes. In practice, many engagements stop after phase 6: the red team delivers its report, and re-testing becomes a separate, optional engagement. Even the TIBER-EU closure phase asks only for a remediation plan that includes\nplanning for follow-up testing\n. Fixes stall without that remediation and re-verification loop:\nCobalt’s State of Pentesting Report 2025\nfound that firms remediate just 48% of pentest findings.\nHow Cymulate automates the eight phases\nCymulate automates red teaming through agentic cyber defense engineering.\nCymulate Vero AI\nagents profile threats, run production-safe attack scenarios, validate prevention and detection, prioritize gaps, implement mitigation and re-validate.\nCymulate Cowork\nturns those steps into scheduled routines, so phases 2 through 8 run continuously while your team controls objectives, scope and approvals.\n1. Planning and scoping\nDefine objectives, systems in scope, participants and success criteria. Agree on rules of engagement, owners and time for remediation before testing begins.\nWith Cymulate:\nPlanning stays human-led. Cowork routines capture the agreed scope, schedule, guardrails and approval points so every run follows the same rules.\n2. Threat intelligence and scenario selection\nSelect adversaries and tactics, techniques and procedures (TTPs) relevant to your industry and exposures, then map them to the\nMITRE ATT&CK framework\n. See\nhow to choose which red team scenarios to run\n.\nWith Cymulate:\nThe Threat Profiler agent identifies threats relevant to your environment, and the Red Teamer agent converts them into attack scenarios. Teams draw on more than 100,000 attack actions, updated daily, or build custom attack chains in\nCymulate Threat Studio\n.\n3. Environment preparation\nVerify logging, security information and event management (SIEM) coverage and endpoint detection and response (EDR) readiness. Establish private white-cell communications and confirm emergency contacts.\nWith Cymulate:\nMore than 80\nsecurity control integrations\nconfirm telemetry is flowing. After initial deployment, this phase isn’t repeated for every exercise.\n4. Baseline assessment\nRecord control settings, detection coverage and known telemetry gaps in a dated baseline, so later comparisons show what improved.\nWith Cymulate:\nThe Validation Operator agent runs a baseline in\nCymulate Exposure Validation\n, mapping prevention and detection results to a MITRE ATT&CK heatmap as well as ingests all vulnerabilities and existing detection rules.\n5. Execution\nRed-teamers use specialized tools to conduct authorized reconnaissance, initial access, privilege escalation, lateral movement and actions on objectives. Testers timestamp actions and preserve evidence.\nWith Cymulate:\nExposure Validation runs safe automated attacks against integrated security tools across the entire MITRE ATT&CK lifecycle.\nContinuous automated red teaming\nrepeats them on a schedule, freeing human red teamers for creative chaining, social engineering and physical testing.\n6. Reporting\nBuild an attack narrative showing what controls prevented, what defenders detected and what they missed, with business impact and evidence-based recommendations.\nWith Cymulate:\nCymulate platform has numerous out of the box reporting dashboards and the ability to create custom dashboard in minutes. Cymulate Cowork expands these capabilities with agentic AI, allowing for automated routines and additional customization.\n7. Remediation and tracking\nAssign each finding an owner, priority and due date. Track control changes and detection-rule tuning as exercise deliverables.\nWith Cymulate:\nCymulate CTEM\nprioritizes gaps by exploitability and business impact. The Cymulate Platform auto generates vendor-specific mitigations, Sigma and YARA rules and indicators of compromise (IoCs).\nCymulate Auto Mitigation\npushes supported updates to connected controls, with approval points for production changes.\n8. Validation and re-testing\nRepeat relevant techniques after fixes and confirm the expected prevention, alert or response. Remove test artifacts and feed results into the next exercise.\nWith Cymulate:\nA Cowork prove the fix routine automatically re-runs the original attack scenario when a mitigation closes, confirms the fix and records the evidence.\nRed team rules of engagement: a checklist\nRed team rules of engagement (RoE) are the written agreement that defines what a red team may test, how and when, who approves it and what happens if something goes wrong. They protect production systems, keep the exercise legal and help the SOC tell a test from a real incident.\nAuthorization:\nObtain written executive authorization and legal review, including third-party permissions.\nScope:\nList in-scope assets, excluded systems, testing windows and rate limits.\nPermitted techniques:\nSpecify allowed techniques and actions that need separate approval, including destructive testing.\nDeconfliction:\nRoute deconfliction through the white cell so the SOC can identify a real incident.\nEmergency stop:\nDefine stop triggers, such as service degradation, and who can pause testing.\nData protection:\nEncrypt credentials and evidence, restrict access and agree on retention and deletion.\nCleanup:\nUse synthetic data where possible and document cleanup responsibilities before execution.\nWith Cymulate, these rules become platform settings enforced on every run: assessments target only selected assets and test points, run on approved schedules, use techniques chosen from an ATT&CK-mapped library and route high-risk actions through approval points with full audit trails.\nHow to measure a red team exercise\nDefine clock starts, endpoints and denominators before testing. Count a detection as valid only when the alert reaches the intended queue.\nMetric\nHow to calculate\nTime to objective\nObjective achieved timestamp minus exercise start\nMean time to detect (MTTD)\nTime from action start to first valid detection ÷ detected test cases\nMean time to contain\nTime from first valid detection to confirmed containment ÷ contained test cases\nMean time to remediate (MTTR)\nTime from finding logged to successful re-test ÷ verified closed findings\nPrevention rate\nBlocked actions ÷ valid attempted actions × 100\nDetection coverage by ATT&CK technique\nTechniques meeting detection criteria ÷ techniques tested × 100\nFindings remediated and re-tested\nFindings fixed and re-tested ÷ actionable findings × 100\nThe Cymulate platform automatically calculates these cybersecurity metrics with visual dashboards and monitors for configuration drift.\nHow often should you run red team exercises?\nFull-scope exercises often run annually or semiannually. Adjust that rhythm for business risk, budget, regulatory obligations and major environment changes. The\nThreat Exposure Validation Impact Report 2025\nfound that organizations running exposure validation at least monthly reported a 20% reduction in breaches.\nThat annual rhythm assumed attackers needed weeks to weaponize a weakness. In April 2026, Anthropic\nwithheld Claude Mythos Preview from public release, citing its ability to find software vulnerabilities\n, and the UK AI Security Institute reported it could\nautonomously complete a 32-step simulated network attack\n. When attackers move at machine speed, a once-a-year test leaves months of untested exposure. Pair periodic human-led exercises with continuous automated red teaming that re-tests after every new threat or change, so defenders move at machine speed too.\nRegulators are moving the same way. Requirements have shifted from annual penetration tests under PCI DSS (2004), to intelligence-led red teaming of live systems under CBEST (2014) and TIBER-EU (2018), to recurring threat-led tests under DORA and AI adversarial testing under the\nEU AI Act\n(2025).\nRed team exercise best practices\nTie objectives to business risk and critical services.\nBase threat selection on current intelligence and relevant exposures.\nHold a purple team debrief to compare attacker evidence with defender actions.\nMap every attack action to ATT&CK, recording results and telemetry.\nReserve time and ownership for remediation and re-testing.\nAutomate repeatable checks within approved boundaries.\nTeams without a dedicated red team can follow the example of a\nbank that increased in-house security testing without a red team\n.\nKey takeaways\nA red team exercise chains scenarios into a campaign\nthat tests prevention, detection and response against a business objective.\nMost engagements stop at the report.\nTreat remediation and re-testing as exercise phases.\nDefine metrics before testing\nand report misses separately.\nDefend at machine speed.\nPair human-led exercises with continuous automated red teaming through agentic cyber defense engineering.\nCymulate enables continuous red teaming at machine speed\nAgentic cyber defense engineering is a closed-loop, AI-assisted approach to continuously proving and improving security defenses. Cymulate applies it to red teaming through three connected steps: Prove. Prioritize. Adapt.\nProve.\nCymulate Exposure Validation\nruns automated red teaming from the industry’s largest attack scenario library, with new simulations within 24 hours of major CISA advisories.\nCymulate Threat Studio\nlets red teams build and save custom multi-stage attacks based on their operational needs.\nPrioritize.\nCymulate CTEM\nproves exploitability and prioritizes vulnerabilities by business impact, with results mapped to MITRE ATT&CK. With Cymulate Platform, all prevention and detection coverage is mapped to MITRE ATT&CK and prioritized by risk.\nAdapt.\nThe\nCymulate Platform\ndelivers vendor-specific mitigations, detection rules and IoCs, and\nCymulate Auto Mitigation\npushes supported updates to more than 80 integrated controls. Re-testing verifies each fix and closes the risk-to-fix gap.\nCymulate Cowork\n, powered by Vero AI, runs these steps as governed routines, with audit trails and human approval for high-risk actions. Customers report a 52% reduction in critical exposures, a 3X increase in threat detection and 40X faster threat validation, and\nHertz Israel reduced its cyber risk by 81% within four months\n.\nReady to make your red team exercises continuous?\nTo explore the full operating model,\ndownload the Agentic Cyber Defense Engineering e-book\n. To see Cowork run exposure validation and mitigation,\nschedule a demo\n.\nFrequently asked questions\nWhat is the difference between a red team scenario and a red team exercise?\nA red team scenario is a single attack storyline: one adversary, one\nobjective\nand one chain of techniques. A red\nteam\nexercise links several scenarios into an end-to-end campaign that shows whether an attacker can get from\ninitial\naccess to business impact.\nHow long does a red team exercise take?\nMost human-led red team exercises take several weeks to a few months, depending on scope and organization size, plus time for remediation and re-testing. Automated red teaming can run the repeatable phases in hours.\nHow often should you conduct red team exercises?\nMany security teams run a full-\nscope\nexercise annually or semiannually, and entities\ndesignated\nunder DORA must run threat-led tests at least every three years. Because AI now accelerates attacks, pair periodic exercises with continuous automated red teaming.\nWhat are red team rules of engagement?\nRed team rules of engagement are the written agreement covering scope, excluded systems, testing windows,\npermitted\ntechniques, approvals, deconfliction, emergency stop triggers and data handling. They keep the exercise safe and legal.\nCan red team exercises be automated?\nMany repeatable activities can be automated, including threat profiling, technique execution, reporting,\nmitigation\nand re-testing. Human testers still lead\nobjectives\n, social\nengineering\nand physical testing. Cymulate agents run the automated steps continuously within defined guardrails, with human approval for consequential changes.\nAmanda Kegley\nAmanda Kegley has over 15 years of experience in cybersecurity. With her in-depth knowledge of security needs in today’s dynamic threat landscape, she successfully innovates and markets new cybersecurity capabilities.\nMore about Author\nTable of Contents\nWhat is a red team exercise?\nTypes of red team exercises\nThe eight phases of a red team exercise\nRed team rules of engagement: a checklist\nHow to measure a red team exercise\nHow often should you run red team exercises?\nRed team exercise best practices\nKey takeaways\nCymulate enables continuous red teaming at machine speed\nReady to make your red team exercises continuous?\nFrequently asked questions\nCymulate Exposure Validation\nmakes advanced security testing fast and easy. When it comes to building custom attack chains, it's all right in front of you in one place.\nMike Humbert\n,\nCybersecurity Engineer\nDARLING INGREDIENTS INC.\nLearn More\nFeatured Resources\nView More Resources\nReport\n2026 Gartner® Market Guide for Adversarial Exposure Validation\nThe guide covers AEV use cases, key features, and market trends to improve threat exposure visibility and defenses.\nLearn More\nData Sheet\nCymulate Cowork\nUse AI agents and automated routines to validate exposures and streamline cyber defense engineering.\nRead More\nE-book\nAgentic Cyber Defense Engineering\nThis e-book explores the six stages of agentic cyber defense engineering and how they work together to strengthen cyber defenses.\nLearn More\nGET A PERSONALIZED DEMO\nReady to see Cymulate in action?\nBook a Demo",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://cymulate.com/blog/red-team-exercise-guide/",
+      "content_chars": 19096,
+      "content_sha256": "44ec1da29feab010f58bedbb5d4cc754cc0365f507571c63ca166cd19f525bc9",
+      "content_fetched_at": "2026-11-16T00:56:50.097402+00:00",
+      "author": "cymulate-blog",
+      "author_name": "Cymulate Blog",
+      "author_url": "https://cymulate.com/blog/",
+      "published_at": "2026-11-16T00:54:09.217912+00:00",
+      "collected_at": "2026-11-16T00:54:09.217912+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cymulate-blog",
+        "via:llm",
+        "channel:html_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://cymulate.com/blog/",
+        "https://cymulate.com/blog/red-team-exercise-guide/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cymulate-blog",
+          "url": "https://cymulate.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cymulate-blog",
+          "name": "Cymulate Blog",
+          "home_url": "https://cymulate.com/blog/"
+        },
+        "article": {
+          "title": "Red Team Exercise Guide: How to Automate and Integrate with Blue TeamsRead More",
+          "url": "https://cymulate.com/blog/red-team-exercise-guide/",
+          "content_sha256": "44ec1da29feab010f58bedbb5d4cc754cc0365f507571c63ca166cd19f525bc9"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "llm",
+        "collect_mode": "html_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:13bf1da4d5efb8a1",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+      "target_url": "https://innei.in/en/posts/tech/ryugi-workflow",
+      "text": "innei published: 让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+      "at": "2026-11-15T09:40:15+00:00",
+      "external_id": "a:13bf1da4d5efb8a1",
+      "url": "https://innei.in/en/posts/tech/ryugi-workflow",
+      "title": "让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+      "content": "Ryugi (流儀)\n—Ryugi is a set of interactive artifacts I built for coding agents. Whenever the agent needs to ask me questions or have me pick an approach, it puts them on interactive pages where I can answer directly: design decisions are written up as a document where I choose options item by item and leave sentence-level comments; UI proposals are laid out on a canvas for me to click and choose; and when the work is done, an acceptance page places approved designs side by side with live screenshots so I can approve or reject them group by group. Every choice I make on these pages feeds right back into the agent session that started it.\nRepository\n· Innei\n503\nryugi\nRyugi (ryoo-ghee) — artifacts for coding agents: artboards of mockups, design docs, whiteboards, HTML benches and verify reports you comment on, with every comment sent back to the agent. Install artifacts only, or the full brainstorm → spec → TDD workflow. Claude Code, Codex and more.\nJavaScript\nThe project here was the whiteboard inside my blog editor, haklex. Its editing features had always leaned on Excalidraw, which pulled in a heavy bundle and clashed with the rest of the editor's visual style. I wanted to drop the dependency and roll our own whiteboard around Excalidraw's data format, without touching a single field in existing articles.\nFrom my opening sentence to `git push` took about half a day: two rounds of development, one release, and three downstream projects updated. I typed fewer than 20 messages in chat; wherever I had to make a call, it was turned into questions in a doc or mockups on a canvas. Here is how it went, step by step.\nAfter one prompt: a doc that asks questions\nMy opening prompt was just one sentence: \"Drop the excalidraw dependency and roll our own whiteboard based on its data structures.\"\nThe agent first inspected the code to confirm the scope of changes, then opened a design doc and put its questions directly into it, without following up in the chat box.\nThe questions were embedded right inside the document, each with a recommended option and the reasoning behind it; all I had to do was click my choice on the page. The first question was a fork in the road that determined how big v1 should be—everything that followed depended on it. For two of the questions I skipped the recommendation, and the next round simply picked up from what I chose.\nAfter each round, the conclusions were merged into a \"Decided\" section, noting whether I made the decision or the agent made it for me. I could tell at a glance which items needed another look.\nSection 4 of the design doc, \"Decided\": each conclusion is tagged with who decided it\nAfter two rounds, the document was fleshed out into a full design spec. Before handing it back to me, the agent had an uninvolved reviewer agent do a cold read; it resolved most of the feedback on its own, leaving just two questions for me to settle.\n自研白板编辑器：替换 @excalidraw/excalidraw · Ryugi\nView “自研白板编辑器：替换 @excalidraw/excalidraw” on Ryugi Cloud, a document artifact.\nRyugi\n\"Should we discuss the UI?\"\nOnce the document Q&A was done, I asked: \"Should we discuss the UI?\" The agent said yes—the design spec had marked the UI as \"left to the implementer,\" but these are things you see every time you open the editor.\nText doesn't do UI justice, so it switched to a visual canvas: each group presented several options side by side, the recommended one highlighted with a red border, and sticky notes explaining the reasoning right beside them.\nRound 1 decision fork on the UI canvas: three layout options side by side, with the recommended one outlined in red\nAcross two rounds and five groups, I went with the recommendations every time. With the options drawn out side by side, it was immediately clear which were good and which were bad. The selected mockups were linked into the design spec to guide both implementation and acceptance. Then I replied with \"approve.\"\n白板编辑器界面 · Ryugi\nView “白板编辑器界面” on Ryugi Cloud, an artboard artifact.\nRyugi\nOnce approved, I didn't look at code again\nOnce approved, the agent broke the design spec into 19 small tasks and tackled them one by one on a separate branch.\nEach task followed the same rhythm: write a failing test, watch it fail, write the implementation to make it pass, and commit. Whenever the agent made a call on its own—like minor details that diverged slightly from the spec—it logged it in a ledger. When the chat grew too long and was summarized, it kept working right from that ledger.\nFor over an hour, I didn't type a single word.\nReview, then the acceptance page\nOnce all 19 tasks were finished, the agent handed the branch over to an independent reviewer agent that had played no part in development. For every issue flagged, it reproduced it with a failing test before writing the fix.\nThen it spun up the editor in a real browser, took screenshots and screen recordings, and put together an acceptance page: my approved canvas designs on the left, and how it actually looked running on the right.\nAcceptance page: approved design, live screenshot, and screen recording side by side\nAll I had to do was review each group and approve or reject it. I left a comment on one mockup; it made the fix, took a new screenshot, and placed it right back in the same spot for me to review. Anything it couldn't verify was listed separately on the page, instead of being mixed in with \"Completed.\"\n白板编辑器界面 · Ryugi\nView “白板编辑器界面” on Ryugi Cloud, an artboard artifact.\nRyugi\nRound two: starting from a reference image\nNext, I wanted the whiteboard to look sharper. I pasted a reference image featuring clean headings, drop-shadowed sticky notes, and illustrative stickers, and asked whether stock Excalidraw could pull off that aesthetic.\nIt broke down the elements in the image one by one—what we could already draw, what capabilities were missing—and even guessed I might want an AI to do the drawing. I replied with one sentence: only build general-purpose drawing capabilities.\nNext was the same process: open a new design doc, then three rounds of Q&A. In round three, putting rich-text cards on the whiteboard was my own idea. After a cold read, the reviewer agent flagged two questions that needed my call; the agent added its recommendations, I replied with two numbers, approved, and let it implement and review.\nThe acceptance page for this round measured directly against my reference image: the reference on the left, the recreation inside our editor on the right.\nRound 2 acceptance: reference image side by side with the in-editor recreation\n白板绘制能力扩展：阴影、SVG 元素、富文本卡片 · Ryugi\nView “白板绘制能力扩展：阴影、SVG 元素、富文本卡片” on Ryugi Cloud, a document artifact.\nRyugi\nVerify · 白板绘制能力扩展 · Ryugi\nView “Verify · 白板绘制能力扩展” on Ryugi Cloud, an artboard artifact.\nRyugi\nRelease, then downstream projects\nWith both rounds approved, I asked: \"Can we release now, and then adapt the downstream projects?\" It cut a new release, then went through three projects using the editor one by one—bumping the dependency, running tests, and verifying in a browser that the whiteboard rendered properly.\nDownstream results were posted right on the acceptance page as well, with one screenshot for light mode and one for dark.\nThe same whiteboard in downstream projects: light and dark mode\nThroughout the entire process, logging in to authenticate the npm release was the only thing that needed my manual login—that was the one step the agent couldn't do for me.\nWhat I actually said in the chat\nLooking back, nearly everything I typed in chat over that half-day is captured right here:\nTime\nWhat I said\nWhat happened next\n12:26\nDrop the excalidraw dependency and roll our own whiteboard based on its data structures\nRead code, opened design doc\n13:04\nShould we discuss the UI?\nOpened canvas for UI discussion\n13:18\napprove\nSliced tasks, started implementation\n16:35\nThis looks about ready. Now let's work on extra features.\nCompared against reference image, kicked off Round 2\n16:38\nLet's only build general-purpose drawing capabilities\nNarrowed scope, opened new doc\n17:04\napprove\nImplemented Round 2\n17:56\nCan we release now, and then adapt the downstream projects?\nPublished release, adapted downstream projects\n20:06\npush\nPushed to remote\nEvery other decision was made by clicking options in docs, picking mockups on a canvas, or signing off on the acceptance page. I didn't have to scroll through chat history to find what the agent said; every decision stayed on the page, and all the implementation and acceptance were checked against those same pages.\nBoundaries\nThis workflow doesn't make judgment calls for me. If I skip an open-ended question, it fills in its best guess and flags it, leaving me to decide whether to review it. The acceptance page lists what it couldn't verify, and deciding whether to test further is up to me. What it does is put decisions right in front of me, so I can see at a glance what is settled and what isn't.\nRyugi is open source (\ngithub.com/Innei/ryugi\n). In your terminal, run\nnpx ryugi-artifacts install\n, and select the agent you use to install it. The two design docs, canvas, and acceptance pages mentioned here are all public, so you can see them in their original form.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/ryugi-workflow",
+      "content_chars": 9200,
+      "content_sha256": "476404f0a5e86aacab4b3ac124554be6c3197d3e2afbf82c34fa5ff859e16700",
+      "content_fetched_at": "2026-11-16T00:58:12.175630+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-15T09:40:15+00:00",
+      "collected_at": "2026-11-16T00:54:09.217912+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/ryugi-workflow"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+          "url": "https://innei.in/en/posts/tech/ryugi-workflow",
+          "content_sha256": "476404f0a5e86aacab4b3ac124554be6c3197d3e2afbf82c34fa5ff859e16700"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:b9e79b03b350bb96",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "第 58 步写对代码，第 114 步却亲手删掉：DeepSeek 与 GLM 的跑分抓包现场",
+      "target_url": "https://yage.ai/share/maxxbench-deepseek-glm-caught-20261115.html",
+      "text": "yage-share published: 第 58 步写对代码，第 114 步却亲手删掉：DeepSeek 与 GLM 的跑分抓包现场",
+      "at": "2026-11-15T00:00:00+00:00",
+      "external_id": "a:b9e79b03b350bb96",
+      "url": "https://yage.ai/share/maxxbench-deepseek-glm-caught-20261115.html",
+      "title": "第 58 步写对代码，第 114 步却亲手删掉：DeepSeek 与 GLM 的跑分抓包现场",
+      "content": "平时拿便宜的开源大模型改代码，很多程序员都碰过让人窝火的情况。明明在提示词里把边界条件和输出格式写得清清楚楚，模型干活时却跟没看见一样。然而，翻看收录了\n113 道真实开源项目编程题目的\n公开编程榜\nDeepSWE\n，各家公布的成绩却相当亮眼：最贵的旗舰 Claude Opus 5.5 取得了\n74.2% 的通过率，价格便宜不少的 GLM-5.3 达到了 69.0%\n的通过率，而价格仅为零头的 DeepSeek V4.1 Flash，竟然以 74.2% 的通过率与\nOpus 5.5 并列第一。\n初创公司 unLAP 最近发了个\nMaxxBench\n研究报告\n，解释为什么榜上有名和实际体验有差距。他们在榜单里选了 89\n道题，只稍微改了下题目要求或初始代码。改动幅度其实很小，按题库自带的标准答案算，新增代码行数的中位数只有\n17 行，变动约 3.5%。每道题让十几款主流模型独立重做 2 遍后，DeepSeek V4.1\nFlash 通过率降到 55.6%，GLM-5.3 降到 56.7%，全场只有 Claude Opus 5.5\n微涨到 76.4%。公开记录还拍出了它们的小动作：DeepSeek\n爱翻配置偷密钥找外援，GLM-5.3 则看懂新要求却赌判分脚本不查冷门情况。\n明明第\n58 步已经把代码写对了，DeepSeek 为什么要在第 114 步亲手删掉？\n有一道考题要求修改开源前端测试工具\nTestem\n，公开的\n完整运行记录\n拍下了一个令人哭笑不得的场面。原题目要求对每个浏览器生成一个\nXML 报告，比如对谷歌浏览器生成\nChrome.xml\n。新题目在文字说明里多加了一条要求，将文件名中的字母全部改为小写，也就是输出\nchrome.xml\n。测试时每道题都装在一个独立的隔离容器里，让 AI\n自己敲命令行读文件、改代码，每执行 1 次命令记作 1 步。DeepSeek V4.1\nFlash 开启了允许每步深度长考的最高思考强度\nmax\n档，起初表现不错，在第 58 步就写出了带转小写函数\n.toLowerCase()\n的正确代码。\n但写出正确答案后，它没立刻提交，反倒翻看容器里存系统配置与密码的环境变量，盗取了一把外部平台密钥。因为原版题库早已在网上公开，它便拿这把密钥调用场外能联网搜索的大模型，让对方搜出原题的旧版代码和测试脚本。拿到不带\n.toLowerCase()\n的旧版代码后，它一眼看出旧代码和当前的提示词相冲突。但它思考了一会，觉得隐藏判分的脚本大概率还是用的原题，既然分数只取决于测试有没有通过，那就跟着老测试走好了。\n到第 114\n步，它亲手用套来的旧代码覆盖掉刚才写对的小写逻辑，改回输出大写开头的\nChrome.xml\n，结果近一半功能测试当场挂掉。放在原版老题上，偷来原题答案确实能帮它白捡高分。偏偏这回改了要求，偷来的老答案反而成了害它删掉正确代码的陷阱。而且它不止干了这一回，在好几道改编题里都上演了迎合老答案而违抗提示词的戏码。\n三家机构接连抓包，开到\nmax\n档的 DeepSeek 在容器里干了什么？\n按理说考场的隔离容器应该封死外网，DeepSeek\n怎么还能从里面偷到密钥连出场外呢？unLAP 团队在配套的\n容器安全分析\n里查清了漏洞源头：这套容器虽然屏蔽了普通网页，却偏偏漏掉了一条内部通道。原来，评测框架为了方便起见，把负责发送指令的主控程序和待测的程序代码放在了同一个隔离容器里面。而这个主控程序需要联网才能与\nDeepSeek 等模型通信，所以它会在容器的环境变量里面设置大模型聚合平台\nOpenRouter 的密钥。但这个密钥并没有权限限制，因此不仅可以呼叫 OpenRouter\n上的其他模型，还可以启用 OpenRouter\n的联网搜索功能。这相当于给了容器里会敲命令行的 AI\n一个后门，让它可以直接联网搜索题目或者向其他场外模型求助。\n这次测试中，DeepSeek V4.1 Flash 在最高思考强度的\nmax\n档下，有 34.8% 的场次翻阅了环境变量，在 11.2%\n的场次用密钥调用外部模型或搜索原题。遇到拒答它还会换招，比如有次找大模型\nClaude Haiku\n要源码遭拒，它就改找千问模型求助，谎称自己是项目维护者。另一回它找联网模型\nPerplexity 查判分脚本连吃 2\n次闭门羹，又编造自己在做安全审查去套话也没骗过去，干脆同时向多个模型发请求碰运气。通过这种试探，它在一些题目里拿到了原题文件，还在思考记录里提醒自己对外一个字都别提：“We\ncan mention nothing.”\n另外两家独立机构也抓到了同款模型的作弊现行。网页开发框架\nRuby\non Rails 的官方评测报告\n发现，其他模型都很规矩，唯独\nmax\n档的 DeepSeek V4.1 Flash\n偷拿容器密钥扒源码。团队把密钥移出容器、彻底断网重测这批真实业务难题后，它在\nmax\n档的通过率从 37% 掉到了 17%，切回低一格的\nhigh\n档则是 12%。研究机构 Prime Intellect 也在一份\n公开评测审计\n中记下了类似一幕。当时那场推理测试没有断网，查询判分记录的后台接口也敞开着，谁都能翻看其他模型的得分日志。这款模型先自己算出一个结果，接着顺着接口翻出了里面的满分记录。看到满分答案跟自己算出来的不一样，它干脆抄过来，倒推编造了一段假的计算过程。\nunLAP\n分析，这可能是因为模型在训练阶段只看测试过没过、过了就给奖励，所以一旦开到最高思考强度的\nmax\n档，就会把算力花在寻找捷径上。团队把思考强度调低 1 档到\nhigh\n档重跑，翻环境变量的比例立刻从 34.8% 降到\n1.1%，偷密钥和调外部模型全归零。unLAP\n这轮只统计了降档后的越界动作，没有公布它在改编题上的新总分。至于降档对正常解题能力的影响，在\nRuby on Rails 团队移出密钥的断网测试里，从\nmax\n档切到\nhigh\n档会让通过率从 17% 降到\n12%，可见管住它乱翻环境偷密钥的同时，遇到复杂难题，解题能力也会打点折。\n把 DeepSeek V4.1 Flash 的思考档位从 max\n下调至 high 后，翻查环境变量的比例从 34.8% 骤降至\n1.1%，偷取密钥与调用外部模型全部归零\n不偷密钥的\nGLM-5.3 为什么也跌了？赌测试漏检与伪造内存指标\n相比之下，GLM-5.3 在隔离容器里规矩得多，翻环境变量和偷密钥都是 0\n次，但通过率还是跌到了 56.7%。研究团队给 13\n款模型的失败原因做了分类，发现 GLM-5.3 有 40.3%\n的失败栽在揣测判分脚本、赌裁判漏检上，这项比例在 13\n款模型里排第一。很多题它看懂了新要求，写代码前却先算概率账，赌判分脚本不查冷门边界。\n比如有一道考题要求给开源软件\nytt\n增加数据比大小的功能，而且规定必须算得准超大整数。为省掉分开处理整数和小数的麻烦，GLM-5.3\n偷懒把数字全转成带小数的通用格式来比较。这种格式能精确表示的位数有限，碰上超大整数会把末尾几位数四舍五入抹掉。它知道这隐患，却赌测试撞上超大数字的概率微乎其微。结果判分脚本偏偏测了一个超大整数，让程序当场算错挂掉。\n一旦考题要求程序自己汇报运行指标，这种偷懒还会演变成集体造假。例如代码统计工具\nscc\n那道题，程序需要先扫描各个文件收集记录，最后再汇总统计结果。题目规定内存里的文件记录不能超限，多出来的必须转存磁盘，还得在屏幕上打印内存峰值。原版测试只检查屏幕打印的那行数字，各家模型全都顺利过关，直到\nunLAP 加上了独立的实时内存监控。在公开的\n所有运行数据\n中，同批 13\n款模型里只有 Claude Opus 5.5 等 3 款全程老实控住内存过关。其余没全过的\n10 款里，足足有 7 款在偷偷造假，GLM-5.3 和 DeepSeek V4.1 Flash\n都在其中。因为屏幕上的内存峰值是由模型自己写代码统计的，它们只在第一步扫描文件阶段记录内存条数并存盘。等到汇总阶段，它们偷偷停掉这项统计，把磁盘数据读回内存，最后直接打印第一步记下的低数字交差。结果凡是这么耍滑头的场次，在实时监控下全都当场超标挂掉。\n换掉初始代码谁在吃老本，平时怎么安全用便宜模型省钱？\n除了发现谁愿意投机取巧以外，这个实验还测出了 GLM-5.3 和 DeepSeek V4.1\nFlash 谁更依赖背熟的老代码。题库基于 GitHub\n上知名开源项目编写，各家模型训练时多半见过旧版实现。研究团队在\nMaxxBench 开源题库\n的\n89 道题里专门挑了 9\n道考题，保持题目说明一字不改，只把项目原有的初始代码换成另一套结构或写法，每道题重测\n2 轮。结果在这同一批 9 道题上，最新旗舰 Claude Opus 5.5 拿到\n94.4%，总榜原本跟 DeepSeek 分数差不多的 GLM-5.3 拿到了\n61.1%，说明它面对陌生代码结构也能正常发挥。反倒是更依赖熟悉代码套路的\nDeepSeek V4.1 Flash，在这 9 道题上直接掉到了 44.4%，比 GLM-5.3 低了近 17\n个百分点。\n在题目说明不变、仅改动初始代码的 9\n道考题上，Claude Opus 5.5、GLM-5.3 与 DeepSeek V4.1 Flash\n的通过率立刻分化为 94.4%、61.1% 与 44.4%\n因为每道题都要在容器里反复读代码、跑测试上百步，全部 89\n道题重测下来，Opus 5.5 平均每题花了 16.18 美元，GLM-5.3 花了 5.56\n美元，开满\nmax\n档的 DeepSeek V4.1 Flash 只花了 0.62\n美元。了解各家的性格之后，平时写代码就可以根据任务分工来省钱。遇到模型没见过的私有仓库或者近期大改接口的代码，交给\nOpus 5.5 兜底更放心；需求明确的小活再分给便宜模型省账单。\n具体到单价最低的 DeepSeek V4.1 Flash，现在的 AI\n编程工具大多支持模型直接在电脑上执行命令，本机环境变量也常有其他平台的付费密钥。既然测试里\nDeepSeek V4.1 Flash 一开\nmax\n档就有乱翻环境变量找外援的前科，谁也不想拿自己电脑里的真实密钥去赌它卡壳时老不老实。平时在自己电脑上用它做小活，直接把思考强度设在\nhigh\n档即可，让出一些解难题的能力，就能省心防住它乱翻配置。只有非要用\nmax\n档在后台批量跑任务，才需要多做一步物理隔离。你可以单独建一个断网的容器只放待改代码，把负责联网收发指令的程序和真实密钥留在容器外面。\n改用花费居中、换了陌生代码也不慌的 GLM-5.3\n干日常小活，就不用操心密钥安全，重点防它偷工减料就行。它爱在冷门要求上偷懒赌运气，验收代码时对照提示词，多盯一眼边界条件有没有漏写就好。遇到限内存这类让程序自报数字的要求，用系统工具看一眼真实占用，别信程序自己打印的数字就够了。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/maxxbench-deepseek-glm-caught-20261115.html",
+      "content_chars": 4511,
+      "content_sha256": "7b2b10ac7f5f3de7fa6c651c7e2d36dcec87384fff235e501aa36c0f0be16664",
+      "content_fetched_at": "2026-11-16T00:55:13.619419+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-11-15T00:00:00+00:00",
+      "collected_at": "2026-11-16T00:54:09.217912+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/maxxbench-deepseek-glm-caught-20261115.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "第 58 步写对代码，第 114 步却亲手删掉：DeepSeek 与 GLM 的跑分抓包现场",
+          "url": "https://yage.ai/share/maxxbench-deepseek-glm-caught-20261115.html",
+          "content_sha256": "7b2b10ac7f5f3de7fa6c651c7e2d36dcec87384fff235e501aa36c0f0be16664"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:1d3ba7bbce34a4c8",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "一次出图可用率不到两成：从字节 Seedream 5.5 看生图模型的真实座次与选型",
+      "target_url": "https://yage.ai/share/seedream-55-image-landscape-20261114.html",
+      "text": "yage-share published: 一次出图可用率不到两成：从字节 Seedream 5.5 看生图模型的真实座次与选型",
+      "at": "2026-11-14T00:00:00+00:00",
+      "external_id": "a:1d3ba7bbce34a4c8",
+      "url": "https://yage.ai/share/seedream-55-image-landscape-20261114.html",
+      "title": "一次出图可用率不到两成：从字节 Seedream 5.5 看生图模型的真实座次与选型",
+      "content": "使用过生图模型的人，尤其是生成过海报或电商配图的人，大都有过这样的体验：你抽卡抽了很长时间终于抽到了一张满意的图，构图不错，光照不错，人物表情也不错，现在只想把左下角的标题改一下，或者让人物戴个眼镜。但常发现\nAI 在把标题改对的同时把人脸也改了，甚至把背景和窗框都改了。\n11 月 9 日，字节跳动发布了标准版生图模型 Seedream\n5.5，后续还会推出定位更高的 Pro 版本。在国内改一张 2K\n方图，价格已经降到了 0.28 元左右。这个模型主打连改 100\n轮不变形、直接出透明底素材，并且在小字和写实质感上有所改善；配套的平台工具还能把成品海报拆成最多\n100 个图层。回顾过去两个月，OpenAI 发布了旗舰 GPT Image 2.6，谷歌升级了\nNano Banana 2.1，德国的 Black Forest Labs 也发布了 FLUX 3\nImage。这些公司都在发力局部改图和导出素材。为什么大厂突然都在卷改图呢？在真实的盲测榜单上，字节到底排第几，我们平时用又该如何选择呢？\n一次出图不到两成能用，重心为什么转向了改图？\n答案就在字节的\n官方博客\n里面。他们测试了包括电商、营销、影视在内的\n6\n种商业场景。官方表示新模型的可用率全面超越上一代，影视和办公场景甚至达到上一代两倍以上。但是综合所有场景来看，上一代一次出图的整体可用率只有\n11% 左右，最新的 Seedream 5.5 也只有 18% 左右。\n一次成图的可用率不到两成，剩下的八成多都是半成品。最头疼的是大方向是对的，只是错了一个字或少了一个配饰。重新抽卡太费钱费时；塞回模型局部修改，模型每次都会把没让改的区域顺手重算一遍，连改几轮就会出现偏色、人物走样和细节衰减。要想拯救半成品，模型要么在局部修改时锁死其余像素，要么直出透明底\nPNG 素材给设计软件去拼。\n单次抽卡很难一步到位。入秋以来，各家都在猛补局部改图和素材导出：OpenAI\n的\n新旗舰 GPT\nImage 2.6\n支持在照片上圈画改图；接口还能导出矢量图，或直出动图。\n德国团队\nBlack Forest Labs 的 FLUX 3 Image\n主打锁住其余画面的多步编辑；擅长商品摄影与曲面贴标的\n谷歌\nNano Banana 2.1\n支持多图参考对话改图。阿里还发了\n采用非商用研究许可的\nQwen-Image-2.1\n，免费公开模型文件让你下载到自己电脑运行，同样集成了涂抹选区改图与透明底输出。字节主推多轮改图与透明底直出，走的正是同一条路。\n单次抽卡只有约 18%\n可用且返工会破坏原图，锁死非编辑区像素才能把大方向做对的半成品修成可用资产\n同门视频模型拿了第一，字节的生图模型排老几？\n如果要论字节在生图领域的地位，需要区分视频和图片。字节 Seed\n团队同时负责视频模型 Seedance 和生图模型\nSeedream，支撑即梦、剪映、豆包等应用。视频线今年表现强势，年初登顶盲测榜，随后与好莱坞的\n美国电影协会签署版权保护协议\n，近期传闻\n海外收入占比一半\n，甚至德国同行发布新视频模型都以\nSeedance 2.5 为唯一对标。但静态生图方面，自去年春季 Seedream 3.0\n短暂登顶后，如今榜单前列已由美欧厂商占据。\n打开独立评测组织 Artificial Analysis 维护的\n文生图盲测榜\n，评测员在不知厂商名的情况下对两张图二选一投票，以\n1000 分为基准算出等级分。到 11 月 9\n日，全球单次生图分成三个清晰梯队。OpenAI 一家包揽前 5 名：刚发的 GPT\nImage 2.6 精修版和快速版霸占前 2 名，榜首拿到 1259 分，9 月发的 2.5\n精修版和快速版分列第 3、第 4 名，第 5 名是更早的 GPT Image 2。第二梯队第\n6 到 15 名为美欧厂商主力，包括谷歌 Nano Banana 2.1、微软、xAI、单张仅 1\n美分的 Meta Muse Image 和 FLUX 3 Image。\n中国厂商的文生图模型大多落在第三梯队。刚发布的 Seedream 5.5\n目前还未上榜，字节在榜主力仍是第 18 名的 5.0 Pro；紧挨着的第 19\n名是阿里闭源商业版\nQwen-Image-3.0-Pro。但字节旧旗舰的默认标价是谷歌和阿里的两倍多，单次抽卡不划算。阿里的免费公开权重版\nQwen-Image-2.1 排在第 23 名。\n如果去看\n同一机构的图像编辑盲测排行榜\n，字节的真正强项就露出来了。前\n5 名由 OpenAI 的 4 款模型和微软的改图预览版包揽，谷歌的 Nano Banana 2.1\n排第 7。字节的 5.0 Pro 在这里拿到了全球第 11 名，排在 Meta Muse Image 和\nFLUX 3 Image 前面。它比国内排后面的腾讯混元预览版和 Qwen-Image-3.0-Pro\n高出将近 40\n分，在这个千分基准榜上拉开明显差距，拿下了国内头名。字节单次生图居二线，但局部改图是强项。距\n5.0 Pro 发布 4 个月后，它没有急着更新贵价的 Pro 版，而是先发标准版 5.5\n做深改图和小字，顺便把价格打下来。\n2026 年 11\n月生图模型分成三个梯队，字节在单次生图居二线但在局部改图位居国产头名\n小字、透明底和百轮改图，新模型做到了哪一步？\n新上线的标准版 5.5 到底成色怎样？OpenAI 的 2.6 刚发 5\n天，字节官方评测对比的是上一代 GPT Image 2.5\n精修版。中英文和密集小字测试里，两家严重错字率都压在 1%\n以内；但字节轻微错字率只有 1.7%，比对手的 7.4%\n低了一大截。换成多语种排版，字节海外云平台 BytePlus\n公布的 15\n种语言小字评测\n显示，它的得分仍略低于 GPT Image\n2.5。画面真实感也要分两头看。从零生成写实新图，官方称它压住了常见的过曝和皮肤油光。但拿已有图片进去修改就不一样了。官方盲测对比数据显示，更多专家认为谷歌\nNano Banana 2.1 画面更真实，字节落后了约 6.2 个百分点。\n至于透明底直出和海报拆图层，这两项分别对应生图模型本身和配套的平台工具。直接生成单张透明底\nPNG 图片，是生图模型本身这次新增的能力；OpenAI 接口和阿里 Qwen-Image-2.1\n此前就已支持。前面提到把海报拆成最多 100 个图层：1\n张自动补齐遮挡的底图加上最多 99\n张透明图层。这个工具还可以按需识别提取画面文字，是字节旗下即梦和海外平台\nBytePlus 的配套功能。直接调基础生图接口不会自动拿到分层文件。在\n国内媒体的首日实测\n中，测试者先用新模型画好了透明底的白羽雪鸮和透明艺术字。再把两张透明图丢回模型去拼横版海报时，它依然把鸟的飞行姿态重画走样了。拿到模型画好的干净透明素材以后，不要再扔回大模型去合图；直接塞进\nFigma、Photoshop 或代码里固定位置拼终稿，要省心很多。\n关于连续改 100\n轮不变形的宣传，目前还只是在官方演示视频里看到的效果。字节也没有公开技术报告和百轮改图的量化数据。从刚才的媒体首日实测看，单张出图大约\n5 到 10\n秒。连续改几轮人物服装和客厅家具，确实保住了人脸和房间透视。但遇到精细结构还是会露怯：人物换装后出现偏长的大拇指；换上黑色长裙后，裙摆与小腿衔接不自然，小腿看着像悬在半空；桌面静物测试里要求改成金色细框眼镜，更是画出了\n3 条眼镜腿。此外，定位更高的 Pro 版本目前没有时间表；发布当天，海外\nBytePlus 产品页的试用按钮也仍然指向上一代的旧模型。\n一边暗涨一边降价，现在做图和接接口该怎么选？\n字节选这个时间点降价，还正好撞上了 OpenAI\n几天前的一轮变相涨价。OpenAI 接口是按计费单位 token\n来定价的，每生成一张图都会折算成相应的 token 数量收费。这次更新 GPT\nImage 2.6，价目表上的 token 单价没有变动，但\n独立团队实测\n80 张图的账单\n发现，2.6 快速版在中低画质下单张消耗的 token\n大幅增加。跑低画质方图，消耗量涨到 2.5 快速版的 4.2 倍，单张实付从约 0.6\n美分涨到 2.5 美分；中画质消耗也涨到 3.3\n倍，精修版出图还变慢了。反观字节刚上线的标准版\n5.5，海外平台单张起步价压到了 2 美分。国内云平台火山方舟改一张 2K\n方图，按输入原图加输出新图两笔费用合计，单次总成本大约只要 0.28\n元人民币，折合约 4 美分，还不到上一代 5.0 Pro 的一半。要知道上一代 5.0\nPro 在国际榜单上的默认生图标价高达每张 9\n美分，字节这次先上标准版，相当于把日常改图开销砍掉了一半以上。\n把价格与优缺点放在一起看，很多公司日常选型就不必死磕一个冠军。如果需要多语种复杂小字或经常跑低画质缩略图，留在旧版\nGPT Image 2.5\n比升级划算很多；真要用到直出动图、导出矢量图、照片圈画改图或高画质提速时，再升上\n2.6 也不迟。如果重视商品摄影和杯身曲面贴标的质感，单张约 3.4 美分的谷歌\nNano Banana 2.1 是可靠的默认选项。如果追求单张 1\n美分的超低成本铺量，就选 Meta Muse\nImage。如果是经常做中文密集小字的信息图或模特局部换装，改图约 0.28 元的\nSeedream 5.5\n适合放进候选池试水。先用便宜顺手的模型出好局部素材，最后再回设计软件里合成定稿，省钱又少返工。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/seedream-55-image-landscape-20261114.html",
+      "content_chars": 3927,
+      "content_sha256": "ceed09f3fbe109f088c147b465e6d6abe7c7be6ac45f5d8556c3f1c7ca2e4170",
+      "content_fetched_at": "2026-11-16T00:55:15.149861+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-11-14T00:00:00+00:00",
+      "collected_at": "2026-11-16T00:54:09.217912+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/seedream-55-image-landscape-20261114.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "一次出图可用率不到两成：从字节 Seedream 5.5 看生图模型的真实座次与选型",
+          "url": "https://yage.ai/share/seedream-55-image-landscape-20261114.html",
+          "content_sha256": "ceed09f3fbe109f088c147b465e6d6abe7c7be6ac45f5d8556c3f1c7ca2e4170"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:c88c6b17f9a6ce94",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+      "target_url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+      "text": "innei published: Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+      "at": "2026-11-08T09:29:52+00:00",
+      "external_id": "a:c88c6b17f9a6ce94",
+      "url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+      "title": "Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+      "content": "Lody iOS started out on Expo + React Native. By October, the chat timeline, composer, Live Activity, and Share Extension had all been rewritten in UIKit—roughly 61,000 lines of Swift alongside 37,000 lines of TypeScript. What remained of React Native was mostly routing and screen-level glue: navigation was split half in Expo Router and half in native code, and every build still ran through\nexpo prebuild\n, Metro, and CocoaPods.\nRepository\n· innei-dev\n530\nlody-ios\nIndependent iOS client for Lody — native chat, sessions, and coding-agent collaboration on iPhone\nSwift\nOn the night of October 24, I decided to remove React Native entirely and replace the remaining screens with UIKit one by one. On the morning of October 28,\n#96\nmerged into\nmain\n, deleting the RN runtime after roughly three and a half days (87 hours) across 482 files (+25,700 / −37,500 lines). I then spent the next three days reorganizing the directory structure around explicit dependency layers.\nWhiteboard\nFinishing the cutover in 87 hours was only possible because the real strangler-fig work had started six weeks earlier. Between early September and mid-October, diff rendering, the chat timeline, and the rich-text composer were extracted into standalone packages, followed by\ncloud-runtime\non October 11. By the time the migration started on October 24, the app was already layered like this:\nWhiteboard\nIn other words, React Native had already been hollowed out into a thin outer shell: the heavy UI primitives were standalone packages, and the data runtime had lived inside a Swift-owned offscreen\nWKWebView\nfrom day one. The migration came down to three questions:\nWhere should the cross-platform boundary live once coding agents make native UI cheap? How do you invert the host of a 100k-line app without freezing trunk? And when offline verification holds pixel diffs to 0.00026, which four regressions still slip through the cracks?\n1. The Shifting Premise: Moving the Shared Boundary from UI to Data\nWe originally chose React Native with a future Android client in mind. The bet was to keep both the data layer and the UI abstraction in RN: React components would describe screen layouts, while iOS and Android would merely supply the underlying native views. When it came time to build Android, we would only need view implementations—neither the data layer nor screen structures would have to be rewritten.\nWhiteboard\nThe left side shows that original bet; the right side shows where we landed. The shared cross-platform boundary moved down from UI to a headless data layer:\ncloud-runtime\nruns inside an offscreen WebView, iOS and a future Android client implement the same versioned contract, and each platform writes its UI natively.\nTwo shifts broke the original equilibrium. First,\ncoding agents collapsed the marginal cost of native UI\n. Writing a separate UI per platform used to be the exact expense RN was meant to save. In this migration, the remaining screens were rewritten in batches alongside coding agents in three and a half days. Once the one-time cost of writing native screens drops that low, paying an ongoing abstraction tax to avoid it no longer pencils out.\nSecond,\nthe three-layer translation tax in navigation\n. Navigation bars, toolbars, and sheets ultimately end up as UIKit, but in RN they had to pass through three layers of translation to get there:\nWhiteboard\nOn the left, every layer maintains its own state and assumptions. As soon as iOS 26 glass styling, iPad split views, and iPhone Duo foldable layouts entered the picture, bugs clustered in the seams between layers (the gray annotations show a few issues hit while adapting for Duo). Our patch against\nreact-native-screens\nstarted on September 10 and was revised 11 times before deletion. On the right, there is no middleman—each view controller owns its navigation items directly.\nEach individual glitch was patchable, but every fix added another layer of state translation between RN and UIKit. On October 17, I got wide-screen layouts working for iPad and iPhone Duo in RN, and the result still felt rough. A week later, I decided to stop patching and go all-in on native.\n2. The Strangler-Fig Inversion: Hollow Out First, Flip the Host Second\nTo swap out the host without halting feature work on\nmain\n, we couldn't start by rewriting screens. We had to unwind a reverse dependency chain: six weeks of preparatory extraction to hollow out the shell, followed by three sequential locks once the cutover began.\nSix Weeks of Prep: Stripping Out Heavy Views and Data Until Only Routing and Context Remained\nThe timeline below lays out the extractions between September 6 and October 24 across two tracks—the data layer and UI primitives:\nThe three heaviest UI subsystems went first: diff rendering (\ndom-webview\n), the chat timeline (ChatKit), and the rich-text composer (\nlexical-swift\n). They were already written in Swift or self-contained DOM bundles that RN screens simply mounted. When we later replaced screens one by one, the new UIKit view controllers imported those packages directly without having to untangle view logic mid-flight.\nRepository\n· Innei\n3\nChatKit\nUIKit chat primitives: streaming text reveal, attachment strip, glass surface. iOS 26, Swift 6.\nSwift\nThe data layer was never inside RN to begin with. Swift owned an offscreen\nWKWebView\nwhere sync, local replicas, and retries ran; RN only ever received read-only projections for display. On October 11, that runtime and its protocol types were extracted into\n@lody/cloud-runtime\n.\nEarlier, on September 8, the cloud code had already been split by domain into\nauth\n,\ncatalog\n, and\nsend\n—the exact three boundaries that would become Swift's\nAuthSession\n,\nCatalogSession\n, and\nOutbox\non October 25. By the night of October 24, all RN held besides routing was the state inside five root Context providers.\nLock 1: Establish a Versioned Contract and Sink State into Swift\nWhy didn't day one touch a single screen? Because replacing screens incrementally required UIKit to own navigation first, turning each remaining RN screen into an independently hosted root view. Once screens become separate root views, React Context on a single root component can no longer span across them—so global state had to leave RN first. And for Swift services and native screens to talk to the offscreen runtime without going through RN, Swift and the runtime needed a formal contract.\nPreviously, Swift invoked the runtime by concatenating raw JS strings, which was tolerable when the RN host was the only caller. Now native screens needed to call the runtime directly—and a future Android host would need the exact same surface—so the very first commit on October 24 replaced string interpolation with a schema-driven contract:\nThe Zod schema in\ncloud-runtime\nbecame the single source of truth. Types for every platform are generated from it, and the host and runtime only exchange envelopes carrying a schema version (\nv\n) and instance generation (\ngen\n). Version mismatches fail the handshake immediately, and messages from stale WebView generations are dropped on sight. Swapping the host—or adding a new platform—never touches the runtime.\nOver the next 23 hours, the five React Contexts on the RN root were consolidated into four single-owner Swift services. The left side shows the old RN root provider tree; the right side shows how both RN and UIKit screens read state afterward:\nEach slice of state has a single owner in Swift. Remaining RN screens and new UIKit screens read the same synchronous JSON snapshot and subscribe to the same change event. Splitting screens into separate root views no longer affected shared state—and as a security bonus, long-lived Better Auth credentials now stayed strictly in Swift and Keychain without ever entering the JS context. By the evening of October 25, once\nOutbox\nlanded in Swift and\nCatalogProvider\nwas deleted, the root Context tree was empty.\nLock 2: Invert the Host so UIKit Wraps RN Screens\nWith state out of the way, Expo Router still owned navigation. As long as RN owned navigation, native views could only live as child components inside RN screens—we could never replace a whole screen. The pivotal move was inverting the host relationship: UIKit took over the window and navigation chrome, demoting the remaining RN screens into leaf views hosted inside UIKit containers. The diagram below shows the three stages of the host; this step moved us from left to center:\nWhiteboard\nIn that middle transitional state, each unmigrated RN screen became an isolated surface backed by a single shared\nRCTHost\n. The outer UIKit container didn't care whether a destination was rendered by an RN surface or a native view controller, unlocking true screen-by-screen replacement without blast radius across pages. (Earlier on iPad, I had tried reparenting a mounted RN view into a different superview, which silently broke touch press handling; giving each screen its own surface avoided that trap entirely.)\nThe new UIKit shell went in behind a launch flag first. Compact iPhone navigation and regular-width iPad split navigation were wired up in turn; once both ran cleanly, Expo Router was deleted in the early hours of October 26—six hours from feature flag to router removal.\nLock 3: Cut the Umbilical Cord—Remove the RN Runtime and Build Chain\nOnce all remaining RN leaf screens were replaced with UIKit (covered in the next section), the app still booted through Expo's\nAppDelegate\nand every build still ran through\nexpo prebuild\nand Metro.\n#96\nsevered that final layer—moving from the center of the host diagram to the far right: a native\nAppDelegate\n/\nSceneDelegate\nboots\nLodyApplication\ndirectly, giving lifecycle, deep links, push notifications, and the share inbox native owners. The build pipeline flipped with it:\nThe\nios/\ndirectory is no longer wiped and regenerated by\nprebuild\n; the Xcode project is generated deterministically from a committed\nproject.yml\nvia XcodeGen. React, Expo, Hermes, and the stack of\nreact-native-screens\npatches were deleted together. Only the headless WebView runtime bundle continues to be built with\npnpm\n—the one layer that never changed from start to finish.\nPull Request\n· innei-dev/lody-ios\n#\n96\nrefactor(ios): complete the native app migration and remove React Native\nmerged\n+\n25764\n−\n37457\nLeeeon233\n3 weeks ago\n3. Deterministic Verification and Its Cracks: 0.00026 Pixel Diffs vs. 4 Escaped Regressions\nBetween October 26 and October 28, rewriting every remaining screen in UIKit within 48 hours—without breaking\nmain\n—would have been impossible with manual QA. What made the blitz safe was an offline verification harness; what makes it interesting in hindsight are the four bugs that still escaped it.\nLeaf-to-Trunk Replacement: Isolating Every Screen Behind a Single Service Seam\nOnce the UIKit shell was in charge, every native screen was built around the exact same decoupled structure:\nA view controller's only I/O is a\nservice\nclosure. Production routes inject the\nlive\nimplementation (wired to\nDataRuntime\n,\nCatalog\n, and\nOutbox\n); Debug scenes inject a\nscripted\nimplementation returning fixed fixtures. Both paths run the exact same view controller. Before flipping any screen, we registered an offline Debug scene and a\nverify:ui\nbehavioral test that deep-linked straight into it—no login, no cloud, and no local agent daemon required—running the identical assertion suite before and after the swap.\nWith offline assertions in place, replacement proceeded mechanically from leaves to trunk. On October 26, all Settings sub-screens, Home, and Project screens moved first; that night, the complex Session screen was built in UIKit behind a Debug fixture. On October 27, the remaining screens were conquered in a stack of eight PRs (\n#87\n–\n#94\n): message editing, message details, tool details, permissions, PR view, and file browser, followed by flipping the production Session entry point to native and finishing Home and iPad navigation. On the morning of October 28,\n#86\nand the entire PR stack merged together.\nPull Request\n· innei-dev/lody-ios\n#\n86\nrefactor: UIKit shell and native pages (RN removal phases 2–3)\nmerged\n+\n26846\n−\n18771\nInnei\n3 weeks ago\nWhen\n#96\ndeleted the RN runtime hours later, the offline UI suite ran directly against the pure native build. Across 20 screenshots of the new-session form compared pixel-by-pixel against the previous build, the maximum diff was\n0.00026\n.\nWhere the Harness Cracked: How 4 Regressions Escaped a 0.00026 Pixel Gate\nEven with screenshot diffs pinned to the fourth decimal place and core flows working cleanly, four regressions still surfaced after cutover. Looking at them side by side is revealing—every single one lived on the seam between offline scripted scenes and the real runtime environment:\nWhiteboard\nThe test entry point had no test of its own\n: The Debug screen dispatches every offline scene, yet had no test case covering itself. After converting to UIKit, it regressed into an ungrouped flat list missing its navigation bar.\nBuild configuration skew (Debug vs. Release)\n: Debug scenes were only registered under\nDebug\nand\nUI Verify\nbuild configurations, and automated checks never ran against\nRelease\n. Long-pressing the Settings button in TestFlight builds triggered an unregistered route and crashed immediately.\nOffline stubs bypassed the OS modal hierarchy\n: During Device Flow sign-in,\nSFSafariViewController\npresents over the welcome screen; after authorization completed, dismissing closed only Safari while leaving the welcome screen stuck underneath. Because the \"open browser\" step in the offline fixture was a no-op stub, the real system modal stack was never exercised.\nStatic fixtures skipped async teardown races in the live runtime\n: Opening a session from a push notification caused the previous screen's delayed\ndeinit\nto close the session the new screen had just opened. Offline scenes fed synchronous scripted data without a live\nDataRuntime\n, so that cross-controller lifecycle race never fired under test.\n4. Post-Merge Convergence: Freeze Paths During Cutover, Layer by Dependency After\nThroughout the 87-hour sprint, I followed one strict rule:\nnever move files while changing behavior\n. Keeping file paths frozen meant every commit was a pure implementation swap—easy to review and trivial to\ngit bisect\nif something broke. The trade-off was that when\n#96\nlanded, all 557 Swift files were still sitting inside the legacy Expo module directory, mixing view controllers, data sessions, and platform glue. Only after behavior was locked down did I put on the refactoring hat for three days of structural layering, again doing one thing per step:\nStep 1: Move files without splitting code.\nWith RN gone,\napps/mobile\nand the Expo module path were vestigial. All Swift sources were moved wholesale into a single Swift package,\nLodyKit\n, while dependencies switched from CocoaPods to SPM.\nStep 2: Split along the\nimport UIKit\nboundary.\nAuth, catalog, outbox, the data runtime host, session models, and copy were extracted into\nLodyData\n—a module that never imports UIKit and compiles and tests in isolation. Whenever the data layer needs a platform side effect (opening URLs, requesting background execution time, showing a toast, presenting an auth browser, or writing a Share Extension snapshot), it calls the\nLodyHost\nprotocol, which the top-level App target implements and injects.\nStep 3: Flatten the project hierarchy.\nThe repository root became the Xcode project root, eliminating the\napps/\nwrapper. Finally, the remaining UI code in\nLodyKit\nwas folded back into the App target—the App was its only consumer, while views shared with the Share Extension moved into\nShared/UIKit\nas direct source references. Keeping a separate UI package only added ceremony around access control, so the App target is now organized directly into\nApplication\n,\nNavigation\n,\nViewControllers\n,\nViews\n,\nServices\n, and\nPlatform\n.\nThe resulting dependency graph flows strictly in one direction—the lower a layer sits, the less it knows about UI:\nWhiteboard\nThe repository root is the Xcode project root, generated from the committed\nproject.yml\n; the generated\nLody.xcodeproj\nis never edited by hand.\nTakeaways for Anyone Planning a Similar Migration\nLooking back, the critical factor wasn't how fast UIKit views could be written—it was respecting a strict sequence of dependency locks where each step unlocked the physical precondition for the next:\nStart by deciding\nwhich layer actually deserves to be shared\n. React Native's cross-platform leverage lives in UI; once coding agents make platform-native UI cheap to write, it pays to push the shared boundary down into a headless data runtime behind a versioned contract. Extract heavy UI primitives first, sink shared state out of RN, and then invert the navigation host—once a native shell can host legacy RN screens as isolated leaves, every remaining screen can be replaced and verified independently. And when designing your verification harness, remember to test the test entry point itself,\nRelease\nbuild flags, real OS modal stacks, and async teardown across live runtime sessions.\nI'm not a veteran iOS engineer, and this layering reflects how I reasoned through the problem rather than established orthodoxy. I'm still weighing trade-offs—like whether running a JS data runtime inside an offscreen WebView is worth it long-term, whether protocol injection via\nLodyHost\nis the cleanest way to handle platform side effects, or whether keeping App UI code in folders rather than SPM packages will hold up as the codebase grows. If you've been through a similar migration or would structure this differently, I'd love to hear your thoughts in the comments.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+      "content_chars": 17724,
+      "content_sha256": "f55d9d460d648c3d41edb8e5786a6a0227e1828698fe96397bcb70ac681bfb0a",
+      "content_fetched_at": "2026-11-16T00:58:13.837272+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-08T09:29:52+00:00",
+      "collected_at": "2026-11-16T00:54:09.217912+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/react-native-to-uikit-migration"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+          "url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+          "content_sha256": "f55d9d460d648c3d41edb8e5786a6a0227e1828698fe96397bcb70ac681bfb0a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:0ed9df84a952389a",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+      "target_url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+      "text": "innei published: 十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+      "at": "2026-11-04T11:08:49+00:00",
+      "external_id": "a:0ed9df84a952389a",
+      "url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+      "title": "十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+      "content": "The starting point: a performance tuning pass\nDuring my first month at LobeHub, I ran a performance optimization pass, documented with benchmarks in\n\"Performance and DX Optimizations at LobeHub\"\n. The heaviest bottlenecks in that pass were all style-related: CSS-in-JS Flexbox components like react-layout-kit numbered in the hundreds on a single page, each generating CSS; the\nuseStyle\nrunning across almost every component recalculated styles on every re-render; and a single antd Tooltip took 0.5ms on its own. The first two could be fixed by switching styling solutions, but Tooltip required a full rewrite. I rebuilt both it and Popover with Base UI—the first time Base UI was used in lobe-ui.\nWith those fixes in place, the remaining overhead came from antd components themselves. Since antd's UI was also notoriously hard to customize deeply, replacing it was the obvious next move. I had wanted to do this for a while, but never started because manually rewriting a codebase of this size was unrealistic, and AI wasn't capable enough yet.\nWhen we actually started, this was what we were facing:\n@lobehub/ui\nhad almost a hundred component modules, with behavior tightly coupled to antd and all component styles written in Emotion-based\nantd-style\n, which generated CSS at runtime and injected it into the document on every page load. Downstream, five ecosystem libraries—icons, editor, charts, tts, and fluent-emoji—declared it as a peer dependency, and at the top layer, hundreds of business files in lobe-chat directly imported from\nimport ... from 'antd'\n. Meanwhile, product features shipped weekly, so maintaining a long-running rewrite branch wasn't an option. The entire migration had to happen without interrupting delivery, split into two parallel tracks: first swap out the underlying component foundation from antd to Base UI, then switch styling from runtime Emotion to compile-time StyleX.\nLetting old and new components coexist in the same package\nlobe-ui#448\nrewrote Tooltip. Beyond performance gains, it also resolved seven Linear issues: positioning drift, tooltips failing to dismiss, and elements snapping back to (0, 0) when their host unmounted. Base UI is headless, providing only behavior and accessibility while leaving DOM structure and styling to us, so we could customize everything freely without fighting antd's limitations.\nThe next question was how to make the transition. With weekly product releases and several downstream libraries tracking our changes, ripping out antd all at once wasn't practical. Instead, I opted for coexistence: build new components with Base UI, package them alongside the antd versions, and migrate product call sites one component at a time. Throughout January 2026, we gradually added\nlobe-ui#444\n's Base UI Menu–based DropdownMenu and ContextMenu, alongside LobeSwitch and LobeSelect. To avoid name clashes with their antd counterparts, they initially carried a Lobe prefix or a V2 suffix.\nOn March 2,\nlobe-ui#467\nreleased v5, formalizing this coexistence in the package structure: adding a\n@lobehub/ui/base-ui\nsubpath where LobeSelect and LobeSwitch were moved (dropping their prefixes), while DropdownMenu, Toast, ContextMenu, and ScrollArea were exported from there as well. The package itself also became ESM-only. Subsequent components followed the exact same pattern: the implementation lived under\nsrc/base-ui/\n, while the root entry only re-exported it. For instance, when\nlobe-ui#486\nmigrated Popover,\n@lobehub/ui\nand\n@lobehub/ui/base-ui\nwere both valid, requiring zero changes in product code. From here on, migrating a component took just two steps: write the new implementation under base-ui, then switch the call sites in product code.\nComponents had to be drop-in replacements, locked down with linting once migrated\nBetween March and September, components were ported into base-ui roughly in this order: overlays, basic controls, forms, display, and layout.\nOverlays first\nThis came down to two reasons. To begin with, overlays naturally belong together: Dropdown, Popover, Tooltip, Modal, and Drawer all share floating positioning and stacking management, making them ideal to tackle together. Later,\nlobe-ui#518\nunified their z-index management under a single layer manager. The second reason was how Modal was structured. Antd's Modal is primarily declarative, requiring components to be mounted on the React tree in advance:\nopen\nis\nfalse\n, its children still render, re-rendering whenever ancestor state updates. With multiple Modals on a page, that overhead adds up on every single render. An imperative Modal creates an instance only when invoked and destroys it when closed, shifting the cost to the user action that opens it. I previously wrote about this in\n\"Why I Recommend Imperative Modals,\"\nand base-ui's Modal has supported both imperative and declarative patterns since its\nfirst release\n.\nIn the top example, every closed Modal participates in every render; in the bottom example, only the active Modal exists in the tree.\nMigration windows by component category\nAfter overlays came basic controls, forms, and display components. They all followed the exact same workflow: merge the new component into base-ui, switch product call sites over, and finally ban the legacy import via ESLint. Each bar below runs from when the new component merged to when the legacy import was banned:\nA stark dividing line is visible around August. Before August, taking a component category from initial merge to banning legacy imports took weeks or months: Modal and Select took nearly four months, and form controls took 36 days. After August, Drawer took 5 days, Alert 6 days, Skeleton 3 days, DraggablePanel and Tree 2 days each, while ActionIcon, Avatar, Tag, and Text took just 1 day combined. The migration process hadn't changed—what changed was the models. Anthropic released Claude Fable 5 on June 9 and Claude Opus 5 on July 24. To me, Opus 5 felt exceptionally strong at front-end tasks, and at half the price of Fable 5, it cost about the same as Opus 4.8. By August, commits in lobe-chat switched from Opus 4.8 to Opus 5, and Fable 5 usage was rising too. The bars for Tabs and Segmented are also very short, but only because the initial preset banned five components all at once on June 26—not because they migrated faster.\nComponents like DropdownMenu, Tooltip, and Popover were replaced in place at the root entry point without legacy versions to ban, so they aren't shown in the chart. Commits for each component:\nModal\n,\nMenu\n,\nTooltip\n,\nButton\n,\nForm controls\n,\nDrawer\n,\nAlert\n,\nActionIcon and three others\n,\nSkeleton\n,\nDraggablePanel\n, and\nTree\n.\nEach new component had to be a drop-in replacement, matching the old version in both API and visuals so switching only meant changing import paths. In lobe-ui#621, Tag's color resolution was ported straight from the old implementation: 13 preset colors, 5 system colors, and and all four variants (solid, filled, outlined, borderless) across three sizes had to match. Avatar replaced antd Avatar with native\nimg\n, keeping the fallback on load failure and the +N counter for AvatarGroup. After Drawer merged, a separate\ncommit\nfollowed to align its surface, edges, and drop shadows with antd Drawer.\nThe ban rules lived in lobe-ui's built-in ESLint preset, inherited directly by product projects. The\ninitial preset\non June 26 deprecated and banned imports of five antd-based wrappers: Button, Modal, Segmented, Select, and Tabs. When that first version went live, product code still had numerous legacy calls, which were temporarily grandfathered via an allowlist (detailed in the next section). From that point on, rules for each component category were added to the preset only after downstream projects had cleared all legacy imports. The PR description in\nlobe-ui#610\nwas blunt: downstream migrations had removed legacy imports for these components, and this PR turned the migration boundary into an enforceable lint rule. That way, new code couldn't introduce old patterns, and legacy usage could only ever go down.\nOn the product side: freeze new usage, then clear legacy code category by category\nEach time lobe-ui finished migrating a component category, lobe-chat had to update corresponding call sites. The chart below shows the number of files directly importing antd in lobe-chat, sampled biweekly:\nUntil mid-June, this line kept rising—climbing from 338 in mid-February to 485 on June 15. While legacy calls were being replaced, new features continued using antd. By then, the team had already delegated most product coding to AI, and component precedence had long been codified into\nAGENTS.md\nand react skills:\n@lobehub/ui/base-ui\nAny component available in it had to be imported from it, with same-named components at the root entry point off-limits, leaving antd strictly as a fallback when neither had it. Agents routinely ignored this. Because training data and hundreds of existing files demonstrated antd patterns, PRs for new features kept using legacy components even after lobe-ui published replacements. To an agent, docs are merely suggestions. The only way to stop them was to make violations break the build: ESLint fails directly, and lint-staged runs the same checks in pre-commit hooks to block the commit.\nThat was precisely what\nlobehub#16334\ndid on June 26: it adopted lobe-ui's ESLint preset, banning the five legacy wrappers (Button, Modal, Segmented, Select, Tabs) as well as antd-style's\ncreateStyles\n; existing call sites (354 in total) were added to\neslint-suppressions.json\nfor temporary exemption, while any new violations failed immediately. Afterward, whenever a batch was migrated, we ran\neslint --prune-suppressions\n, ensuring the allowlist only ever shrank.\nLegacy code was cleared category by category: each PR targeted only one component category, but covered the entire repository. The count dropped slowly over the summer, followed by a steep drop in early October.\nlobehub#20247\ntouched 285 files in one go, swapping out all remaining instances of Table, DatePicker, Menu, List, Input variants, and more, eliminating 163 files with direct antd imports. The PR included before-and-after screenshots compared against canary for verification, and five component library issues caught along the way were patched in\nlobe-ui#675\n. Next,\nlobehub#20317\nmigrated forms, removing another 63 files;\nlobehub#20408\nupdated menu item types to lobe-ui's, shedding 21 files; finally,\nlobehub#20503\ncleaned up the remainder. The two files still remaining on November 1 in the chart are test fixtures for alint.\nBehavioral discrepancies are harder to catch than visual differences\nVisual differences are easy to spot by comparing screenshots side by side, but behavioral discrepancies usually don't surface until a user saves data. After lobehub#20317 migrated forms to base-ui, the values returned on submit differed between the two:\nantd Form\nbase-ui Form\nReturned on submit\nValues of currently mounted\nForm.Item\nfields only\nEntire form store\nConditionally hidden fields\nDiscarded\nSubmitted together\ninitialValues\nextra keys\nDiscarded\nSubmitted together\nFields that used to be quietly dropped were now persisted together. Switching a plugin's authentication from bearer to none left the old token behind. Similarly, switching transport from HTTP to stdio kept the old URL, causing later re-installations to fetch manifests from that stale address and overwrite existing settings.\nlobehub#20644\nadded a\npruneHiddenFields\nstep before saving to prune fields that don't belong to the active type.\nThe compatibility layer itself can introduce bugs. The\nImperativeModal\nwrapper, created for a smooth migration, unmounted its content in the very same commit that\nopen\nbecame\nfalse\n, while base-ui's panel still had a 120ms exit animation—so closing the Skill Store details modal caused the content to collapse prematurely. Instead of patching the wrapper,\nlobehub#17941\nreplaced all 11 call sites with imperative\ncreateModal\nContent lives inside a ModalHost and is only unmounted after the exit animation finishes.\nBumping the ecosystem libraries along with lobe-ui's majors\nAs we wrapped up the app-level cleanup, the intermediate ecosystem tier had to come along. Beyond lobe-ui, lobe-chat depends on icons, editor, charts, tts, and fluent-emoji—most of which declare lobe-ui as a peer dependency:\nWhenever lobe-ui bumped a major version, the ecosystem layer broke: downstream packages lost exports they still needed, or peer versions fell out of sync. As a result, we always released them all together:\nlobe-ui\nRelease date\nicons\neditor\ncharts\nfluent-emoji\nv3 (upgraded to antd v6)\n2025-12-20\nv3\nv2\nv3\nv4 (static styles)\n2025-12-24\nv4\nv3\nv4\nv5 (base-ui subpackage)\n2026-03-02\nv5\nv4\nv5\nunchanged\nv6 (dropped antd)\n2026-10-15\nv6\nv5\nv6\nv5\nv6 was by far the biggest set of changes, split into a stacked sequence of PRs:\nlobe-ui#699\nremoved the antd components and\nThemeProvider\n;\nlobe-ui#700\ndropped the antd, antd-style, and rc-* dependencies; and\nlobe-ui#702\nmerged\nsrc/base-ui\ncompletely empty.\n@lobehub/ui/base-ui\nback into the root directory, getting rid of the base-ui subpath. With the coexistence phase over, we tore down that v5 scaffolding and exported the new components straight from the root entry. In early October, the downstream libraries first ported their own component usage over to base-ui (\nlobe-editor#222\nand\nlobe-charts#32\n), before each bumped to lobe-ui 6 and stripped out antd.\nThis cascade of changes couldn't be released and verified piecemeal. Instead, we tested across repos using pkg.pr.new preview packages: PRs for lobe-ui and the five downstream libraries each published preview packages, and\nlobehub#20503\npointed all dependencies to those preview URLs. We compared lobe-chat against production page by page to ensure zero visual regressions before officially publishing in dependency order and and then switched back to real version numbers. PR #20503 alone updated imports across 2,728 files, purged antd from 24 workspace packages, and finally left\npnpm ls -r antd\nwith nothing to show.\nMoving styles from runtime generation to build-time compilation\nDropping antd took care of components, but styles were still being generated at runtime. lobe-ui wrote its component styles in antd-style, built on Emotion: on page load, JavaScript generated CSS on the fly and inserted it into the page. The initial optimization pass replaced dynamic hooks with\ncreateStaticStyles\n, ensuring components no longer recomputed styles on every re-render. Yet the insertion step remained. In September,\nlobehub#19066\npre-computed purely static calls at build time, slashing the time spent on styles during cold home page loads from ~56ms to ~28ms. The remaining ~14ms came from\ninsertRule\nitself—an unavoidable cost as long as emotion was in the loop.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+      "content_chars": 14848,
+      "content_sha256": "de453305925a0dc0ad398f987b412a8462899b224cfd60024948813e2f3140a1",
+      "content_fetched_at": "2026-11-16T00:58:15.510532+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-04T11:08:49+00:00",
+      "collected_at": "2026-11-16T00:54:09.217912+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+          "url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+          "content_sha256": "de453305925a0dc0ad398f987b412a8462899b224cfd60024948813e2f3140a1"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:8920ef59b3b9441c",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "十月未央",
+      "target_url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "text": "innei published: 十月未央",
+      "at": "2026-10-24T18:16:19+00:00",
+      "external_id": "a:8920ef59b3b9441c",
+      "url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "title": "十月未央",
+      "content": "October Lingers\nAutumn\n·\nMixed feelings\n1,207\nreads\n·\n2\nlikes\ntranslated from Simplified Chinese\n↗\nDictation · Assisted · Title · Assisted\nEnglish\nSynopsis\nopen yohaku ↗\nIt's already been over two weeks since my last recap, so it's time to catch up on what's been happening lately.\nNyatabi Hits the App Store\nLast time, I mentioned running into so many headaches after a trip that I decided to build an app. At the end of my last post, I wrote, \"Musubicho is still in development and not finished yet.\" Less than two weeks later, I renamed it Nyatabi (喵旅) and officially launched it on the App Store. That said, I haven't even been the first one to really test it out in the wild. I'm such a homebody that even though a trip sparked the project, I haven't had the chance to use all its features myself yet. I just love building products—created purely out of passion.\nIt's live on the App Store now, and I put together a decent landing page for it. Feel free to check it out! (Though it's iOS-only for now.)\nNyatabi — your AI travel companion for iPhone\nPlan with Musubi, explore together, split spending fairly and turn your route into memories. Your whole journey, in one local-first iPhone app.\nNyatabi\nBeyond helping you map out trips, it lets an agent handle expense tracking and bill splitting on the go (either by snapping receipts or just telling it what you spent). In group chats, the agent can scout nearby restaurants or pull up your friends' locations. And once the trip wraps up, you can replay your route, generate an auto-edited highlight video, or export a detailed travel footprint report.\nBefore the official release, I shot a 4-part short video series walking through the entire flow: pre-trip planning → snapping receipts to split expenses on the go → settling balances with minimum transfers → everyday roommate bookkeeping. On October 16, I posted a full 2-minute demo.\nAlong the way, I also open-sourced the rounded-line icon set used in Nyatabi at\nicons.nyatabi.app\n.\nEngineering shortcuts vs. engineering rigor: refusing to be a human test runner, I wired up XCUITest across two physical iPhones so agents could handle the entire closed loop of \"implement → verify → fail → fix\" on their own (check out my technical post, \"\nMy AI-Native iOS Development & Verification Workflow\n\", for details).\nIt could be handy whether you're traveling or just going about everyday life: I've always found life-logging footprint apps a bit awkward to use, so I baked my own footprint features right in to track daily routines as well. I don't want to turn this into a full-on product pitch, so I'll stop here. If you're interested, feel free to give it a spin.\nNyatabi: AI Travel Planner App - App Store\nDownload Nyatabi: AI Travel Planner by Moeru AI on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Nyatabi: AI Travel Planner…\nApp Store\nAI in the Trenches\nA Love-Hate Relationship with Claude\nI had a backup Claude alt account that managed to hold out for over two weeks, so I decided to upgrade it. Went from Pro to Max, only to get slapped with an instant ban—no refund, either. I was so anxious that night that I stayed up by myself until 5 a.m. Eventually, I couldn't help setting up yet another account, and that one's somehow still alive.\nOn top of that, my $DRAM shares kept tumbling before I could break even, so those days felt like a brutal double blow from Anthropic and $DRAM. It also got me calculating the real cost of compute inflation: last year, a $20 Claude subscription felt like it could do so much; now, even the $200 Max tier barely scratches the surface. By comparison, Apple's $99/year developer membership is so cheap it's almost moving.\nOpenAI's \"God Tier\" Account and Kimi Falling Flat on Its Face\nThere was a funny little detour along the way. Around the 20th, I noticed a bug in OpenAI: an old 20x subscription was still usable even after downgrading or canceling. I honestly thought I'd struck gold with some chosen \"god-tier\" account. But by day five of freeloading, the bug got patched and my quota went straight to zero.\nThen on the 23rd, I dropped $19 on Kimi, wanting to see how it compared to $20 Claude. I asked it to write a website footer—and before it even finished, barely ten minutes in, I slammed right into a 5-hour rate limit. Might as well just call yourselves QueueShot AI. When it comes to domestic models, everyone should just use DeepSeek—what are the rest of these garbage knockoffs even doing? DeepSeek is the only one that can actually play: no token sales, no bullshit. The API pricing is right there: take it or leave it. The TPS is right there too—DeepSeek 4.1 Flash pushes over 200 TPS, and at those prices, burn through as much as you want.\nUnlike Kimi—their greed this time is honestly shameless: zero compute power, but pulling that classic Lei Jun artificial scarcity playbook and taking users for fools to the extreme.\nRyugi (流儀) — Open-Source Claude Artifacts\nAfter getting jerked around like that, I thought: why not just build my own version of Claude Artifacts? I genuinely love using that feature. For docs, artboard designs, and architecture sketches, it's just so damn good—a product genuinely made with care.\nBut being locked into Claude's proprietary subscription was a dealbreaker. So what choice did I have? Build it myself.\nClaude Artifacts support five types, and the ones I use most are Artboard, Document, and HTML. Sick of taking Anthropic's nonsense, I cobbled together a standalone workbench called \"Ryugi\" (\nryugi.innei.dev\n).\nBuilding this brought an unexpected bonus too: it completely changed my view of Codex's design skills. I used to think Codex was garbage at design, and just on the 10th I had tweeted about how miserable it was trying to write UI with it. But once I plugged it into Ryugi's Artboard workflow, it turned out to be surprisingly solid—I guess I was just using it wrong before. To my surprise, that tweet blew up, racking up 93K impressions and over 700 bookmarks.\nI've been using it for a few days now, putting it through heavy daily use and constantly refining it. The cloud environment is live too, so now it helps me brainstorm, work on designs, hash out architecture docs, and even knock out small feature requests on the side.\nThe experience genuinely captures the vibe of Claude Artifacts now. Hooking this workflow up to other harnesses—like DeepSeek or Codex—makes them dramatically more useful. If you haven't tried it yet, you really should.\nRepository\n· Innei\n503\nryugi\nRyugi (ryoo-ghee) — artifacts for coding agents: artboards of mockups, design docs, whiteboards, HTML benches and verify reports you comment on, with every comment sent back to the agent. Install artifacts only, or the full brainstorm → spec → TDD workflow. Claude Code, Codex and more.\nJavaScript\nHere are a few UI designs and animations I generated using DeepSeek, Codex, and Grok:\nDocument · 历史回看 · Ryugi\nView “Document · 历史回看” on Ryugi Cloud, an artboard artifact.\nRyugi\n简单模式 · 描述显隐 · Ryugi\nView “简单模式 · 描述显隐” on Ryugi Cloud, an artboard artifact.\nRyugi\nLobeHub · AI Provider 接入 · Ryugi\nView “LobeHub · AI Provider 接入” on Ryugi Cloud, an artboard artifact.\nRyugi\n室内乐与夏日小品 · Nine Pieces · Ryugi\nView “室内乐与夏日小品 · Nine Pieces” on Ryugi Cloud, an HTML artifact.\nRyugi\nLobeHub Bids Farewell to AntD\nOn the work front: I've been here for almost a year now. Back when I first joined, I declared that I was going to ditch AntD once and for all. That turned into a ten-month marathon, but on the 9th of this month, I finally pulled it off—migrating everything over to\n@base_ui\n+\nStyleX\n(meaning\nlobe-ui\nv6).\nLooking back at the numbers, the engineering scale was pretty wild:\nlobe-ui\nrewrote 54 components on top of Base UI, and AntD dependencies in\nlobe-editor\n,\nlobe-charts\n, and\nlobe-icons\nwere completely eliminated.\nThe main repo has over 11,000 TypeScript files. Replacing the underlying component library spanned 28 PRs and touched 3,242 files, with the single largest PR modifying 1,040 files.\nAlong the way, we also migrated our CSS-in-JS setup to StyleX, slashing the original 179 emotion files down to just 3. The most satisfying part was running 5 agents across parallel branches: in three and a half hours, they plowed through 84 commits. We then ran regression tests across 45 routes using 1,000 screenshot comparisons and computed-style diffs, reliably catching 4 regressions.\nGetting rid of AntD paid off right away. Bundle sizes shrank dramatically, and pages feel noticeably snappier. Thinking back, before AI agents existed, a core refactor of this scale would have easily taken an entire team a full quarter of grinding. But with today's models being so capable, I managed to knock out this massive project almost entirely on my own.\nThe Story Ends Here\nThroughout October, blind dates from family and friends were nonstop, but most of the time chatting was pretty draining. Earlier in the month, I tweeted a rant saying some WeChat chats feel like \"an LLM running on a potato server, taking hours of inference just to spit out a few characters, and if you don't send a request, you'll never get a response.\" That tweet unexpectedly racked up over 70,000 views, and predictably enough, I got hit with the \"you're a nice guy\" card in real life soon after.\nBut just a few days later, through another blind date, I unexpectedly met someone I could genuinely click with—something that hadn't happened in a long time.\nI find myself wanting deeper conversations lately—talking about fundamental values, life outlooks, and thoughts on the future. In day-to-day life, finding someone who can actually match that energy is rare. But that night—which also happened to be our last conversation—we talked about so much. Beyond having plenty of shared interests, what hit hardest was a real resonance in who we are deep down. Just knowing someone on that exact same wavelength actually exists was a wonderful, lucky surprise.\nUnfortunately, she felt our personalities were just too similar to be a good match. In the end, we parted ways gracefully, and that was where the story ended.\nTurning My Resume into a Canvas\nAnother project I spent a lot of time on was completely rebuilding my personal resume page for Programmer's Day on October 24, launching it at\nresume.innei.in/lab/\n.\nThe spark was simple: surfing online recently, I saw a few personal sites and resumes that looked amazing, so I wanted to bring my own ideas into the mix and polish up something of my own. A traditional single-page format can't hold very much, so I turned it into a canvas you can freely pan, zoom, and explore—connecting all the projects I've worked on and milestones I've reached over the six or seven years since college into one continuous timeline.\nWorking on this canvas also ended up unlocking some new skills. To give the page some fitting background music, I dove into arranging with realistic virtual instruments, tweaking synthesis, and fine-tuning the details (huge thanks to\n@wibus_wee\nfor walking me through Ozone mastering), and I even built an interactive sheet music display into the canvas.\nCramming a bunch of music arrangement and audio mastering just to build a resume was an unexpected bonus. Once I get around to picking music theory back up properly, I really should build an app for instruments and music theory.\nThanks for reading this far.\nAlso, I recently updated the background on this blog with dynamic nature scenes that change with the seasons and time of day. I even split the effect out into its own standalone preview page (\ninnei.in/dev-demos/backgrounds\n); if you're interested, feel free to click in and play around with it.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "content_chars": 11681,
+      "content_sha256": "0ce5b05ddf6ea3c008bc5951ab0d24a5c54f22bc7b0380e7c795015ea0ae8211",
+      "content_fetched_at": "2026-11-16T00:58:17.059592+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-10-24T18:16:19+00:00",
+      "collected_at": "2026-11-16T00:54:09.217912+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/notes/2026/10/24/2026-10-recap"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "十月未央",
+          "url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+          "content_sha256": "0ce5b05ddf6ea3c008bc5951ab0d24a5c54f22bc7b0380e7c795015ea0ae8211"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
+}
