@@ -97,6 +97,10 @@
     "bundle_date": "2026-10-22",
     "emitted_at": "2026-10-21T23:57:16.782910+00:00"
   },
+  "anthropic-research:a:0c2bca83aac92188": {
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
+  },
   "anthropic-research:a:1360bd8eb5a8e67e": {
     "bundle_date": "2026-10-23",
     "emitted_at": "2026-10-22T23:56:04.895191+00:00"
@@ -2032,6 +2036,10 @@
   "forti-ir:a:143d93deba700cfd": {
     "bundle_date": "2026-08-13"
   },
+  "forti-ir:a:1950601a212e9d7a": {
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
+  },
   "forti-ir:a:197cc527b68bc8c6": {
     "bundle_date": "2026-11-14",
     "emitted_at": "2026-11-14T01:22:17.802167+00:00"
@@ -2928,12 +2936,12 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:0ed9df84a952389a": {
-    "bundle_date": "2026-11-16",
-    "emitted_at": "2026-11-16T00:54:09.217912+00:00"
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
   },
   "innei:a:13bf1da4d5efb8a1": {
-    "bundle_date": "2026-11-16",
-    "emitted_at": "2026-11-16T00:54:09.217912+00:00"
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
   },
   "innei:a:5e72a8cae2418bb2": {
     "baseline": true,
@@ -2946,8 +2954,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:8920ef59b3b9441c": {
-    "bundle_date": "2026-11-16",
-    "emitted_at": "2026-11-16T00:54:09.217912+00:00"
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
   },
   "innei:a:8d029416a9572e74": {
     "baseline": true,
@@ -2970,8 +2978,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:c88c6b17f9a6ce94": {
-    "bundle_date": "2026-11-16",
-    "emitted_at": "2026-11-16T00:54:09.217912+00:00"
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
   },
   "innei:a:e6905fe41e05089d": {
     "baseline": true,
@@ -3545,6 +3553,10 @@
   "msrc:a:1b5f5991cb927e2b": {
     "bundle_date": "2026-10-29",
     "emitted_at": "2026-10-29T00:43:44.334897+00:00"
+  },
+  "msrc:a:1b83f65e29fd5673": {
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
   },
   "msrc:a:1b9f5a28b3670c35": {
     "bundle_date": "2026-10-17",
@@ -5321,6 +5333,10 @@
   "msrc:a:b4c5b0cf9929c450": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:b51465391ef67d17": {
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
   },
   "msrc:a:b5206bf4a7614371": {
     "bundle_date": "2026-11-11",
@@ -8467,12 +8483,20 @@
   "yage-ai:a:1395ddf1ac25ae93": {
     "bundle_date": "2026-09-07"
   },
+  "yage-ai:a:1c3267c9bb0b3076": {
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
+  },
   "yage-ai:a:24b18fd550349d88": {
     "baseline": true,
     "bundle_date": "baseline"
   },
   "yage-ai:a:289d025b1ab3e3f8": {
     "bundle_date": "2026-08-03"
+  },
+  "yage-ai:a:389a046e698911dd": {
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
   },
   "yage-ai:a:3f3a2ed43b36d1f0": {
     "baseline": true,
@@ -8486,12 +8510,20 @@
     "baseline": true,
     "bundle_date": "baseline"
   },
+  "yage-ai:a:68985df434a1d56c": {
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
+  },
   "yage-ai:a:85d81d51170a4f2d": {
     "baseline": true,
     "bundle_date": "baseline"
   },
   "yage-ai:a:862f87e4b85bf191": {
     "bundle_date": "2026-09-07"
+  },
+  "yage-ai:a:954bcc969098ae7f": {
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
   },
   "yage-ai:a:95b0b38f6e5cefc6": {
     "baseline": true,
@@ -8958,6 +8990,10 @@
   "yage-share:a:654f62a5f39a602c": {
     "bundle_date": "2026-08-17"
   },
+  "yage-share:a:671c8a633e4b9852": {
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
+  },
   "yage-share:a:676659e9747c6e6f": {
     "baseline": true,
     "bundle_date": "baseline"
@@ -9059,6 +9095,10 @@
   },
   "yage-share:a:78da67da55034042": {
     "bundle_date": "2026-07-27"
+  },
+  "yage-share:a:7b5df4b80304c5df": {
+    "bundle_date": "2026-11-17",
+    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
   },
   "yage-share:a:7b837a147b2462e3": {
     "bundle_date": "2026-07-25"
