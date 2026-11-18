@@ -1,0 +1,1533 @@
+{
+  "schema_version": 1,
+  "source_id": "blog_watch",
+  "collect_date": "2026-11-18",
+  "collect_window": {
+    "start": "2026-10-24T18:16:19+00:00",
+    "end": "2026-11-18T02:49:01.792590+00:00",
+    "hours": 584
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "44225942075",
+    "commit": "17f2e15"
+  },
+  "stats": {
+    "total": 19,
+    "by_kind": {
+      "publish": 19
+    },
+    "by_via": {
+      "browser_llm": 7,
+      "rss": 12
+    },
+    "by_source": {
+      "unknowncheats-ac": 4,
+      "safebreach-blog": 2,
+      "openai-research": 1,
+      "msrc": 6,
+      "yage-share": 2,
+      "innei": 4
+    },
+    "failed_lists": [
+      "redheadsec",
+      "cognisys-labs"
+    ],
+    "sources_ok": 53,
+    "sources_failed": [
+      {
+        "id": "redheadsec",
+        "error": "html_fetch:http_502"
+      },
+      {
+        "id": "cognisys-labs",
+        "error": "html_fetch:[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'labs.cognisys.group'. (_ssl.c:1081); browser:Page.goto: Download is starting\nCall log:\n  - navigating to \"https://labs.cognisys.group/\", waiting until \"domcontentloaded\"\n"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 10,
+      "rss": 33
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 11,
+      "calls": 11,
+      "prompt_tokens": 12639,
+      "completion_tokens": 1189,
+      "total_tokens": 13828,
+      "prompt_cache_hit_tokens": 6784,
+      "prompt_cache_miss_tokens": 5855
+    },
+    "by_content_status": {
+      "ok": 19
+    }
+  },
+  "items": [
+    {
+      "id": "a:1428ab09d55332bf",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "LLM setup",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/782026-llm-setup.html",
+      "text": "unknowncheats-ac published: LLM setup",
+      "at": "2026-11-18T02:49:01.792590+00:00",
+      "external_id": "a:1428ab09d55332bf",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/782026-llm-setup.html",
+      "title": "LLM setup",
+      "content": "What kind of llm setups is everyone using?\nCurrently right now I am using deepseek v4.1 flash with jailbreak and was wondering if anyone had something better.\nHas anyone found a way to use claude? If it gets even a scent of game hacking anything related, stops working for me.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/782026-llm-setup.html",
+      "content_chars": 276,
+      "content_sha256": "a2e469555aa17f2383bee2059a36286d9fe0b7fb7c8ef150dce53a6740964355",
+      "content_fetched_at": "2026-11-18T02:49:35.842068+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-11-18T02:49:01.792590+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/782026-llm-setup.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "LLM setup",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/782026-llm-setup.html",
+          "content_sha256": "a2e469555aa17f2383bee2059a36286d9fe0b7fb7c8ef150dce53a6740964355"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:35fdaf929bfff483",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "Cheat Engine Version",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/781786-cheat-engine-version.html",
+      "text": "unknowncheats-ac published: Cheat Engine Version",
+      "at": "2026-11-18T02:49:01.792590+00:00",
+      "external_id": "a:35fdaf929bfff483",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/781786-cheat-engine-version.html",
+      "title": "Cheat Engine Version",
+      "content": "When I installed Cheat Engine from its official site, it came to my computer along with other external programs, such as RVA antivirus. How do I prevent this? (Even though I didn't tick the install option, it still installed.)",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/781786-cheat-engine-version.html",
+      "content_chars": 226,
+      "content_sha256": "68529f94ab2b78ba7f73f4dded5234968b223d46e2f86af1aeb4c9430508acd5",
+      "content_fetched_at": "2026-11-18T02:49:39.591309+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-11-18T02:49:01.792590+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/781786-cheat-engine-version.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "Cheat Engine Version",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/781786-cheat-engine-version.html",
+          "content_sha256": "68529f94ab2b78ba7f73f4dded5234968b223d46e2f86af1aeb4c9430508acd5"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:d37f9202e4da44c5",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "AI workflow for reverse-engineering/game hacking in Unreal Engine 4+",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/781800-ai-workflow-reverse-engineering-game-hacking-unreal-engine-4-a.html",
+      "text": "unknowncheats-ac published: AI workflow for reverse-engineering/game hacking in Unreal Engine 4+",
+      "at": "2026-11-18T02:49:01.792590+00:00",
+      "external_id": "a:d37f9202e4da44c5",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/781800-ai-workflow-reverse-engineering-game-hacking-unreal-engine-4-a.html",
+      "title": "AI workflow for reverse-engineering/game hacking in Unreal Engine 4+",
+      "content": "This tutorial explains how to automate reverse engineering for Unreal Engine hacking.\n1. Install bun\nThis image has been resized. Click this bar to view the full image. The original image is sized 802x637.\nCode:\nwinget install\nOven\n-\nsh\n.\nbun\n2. Install Opencode\nCode:\nbun install\n-\ng\n--\ntrust\n@\nOpenC\node\n/\ncli\n3. Create account on abliteration.ai\nThis image has been resized. Click this bar to view the full image. The original image is sized 1265x808.\n4. Buy api credits or get monthly subscription\nThis image has been resized. Click this bar to view the full image. The original image is sized 1254x722.\n5. Open opencode, press Ctrl+P, then choose \"connect an integration\"\nThis image has been resized. Click this bar to view the full image. The original image is sized 1107x620.\n6. Choose abliteration.ai, paste api, choose the model \"abliterated-model-large-flash\" with default reasoning effort.\nThis image has been resized. Click this bar to view the full image. The original image is sized 1113x620.\n7. Download Epic Games Store Client.\n8. Create EGS account.\n9. Choose \"Unreal Engine\" Tab and download appropriate version of Unreal Engine. In this example, For Deep Rock Galactic, Download 4.27.2 with debug symbol.\nTarget game UE version and UE version must match. Otherwise it does mean nothing.\nThis image has been resized. Click this bar to view the full image. The original image is sized 1517x746.\n10. After downloading, create empty first-person project with Windows x64 Shipping, Blueprint Inclusive, with Debug symbols.\nThis image has been resized. Click this bar to view the full image. The original image is sized 1917x1003.\nThis image has been resized. Click this bar to view the full image. The original image is sized 1349x719.\n11. Download apporopriate Visual Studio Build Tools (For example Build Tools 2019 or 2022) to build C++ sources and build this project for Windows x64.\nThis image has been resized. Click this bar to view the full image. The original image is sized 1265x653.\nThis image has been resized. Click this bar to view the full image. The original image is sized 925x642.\nThis image has been resized. Click this bar to view the full image. The original image is sized 1240x629.\n12. Download Ghidra 12.1.4 and Ghidra MCP and Install them.\nThis image has been resized. Click this bar to view the full image. The original image is sized 1322x621.\nThis image has been resized. Click this bar to view the full image. The original image is sized 1264x584.\nThis image has been resized. Click this bar to view the full image. The original image is sized 1201x573.\n13. Import both executive files for Ghidra (In this example, FSD-Win64-Shipping.exe, and empty UE project's exe file), and Auto-Analyze them.\nThis image has been resized. Click this bar to view the full image. The original image is sized 1193x845.\nThis image has been resized. Click this bar to view the full image. The original image is sized 1404x930.\n14. Move your current directory to project base then open Opencode.\nCode:\ncd C\n:\n\\Users\\UserName\\Documents\\Game\n-\nreverse\nopencode2\n15. Make sure you are choosing \"abliterated-model-large-flash\" then prompt:\n\"Generate SDK using UEDumper. or use offsets, classes, structs, functions, enums on Dumpspace(If it is not old). You have Ghidra MCP with FSD-Win64-Shipping.exe and UE 4.27.2 Empty project for reverse and verification. You are allowed to launch the game to confirm live layout of the game structs. After generating SDK, make a simple ESP and aimbot tool. Aimbot should include FOV, distance, priority mode, and must contain visibility check(LineOfSightTo). While I press mouse4 aimbot should be activated, while releasing mouse4 button, aimbot should be de-activated. Start your task.\"\nThis image has been resized. Click this bar to view the full image. The original image is sized 884x418.\n16. You will get SDK and simple hack tool after 1~2 hours later. Done.\nThis image has been resized. Click this bar to view the full image. The original image is sized 1920x1080.\n* You can not use GPT or Claude, or native DeepSeek models because they refuse the task. Other models are mostly same, too. Frontier models are trained to refuse such tasks.\n* You can use other Abliterated / Uncensored Inference API or Local Abliterated models. You can use local models for free using llama.cpp. Download models from huggingface. (I recommend Qwen3.8-27B-Abliterated). But local models are very slow inference. It takes 8 hours, up to 48 hours.\n* You need empty UE project (with .pdb file, especially debug symbol file) for smooth reverse engineering, to compare disassembly.\n* SDK needs to be created. SDK will help creating hack tool much easier.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/781800-ai-workflow-reverse-engineering-game-hacking-unreal-engine-4-a.html",
+      "content_chars": 4693,
+      "content_sha256": "2d369a7220d15ab2d9a470604f59881a90f6c093d01df5cc3d15af21258a5bc5",
+      "content_fetched_at": "2026-11-18T02:49:42.817515+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-11-18T02:49:01.792590+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/781800-ai-workflow-reverse-engineering-game-hacking-unreal-engine-4-a.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "AI workflow for reverse-engineering/game hacking in Unreal Engine 4+",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/781800-ai-workflow-reverse-engineering-game-hacking-unreal-engine-4-a.html",
+          "content_sha256": "2d369a7220d15ab2d9a470604f59881a90f6c093d01df5cc3d15af21258a5bc5"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:0513932b1e41ae1a",
+      "who": "unknowncheats-ac",
+      "who_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "action": "publish",
+      "target": "third person aim orbit at close range",
+      "target_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/781609-third-person-aim-orbit-close-range.html",
+      "text": "unknowncheats-ac published: third person aim orbit at close range",
+      "at": "2026-11-18T02:49:01.792590+00:00",
+      "external_id": "a:0513932b1e41ae1a",
+      "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/781609-third-person-aim-orbit-close-range.html",
+      "title": "third person aim orbit at close range",
+      "content": "external cheat for deadlock. angle based aim, cam pos extracted from VP\nmatrix\nat long range aim is fine, close range it orbits in a small circle around\nthe head and i cant fix it\ni reduced step to 1 count per tick and it still orbits so its not smoothing\ni think the problem is that cam pos rotates with view direction (over the\nshoulder cam swings around player when view rotates) so every tick: view\nrotates a bit from my send, cam swings a bit, delta to target points\nsideways, i correct it, loop forever\nthe angle math:\nCode:\nvec2\nCalcAimDeltaCounts\n(\nconst\nvec3\n&\ncamPos\n,\nconst\nQAngle\n&\nviewAngle\n,\nconst\nvec3\n&\nworldPoint\n,\nconst\ncalcCountsVars\n&\nvars\n)\n{\nvec3 d\n{\nworldPoint\n.\nx\n-\ncamPos\n.\nx\n,\nworldPoint\n.\ny\n-\ncamPos\n.\ny\n,\nworldPoint\n.\nz\n-\ncamPos\n.\nz\n};\nfloat\nyaw\n=\natan2f\n(\nd\n.\ny\n,\nd\n.\nx\n)\n*\n(\n180.f\n/\nPI\n);\nfloat\npitch\n=\n-\natan2f\n(\nd\n.\nz\n,\nsqrtf\n(\nd\n.\nx\n*\nd\n.\nx\n+\nd\n.\ny\n*\nd\n.\ny\n))\n*\n(\n180.f\n/\nPI\n);\nQAngle\ndeltaAngle\n{};\ndeltaAngle\n.\nyaw\n=\nyaw\n-\nviewAngle\n.\nyaw\n;\ndeltaAngle\n.\npitch\n=\npitch\n-\nviewAngle\n.\npitch\n;\nif\n(\ndeltaAngle\n.\nyaw\n>\n180.f\n)\ndeltaAngle\n.\nyaw\n-=\n360.f\n;\nif\n(\ndeltaAngle\n.\nyaw\n<\n-\n180.f\n)\ndeltaAngle\n.\nyaw\n+=\n360.f\n;\nfloat\nscale\n=\nYAW_CONST\n*\nvars\n.\nsens\n*\n(\nvars\n.\nFov\n/\nvars\n.\ndefaultFov\n)\n*\nvars\n.\nzoomRatio\n;\nreturn\n{\n.\nx\n=\n-\ndeltaAngle\n.\nyaw\n/\nscale\n,\n.\ny\n=\ndeltaAngle\n.\npitch\n/\n(\nscale\n*\nvars\n.\nyScale\n)\n};\n}\nand the tick gate so aim only fires when view angle in memory updates:\nCode:\nif\n(\nthis\n->\ntick\n==\nState\n::\ntick\n)\nreturn\n;\nthis\n->\ntick\n=\nState\n::\ntick\n;\nvec2 deltaCounts\n=\nCalcAimDeltaCounts\n(\ncameraOrigin\n,\nviewAngle\n,\ntargetHead\n,\nvars\n);\nMoveMouse\n(\ndeltaCounts\n.\nx\n,\ndeltaCounts\n.\ny\n);\neye position (origin + viewOffset) instead of cam fixes the orbit but then\ncrosshair lands with constant offset because eye != render cam\nquestion: is angle based even worth it for a third and first person game or should i\njust switch to screen based (wts head to pixels, pixel delta to counts)?\nanyone did this comparison on their cheat?",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/781609-third-person-aim-orbit-close-range.html",
+      "content_chars": 1974,
+      "content_sha256": "2f3173f1f25021c694ea5da95ab4a81c0eaf5589d97f2db348deafa4d50c59ce",
+      "content_fetched_at": "2026-11-18T02:49:46.393409+00:00",
+      "author": "unknowncheats-ac",
+      "author_name": "UnknownCheats Anti-Cheat",
+      "author_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+      "published_at": "2026-11-18T02:49:01.792590+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:unknowncheats-ac",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/",
+        "https://www.unknowncheats.me/forum/general-programming-and-reversing/781609-third-person-aim-orbit-close-range.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "unknowncheats-ac",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "unknowncheats-ac",
+          "name": "UnknownCheats Anti-Cheat",
+          "home_url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/"
+        },
+        "article": {
+          "title": "third person aim orbit at close range",
+          "url": "https://www.unknowncheats.me/forum/general-programming-and-reversing/781609-third-person-aim-orbit-close-range.html",
+          "content_sha256": "2f3173f1f25021c694ea5da95ab4a81c0eaf5589d97f2db348deafa4d50c59ce"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:1b49604a943a9280",
+      "who": "safebreach-blog",
+      "who_url": "https://www.safebreach.com/blog/",
+      "action": "publish",
+      "target": "Thought LeadershipNov 11 , 2026ARTEX and VAPOR PANDA: How One Operator Used an Agentic AI Pentest Framework Against 200+ OrganizationsRead More",
+      "target_url": "https://www.safebreach.com/blog/artex-ai-pentest-framework-vapor-panda/",
+      "text": "safebreach-blog published: Thought LeadershipNov 11 , 2026ARTEX and VAPOR PANDA: How One Operator Used an Agentic AI Pentest Framework Against 200+ OrganizationsRead More",
+      "at": "2026-11-18T02:49:01.792590+00:00",
+      "external_id": "a:1b49604a943a9280",
+      "url": "https://www.safebreach.com/blog/artex-ai-pentest-framework-vapor-panda/",
+      "title": "Thought LeadershipNov 11 , 2026ARTEX and VAPOR PANDA: How One Operator Used an Agentic AI Pentest Framework Against 200+ OrganizationsRead More",
+      "content": "Nov 11, 2026\nARTEX and VAPOR PANDA: How One Operator Used an Agentic AI Pentest Framework Against 200+ Organizations\nLearn how VAPOR PANDA used the open-source ARTEX AI pentest framework to scale a China-nexus espionage campaign, and what defenders should detect, hunt for, and validate now.\nSummary\nWhat happened:\nOver 11 days starting October 17, 2026, the China-nexus adversary CrowdStrike tracks as VAPOR PANDA used ARTEX, an open-source agentic AI pentest framework, to target more than 200 organizations in at least 14 countries from a single controller.\nWhat’s new:\nARTEX didn’t introduce new exploits. It industrialized planning and memory, so one operator could run parallel attack paths and switch instantly when one failed.\nHow big the footprint is:\nCensys found 1,465 internet-exposed ARTEX consoles (roughly 815 distinct deployments), and CrowdStrike, Microsoft, and India’s CERT-In have tied ARTEX to other threat actors, so attribution by tool no longer works.\nWhat defenders should do:\nRotate exposed keys and credentials, enforce SAML signature validation and IMDSv2, run EDR everywhere, and alert on machine-speed activity like sub-lockout password sprays.\nHow SafeBreach helps:\nSafeBreach’s new VAPOR PANDA ARTEX BLOODALCHEMY scenario that includes 10 steps and 22 attacks lets teams test whether their controls detect this AI-orchestrated attack chain.\nAuthor:\nadrian.culley@safebreach.com, Offensive Security Expert & Senior Sales Engineer\nWe’ve heard plenty of claims about\nhow AI is changing cyber attacks\n. The ARTEX campaigns are the clearest evidence yet of what that change actually looks like, and it isn’t magic—it’s tempo.\nOn October 29, 2026,\nCrowdStrike tied a campaign that began on October 17\nto a China-nexus adversary it tracks as VAPOR PANDA. The operator ran the campaign through ARTEX, an open-source agentic AI pentest framework, and in 11 days reached more than 200 organizations in at least 14 countries from a single controller. The tradecraft underneath is familiar. What’s new is how many doors got tried at once.\nA week later,\nCensys counted 1,465 ARTEX consoles\nexposed on the open internet, or roughly 815 distinct deployments once duplicates are stripped out. ARTEX is no longer one actor’s tool. It’s a free download that multiple threat actors are already using. Below, I’ll break down how ARTEX works, what VAPOR PANDA did with it, and what security teams should check, detect, and validate now.\nPREFER TO LISTEN?\nAdrian Culley joined host Tova Dvorin on episode 93 of The Cyber Resilience Brief: A SafeBreach Podcast to break down the ARTEX and VAPOR PANDA campaign.\nListen now\n.\nWhat is ARTEX?\nARTEX is an open-source agentic AI penetration testing framework\nthat uses a team of AI agents to plan and run attacks from reconnaissance through data exfiltration with little-to-no human interaction. A developer who goes by Autumn-27 published it on GitHub in July 2026, written in Go and pitched as a tool for authorized testing.\nHere is how the architecture works:\nPlanner agents\nchoose the next move.\nWorker agents\nrun the tools.\nResults flow back\nto the plan, and the plan adjusts.\nAny model works:\nARTEX is model-agnostic, so any large language model (LLM) API will do.\nUnder the hood, published code analysis suggests ARTEX orchestrates familiar open-source tooling like Nuclei, sqlmap, Nmap, ffuf, and Playwright. The clever part is the bookkeeping: a shared graph of facts, findings, and goals; dead ends flagged after repeated retries; and parallel workers that each claim their own line of attack. That’s industrialized planning and memory, not a new exploit. The same analysis notes there’s no network-level scope enforcement. Scope lives in the prompt.\nDoes pulling the ARTEX repository make a difference?\nNot much. The developer pulled the original repository in October, saying they weren’t involved in any attacks and the project was meant for authorized testing. By then,\nWiz\ncounted more than 12,000 forks. The code lives on in forks like ScopeWeaver and a commercial version called ARTEX PRO, and\nTechCrunch\nreports that dozens of copies are still on code-sharing sites.\nWho is VAPOR PANDA?\nVAPOR PANDA\nis CrowdStrike’s name for a China-nexus espionage adversary that it first tracked as an activity cluster called VexatiousTemper, and that overlaps with what\nTrend Micro calls Earth Estries\n. CrowdStrike first saw the group in February 2021 exploiting the ProxyLogon chain against Microsoft Exchange (\nCVE-2021-26855\nand three related vulnerabilities).\nHistorically, VAPOR PANDA has targeted government, think tank, energy, and extractive organizations across Europe, North America, Oceania, and the UK to develop long-term access. The ARTEX campaign is its first observed use of AI tooling, which CrowdStrike judges is likely an expansion of scale rather than a change of mission. Pharma, semiconductors, nuclear, and defense are new sectors for the group.\nHow confident is the China-nexus attribution?\nThe attribution is CrowdStrike’s assessment: its intelligence team linked the ARTEX controller to VAPOR PANDA infrastructure. What’s visible publicly is circumstantial—operator instructions written in Chinese and labeled as human instruction, timestamps in China Standard Time, and a Chinese red-team nickname for the CrowdStrike Falcon sensor. CrowdStrike hedges the details with “likely.”\nWhy Attribution by Tool No Longer Works\nARTEX has already been tied to multiple, distinct threat actors, so knowing an attack used ARTEX tells you very little about who’s behind it. For example:\nThe South Korean financial campaign:\nOn October 7, 2026,\nCrowdStrike reported\nthat an unattributed, Chinese-speaking, financially motivated operator (assessed with moderate confidence) used ARTEX against South Korean financial organizations.\nStorm-0940:\nOn October 21, 2026,\nMicrosoft reported\nthat Storm-0940, a China state-aligned actor active since 2021, used ARTEX in a ConnectWise supply chain compromise followed by sign-in attempts at more than 2,250 Microsoft 365 tenants. CrowdStrike says Storm-0940 and VAPOR PANDA are distinct.\nCrafty Falcon:\nOn November 4, 2026,\nIndia’s Computer Emergency Response Team (CERT-In) warned\nfinancial and cryptocurrency organizations about a group it tracks as Crafty Falcon, which used ARTEX alongside PentAGI, Cairn, and CyberStrikeAI.\nThe Storm-0940 campaign shows both the speed and the limits of agentic attacks. Microsoft says the attackers moved fast enough that defenders had little time to detect and respond, with several cases reaching privileged access in under three hours. Yet most targeting failed: a separate October 10-14 password spray against 327 accounts at eight organizations, peaking at 2,900 failed sign-ins a minute, produced no successful authentication.\nTwo different China-nexus actors; one repository. For defenders, this means there is a need to detect the behavior, not the brand name, because the strings rotate, but the behavior doesn’t.\nHow did VAPOR PANDA use ARTEX?\nVAPOR PANDA ran several engagements in parallel from one operator and one ARTEX controller. A main agent directed planner and worker agents, mostly running on DeepSeek. A human stepped in at decision points with instructions in Chinese. One instruction CrowdStrike translated told the agents to find hosts in the domain that weren’t running the Falcon sensor. That’s\nMITRE ATT&CK\ntechnique\nT1518.001\n(Security Software Discovery), used to find the unprotected hosts. Your coverage gaps are the attacker’s target list.\nPharmaceutical Intrusion #1: SAML, XXE, and Cloud Metadata\nIn one pharmaceutical intrusion, an unsigned Security Assertion Markup Language (SAML) assertion accepted by the application was chained with an XML external entity (XXE) flaw to reach the cloud instance metadata service (\nT1552.005\n). That returned a role that could run commands on thousands of instances (\nT1651\n), and the agent then escalated to recover an enterprise administrator account. The unsigned assertion that opened the chain maps to forged SAML tokens (\nT1606.002\n). There was no zero-day anywhere in this chain—just a validation gap, a parser setting, and an exposed metadata endpoint. That’s why enforcing Instance Metadata Service Version 2 (IMDSv2) is on CrowdStrike’s list of recommendations.\nPharmaceutical Intrusion #2: Web Shells and Active Directory Abuse\nThe second pharmaceutical intrusion started with web shells (\nT1505.003\n), then an unauthenticated orchestration service that gave root in a production container environment. From there, the attackers read Local Administrator Password Solution (LAPS) passwords (\nT1555\n) and used resource-based constrained delegation (RBCD) to impersonate a privileged account (\nT1134.001\n).\nThis is textbook Active Directory abuse, chained by agents that switched to alternative approaches whenever a path failed. When one attack path fails, the agents switch to others instantly. We haven’t seen much of this in the past, and it makes defense much harder. If your testing stops because one attack path is closed, that won’t stop attackers using ARTEX. They’ll keep going.\nThe Greek Government Case: Old Credentials; New Economics\nIn a Greek government intrusion, a 2022 directory export from a mail server, with authentication keys that had likely not been rotated since the export, was used to forge an admin token and read mailboxes (\nT1114.002\n). A VPN configuration from a user’s sent mail, plus a VPN client key the operator described as coming from a May 2024 email leak, got the attackers into the internal network. These are years-old secrets, supplied by the operator and put to work by the agent because the cost of exploiting them has collapsed.\nWhat is BLOODALCHEMY?\nBLOODALCHEMY is the backdoor VAPOR PANDA deployed after gaining access, and CrowdStrike confirmed post-exploitation activity with it at nine organizations (it names the backdoor at a Middle East interior ministry and a Latin America foreign ministry). The backdoor was first\npublicly documented in October 2023\n. The loader is classic DLL side-loading (\nT1574.001\n): a GameHook binary renamed svchost.exe (\nT1036.005\n), a malicious DLL called graphics-hook-filter64.dll beside it, and an encrypted payload, all staged in exposed open directories. The AI isn’t writing novel malware. An established toolkit is being delivered at agent speed.\nInitial Access and Infrastructure\nBeyond the SAML flaw, CrowdStrike saw a mix of initial access techniques: exploitation of public-facing applications (\nT1190\n), external remote services (\nT1133\n), valid accounts (\nT1078\n), and password spraying (\nT1110.003\n) against at least 12 more organizations, including US think tanks and European government bodies. To maintain access and hide their traffic, the attackers also used web shells, Chisel and SoftEther tunnels, and Tor and SOCKS proxies (\nT1090.003\nand\nT1572\n). To be clear, the 12 additional organizations were sprayed, but not necessarily breached.\nHow many organizations did VAPOR PANDA compromise?\nThe 200-plus figure counts organizations targeted, not organizations compromised, so it’s worth handling with care. The targets spanned at least 14 countries and included:\nForeign ministries in Latin America, Europe, Asia, and the Middle East\n19 US organizations across pharma, semiconductors, defense, nuclear, and finance\nTelecommunications companies in the US, Belgium, and the Philippines\nCrowdStrike confirmed post-exploitation activity at nine organizations, with password spraying against at least 12 more. Some coverage, including\nCyberScoop’s\n, cites a larger figure of roughly 140 targets that CrowdStrike assessed as confirmed or moderate-confidence compromises. Either way, these categories don’t add up to a clean success rate. It’s a wide net with a smaller confirmed core.\nWhat about the South Korean campaign?\nWe shouldn’t lose sight of the person behind the agents. In the South Korean case, the operator ran ARTEX with DeepSeek as the primary model and Claude Code sessions alongside it, including sessions backed by GLM-5.3 and Grok 4.6. We know those details only because the operator’s own servers were exposed, holding Claude Code session histories, ARTEX configurations, and Claude memory files. CrowdStrike names no banks and gives no victim counts, and press accounts differ:\nInfosecurity Magazine\nreports 25,000 and 40,000 people affected at two institutions, while\nBleepingComputer\nnames three large banks. Treat those details as unsettled.\nHow many ARTEX consoles are exposed online?\nCensys\ncounted 1,465 hosts worldwide exposing an ARTEX console to the public internet. About 650 of those sit in two blocks of identically configured hosting, which leaves roughly 815 distinct-looking deployments—the source of TechCrunch’s figure of more than 800. Not every deployment is hostile, and many will belong to authorized testers, but it’s a far bigger footprint than a handful of named campaigns.\nCensys also found other threat tooling on 155 of those hosts (10.6%):\nCommon post-exploitation frameworks:\nCobalt Strike, Vshell, and Adaptix C2\nOther AI attack frameworks:\nCyberStrikeAI appears alongside ARTEX on 70 hosts\nOpen directories:\n32 hosts expose directories of attack tools, post-exploitation kits, stagers, and implants\nSelf-hosted LLM gateways:\n43 hosts run LLM gateway software, so model access, often through reseller proxies, is part of the operators’ stack\nThe takeaway from Censys is that operators appear to be running multiple agent frameworks side by side.\nARTEX doesn’t need to be exposed to the internet to work. According to\nTechCrunch\n, Censys researcher Silas Cutler says the software doesn’t require internet exposure, so this reads as misconfiguration. TechCrunch describes the consoles as open without a password, while other write-ups say only that they’re exposed, so how many are truly unauthenticated is still an open question. TechCrunch also reports that one instance tied to a Korean campaign was exposed for months (Censys’s own post dates that open directory to August 18, about seven weeks before the CrowdStrike’s report), with attack data reaching payment and gaming companies beyond the banks.\nIs ARTEX a super weapon?\nNo. A separate\nCheck Point analysis\nfound that agentic frameworks like ARTEX can run large-scale attacks with little human input for a few hundred dollars, but they still sometimes fail and sometimes hallucinate their own success. They’re cheap and noisy. That’s bad news for volume, but decent news for detection, because noisy, machine-paced activity is something a security operations center (SOC) can detect and alert on based on a pattern.\nThe exposed controllers are both good news and bad news. They hand researchers playbooks, targets, and implants. But the risk is that your organization’s name sits in someone else’s exposed attack data, and you hear about it from a researcher first. And if your own red team runs agentic tooling, make sure its controller isn’t reachable from the internet.\nTechCrunch also notes that many ARTEX-linked attacks exploited weak or known passwords and missing multi-factor authentication (MFA), which matches everything in this campaign. The agents aren’t beating strong controls. They’re walking through the unglamorous gaps in basic cyber hygiene, at scale.\nHow should security teams respond to ARTEX?\nStart with the basics CrowdStrike recommends, then tune detections for machine-speed activity.\nWhat does CrowdStrike recommend?\nRotate keys and credentials after any suspected exposure.\nEnforce SAML signature validation and IMDSv2.\nPatch internet-facing appliances.\nRun endpoint detection and response (EDR) everywhere.\nHunt for ARTEX markers: command lines containing “artx” or “artex,” cloud roles with an “artx” prefix, comments starting with “art18-,” and a folder called artx5v under C:\\ProgramData. Treat these as leads, not proof. Anyone can fork the repo and change a string.\nWhat should SOC teams look for in the logs?\nAt the speed these agents work, cadence is the signal. Look for:\nPassword sprays against Microsoft Entra ID and Okta, a second apart\nRapid-fire cloud enumeration (one write-up cites 27 events in 23 seconds)\nVendor app sign-ins from unfamiliar IP addresses\nNew credentials added to service principals\nSudden privileged role assignments\nYour existing spray and access-denied detections already apply. Most teams just aren’t alerting on that cadence.\nHow can you test your defenses against VAPOR PANDA and ARTEX?\nOnce you’ve checked those controls, you still need to know whether they work together against the real attack chain. That’s where\nadversarial exposure validation\ncomes in. SafeBreach has released a VAPOR PANDA ARTEX BLOODALCHEMY scenario in the SafeBreach platform—10 steps and 22 attacks that follow the campaign:\nPassword spraying kept below the lockout threshold\nCredential theft from the AWS, Azure, and GCP metadata services\nRemote command execution through Azure VM Run Command\nSide-loaded loader execution and persistence\nWeb shell traffic\nDCSync\nSecurity software discovery\nCommand and control and exfiltration over Tor\nThe scenario doesn’t include the BLOODALCHEMY samples themselves, SoftEther and Chisel tunneling, the unsigned SAML plus XXE web attack, RBCD abuse, or remote mailbox collection. SafeBreach’s attack path propagation capabilities add the LAPS password read over LDAP and installed EDR enumeration—the same step the operator used to hunt for unprotected hosts. The cloud steps require cloud simulators, and the Active Directory steps require a domain-joined simulator.\nThe real question isn’t, “Do we have a signature for BLOODALCHEMY?” It’s whether a sub-threshold password spray, a metadata call from a cloud instance, and a renamed binary side-loading a DLL get noticed in your environment today.\nWhat to Watch Next\nI’m watching four things as this develops:\nMore Censys findings:\nwhether Censys and others publish more on what those exposed controllers held\nNew attributions:\nwhether another China-nexus group is publicly tied to ARTEX\nFork evolution:\nwhether the forks diverge into something more capable than the original\nOperator mistakes:\nwhether operators keep making the South Korean-style operational security mistakes that let us see the playbook\nIt also echoes a question we raised in our\nanalysis of the SecFlow AI intrusion harness\n: whether AI harnesses verify their own claims. CrowdStrike expects China-nexus adversaries to keep adopting agentic frameworks like ARTEX over the next 12 months.\nThe Bottom Line\nARTEX didn’t invent new attacks. It made old ones cheap, fast, and parallel. Check your credentials, check your coverage, and test whether you can catch the attack as it unfolds. And if you’re running these tools yourself, secure the controller.\nSafeBreach runs real attack techniques against your security controls, safely and continuously, so you can see which detections fire, which ones fail silently, and where the gaps are—including against AI-orchestrated campaigns like VAPOR PANDA’s.\nTo see how your defenses hold up against ARTEX-style attacks,\nrequest a demo of the SafeBreach CTEM Platform\ntoday.\nAbout the Author\nAdrian Culley\nis Head of Engineering, EMEA for SafeBreach. He has over 35 years of computer security experience, particularly specialising in security operations, artificial intelligence, offensive security, threat intelligence, and malware — in short, cyber resilience. He is a core member of the OWASP Large Language Model Top Ten risks working group.\nHe is a graduate of the Information Security Group at Royal Holloway, University of London, and an occasional visiting lecturer there. Adrian was previously a Detective with Scotland Yard, working around the world with their Special Operations Directorate, and latterly served with the Computer Crime Unit there. He has also worked directly for the UK Central Government in a global role. He worked for Palo Alto Networks for five years as a Consulting Engineer and Head of Industry 4.0. Previously, he has also worked for PwC, Trellix, Cybereason, Guidance Software, AccessData, and Damballa. Adrian has a strong background in digital forensics and has worked with government, NGO, military, intelligence, law enforcement, and commercial clients around the world.\nFrequently Asked Questions\nWhat is ARTEX?\nARTEX is an open-source agentic AI penetration testing framework, written in Go and published on GitHub in July 2026, that uses planner and worker AI agents to run attacks from reconnaissance through data exfiltration with little human interaction. It’s model-agnostic and orchestrates familiar tools like Nmap, sqlmap, and Nuclei. Although its developer pulled the repository in October 2026, thousands of forks remain available.\nWho is VAPOR PANDA?\nVAPOR PANDA is CrowdStrike’s name for a China-nexus espionage adversary first observed in February 2021 exploiting the ProxyLogon vulnerabilities in Microsoft Exchange. It overlaps with the group Trend Micro tracks as Earth Estries. In October 2026, CrowdStrike tied VAPOR PANDA to an ARTEX campaign that targeted more than 200 organizations in at least 14 countries over 11 days.\nIs Storm-0940 the same group as VAPOR PANDA?\nNo. CrowdStrike says Storm-0940 and VAPOR PANDA are distinct, even though both are China-aligned and both used ARTEX. Microsoft attributes Storm-0940 to a ConnectWise supply chain compromise followed by sign-in attempts at more than 2,250 Microsoft 365 tenants. Because ARTEX is freely available, the tool alone can’t tell you which actor is behind an attack.\nHow many ARTEX consoles are exposed on the internet?\nCensys researchers counted 1,465 hosts exposing an ARTEX console to the public internet as of early November 2026. About 650 of those sit in two blocks of identically configured hosting, leaving roughly 815 distinct deployments. Censys also found other threat tooling, including Cobalt Strike, Vshell, and CyberStrikeAI on 155 of those hosts.\nHow can SOC teams detect ARTEX-driven attacks?\nSOC teams can detect ARTEX-driven attacks by alerting on machine-speed cadence rather than specific strings. Warning signs include password sprays against Microsoft Entra ID or Okta a second apart, rapid-fire cloud enumeration, vendor app sign-ins from unfamiliar IP addresses, new credentials on service principals, and sudden privileged role assignments. Strings like “artx” in command lines are useful leads, but forks can change them.\nDoes AI make attacks like VAPOR PANDA’s unstoppable?\nNo. In the VAPOR PANDA campaign, the AI agents didn’t use zero-days or novel malware. They exploited unrotated keys, weak passwords, missing multi-factor authentication (MFA), and misconfigurations at scale. Check Point’s analysis also found that agentic frameworks like ARTEX sometimes fail and hallucinate their own success, which makes their noisy, machine-paced activity detectable.\nHow does SafeBreach help organizations defend against ARTEX attacks?\nSafeBreach has released a VAPOR PANDA ARTEX BLOODALCHEMY attack scenario with 10 steps and 22 attacks, covering sub-lockout password spraying, cloud metadata credential theft, DLL side-loading, DCSync, and exfiltration over Tor. Running this scenario within the\nSafeBreach CTEM Platform\nshows whether your security controls detect and stop each step of this AI-orchestrated attack chain.\nYou Might Also Be Interested In\nBlog\nAbsence of Evidence: What an AI-Orchestrated Intrusion Harness Teaches Us About AI Detection Engineering\nRead More\nBlog\nGoogle’s AI Model Just Breached Three Real Companies. It’s Another Data Point in a Startling New Trend That Has Real Implications for Security Leaders.\nRead More\nPodcast\nVideos\nPodcast: OpenAI’s Agent Hacked Hugging Face: The First Autonomous AI Breach\nListen Now\nGet the latest\nresearch and news",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.safebreach.com/blog/artex-ai-pentest-framework-vapor-panda/",
+      "content_chars": 23798,
+      "content_sha256": "03492d1492cb0f0e12e6f12dccae8d5958bac809a7036969b683fefd0f48ea5e",
+      "content_fetched_at": "2026-11-18T02:51:16.441506+00:00",
+      "author": "safebreach-blog",
+      "author_name": "SafeBreach Blog",
+      "author_url": "https://www.safebreach.com/blog/",
+      "published_at": "2026-11-18T02:49:01.792590+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:safebreach-blog",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.safebreach.com/blog/",
+        "https://www.safebreach.com/blog/artex-ai-pentest-framework-vapor-panda/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "safebreach-blog",
+          "url": "https://www.safebreach.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "safebreach-blog",
+          "name": "SafeBreach Blog",
+          "home_url": "https://www.safebreach.com/blog/"
+        },
+        "article": {
+          "title": "Thought LeadershipNov 11 , 2026ARTEX and VAPOR PANDA: How One Operator Used an Agentic AI Pentest Framework Against 200+ OrganizationsRead More",
+          "url": "https://www.safebreach.com/blog/artex-ai-pentest-framework-vapor-panda/",
+          "content_sha256": "03492d1492cb0f0e12e6f12dccae8d5958bac809a7036969b683fefd0f48ea5e"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:0999999c83fa8581",
+      "who": "safebreach-blog",
+      "who_url": "https://www.safebreach.com/blog/",
+      "action": "publish",
+      "target": "Threat Coverage | ResearchNov 14 , 2026ARTEX AI Attack Framework: SafeBreach Coverage for FBI FLASH Alert FLASH-20261113-001FBI FLASH-20261113-001 warns that multiple threat actors use ARTEX, an...Rea",
+      "target_url": "https://www.safebreach.com/blog/artex-ai-attack-framework-fbi-flash-alert-20261113-001-safebreach-coverage/",
+      "text": "safebreach-blog published: Threat Coverage | ResearchNov 14 , 2026ARTEX AI Attack Framework: SafeBreach Coverage for FBI FLASH Alert FLASH-20261113-001FBI FLASH-20261113-001 warns that multiple threat actors use ARTEX, an...Rea",
+      "at": "2026-11-18T02:49:01.792590+00:00",
+      "external_id": "a:0999999c83fa8581",
+      "url": "https://www.safebreach.com/blog/artex-ai-attack-framework-fbi-flash-alert-20261113-001-safebreach-coverage/",
+      "title": "Threat Coverage | ResearchNov 14 , 2026ARTEX AI Attack Framework: SafeBreach Coverage for FBI FLASH Alert FLASH-20261113-001FBI FLASH-20261113-001 warns that multiple threat actors use ARTEX, an...Rea",
+      "content": "Nov 14, 2026\nARTEX AI Attack Framework: SafeBreach Coverage for FBI FLASH Alert FLASH-20261113-001\nLearn how SafeBreach maps FBI FLASH-20261113-001 to simulations that test your exposure to the ARTEX AI attack framework’s machine-speed cloud, identity, and Active Directory intrusions.\nSummary\nOne framework, many operators:\nFBI FLASH Alert FLASH-20261113-001 (November 13, 2026) warns that a variety of malicious cyber actors have used ARTEX, an open-source AI penetration testing framework, since at least August 2026.\nMachine-speed intrusions:\nARTEX turns a plain-language goal into commands run by multiple AI agents, and the FBI cites Microsoft reporting that some ARTEX intrusions reached privileged access in under three hours.\nOld weaknesses, no zero-days:\nFLASH-20261113-001 cites no CVEs. ARTEX operators exploit known flaws such as unsigned SAML assertions, hardcoded passwords, and unrotated keys across overlooked cloud, identity, and Active Directory surfaces.\nTwo named campaigns:\nThe FBI links ARTEX to data theft affecting approximately 67,000 people at South Korean financial institutions and a ConnectWise Cloud Backup supply chain compromise reaching more than 2,250 downstream Microsoft 365 tenants.\nSafeBreach coverage:\nSafeBreach customers already have coverage against the majority of the ARTEX TTPs in FLASH-20261113-001, from Azure and AWS metadata credential theft to Kerberoasting, Pass-the-Ticket, and Tor-based C2, and the SafeBreach research team is adding new simulations mapped to the FLASH.\nAuthor:\nTova Dvorin, Senior Product Marketing Manager\nOn November 13, 2026, the Federal Bureau of Investigation (FBI) released\nFLASH Alert FLASH-20261113-001: “Threat Overview of ARTEX Autonomous Penetration Testing Framework”\n. The FLASH provides intelligence on how malicious cyber actors use the ARTEX framework, including tactics, techniques, and procedures (TTPs) mapped to MITRE ATT&CK, indicators of compromise (IOCs), and recommended mitigations.\nThe FLASH focuses on a tool rather than a single threat group. According to the FBI, ARTEX lets actors with limited technical expertise run multi-target intrusions at machine speed, often against peripheral, less-protected systems.\nFor more information, read the full FBI FLASH\nhere\n.\nWhat Is ARTEX and Which Threat Actors Use It?\nARTEX is an open-source, multi-agent penetration testing platform written in Go. It turns a natural-language objective into machine commands executed by what the FBI calls “super intelligence (SI) agents”—AI agents driven by large language models (LLMs)—with minimal human involvement beyond setting the goal.\nARTEX has no model of its own. It connects to external LLM providers, including Anthropic Claude, OpenAI GPT, DeepSeek, GLM, Grok, and Kimi, and the FBI reports that attacker-controlled instances most often run Chinese-developed models led by the DeepSeek Flash family. Guardrails at any single AI provider are not a control defenders can rely on.\nA developer using the handle “Autumn-27” released ARTEX on GitHub in July 2026 and made the repository unavailable on October 8, 2026, after reports of abuse. ARTEX still circulates through community forks, localized variations, archived copies, and a commercial version, ARTEX PRO. Censys counted over 1,600 publicly exposed ARTEX consoles in early November 2026, a number the FBI says is likely significantly higher.\nThe FBI names no state sponsor. It describes a variety of actors targeting ten sectors: financial services, government, technology, defense, semiconductor, energy, healthcare, manufacturing, telecommunications, and legal.\nTwo campaigns stand out:\nSouth Korean financial institutions:\na financially motivated campaign that exfiltrated personal information on approximately 67,000 individuals.\nConnectWise Cloud Backup:\na supply chain compromise in which actors abused a trusted ConnectWise application to reach more than 2,250 downstream Microsoft 365 tenants.\nThe FLASH’s indicator tables also tie ARTEX infrastructure to Microsoft-tracked Storm-3358, active as recently as November 6, 2026. SafeBreach Threat Research assesses that Storm-3358 and VAPOR PANDA, the China-nexus actor tracked by CrowdStrike, lead the observed campaigns. For VAPOR PANDA’s campaign in depth, see our earlier analysis,\nARTEX and VAPOR PANDA: How One Operator Used an Agentic AI Pentest Framework Against 200+ Organizations\n. Other recent FBI FLASH alerts we have covered include\nTeamPCP Supply Chain Attacks (FLASH-20260702-01)\n.\nARTEX TTPs Mapped to MITRE ATT&CK\nARTEX introduces no new exploits. Its AI agents chain familiar techniques in parallel and at machine speed. The FLASH groups observed activity by intrusion phase; the sections below follow those phases and the MITRE ATT&CK techniques the FBI cites.\nReconnaissance and Discovery: Sub-Second Cloud Permission Mapping\nARTEX agents map the effective permissions of Azure credentials, shared access signature (SAS) tokens, service principals, and storage account keys with sub-second capability checks, then test blob writes and deletes. Through Microsoft Graph, they enumerate users, mailboxes, and applications. In AWS, they use DryRun flags to test what a compromised Identity and Access Management (IAM) user can do.\nT1526\n– Cloud Service Discovery\nT1595\n– Active Scanning\nT1580\n– Cloud Infrastructure Discovery\nT1087.004\n– Account Discovery: Cloud Account\nT1069.003\n– Permission Groups Discovery: Cloud Groups\nInitial Access: SAML Forgery, Web Exploits, and Trusted Relationships\nThe FBI lists familiar entry points: unsigned SAML assertions, XML external entity (XXE) injection, server-side request forgery (SSRF), SQL and command injection, hardcoded administrator passwords in JavaScript bundles, missing API authentication, weak admin credentials, and stolen VPN configurations. ARTEX operators also abuse cross-account cloud trust and vendor credentials to pivot through B2B federation from a weaker supplier into a higher-value network. In the ConnectWise campaign, actors hijacked a trusted OAuth application to reach downstream Microsoft 365 tenants.\nT1552.001\n– Unsecured Credentials: Credentials in Files\nT1190\n– Exploit Public-Facing Application\nT1078\n– Valid Accounts\nT1133\n– External Remote Services\nT1195\n– Supply Chain Compromise\nT1199\n– Trusted Relationship\nT1606.002\n– Forge Web Credentials: SAML Tokens\nPersistence: Web Shells, OAuth Credentials, and Open-Source RATs\nARTEX agents establish footholds with JSP and PHP web shells, including one planted through MySQL log poisoning; SafeBreach Threat Research identified the R57 and WSO PHP web shells among them. In the cloud, they abuse Kudu administrative APIs, create new administrator accounts, add secrets to service principals and existing OAuth applications, create SSH key pairs, and allocate Elastic IPs. The FLASH also lists the open-source remote access tools WISP, vshell, and AdaptixC2, along with the BLOODALCHEMY backdoor, which a signed GameHook executable renamed to svchost.exe loads by side-loading a malicious DLL.\nT1059\n– Command and Scripting InterpreterThe PHP security team has published minimal source backports for PHP 7.4, 8.0, and 8.1, and some Linux distributions and long-term support vendors provide patched packages for older branches.\nT1505.003\n– Server Software Component: Web Shell\nT1078.004\n– Valid Accounts: Cloud Accounts\nT1098.001\n– Account Manipulation: Additional Cloud Credentials\nT1574.001\n– Hijack Execution Flow: DLL\nT1036.005\n– Masquerading: Match Legitimate Resource Name or Location\nT1105\n– Ingress Tool Transfer\nPrivilege Escalation: Kerberoasting, DCSync, and Forged Admin Tokens\nARTEX agents launch cloud instances with high-value IAM roles, use XXE to reach the cloud metadata service, and forge administrator tokens from unrotated authentication keys. In Active Directory, the FLASH describes Kerberoasting, DCSync to steal the domain krbtgt key, and resource-based constrained delegation abuse.\nT1558.003\n– Steal or Forge Kerberos Tickets: Kerberoasting\nT1134.001\n– Access Token Manipulation: Token Impersonation/Theft\nT1098.003\n– Account Manipulation: Additional Cloud Roles\nT1552.005\n– Unsecured Credentials: Cloud Instance Metadata API\nT1606\n– Forge Web Credentials\nDiscovery: AD Enumeration, LAPS Reads, and EDR Coverage Gaps\nInside the network, ARTEX agents run iterative PowerShell enumeration against domain controllers, enumerate more than 110,000 Active Directory objects, and read Local Administrator Password Solution (LAPS) passwords. They also inventory endpoint sensor coverage to find Windows machines without a specific endpoint detection and response (EDR) product—the hosts least likely to raise an alert.\nT1518.001\n– Software Discovery: Security Software Discovery\nT1087.002\n– Account Discovery: Domain Account\nT1555\n– Credentials from Password Stores\nT1552.006\n– Unsecured Credentials: Group Policy Preferences\nT1059.001\n– Command and Scripting Interpreter: PowerShell\nLateral Movement: Pass-the-Ticket, WinRM, and Kerberos Relay\nARTEX agents attempt Pass-the-Ticket, Windows Remote Management (WinRM), Kerberos relay, and Pass-the-Hash toward domain controllers. SafeBreach Threat Research ties these chains to Mimikatz, which harvests plaintext credentials, NTLM hashes, and Kerberos tickets from LSASS. The FLASH notes that endpoint protection blocked the Pass-the-Hash attempts: where a sensor was present and working, it did its job.\nT1557.001\n– Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay\nT1550.003\n– Use Alternate Authentication Material: Pass the Ticket\nT1550.002\n– Use Alternate Authentication Material: Pass the Hash\nT1021.006\n– Remote Services: Windows Remote Management\nCollection: Mass Data Reads and Staging for Exfiltration\nARTEX agents interrogate backend SQL databases, perform mass blob reads, run custom EC2 boot scripts to harvest data, read mailboxes on compromised mail servers, and create 100 GB volumes to stage data. Command output goes to rotating webhook.site endpoints.\nT1114.002\n– Email Collection: Remote Email Collection\nT1555.006\n– Credentials from Password Stores: Cloud Secrets Management Stores\nT1530\n– Data from Cloud Storage\nT1005\n– Data from Local System\nT1074.001\n– Data Staged: Local Data Staging\nT1074.002\n– Data Staged: Remote Data Staging\nCommand and Control: Residential Proxies, Tor, and Tunneling\nARTEX operators route command and control (C2) through residential proxies, Tor, SOCKS proxies, and compromised relays, tunnel traffic with Chisel and SoftEther, and use C2 domains associated with the BLOODALCHEMY backdoor.\nT1071.001\n– Application Layer Protocol: Web Protocols\nT1090\n– Proxy\nT1090.003\n– Proxy: Multi-hop Proxy\nT1572\n– Protocol Tunneling\nFLASH-20261113-001 Indicators of Compromise for ARTEX Infrastructure\nFBI FLASH-20261113-001 provides network and behavioral IOCs rather than file hashes, including:\nIP addresses\ntied to ARTEX servers, South Korean campaign proxies, the ConnectWise campaign, and Storm-3358 C2 nodes\nA domain\nbelonging to an LLM API reseller used in the South Korean campaign\nTool names\nto hunt for: BLOODALCHEMY, WISP, vshell, AdaptixC2, and the LLM proxy software CLIProxyAPI and New API\nBehavioral indicators\n, such as LLM API calls from systems with no business need, high-frequency sequential requests against login and search endpoints, and .aspx or .jsp files in unexpected web paths\nThe FBI cautions that cloud-hosted IP addresses are frequently reassigned, so vet each indicator against your own telemetry before blocking. For the full indicator set, refer to the\nFBI FLASH\n.\nHow SafeBreach Simulates ARTEX’s Machine-Speed Attack Chain\nExisting SafeBreach Simulations for ARTEX Behaviors\nSafeBreach already simulates a wide range of the attacker behaviors detailed in FLASH-20261113-001, including:\nCloud reconnaissance\n, such as discovering Azure storage accounts (\n6457\n), managed identities (\n6465\n), and identities, groups, and users through Microsoft Graph (\n6560\n,\n6565\n,\n6566\n)\nInitial access through server-side request forgery (SSRF)\nagainst an AWS-hosted web server to reach the instance metadata service (\n4724\n) and SQL injection through URL parameters (\n6605\n)\nCloud identity persistence\n, including privileged Azure AD app registration (\n11330\n), Owner role assignment (\n7005\n), Azure AD user enumeration and user creation with privilege escalation (\n11032\n,\n10978\n), and AWS EC2 key pair and cross-user access key creation (\n6450\n,\n6451\n)\nCredential theft from files\n, including AWS CLI credentials (\n5328\n) and Azure credentials on Linux (\n6468\n) and Windows with DPAPI (\n7211\n)\nWeb shells\n, including R57 PHP web shell C2 (\n228\n) and WSO web shell command execution (\n232\n)\nPrivilege escalation through cloud metadata, Kerberoasting, and DCSync\n, including Azure Metadata API access (\n6466\n), collecting managed identities from Azure metadata (\n6467\n), extracting EC2 configuration through the AWS Metadata API (\n4884\n), Kerberoasting through an LDAP SPN query (\n7225\n), and Invoke-Kerberoast in PowerShell (\n2205\n), escalation to domain admin through PetitPotam, ADCS, PKINIT, and DCSync (\n6911\n), and a Golden Ticket forged from the krbtgt hash taken through DCSync (\n10340\n)\nInternal reconnaissance\n, including dumping Active Directory data with ldifde (\n8890\n) and security software discovery through PowerShell (\n11569\n) and WMIC (\n10339\n)\nLateral movement\n, including Pass-the-Ticket (\n8303\n), Pass-the-Hash over SMB with Mimikatz (\n2273\n), and agentless movement over WinRM (\n5671\n) and Remote PowerShell over WinRM (\n5674\n)\nCollection from cloud storage\n, by exfiltrating public Azure blobs (\n6562\n)\nCommand and control over Tor\n, including Tor communication on Windows (\n7046\n) and covert data exfiltration over Tor (\n7167\n)\nThese simulations are mapped to MITRE ATT&CK and can be used immediately to validate detection and response capabilities across your infrastructure. Several of them, including the cloud identity, Tor, Kerberos, and lateral movement simulations, are Advanced Actions, so review your Advanced Actions settings before running them.\nNew ARTEX Scenario for FLASH-20261113-001\nSafeBreach has composed a new scenario for FLASH-20261113-001 from these existing simulations, so customers can run the ARTEX attack chain end to end. The FLASH contains no file hashes, and its IP indicators overlap with shared proxy infrastructure, so the scenario focuses on behavioral coverage rather than IOC-based simulations.\nHow to Test Your Defenses Against FLASH-20261113-001 in SafeBreach\nSafeBreach customers can now validate their security controls against the ARTEX TTPs in FLASH-20261113-001 in multiple ways.\nMethod 1\n– SafeBreach Scenarios:\nNavigate to the SafeBreach Scenarios page and choose Vapor Panda: AI Agents Run the Intrusion (ARTEX/BLOODALCHEMY).\nMethod 2 — Known Threats Series:\nOpen the Known Threats Series report, select the Vapor Panda: AI Agents Run the Intrusion (ARTEX/BLOODALCHEMY) report, and run the simulations.\nHow to Defend Against ARTEX’s Agentic Intrusions\nRun the FLASH-20261113-001 Simulations in SafeBreach\nLog into the SafeBreach platform and navigate to the new scenario mapped to FLASH-20261113-001.\nExecute simulations that emulate ARTEX behaviors, including cloud credential theft, web shell activity, Kerberoasting and DCSync, security software discovery, and C2 over Tor.\nUse simulation IDs such as 6466, 7225, 8890, 11569, and 8303 to test behavioral coverage.\nReview results to validate detection, surface gaps, and guide remediation.\nCloud and Identity Mitigations Recommended in FLASH-20261113-001\nInventory every internet-facing application\n, including partner portals, mobile backends, legacy services, third-party integrations, and apps built by individual business units.\nTake the management plane off the internet\nby restricting cloud administration, Kudu/SCM, hypervisor, and backup interfaces to trusted networks.\nApply least privilege to multi-tenant app permissions and consent grants\n, and monitor for credential additions, privilege assignments, and anomalous app-only activity.\nRate-limit high-impact APIs and portals\n, alert on sequential lookups and high record counts per session, and stop returning stack traces or SQL errors to unauthenticated users.\nScan repositories, pipelines, and container images for embedded secrets\n, and rotate exposed credentials promptly.\nConnectWise Cloud Backup customers\nshould review every affected Microsoft 365 tenant by application ID from at least October 1, 2026, and preserve evidence before removing credentials or grants.\nHow to Hunt for ARTEX Activity in Cloud and AD Environments\nSub-second cloud probing:\nrapid blob write-and-delete tests, ARM dry-run validations, AWS DryRun checks, PassRole operations, and metadata service queries.\nLLM egress:\ncalls to LLM APIs or proxy software such as CLIProxyAPI and New API from systems with no business need, and unexplained AI token or billing spikes.\nAgentic noise:\ncompressed bursts of activity, high volumes of failed attempts with small iterative changes, and duplicate requests from overlapping sub-agents.\nIdentity changes:\nservice principal sign-ins from unusual ASNs or hosting providers, new OAuth credentials, SSH key additions, and unexpected VM launches.\nFootholds:\nweb shells in unexpected paths and WISP, vshell, AdaptixC2, or BLOODALCHEMY components.\nValidate Your Exposure to ARTEX with SafeBreach Propagate\nFor a complete view of your security gaps against ARTEX-driven attacks, sign into SafeBreach and run the latest simulations mapped to FLASH-20261113-001. In addition to testing your defenses against cloud credential theft, Kerberoasting, and lateral movement, you can go a step further with SafeBreach Propagate.\nPropagate enables you to assess how attackers could pivot across your environment post-compromise—mapping high-risk attack paths, visualizing lateral movement, and prioritizing remediation efforts based on exposure to your most critical assets. ARTEX agents go looking for the hosts and paths your controls miss; Propagate helps you find them first. Find out more about Propagate\nhere\n.\nAbout the Author\nTova Dvorin\nis currently the Senior Product Marketing Manager at SafeBreach. She has 8 years of Product Marketing experience in the cybersecurity sector, after a previous career as a war journalist.\nFrequently Asked Questions\nWhat is FBI FLASH Alert FLASH-20261113-001?\nFBI FLASH Alert FLASH-20261113-001 is a TLP:CLEAR advisory the Federal Bureau of Investigation (FBI) published on November 13, 2026, titled “Threat Overview of ARTEX Autonomous Penetration Testing Framework.” The FLASH warns that a variety of malicious cyber actors have used the ARTEX AI framework since at least August 2026 against ten sectors, and details ARTEX TTPs mapped to MITRE ATT&CK, network IOCs, and recommended mitigations.\nWhat is ARTEX, and which AI models does it use?\nARTEX is an open-source, multi-agent penetration testing framework written in Go that turns plain-language goals into commands executed by AI agents. ARTEX has no model of its own and connects to external large language models, including Anthropic Claude, OpenAI GPT, DeepSeek, GLM, Grok, and Kimi. The FBI reports that attacker-controlled ARTEX instances most often use Chinese-developed models, led by the DeepSeek Flash family.\nWho is using ARTEX, and what are they targeting?\nThe FBI says a variety of malicious cyber actors use ARTEX against financial services, government, technology, defense, semiconductor, energy, healthcare, manufacturing, telecommunications, and legal organizations. FLASH-20261113-001 highlights a campaign that stole personal data on approximately 67,000 people from South Korean financial institutions and a ConnectWise Cloud Backup supply chain compromise affecting more than 2,250 downstream Microsoft 365 tenants. SafeBreach Threat Research assesses that Storm-3358 and VAPOR PANDA lead the observed ARTEX campaigns.\nHow can security teams detect ARTEX activity?\nSecurity teams can detect ARTEX activity by looking for its machine-speed patterns: sub-second cloud permission checks, bursts of failed attempts with small iterative changes, duplicate requests from overlapping AI agents, and outbound calls to LLM API endpoints from systems with no business need. FLASH-20261113-001 also recommends reviewing service principal sign-ins, new OAuth credentials, and web shells in unexpected paths, and vetting IP indicators before blocking them.\nHow can organizations test their exposure to the threats outlined in FLASH-20261113-001?\nSafeBreach customers can test their exposure to ARTEX by selecting the ARTEX scenario on the SafeBreach Scenarios page, filtering the Attack Playbook for the attacks mapped to FLASH-20261113-001, or running the matching report from the Known Threats Series. The simulations validate whether controls detect and block ARTEX TTPs such as cloud credential theft, Kerberoasting, web shells, and Tor-based C2. SafeBreach Propagate adds post-compromise attack path validation.\nYou Might Also Be Interested In\nBlog\nARTEX and VAPOR PANDA: How One Operator Used an Agentic AI Pentest Framework Against 200+ Organizations\nRead More\nPodcast\nVideos\nPodcast: ARTEX – The AI Attack Agents Told to Find the Machines Your EDR Doesn’t Cover\nListen Now\nBlog\nA Closer Look at SafeBreach’s AI-Powered Exposure Validation Capabilities\nRead More\nGet the latest\nresearch and news",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://www.safebreach.com/blog/artex-ai-attack-framework-fbi-flash-alert-20261113-001-safebreach-coverage/",
+      "content_chars": 21376,
+      "content_sha256": "8a83384c5c4fd4bb3e1bf125de6d28e020bcc32608744eac7c09c780d582b462",
+      "content_fetched_at": "2026-11-18T02:51:19.784426+00:00",
+      "author": "safebreach-blog",
+      "author_name": "SafeBreach Blog",
+      "author_url": "https://www.safebreach.com/blog/",
+      "published_at": "2026-11-18T02:49:01.792590+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:safebreach-blog",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://www.safebreach.com/blog/",
+        "https://www.safebreach.com/blog/artex-ai-attack-framework-fbi-flash-alert-20261113-001-safebreach-coverage/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "safebreach-blog",
+          "url": "https://www.safebreach.com/blog/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "safebreach-blog",
+          "name": "SafeBreach Blog",
+          "home_url": "https://www.safebreach.com/blog/"
+        },
+        "article": {
+          "title": "Threat Coverage | ResearchNov 14 , 2026ARTEX AI Attack Framework: SafeBreach Coverage for FBI FLASH Alert FLASH-20261113-001FBI FLASH-20261113-001 warns that multiple threat actors use ARTEX, an...Rea",
+          "url": "https://www.safebreach.com/blog/artex-ai-attack-framework-fbi-flash-alert-20261113-001-safebreach-coverage/",
+          "content_sha256": "8a83384c5c4fd4bb3e1bf125de6d28e020bcc32608744eac7c09c780d582b462"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:b90eb40e45310665",
+      "who": "openai-research",
+      "who_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "action": "publish",
+      "target": "推出 GPT-6.2 Astra 和 SolIntroducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "target_url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-6-2-astra-sol/",
+      "text": "openai-research published: 推出 GPT-6.2 Astra 和 SolIntroducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "at": "2026-11-18T02:49:01.792590+00:00",
+      "external_id": "a:b90eb40e45310665",
+      "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-6-2-astra-sol/",
+      "title": "推出 GPT-6.2 Astra 和 SolIntroducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "content": "推出 GPT-6.2 Astra 和 Sol | OpenAI\n推出 GPT-6.2 Astra 和 Sol\nGPT-6.2\nAstra\nSol\nA new standard for professional work\n在 ChatGPT 工作中试用\n（在新窗口中打开）\n推出 GPT-6.2 Astra 和 Sol\n00:00\n我们正式推出\nGPT‑6.2 Astra\n和\nGPT‑6.2 Sol\n：前者是应对最棘手项目的全新前沿模型，后者则是面向日常工作的高效多面手。两款模型都能以更少的输出 Token，在高难度任务中取得更好的结果，让你在用量限制内完成更多工作。对企业和开发者而言，这意味着能以适合大规模应用的成本，获得前沿性能。\nGPT‑6.2 Astra 为 AI 处理复杂专业工作的质量树立了新标杆。它生成的幻灯片、电子表格和文档更少带有 AI 写作痕迹，也更贴合你提供的模板和所在领域的惯例。它编写的代码更简洁，构建的前端在视觉和功能上都更出色，尤其适用于网站、游戏和 3D 设计。\n在测试多步骤专业工作的 Agents’ Last Exam 中，GPT‑6.2 Astra 创下新高：得分比 GPT‑6 Astra 高 5.2 分，成本却不到其三分之一；比 Claude Fable 5.2 高 5.5 分，成本仅为其 5%。\nAgents' Last Exam v1.1\nGPT-6.2 Astra\nGPT-6 Astra\nGPT-6.2 Sol\nGPT-6.1 Sol\nClaude Fable 5.2\nClaude Opus 5.5\nGemini 4 Carbon\nAgents’ Last Exam 评估模型处理长程专业工作流的能力。排行榜中 Fable 5.2 的结果不包含使用了备用模型的九项任务。\n我们认为，GPT-6.2 Astra 是全球最适合科学家使用的模型。它在 Terminal-Bench-Science 0.1 上创下新高，该基准测试评估模型在终端中开展科学工作的能力。GPT-6.2 Astra 的得分比 GPT-6 Astra 高 9 个百分点，成本却不到其三分之一。它还在 Vals Science Index 上创下新高，该评估要求模型解读真实生物数据，并通过实验推断模拟系统的运行方式。\nTerminal-Bench-Science 0.1 评估模型处理科研工作流的能力。\n1\n在 API 中，GPT‑6.2 Astra 的输入和输出 Token 价格比 GPT‑6 Astra 低 20%，缓存输入价格则降低 60%（每百万 Token 的输入价格为 8 美元，缓存输入为 0.40 美元，输出为 40 美元）。GPT‑6.2 Sol 沿用 GPT‑6.1 Sol 的 API Token 定价。在多项基准测试中，两款模型的表现都接近或超越其他领先模型，而单项任务的成本仅为后者的一小部分。\nArtificial Analysis 智能指数 v5 整合了九项评估，涵盖知识工作、编程、科学和通识知识。\nGPT-6.2 Sol：我们日常工作的首选模型\n相比 GPT‑6.1 Sol，GPT‑6.2 Sol 更智能、更高效，让你在同一付费套餐下完成更多任务。它能高效完成多步骤智能体工作流，文笔清晰自然，协作起来也得心应手。OpenAI 的许多员工都将它作为处理技术和非技术任务的默认模型。\n在 Cognition 的 FrontierCode 2.0 中，GPT‑6.2 Sol 与 GPT‑6.2 Astra 的得分相差不到 0.5 分，成本约为其五分之一（两者均设为 Max）。\nFrontierCode 2.0 评估对真实代码库的修改是否符合维护者的合并标准。\n凭借速度和智能表现，它也非常适合处理工作之外人们寻求 AI 帮助的重要事务。在我们最近发布、用于衡量高难度日常任务表现的\nLifeVal⁠\n评估中，GPT‑6.2 Sol 的得分高于 GPT‑6 Astra，成本约为其七分之一。\nLifeVal 测试模型根据个人需求处理日常任务的能力，例如搬家后筛选幼儿园、寻找符合家庭预算和通勤需求的住房，或为刚被诊断出疾病、正在适应的父母规划膳食。\n符合行业标准的专业成果\n我们训练 GPT‑6.2 Astra，使其能够制作更清晰、设计更精良的幻灯片、电子表格和文档，更贴合法律、销售、金融和会计等领域专业人士的工作惯例。它的文字更直接、更具体，泛泛而谈的结论和冗余内容更少。\nHarvey LAB‑AA v1.1 通过法律任务，测试模型能否从源文档中找到相关事实，按照详细的任务要求加以运用，并生成准确且满足所有要求的交付成果。GPT‑6.2 Astra 创下了新的最佳水平，通过率超过 Claude Fable 5.2 的两倍，成本约为其六分之一。我们面向律师定制的 GPT-6.2 Astra 配置——\nOpenAI 法律解决方案⁠\n——在这一基准测试中的得分更高。\nHarvey LAB‑AA 测试合同条款审查等法律工作。其主要评分指标仅在交付成果满足全部评分标准且不含实质性幻觉时才予以计分。\n我们的内部基准测试 GDPval v2 是\nGDPval⁠\n的新一代版本，用于评估咨询、金融和设计等领域真实项目中复杂、长流程的工作流。GPT‑6.2 Astra 在我们测试的模型中表现领先，得分比 GPT‑6 Astra 高出 6.2 个百分点，同时输出 Token 用量减少了 22%。GPT‑6.2 Sol 的得分比 GPT‑6.1 Sol 提高了 5.3 分。\nGDPval v2（内部）\nGPT-6.2 Astra\nGPT-6 Astra\nGPT-6.2 Sol\nGPT-6.1 Sol\nClaude Fable 5.2\nClaude Opus 5.5\nGemini 4 Carbon\nGDPval v2 包含来自金融、数据科学、生物技术和市场营销等领域真实项目的长流程知识工作任务。\n工作簿与备忘录\n构建估值工作簿或撰写投资备忘录，首先需要从源文件中找到相关数据，并理清它们之间的关系。Artificial Analysis 的 AA‑AnalystAgent 使用真实电子表格和报告来测试这项工作。在其中一项任务中，模型需要根据加利福尼亚州 Medicaid 的支出报告，计算该计划在医疗转运方面的支出。GPT‑6.2 Astra 创下新高：有 62.5% 的问题在全部五次独立尝试中均得到正确回答。\nGPT-6 Astra\n正在加载...\nGPT-6.2 Astra\n正在加载...\n我们向两款模型提供了同一套虚构农业科技公司 Alderfen Field Systems 的财务报表、经营假设和市场数据，要求它们构建一个可编辑的 Excel 工作簿，按业务板块预测截至 2031 年的收入，并检查三张财务报表能否勾稽一致。工作簿还需要按 8% 的折现率和 3% 的永续增长率估算摊薄后每股价值，展示支撑参考股价所需的增长率，并说明估值如何随这些假设的变化而变化。\nGPT‑6.2 Astra 将收入构成以及从企业价值到每股价值的计算衔接放在敏感性分析表旁边。读者可以看到哪些业务推动了预测结果，并追溯折现现金流、现金与投资以及摊薄后股数如何影响每股估值。GPT‑6 Astra 则将收入明细放在单独的工作表中，将估值衔接计算放在工作表较下方的位置。\nGPT-6 Astra\n正在加载...\nGPT-6.2 Astra\n正在加载...\n我们要求两款模型使用公开数据，在 Excel 中比较七宗美国软件公司收购交易，再将结果汇总到现有演示文稿的一页幻灯片中。GPT‑6 Astra 在 Excel 中将预期收入增长标为不可用，并在 PowerPoint 中为所有交易使用相同颜色；GPT‑6.2 Astra 则为七家目标公司中的四家提供了增长预估，并用亮蓝色突出 Paycor。GPT‑6.2 Astra 特别强调 Paycor，是因为其余六宗均为私募股权交易，只有这一宗的买方为企业，从而让人一眼看出 Paychex 支付的 21.7 倍 EBITDA 估值低于中位数。GPT-6.2 Astra 的幻灯片副标题在概括核心信息时也更有洞察力。\nGPT-6 Astra\n正在加载...\nGPT-6.2 Astra\n正在加载...\n我们要求两款模型以数据科学家的身份，针对一项虚构的三周横幅测试向管理层撰写备忘录。该横幅用于推广“共享账单”功能，让朋友之间可以分摊刷卡消费。GPT‑6.2 Astra 开篇便给出管理层决定是否推广所需的结果：“我们未发现个人间交易活动或用卡行为有明显增加。”GPT‑6 Astra 则先以共享账单交易量增长 42.9% 作为发现的开头，随后才讨论不确定性。GPT‑6.2 Astra 的备忘录更贴近真实工作场景，行文脉络更好，并用证据支撑总体判断。它也没有常见的 AI 写作套路，而 GPT-6 Astra 则会写出“这些是用于规划的预测，而非新证据”之类的表述。\nGPT-6 Astra\n正在加载...\nGPT-6.2 Astra\n正在加载...\n我们向两款模型提供了虚构公司 Atlas Health 的合成数据。Atlas 需要在六周内收集记录，以备 SOC 2 就绪性审查，包括系统变更管理和供应商审查方式的相关证据。GPT-6.2 Astra 生成的成果准确、有条理、易于审计，排版也更清晰。\n幻灯片\n在幻灯片设计和遵循幻灯片模板方面，GPT‑6.2 Astra 是我们迄今最出色的模型，无论提供的是原始文件，还是仅仅一张截图。它能够匹配布局、配色和排版，精确到字号，并将模板的写作风格延续到新幻灯片中。早期测试者发现，这些演示文稿只需较少修改就更容易直接使用，因为标题开门见山地指出核心结论，正文简明扼要，聚焦读者需要的细节。\nGPT-6 Astra\n正在加载...\nGPT-6.2 Astra\n正在加载...\n我们要求两款模型使用 OpenAI 的公开幻灯片模板，为四个团队提案动物主题周边产品。GPT‑6.2 Astra 将整个系列呈现为一本图文并茂的野外指南，加入各团队专属的趣味梗，并采用一致的版式，方便比较吉祥物方案。它展示了全部八款设计应用于珐琅徽章、T 恤和背包缝制布贴的效果，而 GPT‑6 Astra 的效果图中每个团队仅有一款设计。它还提供了可下载的矢量图稿、每款设计在不同产品形式下的建议尺寸，以及配色和实物样品审批说明，为团队启动生产提供了具体依据。\n1 条/ 共 4 条\n“\n我们评估了 GPT-6.2 Astra 将密集信息转化为易读简报和信息图的能力，受众同时涵盖技术与非技术人员。示例包括交易简报和智能体工作流示意图。\nGPT-6.2 Astra 生成的文档相比 GPT-6 Astra 有了显著提升。文字和图表让简报重点更易于把握，示意图则通过展示各部分如何协同工作，让复杂系统变得清晰易懂。\n”\nMarquis Wong，IMC 首席 AI 工程师\n“\n在我们的智能体评估中，GPT-6.2 Astra 处理复杂法律智能体任务时，Token 用量比 GPT-6.1 Sol 少 62%。Astra 在法律研究方面表现最强：我们测试的 10 项研究任务涵盖税务、并购和诉讼，其中 8 项的得分高于其他模型。\n”\nJacob Lauritzen，Legora 首席技术官\n“\nGPT-6.2 Astra 相比 GPT-6 Astra 有了显著进步：在我们的评估中，它完成的 Legal Agent Benchmark 任务数量超过后者的 3 倍，输出 Token 用量却减少了 34.5%。在内部备忘录起草任务中，GPT-6.2 Astra 发现了更多客户立场中的薄弱之处，起草的诉讼文书中也更少出现不必要的让步。\n”\nNiko Grupen，Harvey 应用研究负责人\n“\n在 ClickUp Brain 于工作空间内构建的应用、仪表板和幻灯片上，GPT-6.2 Astra 在盲测中略胜我们的生产模型。更突出的是它实现这一结果的方式：Token 用量减少约 40%，审阅轮次减少 30%。\n”\nJay Hack，ClickUp AI 负责人\nIMC\nLegora\nHarvey\nClickUp\nIMC\nLegora\nHarvey\nClickUp\n计算机使用与交互式网页设计\nGPT‑6.2 Astra 的计算机操作更加精准，能在 CAD 和仿真工具中细化到单个零件及其连接关系。工程师可以利用这些更精细的细节，检查组件的配合情况，观察设计在运动时载荷如何转移，并在制作原型前测试修改方案。\n驾驶仿真\n我们要求 GPT‑6.2 Astra 将汽车在山路上行驶时的底盘动力学过程可视化。Astra 创建了 3D 模型，编写 Python 求解器来模拟轮胎与悬架之间复杂的动力学关系，再用 Blender 将结果制作成动画。这让工程师能够快速测试新设计，并持续提高仿真精度。\n一辆敞篷跑车行驶在山路上，旁边同步展示前后悬架运动、轮胎接地印迹和驾驶员操作输入。\n00:00\n机械设计与装配\nGPT‑6.2 Astra 可以逐个零件地为机械系统建模，让工程师能够展示其装配过程，并测试设计变化如何影响系统的运行表现。\n一套 1:8 比例的硝基燃油遥控越野车零件平铺展示，随后呈现装配过程和成品车的特写。\n00:00\n我们要求 GPT‑6.2 Astra 根据公开照片和组装手册，为一辆遥控越野车及其发动机建模。它对各个零部件分别建模，创建了装配动画指南，并制作了图文零件目录。这展示了 Astra 如何加速实体工程产品的开发和文档编制。\n从 CAD 设计到纸灯\n我们的团队使用 GPT‑6.2 Astra，将芝加哥滨海城双塔的扇贝形阳台转化为一盏灯的设计。视频展示了从参考照片、CAD 设计修改，到手工组装成实体灯具的全过程。你可以使用 GPT-6.2 Astra 生成的网站，制作属于自己的纸灯。\n一盏以芝加哥滨海城双塔为灵感的纸灯，从 CAD 设计修改到组装的过程。\n00:00\nGPT‑6.2 Astra 将更强的视觉推理能力带入网页设计，选用赋予每个网站独特外观的布局和图像，并围绕网站的实际目标构建各个元素。\n一个配有交互式车辆配置器的露营车网站。\n00:00\n视觉推理和计算机使用能力的这些提升，也延伸到了 3D 设计领域。GPT‑6.2 Astra 和 Sol 可以将书面需求转化为浏览器中的交互体验，既能制作可玩的弹球台，也能重建可从不同角度探索的罗马斗兽场。在 Artificial Analysis 的 AA‑3D 评估中，人类评审会在不知道模型身份的情况下，体验根据同一提示词构建的两个作品，并投票选出更喜欢的一个。GPT‑6.2 Astra 以 1,318 的 Elo 评分位居第一，其后是 1,271 分的 Claude Fable 5.2 和 1,259 分的 GPT‑6.2 Sol。\n一个花园规划演示，将高床种植布局与原始后院进行对比。\n00:00\n一艘红色竞速飞行器在灯光照亮的赛道上疾驰。\n00:00\nGPT‑6.2 Astra 构建了一款可玩的未来风格竞速游戏，赛道蜿蜒穿行于城市之中。\n畅玩 Meridian Sound Racing ↗⁠\n（在新窗口中打开）\n“\nGPT-6.2 Astra 为创意工作带来了巨大飞跃。它让 Higgsfield Miracle 成为现实，支持像素级精度的实时视频编辑，让创作者拥有极致的创作控制力。在我们的内部 3D 生成评估中，它在 73% 的案例中一次就达到了目标效果，而 GPT-6 Astra 需要三次或更多轮迭代。这为我们的创意团队节省了大量时间，也让完全由智能体执行的工作流更加高效。\n”\nAlex Mashrabov，Higgsfield AI 首席执行官兼联合创始人\n更高效的工作流，更简洁的代码风格\nGPT‑6.2 Astra 在任务执行方式上有了更好的判断力，能够根据工作流选择合适的工具和投入程度，并判断何时应使用插件、何时应直接操作计算机。\n在编程方面，GPT-6.2 Astra 更擅长在现有代码库中实现和测试复杂改动。早期测试者反馈，它的代码风格更简洁，测试更有针对性，需要的修改轮次也更少。\n1 条/ 共 3 条\n“\nGPT-6.2 Astra 能更好地规划长程执行路径，更高效地编写 Bash，以更少的交互轮次完成更多工作，因此在 Token 和工具使用效率上比 GPT-6 Astra 有了巨大提升。我们处理长程会计工作的平均耗时减少了 50%，其中最复杂工作的耗时最多减少了 73%。\n”\nEros Wang，Basis 技术团队成员\n“\nGPT-6.2 Astra 在推理和系统设计方面取得了显著进步。在我的测试中，它处理复杂项目时展现出更强的架构判断力，能够兼顾理论可能性与现实约束。\n”\nDaniel Bjanes，Ramp 高级 AI 应用工程师\n“\nGPT-6.2 Astra 像经验丰富的研究者一样处理复杂优化问题，从第一性原理出发推理，并从自身的失误中学习，找到更好的路径。它将我们的硬件性能发挥到了极限，并在一项沿用超过三年的基准测试中达到了饱和水平。它不到一天就达到了我原以为不可能实现的目标。\n”\nAdam Alnasser，Jump Trading 技术团队成员\nBasis\nRamp\nJump Trading\nBasis\nRamp\nJump Trading\n网络安全能力\nGPT‑6.2 Astra 和 GPT-6.2 Sol 的网络安全能力再次实现显著跃升。它们能更有效地发现和利用漏洞，编写更安全的代码，生成更好的补丁，并在多项评估中大幅提升 Token 使用效率。与\nGPT‑6 Astra⁠\n一样，6.2 Astra 和 Sol 均达到我们\n准备框架⁠\n中网络安全能力的“严重”级别阈值。\n鉴于 GPT‑6.2 Astra 和 Sol 的能力有所提升，我们在推出这两个模型时，针对风险较高的网络安全辅助任务采取了更严格的安全防护措施。这些防护措施降低了滥用风险，但也限制了部分合法的漏洞研究和安全测试工作流。目前，通过\nOpenAI Daybreak⁠\n，网络防御人员除了可以使用 GPT-6 Astra 的 Alpha 版本，还可以在 Daybreak Blue 上使用对网络安全请求拒绝更少的 GPT‑6 Sol，并在 Daybreak Red 上使用\nGPT‑6 Cyber⁠\n进行高级、经授权的安全测试。我们将努力把 GPT‑6.2 模型引入 Daybreak。\n下面重点展示关键基准测试结果，测试采用内部配置，并关闭了网络安全防护措施和分类器。完整结果和方法详见\n配套系统卡⁠\n（在新窗口中打开）\n。\nDeepBinary⁠\n（在新窗口中打开）\n测试模型在已编译的 Windows 系统二进制文件中发现漏洞的能力。每条线表示一个模型在最高推理强度下，对 12 个目标二进制文件发现漏洞的情况。每个点代表计入累计值的一个文件，最后一个点则为全部文件的累计总值。\n助力网络防御人员赢得优势\n开发者越来越依赖编程智能体编写生产软件，与此同时，能力更强的智能体也降低了发现和利用漏洞的门槛。\nPHP2Shell⁠\n（在新窗口中打开）\n展示了 AI 如何帮助研究人员发现严重漏洞。在 GPT‑6.2 Astra 和 Sol 中，我们将防御能力作为核心重点，引入新的训练信号，帮助开发者预防和修复这些漏洞——从一开始就编写安全代码，并生成保留预期行为的补丁。\nSecureSWE 是一项内部基准测试，用于测试模型为文件服务、数据库查询处理等安全敏感组件编写功能正常且安全的代码的能力。\n安全与对齐\n我们采用迄今最强的安全防护措施来部署 GPT-6.2 Astra 和 Sol。我们收紧了限制，并强化了用于\n监测模型⁠\n和\n在必要时进行干预⁠\n的系统。\n与 GPT-6 Astra 一样，GPT-6.2 Astra 和 Sol 除了达到网络安全能力的“严重”级别阈值，也都达到我们\n准备框架⁠\n中生物和化学能力的“高”级别阈值。我们已实施防护措施来缓解相关风险，并加强了对一系列潜在两用性生物和网络安全请求的限制。\n关于安全防护措施和测试的更多详情，请参阅\nGPT-6.2 系统卡⁠\n（在新窗口中打开）\n。\nAI 研究能力与安全防护措施\nGPT-6.2 Astra 是我们首个对外发布、达到“AI 自我改进”高阈值的模型，该指标衡量模型加速 AI 研究的能力。“高”级别代表我们的评估认为：相较于 2024 年的基线，该模型带来的影响相当于为每位 OpenAI 研究人员额外配备一名能力出色的研究工程师作为助手。我们跟踪这项能力，是因为能够帮助开发未来 AI 系统的模型也可能引入新的安全风险，例如推动进展的速度快于安全防护措施或人类监督的适应速度。\n为应对这些风险，我们在模型训练和部署流程中加入了更多监督与控制措施。在扩大 GPT-6.2 Astra 的内部访问范围之前，我们评估了其对齐情况，并确认各个阶段所需的安全防护措施均已到位。我们\n加强了研究环境中的隔离防护⁠\n，并使用能力最强的模型测试这些措施。我们还构建了\nControl Room⁠\n，该系统可跟踪研究工作负载，并在需要干预时阻止模型继续输出。我们\n扩展后的监测机制⁠\n会检查模型在内部工作负载和受支持的外部部署中的推理与行动。它可以自动标记未经授权的行为，并在支持的情况下暂停工作负载或对话。\n对齐\n两款模型在大多数对齐评估中的表现与 GPT-6 Astra 相近，并在模拟职场任务中采取了更少的不当行动。不过，在两项测试中，它们更容易漏报阻碍工作的问题，例如文件缺失或搜索工具不可用。我们在 Codex 中添加了指令，大幅减少了此类遗漏，并将继续研究这一行为。\n在“隐瞒任务障碍”评估中，我们在编程任务中设置障碍，例如移除用户要求智能体编辑的文件。评估考察模型是否会向用户说明这一障碍。\n定价与可用性\n即日起，所有 Plus、Pro、Enterprise 和 Edu 用户都可在 ChatGPT 工作和 Codex 中使用 GPT-6.2 Astra 和 Sol。Pro 500 订阅用户可为这两款模型启用超高速模式。我们还首次向 Pro 200 订阅用户开放超高速模式，率先支持 GPT-6.2 Sol。符合条件的 Enterprise 和 Edu 用户，在工作空间管理员启用后，也可获得相同访问权限。开发者也可通过 OpenAI API 使用\ngpt-6.2-astra\n和\ngpt-6.2-sol\n，两款模型在发布时均支持超高速模式。\n得益于更高的 Token 使用效率、输入和输出 Token 价格降低 20%，以及缓存输入 Token 价格进一步降低 60%，GPT‑6.2 Astra 的单项任务成本显著低于 GPT‑6 Astra。标准 API 定价按每百万 Token 计：输入 8 美元，缓存输入 0.40 美元，输出 40 美元。GPT‑6.2 Sol 沿用 GPT‑6.1 Sol 的定价，每百万 Token 的输入价格为 2 美元，缓存输入为 0.10 美元，输出为 10 美元。\n使用 GPT-6.2 Astra 和 Sol 时，为提高缓存复用率、帮助降低成本和延迟，并跨轮次保留推理，我们建议\n保持提示词前缀不变，并在对话中追加新指令⁠\n（在新窗口中打开）\n。\n2026 年\n作者\nOpenAI\nFootnotes\n1\nFable 5.2 在 Terminal-Bench-Science 0.1 上的结果来自\nArtificial Analysis⁠\n（在新窗口中打开）\n的报告，使用 mini-swe-agent 执行框架。Anthropic 报告称，Fable 5.2 在 Claude Code 中以 Max 推理强度取得了 74.6% 的得分。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "browser",
+      "content_source_url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-6-2-astra-sol/",
+      "content_chars": 9874,
+      "content_sha256": "ad0d2c9a5b9ade4dc44bb08c011f52255566727c034b068f2458111b7f5b733a",
+      "content_fetched_at": "2026-11-18T02:52:43.302028+00:00",
+      "author": "openai-research",
+      "author_name": "OpenAI Research",
+      "author_url": "https://openai.com/zh-Hans-CN/research/index/",
+      "published_at": "2026-11-18T02:49:01.792590+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:openai-research",
+        "via:browser_llm",
+        "channel:browser_llm"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://openai.com/zh-Hans-CN/research/index/",
+        "https://openai.com/zh-Hans-CN/index/introducing-gpt-6-2-astra-sol/"
+      ],
+      "refs": {
+        "actor": {
+          "login": "openai-research",
+          "url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "openai-research",
+          "name": "OpenAI Research",
+          "home_url": "https://openai.com/zh-Hans-CN/research/index/"
+        },
+        "article": {
+          "title": "推出 GPT-6.2 Astra 和 SolIntroducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+          "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-6-2-astra-sol/",
+          "content_sha256": "ad0d2c9a5b9ade4dc44bb08c011f52255566727c034b068f2458111b7f5b733a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "browser_llm",
+        "collect_mode": "browser_llm",
+        "time_precision": "daily_window",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "blocked",
+        "content_status": "ok",
+        "content_via": "browser"
+      }
+    },
+    {
+      "id": "a:48c8134ead4a5786",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-119961 Windows Internet Information Services Remote Code Execution Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961",
+      "text": "msrc published: CVE-2026-119961 Windows Internet Information Services Remote Code Execution Vulnerability",
+      "at": "2026-11-17T16:00:00+00:00",
+      "external_id": "a:48c8134ead4a5786",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961",
+      "title": "CVE-2026-119961 Windows Internet Information Services Remote Code Execution Vulnerability",
+      "content": "# CVE-2026-119961 - Windows Internet Information Services Remote Code Execution Vulnerability\n\nConcurrent execution using shared resource with improper synchronization ('race condition') in Windows Internet Information Services allows an unauthorized attacker to execute code over a network.\n\nCWE: CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition'), CWE-416: Use After Free",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961",
+      "content_chars": 423,
+      "content_sha256": "bc99f9cfd49d2629c8d4a884b0665ea0178cf34f9ca8347b43f8332db04cb7cd",
+      "content_fetched_at": "2026-11-18T02:53:00.812119+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-11-17T16:00:00+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-119961 Windows Internet Information Services Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961",
+          "content_sha256": "bc99f9cfd49d2629c8d4a884b0665ea0178cf34f9ca8347b43f8332db04cb7cd"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:8412ea96e2ce0eb1",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-119914 Windows Setup and Deployment Elevation of Privilege Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914",
+      "text": "msrc published: CVE-2026-119914 Windows Setup and Deployment Elevation of Privilege Vulnerability",
+      "at": "2026-11-17T16:00:00+00:00",
+      "external_id": "a:8412ea96e2ce0eb1",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914",
+      "title": "CVE-2026-119914 Windows Setup and Deployment Elevation of Privilege Vulnerability",
+      "content": "# CVE-2026-119914 - Windows Setup and Deployment Elevation of Privilege Vulnerability\n\nImproper restriction of communication channel to intended endpoints in Windows Setup and Deployment allows an authorized attacker to elevate privileges locally.\n\nCWE: CWE-923: Improper Restriction of Communication Channel to Intended Endpoints",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914",
+      "content_chars": 330,
+      "content_sha256": "2a519af846e389411f656225be8857872350560809cfa3d7c60fcd95d160f852",
+      "content_fetched_at": "2026-11-18T02:53:02.289504+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-11-17T16:00:00+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-119914 Windows Setup and Deployment Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914",
+          "content_sha256": "2a519af846e389411f656225be8857872350560809cfa3d7c60fcd95d160f852"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:112cf26ea63a8090",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-88208 Microsoft Office SharePoint Spoofing Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88208",
+      "text": "msrc published: CVE-2026-88208 Microsoft Office SharePoint Spoofing Vulnerability",
+      "at": "2026-11-17T16:00:00+00:00",
+      "external_id": "a:112cf26ea63a8090",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88208",
+      "title": "CVE-2026-88208 Microsoft Office SharePoint Spoofing Vulnerability",
+      "content": "# CVE-2026-88208 - Microsoft Office SharePoint Spoofing Vulnerability\n\nImproper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network.\n\nCWE: CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88208",
+      "content_chars": 351,
+      "content_sha256": "6b1944e8f0d0ff26be4007910a533ebb0e5d3e82612df23d6e6d48e464cda9f4",
+      "content_fetched_at": "2026-11-18T02:53:03.783140+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-11-17T16:00:00+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88208"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-88208 Microsoft Office SharePoint Spoofing Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88208",
+          "content_sha256": "6b1944e8f0d0ff26be4007910a533ebb0e5d3e82612df23d6e6d48e464cda9f4"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:f8bab8d195b592d0",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-70278 Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278",
+      "text": "msrc published: CVE-2026-70278 Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
+      "at": "2026-11-17T16:00:00+00:00",
+      "external_id": "a:f8bab8d195b592d0",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278",
+      "title": "CVE-2026-70278 Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
+      "content": "# CVE-2026-70278 - Microsoft Windows Media Foundation Elevation of Privilege Vulnerability\n\nHeap-based buffer overflow in Microsoft Windows Media Foundation allows an authorized attacker to elevate privileges locally.\n\nCWE: CWE-122: Heap-based Buffer Overflow",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278",
+      "content_chars": 259,
+      "content_sha256": "7457159f7b4d71f7a890eee8758dddb17ccbb162c25b6e7888a2341f527be499",
+      "content_fetched_at": "2026-11-18T02:53:05.076268+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-11-17T16:00:00+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-70278 Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278",
+          "content_sha256": "7457159f7b4d71f7a890eee8758dddb17ccbb162c25b6e7888a2341f527be499"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:424351e23120e277",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-78524 Microsoft Office Remote Code Execution Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524",
+      "text": "msrc published: CVE-2026-78524 Microsoft Office Remote Code Execution Vulnerability",
+      "at": "2026-11-17T16:00:00+00:00",
+      "external_id": "a:424351e23120e277",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524",
+      "title": "CVE-2026-78524 Microsoft Office Remote Code Execution Vulnerability",
+      "content": "# CVE-2026-78524 - Microsoft Office Remote Code Execution Vulnerability\n\nOut-of-bounds write in Microsoft Office allows an unauthorized attacker to execute code over a network.\n\nCWE: CWE-787: Out-of-bounds Write",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524",
+      "content_chars": 211,
+      "content_sha256": "d3c89faa821bacffb25b87694aec3f4e7ab5b02ac77ec9d960bcbb1d841c55e7",
+      "content_fetched_at": "2026-11-18T02:53:06.602092+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-11-17T16:00:00+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-78524 Microsoft Office Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524",
+          "content_sha256": "d3c89faa821bacffb25b87694aec3f4e7ab5b02ac77ec9d960bcbb1d841c55e7"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:baf7646f34f28c15",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-40400 Windows PowerShell Remote Code Execution Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
+      "text": "msrc published: CVE-2026-40400 Windows PowerShell Remote Code Execution Vulnerability",
+      "at": "2026-11-17T16:00:00+00:00",
+      "external_id": "a:baf7646f34f28c15",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
+      "title": "CVE-2026-40400 Windows PowerShell Remote Code Execution Vulnerability",
+      "content": "# CVE-2026-40400 - Windows PowerShell Remote Code Execution Vulnerability\n\nRelative path traversal in Windows PowerShell allows an authorized attacker to execute code over a network.\n\nCWE: CWE-23: Relative Path Traversal",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
+      "content_chars": 220,
+      "content_sha256": "88dc314ca48db30b6955c65b92d9224aac7db669aa3aa60371f0ddf38992b945",
+      "content_fetched_at": "2026-11-18T02:53:08.088822+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-11-17T16:00:00+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-40400 Windows PowerShell Remote Code Execution Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
+          "content_sha256": "88dc314ca48db30b6955c65b92d9224aac7db669aa3aa60371f0ddf38992b945"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:f4db0bce467f58bd",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "路演喊三天平替英伟达，PPT 小字却写着仅限预填充：看清 AI 自动写算子的真边界",
+      "target_url": "https://yage.ai/share/anthropic-roadshow-mythos-amd-prefill-20261117.html",
+      "text": "yage-share published: 路演喊三天平替英伟达，PPT 小字却写着仅限预填充：看清 AI 自动写算子的真边界",
+      "at": "2026-11-17T00:00:00+00:00",
+      "external_id": "a:f4db0bce467f58bd",
+      "url": "https://yage.ai/share/anthropic-roadshow-mythos-amd-prefill-20261117.html",
+      "title": "路演喊三天平替英伟达，PPT 小字却写着仅限预填充：看清 AI 自动写算子的真边界",
+      "content": "今年 11 月 10 日，Anthropic 正式启动 IPO\n路演，并在官网放出了一段公开路演视频。在这段视频中，联合创始人兼首席算力官\nTom Brown\n提到，以往引入一款新芯片通常需要几十位工程师花好几个月，但这次他们使用内部模型\nMythos，基本没有人工干预，仅用 3 天就让 Claude 在 AMD\n显卡上跑了起来，独立编写了将近 100% 的底层算子。\n底层算子是在显卡硬件上直接运行的底层计算小程序，负责矩阵乘法等基础运算。这段视频传开后，社交媒体上出现了许多超过\n50 万阅读的帖子，宣称英伟达的 CUDA\n护城河已经消失。然而，翻看这段路演视频的完整字幕就会发现，其中从未提及英伟达和\nCUDA。\n如果暂停视频，看左下角的灰色小字，或者翻一下同一天交给美国证监会的\n法定招股书修正案\n，就会发现完全不同的剧本。在这份监管文件里，3\n天和底层算子这两个词一次都没出现。但同一天公布的私募名单显示，英伟达和谷歌并列第一，分别出资\n100\n亿美元购买公司股票。为什么路演高调造势，法定文件只字不提，英伟达还砸钱认购？答案就在\nPPT 左下角两行小字里。\n路演 PPT\n左下角那两行灰字，悄悄划掉了哪三件事\n回到\n路演视频转写实录\n对应的画面里，左边那条橙色曲线标注着使用\nMythos 约 3 天到顶点，右边绿色曲线标注着传统方法需要 6 到 12\n个月。但左下角的灰色小字加了三个限定：只针对单一模型，只在单台 AMD\nMI355X 多卡服务器上运行，并且只把提示词处理拉到可用性能水平。\n其中最关键的限制是只实现了预填充阶段。正如\n我们之前讲大模型预填充与解码分离的文章\n所介绍的，大模型处理一次对话分为截然不同的两步。第一步叫预填充阶段，也就是\nPPT\n小字里的提示词处理，相当于模型一次性读题，把用户塞进来的整段文字拼成一个大矩阵一口气算完，主要吃单张显卡的计算力。第二步叫解码阶段，相当于模型一个字一个字往外写回答，每蹦出一个字都要把几百\nGB\n的模型参数和历史缓存从显存里重新搬运一遍，主要卡在显存带宽和跨卡通信上。\nAI 为什么能 3\n天写出预填充阶段的底层算子？因为单机预填充就是个封闭练习场，在一台机器上做读题计算，每个底层算子就几百行代码，输入输出规整。工程师把英伟达显卡算出来的结果当标准答案，让模型昼夜改代码跑测试，编译器几秒就能判分。这种目标明确、几秒自动反馈的封闭循环，正是编程智能体最擅长的舒适区。反观右边那条\n6 到 12\n个月的传统曲线，涵盖的是把预填充阶段、解码阶段和模型训练全套搬上生产线的完整工期。拿单机读题热身的\n3\n天，直接去比全栈投产的大半年，本身就是拿热身赛成绩去比全运会总工期。\n单机预填充封闭靶场与全栈生产上线的工程边界对比\n走出单机预填充，多芯片上线真正要命的坑长什么样\n既然预填充阶段的底层算子几天就能跑通，剩下那大半年，人类工程师到底在跟什么死磕？一旦从单机读题迈向跨几十张卡的解码阶段和大规模训练，难题就变了性质。大模型单张显卡装不下，必须拆成碎片放在几十张芯片上同时算。每生成一个新字，几十张芯片都要一边高速同步数据，一边在小数点后几位上对齐概率、挑出最高分的词。\nAnthropic 在今年 9 月发布的\n近期三起线上故障复盘报告\n，展示了深水区的真实面貌。当时许多开发者抱怨\nClaude\n突然变笨甚至胡言乱语。团队追查数周发现，问题没有一个出在单机预填充阶段的底层算子上，全都出在多芯片解码阶段采样和底层编译器等环节。其中有两起故障直接发生在这套多芯片集群的\nGoogle TPU 服务器上。\n第一个故障来自 Google TPU\n服务器的解码阶段。工程团队做了一项运行时优化，但模型在生成英文代码时，偶尔会给一些生僻字分配高概率。用户在用英文写代码，中间突然出现一个泰语问候语或者中文字符，花了整整\n8 天才回滚修复。\n第二个故障更隐蔽，潜伏了整整 8 个月。TPU\n集群的解码阶段，几十张芯片各自用 16 位浮点数算词元概率后要汇总排序，但\nTPU 底层编译器默认开启了超额精度优化，自动把一部分运算升成 32\n位浮点数。不同芯片的小数点精度对不上，在汇总谁是第一名时产生分歧，直接把最该输出的词弄丢了。\n工程师重写采样代码去修这个精度漏洞，结果又踩到了底层快速近似排序算法里的另一个编译器暗坑。这个暗坑在普通处理器上完全正常，在\nTPU\n上也只有撞上特定请求批次大小才会算错。只要一打开调试工具或改动计算步骤顺序，故障就会自动消失。团队最终只能放弃快速近似排序算法，退回精确排序。要把这类特定批次下才发作、打开调试器就消失的跨芯片暗坑一个个揪出来填平，靠单机跑几天代码生成无济于事。\n招股书删掉三天宣传之后，真正替\nAI 兜底的考场是谁造的\n回到那份受证券法规严格约束的招股书修正案。Anthropic\n删掉了短期移植宣传，在第 137 页和第 208\n页写下了实情：团队能加快新芯片上线，靠的是耗时数年、投入巨资在多芯片家族上建立的扎实基础，核心是一套专有测试编排层。\n专有测试编排层是一个能够模拟真实业务负载、在不同芯片家族之间进行自动化测试和性能比较的内部基础设施。Mythos\n之所以能在短时间内写出实用的底层算子，是因为人类工程师花了数年时间构建了一套可以回放真实线上流量、自动对比精度、随时拦截异常的自动化测试考场。\n举个例子，在路演的前一天，一个开源组织OpenRSI和开源多模态推理框架团队发布了关于\nSGLang-Omni自动调优的实测报告\n。报告里可以看到，智能体自己提出假设、改代码，在4到7个小时内找到了第一批加速方案，比如把空转等待的线程休眠一下就提升了32.5%的实时输出吞吐量。\n但报告作者特别指出，评估器才是真正的产品。如果只让智能体追求速度，它会为了刷分悄悄降低回答质量。因此，任务定义、边算边播的系统架构设计、把智能体隔绝在外的防作弊验证程序全由人类工程师手写完成。即便智能体交卷时附带了实测数据，人类维护者审查并合入每个补丁，中位数花了\n3.5 天，单个补丁最多来回修改了 23\n次提交。所谓零人工写代码，其实是人类把精力从亲手写底层算子，转移到了建造专有测试编排层和事后把关上。\n路演口播、PPT\n小字与招股书真话的三层落差及验证沙盒分工\n手握四倍算力倍增器，为什么还要签\n9000 亿美元买卡合同\n招股书显示，Anthropic 签下的长期算力采购承诺总额已接近 9000\n亿美元。面对这笔巨额账单，路演视频用一道乘法来概括算力效率：总有效算力 =\n物理芯片容量 ×\n算力倍增器。算力倍增器指通过改进算法或底层软件，让同样数量的物理芯片跑出数倍有效算力的技术手段。首席财务官也在视频里展示了成绩单：过去\n6 个季度里，公司单位美元算力换回的营业收入翻了 4.3 倍。\n然而细看招股书的季度明细表，会发现这个指标在今年二季度冲到 2.08\n美元的高点后，到了三季度反而掉头向下。原因就写在招股书里：长期合同的芯片交付跟不上需求，公司在三季度不得不掏出\n50\n亿美元买高价现货算力。算力倍增器再精妙，也变不出显卡和电力，一旦芯片交付断档，照样得去现货市场高价补缺口。\n更关键的是，Tom Brown 在路演中坦率地承认了这一点。公司拥有 4\n倍的算力倍增器后，虽然能省下 75%\n的算力成本训练出相同的模型，但前沿实验室的目标永远是投入全部物理算力，去训练过去想象不到的更大模型。软件效率越高，对买卡的需求反而越迫切。\n那省不出买卡的钱，同时支持英伟达、AMD、谷歌和亚马逊这 4 家芯片、让 AI\n能快速移植预填充阶段的底层算子有什么商业价值呢？答案藏在这家公司当天公布的合同变动里。Anthropic\n在 8 月刚刚签下了算力供应商 Lambda 的 349 亿美元大单，但因为 Lambda\n没能按时拿到机房租约，所以这份合同现在可以随时解约。在同一天，公司对微软英伟达集群的最低采购额也提高到了\n472 亿美元。\n看懂这笔账，整场路演的算力故事就顺理成章了。AI\n自动写底层算子和多芯片策略，目标从来不是消灭英伟达，也不会缩减买卡规模。一旦某家算力商机房掉链子，或者某款芯片漫天要价，团队随时能把预填充阶段等大吞吐任务切到别家芯片上跑。在总额近\n9000 亿美元的算力牌桌上，3\n天跑通预填充阶段并非掀翻牌桌的锤子，而是让卖卡巨头都不敢轻易断供或坐地起价的换轨底牌。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/anthropic-roadshow-mythos-amd-prefill-20261117.html",
+      "content_chars": 3452,
+      "content_sha256": "d7840912c6f7ce0698747436e923ba29e2b388a85058a76d55e7397e461a17b2",
+      "content_fetched_at": "2026-11-18T02:50:23.397055+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-11-17T00:00:00+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/anthropic-roadshow-mythos-amd-prefill-20261117.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "路演喊三天平替英伟达，PPT 小字却写着仅限预填充：看清 AI 自动写算子的真边界",
+          "url": "https://yage.ai/share/anthropic-roadshow-mythos-amd-prefill-20261117.html",
+          "content_sha256": "d7840912c6f7ce0698747436e923ba29e2b388a85058a76d55e7397e461a17b2"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:66d601b1884527ca",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "给 Agent 接 DeepSeek 新出的全家桶 API，真正好用的是那几个独立接口",
+      "target_url": "https://yage.ai/share/deepseek-app-api-suite-unbundled-tools-20261116.html",
+      "text": "yage-share published: 给 Agent 接 DeepSeek 新出的全家桶 API，真正好用的是那几个独立接口",
+      "at": "2026-11-16T00:00:00+00:00",
+      "external_id": "a:66d601b1884527ca",
+      "url": "https://yage.ai/share/deepseek-app-api-suite-unbundled-tools-20261116.html",
+      "title": "给 Agent 接 DeepSeek 新出的全家桶 API，真正好用的是那几个独立接口",
+      "content": "以前，很多人都认为 DeepSeek 的官方网页版和手机端比开发者的 API\n更实用。这是因为官方客户端提供了联网搜索、阅读网页链接、解析几十页长的文档以及语音朗读等周边功能，而开发者的\nAPI 只能进行纯文本对话。2026 年 11 月 13 日，DeepSeek 发布了\n全套应用接口公告\n，将这些官方客户端中的周边功能作为\nAPI 一次全部开放，并开源了一个可以立即使用的网页前端项目\nchat-demo\n。\n这次开放的接口提供了两种截然不同的调用方式：一种是内置全家桶开关，调用轻量模型\ndeepseek-flash\n聊天时直接在请求里打开联网搜索或读文档的开关，DeepSeek\n服务端就会自动在后台搜网页、读链接，最后把整理好的现成回答返回给你；另一种是独立工具接口，DeepSeek\n把底层的网页搜索、网页抓取、文档识别、语音识别和语音合成单独拆成了 5\n个接口，就算不调用 DeepSeek\n的大模型，也能把这些接口单独拿来当搜索引擎、网页转 Markdown\n爬虫或文档识别器用。很多开发者的第一反应是去用省事的第一种内置全家桶开关。但只要翻开\nDeepSeek\n的技术文档、动手往自己的智能体代码里接一次就会发现，这套内置开关是个连自定义工具都不允许混用的封闭黑盒，常规的智能体接不进去。真正给所有开发者带来实惠的，是\nDeepSeek 单独拆出来低价售卖的独立工具接口。\n为什么省事的对话内置开关，反而接不进常规的\nAgent？\n开发者看到第一种内置全家桶开关只需在对话请求里加个参数就能自动联网和读文档，第一反应就是把现有的智能体代码加上这个开关，少写几行工具调用的胶水代码。而且早些时候\nOpenAI 的 Responses API 和 Anthropic 的 Messages API\n也都推出了类似的服务器端内置搜索工具，为什么海外大厂的内置工具可以接进智能体，DeepSeek\n的内置全家桶开关反而接不进去呢？\n这背后的原因是，OpenAI 对 Responses API\n的定位是提供一个通用的云端运行平台，它可以在这个平台上保存对话历史状态，并且把官方内置的搜索工具和代码沙盒跟开发者自己的业务函数（下称自定义工具）混在一起调用。但\nDeepSeek 虽然兼容了 Responses API\n的请求格式，却没有提供一个通用的云端运行平台。DeepSeek 的 API\n文档明确说它不支持保存会话历史状态，也直接忽略了代码沙盒、向量检索等传入参数。研发人员走了一条更省事的捷径：把自家官方网页版内部用强化学习训练好的固定后端流水线直接暴露出来，而且仅支持轻量模型\ndeepseek-flash\n。这样直接暴露内部流水线的设计，就带来了三个直接限制。\n第一个限制是开启内置开关后禁止混用自定义工具。平时做智能体应用，往往需要用到各种自定义工具，比如查询内部数据库、读写本地文件等等。但是，DeepSeek\n的\n搭建对话机器人的指南\n里面明确提到，如果你开启了内置的联网搜索、读取网页链接、高水位安全审核、会话标题生成中任何一个功能，那么这个请求就不能同时指定任何自定义工具，否则就会返回一个\n400\n错误码。这就让内置的全家桶开关没办法接入任何需要执行外部动作的业务系统。\n第二个限制是锁死模型参数与输出格式。开启这些开关后，请求中指定的采样温度、核采样率、停止词和思考预算等控制参数全部静默失效。如果业务代码依赖模型返回\nJSON\n结构化格式，或者需要助手消息前缀续写，开启联网或安全审核开关后同样会直接报错。就连给模型传入当天日期和所在城市的方式，也必须严格照搬\nDeepSeek\n官方网页版的内部协议。平时写应用，开发者习惯把当天日期写进顶层的系统提示词里；但如果每天日期一变就改系统提示词，此前攒下的历史对话前缀缓存就会全部失效。为了保住前缀缓存命中率，DeepSeek\n要求开发者必须在每条用户消息之前，紧挨着塞入一条固定格式的\nlatest_reminder\n角色消息来传递日期和地点，放错位置同样会报错。\n第三个限制是网页正文加密与上下文清理。为了防止外部开发者把内置工具当成免费爬虫，内置搜索和深度思考搜索返回的结果块里，网页内容全部加密成了密文，客户端拿不到明文。到了下一轮对话，这些搜索结果还会从模型的上下文记忆里清除，只留下上一轮的回答文本。内置读链接工具返回的网页正文字段干脆恒为空字符串，加密后的内容藏在签名字段里，多轮对话时必须由客户端把整块签名原样传回服务端做内部拼接。这套防线决定了内置全家桶开关只适合配合官方开源的\nchat-demo\n前端，原样克隆一个纯聊天网站。\n不绑大模型的独立工具接口，是怎么把搜索和解析价格压下来的？\n既然内置全家桶开关是个封闭黑盒，普通智能体开发者能从这次更新里拿到什么实惠？答案藏在公告后半截。正因为内置全家桶开关无法与自定义工具共存，连\nOpenAI 官方的编程助手 Codex\n接进来都用不了那套内置搜索。为了解决这个冲突，DeepSeek\n在同一天把底层的网页搜索、网页抓取、文档识别、语音识别和语音合成，全部做成了不绑定大模型对话、可以单独调用的独立工具接口。在官方同步更新的\nCodex\n一键配置脚本里，研发团队就是直接为模型默认开启了独立联网搜索通道，让\nCodex 绕开内置模式，直接调用底层的搜索与抓取接口。\n这种把底层工具拆出来单卖的做法，走到了海外大厂的反面。在 OpenAI 和\nAnthropic 的体系里，联网搜索固定焊死在大模型推理流程中。你不调用 GPT 或\nClaude，就没法单独使用它们的搜索能力，而且每搜索 1000 次要交 10\n美元的工具调用费，检索内容拼入上下文后还要另付模型词元费。DeepSeek\n的独立工具接口则不需要调用它的大模型。哪怕你的智能体用 GPT 或 Claude\n当主脑，也能直接拿 DeepSeek\n的密钥去调它的搜索和抓取接口。对比下方的价格就能看出，它的搜索与网页抓取每千次仅收\n5 元人民币，搜索失败或结果为空还不扣费，单价不到海外大厂的十分之一。\n而更省钱的一点是，DeepSeek 的自建搜索引擎有一个全文返回的特性。在\n网页搜索与抓取指南\n中，DeepSeek\n首次披露了其独立搜索接口是由 DeepSeek\n自己研发的搜索引擎提供支持。这个引擎针对智能体做了优化，在进行搜索时不仅可以提供关键词，还可以额外提供用户的原始提问来帮助引擎理解意图。每个搜索结果不仅有相关性分数、网站权威度和简短摘要，还有一个围绕原始提问提取的\n800 字左右高密度摘要。此外，如果在搜索请求中包含\nneed_content\n参数，还会返回每个搜索结果的 Markdown\n格式完整正文。不论单条查询返回默认数量还是最多 50\n篇结果，开启全文返回都不会增加单次搜索的价格，仍然只收半毛钱人民币。相比之下，第三方的搜索工具\nFirecrawl\n则会根据返回的网页数量逐页收取积分，搜一次再抓十几个网页的全文，成本要高出十倍以上。\n除此之外，独立的文档识别接口也支持直接上传 PDF、Word、PPT\n和常见的图片，提供纯文字直接提取和逐页保留排版的识别两种模式，每识别\n1000 页只需要 1.5\n元人民币。如果开发者把纯文本、代码或表格文件通过文件接口上传并内联拼进对话上下文中，也是完全免收工具解析费的。\nDeepSeek\n独立搜索接口将搜索与网页全文抓取解耦并以 5\n元千次的价格大幅低于海外内置搜索与第三方检索工具\n官方反复警告的合规下移，在账单和代码里是怎么落地的？\n在了解工具能力和价格后，许多开发者还注意到一个细节。此次公告以醒目篇幅提醒，面向外部提供服务的开发者应启用高水位安全审核参数，并自行承担算法备案和内容审核的主体责任。不少人好奇，这究竟只是例行的法务免责声明，还是真的会反映在工程代码和接口账单上？\n查阅\n开放平台的服务条款\n可以发现，关于平台只提供中立的接口、下游开发者需要自己进行大模型的登记备案和内容安全审核的规定，早在\n2026 年 4 月 22\n日就已经修订写入，并在几天后正式生效。为什么这次公告如此着重强调这一点？因为以前的接口只能支持纯文本对话，一旦放开了全网实时搜索、任意网页抓取和开箱即用的前端源码，任何人都可以在几分钟内构建一个带有实时联网能力的对话网站。平台希望出售这些组件，同时不替下游应用承担监管风险或补贴内容审核所需的算力。为此，官方在\n模型的内容安全指南\n中制定了一套职责与账单切分规则，将内容安全审核作为一个由开发者自费买单的收费项目。\n第一笔开销是审核算力按模型输出单价收费。开发者按建议把安全审核开关调到高水位后，服务端审查输入和输出所消耗的算力会折算成安全词元，直接计入总输出词元账单，按\ndeepseek-flash\n每百万输出词元 4\n元人民币的单价收费。第二笔开销是触发违规拦截照样扣费。如果用户的提问未通过审核，接口直接返回\n400\n风险错误，但输入词元依然按缓存命中单价扣费；如果内置读链接工具抓回了目标网页，随后因未通过审核而返回禁止访问的错误块，这半毛钱的抓取费同样照收不误。\n第三处工程细节落在流式输出的前端清屏要求上。流式输出时，文字是一个词一个词蹦出来的。如果生成中途触发了安全拦截，比如模型吐到一半的内容或用户上传的图片未通过审核，服务端无法撤回已经发出的文本块。这时服务端会停止生成并在末尾下发拒答信号，前面已生成的全部词元照常计费，同时官方要求客户端在收到拒答信号后必须自行清除界面上已展示的内容。翻看一下开源的\nchat-demo\n源码就能看到，前端接收流式回复的代码里专门写了拦截逻辑，一旦捕获到拒答状态，就立刻把界面上的思考过程和回答正文清空并替换成提示文案。\nDeepSeek 应用全家桶 API\n分为受限的内置对话模式与面向智能体开发者的独立工具接口两条路径\n手头有项目的开发者，现在怎么接这套接口最划算？\n看清了内置全家桶开关的绑定限制、独立工具接口的低价红利，以及安全审核的自费清屏机制后，手头有项目的开发者可以根据业务形态，按三条路径来做取舍。如果你正在开发自己的智能体或给工作流配工具，哪怕主力模型用的是\nGPT 或\nClaude，最划算的做法都是绕开对话接口里的内置全家桶开关。你可以申请一个\nDeepSeek\n密钥，只把独立搜索、网页抓取和文档识别这三个独立工具接口封装成普通的自定义工具函数。这样做既不会撞上封禁自定义工具的报错限制，又能凭借远低于市面同类服务的检索与识别单价，把原本昂贵的第三方工具账单降下九成以上。\n如果你日常用 Claude Code 或 Codex\n敲码，可以直接升级官方刚更新的接入配置。DeepSeek\n已经在底层帮这两把刀躲过了内置开关的限制：Codex\n的最新配置脚本默认用独立搜索和抓取接口，而 DeepSeek 的 Anthropic\n兼容接口也在服务端做了专门适配，让 Claude Code\n触发内置联网搜索时可以直接调通底层搜索引擎。\n如果你只是想快速做个面向国内用户的纯聊天网页，而且不打算挂自己的业务工具，可以用\ndeepseek-flash\n内置的全家桶开关加上\nchat-demo\n前端。但上线前要接受两个限制：模型采样参数固定、不能混用自定义工具；以及开启高水位安全审核、把安全词元计入成本，还要在前端收到拒答信号后自动清屏。\n这套独立工具接口刚在 11 月 13\n日上线，目前公开的技术文档和实测主要验证了它的接口形态和计费规则。它在长尾英文技术资料、反爬严密的垂直社区以及高并发峰值下的实际召回质量与稳定性，还有待大规模生产流量和第三方基准测试的检验。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/deepseek-app-api-suite-unbundled-tools-20261116.html",
+      "content_chars": 4789,
+      "content_sha256": "e0069694d1644a68a2c639dee6b48f771a32e43f1244ddf022ef7db9aa944241",
+      "content_fetched_at": "2026-11-18T02:50:24.608771+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/deepseek-app-api-suite-unbundled-tools-20261116.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "给 Agent 接 DeepSeek 新出的全家桶 API，真正好用的是那几个独立接口",
+          "url": "https://yage.ai/share/deepseek-app-api-suite-unbundled-tools-20261116.html",
+          "content_sha256": "e0069694d1644a68a2c639dee6b48f771a32e43f1244ddf022ef7db9aa944241"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:13bf1da4d5efb8a1",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+      "target_url": "https://innei.in/en/posts/tech/ryugi-workflow",
+      "text": "innei published: 让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+      "at": "2026-11-15T09:40:15+00:00",
+      "external_id": "a:13bf1da4d5efb8a1",
+      "url": "https://innei.in/en/posts/tech/ryugi-workflow",
+      "title": "让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+      "content": "Ryugi (流儀)\n—Ryugi is a set of interactive artifacts I built for coding agents. Whenever the agent needs to ask me questions or have me pick an approach, it puts them on interactive pages where I can answer directly: design decisions are written up as a document where I choose options item by item and leave sentence-level comments; UI proposals are laid out on a canvas for me to click and choose; and when the work is done, an acceptance page places approved designs side by side with live screenshots so I can approve or reject them group by group. Every choice I make on these pages feeds right back into the agent session that started it.\nRepository\n· Innei\n523\nryugi\nRyugi (ryoo-ghee) — artifacts for coding agents: artboards of mockups, design docs, whiteboards, HTML benches and verify reports you comment on, with every comment sent back to the agent. Install artifacts only, or the full brainstorm → spec → TDD workflow. Claude Code, Codex and more.\nJavaScript\nThe project here was the whiteboard inside my blog editor, haklex. Its editing features had always leaned on Excalidraw, which pulled in a heavy bundle and clashed with the rest of the editor's visual style. I wanted to drop the dependency and roll our own whiteboard around Excalidraw's data format, without touching a single field in existing articles.\nFrom my opening sentence to `git push` took about half a day: two rounds of development, one release, and three downstream projects updated. I typed fewer than 20 messages in chat; wherever I had to make a call, it was turned into questions in a doc or mockups on a canvas. Here is how it went, step by step.\nAfter one prompt: a doc that asks questions\nMy opening prompt was just one sentence: \"Drop the excalidraw dependency and roll our own whiteboard based on its data structures.\"\nThe agent first inspected the code to confirm the scope of changes, then opened a design doc and put its questions directly into it, without following up in the chat box.\nThe questions were embedded right inside the document, each with a recommended option and the reasoning behind it; all I had to do was click my choice on the page. The first question was a fork in the road that determined how big v1 should be—everything that followed depended on it. For two of the questions I skipped the recommendation, and the next round simply picked up from what I chose.\nAfter each round, the conclusions were merged into a \"Decided\" section, noting whether I made the decision or the agent made it for me. I could tell at a glance which items needed another look.\nSection 4 of the design doc, \"Decided\": each conclusion is tagged with who decided it\nAfter two rounds, the document was fleshed out into a full design spec. Before handing it back to me, the agent had an uninvolved reviewer agent do a cold read; it resolved most of the feedback on its own, leaving just two questions for me to settle.\n自研白板编辑器：替换 @excalidraw/excalidraw · Ryugi\nView “自研白板编辑器：替换 @excalidraw/excalidraw” on Ryugi Cloud, a document artifact.\nRyugi\n\"Should we discuss the UI?\"\nOnce the document Q&A was done, I asked: \"Should we discuss the UI?\" The agent said yes—the design spec had marked the UI as \"left to the implementer,\" but these are things you see every time you open the editor.\nText doesn't do UI justice, so it switched to a visual canvas: each group presented several options side by side, the recommended one highlighted with a red border, and sticky notes explaining the reasoning right beside them.\nRound 1 decision fork on the UI canvas: three layout options side by side, with the recommended one outlined in red\nAcross two rounds and five groups, I went with the recommendations every time. With the options drawn out side by side, it was immediately clear which were good and which were bad. The selected mockups were linked into the design spec to guide both implementation and acceptance. Then I replied with \"approve.\"\n白板编辑器界面 · Ryugi\nView “白板编辑器界面” on Ryugi Cloud, an artboard artifact.\nRyugi\nOnce approved, I didn't look at code again\nOnce approved, the agent broke the design spec into 19 small tasks and tackled them one by one on a separate branch.\nEach task followed the same rhythm: write a failing test, watch it fail, write the implementation to make it pass, and commit. Whenever the agent made a call on its own—like minor details that diverged slightly from the spec—it logged it in a ledger. When the chat grew too long and was summarized, it kept working right from that ledger.\nFor over an hour, I didn't type a single word.\nReview, then the acceptance page\nOnce all 19 tasks were finished, the agent handed the branch over to an independent reviewer agent that had played no part in development. For every issue flagged, it reproduced it with a failing test before writing the fix.\nThen it spun up the editor in a real browser, took screenshots and screen recordings, and put together an acceptance page: my approved canvas designs on the left, and how it actually looked running on the right.\nAcceptance page: approved design, live screenshot, and screen recording side by side\nAll I had to do was review each group and approve or reject it. I left a comment on one mockup; it made the fix, took a new screenshot, and placed it right back in the same spot for me to review. Anything it couldn't verify was listed separately on the page, instead of being mixed in with \"Completed.\"\n白板编辑器界面 · Ryugi\nView “白板编辑器界面” on Ryugi Cloud, an artboard artifact.\nRyugi\nRound two: starting from a reference image\nNext, I wanted the whiteboard to look sharper. I pasted a reference image featuring clean headings, drop-shadowed sticky notes, and illustrative stickers, and asked whether stock Excalidraw could pull off that aesthetic.\nIt broke down the elements in the image one by one—what we could already draw, what capabilities were missing—and even guessed I might want an AI to do the drawing. I replied with one sentence: only build general-purpose drawing capabilities.\nNext was the same process: open a new design doc, then three rounds of Q&A. In round three, putting rich-text cards on the whiteboard was my own idea. After a cold read, the reviewer agent flagged two questions that needed my call; the agent added its recommendations, I replied with two numbers, approved, and let it implement and review.\nThe acceptance page for this round measured directly against my reference image: the reference on the left, the recreation inside our editor on the right.\nRound 2 acceptance: reference image side by side with the in-editor recreation\n白板绘制能力扩展：阴影、SVG 元素、富文本卡片 · Ryugi\nView “白板绘制能力扩展：阴影、SVG 元素、富文本卡片” on Ryugi Cloud, a document artifact.\nRyugi\nVerify · 白板绘制能力扩展 · Ryugi\nView “Verify · 白板绘制能力扩展” on Ryugi Cloud, an artboard artifact.\nRyugi\nRelease, then downstream projects\nWith both rounds approved, I asked: \"Can we release now, and then adapt the downstream projects?\" It cut a new release, then went through three projects using the editor one by one—bumping the dependency, running tests, and verifying in a browser that the whiteboard rendered properly.\nDownstream results were posted right on the acceptance page as well, with one screenshot for light mode and one for dark.\nThe same whiteboard in downstream projects: light and dark mode\nThroughout the entire process, logging in to authenticate the npm release was the only thing that needed my manual login—that was the one step the agent couldn't do for me.\nWhat I actually said in the chat\nLooking back, nearly everything I typed in chat over that half-day is captured right here:\nTime\nWhat I said\nWhat happened next\n12:26\nDrop the excalidraw dependency and roll our own whiteboard based on its data structures\nRead code, opened design doc\n13:04\nShould we discuss the UI?\nOpened canvas for UI discussion\n13:18\napprove\nSliced tasks, started implementation\n16:35\nThis looks about ready. Now let's work on extra features.\nCompared against reference image, kicked off Round 2\n16:38\nLet's only build general-purpose drawing capabilities\nNarrowed scope, opened new doc\n17:04\napprove\nImplemented Round 2\n17:56\nCan we release now, and then adapt the downstream projects?\nPublished release, adapted downstream projects\n20:06\npush\nPushed to remote\nEvery other decision was made by clicking options in docs, picking mockups on a canvas, or signing off on the acceptance page. I didn't have to scroll through chat history to find what the agent said; every decision stayed on the page, and all the implementation and acceptance were checked against those same pages.\nBoundaries\nThis workflow doesn't make judgment calls for me. If I skip an open-ended question, it fills in its best guess and flags it, leaving me to decide whether to review it. The acceptance page lists what it couldn't verify, and deciding whether to test further is up to me. What it does is put decisions right in front of me, so I can see at a glance what is settled and what isn't.\nRyugi is open source (\ngithub.com/Innei/ryugi\n). In your terminal, run\nnpx ryugi-artifacts install\n, and select the agent you use to install it. The two design docs, canvas, and acceptance pages mentioned here are all public, so you can see them in their original form.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/ryugi-workflow",
+      "content_chars": 9200,
+      "content_sha256": "5edafe20e069de92919ea702ae82c979d20a4c32fca76ea5e5a3704c8b4352ab",
+      "content_fetched_at": "2026-11-18T02:53:16.699480+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-15T09:40:15+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/ryugi-workflow"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+          "url": "https://innei.in/en/posts/tech/ryugi-workflow",
+          "content_sha256": "5edafe20e069de92919ea702ae82c979d20a4c32fca76ea5e5a3704c8b4352ab"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:c88c6b17f9a6ce94",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+      "target_url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+      "text": "innei published: Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+      "at": "2026-11-08T09:29:52+00:00",
+      "external_id": "a:c88c6b17f9a6ce94",
+      "url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+      "title": "Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+      "content": "Lody iOS started out on Expo + React Native. By October, the chat timeline, composer, Live Activity, and Share Extension had all been rewritten in UIKit—roughly 61,000 lines of Swift alongside 37,000 lines of TypeScript. What remained of React Native was mostly routing and screen-level glue: navigation was split half in Expo Router and half in native code, and every build still ran through\nexpo prebuild\n, Metro, and CocoaPods.\nRepository\n· innei-dev\n531\nlody-ios\nIndependent iOS client for Lody — native chat, sessions, and coding-agent collaboration on iPhone\nSwift\nOn the night of October 24, I decided to remove React Native entirely and replace the remaining screens with UIKit one by one. On the morning of October 28,\n#96\nmerged into\nmain\n, deleting the RN runtime after roughly three and a half days (87 hours) across 482 files (+25,700 / −37,500 lines). I then spent the next three days reorganizing the directory structure around explicit dependency layers.\nWhiteboard\nFinishing the cutover in 87 hours was only possible because the real strangler-fig work had started six weeks earlier. Between early September and mid-October, diff rendering, the chat timeline, and the rich-text composer were extracted into standalone packages, followed by\ncloud-runtime\non October 11. By the time the migration started on October 24, the app was already layered like this:\nWhiteboard\nIn other words, React Native had already been hollowed out into a thin outer shell: the heavy UI primitives were standalone packages, and the data runtime had lived inside a Swift-owned offscreen\nWKWebView\nfrom day one. The migration came down to three questions:\nWhere should the cross-platform boundary live once coding agents make native UI cheap? How do you invert the host of a 100k-line app without freezing trunk? And when offline verification holds pixel diffs to 0.00026, which four regressions still slip through the cracks?\n1. The Shifting Premise: Moving the Shared Boundary from UI to Data\nWe originally chose React Native with a future Android client in mind. The bet was to keep both the data layer and the UI abstraction in RN: React components would describe screen layouts, while iOS and Android would merely supply the underlying native views. When it came time to build Android, we would only need view implementations—neither the data layer nor screen structures would have to be rewritten.\nWhiteboard\nThe left side shows that original bet; the right side shows where we landed. The shared cross-platform boundary moved down from UI to a headless data layer:\ncloud-runtime\nruns inside an offscreen WebView, iOS and a future Android client implement the same versioned contract, and each platform writes its UI natively.\nTwo shifts broke the original equilibrium. First,\ncoding agents collapsed the marginal cost of native UI\n. Writing a separate UI per platform used to be the exact expense RN was meant to save. In this migration, the remaining screens were rewritten in batches alongside coding agents in three and a half days. Once the one-time cost of writing native screens drops that low, paying an ongoing abstraction tax to avoid it no longer pencils out.\nSecond,\nthe three-layer translation tax in navigation\n. Navigation bars, toolbars, and sheets ultimately end up as UIKit, but in RN they had to pass through three layers of translation to get there:\nWhiteboard\nOn the left, every layer maintains its own state and assumptions. As soon as iOS 26 glass styling, iPad split views, and iPhone Duo foldable layouts entered the picture, bugs clustered in the seams between layers (the gray annotations show a few issues hit while adapting for Duo). Our patch against\nreact-native-screens\nstarted on September 10 and was revised 11 times before deletion. On the right, there is no middleman—each view controller owns its navigation items directly.\nEach individual glitch was patchable, but every fix added another layer of state translation between RN and UIKit. On October 17, I got wide-screen layouts working for iPad and iPhone Duo in RN, and the result still felt rough. A week later, I decided to stop patching and go all-in on native.\n2. The Strangler-Fig Inversion: Hollow Out First, Flip the Host Second\nTo swap out the host without halting feature work on\nmain\n, we couldn't start by rewriting screens. We had to unwind a reverse dependency chain: six weeks of preparatory extraction to hollow out the shell, followed by three sequential locks once the cutover began.\nSix Weeks of Prep: Stripping Out Heavy Views and Data Until Only Routing and Context Remained\nThe timeline below lays out the extractions between September 6 and October 24 across two tracks—the data layer and UI primitives:\nThe three heaviest UI subsystems went first: diff rendering (\ndom-webview\n), the chat timeline (ChatKit), and the rich-text composer (\nlexical-swift\n). They were already written in Swift or self-contained DOM bundles that RN screens simply mounted. When we later replaced screens one by one, the new UIKit view controllers imported those packages directly without having to untangle view logic mid-flight.\nRepository\n· Innei\n3\nChatKit\nUIKit chat primitives: streaming text reveal, attachment strip, glass surface. iOS 26, Swift 6.\nSwift\nThe data layer was never inside RN to begin with. Swift owned an offscreen\nWKWebView\nwhere sync, local replicas, and retries ran; RN only ever received read-only projections for display. On October 11, that runtime and its protocol types were extracted into\n@lody/cloud-runtime\n.\nEarlier, on September 8, the cloud code had already been split by domain into\nauth\n,\ncatalog\n, and\nsend\n—the exact three boundaries that would become Swift's\nAuthSession\n,\nCatalogSession\n, and\nOutbox\non October 25. By the night of October 24, all RN held besides routing was the state inside five root Context providers.\nLock 1: Establish a Versioned Contract and Sink State into Swift\nWhy didn't day one touch a single screen? Because replacing screens incrementally required UIKit to own navigation first, turning each remaining RN screen into an independently hosted root view. Once screens become separate root views, React Context on a single root component can no longer span across them—so global state had to leave RN first. And for Swift services and native screens to talk to the offscreen runtime without going through RN, Swift and the runtime needed a formal contract.\nPreviously, Swift invoked the runtime by concatenating raw JS strings, which was tolerable when the RN host was the only caller. Now native screens needed to call the runtime directly—and a future Android host would need the exact same surface—so the very first commit on October 24 replaced string interpolation with a schema-driven contract:\nThe Zod schema in\ncloud-runtime\nbecame the single source of truth. Types for every platform are generated from it, and the host and runtime only exchange envelopes carrying a schema version (\nv\n) and instance generation (\ngen\n). Version mismatches fail the handshake immediately, and messages from stale WebView generations are dropped on sight. Swapping the host—or adding a new platform—never touches the runtime.\nOver the next 23 hours, the five React Contexts on the RN root were consolidated into four single-owner Swift services. The left side shows the old RN root provider tree; the right side shows how both RN and UIKit screens read state afterward:\nEach slice of state has a single owner in Swift. Remaining RN screens and new UIKit screens read the same synchronous JSON snapshot and subscribe to the same change event. Splitting screens into separate root views no longer affected shared state—and as a security bonus, long-lived Better Auth credentials now stayed strictly in Swift and Keychain without ever entering the JS context. By the evening of October 25, once\nOutbox\nlanded in Swift and\nCatalogProvider\nwas deleted, the root Context tree was empty.\nLock 2: Invert the Host so UIKit Wraps RN Screens\nWith state out of the way, Expo Router still owned navigation. As long as RN owned navigation, native views could only live as child components inside RN screens—we could never replace a whole screen. The pivotal move was inverting the host relationship: UIKit took over the window and navigation chrome, demoting the remaining RN screens into leaf views hosted inside UIKit containers. The diagram below shows the three stages of the host; this step moved us from left to center:\nWhiteboard\nIn that middle transitional state, each unmigrated RN screen became an isolated surface backed by a single shared\nRCTHost\n. The outer UIKit container didn't care whether a destination was rendered by an RN surface or a native view controller, unlocking true screen-by-screen replacement without blast radius across pages. (Earlier on iPad, I had tried reparenting a mounted RN view into a different superview, which silently broke touch press handling; giving each screen its own surface avoided that trap entirely.)\nThe new UIKit shell went in behind a launch flag first. Compact iPhone navigation and regular-width iPad split navigation were wired up in turn; once both ran cleanly, Expo Router was deleted in the early hours of October 26—six hours from feature flag to router removal.\nLock 3: Cut the Umbilical Cord—Remove the RN Runtime and Build Chain\nOnce all remaining RN leaf screens were replaced with UIKit (covered in the next section), the app still booted through Expo's\nAppDelegate\nand every build still ran through\nexpo prebuild\nand Metro.\n#96\nsevered that final layer—moving from the center of the host diagram to the far right: a native\nAppDelegate\n/\nSceneDelegate\nboots\nLodyApplication\ndirectly, giving lifecycle, deep links, push notifications, and the share inbox native owners. The build pipeline flipped with it:\nThe\nios/\ndirectory is no longer wiped and regenerated by\nprebuild\n; the Xcode project is generated deterministically from a committed\nproject.yml\nvia XcodeGen. React, Expo, Hermes, and the stack of\nreact-native-screens\npatches were deleted together. Only the headless WebView runtime bundle continues to be built with\npnpm\n—the one layer that never changed from start to finish.\nPull Request\n· innei-dev/lody-ios\n#\n96\nrefactor(ios): complete the native app migration and remove React Native\nmerged\n+\n25764\n−\n37457\nLeeeon233\n3 weeks ago\n3. Deterministic Verification and Its Cracks: 0.00026 Pixel Diffs vs. 4 Escaped Regressions\nBetween October 26 and October 28, rewriting every remaining screen in UIKit within 48 hours—without breaking\nmain\n—would have been impossible with manual QA. What made the blitz safe was an offline verification harness; what makes it interesting in hindsight are the four bugs that still escaped it.\nLeaf-to-Trunk Replacement: Isolating Every Screen Behind a Single Service Seam\nOnce the UIKit shell was in charge, every native screen was built around the exact same decoupled structure:\nA view controller's only I/O is a\nservice\nclosure. Production routes inject the\nlive\nimplementation (wired to\nDataRuntime\n,\nCatalog\n, and\nOutbox\n); Debug scenes inject a\nscripted\nimplementation returning fixed fixtures. Both paths run the exact same view controller. Before flipping any screen, we registered an offline Debug scene and a\nverify:ui\nbehavioral test that deep-linked straight into it—no login, no cloud, and no local agent daemon required—running the identical assertion suite before and after the swap.\nWith offline assertions in place, replacement proceeded mechanically from leaves to trunk. On October 26, all Settings sub-screens, Home, and Project screens moved first; that night, the complex Session screen was built in UIKit behind a Debug fixture. On October 27, the remaining screens were conquered in a stack of eight PRs (\n#87\n–\n#94\n): message editing, message details, tool details, permissions, PR view, and file browser, followed by flipping the production Session entry point to native and finishing Home and iPad navigation. On the morning of October 28,\n#86\nand the entire PR stack merged together.\nPull Request\n· innei-dev/lody-ios\n#\n86\nrefactor: UIKit shell and native pages (RN removal phases 2–3)\nmerged\n+\n26846\n−\n18771\nInnei\n3 weeks ago\nWhen\n#96\ndeleted the RN runtime hours later, the offline UI suite ran directly against the pure native build. Across 20 screenshots of the new-session form compared pixel-by-pixel against the previous build, the maximum diff was\n0.00026\n.\nWhere the Harness Cracked: How 4 Regressions Escaped a 0.00026 Pixel Gate\nEven with screenshot diffs pinned to the fourth decimal place and core flows working cleanly, four regressions still surfaced after cutover. Looking at them side by side is revealing—every single one lived on the seam between offline scripted scenes and the real runtime environment:\nWhiteboard\nThe test entry point had no test of its own\n: The Debug screen dispatches every offline scene, yet had no test case covering itself. After converting to UIKit, it regressed into an ungrouped flat list missing its navigation bar.\nBuild configuration skew (Debug vs. Release)\n: Debug scenes were only registered under\nDebug\nand\nUI Verify\nbuild configurations, and automated checks never ran against\nRelease\n. Long-pressing the Settings button in TestFlight builds triggered an unregistered route and crashed immediately.\nOffline stubs bypassed the OS modal hierarchy\n: During Device Flow sign-in,\nSFSafariViewController\npresents over the welcome screen; after authorization completed, dismissing closed only Safari while leaving the welcome screen stuck underneath. Because the \"open browser\" step in the offline fixture was a no-op stub, the real system modal stack was never exercised.\nStatic fixtures skipped async teardown races in the live runtime\n: Opening a session from a push notification caused the previous screen's delayed\ndeinit\nto close the session the new screen had just opened. Offline scenes fed synchronous scripted data without a live\nDataRuntime\n, so that cross-controller lifecycle race never fired under test.\n4. Post-Merge Convergence: Freeze Paths During Cutover, Layer by Dependency After\nThroughout the 87-hour sprint, I followed one strict rule:\nnever move files while changing behavior\n. Keeping file paths frozen meant every commit was a pure implementation swap—easy to review and trivial to\ngit bisect\nif something broke. The trade-off was that when\n#96\nlanded, all 557 Swift files were still sitting inside the legacy Expo module directory, mixing view controllers, data sessions, and platform glue. Only after behavior was locked down did I put on the refactoring hat for three days of structural layering, again doing one thing per step:\nStep 1: Move files without splitting code.\nWith RN gone,\napps/mobile\nand the Expo module path were vestigial. All Swift sources were moved wholesale into a single Swift package,\nLodyKit\n, while dependencies switched from CocoaPods to SPM.\nStep 2: Split along the\nimport UIKit\nboundary.\nAuth, catalog, outbox, the data runtime host, session models, and copy were extracted into\nLodyData\n—a module that never imports UIKit and compiles and tests in isolation. Whenever the data layer needs a platform side effect (opening URLs, requesting background execution time, showing a toast, presenting an auth browser, or writing a Share Extension snapshot), it calls the\nLodyHost\nprotocol, which the top-level App target implements and injects.\nStep 3: Flatten the project hierarchy.\nThe repository root became the Xcode project root, eliminating the\napps/\nwrapper. Finally, the remaining UI code in\nLodyKit\nwas folded back into the App target—the App was its only consumer, while views shared with the Share Extension moved into\nShared/UIKit\nas direct source references. Keeping a separate UI package only added ceremony around access control, so the App target is now organized directly into\nApplication\n,\nNavigation\n,\nViewControllers\n,\nViews\n,\nServices\n, and\nPlatform\n.\nThe resulting dependency graph flows strictly in one direction—the lower a layer sits, the less it knows about UI:\nWhiteboard\nThe repository root is the Xcode project root, generated from the committed\nproject.yml\n; the generated\nLody.xcodeproj\nis never edited by hand.\nTakeaways for Anyone Planning a Similar Migration\nLooking back, the critical factor wasn't how fast UIKit views could be written—it was respecting a strict sequence of dependency locks where each step unlocked the physical precondition for the next:\nStart by deciding\nwhich layer actually deserves to be shared\n. React Native's cross-platform leverage lives in UI; once coding agents make platform-native UI cheap to write, it pays to push the shared boundary down into a headless data runtime behind a versioned contract. Extract heavy UI primitives first, sink shared state out of RN, and then invert the navigation host—once a native shell can host legacy RN screens as isolated leaves, every remaining screen can be replaced and verified independently. And when designing your verification harness, remember to test the test entry point itself,\nRelease\nbuild flags, real OS modal stacks, and async teardown across live runtime sessions.\nI'm not a veteran iOS engineer, and this layering reflects how I reasoned through the problem rather than established orthodoxy. I'm still weighing trade-offs—like whether running a JS data runtime inside an offscreen WebView is worth it long-term, whether protocol injection via\nLodyHost\nis the cleanest way to handle platform side effects, or whether keeping App UI code in folders rather than SPM packages will hold up as the codebase grows. If you've been through a similar migration or would structure this differently, I'd love to hear your thoughts in the comments.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+      "content_chars": 17724,
+      "content_sha256": "d2b5c0415f661d1b43755c968a1199136f89f43ea362000a7e4a771f303cb774",
+      "content_fetched_at": "2026-11-18T02:53:18.158748+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-08T09:29:52+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/react-native-to-uikit-migration"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+          "url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+          "content_sha256": "d2b5c0415f661d1b43755c968a1199136f89f43ea362000a7e4a771f303cb774"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:0ed9df84a952389a",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+      "target_url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+      "text": "innei published: 十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+      "at": "2026-11-04T11:08:49+00:00",
+      "external_id": "a:0ed9df84a952389a",
+      "url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+      "title": "十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+      "content": "The starting point: a performance tuning pass\nDuring my first month at LobeHub, I ran a performance optimization pass, documented with benchmarks in\n\"Performance and DX Optimizations at LobeHub\"\n. The heaviest bottlenecks in that pass were all style-related: CSS-in-JS Flexbox components like react-layout-kit numbered in the hundreds on a single page, each generating CSS; the\nuseStyle\nrunning across almost every component recalculated styles on every re-render; and a single antd Tooltip took 0.5ms on its own. The first two could be fixed by switching styling solutions, but Tooltip required a full rewrite. I rebuilt both it and Popover with Base UI—the first time Base UI was used in lobe-ui.\nWith those fixes in place, the remaining overhead came from antd components themselves. Since antd's UI was also notoriously hard to customize deeply, replacing it was the obvious next move. I had wanted to do this for a while, but never started because manually rewriting a codebase of this size was unrealistic, and AI wasn't capable enough yet.\nWhen we actually started, this was what we were facing:\n@lobehub/ui\nhad almost a hundred component modules, with behavior tightly coupled to antd and all component styles written in Emotion-based\nantd-style\n, which generated CSS at runtime and injected it into the document on every page load. Downstream, five ecosystem libraries—icons, editor, charts, tts, and fluent-emoji—declared it as a peer dependency, and at the top layer, hundreds of business files in lobe-chat directly imported from\nimport ... from 'antd'\n. Meanwhile, product features shipped weekly, so maintaining a long-running rewrite branch wasn't an option. The entire migration had to happen without interrupting delivery, split into two parallel tracks: first swap out the underlying component foundation from antd to Base UI, then switch styling from runtime Emotion to compile-time StyleX.\nLetting old and new components coexist in the same package\nlobe-ui#448\nrewrote Tooltip. Beyond performance gains, it also resolved seven Linear issues: positioning drift, tooltips failing to dismiss, and elements snapping back to (0, 0) when their host unmounted. Base UI is headless, providing only behavior and accessibility while leaving DOM structure and styling to us, so we could customize everything freely without fighting antd's limitations.\nThe next question was how to make the transition. With weekly product releases and several downstream libraries tracking our changes, ripping out antd all at once wasn't practical. Instead, I opted for coexistence: build new components with Base UI, package them alongside the antd versions, and migrate product call sites one component at a time. Throughout January 2026, we gradually added\nlobe-ui#444\n's Base UI Menu–based DropdownMenu and ContextMenu, alongside LobeSwitch and LobeSelect. To avoid name clashes with their antd counterparts, they initially carried a Lobe prefix or a V2 suffix.\nOn March 2,\nlobe-ui#467\nreleased v5, formalizing this coexistence in the package structure: adding a\n@lobehub/ui/base-ui\nsubpath where LobeSelect and LobeSwitch were moved (dropping their prefixes), while DropdownMenu, Toast, ContextMenu, and ScrollArea were exported from there as well. The package itself also became ESM-only. Subsequent components followed the exact same pattern: the implementation lived under\nsrc/base-ui/\n, while the root entry only re-exported it. For instance, when\nlobe-ui#486\nmigrated Popover,\n@lobehub/ui\nand\n@lobehub/ui/base-ui\nwere both valid, requiring zero changes in product code. From here on, migrating a component took just two steps: write the new implementation under base-ui, then switch the call sites in product code.\nComponents had to be drop-in replacements, locked down with linting once migrated\nBetween March and September, components were ported into base-ui roughly in this order: overlays, basic controls, forms, display, and layout.\nOverlays first\nThis came down to two reasons. To begin with, overlays naturally belong together: Dropdown, Popover, Tooltip, Modal, and Drawer all share floating positioning and stacking management, making them ideal to tackle together. Later,\nlobe-ui#518\nunified their z-index management under a single layer manager. The second reason was how Modal was structured. Antd's Modal is primarily declarative, requiring components to be mounted on the React tree in advance:\nopen\nis\nfalse\n, its children still render, re-rendering whenever ancestor state updates. With multiple Modals on a page, that overhead adds up on every single render. An imperative Modal creates an instance only when invoked and destroys it when closed, shifting the cost to the user action that opens it. I previously wrote about this in\n\"Why I Recommend Imperative Modals,\"\nand base-ui's Modal has supported both imperative and declarative patterns since its\nfirst release\n.\nIn the top example, every closed Modal participates in every render; in the bottom example, only the active Modal exists in the tree.\nMigration windows by component category\nAfter overlays came basic controls, forms, and display components. They all followed the exact same workflow: merge the new component into base-ui, switch product call sites over, and finally ban the legacy import via ESLint. Each bar below runs from when the new component merged to when the legacy import was banned:\nA stark dividing line is visible around August. Before August, taking a component category from initial merge to banning legacy imports took weeks or months: Modal and Select took nearly four months, and form controls took 36 days. After August, Drawer took 5 days, Alert 6 days, Skeleton 3 days, DraggablePanel and Tree 2 days each, while ActionIcon, Avatar, Tag, and Text took just 1 day combined. The migration process hadn't changed—what changed was the models. Anthropic released Claude Fable 5 on June 9 and Claude Opus 5 on July 24. To me, Opus 5 felt exceptionally strong at front-end tasks, and at half the price of Fable 5, it cost about the same as Opus 4.8. By August, commits in lobe-chat switched from Opus 4.8 to Opus 5, and Fable 5 usage was rising too. The bars for Tabs and Segmented are also very short, but only because the initial preset banned five components all at once on June 26—not because they migrated faster.\nComponents like DropdownMenu, Tooltip, and Popover were replaced in place at the root entry point without legacy versions to ban, so they aren't shown in the chart. Commits for each component:\nModal\n,\nMenu\n,\nTooltip\n,\nButton\n,\nForm controls\n,\nDrawer\n,\nAlert\n,\nActionIcon and three others\n,\nSkeleton\n,\nDraggablePanel\n, and\nTree\n.\nEach new component had to be a drop-in replacement, matching the old version in both API and visuals so switching only meant changing import paths. In lobe-ui#621, Tag's color resolution was ported straight from the old implementation: 13 preset colors, 5 system colors, and and all four variants (solid, filled, outlined, borderless) across three sizes had to match. Avatar replaced antd Avatar with native\nimg\n, keeping the fallback on load failure and the +N counter for AvatarGroup. After Drawer merged, a separate\ncommit\nfollowed to align its surface, edges, and drop shadows with antd Drawer.\nThe ban rules lived in lobe-ui's built-in ESLint preset, inherited directly by product projects. The\ninitial preset\non June 26 deprecated and banned imports of five antd-based wrappers: Button, Modal, Segmented, Select, and Tabs. When that first version went live, product code still had numerous legacy calls, which were temporarily grandfathered via an allowlist (detailed in the next section). From that point on, rules for each component category were added to the preset only after downstream projects had cleared all legacy imports. The PR description in\nlobe-ui#610\nwas blunt: downstream migrations had removed legacy imports for these components, and this PR turned the migration boundary into an enforceable lint rule. That way, new code couldn't introduce old patterns, and legacy usage could only ever go down.\nOn the product side: freeze new usage, then clear legacy code category by category\nEach time lobe-ui finished migrating a component category, lobe-chat had to update corresponding call sites. The chart below shows the number of files directly importing antd in lobe-chat, sampled biweekly:\nUntil mid-June, this line kept rising—climbing from 338 in mid-February to 485 on June 15. While legacy calls were being replaced, new features continued using antd. By then, the team had already delegated most product coding to AI, and component precedence had long been codified into\nAGENTS.md\nand react skills:\n@lobehub/ui/base-ui\nAny component available in it had to be imported from it, with same-named components at the root entry point off-limits, leaving antd strictly as a fallback when neither had it. Agents routinely ignored this. Because training data and hundreds of existing files demonstrated antd patterns, PRs for new features kept using legacy components even after lobe-ui published replacements. To an agent, docs are merely suggestions. The only way to stop them was to make violations break the build: ESLint fails directly, and lint-staged runs the same checks in pre-commit hooks to block the commit.\nThat was precisely what\nlobehub#16334\ndid on June 26: it adopted lobe-ui's ESLint preset, banning the five legacy wrappers (Button, Modal, Segmented, Select, Tabs) as well as antd-style's\ncreateStyles\n; existing call sites (354 in total) were added to\neslint-suppressions.json\nfor temporary exemption, while any new violations failed immediately. Afterward, whenever a batch was migrated, we ran\neslint --prune-suppressions\n, ensuring the allowlist only ever shrank.\nLegacy code was cleared category by category: each PR targeted only one component category, but covered the entire repository. The count dropped slowly over the summer, followed by a steep drop in early October.\nlobehub#20247\ntouched 285 files in one go, swapping out all remaining instances of Table, DatePicker, Menu, List, Input variants, and more, eliminating 163 files with direct antd imports. The PR included before-and-after screenshots compared against canary for verification, and five component library issues caught along the way were patched in\nlobe-ui#675\n. Next,\nlobehub#20317\nmigrated forms, removing another 63 files;\nlobehub#20408\nupdated menu item types to lobe-ui's, shedding 21 files; finally,\nlobehub#20503\ncleaned up the remainder. The two files still remaining on November 1 in the chart are test fixtures for alint.\nBehavioral discrepancies are harder to catch than visual differences\nVisual differences are easy to spot by comparing screenshots side by side, but behavioral discrepancies usually don't surface until a user saves data. After lobehub#20317 migrated forms to base-ui, the values returned on submit differed between the two:\nantd Form\nbase-ui Form\nReturned on submit\nValues of currently mounted\nForm.Item\nfields only\nEntire form store\nConditionally hidden fields\nDiscarded\nSubmitted together\ninitialValues\nextra keys\nDiscarded\nSubmitted together\nFields that used to be quietly dropped were now persisted together. Switching a plugin's authentication from bearer to none left the old token behind. Similarly, switching transport from HTTP to stdio kept the old URL, causing later re-installations to fetch manifests from that stale address and overwrite existing settings.\nlobehub#20644\nadded a\npruneHiddenFields\nstep before saving to prune fields that don't belong to the active type.\nThe compatibility layer itself can introduce bugs. The\nImperativeModal\nwrapper, created for a smooth migration, unmounted its content in the very same commit that\nopen\nbecame\nfalse\n, while base-ui's panel still had a 120ms exit animation—so closing the Skill Store details modal caused the content to collapse prematurely. Instead of patching the wrapper,\nlobehub#17941\nreplaced all 11 call sites with imperative\ncreateModal\nContent lives inside a ModalHost and is only unmounted after the exit animation finishes.\nBumping the ecosystem libraries along with lobe-ui's majors\nAs we wrapped up the app-level cleanup, the intermediate ecosystem tier had to come along. Beyond lobe-ui, lobe-chat depends on icons, editor, charts, tts, and fluent-emoji—most of which declare lobe-ui as a peer dependency:\nWhenever lobe-ui bumped a major version, the ecosystem layer broke: downstream packages lost exports they still needed, or peer versions fell out of sync. As a result, we always released them all together:\nlobe-ui\nRelease date\nicons\neditor\ncharts\nfluent-emoji\nv3 (upgraded to antd v6)\n2025-12-20\nv3\nv2\nv3\nv4 (static styles)\n2025-12-24\nv4\nv3\nv4\nv5 (base-ui subpackage)\n2026-03-02\nv5\nv4\nv5\nunchanged\nv6 (dropped antd)\n2026-10-15\nv6\nv5\nv6\nv5\nv6 was by far the biggest set of changes, split into a stacked sequence of PRs:\nlobe-ui#699\nremoved the antd components and\nThemeProvider\n;\nlobe-ui#700\ndropped the antd, antd-style, and rc-* dependencies; and\nlobe-ui#702\nmerged\nsrc/base-ui\ncompletely empty.\n@lobehub/ui/base-ui\nback into the root directory, getting rid of the base-ui subpath. With the coexistence phase over, we tore down that v5 scaffolding and exported the new components straight from the root entry. In early October, the downstream libraries first ported their own component usage over to base-ui (\nlobe-editor#222\nand\nlobe-charts#32\n), before each bumped to lobe-ui 6 and stripped out antd.\nThis cascade of changes couldn't be released and verified piecemeal. Instead, we tested across repos using pkg.pr.new preview packages: PRs for lobe-ui and the five downstream libraries each published preview packages, and\nlobehub#20503\npointed all dependencies to those preview URLs. We compared lobe-chat against production page by page to ensure zero visual regressions before officially publishing in dependency order and and then switched back to real version numbers. PR #20503 alone updated imports across 2,728 files, purged antd from 24 workspace packages, and finally left\npnpm ls -r antd\nwith nothing to show.\nMoving styles from runtime generation to build-time compilation\nDropping antd took care of components, but styles were still being generated at runtime. lobe-ui wrote its component styles in antd-style, built on Emotion: on page load, JavaScript generated CSS on the fly and inserted it into the page. The initial optimization pass replaced dynamic hooks with\ncreateStaticStyles\n, ensuring components no longer recomputed styles on every re-render. Yet the insertion step remained. In September,\nlobehub#19066\npre-computed purely static calls at build time, slashing the time spent on styles during cold home page loads from ~56ms to ~28ms. The remaining ~14ms came from\ninsertRule\nitself—an unavoidable cost as long as emotion was in the loop.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+      "content_chars": 14848,
+      "content_sha256": "de453305925a0dc0ad398f987b412a8462899b224cfd60024948813e2f3140a1",
+      "content_fetched_at": "2026-11-18T02:53:19.538766+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-04T11:08:49+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+          "url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+          "content_sha256": "de453305925a0dc0ad398f987b412a8462899b224cfd60024948813e2f3140a1"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:8920ef59b3b9441c",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "十月未央",
+      "target_url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "text": "innei published: 十月未央",
+      "at": "2026-10-24T18:16:19+00:00",
+      "external_id": "a:8920ef59b3b9441c",
+      "url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "title": "十月未央",
+      "content": "October Lingers\nAutumn\n·\nMixed feelings\n1,261\nreads\n·\n2\nlikes\ntranslated from Simplified Chinese\n↗\nDictation · Assisted · Title · Assisted\nEnglish\nSynopsis\nopen yohaku ↗\nIt's already been over two weeks since my last recap, so it's time to catch up on what's been happening lately.\nNyatabi Hits the App Store\nLast time, I mentioned running into so many headaches after a trip that I decided to build an app. At the end of my last post, I wrote, \"Musubicho is still in development and not finished yet.\" Less than two weeks later, I renamed it Nyatabi (喵旅) and officially launched it on the App Store. That said, I haven't even been the first one to really test it out in the wild. I'm such a homebody that even though a trip sparked the project, I haven't had the chance to use all its features myself yet. I just love building products—created purely out of passion.\nIt's live on the App Store now, and I put together a decent landing page for it. Feel free to check it out! (Though it's iOS-only for now.)\nNyatabi — your AI travel companion for iPhone\nPlan with Musubi, explore together, split spending fairly and turn your route into memories. Your whole journey, in one local-first iPhone app.\nNyatabi\nBeyond helping you map out trips, it lets an agent handle expense tracking and bill splitting on the go (either by snapping receipts or just telling it what you spent). In group chats, the agent can scout nearby restaurants or pull up your friends' locations. And once the trip wraps up, you can replay your route, generate an auto-edited highlight video, or export a detailed travel footprint report.\nBefore the official release, I shot a 4-part short video series walking through the entire flow: pre-trip planning → snapping receipts to split expenses on the go → settling balances with minimum transfers → everyday roommate bookkeeping. On October 16, I posted a full 2-minute demo.\nAlong the way, I also open-sourced the rounded-line icon set used in Nyatabi at\nicons.nyatabi.app\n.\nEngineering shortcuts vs. engineering rigor: refusing to be a human test runner, I wired up XCUITest across two physical iPhones so agents could handle the entire closed loop of \"implement → verify → fail → fix\" on their own (check out my technical post, \"\nMy AI-Native iOS Development & Verification Workflow\n\", for details).\nIt could be handy whether you're traveling or just going about everyday life: I've always found life-logging footprint apps a bit awkward to use, so I baked my own footprint features right in to track daily routines as well. I don't want to turn this into a full-on product pitch, so I'll stop here. If you're interested, feel free to give it a spin.\nNyatabi: AI Travel Planner App - App Store\nDownload Nyatabi: AI Travel Planner by Moeru AI on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Nyatabi: AI Travel Planner…\nApp Store\nAI in the Trenches\nA Love-Hate Relationship with Claude\nI had a backup Claude alt account that managed to hold out for over two weeks, so I decided to upgrade it. Went from Pro to Max, only to get slapped with an instant ban—no refund, either. I was so anxious that night that I stayed up by myself until 5 a.m. Eventually, I couldn't help setting up yet another account, and that one's somehow still alive.\nOn top of that, my $DRAM shares kept tumbling before I could break even, so those days felt like a brutal double blow from Anthropic and $DRAM. It also got me calculating the real cost of compute inflation: last year, a $20 Claude subscription felt like it could do so much; now, even the $200 Max tier barely scratches the surface. By comparison, Apple's $99/year developer membership is so cheap it's almost moving.\nOpenAI's \"God Tier\" Account and Kimi Falling Flat on Its Face\nThere was a funny little detour along the way. Around the 20th, I noticed a bug in OpenAI: an old 20x subscription was still usable even after downgrading or canceling. I honestly thought I'd struck gold with some chosen \"god-tier\" account. But by day five of freeloading, the bug got patched and my quota went straight to zero.\nThen on the 23rd, I dropped $19 on Kimi, wanting to see how it compared to $20 Claude. I asked it to write a website footer—and before it even finished, barely ten minutes in, I slammed right into a 5-hour rate limit. Might as well just call yourselves QueueShot AI. When it comes to domestic models, everyone should just use DeepSeek—what are the rest of these garbage knockoffs even doing? DeepSeek is the only one that can actually play: no token sales, no bullshit. The API pricing is right there: take it or leave it. The TPS is right there too—DeepSeek 4.1 Flash pushes over 200 TPS, and at those prices, burn through as much as you want.\nUnlike Kimi—their greed this time is honestly shameless: zero compute power, but pulling that classic Lei Jun artificial scarcity playbook and taking users for fools to the extreme.\nRyugi (流儀) — Open-Source Claude Artifacts\nAfter getting jerked around like that, I thought: why not just build my own version of Claude Artifacts? I genuinely love using that feature. For docs, artboard designs, and architecture sketches, it's just so damn good—a product genuinely made with care.\nBut being locked into Claude's proprietary subscription was a dealbreaker. So what choice did I have? Build it myself.\nClaude Artifacts support five types, and the ones I use most are Artboard, Document, and HTML. Sick of taking Anthropic's nonsense, I cobbled together a standalone workbench called \"Ryugi\" (\nryugi.innei.dev\n).\nBuilding this brought an unexpected bonus too: it completely changed my view of Codex's design skills. I used to think Codex was garbage at design, and just on the 10th I had tweeted about how miserable it was trying to write UI with it. But once I plugged it into Ryugi's Artboard workflow, it turned out to be surprisingly solid—I guess I was just using it wrong before. To my surprise, that tweet blew up, racking up 93K impressions and over 700 bookmarks.\nI've been using it for a few days now, putting it through heavy daily use and constantly refining it. The cloud environment is live too, so now it helps me brainstorm, work on designs, hash out architecture docs, and even knock out small feature requests on the side.\nThe experience genuinely captures the vibe of Claude Artifacts now. Hooking this workflow up to other harnesses—like DeepSeek or Codex—makes them dramatically more useful. If you haven't tried it yet, you really should.\nRepository\n· Innei\n523\nryugi\nRyugi (ryoo-ghee) — artifacts for coding agents: artboards of mockups, design docs, whiteboards, HTML benches and verify reports you comment on, with every comment sent back to the agent. Install artifacts only, or the full brainstorm → spec → TDD workflow. Claude Code, Codex and more.\nJavaScript\nHere are a few UI designs and animations I generated using DeepSeek, Codex, and Grok:\nDocument · 历史回看 · Ryugi\nView “Document · 历史回看” on Ryugi Cloud, an artboard artifact.\nRyugi\n简单模式 · 描述显隐 · Ryugi\nView “简单模式 · 描述显隐” on Ryugi Cloud, an artboard artifact.\nRyugi\nLobeHub · AI Provider 接入 · Ryugi\nView “LobeHub · AI Provider 接入” on Ryugi Cloud, an artboard artifact.\nRyugi\n室内乐与夏日小品 · Nine Pieces · Ryugi\nView “室内乐与夏日小品 · Nine Pieces” on Ryugi Cloud, an HTML artifact.\nRyugi\nLobeHub Bids Farewell to AntD\nOn the work front: I've been here for almost a year now. Back when I first joined, I declared that I was going to ditch AntD once and for all. That turned into a ten-month marathon, but on the 9th of this month, I finally pulled it off—migrating everything over to\n@base_ui\n+\nStyleX\n(meaning\nlobe-ui\nv6).\nLooking back at the numbers, the engineering scale was pretty wild:\nlobe-ui\nrewrote 54 components on top of Base UI, and AntD dependencies in\nlobe-editor\n,\nlobe-charts\n, and\nlobe-icons\nwere completely eliminated.\nThe main repo has over 11,000 TypeScript files. Replacing the underlying component library spanned 28 PRs and touched 3,242 files, with the single largest PR modifying 1,040 files.\nAlong the way, we also migrated our CSS-in-JS setup to StyleX, slashing the original 179 emotion files down to just 3. The most satisfying part was running 5 agents across parallel branches: in three and a half hours, they plowed through 84 commits. We then ran regression tests across 45 routes using 1,000 screenshot comparisons and computed-style diffs, reliably catching 4 regressions.\nGetting rid of AntD paid off right away. Bundle sizes shrank dramatically, and pages feel noticeably snappier. Thinking back, before AI agents existed, a core refactor of this scale would have easily taken an entire team a full quarter of grinding. But with today's models being so capable, I managed to knock out this massive project almost entirely on my own.\nThe Story Ends Here\nThroughout October, blind dates from family and friends were nonstop, but most of the time chatting was pretty draining. Earlier in the month, I tweeted a rant saying some WeChat chats feel like \"an LLM running on a potato server, taking hours of inference just to spit out a few characters, and if you don't send a request, you'll never get a response.\" That tweet unexpectedly racked up over 70,000 views, and predictably enough, I got hit with the \"you're a nice guy\" card in real life soon after.\nBut just a few days later, through another blind date, I unexpectedly met someone I could genuinely click with—something that hadn't happened in a long time.\nI find myself wanting deeper conversations lately—talking about fundamental values, life outlooks, and thoughts on the future. In day-to-day life, finding someone who can actually match that energy is rare. But that night—which also happened to be our last conversation—we talked about so much. Beyond having plenty of shared interests, what hit hardest was a real resonance in who we are deep down. Just knowing someone on that exact same wavelength actually exists was a wonderful, lucky surprise.\nUnfortunately, she felt our personalities were just too similar to be a good match. In the end, we parted ways gracefully, and that was where the story ended.\nTurning My Resume into a Canvas\nAnother project I spent a lot of time on was completely rebuilding my personal resume page for Programmer's Day on October 24, launching it at\nresume.innei.in/lab/\n.\nThe spark was simple: surfing online recently, I saw a few personal sites and resumes that looked amazing, so I wanted to bring my own ideas into the mix and polish up something of my own. A traditional single-page format can't hold very much, so I turned it into a canvas you can freely pan, zoom, and explore—connecting all the projects I've worked on and milestones I've reached over the six or seven years since college into one continuous timeline.\nWorking on this canvas also ended up unlocking some new skills. To give the page some fitting background music, I dove into arranging with realistic virtual instruments, tweaking synthesis, and fine-tuning the details (huge thanks to\n@wibus_wee\nfor walking me through Ozone mastering), and I even built an interactive sheet music display into the canvas.\nCramming a bunch of music arrangement and audio mastering just to build a resume was an unexpected bonus. Once I get around to picking music theory back up properly, I really should build an app for instruments and music theory.\nThanks for reading this far.\nAlso, I recently updated the background on this blog with dynamic nature scenes that change with the seasons and time of day. I even split the effect out into its own standalone preview page (\ninnei.in/dev-demos/backgrounds\n); if you're interested, feel free to click in and play around with it.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "content_chars": 11681,
+      "content_sha256": "f771558ea97f4a4f841518a0abd3f2963abde656a3e937750297e66ed7a72860",
+      "content_fetched_at": "2026-11-18T02:53:20.931958+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-10-24T18:16:19+00:00",
+      "collected_at": "2026-11-18T02:49:01.792590+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/notes/2026/10/24/2026-10-recap"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "十月未央",
+          "url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+          "content_sha256": "f771558ea97f4a4f841518a0abd3f2963abde656a3e937750297e66ed7a72860"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
+}

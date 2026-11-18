@@ -2936,12 +2936,12 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:0ed9df84a952389a": {
-    "bundle_date": "2026-11-17",
-    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
   },
   "innei:a:13bf1da4d5efb8a1": {
-    "bundle_date": "2026-11-17",
-    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
   },
   "innei:a:5e72a8cae2418bb2": {
     "baseline": true,
@@ -2954,8 +2954,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:8920ef59b3b9441c": {
-    "bundle_date": "2026-11-17",
-    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
   },
   "innei:a:8d029416a9572e74": {
     "baseline": true,
@@ -2978,8 +2978,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:c88c6b17f9a6ce94": {
-    "bundle_date": "2026-11-17",
-    "emitted_at": "2026-11-17T03:37:49.483584+00:00"
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
   },
   "innei:a:e6905fe41e05089d": {
     "baseline": true,
@@ -3418,6 +3418,10 @@
   "msrc:a:107d795586ca8e6c": {
     "bundle_date": "2026-11-01",
     "emitted_at": "2026-10-31T23:59:53.575402+00:00"
+  },
+  "msrc:a:112cf26ea63a8090": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
   },
   "msrc:a:113ed8d030c8df8f": {
     "baseline": true,
@@ -4004,6 +4008,10 @@
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
   },
+  "msrc:a:424351e23120e277": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
+  },
   "msrc:a:4246e4cd7c773838": {
     "bundle_date": "2026-11-01",
     "emitted_at": "2026-10-31T23:59:53.575402+00:00"
@@ -4064,6 +4072,10 @@
   "msrc:a:489ff1bcb336bbfb": {
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
+  },
+  "msrc:a:48c8134ead4a5786": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
   },
   "msrc:a:48f1365d2800e0e4": {
     "bundle_date": "2026-10-31",
@@ -4782,6 +4794,10 @@
     "bundle_date": "2026-11-14",
     "emitted_at": "2026-11-14T01:22:17.802167+00:00"
   },
+  "msrc:a:8412ea96e2ce0eb1": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
+  },
   "msrc:a:84326e4b1290529f": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -5389,6 +5405,10 @@
   "msrc:a:ba6b17c2fb1147f4": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
+  },
+  "msrc:a:baf7646f34f28c15": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
   },
   "msrc:a:bb82ba7859c04320": {
     "bundle_date": "2026-11-14",
@@ -6147,6 +6167,10 @@
     "bundle_date": "2026-10-29",
     "emitted_at": "2026-10-29T00:43:44.334897+00:00"
   },
+  "msrc:a:f8bab8d195b592d0": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
+  },
   "msrc:a:f9ccc4bbd374448d": {
     "bundle_date": "2026-11-14",
     "emitted_at": "2026-11-14T01:22:17.802167+00:00"
@@ -6349,6 +6373,10 @@
   "openai-research:a:b474c3614e4cf3b3": {
     "bundle_date": "2026-10-20",
     "emitted_at": "2026-10-20T00:11:35.710908+00:00"
+  },
+  "openai-research:a:b90eb40e45310665": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
   },
   "openai-research:a:b9faf61cb9b58f03": {
     "bundle_date": "2026-11-04",
@@ -6904,11 +6932,19 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T00:00:00+00:00"
   },
+  "safebreach-blog:a:0999999c83fa8581": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
+  },
   "safebreach-blog:a:0aaaa2450e2b8bb8": {
     "bundle_date": "2026-08-04"
   },
   "safebreach-blog:a:14200320c4b8c790": {
     "bundle_date": "2026-08-08"
+  },
+  "safebreach-blog:a:1b49604a943a9280": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
   },
   "safebreach-blog:a:2bdc409d41982bb2": {
     "bundle_date": "2026-09-29"
@@ -7646,6 +7682,10 @@
   "unknowncheats-ac:a:0078ca80073d316e": {
     "bundle_date": "2026-08-15"
   },
+  "unknowncheats-ac:a:0513932b1e41ae1a": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
+  },
   "unknowncheats-ac:a:0613871b949ea581": {
     "bundle_date": "2026-07-16"
   },
@@ -7669,6 +7709,10 @@
   },
   "unknowncheats-ac:a:116081946ef31194": {
     "bundle_date": "2026-08-12"
+  },
+  "unknowncheats-ac:a:1428ab09d55332bf": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
   },
   "unknowncheats-ac:a:14c91dcfe5ae9dc3": {
     "bundle_date": "2026-08-10"
@@ -7724,6 +7768,10 @@
   "unknowncheats-ac:a:347512ebfd6b2f52": {
     "bundle_date": "2026-11-05",
     "emitted_at": "2026-11-05T01:24:40.529398+00:00"
+  },
+  "unknowncheats-ac:a:35fdaf929bfff483": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
   },
   "unknowncheats-ac:a:362faae203d577e2": {
     "bundle_date": "2026-10-10",
@@ -8076,6 +8124,10 @@
   "unknowncheats-ac:a:d316f9eea74768f4": {
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
+  },
+  "unknowncheats-ac:a:d37f9202e4da44c5": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
   },
   "unknowncheats-ac:a:d3f518f745847a97": {
     "bundle_date": "2026-09-25"
@@ -8990,6 +9042,10 @@
   "yage-share:a:654f62a5f39a602c": {
     "bundle_date": "2026-08-17"
   },
+  "yage-share:a:66d601b1884527ca": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
+  },
   "yage-share:a:671c8a633e4b9852": {
     "bundle_date": "2026-11-17",
     "emitted_at": "2026-11-17T03:37:49.483584+00:00"
@@ -9675,6 +9731,10 @@
   "yage-share:a:f3cf8b55d29bdb6c": {
     "bundle_date": "2026-10-31",
     "emitted_at": "2026-10-31T00:36:28.430789+00:00"
+  },
+  "yage-share:a:f4db0bce467f58bd": {
+    "bundle_date": "2026-11-18",
+    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
   },
   "yage-share:a:f4dc6b682b7cdb94": {
     "bundle_date": "2026-10-08",
