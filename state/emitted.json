@@ -1490,6 +1490,10 @@
     "bundle_date": "2026-10-07",
     "emitted_at": "2026-10-07T00:32:50.824376+00:00"
   },
+  "cymulate-blog:a:ae035aa76dd8320d": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "cymulate-blog:a:ae10f56e15a98be2": {
     "bundle_date": "2026-10-30",
     "emitted_at": "2026-10-30T00:44:40.792458+00:00"
@@ -2563,6 +2567,10 @@
   "fushuling:a:3e71662cc1c871af": {
     "bundle_date": "2026-09-28"
   },
+  "fushuling:a:57e007bcfea4c7fb": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "g3tsyst3m:a:01276ca3701e1b45": {
     "baseline": true,
     "bundle_date": "baseline"
@@ -2738,6 +2746,10 @@
   "hacktron-blog:a:54b7657c19a87fe2": {
     "bundle_date": "2026-11-06",
     "emitted_at": "2026-11-06T01:27:36.840811+00:00"
+  },
+  "hacktron-blog:a:7524c9b65eaee20e": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "hacktron-blog:a:759fcde269cb3cb8": {
     "bundle_date": "2026-11-06",
@@ -2964,12 +2976,12 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:0ed9df84a952389a": {
-    "bundle_date": "2026-11-19",
-    "emitted_at": "2026-11-19T02:27:18.730002+00:00"
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "innei:a:13bf1da4d5efb8a1": {
-    "bundle_date": "2026-11-19",
-    "emitted_at": "2026-11-19T02:27:18.730002+00:00"
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "innei:a:5e72a8cae2418bb2": {
     "baseline": true,
@@ -2982,8 +2994,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:8920ef59b3b9441c": {
-    "bundle_date": "2026-11-19",
-    "emitted_at": "2026-11-19T02:27:18.730002+00:00"
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "innei:a:8d029416a9572e74": {
     "baseline": true,
@@ -3006,8 +3018,12 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:c88c6b17f9a6ce94": {
-    "bundle_date": "2026-11-19",
-    "emitted_at": "2026-11-19T02:27:18.730002+00:00"
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
+  "innei:a:da0a39ae92f40268": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "innei:a:e6905fe41e05089d": {
     "baseline": true,
@@ -3346,6 +3362,10 @@
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
+  "msrc:a:065cc909f4d17f9a": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:069860000b6b3b94": {
     "baseline": true,
     "bundle_date": "baseline",
@@ -3406,6 +3426,10 @@
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
   },
+  "msrc:a:0c13f68d825363b2": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:0d7c8cfe75896882": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
@@ -3427,9 +3451,17 @@
     "bundle_date": "2026-11-14",
     "emitted_at": "2026-11-14T01:22:17.802167+00:00"
   },
+  "msrc:a:0f3ae50013f54589": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:0f413e6b42a485f0": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
+  },
+  "msrc:a:0f759fc715669f99": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:0fbfdab4182603ff": {
     "bundle_date": "2026-11-12",
@@ -3519,6 +3551,10 @@
     "bundle_date": "2026-11-12",
     "emitted_at": "2026-11-12T02:11:11.674851+00:00"
   },
+  "msrc:a:15ca7dbd84e9b138": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:15f7ac3bee40dcd0": {
     "bundle_date": "2026-11-05",
     "emitted_at": "2026-11-05T01:24:40.529398+00:00"
@@ -3573,6 +3609,10 @@
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
   },
+  "msrc:a:19b732758cee43ee": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:19c4acef03c9fa9c": {
     "baseline": true,
     "bundle_date": "baseline",
@@ -3581,6 +3621,10 @@
   "msrc:a:1af31e19a3eaa2be": {
     "bundle_date": "2026-10-28",
     "emitted_at": "2026-10-28T00:23:02.466942+00:00"
+  },
+  "msrc:a:1b5016344942df04": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:1b5f5991cb927e2b": {
     "bundle_date": "2026-10-29",
@@ -3601,6 +3645,10 @@
   "msrc:a:1c76ea0ecd0d7a82": {
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
+  },
+  "msrc:a:1c8cc2b1dfcc14c0": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:1caf33745c1e5d6a": {
     "bundle_date": "2026-10-29",
@@ -3675,6 +3723,10 @@
   "msrc:a:232b2c32bbc1b34f": {
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
+  },
+  "msrc:a:251acc6e20ce889a": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:2529c0b41b913852": {
     "bundle_date": "2026-10-29",
@@ -3833,6 +3885,14 @@
   "msrc:a:315b1a5aacf4da1b": {
     "bundle_date": "2026-10-29",
     "emitted_at": "2026-10-29T00:43:44.334897+00:00"
+  },
+  "msrc:a:31815a8068bf8e7c": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
+  "msrc:a:31ae1c96461a1864": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:3221f2285f63b760": {
     "bundle_date": "2026-10-17",
@@ -4016,6 +4076,14 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:3f05595e8ffcaad7": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
+  "msrc:a:3f44e38e4c660bb5": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:3f4fc5774857e42b": {
     "bundle_date": "2026-10-29",
     "emitted_at": "2026-10-29T00:43:44.334897+00:00"
@@ -4052,6 +4120,10 @@
     "bundle_date": "2026-11-01",
     "emitted_at": "2026-10-31T23:59:53.575402+00:00"
   },
+  "msrc:a:42d05037391b3524": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:439690201da892ec": {
     "bundle_date": "2026-11-05",
     "emitted_at": "2026-11-05T01:24:40.529398+00:00"
@@ -4059,6 +4131,10 @@
   "msrc:a:43baaf36f340c73b": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
+  },
+  "msrc:a:444b45485844d93b": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:452e1e76287a02af": {
     "bundle_date": "2026-11-01",
@@ -4137,9 +4213,17 @@
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
   },
+  "msrc:a:4aaa578dfd29ca99": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:4afb2d150482e4e3": {
     "bundle_date": "2026-11-01",
     "emitted_at": "2026-10-31T23:59:53.575402+00:00"
+  },
+  "msrc:a:4bf5dfb1586c1fe7": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:4c3af756de836727": {
     "bundle_date": "2026-10-16",
@@ -4173,6 +4257,10 @@
   "msrc:a:4dc4c9c8c4926e51": {
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
+  },
+  "msrc:a:4e2c77de566a59e7": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:4e897b45c8e73e84": {
     "bundle_date": "2026-10-29",
@@ -4239,6 +4327,10 @@
   "msrc:a:537e2df433cad469": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:53c40b5af5cd1093": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:540152386cc090cd": {
     "bundle_date": "2026-10-29",
@@ -4406,6 +4498,10 @@
     "bundle_date": "2026-10-29",
     "emitted_at": "2026-10-29T00:43:44.334897+00:00"
   },
+  "msrc:a:6060b320eb5f55d9": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:60dbfcb238d0d8fb": {
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
@@ -4438,6 +4534,10 @@
     "bundle_date": "2026-10-29",
     "emitted_at": "2026-10-29T00:43:44.334897+00:00"
   },
+  "msrc:a:62e2b762d2a45bde": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:634de46ec0fd3126": {
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
@@ -4461,6 +4561,10 @@
   "msrc:a:647847d3a3ffdc8a": {
     "bundle_date": "2026-11-05",
     "emitted_at": "2026-11-05T01:24:40.529398+00:00"
+  },
+  "msrc:a:64adb02753a09d08": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:650466ee52fb5686": {
     "baseline": true,
@@ -4487,6 +4591,10 @@
   "msrc:a:66003ccbc17e57bb": {
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
+  },
+  "msrc:a:670bf0bea333515f": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:673fdfd632ffbd1c": {
     "bundle_date": "2026-11-14",
@@ -4522,6 +4630,10 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:69863ac92790ef80": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:69fc9b550e86bee2": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
@@ -4529,6 +4641,10 @@
   "msrc:a:6a2e9d577a809f8d": {
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
+  },
+  "msrc:a:6b511f53eef74acf": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:6b9aa0664452701f": {
     "bundle_date": "2026-10-23",
@@ -4592,6 +4708,10 @@
   "msrc:a:70c085a564d8736b": {
     "bundle_date": "2026-11-01",
     "emitted_at": "2026-10-31T23:59:53.575402+00:00"
+  },
+  "msrc:a:70c89e0a4e06e91a": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:7121a693f62e324d": {
     "bundle_date": "2026-11-14",
@@ -4750,6 +4870,14 @@
     "bundle_date": "2026-11-01",
     "emitted_at": "2026-10-31T23:59:53.575402+00:00"
   },
+  "msrc:a:7d254293effceb21": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
+  "msrc:a:7db79033d356b384": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:7db9740b60f78933": {
     "bundle_date": "2026-11-01",
     "emitted_at": "2026-10-31T23:59:53.575402+00:00"
@@ -4757,6 +4885,10 @@
   "msrc:a:7dbc47c86c4e6a89": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:7dcb2d1fdf6fb025": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:7e25e120e1725555": {
     "bundle_date": "2026-11-11",
@@ -4863,6 +4995,10 @@
     "bundle_date": "2026-11-01",
     "emitted_at": "2026-10-31T23:59:53.575402+00:00"
   },
+  "msrc:a:87fc79b83ef701de": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:880026273c0db78e": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
@@ -4874,6 +5010,10 @@
   "msrc:a:8951113fc44b3536": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
+  },
+  "msrc:a:8a766f28686171e2": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:8ac7c5dbeb423a33": {
     "bundle_date": "2026-11-14",
@@ -5344,6 +5484,10 @@
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
   },
+  "msrc:a:b299b25eb9a0e120": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:b29fd75077bb88d4": {
     "baseline": true,
     "bundle_date": "baseline",
@@ -5352,6 +5496,10 @@
   "msrc:a:b348fa08781d324c": {
     "bundle_date": "2026-11-14",
     "emitted_at": "2026-11-14T01:22:17.802167+00:00"
+  },
+  "msrc:a:b39326c711050847": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:b3f254d24a078a89": {
     "bundle_date": "2026-10-29",
@@ -5429,6 +5577,10 @@
   "msrc:a:b950fa2ff89422bc": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
+  },
+  "msrc:a:b955eedc80e661ff": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:ba34234d0822177e": {
     "bundle_date": "2026-10-16",
@@ -5519,6 +5671,10 @@
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
   },
+  "msrc:a:c003f913fd939278": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:c00626dea4d04a4a": {
     "bundle_date": "2026-11-12",
     "emitted_at": "2026-11-12T02:11:11.674851+00:00"
@@ -5606,6 +5762,10 @@
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:c4da99d1ce0fc7e5": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:c4fccd48f22d3bcb": {
     "bundle_date": "2026-11-14",
@@ -5788,10 +5948,18 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:d290b129ac4eb11b": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:d2f9b477c20b486c": {
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:d2fc2acba31d608c": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:d30625546d0868d7": {
     "bundle_date": "2026-10-17",
@@ -5843,6 +6011,10 @@
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
+  "msrc:a:d630bd7fb0e48ce7": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:d6688a6a8e803c33": {
     "bundle_date": "2026-11-12",
     "emitted_at": "2026-11-12T02:11:11.674851+00:00"
@@ -5887,6 +6059,10 @@
   "msrc:a:dc41910774c39362": {
     "bundle_date": "2026-10-17",
     "emitted_at": "2026-10-16T23:24:35.002894+00:00"
+  },
+  "msrc:a:dc6c73fb4d1805c1": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:ddb573b59e68dcf8": {
     "bundle_date": "2026-11-14",
@@ -5966,6 +6142,10 @@
   "msrc:a:e29c8705d9593d83": {
     "bundle_date": "2026-10-23",
     "emitted_at": "2026-10-22T23:56:04.895191+00:00"
+  },
+  "msrc:a:e29d45656f00641f": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:e2d0864d1bb16b3c": {
     "bundle_date": "2026-10-29",
@@ -6099,6 +6279,10 @@
     "bundle_date": "2026-10-29",
     "emitted_at": "2026-10-29T00:43:44.334897+00:00"
   },
+  "msrc:a:ee42708152949a5f": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:eec4b8f9b3fd3f49": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
@@ -6114,6 +6298,10 @@
   "msrc:a:effd5055a310fe8d": {
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
+  },
+  "msrc:a:f0176ba97631e7d9": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:f018dee5c6bf1817": {
     "baseline": true,
@@ -6144,6 +6332,10 @@
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:f24b40bd501c0f51": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:f336b572a6b4777f": {
     "bundle_date": "2026-11-14",
@@ -6215,6 +6407,10 @@
     "bundle_date": "2026-11-12",
     "emitted_at": "2026-11-12T02:11:11.674851+00:00"
   },
+  "msrc:a:fa9fa8e85460abb9": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:fae6f88814c06b18": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
@@ -6264,6 +6460,10 @@
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
+  "msrc:a:fd25b2dc30d61e8a": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "msrc:a:fd5c289a8fa29400": {
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
@@ -6297,6 +6497,10 @@
   "msrc:a:ff44e47a9df13c2a": {
     "bundle_date": "2026-10-27",
     "emitted_at": "2026-10-27T00:19:34.149635+00:00"
+  },
+  "msrc:a:ff537379c1265e3e": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "msrc:a:ff5c8c8f194ade94": {
     "bundle_date": "2026-11-14",
@@ -6390,6 +6594,10 @@
     "bundle_date": "2026-10-21",
     "emitted_at": "2026-10-20T23:44:37.431569+00:00"
   },
+  "openai-research:a:725c967606cef490": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "openai-research:a:787fde03d4dfa447": {
     "bundle_date": "2026-09-30",
     "emitted_at": "2026-09-30T00:16:27.541665+00:00"
@@ -6461,6 +6669,10 @@
   "otterpwn:a:69a7118eda531aef": {
     "baseline": true,
     "bundle_date": "baseline"
+  },
+  "otterpwn:a:9801f54a8ffe35d4": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "otterpwn:a:99347da9b50cf9c8": {
     "baseline": true,
@@ -6666,6 +6878,10 @@
   "paloalto-advisory:a:b7dd593ee90be45f": {
     "baseline": true,
     "bundle_date": "baseline"
+  },
+  "paloalto-advisory:a:b8e119c2458cab7b": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "paloalto-advisory:a:ba7b1b70b6a685dd": {
     "bundle_date": "2026-08-13"
@@ -7038,6 +7254,10 @@
   },
   "safebreach-blog:a:9b9c7c99b9f62d94": {
     "bundle_date": "2026-09-16"
+  },
+  "safebreach-blog:a:9cfcfbabd77a206e": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "safebreach-blog:a:a137063ae9340382": {
     "bundle_date": "2026-07-24"
@@ -7941,7 +8161,8 @@
     "emitted_at": "2026-10-09T01:07:22.377915+00:00"
   },
   "unknowncheats-ac:a:639cd442a5062b7d": {
-    "bundle_date": "2026-08-10"
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "unknowncheats-ac:a:65cf6e7d085b5f6c": {
     "bundle_date": "2026-07-19"
@@ -8178,8 +8399,8 @@
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
   },
   "unknowncheats-ac:a:d37f9202e4da44c5": {
-    "bundle_date": "2026-11-18",
-    "emitted_at": "2026-11-18T02:49:01.792590+00:00"
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "unknowncheats-ac:a:d3f518f745847a97": {
     "bundle_date": "2026-09-25"
@@ -8670,6 +8891,10 @@
   "yage-share:a:0364a964f86dfd2f": {
     "baseline": true,
     "bundle_date": "baseline"
+  },
+  "yage-share:a:03aaaccacbd5edbf": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "yage-share:a:05790e5779ea9d04": {
     "bundle_date": "2026-10-18",
@@ -9604,6 +9829,10 @@
     "baseline": true,
     "bundle_date": "baseline"
   },
+  "yage-share:a:cf34a6462bce65db": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "yage-share:a:cf545b6e3ebdcd3b": {
     "bundle_date": "2026-07-29"
   },
@@ -10437,6 +10666,10 @@
     "bundle_date": "2026-11-19",
     "emitted_at": "2026-11-19T02:27:18.730002+00:00"
   },
+  "zdi-advisories:a:471961fa993b0d8a": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
   "zdi-advisories:a:481ffced632283c4": {
     "bundle_date": "2026-09-18"
   },
@@ -11163,6 +11396,10 @@
   "zdi-advisories:a:988413268a7af275": {
     "bundle_date": "2026-10-29",
     "emitted_at": "2026-10-29T00:43:44.334897+00:00"
+  },
+  "zdi-advisories:a:9891cb5607a42515": {
+    "bundle_date": "2026-11-20",
+    "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
   "zdi-advisories:a:98aea96d144615ce": {
     "bundle_date": "2026-11-19",
