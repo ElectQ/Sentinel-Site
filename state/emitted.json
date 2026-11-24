@@ -1274,6 +1274,10 @@
   "cisco-advisory:a:f4632e72c90af3b5": {
     "bundle_date": "2026-08-06"
   },
+  "cisco-advisory:a:f6c0a438eba715e7": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
+  },
   "cisco-advisory:a:f6faab4cb830311f": {
     "bundle_date": "2026-09-17"
   },
@@ -1367,6 +1371,10 @@
   "cocomelonc:a:a0b551e709f95778": {
     "bundle_date": "2026-11-09",
     "emitted_at": "2026-11-09T00:41:25.389027+00:00"
+  },
+  "cocomelonc:a:a723203b8fcc52f8": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
   },
   "cocomelonc:a:a9b46ea21bd7c81b": {
     "bundle_date": "2026-08-25"
@@ -2779,6 +2787,10 @@
     "bundle_date": "2026-11-06",
     "emitted_at": "2026-11-06T01:27:36.840811+00:00"
   },
+  "hacktron-blog:a:7dce2bb68aff6ebe": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
+  },
   "hacktron-blog:a:7f3aabd6004d359a": {
     "baseline": true,
     "bundle_date": "baseline"
@@ -2988,12 +3000,12 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:0ed9df84a952389a": {
-    "bundle_date": "2026-11-23",
-    "emitted_at": "2026-11-23T01:29:37.599643+00:00"
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
   },
   "innei:a:13bf1da4d5efb8a1": {
-    "bundle_date": "2026-11-23",
-    "emitted_at": "2026-11-23T01:29:37.599643+00:00"
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
   },
   "innei:a:5e72a8cae2418bb2": {
     "baseline": true,
@@ -3006,8 +3018,8 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:8920ef59b3b9441c": {
-    "bundle_date": "2026-11-23",
-    "emitted_at": "2026-11-23T01:29:37.599643+00:00"
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
   },
   "innei:a:8d029416a9572e74": {
     "baseline": true,
@@ -3030,12 +3042,12 @@
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
   },
   "innei:a:c88c6b17f9a6ce94": {
-    "bundle_date": "2026-11-23",
-    "emitted_at": "2026-11-23T01:29:37.599643+00:00"
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
   },
   "innei:a:da0a39ae92f40268": {
-    "bundle_date": "2026-11-23",
-    "emitted_at": "2026-11-23T01:29:37.599643+00:00"
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
   },
   "innei:a:e6905fe41e05089d": {
     "baseline": true,
@@ -3847,6 +3859,10 @@
     "bundle_date": "2026-10-16",
     "emitted_at": "2026-10-16T01:17:18.454347+00:00"
   },
+  "msrc:a:2da0cd0a9d10671c": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
+  },
   "msrc:a:2de276d1035acad5": {
     "bundle_date": "2026-11-14",
     "emitted_at": "2026-11-14T01:22:17.802167+00:00"
@@ -4135,6 +4151,10 @@
   "msrc:a:42d05037391b3524": {
     "bundle_date": "2026-11-20",
     "emitted_at": "2026-11-20T02:11:53.768317+00:00"
+  },
+  "msrc:a:4380b39e99c5e30f": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
   },
   "msrc:a:439690201da892ec": {
     "bundle_date": "2026-11-05",
@@ -5513,6 +5533,10 @@
     "bundle_date": "2026-11-20",
     "emitted_at": "2026-11-20T02:11:53.768317+00:00"
   },
+  "msrc:a:b3cdddcd5e3d27fb": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
+  },
   "msrc:a:b3f254d24a078a89": {
     "bundle_date": "2026-10-29",
     "emitted_at": "2026-10-29T00:43:44.334897+00:00"
@@ -5724,6 +5748,10 @@
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
   },
+  "msrc:a:c285a6b1efe07f84": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
+  },
   "msrc:a:c290f64ed4079e86": {
     "bundle_date": "2026-11-14",
     "emitted_at": "2026-11-14T01:22:17.802167+00:00"
@@ -5802,6 +5830,10 @@
   "msrc:a:c5a7aee1fe7260b6": {
     "bundle_date": "2026-11-11",
     "emitted_at": "2026-11-11T01:10:07.021316+00:00"
+  },
+  "msrc:a:c5ae608dfb710a17": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
   },
   "msrc:a:c5c1f9d29e42928f": {
     "bundle_date": "2026-10-16",
@@ -6055,6 +6087,10 @@
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T09:33:08.885118+00:00"
+  },
+  "msrc:a:d92e9c30841796ce": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
   },
   "msrc:a:d935e3959b68b02f": {
     "bundle_date": "2026-10-29",
@@ -7219,6 +7255,10 @@
     "baseline": true,
     "bundle_date": "baseline",
     "emitted_at": "2026-10-15T00:00:00+00:00"
+  },
+  "safebreach-blog:a:0401321d3accba48": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
   },
   "safebreach-blog:a:0999999c83fa8581": {
     "bundle_date": "2026-11-18",
@@ -8684,6 +8724,10 @@
     "baseline": true,
     "bundle_date": "baseline"
   },
+  "whiteknightlabs-blog:a:2f44587ae24cc43f": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
+  },
   "whiteknightlabs-blog:a:3faf0c82f2ec22aa": {
     "bundle_date": "2026-10-01",
     "emitted_at": "2026-10-01T00:27:30.801665+00:00"
@@ -9054,6 +9098,10 @@
   "yage-share:a:25dd842ffac830c5": {
     "bundle_date": "2026-08-10"
   },
+  "yage-share:a:2725358e25d6a3c3": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
+  },
   "yage-share:a:273fec688c43b9ac": {
     "bundle_date": "2026-08-01"
   },
@@ -9085,6 +9133,10 @@
   },
   "yage-share:a:30e2b85c6d94be96": {
     "bundle_date": "2026-08-20"
+  },
+  "yage-share:a:319e10b18a57183a": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
   },
   "yage-share:a:32e3156e4828667a": {
     "bundle_date": "2026-10-24",
@@ -9184,6 +9236,10 @@
   "yage-share:a:463f79dee1f22717": {
     "bundle_date": "2026-10-27",
     "emitted_at": "2026-10-27T00:19:34.149635+00:00"
+  },
+  "yage-share:a:4647c7d9dea176d8": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
   },
   "yage-share:a:475a1fa12058ec15": {
     "bundle_date": "2026-10-15",
@@ -12433,6 +12489,10 @@
   "zusda:a:2f6fc0de27462359": {
     "bundle_date": "2026-10-30",
     "emitted_at": "2026-10-30T00:44:40.792458+00:00"
+  },
+  "zusda:a:3610d0a49f719f43": {
+    "bundle_date": "2026-11-24",
+    "emitted_at": "2026-11-24T05:12:48.544761+00:00"
   },
   "zusda:a:71947c8f0b3a7d41": {
     "bundle_date": "2026-10-27",
