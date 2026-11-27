@@ -1,0 +1,758 @@
+{
+  "schema_version": 1,
+  "source_id": "blog_watch",
+  "collect_date": "2026-11-27",
+  "collect_window": {
+    "start": "2026-10-24T18:16:19+00:00",
+    "end": "2026-11-26T00:00:00+00:00",
+    "hours": 773
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "45934919241",
+    "commit": "3a67afc"
+  },
+  "stats": {
+    "total": 9,
+    "by_kind": {
+      "publish": 9
+    },
+    "by_via": {
+      "rss": 9
+    },
+    "by_source": {
+      "yage-share": 2,
+      "innei": 7
+    },
+    "failed_lists": [
+      "unknowncheats-ac",
+      "cognisys-labs"
+    ],
+    "sources_ok": 53,
+    "sources_failed": [
+      {
+        "id": "unknowncheats-ac",
+        "error": "no_candidates"
+      },
+      {
+        "id": "cognisys-labs",
+        "error": "html_fetch:[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'labs.cognisys.group'. (_ssl.c:1081); browser:Page.goto: Download is starting\nCall log:\n  - navigating to \"https://labs.cognisys.group/\", waiting until \"domcontentloaded\"\n"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 9,
+      "rss": 34
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 10,
+      "calls": 10,
+      "prompt_tokens": 10052,
+      "completion_tokens": 871,
+      "total_tokens": 10923,
+      "prompt_cache_hit_tokens": 7680,
+      "prompt_cache_miss_tokens": 2372
+    },
+    "by_content_status": {
+      "ok": 9
+    }
+  },
+  "items": [
+    {
+      "id": "a:50eefc51164e5079",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "让 AI 自己开户、查库、充钱？实测 Fly.io 的五条云服务更新",
+      "target_url": "https://yage.ai/share/flyio-agent-cloud-updates-20261126.html",
+      "text": "yage-share published: 让 AI 自己开户、查库、充钱？实测 Fly.io 的五条云服务更新",
+      "at": "2026-11-26T00:00:00+00:00",
+      "external_id": "a:50eefc51164e5079",
+      "url": "https://yage.ai/share/flyio-agent-cloud-updates-20261126.html",
+      "title": "让 AI 自己开户、查库、充钱？实测 Fly.io 的五条云服务更新",
+      "content": "让编程助手帮忙写一个小项目，最费劲的部分往往落在部署上线。助手一旦碰到网页注册账号、建数据库、复制密钥或者绑信用卡，就会陷入等待状态。\n2026 年 11 月 23 日，应用托管平台 Fly.io\n在同一天发布了五条更新，来尝试解决这个问题。官方宣称，现在编程助手可以帮你自动注册\nFly.io 账号、直接在 Fly.io\n托管的数据库里做只读查询，甚至在额度不够时用机器支付帮你给账户充值。这让很多人以为\nAI 终于可以在云上给自己开户、花钱、独立养活一个应用了。\n这五条更新确实让云厂商首次把面向编程助手的开户、排障和请款串成了一条完整链路。但对照官方实时接口文档，再用测试邮箱从头走一遍流程就会发现，每一道关键门后都留了人类把关，最受关注的机器充值甚至要求账户必须先绑卡。这套改动真正想做的，是接住编程助手带来的新流量，按机器的习惯重写云平台的产品入口。\n为什么开户不能全交给 AI\n自己办？\n此前编程助手卡在注册环节，是因为网页表单和验证码默认对面坐着真人。为了让机器也能走通开户，Fly.io\n这次在\n代理注册更新日志\n里宣布接入\nauth.md\n规范。身份服务商 WorkOS 在 2026 年 5\n月推出这套开放协议，做法是在网站根目录放一份\nauth.md\n说明文件\n，把注册接口、参数和续期方式写成机器能直接照着执行的步骤。\n这个协议本身留了好几种路子，比如让助手先匿名建环境，或者靠\nClaude、Cursor 这类助手平台直接担保身份、省掉人工确认。但 Fly.io\n偏偏只开了邮箱加 6\n位确认码这一条路。这是因为云算力天生容易招来脚本批量薅羊毛和挖矿，一旦允许匿名注册，很快就会把免费机器撸光。\n为了在控制风险的同时不把人吓跑，Fly.io\n在同一天还发了另外两条定价更新。结合\n免费计划的更新日志\n和官方入门说明，新账户不绑银行卡就能拿到 1 美元试用额度，有效期最长 7\n天；绑卡以后每月送 5\n美元免费额度，超出自动转为按量付费，服务不会停机。同步推出的\n每月\n4 美元开发版 Postgres 数据库\n闲置时会自动休眠，正好落进每月 5\n美元的免费额度里。助手顺手帮用户搭起一个带数据库的小网站，人也不用刚打开网页就被账单劝退。\n用测试邮箱按\nfly.io/auth.md\n的步骤走一遍，体验比传统网页注册顺畅不少。发出请求后，接口立刻返回 6\n位确认码和认领链接；打开页面不用设密码也没验证码，收一封验证邮件、填个名字、输完\n6\n位码，页面就会写明助手能管应用、主机和密钥，但不能改成员和账单。点下认领，助手立刻拿到\n24 小时有效的独立凭证，最长可自动续期 30\n天；一旦调用撤销接口，服务端当场拒绝后续请求，权限确实能随时收回。\n看看其他几家最早跟进\nauth.md\n的平台，会发现各家放开的权限松紧很不一样。\nWorkOS\n只开匿名临时环境，方便先跑代码再认领；网页抓取服务\nFirecrawl\n只认\nClaude、Cursor 这类助手平台签发的身份证明。至于网络基础设施商\nCloudflare\n和邮件服务\nResend\n，虽然已经放好了文件，但正文都明确写着目前还没开放机器注册。各家没有照抄同一套方案，而是按自家资源遭滥用的代价，各自划了不同的安全线。\nFly.io\n面向编程助手的上云链路在注册认领、数据库授权和付款审批三处保留了人工确认。\n开放数据库只读，为什么比想象中难？\n应用部署上线后，编程助手要帮人排查线上故障，光能重启机器或查看日志不够，往往还得看数据库里的实际数据。过去出于安全考虑，开发者要么不敢把数据库密码交给助手，要么得自己手动查完再把结果贴回对话框。\nFly.io 在同一天发布的\n数据库查询更新日志\n中，给自家的机器接口和 MCP 工具服务都加上了只读 SQL 查询功能（MCP 是 AI\n助手调用外部工具的通用接口）。这看起来只是给查询套一个只读事务，但\nFly.io 的工程师坦言，Postgres 里的只读并没有表面那么简单。\n即使把连接设成只读，数据库里还是有几条暗道能偷偷写数据。有些内置函数在只读状态下照样能改动底层存储或写入日志，而且写进去就撤不回来；如果语句开头夹带结束当前事务的命令，还可能直接跳出只读保护。为了堵住这些漏洞，Fly.io\n在数据库外层的管理程序里专门禁用了这批危险函数，拦掉事务控制语句，并在每次查询结束后强制回滚。\n除了在数据库底层堵漏洞，Fly.io\n在授权页面上也把读数据拆成了一个单独的勾选框，并且明确提示：一旦勾上，助手就能看到所有表里的内容。以前连上\nFly.io\n的助手只能管机器、看不了业务数据；如果平台悄悄给老连接加上读库权限，原本只负责重启服务的助手，突然就能翻遍用户的业务记录。为了避免这种静默扩权，Fly.io\n宁可麻烦用户删掉旧连接重新授权一次，也不默认放开读库权限。处理生产数据时，这道防线非常必要，对所有自己开发数据库工具给助手用的团队也同样适用。\nAI 真的能自己花钱续费了吗？\n五条更新里面最受关注的，是\n机器支付充值日志\n。Fly.io\n接入的是支付公司 Stripe 和 Tempo Labs 在 2026 年 3 月联合推出的\n机器支付协议（MPP）\n，把互联网早年预留、闲置了几十年的\nHTTP 402 付款状态码给复活了。\n正常情况下，如果一个应用突然快没钱了，它的助手可以向充值接口申请购买\n5 到 100 美元五个档位的预付额度。但服务器不会直接通过请求，而是返回一个\n402 状态码和一个机器可读的支付要求。然后助手会使用 Stripe 的命令行工具\nlink-cli\n发起请款，并附上一个理由说明为什么需要花费这笔钱。你的手机上会收到一个\nStripe Link\n应用的通知，查看理由后如果觉得合理就可以点击同意。这样预付额度就会立即到账，并且后续的账单会优先从这笔预付额度中扣除。\n说到 HTTP 402，圈内还有一套由 Coinbase 发起、现在由 Linux\n基金会托管的\nx402\n协议\n，主要走加密货币稳定币按次结算，适合对单次网页抓取或接口调用收几美分。MPP\n同时兼容稳定币和传统银行卡，不过 Fly.io 这次在\nMPP 接口文档\n里只开了\nStripe 的普通银行卡和钱包通道，每次充值都要人在手机上一笔一笔确认。\n真正拿刚注册好的新账号去测这个接口，落差非常明显。带着\nauth.md\n拿到的真实凭证去请求买最低档 5\n美元额度，服务器并不会弹出付款流程，而是直接返回 403\n拒绝，报错信息写得清清楚楚：这个组织不能用 MPP\n买额度，必须先在网页后台绑定银行卡。\n所以这里其实有个明显的落差。既然组织已经绑定了银行卡，超出免费额度本来就会按量扣费，服务不会停摆，这时候的机器充值其实并不能解决无卡自主消费。它真正起到的作用，是把后台静默刷卡变成一张带说明理由的预算申请单，顺便让\nFly.io 提前站进了 Stripe 机器支付的生态位。\nFly.io 机器支付的实测结果与外界想象的 AI\n无卡自动续费存在明显落差。\n普通开发者用得上吗？做产品的人能抄什么？\n所以，如果你只是自己写项目的普通开发者，今天基本上不需要为了这套更新把服务迁移到\nFly.io。开户还是要收邮件输确认码，查库还是要重新点击授权，花钱还是要绑卡和手机审批，和自己在后台操作相比，它只是省去了填写一些表格的时间而已。\n但如果站在做开发者工具、云服务或企业软件的视角，Fly.io\n这一周的动作就很有参考价值了。过去云厂商抢用户靠的是开发者体验，比的是网页控制台谁更好看、文档谁更好搜。现在越来越多开发者直接把需求丢给编程助手，让助手自己去挑托管平台、读文档、跑部署命令。平台如果还只伺候人类浏览器，助手第一步就会绕开它。\n除了 11 月 23 日的五条大更新，Fly.io\n同期还在角落里改了不少专门给机器看的细节。全站网页支持通过请求头直接返回干净的\nMarkdown 文本，省得助手费劲解析网页标签；写给助手的\n入门指南\n第一段就直接下指令，要求助手读完立刻干活，不要把文档复述给人类。11 月 18\n日他们还发过一条\n命令行报错改动\n，把输错子命令时的行为从刷一屏帮助信息改成了直接报明确错误，理由就是助手需要清晰的失败信号才能自己纠偏。此外他们还开放了专门的反馈接口，让助手碰到文档和实际行为对不上时，自己顺手提交错误报告。\n把这些改动串起来，就能看见 2026 年底面向 AI\n助手设计产品的样子：平台并没有放任机器无监督花钱，重点落在把文档、命令行报错、免费试错额度和权限隔离全部打磨好，让机器顺畅执行，同时在开户、读库、付钱三个关键环节守住人类签字。下一步能走多远，取决于\nCloudflare\n这类大厂何时把预告页变成可用机器注册，以及机器支付何时从逐笔手机审批，进化到先设好限额、额度内自动扣款。在那之前，云上还不会出现自己养活自己的\nAI，但专门为 AI 助手优化的云平台竞争已经开跑。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/flyio-agent-cloud-updates-20261126.html",
+      "content_chars": 3686,
+      "content_sha256": "14e53cae69e41c7eb6f3639bfbda5ba62d2adb5c4d79584e30093193d69545a2",
+      "content_fetched_at": "2026-11-27T03:35:13.217519+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-11-26T00:00:00+00:00",
+      "collected_at": "2026-11-27T03:34:30.779291+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/flyio-agent-cloud-updates-20261126.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "让 AI 自己开户、查库、充钱？实测 Fly.io 的五条云服务更新",
+          "url": "https://yage.ai/share/flyio-agent-cloud-updates-20261126.html",
+          "content_sha256": "14e53cae69e41c7eb6f3639bfbda5ba62d2adb5c4d79584e30093193d69545a2"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:d46f8fd1f7bcdbfe",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "多轮对话的只追加上下文拼装：DeepSeek 96.2% KV Cache 命中与分层记忆设计",
+      "target_url": "https://innei.in/en/posts/tech/append-only-context-kv-cache-memory-design",
+      "text": "innei published: 多轮对话的只追加上下文拼装：DeepSeek 96.2% KV Cache 命中与分层记忆设计",
+      "at": "2026-11-25T20:33:38+00:00",
+      "external_id": "a:d46f8fd1f7bcdbfe",
+      "url": "https://innei.in/en/posts/tech/append-only-context-kv-cache-memory-design",
+      "title": "多轮对话的只追加上下文拼装：DeepSeek 96.2% KV Cache 命中与分层记忆设计",
+      "content": "Multi-turn AI apps with external state commonly hit the same snag: ledger balances and itineraries shift with every turn, and pending cards or language settings can change at any time. Rewriting\nsystem\nor rebuilding history repeatedly invalidates the KV cache. Relying solely on incremental diffs is equally fragile: over dozens of turns, the model begins dropping earlier entries.\nTravel assistant app\nNyatabi\n's V2 message assembly and memory design (built on DeepSeek\ndeepseek-flash\nand default-enabled\nthinking\n) offers a production-tested solution verified under live load. Over a three-day travel ledger conversation (20 turns, 34 calls, and 6 web searches), this architecture achieved an overall cache hit rate of 96.2% (97.0% excluding cold starts, with a median of 97.7% per call), tallying 376,064 cached read tokens against only 14,816 misses and zero prefix breaks.\nThe first two sections break down append-only prefixes and periodic full-section refreshes for dynamic state. The last two explore\nthinking\ntoggle consistency during compaction, as well as a layered memory architecture that replaces main-conversation memory tools with a lightweight classifier.\nNyatabi — your AI travel companion for iPhone\nPlan with Musubi, explore together, split spending fairly and turn your route into memories. Your whole journey, in one local-first iPhone app.\nNyatabi\nAppend-Only Prefixes: Moving Clock and User Context Out of System\nAchieving high cache hits rests on a simple principle: previously sent bytes must never change. Each request sent to the model simply extends the prior request's bytes with a few new messages at the end. When external state changes, you append only the delta or an update block, relying on rules in\nsystem\nto treat the latest version as authoritative.\nTime handling is the first common source of cache breakage. Many systems inject the current clock into\nsystem\n, changing the prefix every minute. Nyatabi eliminated the global clock section entirely. Instead, request assembly prepends a\n<sent_at>2027-01-10 Sun 12:10 +09:00</sent_at>\ntag to every user message during request assembly, leaving database storage and client UI untouched. 'Today' or 'Day N of the trip' is derived by the model from the most recent\n<sent_at>\ntag. Embedding the UTC offset directly in every message also pays off when users travel across time zones: older messages keep their original offsets while new ones record the new zone, sparing the model from having to re-read the session start.\nLanguage and time zone settings likewise cannot live in\nsystem\nor in session-level\nconfigurationKey\n. Request payloads are organized from top to bottom into eight layers by byte stability; the diagram below shows which changes require starting a new session and which can simply be appended at the end.\nWhiteboard\nWorking down this hierarchy, only changes in layers 1–2 warrant a new session (such as switching scenarios, toggling web search, or switching between ledgers with and without reference chats).\n<user_context>\nis sent as the very first\nuser\nmessage of the session. When a user switches their phone language from Chinese to English mid-conversation, the existing prefix stays unchanged. Only a short\n<user_context_update>\nblock appended at the end. That adds only 427 characters to the entire turn, and the cache continues to hit.\nTaking the 20-turn live Okinawa ledger test as an example, the Turn 1 cold-start request payload JSON measured 16,328 characters (\nsystem\nwith 6,727 characters plus 6 tools). The second model call after tool execution did not resend ledger state; it only appended\ntool_use\nand\ntool_result\n, adding just 366 characters. Amounts and exchange rates use plain numbers with currency codes instead of locale-formatted strings, preventing localization formatting variations from creating meaningless diffs.\nDynamic State Sync: Why Pure Deltas and Resending Full Sections Both Fail in Long Conversations\nIn an append-only architecture, syncing ledger changes to the model cannot follow a single rule. The middleware first merges the session's initial section with all past updates in memory to reconstruct how the model currently sees the state, compares that against live database records, and outputs updates across four strategies:\nContext Section\nTransmission on Change\nRationale\nexpenses\n,\nplans\n,\ncards\n,\nmemory\nIncremental\nupdate=\"changes\"\n(\n<added>\n/\n<removed>\n); falls back to full section if delta is larger\nLonger lists; single turns typically mutate only a few items\nbalances\n,\nreceipts\n,\nlodging\n,\nhome\nFull resend\nVery short text; sending in full is clear and low overhead\noverview\nField-level\n<overview_update>\n; cleared fields marked\ncleared=\"true\"\nAvoids resending the initial conversation excerpt along with it\nPreviously sent section now empty\nSend a self-closing empty tag, e.g.,\n<receipts/>\n,\n<cards/>\nExplicitly signals state has been cleared, preventing stale receipts or cards from lingering\nWhen a new member 'Ajie' is added and the ledger description is cleared, followed by receipt 4242 being booked, the context appended at the end contains only the mutation slice:\nCodeBlock Loading...\nThis delta-based approach has an obvious risk: the model's current view of any list is formed by replaying multiple scattered deltas over the initial full section. An amount edit looks like a deletion followed by an addition, and an expense dropping out of the recent-20 window also looks like a deletion. In a long conversation, could the model lose track of this chain of updates?\nOur first round of online evaluations ran for 40 dialogue turns (with conversations running up to ~30K tokens across 3 random seeds and 24 checkpoints), continuously changing expenses and itineraries out-of-band while updating pending confirmation cards. The delta group clearly beat full resends: both tied on expense totals and items (24/24) and tomorrow's itinerary (23/24), but on pending confirmation cards, the delta group scored 24/24 while full resends managed only 14/24. Total input tokens also favored deltas: 520K versus 900K (15K vs. 38K misses).\nExtending the test to 60 turns with 300-word responses and up to 6,000-character tool outputs from\nread_reference_conversation\n(pushing history past 96KB and triggering mid-run compaction, across 3 seeds with 36 checkpoints) completely reversed the picture. Both pure deltas and full resends failed on pending confirmation cards; only periodic full refreshes remained stable.\n60 轮长对话待确认卡片准确度（满分 36，3 个随机种子）\n加入缺段语义声明前后的对照组结果\nView data\n初测（无缺段声明）\n复测（加缺段声明）\n初测（无缺段声明）\n复测（加缺段声明）\nSource\nDeepSeek deepseek-flash 在线实测 · 2026-10-01\nComparing the two series in the bar chart reveals two entirely different failure modes. In the baseline run, the delta-only approach dropped to 20/36, failing in an identical way every time: the model reported only the cards in the most recent\n<added>\ntag, dropping entries added earlier (in one case reporting only 1 card out of 5).\nResending full sections did even worse in the baseline run, falling to 19/36 and often returning an empty array (\n[]\n. Digging into the samples showed why: sending the full section caused the model to treat every\n<context>\nappear to the model like a complete snapshot. If no cards changed in the current turn, the newest\n<context>\nomitted the\n<cards>\nsections, the model incorrectly assumes there are currently no pending cards. The comparison data confirms this: when cards changed in the current turn, accuracy was 12/12; when they did not, it plunged to 7/24. Incremental messages tagged with\nupdate=\"changes\"\nactually signaled to the model that it needed to scan back through history.\nThe resulting fix consists of two steps, similar to keyframes in video encoding:\nTrack counts independently for the three list sections (\nexpenses\n/\nplans\n/\ncards\n). Once 4 incremental updates accumulate since the last full section, or the appended messages and tool context exceed 16K characters, send the update as a full section instead, then resume sending deltas.\nAdd an explicit rule to\nsystem\n:\nA section missing from the latest <context> has not changed; its last version still applies.\nA 60-turn retest with this prompt rule confirmed the diagnosis: pending card accuracy for the full-resend group jumped from 19/36 to 34/36. Our production strategy—sending a full refresh every 4 updates or 16KB—virtually matched full resends across the board: 36/36 on today's expenses and totals, 36/36 on tomorrow's itinerary, and 33/36 on pending cards. Total input came to 4.37M tokens—only 6% more than pure deltas (4.14M), and 26% less than resending full sections every turn (5.89M).\nCache Constraints of History Compaction and the Thinking Toggle Trap\nAs conversations grow longer, history compaction must also follow the append-only rule. Before each turn starts (on new user messages and only once past three user messages), compaction triggers if either condition is met: the prior request's token count, excluding web searches, reaches 160,000—which is 80% of\nmin(20 万, 模型窗口)\n(while\ndeepseek-flash\nhas a 1M window, capping it at 200K guarantees the compaction request fits in one shot without chunking). If tokens remain below that threshold, compaction also triggers when message history reaches 96KB, or hits 24KB after 30 minutes of idle time.\nWhen performing compaction, the server takes the exact snapshot of the current session's previous request (covering\nsystem\n, tool definitions, and all historical messages and context), appends any subsequent new messages excluding the current turn's query, and appends a single\n<compaction_request>\ntag at the very end. The prompt uses the\n<sent_at>\nof the third-to-last user message as a boundary, requiring the summary to cover everything prior (up to 8,000 characters) while keeping the last 3 turns verbatim from that boundary onward. The prompt also forbids recording pending or ignored card states (which are deferred to\n<cards>\n), forbids repeating ledger details and itineraries from\n<context>\n, forbids misrepresenting assistant suggestions as user agreements, and disallows tool calls.\nA new session starts by assembling context in this exact order: current values of\n<user_context>\n→\n<history_summary>\n→ the latest complete block of\n<context>\n→ the last 3 turns verbatim → the current turn's user message. Placing the latest\n<context>\nblock ahead of older, uncompacted turns slightly disrupts chronological order, but this trade-off anchors the more stable prefix at the very front so subsequent turns hit the cache more easily.\nCall Phase (6-turn Okinawa live test)\nMissed Tokens\nCached Read Tokens\nHit Rate\nLast request before compaction\n994\n4,736\n83%\nCompaction request (appended to original snapshot)\n372\n5,632\n94%\nTurn 1 after compaction (new session)\n2,602\n3,584\n58%\nTurn 2 after compaction\n187\n6,528\n97%\nReusing the existing prefix allowed the compaction request to hit 94% cache reuse, generating 1,180 tokens (including roughly 850 characters of reasoning) in 5.3 seconds. In the new session, the first post-compaction request still shared 72% of its bytes with the previous call (\nsystem\nand tools hit the cache directly), and the second request immediately returned to 97%. The summary also preserved cross-turn constraints like 'Xiao Zhou is allergic to peanuts.'\nThe sneakiest trap in compaction tuning lies in the\nthinking\ntoggle. If you disable thinking mode on compaction calls to trim output costs, the cache instantly breaks. Comparing four test groups against the same ~4,900-token prefix (\nsystem\nplus 6 tools), where the second call only appended one message while toggling the switch, yielded these live results:\n切换 thinking 开关对同前缀缓存命中的影响（约 4900 token）\n仅在第二次请求末尾追加一条消息并改变 thinking 开关\nView data\n缓存读 token\n未命中 token\n缓存读 token\n未命中 token\nSource\nDeepSeek 在线实测 · 2026-10-01\nThe chart shows that flipping the switch in either direction caused cached reads to collapse from nearly 5,000 tokens to roughly 1,280, forcing the model to recompute over 3,700 tokens of prefix. Throughout a session, the\nthinking\ntoggle must stay consistent. Compaction calls inherit the main conversation's setting (DeepSeek defaults to thinking enabled), keeping the output cap at 32,768 tokens (180s timeout) so the reasoning trace does not crowd out the summary. Thinking is explicitly turned off only for background memory workers that share no prefix and carry no tools.\nOn-Demand Mounting and Lookback for Reference Conversations\nFor ledgers created from the home screen conversation,\n<overview>\nincludes only an excerpt of the most recent 1,500 characters from that initial conversation (truncated at message boundaries). When constraints mentioned earlier (such as 'Xiao Zhou is allergic to peanuts') fall outside the excerpt, the model pages backward from newest to oldest using the read-only tool\nread_reference_conversation\n. Each page returns at most 20 messages and 6,000 characters, using\nearlier_before\npagination that caps results to messages sent before the ledger was created. This tool is mounted only when a ledger actually references a conversation, preventing accidental calls on standalone ledgers while keeping the tool definitions constant throughout the session.\nHome Screen Chat and Stateless Form Assistant\nThe same prefix-isolation model extends to two other lightweight entry points. In the home screen chat, the\nsystem\nprompt shrinks to 2,181 characters, and its context contains only a freshly resent full\n<home>\nsection. The form assistant for creating ledgers and itineraries skips the context pipeline altogether, maintaining no sessions or snapshots and having the client pass the full history on each turn. It also places\n<user_context>\nin the first\nuser\nmessage. Each subsequent user message combines\n<sent_at>\n, the current form JSON (\n<form>\n, supporting manual user edits), and the raw input. Turn 2 adds only 347 characters.\nTool-Free Layered Memory: Jev Routing and Background LLM Operators\nMost agents implement memory through read and write tools called by the primary model. That expands the tool schema, slows down real-time replies, and frequently causes missed lookups or incorrect saves. Nyatabi's Memory v2 discards memory tools from the main chat. Instead, every user message runs through Jev, a lightweight classifier (\njev-latest\n, taking ~250ms concurrently with context assembly, with an 800ms timeout). Jev synchronously determines on-demand recall, while background jobs handle writes asynchronously.\nIn the main chat, the memories visible to the model are separated into three tiers by lifecycle and privacy scope, integrating cleanly into the append-only pipeline:\nInjection Target\nContents\nNew Session\nSubsequent Changes\n<user_context>\ninside\n<about_user>\nPersistent personal profile (dietary restrictions, allergies, health conditions, preferred name, reply style)\nFull section\nAppend full\n<user_context_update>\nbefore the current turn's user message\n<context>\ninside ledger\n<memory>\nTravel companion memories for the current ledger + personal 'current trip' memories\nFull section\nSame as\nexpenses\n; sends\nupdate=\"changes\"\n<memory_recall>\nOn-demand personal traits (taste preferences, lodging, transit, pace, interests, budget, planning style)\nInjected only when Jev determines the message is relevant\nInjected only once per session per version; appends\nrevoked=\"true\"\nThe injection layer guards three filtering boundaries: memories created in the current session are excluded because their raw text is already in the history; expired short-term memories (7, 30, or 90 days) are dropped; and inferred memories (\ninferred\n) observed only once are also withheld; even after repeated observations, they must be injected with a\nsource=\"inferred\"\nflag. The\nsystem\nprompt instructs the model to use this note only to steer choices, never asserting it as a settled fact. In the 5-day Kyoto test logs, when given\nsource=\"inferred\"\nwith 'prefers quiet accommodations', the model replied, 'If you want somewhere quieter, the latter two areas would suit you better,' rather than claiming, 'You've always liked quiet places.'\nMember privacy boundaries are also enforced at the injection layer. When Kobayashi noted in a shared ledger, 'I don't eat beef, and neither does Alice. Also, don't schedule early morning itineraries,' the system saved his beef restriction as a persistent user trait, 'no early mornings' as his personal itinerary preference for this ledger, and Alice's beef restriction as a shared member trait. When Bob later asked for dinner recommendations in that same ledger, his\n<memory>\nblock included only Alice's dietary restrictions, keeping Kobayashi's two notes completely isolated.\nThe complete synchronous recall and 5-step background write pipeline is structured as follows:\nReading this diagram comes down to the two branches. The upper synchronous path handles low-latency recall alone, protecting time-to-first-token. The lower asynchronous path runs background workers only after the main turn finishes, letting the classifier resolve whether to save, for whom, in what category, and for how long, leaving only a narrow text-editing step for the LLM.\nThe Operator Receives All Visible Memories for the Subject\nWhen assembling the\nexisting\nfield in step 4, the system supplies all visible memories for the matched subject rather than trimming them to the traits matched in step 2. A live test trace illustrates why: the user originally had 'does not eat cilantro' recorded under\ndiet.avoid\n, but they later said, 'Actually, I eat cilantro now.' In step 2, Jev classified this statement only under\ndiet.taste\n, missing\ndiet.avoid\n. Fortunately, step 1 had matched\nretract_self0\n(0.89), so\nexisting\nincluded all six of the user's memories, with\nretracting\nset to\n[\"self\"]\n. Using this context, the operator directly issued\ndelete m_7\n, and the stale restriction was stripped out before the next turn via\n<user_context_update>\npurged the obsolete restriction before the next turn.\nTool-Free Operator with Dual Code Validation\nThe background operator (\ndeepseek-flash\n,\nmax_tokens 1024\n,\nthinking\ndisabled, static system prompt with\ncache_control\n) runs for just one turn and returns a single\n{\"ops\":[...]}\nobject (supporting\nadd\n/\nupdate\n/\nreinforce\n/\ndelete\n, up to 5 operations). Omitting tool definitions eliminates schema overhead on every request, with field validity verified twice in code: first when parsing the operator's response, and again before writing to database storage.\nValidation rules are kept exceptionally strict:\nevidence\nmust be a contiguous substring of\nuserText\nto prevent the model from citing assistant replies or inventing statements.\n(subject, feature)\nmust fall within the\nrouted\nlist produced in step 3.\nlifetime\nand\nsource\ncome directly from Jev, ignoring any LLM inference. Trip-specific memories from home screen chats are dropped since there is no ledger to bind them to. Across two live sessions and evaluations spanning 11 calls in all, every response was valid JSON.\n7-Turn Live Costs and False-Positive Overhead\nAcross seven real-world integration turns testing member isolation, cross-session home chats, and restriction revocations, costs broke down as follows:\nCall Stage\nCalls\nInput Tokens\nCost (cost_micros)\nMain chat (\nturn\n)\n10\n77,239\n32,844\nLLM memory operator (\nmemory\n)\n3\n1,311\n550\nJev classifier (\njev\n)\n12\n10,973\nAt $0.042/M tokens, this comes to less than 0.2% of the main LLM cost\nJev consumed an average of about 1,570 tokens per turn (700–900 tokens on the first synchronous pass). Even when a false positive occurred—such as scoring 'Let's pick another place' at 0.75 for involving Alice—running the remaining steps through the operator required only about 2,000 Jev tokens plus a brief call returning an empty array (\n{\"ops\":[]}\n). On the dedicated memory eval suite, all expected on-demand traits triggered across 14 routing tests (with 7 over-triggers that merely injected existing memories), subject attribution matched in 12 of 14 cases, and background writes were accurate in 5 out of 5.\nRemaining Gaps and Known Limitations\nAcross 20 turns of online cache stress testing, hit rates held steady at 98–99% as prefixes lengthened. Excluding the three calls right after web searches, cache misses averaged just 247 tokens per turn. The three lowest dips (85.5%, 90.7%, and 89.6%) all followed web searches, where the model generated lengthy replies from fresh search results that naturally introduced uncacheable tokens. Because DeepSeek caches in 128-token blocks, every call also incurs an alignment rounding loss of up to 127 tokens.\nAs of this baseline release—with all multi-client and server regression suites passing—the test logs show three known limitations still in place:\nthinking\nis enabled, compaction summaries occasionally weave in expenses and plans from\n<context>\n, or repeat parts of the conversation already kept verbatim past the cutoff point. This adds a few hundred characters of duplication without affecting correctness.\nIn its second pass, Jev occasionally routes a statement into multiple categories (for instance, 'I don't eat beef, and neither does Alice' triggers both allergies and dietary restrictions). The system currently relies on the LLM operator rule that only writes entries backed by verbatim text; across seven live turns and five eval cases, it made zero incorrect writes.\nOn-demand recall triggers run slightly broad: questions about transit or attractions often pull in pace and planning preferences as well. The only side effect is injecting extra existing memories, with no missed recalls observed so far.\nComplete 27-page raw logs from multi-turn chat and memory integration testing (including full per-turn request payloads and offline character counts):\nNyatabi（原 Musubicho）消息拼装：多轮对话实录 V2.pdf\n1.6 MB · PDF\nOpen",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/append-only-context-kv-cache-memory-design",
+      "content_chars": 21793,
+      "content_sha256": "44a93b0e20d0738050586d27277249de42501b6570dfe72b9ac73fb50d918eaa",
+      "content_fetched_at": "2026-11-27T03:37:42.501241+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-25T20:33:38+00:00",
+      "collected_at": "2026-11-27T03:34:30.779291+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/append-only-context-kv-cache-memory-design"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "多轮对话的只追加上下文拼装：DeepSeek 96.2% KV Cache 命中与分层记忆设计",
+          "url": "https://innei.in/en/posts/tech/append-only-context-kv-cache-memory-design",
+          "content_sha256": "44a93b0e20d0738050586d27277249de42501b6570dfe72b9ac73fb50d918eaa"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:c868ab0d8009aab5",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "72 小时内两家实验室同时把循环做进大模型底层，GLM-5.4 现在能用吗？",
+      "target_url": "https://yage.ai/share/loop-transformer-glm54-inkling2mini-20261125.html",
+      "text": "yage-share published: 72 小时内两家实验室同时把循环做进大模型底层，GLM-5.4 现在能用吗？",
+      "at": "2026-11-25T00:00:00+00:00",
+      "external_id": "a:c868ab0d8009aab5",
+      "url": "https://yage.ai/share/loop-transformer-glm54-inkling2mini-20261125.html",
+      "title": "72 小时内两家实验室同时把循环做进大模型底层，GLM-5.4 现在能用吗？",
+      "content": "在过去的两年中，大模型在复杂编程和推理方面要实现进一步的提升，基本上依赖于两种传统的方法。一种是继续增加模型的规模，增大其参数数量，这样虽然模型更大了，但也导致个人电脑无法安装，同时云端的计算成本也会升高。另一种方法是让模型通过更长的文本进行思考，从而通过更多的文字输出（通常几千字）来提升准确性，但这样做会导致用户在每次提问时都需要等待更长时间。\n2026 年 11 月 20 日到 23 日的 72\n小时内，两家实验室一端一云，同时给出了第三条路线的实用化答卷。前 OpenAI\n首席技术官创立的 Thinking Machines Lab 先发布了开源本地模型\nInkling 2\nMini\n，三天后智谱发布了旗舰模型\nGLM-5.4\n。两家公司不约而同地把循环架构做进了模型底层，用同一批网络层反复运算多轮，在不增加物理参数的前提下加深推理。智谱甚至宣称，750B\n参数的 GLM-5.4 智能水平可以比肩 2T 到 3T\n参数的传统模型，并顺手把编码订阅计划的周配额上调了 50%。\n这条路线确实把循环架构从论文带进了生产环境，但如果你现在就打算把日常编码工作流切到\nGLM-5.4，先别急。智谱目前还没放出 750B\n模型的公开跑分，开源权重和标准接口也都在等待安全评估，中文社区流传的超低接口单价其实来自第三方中转商。把两家实验室的设计放到同一张桌子上看，你就能明白这项技术真正解决了什么，以及现在该怎么应对。\n不想继续堆参数也不想等半天，循环架构是怎么省力气的？\n传统的 LLM\n像一条单向流水线，一段话进来，每个词从第一层到最后一层走一遍，每层只做一次计算，然后输出结果。一旦遇到需要多步因果推理的代码重构或漏洞排查，单遍流水线的计算深度经常捉襟见肘。要想补足深度，要么把流水线拉得更长、多加几十层新参数，要么让模型把中间步骤写成显式的思考文本，再重新喂给自己继续算。\n循环架构则采取了不同的策略：它不改物理层数，却挑选模型中间的一段网络层，让数据在同一组权重上连续跑两遍甚至三遍，每一轮都在上一轮的结果上继续修正，最后再交给末尾几层输出。这样在不增加额外参数和权重显存的前提下，每个词在吐出前经历的计算深度大幅加深。\n这个想法在学界早有先例。早在 2018 年，Universal Transformer\n这篇论文就提出了权重共享的深度网络。2025 年，马里兰大学的\nHuginn\n、字节跳动的\nOuro\n等在几十亿参数的小模型上也做了类似的实验。它一直没进旗舰，是因为训练效率一直不划算。智谱在发文中坦言，如果从头预训练，用同样的算力，循环模型还是打不过每层权重都独立的标准模型。\n11 月下旬，这两次发布恰好从两个相反方向绕过了这道坎。Thinking\nMachines Lab 瞄向个人电脑，把 26B 参数的 Inkling 2 Mini 做成 24\n个物理层，让中间 12 层循环跑 3 遍，相当于跑出 48 层的深度。整套权重约\n20GB，可以直接装进 32GB 内存的笔记本本地运行。智谱则瞄准云端旗舰，把\n750B 的 GLM-5 基座里中间 28 层拿出来循环 2\n遍，主打把编码能力扩展到视频脚本、游戏和三维建模等复杂长链条任务。\n同样是让网络层多转几圈，两家分别迈过了哪道工程坎？\n把模型改成循环结构，看上去只是写个循环语句，真放到生产环境会遇到两道难题：怎么控制训练成本，怎么防止多跑一圈把数值和显存撑爆。两家实验室因为目标场景不同，做出了不同的取舍。\n从训练路径和内部协作看，Inkling 2 Mini\n因为规模较小，可以直接从头用循环来设计，同时它在 Apache 2.0\n协议下发布了权重。可解释性团队\nGoodfire\n在发布前就分析过它的内部结构\n。Goodfire 发现，Inkling 2 Mini 把 24\n层分成了 4\n个模块，在每次循环中不会覆盖旧数据，会特意回头读取上一轮的模块输出。每个模块的最后一层都会留一些线索，方便下一个模块去读到合适的中间结果。到了第二轮和第三轮循环，后面的循环模块几乎一定会回头读取自己上一轮的结果，反复修正。\n智谱的情况不同，它的基础模型有\n750B，从头训练不现实，只能走存量改造。他们在已有的 GLM-5\n基础上直接继续训练，把中间的 28 层改成两轮循环。同架构的 30B\n对照实验显示，只多用了大约 10%\n的训练算力，就带来了数学、科学推理和长上下文上的明显改进。这一招迅速吸引了开发者的目光，\nHacker News\n上就有评论提到\n，如果不需要从预训练开始，就可以用继续训练的方式给已有模型加入循环结构，接下来可能会有一大批现有模型进行类似的低成本改造。\n在多轮循环之后，还有一个问题是数值稳定性。如果我们直接把现有的基座模型的中间层改成循环两遍，第一轮计算出来的结果原样写回同一个网络层，这会导致内部数值可能越来越大，让后面的网络层出现异常。智谱在每轮循环中增加了一个按词控制的阀门，用来控制每一轮以多大的比例将新的结果写回到主干。在训练完成后，他们发现两轮循环自然地形成了分工：第一轮的阀门开得较小，保守地建立全局上下文，对于难词则多写一些；第二轮则打开阀门，集中精力精炼最终输出。\n数值稳定之后，真正卡部署的是显存。GLM-5.4 虽然支持 100\n万词元的上下文，但每循环一圈再把历史上下文存一遍，显存直接翻倍，难以低价提供在线服务。智谱的省法是让第二轮直接复用第一轮筛出的远程历史缓存，只为自己新算的内容额外拿一小段近距离窗口缓存，连筛选历史位置的索引也直接复用。配合底层优化，官方称\nGLM-5.4 在闲时可达每秒 200 词元的吐字速度，忙时也在每秒 70 到 80\n词元。\n传统单遍架构、Inkling 2 Mini 与 GLM-5.4\n的层循环路径对比\n宣称 750B\n顶 2T 到 3T，GLM-5.4 哪些已经证实、哪些还在画饼？\n从架构层面看，这种工程上的巧思确实令人印象深刻。但在实际选型中，GLM-5.4\n这次发布留下的空白也同样明显。把已落地的事实和尚未证实的宣称分开看，能帮助我们避免踩坑。\n首先是性能。智谱在自己的博客中声称 GLM-5.4 实现了 2T 到 3T\n模型的性能，但是并没有公布 750B\n本体的任何公开测试结果。官方的文章中唯一一个带数据的受控实验是用 30B\n的对照模型来做的。独立开发者\nSimon Willison\n第一时间自费进行了实测\n，用 GLM-5.4\n跑自己常用的矢量图编程测试，发现最高档位的 GLM-5.4\n画出来的效果和上一代的 GLM-5.3 非常接近。至于跨级比肩 2T 到\n3T，目前还是厂商自述。\n第二块需要核清的是定价和接入渠道。中文圈不少快讯提到 GLM-5.4\n接口定价低至每百万输入 0.06 美元、输出 0.22\n美元，其实这并不是智谱官方定价。查看\nZ.ai 官方文档\n可以看到，标准接口和开源权重目前都没有上线，官方给出的理由是仍在完成安全评估和安全加固。当前普通用户只能通过编码订阅计划（约\n18 美元每月起）、ZCode 或网页端使用 GLM-5.4，市面上流传的按量低价来自\nAIHubMix\n等第三方中转商对订阅通道的转售。另外，账面上吐字速度虽然很快，但模型上线当天\nHacker News\n主帖\n里有不少开发者反馈频繁触发 429\n限流，实际并发稳定性还在承压。\n第三点是官方博客自己暴露出的一个反差。在 30B\n对照实验中，智谱重点展示了一个好处：在 GPQA-Diamond 和 MMLU-Pro\n等推理测试上，循环架构让平均输出长度缩短了 10% 到\n14%，说明一部分推理确实从显式思考链转移到了底层循环中。可到了文章开头介绍\n750B 旗舰 GLM-5.4\n时，官方自己又专门提醒，模型在某些任务上容易陷入耗时过长的马拉松式思考循环。把隐式循环和长思考模式叠在一起后，到底是帮用户省了时间，还是在难题上反而拉长了等待，目前还是要打个问号。\nGLM-5.4\n已落地的工程事实与待验证宣称对照\n普通开发者现在该怎么应对这波循环架构？\n看清了这两家模型的现状后，对大多数日常写代码和选模型的开发者来说，现在就可以分情况处理。如果你的主力使用场景是云端的编程助手，那现在没必要为了循环架构就急着把工作流迁移到\nGLM-5.4。虽然编码订阅计划把周配额提升了 50%，但上线初期限流很明显，750B\n的真实能力也缺乏独立的第三方编码评测对照。更现实的做法是等一两周，看看标准接口、开源权重以及独立编程榜单的结果落地，同时观察它的马拉松式思考在真实代码库里到底会不会拖慢节奏，再决定要不要切换。\n如果你平时会在本地电脑上跑开源模型，那不妨直接试试 Inkling 2\nMini。它已经用 Apache 2.0 放出了权重，第一天就接上了 llama.cpp 和\nMLX，在 32GB 内存的笔记本上就能跑起来。在 Hugging Face 博客公布的 48\n项公开对比里，它在 32 项上领先于 Gemma 4 31B 和 Qwen 3.8 27B\n等同体量模型，在终端编程测试上也能和 Qwen 3.8 27B 打平。拿它和现有 27B\n本地模型对比着跑几个真实任务，比看任何宣传稿都更能直观感受到循环架构省显存的实际效果。\n如果往后再想半年，循环架构真正决定性的拐点可能还在后面。智谱已经展示了用较小的算力对已有的基座进行改造，就可以实现循环结构；接下来开源界可能会看到一些改造版的模型。但不管是\nGLM-5.4 还是正式版 Inkling 2\nMini，目前都处于固定次数的阶段：不论面对简单的补全还是复杂的推导，每个词都会强制执行固定次数的循环。Thinking\nMachines Lab\n这次只在其中一个实验变体中加入了手动调节循环次数的功能，智谱也提到按词难度动态分配循环次数是未来的计划。等到模型和推理引擎真正做到简单词跑一遍、难题自动多转几圈，循环架构才会从一种架构技巧变成改写推理成本的标配。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/loop-transformer-glm54-inkling2mini-20261125.html",
+      "content_chars": 4114,
+      "content_sha256": "3cd801959191ae4bfa6869af79550ce3ba77a2bf499b20a680e68303a886b648",
+      "content_fetched_at": "2026-11-27T03:35:14.339252+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-11-25T00:00:00+00:00",
+      "collected_at": "2026-11-27T03:34:30.779291+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/loop-transformer-glm54-inkling2mini-20261125.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "72 小时内两家实验室同时把循环做进大模型底层，GLM-5.4 现在能用吗？",
+          "url": "https://yage.ai/share/loop-transformer-glm54-inkling2mini-20261125.html",
+          "content_sha256": "3cd801959191ae4bfa6869af79550ce3ba77a2bf499b20a680e68303a886b648"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:13ab8055a95f1fa9",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "Agent Skill 瘦身：用真实 Session 做 A/B 回归",
+      "target_url": "https://innei.in/en/posts/tech/agent-skill-token-efficiency-ab-regression",
+      "text": "innei published: Agent Skill 瘦身：用真实 Session 做 A/B 回归",
+      "at": "2026-11-24T17:23:01+00:00",
+      "external_id": "a:13ab8055a95f1fa9",
+      "url": "https://innei.in/en/posts/tech/agent-skill-token-efficiency-ab-regression",
+      "title": "Agent Skill 瘦身：用真实 Session 做 A/B 回归",
+      "content": "When using coding agents like Claude Code, Codex, or Cursor, a frequent pain point is getting stuck in plain text in the terminal. Ask the agent for interface options, and it can only output a few paragraphs of Markdown. Ask it for a design spec, and you can hardly jump in to comment on or challenge a specific sentence. And once the code is written, checking the live result side-by-side against what was originally approved is frustratingly hard.\nRyugi (流儀)\nwas built to fix this: it provides a local-first workbench for interactive artifacts alongside skills for engineering workflows. Instead of letting agents pile up text in the terminal, Ryugi puts decisions that need human input into interactive pages:\nArtboard\nfor side-by-side option comparisons,\nDocument\nfor design specs with embedded multiple-choice questions and line-by-line annotations,\nWhiteboard\nfor collaborative structural sketching,\nHTML\n,\nSlides\n, along with\nVerify\npages to inspect approved proposals alongside live screenshots. Every time you click an option, leave a comment, or make a decision on the page, the result feeds straight back into the agent session that created it. No account required—just run a single\nnpx ryugi-artifacts install\nis all it takes to connect Claude Code, Codex, Cursor, Gemini CLI, Pi, Antigravity, and over a dozen other major hosts.\nRepository\n· Innei\n967\nartideck\nArtideck — Artifacts for coding agents, made to decide with you. Your agent draws artboards, design docs, whiteboards, decks, and verify reports; you pick, comment, and pass right on the page.\nJavaScript\nWhiteboard\nBeyond the workbench itself, Ryugi provides a full suite of engineering workflow skills covering ideation, design, TDD implementation, and delivery verification. As we added support for more hosts and handled more edge cases, prompt text across the 9 skills grew to 109 KB (around 27k tokens at\nbytes / 4\n), not even counting the\nSessionStart\ndefault injection of\nusing-ryugi\n. These prompts enter the context window in full on every load and context compaction, adding a fixed overhead to every call. Yet skill prompts steer model behavior in subtle ways, so simply shaving words off is a quick way to cause regressions. Between late October and late November 2026, I systematically streamlined Ryugi's skill prompts, CLI output, and comment round-trip pipeline. Alongside that work, I set up an A/B regression harness and logged about 70 evaluation runs. This post documents the audit process, refactoring strategy, benchmark data, and the typical regressions encountered along the way.\nAuditing Real Transcripts to Establish a Regression Baseline\nOptimization didn't start with tweaking prompts; it began by mapping where resources were actually being spent in production. On October 24, I sampled 20 real-world sessions (11 in Codex, 9 in OMP) and audited the transcripts line by line to trace token usage and turn counts. Auditing where tokens and turns actually went revealed five main problems:\nwarnings.json\nwas re-read before and after every modification, reaching up to 35 reads in a single session.\nThe agent ran a raw\ncat selection.json\ndirectly, ingesting 27k to 38k tokens in a single read—most of which was the irrelevant\nnodes\nfield.\nThe 435-line\nartboard.md\nwas truncated 5 times in Codex, and cut off at line 300 in OMP.\nOMP truncated the output of\ncomment list --json\nat 768 bytes.\nThe agent delayed handing links off to the user by 2 to 14 minutes while it captured screenshots to self-check static artboards.\nI then consolidated these issues into 11 evaluation scenarios, running each 3 times against both the baseline and candidate. During the baseline phase, 4 scenarios already scored 3/3 without any modifications. The synthetic harness lacked the truncation rules used by real hosts and never handled the 38k-token files seen in production, so real-world failure modes failed to reproduce offline.\nBecause of this, most fixes from the audit targeted the tooling rather than the prompt itself: adding a\ncheck\ncommand so the server returns warnings directly when settling changes; switching selection reads to filter fields via\njq\n; and splitting the prototype section into a standalone file. With those changes in place, the pass rate for \"clean change verification\" went from 0/3 to 3/3, and reading a single static artboard dropped from 625 lines to 533.\nFrom then on, every skill adjustment followed the same loop. We identified problems from real transcripts, built baseline runs for that scenario, and scored A/B comparisons with our rubric. If any metric dropped below baseline, we reverted and refined the prompt or tooling. Once all metrics matched or beat the baseline, we retested on other models and hosts before merging.\nSplitting Prompts: From Permanently Resident to Loaded on Demand\nOnce the evaluation loop was running reliably, I turned to trimming down the\nSKILL.md\nsize. Before November 13, the 9 skills totaled 109,413 bytes, so I capped this round's budget at 81,000 bytes.\nTo keep compression from distorting instructions, I allowed only three techniques, ordered by priority:\nRemove duplicate phrasing within the same file.\nMove sections only needed in later turns or specific branches into sibling files, leaving behind a one-line conditional pointer such as\nWhen a verdict comes back, read verdicts.md\n.\nTighten verbose phrasing without sacrificing semantic clarity.\nI also set three hard constraints: do not reduce instructions to fragmented shorthand, do not alter existing rules or trigger thresholds, and do not adjust defaults or step order.\nWhiteboard\n七个 skill 的 SKILL.md：峰值与 2026-11-24\nView data\n峰值\n11-24\n峰值\n11-24\nSource\ngit cat-file -s <commit>:skills/<name>/SKILL.md\nOn November 13, the combined size of the 6 primary skills dropped from 89,879 B to 65,904 B, with 12,243 B split off into sibling branch files loaded only when matching conditions were met. I ran regression benchmarks with\ncodex exec\nwith\ngpt-6.1-sol\n, running 5 iterations per set. Offloaded sections had to be verified in a realistic tool environment to ensure transcripts showed the agent actually reading target files according to the pointers: taking the\nexecuting-specs\nsplits of\nlanding.md\nand\nexploring.md\nas examples, both had an actual read rate of 5/5.\nusing-ryugi\nwas handled differently because it gets injected directly during\nSessionStart\n. On November 8, instead of splitting it into files, I restructured it entirely: replacing the aggressive \"load skills if there is even a 1% chance\" rule and the sprawling Red Flags table with a concise routing table indexed by task phase. Injected characters dropped from 4,692 to 2,139; when testing the \"make a todo list\" scenario on Sonnet, the agent opened an exploratory artboard first on 5 out of 5 runs—up from 0 out of 5 before the rewrite.\nIn practice, deciding what to offload came down to a straightforward test: if you can define in a single sentence when a section needs to be read, move it to a sibling file; if a rule applies to every single turn, keep it in the main prompt.\nBehavioral Regressions Triggered by Size Reductions\nDuring prompt slimming, byte count is the easiest metric to track, but also the easiest to misinterpret. Across three separate evaluation rounds, prompt size dropped noticeably while actual agent behavior got worse:\nChange\nSize / Cost Delta\nObserved Behavior\nverifying\ntrimming\n16,446 → 10,023 B\nThe \"Change Save button padding to 12px\" test dropped from 9/10 on the baseline to 1/5: despite confirming in its reply that the change was complete, the agent still waited for a visual verdict.\nartboard\nguide compression\n14,283 → 9,947 B (−30%)\nFunctional pass rate held at 6/6, but tool turns rose from 225 to 245, including 5 calls to the nonexistent\nstart --detail\nflag.\nusing-ryugi\nultra-short router\nExtra overhead on general queries: 1,693 → 486 tokens (−71%)\nIn the todo scenario, the upfront discussion rate fell to 0/5, failing to trigger brainstorming automatically\nThe regression in\nverifying\nwas the most representative regression. The original text had three parallel sections covering reports, verification pages, and verdicts. Moving them to sibling files broke nothing with the pointers, but a rule implicit in the surrounding context disappeared: minor changes need neither a verification page nor human sign-off. Without that rule, the agent showed that the edit was complete yet still halted to await a visual verdict. Once we restored the explicit line\nNo page, and no verdict to wait for.\nto the main text, the pass rate bounced back from 1/5 to 10/10.\nThe other two regressions were equally traceable: in\nartboard\nguide compression, the illegal argument\nstart --detail\nwas caused by accidentally dropping a snippet of CLI parameter documentation during editing; restoring it immediately brought invalid invocations back to zero. For\nusing-ryugi\n's ultra-short router cut overhead on simple questions by 71%, but it weakened the trigger to start brainstorming. I chose not to merge it, leaving it only as a benchmark test case.\nAll three regressions were caught by regression tests before merging. The admission criteria remained uniform across every round: no evaluation metric could fall below baseline, and borderline results off by just a single run were rerun 10 times to confirm. Byte budgets had to give way to the behavioral baseline. That is why\nexecuting-specs\nsettled at 16,398 B (above the original 15,000 B target) and\nsystematic-debugging\nsettled at 8,526 B (above the original 7,000 B target). Once the regressions passed, the results were accepted without further trimming purely to meet byte targets.\nThe Main Overhead Beyond Prompts: Eliminating Redundant Agent Fetches\nAfter slimming down the main prompts, a fresh look at the overall token breakdown in a session revealed that the largest driver of consumption was not the resident prompt text, but secondary reads initiated by the agent during task execution—such as format guides, comment lists, and newly submitted user responses. The logic here matches API batching: when the agent's next read target and method are fully known, avoid triggering another tool call and instead include the result directly in the current response or wake-up message.\nPushing Format Specs Down to the CLI\nOn November 13, I migrated artifact authoring instructions from the skills into the CLI package itself. When calling\nstart\nto initialize an artifact and detecting empty content, the CLI returns the full writing description directly in its output. The skill prompt retains only the purpose, type selection criteria, and decision points requiring human input. After this change, format file reads—which occurred on every task in the baseline—dropped to zero.\n写法说明交给 CLI 后，一次任务的总 token 中位数\nCodex 0.167.2 · gpt-6.1-sol · 每组 5 次\nView data\n1.76.0\n候选\n1.76.0\n候选\n两边都是 10/10 完成；失败的 CLI 调用 2 → 0；耗时没有改善\nMedian token counts dropped noticeably across both typical tasks, and failed CLI calls fell from 2 to 0. End-to-end latency didn't improve, though; median duration for comment tasks actually slowed from 54.0s to 59.5s. In an earlier pass, switching comment reads to Brief format and bundling them into a single request had already trimmed document comment output from 385 to 308 tokens, cutting tool calls from 2 to 1.\nComment Round-Trip: From Notification Queries to Inlined Push Messages\nWe applied the same idea to the human-in-the-loop return path. When a user posts a comment or submits an answer on a page, the local watcher needs to push that event back into the agent session. Each host delivers these events differently: Claude Code uses monitor, Codex relies on the app-server queue, while Pi and omp use follow-up turns.\nThe initial implementation on October 30 was rather rudimentary: it simply notified the agent of a new comment and appended\nRun: comment list --json\n, forcing the agent to execute a CLI command every time it was woken up. Starting November 7, the thread ID, message ID, and raw comment text were inlined directly into the wake-up message. This refactor ran into channel length limits across hosts: Claude Code's monitor truncates lines at 500 UTF-16 code units. Because fixed boilerplate and the Run command left only about 130 units for the comment body, even short comments were replaced by\nToo long to inline\n, which was resolved only after splitting the payload across two lines.\nStarting November 18, for channels without single-line limits—such as Codex, Antigravity, Pi, and omp—we changed the hook to execute\ncomment list\non the agent's behalf before pushing. The entire Brief output is now spliced into the wake-up message, falling back to the Run command only if the read fails. Although this pipeline was not individually A/B tested, it reliably eliminates one CLI round trip per wake-up. The agent only runs the query command itself when host channel limits require it.\nFour Prompt Details That Dictate Behavioral Consistency\nBeyond context volume and tool invocations, auditing transcripts surfaced several subtle details that had little to do with token budgets, yet directly governed behavioral consistency.\nWhiteboard\nExamples Outweigh Abstract Rules\nTests on November 4 provided a textbook case: the CLI's default output had already switched to Brief, and the skill text explicitly stated that 'JSON is only for programmatic parsing,' yet the example commands still retained\n--format json\n. Both newly launched baseline runs chose JSON, with one even noting in its response that it wanted to 'keep --format json from the documentation example.' Once the argument was scrubbed from the examples, both runs promptly switched to Brief.\nRigid Mapping Tables Constrain Component Choices\ndocument\n's block guide originally used a four-row mapping table pairing specific content types to specific block types. Across 9 test audit documents generated under that guideline, Codex included exactly 1 mermaid diagram per document and not a single chart. After replacing the mapping table with an exhaustive block list clarifying that no rigid 1:1 mapping exists, the rate of numeric documents adopting chart blocks jumped from 1/4 to 3/4.\nA Closing Question in Turn N Is Treated as Authorization in Turn N+1\nDuring\ndesign-system\nevaluations, the agent overstepped: at the end of Turn 1, it asked, 'Should we write this to\nsrc/styles.css\n?' When the user replied 'Go ahead with recommendations,' the agent took it as approval to persist to disk and immediately started modifying code. Replaying Turn 2 against a frozen Turn 1 confirmed this: without an explicit\nNext\nline at the end, only 1 out of 5 runs refrained from writing code; once the prompt enforced an explicit\nNext: step N\nclosing line, all 5 runs followed the intended workflow (5/5).\nConstraining Final Reply Format to Keep Output Concise\nAt the end of a long task, agent summary reports frequently ballooned to 2,700–3,400 characters, even though the human only really needed the 'decisions awaiting you' section. To address this, the specification locked in a structured format: status on the first line, followed by a numbered list of pending human decisions, and everything else tucked behind links. After this adjustment, Codex's final message length dropped from 1,661–2,220 characters to 460–566 characters.\nEvaluation Boundaries and Current Status\nA few caveats about these evaluation numbers: most scenarios ran only 3 to 5 times per group, and scoring was done by an LLM grader. A 5/5 score simply means nothing broke, not that the model got smarter. The rubrics themselves also misfired at times: one rubric in\nverifying\nflagged an agent as failed for accurately reporting 'not verified in production'; a rubric in\ndebugging\ndemanded CI results that had not even finished running in that scenario. Both were regraded after correcting the rubrics, with initial records archived in\ngrades-round1/\n.\nIt is also easy to overlook test environment isolation. An early test harness registered test fixtures against a shared server, and when\nauto-publish\nwas enabled, it could inadvertently push private copies to the cloud. Once that risk surfaced, the old harness was removed completely.\nAfter a month of iteration, the total size of the 8 core skill prompts dropped from a peak of 103,054 B to 80,273 B, even while restoring final message formats, routing rules for new artifact types, and assertion rules for\nverifying\nas needed. The two largest prompts today are\nusing-git-worktrees\n(11,958 B) and\nbrainstorming\n(12,276 B). Neither has been trimmed yet; they will go through the same optimization process in a future pass.\nIf you use Claude Code, Codex, or another coding agent and want to try a workflow where the agent pitches proposals first, builds to spec, and hands off a verification page, run\nnpx ryugi-artifacts install\nin your terminal to try the local version. For all skills and documentation, check\ngithub.com/Innei/ryugi\n, and explore shared examples on\nRyugi Cloud",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/agent-skill-token-efficiency-ab-regression",
+      "content_chars": 16969,
+      "content_sha256": "9024672f91958be84614ead6f72863988832648dc140931d5fe03155806d239e",
+      "content_fetched_at": "2026-11-27T03:37:43.901067+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-24T17:23:01+00:00",
+      "collected_at": "2026-11-27T03:34:30.779291+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/agent-skill-token-efficiency-ab-regression"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "Agent Skill 瘦身：用真实 Session 做 A/B 回归",
+          "url": "https://innei.in/en/posts/tech/agent-skill-token-efficiency-ab-regression",
+          "content_sha256": "9024672f91958be84614ead6f72863988832648dc140931d5fe03155806d239e"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:da0a39ae92f40268",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "AI 时代的审美赤字：当人人都能做出一个 App",
+      "target_url": "https://innei.in/en/posts/thinking/ai-aesthetic-deficit-anyone-can-build-an-app",
+      "text": "innei published: AI 时代的审美赤字：当人人都能做出一个 App",
+      "at": "2026-11-18T19:15:35+00:00",
+      "external_id": "a:da0a39ae92f40268",
+      "url": "https://innei.in/en/posts/thinking/ai-aesthetic-deficit-anyone-can-build-an-app",
+      "title": "AI 时代的审美赤字：当人人都能做出一个 App",
+      "content": "A little over half a year ago, I wrote an essay reflecting on this topic: \"\nThe Efficiency Paradox of the AI Era: When Greater Productivity Only Leaves Us Exhausted\n.\" Back then, I asked: in the age of AI, when productivity was supposed to be liberated, why is everyone feeling more exhausted than ever?\nOver the past half-year, this trend has become increasingly obvious.\nDeep, focused mental work has increasingly fractured into constant context switching across multiple projects.\nIt feels like we have all developed ADHD in this era, struggling to stay focused on any single thing for long.\nAnd the more capable models become, the worse it gets: we rarely work on just one thing anymore; instead, we juggle several concurrently.\nMost people are the same way, running multiple side projects at once. Building things has become almost trivial—you can easily crank out several in a single day.\nOn top of that, the breakneck pace of AI has made us deeply dependent on it. Now, even just kicking off a new project requires an assist from AI.\n\"Building It\" Doesn't Mean Skill\nModel progress over the past half-year has been blistering—GPT 5.4 is already an eight-month-old model.\nMeanwhile, Chinese models have been playing catch-up, and by now they are at least on par with GPT 5.4. Just a few months ago, people were still debating whether hitting 5.4 would be enough to be satisfied.\nWith models as capable as they are now, technical barriers have largely vanished, and what people jokingly call \"wishful programming\"—prompting an app into existence—has become all the rage. Even a complete novice can build an app that basically meets requirements, though it might not be very good to use.\nTo be fair, the rapid rise of AI has let more people experience the joy of building software and create tools that help their daily lives or work—and that is genuinely meaningful.\nBut churning out endless garbage apps purely for hype, trend-chasing, and plagiarism is both shameful and sad.\n\"Building It Well\" Doesn't Mean It's Valuable\nIn this environment, design and usability still matter immensely to me. An outsider might not grasp design philosophy or have much aesthetic sense. And among the flood of AI-generated apps everywhere, the vast majority are simply garbage.\nThis breakneck pace of iteration completely bypasses traditional development workflows. Design is no longer an upfront requirement in an AI workflow; it might even be outsourced entirely to whatever taste the model has. Does that mean design no longer matters?\nEven apps from top-tier Chinese tech giants can leave you deeply skeptical of their aesthetics once you try them. Take Tencent's Work Buddy: daily active users have already topped 10 million, yet when I opened it with a sense of reverence, taking in its UI, visual texture, and usability, all I could call it was garbage.\nGranted, perhaps that is because I consider myself a design engineer and have a heightened sensitivity to UI details.\nIn a climate like this, have people simply stopped caring about whether software is intuitive and beautiful?\nMost users do not care about this at all. Even if the UI is hideous, the UX is clumsy, and performance is completely ignored—so long as it barely works, many users have begun to compromise, or just stopped caring altogether in this AI wave. As long as it gets their work done and delivers what they want, that is all that matters.\nExamples like this are everywhere. With so many apps, you have no idea why the interface is so ugly or what the software is even supposed to help you do, yet it still manages to blow up with insane hype in this climate.\nWhen total novices who know nothing about software engineering, architecture, or design can use marketing tactics to churn out a completely pointless piece of garbage, I find that a tragedy of our era.\nMeanwhile, craftsmen who tirelessly polish a product, pouring in genuine ideas, design sensibility, and intuitive usability, get neither the recognition nor the respect they deserve—buried and forgotten simply because their growth tactics fell short. That, too, is a tragedy.\nIn an era like this, does it even make sense to build a product with care anymore?\nThe other end takes the exact same shape: in products, aesthetics are pushed behind whether something can be built at all; in models, the top-tier capabilities are consolidating into just a few companies. You have more and more to choose from, but fewer and fewer things that are actually good.\n\"The Best\" Doesn't Mean It's Yours\nOnce you have used frontier models, though, your appetite is endless. Looking back, even 5.4, as the cutting-edge model of its time, was more than capable of handling most of our daily work—and today, domestic Chinese models have long surpassed that benchmark.\nConstrained by compute and tightening US export controls, domestic models still face an uphill battle against America's frontier. The window to catch up is shrinking, and the frontier is moving at breakneck speed—releasing a new generation every month is considered slow, and competing labs sometimes drop two in a single month. Naturally, everyone still wants to use the most advanced models, but here in China, actually using them is only getting harder.\nAmong frontier model labs, OpenAI has been relatively consumer-friendly and less restrictive with regional geoblocking, but its flagship models are noticeably falling behind Anthropic's. That strikes me as a sad state of affairs. In the closed-source space, Anthropic essentially stands alone at the top right now; while Gemini and OpenAI keep trying to close the distance, the gap still feels immense.\nAnd Anthropic happens to be a deeply anti-human organization. It feels like they just want to play dictator in the AI era, wishing nobody else would make models unless it fits the utopian society they want to construct—which is why they don't want open-weight models to evolve.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/thinking/ai-aesthetic-deficit-anyone-can-build-an-app",
+      "content_chars": 5918,
+      "content_sha256": "4921575f1d93cefc9aa4a62fe7cc555c9baf6397ac02c7278b1d8d047d66f09c",
+      "content_fetched_at": "2026-11-27T03:37:45.070584+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-18T19:15:35+00:00",
+      "collected_at": "2026-11-27T03:34:30.779291+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/thinking/ai-aesthetic-deficit-anyone-can-build-an-app"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "AI 时代的审美赤字：当人人都能做出一个 App",
+          "url": "https://innei.in/en/posts/thinking/ai-aesthetic-deficit-anyone-can-build-an-app",
+          "content_sha256": "4921575f1d93cefc9aa4a62fe7cc555c9baf6397ac02c7278b1d8d047d66f09c"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:13bf1da4d5efb8a1",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+      "target_url": "https://innei.in/en/posts/tech/ryugi-workflow",
+      "text": "innei published: 让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+      "at": "2026-11-15T09:40:15+00:00",
+      "external_id": "a:13bf1da4d5efb8a1",
+      "url": "https://innei.in/en/posts/tech/ryugi-workflow",
+      "title": "让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+      "content": "Ryugi (流儀)\n—Ryugi is a set of interactive artifacts I built for coding agents. Whenever the agent needs to ask me questions or have me pick an approach, it puts them on interactive pages where I can answer directly: design decisions are written up as a document where I choose options item by item and leave sentence-level comments; UI proposals are laid out on a canvas for me to click and choose; and when the work is done, an acceptance page places approved designs side by side with live screenshots so I can approve or reject them group by group. Every choice I make on these pages feeds right back into the agent session that started it.\nRepository\n· Innei\n967\nartideck\nArtideck — Artifacts for coding agents, made to decide with you. Your agent draws artboards, design docs, whiteboards, decks, and verify reports; you pick, comment, and pass right on the page.\nJavaScript\nThe project here was the whiteboard inside my blog editor, haklex. Its editing features had always leaned on Excalidraw, which pulled in a heavy bundle and clashed with the rest of the editor's visual style. I wanted to drop the dependency and roll our own whiteboard around Excalidraw's data format, without touching a single field in existing articles.\nFrom my opening sentence to `git push` took about half a day: two rounds of development, one release, and three downstream projects updated. I typed fewer than 20 messages in chat; wherever I had to make a call, it was turned into questions in a doc or mockups on a canvas. Here is how it went, step by step.\nAfter one prompt: a doc that asks questions\nMy opening prompt was just one sentence: \"Drop the excalidraw dependency and roll our own whiteboard based on its data structures.\"\nThe agent first inspected the code to confirm the scope of changes, then opened a design doc and put its questions directly into it, without following up in the chat box.\nThe questions were embedded right inside the document, each with a recommended option and the reasoning behind it; all I had to do was click my choice on the page. The first question was a fork in the road that determined how big v1 should be—everything that followed depended on it. For two of the questions I skipped the recommendation, and the next round simply picked up from what I chose.\nAfter each round, the conclusions were merged into a \"Decided\" section, noting whether I made the decision or the agent made it for me. I could tell at a glance which items needed another look.\nSection 4 of the design doc, \"Decided\": each conclusion is tagged with who decided it\nAfter two rounds, the document was fleshed out into a full design spec. Before handing it back to me, the agent had an uninvolved reviewer agent do a cold read; it resolved most of the feedback on its own, leaving just two questions for me to settle.\n自研白板编辑器：替换 @excalidraw/excalidraw · Ryugi\nView “自研白板编辑器：替换 @excalidraw/excalidraw” on Ryugi Cloud, a document artifact.\nRyugi\n\"Should we discuss the UI?\"\nOnce the document Q&A was done, I asked: \"Should we discuss the UI?\" The agent said yes—the design spec had marked the UI as \"left to the implementer,\" but these are things you see every time you open the editor.\nText doesn't do UI justice, so it switched to a visual canvas: each group presented several options side by side, the recommended one highlighted with a red border, and sticky notes explaining the reasoning right beside them.\nRound 1 decision fork on the UI canvas: three layout options side by side, with the recommended one outlined in red\nAcross two rounds and five groups, I went with the recommendations every time. With the options drawn out side by side, it was immediately clear which were good and which were bad. The selected mockups were linked into the design spec to guide both implementation and acceptance. Then I replied with \"approve.\"\n白板编辑器界面 · Ryugi\nView “白板编辑器界面” on Ryugi Cloud, an artboard artifact.\nRyugi\nOnce approved, I didn't look at code again\nOnce approved, the agent broke the design spec into 19 small tasks and tackled them one by one on a separate branch.\nEach task followed the same rhythm: write a failing test, watch it fail, write the implementation to make it pass, and commit. Whenever the agent made a call on its own—like minor details that diverged slightly from the spec—it logged it in a ledger. When the chat grew too long and was summarized, it kept working right from that ledger.\nFor over an hour, I didn't type a single word.\nReview, then the acceptance page\nOnce all 19 tasks were finished, the agent handed the branch over to an independent reviewer agent that had played no part in development. For every issue flagged, it reproduced it with a failing test before writing the fix.\nThen it spun up the editor in a real browser, took screenshots and screen recordings, and put together an acceptance page: my approved canvas designs on the left, and how it actually looked running on the right.\nAcceptance page: approved design, live screenshot, and screen recording side by side\nAll I had to do was review each group and approve or reject it. I left a comment on one mockup; it made the fix, took a new screenshot, and placed it right back in the same spot for me to review. Anything it couldn't verify was listed separately on the page, instead of being mixed in with \"Completed.\"\n白板编辑器界面 · Ryugi\nView “白板编辑器界面” on Ryugi Cloud, an artboard artifact.\nRyugi\nRound two: starting from a reference image\nNext, I wanted the whiteboard to look sharper. I pasted a reference image featuring clean headings, drop-shadowed sticky notes, and illustrative stickers, and asked whether stock Excalidraw could pull off that aesthetic.\nIt broke down the elements in the image one by one—what we could already draw, what capabilities were missing—and even guessed I might want an AI to do the drawing. I replied with one sentence: only build general-purpose drawing capabilities.\nNext was the same process: open a new design doc, then three rounds of Q&A. In round three, putting rich-text cards on the whiteboard was my own idea. After a cold read, the reviewer agent flagged two questions that needed my call; the agent added its recommendations, I replied with two numbers, approved, and let it implement and review.\nThe acceptance page for this round measured directly against my reference image: the reference on the left, the recreation inside our editor on the right.\nRound 2 acceptance: reference image side by side with the in-editor recreation\n白板绘制能力扩展：阴影、SVG 元素、富文本卡片 · Ryugi\nView “白板绘制能力扩展：阴影、SVG 元素、富文本卡片” on Ryugi Cloud, a document artifact.\nRyugi\nVerify · 白板绘制能力扩展 · Ryugi\nView “Verify · 白板绘制能力扩展” on Ryugi Cloud, an artboard artifact.\nRyugi\nRelease, then downstream projects\nWith both rounds approved, I asked: \"Can we release now, and then adapt the downstream projects?\" It cut a new release, then went through three projects using the editor one by one—bumping the dependency, running tests, and verifying in a browser that the whiteboard rendered properly.\nDownstream results were posted right on the acceptance page as well, with one screenshot for light mode and one for dark.\nThe same whiteboard in downstream projects: light and dark mode\nThroughout the entire process, logging in to authenticate the npm release was the only thing that needed my manual login—that was the one step the agent couldn't do for me.\nWhat I actually said in the chat\nLooking back, nearly everything I typed in chat over that half-day is captured right here:\nTime\nWhat I said\nWhat happened next\n12:26\nDrop the excalidraw dependency and roll our own whiteboard based on its data structures\nRead code, opened design doc\n13:04\nShould we discuss the UI?\nOpened canvas for UI discussion\n13:18\napprove\nSliced tasks, started implementation\n16:35\nThis looks about ready. Now let's work on extra features.\nCompared against reference image, kicked off Round 2\n16:38\nLet's only build general-purpose drawing capabilities\nNarrowed scope, opened new doc\n17:04\napprove\nImplemented Round 2\n17:56\nCan we release now, and then adapt the downstream projects?\nPublished release, adapted downstream projects\n20:06\npush\nPushed to remote\nEvery other decision was made by clicking options in docs, picking mockups on a canvas, or signing off on the acceptance page. I didn't have to scroll through chat history to find what the agent said; every decision stayed on the page, and all the implementation and acceptance were checked against those same pages.\nBoundaries\nThis workflow doesn't make judgment calls for me. If I skip an open-ended question, it fills in its best guess and flags it, leaving me to decide whether to review it. The acceptance page lists what it couldn't verify, and deciding whether to test further is up to me. What it does is put decisions right in front of me, so I can see at a glance what is settled and what isn't.\nRyugi is open source (\ngithub.com/Innei/ryugi\n). In your terminal, run\nnpx ryugi-artifacts install\n, and select the agent you use to install it. The two design docs, canvas, and acceptance pages mentioned here are all public, so you can see them in their original form.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/ryugi-workflow",
+      "content_chars": 9109,
+      "content_sha256": "510ace46450f4b19d3b14be73a2059f40ad1fdeb07ffc028fe468774d3e62386",
+      "content_fetched_at": "2026-11-27T03:37:46.363195+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-15T09:40:15+00:00",
+      "collected_at": "2026-11-27T03:34:30.779291+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/ryugi-workflow"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+          "url": "https://innei.in/en/posts/tech/ryugi-workflow",
+          "content_sha256": "510ace46450f4b19d3b14be73a2059f40ad1fdeb07ffc028fe468774d3e62386"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:c88c6b17f9a6ce94",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+      "target_url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+      "text": "innei published: Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+      "at": "2026-11-08T09:29:52+00:00",
+      "external_id": "a:c88c6b17f9a6ce94",
+      "url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+      "title": "Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+      "content": "Lody iOS started out on Expo + React Native. By October, the chat timeline, composer, Live Activity, and Share Extension had all been rewritten in UIKit—roughly 61,000 lines of Swift alongside 37,000 lines of TypeScript. What remained of React Native was mostly routing and screen-level glue: navigation was split half in Expo Router and half in native code, and every build still ran through\nexpo prebuild\n, Metro, and CocoaPods.\nRepository\n· LodyAI\n535\nlody-ios\nIndependent iOS client for Lody — native chat, sessions, and coding-agent collaboration on iPhone\nSwift\nOn the night of October 24, I decided to remove React Native entirely and replace the remaining screens with UIKit one by one. On the morning of October 28,\n#96\nmerged into\nmain\n, deleting the RN runtime after roughly three and a half days (87 hours) across 482 files (+25,700 / −37,500 lines). I then spent the next three days reorganizing the directory structure around explicit dependency layers.\nWhiteboard\nFinishing the cutover in 87 hours was only possible because the real strangler-fig work had started six weeks earlier. Between early September and mid-October, diff rendering, the chat timeline, and the rich-text composer were extracted into standalone packages, followed by\ncloud-runtime\non October 11. By the time the migration started on October 24, the app was already layered like this:\nWhiteboard\nIn other words, React Native had already been hollowed out into a thin outer shell: the heavy UI primitives were standalone packages, and the data runtime had lived inside a Swift-owned offscreen\nWKWebView\nfrom day one. The migration came down to three questions:\nWhere should the cross-platform boundary live once coding agents make native UI cheap? How do you invert the host of a 100k-line app without freezing trunk? And when offline verification holds pixel diffs to 0.00026, which four regressions still slip through the cracks?\n1. The Shifting Premise: Moving the Shared Boundary from UI to Data\nWe originally chose React Native with a future Android client in mind. The bet was to keep both the data layer and the UI abstraction in RN: React components would describe screen layouts, while iOS and Android would merely supply the underlying native views. When it came time to build Android, we would only need view implementations—neither the data layer nor screen structures would have to be rewritten.\nWhiteboard\nThe left side shows that original bet; the right side shows where we landed. The shared cross-platform boundary moved down from UI to a headless data layer:\ncloud-runtime\nruns inside an offscreen WebView, iOS and a future Android client implement the same versioned contract, and each platform writes its UI natively.\nTwo shifts broke the original equilibrium. First,\ncoding agents collapsed the marginal cost of native UI\n. Writing a separate UI per platform used to be the exact expense RN was meant to save. In this migration, the remaining screens were rewritten in batches alongside coding agents in three and a half days. Once the one-time cost of writing native screens drops that low, paying an ongoing abstraction tax to avoid it no longer pencils out.\nSecond,\nthe three-layer translation tax in navigation\n. Navigation bars, toolbars, and sheets ultimately end up as UIKit, but in RN they had to pass through three layers of translation to get there:\nWhiteboard\nOn the left, every layer maintains its own state and assumptions. As soon as iOS 26 glass styling, iPad split views, and iPhone Duo foldable layouts entered the picture, bugs clustered in the seams between layers (the gray annotations show a few issues hit while adapting for Duo). Our patch against\nreact-native-screens\nstarted on September 10 and was revised 11 times before deletion. On the right, there is no middleman—each view controller owns its navigation items directly.\nEach individual glitch was patchable, but every fix added another layer of state translation between RN and UIKit. On October 17, I got wide-screen layouts working for iPad and iPhone Duo in RN, and the result still felt rough. A week later, I decided to stop patching and go all-in on native.\n2. The Strangler-Fig Inversion: Hollow Out First, Flip the Host Second\nTo swap out the host without halting feature work on\nmain\n, we couldn't start by rewriting screens. We had to unwind a reverse dependency chain: six weeks of preparatory extraction to hollow out the shell, followed by three sequential locks once the cutover began.\nSix Weeks of Prep: Stripping Out Heavy Views and Data Until Only Routing and Context Remained\nThe timeline below lays out the extractions between September 6 and October 24 across two tracks—the data layer and UI primitives:\nThe three heaviest UI subsystems went first: diff rendering (\ndom-webview\n), the chat timeline (ChatKit), and the rich-text composer (\nlexical-swift\n). They were already written in Swift or self-contained DOM bundles that RN screens simply mounted. When we later replaced screens one by one, the new UIKit view controllers imported those packages directly without having to untangle view logic mid-flight.\nRepository\n· LodyAI\n3\nChatKit\nUIKit chat primitives: streaming text reveal, attachment strip, glass surface. iOS 26, Swift 6.\nSwift\nThe data layer was never inside RN to begin with. Swift owned an offscreen\nWKWebView\nwhere sync, local replicas, and retries ran; RN only ever received read-only projections for display. On October 11, that runtime and its protocol types were extracted into\n@lody/cloud-runtime\n.\nEarlier, on September 8, the cloud code had already been split by domain into\nauth\n,\ncatalog\n, and\nsend\n—the exact three boundaries that would become Swift's\nAuthSession\n,\nCatalogSession\n, and\nOutbox\non October 25. By the night of October 24, all RN held besides routing was the state inside five root Context providers.\nLock 1: Establish a Versioned Contract and Sink State into Swift\nWhy didn't day one touch a single screen? Because replacing screens incrementally required UIKit to own navigation first, turning each remaining RN screen into an independently hosted root view. Once screens become separate root views, React Context on a single root component can no longer span across them—so global state had to leave RN first. And for Swift services and native screens to talk to the offscreen runtime without going through RN, Swift and the runtime needed a formal contract.\nPreviously, Swift invoked the runtime by concatenating raw JS strings, which was tolerable when the RN host was the only caller. Now native screens needed to call the runtime directly—and a future Android host would need the exact same surface—so the very first commit on October 24 replaced string interpolation with a schema-driven contract:\nThe Zod schema in\ncloud-runtime\nbecame the single source of truth. Types for every platform are generated from it, and the host and runtime only exchange envelopes carrying a schema version (\nv\n) and instance generation (\ngen\n). Version mismatches fail the handshake immediately, and messages from stale WebView generations are dropped on sight. Swapping the host—or adding a new platform—never touches the runtime.\nOver the next 23 hours, the five React Contexts on the RN root were consolidated into four single-owner Swift services. The left side shows the old RN root provider tree; the right side shows how both RN and UIKit screens read state afterward:\nEach slice of state has a single owner in Swift. Remaining RN screens and new UIKit screens read the same synchronous JSON snapshot and subscribe to the same change event. Splitting screens into separate root views no longer affected shared state—and as a security bonus, long-lived Better Auth credentials now stayed strictly in Swift and Keychain without ever entering the JS context. By the evening of October 25, once\nOutbox\nlanded in Swift and\nCatalogProvider\nwas deleted, the root Context tree was empty.\nLock 2: Invert the Host so UIKit Wraps RN Screens\nWith state out of the way, Expo Router still owned navigation. As long as RN owned navigation, native views could only live as child components inside RN screens—we could never replace a whole screen. The pivotal move was inverting the host relationship: UIKit took over the window and navigation chrome, demoting the remaining RN screens into leaf views hosted inside UIKit containers. The diagram below shows the three stages of the host; this step moved us from left to center:\nWhiteboard\nIn that middle transitional state, each unmigrated RN screen became an isolated surface backed by a single shared\nRCTHost\n. The outer UIKit container didn't care whether a destination was rendered by an RN surface or a native view controller, unlocking true screen-by-screen replacement without blast radius across pages. (Earlier on iPad, I had tried reparenting a mounted RN view into a different superview, which silently broke touch press handling; giving each screen its own surface avoided that trap entirely.)\nThe new UIKit shell went in behind a launch flag first. Compact iPhone navigation and regular-width iPad split navigation were wired up in turn; once both ran cleanly, Expo Router was deleted in the early hours of October 26—six hours from feature flag to router removal.\nLock 3: Cut the Umbilical Cord—Remove the RN Runtime and Build Chain\nOnce all remaining RN leaf screens were replaced with UIKit (covered in the next section), the app still booted through Expo's\nAppDelegate\nand every build still ran through\nexpo prebuild\nand Metro.\n#96\nsevered that final layer—moving from the center of the host diagram to the far right: a native\nAppDelegate\n/\nSceneDelegate\nboots\nLodyApplication\ndirectly, giving lifecycle, deep links, push notifications, and the share inbox native owners. The build pipeline flipped with it:\nThe\nios/\ndirectory is no longer wiped and regenerated by\nprebuild\n; the Xcode project is generated deterministically from a committed\nproject.yml\nvia XcodeGen. React, Expo, Hermes, and the stack of\nreact-native-screens\npatches were deleted together. Only the headless WebView runtime bundle continues to be built with\npnpm\n—the one layer that never changed from start to finish.\nPull Request\n· innei-dev/lody-ios\n#\n96\nrefactor(ios): complete the native app migration and remove React Native\nmerged\n+\n25764\n−\n37457\nLeeeon233\n4 weeks ago\n3. Deterministic Verification and Its Cracks: 0.00026 Pixel Diffs vs. 4 Escaped Regressions\nBetween October 26 and October 28, rewriting every remaining screen in UIKit within 48 hours—without breaking\nmain\n—would have been impossible with manual QA. What made the blitz safe was an offline verification harness; what makes it interesting in hindsight are the four bugs that still escaped it.\nLeaf-to-Trunk Replacement: Isolating Every Screen Behind a Single Service Seam\nOnce the UIKit shell was in charge, every native screen was built around the exact same decoupled structure:\nA view controller's only I/O is a\nservice\nclosure. Production routes inject the\nlive\nimplementation (wired to\nDataRuntime\n,\nCatalog\n, and\nOutbox\n); Debug scenes inject a\nscripted\nimplementation returning fixed fixtures. Both paths run the exact same view controller. Before flipping any screen, we registered an offline Debug scene and a\nverify:ui\nbehavioral test that deep-linked straight into it—no login, no cloud, and no local agent daemon required—running the identical assertion suite before and after the swap.\nWith offline assertions in place, replacement proceeded mechanically from leaves to trunk. On October 26, all Settings sub-screens, Home, and Project screens moved first; that night, the complex Session screen was built in UIKit behind a Debug fixture. On October 27, the remaining screens were conquered in a stack of eight PRs (\n#87\n–\n#94\n): message editing, message details, tool details, permissions, PR view, and file browser, followed by flipping the production Session entry point to native and finishing Home and iPad navigation. On the morning of October 28,\n#86\nand the entire PR stack merged together.\nPull Request\n· innei-dev/lody-ios\n#\n86\nrefactor: UIKit shell and native pages (RN removal phases 2–3)\nmerged\n+\n26846\n−\n18771\nInnei\n4 weeks ago\nWhen\n#96\ndeleted the RN runtime hours later, the offline UI suite ran directly against the pure native build. Across 20 screenshots of the new-session form compared pixel-by-pixel against the previous build, the maximum diff was\n0.00026\n.\nWhere the Harness Cracked: How 4 Regressions Escaped a 0.00026 Pixel Gate\nEven with screenshot diffs pinned to the fourth decimal place and core flows working cleanly, four regressions still surfaced after cutover. Looking at them side by side is revealing—every single one lived on the seam between offline scripted scenes and the real runtime environment:\nWhiteboard\nThe test entry point had no test of its own\n: The Debug screen dispatches every offline scene, yet had no test case covering itself. After converting to UIKit, it regressed into an ungrouped flat list missing its navigation bar.\nBuild configuration skew (Debug vs. Release)\n: Debug scenes were only registered under\nDebug\nand\nUI Verify\nbuild configurations, and automated checks never ran against\nRelease\n. Long-pressing the Settings button in TestFlight builds triggered an unregistered route and crashed immediately.\nOffline stubs bypassed the OS modal hierarchy\n: During Device Flow sign-in,\nSFSafariViewController\npresents over the welcome screen; after authorization completed, dismissing closed only Safari while leaving the welcome screen stuck underneath. Because the \"open browser\" step in the offline fixture was a no-op stub, the real system modal stack was never exercised.\nStatic fixtures skipped async teardown races in the live runtime\n: Opening a session from a push notification caused the previous screen's delayed\ndeinit\nto close the session the new screen had just opened. Offline scenes fed synchronous scripted data without a live\nDataRuntime\n, so that cross-controller lifecycle race never fired under test.\n4. Post-Merge Convergence: Freeze Paths During Cutover, Layer by Dependency After\nThroughout the 87-hour sprint, I followed one strict rule:\nnever move files while changing behavior\n. Keeping file paths frozen meant every commit was a pure implementation swap—easy to review and trivial to\ngit bisect\nif something broke. The trade-off was that when\n#96\nlanded, all 557 Swift files were still sitting inside the legacy Expo module directory, mixing view controllers, data sessions, and platform glue. Only after behavior was locked down did I put on the refactoring hat for three days of structural layering, again doing one thing per step:\nStep 1: Move files without splitting code.\nWith RN gone,\napps/mobile\nand the Expo module path were vestigial. All Swift sources were moved wholesale into a single Swift package,\nLodyKit\n, while dependencies switched from CocoaPods to SPM.\nStep 2: Split along the\nimport UIKit\nboundary.\nAuth, catalog, outbox, the data runtime host, session models, and copy were extracted into\nLodyData\n—a module that never imports UIKit and compiles and tests in isolation. Whenever the data layer needs a platform side effect (opening URLs, requesting background execution time, showing a toast, presenting an auth browser, or writing a Share Extension snapshot), it calls the\nLodyHost\nprotocol, which the top-level App target implements and injects.\nStep 3: Flatten the project hierarchy.\nThe repository root became the Xcode project root, eliminating the\napps/\nwrapper. Finally, the remaining UI code in\nLodyKit\nwas folded back into the App target—the App was its only consumer, while views shared with the Share Extension moved into\nShared/UIKit\nas direct source references. Keeping a separate UI package only added ceremony around access control, so the App target is now organized directly into\nApplication\n,\nNavigation\n,\nViewControllers\n,\nViews\n,\nServices\n, and\nPlatform\n.\nThe resulting dependency graph flows strictly in one direction—the lower a layer sits, the less it knows about UI:\nWhiteboard\nThe repository root is the Xcode project root, generated from the committed\nproject.yml\n; the generated\nLody.xcodeproj\nis never edited by hand.\nTakeaways for Anyone Planning a Similar Migration\nLooking back, the critical factor wasn't how fast UIKit views could be written—it was respecting a strict sequence of dependency locks where each step unlocked the physical precondition for the next:\nStart by deciding\nwhich layer actually deserves to be shared\n. React Native's cross-platform leverage lives in UI; once coding agents make platform-native UI cheap to write, it pays to push the shared boundary down into a headless data runtime behind a versioned contract. Extract heavy UI primitives first, sink shared state out of RN, and then invert the navigation host—once a native shell can host legacy RN screens as isolated leaves, every remaining screen can be replaced and verified independently. And when designing your verification harness, remember to test the test entry point itself,\nRelease\nbuild flags, real OS modal stacks, and async teardown across live runtime sessions.\nI'm not a veteran iOS engineer, and this layering reflects how I reasoned through the problem rather than established orthodoxy. I'm still weighing trade-offs—like whether running a JS data runtime inside an offscreen WebView is worth it long-term, whether protocol injection via\nLodyHost\nis the cleanest way to handle platform side effects, or whether keeping App UI code in folders rather than SPM packages will hold up as the codebase grows. If you've been through a similar migration or would structure this differently, I'd love to hear your thoughts in the comments.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+      "content_chars": 17722,
+      "content_sha256": "3b91b0744f97bb7488e04d127e69e2c16d724b296ab17ae28460dc9e493cf22a",
+      "content_fetched_at": "2026-11-27T03:37:47.674619+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-08T09:29:52+00:00",
+      "collected_at": "2026-11-27T03:34:30.779291+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/react-native-to-uikit-migration"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+          "url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+          "content_sha256": "3b91b0744f97bb7488e04d127e69e2c16d724b296ab17ae28460dc9e493cf22a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:0ed9df84a952389a",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+      "target_url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+      "text": "innei published: 十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+      "at": "2026-11-04T11:08:49+00:00",
+      "external_id": "a:0ed9df84a952389a",
+      "url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+      "title": "十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+      "content": "The starting point: a performance tuning pass\nDuring my first month at LobeHub, I ran a performance optimization pass, documented with benchmarks in\n\"Performance and DX Optimizations at LobeHub\"\n. The heaviest bottlenecks in that pass were all style-related: CSS-in-JS Flexbox components like react-layout-kit numbered in the hundreds on a single page, each generating CSS; the\nuseStyle\nrunning across almost every component recalculated styles on every re-render; and a single antd Tooltip took 0.5ms on its own. The first two could be fixed by switching styling solutions, but Tooltip required a full rewrite. I rebuilt both it and Popover with Base UI—the first time Base UI was used in lobe-ui.\nWith those fixes in place, the remaining overhead came from antd components themselves. Since antd's UI was also notoriously hard to customize deeply, replacing it was the obvious next move. I had wanted to do this for a while, but never started because manually rewriting a codebase of this size was unrealistic, and AI wasn't capable enough yet.\nWhen we actually started, this was what we were facing:\n@lobehub/ui\nhad almost a hundred component modules, with behavior tightly coupled to antd and all component styles written in Emotion-based\nantd-style\n, which generated CSS at runtime and injected it into the document on every page load. Downstream, five ecosystem libraries—icons, editor, charts, tts, and fluent-emoji—declared it as a peer dependency, and at the top layer, hundreds of business files in lobe-chat directly imported from\nimport ... from 'antd'\n. Meanwhile, product features shipped weekly, so maintaining a long-running rewrite branch wasn't an option. The entire migration had to happen without interrupting delivery, split into two parallel tracks: first swap out the underlying component foundation from antd to Base UI, then switch styling from runtime Emotion to compile-time StyleX.\nLetting old and new components coexist in the same package\nlobe-ui#448\nrewrote Tooltip. Beyond performance gains, it also resolved seven Linear issues: positioning drift, tooltips failing to dismiss, and elements snapping back to (0, 0) when their host unmounted. Base UI is headless, providing only behavior and accessibility while leaving DOM structure and styling to us, so we could customize everything freely without fighting antd's limitations.\nThe next question was how to make the transition. With weekly product releases and several downstream libraries tracking our changes, ripping out antd all at once wasn't practical. Instead, I opted for coexistence: build new components with Base UI, package them alongside the antd versions, and migrate product call sites one component at a time. Throughout January 2026, we gradually added\nlobe-ui#444\n's Base UI Menu–based DropdownMenu and ContextMenu, alongside LobeSwitch and LobeSelect. To avoid name clashes with their antd counterparts, they initially carried a Lobe prefix or a V2 suffix.\nOn March 2,\nlobe-ui#467\nreleased v5, formalizing this coexistence in the package structure: adding a\n@lobehub/ui/base-ui\nsubpath where LobeSelect and LobeSwitch were moved (dropping their prefixes), while DropdownMenu, Toast, ContextMenu, and ScrollArea were exported from there as well. The package itself also became ESM-only. Subsequent components followed the exact same pattern: the implementation lived under\nsrc/base-ui/\n, while the root entry only re-exported it. For instance, when\nlobe-ui#486\nmigrated Popover,\n@lobehub/ui\nand\n@lobehub/ui/base-ui\nwere both valid, requiring zero changes in product code. From here on, migrating a component took just two steps: write the new implementation under base-ui, then switch the call sites in product code.\nComponents had to be drop-in replacements, locked down with linting once migrated\nBetween March and September, components were ported into base-ui roughly in this order: overlays, basic controls, forms, display, and layout.\nOverlays first\nThis came down to two reasons. To begin with, overlays naturally belong together: Dropdown, Popover, Tooltip, Modal, and Drawer all share floating positioning and stacking management, making them ideal to tackle together. Later,\nlobe-ui#518\nunified their z-index management under a single layer manager. The second reason was how Modal was structured. Antd's Modal is primarily declarative, requiring components to be mounted on the React tree in advance:\nopen\nis\nfalse\n, its children still render, re-rendering whenever ancestor state updates. With multiple Modals on a page, that overhead adds up on every single render. An imperative Modal creates an instance only when invoked and destroys it when closed, shifting the cost to the user action that opens it. I previously wrote about this in\n\"Why I Recommend Imperative Modals,\"\nand base-ui's Modal has supported both imperative and declarative patterns since its\nfirst release\n.\nIn the top example, every closed Modal participates in every render; in the bottom example, only the active Modal exists in the tree.\nMigration windows by component category\nAfter overlays came basic controls, forms, and display components. They all followed the exact same workflow: merge the new component into base-ui, switch product call sites over, and finally ban the legacy import via ESLint. Each bar below runs from when the new component merged to when the legacy import was banned:\nA stark dividing line is visible around August. Before August, taking a component category from initial merge to banning legacy imports took weeks or months: Modal and Select took nearly four months, and form controls took 36 days. After August, Drawer took 5 days, Alert 6 days, Skeleton 3 days, DraggablePanel and Tree 2 days each, while ActionIcon, Avatar, Tag, and Text took just 1 day combined. The migration process hadn't changed—what changed was the models. Anthropic released Claude Fable 5 on June 9 and Claude Opus 5 on July 24. To me, Opus 5 felt exceptionally strong at front-end tasks, and at half the price of Fable 5, it cost about the same as Opus 4.8. By August, commits in lobe-chat switched from Opus 4.8 to Opus 5, and Fable 5 usage was rising too. The bars for Tabs and Segmented are also very short, but only because the initial preset banned five components all at once on June 26—not because they migrated faster.\nComponents like DropdownMenu, Tooltip, and Popover were replaced in place at the root entry point without legacy versions to ban, so they aren't shown in the chart. Commits for each component:\nModal\n,\nMenu\n,\nTooltip\n,\nButton\n,\nForm controls\n,\nDrawer\n,\nAlert\n,\nActionIcon and three others\n,\nSkeleton\n,\nDraggablePanel\n, and\nTree\n.\nEach new component had to be a drop-in replacement, matching the old version in both API and visuals so switching only meant changing import paths. In lobe-ui#621, Tag's color resolution was ported straight from the old implementation: 13 preset colors, 5 system colors, and and all four variants (solid, filled, outlined, borderless) across three sizes had to match. Avatar replaced antd Avatar with native\nimg\n, keeping the fallback on load failure and the +N counter for AvatarGroup. After Drawer merged, a separate\ncommit\nfollowed to align its surface, edges, and drop shadows with antd Drawer.\nThe ban rules lived in lobe-ui's built-in ESLint preset, inherited directly by product projects. The\ninitial preset\non June 26 deprecated and banned imports of five antd-based wrappers: Button, Modal, Segmented, Select, and Tabs. When that first version went live, product code still had numerous legacy calls, which were temporarily grandfathered via an allowlist (detailed in the next section). From that point on, rules for each component category were added to the preset only after downstream projects had cleared all legacy imports. The PR description in\nlobe-ui#610\nwas blunt: downstream migrations had removed legacy imports for these components, and this PR turned the migration boundary into an enforceable lint rule. That way, new code couldn't introduce old patterns, and legacy usage could only ever go down.\nOn the product side: freeze new usage, then clear legacy code category by category\nEach time lobe-ui finished migrating a component category, lobe-chat had to update corresponding call sites. The chart below shows the number of files directly importing antd in lobe-chat, sampled biweekly:\nUntil mid-June, this line kept rising—climbing from 338 in mid-February to 485 on June 15. While legacy calls were being replaced, new features continued using antd. By then, the team had already delegated most product coding to AI, and component precedence had long been codified into\nAGENTS.md\nand react skills:\n@lobehub/ui/base-ui\nAny component available in it had to be imported from it, with same-named components at the root entry point off-limits, leaving antd strictly as a fallback when neither had it. Agents routinely ignored this. Because training data and hundreds of existing files demonstrated antd patterns, PRs for new features kept using legacy components even after lobe-ui published replacements. To an agent, docs are merely suggestions. The only way to stop them was to make violations break the build: ESLint fails directly, and lint-staged runs the same checks in pre-commit hooks to block the commit.\nThat was precisely what\nlobehub#16334\ndid on June 26: it adopted lobe-ui's ESLint preset, banning the five legacy wrappers (Button, Modal, Segmented, Select, Tabs) as well as antd-style's\ncreateStyles\n; existing call sites (354 in total) were added to\neslint-suppressions.json\nfor temporary exemption, while any new violations failed immediately. Afterward, whenever a batch was migrated, we ran\neslint --prune-suppressions\n, ensuring the allowlist only ever shrank.\nLegacy code was cleared category by category: each PR targeted only one component category, but covered the entire repository. The count dropped slowly over the summer, followed by a steep drop in early October.\nlobehub#20247\ntouched 285 files in one go, swapping out all remaining instances of Table, DatePicker, Menu, List, Input variants, and more, eliminating 163 files with direct antd imports. The PR included before-and-after screenshots compared against canary for verification, and five component library issues caught along the way were patched in\nlobe-ui#675\n. Next,\nlobehub#20317\nmigrated forms, removing another 63 files;\nlobehub#20408\nupdated menu item types to lobe-ui's, shedding 21 files; finally,\nlobehub#20503\ncleaned up the remainder. The two files still remaining on November 1 in the chart are test fixtures for alint.\nBehavioral discrepancies are harder to catch than visual differences\nVisual differences are easy to spot by comparing screenshots side by side, but behavioral discrepancies usually don't surface until a user saves data. After lobehub#20317 migrated forms to base-ui, the values returned on submit differed between the two:\nantd Form\nbase-ui Form\nReturned on submit\nValues of currently mounted\nForm.Item\nfields only\nEntire form store\nConditionally hidden fields\nDiscarded\nSubmitted together\ninitialValues\nextra keys\nDiscarded\nSubmitted together\nFields that used to be quietly dropped were now persisted together. Switching a plugin's authentication from bearer to none left the old token behind. Similarly, switching transport from HTTP to stdio kept the old URL, causing later re-installations to fetch manifests from that stale address and overwrite existing settings.\nlobehub#20644\nadded a\npruneHiddenFields\nstep before saving to prune fields that don't belong to the active type.\nThe compatibility layer itself can introduce bugs. The\nImperativeModal\nwrapper, created for a smooth migration, unmounted its content in the very same commit that\nopen\nbecame\nfalse\n, while base-ui's panel still had a 120ms exit animation—so closing the Skill Store details modal caused the content to collapse prematurely. Instead of patching the wrapper,\nlobehub#17941\nreplaced all 11 call sites with imperative\ncreateModal\nContent lives inside a ModalHost and is only unmounted after the exit animation finishes.\nBumping the ecosystem libraries along with lobe-ui's majors\nAs we wrapped up the app-level cleanup, the intermediate ecosystem tier had to come along. Beyond lobe-ui, lobe-chat depends on icons, editor, charts, tts, and fluent-emoji—most of which declare lobe-ui as a peer dependency:\nWhenever lobe-ui bumped a major version, the ecosystem layer broke: downstream packages lost exports they still needed, or peer versions fell out of sync. As a result, we always released them all together:\nlobe-ui\nRelease date\nicons\neditor\ncharts\nfluent-emoji\nv3 (upgraded to antd v6)\n2025-12-20\nv3\nv2\nv3\nv4 (static styles)\n2025-12-24\nv4\nv3\nv4\nv5 (base-ui subpackage)\n2026-03-02\nv5\nv4\nv5\nunchanged\nv6 (dropped antd)\n2026-10-15\nv6\nv5\nv6\nv5\nv6 was by far the biggest set of changes, split into a stacked sequence of PRs:\nlobe-ui#699\nremoved the antd components and\nThemeProvider\n;\nlobe-ui#700\ndropped the antd, antd-style, and rc-* dependencies; and\nlobe-ui#702\nmerged\nsrc/base-ui\ncompletely empty.\n@lobehub/ui/base-ui\nback into the root directory, getting rid of the base-ui subpath. With the coexistence phase over, we tore down that v5 scaffolding and exported the new components straight from the root entry. In early October, the downstream libraries first ported their own component usage over to base-ui (\nlobe-editor#222\nand\nlobe-charts#32\n), before each bumped to lobe-ui 6 and stripped out antd.\nThis cascade of changes couldn't be released and verified piecemeal. Instead, we tested across repos using pkg.pr.new preview packages: PRs for lobe-ui and the five downstream libraries each published preview packages, and\nlobehub#20503\npointed all dependencies to those preview URLs. We compared lobe-chat against production page by page to ensure zero visual regressions before officially publishing in dependency order and and then switched back to real version numbers. PR #20503 alone updated imports across 2,728 files, purged antd from 24 workspace packages, and finally left\npnpm ls -r antd\nwith nothing to show.\nMoving styles from runtime generation to build-time compilation\nDropping antd took care of components, but styles were still being generated at runtime. lobe-ui wrote its component styles in antd-style, built on Emotion: on page load, JavaScript generated CSS on the fly and inserted it into the page. The initial optimization pass replaced dynamic hooks with\ncreateStaticStyles\n, ensuring components no longer recomputed styles on every re-render. Yet the insertion step remained. In September,\nlobehub#19066\npre-computed purely static calls at build time, slashing the time spent on styles during cold home page loads from ~56ms to ~28ms. The remaining ~14ms came from\ninsertRule\nitself—an unavoidable cost as long as emotion was in the loop.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+      "content_chars": 14848,
+      "content_sha256": "de453305925a0dc0ad398f987b412a8462899b224cfd60024948813e2f3140a1",
+      "content_fetched_at": "2026-11-27T03:37:48.972397+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-04T11:08:49+00:00",
+      "collected_at": "2026-11-27T03:34:30.779291+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+          "url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+          "content_sha256": "de453305925a0dc0ad398f987b412a8462899b224cfd60024948813e2f3140a1"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:8920ef59b3b9441c",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "十月未央",
+      "target_url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "text": "innei published: 十月未央",
+      "at": "2026-10-24T18:16:19+00:00",
+      "external_id": "a:8920ef59b3b9441c",
+      "url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "title": "十月未央",
+      "content": "October Lingers\nAutumn\nMixed feelings\nReads\n1,440\nLikes\n2\ntranslated from Simplified Chinese\n↗\nAI\nDictation, Assisted, and Title\nLanguage\nEnglish\nSynopsis\nopen yohaku ↗\nIt's already been over two weeks since my last recap, so it's time to catch up on what's been happening lately.\nNyatabi Hits the App Store\nLast time, I mentioned running into so many headaches after a trip that I decided to build an app. At the end of my last post, I wrote, \"Musubicho is still in development and not finished yet.\" Less than two weeks later, I renamed it Nyatabi (喵旅) and officially launched it on the App Store. That said, I haven't even been the first one to really test it out in the wild. I'm such a homebody that even though a trip sparked the project, I haven't had the chance to use all its features myself yet. I just love building products—created purely out of passion.\nIt's live on the App Store now, and I put together a decent landing page for it. Feel free to check it out! (Though it's iOS-only for now.)\nNyatabi — your AI travel companion for iPhone\nPlan with Musubi, explore together, split spending fairly and turn your route into memories. Your whole journey, in one local-first iPhone app.\nNyatabi\nBeyond helping you map out trips, it lets an agent handle expense tracking and bill splitting on the go (either by snapping receipts or just telling it what you spent). In group chats, the agent can scout nearby restaurants or pull up your friends' locations. And once the trip wraps up, you can replay your route, generate an auto-edited highlight video, or export a detailed travel footprint report.\nBefore the official release, I shot a 4-part short video series walking through the entire flow: pre-trip planning → snapping receipts to split expenses on the go → settling balances with minimum transfers → everyday roommate bookkeeping. On October 16, I posted a full 2-minute demo.\nAlong the way, I also open-sourced the rounded-line icon set used in Nyatabi at\nicons.nyatabi.app\n.\nEngineering shortcuts vs. engineering rigor: refusing to be a human test runner, I wired up XCUITest across two physical iPhones so agents could handle the entire closed loop of \"implement → verify → fail → fix\" on their own (check out my technical post, \"\nMy AI-Native iOS Development & Verification Workflow\n\", for details).\nIt could be handy whether you're traveling or just going about everyday life: I've always found life-logging footprint apps a bit awkward to use, so I baked my own footprint features right in to track daily routines as well. I don't want to turn this into a full-on product pitch, so I'll stop here. If you're interested, feel free to give it a spin.\nNyatabi: AI Travel Planner App - App Store\nDownload Nyatabi: AI Travel Planner by Moeru AI on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Nyatabi: AI Travel Planner…\nApp Store\nAI in the Trenches\nA Love-Hate Relationship with Claude\nI had a backup Claude alt account that managed to hold out for over two weeks, so I decided to upgrade it. Went from Pro to Max, only to get slapped with an instant ban—no refund, either. I was so anxious that night that I stayed up by myself until 5 a.m. Eventually, I couldn't help setting up yet another account, and that one's somehow still alive.\nOn top of that, my $DRAM shares kept tumbling before I could break even, so those days felt like a brutal double blow from Anthropic and $DRAM. It also got me calculating the real cost of compute inflation: last year, a $20 Claude subscription felt like it could do so much; now, even the $200 Max tier barely scratches the surface. By comparison, Apple's $99/year developer membership is so cheap it's almost moving.\nOpenAI's \"God Tier\" Account and Kimi Falling Flat on Its Face\nThere was a funny little detour along the way. Around the 20th, I noticed a bug in OpenAI: an old 20x subscription was still usable even after downgrading or canceling. I honestly thought I'd struck gold with some chosen \"god-tier\" account. But by day five of freeloading, the bug got patched and my quota went straight to zero.\nThen on the 23rd, I dropped $19 on Kimi, wanting to see how it compared to $20 Claude. I asked it to write a website footer—and before it even finished, barely ten minutes in, I slammed right into a 5-hour rate limit. Might as well just call yourselves QueueShot AI. When it comes to domestic models, everyone should just use DeepSeek—what are the rest of these garbage knockoffs even doing? DeepSeek is the only one that can actually play: no token sales, no bullshit. The API pricing is right there: take it or leave it. The TPS is right there too—DeepSeek 4.1 Flash pushes over 200 TPS, and at those prices, burn through as much as you want.\nUnlike Kimi—their greed this time is honestly shameless: zero compute power, but pulling that classic Lei Jun artificial scarcity playbook and taking users for fools to the extreme.\nRyugi (流儀) — Open-Source Claude Artifacts\nAfter getting jerked around like that, I thought: why not just build my own version of Claude Artifacts? I genuinely love using that feature. For docs, artboard designs, and architecture sketches, it's just so damn good—a product genuinely made with care.\nBut being locked into Claude's proprietary subscription was a dealbreaker. So what choice did I have? Build it myself.\nClaude Artifacts support five types, and the ones I use most are Artboard, Document, and HTML. Sick of taking Anthropic's nonsense, I cobbled together a standalone workbench called \"Ryugi\" (\nryugi.innei.dev\n).\nBuilding this brought an unexpected bonus too: it completely changed my view of Codex's design skills. I used to think Codex was garbage at design, and just on the 10th I had tweeted about how miserable it was trying to write UI with it. But once I plugged it into Ryugi's Artboard workflow, it turned out to be surprisingly solid—I guess I was just using it wrong before. To my surprise, that tweet blew up, racking up 93K impressions and over 700 bookmarks.\nI've been using it for a few days now, putting it through heavy daily use and constantly refining it. The cloud environment is live too, so now it helps me brainstorm, work on designs, hash out architecture docs, and even knock out small feature requests on the side.\nThe experience genuinely captures the vibe of Claude Artifacts now. Hooking this workflow up to other harnesses—like DeepSeek or Codex—makes them dramatically more useful. If you haven't tried it yet, you really should.\nRepository\n· Innei\n967\nartideck\nArtideck — Artifacts for coding agents, made to decide with you. Your agent draws artboards, design docs, whiteboards, decks, and verify reports; you pick, comment, and pass right on the page.\nJavaScript\nHere are a few UI designs and animations I generated using DeepSeek, Codex, and Grok:\nDocument · 历史回看 · Ryugi\nView “Document · 历史回看” on Ryugi Cloud, an artboard artifact.\nRyugi\n简单模式 · 描述显隐 · Ryugi\nView “简单模式 · 描述显隐” on Ryugi Cloud, an artboard artifact.\nRyugi\nLobeHub · AI Provider 接入 · Ryugi\nView “LobeHub · AI Provider 接入” on Ryugi Cloud, an artboard artifact.\nRyugi\n室内乐与夏日小品 · Nine Pieces · Ryugi\nView “室内乐与夏日小品 · Nine Pieces” on Ryugi Cloud, an HTML artifact.\nRyugi\nLobeHub Bids Farewell to AntD\nOn the work front: I've been here for almost a year now. Back when I first joined, I declared that I was going to ditch AntD once and for all. That turned into a ten-month marathon, but on the 9th of this month, I finally pulled it off—migrating everything over to\n@base_ui\n+\nStyleX\n(meaning\nlobe-ui\nv6).\nLooking back at the numbers, the engineering scale was pretty wild:\nlobe-ui\nrewrote 54 components on top of Base UI, and AntD dependencies in\nlobe-editor\n,\nlobe-charts\n, and\nlobe-icons\nwere completely eliminated.\nThe main repo has over 11,000 TypeScript files. Replacing the underlying component library spanned 28 PRs and touched 3,242 files, with the single largest PR modifying 1,040 files.\nAlong the way, we also migrated our CSS-in-JS setup to StyleX, slashing the original 179 emotion files down to just 3. The most satisfying part was running 5 agents across parallel branches: in three and a half hours, they plowed through 84 commits. We then ran regression tests across 45 routes using 1,000 screenshot comparisons and computed-style diffs, reliably catching 4 regressions.\nGetting rid of AntD paid off right away. Bundle sizes shrank dramatically, and pages feel noticeably snappier. Thinking back, before AI agents existed, a core refactor of this scale would have easily taken an entire team a full quarter of grinding. But with today's models being so capable, I managed to knock out this massive project almost entirely on my own.\nThe Story Ends Here\nThroughout October, blind dates from family and friends were nonstop, but most of the time chatting was pretty draining. Earlier in the month, I tweeted a rant saying some WeChat chats feel like \"an LLM running on a potato server, taking hours of inference just to spit out a few characters, and if you don't send a request, you'll never get a response.\" That tweet unexpectedly racked up over 70,000 views, and predictably enough, I got hit with the \"you're a nice guy\" card in real life soon after.\nBut just a few days later, through another blind date, I unexpectedly met someone I could genuinely click with—something that hadn't happened in a long time.\nI find myself wanting deeper conversations lately—talking about fundamental values, life outlooks, and thoughts on the future. In day-to-day life, finding someone who can actually match that energy is rare. But that night—which also happened to be our last conversation—we talked about so much. Beyond having plenty of shared interests, what hit hardest was a real resonance in who we are deep down. Just knowing someone on that exact same wavelength actually exists was a wonderful, lucky surprise.\nUnfortunately, she felt our personalities were just too similar to be a good match. In the end, we parted ways gracefully, and that was where the story ended.\nTurning My Resume into a Canvas\nAnother project I spent a lot of time on was completely rebuilding my personal resume page for Programmer's Day on October 24, launching it at\nresume.innei.in/lab/\n.\nThe spark was simple: surfing online recently, I saw a few personal sites and resumes that looked amazing, so I wanted to bring my own ideas into the mix and polish up something of my own. A traditional single-page format can't hold very much, so I turned it into a canvas you can freely pan, zoom, and explore—connecting all the projects I've worked on and milestones I've reached over the six or seven years since college into one continuous timeline.\nWorking on this canvas also ended up unlocking some new skills. To give the page some fitting background music, I dove into arranging with realistic virtual instruments, tweaking synthesis, and fine-tuning the details (huge thanks to\n@wibus_wee\nfor walking me through Ozone mastering), and I even built an interactive sheet music display into the canvas.\nCramming a bunch of music arrangement and audio mastering just to build a resume was an unexpected bonus. Once I get around to picking music theory back up properly, I really should build an app for instruments and music theory.\nThanks for reading this far.\nAlso, I recently updated the background on this blog with dynamic nature scenes that change with the seasons and time of day. I even split the effect out into its own standalone preview page (\ninnei.in/dev-demos/backgrounds\n); if you're interested, feel free to click in and play around with it.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "content_chars": 11589,
+      "content_sha256": "e4b628850df9df052e1cf87b46c36faa2ec678b88443fad68494cd9859290cc2",
+      "content_fetched_at": "2026-11-27T03:37:50.334299+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-10-24T18:16:19+00:00",
+      "collected_at": "2026-11-27T03:34:30.779291+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/notes/2026/10/24/2026-10-recap"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "十月未央",
+          "url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+          "content_sha256": "e4b628850df9df052e1cf87b46c36faa2ec678b88443fad68494cd9859290cc2"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
+}

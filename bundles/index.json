@@ -1,10 +1,16 @@
 {
   "source_id": "blog_watch",
   "schema_version": 1,
-  "latest": "2026-11-26",
+  "latest": "2026-11-27",
   "watermark": "2026-11-26T03:27:19.335036+00:00",
-  "updated_at": "2026-11-26T03:30:42.291952+00:00",
+  "updated_at": "2026-11-27T03:37:50.510271+00:00",
   "days": [
+    {
+      "date": "2026-11-27",
+      "count": 9,
+      "sha256": "b66d88eb0c4cc0c0ff9bb3c8211d0ed3662021cebe10c2f68a6202d01cfecfef",
+      "window_end": "2026-11-26T00:00:00+00:00"
+    },
     {
       "date": "2026-11-26",
       "count": 12,
